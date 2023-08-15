@@ -4188,7 +4188,7 @@
     "key": "MeshPartLODNotification.Message",
     "description": "MeshPart renderFidelity property selector",
     "english": "RenderFidelity was set to Automatic or Performance. This may require the asset to go through moderation and create a new assetId.",
-    "translation": "RenderFidelity が自動または性能に設定されました。これによってアセットが規制対象としてレビューを受けるか、新しい assetId の作成が必要になります。",
+    "translation": "RenderFidelity が自動または性能に設定されました。これによってアセットが内容審査を受けるか、新しい assetId の作成が必要になります。",
     "isDeprecated": false
   },
   {
@@ -17044,7 +17044,7 @@
     "key": "RbxWorkspace.PluginModerationCheckFailed",
     "description": null,
     "english": "Plugin moderation check failed",
-    "translation": "プラグイン規制チェックができませんでした",
+    "translation": "プラグインの内容審査チェックに通りませんでした",
     "isDeprecated": false
   },
   {
@@ -29004,7 +29004,7 @@
     "key": "LoginManager.FailToFetchModerationInfo",
     "description": null,
     "english": "Fail to get moderation status. Please try to login again or contact support if problem persists.",
-    "translation": "モデレーション状況を取得できませんでした。またログインし直すか、問題が解決しない場合はサポートにお問い合わせください。",
+    "translation": "内容審査状況を取得できませんでした。またログインし直すか、問題が解決しない場合はサポートにお問い合わせください。",
     "isDeprecated": false
   },
   {
@@ -33860,7 +33860,7 @@
     "key": "BetaFeatures.DragDetectorsDescription",
     "description": null,
     "english": "New Instance type DragDetector that enables click-drag-release interactions. Enabling this beta feature allows using DragDetectors only within Roblox Studio.",
-    "translation": "クリック・ドラッグ・リリースによる交流を有効にする新しいインスタンス型、 DragDetector。このベータ機能を有効にすると、ローカルファイル編集するときに DragDetectors をRoblox Studio でのみ使用できるようになります。DragDetectors は、チームクリエイトではまだ使用できませんが、単独テストモードでのみ使用できます。いかなるマルチプレイヤーまたは公開済み仮想空間も現在は DragDetectors を無視できません。",
+    "translation": "新しいインスタンスタイプ、DragDetector はクリック・ドラッグ・リリースをオンにします。このベータ機能をオンにすると、Roblox Studio内 でのみ DragDetectors が使用できるようになります。",
     "isDeprecated": false
   },
   {
@@ -34001,6 +34001,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "AutoReconnectDialog.ConnectionLostTerminal2",
+    "description": "Auto Reconnect Dialog. The hyperlink tag must stay the same after translations.",
+    "english": "To view the backup from your last session, <a href='%1'>open a local copy</a>. If you continue to encounter this error, please report it on the <a href='%2'>Developer Forum</a>.",
+    "translation": "前回のセッションからのバックアップを表示するには、 <a href='%1'>ローカルコピーを開く</a>。もし、このエラーが続く場合は、 <a href='%2'>開発者フォーラム</a>に報告してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "AutoReconnectDialog.ConnectionLostUnableToConnect",
     "description": "Auto Reconnect Dialog",
     "english": "Unable to Connect to Server",
@@ -34129,6 +34137,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "RobloxRibbonMainWindow.SelectionImprovementsDescription",
+    "description": null,
+    "english": "Default selection and hover now renders geometric outlines, but you can still toggle between outlines, bounding boxes, and both with this button. Learn more below.",
+    "translation": "デフォルトの選択とホバーは幾何学アウトラインをレンダリングするようになりましたが、このボタンで境界線と境界ボックスの両方のオンとオフを切り替えることができます。 詳しくは以下をごらんください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "RobloxRibbonMainWindow.SelectionRendering",
     "description": null,
     "english": "Selection Style",
@@ -34181,6 +34197,22 @@
     "description": null,
     "english": "Sets selection rendering mode to outlines and bounding boxes",
     "translation": "選択するレンダリングモードを輪郭と境界ボックスに設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.MultilayerWrapFixTitle",
+    "description": null,
+    "english": "Multilayer Wrap Fix",
+    "translation": "重ね着ラップ修正",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.MultilayerWrapFixDescription",
+    "description": null,
+    "english": "Outer layers of multilayer outfits will fit better with less distortion. Single layer outfits will be unaffected. Also faster.",
+    "translation": "重ね着する衣装の外側のレイヤーに歪みが少なくなりフィットしやすくなります。衣装を重ね着せずレイヤーが一枚しかない場合は影響しません。また、速くなります。",
     "isDeprecated": false
   },
   {
@@ -34308,7 +34340,7 @@
     "key": "StartPage.RestrictedExperienceTooltip",
     "description": null,
     "english": "Restricted to age-verified 17+ creators",
-    "translation": "年齢確認済みの17歳以上のクリエイターに制限",
+    "translation": "年齢確認済みの17歳以上のクリエーターに制限",
     "isDeprecated": false
   },
   {
@@ -34748,7 +34780,7 @@
     "key": "General.GameIconModeration",
     "description": null,
     "english": "Image will be reviewed by moderators before being made visible to other users",
-    "translation": "画像は、他のユーザーに表示される前にモデレータによってレビューされます。",
+    "translation": "画像は、他のユーザーに表示される前に内容審査スタッフによってレビューされます。",
     "isDeprecated": false
   },
   {
@@ -34788,7 +34820,7 @@
     "key": "General.ThumbnailsModeration",
     "description": null,
     "english": "Items will be reviewed by moderators before being made visible to other users.",
-    "translation": "アイテムは、他のユーザーに表示される前にモデレータによってレビューされます。",
+    "translation": "アイテムは、他のユーザーに表示される前に内容審査スタッフによってレビューされます。",
     "isDeprecated": false
   },
   {
@@ -35188,7 +35220,7 @@
     "key": "General.ErrorNameModerated",
     "description": null,
     "english": "The name didn't go through our moderation. Please revise it and try again.",
-    "translation": "この名前は規制対象のため承認されませんでした。修正してから、もう一度お試しください。",
+    "translation": "この名前は内容審査で承認されませんでした。修正してから、もう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -35196,7 +35228,7 @@
     "key": "General.ErrorDescModerated",
     "description": null,
     "english": "The description didn't go through our moderation. Please revise it and try again.",
-    "translation": "この名前は規制対象のため承認されませんでした。修正してから、もう一度お試しください。",
+    "translation": "この名前は内容審査で承認されませんでした。修正してから、もう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -36036,7 +36068,7 @@
     "key": "General.WorldPresetsClassic",
     "description": null,
     "english": "Classic",
-    "translation": "典型",
+    "translation": "定番",
     "isDeprecated": false
   },
   {
@@ -36060,7 +36092,7 @@
     "key": "General.WorldPresetsClassicToolTip",
     "description": null,
     "english": "Classic Roblox, heavier gravity, higher jump",
-    "translation": "典型的なRoblox、高い重力、もっと高いジャンプ",
+    "translation": "定番のRoblox、高い重力、もっと高いジャンプ",
     "isDeprecated": false
   },
   {
@@ -37468,7 +37500,7 @@
     "key": "OptInLocations.EmailDialogBody",
     "description": null,
     "english": "Your game will be reviewed by moderators to ensure that your game is compliant with Chinese content regulations. After your game is reviewed, we will send you review feedback.",
-    "translation": "あなたのゲームは、中国のコンテンツ規制を確実に遵守するようにモデレータによってレビューされます。ゲームのレビュー後、レビューフィードバックを送信します。",
+    "translation": "あなたのゲームは、中国のコンテンツ規制を確実に遵守するように内容審査スタッフによってレビューされます。ゲームのレビュー後、レビューフィードバックを送信します。",
     "isDeprecated": false
   },
   {
@@ -37716,7 +37748,7 @@
     "key": "General.ErrorAltTextModerated",
     "description": null,
     "english": "The alt text didn't go through our moderation. Please revise it and try again.",
-    "translation": "代替テキストが規制対象のため承認されませんでした。修正したから、もう一度お試しください。",
+    "translation": "代替テキストが内容審査で承認されませんでした。修正してから、もう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -37957,6 +37989,14 @@
     "description": null,
     "english": "VR",
     "translation": "VR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GameSettings",
+    "key": "VRPrompt.Title",
+    "description": null,
+    "english": "VR Experience Agreement",
+    "translation": "VR体験同意書",
     "isDeprecated": false
   },
   {
@@ -39332,7 +39372,7 @@
     "key": "AssetConfigPreview.Process",
     "description": null,
     "english": "Image will be reviewed by moderators before being made visible to other users",
-    "translation": "画像は、他のユーザーに表示される前にモデレータによってレビューされます。",
+    "translation": "画像は、他のユーザーに表示される前に内容審査スタッフによってレビューされます。",
     "isDeprecated": false
   },
   {
@@ -44164,7 +44204,7 @@
     "key": "AssetConfigAdditionalImages.WillBeReviewed",
     "description": null,
     "english": "Items will be reviewed by moderators before being made visible to other users",
-    "translation": "アイテムは、他のユーザーに表示される前にモデレータによってレビューされます。",
+    "translation": "アイテムは、他のユーザーに表示される前に内容審査スタッフによってレビューされます。",
     "isDeprecated": false
   },
   {
@@ -50619,7 +50659,7 @@
     "namespace": "Studio.Toolbox",
     "key": "AssetTable.DateUpdated",
     "description": null,
-    "english": "Date Updated",
+    "english": "Date Modified",
     "translation": "更新日",
     "isDeprecated": false
   },
@@ -50629,6 +50669,14 @@
     "description": null,
     "english": "This instance has too many descendants. We have hidden the preview for performance.",
     "translation": "このインスタンスは子孫が多すぎます。パフォーマンスのためにプレビューを非表示にしました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.DidYouMean",
+    "description": null,
+    "english": "Did you mean ",
+    "translation": "もしかして ",
     "isDeprecated": false
   },
   {
@@ -50733,6 +50781,14 @@
     "description": null,
     "english": "My Assets",
     "translation": "マイアセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigDeleteLocal.InformationText",
+    "description": null,
+    "english": "We recommend that you delete the local animation data to improve your experience's loading performance. You will always be able to reimport the animation to continue working on it.",
+    "translation": "ローカルアニメーションデータを削除して、仮想空間の読み込みのパフォーマンスを向上させることをおすすめします。いつでもアニメーションを再インポートして作業を続けることができます。",
     "isDeprecated": false
   },
   {
@@ -58860,7 +58916,7 @@
     "key": "Warning.AwaitingModeration",
     "description": null,
     "english": "Awaiting asset moderation.",
-    "translation": "アセットの規制チェック待ちです。",
+    "translation": "アセットの内容審査待ちです。",
     "isDeprecated": false
   },
   {
@@ -60484,7 +60540,7 @@
     "key": "Replace.Title",
     "description": null,
     "english": "Replace",
-    "translation": "置換",
+    "translation": "置き換え",
     "isDeprecated": false
   },
   {
@@ -62468,7 +62524,7 @@
     "key": "AnimationFromVideo.RequiresModeration",
     "description": null,
     "english": "Our moderation team is taking a look – we'll be in touch shortly.",
-    "translation": "当社のモデレーションチームが確認中です。まもなくご連絡いたします。",
+    "translation": "当社のモデレーションチームが確認中です。まもなくご連絡します。",
     "isDeprecated": false
   },
   {
@@ -63732,7 +63788,7 @@
     "key": "Error.NameModerated",
     "description": null,
     "english": "The name didn't go through our moderation. Please revise it and try again.",
-    "translation": "この名前は規制対象のため承認されませんでした。修正してから、もう一度お試しください。",
+    "translation": "この名前は内容審査で承認されませんでした。修正してから、もう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -63740,7 +63796,7 @@
     "key": "Error.DescriptionModerated",
     "description": null,
     "english": "The description didn't go through our moderation. Please revise it and try again.",
-    "translation": "この説明は規制対象のため承認されませんでした。修正してから、もう一度お試しください。",
+    "translation": "この概要（説明文）は内容審査で承認されませんでした。修正してから、もう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -64076,7 +64132,7 @@
     "key": "OptInLocations.EmailDialogBody",
     "description": null,
     "english": "Your game will be reviewed by moderators to ensure that your game is compliant with Chinese content regulations. After your game is reviewed, we will send you review feedback.",
-    "translation": "あなたのゲームは、中国のコンテンツ規制を確実に遵守するようにモデレータによってレビューされます。ゲームのレビュー後、レビューフィードバックを送信します。",
+    "translation": "あなたのゲームは、中国のコンテンツ規制を確実に遵守するように内容審査フタッフによってレビューされます。ゲームのレビュー後、レビューフィードバックを送信します。",
     "isDeprecated": false
   },
   {
@@ -64301,6 +64357,14 @@
     "description": null,
     "english": "VR",
     "translation": "VR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "VRPrompt.Title",
+    "description": null,
+    "english": "VR Experience Agreement",
+    "translation": "VR体験同意書",
     "isDeprecated": false
   },
   {
@@ -65364,7 +65428,7 @@
     "key": "AssetItem.FailedModerationTooltip",
     "description": null,
     "english": " This asset has failed moderation review",
-    "translation": " このアセットは、内容審査のレビューをパスしませんでした",
+    "translation": " このアセットは、内容審査のレビューに通りませんでした",
     "isDeprecated": false
   },
   {
@@ -67316,7 +67380,7 @@
     "key": "AssetPreview.ByUsernameWithContentAttribution",
     "description": "Display the creator of the asset and which universe they created it in",
     "english": "By {username} in {universeName}",
-    "translation": "場所： {universeName} 制作：{username}",
+    "translation": "場所: {universeName} 制作者: {username}",
     "isDeprecated": false
   },
   {
@@ -70172,7 +70236,7 @@
     "key": "HttpError.UploadResultBadIdParse",
     "description": null,
     "english": "Could not upload. Asset name may have been rejected by moderation.",
-    "translation": "アップロードできませんでした。アセット名が内容規制によって却下された可能性があります。",
+    "translation": "アップロードできませんでした。アセット名が内容審査によって却下された可能性があります。",
     "isDeprecated": false
   },
   {
@@ -74204,7 +74268,7 @@
     "key": "Generate.InvalidBounds",
     "description": null,
     "english": "Item is not within the acceptable bounds for moderation. Please scale/position the item till it fits into the blue bounding box.",
-    "translation": "アイテムは内容規制の許容範囲を超えています。青い境界ボックスの中に収まるまで、アイテムを拡大/縮小するか、位置を調整してください。",
+    "translation": "アイテムは内容審査の許容範囲を超えています。青い境界ボックスの中に収まるまで、アイテムを拡大/縮小するか、位置を調整してください。",
     "isDeprecated": false
   },
   {
@@ -75332,7 +75396,7 @@
     "key": "ScriptConversion.TotalScripts",
     "description": null,
     "english": "Found {total} scripts with R6 References.",
-    "translation": "R6 リファレンスつきのスクリプトが {total} 件見つかりました。",
+    "translation": "R6 参照つきのスクリプトが {total} 件見つかりました。",
     "isDeprecated": false
   },
   {
@@ -75708,7 +75772,7 @@
     "key": "ConversionResult.Complete",
     "description": null,
     "english": "{count} references were successfully updated.",
-    "translation": "リファレンス {count} 件をアップデートできました。",
+    "translation": "参照 {count} 件をアップデートできました。",
     "isDeprecated": false
   },
   {
@@ -75716,7 +75780,7 @@
     "key": "ConversionResult.Error",
     "description": null,
     "english": "{count} references were skipped because no replacement rules were set for them.",
-    "translation": "{count} 件のリファレンスは、置換ルールが設定されていないためスキップしました。",
+    "translation": "{count} 件の参照は、置換ルールが設定されていないためスキップしました。",
     "isDeprecated": false
   },
   {
@@ -76548,7 +76612,7 @@
     "key": "Subtitle.NotAvailable",
     "description": "Explain to user to try leaving the game and rejoining as a workaround for the feature not being available.",
     "english": "Please try leaving and rejoining.",
-    "translation": "終了してからもう一度参加してみてください。",
+    "translation": "退出してからもう一度参加してみてください。",
     "isDeprecated": true
   },
   {
