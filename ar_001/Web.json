@@ -4419,7 +4419,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Heading.FinishAccountCreation",
     "description": null,
-    "english": "Finish Creating Your Account",
+    "english": "Create Your Roblox Account",
     "translation": "إنهاء إنشاء حسابك",
     "isDeprecated": false
   },
@@ -4427,7 +4427,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Description.SelectBirthdate",
     "description": null,
-    "english": "Provide your birthday to create your Roblox account. Before linking your child's account, you will have to verify your age with an ID.",
+    "english": "Start by entering your birthday. This helps confirm you're an adult. Later, you'll add parent privileges and link to your child's account. ",
     "translation": "قم بتوفير عيد ميلادك لإنشاء حساب Roblox الخاص بك. قبل ربط حساب طفلك، يجب عليك التحقق من عمرك مع رقم التعريف.",
     "isDeprecated": false
   },
@@ -4437,6 +4437,14 @@
     "description": null,
     "english": "You can sign into your account anytime with your email address.",
     "translation": "يمكنك تسجيل الدخول إلى حسابك في أي وقت باستخدام عنوان بريدك الإلكتروني.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Header.ConfirmSignUp",
+    "description": null,
+    "english": "Confirm Sign Up",
+    "translation": "تأكيد التسجيل",
     "isDeprecated": false
   },
   {
@@ -14553,10 +14561,234 @@
   },
   {
     "namespace": "Feature.CashOut",
+    "key": "Description.BaseRejectionMessage",
+    "description": null,
+    "english": "Please visit the DevEx FAQ for more information regarding your Declined request. If you have any questions, please write in at",
+    "translation": "يرجى زيارة الأسئلة الشائعة حول DevEx للحصول على مزيد من المعلومات حول طلبك المرفوض. إذا كان لديك أي أسئلة، يرجى مراسلتنا على",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessageThankYou",
+    "description": null,
+    "english": "Thank you for participating in the DevEx program!",
+    "translation": "شكرًا لك على المشاركة في برنامج DevEx!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNotEligible",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Not Eligible.",
+    "translation": "لن نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: غير مؤهّل.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInvalidPayPalnformation",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Invalid PayPal information. The PayPal information you provided was invalid and the payment wasn't able to be processed and your DevEx request was declined. Please update your PayPal information for your next DevEx request.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: معلومات PayPal غير صالحة. لأن معلومات PayPal التي قدمتها غير صالحة، لم نتمكن من استقبال الدفعة وبالتالي تم رفض طلبك في DevEx. الرجاء تحديث معلوماتك في PayPal لطلب DevEx القادم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUserRequest",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: User Request.",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: طلب المستخدم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitTaxForm",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Tax Form. Please submit a valid Tax Form to the DevEx Portal.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: عدم تقديم نموذج الضريبة. يرجى تحميل نموذج ضريبة صالح إلى مركز DevEex.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionTechnicalIssue",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Technical Issue. We are looking into resolving the issue.",
+    "translation": "لم يتم معالجة طلبك في Developer Exchange للسبب التالي: عطل فنيّ. سوف نبحث عن حل للمشكلة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalRegistrationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Portal Registration Incomplete. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: لم تكتمل معلومات التسجيل في \n DevEx Portal. يرجى مراجعة الأسئلة الشائعة حول DevEx للمزيد من المعلومات.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInsufficientEarnedRobux",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Earned Robux.",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: لم تكتسب Robux كفاية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIneligibleFunds",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Funds. Your earnings aren't valid for DevEx and we are unable to accept your DevEx request at the amount you have submitted.",
+    "translation": "لم تتم معالجة طلبك في Developer Exchange للسبب التالي: الأموال غير كافية. أرباحك غير صالحة في DevEx ونحن غير قادرين على قبول طلبك في DevEx بالمبلغ الذي تقدمت به.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUnableToReviewGameAssociatedToEarnings",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Unable to Review Game Associated to Earnings. We were unable to confirm the eligibility of your game because we weren't able to review the games(s) associated to your earnings.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: غير قادرين على مراجعة اللعبة المرتبطة بالمدخول. لم نتمكن من تأكيد أهلية لعبتك لأننا لم نتمكن من مراجعة الألعاب المرتبطة بمدخولك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAccountOwnershipConcern",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Account Ownership Concern. ",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: مخاوف تتعلق بملكية الحساب. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNameDiscrepancy",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Name Discrepancy. We noticed that the name of your current DevEx request differs from the initial DevEx request and/or name listed on your DevEx Portal.",
+    "translation": "لم تتم معالجة طلبك في Developer Exchange للسبب التالي: اختلافات في الاسم. لاحظنا أن اسم طلب DevEx الحالي يختلف عن طلب DevEx الأول و/أو الاسم المدرج على DevEx Portal.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionSubmitDevExWithFullLegalName",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Submit DevEx with full legal name. ",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: يتعين عليك إرسال اسمك القانوني كاملاً. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.IdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: التحقق من الهوية غير مكتمل. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: التحقق غير مكتمل. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionEmailOnDevexRequestAlreadyInUse",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Email Provided on Devex Request is Already in Use. We are unable to send you a DevEx portal invitation to the email listed on your DevEx request because it is already in use.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: البريد الإلكتروني المستخدم في طلبك على Devex تم استخدامه مسبقًا. لم نتمكن من إرسال دعوة لك إلى DevEx عبر البريد الإلكتروني الذي أدخلته في طلبك لأنه قيد الاستخدام.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCertificateOfNonUSActivitiesIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Certificate of Non-US Activities Incomplete. We noticed that you did not complete the Certificate of No US activities in the Tax Form section on the DevEx portal.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: شهادة الأنشطة غير الأمريكية غير مكتملة. لاحظنا أنك لم تكمل شهادة النشاطات خارج الولايات المتحدة في قسم استمارة الضرائب في DevEx Portal.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitPaymentMethod",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Payment Method. A Payment Method must be submitted in order to approve your DevEx Request.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: تخلّفت عن تقديم طريقة للدفع. لا بد من تعيين طريقة للدفع من أجل الموافقة على طلبك في DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionRequiredDevExPortalDocumentsNotSubmitted",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Required DevEx portal documents not submitted.",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: تخلفتَ عن تقديم الأوراق المطلوبة لطلب DecEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalBlocked",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx portal is blocked. Your DevEx portal account is locked for a compliance issue.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: تم حظر DevEx Portal. حسابك في DevEx Portal مقفل بسبب عدم الامتثال للمعايير.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.AboveMaximumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: تجاوزت الحدّ الأقصى المحدّد لطريقة الدفع. لا يمكننا معالجة طلبك الحالي في DevEx لأن موفر الخدمة حدّد الحد الأقصى للدفع. وقد تم رفض طلبك الحالي لهذا السبب.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.BelowMinimumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: لم تصل للحدّ الأدنى المحدّد لطريقة الدفع. لا يمكننا معالجة طلبك الحالي في DevEx لأن موفر الخدمة حدّد الحد الأدنى للدفع. وقد تم رفض طلبك الحالي لهذا السبب.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAbovePaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: تجاوزت الحدّ الأقصى المحدّد لطريقة الدفع. لا يمكننا معالجة طلبك الحالي في DevEx لأن موفر الخدمة حدّد الحد الأقصى للدفع. وقد تم رفض طلبك الحالي لهذا السبب.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionBelowPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: لم تصل للحدّ الأدنى المحدّد لطريقة الدفع. لا يمكننا معالجة طلبك الحالي في DevEx لأن موفر الخدمة حدّد الحد الأدنى للدفع. وقد تم رفض طلبك الحالي لهذا السبب.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCountryNotSupported",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Country Not Supported.",
+    "translation": "لم نتمكن من معالجة طلبك في Developer Exchange للسبب التالي: البلد غير مدعوم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToCompleteTipaltiRegistration",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to complete Tipalti registration. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: لم تكمل معلومات التسجيل في \n Tipalti. يرجى مراجعة الأسئلة الشائعة حول DevEx للمزيد من المعلومات.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
     "key": "Label.Hello",
     "description": null,
     "english": "Hello",
     "translation": "مرحبًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPaymentRejected",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Payment Rejected. We could not process your DevEx payment at this time due to incorrect banking information entered. Please login to your DevEx portal to verify that your banking information is correct.",
+    "translation": "تعذرت معالجة طلبك في Developer Exchange للسبب التالي: تم رفض الدفعة في DevEx. لم نتمكن من معالجة دفعتك في DevEx في هذا الوقت لأنك أدخلت معلومات مصرفية غير صحيحة. الرجاء تسجيل الدخول إلىDevEx Portal للتحقق من صحة معلوماتك المصرفية.",
     "isDeprecated": false
   },
   {
@@ -16614,6 +16846,750 @@
     "english": "Recently Created",
     "translation": "تم إنشاؤها مؤخرا",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ResaleFeePolicy",
+    "description": "Title text appearing above a message stating the Roblox Resale Fee Policy when selling an item.",
+    "english": "Resale Fee Policy",
+    "translation": "سياسة رسوم إعادة البيع",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ResaleFeePolicy",
+    "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
+    "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
+    "translation": "يتم تقاسم الإيرادات المتأتية من جميع معاملات \"المتجر\"، بما في ذلك عمليات إعادة البيع، بين Roblox والمستخدمين المشاركين في عملية البيع. عندما تجري معاملة إعادة بيع ويوافق المشتري على سعرك المعروض، فإن {yourSharePercent}% من Robux التي يدفعها المشتري تذهب إليك بصفتك الموزع. و {robloxFeePercent}% الباقية تذهب إلى Roblox ومستخدمين آخرين بما في ذلك مصمم العنصر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwned",
+    "description": null,
+    "english": "Item Owned",
+    "translation": "عنصر مملوك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.GotIt",
+    "description": null,
+    "english": "Got It",
+    "translation": "حسنًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCount",
+    "description": "Owned Itemss (3)",
+    "english": "Owned Items ({itemCount})",
+    "translation": "العناصر المملوكة ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BuyPrice",
+    "description": "The label in front of the price to buy an item",
+    "english": "Buy Price:",
+    "translation": "سعر الشراء:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Holding",
+    "description": null,
+    "english": "Holding",
+    "translation": "معلّق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.OffSale",
+    "description": null,
+    "english": "Off Sale",
+    "translation": "ليس للبيع",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemInAHold",
+    "description": null,
+    "english": "Item in a hold?",
+    "translation": "عنصر معلّق؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.HoldingPolicy",
+    "description": null,
+    "english": "Holding Policy",
+    "translation": "سياسة الاحتجاز",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicy",
+    "description": "Deprecated",
+    "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
+    "translation": "بعد الشراء، تصير المبيعات الأصلية معلقة لمدة تصل إلى 30 يومًا. لا يمكن إعادة بيع العنصر إلا بعد انتهاء فترة الانتظار هذه وسوف يكون لإعادة البيع مهلة تعليق تصل إلى 7 أيام. يمكن لمستخدمي Premium فقط إعادة بيع العناصر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.OffSaleItem",
+    "description": null,
+    "english": "Off Sale Item",
+    "translation": "عنصر ليس للبيع",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Genres",
+    "description": null,
+    "english": "Genres",
+    "translation": "النوع",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tags",
+    "description": null,
+    "english": "Tags",
+    "translation": "تاغ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Updated",
+    "description": null,
+    "english": "Updated",
+    "translation": "محدّث",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "الوصف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ReadMore",
+    "description": null,
+    "english": "Read More",
+    "translation": "قراءة المزيد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.BuyNow",
+    "description": null,
+    "english": "Buy Now",
+    "translation": "شراء الآن",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance after this transaction will be {remainingBalance}.",
+    "translation": "سيصير رصيدك بعد هذه المعاملة {remainingBalance}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ItemInInventory",
+    "description": null,
+    "english": "This item is available in your inventory.",
+    "translation": "هذا العنصر متوفر في مقتنياتك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BestPrice",
+    "description": null,
+    "english": "Best Price",
+    "translation": "أفضل سعر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMoreReseller",
+    "description": null,
+    "english": "See More {linkStart}{resellerLink}{linkEnd}",
+    "translation": "معاينة المزيد {linkStart}{resellerLink}{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.Wear",
+    "description": null,
+    "english": "Wear",
+    "translation": "ارتداء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.BundlePurchase",
+    "description": "Would you like to buy the \"Penguin\" from Roblox for (Robux Icon) 50?",
+    "english": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "translation": "هل تريد شراء \"{bundleName}\" من {sellerName} بسعر {price}؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetPurchase",
+    "description": "Would you like to buy the hat \"Cowboy Hat\" from Roblox for (Robux Icon) 10?",
+    "english": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "هل تريد شراء {itemType} \"{itemName}\" من {sellerName} بسعر {price}؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetGet",
+    "description": "Would you like to get the Hat \"Bowler Hat\" from Roblox for Free?",
+    "english": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "هل تريد الحصول على {itemType} \"{itemName}\" من {sellerName} بسعر {price}؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Accessory",
+    "description": null,
+    "english": "Accessory",
+    "translation": "إكسسوار",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.LeftArm",
+    "description": null,
+    "english": "Left Arm",
+    "translation": "اليد اليسرى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.LeftLeg",
+    "description": null,
+    "english": "Left Leg",
+    "translation": "الرجل اليسرى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RightArm",
+    "description": null,
+    "english": "RightArm",
+    "translation": "اليد اليمنى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RightLeg",
+    "description": null,
+    "english": "Right Leg",
+    "translation": "الرجل اليمنى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClassicShirt",
+    "description": null,
+    "english": "Classic Shirt",
+    "translation": "قميص كلاسيكي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClassicTShirt",
+    "description": null,
+    "english": "Classic T-Shirt",
+    "translation": "تي شيرت كلاسيكية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Torso",
+    "description": null,
+    "english": "Torso",
+    "translation": "الجزء العلوي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClimbAnimation",
+    "description": null,
+    "english": "Climb Animation",
+    "translation": "حركة تسلق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.DeathAnimation",
+    "description": null,
+    "english": "Death Animation",
+    "translation": "تقليد الميّت",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.FallAnimation",
+    "description": null,
+    "english": "Fall Animation",
+    "translation": "حركة سقوط",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.IdleAnimation",
+    "description": null,
+    "english": "Idle Animation",
+    "translation": "هيئة الخمول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RunAnimation",
+    "description": null,
+    "english": "Run Animation",
+    "translation": "حركة الركض",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.JumpAnimation",
+    "description": null,
+    "english": "Jump Animation",
+    "translation": "حركة القفز",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SwimAnimation",
+    "description": null,
+    "english": "Swim Animation",
+    "translation": "حركة سباحة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.WalkAnimation",
+    "description": null,
+    "english": "Walk Animation",
+    "translation": "حركة المشي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PoseAnimation",
+    "description": null,
+    "english": "Pose Animation",
+    "translation": "هيئة الجمود",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.EmoteAnimation",
+    "description": null,
+    "english": "Emote Animation",
+    "translation": "حركة emote",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Hat",
+    "description": null,
+    "english": "Hat",
+    "translation": "قبعة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HairAccessory",
+    "description": null,
+    "english": "Hair Accessory",
+    "translation": "إكسسوار للشعر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.FaceAccessory",
+    "description": null,
+    "english": "Face Accessory",
+    "translation": "إكسسوار للوجه",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.NeckAccessory",
+    "description": null,
+    "english": "Neck Accessory",
+    "translation": "إكسسوار للرقبة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ShoulderAccessory",
+    "description": null,
+    "english": "Shoulder Accessory",
+    "translation": "إكسسوار للكتف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.FrontAccessory",
+    "description": null,
+    "english": "Front Accessory",
+    "translation": "إكسسوار للأمام",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BackAccessory",
+    "description": null,
+    "english": "Back Accessory",
+    "translation": "إكسسوار للجهة الخلفية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.WaistAccessory",
+    "description": null,
+    "english": "Waist Accessory",
+    "translation": "إكسسوار للخصر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Skirt",
+    "description": null,
+    "english": "Skirt",
+    "translation": "تنورة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Jacket",
+    "description": null,
+    "english": "Jacket",
+    "translation": "جاكيت",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.LeftShoe",
+    "description": null,
+    "english": "Left Shoe",
+    "translation": "الحذاء الأيسر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RightShoe",
+    "description": null,
+    "english": "Right Shoe",
+    "translation": "الحذاء الأيمن",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Shirt",
+    "description": null,
+    "english": "Shirt",
+    "translation": "قميص",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Sweater",
+    "description": null,
+    "english": "Sweater",
+    "translation": "سترة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MoodAnimation",
+    "description": null,
+    "english": "Mood Animation",
+    "translation": "حركة مزاج",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.DynamicHead",
+    "description": null,
+    "english": "Dynamic Head",
+    "translation": "رأس متحرك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumberDisplay",
+    "description": "i.e. #32",
+    "english": "#{serialNumber}",
+    "translation": "#{serialNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCountSingular",
+    "description": "Owned Item (1)",
+    "english": "Owned Item ({itemCount})",
+    "translation": "العناصر المملوكة ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Fee",
+    "description": "30% Fee:",
+    "english": "{feePercentage}% Fee:",
+    "translation": "{feePercentage}% رسوم:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ShowLess",
+    "description": null,
+    "english": "Show Less",
+    "translation": "عرض أقل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TakeOffResaleConfirmation",
+    "description": null,
+    "english": "Are you sure you want to stop offering this item for resale?",
+    "translation": "هل أنت متأكد من أنك تريد التوقف عن تقديم هذا العنصر لإعادة البيع؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SalePrice",
+    "description": null,
+    "english": "Sale Price:",
+    "translation": "سعر المبيع:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Marketplace",
+    "description": "A heading for the marketplace page where you can buy items to customize your avatar",
+    "english": "Marketplace",
+    "translation": "المتجر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Yes",
+    "description": null,
+    "english": "Yes",
+    "translation": "نعم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.No",
+    "description": null,
+    "english": "No",
+    "translation": "لا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradeable",
+    "description": null,
+    "english": "Tradeable",
+    "translation": "قابل للتبادل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.LimitedUHoldingPolicy",
+    "description": "Not currently used",
+    "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
+    "translation": "بعد الشراء، تصير المبيعات الأصلية معلقة لمدة تصل إلى 30 يومًا. لا يمكن إعادة بيع العنصر إلا بعد انتهاء فترة الانتظار هذه وسوف يكون لإعادة البيع مهلة تعليق تصل إلى 7 أيام. يمكن لمستخدمي Premium فقط إعادة بيع العناصر.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradable",
+    "description": null,
+    "english": "Tradable",
+    "translation": "قابلة للتبادل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMore",
+    "description": null,
+    "english": "See More",
+    "translation": "عرض المزيد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "فترة التعليق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "متاح في التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "البيع الأصلي لهذا العنصر متاح فقط داخل التجربة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "البيع الأصلي لهذا العنصر متاح فقط داخل التجربة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLeft",
+    "description": null,
+    "english": "Quantity Left: {remaining}/{total}",
+    "translation": "الكمية المتبقية: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "عذرًا. لقد وضع المصمم حدًّا لعدد النسخ التي يمكن لمستخدم واحد شراؤها.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "إعادة البيع يتطّلب الاشتراك في Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "هذا العنصر لا يتطلب فترة تعليق. يمكنك إعادة بيعه بمجرد شرائه. يمكن لمستخدمي Premium فقط إعادة بيع العناصر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "عذرًا. لقد وضع المصمم حدًّا لعدد النسخ التي يمكن لمستخدم واحد شراؤها.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "الحد الأقصى لكل مستخدم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Creator Limit Reached",
+    "translation": "وصول المصمم للحد الأقصى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Resellable",
+    "description": "Label for whether the item is resellable",
+    "english": "Resellable",
+    "translation": "قابل للبيع",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.SoldOut",
+    "description": null,
+    "english": "This item is sold out.",
+    "translation": "تم بيع هذا العنصر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotResell",
+    "description": null,
+    "english": "This item cannot be resold to others.",
+    "translation": "لا يمكن إعادة بيع هذا العنصر لأحد.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GetItFrom",
+    "description": null,
+    "english": "Get It From",
+    "translation": "احصل عليه من",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ResellingDisabled",
+    "description": null,
+    "english": "This item cannot be sold to others. Reselling option has been disabled by the creator.",
+    "translation": "لا يمكن بيع هذا العنصر للآخرين. عطل المصمم خيار إعادة البيع.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldIn",
+    "description": "Label for in experiences in which an item in sold",
+    "english": "Sold In",
+    "translation": "يباع في",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "مباع بالكامل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "بعد الشراء، تصير المبيعات الأصلية معلقة لمدة تصل إلى {purchaseDays} (يوم). لا يمكن إعادة بيع العنصر إلا بعد انتهاء فترة الانتظار هذه وسوف يكون لإعادة البيع مهلة تعليق تصل إلى {resaleDays} (يوم). يمكن لمستخدمي Premium فقط إعادة بيع العناصر.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "عمليات الشراء من إعادة البيع تصير معلقة لمدة {days} (يوم). يمكن إعادة بيع العنصر فقط بعد انتهاء فترة التعليق. يمكن لمستخدمي Premium فقط إعادة بيع العناصر.",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Chat",
@@ -29293,6 +30269,46 @@
     "description": null,
     "english": "Without a Contact Method, you may lose access to game progress, items, and Robux if your account is lost.",
     "translation": "بدون طريقة اتصال، قد تفقد الوصول إلى تقدم اللعبة، العناصر، و Robux إذا فقدت حسابك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.VerifyPhoneForMoreFeatures",
+    "description": null,
+    "english": "Verify Phone Number for More Features",
+    "translation": "تحقق من رقم الهاتف للمزيد من الميزات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.ProtectYourAccount",
+    "description": null,
+    "english": "Protect Your Account",
+    "translation": "حماية حسابك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.UnlockMoreFeatures",
+    "description": null,
+    "english": "Unlock More Features",
+    "translation": "إتاحة ميزات إضافية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.HelpFriendsFindYou",
+    "description": "to be shown at the top of a banner to ask users to add their phone number",
+    "english": "Help Your Friends Find You",
+    "translation": "ساعد أصدقائك في العثور عليك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.HelpFriendsConnectWithYou",
+    "description": null,
+    "english": "Add your phone number to help your friends connect with you.",
+    "translation": "أضف رقم هاتفك لمساعدة أصدقائك على التواصل معك.",
     "isDeprecated": false
   },
   {
@@ -61576,6 +62592,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.CodeSent",
+    "description": "Button text",
+    "english": "Code Sent",
+    "translation": "تم إرسال الكود",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ResendCode",
+    "description": null,
+    "english": "Resend Code",
+    "translation": "إعادة إرسال الكود",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.Password",
+    "description": null,
+    "english": "Password",
+    "translation": "كلمة المرور",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "رمز لمرة واحدة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourOtpCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "الكود السداسي",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.CDRedirection",
     "key": "Message.CDRedirectionMessage",
     "description": null,
@@ -62976,6 +64032,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.Title",
+    "description": "Modal title",
+    "english": "Age Verification Required",
+    "translation": "التحقق من العمر إالزامي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.ContentText",
+    "description": "Text shown in modal directing user to complete the age verification process in Account Info in order to access this experience.",
+    "english": "Verify your age to access this experience.\n\n1. Go to Account Info > Verify My Age\n2. Complete the verification process\n",
+    "translation": "تحقق من عمرك لفتح هذه التجربة.\n\n1. اذهب إلى معلومات الحساب > تحقق من عمري\n2. أكمل عملية التحقق\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.Cancel",
+    "description": "Cancel button text",
+    "english": "Cancel",
+    "translation": "إلغاء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.Settings",
+    "description": "Button text for the Call to Action button that takes the user to Account Settings to verify their age",
+    "english": "Verify My Age",
+    "translation": "تحقق من عمرك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.AccountInfo",
+    "description": "Text for button taking user to the 'Account Info' page to verify their age.",
+    "english": "Verify My Age",
+    "translation": "تحقق من عمرك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.ContentTextWeb",
+    "description": "Instructions text shown in modal",
+    "english": "Please verify your age to access this experience.{lineBreak}{lineBreak}1. Go to Account Info in Settings{lineBreak}2. Choose Verify My Age{lineBreak}3. Complete the process",
+    "translation": "الرجاء التحقق من عمرك لتتمكن من فتح هذه التجربة.{lineBreak}{lineBreak}1. انتقل إلى \"معلومات الحساب\" في الإعدادات{lineBreak}2. اختر \"تحقق من عمري\"{lineBreak}3. أكمل عملية التحقق",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountSwitch",
     "key": "Action.SwitchAccount",
     "description": "Menu button to launch account switching flow.",
@@ -63035,7 +64139,7 @@
     "namespace": "Authentication.AccountSwitch",
     "key": "Description.AccountLimit",
     "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
-    "english": "You have reached account limit. You must log out of at least one account to add new account.",
+    "english": "You've reached the maximum of account switcher. To add another account, please log out of one of your existing accounts.",
     "translation": "لقد وصلت إلى حد الأقصى للحسابات المسجلة. سجّل الخروج من حساب واحد على الأقل لإضافة حساب جديد.",
     "isDeprecated": false
   },
@@ -63077,6 +64181,14 @@
     "description": "Button on switcher modal to start add account flow.",
     "english": "Add",
     "translation": "إضافة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "تسجيل الخروج من جميع الحسابات",
     "isDeprecated": false
   },
   {
@@ -63181,6 +64293,14 @@
     "description": "We will fill in {universeId}",
     "english": "Memory Stores Alert Triggered for {universeId}!",
     "translation": "تنبيه يتعلق بتخزين الذاكرة لـ {universeId}!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.Ok",
+    "description": "generic confirmation text to dismiss modal on error",
+    "english": "OK",
+    "translation": "حسناً",
     "isDeprecated": false
   }
 ]

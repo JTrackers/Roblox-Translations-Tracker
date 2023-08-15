@@ -4435,7 +4435,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Heading.FinishAccountCreation",
     "description": null,
-    "english": "Finish Creating Your Account",
+    "english": "Create Your Roblox Account",
     "translation": "Schließe deine Kontoerstellung ab",
     "isDeprecated": false
   },
@@ -4443,7 +4443,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Description.SelectBirthdate",
     "description": null,
-    "english": "Provide your birthday to create your Roblox account. Before linking your child's account, you will have to verify your age with an ID.",
+    "english": "Start by entering your birthday. This helps confirm you're an adult. Later, you'll add parent privileges and link to your child's account. ",
     "translation": "Gib deinen Geburtstag an, um dein Roblox-Konto zu erstellen. Bevor du das Konto deines Kindes verknüpfen kannst, musst du dein Alter mit deinem Ausweis bestätigen.",
     "isDeprecated": false
   },
@@ -4453,6 +4453,14 @@
     "description": null,
     "english": "You can sign into your account anytime with your email address.",
     "translation": "Du kannst dich jederzeit mit deiner E-Mail-Adresse bei deinem Konto anmelden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Header.ConfirmSignUp",
+    "description": null,
+    "english": "Confirm Sign Up",
+    "translation": "Registrierung bestätigen",
     "isDeprecated": false
   },
   {
@@ -16930,7 +16938,7 @@
   {
     "namespace": "Feature.Catalog",
     "key": "Message.HoldingPolicy",
-    "description": null,
+    "description": "Deprecated",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
     "translation": "Nach dem ursprünglichen Kauf wird eine Haltezeit von bis zu 30 Tagen festgelegt. Das Item kann erst nach Ablauf dieser Haltezeit wieder verkauft werden, wobei der Weiterverkauf eine Haltezeit von bis zu 7 Tagen hat. Nur Premium-Nutzer:innen können Items weiterverkaufen.",
     "isDeprecated": false
@@ -61472,6 +61480,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCompleteSubject",
+    "description": "subject line of inbox message sent when trade is completed.",
+    "english": "Trade with {username} completed!",
+    "translation": "Handel mit {username} abgeschlossen!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCompleteMessage",
+    "description": "content of inbox message when trade is completed.",
+    "english": "Your Trade is complete. Go to the <a href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "Dein Handel ist abgeschlossen. Gehe auf die <a href=\"/trades\">Handelsseite</a>, um deinen Handel zu überprüfen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeRejectedSubject",
+    "description": "subject line of inbox message when trade is rejected by system.",
+    "english": "Trade with {username} could not be completed.",
+    "translation": "Der Handel mit {username} konnte nicht abgeschlossen werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeRejectedMessage",
+    "description": "the content of inbox message when trade is rejected.",
+    "english": "Your Trade was not able to be completed. This can happen if one of the items is no longer tradeable. You may want to try sending your request again. Go to the <a href=\"/transactions\">My Transactions page</a> to review your trades.",
+    "translation": "Dein Handel konnte nicht abgeschlossen werden. Dies kann passieren, wenn einer der Gegenstände nicht mehr handelbar ist. Du kannst versuchen, deine Anfrage erneut zu senden. Gehe auf die Seite <a href=\"/transactions\">Meine Transaktionen</a>, um deinen Handel zu überprüfen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedSubject",
+    "description": "subject line of inbox message when the trade is declined by another user.",
+    "english": "Your trade with {username} was declined.",
+    "translation": "Dein Handel mit {username} wurde abgelehnt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedMessage",
+    "description": "the content of inbox message when trade is declined by another user.",
+    "english": "Trade declined. If you wish to review this trade, go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> and select \"Inactive\".",
+    "translation": "Handel abgelehnt. Gehe auf die <a class=\"text-link\" href=\"/trades\">Handelsseite</a> und wähle \"Inaktiv\" aus, wenn du diesen Handel überprüfen möchtest.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeIncomingSubject",
+    "description": "subject line of inbox message when trade request is sent by another user.",
+    "english": "Your have a Trade request from {username}.",
+    "translation": "Du hast eine Handelsanfrage von {username}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCounteredSubject",
+    "description": "subject line of inbox message when another user sent a counter offer.",
+    "english": "{username} has countered your Trade.",
+    "translation": "{username} hat eine Gegenanfrage für dich.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCounteredMessage",
+    "description": "the content of inbox message when received counter request from another user.",
+    "english": "You received a counter request! Go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "Du hast eine Gegenanfrage erhalten! Gehe auf die <a class=\"text-link\" href=\"/trades\">Handelsseite</a>, um deinen Handel zu überprüfen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeIncomingMessage",
+    "description": "the content of inbox message when received trade request from another user.",
+    "english": "You have a new trade! Go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "Du hast einen neuen Handel! Gehe auf die <a class=\"text-link\" href=\"/trades\">Handelsseite</a>, um deinen Handel zu überprüfen.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DisplayName",
     "key": "Label.ConfigureDN",
     "description": null,
@@ -63525,6 +63613,14 @@
     "description": null,
     "english": "Delete",
     "translation": "Löschen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ViewAnalytics",
+    "description": null,
+    "english": "View Analytics",
+    "translation": "Analyse anzeigen",
     "isDeprecated": false
   },
   {
@@ -69968,6 +70064,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource",
+    "description": "title for filter picker for log type (client or server or both)",
+    "english": "Type",
+    "translation": "Typ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.All",
+    "description": "option in log type picker (client or server or all)",
+    "english": "All",
+    "translation": "Alle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.Client",
+    "description": "option in log type picker (client or server or all)",
+    "english": "Client",
+    "translation": "Client",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.Server",
+    "description": "option in log type picker (client or server or all)",
+    "english": "Server",
+    "translation": "Server",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -73421,6 +73549,22 @@
     "description": null,
     "english": "Resellable",
     "translation": "Weiterverkaufbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Body",
+    "description": null,
+    "english": "Body",
+    "translation": "Körper",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.DynamicHead",
+    "description": null,
+    "english": "Dynamic Head",
+    "translation": "Dynamischer Kopf",
     "isDeprecated": false
   },
   {
@@ -82584,6 +82728,14 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.Save",
+    "description": "Button that a user will click on to save a suggested translation",
+    "english": "Save",
+    "translation": "Speichern",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -84011,15 +84163,15 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.AnalyticsSummary",
     "description": null,
-    "english": "Analytics Summary",
-    "translation": "Analytische Zusammenfassung",
+    "english": "Analytics Overview",
+    "translation": "Analyseübersicht",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Home",
     "key": "Label.Last7Days",
     "description": null,
-    "english": "Last 7 Days",
+    "english": "7 Day Avg.",
     "translation": "Letzte 7 Tage",
     "isDeprecated": false
   },
@@ -84037,7 +84189,7 @@
     "description": null,
     "english": "Playtime (Hours)",
     "translation": "Spielzeit (Stunden)",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.Home",
@@ -84045,7 +84197,7 @@
     "description": null,
     "english": "Revenue (Robux)",
     "translation": "Einnahmen (Robux)",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.Home",
@@ -84989,6 +85141,30 @@
     "description": null,
     "english": "Our platform provides you with unparalleled opportunities to create.",
     "translation": "Unsere Plattform bietet dir unvergleichliche Möglichkeiten zu erstellen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Create.PlaytimeMinutesSymbol",
+    "description": null,
+    "english": "min",
+    "translation": "Min.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Label.PlaytimeMinutesSymbol",
+    "description": null,
+    "english": "min",
+    "translation": "Min.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Label.DailyRevenue",
+    "description": null,
+    "english": "Daily Revenue",
+    "translation": "Tägliche Einnahmen",
     "isDeprecated": false
   },
   {
@@ -88277,6 +88453,46 @@
     "description": null,
     "english": "Please try again.",
     "translation": "Bitte versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.CodeSent",
+    "description": "Button text",
+    "english": "Code Sent",
+    "translation": "Code gesendet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ResendCode",
+    "description": null,
+    "english": "Resend Code",
+    "translation": "Code erneut senden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.Password",
+    "description": null,
+    "english": "Password",
+    "translation": "Passwort",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "Einmaliger Code",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourOtpCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "6-Stelliger Code",
     "isDeprecated": false
   },
   {
@@ -107403,7 +107619,7 @@
     "namespace": "Authentication.AccountSwitch",
     "key": "Description.AccountLimit",
     "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
-    "english": "You have reached account limit. You must log out of at least one account to add new account.",
+    "english": "You've reached the maximum of account switcher. To add another account, please log out of one of your existing accounts.",
     "translation": "Du hast das Kontolimit erreicht. Du musst dich erst von mindestens einem Konto abmelden, bevor du ein neues Konto hinzufügen kannst.",
     "isDeprecated": false
   },
@@ -107437,6 +107653,14 @@
     "description": "Button on account limit reached modal to logout.",
     "english": "Log Me Out",
     "translation": "Abmelden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "Von allen Konten abmelden",
     "isDeprecated": false
   },
   {
@@ -107536,6 +107760,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreEmailSubject",
+    "description": "We will fill in {universeId}",
+    "english": "Memory Stores Alert Triggered for {universeId}!",
+    "translation": "Speicherplatz-Benachrichtigung ausgelöst für {universeId}!",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DynamicUI",
     "key": "Translations.Deprecated1",
     "description": null,
@@ -107580,7 +107812,7 @@
     "key": "Translation.Reporting.ProfileReportHeading",
     "description": null,
     "english": "Report This Profile",
-    "translation": "Profil melden",
+    "translation": "Dieses Profil melden",
     "isDeprecated": false
   },
   {
@@ -107596,7 +107828,7 @@
     "key": "Translation.Reporting.Dating",
     "description": null,
     "english": "Dating or sexual related",
-    "translation": "Dating oder sexueller Inhalt",
+    "translation": "Dating oder sexuell",
     "isDeprecated": false
   },
   {
@@ -107745,11 +107977,123 @@
   },
   {
     "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SaidOrDid",
+    "description": "For reporting someone for something they said or did that was bad.",
+    "english": "Something they said or did",
+    "translation": "Etwas, was die Person gesagt oder getan hat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SaidOrDidQuestion",
+    "description": null,
+    "english": "Can you tell us what this person said or did?",
+    "translation": "Kannst du uns erzählen, was diese Person gesagt oder getan hat?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SomethingRomantic",
+    "description": "When reporting someone for saying or doing something sexual, this person was doing \"something romantic\"",
+    "english": "Something romantic",
+    "translation": "Etwas Romantisches",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedToMeetOutside",
+    "description": "For reporting someone for asking to meet outside of Roblox.",
+    "english": "Asked to meet outside Roblox (like Discord, Snap, Instagram, TikTok or other social media)",
+    "translation": "Sie hat mich gebeten, mich außerhalb von Roblox mit ihr zu treffen (z. B. Discord, Snap, Instagram, TikTok oder andere soziale Netzwerke)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedForPII",
+    "description": "When reporting someone for asking for personal information.",
+    "english": "Asked for personal information (like an address, age, or phone number)",
+    "translation": "Sie hat nach persönlichen Informationen gefragt (z. B. Adresse, Alter oder Telefonnummer)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedToMeetInPerson",
+    "description": "For reporting someone for asking to meet in person",
+    "english": "Asked to meet in person",
+    "translation": "Sie hat mich gebeten, mich persönlich mit ihr zu treffen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedForPhotos",
+    "description": "For reporting someone for asking for real photos of another person.",
+    "english": "Asked for real photos",
+    "translation": "Sie hat nach echten Fotos gefragt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.HurtMyself",
+    "description": "For reporting someone for asking to hurt myself.",
+    "english": "Said I should hurt myself",
+    "translation": "Sie hat gesagt, ich soll mir etwas antun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.HurtThemself",
+    "description": "For reporting someone who said they would hurt themself",
+    "english": "Said they would hurt themself",
+    "translation": "Sie hat gesagt, sie würde sich selbst etwas antun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AccountInformation",
+    "description": "For reporting someone who asked or gave out account information.",
+    "english": "Asked or gave account information (like password)",
+    "translation": "Sie hat nach Kontoinformationen gefragt, oder diese übermittelt (z. B. Passwort)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.AskedForPersonalInformation",
     "description": null,
     "english": "[deprecated]",
     "translation": "[deprecated]",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Username",
+    "description": null,
+    "english": "Username or displayname",
+    "translation": "Benutzername oder angezeigter Name",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AvatarClothing",
+    "description": "An in-game avatar clothing or accessory",
+    "english": "Avatar clothing or accessory",
+    "translation": "Avatar-Kleidung oder -Accessoires",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SomethingOnProfile",
+    "description": "When reporting a user for something bad that's on their user profile",
+    "english": "Something on their profile",
+    "translation": "Etwas auf ihrem Profil",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.CreationsInventory",
+    "description": "When reporting a user profile, for something bad that they've created or something bad in their inventory",
+    "english": "Creations or inventory",
+    "translation": "Benutzerinhalte oder Inventar",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.DynamicUI",
@@ -107761,10 +108105,82 @@
   },
   {
     "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Groups",
+    "description": "When reporting someone for being in a bad user group",
+    "english": "Groups",
+    "translation": "Gruppen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AboutSection",
+    "description": "For reporting someone's user profile because there's something bad in the \"About\" section.",
+    "english": "Profile's \"About\" section",
+    "translation": "Infoseite des Profils",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChosePersonalInformation",
+    "description": "For reporting someone for giving out personal information. This is after the user has selected Personal Information and we are trying to gather some more details.",
+    "english": "You chose Personal information. What did they say?",
+    "translation": "Du hast \"Persönliche Informationen\" gewählt. Was wurde gesagt?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChoseSuicideSelfharm",
+    "description": "When reporting someone after the user chooses the \"Suicide or self-harm\" category in the reporting form. This is asking for more information.",
+    "english": "You chose Suicide or self-harm. What did they say?",
+    "translation": "Du hast \"Suizid oder Selbstverletzung\" gewählt. Was wurde gesagt?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChoseDating",
+    "description": "After reporting a user for the category \"Dating or sexual related\", this is asking for more information.",
+    "english": "You chose Dating or sexual related. What did they say or do?",
+    "translation": "Du hast \"Dating oder sexuell\" gewählt. Was wurde gesagt oder getan?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.BullyingHarassmentHate",
+    "description": null,
+    "english": "Bullying, Harassment, Hate",
+    "translation": "Mobbing, Belästigung, Hass",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.DatingSexualContent",
     "description": "Reporting someone for \"Dating or sexual content\"",
     "english": "Dating or sexual content",
     "translation": "Dating oder sexueller Inhalt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.NotAgeAppropriate",
+    "description": "Reporting something for being \"Not age appropriate\"",
+    "english": "Not age appropriate",
+    "translation": "Nicht altersgerecht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.OffsiteLinks",
+    "description": "For reporting someone or something that has website links that takes you outside the Roblox platform.",
+    "english": "Contains links that takes you outside Roblox",
+    "translation": "Enthält Links, die aus Roblox hinausführen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.DrugsIntoxication",
+    "description": null,
+    "english": "Drugs, intoxication, gambling, and other adult/illegal content",
+    "translation": "Drogen, Alkohol, Glücksspiel und andere illegale Inhalte/Inhalte für Erwachsene",
     "isDeprecated": false
   },
   {
@@ -107822,6 +108238,78 @@
     "english": "V0 Intro",
     "translation": "Speicherkosten",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.RiskyTradeEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Trade Attempt for {username}",
+    "translation": "Sicherheitshinweis: Versuchter Handel für {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyTradeEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed a trade attempt for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Wir haben einen versuchten Handel für {username} bemerkt und wollen sicherstellen, dass du das bist.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskySpendEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Robux Spend Attempt for {username}",
+    "translation": "Sicherheitshinweis: Versuch, Robux auszugeben, für {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskySpendEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed an attempt to spend Robux for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Wir haben einen Versuch, Robux auszugeben, für {username} bemerkt und wollen sicherstellen, dass du das bist.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyResaleEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Resale Attempt for {username}",
+    "translation": "Sicherheitshinweis: Versuchter Weiterverkauf für {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyResaleEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed an attempt to list an item for resale for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Wir haben einen versuchten Weiterverkauf für {username} bemerkt und wollen sicherstellen, dass du das bist.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.BottomContent",
+    "description": "Generic bottom body for a security alert sent from Security Alerts Processor. (Owned by Account Security)",
+    "english": "If this was you: You’re good to go. No action is required.{lineBreak}{lineBreak}If this was not you: Please take immediate action to secure your account by {passwordHelpLinkStart}changing your password{passwordHelpLinkEnd}.{lineBreak}You will be logged out of all your active devices except the one you are using at this time.",
+    "translation": "Wenn du das warst: Alles in Ordnung. Du musst nichts unternehmen.{lineBreak}{lineBreak}Wenn du das nicht warst: Sichere bitte umgehend dein Konto, indem du {passwordHelpLinkStart}dein Passwort änderst{passwordHelpLinkEnd}.{lineBreak}Du wirst von allen aktiven Geräten, außer dem, das du gerade benutzt, abgemeldet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.Links",
+    "description": "Relevant links that are sent to the user as part of a Security Alert email (Owned by Account Security)",
+    "english": "{learnMoreLinkStart}Learn More{learnMoreLinkEnd} | {accountSafetyLinkStart}Account Safety{accountSafetyLinkEnd} | {twoStepLinkStart}2-Step Verification{twoStepLinkEnd} | {supportLinkStart}Support{supportLinkEnd}",
+    "translation": "{learnMoreLinkStart}Mehr erfahren{learnMoreLinkEnd} | {accountSafetyLinkStart}Kontosicherheit{accountSafetyLinkEnd} | {twoStepLinkStart}Verifizierung in 2 Schritten{twoStepLinkEnd} | {supportLinkStart}Support{supportLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.ActivityRecord",
+    "description": "Describes data relative to the activity which triggered the alert.",
+    "english": "{listStart}{pointStart}Regional Location: {location}{pointEnd}{pointStart}Device: {device}{pointEnd}{pointStart}Time: {time}{pointEnd}{listEnd}",
+    "translation": "{listStart}{pointStart}Region: {location}{pointEnd}{pointStart}Gerät: {device}{pointEnd}{pointStart}Uhrzeit: {time}{pointEnd}{listEnd}",
+    "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.DeveloperSubscriptions",
@@ -107888,6 +108376,238 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "Letzte 7 Tage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "Letzte 30 Tage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last60Days",
+    "description": null,
+    "english": "Last 60 days",
+    "translation": "Letzte 60 Tage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last90Days",
+    "description": null,
+    "english": "Last 90 days",
+    "translation": "Letzte 90 Tage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionLocalization",
+    "description": null,
+    "english": "Localization",
+    "translation": "Lokalisierung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionMonetization",
+    "description": null,
+    "english": "Monetization",
+    "translation": "Monetarisierung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionPermissions",
+    "description": null,
+    "english": "Permissions",
+    "translation": "Berechtigungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.DateRange",
+    "description": null,
+    "english": "Date Range",
+    "translation": "Zeitspanne",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Action.Clear",
+    "description": "Button in filtering menu that deselects all filtering options",
+    "english": "Clear",
+    "translation": "Löschen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailSubject",
+    "description": "email subject for parent account setup email",
+    "english": "Your child needs your permission on Roblox",
+    "translation": "Dein Kind benötigt deine Erlaubnis in Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailTopBodyText",
+    "description": "top body text for parent account setup email",
+    "english": "Your child, {childUsername}, needs your permission to unlock their Roblox account. To help them, you’ll need a Roblox account with parent privileges.",
+    "translation": "Dein Kind, {childUsername}, benötigt deine Erlaubnis, um ein Roblox-Konto freizuschalten. Um zu helfen, brauchst du ein Roblox-Konto mit Eltern-Privilegien.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSignupButton",
+    "description": "label for signup button on parent account setup email",
+    "english": "Create Account",
+    "translation": "Konto erstellen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSigninButton",
+    "description": "label for signin button on parent account setup email",
+    "english": "Use an Existing Account",
+    "translation": "Bestehendes Konto verwenden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooter",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "Bitte antworte nicht auf diese Nachricht, da deine Antwort dem Absender nicht zugestellt werden kann.{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}Mehr erfahren{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Kontosicherheit{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailLinks",
+    "description": "do not use - use the v2 version",
+    "english": "{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "{htmlAHrefLearnMorePage}Mehr erfahren{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Kontosicherheit{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooterText",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as the response will not be delivered to the originator.",
+    "translation": "Bitte antworte nicht auf diese Nachricht, da deine Antwort dem Absender nicht zugestellt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailBottomBodyText",
+    "description": "bottom body text for parent account setup email",
+    "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have a Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
+    "translation": "{htmlBoldOpen}Was ist ein Roblox-Konto mit Eltern-Privilegien?{htmlBoldClose}{lineBreak}{lineBreak}Mit deinem Konto kannst du gewisse Aktionen deines Kindes bei Roblox erlauben. Zudem kannst du Roblox als Avatar alleine oder mit deinem Kind erkunden.{lineBreak}{lineBreak}{htmlBoldOpen}Was, wenn ich schon ein Roblox-Konto habe?{htmlBoldClose}{lineBreak}{lineBreak}Wenn du bereits ein Roblox-Konto besitzt, kannst du es mit deinem Kind verknüpfen und Eltern-Privilegien hinzufügen.{lineBreak}{lineBreak}{htmlBoldOpen}Was brauche ich, um loszulegen?{htmlBoldClose}{lineBreak}{lineBreak}Ein Konto mit Eltern-Privilegien zu erstellen, dauert nur wenige Minuten. Du wirst gebeten, dein Geburtsdatum anzugeben und es mit einem offiziellen Dokument, wie deinem Ausweis, zu bestätigen, bevor du es mit dem Roblox-Konto deines Kindes verknüpfen kannst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailLinksV2",
+    "description": "footer links for parent account setup email",
+    "english": "{aTagWithHref}{learnMorePageLink}{hrefEnd}Learn More{htmlCloseAHref} | {aTagWithHref}{accountSafetyPageLink}{hrefEnd}Account Safety{htmlCloseAHref} | {aTagWithHref}{supportPageLink}{hrefEnd}Support{htmlCloseAHref}",
+    "translation": "{aTagWithHref}{learnMorePageLink}{hrefEnd}Mehr erfahren{htmlCloseAHref} | {aTagWithHref}{accountSafetyPageLink}{hrefEnd}Kontosicherheit{htmlCloseAHref} | {aTagWithHref}{supportPageLink}{hrefEnd}Support{htmlCloseAHref}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.GetStarted",
+    "description": null,
+    "english": "Get Started",
+    "translation": "Loslegen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.Email",
+    "description": "Placeholder for email input",
+    "english": "email",
+    "translation": "e-Mail-Adresse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.InvalidEmail",
+    "description": "Error message when user input invalid email",
+    "english": "Invalid email address",
+    "translation": "Ungültige E-Mail-Adresse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SomethingWentWrong",
+    "description": "Generic error message",
+    "english": "Something went wrong",
+    "translation": "Ein Problem ist aufgetreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PurchaseRefundSubject",
+    "description": null,
+    "english": "Credit applied for purchase made on {purchaseDate} for items that are no longer available.",
+    "translation": "Gutschrifterstattung für am {purchaseDate} getätigten Kauf von Gegenständen, die nicht mehr verfügbar sind.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PurchaseRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}On {purchaseDate}, you purchased an avatar clothing item that can no longer be worn by your avatar. The amount you paid for this item, which is the amount of {refundAmount} Robux, was credited to your account.{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "Hallo!{lineBreak}{lineBreak}Am {purchaseDate} hast du einen Kleidungsgegenstand für deinen Avatar gekauft, der nicht mehr getragen werden kann. Der für diesen Gegenstand bezahlte Betrag von {refundAmount} Robux wurde deinem Konto gutgeschrieben.{lineBreak}Wir entschuldigen uns für die Unannehmlichkeiten.{lineBreak}{lineBreak}Mit freundlichen Grüßen{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PaymentRefundSubject",
+    "description": null,
+    "english": "Credit applied for purchase made on {purchaseDate} for items that are no longer available.",
+    "translation": "Gutschrifterstattung für am {purchaseDate} getätigten Kauf von Gegenständen, die nicht mehr verfügbar sind.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PaymentRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}On {purchaseDate}, you purchased an avatar clothing item that can no longer be worn by your avatar. The amount you paid for this item, which is the amount of {refundAmount} Robux, was credited to your account.{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "Hallo!{lineBreak}{lineBreak}Am {purchaseDate} hast du einen Kleidungsgegenstand für deinen Avatar gekauft, der nicht mehr getragen werden kann. Der für diesen Gegenstand bezahlte Betrag von {refundAmount} Robux wurde deinem Konto gutgeschrieben.{lineBreak}Wir entschuldigen uns für die Unannehmlichkeiten.{lineBreak}{lineBreak}Mit freundlichen Grüßen{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.AgreementRefundSubject",
+    "description": null,
+    "english": "Robux credit pending, please review and accept the agreement.",
+    "translation": "Robux-Gutschrift ausstehend. Bitte lies dir die Vereinbarung durch und akzeptiere sie.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.AgreementRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}Your account is eligible for Robux credit for the items you purchased that can no longer be worn by your avatar. To receive the credit please review and accept the terms of the: {aTagStartWithHref}{agreementLink}{hrefEnd}{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "Hallo!{lineBreak}{lineBreak}Für dein Konto steht eine Robux-Gutschrift über gekaufte Gegenstände aus, die dein Avatar nicht mehr tragen kann. Um die Gutschrift zu erhalten, sieh dir bitte folgende Vereinbarung an und akzeptiere sie: {aTagStartWithHref}{agreementLink}{hrefEnd}{lineBreak}Wir entschuldigen uns für die Unannehmlichkeiten.{lineBreak}{lineBreak}Mit freundlichen Grüßen{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PresenceGameJoin",
+    "key": "Push.PresenceGameJoinMessage",
+    "description": "message for presence game join push notification",
+    "english": "{friendName} is now on Roblox playing {experienceName}. Come join!",
+    "translation": "{friendName} ist jetzt bei Roblox und spielt {experienceName}. Komm und mach mit!",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PrivateAccessTokenChallenge",
     "key": "escription.VerificationError",
     "description": "Indicate the challenge failure.",
@@ -107909,6 +108629,70 @@
     "description": "show the user some background task is running to complete the verification of the bot.",
     "english": "Verifying you're not a bot",
     "translation": "Verifizierung, dass du kein Bot bist",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PrivateAccessTokenChallenge",
+    "key": "Description.VerificationError",
+    "description": "Indicate the challenge failure.",
+    "english": "Some errors occurred. Please try again.",
+    "translation": "Einige Fehler sind aufgetreten. Bitte versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.Ok",
+    "description": "generic confirmation text to dismiss modal on error",
+    "english": "OK",
+    "translation": "Okay",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.RoboloxCommunityStandards",
+    "description": "Will be used as a link to Roblox Community Standards document",
+    "english": "Roblox Community Standards",
+    "translation": "Roblox Community-Regeln",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Type.Image",
+    "description": null,
+    "english": "Image",
+    "translation": "Bild",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Type.Audio",
+    "description": null,
+    "english": "Audio",
+    "translation": "Audiodateien",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeLower.Audio",
+    "description": null,
+    "english": "audio",
+    "translation": "audiodateien",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeLower.Image",
+    "description": null,
+    "english": "image",
+    "translation": "bild",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AssetId",
+    "description": null,
+    "english": "Asset ID",
+    "translation": "Objekt-ID",
     "isDeprecated": false
   }
 ]

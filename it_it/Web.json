@@ -4416,6 +4416,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Header.ConfirmSignUp",
+    "description": null,
+    "english": "Confirm Sign Up",
+    "translation": "Conferma registrazione",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Label.sRobux",
     "description": null,
@@ -16858,7 +16866,7 @@
   {
     "namespace": "Feature.Catalog",
     "key": "Message.HoldingPolicy",
-    "description": null,
+    "description": "Deprecated",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
     "translation": "Dopo l'acquisto, le vendite originali entrano in una sospensione per un massimo di 30 giorni. L'articolo può essere rivenduto solo dopo questo periodo di detenzione e le rivendite avranno una sospensione fino a 7 giorni. Solo gli utenti premium possono rivendere gli articoli.",
     "isDeprecated": false
@@ -17508,7 +17516,7 @@
     "key": "Message.HoldingPolicyL2",
     "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
-    "translation": "Dopo l'acquisto, le vendite originali entrano in una sospensione per un massimo di {purchaseDays, plural, =1 {# day} other {# days}}. L'articolo può essere rivenduto solo dopo questo periodo di detenzione e le rivendite avranno una sospensione fino a  {resaleDays, plural, =1 {# day} other {# days}}. Solo gli utenti premium possono rivendere gli articoli.",
+    "translation": "Dopo l'acquisto, le vendite originali entrano in una sospensione per un massimo di {purchaseDays} giorni. L'articolo può essere rivenduto solo dopo questo periodo di detenzione e le rivendite avranno una sospensione fino a {resaleDays} giorni. Solo gli utenti premium possono rivendere gli articoli.",
     "isDeprecated": true
   },
   {
@@ -17516,7 +17524,7 @@
     "key": "Message.HoldingPolicyL1",
     "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
-    "translation": "Gli acquisti dalla rivendita avranno una attesa fino a  {days, plural, =1 {# day} other {# days}}. L'articolo può essere rivenduto solo dopo la fine di questo periodo di mantenimento. Solo gli utenti premium possono rivendere elementi.",
+    "translation": "Gli acquisti dalla rivendita avranno una attesa fino a {days} giorni. L'articolo può essere rivenduto solo dopo la fine di questo periodo di mantenimento. Solo gli utenti premium possono rivendere elementi.",
     "isDeprecated": true
   },
   {
@@ -62057,6 +62065,22 @@
   },
   {
     "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedSubject",
+    "description": "subject line of inbox message when the trade is declined by another user.",
+    "english": "Your trade with {username} was declined.",
+    "translation": "Il tuo commercio con {username} è stato declinato.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedMessage",
+    "description": "the content of inbox message when trade is declined by another user.",
+    "english": "Trade declined. If you wish to review this trade, go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> and select \"Inactive\".",
+    "translation": "Scambio rifiutato. Se vuoi rivedere questo scambio, vai al <a class=\"text-link\" href=\"/trades\">Pagina degli scambi</a> e seleziona \"\"Inattivo\".\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
     "key": "Inbox.TradeIncomingSubject",
     "description": "subject line of inbox message when trade request is sent by another user.",
     "english": "Your have a Trade request from {username}.",
@@ -64133,6 +64157,14 @@
     "description": null,
     "english": "Delete",
     "translation": "Elimina",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ViewAnalytics",
+    "description": null,
+    "english": "View Analytics",
+    "translation": "Visualizza Analisi",
     "isDeprecated": false
   },
   {
@@ -70480,6 +70512,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource",
+    "description": "title for filter picker for log type (client or server or both)",
+    "english": "Type",
+    "translation": "Tipo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.All",
+    "description": "option in log type picker (client or server or all)",
+    "english": "All",
+    "translation": "Tutti",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.Client",
+    "description": "option in log type picker (client or server or all)",
+    "english": "Client",
+    "translation": "Cliente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Dimension.LogSource.Server",
+    "description": "option in log type picker (client or server or all)",
+    "english": "Server",
+    "translation": "Server",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -73909,6 +73973,14 @@
     "description": null,
     "english": "Resellable",
     "translation": "Rivendibile",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.DynamicHead",
+    "description": null,
+    "english": "Dynamic Head",
+    "translation": "Testa Dinamica",
     "isDeprecated": false
   },
   {
@@ -83016,6 +83088,14 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.Save",
+    "description": "Button that a user will click on to save a suggested translation",
+    "english": "Save",
+    "translation": "Salva",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -84443,15 +84523,15 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.AnalyticsSummary",
     "description": null,
-    "english": "Analytics Summary",
-    "translation": "Riepilogo Analisi",
+    "english": "Analytics Overview",
+    "translation": "Riepilogo dati analitici",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Home",
     "key": "Label.Last7Days",
     "description": null,
-    "english": "Last 7 Days",
+    "english": "7 Day Avg.",
     "translation": "Ultimi 7 giorni",
     "isDeprecated": false
   },
@@ -84469,7 +84549,7 @@
     "description": null,
     "english": "Playtime (Hours)",
     "translation": "Tempo di gioco (ore)",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.Home",
@@ -84477,7 +84557,7 @@
     "description": null,
     "english": "Revenue (Robux)",
     "translation": "Entrate (Robux)",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.Home",
@@ -85421,6 +85501,30 @@
     "description": null,
     "english": "Our platform provides you with unparalleled opportunities to create.",
     "translation": "La nostra piattaforma ti offre opportunità senza precedenti per creare.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Create.PlaytimeMinutesSymbol",
+    "description": null,
+    "english": "min",
+    "translation": "min",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Label.PlaytimeMinutesSymbol",
+    "description": null,
+    "english": "min",
+    "translation": "min",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Home",
+    "key": "Label.DailyRevenue",
+    "description": null,
+    "english": "Daily Revenue",
+    "translation": "Entrate giornaliere",
     "isDeprecated": false
   },
   {
@@ -86506,6 +86610,14 @@
   {
     "namespace": "AuthorizeWebsite.PermissionRequest",
     "key": "Label.InventoryProductHeader",
+    "description": null,
+    "english": "Inventory",
+    "translation": "Inventario",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.UserInventoryItem",
     "description": null,
     "english": "Inventory",
     "translation": "Inventario",
@@ -88685,6 +88797,46 @@
     "description": null,
     "english": "Please try again.",
     "translation": "Per favore riprova.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.CodeSent",
+    "description": "Button text",
+    "english": "Code Sent",
+    "translation": "Codice inviato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ResendCode",
+    "description": null,
+    "english": "Resend Code",
+    "translation": "Invia nuovamente il codice",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.Password",
+    "description": null,
+    "english": "Password",
+    "translation": "Password",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "Codice unico",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourOtpCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "Codice a 6 cifre",
     "isDeprecated": false
   },
   {
@@ -107683,7 +107835,7 @@
     "namespace": "Authentication.AccountSwitch",
     "key": "Description.AccountLimit",
     "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
-    "english": "You have reached account limit. You must log out of at least one account to add new account.",
+    "english": "You've reached the maximum of account switcher. To add another account, please log out of one of your existing accounts.",
     "translation": "Hai raggiunto il limite di account. Devi disconnetterti da almeno un account per aggiungere un nuovo account.",
     "isDeprecated": false
   },
@@ -107725,6 +107877,14 @@
     "description": "Button on switcher modal to start add account flow.",
     "english": "Add",
     "translation": "Aggiungi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "Esci da tutti gli account",
     "isDeprecated": false
   },
   {
@@ -108384,6 +108544,134 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "Ultimi 7 giorni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "Ultimi 30 giorni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last60Days",
+    "description": null,
+    "english": "Last 60 days",
+    "translation": "Ultimi 60 giorni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.Last90Days",
+    "description": null,
+    "english": "Last 90 days",
+    "translation": "Ultimi 90 giorni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionLocalization",
+    "description": null,
+    "english": "Localization",
+    "translation": "Localizzazione",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionMonetization",
+    "description": null,
+    "english": "Monetization",
+    "translation": "Monetizzazione",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.FilterOptionPermissions",
+    "description": null,
+    "english": "Permissions",
+    "translation": "Autorizzazioni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Label.DateRange",
+    "description": null,
+    "english": "Date Range",
+    "translation": "Intervallo di date",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ActivityFeed",
+    "key": "Action.Clear",
+    "description": "Button in filtering menu that deselects all filtering options",
+    "english": "Clear",
+    "translation": "Cancella",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailSubject",
+    "description": "email subject for parent account setup email",
+    "english": "Your child needs your permission on Roblox",
+    "translation": "Tuo figlio ha bisogno del tuo permesso su Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailTopBodyText",
+    "description": "top body text for parent account setup email",
+    "english": "Your child, {childUsername}, needs your permission to unlock their Roblox account. To help them, you’ll need a Roblox account with parent privileges.",
+    "translation": "Tuo figlio, {childUsername}, ha bisogno del tuo permesso per sbloccare il suo account Roblox. Per aiutarli, avrai bisogno di un account Roblox con privilegi di genitore.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSignupButton",
+    "description": "label for signup button on parent account setup email",
+    "english": "Create Account",
+    "translation": "Crea un account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSigninButton",
+    "description": "label for signin button on parent account setup email",
+    "english": "Use an Existing Account",
+    "translation": "Usa un account esistente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooter",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "Si prega di non rispondere a questo messaggio in quanto non verrà consegnato all'autore.{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}Per saperne di più{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Sicurezza dell'account{htmlCloseAHref} | {htmlAhrefSupportPage}Supporto{htmlCloseAHref}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailLinks",
+    "description": "do not use - use the v2 version",
+    "english": "{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "{htmlAHrefLearnMorePage}Per saperne di più{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Sicurezza dell'account{htmlCloseAHref} | {htmlAhrefSupportPage}Supporto{htmlCloseAHref}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooterText",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as the response will not be delivered to the originator.",
+    "translation": "Si prega di non rispondere a questo messaggio poiché la risposta non verrà consegnata all'autore.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Parents",
     "key": "Description.ParentAccountSetupEmailBottomBodyText",
     "description": "bottom body text for parent account setup email",
@@ -108397,6 +108685,166 @@
     "description": "footer links for parent account setup email",
     "english": "{aTagWithHref}{learnMorePageLink}{hrefEnd}Learn More{htmlCloseAHref} | {aTagWithHref}{accountSafetyPageLink}{hrefEnd}Account Safety{htmlCloseAHref} | {aTagWithHref}{supportPageLink}{hrefEnd}Support{htmlCloseAHref}",
     "translation": "{aTagWithHref}{learnMorePageLink}{hrefEnd}Per saperne di più{htmlCloseAHref} | {aTagWithHref}{accountSafetyPageLink}{hrefEnd}Sicurezza dell'account{htmlCloseAHref} | {aTagWithHref}{supportPageLink}{hrefEnd}Supporto{htmlCloseAHref}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.ParentPermission",
+    "description": null,
+    "english": "Parent Permission Needed",
+    "translation": "È necessaria l'autorizzazione dei genitori",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermission",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "Alcune azioni su Roblox richiedono l'autorizzazione di un genitore o di un tutore. \nPer aiutare il tuo bambino, avrai bisogno di un account Roblox con privilegi di genitore. Ti verrà chiesto di fornire la tua email, verificare che sei un adulto e link all'account del tuo bambino.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.GetStarted",
+    "description": null,
+    "english": "Get Started",
+    "translation": "Per iniziare",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.EnterParentEmail",
+    "description": "Title for the modal to allow parent enter their email",
+    "english": "Enter Parent Email",
+    "translation": "Inserisci l'email del genitore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmail",
+    "description": "Description for parent to enter their email",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
+    "translation": "Questo indirizzo email sarà associato al tuo account su Roblox. Per saperne di più sulle nostre pratiche di dati, consulta il nostro {privacyPolicyLink}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmailV2",
+    "description": null,
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
+    "translation": "Questo indirizzo email sarà associato al tuo account su Roblox. Per saperne di più sulle nostre pratiche di dati, consulta la nostra Informativa sulla privacy {linkStart} {linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.Email",
+    "description": "Placeholder for email input",
+    "english": "email",
+    "translation": "e-mail",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.Thanks",
+    "description": "Title of modal",
+    "english": "Thanks!",
+    "translation": "Grazie!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EmailSent",
+    "description": "Email Sent confirmation",
+    "english": "We’ve sent an email to {parentEmail} with next steps",
+    "translation": "Abbiamo inviato una email a {parentEmail} con i prossimi passi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.InvalidEmail",
+    "description": "Error message when user input invalid email",
+    "english": "Invalid email address",
+    "translation": "Indirizzo e-mail non valido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.WaitingParentPermission",
+    "description": null,
+    "english": "Waiting for Parent Permission",
+    "translation": "In attesa del permesso del genitore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermission",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account",
+    "translation": "Controlla la tua email per aiutare a sbloccare l'account del tuo bambino",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.SendAnotherEmail",
+    "description": "Button to send parent another email",
+    "english": "Send Another Email",
+    "translation": "Invia un'altra email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Titile.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "Impossibile collegare l'account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.CantLinkAccountCurrentChild",
+    "description": "The error message when parent try to connect to current child",
+    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "translation": "Non possiamo collegare il tuo account all' account di tuo figlio. Per completare la richiesta del bambino, utilizza un account genitore già collegato.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "Impossibile collegare l'account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.EmailIneligible",
+    "description": "Error message when the email is ineligible to use",
+    "english": "This email isn’t eligible. To request parent permission on Roblox, use a different email.",
+    "translation": "Questa email non è idonea. Per richiedere l'autorizzazione dei genitori su Roblox, usa un'altra email.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExistAccountWithEmail",
+    "description": "Error message child has five parents, and enters email of a sixth parent",
+    "english": "Your parent already has an account for approving requests. Enter your parent’s email, instead.",
+    "translation": "Il tuo genitore ha già un account per approvare le richieste. Inserisci invece l'email del tuo genitore.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SomethingWentWrong",
+    "description": "Generic error message",
+    "english": "Something went wrong",
+    "translation": "Qualcosa è andato storto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AreYouSure",
+    "description": "Double check modal title",
+    "english": "Are You Sure?",
+    "translation": "Sei sicuro?",
     "isDeprecated": false
   },
   {
@@ -108429,6 +108877,414 @@
     "description": "show the user some background task is running to complete the verification of the bot.",
     "english": "Verifying you're not a bot",
     "translation": "Verificare che non sei un bot",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PrivateAccessTokenChallenge",
+    "key": "Description.VerificationError",
+    "description": "Indicate the challenge failure.",
+    "english": "Some errors occurred. Please try again.",
+    "translation": "Si sono verificati alcuni errori. Per favore, riprova.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.VerificationSuccess",
+    "description": "indicate the challenge has been successfully completed",
+    "english": "Verification Complete",
+    "translation": "Verifica completata",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.VerificationError",
+    "description": "indicate a challenge failure",
+    "english": "Verification failed because of an issue. Please try again.",
+    "translation": "La verifica non è riuscita a causa di un problema. Riprova.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.VerificationPrompt",
+    "description": "prompt for the user to complete a visible puzzle",
+    "english": "Before you proceed, please verify you’re a human.",
+    "translation": "Prima di procedere, verifica che tu sia un umano.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.VerificationHeader",
+    "description": "header for the challenge modal while user completes puzzle",
+    "english": "Verification",
+    "translation": "Verifica",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.VerificationErrorHeader",
+    "description": "header for the challenge modal when error occurs in puzzle",
+    "english": "Verification Failed",
+    "translation": "Verifica non riuscita",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.Ok",
+    "description": "generic confirmation text to dismiss modal on error",
+    "english": "OK",
+    "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RostileChallenge",
+    "key": "Description.ImAHuman",
+    "description": "prompt on the button for user to press to confirm they are a human",
+    "english": "I’m A Human",
+    "translation": "Sono un umano",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ReportAndAppeals",
+    "description": "Page title for Reporting & Appeals portal",
+    "english": "Reporting & Appeals",
+    "translation": "Segnalazioni e Appelli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.ContentRemovalDescription",
+    "description": null,
+    "english": "This content has been removed by moderators because it goes against {communityStandardLink}",
+    "translation": "Questo contenuto è stato rimosso dai moderatori perché va contro {communityStandardLink}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeRemoved",
+    "description": "ex \"Image removed\"",
+    "english": "{type} removed",
+    "translation": "{type} rimosso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeRestored",
+    "description": "ex \"Image restored\"",
+    "english": "{type} restored",
+    "translation": "{type} ripristinato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ItemStatus.SeeDetails",
+    "description": null,
+    "english": "See details",
+    "translation": "Vedi i dettagli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ItemStatus.InReview",
+    "description": "Appeal review in progress",
+    "english": "Review in progress",
+    "translation": "Revisione in corso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ItemStatus.ReviewComplete",
+    "description": "Appeal review complete",
+    "english": "Review Complete",
+    "translation": "Revisione completata",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ItemStatus.WindowClosed",
+    "description": "Appeal time window is closed e.g. it could only be appealed in a certain time window, and now we're past that.",
+    "english": "Appeal window closed",
+    "translation": "Finestra d'appello chiusa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Details",
+    "description": null,
+    "english": "Details",
+    "translation": "Dettagli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AssetName",
+    "description": "The asset (image, video,...) name",
+    "english": "Asset Name",
+    "translation": "Nome risorsa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.UploadTime",
+    "description": "The time an asset (image, video, ...) was uploaded",
+    "english": "Upload Time",
+    "translation": "Tempo di caricamento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Violation",
+    "description": "The reason why the asset was moderated e.g. \"Violation: Illegal and Regulated Goods\"",
+    "english": "Violation",
+    "translation": "Violazione",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Action.RequestAppeal",
+    "description": null,
+    "english": "Request Appeal",
+    "translation": "Richiesta di appello",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.RequestAppealReview",
+    "description": null,
+    "english": "Reviews are based on {communityStandardLink}",
+    "translation": "Le recensioni si basano su {communityStandardLink}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.RequestAppealPlaceholder",
+    "description": "Placeholder in text area",
+    "english": "Additional info (optional)",
+    "translation": "Informazioni aggiuntive (opzionale)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.RoboloxCommunityStandards",
+    "description": "Will be used as a link to Roblox Community Standards document",
+    "english": "Roblox Community Standards",
+    "translation": "Standard della comunità Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AppealRequested",
+    "description": null,
+    "english": "Appeal requested",
+    "translation": "Richiesto appello",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.AppealRequested",
+    "description": null,
+    "english": "Our moderation team will take another look. We’ll follow up with an update soon.",
+    "translation": "Il nostro team di moderazione darà un'altra occhiata. Seguiremo con un aggiornamento presto.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AppealDenied",
+    "description": null,
+    "english": "Appeal denied",
+    "translation": "Appello negato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.AppealDenied",
+    "description": null,
+    "english": "Our moderation team completed its review. This item still violates Roblox Community Standards.",
+    "translation": "Il nostro team di moderazione ha completato la sua revisione. Questo articolo viola ancora gli standard della comunità Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AppealAccepted",
+    "description": null,
+    "english": "Appeal accepted",
+    "translation": "Ricorso accettato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.AppealAccepted",
+    "description": null,
+    "english": "Our moderation team completed its review. This item has been reinstated. Thanks for bringing this to our attention. ",
+    "translation": "Il nostro team di moderazione ha completato la sua recensione. Questo articolo è stato ripristinato. Grazie per averlo portato alla nostra attenzione. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AppeallByDate",
+    "description": null,
+    "english": "Appeal by {date}",
+    "translation": "Appello di {date}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TimeAgo",
+    "description": "ex \"10d ago\"",
+    "english": "{time} ago",
+    "translation": "{time} tempo fa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Time.Short.min",
+    "description": "Shorthand for minute",
+    "english": "m",
+    "translation": "m",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Time.Short.hour",
+    "description": "shorthand for hour",
+    "english": "h",
+    "translation": "h",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Time.Short.day",
+    "description": "Shorthand for day",
+    "english": "d",
+    "translation": "d",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Type.Image",
+    "description": null,
+    "english": "Image",
+    "translation": "Immagine",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.Type.Audio",
+    "description": null,
+    "english": "Audio",
+    "translation": "Audio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.ID",
+    "description": "The id of an asset",
+    "english": "ID",
+    "translation": "ID",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.ItemRemovalDescription",
+    "description": null,
+    "english": "This {type} was removed because it goes against {communityStandardLink}",
+    "translation": "Questo {type} è stato rimosso perché va contro {communityStandardLink}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeLower.Audio",
+    "description": null,
+    "english": "audio",
+    "translation": "audio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.TypeLower.Image",
+    "description": null,
+    "english": "image",
+    "translation": "immagine",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.IDArg",
+    "description": "Asset id e.g. \"ID: 123442322\"",
+    "english": "ID: {id}",
+    "translation": "ID: {id}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AssetId",
+    "description": null,
+    "english": "Asset ID",
+    "translation": "ID risorsa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Label.AppealByDate",
+    "description": null,
+    "english": "Appeal by {date}",
+    "translation": "Appello di {date}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.AppealsNotFound",
+    "description": null,
+    "english": "Appeals information not found",
+    "translation": "Informazioni sugli appelli non trovate",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.SupportLinkFallback",
+    "description": "ex: If you would like to appeal something not shown here please visit Support",
+    "english": "If you would like to appeal something not shown here please visit {supportLink}",
+    "translation": "Se vuoi appellarti a qualcosa che non è mostrato qui, visita {supportLink}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.ContentRemovalDescription2",
+    "description": null,
+    "english": "This content has been removed by moderators because it goes against {link}Roblox Community Standards{linkEnd}",
+    "translation": "Questo contenuto è stato rimosso dai moderatori perché va contro {link} Roblox CommunityStandards{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.ContentRemovalDescription3",
+    "description": null,
+    "english": "This {type} was removed because it goes against {link}Roblox Community Standards{linkEnd}",
+    "translation": "Questo {type} è stato rimosso perché va contro {link}Roblox Community Standards{linkEnd}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.RequestAppealReview2",
+    "description": null,
+    "english": "Reviews are based on {link}Roblox Community Standards{linkEnd}",
+    "translation": "Le recensioni si basano su {link}Roblox Community Standards{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.SupportLinkFallback2",
+    "description": null,
+    "english": "If you would like to appeal something not shown here please visit {link}Support{linkEnd}",
+    "translation": "Se vuoi appellarti a qualcosa che non è mostrato qui, visita {link}Supporto{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AppealsPortal",
+    "key": "Description.ItemRemovalDescription3",
+    "description": null,
+    "english": "This {type} was removed because it goes against {link}Roblox Community Standards{linkEnd}",
+    "translation": "Questo {type} è stato rimosso perché va contro {link}Roblox Community Standards{linkEnd}",
     "isDeprecated": false
   }
 ]

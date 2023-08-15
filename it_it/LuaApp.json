@@ -4852,7 +4852,7 @@
     "key": "Message.HoldingPolicyL2",
     "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
-    "translation": "Dopo l'acquisto, le vendite originali entrano in una sospensione per un massimo di {purchaseDays, plural, =1 {# day} other {# days}}. L'articolo può essere rivenduto solo dopo questo periodo di detenzione e le rivendite avranno una sospensione fino a  {resaleDays, plural, =1 {# day} other {# days}}. Solo gli utenti premium possono rivendere gli articoli.",
+    "translation": "Dopo l'acquisto, le vendite originali entrano in una sospensione per un massimo di {purchaseDays} giorni. L'articolo può essere rivenduto solo dopo questo periodo di detenzione e le rivendite avranno una sospensione fino a {resaleDays} giorni. Solo gli utenti premium possono rivendere gli articoli.",
     "isDeprecated": false
   },
   {
@@ -4860,7 +4860,7 @@
     "key": "Message.HoldingPolicyL1",
     "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
-    "translation": "Gli acquisti dalla rivendita avranno una attesa fino a  {days, plural, =1 {# day} other {# days}}. L'articolo può essere rivenduto solo dopo la fine di questo periodo di mantenimento. Solo gli utenti premium possono rivendere elementi.",
+    "translation": "Gli acquisti dalla rivendita avranno una attesa fino a {days} giorni. L'articolo può essere rivenduto solo dopo la fine di questo periodo di mantenimento. Solo gli utenti premium possono rivendere elementi.",
     "isDeprecated": false
   },
   {
@@ -7949,6 +7949,14 @@
     "description": null,
     "english": "We will review your report soon and take action if needed. Your feedback helps keep our community safe.",
     "translation": "Esamineremo la tua segnalazione a breve e agiremo se necessario. Il tuo feedback aiuta a mantenere la nostra comunità al sicuro.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.Loading",
+    "description": "Message shown while the submission of an abuse report is in progress.",
+    "english": "Loading...",
+    "translation": "Caricamento...",
     "isDeprecated": false
   },
   {
@@ -11349,6 +11357,14 @@
     "description": null,
     "english": "Previewing head animation is unavailable, please try again later",
     "translation": "L'anteprima dell'animazione della testa non è disponibile, riprova più tardi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Title.LooksWidget",
+    "description": "Text displayed above a list of outfits that the user can inspect and purchase",
+    "english": "Outfit Inspirations",
+    "translation": "Ispirazioni Abbigliamento",
     "isDeprecated": false
   },
   {
@@ -18848,6 +18864,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.CodeSent",
+    "description": "Button text",
+    "english": "Code Sent",
+    "translation": "Codice inviato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ResendCode",
+    "description": null,
+    "english": "Resend Code",
+    "translation": "Invia nuovamente il codice",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.Password",
+    "description": null,
+    "english": "Password",
+    "translation": "Password",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "Codice unico",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourOtpCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "Codice a 6 cifre",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ExperienceDetails",
     "key": "Body.DescriptionTitle",
     "description": "Title text for the description text of the description component within the body of the experience details page.",
@@ -20661,6 +20717,166 @@
     "description": "Cross-play welcome alert message",
     "english": "You can now use Roblox on {platform} with people on every platform including Desktop, Phone, and Tablet!\n\nThis means you’ll see more people and you can explore with your friends, no matter what device they’re using! This option can be updated in Account Settings.",
     "translation": "Ora puoi usare Roblox su {platform} con persone su ogni piattaforma, inclusi Desktop, Telefono e Tablet!\n\nQuesto significa che vedrai più persone e potrai esplorare con i tuoi amici, indipendentemente dal dispositivo che stanno utilizzando! Questa opzione può essere aggiornata nelle Impostazioni Account.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.ParentPermission",
+    "description": null,
+    "english": "Parent Permission Needed",
+    "translation": "È necessaria l'autorizzazione dei genitori",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermission",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "Alcune azioni su Roblox richiedono l'autorizzazione di un genitore o di un tutore. \nPer aiutare il tuo bambino, avrai bisogno di un account Roblox con privilegi di genitore. Ti verrà chiesto di fornire la tua email, verificare che sei un adulto e link all'account del tuo bambino.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.GetStarted",
+    "description": null,
+    "english": "Get Started",
+    "translation": "Per iniziare",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.EnterParentEmail",
+    "description": "Title for the modal to allow parent enter their email",
+    "english": "Enter Parent Email",
+    "translation": "Inserisci l'email del genitore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmail",
+    "description": "Description for parent to enter their email",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
+    "translation": "Questo indirizzo email sarà associato al tuo account su Roblox. Per saperne di più sulle nostre pratiche di dati, consulta il nostro {privacyPolicyLink}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmailV2",
+    "description": null,
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
+    "translation": "Questo indirizzo email sarà associato al tuo account su Roblox. Per saperne di più sulle nostre pratiche di dati, consulta la nostra Informativa sulla privacy {linkStart} {linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.Email",
+    "description": "Placeholder for email input",
+    "english": "email",
+    "translation": "e-mail",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.Thanks",
+    "description": "Title of modal",
+    "english": "Thanks!",
+    "translation": "Grazie!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EmailSent",
+    "description": "Email Sent confirmation",
+    "english": "We’ve sent an email to {parentEmail} with next steps",
+    "translation": "Abbiamo inviato una email a {parentEmail} con i prossimi passi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.InvalidEmail",
+    "description": "Error message when user input invalid email",
+    "english": "Invalid email address",
+    "translation": "Indirizzo e-mail non valido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.WaitingParentPermission",
+    "description": null,
+    "english": "Waiting for Parent Permission",
+    "translation": "In attesa del permesso del genitore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermission",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account",
+    "translation": "Controlla la tua email per aiutare a sbloccare l'account del tuo bambino",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.SendAnotherEmail",
+    "description": "Button to send parent another email",
+    "english": "Send Another Email",
+    "translation": "Invia un'altra email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Titile.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "Impossibile collegare l'account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.CantLinkAccountCurrentChild",
+    "description": "The error message when parent try to connect to current child",
+    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "translation": "Non possiamo collegare il tuo account all' account di tuo figlio. Per completare la richiesta del bambino, utilizza un account genitore già collegato.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "Impossibile collegare l'account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.EmailIneligible",
+    "description": "Error message when the email is ineligible to use",
+    "english": "This email isn’t eligible. To request parent permission on Roblox, use a different email.",
+    "translation": "Questa email non è idonea. Per richiedere l'autorizzazione dei genitori su Roblox, usa un'altra email.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExistAccountWithEmail",
+    "description": "Error message child has five parents, and enters email of a sixth parent",
+    "english": "Your parent already has an account for approving requests. Enter your parent’s email, instead.",
+    "translation": "Il tuo genitore ha già un account per approvare le richieste. Inserisci invece l'email del tuo genitore.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SomethingWentWrong",
+    "description": "Generic error message",
+    "english": "Something went wrong",
+    "translation": "Qualcosa è andato storto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AreYouSure",
+    "description": "Double check modal title",
+    "english": "Are You Sure?",
+    "translation": "Sei sicuro?",
     "isDeprecated": false
   }
 ]
