@@ -776,6 +776,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Masukkan alamat email orang tua kamu untuk menerima kode verifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Kamu harus menggunakan jaringan perusahaan untuk log in.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Kamu harus menggunakan jaringan perusahaan untuk log in.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -4133,6 +4157,38 @@
     "description": null,
     "english": "Verification Code",
     "translation": "Kode Verifikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "Saya telah meninjau dan menyetujui {termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "Memahami {privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "Masukkan kode yang baru saja kami kirim ke email orang tua kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "Dengan memasukkan kode, Anda memberikan izin kepada anak Anda untuk mengakses Roblox.",
     "isDeprecated": false
   },
   {
@@ -12772,7 +12828,7 @@
     "key": "Label.SpendingLimit",
     "description": null,
     "english": "Spending Limit:",
-    "translation": "Batasan Penggunaan:",
+    "translation": "Batas Pemakaian Uang:",
     "isDeprecated": false
   },
   {
@@ -13332,7 +13388,7 @@
     "key": "Description.RejectionInvalidPayPalnformation",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Invalid PayPal information. The PayPal information you provided was invalid and the payment wasn't able to be processed and your DevEx request was declined. Please update your PayPal information for your next DevEx request.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Informasi PayPal Tidak Valid. Informasi PayPal yang kamu berikan tidak valid. Oleh karena itu, pembayaran tidak dapat diproses dan permintaan Bursa Developer kamu ditolak. Update informasi PayPal kamu untuk mengirim permintaan Bursa Developer berikutnya.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Informasi PayPal Tidak Valid. Informasi PayPal yang kamu berikan tidak valid. Oleh karena itu, pembayaran tidak dapat diproses dan permintaan Bursa Developer kamu ditolak. Update informasi PayPal kamu untuk permintaan Bursa Developer berikutnya.",
     "isDeprecated": false
   },
   {
@@ -13348,7 +13404,7 @@
     "key": "Description.RejectionFailedToSubmitTaxForm",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Tax Form. Please submit a valid Tax Form to the DevEx Portal.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Gagal mengirim Formulir Pajak. Harap kirim Formulir Pajak ke Portal Bursa Developer.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Tidak Ada Formulir Pajak. Harap kirim Formulir Pajak valid ke Portal Bursa Developer.",
     "isDeprecated": false
   },
   {
@@ -13364,7 +13420,7 @@
     "key": "Description.RejectionDevExPortalRegistrationIncomplete",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Portal Registration Incomplete. Please reference the DevEx FAQ for information about the DevEx Portal.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Pendaftaran Portal Bursa Developer Tidak Lengkap. Baca Pertanyaan Umum Bursa Developer untuk informasi lebih lanjut tentang Portal Bursa Developer.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Pendaftaran Portal DevEx Tidak Lengkap. Baca Pertanyaan Umum DevEx untuk informasi lebih lanjut tentang Portal DevEx.",
     "isDeprecated": false
   },
   {
@@ -13404,7 +13460,15 @@
     "key": "Description.RejectionNameDiscrepancy",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Name Discrepancy. We noticed that the name of your current DevEx request differs from the initial DevEx request and/or name listed on your DevEx Portal.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Perbedaan nama. Nama permintaan Bursa Developer kamu saat ini berbeda dari permintaan Bursa Developer awal dan/atau nama yang tercantum di Portal Bursa Developer kamu.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Perbedaan Nama. Nama permintaan Bursa Developer kamu saat ini berbeda dari permintaan Bursa Developer awal dan/atau nama yang tercantum di Portal DevEx kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionSubmitDevExWithFullLegalName",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Submit DevEx with full legal name. ",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Tidak Memenuhi Syarat. Nama Lengkap Resmi Tidak Cocok. ",
     "isDeprecated": false
   },
   {
@@ -13428,7 +13492,7 @@
     "key": "Description.RejectionEmailOnDevexRequestAlreadyInUse",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Email Provided on Devex Request is Already in Use. We are unable to send you a DevEx portal invitation to the email listed on your DevEx request because it is already in use.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Email yang Tercantum di Permintaan Bursa Developer Sudah Digunakan. Kami tidak dapat mengirim undangan Portal Bursa Developer ke alamat email yang tercantum di Permintaan Bursa Developer kamu karena email tersebut sudah digunakan.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Email yang Tercantum di Permintaan Bursa Developer Sudah Digunakan. Kami tidak dapat mengirim undangan Portal DevEx ke alamat email yang tercantum di Permintaan Bursa Developer kamu karena email tersebut sudah digunakan.",
     "isDeprecated": false
   },
   {
@@ -13436,7 +13500,7 @@
     "key": "Description.RejectionCertificateOfNonUSActivitiesIncomplete",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Certificate of Non-US Activities Incomplete. We noticed that you did not complete the Certificate of No US activities in the Tax Form section on the DevEx portal.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Sertifikat Aktivitas Bukan Warga Negara Amerika Serikat Tidak Lengkap. Kami lihat kamu tidak mengisi Sertifikat Aktivitas Bukan Warga Negara Amerika Serikat di bagian Formulir Pajak di portal DevEx.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Sertifikat Aktivitas di Luar Amerika Serikat Tidak Lengkap. Kamu tidak melengkapi Sertifikat Aktivitas di Luar Amerika Serikat di bagian Formulir Pajak di portal DevEx.",
     "isDeprecated": false
   },
   {
@@ -13444,7 +13508,7 @@
     "key": "Description.RejectionFailedToSubmitPaymentMethod",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Payment Method. A Payment Method must be submitted in order to approve your DevEx Request.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Gagal mengirim Metode Pembayaran. Metode Pembayaran harus dikirim untuk menyetujui permintaan DevEx kamu.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Tidak Ada Metode Pembayaran. Metode Pembayaran harus dikirim untuk menyetujui permintaan DevEx kamu.",
     "isDeprecated": false
   },
   {
@@ -13452,7 +13516,7 @@
     "key": "Description.RejectionRequiredDevExPortalDocumentsNotSubmitted",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Required DevEx portal documents not submitted.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Dokumen portal DevEx yang diperlukan tidak dikirim.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Dokumen Portal DevEx yang Diperlukan Tidak Dikirim.",
     "isDeprecated": false
   },
   {
@@ -13460,7 +13524,7 @@
     "key": "Description.RejectionDevExPortalBlocked",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx portal is blocked. Your DevEx portal account is locked for a compliance issue.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Dokumen portal DevEx terblokir. Akun portal DevEx kamu terkunci karena masalah kepatuhan.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Portal DevEx Terblokir. Akun portal DevEx kamu terblokir karena masalah kepatuhan.",
     "isDeprecated": false
   },
   {
@@ -13468,7 +13532,7 @@
     "key": "Description.AboveMaximumPaymentMethodThreshold",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di atas batas metode pembayaran maksimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran maksimal. Permintaan DevEx kamu saat ini telah ditolak karena alasan ini.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di Atas Batas Metode Pembayaran Maksimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran maksimal.",
     "isDeprecated": false
   },
   {
@@ -13476,7 +13540,23 @@
     "key": "Description.BelowMinimumPaymentMethodThreshold",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
-    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di bawah batas metode pembayaran minimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran minimal. Permintaan DevEx kamu saat ini telah ditolak karena alasan ini.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di Bawah Batas Metode Pembayaran Minimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran minimal.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAbovePaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di Atas Batas Metode Pembayaran Maksimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran maksimal.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionBelowPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Di Bawah Batas Metode Pembayaran Minimal. Kami tidak dapat memproses permintaan DevEx kamu saat ini karena penyedia vendor kami memiliki batas pembayaran minimal.",
     "isDeprecated": false
   },
   {
@@ -13485,6 +13565,14 @@
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Country Not Supported.",
     "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Negara Tidak Didukung.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToCompleteTipaltiRegistration",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to complete Tipalti registration. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "Permintaan Bursa Developer kamu tidak dapat diproses karena alasan berikut: Pendaftaran Tipalti Tidak Lengkap. Baca Pertanyaan Umum DevEx untuk informasi tentang Portal DevEx.",
     "isDeprecated": false
   },
   {
@@ -15596,7 +15684,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, Collectible items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
-    "translation": "Setelah dibeli, item yang Dikoleksi ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
+    "translation": "Setelah dibeli, item yang Dikoleksi akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
     "isDeprecated": false
   },
   {
@@ -22308,7 +22396,7 @@
     "key": "Label.CreatePrivateServerFor",
     "description": "Target in this case is robux amount.",
     "english": "Create a private server for {target}?",
-    "translation": "Buat server pribadi untuk {target}?",
+    "translation": "Buat server pribadi seharga {target}?",
     "isDeprecated": false
   },
   {
@@ -25960,6 +26048,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Heading.JoinFailed",
+    "description": null,
+    "english": "Join Failed",
+    "translation": "Gagal Bergabung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.JoinFailed",
+    "description": null,
+    "english": "Failed to join experience. Please try again later.",
+    "translation": "Gagal untuk bergabung ke pengalaman virtual. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.PushNotifications",
     "key": "Message.NewChatMessage.Default",
     "description": "You have a new chat message.",
@@ -26917,6 +27021,46 @@
     "description": null,
     "english": "Get",
     "translation": "Dapatkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessPremiumNeededFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased, {itemCountFailure} failed due to premium account needed",
+    "translation": "{itemCountSuccess} item telah dibeli, {itemCountFailure} item gagal dibeli karena akun premium diperlukan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNoSellersFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased,{itemCountFailure} failed due to no sellers",
+    "translation": "{itemCountSuccess} item telah dibeli, {itemCountFailure} item gagal dibeli karena tidak ada penjual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PremiumNeededFailure",
+    "description": null,
+    "english": "Purchase failed, premium account needed",
+    "translation": "Pembelian gagal, akun premium diperlukan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NoSellersFailure",
+    "description": null,
+    "english": "Purchase failed, no sellers",
+    "translation": "Pembelian gagal, tidak ada penjual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PlusNumber",
+    "description": "i.e. +3",
+    "english": "+{numberCount}",
+    "translation": "+{numberCount}",
     "isDeprecated": false
   },
   {
@@ -36969,10 +37113,26 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.LocalCreditBanner",
+    "description": "Local credit pre-launch banner 1 heading",
+    "english": "NOTICE: Upcoming Change to Redemption Rate for Roblox Credit (Local Currency)",
+    "translation": "PEMBERITAHUAN: Perubahan Mendatang pada Nilai Penebusan untuk Dana Roblox (Mata Uang Lokal)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Message.LocalCreditBanner",
     "description": "Local credit banner pre-launch message 1",
     "english": "Beginning in April 2023 Roblox credit will no longer be denominated in U.S. Dollars. All Roblox gift cards will be redeemable for credit denominated in your local currency. We will send messages to your Roblox Inbox starting in January with more information.",
     "translation": "Mulai awal April 2023, dana Roblox tidak akan lagi menggunakan dolar Amerika Serikat. Semua gift card Roblox akan dapat di-redeem dalam mata uang negara kamu. Kami akan mengirim pesan ke inbox Roblox kamu pada bulan Januari dengan informasi lebih lanjut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.LocalCreditPreLaunchWarning",
+    "description": "Local credit prelaunch warning",
+    "english": "In April 2023 the Roblox credit in your account will be automatically converted to your local currency.",
+    "translation": "Pada bulan April 2023, dana Roblox di akun kamu akan dikonversi secara otomatis ke mata uang negara kamu.",
     "isDeprecated": false
   },
   {
@@ -40284,7 +40444,7 @@
     "key": "Message.FraudWarningMessageFor13To17",
     "description": null,
     "english": "By selecting a payment type, I agree that I am the parent or legal guardian of the account owner and I authorize this purchase.",
-    "translation": "Dengan melanjutkan, saya setuju bahwa saya orang tua atau wali sah pemilik akun ini dan saya mengotorisasi pembelian ini.",
+    "translation": "Dengan memilih tipe pembayaran, saya setuju bahwa saya orang tua atau wali sah pemilik akun ini dan saya mengotorisasi pembelian ini.",
     "isDeprecated": false
   },
   {
@@ -40339,7 +40499,7 @@
     "namespace": "Feature.Payment",
     "key": "Response.BraintreePending",
     "description": null,
-    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please check the My Transactions page to see if it processed successfully.",
     "translation": "Terjadi eror yang tidak terduga. Mungkin dibutuhkan waktu hingga 5 menit untuk memproses transaksi. Silakan mulai ulang halaman untuk mengetahui apakah transaksi sudah berhasil diproses.",
     "isDeprecated": false
   },
@@ -40357,6 +40517,14 @@
     "description": null,
     "english": "Error",
     "translation": "Eror",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Message.BraintreePayPalPreparePaymentError",
+    "description": null,
+    "english": "There was an error connecting to PayPal. Please try again.",
+    "translation": "Terjadi eror saat menghubungkan ke PayPal. Coba lagi nanti.",
     "isDeprecated": false
   },
   {
@@ -41244,7 +41412,7 @@
     "key": "Description.SoftRestrictionPrivateMessage",
     "description": "[DEPRECATED]",
     "english": "[DEPRECATED] {lineBreak}{linkedAssetName}{assetId}",
-    "translation": "O seguinte conteúdo foi temporariamente restrito porque pode violar nossas Regras da Comunidade. Essas regras definem expectativas para garantir que todos na Roblox sintam-se bem-vindos, seguros e tratados com respeito.{lineBreak}{lineBreak}• {linkedAssetName}, assetID:{assetId}{lineBreak}{lineBreak}Se o conteúdo não viola nossas regras da comunidade, as restrições serão suspensas quando nosso processo de revisão for concluído. Melhorar a segurança de sua conta pode ajudar a acelerar o processo.{lineBreak}{lineBreak}Agradecemos por manter a Roblox segura e civil.{lineBreak}{lineBreak}A Equipe Roblox",
+    "translation": "[DEPRECATED] {lineBreak}{linkedAssetName}{assetId}",
     "isDeprecated": true
   },
   {
@@ -41260,7 +41428,7 @@
     "key": "Description.SoftRestrictionPrivateMsg",
     "description": "Messaging notifying users that their asset has been soft restricted.",
     "english": "The following content has been temporarily restricted on Roblox as we investigate whether it violates our {communityStandardsHtmlUrlOpen}Community Standards{communityStandardsHtmlUrlClose}. These standards outline expectations to ensure that everyone on Roblox feels welcome and safe and is treated with respect.{lineBreak}{lineBreak}• {linkedAssetName}, assetID: {assetId}{lineBreak}{lineBreak}Restrictions will be lifted if the experience is found to be compliant with our Community Standards following our review.{lineBreak}{lineBreak}Thank you for keeping Roblox safe and civil.{lineBreak}{lineBreak}The Roblox Team",
-    "translation": "O seguinte conteúdo foi temporariamente restrito na Roblox porque pode violar nossas {communityStandardsHtmlUrlOpen}Regras da Comunidade{communityStandardsHtmlUrlClose}. Essas regras definem expectativas para garantir que todos na Roblox se sintam bem-vindos, seguros e respeitados.{lineBreak}{lineBreak}• {linkedAssetName}, assetID:{assetId}{lineBreak}{lineBreak}As restrições serão removidas se a experiência for estabelecida como seguidora das Diretrizes da Comunidade em nossa revisão.{lineBreak}{lineBreak}Agradecemos por manter a Roblox segura e civil.{lineBreak}{lineBreak}A Equipe Roblox",
+    "translation": "Konten berikut untuk sementara dibatasi di Roblox saat kami menyelidiki apakah konten tersebut melanggar {communityStandardsHtmlUrlOpen}Standar Komunitas{communityStandardsHtmlUrlClose} kami. Standar ini menjelaskan ekspektasi untuk memastikan bahwa semua orang di Roblox merasa diterima dan aman, serta diperlakukan dengan hormat.{lineBreak}{lineBreak}• {linkedAssetName}, ID aset: {assetId}{lineBreak}{lineBreak}Pembatasan akan dihapus jika pengalaman virtual tersebut dinyatakan sesuai dengan Standar Komunitas setelah kami tinjau.{lineBreak}{lineBreak}Terima kasih telah menjaga keamanan dan kesopanan di Roblox.{lineBreak}{lineBreak}Tim Roblox",
     "isDeprecated": false
   },
   {
@@ -41268,7 +41436,7 @@
     "key": "Description.DMCALegalNoticePrivateMessage",
     "description": "Generic group messaging when notifying users that an entity requested DMCA removal of their asset.",
     "english": "Hello,{lineBreak}{lineBreak}Links: {contentLink}{lineBreak}{lineBreak}This content has been removed because it may infringe intellectual property owned by someone else, {company}.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. Please remove from your group, including within your Experiences, any content that you do not have permission to use. You should always confirm that you have permission from the intellectual property owners before uploading content you haven't created. Intellectual property infringement violates our Terms of Use and further use of infringing material may result in additional action, including account termination. If you believe that your content has been removed by mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) please provide us with documentation of the authorization from the party that owns the protected material so that we may review for consideration.{lineBreak}{lineBreak}How can I remove infringing content from my Roblox account?{lineBreak}{lineBreak}You can find more information on archiving assets & Experiences in the following article: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}For more information please reference the following articles:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team{strikeDescriptor}",
-    "translation": "Hai,{lineBreak}{lineBreak}Tautan: {contentLink}{lineBreak}{lineBreak}Konten ini telah dihapus karena konten mungkin melanggar kekayaan intelektual yang dimiliki oleh orang lain, {company}.{lineBreak}{lineBreak}Roblox menghormati hak kekayaan intelektual dan mewajibkan komunitas Roblox untuk melakukan hal yang sama. Hapus konten dari grup kamu, termasuk pengalaman virtual, jika kamu tidak memiliki izin untuk menggunakannya. Kamu harus selalu mengonfirmasi bahwa kamu memiliki izin dari pemilik kekayaan intelektual sebelum meng-upload konten yang tidak dibuat oleh kamu. Pelanggaran kekayaan intelektual melanggar Ketentuan Penggunaan kami dan penggunaan lebih lanjut dari materi yang melanggar dapat mengakibatkan konsekuensi tambahan, termasuk terminasi akun kamu. Jika kamu yakin bahwa konten kamu telah dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, berikan dokumentasi otorisasi dari pihak yang memiliki materi yang dilindungi kepada kami agar kami dapat meninjaunya sebagai bahan pertimbangan.{lineBreak}{lineBreak}Bagaimana cara menghapus konten yang melanggar dari akun Roblox saya?{lineBreak}{lineBreak}Kamu dapat membaca informasi selengkapnya tentang Mengarsipkan Aset dan Pengalaman Virtual di artikel berikut: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}Untuk informasi lebih lanjut, lihat artikel berikut:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox{strikeDescriptor}",
+    "translation": "Hai,{lineBreak}{lineBreak}Tautan: {contentLink}{lineBreak}{lineBreak}Konten ini telah dihapus karena mungkin telah melanggar kekayaan intelektual yang dimiliki oleh orang lain, {company}.{lineBreak}{lineBreak}Roblox menghormati hak kekayaan intelektual dan mewajibkan komunitas Roblox untuk melakukan hal yang sama. Hapus konten dari grup kamu, termasuk pengalaman virtual, jika kamu tidak memiliki izin untuk menggunakannya. Kamu harus selalu mengonfirmasi bahwa kamu memiliki izin dari pemilik kekayaan intelektual sebelum meng-upload konten yang tidak dibuat oleh kamu. Pelanggaran kekayaan intelektual melanggar Ketentuan Penggunaan kami dan penggunaan lebih lanjut dari materi yang melanggar dapat mengakibatkan konsekuensi tambahan, termasuk terminasi akun kamu. Jika kamu yakin bahwa konten kamu telah dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, berikan dokumentasi otorisasi dari pihak yang memiliki materi yang dilindungi kepada kami agar kami dapat meninjaunya sebagai bahan pertimbangan.{lineBreak}{lineBreak}Bagaimana cara menghapus konten yang melanggar dari akun Roblox saya?{lineBreak}{lineBreak}Kamu dapat membaca informasi selengkapnya tentang Mengarsipkan Aset dan Pengalaman Virtual di artikel berikut: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}Untuk informasi lebih lanjut, lihat artikel berikut:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox{strikeDescriptor}",
     "isDeprecated": true
   },
   {
@@ -41276,7 +41444,7 @@
     "key": "Description.DMCALegalNoticeEarlyStrikePrivateMessage",
     "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (1st/2nd strike)",
     "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {contentLink}. This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. As the uploader or group owner responsible for that content, a strike was assigned to your account.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. You should make sure you have permission from the relevant rights holder before uploading content you haven't created or allowing such content to be uploaded to a group that you own. You should remove from your account and/or group, including within your Experiences, content that belongs to others that you don’t have permission to use. Intellectual property infringement violates our Terms of Use and, if you accrue further strikes, may result in your account being terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you. To file a counter-notice you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com. Please note that if you’re under 13 years old, your parent or legal guardian must submit the counter-notice on your behalf.{lineBreak}{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the content was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located (or if your address is outside of the United States, for any judicial district in which Roblox may be found) and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. We may forward this information to the intellectual property owner as part of your counter-notice.{lineBreak}Your electronic signature;{lineBreak}{lineBreak}Can I have the strike removed from my account?{lineBreak}{lineBreak}Roblox will not consider a strike under our repeat infringer policy if{lineBreak}(a) the claimant who filed the takedown notice withdraws the notice; or {lineBreak}(b) you successfully challenge the takedown notice through our counter-notification process.{lineBreak}{lineBreak}Is there anything else I should consider doing at this time?{lineBreak}{lineBreak}Yes. You should consider enrolling in the remediation program. If you enroll in the remediation program within 10 days of receiving this message (following the process described below) we will take that into consideration when reviewing your account for removal under our repeat infringer policy.{lineBreak}{lineBreak}How do I enroll in the remediation program?{lineBreak}Please follow these steps:{lineBreak}{lineBreak}1) Carefully read our educational materials, found at {copyrightEducationUrl}. They contain information about intellectual property rights.{lineBreak}2) Within 10 days of receiving this message, send an email to copyright_agent@roblox.com with the message “I have read the educational materials and want to enroll\" and your username in the body of the email. Please note that if you’re under 13 years old, your parent or legal guardian must contact us on your behalf.{lineBreak}3) Closely review content you previously uploaded on Roblox. If you're not sure whether you have the right to use that content, please archive it. You can find more about the archiving Assets and Experiences at {archivingUrl}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
-    "translation": "Hai,{lineBreak}{lineBreak}Kami menghubungi kamu untuk memberitahukan bahwa konten berikut telah dihapus dari Roblox: {contentLink}. Konten ini telah dihapus karena pemilik kekayaan intelektual, {company}, mengirim pemberitahuan kepada Roblox yang memberitahukan Roblox bahwa konten ini mengandung materi yang melanggar hak kekayaan intelektual mereka. Sebagai orang yang meng-upload atau pemilik grup yang bertanggung jawab atas konten tersebut, pelanggaran telah diterapkan ke akun kamu.{lineBreak}{lineBreak}Roblox menghormati hak kekayaan intelektual dan mewajibkan semua anggota komunitas Roblox untuk melakukan hal yang sama. Pastikan kamu memiliki izin dari pemegang hak yang relevan sebelum meng-upload konten yang tidak dibuat oleh kamu atau mengizinkan konten tersebut di-upload ke grup yang kamu miliki. Kamu harus menghapus konten milik orang lain dari akun dan/atau grup kamu, termasuk pengalaman virtual, jika kamu tidak memiliki izin untuk menggunakannya. Pelanggaran kekayaan intelektual melanggar Ketentuan Layanan kami dan berdasarkan Kebijakan Pelanggar Berulang, pelanggaran lebih lanjut dapat mengakibatkan terminasi akun kamu.{lineBreak}{lineBreak}Apa yang dapat saya lakukan jika saya memiliki hak untuk menggunakan konten yang telah dihapus?{lineBreak}Jika kamu yakin bahwa konten kamu telah dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, kamu dapat mengajukan keberatan terhadap pemberitahuan penghapusan dengan mengirim pemberitahuan tanggapan.{lineBreak}{lineBreak}Harap diperhatikan bahwa mengirim pemberitahuan tanggapan dapat mengakibatkan konsekuensi yang serius.{lineBreak}Jika orang yang mengirim pemberitahuan penghapusan yakin bahwa pemberitahuan tanggapan kamu tidak akurat atau konten kamu telah melakukan pelanggaran, orang tersebut dapat mengajukan gugatan terhadap kamu. Selain itu, mengirim pemberitahuan tanggapan palsu secara disengaja merupakan hal yang ilegal dan kamu dapat diminta pertanggungjawabannya.{lineBreak}Jika kami yakin bahwa pemberitahuan tanggapan kamu valid, kami akan meneruskannya kepada orang yang mengirim pemberitahuan penghapusan. Berdasarkan pemberitahuan tanggapan yang valid, pada umumnya Roblox akan memulihkan konten kamu dalam 10-14 hari kerja, kecuali kami menerima informasi bahwa ada gugatan yang telah diajukan terhadap kamu. Untuk mengirim pemberitahuan tanggapan, gunakan formulir dukungan pelanggan kami di https://www.roblox.com/support atau kirim pemberitahuan tanggapan melalui email ke copyright_agent@roblox.com. Harap diperhatikan bahwa jika kamu berusia di bawah 13 tahun, orang tua atau wali sah kamu harus mengirim pemberitahuan tanggapan atas nama kamu.{lineBreak}{lineBreak}Pastikan pemberitahuan tanggapan kamu mencakup informasi berikut:{lineBreak}{lineBreak}Tautan ke konten yang dihapus.{lineBreak}Pernyataan berdasarkan hukuman atas kesaksian/keterangan palsu bahwa kamu memiliki keyakinan dengan itikad baik bahwa materi telah dihapus/dinonaktifkan sebagai akibat dari kekeliruan atau kesalahan identifikasi.{lineBreak}Pernyataan bahwa kamu menyetujui yurisdiksi pengadilan distrik federal Amerika Serikat untuk distrik yudisial di mana alamat kamu berada (atau jika alamat kamu berada di luar Amerika Serikat, untuk setiap distrik yudisial tempat Roblox dapat ditemukan) dan kamu akan menerima layanan proses dari orang yang mengirim pemberitahuan penghapusan atau agen orang tersebut.{lineBreak}Nama lengkap, alamat lengkap, dan nomor telepon kamu. Kami dapat meneruskan informasi ini kepada pemilik kekayaan intelektual sebagai bagian dari pemberitahuan tanggapan kamu.{lineBreak}Tanda tangan elektronik kamu.{lineBreak}{lineBreak}Apakah pelanggaran dapat dihapus dari akun saya?{lineBreak}{lineBreak}Roblox tidak akan menganggap suatu tindakan pelanggaran berdasarkan kebijakan pelanggar berulang kami jika{lineBreak}(a) penggugat yang mengajukan pemberitahuan penghapusan menarik pemberitahuannya atau {lineBreak}(b) kamu berhasil menantang pemberitahuan penghapusan melalui proses pemberitahuan tanggapan kami.{lineBreak}{lineBreak}Apakah ada hal lain yang dapat saya lakukan pada saat ini?{lineBreak}{lineBreak}Ya. Pertimbangkan untuk mendaftar ke program remediasi kami. Jika kamu mendaftar ke program remediasi dalam waktu 10 hari setelah menerima pesan ini (dengan mengikuti proses yang dijelaskan di bawah), kami akan mempertimbangkan penghapusan pelanggaran saat meninjau akun kamu berdasarkan kebijakan pelanggar berulang kami.{lineBreak}{lineBreak}.Bagaimana cara mendaftar ke program remediasi?{lineBreak}Ikuti langkah berikut:{lineBreak}{lineBreak}1. Baca materi edukasi kami dengan seksama di {copyrightEducationUrl}. Materi ini mengandung informasi tentang hak kekayaan intelektual.{lineBreak}2. Dalam 10 hari setelah menerima pesan ini, kirim email ke copyright_agent@roblox.com dengan pesan \"Saya telah membaca materi edukasi dan ingin mendaftar\" dan informasikan nama pengguna kamu di badan email. Harap diperhatikan bahwa jika kamu berusia di bawah 13 tahun, orang tua atau wali sah kamu harus menghubungi kami atas nama kamu.{lineBreak}3. Tinjau secara cermat semua konten yang sudah kamu upload sebelumnya. Jika kamu tidak yakin memiliki hak untuk menggunakan konten tersebut, arsipkan konten tersebut. Kamu dapat mempelajari lebih lanjut tentang Mengarsipkan Aset dan Pengalaman Virtual di {archivingUrl}.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox",
+    "translation": "Hai,{lineBreak}{lineBreak}Kami menghubungi kamu untuk memberitahukan bahwa konten berikut telah dihapus dari Roblox: {contentLink}. Konten ini telah dihapus karena pemilik kekayaan intelektual, {company}, mengirim pemberitahuan kepada Roblox yang menginformasikan bahwa konten ini mengandung materi yang melanggar hak kekayaan intelektual mereka. Sebagai orang yang meng-upload atau pemilik grup yang bertanggung jawab atas konten tersebut, pelanggaran telah diterapkan ke akun kamu.{lineBreak}{lineBreak}Roblox menghormati hak kekayaan intelektual dan mewajibkan semua anggota komunitas Roblox untuk melakukan hal yang sama. Pastikan kamu memiliki izin dari pemegang hak yang relevan sebelum meng-upload konten yang tidak dibuat oleh kamu atau mengizinkan konten tersebut di-upload ke grup yang kamu miliki. Kamu harus menghapus konten milik orang lain dari akun dan/atau grup kamu, termasuk pengalaman virtual, jika kamu tidak memiliki izin untuk menggunakannya. Pelanggaran kekayaan intelektual melanggar Ketentuan Layanan kami dan berdasarkan Kebijakan Pelanggar Berulang, pelanggaran lebih lanjut dapat mengakibatkan terminasi akun kamu.{lineBreak}{lineBreak}Apa yang dapat saya lakukan jika saya memiliki hak untuk menggunakan konten yang telah dihapus?{lineBreak}Jika kamu yakin bahwa konten kamu telah dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, kamu dapat mengajukan keberatan terhadap pemberitahuan penghapusan dengan mengirim pemberitahuan tanggapan.{lineBreak}{lineBreak}Harap diperhatikan bahwa mengirim pemberitahuan tanggapan dapat mengakibatkan konsekuensi yang serius.{lineBreak}Jika orang yang mengirim pemberitahuan penghapusan yakin bahwa pemberitahuan tanggapan kamu tidak akurat atau konten kamu telah melakukan pelanggaran, orang tersebut dapat mengajukan gugatan terhadap kamu. Selain itu, mengirim pemberitahuan tanggapan palsu secara disengaja merupakan hal yang ilegal dan kamu dapat diminta pertanggungjawabannya.{lineBreak}Jika kami yakin bahwa pemberitahuan tanggapan kamu valid, kami akan meneruskannya kepada orang yang mengirim pemberitahuan penghapusan. Berdasarkan pemberitahuan tanggapan yang valid, pada umumnya Roblox akan memulihkan konten kamu dalam 10-14 hari kerja, kecuali kami menerima informasi bahwa ada gugatan yang telah diajukan terhadap kamu. Untuk mengirim pemberitahuan tanggapan, gunakan formulir dukungan pelanggan kami di https://www.roblox.com/support atau kirim pemberitahuan tanggapan melalui email ke copyright_agent@roblox.com. Harap diperhatikan bahwa jika kamu berusia di bawah 13 tahun, orang tua atau wali sah kamu harus mengirim pemberitahuan tanggapan atas nama kamu.{lineBreak}{lineBreak}Pastikan pemberitahuan tanggapan kamu memiliki informasi berikut:{lineBreak}{lineBreak}Tautan ke konten yang dihapus.{lineBreak}Pernyataan berdasarkan hukuman atas kesaksian/keterangan palsu bahwa kamu memiliki keyakinan dengan itikad baik bahwa materi telah dihapus/dinonaktifkan sebagai akibat dari kekeliruan atau kesalahan identifikasi.{lineBreak}Pernyataan bahwa kamu menyetujui yurisdiksi pengadilan distrik federal Amerika Serikat untuk distrik yudisial di mana alamat kamu berada (atau jika alamat kamu berada di luar Amerika Serikat, untuk setiap distrik yudisial tempat Roblox dapat ditemukan) dan kamu akan menerima layanan proses dari orang yang mengirim pemberitahuan penghapusan atau agen orang tersebut.{lineBreak}Nama lengkap, alamat lengkap, dan nomor telepon kamu. Kami dapat meneruskan informasi ini kepada pemilik kekayaan intelektual sebagai bagian dari pemberitahuan tanggapan kamu.{lineBreak}Tanda tangan elektronik kamu.{lineBreak}{lineBreak}Apakah pelanggaran dapat dihapus dari akun saya?{lineBreak}{lineBreak}Roblox tidak akan menganggap suatu tindakan pelanggaran berdasarkan kebijakan pelanggar berulang kami jika{lineBreak}(a) penggugat yang mengajukan pemberitahuan penghapusan menarik pemberitahuannya atau {lineBreak}(b) kamu berhasil menantang pemberitahuan penghapusan melalui proses pemberitahuan tanggapan kami.{lineBreak}{lineBreak}Apakah ada hal lain yang dapat saya lakukan pada saat ini?{lineBreak}{lineBreak}Ya. Pertimbangkan untuk mendaftar ke program remediasi kami. Jika kamu mendaftar ke program remediasi dalam waktu 10 hari setelah menerima pesan ini (dengan mengikuti proses yang dijelaskan di bawah), kami akan mempertimbangkan penghapusan pelanggaran saat meninjau akun kamu berdasarkan kebijakan pelanggar berulang kami.{lineBreak}{lineBreak}.Bagaimana cara mendaftar ke program remediasi?{lineBreak}Ikuti langkah berikut:{lineBreak}{lineBreak}1. Baca materi edukasi kami dengan seksama di {copyrightEducationUrl}. Materi ini mengandung informasi tentang hak kekayaan intelektual.{lineBreak}2. Dalam 10 hari setelah menerima pesan ini, kirim email ke copyright_agent@roblox.com dengan pesan \"Saya telah membaca materi edukasi dan ingin mendaftar\" dan informasikan nama pengguna kamu di badan email. Harap diperhatikan bahwa jika kamu berusia di bawah 13 tahun, orang tua atau wali sah kamu harus menghubungi kami atas nama kamu.{lineBreak}3. Tinjau secara cermat semua konten yang sudah kamu upload sebelumnya. Jika kamu tidak yakin memiliki hak untuk menggunakan konten tersebut, arsipkan konten tersebut. Kamu dapat mempelajari lebih lanjut tentang Mengarsipkan Aset dan Pengalaman Virtual di {archivingUrl}.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox",
     "isDeprecated": false
   },
   {
@@ -41284,7 +41452,23 @@
     "key": "Description.DMCALegalNoticeFinalStrikePrivateMessage",
     "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (Last strike)",
     "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {lineBreak}{lineBreak}{contentLink}.{lineBreak}{lineBreak}This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. Due to the prior takedown reports sent against your account, your account has been terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of a mistake or misidentification (for example, you have the authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you.{lineBreak}{lineBreak}To file a counterclaim you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com.{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the material was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. {lineBreak}Your electronic signature;{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
-    "translation": "Hai,{lineBreak}{lineBreak}Kami menghubungi kamu untuk memberitahukan bahwa konten berikut telah dihapus dari Roblox: {lineBreak}{lineBreak}{contentLink}.{lineBreak}{lineBreak}Konten ini telah dihapus karena pemilik kekayaan intelektual, {company}, mengirim pemberitahuan kepada Roblox yang menginformasikan bahwa konten tersebut mengandung materi yang melanggar hak kekayaan intelektual mereka. Oleh karena laporan penghapusan sebelumnya yang dikirim terhadap akun kamu, akun kamu telah diterminasi berdasarkan Kebijakan Pelanggar Berulang.{lineBreak}{lineBreak}Apa yang dapat saya lakukan jika saya memiliki hak untuk menggunakan konten yang telah dihapus?{lineBreak}Jika kamu yakin bahwa konten kamu dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, kamu dapat mengajukan keberatan terhadap pemberitahuan penghapusan dengan mengirim pemberitahuan tanggapan.{lineBreak}{lineBreak}Harap diperhatikan bahwa mengirim pemberitahuan tanggapan dapat mengakibatkan konsekuensi yang serius.{lineBreak}Jika orang yang mengirim pemberitahuan penghapusan yakin bahwa pemberitahuan tanggapan kamu tidak akurat atau konten kamu telah melakukan pelanggaran, orang tersebut dapat mengajukan gugatan terhadap kamu. Selain itu, mengirim pemberitahuan tanggapan palsu secara disengaja merupakan hal yang ilegal dan kamu dapat diminta pertanggungjawabannya.{lineBreak}{lineBreak}Jika kami memutuskan bahwa pemberitahuan tanggapan kamu mematuhi hukum, kami akan meneruskannya kepada orang yang mengirim pemberitahuan penghapusan. Berdasarkan pemberitahuan tanggapan yang valid, pada umumnya Roblox akan memulihkan konten kamu dalam 10-14 hari kerja, kecuali kami menerima informasi bahwa ada gugatan yang telah diajukan terhadap kamu. {lineBreak}{lineBreak}Untuk mengirim pemberitahuan tanggapan, gunakan formulir dukungan pelanggan kami di https://www.roblox.com/support atau kirim pemberitahuan tanggapan melalui email ke copyright_agent@roblox.com.{lineBreak}Pastikan pemberitahuan tanggapan kamu mencakup informasi berikut:{lineBreak}{lineBreak}Tautan ke konten yang dihapus.{lineBreak}Pernyataan berdasarkan hukuman atas kesaksian/keterangan palsu bahwa kamu memiliki keyakinan dengan itikad baik bahwa materi dihapus/dinonaktifkan sebagai akibat dari kekeliruan atau kesalahan identifikasi.{lineBreak}Pernyataan bahwa kamu menyetujui yurisdiksi pengadilan distrik federal Amerika Serikat untuk distrik yudisial di mana alamat kamu berada dan kamu akan menerima layanan proses dari orang yang mengirim pemberitahuan penghapusan atau agen orang tersebut.{lineBreak}Nama lengkap, alamat lengkap, dan nomor telepon kamu.{lineBreak}Tanda tangan elektronik kamu.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox",
+    "translation": "Hai,{lineBreak}{lineBreak}Kami menghubungi kamu untuk memberitahukan bahwa konten berikut telah dihapus dari Roblox: {lineBreak}{lineBreak}{contentLink}.{lineBreak}{lineBreak}Konten ini telah dihapus karena pemilik kekayaan intelektual, {company}, mengirim pemberitahuan kepada Roblox yang menginformasikan bahwa konten tersebut mengandung materi yang melanggar hak kekayaan intelektual mereka. Oleh karena laporan penghapusan sebelumnya yang telah dikirim terhadap akun kamu, akun kamu telah diterminasi berdasarkan Kebijakan Pelanggar Berulang.{lineBreak}{lineBreak}Apa yang dapat saya lakukan jika saya memiliki hak untuk menggunakan konten yang telah dihapus?{lineBreak}Jika kamu yakin bahwa konten kamu dihapus karena kekeliruan atau kesalahan identifikasi, misalnya kamu memiliki otorisasi untuk menggunakan konten yang dihapus atau penggunaan secara wajar berlaku, kamu dapat mengajukan keberatan terhadap pemberitahuan penghapusan dengan mengirim pemberitahuan tanggapan.{lineBreak}{lineBreak}Harap diperhatikan bahwa mengirim pemberitahuan tanggapan dapat mengakibatkan konsekuensi yang serius.{lineBreak}Jika orang yang mengirim pemberitahuan penghapusan yakin bahwa pemberitahuan tanggapan kamu tidak akurat atau konten kamu telah melakukan pelanggaran, orang tersebut dapat mengajukan gugatan terhadap kamu. Selain itu, mengirim pemberitahuan tanggapan palsu secara disengaja merupakan hal yang ilegal dan kamu dapat diminta pertanggungjawabannya.{lineBreak}{lineBreak}Jika kami memutuskan bahwa pemberitahuan tanggapan kamu mematuhi hukum, kami akan meneruskannya kepada orang yang mengirim pemberitahuan penghapusan. Berdasarkan pemberitahuan tanggapan yang valid, pada umumnya Roblox akan memulihkan konten kamu dalam 10-14 hari kerja, kecuali kami menerima informasi bahwa ada gugatan yang telah diajukan terhadap kamu. {lineBreak}{lineBreak}Untuk mengirim pemberitahuan tanggapan, gunakan formulir dukungan pelanggan kami di https://www.roblox.com/support atau kirim pemberitahuan tanggapan melalui email ke copyright_agent@roblox.com.{lineBreak}Pastikan pemberitahuan tanggapan kamu memiliki informasi berikut:{lineBreak}{lineBreak}Tautan ke konten yang dihapus.{lineBreak}Pernyataan berdasarkan hukuman atas kesaksian/keterangan palsu bahwa kamu memiliki keyakinan dengan itikad baik bahwa materi dihapus/dinonaktifkan sebagai akibat dari kekeliruan atau kesalahan identifikasi.{lineBreak}Pernyataan bahwa kamu menyetujui yurisdiksi pengadilan distrik federal Amerika Serikat untuk distrik yudisial di mana alamat kamu berada dan kamu akan menerima layanan proses dari orang yang mengirim pemberitahuan penghapusan atau agen orang tersebut.{lineBreak}Nama lengkap, alamat lengkap, dan nomor telepon kamu.{lineBreak}Tanda tangan elektronik kamu.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Admin Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.AssetSoftRestrictionRemoved",
+    "description": "The subject of the message sent to users when their asset has had a soft restriction removed.",
+    "english": "Content had restriction removed",
+    "translation": "Pembatasan konten telah dihapus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.SoftRestrictionRemovedPrivateMsg",
+    "description": "Messaging notifying users that a soft restriction has been removed.",
+    "english": "Following our investigation, all restrictions have been removed from the following content{lineBreak}{lineBreak}• {linkedAssetName}, assetID: {assetId}{lineBreak}{lineBreak}Thank you for complying with the Roblox {communityStandardsHtmlUrlOpen}Community Standards{communityStandardsHtmlUrlClose}.",
+    "translation": "Setelah penyelidikan kami, semua pembatasan telah dihapus dari konten berikut{lineBreak}{lineBreak}• {linkedAssetName}, ID aset: {assetId}{lineBreak}{lineBreak}Terima kasih telah mematuhi {communityStandardsHtmlUrlOpen}Standar Komunitas{communityStandardsHtmlUrlClose}Roblox.",
     "isDeprecated": false
   },
   {
@@ -53632,6 +53816,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits.GameEngine.Note",
+    "description": "Cheats and Exploits note specific to Game Engine exploits",
+    "english": "Roblox does not permit the use of third-party software to modify the client.",
+    "translation": "Roblox tidak mengizinkan penggunaan perangkat lunak pihak ketiga untuk memodifikasi aplikasi Roblox.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Transactions",
     "key": "Heading.Title",
     "description": null,
@@ -54468,7 +54660,7 @@
     "key": "Description.DownloadMonthInstructions",
     "description": "Description for 1 month",
     "english": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
-    "translation": "Pilih bulan transaksi yang ingin kamu download. Transaksi baru mungkin belum muncul untuk beberapa jam.",
+    "translation": "Pilih bulan transaksi yang ingin kamu download. Transaksi baru mungkin belum muncul selama beberapa jam.",
     "isDeprecated": false
   },
   {
@@ -56915,7 +57107,7 @@
     "namespace": "Authentication.CrossDevice",
     "key": "Label.QrInstructions",
     "description": null,
-    "english": "Scan this QR code from your logged in device.",
+    "english": "Scan this QR code from your logged in device's camera.",
     "translation": "Scan kode QR ini dari perangkat kamu yang sudah log in.",
     "isDeprecated": false
   },
@@ -61893,6 +62085,14 @@
     "description": "used in the text for when an event is happening (ex: TODAY AT 5pm)",
     "english": "TODAY",
     "translation": "HARI INI",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "FriendsInterestedTextMulti",
+    "description": "Used to display which of your friends are interested in an event in the event more than 2 friends are interested",
+    "english": "{username1}, {username2} and {number} friends or following",
+    "translation": "{username1}, {username2}, dan {number} teman atau pengguna yang kamu ikuti",
     "isDeprecated": false
   },
   {
