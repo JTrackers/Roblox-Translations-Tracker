@@ -5620,7 +5620,7 @@
     "Description.VerificationEmail.Subject.Under13.V2": {
       "deprecated": false,
       "privateNote": "Subject line for the 'email verification' email for users under 13. This is sent to the parent of the user, who is responsible for taking action on authorizing the email.",
-      "text": "Roblox Account Authorization: {username}"
+      "text": "Roblox Email Validation: {username}"
     },
     "Description.VerificationEmail.Header.Under13.V2": {
       "deprecated": false,
@@ -5630,12 +5630,12 @@
     "Description.VerificationEmail.Body.Under13.V2": {
       "deprecated": false,
       "privateNote": "First part of the body text for the 'email verification' email for users under 13. This is directed at the parent of the user. Below this text is an \"I Agree, Verify Email\" button that the parent can click to proceed.",
-      "text": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent’s email address. If you approve of this request, {emphasisStart}please click the button below to complete the verification process.{emphasisEnd}{paragraphEnd}{paragraphStart}By clicking “I Agree, Verify Email” you agree that (a) You and your child assent to the Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}"
+      "text": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address. Please confirm this email address is correct by {emphasisStart}clicking the button below to complete the validation process{emphasisEnd}. Regardless of whether you validate the parental email address or not, the child will still be able to retain their account and chat with others.{paragraphEnd}{paragraphStart}By clicking the \"I Agree, Validate Email\" button you also agree that (a) You and your child agree to the Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}"
     },
     "Description.VerificationEmail.ButtonText.Under13.V2": {
       "deprecated": false,
-      "privateNote": "Text of the button in the 'email verification' email for users under 13. The text of this button is referred to by name in the first part of the email body ('by clicking \"I Agree, Verify Email\"...'), so the name should be consistent.",
-      "text": "I Agree, Verify Email"
+      "privateNote": "Text of the button in the 'email verification' email for users under 13. The text of this button is referred to by name in the first part of the email body ('by clicking \"I Agree, Validate Email\"...'), so the name should be consistent.",
+      "text": "I Agree, Validate Email"
     },
     "Description.VerificationEmail.BodyLower.Under13.V2": {
       "deprecated": false,
@@ -16924,6 +16924,16 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Classic"
+    },
+    "Message.ErrorAdvancedSaveHair": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Failed to save: A maximum of one hair is allowed."
+    },
+    "Message.ErrorAdvancedSave": {
+      "deprecated": false,
+      "privateNote": "i.e. Failed to save: A maximum of 1 hair is allowed.",
+      "text": "Failed to save: A maximum of {limitAmount} {assetType} is allowed."
     }
   },
   "Feature.SocialMetaTags": {
@@ -30006,12 +30016,12 @@
     "Response.TooManyVerificationAttemps": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Too many attempts. Please wait a bit."
+      "text": "Too many attempts. Please try again in a few minutes."
     },
     "Response.TooManyVerificationAttempts": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Too many attempts. Please wait a bit."
+      "text": "Too many attempts. Please try again in a few minutes."
     }
   },
   "Feature.Trades": {
