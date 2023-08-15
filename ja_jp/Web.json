@@ -776,6 +776,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "認証コードをもらうには、保護者の方のメールアドレスを入力してください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -4133,6 +4141,22 @@
     "description": null,
     "english": "Verification Code",
     "translation": "認証コード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "{termsOfUseLink} を確認し、同意しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "{privacyPolicyLink} を承認する",
     "isDeprecated": false
   },
   {
@@ -12305,6 +12329,14 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Label.Notifications.ExperienceInvitation",
+    "description": null,
+    "english": "A friend invites me to an experience",
+    "translation": "友達から仮想空間の編集に招待されたとき",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Description.ContentControlsWithUnratedDescription",
     "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
     "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
@@ -12749,6 +12781,22 @@
     "description": "similar to Description.HelpText.VoiceChat",
     "english": "Enabling microphone allows eligible users to chat with their voice in your experience.",
     "translation": "マイクを有効にすると、有資格ユーザーがあなたの仮想空間内でボイスを使ってチャットできるようになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.ChatInExperiences",
+    "description": "similar to Description.HelpText.VoiceChatNew",
+    "english": "Enabling microphone allows eligible users to chat with their voice in experiences.",
+    "translation": "マイクを有効にすると、有資格ユーザーが仮想空間内でボイスを使ってチャットできるようになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SpendingLimit",
+    "description": null,
+    "english": "Spending Limit:",
+    "translation": "課金限度額:",
     "isDeprecated": false
   },
   {
@@ -13409,10 +13457,82 @@
   },
   {
     "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCertificateOfNonUSActivitiesIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Certificate of Non-US Activities Incomplete. We noticed that you did not complete the Certificate of No US activities in the Tax Form section on the DevEx portal.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：米国以外の活動の証明（Certificate of Non-US Activities）が未完了なため。DevEx ポータルの納税関連書類で米国以外の活動を証明する書類が完了していないようです。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
     "key": "Description.RejectionFailedToSubmitPaymentMethod",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Payment Method. A Payment Method must be submitted in order to approve your DevEx Request.",
-    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法が提出できていません。開発者エクスチェンジリクエストが承認されるためには、支払い方法の提出が完了していなければなりません。",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法が提出できていないため。開発者エクスチェンジリクエストが承認されるためには、支払い方法の提出が完了していなければなりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionRequiredDevExPortalDocumentsNotSubmitted",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Required DevEx portal documents not submitted.",
+    "translation": "お送りいただいた開発者両替リクエストは、受理できませんでした。理由：必要なDevExポータル上の書類が未提出なため。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalBlocked",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx portal is blocked. Your DevEx portal account is locked for a compliance issue.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：DevExポータルがブロックされているため。お持ちのDevExポータル用アカウントは、コンプライアンスの問題があるためロックされています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.AboveMaximumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法の限度額を超えているため。当社が利用している業者のプロバイダが支払いに限度額を設けているため、今回の開発者エクスチェンジリクエストを受理できません。今回の開発者エクスチェンジリクエストは、これを理由に却下されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.BelowMinimumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法の最小支払い額に満たないため。当社が利用している業者のプロバイダが支払いに最小支払い額を設けているため、今回の開発者エクスチェンジリクエストを受理できません。今回の開発者エクスチェンジリクエストは、これを理由に却下されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAbovePaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法の限度額を超えているため。当社が利用している業者のプロバイダが支払いに限度額を設けているため、今回の開発者エクスチェンジリクエストを受理できません。今回の開発者エクスチェンジリクエストは、これを理由に却下されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionBelowPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法の最小支払い額に満たないため。当社が利用している業者のプロバイダが支払いに最小支払い額を設けているため、今回の開発者エクスチェンジリクエストを受理できません。今回の開発者エクスチェンジリクエストは、これを理由に却下されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCountryNotSupported",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Country Not Supported.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：お住まいの国には対応していないため。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToCompleteTipaltiRegistration",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to complete Tipalti registration. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：Tipalti（ティパルティ）の登録が未完了なため。DevExポータルについては、「開発者エクスチェンジ(DevEx) よくあるご質問」のページにある情報をご参照ください。",
     "isDeprecated": false
   },
   {
@@ -15377,10 +15497,98 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Message.ResaleFeePolicy",
+    "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
+    "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
+    "translation": "再販売を含むマーケットプレイスのすべての取引からの収入は、その取引に関わったユーザーの方々とRobloxで共有されます。再販売については、ユーザーがあなたの価格を承認した際、購入者が支払うRobuxの {yourSharePercent}% が再販売者であるあなたに支払われます。残りの {robloxFeePercent}% は、Robloxとアイテムのクリエーターを含むその他のユーザーの方々に支払われます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.ItemOwned",
     "description": null,
     "english": "Item Owned",
     "translation": "アイテムは所有済みです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.GotIt",
+    "description": null,
+    "english": "Got It",
+    "translation": "了解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCount",
+    "description": "I.e. Item Owned (3)",
+    "english": "Item Owned ({itemCount})",
+    "translation": "所有しているアイテム ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BuyPrice",
+    "description": null,
+    "english": "Buy Price:",
+    "translation": "購入価格:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Holding",
+    "description": null,
+    "english": "Holding",
+    "translation": "保留",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.OffSale",
+    "description": null,
+    "english": "Off Sale",
+    "translation": "非売品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemInAHold",
+    "description": null,
+    "english": "Item in a hold?",
+    "translation": "アイテムは保留中ですか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.HoldingPolicy",
+    "description": null,
+    "english": "Holding Policy",
+    "translation": "保留ポリシー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicy",
+    "description": null,
+    "english": "After purchase, Collectible items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "購入後、コレクタブルアイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.OffSaleItem",
+    "description": null,
+    "english": "Off Sale Item",
+    "translation": "非売品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Genres",
+    "description": null,
+    "english": "Genres",
+    "translation": "ジャンル",
     "isDeprecated": false
   },
   {
@@ -15409,6 +15617,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Action.ReadMore",
+    "description": null,
+    "english": "Read More",
+    "translation": "続きを読む",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.BuyNow",
     "description": null,
     "english": "Buy Now",
@@ -15420,7 +15636,31 @@
     "key": "Message.RemainingBalance",
     "description": null,
     "english": "Your balance after this transaction will be {remainingBalance}.",
-    "translation": "この取引後の残高は {remainingBalance} になります.",
+    "translation": "この取引後の残高は {remainingBalance} になります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ItemInInventory",
+    "description": null,
+    "english": "This item is available in your inventory.",
+    "translation": "このアイテムはインベントリから入手できます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BestPrice",
+    "description": null,
+    "english": "Best Price",
+    "translation": "ベスト価格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMoreReseller",
+    "description": null,
+    "english": "See More {linkStart}{resellerLink}{linkEnd}",
+    "translation": "もっと見る {linkStart}{resellerLink}{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -15429,6 +15669,30 @@
     "description": null,
     "english": "Wear",
     "translation": "装備",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.BundlePurchase",
+    "description": "Would you like to buy the \"Penguin\" from Roblox for (Robux Icon) 50?",
+    "english": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "translation": "{sellerName} さんから「{bundleName}」を {price} で購入しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetPurchase",
+    "description": "Would you like to buy the hat \"Cowboy Hat\" from Roblox for (Robux Icon) 10?",
+    "english": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "{sellerName} さんから「{itemName}」({itemType}) を {price} で購入しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetGet",
+    "description": "Would you like to get the Hat \"Bowler Hat\" from Roblox for Free?",
+    "english": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "{sellerName} さんから「{itemName}」({itemType}) を {price} で欲しいですか？",
     "isDeprecated": false
   },
   {
@@ -36424,6 +36688,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.LocalCreditBanner",
+    "description": "Local credit pre-launch banner 1 heading",
+    "english": "NOTICE: Upcoming Change to Redemption Rate for Roblox Credit (Local Currency)",
+    "translation": "ご注意: 予定されているRobloxクレジット（現地通貨）の償還率の変更について",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.LocalCreditBanner",
+    "description": "Local credit banner pre-launch message 1",
+    "english": "Beginning in April 2023 Roblox credit will no longer be denominated in U.S. Dollars. All Roblox gift cards will be redeemable for credit denominated in your local currency. We will send messages to your Roblox Inbox starting in January with more information.",
+    "translation": "2023年4月から、Robloxクレジットは、米ドル建てではなくなります。すべてのRobloxギフトカードは、お住まいの場所の現地通貨で表示されたクレジットが引き換え可能となります。詳細は、1月からお使いのRobloxの受信トレイにメッセージを送ってお伝えします。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PeopleList",
     "key": "Label.Chat",
     "description": "Chat with friends",
@@ -39275,7 +39555,7 @@
     "namespace": "Feature.Payment",
     "key": "Label.Paypal",
     "description": null,
-    "english": "Paypal",
+    "english": "PayPal",
     "translation": "Paypal",
     "isDeprecated": false
   },
@@ -40716,15 +40996,23 @@
     "key": "Description.DMCALegalNoticePrivateMessage",
     "description": "Generic group messaging when notifying users that an entity requested DMCA removal of their asset.",
     "english": "Hello,{lineBreak}{lineBreak}Links: {contentLink}{lineBreak}{lineBreak}This content has been removed because it may infringe intellectual property owned by someone else, {company}.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. Please remove from your group, including within your Experiences, any content that you do not have permission to use. You should always confirm that you have permission from the intellectual property owners before uploading content you haven't created. Intellectual property infringement violates our Terms of Use and further use of infringing material may result in additional action, including account termination. If you believe that your content has been removed by mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) please provide us with documentation of the authorization from the party that owns the protected material so that we may review for consideration.{lineBreak}{lineBreak}How can I remove infringing content from my Roblox account?{lineBreak}{lineBreak}You can find more information on archiving assets & Experiences in the following article: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}For more information please reference the following articles:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team{strikeDescriptor}",
-    "translation": "こんにちは。{lineBreak}{lineBreak}リンク: {contentLink}{lineBreak}{lineBreak}このコンテンツは、他の方（{company}）が所有する知的財産権を侵害している可能性があるため削除されました。{lineBreak}{lineBreak}Roblox（ロブロックス）は、他の方々の知的財産権を尊重しており、Robloxコミュニティのメンバー全員も同様に知的財産権の尊重を義務付けています。使用許可のないすべてのコンテンツを仮想空間内を含むお持ちのグループから削除してください。自分が制作していないコンテンツをアップロードする場合には知的財産権の所有者の許可があるかどうかを毎回、必ず確認しなければなりません。知的所有権の侵害は、当社の利用規約の違反となり、侵害している内容を使い続けることは、アカウント削除を含む追加処分の対象となります。コンテンツが間違いまたは誤認（例えば、削除されたコンテンツの使用許可があったり、フェアユーズが適用される場合）によって削除されたと思う場合は、当社がレビューした上で検討できるように保護された内容の所有権を持つ者が出した書面による許可を当社に提出してください。{lineBreak}{lineBreak}自分のRobloxアカウントにある知的財産権を侵害しているコンテンツの削除の仕方について。{lineBreak}{lineBreak}アセットのアーカイブと仮想空間についての詳しい情報は、以下の記事をごらんください。: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}さらにくわしい情報はこちらをごらんください。:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox運営チーム{strikeDescriptor}",
+    "translation": "こんにちは。{lineBreak}{lineBreak}リンク: {contentLink}{lineBreak}{lineBreak}このコンテンツは、他の方（{company}）が所有する知的財産権を侵害している可能性があるため削除されました。{lineBreak}{lineBreak}Roblox（ロブロックス）は、他の方々の知的財産権を尊重しており、Robloxコミュニティのメンバー全員にも同様に知的財産権の尊重を義務付けています。使用許可のないすべてのコンテンツを仮想空間内を含むお持ちのグループから削除してください。自分が制作していないコンテンツをアップロードする場合には知的財産権の所有者の許可があるかどうかを毎回、必ず確認しなければなりません。知的所有権の侵害は、当社の利用規約の違反となり、侵害している内容を使い続けることは、アカウント削除を含む追加処分の対象となります。コンテンツが間違いまたは誤認（例えば、削除されたコンテンツの使用許可があったり、フェアユースが適用される場合）によって削除されたと思う場合は、当社がレビューした上で検討できるように保護された内容の所有権を持つ者が出した書面による許可を当社に提出してください。{lineBreak}{lineBreak}自分のRobloxアカウントにある知的財産権を侵害しているコンテンツの削除の仕方について。{lineBreak}{lineBreak}アセットのアーカイブと仮想空間についての詳しい情報は、以下の記事をごらんください。: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}さらにくわしい情報はこちらをごらんください。:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox運営チーム{strikeDescriptor}",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.DMCALegalNoticeEarlyStrikePrivateMessage",
+    "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (1st/2nd strike)",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {contentLink}. This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. As the uploader or group owner responsible for that content, a strike was assigned to your account.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. You should make sure you have permission from the relevant rights holder before uploading content you haven't created or allowing such content to be uploaded to a group that you own. You should remove from your account and/or group, including within your Experiences, content that belongs to others that you don’t have permission to use. Intellectual property infringement violates our Terms of Use and, if you accrue further strikes, may result in your account being terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you. To file a counter-notice you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com. Please note that if you’re under 13 years old, your parent or legal guardian must submit the counter-notice on your behalf.{lineBreak}{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the content was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located (or if your address is outside of the United States, for any judicial district in which Roblox may be found) and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. We may forward this information to the intellectual property owner as part of your counter-notice.{lineBreak}Your electronic signature;{lineBreak}{lineBreak}Can I have the strike removed from my account?{lineBreak}{lineBreak}Roblox will not consider a strike under our repeat infringer policy if{lineBreak}(a) the claimant who filed the takedown notice withdraws the notice; or {lineBreak}(b) you successfully challenge the takedown notice through our counter-notification process.{lineBreak}{lineBreak}Is there anything else I should consider doing at this time?{lineBreak}{lineBreak}Yes. You should consider enrolling in the remediation program. If you enroll in the remediation program within 10 days of receiving this message (following the process described below) we will take that into consideration when reviewing your account for removal under our repeat infringer policy.{lineBreak}{lineBreak}How do I enroll in the remediation program?{lineBreak}Please follow these steps:{lineBreak}{lineBreak}1) Carefully read our educational materials, found at {copyrightEducationUrl}. They contain information about intellectual property rights.{lineBreak}2) Within 10 days of receiving this message, send an email to copyright_agent@roblox.com with the message “I have read the educational materials and want to enroll\" and your username in the body of the email. Please note that if you’re under 13 years old, your parent or legal guardian must contact us on your behalf.{lineBreak}3) Closely review content you previously uploaded on Roblox. If you're not sure whether you have the right to use that content, please archive it. You can find more about the archiving Assets and Experiences at {archivingUrl}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
+    "translation": "こんにちは。{lineBreak}{lineBreak}次の内容がRoblox（ロブロックス）から削除されたのでご連絡しています。 {contentLink}。知的財産権所有者である {company} が自社の知的財産権の侵害にあたる内容が含まれていることを告げる通知をRobloxに送ったため、このコンテンツは削除されました。そのコンテンツに責任を持つアップロード者またはグループとして、あなたのアカウントに警告が出されました。{lineBreak}{lineBreak}Robloxは、他の方々の知的財産権を尊重しており、Robloxコミュニティのメンバー全員にも同様に知的財産権の尊重を義務付けています。自分が制作していないコンテンツをアップロードしたり、あなたが所有するグループにそのようなコンテンツのアップロードを許可する場合には、知的財産権の所有者の許可があるかどうかを必ず確認しなければなりません。使用許可がなく、他の方々が所有しているすべてのコンテンツをお持ちのアカウントおよびグループ（仮想空間内を含む）から削除してください。知的所有権の侵害は、当社の利用規約の違反となり、これ以上の警告が出されると、常習的侵害者防止ポリシーに基づいてアカウント削除を含む追加処分の対象となります。{lineBreak}{lineBreak}削除されたコンテンツを使用する権利がある場合について{lineBreak}間違いや誤認のためにコンテンツが削除されたと思われる場合（例えば、 削除されたコンテンツを使用する権利があるか、フェアユースが適用される場合）は、反論通知を提出することにより、削除要請の通知に異議を唱えることができます。{lineBreak}{lineBreak}反論通知の送信は、深刻な影響を及ぼす可能性があるのでご注意ください。{lineBreak}削除要請の通知を提出した方が、あなたの反論通知が不正確だと考える場合、またはあなたのコンテンツが知的財産権を侵害している場合、先方があなたに対して訴訟を起こす可能性があります。同様に、故意に誤った反論通知を提出することは違法であり、法的責任が生じる可能性があります。{lineBreak}当社であなたの反論通知が法的に準拠していると判断した場合は、それを削除要請通知の送信者に転送します。あなたに対して訴訟が起こされたという通知がない限り、有効な内容の反論通知に基づいてRobloxは通常、10〜14営業日以内にコンテンツを復元します。反訴（異議申し立て）をするには、https://www.roblox.com/support でカスタマーサポート用フォームを使用するか、copyright_agent@roblox.com に反論通知をメールで送信できます。13歳以下の方の場合は、両親または法的な後見人の方が代理で反論通知を送る必要があります。{lineBreak}{lineBreak}あなたの反論通知には、必ず以下の情報が含まれていることを確認してください。{lineBreak}{lineBreak}関連するコンテンツへのリンク。{lineBreak}偽証の罰則規定に基づくことを承知したうえで、間違いまたは誤認の結果、その内容が削除されたか無効になったという確信があるという誠実な陳述書。{lineBreak}お住まいの住所が記載されている司法管轄地区について、米国連邦地方裁判所の管轄に同意し、削除要請の通知を提出した方かその代理人からの訴状の通達を受け取り、（もしくは、あなたの住所がアメリカ合衆国外の場合、Robloxがあるどの司法管轄区域でも）削除要請の通知を提出した方かその代理人からの訴状の通達を受け取るという声明文。{lineBreak}あなたの氏名、住所、電話番号。当社は、この情報を知的財産権所有者にあなたの反論通知の一部として転送するかもしれません。{lineBreak}あなたの電子署名。{lineBreak}{lineBreak}アカウントから処分を外す方法について。{lineBreak}{lineBreak}Robloxは、{lineBreak}(a) 削除要請を申請した側がその通知を取り下げるか、 {lineBreak}(b) あなたが当社の反論通知プロセスを通じて削除要請に対して有効な反論をしない限り、常習的侵害者ポリシーに基づいて処分の決定を再考することはありません。{lineBreak}{lineBreak}そのような場合に他にすべきことについて。{lineBreak}{lineBreak}法的救済プログラムへ登録することを検討すべきです。このメッセージを受け取ってから10日以内に法的救済プログラムに登録した場合（以下のプロセスに従い）、当社はあなたのアカウントを常習的侵害者ポリシーに基づいて削除するかどうかをレビューする際に考慮に入れます。{lineBreak}{lineBreak}法的救済プログラムへの登録方法について。{lineBreak}以下の手続きを踏んでください。{lineBreak}{lineBreak}1) {copyrightEducationUrl} にある当社の教育関連の書類をよく読んでください。こちらに知的財産権についての情報があります。{lineBreak}2) このメッセージを受信してから10日以内に copyright_agent@roblox.com に 「教育関連書類を読み、登録を希望します」という内容のメッセージを本文にユーザーネームを明記した上で送信してください。13歳以下の方の場合は、両親または法的な後見人の方が代理で当社に連絡する必要があります。{lineBreak}3) 過去にRobloxにアップロードしたコンテンツを注意して見直してください。もし、そのコンテンツを使う権利を持っているかどうかわからない場合は、アーカイブに入れてください。アセットや仮想空間をアーカイブに入れることについて詳しくは {archivingUrl} を参照してください。{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox 運営チームより",
+    "isDeprecated": false
   },
   {
     "namespace": "Moderation.ModeratorActions",
     "key": "Description.DMCALegalNoticeFinalStrikePrivateMessage",
     "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (Last strike)",
     "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {lineBreak}{lineBreak}{contentLink}.{lineBreak}{lineBreak}This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. Due to the prior takedown reports sent against your account, your account has been terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of a mistake or misidentification (for example, you have the authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you.{lineBreak}{lineBreak}To file a counterclaim you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com.{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the material was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. {lineBreak}Your electronic signature;{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
-    "translation": "こんにちは。{lineBreak}{lineBreak}Roblox（ロブロックス）から以下のコンテンツが削除されたのでお知らせします。 {lineBreak}{lineBreak}{contentLink} {lineBreak}{lineBreak}このコンテンツは、知的財産の所有者である {company} からRobloxにこのコンテンツには知的財産権の侵害にあたる内容が含まれているという通知があったためです。お持ちのアカウントに対して過去に削除要請があったため、当社の常習侵害者用ポリシーによってこのアカウントは停止されました。{lineBreak}{lineBreak}削除されたコンテンツの権利を持っている場合はどうしたらいいですか？{lineBreak}あなたのコンテンツが間違いや誤認識に基づいて削除された（例：削除されたコンテンツを使用する権限があるか、フェアユースが適用される）と思った場合は、反論通知を提出して削除通知への異議申し立てができます。{lineBreak}{lineBreak}反論通知の提出は、重大な結果につながる可能性があるのでご注意ください。{lineBreak}もし、削除通知を送信した相手があなたの反論通知が不正確であるか、あなたのコンテンツが権利侵害をしているとした場合、先方があなたに対して訴訟を起こす可能性があります。同様に、意図的に間違った内容の反論通知を提出することは違法であり、あなたに法的責任が生じることがあります。{lineBreak}{lineBreak}もし、当社があなたの反論通知を合法的なものだと認めた場合、当社はそれを削除通知の送信者に転送します。あなたに対して訴訟が起こされたという報告がない限り、Robloxは通常、正当な反論通知に基づいてあなたのコンテンツを10〜14日営業日以内に復元します。 {lineBreak}{lineBreak}異議申し立てをするには、当社のカスタマーサポート用フォームを利用できます。 https://www.roblox.com/support あるいは、あなたの反論通知をこちら copyright_agent@roblox.com にE\nメールで送信できます。{lineBreak}反論通知には、必ず以下の情報を入れてください。:{lineBreak}{lineBreak}該当するコンテンツに関する資料へのリンク（複数可）、{lineBreak}偽証の罰則が適用することを承知の上で、間違いまたは誤解によって当該内容が削除または無効化されたと誠意を持って申し立てる声明文、{lineBreak}司法管轄区については、あなたの住所があるアメリカ合衆国連邦地方裁判所の管轄と、削除通知の送信者またはその代理人からの手続きを承認することに同意する声明文、{lineBreak}あなたの名前、郵送用の住所、 電話番号、{lineBreak}あなたの電子署名。{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox運営チームより",
+    "translation": "こんにちは。{lineBreak}{lineBreak}次の内容がRoblox（ロブロックス）から削除されたのでご連絡しています。 {lineBreak}{lineBreak}{contentLink}。{lineBreak}{lineBreak}知的財産権所有者である {company} が自社の知的財産権の侵害にあたる内容が含まれていることを告げる通知をRobloxに送ったため、このコンテンツは削除されました。お持ちのアカウントに対して過去に削除要請の報告があったため、常習的侵害者防止ポリシーに基づいてお持ちのアカウントが削除されました。{lineBreak}{lineBreak}削除されたコンテンツを使用する権利がある場合について{lineBreak}間違いや誤認のためにコンテンツが削除されたと思われる場合（例えば、 削除されたコンテンツを使用する権利があるか、フェアユースが適用される場合）は、反論通知を提出することにより、削除要請の通知に異議を唱えることができます。{lineBreak}{lineBreak}反論通知の送信は、深刻な影響を及ぼす可能性があるのでご注意ください。{lineBreak}削除要請の通知を提出した方が、あなたの反論通知が不正確だと考える場合、またはあなたのコンテンツが知的財産権を侵害している場合、先方があなたに対して訴訟を起こす可能性があります。同様に、故意に誤った反論通知を提出することは違法であり、法的責任が生じる可能性があります。{lineBreak}{lineBreak}当社であなたの反論通知が法的に準拠していると判断した場合は、それを削除要請通知の送信者に転送します。あなたに対して訴訟が起こされたという通知がない限り、有効な内容の反論通知に基づいてRobloxは通常、10〜14営業日以内にコンテンツを復元します。{lineBreak}{lineBreak}反訴（異議申し立て）をするには、https://www.roblox.com/support のフォームを使用するか、copyright_agent@roblox.com に反論通知をメールで送信してください。{lineBreak}反論通知には必ず次の情報が含まれていることを確認してください。{lineBreak}{lineBreak}関連コンテンツへのリンク。{lineBreak}偽証の罰則規定に基づくことを承知したうえで、間違いまたは誤認の結果、その内容が削除されたか無効になったという確信があるという誠実な陳述書。{lineBreak}お住まいの住所が記載されている司法管轄区域について、米国連邦地方裁判所の管轄に同意し、削除要請の通知を提出した方かその代理人からの訴状の通達を受け取るという声明文。{lineBreak}あなたの氏名、住所、電話番号。 {lineBreak}あなたの電子署名。{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox 運営チーム",
     "isDeprecated": false
   },
   {
@@ -56136,6 +56424,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits.GameEngine.Note",
+    "description": "Cheats and Exploits note specific to Game Engine exploits",
+    "english": "Roblox does not permit the use of third-party software to modify the client.",
+    "translation": "Robloxは、クライアントに変更を加えるためにサードパーティ製のソフトウェア使用を許可していません。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Transactions",
     "key": "Heading.Title",
     "description": null,
@@ -56965,6 +57261,14 @@
     "description": null,
     "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
     "translation": "コミッション、マーケットプレイス手数料、グループペイアウトを除いた純支払い額です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadMonthInstructions",
+    "description": "Description for 1 month",
+    "english": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
+    "translation": "取引内容をダウンロードしたい月を選択してください。新規の取引は、数時間表示されない場合があります。",
     "isDeprecated": false
   },
   {
@@ -73352,6 +73656,126 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Action",
+    "description": "Genre Tile Title - Action",
+    "english": "Action",
+    "translation": "アクション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Adventure",
+    "description": "Genre Tile Title - Adventure",
+    "english": "Adventure",
+    "translation": "アドベンチャー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Fighting",
+    "description": "Genre Tile Title - Fighting",
+    "english": "Fighting",
+    "translation": "格闘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Horror",
+    "description": "Genre Tile Title - Horror",
+    "english": "Horror",
+    "translation": "ホラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Military",
+    "description": "Genre Tile Title - Military",
+    "english": "Military",
+    "translation": "ミリタリー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Obby",
+    "description": "Genre Tile Title - Obby",
+    "english": "Obby",
+    "translation": "障害物アスレ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Racing",
+    "description": "Genre Tile Title - Racing",
+    "english": "Racing",
+    "translation": "レース",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.RolePlaying",
+    "description": "Genre Tile Title - Role Playing",
+    "english": "Role Playing",
+    "translation": "ロールプレイ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Shopping",
+    "description": "Genre Tile Title - Shopping",
+    "english": "Shopping",
+    "translation": "ショッピング",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Simulator",
+    "description": "Genre Tile Title - Simulator",
+    "english": "Simulator",
+    "translation": "シミュレータ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Sports",
+    "description": "Genre Tile Title - Sports",
+    "english": "Sports",
+    "translation": "スポーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Story",
+    "description": "Genre Tile Title - Story",
+    "english": "Story",
+    "translation": "ストーリー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Strategy",
+    "description": "Genre Tile Title - Strategy",
+    "english": "Strategy",
+    "translation": "ストラテジー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Tycoon",
+    "description": "Genre Tile Title - Tycoon",
+    "english": "Tycoon",
+    "translation": "タイクーン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Heading.Title",
+    "description": "Section heading for Genre Explorer. Showing on Discover page on top of the carousel.",
+    "english": "Browse by Category",
+    "translation": "カテゴリ別に閲覧",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AgreementsUpdate",
     "key": "Heading.AgreementsUpdate",
     "description": null,
@@ -86340,7 +86764,7 @@
     "key": "Message.AudioLimits",
     "description": null,
     "english": "Audio uploads must be less than 7 minutes. ",
-    "translation": "音声のアップロードは7分未満でなければなりません。",
+    "translation": "音声のアップロードは7分未満でなければなりません。 ",
     "isDeprecated": false
   },
   {
@@ -86485,6 +86909,110 @@
     "description": null,
     "english": "Asset name or description was moderated. Please try again.",
     "translation": "アセット名または説明が内容規制されました。もう一度やり直してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaCapacity",
+    "description": null,
+    "english": "Audio uploads are now free. You get {capacity} uploads per {duration}. ",
+    "translation": "オーディオ（音声）のアップロードが無料になりました。 {duration} ごとに {capacity} 回、アップロードできます。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaLeft",
+    "description": null,
+    "english": "Audio uploads are now free. You have {quota} left until {duration} from now. ",
+    "translation": "オーディオのアップロードは無料になりました。 {duration} まであと {quota} 回あります。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaLimit",
+    "description": null,
+    "english": "Audio uploads are now free. You've reached your audio upload limit. ",
+    "translation": "オーディオのアップロードが無料になりました。オーディオのアップロード回数が上限に達しました。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadNoCapacity",
+    "description": null,
+    "english": " Audio uploads are temporarily disabled. ",
+    "translation": " オーディオのアップロードが一時的に無効になっています。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioLimitExpiry",
+    "description": null,
+    "english": "It refreshes in {expiryTime}.",
+    "translation": "{expiryTime} 以内に更新されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "UploadRobuxRequired",
+    "description": null,
+    "english": "Upload (Robux Required) ",
+    "translation": "アップロード（Robux が必要） ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadNoCapacity",
+    "description": null,
+    "english": "{assetType} uploads are temporarily disabled. ",
+    "translation": "{assetType} のアップロードが一時的に無効になっています。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadQuotaCapacity",
+    "description": null,
+    "english": "You get {capacity} uploads per {duration}. ",
+    "translation": "{duration} につき {capacity} 回アップロードできます。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadQuotaLeft",
+    "description": null,
+    "english": "You have {quota} remaining and your quota will reset in {duration}. ",
+    "translation": "あと {quota} 回アップロードできます。上限は、 {duration} 以内にリセットされます。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadQuotaLimit",
+    "description": null,
+    "english": "You've reached your {assetType} upload limit. ",
+    "translation": "{assetType} のアップロード回数が上限に達しました。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadCapacityInfo",
+    "description": null,
+    "english": "{assetType} upload limit: {quota} uploads remaining until {expiry}. ",
+    "translation": "{assetType} アップロード上限: {expiry} まで {quota} 回までアップロードできます。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.UploadQuotaInfo",
+    "description": null,
+    "english": "{assetType} upload limit: {usage} of {capacity} uploads remaining until {expiry}. ",
+    "translation": "{assetType} のアップロード回数の上限: {expiry} までにできるアップロード回数 {usage} / {capacity} ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Label.Month",
+    "description": null,
+    "english": "month",
+    "translation": "月",
     "isDeprecated": false
   },
   {
@@ -88587,7 +89115,7 @@
     "namespace": "CreatorDashboard.Access",
     "key": "Message.DialogContentTitle",
     "description": null,
-    "english": "Do you agree that your experience is controller compatible and containes NONE of the following?",
+    "english": "Do you agree that your experience is controller compatible and contains NONE of the following?",
     "translation": "あなたの仮想空間がコントローラーと互換性があり、以下のどれも含まれていないことに同意しますか。",
     "isDeprecated": false
   },
@@ -89833,6 +90361,14 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "FriendsInterestedTextMulti",
+    "description": "Used to display which of your friends are interested in an event in the event more than 2 friends are interested",
+    "english": "{username1}, {username2} and {number} friends or following",
+    "translation": "{username1} さん、 {username2} さん、 {number} 人の友達またはフォロー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "PrivateExperienceErrorDescriptor",
     "description": "used to explain a greyed-out experience thumbnail",
     "english": "This experience is private.",
@@ -90051,7 +90587,7 @@
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.EventSettings",
     "description": "Title for settings related to events for creators. Events in this context are things like emails, push notifications, and messages.",
-    "english": "Events",
+    "english": "Event Settings",
     "translation": "イベント",
     "isDeprecated": false
   },
