@@ -45932,7 +45932,7 @@
     "key": "Heading.Resources",
     "description": null,
     "english": "Resources",
-    "translation": "資料",
+    "translation": "リソース",
     "isDeprecated": false
   },
   {
@@ -46044,7 +46044,7 @@
     "key": "Heading.Engagement",
     "description": null,
     "english": "Engagement",
-    "translation": "エンゲージメント",
+    "translation": "エンゲージメンド",
     "isDeprecated": false
   },
   {
@@ -52924,7 +52924,7 @@
     "key": "Heading.Overview",
     "description": null,
     "english": "Analytics Overview",
-    "translation": "解析の概要",
+    "translation": "解析概要",
     "isDeprecated": false
   },
   {
@@ -53284,7 +53284,7 @@
     "key": "Message.NoDataReturn",
     "description": null,
     "english": "Your game does not have data during this time period",
-    "translation": "何もデータが返されません",
+    "translation": "あなたのゲーム上には、この期間のデータがありません",
     "isDeprecated": false
   },
   {
@@ -54308,7 +54308,7 @@
     "key": "Message.Compliance",
     "description": null,
     "english": "For compliance reasons, if your experience has these elements and does not respect the {policyLinkStart}policy APIs{policyLinkEnd} we need to make your experience unavailable in certain regions. By submitting this questionnaire you will be making your experience unavailable in the regions listed below.",
-    "translation": "法令遵守のため、あなたの体験にこのような要素があり、 {policyLinkStart}ポリシー API{policyLinkEnd} を尊重していない場合、当社は特定の地域であなたの体験を利用できないようにする必要があります。このアンケートを送信すると、以下に挙げた地域であなたの体験が利用できなくなります。",
+    "translation": "コンプライアンス上の理由のため、あなたの体験にこのような要素が含まれ、 {policyLinkStart}ポリシー API {policyLinkEnd} に従わない場合、当社はあなたの体験を特定の地域で利用できなくする必要があります。このアンケートを送信することで、以下に挙げた地域ではあなたの体験は利用できなくなります。",
     "isDeprecated": false
   },
   {
@@ -54892,7 +54892,7 @@
     "key": "Message.NetworkError",
     "description": null,
     "english": "Something went wrong! Try again later. (status code {status})",
-    "translation": "問題が発生しました！後でもう一度お試しください。(ステータスコード: {status})",
+    "translation": "何らかの問題が発生しました！後ほどやり直してください。(ステータスコード {status})",
     "isDeprecated": true
   },
   {
@@ -57164,7 +57164,7 @@
     "key": "Label.NDaysExpiration",
     "description": "For the open cloud expiration date picker. daysLastUsed will never be singular (i.e. always > 1).",
     "english": "{daysLastUsed} Days From Now",
-    "translation": "今から {daysLastUsed} 日",
+    "translation": "今日から {daysLastUsed} 日後",
     "isDeprecated": false
   },
   {
@@ -57396,7 +57396,7 @@
     "key": "Message.APIKeyDescriptionPlaceholder",
     "description": "For the Create Form Description input placeholder",
     "english": "Enter a description here...",
-    "translation": "ここに説明を入力...",
+    "translation": "こちらに詳細を入力...",
     "isDeprecated": false
   },
   {
@@ -58204,7 +58204,7 @@
     "key": "Message.Expired",
     "description": "API key expiration tooltip message",
     "english": "The API key is expired. Either clear the expiration or set a new expiration date.",
-    "translation": "API キーの有効期限が切れています。有効期限を消去するか、新しい有効期限を設定してください。",
+    "translation": "API キーが有効期限切れです。再アクティベートするには、新しい有効期限を現在設定されている日付以降に設定してください。",
     "isDeprecated": false
   },
   {
@@ -58236,7 +58236,7 @@
     "key": "Description.APIKeyDescription",
     "description": "For the sub label of the API key description input",
     "english": "Enter an optional description for your API key",
-    "translation": "API キーにオプションの説明を入力",
+    "translation": "APIキーにオプションの説明を入力",
     "isDeprecated": false
   },
   {
@@ -58244,7 +58244,7 @@
     "key": "Message.GenericSearchError",
     "description": null,
     "english": "Error. Please try again.",
-    "translation": "エラーです。もう一度やり直してください。",
+    "translation": "エラーです。もう一度お試しください",
     "isDeprecated": false
   },
   {
@@ -58260,7 +58260,7 @@
     "key": "Message.GenericSearchPlaceholder",
     "description": null,
     "english": "Search here",
-    "translation": "ここでサーチ",
+    "translation": "こちらでサーチ",
     "isDeprecated": false
   },
   {
@@ -58268,7 +58268,7 @@
     "key": "Heading.General",
     "description": null,
     "english": "General Information",
-    "translation": "一般情報",
+    "translation": "全般的な情報",
     "isDeprecated": false
   },
   {
@@ -58405,6 +58405,14 @@
     "description": null,
     "english": "Unknown User",
     "translation": "不明なユーザー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.ConfirmKeyRegenerateWhenNotOwner",
+    "description": "The dialog message that confirms if a user wants to regenerate an API key, when the last generated user id does not match the current user",
+    "english": "You are not the last user to generate this API key. This action will generate a new key string and cannot be undone. This may potentially permanently hide the API key from its last generator/creator unless they are a group admin or group owner. Are you sure you want to regenerate the key?",
+    "translation": "あなたはこの API キーを以前に生成したユーザーではありません。この動作は新しいキー文字列を生成し、元に戻すことはできません。 これにより、グループ管理者またはグループオーナーでない限り、APIキーが最後の生成者または作成者に対して永久的に非表示になる可能性があります。 キーを再生成してもよろしいですか？",
     "isDeprecated": false
   },
   {
@@ -58972,7 +58980,7 @@
     "key": "Label.Description",
     "description": null,
     "english": "Description",
-    "translation": "説明",
+    "translation": "概要",
     "isDeprecated": false
   },
   {
@@ -59436,7 +59444,7 @@
     "key": "Message.AutoTranslationLanguagesError",
     "description": null,
     "english": "Unable to get languages eligible for auto translation",
-    "translation": "自動翻訳の対象言語を取得できません",
+    "translation": "自動翻訳ができる言語を取得できませんでした",
     "isDeprecated": false
   },
   {
@@ -59444,7 +59452,7 @@
     "key": "Message.LocalesError",
     "description": null,
     "english": "Unable to get candidate languages",
-    "translation": "言語の候補を取得できません",
+    "translation": "候補の言語を取得できません",
     "isDeprecated": false
   },
   {
@@ -59916,7 +59924,7 @@
     "key": "Heading.HistoricalData",
     "description": null,
     "english": "Historical Data",
-    "translation": "過去のデータ",
+    "translation": "履歴",
     "isDeprecated": false
   },
   {
@@ -60228,7 +60236,7 @@
     "key": "Toast.GenericError",
     "description": null,
     "english": "Something went wrong!",
-    "translation": "問題が発生しました！",
+    "translation": "何らかの問題が発生しました！",
     "isDeprecated": false
   },
   {
@@ -60396,7 +60404,7 @@
     "key": "Label.GroupRoleSelection",
     "description": null,
     "english": "Assign Translator to:",
-    "translation": "以下に翻訳者を割り当て:",
+    "translation": "以下を翻訳者にする:",
     "isDeprecated": false
   },
   {
@@ -60484,7 +60492,7 @@
     "key": "Label.Description",
     "description": null,
     "english": "Description",
-    "translation": "説明",
+    "translation": "概要",
     "isDeprecated": false
   },
   {
@@ -60812,7 +60820,7 @@
     "key": "Message.DeleteEntryWarning",
     "description": null,
     "english": "Are you sure you want to delete this entry? Please note this action is irreversible.",
-    "translation": "この入力内容を削除してもよろしいですか？この操作は元に戻せませんのでご注意ください。",
+    "translation": "この入力内容を削除してよろしいですか？この動作は戻せないのでご注意ください。",
     "isDeprecated": false
   },
   {
@@ -60916,7 +60924,7 @@
     "key": "Message.NoSourceContent",
     "description": null,
     "english": "No source content found for this experience. You can enable Auto-Scraping or manually upload content from Developer Studio to view and manage translations here.",
-    "translation": "この体験のソースコンテンツが見つかりません。ここで、自動取得を有効にしたり、開発者の Studioからコンテンツを手動でアップロードして、翻訳の確認や管理を行うことができます。",
+    "translation": "この体験のソースコンテンツはありません。ここで、自動取得を有効にしたり、Developer Studioからコンテンツを手動でアップロードして、翻訳の確認や管理を行うことができます。",
     "isDeprecated": false
   },
   {
@@ -60964,7 +60972,7 @@
     "key": "Message.TranslationSaved",
     "description": null,
     "english": "Translation saved",
-    "translation": "翻訳を保存しました",
+    "translation": "翻訳は保存済み",
     "isDeprecated": false
   },
   {
@@ -60972,7 +60980,7 @@
     "key": "Message.FailedToDeleteEntry",
     "description": null,
     "english": "Failed to delete entry, please try again later",
-    "translation": "入力内容を削除できません。後でもう一度お試しください",
+    "translation": "新規入力を削除できません。後でもう一度お試しください",
     "isDeprecated": false
   },
   {
@@ -60981,6 +60989,22 @@
     "description": null,
     "english": "Entry deleted",
     "translation": "入力内容を削除しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SourceText",
+    "description": null,
+    "english": "Source Text:",
+    "translation": "ソーステキスト:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.CompletedTranslations",
+    "description": null,
+    "english": "Completed Translations:",
+    "translation": "完了済みの翻訳:",
     "isDeprecated": false
   },
   {
@@ -61068,7 +61092,7 @@
     "key": "Title.Cpu",
     "description": null,
     "english": "Used Cores per Server",
-    "translation": "各サーバーに使用されたコア",
+    "translation": "サーバーごとの使用コア数",
     "isDeprecated": false
   },
   {
@@ -61076,7 +61100,7 @@
     "key": "Title.Memory",
     "description": null,
     "english": "Memory per Server",
-    "translation": "サーバーあたりのメモリ",
+    "translation": "サーバーごとのメモリ",
     "isDeprecated": false
   },
   {
@@ -61084,7 +61108,7 @@
     "key": "Title.HeartbeatRatio",
     "description": null,
     "english": "Server FPS",
-    "translation": "サーバーFPS",
+    "translation": "サーバーのハートビート",
     "isDeprecated": false
   },
   {
@@ -61260,7 +61284,7 @@
     "key": "Message.RequestFailure",
     "description": null,
     "english": "Request of Compute Telemetry failure",
-    "translation": "テレメトリーの計算リクエストができませんでした",
+    "translation": "テレメトリ障害演算のリクエスト",
     "isDeprecated": false
   },
   {
@@ -61268,7 +61292,7 @@
     "key": "Label.RootPlaceId",
     "description": null,
     "english": "Root PlaceId",
-    "translation": "ルート PlaceId",
+    "translation": " ルート PlaceId",
     "isDeprecated": false
   },
   {
