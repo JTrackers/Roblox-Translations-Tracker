@@ -1456,6 +1456,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSLogin.Body",
+    "description": "SMS message for 2sv login.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to verify your account",
+    "translation": "Roblox 帳號 {accountName} 的雙步驟驗證：請輸入 {code} 驗證您的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSActivationText.Body",
+    "description": "SMS message for activating SMS 2sv.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to activate 2SV.",
+    "translation": "Roblox 帳號 {accountName} 的雙步驟驗證：請輸入 {code} 啟用雙步驟驗證。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
+    "description": "SMS message for disabling SMS 2sv.",
+    "english": "Roblox 2SV for {accountName} disabled.",
+    "translation": "已停用Roblox 帳號 {accountName} 的雙步驟驗證。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSCustomerSupportDeactivationText.Body",
+    "description": "SMS message for CS deactivation of SMS 2sv.",
+    "english": "Customer support has deactivated 2SV for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from SMS will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in Account Settings under “Security”.",
+    "translation": "客服人員已停用您的 Roblox 帳號的雙步驟驗證。您可能在客服表單中提出了這項要求，或客服人員為了確保您的帳號安全採取了此行動。您登入或進行其他操作時將不再需要使用簡訊的驗證碼。您可以在「安全」選項中重新啟用雙步驟驗證。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSRecoveryCodeDepletedText",
+    "description": "SMS message for when out of recovery codes.",
+    "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
+    "translation": "你已用完此 Roblox 帳號的雙步驟驗證帳號復原碼。若您還需要帳號復原方面的協助，請聯絡客服人員。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -10525,6 +10565,14 @@
     "description": "Previously Description.VoiceChatInfo.SafePreBody + Description.VoiceChatInfo.FAQ + .",
     "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our {startLink}Voice Recording FAQ{endLink}.",
     "translation": "如果您聽到其他使用者進行不當或有害發言，請將該使用者靜音並使用檢舉濫用功能。Roblox 為了管理和安全用途可以在平台上任意儲存錄音。若要了解更多資訊，請前往{startLink}錄音常見問題集{endLink}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Success.MonthlySpendUpdate.V2",
+    "description": null,
+    "english": "Success! Monthly Spend Restrictions have been set up.",
+    "translation": "成功！已設定單月消費限制。",
     "isDeprecated": false
   },
   {
@@ -29080,6 +29128,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Description.RenameCharacter",
+    "description": null,
+    "english": "Choose a new name for your character.",
+    "translation": "為角色取新的名稱。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorUpdateCharacter",
+    "description": null,
+    "english": "Character update failed, please try again later.",
+    "translation": "無法更新角色，請稍後再試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.FailedDeleteCharacter",
+    "description": null,
+    "english": "Failed to delete character.",
+    "translation": "無法刪除角色。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -46560,6 +46632,118 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.EditSponsorshipAndRetry",
+    "description": "If the user inputs invalid sponsorship details, this message prompts the user to edit the details and try again.",
+    "english": "Please edit your sponsorship and try again.",
+    "translation": "請編輯贊助資訊再重新嘗試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.AtLeastOneOptionSelected",
+    "description": "Error message that appears when user has unselected all options from one or multiple categories.",
+    "english": "At least one option from each category must be selected.",
+    "translation": "每個類別必須至少選擇一個選項。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.NumberOfDaysSelector",
+    "description": "Description explaining that the dropdown selector specifies how many days an ad will run",
+    "english": "Days your ad will last",
+    "translation": "廣告持續的天數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.DailyBudgetSelector",
+    "description": "Heading that labels a numeric type box where the user specifies the daily budget they want to spend on their ad",
+    "english": "Daily Budget",
+    "translation": "每日預算",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.RobuxPerDayExplanation",
+    "description": "Describes a numeric text box which is used to specify the daily cost of running an ad",
+    "english": "Robux you want to spend per day",
+    "translation": "您每天想要花費的 Robux 金額",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.AdNameRequired",
+    "description": "Error message explaining that the user needs to specify a name for their ad",
+    "english": "Ad name is required",
+    "translation": "廣告名稱必填",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.CampaignNameSelectionAdvice",
+    "description": "A description providing recommendations and context to help the user better choose a name for their ad.",
+    "english": "Choose a descriptive name. This ad name is only visible to you.",
+    "translation": "選擇一個描述廣告性質的名稱。只有您看得見此名稱。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.TargetAudience",
+    "description": "Header for a section of a form where the user specifies what audience (gender, age range, device type etc) they want to target for an ad.",
+    "english": "Target Audience",
+    "translation": "目標受眾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.TargetAudience",
+    "description": "Label for a section that summarizes the target audience for an ad.",
+    "english": "Target Audience:",
+    "translation": "目標受眾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.ExampleAvatarItem",
+    "description": "Faux name of example of an avatar item (t-shirt, pants, etc)",
+    "english": "Example Avatar Item",
+    "translation": "虛擬人偶道具範例",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Sponsored",
+    "description": "Label applied to sponsored experiences / avatar items / groups etc",
+    "english": "Sponsored",
+    "translation": "贊助",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.UnknownError",
+    "description": "Generic error message associated when we do not have more specific diagnosis or recommendations.",
+    "english": "Something went wrong. Please refresh the page.",
+    "translation": "發生錯誤，請重新整理頁面。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsorExperience",
+    "description": "Title for a page where the user creates a sponsorship ad for an experience",
+    "english": "Sponsor This Experience",
+    "translation": "贊助此體驗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.DefaultCampaignName",
+    "description": "The suffix for the default name for an sponsorship ad campaign. For example, for an ad campaign sponsoring an item called \"Korblox Deathspeaker\", the default campaign name would be \"Korblox Deathspeaker: 22 days starting 04/01/2022\"",
+    "english": ": {numberOfDays, plural, =1 {# day} other {# days}} starting {shortStartDateString}",
+    "translation": "：自 {shortStartDateString} 起持續 {numberOfDays} 天",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -51852,7 +52036,7 @@
     "key": "Message.EmptyMessage",
     "description": null,
     "english": "You haven't created any {itemType} ",
-    "translation": "您尚未建立任何{itemType}",
+    "translation": "您尚未創作任何{itemType}",
     "isDeprecated": false
   },
   {
@@ -51861,6 +52045,14 @@
     "description": null,
     "english": "Configure",
     "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EmptyMessagesWithLink",
+    "description": null,
+    "english": "Creating {itemType} can increase player engagement in your experience. {LinkStart}Learn more{LinkEnd}",
+    "translation": "創作{itemType}將會提升體驗的玩家互動率。{LinkStart}了解更多{LinkEnd}",
     "isDeprecated": false
   },
   {
@@ -52717,6 +52909,14 @@
     "description": null,
     "english": "Attributed purchases divided by impressions",
     "translation": "歸因買賣次數 / 曝光數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Message.UnknownError",
+    "description": "A message advising the user when an unknown error occurs",
+    "english": "Something went wrong. Please refresh the page.",
+    "translation": "發生錯誤，請重新整理頁面。",
     "isDeprecated": false
   },
   {
@@ -54796,7 +54996,7 @@
     "key": "Label.AveragePlayTime",
     "description": null,
     "english": "Average of average play time",
-    "translation": "平均遊戲時間",
+    "translation": "平均遊戲時間的均數",
     "isDeprecated": false
   },
   {
@@ -55701,6 +55901,62 @@
     "description": "Xbox operating system",
     "english": "Xbox",
     "translation": "Xbox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.AveragePlayTime",
+    "description": null,
+    "english": "Average Play Time Per User",
+    "translation": "單一使用者的平均遊戲時間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.AveragePlayTime",
+    "description": null,
+    "english": "Total play time / DAU.",
+    "translation": "總遊戲時間 / DAU。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.AveragePlayTimeInsight",
+    "description": null,
+    "english": "This KPI helps you understand the engagement on player-level and could be the north star metrics for the early stage games.",
+    "translation": "此 KPI 可以幫您了解玩家層面的互動率，可以做為遊戲推出初期的北極星指標。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.W1Retention",
+    "description": null,
+    "english": "W1 Retention",
+    "translation": "W1 保留率",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.W1Retention",
+    "description": null,
+    "english": "Percentage of new players in Week0 (D0-D6) who also played at any point during Week1 (D7-D13).",
+    "translation": "W0（D0 到 D6）的新玩家中也在 W1（D7 到 D13）遊玩的百分比",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.W1RetentionInsight",
+    "description": null,
+    "english": "W1 (Week 1) Retention is a good metric to track if you are interested in building a more casual game - something that players play on and off over time. Similarly to D7 retention, a low or declining W1 retention can indicate that there are issues with your first-time player experience or initial progression curve.",
+    "translation": "如果您的遊戲屬於休閒類型（玩家可以每隔一段時間回來玩一下），您可以將 W1（第 1 週）存留率用作參考指標。就像 D7 存留率一樣，如果 W1 存留率偏低或下降，您的首次玩家體驗或初期進度曲線可能需要改進。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AveragePercentOfW1Players",
+    "description": null,
+    "english": "Average percent of W1 Vistors",
+    "translation": "W1 訪客平均百分比",
     "isDeprecated": false
   },
   {
@@ -57133,6 +57389,14 @@
     "description": null,
     "english": "No",
     "translation": "否",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.Unavailable",
+    "description": null,
+    "english": "Image unavailable.",
+    "translation": "無法載入圖像。",
     "isDeprecated": false
   },
   {
@@ -60915,7 +61179,7 @@
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniverseDatastores",
     "description": "datastore product name",
-    "english": "Datastore API",
+    "english": "DataStore API",
     "translation": "資料庫 API",
     "isDeprecated": false
   },
@@ -61116,7 +61380,7 @@
     "key": "Title.TextToTranslate",
     "description": null,
     "english": "Text to translate",
-    "translation": "帶翻譯文字",
+    "translation": "待翻譯文字",
     "isDeprecated": false
   },
   {
@@ -61188,7 +61452,7 @@
     "key": "Label.Key",
     "description": null,
     "english": "Key",
-    "translation": "金鑰",
+    "translation": "鍵",
     "isDeprecated": false
   },
   {
@@ -61476,7 +61740,7 @@
     "key": "Action.Back",
     "description": null,
     "english": "Back",
-    "translation": "背面",
+    "translation": "返回",
     "isDeprecated": false
   },
   {
@@ -62744,6 +63008,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "繼續",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccessGeneric",
+    "description": null,
+    "english": "To regain access to your account, please click {styledLinkText}.",
+    "translation": "若要取回帳號，請點擊 {styledLinkText}。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameLocalizationSettings",
     "key": "Title.AutomaticTextCapture",
     "description": null,
@@ -63348,7 +63628,7 @@
     "key": "Title.TextToTranslate",
     "description": null,
     "english": "Text to translate",
-    "translation": "帶翻譯文字",
+    "translation": "待翻譯文字",
     "isDeprecated": false
   },
   {
@@ -63388,7 +63668,7 @@
     "key": "Label.Key",
     "description": null,
     "english": "Key",
-    "translation": "金鑰",
+    "translation": "鍵",
     "isDeprecated": false
   },
   {
@@ -64660,7 +64940,7 @@
     "key": "Label.RedirectUris",
     "description": "These are links (Uniform Resource Locator) that the app dev must enter. Users will be redirected to these links when at the end of the Authorizations flow.",
     "english": "Redirect URLs",
-    "translation": "重新導向 URI",
+    "translation": "重新導向網址",
     "isDeprecated": false
   },
   {
@@ -64668,7 +64948,7 @@
     "key": "Description.WhyUseRedirectUris",
     "description": "This tells the app dev why redirect urls are needed for the Authorization flow to work.",
     "english": "(Optional) You must specify at least one URL for authentication to work. If you pass a URL in an OAuth request, it must be in this format.",
-    "translation": "（可略）您必須指定一個 URI 才可讓驗證流程正常運作。如果您在 OAuth請求傳遞 URI，您必須遵守此格式。",
+    "translation": "（可略）您必須指定一個網址才可讓驗證流程正常運作。如果您在 OAuth 請求傳遞網址，您必須遵守此格式。",
     "isDeprecated": false
   },
   {
@@ -64676,7 +64956,7 @@
     "key": "Label.RedirectUri",
     "description": "URL = uniform resource locator. These are links that users are redirected to.",
     "english": "Redirect URL",
-    "translation": "重新導向 URI",
+    "translation": "重新導向網址",
     "isDeprecated": false
   },
   {
@@ -64740,7 +65020,7 @@
     "key": "Label.RedirectUriFormat",
     "description": "This tells the user how to format their redirect urls (e.g. protocol, domain name, path)",
     "english": "URL format: https://www.MyApplication.com/redirect",
-    "translation": "URI 格式：https://www.MyApplication.com/redirect",
+    "translation": "網址格式：https://www.MyApplication.com/redirect",
     "isDeprecated": false
   },
   {
@@ -64748,7 +65028,7 @@
     "key": "Label.AddAnotherUri",
     "description": "label for button to add a new url",
     "english": "Add another url",
-    "translation": "新增 URI",
+    "translation": "新增網址",
     "isDeprecated": false
   },
   {
@@ -64756,7 +65036,23 @@
     "key": "Description.LearnAboutRedirectUrisLink",
     "description": "Link to documentation about redirect urls",
     "english": "Learn more about redirect URLs",
-    "translation": "了解更多關於重新導向 URI 的資訊",
+    "translation": "了解更多關於重新導向網址的資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.RedirectSubheading",
+    "description": "Subheader for redirect url panel",
+    "english": "The URLs that redirect a user to your app.",
+    "translation": "將使用者重新導向到您的 App 的網址。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.SaveChanges",
+    "description": null,
+    "english": "Save Changes",
+    "translation": "儲存變更",
     "isDeprecated": false
   },
   {
