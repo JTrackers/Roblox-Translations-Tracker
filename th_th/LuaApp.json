@@ -1344,6 +1344,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable due to your account settings.",
+    "translation": "ไม่สามารถใช้ประสบการณ์นี้ได้เนื่องจากการตั้งค่าบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityAgeGated",
+    "description": null,
+    "english": "This experience cannot be accessed due to restrictions set by the creator.",
+    "translation": "ไม่สามารถเข้าถึงประสบการณ์นี้ได้เนื่องจากข้อจำกัดที่ตั้งขึ้นโดยผู้สร้าง",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Controls",
     "key": "Action.Accept",
     "description": null,
@@ -2116,7 +2132,7 @@
     "key": "Label.LuobuThirdPartyDataUse",
     "description": "Only used by Luobu, no other languages needed.\n第三方共享清单",
     "english": "Third party share list",
-    "translation": "รายการที่แชร์กับภายนอก",
+    "translation": "รายการที่แชร์กับบุคคลที่สาม",
     "isDeprecated": false
   },
   {
@@ -2280,6 +2296,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.AccountInfo",
+    "description": null,
+    "english": "Account Info",
+    "translation": "ข้อมูลบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.Security",
+    "description": null,
+    "english": "Security",
+    "translation": "ความปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "ความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.Billing",
+    "description": null,
+    "english": "Billing",
+    "translation": "การเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.Notifications",
+    "description": null,
+    "english": "Notifications",
+    "translation": "การแจ้งเตือน",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.Logout",
     "key": "Action.Logout",
     "description": null,
@@ -2325,6 +2381,70 @@
     "description": "membership type",
     "english": "Outrageous Builders Club Membership",
     "translation": "สมาชิก Builders Club แบบ Outrageous",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseDetails.InvalidBuildersClub",
+    "description": "DEPRECATED - Additional detail text displayed when a player's Builders Club membership is insufficient to make a purchase. As of now, this string will actually have to correctly match up with ConfirmPurchase.UpgradeBuildersClub to avoid confusion. Would be nice to avoid that constraint, or bake it in somehow.",
+    "english": "This item requires {BC_LEVEL}. Click 'Upgrade' to upgrade your Builders Club!",
+    "translation": "ไอเท็มนี้จำเป็นต้องมี {BC_LEVEL} คลิกที่ \"อัปเกรด\" เพื่ออัปเกรด Builders Club ของคุณ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.NotEnoughRobux",
+    "description": "Description text displayed on desktop clients, when a product costs more than any single Robux package on our website would provide. For example, an item costing 50,000 robux is more expensive than any of our Robux packages.",
+    "english": "This item cost more Robux than you can purchase. Please visit www.roblox.com to purchase more Robux.",
+    "translation": "ไอเท็มนี้ต้องใช้ Robux มากกว่าที่คุณสามารถซื้อได้ โปรดไปที่ www.roblox.com เพื่อซื้อ Robux เพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.PurchaseDisabled",
+    "description": "Description text displayed when purchases are disabled. This should be exceedingly rare, and will only happen if purchasing is disabled for all of Roblox.",
+    "english": "Your purchase failed because In-experience purchases are temporarily disabled. Your account has not been charged. Please try again later.",
+    "translation": "คุณสั่งซื้อไม่สำเร็จเนื่องจากการสั่งซื้อในประสบการณ์ถูกปิดใช้งานชั่วคราว บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.UnknownFailureNoItemName",
+    "description": "Description text displayed in the case of an unknown error when we do not know the name of the item to be purchased. Usually would only happen if the game prompts the user to buy an invalid item.",
+    "english": "Your purchase failed because something went wrong. Your account has not been charged. Please try again later.",
+    "translation": "คุณสั่งซื้อไม่สำเร็จเนื่องจากมีข้อผิดพลาดเกิดขึ้น บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.UnknownFailure",
+    "description": "Description text displayed in the case of an unknown error, generally something wrong with the network.",
+    "english": "Your purchase of {ITEM_NAME} failed because something went wrong. Your account has not been charged. Please try again later.",
+    "translation": "คุณสั่งซื้อ {ITEM_NAME} ไม่สำเร็จเนื่องจากมีข้อผิดพลาดเกิดขึ้น บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.NotForSale",
+    "description": "Description text displayed when player is prompted to purchase an item that is no longer for sale",
+    "english": "This item is not currently for sale. Your account has not been charged.",
+    "translation": "ไอเท็มนี้ไม่ได้ขายอยู่ในขณะนี้ บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.Under13",
+    "description": "Description text displayed when an under-13 player is prompted to purchase an item that is restricted to 13-and-up players.",
+    "english": "Your account is under 13. Purchase of this item is not allowed. Your account has not been charged.",
+    "translation": "เจ้าของบัญชีมีอายุต่ำกว่า 13 ปี จึงไม่ได้รับอนุญาตให้สั่งซื้อไอเท็มนี้ บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.AlreadyOwn",
+    "description": "Description text displayed when a player is prompted to purchase an Asset or Game Pass they already own.",
+    "english": "You already own this item. Your account has not been charged.",
+    "translation": "คุณเป็นเจ้าของไอเท็มนี้อยู่แล้ว บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
@@ -3664,6 +3784,134 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Title",
+    "description": "Tile for showing updated agreement popup dialog.",
+    "english": "Updated Agreements",
+    "translation": "ข้อตกลงที่อัปเดตแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Message",
+    "description": "Description of the updated user agreement message in popup dialog.",
+    "english": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following sections:",
+    "translation": "หากยังคงต้องการเล่นบน Roblox ต่อไป โปรดยอมรับข้อกำหนดการใช้บริการที่อัปเดตแล้วของเรา โดยมีการเปลี่ยนแปลงกับส่วนต่างๆ ต่อไปนี้:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agree",
+    "description": "Agree button text for update user agreements popup dialog.",
+    "english": "I Agree",
+    "translation": "ฉันยอมรับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agreement.TermsOfService",
+    "description": "Terms of service description.",
+    "english": "Terms Of Use",
+    "translation": "ข้อกำหนดการใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agreement.PrivacyPolicy",
+    "description": "Privacy protection guidelines.",
+    "english": "Privacy Policy",
+    "translation": "นโยบายความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agreement.RiderTerms",
+    "description": "Rider terms.",
+    "english": "Rider Terms",
+    "translation": "ข้อกำหนดเพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agreement.ChildrenPrivacyPolicy",
+    "description": "The title of privacy protection guidelines for children.",
+    "english": "Privacy Protection Guidelines for Children",
+    "translation": "แนวทางปฏิบัติเกี่ยวกับการคุ้มครองความเป็นส่วนตัวสำหรับเด็ก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.DefaultAgreementTitle",
+    "description": "Title for default upgraded agreement, when there is no corresponding type on client that could be used to display as the agreement title.",
+    "english": "Updated Agreement",
+    "translation": "ข้อตกลงที่อัปเดตแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "LuobuLandingPageToSPrompt.Title",
+    "description": "(Luobu only) 用户协议及隐私政策",
+    "english": "n/a",
+    "translation": "n/a",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "LuobuLandingPageToSPrompt.BodyText.Part1",
+    "description": "(Luobu Only) 在您使用我们（腾讯）的服务前，请您务必审慎阅读，充分理解",
+    "english": "n/a",
+    "translation": "n/a",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "LuobuLandingPageToSPrompt.BodyText.Part2",
+    "description": "(Luobu Only) 的各条款。如您已阅读并同意前述协议，请点击“同意 ”开始使用我们的服务。",
+    "english": "n/a",
+    "translation": "n/a",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "LuobuLandingPageToSPrompt.Item.PrivacyPolicy",
+    "description": "隐私保护指引",
+    "english": "Privacy Policy",
+    "translation": "นโยบายความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "LuobuLandingPageToSPrompt.Item.RiderTerms",
+    "description": "关于罗布乐思游戏的特殊规定",
+    "english": "Rider Terms",
+    "translation": "ข้อกำหนดเพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Agreement.LuobuThirdPartyDataUse",
+    "description": "Used by Luobu only, not needed for English and other languages.",
+    "english": "Third Party share list",
+    "translation": "รายการที่แชร์กับบุคคลที่สาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agreement.LuobuThirdPartyDataUse",
+    "description": "Used by Luobu only, no needed for English and other languages.",
+    "english": "Third Party share list",
+    "translation": "รายการที่แชร์กับบุคคลที่สาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Agreement.PersonalInformationPolicy",
+    "description": null,
+    "english": "Personal Information Policy",
+    "translation": "นโยบายเกี่ยวกับข้อมูลส่วนตัว",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Luobu.Authentication",
     "key": "Login.Label.AntiAddictionText",
     "description": "No English or other languages, only used in Luobu, global won't use this string.\n\nNov 29th 2021 update:\nhttps://jira.rbx.com/browse/LBPLAYER-316\n\n根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》要求，所有网络游戏用户均需使用有效身份信息完成游戏账号的实名注册，未成年玩家将受到防沉迷功能限制。本游戏适合年满 12 周岁以上（未成年人请在家长陪同下体验）的用户使用；请您确定已如实进行实名认证，为了您的健康，请合理控制游戏时间抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。本公司积极履行《网络游戏行业防沉迷自律公约》。",
@@ -3716,7 +3964,7 @@
     "key": "Login.Label.Agreement.ThirdPartySdkList",
     "description": "No English or other language, only used by Luobu.",
     "english": "Third Party SDK List",
-    "translation": "รายชื่อ SDK ภายนอก",
+    "translation": "รายชื่อ SDK ของบุคคลที่สาม",
     "isDeprecated": false
   },
   {
@@ -3989,6 +4237,14 @@
     "description": null,
     "english": "Please try again.",
     "translation": "โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.ThirdPartyDisabled",
+    "description": null,
+    "english": "Third-party item sales have been disabled for this place. Your account has not been charged.",
+    "translation": "สถานที่นี้ปิดใช้งานการขายไอเท็มของบุคคลที่สาม บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
