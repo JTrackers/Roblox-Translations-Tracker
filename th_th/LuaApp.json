@@ -10832,6 +10832,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PromotedChannels",
+    "key": "Message.SocialLinkoffPlatformModalBody",
+    "description": "A message displayed to users after they click a link that takes them to a different website (like twitter or amazon etc)",
+    "english": "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies.{lineBreak} Please note that you need to be over 18 to purchase products online. We hope to see you again soon!",
+    "translation": "โปรดทราบชาว Roblox – การคลิกที่ \"ดำเนินการต่อ\" จะนำคุณไปยังเว็บไซต์การค้าปลีกที่ไม่ได้เป็นเจ้าของหรือดำเนินการโดย Roblox ซึ่งอาจมีข้อกำหนดและนโยบายความเป็นส่วนตัวที่แตกต่างออกไป {lineBreak}โปรดทราบว่าคุณต้องมีอายุ 18 ปีขึ้นไปจึงจะสามารถซื้อสินค้าออนไลน์ได้ เราหวังว่าจะได้เจอคุณอีกครั้งในเร็วๆ นี้!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PromotedChannels",
+    "key": "Message.SocialLinkoffPlatformModalContinueButtonText",
+    "description": "A confirmation button for a modal that displays a message to users after they click that will take them off platform (to a site like twitter, amazon etc)",
+    "english": "Continue",
+    "translation": "ดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PromotedChannels",
+    "key": "Message.SocialLinkoffPlatformModalCancelButtonText",
+    "description": "A cancel button for a modal that displays a message to users after they click that will take them off platform (to a site like twitter, amazon etc). Clicking this button will close the modal and not take them off of Roblox.",
+    "english": "Cancel",
+    "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DownloadApp",
     "key": "Heading.Warning",
     "description": null,
@@ -11060,7 +11084,7 @@
     "key": "Message.ContactDiscoverable",
     "description": "Message informing users that other users who have them as a phone contact will be able to add them as a friend and see their name based on their phone contact.",
     "english": "To help you make friends, Roblox users with your phone number in their contacts will be able to add you and see your name as saved on their phone.",
-    "translation": "เพื่อช่วยคุณในการหาเพื่อนใหม่ ผู้ใช้ Roblox ที่มีหมายเลขโทรศัพท์ของคุณในรายชื่อผู้ติดต่อของเขาจะสามารถเพิ่มคุณและเห็นชื่อของคุณเป็นบันทึกแล้วบนโทรศัพท์ของเขา",
+    "translation": "เพื่อช่วยคุณในการหาเพื่อน ผู้ใช้ Roblox ที่มีหมายเลขโทรศัพท์ของคุณในรายชื่อผู้ติดต่อของเขาจะสามารถเพิ่มคุณและเห็นชื่อของคุณที่บันทึกไว้ในอุปกรณ์ของเขาได้",
     "isDeprecated": false
   },
   {
@@ -11069,6 +11093,110 @@
     "description": "Tooltip for follow game button",
     "english": "Limit reached. Please unfollow other experiences to follow this one.",
     "translation": "มีการติดตามถึงจำนวนสูงสุดแล้ว โปรดเลิกติดตามประสบการณ์อื่นเพื่อติดตามประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Action.Share",
+    "description": "Label for share button.",
+    "english": "Share",
+    "translation": "แชร์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Action.Redirect",
+    "description": "Shown while the app is redirecting to an external sharing app",
+    "english": "Redirecting...",
+    "translation": "กำลังเปลี่ยนเส้นทาง...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Response.Error",
+    "description": "Shown when there is an error processing the sharing request.",
+    "english": "Something went wrong.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Response.Error.Subtext",
+    "description": null,
+    "english": "Try again later.",
+    "translation": "โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.ShareServerLink",
+    "description": "Prompt for the user to share an invite link to the current experience",
+    "english": "Share Invite Link",
+    "translation": "แชร์ลิงก์คำเชิญ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InviterNotHereError",
+    "description": "Error shown when a user joins an invite link and the inviter is no longer in that experience",
+    "english": "Inviter Not Here",
+    "translation": "ผู้เชิญไม่อยู่ที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InviterNotHereError",
+    "description": "Description for the error shown when a user joins an invite link and the inviter is no longer in that experience",
+    "english": "The inviter has left the experience. Would you still like to join {experienceName}?",
+    "translation": "ผู้เชิญออกจากประสบการณ์ไปแล้ว คุณยังคงต้องการเข้าร่วม {experienceName} อยู่หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InviteExpiredError",
+    "description": "Error shown when a user joins an invite link that is expired",
+    "english": "Invite Link Expired",
+    "translation": "ลิงก์คำเชิญหมดอายุแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InviteExpiredError",
+    "description": "Description for the error shown when a user joins an invite link that is expired",
+    "english": "The invite link has expired. Would you still like to join {experienceName}?",
+    "translation": "ลิงก์คำเชิญหมดอายุแล้ว คุณยังคงต้องการเข้าร่วม {experienceName} อยู่หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.ExperienceDoesNotExist",
+    "description": "Error shown when a user tries to join an invite link to an experience that no longer exists",
+    "english": "This experience no longer exists.",
+    "translation": "ไม่มีประสบการณ์นี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InvalidLinkError",
+    "description": "Error shown when user tries to open a deep link that doesn't exist",
+    "english": "Invalid Link",
+    "translation": "ลิงก์ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InvalidLinkError",
+    "description": "Description for the error shown when a user tries to open a deep link that doesn't exist",
+    "english": "This link doesn't exist.",
+    "translation": "ไม่มีลิงก์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.Copied",
+    "description": "Text shown when the share invite link is copied to clipboard on desktop apps",
+    "english": "Copied",
+    "translation": "คัดลอกแล้ว",
     "isDeprecated": false
   },
   {
@@ -11152,6 +11280,174 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.UnableToConnect",
+    "description": null,
+    "english": "Unable to connect. Please try again later.",
+    "translation": "ไม่สามารถเชื่อมต่อได้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.SomethingIsWrong",
+    "description": null,
+    "english": "Something went wrong. Please try again.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.Unauthorized",
+    "description": null,
+    "english": "You are no longer logged in. Please log back in.",
+    "translation": "คุณไม่ได้ลงชื่อเข้าใช้อีกต่อไป โปรดลงชื่อเข้าใช้อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.Forbidden",
+    "description": null,
+    "english": "Insufficient permission.",
+    "translation": "มีสิทธิ์ไม่เพียงพอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.NotFound",
+    "description": null,
+    "english": "Content not found.",
+    "translation": "ไม่พบเนื้อหา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.Timeout",
+    "description": null,
+    "english": "Timed out. Please try again.",
+    "translation": "หมดเวลาแล้ว โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.TooManyRequests",
+    "description": null,
+    "english": "The server is busy. Please try again later.",
+    "translation": "เซิร์ฟเวอร์ไม่ว่าง โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "NetworkingError.ServiceUnavailable",
+    "description": null,
+    "english": "Service unavailable. Please try again later.",
+    "translation": "ไม่สามารถใช้บริการได้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "Heading.PurchaseMessage.Success",
+    "description": "this is shown to a user when they've succesfully purchased a game in the app with Robux.",
+    "english": "Unlocked",
+    "translation": "ปลดล็อค",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "Message.PurchaseMessage.Success",
+    "description": null,
+    "english": "You have successfully unlocked access to {gameName} for R${price}.",
+    "translation": "คุณปลดล็อคการเข้าถึง {gameName} โดยใช้ R${price} สำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "VoteError.PlayGame",
+    "description": null,
+    "english": "You must visit this experience before rating it.",
+    "translation": "คุณต้องเข้าใช้ประสบการณ์นี้ก่อนจึงจะสามารถโหวตได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "VoteError.FloodCheckThresholdMet",
+    "description": null,
+    "english": "You're voting too quickly.",
+    "translation": "คุณโหวตถี่เกินไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "VoteError.AssetNotVoteable",
+    "description": null,
+    "english": "Experience may not be voted on.",
+    "translation": "คุณไม่สามารถโหวตประสบการณ์นี้ได้ในขณะนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "VoteError.Default",
+    "description": null,
+    "english": "Action not available.",
+    "translation": "ไม่สามารถดำเนินการนี้ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "Message.PurchaseMessage.SuccessV3",
+    "description": null,
+    "english": "You have successfully unlocked access to {gameName} for {price} Robux.",
+    "translation": "คุณปลดล็อคการเข้าถึง {gameName} โดยใช้ {price} Robux สำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "RequestFriendError.AlreadyFriends",
+    "description": "Error message shown when the user sends a friend request to a user they are already friends with.",
+    "english": "You are already friends with this user.",
+    "translation": "คุณเป็นเพื่อนกับผุ้ใช้นี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "RequestFriendError.BefriendOneself",
+    "description": "Shown if the user attempts to send a friend request to themselves.",
+    "english": "You can't add yourself as a friend.",
+    "translation": "คุณไม่สามารถเพิ่มตัวเองเป็นเพื่อนได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "RequestFriendError.DuplicateRequest",
+    "description": "Shown if a user tries to send a friend request to a user they currently have a pending friend request for.",
+    "english": "You already have a pending friend request with this user.",
+    "translation": "คุณมีคำขอเป็นเพื่อนที่รอดำเนินการอยู่กับผู้ใช้นี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "RequestFriendError.UnknownUser",
+    "description": "Shown if the user tries to send a friend request to a user who does not exist",
+    "english": "Unknown user",
+    "translation": "ผู้ใช้ที่ไม่รู้จัก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "ScanQrCodeError.InvalidQrCode",
+    "description": "Error message shown when the user scans a QR code in an unrecognized format.",
+    "english": "Invalid QR Code",
+    "translation": "รหัส QR ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Toast",
+    "key": "ScanQrCodeError.UnrecognizableQrCode",
+    "description": "Error message shown when an unrecognizable QR code is scanned",
+    "english": "Unrecognizable QR code. Try again.",
+    "translation": "ไม่รู้จักรหัส QR นี้ โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.PurchasePrompt",
     "key": "PurchaseDetails.InvalidBuildersClub",
     "description": "DEPRECATED - Additional detail text displayed when a player's Builders Club membership is insufficient to make a purchase. As of now, this string will actually have to correctly match up with ConfirmPurchase.UpgradeBuildersClub to avoid confusion. Would be nice to avoid that constraint, or bake it in somehow.",
@@ -11172,7 +11468,7 @@
     "key": "PurchaseFailed.PurchaseDisabled",
     "description": "Description text displayed when purchases are disabled. This should be exceedingly rare, and will only happen if purchasing is disabled for all of Roblox.",
     "english": "Your purchase failed because In-experience purchases are temporarily disabled. Your account has not been charged. Please try again later.",
-    "translation": "คุณสั่งซื้อไม่สำเร็จเนื่องจากการสั่งซื้อในประสบการณ์ถูกปิดใช้งานชั่วคราว บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "translation": "คุณซื้อไม่สำเร็จเนื่องจากการซื้อในประสบการณ์ถูกปิดใช้งานชั่วคราว บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -11180,7 +11476,7 @@
     "key": "PurchaseFailed.UnknownFailureNoItemName",
     "description": "Description text displayed in the case of an unknown error when we do not know the name of the item to be purchased. Usually would only happen if the game prompts the user to buy an invalid item.",
     "english": "Your purchase failed because something went wrong. Your account has not been charged. Please try again later.",
-    "translation": "คุณสั่งซื้อไม่สำเร็จเนื่องจากมีปัญหาบางอย่างเกิดขึ้น บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "translation": "คุณซื้อไม่สำเร็จเนื่องจากมีปัญหาบางอย่างเกิดขึ้น บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -11188,7 +11484,7 @@
     "key": "PurchaseFailed.UnknownFailure",
     "description": "Description text displayed in the case of an unknown error, generally something wrong with the network.",
     "english": "Your purchase of {ITEM_NAME} failed because something went wrong. Your account has not been charged. Please try again later.",
-    "translation": "คุณสั่งซื้อ {ITEM_NAME} ไม่สำเร็จเนื่องจากมีปัญหาบางอย่างเกิดขึ้น บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "translation": "คุณซื้อ {ITEM_NAME} ไม่สำเร็จเนื่องจากมีปัญหาบางอย่างเกิดขึ้น บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -11196,7 +11492,7 @@
     "key": "PurchaseFailed.NotForSale",
     "description": "Description text displayed when player is prompted to purchase an item that is no longer for sale",
     "english": "This item is not currently for sale. Your account has not been charged.",
-    "translation": "ไอเท็มนี้ไม่ได้ขายอยู่ในขณะนี้ บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "translation": "ไอเท็มนี้ไม่ได้ขายอยู่ในขณะนี้ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
@@ -11204,7 +11500,7 @@
     "key": "PurchaseFailed.Under13",
     "description": "Description text displayed when an under-13 player is prompted to purchase an item that is restricted to 13-and-up players.",
     "english": "Your account is under 13. Purchase of this item is not allowed. Your account has not been charged.",
-    "translation": "เจ้าของบัญชีมีอายุต่ำกว่า 13 ปี จึงไม่ได้รับอนุญาตให้สั่งซื้อไอเท็มนี้ บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "translation": "เจ้าของบัญชีมีอายุต่ำกว่า 13 ปี จึงไม่ได้รับอนุญาตให้ซื้อไอเท็มนี้ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
@@ -11212,7 +11508,7 @@
     "key": "PurchaseFailed.AlreadyOwn",
     "description": "Description text displayed when a player is prompted to purchase an Asset or Game Pass they already own.",
     "english": "You already own this item. Your account has not been charged.",
-    "translation": "คุณเป็นเจ้าของไอเท็มนี้อยู่แล้ว บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "translation": "คุณเป็นเจ้าของไอเท็มนี้อยู่แล้ว บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
@@ -11220,7 +11516,7 @@
     "key": "PurchaseFailed.QuantityLimitReached",
     "description": "Purchase reached the limit of how many items the user can own.",
     "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
-    "translation": "ขออภัย! นักสร้างสรรค์ได้จำกัดจำนวนสำเนาที่ผู้ใช้หนึ่งคนสามารถซื้อได้",
+    "translation": "ขออภัย! ครีเอเตอร์ได้จำกัดจำนวนสำเนาที่ผู้ใช้หนึ่งคนสามารถซื้อได้",
     "isDeprecated": false
   },
   {
@@ -11492,7 +11788,7 @@
     "key": "Description.Banner",
     "description": "Description text shown also in the banner under the main title for the buy robux page.",
     "english": "Buy Robux to purchase upgrades for your avatar or special abilities in experiences. Subscribe to Roblox Premium and get even more Robux each month, as well as bonus features. Premium is billed every month until cancelled.",
-    "translation": "ซื้อ Robux เพื่อสั่งซื้อการอัปเกรดให้อวาตาร์ของคุณหรือความสามารถพิเศษในประสบการณ์ สมัครสมาชิก Roblox Premium และรับ Robux มากกว่าเดิมในแต่ละเดือน รวมถึงคุณสมบัติพิเศษต่างๆ ด้วย จะมีการเรียกเก็บเงินสมาชิก Premium ในทุกเดือนจนกว่าจะยกเลิก",
+    "translation": "ซื้อ Robux เพื่อซื้อการอัปเกรดให้อวาตาร์ของคุณหรือความสามารถพิเศษในประสบการณ์ สมัครสมาชิก Roblox Premium และรับ Robux มากกว่าเดิมในแต่ละเดือน รวมถึงคุณสมบัติพิเศษต่างๆ ด้วย จะมีการเรียกเก็บเงินสมาชิก Premium ทุกเดือนจนกว่าจะยกเลิก",
     "isDeprecated": false
   },
   {
@@ -11556,7 +11852,7 @@
     "key": "Description.LegalText",
     "description": "Legal text at the bottom",
     "english": "When you buy Robux, you receive only a limited, non-refundable, non-transferable, revocable license to use Robux, which have no value in real currency. See Terms of Use for other limitations.  If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.",
-    "translation": "เมื่อคุณซื้อ Robux คุณจะได้รับสิทธิ์การใช้ Robux แบบจำกัด ไม่สามารถขอเงินคืน ไม่สามารถแลกเปลี่ยน เพิกถอนได้ ซึ่งไม่มีมูลค่าในสกุลเงินจริง ดูข้อกำหนดการใช้งานสำหรับข้อจำกัดอื่นๆ หากคุณมีอายุต่ำกว่า 18 ปี โปรดตรวจสอบให้แน่ใจว่าคุณได้รับอนุญาตจากพ่อแม่หรือผู้ปกครองตามกฎหมายของคุณก่อนทำการสั่งซื้อ หากทำการสั่งซื้อโดยไม่ได้รับอนุญาตอาจส่งผลให้บัญชีของคุณถูกลบได้",
+    "translation": "เมื่อคุณซื้อ Robux คุณจะได้รับสิทธิ์การใช้ Robux แบบจำกัด ไม่สามารถขอเงินคืน ไม่สามารถแลกเปลี่ยน เพิกถอนได้ ซึ่งไม่มีมูลค่าในสกุลเงินจริง ดูข้อกำหนดการใช้งานสำหรับข้อจำกัดอื่นๆ หากคุณมีอายุต่ำกว่า 18 ปี โปรดตรวจสอบให้แน่ใจว่าคุณได้รับอนุญาตจากพ่อแม่หรือผู้ปกครองตามกฎหมายของคุณก่อนทำการซื้อ หากทำการซื้อโดยไม่ได้รับอนุญาตอาจส่งผลให้บัญชีของคุณถูกลบได้",
     "isDeprecated": false
   },
   {
@@ -11565,6 +11861,78 @@
     "description": "Texted used as a button to link them to full terms of use guide",
     "english": "See Terms of Use here",
     "translation": "ดูข้อกำหนดการใช้งานที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Description.Tooltip",
+    "description": "Used as a helper tooltip to explain what the feature is used for.",
+    "english": "Enter a Star Code to support your favorite Video Star! They will earn 5% of your purchase and you will keep the Robux you paid for.",
+    "translation": "กรอก Star Code เพื่อสนับสนุน Video Star ที่คุณชื่นชอบ! คุณจะได้รับ Robux ทั้งหมดตามจำนวนที่คุณจ่ายไปและพวกเขาจะได้รับ 5% จากการซื้อของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.TapHere",
+    "description": "Use apart of the sentence, \"Tap here to add a star code\". This is bolded and used as an indicator that this text is a button.",
+    "english": "Tap here",
+    "translation": "แตะที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.TapHere2",
+    "description": "Second part of the sentence that acts a text button to open up input for star codes.",
+    "english": "to add a Star Code",
+    "translation": "เพื่อกรอก Star Code",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Heading.SupportAStar",
+    "description": "Header shown above the input explaining what the input field is for",
+    "english": "Support a Star",
+    "translation": "สนับสนุน Video Star",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.InputFieldPlaceholder",
+    "description": "Placeholder text inside the star code input field to help show what needs to go inside the input",
+    "english": "\"Enter Star Code\"",
+    "translation": "\"กรอก Star Code\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Error.InvalidCode",
+    "description": "Error shown under the input to explain that the code was not accepted.",
+    "english": "Invalid Code",
+    "translation": "รหัสไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.Submit",
+    "description": "Text on the button used to submit the star code",
+    "english": "Add",
+    "translation": "เพิ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.Supporting",
+    "description": "Text to explain who they are currently supporting. The name gets appended after (in a different font and style).",
+    "english": "You are supporting",
+    "translation": "คุณกำลังสนับสนุน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SupportAStar",
+    "key": "Label.Remove",
+    "description": "Texted used as a button to allow the player to remove their support for the current star",
+    "english": "Remove",
+    "translation": "ลบ",
     "isDeprecated": false
   },
   {
@@ -11988,7 +12356,7 @@
     "key": "Label.AbuseType.PersonalAttackHarassmentBullying",
     "description": null,
     "english": "Personal Attack/Harassment/Bullying",
-    "translation": "การโจมตี/การล่วงละเมิด/การกลั่นแกล้งส่วนบุคคล",
+    "translation": "การโจมตี/การล่วงละเมิด/การกลั่นแกล้งตัวบุคคล",
     "isDeprecated": false
   },
   {
@@ -12108,7 +12476,7 @@
     "key": "Label.AbuseType.DerogatoryHarrassment",
     "description": null,
     "english": "Derogatory/Harrassment",
-    "translation": "การทำให้เสื่อมเสีย/การคุกคาม",
+    "translation": "การทำให้เสื่อมเสีย/การล่วงละเมิด",
     "isDeprecated": false
   },
   {
@@ -12404,7 +12772,7 @@
     "key": "Label.AbuseType.RealLifeThreats.Note",
     "description": "Moderator note shown to user when serving consequence",
     "english": "Roblox does not permit real threats of violence towards members of the Roblox Community.",
-    "translation": "Roblox ไม่อนุญาตให้มีการคุกคามด้านความรุนแรงที่แท้จริงต่อสมาชิกของชุมชน Roblox",
+    "translation": "Roblox ไม่อนุญาตให้มีการคุกคามโดยใช้ความรุนแรงที่เกิดขึ้นจริงต่อสมาชิกของชุมชน Roblox",
     "isDeprecated": false
   },
   {
@@ -12484,7 +12852,7 @@
     "key": "Label.AbuseType.Profanity.Note",
     "description": null,
     "english": "Roblox does not permit profane language or slurs.",
-    "translation": "Roblox ไม่อนุญาตให้ใช้คำหยาบคายหรือคำดูหมิ่น",
+    "translation": "Roblox ไม่อนุญาตให้ใช้คำหยาบคายหรือคำพูดดูถูก",
     "isDeprecated": false
   },
   {
@@ -12500,7 +12868,7 @@
     "key": "Label.AbuseType.Scamming.Note",
     "description": null,
     "english": "Roblox does not permit phishing or scamming links, requests for passwords, selling of accounts, uploading of unauthorized accounts, selling Roblox assets for real money off platform, or artificially inflating numbers associated with experiences.",
-    "translation": "Roblox ไม่อนุญาตให้มีลิงก์ที่เป็นการฟิชชิ่งหรือการหลอกลวง การขอรหัสผ่าน การขายบัญชี การอัปโหลดบัญชีที่ไม่ได้รับอนุญาต การขายทรัพยากร Roblox เพื่อรับเงินจริงๆ นอกแพลตฟอร์ม หรือทำตัวเลขที่เกี่ยวข้องกับประสบการณ์ให้สูงขึ้นเกินจริง",
+    "translation": "Roblox ไม่อนุญาตให้ใช้ลิงก์ที่เป็นการฟิชชิ่งหรือการหลอกลวง ขอรหัสผ่าน ขายบัญชี อัปโหลดบัญชีที่ไม่ได้รับอนุญาต ขายทรัพยากร Roblox เพื่อรับเงินจริงๆ นอกแพลตฟอร์ม หรือใช้ตัวเลขสูงเกินจริงเมื่อเกี่ยวข้องกับประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -12524,7 +12892,7 @@
     "key": "Label.AbuseType.DirectingUsersOffPlatform.Note",
     "description": null,
     "english": "Roblox does not permit the use of off-site links of any kind. Links to Guilded, YouTube, Facebook, Discord, Twitter, and Twitch must be wrapped in the applicable Policy API or listed in the Social Networks and Social Links settings of your profile or experience description page. Links that appear in locations where the API cannot be deployed - such as text chat - are prohibited.",
-    "translation": "Roblox ไม่อนุญาตการใช้ลิงก์ไปนอกแพลตฟอร์มทุกชนิด ลิงก์ไปยัง Guilded, YouTube, Facebook, Discord, Twitter และ Twitch ต้องรวมอยู่ใน API นโยบายที่เกี่ยวข้องหรือแสดงอยู่ในการตั้งค่าเครือข่ายสังคมออนไลน์และลิงก์ของเครือข่ายสังคมออนไลน์ของหน้าโปรไฟล์หรือหน้าคำอธิบายประสบการณ์ของคุณ ลิงก์ต่างๆ ที่ปรากฏในตำแหน่งที่ไม่สามารถปรับใช้ API ได้ - เช่นแชทข้อความ - ถูกห้ามไม่ให้ใช้",
+    "translation": "Roblox ไม่อนุญาตการใช้ลิงก์ไปนอกแพลตฟอร์มทุกชนิด ลิงก์ไปยัง Guilded, YouTube, Facebook, Discord, Twitter และ Twitch ต้องรวมอยู่ใน API นโยบายที่เกี่ยวข้องหรือแสดงอยู่ในการตั้งค่าเครือข่ายโซเชียลและลิงก์โซเชียลต่างๆ ของหน้าโปรไฟล์หรือหน้าคำอธิบายแมพของคุณ ลิงก์ต่างๆ ที่ปรากฏในตำแหน่งที่ไม่สามารถปรับใช้ API ได้ - เช่นแชทข้อความ - ถูกห้ามไม่ให้ใช้",
     "isDeprecated": false
   },
   {
@@ -12564,7 +12932,7 @@
     "key": "Label.AbuseType.RobloxEconomy.Note",
     "description": null,
     "english": "Roblox does not permit using third-parties to buy, sell, or trade Robux, promotional codes that falsely appear to be from Roblox Corporation, or inappropriate use of the group payout system. ",
-    "translation": "Roblox ไม่อนุญาตให้ใช้บริษัทภายนอกในการซื้อ ขาย หรือแลกเปลี่ยน Robux ใช้รหัสส่งเสริมการขายที่แอบอ้างว่ามาจาก Roblox Corporation หรือใช้ระบบการจ่ายเงินแบบกลุ่มอย่างไม่เหมาะสม ",
+    "translation": "Roblox ไม่อนุญาตให้ใช้บริษัทภายนอกในการซื้อ ขาย หรือแลกเปลี่ยน Robux ใช้รหัสโปรโมชันที่แอบอ้างว่ามาจาก Roblox Corporation หรือใช้ระบบการจ่ายเงินแบบกลุ่มอย่างไม่เหมาะสม ",
     "isDeprecated": false
   },
   {
@@ -12596,7 +12964,7 @@
     "key": "Label.AbuseType.Advertising.Note",
     "description": null,
     "english": "Roblox does not allow this type of advertisement. Please ensure your ad content complies with the Roblox Advertising Standards.",
-    "translation": "Roblox ไม่อนุญาตให้มีโฆษณาที่ละเมิดมาตรฐานชุมชนหรือข้อกำหนดการใช้บริการใดๆ",
+    "translation": "Roblox ไม่อนุญาตให้ใช้โฆษณาณาประเภทนี้ โปรดตรวจสอบให้แน่ใจว่าเนื้อหาโฆษณาของคุณเป็นไปตามแนวทางปฏิบัติเกี่ยวกับการโฆษณาบน Roblox",
     "isDeprecated": false
   },
   {
@@ -12660,7 +13028,7 @@
     "key": "Label.AbuseType.OffPlatformSpeechandBehavior",
     "description": null,
     "english": "Off Platform Speech and Behavior",
-    "translation": "การพูดและพฤติกรรมนอกแพลตฟอร์ต",
+    "translation": "คำพูดและพฤติกรรมนอกแพลตฟอร์ต",
     "isDeprecated": false
   },
   {
@@ -12705,10 +13073,466 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.AddEmail",
+    "description": null,
+    "english": "First, Verify Your Account",
+    "translation": "ขั้นแรก ให้ตรวจสอบยืนยันอีเมลของคุณก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifyEmail",
+    "description": null,
+    "english": "Check Your Email",
+    "translation": "ตรวจสอบอีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.AddEmailTextOver13",
+    "description": null,
+    "english": "To continue with your purchase, please add your email address.",
+    "translation": "หากต้องการดำเนินการซื้อของคุณต่อ โปรดเพิ่มที่อยู่อีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.AddEmailTextUnder13",
+    "description": null,
+    "english": "To continue with your purchase, please have your parent add their email address.",
+    "translation": "หากต้องการดำเนินการซื้อของคุณต่อ โปรดให้ผู้ปกครองของคุณเพิ่มที่อยู่อีเมลของพวกเขา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.EmailInputPlaceholder",
+    "description": null,
+    "english": "Your Email",
+    "translation": "อีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.EmailInputPlaceholderUnder13",
+    "description": null,
+    "english": "Parent's Email",
+    "translation": "อีเมลของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.EmailInputPlaceholderOver13",
+    "description": null,
+    "english": "Your Email",
+    "translation": "อีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "ดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.EnterPassword",
+    "description": null,
+    "english": "Please enter your password.",
+    "translation": "โปรดกรอกรหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.PasswordInputPlaceholder",
+    "description": null,
+    "english": "Verify Account Password",
+    "translation": "ตรวจสอบยืนยันรหัสผ่านบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.VerifyEmailBody",
+    "description": null,
+    "english": "Please click the link in the confirmation email we sent to {emailAddress}.",
+    "translation": "โปรดคลิกลิงก์ในอีเมลยืนยันซึ่งเราส่งไปที่ {emailAddress}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.SendConfirmationEmail",
+    "description": null,
+    "english": "Send Confirmation Email",
+    "translation": "ส่งอีเมลยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.ResendConfirmationEmail",
+    "description": null,
+    "english": "Resend Confirmation Email",
+    "translation": "ส่งอีเมลยืนยันอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Message.InvalidEmailAddress",
+    "description": null,
+    "english": "Invalid email address.",
+    "translation": "ที่อยู่อีเมลไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Message.WrongPassword",
+    "description": null,
+    "english": "Incorrect password. Please try again.",
+    "translation": "รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Message.ConfirmationEmailNotSent",
+    "description": null,
+    "english": "Confirmation email not sent. Please try again later.",
+    "translation": "อีเมลยืนยันไม่ถูกส่ง โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change Email",
+    "translation": "เปลี่ยนอีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Sent",
+    "description": null,
+    "english": "Sent",
+    "translation": "ส่ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.LogoutAddEmailTextOver13",
+    "description": null,
+    "english": "Before logging out, please add your email address so that you don't get locked out.",
+    "translation": "ก่อนลงชื่อออก โปรดเพิ่มที่อยู่อีเมลของคุณเพื่อคุณจะได้ไม่ถูกล็อคไม่ให้เข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.LogoutAddEmailTextUnder13",
+    "description": null,
+    "english": "Before logging out, please add your parent's email address so that you don't get locked out.",
+    "translation": "ก่อนลงชื่อออก โปรดเพิ่มที่อยู่อีเมลของผู้ปกครองของคุณเพื่อคุณจะได้ไม่ถูกล็อคไม่ให้เข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifyOnLogout",
+    "description": null,
+    "english": "Don't Get Locked Out!",
+    "translation": "ระวังถูกล็อคไม่ให้เข้าสู่ระบบ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Logout",
+    "description": null,
+    "english": "Skip, Log Out Anyway",
+    "translation": "ข้ามและลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.GenericSkip",
+    "description": null,
+    "english": "Skip",
+    "translation": "ข้าม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Description.IDVerificationAddEmailText",
     "description": null,
     "english": "Before verifying your age, please enter your email address. This will be your recovery method in case you lose access to your account.\t",
-    "translation": "ก่อนที่คุณจะตรวจสอบยืนยันอายุของคุณ โปรดกรอกที่อยู่อีเมล ซึ่งจะใช้เป็นวิธีการกู้คืนในกรณีที่คุณสูญเสียการเข้าถึงบัญชีของคุณ\t",
+    "translation": "ก่อนทำการตรวจสอบยืนยันอายุของคุณ โปรดกรอกที่อยู่อีเมล ซึ่งจะใช้เป็นวิธีการกู้คืนในกรณีที่คุณสูญเสียการเข้าถึงบัญชีของคุณ\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.ChangeNumber",
+    "description": null,
+    "english": "Change Number",
+    "translation": "เปลี่ยนหมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Edit",
+    "description": null,
+    "english": "Edit",
+    "translation": "แก้ไข",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Ok",
+    "description": null,
+    "english": "Ok",
+    "translation": "ตกลง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.UserEmail",
+    "description": null,
+    "english": "Use Email Instead",
+    "translation": "ใช้อีเมลแทน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to {phoneNumber}",
+    "translation": "กรอกรหัสที่เราเพิ่งส่งไปยัง {phoneNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.VerifyPhoneNumber",
+    "description": null,
+    "english": "Verify Phone Number",
+    "translation": "ตรวจสอบยืนยันหมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Message.Confirmation",
+    "description": null,
+    "english": "We'll text your verification code to {phoneNumber}. SMS fees may apply.",
+    "translation": "เราจะส่งรหัสการตรวจสอบยืนยันของคุณไปที่ {phoneNumber} อาจมีการคิดค่าบริการ SMS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Verify",
+    "description": null,
+    "english": "Verify",
+    "translation": "ตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.ResendCode",
+    "description": null,
+    "english": "Resend Code",
+    "translation": "ส่งรหัสอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email instead",
+    "translation": "ใช้อีเมลแทน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Message.InvalidSmsCode",
+    "description": null,
+    "english": "The code is invalid.",
+    "translation": "รหัสไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.ErrorTryAgain",
+    "description": null,
+    "english": "Something went wrong. Please try again later.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.PhoneNumberAlreadyLinked",
+    "description": null,
+    "english": "This number has already been associated with another account.",
+    "translation": "หมายเลขนี้เชื่อมโยงกับบัญชีอื่นอยู่แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.CodeResent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "ส่งรหัสแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "รหัสการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.TooManyVerificationAttemps",
+    "description": null,
+    "english": "Too many attempts. Please try again in a few minutes.",
+    "translation": "มีการดำเนินการซ้ำมากเกินไป โปรดลองอีกครั้งในอีกสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.TooManyVerificationAttempts",
+    "description": null,
+    "english": "Too many attempts. Please try again in a few minutes.",
+    "translation": "มีการดำเนินการซ้ำมากเกินไป โปรดลองอีกครั้งในอีกสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddYourEmail",
+    "description": null,
+    "english": "Add Your Email",
+    "translation": "เพิ่มอีเมลของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.HomePageUpsellCardAddEmailText",
+    "description": null,
+    "english": "Add an email so you don't lose access to your friends, avatars, and Robux.",
+    "translation": "เพิ่มอีเมลเพื่อที่คุณจะไม่สูญเสียการเข้าถึงเพื่อน อวาตาร์และ Robux ของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.PleaseEnterEmail",
+    "description": null,
+    "english": "Please enter an email address to add to your account.",
+    "translation": "โปรดกรอกที่อยู่อีเมลเพื่อเพิ่มไปยังบัญชีของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.PleaseEnterEmailUnder13",
+    "description": null,
+    "english": "Please enter your parent's email address to add to your account.",
+    "translation": "โปรดกรอกที่อยู่อีเมลของผู้ปกครองเพื่อเพิ่มไปยังบัญชีของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.PleaseAddEmail",
+    "description": null,
+    "english": "Add Email",
+    "translation": "เพิ่มอีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.CompleteSetupOnLogout",
+    "description": "Add verified email to complete account setup prior to logging out.",
+    "english": "Finish Account Setup Before Log Out",
+    "translation": "ดำเนินการตั้งค่าบัญชีให้เสร็จสิ้นก่อนลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.AddEmailTextStrongMessaging",
+    "description": "Stronger messaging to help users understand why adding verified emails is important",
+    "english": "Finish setting up your account by adding an email for account recovery. By skipping this step, you are accepting that you may lose access to any game progress, items, and Robux.",
+    "translation": "ตั้งค่าบัญชีของคุณให้เสร็จสิ้นโดยการเพิ่มอีเมลสำหรับการกู้คืนบัญชี การข้ามขั้นตอนนี้ จะถือว่าคุณยอมรับว่าคุณอาจจะสูญเสียการเข้าถึงความคืบหน้าของเกม ไอเท็ม และ Robux ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.FinishSetup",
+    "description": "Primary action button of modal for adding your verified email, where the body of modal explains that an account with an verified email is not finished with setup",
+    "english": "Finish Setup",
+    "translation": "ตั้งค่าให้เสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.LogoutWithRisk",
+    "description": "Secondary action button text to allow users to skip adding a verified email. The content explains the potential risk of logging out without adding a verified email.",
+    "english": "Accept Risk of Losing Account and Log Out",
+    "translation": "ยอมรับความเสี่ยงที่จะสูญเสียบัญชีและลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.TooManyAttemptsTryAgainLater",
+    "description": null,
+    "english": "Too many attempts. Please try again later.",
+    "translation": "มีการดำเนินการซ้ำมากเกินไป โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddPhoneNumber",
+    "description": null,
+    "english": "Add Phone Number",
+    "translation": "เพิ่มหมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.VerificationCodeSmsFeesMayApply",
+    "description": null,
+    "english": "We will text you a verification code. SMS fees may apply.\n",
+    "translation": "เราจะส่งรหัสการตรวจสอบยืนยันไปให้คุณทางข้อความ อาจมีการคิดค่าบริการ SMS\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.PhoneNumber",
+    "description": null,
+    "english": "Phone number",
+    "translation": "หมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifyYourPhone",
+    "description": null,
+    "english": "Verify Your Phone",
+    "translation": "ตรวจสอบยืนยันหมายเลขโทรศัพท์ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.ChangePhoneNumber",
+    "description": null,
+    "english": "Change Phone Number",
+    "translation": "เปลี่ยนหมายเลขโทรศัพท์ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.ErrorPhoneFormatInvalid",
+    "description": null,
+    "english": "This phone number format is invalid. Please check and try again.",
+    "translation": "รูปแบบของหมายเลขโทรศัพท์นี้ไม่ถูกต้อง โปรดตรวจสอบแล้วลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.PhoneIsVerified",
+    "description": null,
+    "english": "Your Phone Number Is Verified!",
+    "translation": "หมายเลขโทรศัพท์ของคุณได้รับการตรวจสอบยืนยันแล้ว",
     "isDeprecated": false
   },
   {
@@ -12717,6 +13541,46 @@
     "description": null,
     "english": "You can now use your phone number to recover your account in the future.",
     "translation": "คุณสามารถใช้หมายเลขโทรศัพท์ของคุณเพื่อกู้คืนบัญชีของคุณในอนาคตได้แล้วตอนนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "เสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.InvalidPhoneNumberError",
+    "description": null,
+    "english": "This phone number cannot be used. Please enter a different phone number.",
+    "translation": "ไม่สามารถใช้หมายเลขโทรศัพท์นี้ได้ โปรดกรอกหมายเลขโทรศัพท์อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddPhone",
+    "description": null,
+    "english": "Add Phone",
+    "translation": "เพิ่มหมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.PhoneNumberNeverPublic",
+    "description": null,
+    "english": "Your phone number will never be displayed publicly.",
+    "translation": "เราจะไม่แสดงหมายเลขโทรศัพท์ของคุณกับผู้อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Header.PhoneIsVerified",
+    "description": null,
+    "english": "Your phone number is verified",
+    "translation": "หมายเลขโทรศัพท์ของคุณได้รับการตรวจสอบยืนยันแล้ว",
     "isDeprecated": false
   },
   {
@@ -12737,6 +13601,46 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Description.WantToBeRecommendedViaPhone",
+    "description": null,
+    "english": "Do you want to be recommended to Roblox users who have your phone number? ",
+    "translation": "คุณต้องการให้เราแนะนำคุณแก่ผู้ใช้ Roblox คนอื่นๆ ที่มีหมายเลขโทรศัพท์ของคุณใช่หรือไม่? ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.PhoneDiscoverabilityPrivacy",
+    "description": null,
+    "english": "When using Roblox, users with your phone number will be able to see your name as saved in their device.\n\nChange this any time in your account’s privacy settings.",
+    "translation": "เมื่อใช้ Roblox ผู้ใช้ที่มีหมายเลขโทรศัพท์ของคุณจะสามารถเห็นชื่อของคุณที่บันทึกไว้ในอุปกรณ์ของเขาได้\n\nคุณสามารถเปลี่ยนแปลงการตั้งค่านี้ได้ทุกเมื่อในการตั้งความเป็นส่วนตัวของบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.LearnMore",
+    "description": "To be made into a link",
+    "english": "Learn More.",
+    "translation": "เรียนรู้เพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.KeepAccountSecure",
+    "description": null,
+    "english": "Keep Your Account Secure",
+    "translation": "รักษาบัญชีของคุณให้ปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.DontGetLockedOut",
+    "description": null,
+    "english": "Don't Get Locked Out",
+    "translation": "ระวังถูกล็อคไม่ให้เข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Label.RecoverIfPasswordLost",
     "description": null,
     "english": "Recover your account in case you lose your password.",
@@ -12745,10 +13649,114 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.ImproveAccountSecurity",
+    "description": null,
+    "english": "Improve Account Security",
+    "translation": "ปรับปรุงความปลอดภัยของบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.KeepBadActorsOut",
+    "description": null,
+    "english": "Help us keep the bad actors out.",
+    "translation": "ช่วยเรากำจัดผู้ใช้ที่ไม่ดีออกไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Heading.LetFriendsFindYou",
     "description": null,
     "english": "Let Your Friends Find You",
-    "translation": "ให้เพื่อนๆ ของคุณหาคุณเจอได้",
+    "translation": "ให้เพื่อนหาคุณเจอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.ConnectWithRealLifeFriends",
+    "description": null,
+    "english": "Connect with your real life friends via phone number (opt-in only).",
+    "translation": "เชื่อมต่อกับเพื่อนๆ ในชีวิตจริงของคุณผ่านทางหมายเลขโทรศัพท์ (หากเลือกเข้าร่วม)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddEmailAddress",
+    "description": null,
+    "english": "Add Email Address",
+    "translation": "เพิ่มที่อยู่อีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.LogOutText",
+    "description": null,
+    "english": "Log Out",
+    "translation": "ลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Support",
+    "description": "Button to go to help page",
+    "english": "Support",
+    "translation": "บริการช่วยเหลือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerificationRequired",
+    "description": null,
+    "english": "Verification Required",
+    "translation": "จำเป็นต้องทำการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.PhoneHasTooManyAssociatedAccounts",
+    "description": null,
+    "english": "You’ve reached the maximum number of accounts linked to one phone number.",
+    "translation": "คุณมีจำนวนบัญชีที่เชื่อมโยงกับหมายเลขโทรศัพท์หนึ่งหมายเลขถึงจำนวนสูงสุดแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.SixDigitCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "รหัส 6 หลัก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifySuccess",
+    "description": null,
+    "english": "Verified Successfully",
+    "translation": "ตรวจสอบยืนยันสำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.Verifying",
+    "description": null,
+    "english": "Verifying",
+    "translation": "กำลังตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.ShortCodeLegalDisclaimerUA",
+    "description": null,
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our SMS Terms of Use and Privacy Policy. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "การคลิกที่ \"ดำเนินการต่อ\" จะถือว่าคุณได้ส่งหมายเลขโทรศัพท์ของคุณ และยอมรับข้อกำหนดการใช้งาน SMS และนโยบายความเป็นส่วนตัวของเรา เราจะส่งรหัสการตรวจสอบยืนยันแบบใช้ครั้งเดียวให้กับคุณ อาจมีการคิดอัตราค่าบริการข้อความและข้อมูล ตอบกลับด้วยคำว่า HELP เพื่อขอความช่วยเหลือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.TermsOfUse",
+    "description": null,
+    "english": "Terms of Use",
+    "translation": "ข้อกำหนดการใช้งาน",
     "isDeprecated": false
   },
   {
@@ -12760,11 +13768,51 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifiedSuccessfully.V2",
+    "description": null,
+    "english": "Verified successfully!",
+    "translation": "ตรวจสอบยืนยันสำเร็จเรียบร้อยแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.ConfirmPhone",
+    "description": null,
+    "english": "Confirm Phone",
+    "translation": "ยืนยันหมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.LogoutAddPhoneText",
+    "description": null,
+    "english": "Before logging out, please add your phone number so that you don't get locked out.",
+    "translation": "ก่อนลงชื่อออก โปรดเพิ่มหมายเลขโทรศัพท์ของคุณเพื่อคุณจะได้ไม่ถูกล็อคไม่ให้เข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.FinishAccountSetup",
+    "description": null,
+    "english": "Finish Account Setup",
+    "translation": "ตั้งค่าบัญชีให้เสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.LogoutAddPhoneTextV2",
+    "description": null,
+    "english": "Add a phone number for fast account recovery. Skipping this step may result in losing access to any game progress, items, and Robux.",
+    "translation": "เพิ่มหมายเลขโทรศัพท์เพื่อการกู้คืนบัญชีที่รวดเร็ว การข้ามขั้นตอนนี้อาจส่งผลให้เกิดการสูญเสียการเข้าถึงความคืบหน้าของเกม ไอเท็ม และ Robux ได้",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.CrossDevice",
     "key": "Heading.QuickLogin",
     "description": null,
     "english": "Quick Log In",
-    "translation": "เข้าสู่ระบบแบบด่วน",
+    "translation": "ลงชื่อเข้าใช้แบบด่วน",
     "isDeprecated": false
   },
   {
@@ -12772,7 +13820,7 @@
     "key": "Heading.LoginAnotherDevice",
     "description": null,
     "english": "Log in to another Device",
-    "translation": "เข้าสู่ระบบด้วยอุปกรณ์อื่น",
+    "translation": "ลงชื่อเข้าใช้ด้วยอุปกรณ์อื่น",
     "isDeprecated": false
   },
   {
@@ -12780,7 +13828,7 @@
     "key": "Heading.LoginWarning",
     "description": null,
     "english": "TO LOG IN, MAKE SURE YOU:",
-    "translation": "ในการเข้าสู่ระบบ ตรวจสอบให้แน่ใจว่าคุณ:",
+    "translation": "ในการลงชื่อเข้าใช้ ตรวจสอบให้แน่ใจว่าคุณ:",
     "isDeprecated": false
   },
   {
@@ -12804,7 +13852,7 @@
     "key": "Label.EnterCode",
     "description": null,
     "english": "Enter Quick Log In Code",
-    "translation": "กรอกรหัสการเข้าสู่ระบบแบบด่วน",
+    "translation": "กรอกรหัสการลงชื่อเข้าใช้แบบด่วน",
     "isDeprecated": false
   },
   {
@@ -12828,7 +13876,7 @@
     "key": "Label.ConfirmationMessage1",
     "description": null,
     "english": "You are about to sign in to: %s",
-    "translation": "คุณกำลังจะเข้าสู่ระบบด้วย: %s",
+    "translation": "คุณกำลังจะลงชื่อเข้าใช้: %s",
     "isDeprecated": false
   },
   {
@@ -12852,7 +13900,7 @@
     "key": "Action.ConfirmLogin",
     "description": null,
     "english": "Confirm Login",
-    "translation": "ยืนยันการเข้าสู่ระบบ",
+    "translation": "ยืนยันการลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -12884,7 +13932,7 @@
     "key": "Response.LoginSuccess",
     "description": null,
     "english": "Log in Successful",
-    "translation": "เข้าสู่ระบบสำเร็จแล้ว",
+    "translation": "ลงชื่อเข้าใช้สำเร็จแล้ว",
     "isDeprecated": false
   },
   {
@@ -12892,7 +13940,7 @@
     "key": "Response.LoginFail",
     "description": null,
     "english": "Log in Failed",
-    "translation": "เข้าสู่ระบบไม่สำเร็จ",
+    "translation": "ลงชื่อเข้าใช้ไม่สำเร็จ",
     "isDeprecated": false
   },
   {
@@ -12900,7 +13948,7 @@
     "key": "Label.DeviceLoggedIn",
     "description": null,
     "english": "%s logged in",
-    "translation": "%s ได้เข้าสู่ระบบแล้ว",
+    "translation": "%s ได้ลงชื่อเข้าใช้แล้ว",
     "isDeprecated": false
   },
   {
@@ -12908,7 +13956,7 @@
     "key": "Label.CodeNotVerified",
     "description": null,
     "english": "The Quick Log In code was not verified.",
-    "translation": "รหัสการเข้าสู่ระบบแบบด่วนไม่ได้รับการตรวจสอบยืนยัน",
+    "translation": "รหัสการเข้าลงชื่อเข้าใช้แบบด่วนไม่ได้รับการตรวจสอบยืนยัน",
     "isDeprecated": false
   },
   {
@@ -12916,7 +13964,7 @@
     "key": "Heading.LoginCode",
     "description": null,
     "english": "Quick Log In Code",
-    "translation": "รหัสการเข้าสู่ระบบแบบด่วน",
+    "translation": "รหัสการลงชื่อเข้าใช้แบบด่วน",
     "isDeprecated": false
   },
   {
@@ -12924,7 +13972,7 @@
     "key": "Label.DevicePrompt",
     "description": null,
     "english": "GO TO YOUR LOGGED IN DEVICE TO ENTER THIS CODE AND EXPLORE",
-    "translation": "ไปยังอุปกรณ์ของคุณที่เข้าสู่ระบบอยู่เพื่อกรอกรหัสนี้และทำการสำรวจ",
+    "translation": "ไปยังอุปกรณ์ของคุณที่ลงชื่อเข้าใช้อยู่เพื่อกรอกรหัสนี้และทำการสำรวจ",
     "isDeprecated": false
   },
   {
@@ -12932,7 +13980,7 @@
     "key": "Label.LoginInstructions",
     "description": null,
     "english": "On your logged in device, go to:",
-    "translation": "บนอุปกรณ์ของคุณที่เข้าสู่ระบบอยู่ โปรดไปที่:",
+    "translation": "บนอุปกรณ์ของคุณที่ลงชื่อเข้าใช้อยู่ โปรดไปที่:",
     "isDeprecated": false
   },
   {
@@ -12940,7 +13988,7 @@
     "key": "Label.LoginLocation",
     "description": null,
     "english": "<b>Account Settings > Quick Log In</b> to enter your code.",
-    "translation": "<b>การตั้งค่าบัญชี > เข้าสู่ระบบแบบด่วน</b> เพื่อกรอกรหัสของคุณ",
+    "translation": "<b>การตั้งค่าบัญชี > ลงชื่อเข้าใช้แบบด่วน</b> เพื่อกรอกรหัสของคุณ",
     "isDeprecated": false
   },
   {
@@ -12964,7 +14012,7 @@
     "key": "Label.ConfirmOnDevice",
     "description": null,
     "english": "CONFIRM LOGIN ON YOUR OTHER DEVICE",
-    "translation": "ยืนยันการเข้าสู่ระบบบนอุปกรณ์อื่นของคุณ",
+    "translation": "ยืนยันการลงชื่อเข้าใช้บนอุปกรณ์อื่นของคุณ",
     "isDeprecated": false
   },
   {
@@ -12972,7 +14020,7 @@
     "key": "Label.LogginInAs",
     "description": null,
     "english": "Logging in as %s",
-    "translation": "เข้าสู่ระบบด้วยชื่อผู้ใช้ %s",
+    "translation": "ลงชื่อเข้าใช้ด้วยชื่อ %s",
     "isDeprecated": false
   },
   {
@@ -12996,7 +14044,7 @@
     "key": "InvalidLocationError",
     "description": null,
     "english": "We couldn't match your location to the device trying to log in. Please try again on the same network.",
-    "translation": "เราไม่สามารถจับคู่ตำแหน่งที่ตั้งของคุณกับอุปกรณ์ที่กำลังพยายามเข้าสู่ระบบอยู่ โปรดลองอีกครั้งโดยใช้เครือข่ายเดียวกัน",
+    "translation": "เราไม่สามารถจับคู่ตำแหน่งที่ตั้งของคุณกับอุปกรณ์ที่กำลังพยายามลงชื่อเข้าใช้อยู่ โปรดลองอีกครั้งโดยใช้เครือข่ายเดียวกัน",
     "isDeprecated": false
   },
   {
@@ -13004,7 +14052,7 @@
     "key": "Label.InvalidLocationError",
     "description": null,
     "english": "We couldn't match your location to the device trying to log in. Please try again on the same network.",
-    "translation": "เราไม่สามารถจับคู่ตำแหน่งที่ตั้งของคุณกับอุปกรณ์ที่กำลังพยายามเข้าสู่ระบบอยู่ โปรดลองอีกครั้งโดยใช้เครือข่ายเดียวกัน",
+    "translation": "เราไม่สามารถจับคู่ตำแหน่งที่ตั้งของคุณกับอุปกรณ์ที่กำลังพยายามลงชื่อเข้าใช้อยู่ โปรดลองอีกครั้งโดยใช้เครือข่ายเดียวกัน",
     "isDeprecated": false
   },
   {
@@ -13036,7 +14084,7 @@
     "key": "Action.LoginWithDevice",
     "description": null,
     "english": "Log In With Another Device",
-    "translation": "เข้าสู่ระบบด้วยอุปกรณ์อื่น",
+    "translation": "ลงชื่อเข้าใช้ด้วยอุปกรณ์อื่น",
     "isDeprecated": false
   },
   {
@@ -13052,7 +14100,7 @@
     "key": "Label.QrInstructions",
     "description": null,
     "english": "Scan this QR code from your logged in device's camera.",
-    "translation": "สแกนรหัส QR ด้วยกล้องบนอุปกรณ์ของคุณที่เข้าสู่ระบบอยู่",
+    "translation": "สแกนรหัส QR ด้วยกล้องบนอุปกรณ์ของคุณที่ลงชื่อเข้าใช้อยู่",
     "isDeprecated": false
   },
   {
@@ -13084,7 +14132,7 @@
     "key": "Action.OpenAlphaNumericModal",
     "description": null,
     "english": "Or click to generate a Quick Log In Code instead",
-    "translation": "หรือคลิกเพื่อสร้างรหัสการเข้าสู่ระบบแบบด่วนแทน",
+    "translation": "หรือคลิกเพื่อสร้างรหัสการลงชื่อเข้าใช้แบบด่วนแทน",
     "isDeprecated": false
   },
   {
@@ -13092,7 +14140,7 @@
     "key": "Label.QrCodeLogin",
     "description": null,
     "english": "QR Code Log In",
-    "translation": "เข้าสู่ระบบด้วยรหัส QR",
+    "translation": "ลงชื่อเข้าใช้ด้วยรหัส QR",
     "isDeprecated": false
   },
   {
@@ -13100,7 +14148,7 @@
     "key": "Label.LoginLocationWithIcons",
     "description": null,
     "english": "{settingsIcon} or {moreIcon} <b> > Quick Log In</b> to enter this code on that device.",
-    "translation": "{settingsIcon} หรือ {moreIcon} <b> > เข้าสู่ระบบแบบด่วน</b> เพื่อกรอกรหัสนี้บนอุปกรณ์ดังกล่าว",
+    "translation": "{settingsIcon} หรือ {moreIcon} <b> > ลงชื่อเข้าใช้แบบด่วน</b> เพื่อกรอกรหัสนี้บนอุปกรณ์ดังกล่าว",
     "isDeprecated": false
   },
   {
@@ -13108,7 +14156,103 @@
     "key": "Label.ConfirmAndLoginAs",
     "description": "Tell user they are being logged in through cross device login",
     "english": "Confirming login as %s on your other device",
-    "translation": "ยืนยันการเข้าสู่ระบบด้วยชื่อผู้ใช้ \"%s\" บนอุปกรณ์อื่นของคุณ",
+    "translation": "ยืนยันการลงชื่อเข้าใช้ด้วยชื่อผู้ใช้ \"%s\" บนอุปกรณ์อื่นของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "ไอคอนเครื่องหมายรับรอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "ไอคอนเครื่องหมายรับรอง Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfo",
+    "description": "Info that will be displayed in a modal if the verified badge is clicked",
+    "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
+    "translation": "เครื่องหมายนี้ยืนยันว่าผู้ที่มีเครื่องหมายคือครีเอเตอร์ แบรนด์ หรือบุคคลสาธารณะที่มีชื่อเสียงและแท้จริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoLink",
+    "description": "Text for a link to “Learn More” about Verified Badges",
+    "english": "Learn More",
+    "translation": "เรียนรู้เพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "UsernameChangeWithVerifiedBadge",
+    "description": "Text warning a user if they change their username they will lose the verified badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
+    "translation": "สิ่งสำคัญ: การเปลี่ยนแปลงนี้จะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณ\n\nวันที่สร้างบัญชีเดิมจะถูกยกมาใช้กับชื่อผู้ใช้ใหม่ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "DisplayNameChangeWithVerifiedBadge",
+    "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
+    "translation": "สิ่งสำคัญ: การเปลี่ยนแปลงนี้จะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณ\n\nคุณสามารถเปลี่ยนชื่อที่แสดงของคุณได้หนึ่งครั้งเท่านั้นในทุกๆ 7 วัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "ThisActionWillRemoveTheVerifiedBadge",
+    "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
+    "english": "The verified badge will be removed.",
+    "translation": "เครื่องหมายรับรองจะถูกลบออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "2SVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Info",
+    "translation": "ข้อมูล",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "TwoSVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
+    "translation": "การปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นตอนจะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณและทำให้บัญชีของคุณมีความปลอดภัยน้อยลงด้วย คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoTitle",
+    "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
+    "english": "Verified Badge",
+    "translation": "เครื่องหมายรับรอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "GroupNameChangeWithVerifiedBadge",
+    "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
+    "english": "the verified badge will be removed.",
+    "translation": "เครื่องหมายรับรองจะถูกลบออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "action.close",
+    "description": "A button that can be clicked to close a modal",
+    "english": "Close",
+    "translation": "ปิด",
     "isDeprecated": false
   },
   {
@@ -13385,6 +14529,30 @@
   },
   {
     "namespace": "Feature.SocialTab",
+    "key": "Label.Chats",
+    "description": "Title that displays on the button that the user can press to navigate to their conversations/group chats",
+    "english": "Chats",
+    "translation": "แชท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
+    "key": "Label.Social",
+    "description": "Page title for the \"Social Tab\" page",
+    "english": "Social",
+    "translation": "โซเชียล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
+    "key": "Label.Groups",
+    "description": "Title that displays on the button that the user can press to navigate to the groups that they are in",
+    "english": "Groups",
+    "translation": "กลุ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
     "key": "Label.AddFriendHint",
     "description": "Title of a tooltip that directs a user to click a button to add friends.",
     "english": "Press Here to Add Friends",
@@ -13397,6 +14565,30 @@
     "description": "Body of a tooltip that directs a user to click a button to add friends. It fits in a relatively small space.",
     "english": "Friends make Roblox fun!",
     "translation": "เพื่อนทำให้ Roblox สนุกยิ่งขึ้น!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
+    "key": "Label.Connect",
+    "description": "Page title for the Connect tab",
+    "english": "Connect",
+    "translation": "เชื่อมต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
+    "key": "Label.ConfirmSendFriendRequest",
+    "description": "Used when a user scans a users QR code to add them as a friend. We show the user a prompt and ask them to confirm that they want to send a friend request to the user whos' information we read from the QR code.",
+    "english": "Do you want to send a friend request to this user?",
+    "translation": "คุณต้องการส่งคำขอเป็นเพื่อนให้กับผู้ใช้นี้หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialTab",
+    "key": "Label.FindFriendsHintBody",
+    "description": null,
+    "english": "Connect with friends you already know or discover new ones.",
+    "translation": "เชื่อมต่อกับเพื่อนที่คุณรู้จักอยู่แล้วหรือหาเพื่อนใหม่ๆ",
     "isDeprecated": false
   },
   {
@@ -14417,6 +15609,46 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "ตรวจสอบยืนยันอายุของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.SkipVerification",
+    "description": null,
+    "english": "Skip Verification",
+    "translation": "ข้ามการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "ดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.EnterEmail",
+    "description": null,
+    "english": "Enter Your Email",
+    "translation": "กรอกอีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnterEmail",
+    "description": null,
+    "english": "Before verifying your age, please enter your email address. This will be your recovery method in case you lose access to your account.",
+    "translation": "ก่อนทำการตรวจสอบยืนยันอายุของคุณ โปรดกรอกที่อยู่อีเมล ซึ่งจะใช้เป็นวิธีการกู้คืนในกรณีที่คุณสูญเสียการเข้าถึงบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.EnableCameraUpsell",
     "description": null,
     "english": "Enable Camera",
@@ -14432,11 +15664,91 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.Deprecated",
+    "key": "Text.Test",
+    "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
+    "english": "Test Text",
+    "translation": "Test Text",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Deprecated",
+    "key": "Text.Test2",
+    "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
+    "english": "Test Text 2",
+    "translation": "Test Text 2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Title.GetPremium",
+    "description": null,
+    "english": "Get Premium",
+    "translation": "สมัครสมาชิก Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Action.Subscribe",
+    "description": null,
+    "english": "Subscribe",
+    "translation": "สมัครสมาชิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Label.PremiumBenefitListDesc",
+    "description": null,
+    "english": "Roblox Premium will get you:",
+    "translation": "หาเป็นสมาชิก Roblox Premium คุณจะได้รับ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Label.RobuxPerMonth",
+    "description": null,
+    "english": "{robux} per month",
+    "translation": "{robux} ต่อเดือน",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PremiumUpsell",
     "key": "Label.PremiumOnlyBenefits",
     "description": null,
     "english": "Access to Premium-only benefits",
     "translation": "การเข้าถึงสิทธิประโยชน์ต่างๆ สำหรับ Premium เท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Label.AvatarShopBenefits",
+    "description": null,
+    "english": "Access to exclusive and discounted items in avatar shop",
+    "translation": "เข้าถึงไอเท็มลดราคาและไอเท็มสุดพิเศษได้ในร้านค้าอวาตาร์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Label.Disclosure",
+    "description": null,
+    "english": "Subscribe for <b>{currencySymbol}{price}/month. Cancel anytime.</b> Roblox Terms of Use and Privacy Policy apply.",
+    "translation": "สมัครสมาชิกในราคา <b>{currencySymbol}{price}/เดือน ยกเลิกได้ตลอดเวลา</b> ข้อกำหนดการใช้งานและนโยบายความเป็นส่วนตัวของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Body.PremiumOnlyAreas",
+    "description": null,
+    "english": "Access to Premium only benefits",
+    "translation": "การเข้าถึงสิทธิประโยชน์ต่างๆ สำหรับ Premium เท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PremiumUpsell",
+    "key": "Body.RobuxDiscount",
+    "description": null,
+    "english": "10% bonus when buying Robux",
+    "translation": "รับโบนัส 10% เมื่อซื้อ Robux",
     "isDeprecated": false
   },
   {
@@ -14449,10 +15761,42 @@
   },
   {
     "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Title.BuyItem",
+    "description": "Title for a Modal asking the user if they want to purchase the item.",
+    "english": "Buy Item",
+    "translation": "ซื้อไอเท็ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Text.BuyItemQuestion",
+    "description": "Prompt main text asking the user if they want to buy an item.",
+    "english": "Would you like to buy \"{name}\"?",
+    "translation": "คุณต้องการซื้อ \"{name}\" หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
     "key": "Text.RemainingBalance",
     "description": "Footer text at the bottom of the modal, use to tell the user their balance after the purchase. The robux amount will be shown after the text.",
     "english": "Your balance after this transaction will be",
     "translation": "หลังการทำธุรกรรมนี้คุณจะมียอดคงเหลือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Action.Cancel",
+    "description": "Text on the button to cancel the purchase",
+    "english": "Cancel",
+    "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Text.TestPurchase",
+    "description": null,
+    "english": "This is a test purchase. Your account will not be charged.",
+    "translation": "การดำเนินการนี้เป็นการทดลองซื้อ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
     "isDeprecated": false
   },
   {
@@ -14472,11 +15816,187 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Title.BuyGamepass",
+    "description": null,
+    "english": "Buy Gamepass",
+    "translation": "ซื้อบัตรผ่านเกม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Text.Loading",
+    "description": "Shown on button when prompt is opening to show the user it is still loading.",
+    "english": "Loading...",
+    "translation": "กำลังโหลด...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Title.InsufficientFunds",
+    "description": "Title of a modal trying to sell an item and buying robux to be able to buy the item.",
+    "english": "Insufficient Funds",
+    "translation": "เงินไม่เพียงพอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.BuyRobuxQuestion",
+    "description": "Main text on the modal asking the user to buy robux to buy the item. Robux amount will displayed after this text",
+    "english": "Would you like to buy",
+    "translation": "คุณต้องการซื้อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.DisclosurePayment",
+    "description": null,
+    "english": "Your payment method will be charged.",
+    "translation": "จะมีการเรียกเก็บเงินไปยังวิธีการชำระเงินของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.DisclosureTerms",
+    "description": null,
+    "english": "Roblox Terms of Use apply.",
+    "translation": "ใช้ข้อกำหนดการใช้งานของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.RemainingBalance",
+    "description": "Text shown on the footer explaining how much robux will be used + how much will be left over after the purchase added to the balance.",
+    "english": "The remaining {robux} will be credited to your balance.",
+    "translation": "Robux ที่เหลืออยู่จำนวน {robux} Robux จะเครดิตไปยังยอดคงเหลือของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Action.Cancel",
+    "description": "Text on button to cancel the purchase",
+    "english": "Cancel",
+    "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Action.BuyRobux",
+    "description": "Text on the button to start the purchase of robux in order to be able to buy the in game item.",
+    "english": "Buy Robux",
+    "translation": "ซื้อ Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.BuyRobuxQuestionV2",
+    "description": null,
+    "english": "Would you like to buy {name}?",
+    "translation": "คุณต้องการซื้อ \"{name}\" หรือไม่?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.RobuxUpsell",
     "key": "Text.BuyRobuxQuestionIncludingWarning",
     "description": "This is currently only for Luobu",
     "english": "Please moderate your entertainment and make rational consumption. Would you like to buy\nLuaApp",
     "translation": "โปรดเพลิดเพลินไปกับความบันเทิงอย่างพอเหมาะและใช้จ่ายอย่างสมเหตุสมผล คุณต้องการซื้อ\nLuaApp หรือไม่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.Loading",
+    "description": "Shown on button when prompt is opening to show the user it is still loading.",
+    "english": "Loading...",
+    "translation": "กำลังโหลด...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Action.BuyRobuxAndItem",
+    "description": "Test on button used to initial the purchase of robux, which then would purchase a digital item after.",
+    "english": "Buy Robux and Item",
+    "translation": "ซื้อ Robux และไอเท็ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.DisclosureTermsURL",
+    "description": "Text shown to user to inform them their purchase must comply with the terms of use linked in the text.",
+    "english": "Roblox {termsofuse} apply.",
+    "translation": "ใช้{termsofuse}ของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.TermsOfUse",
+    "description": "Hyperlink used in Text.DisclosureTermsURL",
+    "english": "Terms of Use",
+    "translation": "ข้อกำหนดการใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Title.InsufficientRobux",
+    "description": "Title of the modal",
+    "english": "Insufficient Robux",
+    "translation": "Robux ไม่เพียงพอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.AdditionalRobux",
+    "description": null,
+    "english": "You need an additional {robux}.",
+    "translation": "คุณต้องการเพิ่มอีก {robux}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "WouldYouBuy",
+    "description": "DEPRECATED. DO NOT USE.",
+    "english": "Would you like to buy a {robux} package?",
+    "translation": "คุณต้องการซื้อแพ็คเกจ {robux} หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.WouldYouBuy",
+    "description": null,
+    "english": "Would you like to buy a {robux} package?",
+    "translation": "คุณต้องการซื้อแพ็คเกจ {robux} หรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Text.PurchaseNotAvailableOnHeadSet",
+    "description": "A text to direct user to other platforms when they try buying Robux on Quest VR headset.",
+    "english": "Buying Robux is not supported on headset devices yet. Please try on a different device.",
+    "translation": "การซื้อ Robux ยังไม่ได้รับการรองรับบนอุปกรณ์เฮดเซ็ท โปรดทำการซื้อโดยใช้อุปกรณ์อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Screentime",
+    "key": "Description.TimeWarning",
+    "description": null,
+    "english": "Warning: Excessive experience use can interfere with normal daily life. You have played on Roblox for {NumberOfHours} hour(s).",
+    "translation": "คำเตือน: การเข้าใช้ประสบการร์มากเกินไปอาจรบกวนการใช้ชีวิตประจำวันตามปกติได้ คุณเล่นบน Roblox เป็นเวลา {NumberOfHours} ชั่วโมงแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Screentime",
+    "key": "Description.CurfewMessage",
+    "description": null,
+    "english": "You cannot visit Roblox at this time. \nYour parent or guardian can change additional restriction hours under Parental Controls in Settings.",
+    "translation": "คุณไม่สามารถเข้าใช้ Roblox ได้ในช่วงเวลานี้ \nพ่อแม่หรือผู้ปกครองของคุณสามารถเปลี่ยนแปลงเวลาที่จำกัดการใช้งานได้โดยไปที่การควบคุมโดยผู้ปกครองในการตั้งค่า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Screentime",
+    "key": "Description.HeartbeatConsecutiveFailure",
+    "description": "This message will be shown when screentime heartbeat http call fails for 3 times consecutively.",
+    "english": "Internal Error. Please try login again.",
+    "translation": "เกิดข้อผิดพลาดภายใน โปรดลองลงชื่อเข้าใช้อีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -14588,7 +16108,7 @@
     "key": "Agreement.LuobuThirdPartyDataUse",
     "description": "Used by Luobu only, not needed for English and other languages.",
     "english": "Third Party share list",
-    "translation": "รายการที่แชร์กับบุคคลที่สาม",
+    "translation": "รายการที่แชร์กับบริษัทภายนอก",
     "isDeprecated": false
   },
   {
@@ -14596,7 +16116,7 @@
     "key": "Popup.Agreement.LuobuThirdPartyDataUse",
     "description": "Used by Luobu only, no needed for English and other languages.",
     "english": "Third Party share list",
-    "translation": "รายการที่แชร์กับบุคคลที่สาม",
+    "translation": "รายการที่แชร์กับบริษัทภายนอก",
     "isDeprecated": false
   },
   {
@@ -14756,7 +16276,7 @@
     "key": "Messages.Appeal",
     "description": "Tell the user that they can appeal their moderation.",
     "english": "If you wish to appeal, please contact us via the Support Form.",
-    "translation": "หากคุณต้องการร้องเรียน โปรดติดต่อเราผ่านทางแบบฟอร์มบริการช่วยเหลือ",
+    "translation": "หากคุณต้องการยื่นอุทธรณ์ โปรดติดต่อเราผ่านทางแบบฟอร์มบริการช่วยเหลือ",
     "isDeprecated": false
   },
   {
@@ -15332,7 +16852,7 @@
     "key": "Tile.Obby",
     "description": "Genre Tile Title - Obby",
     "english": "Obby",
-    "translation": "ด่านอุปสรรค",
+    "translation": "อ็อบบี้",
     "isDeprecated": false
   },
   {
@@ -15556,7 +17076,7 @@
     "key": "Title.HomePageUpsellCardLockOutTitle",
     "description": null,
     "english": "Don’t Get Locked Out",
-    "translation": "ระวังไม่ให้สูญเสียการเข้าถึง",
+    "translation": "ระวังถูกล็อคไม่ให้เข้าสู่ระบบ",
     "isDeprecated": false
   },
   {
@@ -15620,7 +17140,7 @@
     "key": "Label.Dontgetlockedout",
     "description": null,
     "english": "Don't get locked out",
-    "translation": "ระวังไม่ให้สูญเสียการเข้าถึง",
+    "translation": "ระวังถูกล็อคไม่ให้เข้าสู่ระบบ",
     "isDeprecated": false
   },
   {
@@ -15744,11 +17264,67 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Title.PurchaseSucceeded",
+    "description": "Title of the modal",
+    "english": "Purchase Succeeded",
+    "translation": "ทำการซื้อสำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.YouOwn",
+    "description": "Text informing the user they now own the selected item.",
+    "english": "Now you own {name}!",
+    "translation": "คุณเป็นเจ้าของ \"{name}\" แล้วตอนนี้!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.RobuxCredit",
+    "description": "Text informing the user, the rest of the robux that was not used to purchase the item is now in their account.",
+    "english": "{robux} has been credited to your balance.",
+    "translation": "จะมีการเครดิต {robux} ไปยังยอดคงเหลือของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.BackToGame",
+    "description": "Text on button that dismissed all the purchase modals and returns the user back to the game.",
+    "english": "Back to Game",
+    "translation": "กลับไปยังเกม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.Equip",
+    "description": null,
+    "english": "Equip My Avatar",
+    "translation": "สวมใส่ให้อวาตาร์ของฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.BackToShop",
+    "description": null,
+    "english": "Back to Shop",
+    "translation": "กลับไปยังร้านค้า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.BalanceNow",
+    "description": null,
+    "english": "Your balance is now {robux}.",
+    "translation": "ขณะนี้คุณมียอดคงเหลือ {robux}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.Loading",
     "key": "Text.PurchasingRobux",
     "description": null,
     "english": "Purchasing Robux...",
-    "translation": "กำลังสั่งซื้อ Robux...",
+    "translation": "กำลังซื้อ Robux...",
     "isDeprecated": false
   },
   {
@@ -15756,7 +17332,7 @@
     "key": "Text.PurchasingItem",
     "description": null,
     "english": "Purchasing item...",
-    "translation": "กำลังสั่งซื้อ ไอเท็ม...",
+    "translation": "กำลังซื้อ ไอเท็ม...",
     "isDeprecated": false
   },
   {
@@ -15764,7 +17340,7 @@
     "key": "WaitingForPurchase",
     "description": null,
     "english": "Waiting for purchase...",
-    "translation": "กำลังรอการสั่งซื้อ...",
+    "translation": "กำลังรอการซื้อ...",
     "isDeprecated": false
   },
   {
@@ -15780,7 +17356,7 @@
     "key": "Text.WaitingForPurchase",
     "description": null,
     "english": "Waiting for purchase...",
-    "translation": "กำลังรอการสั่งซื้อ...",
+    "translation": "กำลังรอการซื้อ...",
     "isDeprecated": false
   },
   {
@@ -15793,6 +17369,46 @@
   },
   {
     "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.Error",
+    "description": null,
+    "english": "Error",
+    "translation": "ข้อผิดพลาด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.UnknownError",
+    "description": null,
+    "english": "Your purchase failed because something went wrong. Your account has not been charged. Please try again later.",
+    "translation": "คุณซื้อไม่สำเร็จเนื่องจากมีปัญหาบางอย่างเกิดขึ้น บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.Ok",
+    "description": null,
+    "english": "Ok",
+    "translation": "ตกลง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.AlreadyOwn",
+    "description": null,
+    "english": "You already own this item. Your account has not been charged.",
+    "translation": "คุณเป็นเจ้าของไอเท็มนี้อยู่แล้ว บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.Limited",
+    "description": null,
+    "english": "This limited item has no more copies. Your account has not been charged.",
+    "translation": "ไม่มีไอเท็มจำนวนจำกัดนี้เพิ่มแล้ว บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
     "key": "Text.NotEnoughRobux",
     "description": null,
     "english": "This item costs more Robux than is available to purchase. Please leave this experience and go to the Robux screen to purchase more.",
@@ -15801,10 +17417,130 @@
   },
   {
     "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.NotForSale",
+    "description": null,
+    "english": "This item is not currently for sale. Your account has not been charged.",
+    "translation": "ไอเท็มนี้ไม่ได้ขายอยู่ในขณะนี้ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.NotForSaleExperience",
+    "description": null,
+    "english": "This item can not be sold in this experience. Your account has not been charged.",
+    "translation": "ไม่สามารถขายไอเท็มนี้ในประสบการณ์นี้ได้ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.PremiumOnly",
+    "description": null,
+    "english": "You need to have Roblox Premium in order to purchase this item.",
+    "translation": "คุณต้องมี Roblox Premium จึงจะสามารถซื้อไอเท็มนี้ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.PurchaseDisabled",
+    "description": null,
+    "english": "Your purchase failed because In-experience purchases are temporarily disabled. Your account has not been charged. Please try again later.",
+    "translation": "คุณซื้อไม่สำเร็จเนื่องจากการซื้อในประสบการณ์ถูกปิดใช้งานชั่วคราว บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
     "key": "Text.ThirdPartyDisabled",
     "description": null,
     "english": "Third-party item sales have been disabled for this place. Your account has not been charged.",
-    "translation": "สถานที่นี้ปิดใช้งานการขายไอเท็มของบุคคลที่สาม บัญชีของคุณยังไม่ถูกเรียกเก็บเงิน",
+    "translation": "สถานที่นี้ปิดใช้งานการขายไอเท็มจากภายนอก บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.Under13",
+    "description": null,
+    "english": "Your account is under 13. Purchase of this item is not allowed. Your account has not been charged.",
+    "translation": "เจ้าของบัญชีมีอายุต่ำกว่า 13 ปี จึงไม่ได้รับอนุญาตให้ซื้อไอเท็มนี้ บัญชีของคุณจะไม่ถูกเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.FailedGrant",
+    "description": null,
+    "english": "Your payment has been received, but you have not received your Robux yet. Please try again later.",
+    "translation": "ได้รับการชำระเงินของคุณแล้ว แต่คุณยังไม่ได้รับ Robux ของคุณ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "FailedGrantUnknown",
+    "description": "DEPRECATED",
+    "english": "DEPRECATED",
+    "translation": "เลิกใช้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.FailedGrantUnknown",
+    "description": null,
+    "english": "Your item purchase wasn't successful, and Robux has not been deducted from your account. Please try again.",
+    "translation": "Robux ไม่ได้ถูกหักออกจากบัญชีของคุณเนื่องจากคุณซื้อไอเท็มไม่สำเร็จ โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.PremiumPlatformUnavailable",
+    "description": null,
+    "english": "Purchasing Roblox Premium is not supported on your platform. Please use your desktop to purchase Premium.",
+    "translation": "แพลตฟอร์มของคุณไม่รองรับการซื้อ Roblox Premium โปรดใช้เดสก์ท็อปของคุณเพื่อซื้อ Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "AlreadyPremium",
+    "description": null,
+    "english": "Looks like the developer is trying to prompt you to purchase Roblox Premium, but you are already a Premium member!",
+    "translation": "ดูเหมือนว่านักพัฒนาจะพยายามแจ้งเตือนให้คุณซื้อ Roblox Premium แต่คุณเป็นสมาชิก Roblox Premium อยู่แล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.Error",
+    "description": null,
+    "english": "An error has occurred.",
+    "translation": "เกิดข้อผิดพลาด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.PurchaseLimit",
+    "description": null,
+    "english": "Your transaction cannot be completed as you have reached a purchasing limit. Please try your transaction again in 24-72 hours. If unsuccessful, you may need to wait until next month to make a new purchase. Purchasing limits cannot be changed or removed.",
+    "translation": "ไม่สามารถทำธุรกรรมของคุณให้เสร็จสมบูรณ์ได้เนื่องจากคุณมียอดใช้จ่ายเต็มวงเงินแล้ว โปรดลองทำธุรกรรมของคุณอีกครั้งใน 24-72 ชั่วโมง หากยังไม่สามารถทำธุรกรรมได้ คุณอาจต้องรอถึงเดือนหน้าเพื่อทำการซื้อใหม่ ไม่สามารถเปลี่ยนหรือลบวงเงินได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.ParentalLimit",
+    "description": null,
+    "english": "Your transaction cannot be completed due to the monthly purchasing limit set by the parent of the account owner. You will not be able to make a new purchase until next month unless the parental control settings are changed.",
+    "translation": "ไม่สามารถทำธุรกรรมของคุณให้เสร็จสมบูรณ์ได้เนื่องจากวงเงินรายเดือนที่ผู้ปกครองของเจ้าของบัญชีนี้ได้กำหนดไว้ คุณจะไม่สามารถทำการซื้อใหม่ได้จนกว่าจะถึงเดือนถัดไป เว้นแต่ว่ามีการเปลี่ยนการตั้งค่าการควบคุมโดยผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.RobuxPurchaseFailed",
+    "description": null,
+    "english": "Unable to Get Robux",
+    "translation": "ไม่สามารถรับ Robux ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.FailedRobuxPurchase",
+    "description": null,
+    "english": "Your purchase wasn’t successful, and you have not been charged. Please try again.",
+    "translation": "คุณยังไม่ถูกเรียกเก็บเงินเนื่องจากการซื้อของคุณไม่สำเร็จ โปรดลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -15828,7 +17564,7 @@
     "key": "Description.Reason",
     "description": "Reason for enabling Authenticator.",
     "english": "2 steps of security will protect your login, Robux, big purchases, experiences and more.",
-    "translation": "การรักษาความปลอดภัย 2 ขั้นตอนจะปกป้องการเข้าสู่ระบบ Robux การสั่งซื้อจำนวนมาก ประสบการณ์และอื่นๆ อีกมากมายของคุณ",
+    "translation": "การรักษาความปลอดภัย 2 ขั้นตอนจะปกป้องการลงชื่อเข้าใช้, Robux, การซื้อจำนวนมาก, ประสบการณ์ และอื่นๆ อีกมากมายของคุณ",
     "isDeprecated": false
   },
   {
@@ -15844,7 +17580,7 @@
     "key": "Text.U13PaymentModal",
     "description": null,
     "english": "This purchase involves the exchange of real money. I agree that I am at least 18 years of age, and am the parent or legal guardian of the account owner. I authorize this purchase and agree to the Terms of Use.",
-    "translation": "การสั่งซื้อนี้เกี่ยวข้องกับการแลกเปลี่ยนด้วยเงินจริง ฉันยอมรับว่าฉันมีอายุ 18 ปีขึ้นไป และฉันเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชี ฉันอนุญาตการสั่งซื้อนี้และยอมรับข้อกำหนดการใช้งาน",
+    "translation": "การซื้อนี้เกี่ยวข้องกับการแลกเปลี่ยนด้วยเงินจริง ฉันยอมรับว่าฉันมีอายุ 18 ปีขึ้นไป และฉันเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชี ฉันอนุญาตการซื้อนี้และยอมรับข้อกำหนดการใช้งาน",
     "isDeprecated": false
   },
   {
@@ -15852,7 +17588,39 @@
     "key": "Text.U13MonthlyThreshold1Modal",
     "description": null,
     "english": "You've spent a lot on Roblox this month. Do you want to proceed? This purchase involves the exchange of real money. You must be the parent or legal guardian of the account owner to authorize this purchase.",
-    "translation": "คุณได้ใช้จ่ายบน Roblox เป็นจำนวนมากในเดือนนี้ คุณต้องการดำเนินการต่อหรือไม่? การสั่งซื้อนี้เกี่ยวข้องกับการแลกเปลี่ยนด้วยเงินจริง คุณต้องเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้จึงจะอนุญาตการสั่งซื้อนี้ได้",
+    "translation": "คุณได้ใช้จ่ายบน Roblox เป็นจำนวนมากในเดือนนี้ คุณต้องการดำเนินการต่อหรือไม่? การซื้อนี้เกี่ยวข้องกับการแลกเปลี่ยนด้วยเงินจริง คุณต้องเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้จึงจะอนุญาตการซื้อนี้ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.U13Confirm",
+    "key": "Text.U13MonthlyThreshold2Modal",
+    "description": null,
+    "english": "You've spent a lot on Roblox this month. Receipts will be sent to the verified parental email on this account for this and all subsequent purchases. ",
+    "translation": "คุณได้ใช้จ่ายบน Roblox เป็นจำนวนมากในเดือนนี้ ใบเสร็จรับเงินจะถูกส่งไปยังอีเมลของผู้ปกครองที่ตรวจสอบยืนยันแล้วที่อยู่ในบัญชีนี้สำหรับการซื้อนี้และการซื้อครั้งต่อไปทั้งหมด ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.U13Confirm",
+    "key": "Title.Warning",
+    "description": null,
+    "english": "Warning!",
+    "translation": "คำเตือน!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.U13Confirm",
+    "key": "Action.Confirm",
+    "description": null,
+    "english": "Ok",
+    "translation": "ตกลง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.U13Confirm",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "ยกเลิก",
     "isDeprecated": false
   },
   {
@@ -15860,7 +17628,87 @@
     "key": "Text.ParentalConsentWarningPaymentModal13To17",
     "description": null,
     "english": "I agree that I am the parent or legal guardian of the account owner. I authorize this purchase and agree to the Terms of Use.",
-    "translation": "ฉันยอมรับว่าฉันคือพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้ ฉันอนุญาตการสั่งซื้อนี้และยอมรับข้อกำหนดการใช้งาน",
+    "translation": "ฉันยอมรับว่าฉันคือพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้ ฉันอนุญาตการซื้อนี้และยอมรับข้อกำหนดการใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.JoinExperiencePrompt",
+    "description": "An inviter is inviting the squad to play an experience together.",
+    "english": "{inviterName} wants to play {experienceName}",
+    "translation": "{inviterName} ต้องการเล่น {experienceName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.JoinExperiencePending",
+    "description": "An inviter as asked the squad to join an experience. The user has accepted. We are now waiting for the experience to start.",
+    "english": "Sit tight! Getting ready to join {experienceName}.",
+    "translation": "รอสักครู่! คุณสามารถเข้าร่วม {experienceName} ได้ในอีกไม่ช้า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.ActiveSquadTitle",
+    "description": "Title text of Active Squad lobby",
+    "english": "Active Squad",
+    "translation": "ทีมที่ใช้งานอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.PickAnExperienceButton",
+    "description": "Button text in squads lobby to start picking an experience.",
+    "english": "Pick an experience",
+    "translation": "เลือกประสบการณ์",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.PickAnExperienceText",
+    "description": "Button text in squads lobby to start picking an experience.",
+    "english": "Pick an experience",
+    "translation": "เลือกประสบการณ์",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.Leave",
+    "description": "Button text to leave a squad",
+    "english": "Leave",
+    "translation": "ออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.PickAnExperience",
+    "description": "Text for button to start picking an experience",
+    "english": "Pick an experience",
+    "translation": "เลือกประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.LetsPlay",
+    "description": "Text label for Squads FAB\n\ntranslation note: please uppercase if possible in that language",
+    "english": "LET'S PLAY",
+    "translation": "มาเล่นกันเถอะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.PreparingExperience",
+    "description": "Label for Squads FAB. \n\ntranslation note: please uppercase if possible in that language",
+    "english": "PREPARING EXPERIENCE",
+    "translation": "การเตรียมประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.JoinedTheSquad",
+    "description": "Label for Squads FAB when a user has joined the squad",
+    "english": "Joined the squad",
+    "translation": "เข้าร่วมทีม",
     "isDeprecated": false
   },
   {
@@ -15869,6 +17717,390 @@
     "description": "Label underneath plus icon to suggest adding a friend to squad",
     "english": "Add Friend",
     "translation": "เพิ่มเพื่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.LetsPlayWithUser",
+    "description": "Text label for Squads FAB\n\ntranslation note: please uppercase if possible in that language. do not uppercase {username} param",
+    "english": "{username}: LET'S PLAY",
+    "translation": "{username}: มาเล่นกันเถอะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.InviteToSquad",
+    "description": "Title label for the invite to squad page",
+    "english": "Invite to Squad",
+    "translation": "เชิญเข้าร่วมทีม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.Add",
+    "description": "Add button in invite to squad page",
+    "english": "Add",
+    "translation": "เพิ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.ShareSquadLink",
+    "description": "Button text to share squad link in Invite to squad page",
+    "english": "Share Squad Link",
+    "translation": "แชร์ลิงก์ของทีม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.InviteFriends",
+    "description": "Button in Squad lobby to invite friends",
+    "english": "Invite Friends",
+    "translation": "เชิญเพื่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Feature.Label.Online",
+    "description": "Indicates that the user is online",
+    "english": "Online",
+    "translation": "ออนไลน์",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.ShareInviteLinkWithFriends",
+    "description": "Text inside a banner to suggest user to share squad link with friends",
+    "english": "Share invite link with friends",
+    "translation": "เชิญลิงก์คำเชิญกับเพื่อนๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.Online",
+    "description": "Indicates that the user is online",
+    "english": "Online",
+    "translation": "ออนไลน์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description",
+    "description": "Description for Squad max capacity banner",
+    "english": "Remove members to select others",
+    "translation": "ลบสมาชิกเพื่อเพิ่มคนอื่นๆ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.ReachedMaxCapacity",
+    "description": "Label text for squad invite max capacity banner",
+    "english": "Reached Max Capacity ({maxCapacity})",
+    "translation": "ถึงจำนวนสูงสุดที่กำหนดไว้แล้ว ({maxCapacity})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.RemoveMembers",
+    "description": "Helper text to suggest removing members to add more to squad",
+    "english": "Remove members to select others",
+    "translation": "ลบสมาชิกเพื่อเพิ่มคนอื่นๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Description.ShareInviteLinkButtonDescription",
+    "description": "Helper text to explain anyone with a Share invite link can join",
+    "english": "Anyone with a link can join.",
+    "translation": "คนที่มีลิงก์สามารถเข้าร่วมได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.LearnMore",
+    "description": "Learn more text",
+    "english": "Learn more",
+    "translation": "เรียนรู้เพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Action.Invite",
+    "description": "Invite button",
+    "english": "Invite",
+    "translation": "เชิญ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.SoloPlay",
+    "description": "Label for solo play in play button contextual menu",
+    "english": "Solo Play",
+    "translation": "เล่นคนเดียว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Squads",
+    "key": "Label.GroupPlay",
+    "description": "Label for group play in play button contextual menu",
+    "english": "Group Play",
+    "translation": "เล่นเป็นกลุ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Title.InsufficientRobux",
+    "description": null,
+    "english": "Insufficient Robux",
+    "translation": "Robux ไม่เพียงพอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Text.DontHaveEnough",
+    "description": null,
+    "english": "You don't have enough Robux to buy this item.",
+    "translation": "คุณมี Robux ไม่เพียงพอที่จะซื้อไอเท็มนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Text.CurrentBalance",
+    "description": null,
+    "english": "Current Balance",
+    "translation": "ยอดคงเหลือปัจจุบัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Action.BuyRobux",
+    "description": null,
+    "english": "Buy Robux",
+    "translation": "ซื้อ Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Text.YouNeed",
+    "description": null,
+    "english": "You need additional {robux}. Please purchase more Robux Packages then come back to the experience.",
+    "translation": "คุณต้องการเพิ่มอีก {robux} โปรดซื้อแพ็คเกจ Robux เพิ่มเติมแล้วกลับมาที่ประสบการณ์อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Action.RobuxStore",
+    "description": null,
+    "english": "Go to Robux Store",
+    "translation": "ไปที่ร้านค้า Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalTitle",
+    "description": "Title of the sharing modal",
+    "english": "Share This Event",
+    "translation": "แชร์กิจกรรมนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalBody",
+    "description": "The body content of the share modal",
+    "english": "Copy the event link below to invite people to this event or share the event in chat.",
+    "translation": "คัดลอกลิงก์กิจกรรมที่ด้านล่างเพื่อเชิญผู้อื่นเข้าร่วมกิจกรรมนี้หรือแชร์กิจกรรมนี้ในแชท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalLinkCopy",
+    "description": "\"Copy\" in this case meaning \"copy and paste.\" This is the text for the button that allows the user to copy a link to their clipboard",
+    "english": "Copy",
+    "translation": "คัดลอก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalCallToAction",
+    "description": "Text of the main call-to-action button that allows the user to share the link via the app's chat",
+    "english": "Share via Chat...",
+    "translation": "แชร์ผ่านแชท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceLabelBeforeEvent",
+    "description": "DO NOT USE",
+    "english": "DO NOT USE",
+    "translation": "อย่าใช้",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceDuringEvent",
+    "description": "The text display next to the number of users that are currently attending an event",
+    "english": "Attending Now",
+    "translation": "เข้าร่วมตอนนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceBeforeEvent",
+    "description": "The text that is displayed next to the number of users that are interested in attending the event",
+    "english": "Interested",
+    "translation": "สนใจ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "GoHome",
+    "description": "Used on a button to prompt the user to return to the homepage",
+    "english": "Go Home",
+    "translation": "กลับไปหน้าหลัก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpGoing",
+    "description": "Displayed on a button when the user has marked themselves as being interested in going to the event",
+    "english": "Interested",
+    "translation": "สนใจ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpNotGoing",
+    "description": "Displayed on a button when the user has not yet marked themselves as interested to an event. The text is asking the user if they would like to become interested",
+    "english": "Interested?",
+    "translation": "สนใจหรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "JoinEvent",
+    "description": "Displayed on a button when an event is active, allowing the user to join the associated experience",
+    "english": "Join Event",
+    "translation": "เข้าร่วมกิจกรรม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "DescriptionLabel",
+    "description": "Title of the \"Description\" section of the page",
+    "english": "Description",
+    "translation": "คำอธิบาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "HostedByLabel",
+    "description": "Text for the Hosted By label, referring to which creator is hosting the event.",
+    "english": "Hosted By",
+    "translation": "โฮสต์โดย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventCancelledText",
+    "description": "Displayed in place of event time for a cancelled event",
+    "english": "This event has been cancelled.",
+    "translation": "กิจกรรมนี้ถูกยกเลิกแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventNotFound",
+    "description": "Displayed when navigating to link that is supposed to show an event but one could not be found there",
+    "english": "Event not found",
+    "translation": "ไม่พบกิจกรรม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "SeeMore",
+    "description": "Used for a button that will expand a list of events to show more of them",
+    "english": "See More",
+    "translation": "ดูเพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NotifyMe",
+    "description": "Displayed on a button for an upcoming event so users can request to be notified later when it's live",
+    "english": "Notify Me",
+    "translation": "แจ้งเตือนฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventsListTitle",
+    "description": "Title for list of events shown on the experience details page",
+    "english": "Events",
+    "translation": "กิจกรรม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalTitle",
+    "description": "The title of a modal that prompts the user to allow events to send push notifications",
+    "english": "Event Push Notifications",
+    "translation": "การแจ้งเตือนแบบพุชเกี่ยวกับกิจกรรม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalBody",
+    "description": "The body text for the modal that prompts the user to allow events to send them push notifications",
+    "english": "Get updates about events, even when you’re not on Roblox.",
+    "translation": "รับการอัปเดตเกี่ยวกับกิจกรรม แม้ว่าคุณจะไม่ได้ใช้ Roblox อยู่ก็ตาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NotNowButton",
+    "description": "Button text for the \"Enable Events Notifications\" modal to allow the user to close the modal",
+    "english": "Not Now",
+    "translation": "ไม่ใช่ตอนนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "GetNotifiedButton",
+    "description": "Button text for the \"Event Push Notifications\" modal to enable push notifications for events",
+    "english": "Enable",
+    "translation": "เปิดใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "SubscribedModalTitle",
+    "description": null,
+    "english": "DO NOT USE",
+    "translation": "อย่าใช้",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "SubscribedModalBody",
+    "description": null,
+    "english": "DO NOT USE",
+    "translation": "อย่าใช้",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "UnfollowEvent",
+    "description": "unsubscribe from notifications about when an event is starting",
+    "english": "Unfollow Event",
+    "translation": "เลิกติดตามกิจกรรม",
     "isDeprecated": false
   },
   {
@@ -15920,6 +18152,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Banner.Text",
+    "description": null,
+    "english": "Robux allows you to purchase upgrades for your avatar or buy special abilities in experiences",
+    "translation": "ใช้ Robux เพื่อซื้อการอัปเกรดให้กับอวาตาร์ของคุณหรือซื้อความสามารถพิเศษในประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Banner.Title",
+    "description": null,
+    "english": "Get Robux",
+    "translation": "รับ Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Text.MoreRobux",
+    "description": "It is used to describe to the user how much more robux they are receiving because they purchased a larger package.",
+    "english": "{robux} Robux More",
+    "translation": "เพิ่มขึ้น {robux} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Text.MoreRobux2",
+    "description": null,
+    "english": "{robux} More Robux",
+    "translation": "เพิ่มเติมอีก {robux} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Alert.SuccessfulMessage",
+    "description": null,
+    "english": "You have purchased Robux successfully!",
+    "translation": "คุณซื้อ Robux สำเร็จเรียบร้อยแล้ว!",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AgeVerificationUpsell",
     "key": "Modal.Title",
     "description": "Modal title",
@@ -15932,7 +18204,7 @@
     "key": "Modal.ContentText",
     "description": "Text shown in modal directing user to complete the age verification process in Account Info in order to access this experience.",
     "english": "Verify your age to access this experience.\n\n1. Go to Account Info > Verify My Age\n2. Complete the verification process\n",
-    "translation": "โปรดตรวจสอบยืนยันอายุของคุณเพื่อเข้าถึงประสบการณ์นี้\n\n1. ไปที่ข้อมูลบัญชีในการตั้งค่า\n2. เลือกตรวจสอบยืนยันอายุของฉัน\n3. ดำเนินตามขั้นตอนให้เสร็จสิ้น\n",
+    "translation": "ตรวจสอบยืนยันอายุของคุณเพื่อเข้าใช้ประสบการณ์นี้\n\n1. ไปที่ข้อมูลบัญชี > ตรวจสอบยืนยันอายุของฉัน\n2. ดำเนินการตามขั้นตอนการตรวจสอบยืนยันให้เสร็จสิ้น\n",
     "isDeprecated": false
   },
   {
@@ -15948,7 +18220,7 @@
     "key": "Button.Settings",
     "description": "Button text for the Call to Action button that takes the user to Account Settings to verify their age",
     "english": "Verify My Age",
-    "translation": "การตั้งค่า",
+    "translation": "ตรวจสอบยืนยันอายุของฉัน",
     "isDeprecated": false
   },
   {
@@ -15956,7 +18228,7 @@
     "key": "Button.AccountInfo",
     "description": "Text for button taking user to the 'Account Info' page to verify their age.",
     "english": "Verify My Age",
-    "translation": "ข้อมูลบัญชี",
+    "translation": "ตรวจสอบยืนยันอายุของฉัน",
     "isDeprecated": false
   },
   {
@@ -15972,7 +18244,7 @@
     "key": "Body.TwoStepVerificationRequired",
     "description": "Body text for the two-step verification challenge modal.",
     "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
-    "translation": "คุณต้องตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นตอนเพื่อดำเนินการนี้ให้เสร็จสิ้น นอกจากนี้การตั้งค่าดังกล่าวยังช่วยปกป้องการเข้าสู่ระบบ การสั่งซื้อและอื่นๆ อีกมากมายของคุณด้วย",
+    "translation": "คุณต้องตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นตอนเพื่อดำเนินการนี้ให้เสร็จสิ้น นอกจากนี้การตั้งค่าดังกล่าวยังช่วยปกป้องการลงชื่อเข้าใช้ การซื้อและอื่นๆ อีกมากมายของคุณด้วย",
     "isDeprecated": true
   },
   {
@@ -15996,7 +18268,7 @@
     "key": "ForceTwoStepVerification.Body",
     "description": "Body text of the two-step verification challenge modal.",
     "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
-    "translation": "คุณต้องตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นตอนเพื่อดำเนินการนี้ให้เสร็จสิ้น นอกจากนี้การตั้งค่าดังกล่าวยังช่วยปกป้องการเข้าสู่ระบบ การสั่งซื้อและอื่นๆ อีกมากมายของคุณด้วย",
+    "translation": "คุณต้องตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นตอนเพื่อดำเนินการนี้ให้เสร็จสิ้น นอกจากนี้การตั้งค่าดังกล่าวยังช่วยปกป้องการลงชื่อเข้าใช้ การซื้อและอื่นๆ อีกมากมายของคุณด้วย",
     "isDeprecated": false
   },
   {
@@ -16005,6 +18277,38 @@
     "description": "Header text for the two-step verification challenge modal.",
     "english": "2-Step Verification Required",
     "translation": "จำเป็นต้องตรวจสอบยืนยันตัวตน 2 ขั้นตอน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Title",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "BodyText",
+    "description": null,
+    "english": "Failed to fetch your access status",
+    "translation": "ดึงข้อมูลสถานะการเข้าถึงของคุณไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Retry",
+    "description": null,
+    "english": "Retry",
+    "translation": "ลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "ยกเลิก",
     "isDeprecated": false
   }
 ]

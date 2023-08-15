@@ -332,7 +332,7 @@
     "key": "Description.Dialog.VerifiedUsernameChangeWarning",
     "description": "A warning to users that changing their username will remove their verified badge status",
     "english": "Warning: Changing your username will remove your verified badge status. Are you sure you want to do this?",
-    "translation": "คำเตือน: การเปลี่ยนชื่อผู้ใช้ของคุณจะลบสถานะของเครื่องหมายตรวจสอบยืนยันแล้วออก คุณแน่ใจหรือไม่ว่าคุณต้องการดำเนินการนี้?",
+    "translation": "คำเตือน: การเปลี่ยนชื่อผู้ใช้ของคุณจะลบสถานะของเครื่องหมายรับรองออก คุณแน่ใจหรือไม่ว่าคุณต้องการดำเนินการนี้?",
     "isDeprecated": false
   },
   {
@@ -340,7 +340,7 @@
     "key": "Label.InExperiencePurchaseOnly",
     "description": null,
     "english": "The original sale of this item is only available in experience.",
-    "translation": "ไอเท็มต้นฉบับของนักสร้างสรรค์สามารถซื้อได้ในประสบการณ์เท่านั้น",
+    "translation": "ไอเท็มต้นฉบับของครีเอเตอร์สามารถซื้อได้ในประสบการณ์เท่านั้น",
     "isDeprecated": false
   },
   {
@@ -460,7 +460,7 @@
     "key": "Action.Unblock",
     "description": "label for action to unblock a user",
     "english": "Unblock",
-    "translation": "ยกเลิกการบล็อค",
+    "translation": "เลิกบล็อค",
     "isDeprecated": false
   },
   {
@@ -477,6 +477,46 @@
     "description": "toast message for FriendRequestSent",
     "english": "Friend Request Sent",
     "translation": "ส่งคำขอเป็นเพื่อนแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Action.UserBlocked",
+    "description": "text for when a user is blocked",
+    "english": "User Blocked",
+    "translation": "บล็อคผู้ใช้นี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Action.AllRequestsIgnored",
+    "description": "text for success toast for all requests ignored",
+    "english": "All Requests Ignored",
+    "translation": "ปฏิเสธคำขอทั้งหมดแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UnableToJoin",
+    "description": "text for Unable to Join an experience",
+    "english": "Unable to Join",
+    "translation": "ไม่สามารถเข้าร่วมได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.ViewDetails",
+    "description": "text to view details on an alert dialog",
+    "english": "View Details",
+    "translation": "ดูรายละเอียด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Message.NoAccessToExperience",
+    "description": "Alert Dialog message for when users are unable to join friend's experience",
+    "english": "%s is in an experience that you do not have access to.",
+    "translation": "%s อยู่ในประสบการณ์ที่คุณไม่มีสิทธิ์เข้าถึง",
     "isDeprecated": false
   },
   {
@@ -646,6 +686,102 @@
     "english": "AdPortal doesn't exist",
     "translation": "ไม่มี AdPortal ",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "ไอคอนเครื่องหมายรับรอง",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "ไอคอนเครื่องหมายรับรอง Premium",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfo",
+    "description": "Info that will be displayed in a modal if the verified badge is clicked",
+    "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
+    "translation": "เครื่องหมายนี้ยืนยันว่าผู้ที่มีเครื่องหมายคือครีเอเตอร์ แบรนด์ หรือบุคคลสาธารณะที่มีชื่อเสียงและแท้จริง",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoLink",
+    "description": "Text for a link to “Learn More” about Verified Badges",
+    "english": "Learn More",
+    "translation": "เรียนรู้เพิ่มเติม",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "UsernameChangeWithVerifiedBadge",
+    "description": "Text warning a user if they change their username they will lose the verified badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
+    "translation": "สิ่งสำคัญ: การเปลี่ยนแปลงนี้จะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณ\n\nวันที่สร้างบัญชีเดิมจะถูกยกมาใช้กับชื่อผู้ใช้ใหม่ของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "DisplayNameChangeWithVerifiedBadge",
+    "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
+    "translation": "สิ่งสำคัญ: การเปลี่ยนแปลงนี้จะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณ\n\nคุณสามารถเปลี่ยนชื่อที่แสดงของคุณได้หนึ่งครั้งเท่านั้นในทุกๆ 7 วัน",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "ThisActionWillRemoveTheVerifiedBadge",
+    "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
+    "english": "The verified badge will be removed.",
+    "translation": "เครื่องหมายรับรองจะถูกลบออก",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "2SVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Info",
+    "translation": "ข้อมูล",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "TwoSVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
+    "translation": "การปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นตอนจะทำให้คุณสูญเสียเครื่องหมายรับรองของคุณและทำให้บัญชีของคุณมีความปลอดภัยน้อยลงด้วย คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoTitle",
+    "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
+    "english": "Verified Badge",
+    "translation": "เครื่องหมายรับรอง",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "GroupNameChangeWithVerifiedBadge",
+    "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
+    "english": "the verified badge will be removed.",
+    "translation": "เครื่องหมายรับรองจะถูกลบออก",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "action.close",
+    "description": "A button that can be clicked to close a modal",
+    "english": "Close",
+    "translation": "ปิด",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.AddFriends",
