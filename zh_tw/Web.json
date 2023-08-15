@@ -728,6 +728,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "電子郵件地址無效。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} 是您的 Roblox 一次性驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} 是您的 Roblox 一次性驗證碼。在登入畫面輸入驗證碼即可完成登入。此驗證碼將在 15 分鐘後失效。{lineBreak}{lineBreak}{boldStart}請勿{boldEnd}分享此驗證碼。我們{boldStart}不會{boldEnd}主動向您要求驗證碼。如果您未要求此驗證碼，您目前不必採取任何動作。如果您持續獲得未要求的驗證碼，我們強烈建議您連結其他電子郵件地址到您的帳號，並{linkTagWithAuthenticatorHelpLinkStart}設定驗證器 App 雙步驟驗證{linkTagEnd}。{lineBreak}{lineBreak}此登入請求來自 {geolocation}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -8972,7 +8996,7 @@
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
     "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
-    "translation": "若您關閉雙步驟驗證，您登入或進行部分操作時將只需要密碼。確定？",
+    "translation": "若您關閉雙步驟驗證，您登入或進行部分操作時將只需要密碼。這樣做會降低帳號安全性，確定關閉？",
     "isDeprecated": false
   },
   {
@@ -25784,6 +25808,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "購買道具",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -39184,6 +39216,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "translation": "發生意外錯誤。交易可能需要 5 分鐘完成。請重新整理頁面查看交易處理狀態。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "發生錯誤，未完成付款。請重新嘗試。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TranslationLanguageSwitch",
     "key": "Label.CurrentLanguage",
     "description": "The label for the field that displays user's current language",
@@ -51944,6 +51992,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.EditInStudio",
+    "description": null,
+    "english": "Edit in Studio",
+    "translation": "在 Studio 中編輯",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "其他",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ViewOnRoblox",
+    "description": null,
+    "english": "View on Roblox",
+    "translation": "在 Roblox 查看",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Features",
     "key": "Label.CreatorDashboard",
     "description": null,
@@ -54165,7 +54237,7 @@
     "description": null,
     "english": "Permission Requested",
     "translation": "已請求權限",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54181,7 +54253,7 @@
     "description": null,
     "english": "Username",
     "translation": "使用者名稱",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54189,7 +54261,7 @@
     "description": null,
     "english": "Email",
     "translation": "電子郵件地址",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54197,7 +54269,7 @@
     "description": null,
     "english": "UserId",
     "translation": "使用者 ID",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54205,7 +54277,7 @@
     "description": null,
     "english": "Profile",
     "translation": "個人檔案",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54213,7 +54285,7 @@
     "description": null,
     "english": "You're logged in as: {userName}",
     "translation": "您正在以此使用者名稱登入：{userName}",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54221,7 +54293,7 @@
     "description": null,
     "english": "Accept",
     "translation": "接受",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54229,7 +54301,7 @@
     "description": null,
     "english": "Cancel",
     "translation": "取消",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54237,7 +54309,7 @@
     "description": null,
     "english": "{appName} will receive following information:",
     "translation": "{appName} 將會收到以下資訊：",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54253,7 +54325,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {linkStart}terms of service{linkEnd}.",
     "translation": "接受這些權限及表示你同意此 App 依照其{linkStart}服務條款{linkEnd}的規範使用您的資料。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54261,7 +54333,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {tosLinkStart}terms of service{tosLinkEnd} and {privacyLinkStart}privacy policy{privacyLinkEnd}.",
     "translation": "接受這些權限及表示你同意此 App 依照其{tosLinkStart}服務條款{tosLinkEnd}與{privacyLinkStart}隱私權政策{privacyLinkEnd}的規範使用您的資料。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54269,7 +54341,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {linkStart}privacy policy{linkEnd}.",
     "translation": "接受這些權限及表示你同意此 App 依照其{linkStart}隱私權政策{linkEnd}的規範使用您的資料。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54285,7 +54357,7 @@
     "description": null,
     "english": "{appName} will not be able to:",
     "translation": "{appName} 將無法：",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54293,7 +54365,7 @@
     "description": null,
     "english": "{appName} is not published by Roblox.",
     "translation": "{appName} 不是 Roblox 發行的 App。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54301,7 +54373,7 @@
     "description": null,
     "english": "Read your secure messages",
     "translation": "閱讀您的加密訊息",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54309,7 +54381,7 @@
     "description": null,
     "english": "See your Roblox password",
     "translation": "查看您的 Roblox 密碼",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54317,7 +54389,7 @@
     "description": null,
     "english": "Make comments on Roblox for you",
     "translation": "為您在 Roblox 上留言",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54325,7 +54397,7 @@
     "description": null,
     "english": "Email Verification Required",
     "translation": "需要通過電子郵件驗證",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54333,7 +54405,7 @@
     "description": null,
     "english": "A verified email address is required to authorize with this app.",
     "translation": "需要已驗證的電子郵件地址才可以使用此 App 授權。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54341,7 +54413,7 @@
     "description": null,
     "english": "Login Error",
     "translation": "登入錯誤",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54349,7 +54421,7 @@
     "description": null,
     "english": "There is already an account associated with your email address on the app. Because the app only allows one account per email address, you will need to create a new email address on your Roblox Account Settings page and verify it before you can login.",
     "translation": "App 上已有對應一個帳號的電子郵件地址。因為此 App 只允許一個帳號對應一個電子郵件地址，您必須在 Roblox 的帳號設定頁面填寫新的電子郵件地址。您在該電子郵件地址經過驗證後即可登入。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54357,7 +54429,7 @@
     "description": "Title for generic error dialog page",
     "english": "Oops!",
     "translation": "哎呀！",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54365,7 +54437,7 @@
     "description": null,
     "english": "This app is not available for you to log in. You might be able to use parts of the application without logging in.",
     "translation": "無法使用此 App 登入，您可能可以在未登入的情況下使用 App 部分功能。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54373,7 +54445,7 @@
     "description": "Button redirect user to the home page",
     "english": "Home",
     "translation": "首頁",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.NotApproved",
@@ -56325,6 +56397,14 @@
     "description": null,
     "english": "Pending Robux from Immersive Ads Payout",
     "translation": "待處理的沉浸式廣告支付 Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "金額為總支付額，不包括抽成、商城費用及定期群組支付。",
     "isDeprecated": false
   },
   {
@@ -58780,7 +58860,7 @@
     "key": "Action.OpenExperienceDetails",
     "description": null,
     "english": "View on Roblox",
-    "translation": "開啟體驗詳細資訊",
+    "translation": "在 Roblox 查看",
     "isDeprecated": false
   },
   {
@@ -58933,6 +59013,14 @@
     "description": "Shown while audio list is empty as description message",
     "english": "Import audio files through the upload tool.",
     "translation": "透過上傳工具匯入音訊檔案。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.LastUpdatedDate",
+    "description": null,
+    "english": "Last Updated Date",
+    "translation": "最後更新日期",
     "isDeprecated": false
   },
   {
@@ -63925,6 +64013,22 @@
     "description": null,
     "english": "View full terms",
     "translation": "查看完整條款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.TeleportsSuffix",
+    "description": null,
+    "english": "teleports",
+    "translation": "傳送數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.ViewTerms",
+    "description": null,
+    "english": "Please read all agreements and click Agree below if you consent to the terms.",
+    "translation": "請閱讀所有協議，並點擊下方同意表示同意條款。",
     "isDeprecated": false
   },
   {
@@ -70285,6 +70389,14 @@
     "description": null,
     "english": "This enables Single Sign-On functionality",
     "translation": "啟用單一登入功能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.OrderedDatastores",
+    "description": "Name of service",
+    "english": "Ordered DataStore",
+    "translation": "已排序 DataStore",
     "isDeprecated": false
   },
   {
@@ -87597,6 +87709,14 @@
     "description": null,
     "english": "Teleports Ad Instance Breakdown",
     "translation": "傳送廣告實體拆解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Title.EarningsPerTeleport",
+    "description": null,
+    "english": "EPT",
+    "translation": "EPT",
     "isDeprecated": false
   },
   {

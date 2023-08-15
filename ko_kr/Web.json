@@ -728,6 +728,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "유효하지 않은 이메일 주소입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "Roblox 일회용 코드는 {code}입니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 일회용 코드는 {boldStart}{code}{boldEnd}입니다. 로그인 화면에 코드를 입력하고 로그인을 완료하세요. 이 코드는 15분 후에 만료됩니다.{lineBreak}{lineBreak}다른 사람과 코드를 {boldStart}공유하지 마세요{boldEnd}. Roblox는 {boldStart}절대로{boldEnd} 사용자에게 코드를 요청하지 않습니다. 코드를 요청한 적이 없을 경우 더 이상 다른 조치를 취하지 않으셔도 됩니다. 본인이 요청하지 않은 코드를 다수 전송받은 경우, 계정에 다른 이메일을 연결하고 {linkTagWithAuthenticatorHelpLinkStart}인증 앱을 통한 2단계 인증을 설정{linkTagEnd}할 것을 적극 권장해 드립니다.{lineBreak}{lineBreak}이 로그인 요청은 {geolocation}에서 발생했습니다.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -980,7 +1004,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Under13",
     "description": "Body for 2SV activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox로부터 이메일을 통해 6자리 보안 코드를 받아 입력해야 합니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -988,7 +1012,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox로부터 이메일을 통해 6자리 보안 코드를 받아 입력해야 합니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -996,7 +1020,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1004,7 +1028,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1132,7 +1156,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요?{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}2단계 인증 화면에 위 코드를 입력하고 로그인을 완료하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}2단계 인증 화면에 위 코드를 입력하고 로그인을 완료하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1244,7 +1268,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(인증 앱 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, 인증 앱의 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}인증 앱에 대한 접근 권한이 없을 경우를 대비해 백업 코드를 저장해 두는 것을 잊지 마세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(인증 앱 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, 인증 앱의 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}인증 앱에 대한 접근 권한이 없을 경우를 대비해 백업 코드를 저장해 두는 것을 잊지 마세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1252,7 +1276,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(인증 앱 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, 인증 앱의 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}인증 앱에 대한 접근 권한이 없을 경우를 대비해 백업 코드를 저장해 두는 것을 잊지 마세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(인증 앱 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, 인증 앱의 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}인증 앱에 대한 접근 권한이 없을 경우를 대비해 백업 코드를 저장해 두는 것을 잊지 마세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1268,7 +1292,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(인증 전용 앱 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시, 인증 앱의 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(인증 앱 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시, 인증 앱의 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1276,7 +1300,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator deactivation email for under 13 users",
     "english": "Hello,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been deactivated for your child's Roblox account, {accountName}. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(인증 전용 앱 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시, 인증 앱의 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(인증 앱 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시, 인증 앱의 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1292,7 +1316,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(인증 앱 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 인증 앱의 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(인증 앱 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 인증 앱의 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1300,7 +1324,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(인증 앱 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 인증 앱의 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 말고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(인증 앱 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 인증 앱의 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1316,7 +1340,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(이메일 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref} {AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(이메일 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1324,7 +1348,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(이메일 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref} {AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 말고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(이메일 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1340,7 +1364,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}All valid backup codes have been used on your child's Roblox account, {accountName}. To avoid getting locked out, they can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에서 유효한 백업 코드를 모두 사용했습니다. 계정 잠김을 방지하기 위해 {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 새 백업 코드를 생성할 수 있습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에서 유효한 백업 코드를 모두 사용했습니다. 계정 잠김을 방지하기 위해 {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 새 백업 코드를 생성할 수 있습니다.{lineBreak}{lineBreak}중요: 백업 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 백업 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1348,7 +1372,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}유효한 백업 코드를 모두 사용하셨습니다. 계정 잠김을 방지하기 위해 {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 새 백업 코드를 생성할 수 있습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName}님 안녕하세요.{lineBreak}{lineBreak}유효한 백업 코드를 모두 사용하셨습니다. 계정 잠김을 방지하기 위해 {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 새 백업 코드를 생성할 수 있습니다.{lineBreak}{lineBreak}중요: 백업 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 백업 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1388,7 +1412,7 @@
     "key": "Description.TwoStepVerificationRobxSpendEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 발생했습니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1404,7 +1428,7 @@
     "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Bod",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 발생했습니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1452,7 +1476,7 @@
     "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 발생했습니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}가상 거래 인증을 수행하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1524,7 +1548,7 @@
     "key": "Description.TwoStepVerificationItemTradeEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your trade. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}본 거래를 인증하려면 2단계 인증 화면에 위 코드를 입력하세요. 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 발생했습니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}본 거래를 인증하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 로그인은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1564,7 +1588,7 @@
     "key": "Description.TwoStepVerificationResaleEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your resale. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}본 재판매를 인증하려면 2단계 인증 화면에 위 코드를 입력하세요. 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청이 발생한 지역은 {emphasisStart}{geoLocationInformation}{emphasisEnd}입니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}재판매를 인증하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1572,7 +1596,7 @@
     "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue your password reset. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}비밀번호 재설정을 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청이 발생한 지역은 {emphasisStart}{geoLocationInformation}{emphasisEnd}입니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}비밀번호 재설정을 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1652,7 +1676,7 @@
     "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}계정 변경 사항 되돌리기를 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청이 발생한 지역은 {emphasisStart}{geoLocationInformation}{emphasisEnd}입니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}계정 변경 사항 되돌리기를 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1676,7 +1700,7 @@
     "key": "Description.TwoStepVerificationActivationText.Body.Over13",
     "description": "Email to user when activating SMS 2SV.",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Text Messages for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(문자 메시지 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 문자 메시지를 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(문자 메시지 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox로부터 문자 메시지를 통해 6자리 보안 코드를 받아 입력해야 합니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1684,7 +1708,7 @@
     "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
     "description": "Email for when a user changes SMS 2SV",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(SMS 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 SMS를 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(SMS 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox로부터 SMS를 통해 6자리 보안 코드를 받아 입력해야 합니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1692,7 +1716,7 @@
     "key": "Description.TwoStepVerificationActivationText.Body.Under13",
     "description": "Email when user activates SMS 2SV.",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 문자 메시지를 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox로부터 문자 메시지를 통해 6자리 보안 코드를 받아 입력해야 합니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1716,7 +1740,7 @@
     "key": "Description.TwoStepVerificationDeactivationText.Body.Over13",
     "description": "Email content when SMS 2SV is deactivated",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Text Messages for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(문자 메시지 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(문자 메시지 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1724,7 +1748,7 @@
     "key": "Description.TwoStepVerificationDeactivationText.Body.Under13",
     "description": "Email content when SMS 2SV is deactivated",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1740,7 +1764,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(문자 메시지 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref} {AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 회원님의 계정에 대한 2단계 인증(문자 메시지 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1748,7 +1772,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref} {AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 말고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 지원 센터에서 자녀의 계정 {accountName}에 대한 2단계 인증(문자 메시지 사용)을 비활성화했음을 알려 드립니다. 지원 센터에서는 일반적으로 회원님의 지원 센터 문의 기록 혹은 계정 보안 강화를 위해 이러한 조치를 취하고 있습니다. 이제 로그인과 같은 작업 진행 시, 더 이상 보안 코드가 필요하지 않습니다.{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}계정 설정{aTagEnd} 메뉴에서 2단계 인증을 다시 활성화할 수 있습니다.{lineBreak}{lineBreak}추가 지원이 필요한 경우 {spanStartTagWithBold}이 이메일에 답장하지 마시고{spanEndTag}, 기존의 지원 센터 문의건에 회신하거나 {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox 지원 센터{aTagEnd}를 방문해 새로 문의하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1764,7 +1788,7 @@
     "key": "Description.TwoStepVerificationSwap.Body.Over13",
     "description": "Body for 2SV method swap email",
     "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}{accountName} 님의 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었음을 알려 드립니다. 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 계정을 복구하세요.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}{accountName} 님의 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었음을 알려 드립니다. 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 계정을 복구하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1772,7 +1796,7 @@
     "key": "Description.TwoStepVerificationSwap.Body.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 계정인 {accountName}의 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었음을 알려 드립니다. 본인 혹은 자녀가 직접 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 자녀의 계정을 복구하세요.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 계정 {accountName}에 대한 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었음을 알려 드립니다. 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 계정을 복구하세요.{lineBreak}{lineBreak}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -1820,7 +1844,7 @@
     "key": "Description.TwoStepVerificationGenericEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue taking your desired action. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}진행 중인 작업을 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청이 발생한 지역은 {emphasisStart}{geoLocationInformation}{emphasisEnd}입니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요.{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} 님의 Roblox 2단계 인증 코드는 {emphasisStart}{code}{emphasisEnd}입니다.{paragraphEnd}{paragraphStart}진행 중인 작업을 계속하려면 2단계 인증 화면에 위 코드를 입력하세요. 이 코드는 15분 후에 만료됩니다.{paragraphEnd}{paragraphStart}이 요청은 {emphasisStart}{geoLocationInformation}{emphasisEnd}에서 시도되었습니다.{paragraphEnd}{paragraphStart}중요: 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람과 보안 코드를 공유하면 계정 및 콘텐츠가 해킹될 위험이 크게 높아집니다.{paragraphEnd}{lineBreak}{paragraphStart}감사합니다.{lineBreak}{emphasisStart}Roblox 드림{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1901,6 +1925,22 @@
     "description": null,
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
     "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(보안 키 사용)이 비활성화되었습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}중요:{boldEnd} 보안 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}중요:{boldEnd} 백업 코드를 다른 사람과 공유하지 마세요. Roblox는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다.",
     "isDeprecated": false
   },
   {
@@ -7444,7 +7484,7 @@
     "key": "Label.TwoStepPrerequisite",
     "description": null,
     "english": "Receive unique security codes at your specified email.",
-    "translation": "지정한 이메일로 고유 코드를 받습니다.",
+    "translation": "지정한 이메일로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -8148,7 +8188,7 @@
     "key": "Description.TwoStepVerificationSecondary",
     "description": null,
     "english": "Receive unique security codes at your specified email.",
-    "translation": "지정한 이메일로 고유 코드를 받습니다.",
+    "translation": "지정한 이메일로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -8156,7 +8196,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique security codes at {email}.",
-    "translation": "{email}(으)로 고유 코드를 받습니다.",
+    "translation": "{email}(으)로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -8956,7 +8996,7 @@
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
     "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
-    "translation": "2단계 인증을 해제하면 비밀번호만으로도 로그인과 같은 작업을 할 수 있게 됩니다. 계속할까요?",
+    "translation": "2단계 인증을 끄면, 로그인과 같은 작업 시 비밀번호 입력만을 요구하게 되어 계정 보안이 취약해집니다. 정말 계속할까요?",
     "isDeprecated": false
   },
   {
@@ -10180,7 +10220,7 @@
     "key": "Label.AuthenticatorHelpText",
     "description": "Displayed as help text when authenticator-based two step verification is already enabled.",
     "english": "Download an app on your phone to generate unique security codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "고유 코드를 생성하는 스마트폰 앱입니다. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
+    "translation": "휴대폰에 앱을 다운로드해 고유한 보안 코드를 생성하세요. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
     "isDeprecated": false
   },
   {
@@ -10324,7 +10364,7 @@
     "key": "Label.RecoveryCodesHelpText",
     "description": "Help text on the two step verification recovery codes section card.",
     "english": "Generate and use backup codes in case you lose access to your 2-Step Verification option. Do not share your backup codes with anyone.",
-    "translation": "2단계 인증 옵션을 사용할 수 없는 경우 이 코드를 생성하고 사용하세요.",
+    "translation": "2단계 인증 옵션을 사용할 수 없는 경우 백업 코드를 생성하고 사용하세요. 백업 코드는 절대 타인과 공유하지 마세요.",
     "isDeprecated": false
   },
   {
@@ -11700,7 +11740,7 @@
     "key": "Label.TwoStepVerificationEmail",
     "description": null,
     "english": "Receive unique security codes at your specified email.",
-    "translation": "지정한 이메일로 고유 코드를 받습니다.",
+    "translation": "지정한 이메일로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -11708,7 +11748,7 @@
     "key": "Heading.TextMessage",
     "description": null,
     "english": "Receive unique security codes by text message on your phone.",
-    "translation": "휴대폰의 문자 메시지로 고유 코드를 받습니다.",
+    "translation": "휴대폰 문자 메시지로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -11724,7 +11764,7 @@
     "key": "Label.Authenticator",
     "description": null,
     "english": "Download an app on your phone to generate unique security codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "고유 코드를 생성하는 스마트폰 앱입니다. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
+    "translation": "휴대폰에 앱을 다운로드해 고유한 보안 코드를 생성하세요. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
     "isDeprecated": false
   },
   {
@@ -12028,7 +12068,7 @@
     "key": "Label.SmsTwoStepPrerequisite",
     "description": null,
     "english": "Receive unique security codes by text message on your phone.",
-    "translation": "휴대폰 문자 메시지로 고유 코드를 받습니다.",
+    "translation": "휴대폰 문자 메시지로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -12036,7 +12076,7 @@
     "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique security codes by text message at {phoneNumber}.",
-    "translation": "{phoneNumber}에서 문자 메시지로 고유 코드를 받습니다.",
+    "translation": "{phoneNumber}에서 문자 메시지로 고유한 보안 코드를 받습니다.",
     "isDeprecated": false
   },
   {
@@ -12180,7 +12220,7 @@
     "key": "Label.TwoStepVerificationSingleMethodDescription",
     "description": null,
     "english": "Add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. You can only enable one of the following options at a time.",
-    "translation": "비밀번호 입력은 물론, 2단계 인증을 추가로 설정해 로그인, 계정 복구, 고가 아이템 거래 시 계정을 더욱 안전하게 보호하세요. (참고: 아래에서 한 번에 하나의 옵션만 설정할 수 있습니다.)",
+    "translation": "2단계 인증을 추가로 설정해 로그인, 계정 복구, 고가 아이템 거래 시 계정을 더욱 안전하게 보호하세요. 다음 중 한 번에 하나의 옵션만 설정할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -12300,7 +12340,7 @@
     "key": "Label.AuthenticatorDisabledHelpText",
     "description": null,
     "english": "Download an app on your phone to generate unique security codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "고유 코드를 생성하는 스마트폰 앱입니다. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
+    "translation": "휴대폰에 앱을 다운로드해 고유한 보안 코드를 생성하세요. 추천 앱으로는 Google Authenticator, Microsoft Authenticator, Twilio Authy가 있습니다.",
     "isDeprecated": false
   },
   {
@@ -12565,6 +12605,22 @@
     "description": null,
     "english": "Who can make me a member of their private server?",
     "translation": "누가 나를 비공개 서버 구성원으로 추가할 수 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityWarning",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don’t share your security codes with anyone. This can include things like texting your code, screensharing, etc. Do not change security settings at someone else's request. Roblox will never ask you for your codes or to change settings to prove account ownership.",
+    "translation": "{boldStart}중요:{boldEnd} 보안 코드를 다른 사람과 공유하지 마세요. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다. 다른 사람의 요청을 받고 보안 설정을 변경하지 마세요. Roblox는 계정 소유 여부를 확인하기 위해 코드를 요청하거나 설정 변경을 요청하지 않습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}중요:{boldEnd} 보안 코드를 다른 사람과 공유하지 마세요. Roblox에서는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다.",
     "isDeprecated": false
   },
   {
@@ -25765,6 +25821,14 @@
     "description": null,
     "english": "Purchase failed, too many requests, please try again in {throttleTime} minutes",
     "translation": "구매하지 못했습니다. 요청이 너무 많습니다. {throttleTime}분 후에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "아이템 구매",
     "isDeprecated": false
   },
   {
@@ -39160,6 +39224,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "translation": "예상치 못한 오류가 발생했습니다. 거래가 처리되는 데 최대 5분이 소요될 수 있습니다. 처리 완료 여부를 확인하려면 페이지를 새로 고침하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "오류가 발생해 결제를 완료하지 못했습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TranslationLanguageSwitch",
     "key": "Label.CurrentLanguage",
     "description": "The label for the field that displays user's current language",
@@ -51897,10 +51977,42 @@
   },
   {
     "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.MyInventory",
+    "description": null,
+    "english": "My Inventory",
+    "translation": "내 인벤토리",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
     "key": "Heading.Sales",
     "description": null,
     "english": "Sales",
     "translation": "판매",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.EditInStudio",
+    "description": null,
+    "english": "Edit in Studio",
+    "translation": "Studio에서 편집",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "기타",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ViewOnRoblox",
+    "description": null,
+    "english": "View on Roblox",
+    "translation": "Roblox에서 보기",
     "isDeprecated": false
   },
   {
@@ -54125,7 +54237,7 @@
     "description": null,
     "english": "Permission Requested",
     "translation": "권한을 요청함",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54141,7 +54253,7 @@
     "description": null,
     "english": "Username",
     "translation": "사용자 이름",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54149,7 +54261,7 @@
     "description": null,
     "english": "Email",
     "translation": "이메일",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54157,7 +54269,7 @@
     "description": null,
     "english": "UserId",
     "translation": "사용자 ID",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54165,7 +54277,7 @@
     "description": null,
     "english": "Profile",
     "translation": "프로필",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54173,7 +54285,7 @@
     "description": null,
     "english": "You're logged in as: {userName}",
     "translation": "{userName}(으)로 로그인했어요",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54181,7 +54293,7 @@
     "description": null,
     "english": "Accept",
     "translation": "수락",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54189,7 +54301,7 @@
     "description": null,
     "english": "Cancel",
     "translation": "취소",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54197,7 +54309,7 @@
     "description": null,
     "english": "{appName} will receive following information:",
     "translation": "{appName}은(는) 다음 정보를 받게 됩니다:",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54213,7 +54325,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {linkStart}terms of service{linkEnd}.",
     "translation": "본 권한을 수락한다는 것은 {linkStart}서비스 약관{linkEnd}에 명시된 대로 이 앱이 귀하의 데이터를 사용하도록 허용한다는 것을 의미합니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54221,7 +54333,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {tosLinkStart}terms of service{tosLinkEnd} and {privacyLinkStart}privacy policy{privacyLinkEnd}.",
     "translation": "본 권한을 수락한다는 것은 {tosLinkStart}서비스 약관{tosLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privacyLinkEnd}에 명시된 대로 이 앱이 귀하의 데이터를 사용하도록 허용한다는 것을 의미합니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54229,7 +54341,7 @@
     "description": null,
     "english": "Accepting these permissions means that you allow this app to use your data as specified in their {linkStart}privacy policy{linkEnd}.",
     "translation": "본 권한을 수락한다는 것은 {linkStart}개인정보 처리방침{linkEnd}에 명시된 대로 이 앱이 귀하의 데이터를 사용하도록 허용한다는 것을 의미합니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54245,7 +54357,7 @@
     "description": null,
     "english": "{appName} will not be able to:",
     "translation": "{appName}은(는) 다음을 수행할 수 없게 됩니다:",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54253,7 +54365,7 @@
     "description": null,
     "english": "{appName} is not published by Roblox.",
     "translation": "{appName}은(는) Roblox에서 게시한 것이 아닙니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54261,7 +54373,7 @@
     "description": null,
     "english": "Read your secure messages",
     "translation": "보안 메시지 읽기",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54269,7 +54381,7 @@
     "description": null,
     "english": "See your Roblox password",
     "translation": "Roblox 비밀번호 보기",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54277,7 +54389,7 @@
     "description": null,
     "english": "Make comments on Roblox for you",
     "translation": "Roblox에 나를 위한 코멘트를 남겨 주세요",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54285,7 +54397,7 @@
     "description": null,
     "english": "Email Verification Required",
     "translation": "이메일 인증 필요",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54293,7 +54405,7 @@
     "description": null,
     "english": "A verified email address is required to authorize with this app.",
     "translation": "이 앱을 승인하려면 인증된 이메일 주소가 필요합니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54301,7 +54413,7 @@
     "description": null,
     "english": "Login Error",
     "translation": "로그인 오류",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54309,7 +54421,7 @@
     "description": null,
     "english": "There is already an account associated with your email address on the app. Because the app only allows one account per email address, you will need to create a new email address on your Roblox Account Settings page and verify it before you can login.",
     "translation": "회원님의 이메일 주소와 연결된 계정이 이미 존재합니다. 이 앱에서는 이메일 주소당 하나의 계정만 허용되므로, 로그인을 계속하려면 먼저 Roblox 계정 설정 페이지에서 새 이메일 주소를 입력하고 이를 인증해야 합니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54317,7 +54429,7 @@
     "description": "Title for generic error dialog page",
     "english": "Oops!",
     "translation": "죄송합니다!",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54325,7 +54437,7 @@
     "description": null,
     "english": "This app is not available for you to log in. You might be able to use parts of the application without logging in.",
     "translation": "이 앱에 로그인할 수 없습니다. 로그인하지 않고도 애플리케이션 일부에 한해 사용이 가능할 수 있습니다.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ApplicationAuthorization",
@@ -54333,7 +54445,7 @@
     "description": "Button redirect user to the home page",
     "english": "Home",
     "translation": "홈",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.NotApproved",
@@ -56285,6 +56397,14 @@
     "description": null,
     "english": "Pending Robux from Immersive Ads Payout",
     "translation": "몰입형 광고 페이아웃의 대기 중인 Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "금액은 수수료, 마켓플레이스 수수료, 정기 그룹 페이아웃을 제외한 순 지급액입니다.",
     "isDeprecated": false
   },
   {
@@ -58740,7 +58860,7 @@
     "key": "Action.OpenExperienceDetails",
     "description": null,
     "english": "View on Roblox",
-    "translation": "체험 세부 정보 열기",
+    "translation": "Roblox에서 보기",
     "isDeprecated": false
   },
   {
@@ -58893,6 +59013,14 @@
     "description": "Shown while audio list is empty as description message",
     "english": "Import audio files through the upload tool.",
     "translation": "업로드 도구를 통해 오디오 파일을 가져옵니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.LastUpdatedDate",
+    "description": null,
+    "english": "Last Updated Date",
+    "translation": "마지막 업데이트 날짜",
     "isDeprecated": false
   },
   {
@@ -63869,6 +63997,38 @@
     "description": "Platform Option in User Acquisition (meaning tablet + phone)",
     "english": "Mobile",
     "translation": "모바일",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.TermsOfServiceNov22Notice",
+    "description": null,
+    "english": "You are eligible to access analytics dashboards (the “Dashboards’) for your experience, which allows you to see the detailed aggregated metrics (eg DAU, Average Session Time, Retention) and break them down by age group & country. As we migrate our systems to internal solutions and continue improving our offerings, we are also updating our Terms of Service. Please take a moment to read the updated terms and accept.",
+    "translation": "체험에 대한 분석 대시보드(이후 '대시보드'라 부름)를 이용해 보세요. 자세한 집계 지표(DAU, 평균 세션 시간, 사용자 유지율 등)를 확인하고 연령대 및 국가별로 분석해 볼 수 있습니다. 시스템이 내부 솔루션으로 마이그레이션되고 지속적으로 개선됨에 따라 서비스 약관도 업데이트되었습니다. 잠시 시간을 내어 업데이트된 약관을 읽고 동의해 주세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewTerms",
+    "description": null,
+    "english": "View full terms",
+    "translation": "전체 약관 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.TeleportsSuffix",
+    "description": null,
+    "english": "teleports",
+    "translation": "텔레포트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.ViewTerms",
+    "description": null,
+    "english": "Please read all agreements and click Agree below if you consent to the terms.",
+    "translation": "모든 계약을 읽고, 약관에 동의하는 경우 아래에서 동의를 클릭하세요.",
     "isDeprecated": false
   },
   {
@@ -70221,6 +70381,14 @@
     "description": null,
     "english": "This enables Single Sign-On functionality",
     "translation": "이 작업은 싱글 사인온 기능을 활성화합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.OrderedDatastores",
+    "description": "Name of service",
+    "english": "Ordered DataStore",
+    "translation": "정렬된 DataStore",
     "isDeprecated": false
   },
   {
@@ -84777,10 +84945,50 @@
   },
   {
     "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.InsufficientFunds",
+    "description": null,
+    "english": "Insufficient Funds",
+    "translation": "펀드 부족",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "UploadWithRobux",
+    "description": null,
+    "english": "Upload ({price} Robux)",
+    "translation": "업로드({price} Robux)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Heading.UploadForRobux",
+    "description": null,
+    "english": "Upload for {price} Robux?",
+    "translation": "{price} Robux에 업로드할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AssetUploadWithRobuxConfirmation",
+    "description": null,
+    "english": "Uploading this asset type requires {price} Robux. Are you sure you want to continue uploading?",
+    "translation": "이 애셋 유형을 업로드하려면 {price} Robux가 필요합니다. 업로드를 정말 계속할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
     "key": "Message.LearnMore",
     "description": null,
     "english": "Learn More",
     "translation": "자세한 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioLimitInfo",
+    "description": null,
+    "english": "Audio uploads may have limits. ",
+    "translation": "오디오 업로드에는 제한이 있을 수 있습니다. ",
     "isDeprecated": false
   },
   {
@@ -85636,7 +85844,7 @@
     "key": "Description.NotificationsIncreaseEngagement",
     "description": "Description encouraging developers to use this feature. And a link to the devhub documentation",
     "english": "Customizing Notifications can increase player engagement in your experience. {linkStart}Learn more{linkEnd}",
-    "translation": "알림을 제공하면 플레이어의 체험 참여도를 높일 수 있습니다. {linkStart}자세한 정보{linkEnd}",
+    "translation": "사용자 정의 알림을 제공하면 플레이어의 체험 참여도를 높일 수 있습니다. {linkStart}자세한 정보{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -85905,6 +86113,30 @@
   },
   {
     "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.createNotificationRestrictions2",
+    "description": null,
+    "english": "Note: All text will be filtered. Only invite notifications are customizable at this time.",
+    "translation": "참고: 모든 텍스트가 필터링됩니다. 현재 사용자 정의는 초대 알림만 가능합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Message.NotificationContentCreateFailedDuplicateLabel",
+    "description": null,
+    "english": "This experience already has a notification string with this name.",
+    "translation": "이 체험에 대해 같은 이름의 알림 문자열이 이미 존재합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.NotificationContentStringName",
+    "description": null,
+    "english": "Name (only visible to you)",
+    "translation": "이름(나에게만 표시됨)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
     "key": "Label.NotificationString",
     "description": null,
     "english": "Notification String",
@@ -85917,6 +86149,14 @@
     "description": null,
     "english": "Name",
     "translation": "이름",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Message.NotificationContentCreateFailedMissingPlaceholder",
+    "description": null,
+    "english": "Notification string needs to contain {placeholder} placeholder.",
+    "translation": "알림 문자열에는 {placeholder} 자리 표시자를 포함해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -85940,7 +86180,7 @@
     "key": "Message.CreatePassInfo",
     "description": null,
     "english": "Passes let you create special items that can only be bought once per player using Robux",
-    "translation": "패스를 사용하면 각 플레이어당 Robux(⬡)로 1회만 구입할 수 있는 스페셜 아이템을 만들 수 있습니다.",
+    "translation": "패스를 사용하면 각 플레이어당 Robux로 1회만 구입할 수 있는 스페셜 아이템을 만들 수 있습니다",
     "isDeprecated": false
   },
   {
@@ -86077,6 +86317,14 @@
     "description": "Displayed if user enters non-positive price.",
     "english": "Price must be at least 1",
     "translation": "패스 가격은 0보다 높아야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Passes",
+    "key": "Message.CreatePassInfoWithIcon",
+    "description": null,
+    "english": "Passes let you create special items that can only be bought once per player using Robux ({robuxIcon}).",
+    "translation": "패스를 사용하면 각 플레이어당 Robux({robuxIcon})로 1회만 구입할 수 있는 스페셜 아이템을 만들 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -87648,6 +87896,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Title.EarningsPerTeleport",
+    "description": null,
+    "english": "EPT",
+    "translation": "EPT",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AgeGuidelines",
     "key": "DisplayName.Violence",
     "description": null,
@@ -88436,7 +88692,7 @@
     "key": "Description.MakeChanges",
     "description": null,
     "english": "Please make changes before uploading the file again or try again later.",
-    "translation": "파일을 다시 업로드하기 전에 변경하세요.",
+    "translation": "파일을 다시 업로드하기 전에 변경하거나 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -88500,7 +88756,7 @@
     "key": "Label.DeletedEntries",
     "description": null,
     "english": "- Deleted Translations:",
-    "translation": "- 삭제된 항목:",
+    "translation": "- 삭제된 번역:",
     "isDeprecated": false
   },
   {
@@ -88645,6 +88901,22 @@
     "description": null,
     "english": "- An error occurred while updating the table. Please try uploading the CSV file again in a few minutes.",
     "translation": "- 테이블을 업데이트하는 동안 오류가 발생했습니다. 몇 분 후에 CSV 파일을 다시 업로드해 보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailedEntryDetails",
+    "description": null,
+    "english": "- source: {source}, context: {context}, errorMessage: {errorMessage}",
+    "translation": "- 소스: {source}, 문맥: {context}, 오류 메시지: {errorMessage}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.UpdateFailure",
+    "description": null,
+    "english": "Some entries failed to update because of the following error(s):",
+    "translation": "오류로 인해 일부 항목을 업데이트하지 못했습니다. 해당 오류:",
     "isDeprecated": false
   }
 ]
