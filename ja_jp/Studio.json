@@ -30308,7 +30308,7 @@
     "key": "BetaFeatures.FacialAnimationRecordingTitle",
     "description": null,
     "english": "Face Capture",
-    "translation": "フェイスレコーダー",
+    "translation": "表情検知",
     "isDeprecated": false
   },
   {
@@ -30316,7 +30316,7 @@
     "key": "BetaFeatures.FacialAnimationRecordingDescription",
     "description": null,
     "english": "Animation Editor will have a \"Face Capture\" button to use a camera to record your own face movements onto an avatar.",
-    "translation": "アニメーションエディタには、アバターに自分の顔の動きを記録するためにカメラを使用する「フェイスレコーダー」ボタンがあります。",
+    "translation": "アニメーションエディタには、アバターに顔の表情を記録するためにカメラを使用する「表情検知」ボタンがあります。",
     "isDeprecated": false
   },
   {
@@ -31881,10 +31881,34 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "BetaFeatures.StringInterpolationTitle",
+    "description": null,
+    "english": "String Interpolation",
+    "translation": "文字列補間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.StringInterpolationDescription",
+    "description": null,
+    "english": "Enables the use of string interpolation to Luau scripts, which let you create formatted strings without explicit string.format calls.",
+    "translation": "明らかな string.format の呼び出しを使用せずにフォーマットされた文字列を作成できる Luau スクリプトへの文字列補間の使用を有効にします。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ScriptingCmd.SELECTNEXTOCCURRENCE",
     "description": null,
     "english": "Select next occurrence",
     "translation": "次の出現を選択",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ScriptingCmd.SELECTNEXTOCCURRENCETooltip",
+    "description": null,
+    "english": "Selects the word at the cursor, or the next occurrence of the current selection",
+    "translation": "現在の選択範囲で単語のカーソル位置、または単語の次の出現を選択",
     "isDeprecated": false
   },
   {
@@ -41333,6 +41357,14 @@
     "description": null,
     "english": "Recommended image size: {width}x{height} px",
     "translation": "画像の推奨サイズ: {width}x{height} px",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPreview.MaxSize",
+    "description": null,
+    "english": "Max size: {maxDimensionsX}x{maxDimensionsY} px",
+    "translation": "最大サイズ: {maxDimensionsX}x{maxDimensionsY} px",
     "isDeprecated": false
   },
   {
@@ -52532,7 +52564,7 @@
     "key": "FaceCapture.MainButtonTitle",
     "description": null,
     "english": "Face Capture",
-    "translation": "顔レコーダー",
+    "translation": "表情検知",
     "isDeprecated": false
   },
   {
@@ -52540,7 +52572,7 @@
     "key": "FaceCapture.TeachingCalloutTitle",
     "description": null,
     "english": "Face Capture",
-    "translation": "顔の録画",
+    "translation": "表情検知",
     "isDeprecated": false
   },
   {
@@ -52548,7 +52580,7 @@
     "key": "FaceCapture.TeachingCalloutDescription",
     "description": null,
     "english": "Animate faces by recording your face movements directly from your webcam.",
-    "translation": "お持ちのウェブカメラから直接、顔の動きを録画して顔をアニメ化します。",
+    "translation": "お持ちのウェブカメラから直接、顔の表情を録画して顔をアニメ化します。",
     "isDeprecated": false
   },
   {
@@ -52692,7 +52724,7 @@
     "key": "FaceCapture.BioDataCollectionBody",
     "description": null,
     "english": "By clicking \"Yes\", you allow Roblox Studio to access your video camera and you consent to the collection and use of your facial movements as described in the Roblox Facial Animation Privacy Notice. Depending on your location, applicable laws might define this data as a biometric identifier or biometric information.",
-    "translation": "「はい」をクリックすると Roblox Studio がビデオカメラにアクセスすることを許可し、Robloxのフェイスアニメーションプライバシー通知に記載されているように顔の動きのデータ収集と使用に同意するものとします。 所在地と適用される法律によっては、このデータが生体識別子または生体情報として定義されていることがあります。",
+    "translation": "「はい」をクリックすると Roblox Studio がビデオカメラにアクセスすることを許可し、Robloxの表情アニメーションプライバシー通知に記載されているように顔の動きのデータ収集と使用に同意するものとします。 所在地と適用される法律によっては、このデータが生体識別子または生体情報として定義されていることがあります。",
     "isDeprecated": false
   },
   {
@@ -52732,7 +52764,7 @@
     "key": "FaceCapture.DefaultFaceRecordingName",
     "description": null,
     "english": "Captured facial animation",
-    "translation": "フェイスアニメーションを録画しました",
+    "translation": "検知済みの表情アニメーション",
     "isDeprecated": false
   },
   {
@@ -52740,7 +52772,7 @@
     "key": "FaceCapture.IsRecordingCoverText",
     "description": null,
     "english": "Face Capture Active",
-    "translation": "フェイスレコーダーが有効です",
+    "translation": "表情検知が有効です",
     "isDeprecated": false
   },
   {
@@ -52748,7 +52780,7 @@
     "key": "FaceCapture.OverwritingPreviousFacsTracksBody",
     "description": null,
     "english": "Existing face animation will be overwritten. The action is undoable (Cmd+Z / Ctrl+Z).",
-    "translation": "既存のフェイスアニメーションが上書きされます。この動作は取り消せません (Cmd+Z か Ctrl+Z)。",
+    "translation": "既存の表情アニメーションが上書きされます。この動作は取り消せません (Cmd+Z か Ctrl+Z)。",
     "isDeprecated": false
   },
   {
