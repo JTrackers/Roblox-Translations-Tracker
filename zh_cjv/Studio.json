@@ -34603,7 +34603,7 @@
     "namespace": "Studio.App",
     "key": "BetaFeatures.AerodynamicsDescription",
     "description": null,
-    "english": "This beta feature allows creators to incorporate aerodynamic forces on parts and their assemblies. Once enabled, creators will have access to the workspace enum 'FluidForceModel' allowing them to opt-into this new force model. This feature also exposes the workspace property 'AirDensity', and the BasePart property 'EnableFluidForces' in the Studio UI.",
+    "english": "This beta feature allows creators to incorporate aerodynamic forces on parts and their assemblies. Once enabled, creators will have access to the workspace enum 'FluidForces' allowing them to opt-into this new force model via toggling it to 'Experimental'. This feature also exposes the workspace property 'AirDensity', and the BasePart property 'EnableFluidForces' in the Studio UI.",
     "translation": "",
     "isDeprecated": false
   },
@@ -34932,6 +34932,54 @@
     "key": "BetaFeatures.LuauNativeCodegenDescription",
     "description": null,
     "english": "Enable native code generation for Luau modules tagged with --!native.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.Welcome",
+    "description": null,
+    "english": "Hi!\n\nHere are some ways I can help:\n- Suggest code\n- Answer questions related to your code\n- Explain code",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.ClearAllMessages",
+    "description": null,
+    "english": "Clear All Messages",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.Placeholder",
+    "description": null,
+    "english": "Enter request here",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.UGCBodiesAndHeadsTitle",
+    "description": null,
+    "english": "UGC Bodies & Heads",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.UGCBodiesAndHeadsDescription",
+    "description": null,
+    "english": "Import UGC bodies and heads, preview them with the Avatar Previewer, and upload them to the catalog.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Login.AddNewUser",
+    "description": null,
+    "english": "Add new user",
     "translation": "",
     "isDeprecated": false
   },
@@ -51115,7 +51163,7 @@
     "namespace": "Studio.Toolbox",
     "key": "General.DidYouMean",
     "description": null,
-    "english": "Did you mean ",
+    "english": "Did you mean",
     "translation": "",
     "isDeprecated": false
   },
@@ -51123,7 +51171,7 @@
     "namespace": "Studio.Toolbox",
     "key": "General.SearchInsteadFor",
     "description": null,
-    "english": "Search instead for ",
+    "english": "Search instead for",
     "translation": "",
     "isDeprecated": false
   },
@@ -51652,6 +51700,94 @@
     "key": "AssetConfig.UGCDynamicHeadBundleName",
     "description": null,
     "english": "Head",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleContextCreationError",
+    "description": null,
+    "english": "Error preparing bundle for upload. Please make sure the bundle name and description are valid.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadStepNumber",
+    "description": null,
+    "english": " Step {currentStep:int}/{totalSteps:int}",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadPrepareStep",
+    "description": null,
+    "english": "Preparing bundle upload...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadAssetsStep",
+    "description": null,
+    "english": "Uploading body parts...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadCreateBundleStep",
+    "description": null,
+    "english": "Creating bundle...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadGenerateBundleIdStep",
+    "description": null,
+    "english": "Generating bundle ID...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.BundleUploadCompleteStep",
+    "description": null,
+    "english": "Upload complete...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.ProgressBarProgressText",
+    "description": null,
+    "english": "Progress {percent:int}%",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.ProgressUploadWaitTimeWarning",
+    "description": null,
+    "english": "This process could take up to 5 minutes",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetUploadResult.SubmitAsDevelopmentItem",
+    "description": null,
+    "english": "Submit as Development Item",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetUploadResult.Close",
+    "description": null,
+    "english": "Close",
     "translation": "",
     "isDeprecated": false
   },
@@ -77648,6 +77784,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.AssetImporter",
+    "key": "PreviewTooltip.ToggleInsertContext",
+    "description": null,
+    "english": " Toggle insert location preview",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DevModule",
     "key": "ProfileCard.StatusPlaceholder",
     "description": null,
@@ -79749,6 +79893,214 @@
     "description": null,
     "english": "Failed to insert assetId to AssetManager",
     "translation": "无法将 assetId 插入 AssetManager",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Categories.Ceramic",
+    "description": null,
+    "english": "Ceramic",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Categories.Paper",
+    "description": null,
+    "english": "Paper",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.Cardboard",
+    "description": null,
+    "english": "Cardboard",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.Carpet",
+    "description": null,
+    "english": "Carpet",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CeramicTiles",
+    "description": null,
+    "english": "Ceramic Tiles",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.ClayRoofTiles",
+    "description": null,
+    "english": "Clay Roof Tiles",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.Leather",
+    "description": null,
+    "english": "Leather",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.Plaster",
+    "description": null,
+    "english": "Plaster",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.Rubber",
+    "description": null,
+    "english": "Rubber",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.RoofShingles",
+    "description": null,
+    "english": "Roof Shingles",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CardboardVariant",
+    "description": null,
+    "english": "Cardboard Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CarpetVariant",
+    "description": null,
+    "english": "Carpet Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CeramicTilesVariant",
+    "description": null,
+    "english": "Ceramic Tiles Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.ClayRoofTilesVariant",
+    "description": null,
+    "english": "Clay Roof Tiles Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.LeatherVariant",
+    "description": null,
+    "english": "Leather Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.PlasterVariant",
+    "description": null,
+    "english": "Plaster Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.RoofShinglesVariant",
+    "description": null,
+    "english": "Roof Shingles Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.RubberVariant",
+    "description": null,
+    "english": "Rubber Variant",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CardboardMaterial",
+    "description": null,
+    "english": "Cardboard Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CarpetMaterial",
+    "description": null,
+    "english": "Carpet Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.CeramicTilesMaterial",
+    "description": null,
+    "english": "Ceramic Tiles Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.ClayRoofTilesMaterial",
+    "description": null,
+    "english": "Clay Roof Tiles Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.LeatherMaterial",
+    "description": null,
+    "english": "Leather Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.PlasterMaterial",
+    "description": null,
+    "english": "Plaster Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.RoofShinglesMaterial",
+    "description": null,
+    "english": "Roof Shingles Material",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.MaterialManager",
+    "key": "Materials.RubberMaterial",
+    "description": null,
+    "english": "Rubber Material",
+    "translation": "",
     "isDeprecated": false
   },
   {
@@ -82363,7 +82715,7 @@
     "namespace": "Studio.R15Migrator",
     "key": "ScriptConversion.LearnMore",
     "description": null,
-    "english": "about how conversion handles replacing characters and animation.",
+    "english": "Learn more about how conversion handles replacing characters and animation.",
     "translation": "",
     "isDeprecated": false
   },
@@ -82388,6 +82740,30 @@
     "key": "AnimationConversion.Instructions",
     "description": null,
     "english": "Select and accept the converted animations to replace the R6 animations in your experience.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "CharacterConversion.NoCharacters",
+    "description": null,
+    "english": "No R6 characters found to convert in this experience.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "ScriptConversion.NoScripts",
+    "description": null,
+    "english": "No scripts with R6 references were found in this experience.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "AnimationConversion.NoAnimations",
+    "description": null,
+    "english": "No R6 animations were found to convert in this experience.",
     "translation": "",
     "isDeprecated": false
   },
@@ -86132,6 +86508,30 @@
     "key": "StudioTour.playtest_Description",
     "description": null,
     "english": "Finally, playtest your place by clicking the Play button.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ActivityFeed",
+    "key": "Plugin.Name",
+    "description": null,
+    "english": "ActivityFeed",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ActivityFeed",
+    "key": "Plugin.Button",
+    "description": null,
+    "english": "Toggle",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ActivityFeed",
+    "key": "Plugin.Description",
+    "description": null,
+    "english": "Toggles the Template plugin window.",
     "translation": "",
     "isDeprecated": false
   }
