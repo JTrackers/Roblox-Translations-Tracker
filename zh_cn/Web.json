@@ -14117,7 +14117,7 @@
     "description": "The Gear category in the catalog includes miscellaneous items that a user can equip to their Avatar. Items in this category include swords, water guns/nerf launchers, pets and handheld items.",
     "english": "Gear",
     "translation": "装备",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Catalog",
@@ -39011,7 +39011,7 @@
     "namespace": "Feature.Payment",
     "key": "Message.FraudWarningMessageFor13To17",
     "description": null,
-    "english": "By hitting continue, I agree that I am the parent or legal guardian of the account owner and I authorize this purchase.",
+    "english": "By selecting a payment type, I agree that I am the parent or legal guardian of the account owner and I authorize this purchase.",
     "translation": "点击继续，即表示我是此帐户持有者的家长或法定监护人，并且我允许此次购买。",
     "isDeprecated": false
   },
@@ -51004,7 +51004,7 @@
     "key": "Heading.DeveloperForum",
     "description": null,
     "english": "Forum",
-    "translation": "开发者论坛",
+    "translation": "论坛",
     "isDeprecated": false
   },
   {
@@ -51028,7 +51028,7 @@
     "key": "Description.DeveloperForum",
     "description": null,
     "english": "Talk with other Creators, discuss platform updates, and access community knowledge to improve your content.",
-    "translation": "和开发者们对话、获取第一手消息、招募志同道合的小伙伴！",
+    "translation": "与其他创作者对话、讨论平台更新、获取社区知识资源来提高你的内容。",
     "isDeprecated": false
   },
   {
@@ -51052,7 +51052,7 @@
     "key": "Description.DocumentationSite",
     "description": null,
     "english": "The documentation is your one-stop shop for learning how to make anything you can imagine on Roblox. Use a wide set of tutorials and browse our API references.",
-    "translation": "海量学习资源、API 文档教程，学无止境！",
+    "translation": "文档是你的一站式网站，在这里你可以学习如何在 Roblox 上将想象化为现实，使用丰富的教程资源并浏览我们的 API 参考。",
     "isDeprecated": false
   },
   {
@@ -51065,10 +51065,34 @@
   },
   {
     "namespace": "CreatorDashboard.Landing",
+    "key": "Description.Marketplace",
+    "description": null,
+    "english": "Discover millions of assets made by the Roblox community to accelerate any creation task.",
+    "translation": "探索由 Roblox 社区创作的数百万个素材，为你的创意任务助力。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
     "key": "Heading.Marketplace",
     "description": null,
     "english": "Marketplace",
     "translation": "商城",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Action.StartCreating",
+    "description": null,
+    "english": "Start Creating",
+    "translation": "开始创作",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Action.ManageMyContent",
+    "description": null,
+    "english": "Manage My Content",
+    "translation": "管理我的内容",
     "isDeprecated": false
   },
   {
@@ -53420,7 +53444,7 @@
     "key": "Label.AvailableRobux",
     "description": null,
     "english": "Available Robux: ",
-    "translation": "可用 Robux",
+    "translation": "可用 Robux：",
     "isDeprecated": false
   },
   {
@@ -58556,7 +58580,7 @@
     "key": "Label.UpcomingEvents",
     "description": "Label for the list of scheduled events that occur in the future",
     "english": "Upcoming",
-    "translation": "近期活动",
+    "translation": "即将推出",
     "isDeprecated": false
   },
   {
@@ -58564,7 +58588,7 @@
     "key": "Label.DraftEvents",
     "description": "Label for the list of unpublished scheduled events",
     "english": "Drafts",
-    "translation": "起草活动",
+    "translation": "草稿",
     "isDeprecated": false
   },
   {
@@ -58572,7 +58596,7 @@
     "key": "Label.PastEvents",
     "description": "Label for the list of scheduled events that have already ended",
     "english": "Past",
-    "translation": "往期活动",
+    "translation": "过去",
     "isDeprecated": false
   },
   {
@@ -58812,7 +58836,7 @@
     "key": "Action.UpdateEvent",
     "description": "Action to save changes to an updated scheduled event",
     "english": "Update Event",
-    "translation": "保存",
+    "translation": "更新活动",
     "isDeprecated": false
   },
   {
@@ -59005,6 +59029,46 @@
     "description": "Label for a scheduled event that begins on {startDate} at {startTime}, and runs until {endDate} at {endTime}",
     "english": "{startDate} at {startTime} - {endDate} at {endTime}",
     "translation": "{startDate} {startTime} 至 {endDate} {endTime} ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Save",
+    "description": "Generic save action text",
+    "english": "Save",
+    "translation": "保存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DatePickerFormat",
+    "description": "The format string for the date picker, where {date}/{time} are the specified date and time. Not that the single quotes must surround the translated word as any language text must be escaped. So in French, for example, this should be something like \"{date} à {time}\"",
+    "english": "{date} 'at' {time}",
+    "translation": "{date} {time}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.MissingAssets",
+    "description": "Message indicating that an experience has no associated assets",
+    "english": "There are no assets associated with this experience",
+    "translation": "没有与此作品关联的素材",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.SaveRequiresUniverse",
+    "description": "Tooltip indicating that the save button is disabled until the user selects an experience",
+    "english": "You must select an associated experience to save this event",
+    "translation": "你必须选择一个关联作品来保存此活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.SaveRequiresChanges",
+    "description": "Tooltip indicating that the save/update button is disabled because there are no changes to save",
+    "english": "No changes to save",
+    "translation": "没有要保存的更改",
     "isDeprecated": false
   },
   {
@@ -62228,7 +62292,7 @@
     "key": "Description.TotalPlayTime",
     "description": null,
     "english": "Number of hours played over the selected time period.",
-    "translation": "游玩总时间除以每天会话数",
+    "translation": "所选时间段游玩的小时数。",
     "isDeprecated": false
   },
   {
@@ -63084,7 +63148,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Total playtime gives you a sense of how engaging your experience is over time. Break it down by age group, platform, etc to help you decide which audiences and areas you want to focus improvements on.",
-    "translation": "平均会话时间测量的是每次访问你游戏的用户的游玩时间。你可以根据你的游戏设计和类型将它与你的期望值进行比较。 按年龄组、平台等标准分解这个指标会让你更好地了解哪里需要对内容作出调整。你还可以与 D1 留存率一起作为长期留存率的指标。",
+    "translation": "总游玩时间让你了解在一段时间内你作品的互动程度。你可以按照年龄组、平台进行详细查看，帮助你决定在哪些受众和方面可以做出改善。",
     "isDeprecated": false
   },
   {
@@ -78560,6 +78624,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.Light",
+    "description": "Represents \"Light\" as a category for asset types.",
+    "english": "Light",
+    "translation": "光",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.CDRedirection",
     "key": "Message.CDRedirectionMessage",
     "description": null,
@@ -79005,6 +79077,30 @@
     "description": null,
     "english": "Someone accepts my group join request",
     "translation": "有人接受了我的好友请求",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryExperienceGuidelines",
+    "description": "Notification Category Experience Guidelines",
+    "english": "Experience Guidelines",
+    "translation": "作品准则",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeExperienceGuidelines",
+    "description": "Experience Guidelines Notification Label",
+    "english": "Experience Guidelines",
+    "translation": "作品准则",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeExperienceGuidelines",
+    "description": "Experience Guidelines Notification Type Description",
+    "english": "Guidelines of my experience are moderated",
+    "translation": "作品准则已被过滤",
     "isDeprecated": false
   },
   {
@@ -88964,7 +89060,7 @@
     "key": "Label.NotificationFormSelectLabel",
     "description": "Describes how often or at what time a notification should be sent",
     "english": "Tell me when",
-    "translation": "告诉我时间",
+    "translation": "通知时间：",
     "isDeprecated": false
   },
   {
