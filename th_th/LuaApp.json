@@ -2724,7 +2724,7 @@
     "key": "Description.AllowedExperience",
     "description": null,
     "english": "All experiences are searchable. Experiences without {linkStart}Experience Guidelines{linkEnd} are treated as 13+ and are prohibited from displaying any 17+ content. All content on Roblox must comply with the {communityLinkStart}Roblox Community Standards{communityLinkEnd}.",
-    "translation": "คุณยังคงสามารถค้นหาประสบการณ์ทั้งหมดได้ ประสบการณ์ที่ไม่มี{linkStart}คู่มือของประสบการณ์{linkEnd}จะถือว่าเป็นประสบการณ์สำหรับอายุ 13+ และไม่ได้รับอนุญาตให้แสดงเนื้อหาสำหรับอายุ 17+ เนื้อหาทั้งหมดบน Roblox ต้องเป็นไปตาม{communityLinkStart}มาตรฐานชุมชนของ Roblox{communityLinkEnd}",
+    "translation": "คุณยังคงสามารถค้นหาประสบการณ์ทั้งหมดได้ ประสบการณ์ที่ไม่มี{linkStart}แนวทางปฏิบัติสำหรับประสบการณ์{linkEnd}จะถือว่าเป็นประสบการณ์สำหรับอายุ 13+ และไม่ได้รับอนุญาตให้แสดงเนื้อหาสำหรับอายุ 17+ เนื้อหาทั้งหมดบน Roblox ต้องเป็นไปตาม{communityLinkStart}มาตรฐานชุมชนของ Roblox{communityLinkEnd}",
     "isDeprecated": false
   },
   {
@@ -3580,7 +3580,7 @@
     "key": "Label.NoSellersWarning",
     "description": "Error message that appears when trying to buy an item that no one is selling.",
     "english": "Sorry, no one is selling this item",
-    "translation": "ขออภัย ไม่มีผู้จำหน่ายไอเท็มนี้",
+    "translation": "ขออภัย ไม่มีผู้ขายไอเท็มนี้",
     "isDeprecated": false
   },
   {
@@ -4636,7 +4636,7 @@
     "key": "Label.InExperienceOnly",
     "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
     "english": "The original sale of this item is only available in experience.",
-    "translation": "การขายไอเท็มต้นฉบับนี้มีอยู่ในประสบการณ์เท่านั้น",
+    "translation": "ไอเท็มต้นฉบับของนักสร้างสรรค์สามารถซื้อได้ในประสบการณ์เท่านั้น",
     "isDeprecated": false
   },
   {
@@ -4708,7 +4708,7 @@
     "key": "Response.ChatNameFullyModerated",
     "description": null,
     "english": "Chat group name was moderated.",
-    "translation": "ชื่อกลุ่มถูกเซ็นเซอร์",
+    "translation": "ชื่อกลุ่มไม่ผ่านเกณฑ์การควบคุม",
     "isDeprecated": false
   },
   {
@@ -4908,7 +4908,7 @@
     "key": "Message.MessageContentModerated",
     "description": null,
     "english": "Your message was moderated and not sent.",
-    "translation": "ข้อความของคุณถูกเซ็นเซอร์และจะไม่ถูกส่ง",
+    "translation": "ข้อความของคุณไม่ผ่านเกณฑ์การควบคุมและจะไม่ถูกส่ง",
     "isDeprecated": false
   },
   {
@@ -5244,7 +5244,7 @@
     "key": "Message.GameLinkWasModerated",
     "description": "When sharing games with a group chat, this text indicates that the link may not have been appropriate and was censored.",
     "english": "This experience link was moderated and not sent.",
-    "translation": "ลิงก์ของประสบการณ์นี้ถูกเซ็นเซอร์และจะไม่ถูกส่ง",
+    "translation": "ลิงก์ของประสบการณ์นี้ไม่ผ่านเกณฑ์การควบคุมและจะไม่ถูกส่ง",
     "isDeprecated": false
   },
   {
@@ -7085,6 +7085,14 @@
     "description": null,
     "english": "Passes",
     "translation": "สิทธิ์ปลดล็อค",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "ไอเท็มต้นฉบับของนักสร้างสรรค์สามารถซื้อได้ในประสบการณ์เท่านั้น",
     "isDeprecated": false
   },
   {
@@ -10304,6 +10312,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PlacesList",
+    "key": "Label.GenreExplorerName",
+    "description": null,
+    "english": "Categories",
+    "translation": "หมวดหมู่",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.EmptyStatePage",
     "key": "Message.NoInternet",
     "description": null,
@@ -10728,11 +10744,1067 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Sponsored",
+    "description": "Label applied to sponsored experiences / avatar items / groups etc",
+    "english": "Sponsored",
+    "translation": "ได้รับการสนับสนุน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Ad",
+    "description": "Label for an advertisement",
+    "english": "Ad",
+    "translation": "โฆษณา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Action.EnterExperience",
+    "description": null,
+    "english": "Enter the Experience",
+    "translation": "กรอกประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Action.ReturnToExperience",
+    "description": null,
+    "english": "Return to Experience",
+    "translation": "กลับไปยังประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeShape",
+    "description": null,
+    "english": "AdGui's Adornee is not in Block shape",
+    "translation": "Adornee ของ AdGui ไม่ใช่รูปทรงบล็อก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeRotation",
+    "description": null,
+    "english": "AdGui's Adornee rotation is invalid",
+    "translation": "การหมุน Adornee ของ AdGui ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalParentType",
+    "description": null,
+    "english": "Parent Type is not valid",
+    "translation": "ประเภท Parent ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.AdPortalParentMissing",
+    "description": null,
+    "english": "Parent does not exist",
+    "translation": "ไม่มี Parent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeSize",
+    "description": null,
+    "english": "AdGui's Adornee size is invalid",
+    "translation": "ขนาด Adornee ของ AdGui ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneePosition",
+    "description": null,
+    "english": "AdGui's Adornee position is invalid",
+    "translation": "ตำแหน่ง Adornee ของ AdGui ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalHierarchy",
+    "description": null,
+    "english": "AdPortal doesn't have correct hierarchy",
+    "translation": "AdPortal ไม่มีลำดับชั้นที่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiValidation",
+    "description": null,
+    "english": "AdGui validation failed",
+    "translation": "ตรวจสอบความถูกต้องของ AdGui ไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalProperties",
+    "description": null,
+    "english": "AdPortal doesn't have correct properties set",
+    "translation": "AdPortal ไม่มีชุดคุณสมบัติที่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalParentProperties",
+    "description": null,
+    "english": "AdPortal parent part doesn't have correct properties set",
+    "translation": "ส่วนประกอบของ Parent ของ AdPortal ไม่มีชุดคุณสมบัติที่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdornee",
+    "description": null,
+    "english": "AdGui's Adornee is not a Part",
+    "translation": "Adornee ของ AdGui ไม่ใช่ส่วนประกอบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.AdPortalMissing",
+    "description": null,
+    "english": "AdPortal doesn't exist",
+    "translation": "ไม่มี AdPortal ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.None",
+    "description": null,
+    "english": "None",
+    "translation": "ไม่ระบุ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Profanity",
+    "description": null,
+    "english": "Profanity",
+    "translation": "คำหยาบคาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Harassment",
+    "description": null,
+    "english": "Harassment",
+    "translation": "การล่วงละเมิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Spam",
+    "description": null,
+    "english": "Spam",
+    "translation": "สแปม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Advertisement",
+    "description": null,
+    "english": "Advertisement",
+    "translation": "การโฆษณา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Scamming",
+    "description": null,
+    "english": "Scamming",
+    "translation": "การหลอกลวง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.AdultContent",
+    "description": null,
+    "english": "Adult Content",
+    "translation": "เนื้อหาสำหรับผู้ใหญ่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Inappropriate",
+    "description": null,
+    "english": "Inappropriate",
+    "translation": "ไม่เหมาะสม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "ความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.UnclassifiedMild",
+    "description": null,
+    "english": "Unclassified Mild",
+    "translation": "การละเมิดเล็กน้อยที่ไม่ได้จัดประเภท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.BlockedContent",
+    "description": null,
+    "english": "BlockedContent",
+    "translation": "เนื้อหาที่ถูกบล็อค",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.MinorSwearing",
+    "description": null,
+    "english": "Minor Swearing",
+    "translation": "การสบถเล็กน้อย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DistortedAudio",
+    "description": null,
+    "english": "Distorted Audio",
+    "translation": "เสียงที่ผิดเพี้ยน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.LoudEarbleeders",
+    "description": null,
+    "english": "Loud Earbleeders",
+    "translation": "ระดับเสียงที่ดังมาก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PlayersScreamingintoMicrophone",
+    "description": null,
+    "english": "Players Screaming into Microphone",
+    "translation": "ผู้เล่นตะโกนใส่ไมโครโฟน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Swearing",
+    "description": null,
+    "english": "Swearing",
+    "translation": "การสบถ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PornographicSounds",
+    "description": null,
+    "english": "Pornographic Sounds",
+    "translation": "เสียงลามาอนาจาร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExplicitSexualReferencesandInnuendo",
+    "description": null,
+    "english": "Explicit Sexual References and Innuendo",
+    "translation": "การอ้างอิงหรือเสียดสีทางเพศอย่างชัดเจน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DrugandAlcoholReferences",
+    "description": null,
+    "english": "Drug and Alcohol References",
+    "translation": "การอ้างอิงถึงยาเสพติดหรือเครื่องดื่มแอลกอฮอล์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DiscriminatoryorNaziContent",
+    "description": null,
+    "english": "Discriminatory or Nazi Content",
+    "translation": "เนื้อหาเกี่ยวกับการเลือกปฏิบัติหรือนาซี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DatingImagery",
+    "description": null,
+    "english": "Dating Imagery",
+    "translation": "ภาพเกี่ยวกับการออกเดท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DiscriminatoryContent",
+    "description": null,
+    "english": "Discriminatory Content",
+    "translation": "เนื้อหาเกี่ยวกับการเลือกปฏิบัติ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DrugsAlcohol",
+    "description": null,
+    "english": "Drugs, Alcohol",
+    "translation": "ยาเสพติดและเครื่องดื่มแอลกอฮอล์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DMCA",
+    "description": null,
+    "english": "DMCA",
+    "translation": "รัฐบัญญัติลิขสิทธิ์แห่งสหัสวรรษดิจิทัล (DMCA)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExplicitNudityPorn",
+    "description": null,
+    "english": "Explicit Nudity/Porn",
+    "translation": "การแสดงภาพเปลือย/ลามกอนาจารอย่างชัดเจน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.GangImages",
+    "description": null,
+    "english": "Gang Images",
+    "translation": "ภาพแก๊งอาชญากร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Nazis",
+    "description": null,
+    "english": "Nazis",
+    "translation": "นาซี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PersonalAttackHarassmentBullying",
+    "description": null,
+    "english": "Personal Attack/Harassment/Bullying",
+    "translation": "การโจมตี/การล่วงละเมิด/การกลั่นแกล้งส่วนบุคคล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RedArmbandsNotNazis",
+    "description": null,
+    "english": "Red Armbands (Not Nazis)",
+    "translation": "ปลอกแขนสีแดง (ไม่ใช่นาซี)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SuggestiveSexualizedImagery",
+    "description": null,
+    "english": "Suggestive/Sexualized Imagery",
+    "translation": "ภาพสองแง่สองง่าม/เกี่ยวกับทางเพศ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SuicideSelfHarm",
+    "description": null,
+    "english": "Suicide/Self-Harm",
+    "translation": "การฆ่าตัวตาย/การทำร้ายตัวเอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ClickbaitAds",
+    "description": null,
+    "english": "Clickbait Ads",
+    "translation": "การโฆษณาแบบล่อลวงให้คลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.InappropriateContent",
+    "description": null,
+    "english": "Inappropriate Content",
+    "translation": "เนื้อหาที่ไม่เหมาะสม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.NotRelatedtoRoblox",
+    "description": null,
+    "english": "Not Related to Roblox",
+    "translation": "ไม่เกี่ยวข้องกับ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.OffSiteLinks",
+    "description": null,
+    "english": "Off-Site Links",
+    "translation": "ลิงก์ไปนอกแพลตฟอร์ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.HiddenMessageClothing",
+    "description": null,
+    "english": "Hidden Message Clothing",
+    "translation": "เสื้อผ้าที่มีข้อความซ่อนอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.NoneoftheAbove",
+    "description": null,
+    "english": "None of the Above",
+    "translation": "ไม่อยู่ในรายการข้างต้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.AccountTheft",
+    "description": null,
+    "english": "Account Theft",
+    "translation": "การโจรกรรมบัญชี",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.NotApproved",
     "key": "Label.AbuseType.AssetOwnership",
     "description": null,
     "english": "Asset Ownership",
     "translation": "การเป็นเจ้าของทรัพยากร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Billing",
+    "description": null,
+    "english": "Billing",
+    "translation": "การเรียกเก็บเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CompromisedAccount",
+    "description": null,
+    "english": "Compromised Account",
+    "translation": "บัญชีถูกบุกรุก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CopyrightDMCA",
+    "description": null,
+    "english": "Copyright/DMCA",
+    "translation": "ลิขสิทธิ์/รัฐบัญญัติลิขสิทธิ์แห่งสหัสวรรษดิจิทัล (DMCA)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DerogatoryHarrassment",
+    "description": null,
+    "english": "Derogatory/Harrassment",
+    "translation": "การทำให้เสื่อมเสีย/การคุกคาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Depressive",
+    "description": null,
+    "english": "Depressive",
+    "translation": "ซึมเศร้า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Discriminatory",
+    "description": null,
+    "english": "Discriminatory",
+    "translation": "การเลือกปฏิบัติ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Exploiting",
+    "description": null,
+    "english": "Exploiting",
+    "translation": "การแสวงหาประโยชน์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.TextFilterProfanity",
+    "description": null,
+    "english": "Text Filter / Profanity",
+    "translation": "ตรวจพบด้วยตัวกรองข้อความ/คำหยาบคาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Grooming",
+    "description": null,
+    "english": "Grooming",
+    "translation": "การเข้าหาเด็กเพื่อล่วงละเมิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IllicitSubstance",
+    "description": null,
+    "english": "Illicit Substance",
+    "translation": "สารที่ผิดกฎหมาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Malicious",
+    "description": null,
+    "english": "Malicious",
+    "translation": "ประสงค์ร้าย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Misleading",
+    "description": null,
+    "english": "Misleading",
+    "translation": "ทำให้เข้าใจผิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Dating",
+    "description": null,
+    "english": "Dating",
+    "translation": "การออกเดท",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PhishingScam",
+    "description": null,
+    "english": "Phishing/Scam",
+    "translation": "ฟิชชิ่ง/การหลอกลวง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealInfo",
+    "description": null,
+    "english": "Real Info",
+    "translation": "ข้อมูลจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RMT",
+    "description": null,
+    "english": "RMT",
+    "translation": "การซื้อขายด้วยเงินจริง (RMT)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SexualAdultContent",
+    "description": null,
+    "english": "Sexual/Adult Content",
+    "translation": "เนื้อหาเกี่ยวกับเรื่องเพศ/เนื้อหาสำหรับผู้ใหญ่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Shock",
+    "description": null,
+    "english": "Shock",
+    "translation": "น่าตกใจ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Threats",
+    "description": null,
+    "english": "Threats",
+    "translation": "การคุกคาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeTragedy",
+    "description": null,
+    "english": "Real-Life Tragedy",
+    "translation": "โศกนาฏกรรมในชีวิตจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Politics",
+    "description": null,
+    "english": "Politics",
+    "translation": "การเมือง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.EncouragingDangerousBehavior",
+    "description": null,
+    "english": "Encouraging Dangerous Behavior",
+    "translation": "การสนับสนุนพฤติกรรมที่เป็นอันตราย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "อื่นๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DatingandRomanticContent",
+    "description": null,
+    "english": "Dating and Romantic Content",
+    "translation": "เนื้อหาเกี่ยวกับการออกเดทหรือเนื้อหาโรแมนติก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SexualContent",
+    "description": null,
+    "english": "Sexual Content",
+    "translation": "เนื้อหาเกี่ยวกับเรื่องเพศ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DirectingUsersOffPlatform",
+    "description": null,
+    "english": "Directing Users Off-Platform",
+    "translation": "ชี้นำผู้ใช้ให้ออกไปนอกแพลตฟอร์ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyAskingforPII",
+    "description": null,
+    "english": "Privacy: Asking for PII",
+    "translation": "ความเป็นส่วนตัว: ขอข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyGivingPII",
+    "description": null,
+    "english": "Privacy: Giving PII",
+    "translation": "ความเป็นส่วนตัว: มอบข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Impersonation",
+    "description": null,
+    "english": "Impersonation",
+    "translation": "การปลอมเป็นบุคคลอื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExtortionandBlackmail",
+    "description": null,
+    "english": "Extortion and Blackmail",
+    "translation": "การขู่กรรโชกและแบล็คเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IllegalandRegulatedContent",
+    "description": null,
+    "english": "Illegal and Regulated Content",
+    "translation": "เนื้อหาที่ผิดกฎหมายและได้รับการควบคุม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.MisusingRobloxSystems",
+    "description": null,
+    "english": "Misusing Roblox Systems",
+    "translation": "การใช้ Roblox ในทางที่ผิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PoliticalContent",
+    "description": null,
+    "english": "Political Content",
+    "translation": "เนื้อหาเกี่ยวกับการเมือง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.TerrorismExtremism",
+    "description": null,
+    "english": "Terrorism/Extremism",
+    "translation": "การก่อการร้าย/แนวคิดสุดโต่ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ChildEndangerment",
+    "description": null,
+    "english": "Child Endangerment",
+    "translation": "การกระทำที่เป็นอันตรายต่อเด็ก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeThreats",
+    "description": null,
+    "english": "Real-Life Threats",
+    "translation": "การคุกคามในชีวิตจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits",
+    "description": null,
+    "english": "Cheat and Exploits",
+    "translation": "การโกงและการแสวงหาประโยชน์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SeekingSexualContent",
+    "description": null,
+    "english": "Seeking Sexual Content",
+    "translation": "แสวงหาเนื้อหาเกี่ยวกับเรื่องเพศ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.Evidence.VoiceRecording",
+    "description": "Shown as an offensive item when the player is moderated due to a voice chat conversation.",
+    "english": "Voice chat conversation on {date} at {time} in {experienceName}",
+    "translation": "การสนทนาผ่านการแชทด้วยเสียงเมื่อวันที่ {date} เวลา {time} ใน {experienceName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DisruptiveAudio",
+    "description": null,
+    "english": "Disruptive Audio",
+    "translation": "เสียงก่อกวน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeThreats.Note",
+    "description": "Moderator note shown to user when serving consequence",
+    "english": "Roblox does not permit real threats of violence towards members of the Roblox Community.",
+    "translation": "Roblox ไม่อนุญาตให้มีการคุกคามด้านความรุนแรงที่แท้จริงต่อสมาชิกของชุมชน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.TerrorismExtremism.Note",
+    "description": null,
+    "english": "Roblox does not permit associations with terrorism or violent extremism.",
+    "translation": "Roblox ไม่อนุญาตให้มีความเชื่อมโยงกับการก่อการร้ายหรือแนวคิดสุดโต่งที่นิยมความรุนแรง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IrlDangerousActivities.Note",
+    "description": null,
+    "english": "Roblox does not permit the encouragement of or participation in real-life dangerous activities among community members",
+    "translation": "Roblox ไม่อนุญาตให้มีการสนับสนุนหรือมีส่วนร่วมในกิจกรรมที่ก่อให้เกิดอันตรายในชีวิตจริงของสมาชิกในชุมชน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyAskingforPII.Note",
+    "description": null,
+    "english": "Roblox does not permit the exchange of Personal Identifiable Information (PII) between community members.",
+    "translation": "Roblox ไม่อนุญาตให้มีการแลกเปลี่ยนข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII) ระหว่างสมาชิกในชุมชน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Harassment.Note",
+    "description": null,
+    "english": "Roblox does not permit bullying or harassment towards community members.",
+    "translation": "Roblox ไม่อนุญาตให้มีการกลั่นแกล้งหรือล่วงละเมิดสมาชิกในชุมชน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Discriminatory.Note",
+    "description": null,
+    "english": "Roblox does not permit discriminatory language, behavior, or content of any kind.",
+    "translation": "Roblox ไม่อนุญาตให้มีการใช้ภาษา พฤติกรรม หรือเนื้อหาใดๆ ที่เป็นการเลือกปฏิบัติ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SexualContent.Note",
+    "description": null,
+    "english": "Roblox does not permit sexual content in any form on the platform.",
+    "translation": "Roblox ไม่อนุญาตเนื้อหาเกี่ยวกับเรื่องเพศไม่ว่าจะอยู่ในรูปแบบใดๆ ก็ตามบนแพลตฟอร์ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ViolentContentAndGore.Note",
+    "description": null,
+    "english": "Roblox does not permit violent content and gore, including excessive use of blood in images or videos.",
+    "translation": "Roblox ไม่อนุญาตเนื้อหาที่มีความรุนแรงและการฟันแทง รวมถึงการนองเลือดในภาพหรือวิดีโอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IllegalandRegulatedContent.Note",
+    "description": null,
+    "english": "Roblox does not permit illegal or regulated content in any form. This can include alcohol, drugs, tobacco products, or bomb or weapon making.",
+    "translation": "Roblox ไม่อนุญาตเนื้อหาที่ผิดกฎหมายและได้รับการควบคุมไม่ว่าจะอยู่ในรูปแบบใดก็ตาม ซึ่งรวมถึงเครื่องดื่มแอลกอฮอล์ ยาเสพติด ผลิตภัณฑ์ยาสูบต่างๆ หรือระเบิดหรือการสร้างอาวุธ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DatingandRomanticContent.Note",
+    "description": null,
+    "english": "Roblox does not permit dating or romantic exchanges between avatars.",
+    "translation": "Roblox ไม่อนุญาตให้มีการออกเดทหรือกิจกรรมโรแมนติกต่างๆ ระหว่างอวาตาร์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Profanity.Note",
+    "description": null,
+    "english": "Roblox does not permit profane language or slurs.",
+    "translation": "Roblox ไม่อนุญาตให้ใช้คำหยาบคายหรือคำดูหมิ่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PoliticalContent.Note",
+    "description": null,
+    "english": "Roblox does not permit support for current political candidates, parties, associated flags or symbols.",
+    "translation": "Roblox ไม่อนุญาตให้มีการสนับสนุนผู้สมัครทางการเมืองในปัจจุบัน รวมถึงพรรค ธงหรือตราสัญลักษณ์ที่เกี่ยวข้องด้วย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Scamming.Note",
+    "description": null,
+    "english": "Roblox does not permit phishing or scamming links, requests for passwords, selling of accounts, uploading of unauthorized accounts, selling Roblox assets for real money off platform, or artificially inflating numbers associated with experiences.",
+    "translation": "Roblox ไม่อนุญาตให้มีลิงก์ที่เป็นการฟิชชิ่งหรือการหลอกลวง การขอรหัสผ่าน การขายบัญชี การอัปโหลดบัญชีที่ไม่ได้รับอนุญาต การขายทรัพยากร Roblox เพื่อรับเงินจริงๆ นอกแพลตฟอร์ม หรือทำตัวเลขที่เกี่ยวข้องกับประสบการณ์ให้สูงขึ้นเกินจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Spam.Note",
+    "description": null,
+    "english": "Roblox does not permit spamming in the form of clickbait, or repetitive, large volume messaging.",
+    "translation": "Roblox ไม่อนุญาตให้ทำการสแปมในรูปแบบของการล่อลวงให้คลิก หรือการทำซ้ำข้อความเป็นจำนวนมาก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Impersonation.Note",
+    "description": null,
+    "english": "Roblox does not permit users to mislead others by impersonating other people’s real- or virtual-world identity or affiliations.",
+    "translation": "Roblox ไม่อนุญาตให้ผู้ใช้ทำให้คนอื่นๆ เข้าใจผิดโดยการปลอมเป็นบุคคลอื่นหรือผู้ที่เกี่ยวข้องในโลกจริงหรือโลกเสมือน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DirectingUsersOffPlatform.Note",
+    "description": null,
+    "english": "Roblox does not permit the use of off-site links of any kind. Links to Guilded, YouTube, Facebook, Discord, Twitter, and Twitch must be wrapped in the applicable Policy API or listed in the Social Networks and Social Links settings of your profile or experience description page. Links that appear in locations where the API cannot be deployed - such as text chat - are prohibited.",
+    "translation": "Roblox ไม่อนุญาตการใช้ลิงก์ไปนอกแพลตฟอร์มทุกชนิด ลิงก์ไปยัง Guilded, YouTube, Facebook, Discord, Twitter และ Twitch ต้องรวมอยู่ใน API นโยบายที่เกี่ยวข้องหรือแสดงอยู่ในการตั้งค่าเครือข่ายสังคมออนไลน์และลิงก์ของเครือข่ายสังคมออนไลน์ของหน้าโปรไฟล์หรือหน้าคำอธิบายประสบการณ์ของคุณ ลิงก์ต่างๆ ที่ปรากฏในตำแหน่งที่ไม่สามารถปรับใช้ API ได้ - เช่นแชทข้อความ - ถูกห้ามไม่ให้ใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExtortionandBlackmail.Note",
+    "description": null,
+    "english": "Roblox does not permit attempts to threaten users in order to force them to do something they do not want to do. ",
+    "translation": "Roblox ไม่อนุญาตให้มีการพยายามคุกคามผู้ใช้เพื่อบังคับให้ทำในสิ่งที่พวกเขาไม่ต้องการ ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DisruptiveAudio.Note",
+    "description": null,
+    "english": "Roblox does not permit uploads of audio that is unintelligible, excessively loud, screaming, or high-pitched noises.",
+    "translation": "Roblox ไม่อนุญาตให้อัปโหลดเสียงที่ไม่สามารถเข้าใจได้ เสียงที่ดังมากๆ เสียงกรีดร้อง หรือเสียงแหลมปรี๊ด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits.Note",
+    "description": null,
+    "english": "Roblox does not permit users to deploy or discuss any method of cheating on platform.",
+    "translation": "Roblox ไม่อนุญาตให้ผู้ใช้ปรับใช้หรือพูดคุยเกี่ยวกับวิธีการโกงใดๆ ก็ตามบนแพลตฟอร์ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.MisusingRobloxSystems.Note",
+    "description": null,
+    "english": "Roblox does not permit bypasses of our systems that keep our platform and community safe and secure.",
+    "translation": "Roblox does ไม่อนุญาตให้มีการบายพาสระบบของเราซึ่งช่วยรักษาแพลตฟอร์มและชุมชนของเราให้ปลอดภับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RobloxEconomy.Note",
+    "description": null,
+    "english": "Roblox does not permit using third-parties to buy, sell, or trade Robux, promotional codes that falsely appear to be from Roblox Corporation, or inappropriate use of the group payout system. ",
+    "translation": "Roblox ไม่อนุญาตให้ใช้บริษัทภายนอกในการซื้อ ขาย หรือแลกเปลี่ยน Robux ใช้รหัสส่งเสริมการขายที่แอบอ้างว่ามาจาก Roblox Corporation หรือใช้ระบบการจ่ายเงินแบบกลุ่มอย่างไม่เหมาะสม ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeTragedy.Note",
+    "description": null,
+    "english": "Roblox does not permit content that recreates, mocks, or capitalizes off of specific real-world tragic events.",
+    "translation": "Roblox ไม่อนุญาตเนื้อหาที่มีการสร้างขึ้นใหม่ เลียนแบบ หรือใช้ประโยชน์จากเหตุการณ์โศกนาฏกรรมในโลกความจริงที่เฉพาะเจาะจง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IPViolation.Note",
+    "description": null,
+    "english": "Roblox does not permit users to violate intellectual property rights.",
+    "translation": "Roblox ไม่อนุญาตให้ผู้ใช้ละเมิดสิทธิ์ในทรัพย์สินทางปัญญา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ContestsandSweepstakes",
+    "description": null,
+    "english": "Contests and Sweepstakes",
+    "translation": "การแข่งขันและชิงโชค",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Advertising.Note",
+    "description": null,
+    "english": "Roblox does not permit ads that violate any Community Standards or Terms of Service.",
+    "translation": "Roblox ไม่อนุญาตให้มีโฆษณาที่ละเมิดมาตรฐานชุมชนหรือข้อกำหนดการใช้บริการใดๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyGivingPII.Note",
+    "description": null,
+    "english": "Roblox does not permit sharing Personal Identifiable Information in the form of full name, email address, passwords, physical address, telephone numbers, images of themselves, or unauthorized voice recordings of minors.",
+    "translation": "Roblox ไม่อนุญาตให้มีการแชร์ข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII) ในรูปแบบของชื่อจริง, ที่อยู่อีเมล, รหัสผ่าน, ที่อยู่, หมายเลขโทรศัพท์, ภาพของตนเอง หรือการบันทึกเสียงของผู้เยาว์โดยไม่ได้รับอนุญาต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.OffPlatformSpeechandBehavior.Note",
+    "description": null,
+    "english": "Roblox may moderate reported users with off-platform behavior associated with organized crime, terrorist groups, hate groups, sharing others' Personal Identifiable Information, including making false reports about users. ",
+    "translation": "Roblox อาจควบคุมผู้ใช้ที่ได้รับการรายงานว่ามีพฤติกรรมนอกแพลตฟอร์มเกี่ยวข้องกับการก่ออาชญากรรม กลุ่มผู้ก่อการร้าย กลุ่มที่แสดงความเกลียดชัง การแชร์ข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII) รวมถึงการรายงานเท็จเกี่ยวกับผู้ใช้ ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ThreatsorAbuseofRobloxEmployeesorAffiliates.Note",
+    "description": null,
+    "english": "Roblox does not permit real life threats or abuse of any Roblox Employees, Contractors, or Affiliates.",
+    "translation": "Roblox ไม่อนุญาตให้มีการคุกคามในชีวิตจริงหรือการละเมิดใดๆ ต่อพนักงาน ผู้รับจ้าง หรือผู้มีส่วนเกี่ยวข้องกับ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ThreatsOrAbuseOfRobloxEmployeesOrAffiliates",
+    "description": null,
+    "english": "Threats or Abuse of Roblox Employees or Affiliates",
+    "translation": "การคุกคามหรือละเมิดพนักงานหรือผู้มีส่วนเกี่ยวข้องกับ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RobloxEconomy",
+    "description": null,
+    "english": "Roblox Economy",
+    "translation": "เศรษฐกิจของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IrlDangerousActivities",
+    "description": null,
+    "english": "IRL Dangerous Activities",
+    "translation": "กิจกรรมที่ก่อให้เกิดอันตรายในชีวิตจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IpViolation",
+    "description": null,
+    "english": "IP Violation",
+    "translation": "ละเมิดทรัพย์สินทางปัญญา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.OffPlatformSpeechandBehavior",
+    "description": null,
+    "english": "Off Platform Speech and Behavior",
+    "translation": "การพูดและพฤติกรรมนอกแพลตฟอร์ต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ContestsandSweepstakes.Note",
+    "description": null,
+    "english": "Roblox does not permit contests or sweepstakes in the form of lottery style games or playing for free Robux.",
+    "translation": "Roblox ไม่อนุญาตให้มีการแข่งขันหรือชิงโชคในรูปแบบของล็อตเตอรี่หรือการเล่นเพื่อรับ Robux ฟรี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ViolentContentAndGore",
+    "description": null,
+    "english": "Violent Content and Gore",
+    "translation": "เนื้อหาที่มีความรุนแรงและการฟันแทง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Advertising",
+    "description": null,
+    "english": "Advertising",
+    "translation": "การโฆษณา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits.GameEngine.Note",
+    "description": "Cheats and Exploits note specific to Game Engine exploits",
+    "english": "Roblox does not permit the use of third-party software to modify the client.",
+    "translation": "Roblox ไม่อนุญาตให้ใช้ซอฟต์แวร์ภายนอกเพื่อแก้ไขไคลเอ็นต์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback",
+    "description": null,
+    "english": "Chargeback",
+    "translation": "การปฏิเสธการชำระเงิน",
     "isDeprecated": false
   },
   {
@@ -12424,6 +13496,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableCameraUpsell",
+    "description": null,
+    "english": "Enable Camera",
+    "translation": "เปิดใช้งานกล้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.CameraLearnMoreUpsell",
+    "description": null,
+    "english": "Learn More about Facial Animation Privacy",
+    "translation": "เรียนรู้เพิ่มเติมเกี่ยวกับความเป็นส่วนตัวของแอนิเมชันบนใบหน้า",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PurchasePrompt",
     "key": "Text.RemainingBalance",
     "description": "Footer text at the bottom of the modal, use to tell the user their balance after the purchase. The robux amount will be shown after the text.",
@@ -12581,6 +13669,190 @@
     "description": null,
     "english": "Personal Information Policy",
     "translation": "นโยบายเกี่ยวกับข้อมูลส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Ban1Day",
+    "description": "Title for the moderation prompt.",
+    "english": "Banned for 1 Day",
+    "translation": "ถูกแบน 1 วัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Ban3Day",
+    "description": "Title for the moderation prompt.",
+    "english": "Banned for 3 Days",
+    "translation": "ถูกแบน 3 วัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Feature.Moderation.Title.Ban7Day",
+    "description": "DEPRECATED",
+    "english": "Banned for 7 Day",
+    "translation": "ถูกแบน 7 วัน",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Ban7Day",
+    "description": "Title for the moderation prompt.",
+    "english": "Banned for 7 Days",
+    "translation": "ถูกแบน 7 วัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Ban14Day",
+    "description": "Title for the moderation prompt.",
+    "english": "Banned for 14 Days",
+    "translation": "ถูกแบน 14 วัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Delete",
+    "description": "Title for the moderation prompt.",
+    "english": "Account Deleted",
+    "translation": "ลบบัญชีแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Action.Reactivate",
+    "description": "Button text for re-activated a moderated account",
+    "english": "Re-activate My Account",
+    "translation": "เปิดใช้งานบัญชีของฉันอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Action.Agree",
+    "description": "Agree to the terms of service and community guidelines.",
+    "english": "I Agree",
+    "translation": "ฉันยอมรับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Link.CommunityGuidelines",
+    "description": "Roblox Community Guidelines Link Text",
+    "english": "Roblox Community Guidelines",
+    "translation": "แนวทางปฏิบัติสำหรับชุมชน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Link.TermsOfUse",
+    "description": "Terms of Use Link Text",
+    "english": "Terms of Use",
+    "translation": "ข้อกำหนดการใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Link.SupportForm",
+    "description": "Support Form Link Text",
+    "english": "Support Form",
+    "translation": "แบบฟอร์มบริการช่วยเหลือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.SubTitle",
+    "description": "The subtitle of the moderation prompt.",
+    "english": "Our content monitors have determined that your behavior at Roblox has been in violation of our Terms of Use.",
+    "translation": "ผู้ตรวจสอบเนื้อหาของเราได้พิจารณาแล้วว่าพฤติกรรมของคุณบน Roblox ละเมิดข้อกำหนดการใช้งานของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.ReviewedTitle",
+    "description": "Reviewed date title",
+    "english": "Reviewed",
+    "translation": "ตรวจสอบเมื่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.ModeratorNoteTitle",
+    "description": "Moderator note title.",
+    "english": "Moderator Note",
+    "translation": "บันทึกจากผู้ควบคุม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.CommunityGuideline",
+    "description": "Community guideline text",
+    "english": "Please abide by the Roblox Community Guidelines so that Roblox can be fun for users of all ages.",
+    "translation": "โปรดปฏิบัติตามแนวทางปฏิบัติสำหรับชุมชน Robox เพื่อให้ผู้ใช้ทุกวัยสามารถสนุกสนานไปกับการใช้ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.ReactivateAgreement",
+    "description": "Reactivate agreement text. The text before the community guidelines link",
+    "english": "You may re-activate your account by agreeing to our,",
+    "translation": "คุณสามารถเปิดใช้งานบัญชีของคุณอีกครั้งได้โดยการยอมรับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.AccountDisabledUntil",
+    "description": "Account disabled until a particular date.",
+    "english": "Your account has been disabled. You may re-activate it after,",
+    "translation": "บัญชีของคุณถูกปิดใช้งาน คุณสามารถเปิดใช้งานอีกครั้งได้หลังวันที่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.AccountTerminated",
+    "description": "Account terminated.",
+    "english": "Your account has been terminated.",
+    "translation": "บัญชีของคุณถูกยกเลิกแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.Appeal",
+    "description": "Tell the user that they can appeal their moderation.",
+    "english": "If you wish to appeal, please contact us via the Support Form.",
+    "translation": "หากคุณต้องการร้องเรียน โปรดติดต่อเราผ่านทางแบบฟอร์มบริการช่วยเหลือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Warn",
+    "description": "Title for the moderation prompt.",
+    "english": "Warning",
+    "translation": "คำเตือน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Title.Ban",
+    "description": "Title for the moderation prompt.",
+    "english": "Account Banned",
+    "translation": "บัญชีถูกแบน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.ReasonTitle",
+    "description": "The reason of moderation",
+    "english": "Reason",
+    "translation": "สาเหตุ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "Messages.OffensiveItemTitle",
+    "description": "The offensive item type that the user violates",
+    "english": "Offensive Item",
+    "translation": "ไอเท็มที่ไม่เหมาะสม",
     "isDeprecated": false
   },
   {
@@ -13528,6 +14800,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.Loading",
+    "key": "Text.PurchasingRobux",
+    "description": null,
+    "english": "Purchasing Robux...",
+    "translation": "กำลังสั่งซื้อ Robux...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Loading",
+    "key": "Text.PurchasingItem",
+    "description": null,
+    "english": "Purchasing item...",
+    "translation": "กำลังสั่งซื้อ ไอเท็ม...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Loading",
+    "key": "WaitingForPurchase",
+    "description": null,
+    "english": "Waiting for purchase...",
+    "translation": "กำลังรอการสั่งซื้อ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Loading",
+    "key": "WaitingForRobux",
+    "description": null,
+    "english": "Waiting for Robux to be granted...",
+    "translation": "กำลังรอรับ Robux...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Loading",
+    "key": "Text.WaitingForPurchase",
+    "description": null,
+    "english": "Waiting for purchase...",
+    "translation": "กำลังรอการสั่งซื้อ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Loading",
+    "key": "Text.WaitingForRobux",
+    "description": null,
+    "english": "Waiting for Robux to be granted...",
+    "translation": "กำลังรอรับ Robux...",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PurchaseError",
     "key": "Text.NotEnoughRobux",
     "description": null,
@@ -13662,6 +14982,22 @@
     "english": "Account Info",
     "translation": "ข้อมูลบัญชี",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "จำเป็นต้องตรวจสอบยืนยันตัวตน 2 ขั้นตอน",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "คุณต้องตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นตอนเพื่อดำเนินการนี้ให้เสร็จสิ้น นอกจากนี้การตั้งค่าดังกล่าวยังช่วยปกป้องการเข้าสู่ระบบ การสั่งซื้อและอื่นๆ อีกมากมายของคุณด้วย",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.TwoStepVerificationChallenge",
