@@ -776,6 +776,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Enter your parent's email address to receive a verification code.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -2138,7 +2146,7 @@
   {
     "namespace": "Authentication.AccountRecovery",
     "key": "LabelSubmit",
-    "description": null,
+    "description": "String for submit button for account recovery password flows.",
     "english": "Submit",
     "translation": "Submit",
     "isDeprecated": false
@@ -2229,6 +2237,14 @@
     "description": null,
     "english": "The account security ticket is expired.",
     "translation": "The account security ticket is expired.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "LabelPhone",
+    "description": null,
+    "english": "Phone",
+    "translation": "Phone",
     "isDeprecated": false
   },
   {
@@ -14705,10 +14721,90 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.AveragePrice",
+    "description": "The average price of an item in the catalog",
+    "english": "Average Price",
+    "translation": "Average Price",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SellCut",
+    "description": "Details what you'd earn. For example: \"You Earn: 100 robux\"",
+    "english": "You Earn:",
+    "translation": "You Earn:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MinimumAmount",
+    "description": "Describes the minimum amount of items you must sell.",
+    "english": "Minimum amount must be over 0.",
+    "translation": "Minimum amount must be over 0.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.Buy",
+    "description": "Action to buy an item",
+    "english": "Buy",
+    "translation": "Buy",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RobuxFee",
+    "description": "Text directly before the amount of robux Roblox takes as a fee. Example: \"After 30% Fee: R$100\"",
+    "english": "After {feePercentage}% Fee:",
+    "translation": "After {feePercentage}% Fee:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.BuyItem",
+    "description": null,
+    "english": "Buy Item",
+    "translation": "Buy Item",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "Cancel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.SellItem",
+    "description": "Heading for selling an item pop-up menu",
+    "english": "Sell Item",
+    "translation": "Sell Item",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Resellers",
+    "description": "Noun describing the people who are re-selling an item",
+    "english": "Resellers",
+    "translation": "Resellers",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Characters",
     "description": "Label for the \"Character\" category containing costumes/bundles",
     "english": "Characters",
     "translation": "Characters",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Get",
+    "description": "\"Get\" label that will be put on a buy button for a free item",
+    "english": "Get",
+    "translation": "Get",
     "isDeprecated": false
   },
   {
@@ -15313,6 +15409,38 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumberColon",
+    "description": "The serial number for a sale item.",
+    "english": "Serial Number:",
+    "translation": "Serial Number:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.SetPrice",
+    "description": "The heading for setting the price of an item for sale.",
+    "english": "Set Price",
+    "translation": "Set Price",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemInfo",
+    "description": "The heading above the information for an item in the catalog.",
+    "english": "Item Info",
+    "translation": "Item Info",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Overview",
+    "description": "The heading above a section giving overview information about an item.",
+    "english": "Overview",
+    "translation": "Overview",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.RecentlyCreated",
     "description": "Used for sorting items in the catalog",
     "english": "Recently Created",
@@ -15321,10 +15449,218 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.ResaleFeePolicy",
+    "description": "Title text appearing above a message stating the Roblox Resale Fee Policy when selling an item.",
+    "english": "Resale Fee Policy",
+    "translation": "Resale Fee Policy",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ResaleFeePolicy",
+    "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
+    "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
+    "translation": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.ItemOwned",
     "description": null,
     "english": "Item Owned",
     "translation": "Item Owned",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.GotIt",
+    "description": null,
+    "english": "Got It",
+    "translation": "Got It",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCount",
+    "description": "I.e. Item Owned (3)",
+    "english": "Item Owned ({itemCount})",
+    "translation": "Item Owned ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BuyPrice",
+    "description": null,
+    "english": "Buy Price:",
+    "translation": "Buy Price:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Holding",
+    "description": null,
+    "english": "Holding",
+    "translation": "Holding",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.OffSale",
+    "description": null,
+    "english": "Off Sale",
+    "translation": "Off Sale",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemInAHold",
+    "description": null,
+    "english": "Item in a hold?",
+    "translation": "Item in a hold?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.HoldingPolicy",
+    "description": null,
+    "english": "Holding Policy",
+    "translation": "Holding Policy",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicy",
+    "description": null,
+    "english": "After purchase, Collectible items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "After purchase, Collectible items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.OffSaleItem",
+    "description": null,
+    "english": "Off Sale Item",
+    "translation": "Off Sale Item",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Genres",
+    "description": null,
+    "english": "Genres",
+    "translation": "Genres",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tags",
+    "description": null,
+    "english": "Tags",
+    "translation": "Tags",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Updated",
+    "description": null,
+    "english": "Updated",
+    "translation": "Updated",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "Description",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ReadMore",
+    "description": null,
+    "english": "Read More",
+    "translation": "Read More",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.BuyNow",
+    "description": null,
+    "english": "Buy Now",
+    "translation": "Buy Now",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance after this transaction will be {remainingBalance}.",
+    "translation": "Your balance after this transaction will be {remainingBalance}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ItemInInventory",
+    "description": null,
+    "english": "This item is available in your inventory.",
+    "translation": "This item is available in your inventory.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BestPrice",
+    "description": null,
+    "english": "Best Price",
+    "translation": "Best Price",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMoreReseller",
+    "description": null,
+    "english": "See More {linkStart}{resellerLink}{linkEnd}",
+    "translation": "See More {linkStart}{resellerLink}{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.Wear",
+    "description": null,
+    "english": "Wear",
+    "translation": "Wear",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.BundlePurchase",
+    "description": "Would you like to buy the \"Penguin\" from Roblox for (Robux Icon) 50?",
+    "english": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "translation": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetPurchase",
+    "description": "Would you like to buy the hat \"Cowboy Hat\" from Roblox for (Robux Icon) 10?",
+    "english": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetGet",
+    "description": "Would you like to get the Hat \"Bowler Hat\" from Roblox for Free?",
+    "english": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Accessory",
+    "description": null,
+    "english": "Accessory",
+    "translation": "Accessory",
     "isDeprecated": false
   },
   {
@@ -57043,8 +57379,8 @@
     "namespace": "Feature.Transactions",
     "key": "Description.DownloadMonthInstructions",
     "description": "Description for 1 month",
-    "english": "Please select the month of the transactions you want to download.",
-    "translation": "Please select the month of the transactions you want to download.",
+    "english": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
+    "translation": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
     "isDeprecated": false
   },
   {
@@ -70117,6 +70453,14 @@
     "description": null,
     "english": "Failed To Load Page",
     "translation": "Failed To Load Page",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Action.ReportAbuse",
+    "description": null,
+    "english": "Report Abuse",
+    "translation": "Report Abuse",
     "isDeprecated": false
   },
   {
@@ -91032,6 +91376,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaCapacity",
+    "description": null,
+    "english": "Audio uploads are now free. You get {capacity} uploads per {duration}.",
+    "translation": "Audio uploads are now free. You get {capacity} uploads per {duration}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaLeft",
+    "description": null,
+    "english": "Audio uploads are now free. You have {quota} left until {duration}.",
+    "translation": "Audio uploads are now free. You have {quota} left until {duration}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioUploadQuotaLimit",
+    "description": null,
+    "english": "Audio uploads are now free. You've reached your audio upload limit.",
+    "translation": "Audio uploads are now free. You've reached your audio upload limit.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "TalentHub.Teams",
     "key": "Label.MyTeamPages",
     "description": null,
@@ -93387,8 +93755,8 @@
     "namespace": "CreatorDashboard.Access",
     "key": "Message.MarketPlaceFee",
     "description": null,
-    "english": "MarketPlace Fee({percentage}): ",
-    "translation": "MarketPlace Fee({percentage}): ",
+    "english": "Marketplace Fee({percentage}): ",
+    "translation": "Marketplace Fee({percentage}): ",
     "isDeprecated": false
   },
   {
