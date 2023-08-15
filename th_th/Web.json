@@ -14196,7 +14196,7 @@
     "key": "Message.UpdateOutfit",
     "description": null,
     "english": "Do you want to update this {outfitType1}? This will overwrite the {outfitType2} with your avatar's current appearance.",
-    "translation": "คุณต้องการอัปเดต {outfitType1} นี้หรือไม่? การดำเนินการนี้จะนำ {outfitType2} มาใช้กับรูปลักษณ์ปัจจุบันของอวาตาร์ของคุณ",
+    "translation": "คุณต้องการอัปเดตเป็น {outfitType1} นี้หรือไม่? การดำเนินการนี้จะเป็นการแทนที่ {outfitType2} ที่อวาตาร์ของคุณสวมใส่อยู่ในขณะนี้",
     "isDeprecated": false
   },
   {
@@ -14452,7 +14452,7 @@
     "key": "Label.BodyType",
     "description": null,
     "english": "Body Type",
-    "translation": "โครงสร้างของร่างกาย",
+    "translation": "ลักษณะของร่างกาย",
     "isDeprecated": false
   },
   {
@@ -14541,6 +14541,22 @@
     "description": null,
     "english": "Close",
     "translation": "ปิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisOutfit",
+    "description": null,
+    "english": "Do you want to update this outfit? This will overwrite the outfit with your avatar's current appearance.",
+    "translation": "คุณต้องการอัปเดตเป็นเครื่องแต่งกายนี้หรือไม่? การดำเนินการนี้จะเป็นการแทนที่เครื่องแต่งกายที่อวาตาร์ของคุณสวมใส่อยู่ในขณะนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCostume",
+    "description": "NOTE: Any instance of the word \"outfit\" will eventually be swapped out for \"costume\" This is not currently in the UI",
+    "english": "Do you want to update this costume? This will overwrite the costume with your avatar's current appearance.",
+    "translation": "คุณต้องการอัปเดตเป็นเครื่องแต่งกายนี้หรือไม่? การดำเนินการนี้จะเป็นการแทนที่เครื่องแต่งกายที่อวาตาร์ของคุณสวมใส่อยู่ในขณะนี้",
     "isDeprecated": false
   },
   {
@@ -14793,10 +14809,178 @@
   },
   {
     "namespace": "Feature.Avatar",
+    "key": "Label.Free",
+    "description": "Text label for recommended items",
+    "english": "Free",
+    "translation": "ฟรี",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.OffSale",
+    "description": "Text label for recommended items",
+    "english": "Off sale",
+    "translation": "ปิดการขาย",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.PresetCostumesDelay",
+    "description": "One-time message that appears to the user first time they visit the Preset Costumes tab. The delay is caused by initial migration.",
+    "english": "Note: We're doing some housekeeping, so it may take a few minutes for all your costumes to appear. Check again in a bit!",
+    "translation": "หมายเหตุ: เรากำลังดูแลจัดการบางอย่างกับระบบ ดังนั้นอาจใช้เวลาสองสามนาทีในการแสดงเครื่องแต่งกายทั้งหมดของคุณ โปรดกลับมาอีกครั้งในอีกสักครู่!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.Equip",
+    "description": null,
+    "english": "Equip",
+    "translation": "ใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ChooseEmoteSlot",
+    "description": null,
+    "english": "Choose a slot",
+    "translation": "เลือกช่องที่ต้องการ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.YourEmotes",
+    "description": null,
+    "english": "Your Emotes",
+    "translation": "ท่าทางของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorLoadEmotes",
+    "description": null,
+    "english": "Failed to load emotes.",
+    "translation": "โหลดท่าทางไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.FailedDeleteEmote",
+    "description": null,
+    "english": "Failed to delete emote.",
+    "translation": "ลบท่าทางไม่สำเร็จ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorDeleteEmote",
+    "description": null,
+    "english": "Failed to delete emote.",
+    "translation": "ลบท่าทางไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorUpdateEmote",
+    "description": null,
+    "english": "Updating emote slot failed, please try again later.",
+    "translation": "อัปเดตช่องของท่าทางไม่สำเร็จ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.SuccessEquipEmote",
+    "description": null,
+    "english": "Equipped Emote",
+    "translation": "ใช้งานท่าทางแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorUnequipEmote",
+    "description": null,
+    "english": "Failed to unequip emote.",
+    "translation": "เลิกใช้งานท่าทางไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorEquipEmote",
+    "description": null,
+    "english": "Failed to equip emote, please try again later.",
+    "translation": "ใช้งานท่าทางไม่สำเร็จ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.SuccessUnequipEmote",
+    "description": null,
+    "english": "Unequipped emote",
+    "translation": "เลิกใช้งานท่างทางแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "label.Emotes",
+    "description": null,
+    "english": "Emotes",
+    "translation": "ท่าทาง",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.Emotes",
+    "description": null,
+    "english": "Emotes",
+    "translation": "ท่าทาง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.EquipEmotes",
+    "description": null,
+    "english": "Equip Emotes",
+    "translation": "ใช้งานท่าทางแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ChooseEmote",
+    "description": null,
+    "english": "Choose an Emote",
+    "translation": "เลือกท่าทาง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.R6",
+    "description": "The number of avatar joints.\nFor Chinese please use \"6 型号\"",
+    "english": "R6",
+    "translation": "R6",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.R15",
+    "description": "The number of avatar joints.\nFor Chinese please use \"15 型号\"",
+    "english": "R15",
+    "translation": "R15",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
     "key": "Message.EmotesInstructions",
     "description": "The instructions describe the navigation flow within the Avatar Editor to equip an emote.",
     "english": "Go to \"Animations\" > \"Emotes\" > \"Equip Emotes\" to equip an emote.",
-    "translation": "ไปที่ \"แอนิเมชัน\" > \"ท่าทาง\" > \"ใช้ท่าทาง\" เพื่อใช้ท่าทาง",
+    "translation": "ไปที่ \"แอนิเมชัน\" > \"ท่าทาง\" > \"ใช้งานท่าทาง\" เพื่อใช้ท่าทาง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ChooseEmoteSlotOrEmote",
+    "description": null,
+    "english": "Choose a slot or an Emote",
+    "translation": "เลือกช่องหรือท่าทาง",
     "isDeprecated": false
   },
   {
@@ -14805,6 +14989,14 @@
     "description": null,
     "english": "Body Style",
     "translation": "รูปแบบของร่างกาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.R6R15",
+    "description": "A label for the button that switches between R6 and R15.",
+    "english": "R6/R15",
+    "translation": "R6/R15",
     "isDeprecated": false
   },
   {
