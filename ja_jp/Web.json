@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントのメールによる2段階認証プロセスが無効化されました。 ログインなど一部の動作には、セキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
+    "translation": "{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントのメールによる2段階認証プロセスが無効化されました。 ログインなど一部の動作には、Eメールからのセキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}のメールによる2段階認証プロセスが無効化されました。 お子様がログインする時など一部の動作には、セキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
+    "translation": "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}のメールによる2段階認証プロセスが無効化されました。 お子様がログインする時など一部の動作には、Eメールからのセキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
     "isDeprecated": false
   },
   {
@@ -23832,6 +23832,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.FacebookSetPasswordUpsellText",
+    "description": null,
+    "english": "⚠️ We noticed you logged in with Facebook which is no longer supported. Please add a password so you don’t get locked out.",
+    "translation": "⚠️ Facebook でログインされていたようですが、現在は対応しておりません。ロックアウトされないようにするには、パスワードを追加してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.SetPassword",
+    "description": null,
+    "english": "Set a Password",
+    "translation": "パスワードを設定",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.DesktopPushNotificationPrompts",
     "key": "Message.SendNotificationsPrompt",
     "description": "Can we send you notifications on this computer?",
@@ -33220,7 +33236,7 @@
     "key": "Description.BuyLuobuRobuxSubtitle",
     "description": "Based on Description.BuyRobuxSubtitle, removed premium part.",
     "english": "Get Robux to purchase upgrades for your avatar or buy special abilities in games. For more information on how to earn Robux, visit our {helpLinkStart}Robux Help page{helpLinkEnd}.",
-    "translation": "アバター用のアップグレードやゲーム内で特殊能力などを購入するには、Robuxをゲットしましょう。Robuxの獲得方法についての詳しい情報は、 {helpLinkStart}Robux ヘルプページ{helpLinkEnd} へ。",
+    "translation": "Get アバター用のアップグレードやゲーム内で特殊能力などを購入するには、Robuxをゲットしましょう。Robuxの獲得方法についての詳しい情報は、 {helpLinkStart}Robux ヘルプページ{helpLinkEnd} へ。",
     "isDeprecated": false
   },
   {
@@ -33340,7 +33356,7 @@
     "key": "Description.DoesThisGameContainBathroomHumor",
     "description": "Answer choices are \"No\", \"Infrequently\", \"Frequently\"",
     "english": "Does this game contain bathroom humor?",
-    "translation": "この体験には、排泄物ネタは含まれていますか？",
+    "translation": "このゲームには、下ネタはありますか？",
     "isDeprecated": true
   },
   {
@@ -33356,7 +33372,7 @@
     "key": "Description.DoesThisGameContainSimulatedGamblingOrPaidLootBoxes",
     "description": "Answer choices are \"No\", \"Yes\"",
     "english": "Does this game contain simulated gambling or paid loot boxes?",
-    "translation": "この体験には、ギャンブルを真似たものや有料ガチャがありますか？",
+    "translation": "このゲームには、シミュレートされたギャンブル要素や有料ガチャがありますか？",
     "isDeprecated": true
   },
   {
@@ -34992,6 +35008,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.AccountIntegrityAutomatedPunishmentModeratorNote",
+    "description": "Message displayed to user as the Moderator Note when punishments are done via the Account Integrity Processor.",
+    "english": "You have been banned due to violations of our terms of use.",
+    "translation": "当社の利用規約に違反したためアクセス禁止になりました。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameLocalization",
     "key": "Label.Title",
     "description": "Game Title (or Name) field label, corresponding text area editable by game developer",
@@ -36100,7 +36124,7 @@
     "key": "Label.MostEngaging",
     "description": null,
     "english": "Most Engaging",
-    "translation": "みんなが夢中",
+    "translation": "みんなが夢中のゲーム",
     "isDeprecated": false
   },
   {
@@ -36156,7 +36180,7 @@
     "key": "Label.UpAndComing",
     "description": null,
     "english": "Up-and-Coming",
-    "translation": "話題の新作",
+    "translation": "話題の新作ゲーム",
     "isDeprecated": false
   },
   {
@@ -41061,6 +41085,22 @@
     "description": "Heading for open cloud permissions",
     "english": "Open Cloud",
     "translation": "クラウドを開く",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Heading.GroupNameChangeSubject",
+    "description": "Subject line for direct message regarding group name change",
+    "english": "Group Name Changed: {previousGroupName}",
+    "translation": "グループ名が変更されました: {previousGroupName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Description.GroupNameChangeBody",
+    "description": null,
+    "english": "{oldName} has been renamed to {newName}. You can visit the group here: {groupLink}",
+    "translation": "{oldName} の名前が {newName} に変更されました。グループへの訪問はこちらから: {groupLink}",
     "isDeprecated": false
   },
   {
@@ -56496,6 +56536,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat",
+    "description": "Heading of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Enable Voice Chat",
+    "translation": "ボイスチャットを有効化",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UsesVoiceChat",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "この体験は、ボイスチャットを使用しています。ボイスチャットを有効化するとボイスが有効化済みの体験でマイク入力を使用します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleInstruction",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "You can also toggle this feature on or off by accessing your Settings.",
+    "translation": "設定にアクセスして、この機能をオンかオフに切り換えもできます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithout",
+    "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Join Without Voice Chat",
+    "translation": "ボイスチャットなしで参加",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameLocalization",
     "key": "Heading.Localization",
     "description": null,
@@ -56764,7 +56836,7 @@
     "key": "Label.NDaysExpiration",
     "description": "For the open cloud expiration date picker. daysLastUsed will never be singular (i.e. always > 1).",
     "english": "{daysLastUsed} Days From Now",
-    "translation": "今日から {daysLastUsed} 日後",
+    "translation": "今から {daysLastUsed} 日",
     "isDeprecated": false
   },
   {
