@@ -1641,10 +1641,26 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.VerifyWithSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in. When prompted, touch your key or use biometrics on this device.",
+    "translation": "Utilise ta clé de sécurité pour te connecter. Lorsque tu y es invité, appuie sur ta clé ou utilise des données biométriques sur cet appareil.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Label.SecurityKeyMediaType",
     "description": null,
     "english": "Security Key",
     "translation": "Clé de sécurité",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UseSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.{lineBreak}When prompted, touch your key or use biometrics on this device.",
+    "translation": "Utilise ta clé de sécurité pour te connecter. {lineBreak}Lorsque tu y es invité, appuie sur ta clé ou utilise des données biométriques sur cet appareil.",
     "isDeprecated": false
   },
   {
@@ -11528,6 +11544,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.PhoneHasTooManyAssociatedAccounts",
+    "description": null,
+    "english": "You’ve reached the maximum number of accounts linked to one phone number.",
+    "translation": "Tu as atteint le nombre maximum de comptes liés à un numéro de téléphone.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NumSyncedContacts",
+    "description": null,
+    "english": "You have {numDays, plural, =0 {no synced contacts} =1 {# synced contact available} other {# synced contacts available}}.",
+    "translation": "Tu as {numDays, plural,=0 {aucun contact synchronisé}=1 {=1#contact synchronisé disponible} other {#contacts synchronisés disponibles}}.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -16515,7 +16547,7 @@
     "namespace": "Feature.GameDetails",
     "key": "Label.Unavailable",
     "description": "Unavailable is used to indicate that Age Guidelines are not available at all. Maybe used for something else.",
-    "english": "Unavailable",
+    "english": "N/A",
     "translation": "Indisponible",
     "isDeprecated": false
   },
@@ -21988,7 +22020,7 @@
     "key": "Label.Robux",
     "description": "Purchases Using Robux",
     "english": "Purchases Using Robux",
-    "translation": "Robux",
+    "translation": "Achats utilisant Robux",
     "isDeprecated": false
   },
   {
@@ -24045,6 +24077,78 @@
     "description": null,
     "english": "2-Step Verification is required to make further transactions. Go to your Security page to enable and complete 2-Step Verification.",
     "translation": "La vérification en deux étapes est nécessaire pour effectuer d'autres transactions. Rendez-vous sur votre page Sécurité pour activer et compléter la vérification en deux étapes.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "Insufficient Robux",
+    "translation": "Pas assez de Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "{divTagStart}You need an additional {robuxNeeded}. Would you like to buy a {robuxPackageAmount} package?{divTagEnd}{lineBreak}{divTagStart}Your payment method will be charged. Roblox {aTagStart}Terms of Use{aTagEnd} apply.{divTagEnd}",
+    "translation": "{divTagStart}Tu as besoin d'un {robuxNeeded}supplémentaire. Veux-tu acheter un package {robuxPackageAmount} ?{divTagEnd}{lineBreak}{divTagStart}Ton mode de paiement sera facturé. Les conditions d'utilisation de Roblox {aTagStart}{aTagEnd} s'appliquent.{divTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BuyRobuxAndItem",
+    "description": "new upsell modal",
+    "english": "Buy Robux and Item",
+    "translation": "Acheter Robux et Article",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Purchase Succeeded",
+    "translation": "Achat réussi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Now you own {assetName}!",
+    "translation": "Maintenant tu possèdes {assetName} !",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceededToBalance",
+    "description": "new upsell suc modal",
+    "english": "{robuxLeft} has been credited to your balance.",
+    "translation": "{robuxLeft} a été crédité sur ton solde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BackToShop",
+    "description": "new upsell suc modal",
+    "english": "Back to Shop",
+    "translation": "Retour à la boutique",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.EquipMyAvatar",
+    "description": "new upsell suc modal",
+    "english": "Equip My Avatar",
+    "translation": "Équiper mon avatar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PurchasingTheItem",
+    "description": "new upsell loading",
+    "english": "Purchasing the item...",
+    "translation": "Achat de l'article...",
     "isDeprecated": false
   },
   {
@@ -30528,6 +30632,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "TrackerPrompt.VideoNoPermission",
+    "description": "The Face Chat feature requires a camera to track the user's facial expressions.",
+    "english": "Face Chat Requires Camera",
+    "translation": "Le chat face requiert une caméra",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -32269,6 +32381,22 @@
     "description": null,
     "english": "Bundles",
     "translation": "Ensembles",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.ClassicHeads",
+    "description": null,
+    "english": "Classic Heads",
+    "translation": "Têtes classiques",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.LiveHeads",
+    "description": null,
+    "english": "Live Heads",
+    "translation": "Têtes Live",
     "isDeprecated": false
   },
   {
@@ -52192,6 +52320,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.Evidence.VoiceRecording",
+    "description": "Shown as an offensive item when the player is moderated due to a voice chat conversation.",
+    "english": "Voice chat conversation on {date} at {time} in {experienceName}",
+    "translation": "Discussion vocale le {date} à {time} dans {experienceName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Transactions",
     "key": "Heading.Title",
     "description": null,
@@ -68200,6 +68336,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyAdded",
+    "description": "Entries that have been recently added for translations",
+    "english": "Recently Added Entries",
+    "translation": "Entrées récemment ajoutées",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecency",
+    "description": null,
+    "english": "Newest to Oldest Entries",
+    "translation": "Entrées les plus récentes vers les plus anciennes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyModifiedTranslations",
+    "description": "Translations that have been recently updated by a user or by automatic translations",
+    "english": "Recently Modified Translations",
+    "translation": "Traductions récemment modifiées",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -69384,6 +69544,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.AttributeInheritedFrom",
+    "description": null,
+    "english": "{attribute} inherited from {name}",
+    "translation": "{attribute} hérité de {name}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CSModSites.CSWebsite",
     "key": "RtbfDefaultMessageBodyTemplate",
     "description": null,
@@ -70284,7 +70452,7 @@
     "key": "Label.PrivacyTermsUrl",
     "description": "label for the application creation page privacy terms url text input box",
     "english": "Privacy Policy URL",
-    "translation": "URL des conditions de confidentialité",
+    "translation": "URL de la politique de confidentialité",
     "isDeprecated": false
   },
   {
@@ -71133,6 +71301,14 @@
     "description": null,
     "english": "The requested application name is not available. Application names must be unique",
     "translation": "Le nom de l'application demandée n'est pas disponible. Le nom de l'application doit être unique",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InappropriateAppName",
+    "description": null,
+    "english": "The application name contained inappropriate text",
+    "translation": "Le nom de l'application contenait un texte inapproprié",
     "isDeprecated": false
   },
   {
@@ -73301,6 +73477,14 @@
     "description": null,
     "english": "Limits",
     "translation": "Limitations",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Description.LimitsDescription",
+    "description": null,
+    "english": "Per API Key: {maxInPeriod} requests every {periodInSeconds} seconds per IP Address",
+    "translation": "Par clé API : {maxInPeriod} demande toutes les {periodInSeconds} secondes par adresse IP",
     "isDeprecated": false
   },
   {

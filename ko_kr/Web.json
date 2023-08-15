@@ -1641,10 +1641,26 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.VerifyWithSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in. When prompted, touch your key or use biometrics on this device.",
+    "translation": "보안 키를 사용해 로그인하세요. 메시지가 표시되면 키를 터치하거나 기기의 생체 인식을 사용하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Label.SecurityKeyMediaType",
     "description": null,
     "english": "Security Key",
     "translation": "보안 키",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UseSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.{lineBreak}When prompted, touch your key or use biometrics on this device.",
+    "translation": "보안 키를 사용해 로그인하세요.{lineBreak}메시지가 표시되면 키를 터치하거나 기기의 생체 인식을 사용하세요.",
     "isDeprecated": false
   },
   {
@@ -11528,6 +11544,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.PhoneHasTooManyAssociatedAccounts",
+    "description": null,
+    "english": "You’ve reached the maximum number of accounts linked to one phone number.",
+    "translation": "한 휴대폰 번호에 연결 가능한 최대 계정 수에 도달했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NumSyncedContacts",
+    "description": null,
+    "english": "You have {numDays, plural, =0 {no synced contacts} =1 {# synced contact available} other {# synced contacts available}}.",
+    "translation": "{numDays, plural, =0 {동기화된 연락처가 없습니다} =1 {#개의 동기화된 연락처를 사용할 수 있습니다} other {#개의 동기화된 연락처를 사용할 수 있습니다}}.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -12644,7 +12676,7 @@
     "key": "LabelAccessoryFront",
     "description": null,
     "english": "Front",
-    "translation": "가슴",
+    "translation": "전면",
     "isDeprecated": false
   },
   {
@@ -12652,7 +12684,7 @@
     "key": "LabelAccessoryBack",
     "description": null,
     "english": "Back",
-    "translation": "등",
+    "translation": "후면",
     "isDeprecated": false
   },
   {
@@ -16515,7 +16547,7 @@
     "namespace": "Feature.GameDetails",
     "key": "Label.Unavailable",
     "description": "Unavailable is used to indicate that Age Guidelines are not available at all. Maybe used for something else.",
-    "english": "Unavailable",
+    "english": "N/A",
     "translation": "사용할 수 없음",
     "isDeprecated": false
   },
@@ -21988,7 +22020,7 @@
     "key": "Label.Robux",
     "description": "Purchases Using Robux",
     "english": "Purchases Using Robux",
-    "translation": "Robux",
+    "translation": "Robux를 사용해 구매",
     "isDeprecated": false
   },
   {
@@ -24045,6 +24077,78 @@
     "description": null,
     "english": "2-Step Verification is required to make further transactions. Go to your Security page to enable and complete 2-Step Verification.",
     "translation": "추가 거래를 하려면 2단계 인증이 되어 있어야 합니다. '보안' 페이지로 이동해 2단계 인증을 활성화하고 완료하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "Insufficient Robux",
+    "translation": "Robux가 부족합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "{divTagStart}You need an additional {robuxNeeded}. Would you like to buy a {robuxPackageAmount} package?{divTagEnd}{lineBreak}{divTagStart}Your payment method will be charged. Roblox {aTagStart}Terms of Use{aTagEnd} apply.{divTagEnd}",
+    "translation": "{divTagStart}{robuxNeeded}가 추가로 필요합니다. {robuxPackageAmount} 패키지를 구매하시겠어요?{divTagEnd}{lineBreak}{divTagStart}지정한 결제 수단으로 요금이 청구됩니다. Roblox {aTagStart}이용 약관{aTagEnd}이 적용됩니다.{divTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BuyRobuxAndItem",
+    "description": "new upsell modal",
+    "english": "Buy Robux and Item",
+    "translation": "Robux 및 아이템 구매",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Purchase Succeeded",
+    "translation": "구매 완료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Now you own {assetName}!",
+    "translation": "{assetName}을(를) 획득했어요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceededToBalance",
+    "description": "new upsell suc modal",
+    "english": "{robuxLeft} has been credited to your balance.",
+    "translation": "{robuxLeft}가 잔액에 추가되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BackToShop",
+    "description": "new upsell suc modal",
+    "english": "Back to Shop",
+    "translation": "상점으로 돌아가기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.EquipMyAvatar",
+    "description": "new upsell suc modal",
+    "english": "Equip My Avatar",
+    "translation": "아바타에 장착",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PurchasingTheItem",
+    "description": "new upsell loading",
+    "english": "Purchasing the item...",
+    "translation": "아이템 구매 중...",
     "isDeprecated": false
   },
   {
@@ -28588,7 +28692,7 @@
     "key": "Label.Front",
     "description": null,
     "english": "Front",
-    "translation": "가슴",
+    "translation": "전면",
     "isDeprecated": false
   },
   {
@@ -28596,7 +28700,7 @@
     "key": "Label.Back",
     "description": null,
     "english": "Back",
-    "translation": "등",
+    "translation": "후면",
     "isDeprecated": false
   },
   {
@@ -28684,7 +28788,7 @@
     "key": "Label.FrontAccessories",
     "description": null,
     "english": "Front Accessories",
-    "translation": "가슴 장신구",
+    "translation": "전면 장신구",
     "isDeprecated": false
   },
   {
@@ -28692,7 +28796,7 @@
     "key": "Label.BackAccessories",
     "description": null,
     "english": "Back Accessories",
-    "translation": "등 장신구",
+    "translation": "후면 장신구",
     "isDeprecated": false
   },
   {
@@ -30536,6 +30640,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "TrackerPrompt.VideoNoPermission",
+    "description": "The Face Chat feature requires a camera to track the user's facial expressions.",
+    "english": "Face Chat Requires Camera",
+    "translation": "페이스 채팅에는 카메라가 필요합니다",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -31572,7 +31684,7 @@
     "key": "Label.Front",
     "description": "This is the front of a person. The user has an avatar which has a front.",
     "english": "Front",
-    "translation": "가슴",
+    "translation": "전면",
     "isDeprecated": false
   },
   {
@@ -31580,7 +31692,7 @@
     "key": "Label.Back",
     "description": "This is the back of a person. The user has an avatar which has a back.",
     "english": "Back",
-    "translation": "등",
+    "translation": "후면",
     "isDeprecated": false
   },
   {
@@ -32028,7 +32140,7 @@
     "key": "Label.BackAccessory",
     "description": null,
     "english": "Back Accessory",
-    "translation": "등 장신구",
+    "translation": "후면 장신구",
     "isDeprecated": false
   },
   {
@@ -32044,7 +32156,7 @@
     "key": "Label.FrontAccessory",
     "description": null,
     "english": "Front Accessory",
-    "translation": "가슴 장신구",
+    "translation": "전면 장신구",
     "isDeprecated": false
   },
   {
@@ -32140,7 +32252,7 @@
     "key": "Label.FrontAccessories",
     "description": null,
     "english": "Front Accessories",
-    "translation": "가슴 장신구",
+    "translation": "전면 장신구",
     "isDeprecated": false
   },
   {
@@ -32148,7 +32260,7 @@
     "key": "Label.BackAccessories",
     "description": null,
     "english": "Back Accessories",
-    "translation": "등 장신구",
+    "translation": "후면 장신구",
     "isDeprecated": false
   },
   {
@@ -32277,6 +32389,22 @@
     "description": null,
     "english": "Bundles",
     "translation": "번들",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.ClassicHeads",
+    "description": null,
+    "english": "Classic Heads",
+    "translation": "기본 머리",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.LiveHeads",
+    "description": null,
+    "english": "Live Heads",
+    "translation": "라이브 헤드",
     "isDeprecated": false
   },
   {
@@ -52224,6 +52352,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.Evidence.VoiceRecording",
+    "description": "Shown as an offensive item when the player is moderated due to a voice chat conversation.",
+    "english": "Voice chat conversation on {date} at {time} in {experienceName}",
+    "translation": "{date} {time} {experienceName}의 음성 채팅 대화",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Transactions",
     "key": "Heading.Title",
     "description": null,
@@ -55364,7 +55500,7 @@
     "key": "Label.FrontAccessories",
     "description": "Full name for menu option under \"Accessories\"",
     "english": "Front Accessories",
-    "translation": "가슴 장신구",
+    "translation": "전면 장신구",
     "isDeprecated": false
   },
   {
@@ -55372,7 +55508,7 @@
     "key": "Label.BackAccessories",
     "description": "Full name for menu option under \"Accessories\"",
     "english": "Back Accessories",
-    "translation": "등 장신구",
+    "translation": "후면 장신구",
     "isDeprecated": false
   },
   {
@@ -55412,7 +55548,7 @@
     "key": "Label.Back",
     "description": "Menu option under \"Accessories\"",
     "english": "Back",
-    "translation": "등",
+    "translation": "후면",
     "isDeprecated": false
   },
   {
@@ -55428,7 +55564,7 @@
     "key": "Label.Front",
     "description": "Menu option under \"Accessories\"",
     "english": "Front",
-    "translation": "가슴",
+    "translation": "전면",
     "isDeprecated": false
   },
   {
@@ -68232,6 +68368,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyAdded",
+    "description": "Entries that have been recently added for translations",
+    "english": "Recently Added Entries",
+    "translation": "최근 추가된 항목",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecency",
+    "description": null,
+    "english": "Newest to Oldest Entries",
+    "translation": "최신 항목순",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyModifiedTranslations",
+    "description": "Translations that have been recently updated by a user or by automatic translations",
+    "english": "Recently Modified Translations",
+    "translation": "최근 수정된 번역",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -69413,6 +69573,14 @@
     "description": null,
     "english": "Math Operations",
     "translation": "수학 연산",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.AttributeInheritedFrom",
+    "description": null,
+    "english": "{attribute} inherited from {name}",
+    "translation": "{name}에서 상속된 {attribute}",
     "isDeprecated": false
   },
   {
@@ -71165,6 +71333,14 @@
     "description": null,
     "english": "The requested application name is not available. Application names must be unique",
     "translation": "요청한 응용 프로그램 이름을 사용할 수 없습니다. 응용 프로그램 이름은 중복될 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InappropriateAppName",
+    "description": null,
+    "english": "The application name contained inappropriate text",
+    "translation": "응용 프로그램 이름에 부적절한 텍스트가 포함되어 있습니다",
     "isDeprecated": false
   },
   {
@@ -73317,6 +73493,14 @@
     "description": null,
     "english": "Limits",
     "translation": "한도",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Description.LimitsDescription",
+    "description": null,
+    "english": "Per API Key: {maxInPeriod} requests every {periodInSeconds} seconds per IP Address",
+    "translation": "각 API 키별: IP 주소당 {periodInSeconds}초마다 {maxInPeriod} 요청",
     "isDeprecated": false
   },
   {
