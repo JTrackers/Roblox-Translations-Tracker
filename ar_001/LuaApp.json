@@ -476,7 +476,7 @@
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
-    "translation": "سيتم ربط حسابك في Roblox بحسابك في {platform}. وفي المرة القادمة التي تنضم فيها، سنسجّل دخولك تلقائيًا! يمكنك إلغاء الارتباط من شاشة الإعدادات في أي وقت. قد يمر بعض الوقت بحيث لن تكون قادراً على الربط بحساب جديد.",
+    "translation": "سيتم ربط حسابك في Roblox بحسابك على {platform}. وفي المرة القادمة التي تنضم فيها، سنسجّل دخولك تلقائيًا. يمكنك إلغاء الارتباط من شاشة الإعدادات في أي وقت. قد يمر بعض الوقت بحيث لن تكون قادرًا على الربط بحساب جديد.",
     "isDeprecated": false
   },
   {
@@ -1368,6 +1368,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.Presence",
+    "key": "Label.Invisible",
+    "description": "For users who have explicitly chosen to appear offline",
+    "english": "Invisible",
+    "translation": "غير مرئي",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.VisitGame",
     "key": "Label.Play",
     "description": null,
@@ -1380,7 +1388,7 @@
     "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
     "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
     "english": "This experience is restricted by your Parental Controls > Allowed Experiences setting.",
-    "translation": "هذه التجربة غير متوفرة بسبب إعدادات حسابك.",
+    "translation": "هذه التجربة مقيدة بخيار رقابة الوالدين > إعدادات التجارب المسموح بها.",
     "isDeprecated": false
   },
   {
@@ -2758,6 +2766,46 @@
     "english": "Allowed Experiences",
     "translation": "التجارب المسموح بها",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "تحقق من عمرك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ToAccountInfo",
+    "description": null,
+    "english": "Go to Account Info",
+    "translation": "انتقل إلى \"معلومات الحساب\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NeedIdVerification",
+    "description": null,
+    "english": "To gain access to 17+ content, you must verify that you are 17 years old or older.",
+    "translation": "للوصول إلى المحتوى المخصص للأعمار 17+، يتعين عليك إثبات أن عمرك 17 سنة أو أكثر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.Accessibility",
+    "description": "Heading for the Accessibility Settings page",
+    "english": "Accessibility",
+    "translation": "إمكانية الوصول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerfiyAgeConsent",
+    "description": "The legal consent a user agrees to by choosing to verify their age on roblox.com.",
+    "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
+    "translation": "بالنقر على 'تحقق من عمري' سوف تكمل عملية التحقق من الهوية التي يقوم بتشغيلها موفر الخدمة لطرف ثالث. كما توافق على جمع واستخدام ومشاركة بياناتك القياسية الحيوية كما هو مبين في {linkStart}إشعار خصوصية المقاييس الحيوية{linkEnd}.",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Catalog",
@@ -10824,6 +10872,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.QuantityLimitReached",
+    "description": "Purchase reached the limit of how many items the user can own.",
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "عذرًا. لقد وصع المصمم حدًّا لعدد النسخ التي يمكن لمستخدم واحد شراؤها منه.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.GameSorts",
     "key": "Label.ContinuePlaying",
     "description": null,
@@ -10837,6 +10893,14 @@
     "description": null,
     "english": "Favorites",
     "translation": "المفضلة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.17Plus",
+    "description": "17 plus game sort, for users above 17 years old",
+    "english": "Exclusive For Ages 17+",
+    "translation": "حصريا للأعمار 17+",
     "isDeprecated": false
   },
   {
@@ -13836,7 +13900,7 @@
     "key": "Label.QrInstructions",
     "description": null,
     "english": "Scan this QR code from your logged in device's camera.",
-    "translation": "قم بمسح رمز QR هذا من جهازك المسجل.",
+    "translation": "امسح رمز QR بواسطة كاميرا الجهاز الذي سجلت منه الدخول.",
     "isDeprecated": false
   },
   {
@@ -13877,6 +13941,46 @@
     "description": null,
     "english": "QR Code Log In",
     "translation": "تسجيل دخول رمز QR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationWithIcons",
+    "description": null,
+    "english": "{settingsIcon} or {moreIcon} <b> > Quick Log In</b> to enter this code on that device.",
+    "translation": "{settingsIcon} أو {moreIcon}<b>تسجيل دخول سريع</b>لإدخال هذا الكود على ذلك الجهاز.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.ConfirmAndLoginAs",
+    "description": "Tell user they are being logged in through cross device login",
+    "english": "Confirming login as %s on your other device",
+    "translation": "تأكيد تسجيل دخولك %s على جهازك الآخر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.QrCodeError",
+    "description": "Error message when a QR code cannot display on the login page.",
+    "english": "We are having problems displaying a QR Code. Please refresh this page, or follow the instructions below to log in on another device.",
+    "translation": "نواجه مشكلة في عرض رمز QR. الرجاء تحديث هذه الصفحة أو اتباع التعليمات أدناه لتسجيل الدخول على جهاز آخر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationV2",
+    "description": "Text for directing user to the right location for putting in code for cross device log in",
+    "english": "<b>More Page > Quick Log In</b> to enter your code.",
+    "translation": "<b>صفحة \"المزيد\" > تسجيل دخول سريع</b> لإدخال الكود.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginInstructionsV2",
+    "description": "Updated instructions for cross device login",
+    "english": "Open your Roblox app and go to:",
+    "translation": "افتح تطبيق Roblox ثم انتقل إلى:",
     "isDeprecated": false
   },
   {
@@ -15672,6 +15776,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.PreferredTransparency",
+    "description": "Describes the Preferred Transparency user setting",
+    "english": "Improve contrast by adjusting transparency on some backgrounds",
+    "translation": "تحسين التباين بتعديل الشفافية في بعض الخلفيات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.ReducedMotion",
+    "description": "Describes the Reduce Motion user setting",
+    "english": "Stop or reduce motion effects",
+    "translation": "إيقاف أو تقليل تأثيرات الحركة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.UiNavigationKeyBind",
+    "description": "Describes the Ui Navigation Toggle user setting",
+    "english": "Use the {uiNavigationKey} key to enter and exit UI navigation mode",
+    "translation": "استخدم مفتاح {uiNavigationKey} للدخول والخروج من وضع التنقل في واجهة المستخدم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Heading.PreferredTransparency",
+    "description": "Label for the Background Transparency user setting slider",
+    "english": "Background Transparency",
+    "translation": "شفافية الخلفية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Heading.ReducedMotion",
+    "description": "Label for the Reduce Motion user setting toggle",
+    "english": "Reduce Motion",
+    "translation": "تقليل الحركة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Heading.UiNavigationKeyBind",
+    "description": "Label for the Enable UI Navigation Toggle user setting toggle",
+    "english": "UI Navigation Toggle",
+    "translation": "UI Navigation Toggle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.Main",
+    "description": "Description of the Accessibility Page",
+    "english": "These settings apply across Roblox. You can also adjust graphics, movement, and accessibility from the Settings menu in an experience.",
+    "translation": "تنطبق هذه الإعدادات على كافة Roblox. يمكنك أيضًا ضبط الرسومات والحركة وإمكانية الوصول من قائمة الإعدادات في التجربة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "PreferredTransparency.Opaque",
+    "description": "Label for the background transparency slider",
+    "english": "Opaque",
+    "translation": "مظلم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "PreferredTransparency.Transparent",
+    "description": "Label for the background transparency slider",
+    "english": "Transparent",
+    "translation": "شفاف",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PurchasePrompt",
     "key": "Title.BuyItem",
     "description": "Title for a Modal asking the user if they want to purchase the item.",
@@ -15916,7 +16092,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue using Roblox, please select \"I Agree\" to agree to our updated Terms of Use and acknowledge our Privacy Policy. Changes have been made to the following documents:",
-    "translation": "لمواصلة اللعب على Roblox، يرجى الموافقة على شروط الخدمة المحدثة. تم إدخال تغييرات على الأقسام التالية:",
+    "translation": "للاستمرار في استخدام Roblox، الرجاء تحديد \"موافق\" للموافقة على شروط الاستخدام المحدثة الخاصة بنا والاعتراف بسياسة الخصوصية الخاصة بنا. هذه التغييرات التي طرأت على الوثائق التالية:",
     "isDeprecated": false
   },
   {
@@ -16029,6 +16205,14 @@
     "description": null,
     "english": "Personal Information Policy",
     "translation": "سياسة المعلومات الشخصية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.PromotionalEmailsCheckbox",
+    "description": "Text for the promotional emails checkbox for lua app",
+    "english": "Optional: I'd also like to sign up to receive emails from Roblox about newest releases, limited-time promotions, and more.",
+    "translation": "اختياري: أود أيضًا الاشتراك في تلقي رسائل البريد الإلكتروني من Roblox حول أحدث الإصدارات والعروض الترويجية محدودة الوقت والمزيد.",
     "isDeprecated": false
   },
   {
@@ -18037,6 +18221,38 @@
     "description": "Movement description body 4",
     "english": "Please use your controller to enter and stand within the designated white circle area.",
     "translation": "الرجاء استخدام وحدة التحكم للدخول والوقوف داخل الدائرة البيضاء المحددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Title",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "حدث خطأ ما",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "BodyText",
+    "description": null,
+    "english": "Failed to fetch your access status",
+    "translation": "تعذر الحصول على حالة الوصول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Retry",
+    "description": null,
+    "english": "Retry",
+    "translation": "إعادة المحاولة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.ErrorScreen",
+    "key": "Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "إلغاء",
     "isDeprecated": false
   },
   {
