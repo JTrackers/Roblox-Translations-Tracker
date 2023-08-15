@@ -753,6 +753,31 @@
       "deprecated": false,
       "privateNote": null,
       "text": "No Remaining Backup Codes for Roblox Account: {accountName}"
+    },
+    "Description.TwoStepVerificationRobuxSpendEmail.V2.Subject": {
+      "deprecated": false,
+      "privateNote": "Subject for email when 2SV is triggered by a virtual purchase.",
+      "text": "Roblox Virtual Purchase Verification Request: {accountName}"
+    },
+    "Description.TwoStepVerificationRobuxSpendEmail.HtmlBody": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "{geoLocationInformation}{spanStartTagWithBold}Virtual transaction code for {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request.{lineBreak}{lineBreak}Resources:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Change Your Password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More About 2-Step Verification{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Keeping Your Account Safe{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}General Roblox Support{aTagEnd} {lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team"
+    },
+    "Description.TwoStepVerificationRobuxSpendEmail.PlainBody": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "{geoLocationInformation}Virtual transaction code for {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request. {lineBreak}{lineBreak}Resources: {lineBreak}Change Your Password [{accountInfoPageLink}] {lineBreak}Learn More About 2-Step Verification [{twoStepVerificationHelpArticleLink}]{lineBreak}Keeping Your Account Safe [{keepAccountSafeArticleLink}] {lineBreak}General Roblox Support [{supportPageLink}] {lineBreak}{lineBreak}Thank you, {lineBreak}{lineBreak}The Roblox Team"
+    },
+    "Description.TwoStepVerificationRobxSpendEmail.V2.Body": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}"
+    },
+    "Description.TwoStepVerificationRobuxSpendEmail.V2.Footer": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Do not reply to this email directly. You are receiving this email because there was increased Roblox virtual transaction activity. If you did not make this request, you are strongly advised to change your password."
     }
   },
   "Authentication.AccountRecovery": {
@@ -5711,6 +5736,11 @@
       "deprecated": false,
       "privateNote": "Message to user that appears after the user has generated recovery codes.",
       "text": "You have {activeCodeCount} unused recovery codes."
+    },
+    "Description.RobuxSpendVerification": {
+      "deprecated": false,
+      "privateNote": "Virtual transaction 2SV",
+      "text": "2-step Verification is required to make further transactions."
     }
   },
   "Feature.BuildersClub": {
