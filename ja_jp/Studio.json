@@ -404,7 +404,7 @@
     "key": "Action.PendingRequest",
     "description": "text for a pending friend request",
     "english": "Pending Request",
-    "translation": "保留中のリクエスト",
+    "translation": "承認待ちのリクエスト",
     "isDeprecated": false
   },
   {
@@ -1588,7 +1588,7 @@
     "key": "CalibrateDeviceScalingDialog.EstimateScreenSize",
     "description": null,
     "english": "To accurately scale to physical size, we need to get an estimate of your screen size.",
-    "translation": "物理的なサイズを正確にスケーリングするには、スクリーンのサイズの見積もりが必要です。",
+    "translation": "物理的なサイズを正確に拡大/縮小するには、スクリーンのサイズの見積もりが必要です。",
     "isDeprecated": false
   },
   {
@@ -7916,7 +7916,7 @@
     "key": "RobloxRibbonMainWindow.Scale",
     "description": null,
     "english": "Scale",
-    "translation": "スケール",
+    "translation": "拡大/縮小",
     "isDeprecated": false
   },
   {
@@ -13580,7 +13580,7 @@
     "key": "MeshImportOptionsDialog.RescaleIfTooLarge",
     "description": null,
     "english": "Rescale if too large",
-    "translation": "大きすぎるならスケールし直す",
+    "translation": "大きすぎるなら縮小し直す",
     "isDeprecated": false
   },
   {
@@ -18468,7 +18468,7 @@
     "key": "BetaFeatures.LuaDraggersDescription",
     "description": null,
     "english": "Migrates the Select/Move/Rotate/Scale tools to a Lua BuiltInPlugin implementation and makes some minor improvements to their functionality.",
-    "translation": "Lua BuiltInPlugin に 選択/移動/回転/スケールツールをマイグレーションし、その機能に微細な改善を加える。",
+    "translation": "Lua BuiltInPlugin に 選択/移動/回転/拡大/縮小ツールをマイグレーションし、その機能に微細な改善を加える。",
     "isDeprecated": false
   },
   {
@@ -29524,7 +29524,7 @@
     "key": "RobloxStudioVerbs.ShouldUnscale",
     "description": null,
     "english": "This nonuniformly scaled union contains parts which can't be exactly represented separately, before separating:\nReset the scale to make re-unioning easier, or Apply the scale as closely as possible.",
-    "translation": "この非均一にスケールされたユニオンには、分割する前に正確には別々に表示できないパーツが含まれています。再ユニオンをしやすくするためにスケールをリセットするか、スケールをできるだけ近くに適用します。",
+    "translation": "この非均一に拡大/縮小されたユニオンには、分割する前に正確には別々に表示できないパーツが含まれています。再ユニオンをしやすくするために拡大/縮小をリセットするか、拡大/縮小をできるだけ近くに適用します。",
     "isDeprecated": false
   },
   {
@@ -29532,7 +29532,7 @@
     "key": "RobloxStudioVerbs.ResetScale",
     "description": "Remove the 3d scale that an object had resetting it back to its original size.",
     "english": "Reset Scale",
-    "translation": "スケールをリセット",
+    "translation": "拡大/縮小をリセット",
     "isDeprecated": false
   },
   {
@@ -29540,7 +29540,7 @@
     "key": "RobloxStudioVerbs.ApplyScale",
     "description": "Apply the 3d scale that on object had to all of its children instead.",
     "english": "Apply Scale",
-    "translation": "スケールを適用",
+    "translation": "拡大/縮小を適用",
     "isDeprecated": false
   },
   {
@@ -31556,7 +31556,7 @@
     "key": "General.TitleScale",
     "description": null,
     "english": "Scale",
-    "translation": "スケール",
+    "translation": "拡大/縮小",
     "isDeprecated": false
   },
   {
@@ -31708,7 +31708,7 @@
     "key": "General.PresetClassicScale",
     "description": null,
     "english": "Classic Scale",
-    "translation": "典型スケール",
+    "translation": "標準的な拡大/縮小",
     "isDeprecated": false
   },
   {
@@ -57384,6 +57384,838 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.9SliceEditor",
+    "key": "Plugin.Name",
+    "description": null,
+    "english": "9-Slice Editor",
+    "translation": "9分割エディタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "Plugin.Toolbar",
+    "description": null,
+    "english": "9SliceEditor",
+    "translation": "9SliceEditor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "Plugin.Button",
+    "description": null,
+    "english": "Toggle",
+    "translation": "切り換え",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "Plugin.Description",
+    "description": null,
+    "english": "Toggles the Template plugin window.",
+    "translation": "テンプレートのプラグインウィンドウを切り換え。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "SliceEditor.RevertButton",
+    "description": null,
+    "english": "Revert",
+    "translation": "元に戻す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "SliceEditor.CloseButton",
+    "description": null,
+    "english": "Close",
+    "translation": "閉じる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "TextEditor.Offsets",
+    "description": null,
+    "english": "Offsets",
+    "translation": "オフセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "TextEditor.Left",
+    "description": null,
+    "english": "Left",
+    "translation": "左",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "TextEditor.Right",
+    "description": null,
+    "english": "Right",
+    "translation": "右",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "TextEditor.Top",
+    "description": null,
+    "english": "Top",
+    "translation": "上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "TextEditor.Bottom",
+    "description": null,
+    "english": "Bottom",
+    "translation": "下",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "ImageEditor.ImageSize",
+    "description": null,
+    "english": "Image Size",
+    "translation": "画像サイズ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "ImageEditor.ImageSizeError",
+    "description": null,
+    "english": "Image Size Error: isLoaded is false",
+    "translation": "画像サイズエラー: isLoaded が正しくありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "AlertDialog.ErrorMessageTitle",
+    "description": null,
+    "english": "Error",
+    "translation": "エラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "AlertDialog.OkButtonText",
+    "description": null,
+    "english": "Ok",
+    "translation": "了解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "SliceEditor.ImageLoadingMessage",
+    "description": null,
+    "english": "Loading...",
+    "translation": "ロード中...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.9SliceEditor",
+    "key": "Plugin.ImageLoadErrorMessage",
+    "description": null,
+    "english": "9-Slice Editor: Couldn't load image",
+    "translation": "9分割エディタ: 画像を読み込めませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Toolbar",
+    "description": null,
+    "english": "Mesh Importer",
+    "translation": "メッシュインポーター",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Button",
+    "description": null,
+    "english": "Import",
+    "translation": "インポートする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Browse",
+    "description": null,
+    "english": "Browse...",
+    "translation": "閲覧する...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.ImportConfiguration",
+    "description": null,
+    "english": "Settings for the current import",
+    "translation": "現在のインポートの設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "TreeViewToolbar.Expand",
+    "description": null,
+    "english": "Expand",
+    "translation": "展開する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "TreeViewToolbar.Collapse",
+    "description": null,
+    "english": "Collapse",
+    "translation": "折り畳み表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "AssetImportTree.Contains",
+    "description": null,
+    "english": "Contains %d %s",
+    "translation": "%d %s が含まれています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "AssetImportTree.Descendants",
+    "description": null,
+    "english": "Descendants contain %d %s",
+    "translation": "子孫に %d %s が含まれています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "AssetImportTree.Errors",
+    "description": null,
+    "english": "error(s)",
+    "translation": "エラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "AssetImportTree.Warnings",
+    "description": null,
+    "english": "warning(s)",
+    "translation": "警告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "キャンセル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Import",
+    "description": null,
+    "english": "Import",
+    "translation": "インポートする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.WindowTitle",
+    "description": null,
+    "english": "Import Preview",
+    "translation": "インポートプレビュー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.FileGeneral",
+    "description": null,
+    "english": "File General",
+    "translation": "ファイル全般",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.FileGeometry",
+    "description": null,
+    "english": "File Geometry",
+    "translation": "ファイルのジオメトリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.FileTransform",
+    "description": null,
+    "english": "File Transform",
+    "translation": "ファイル変換",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.ObjectGeneral",
+    "description": null,
+    "english": "Object General",
+    "translation": "オブジェクト全般",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.ObjectGeometry",
+    "description": null,
+    "english": "Object Geometry",
+    "translation": "オブジェクトのジオメトリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.Dimensions",
+    "description": null,
+    "english": "Object Dimensions",
+    "translation": "オブジェクトの寸法",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.DoubleSided",
+    "description": null,
+    "english": "Make Double Sided",
+    "translation": "両面にする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.FileDimensions",
+    "description": null,
+    "english": "File Dimensions",
+    "translation": "ファイルの寸法",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.ImportName",
+    "description": null,
+    "english": "Name",
+    "translation": "名前",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.PolygonCount",
+    "description": null,
+    "english": "Polygon Count",
+    "translation": "多角形の数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.ScaleUnit",
+    "description": null,
+    "english": "Scale Unit",
+    "translation": "拡大/縮小の単位",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.ImportAsModelAsset",
+    "description": null,
+    "english": "Import Only as a Model",
+    "translation": "モデルとしてのみインポート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Sections.AvatarGeneral",
+    "description": null,
+    "english": "Avatar General",
+    "translation": "アバター全般",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.Anchored",
+    "description": null,
+    "english": "Anchored",
+    "translation": "アンカー済み",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.InsertInWorkspace",
+    "description": null,
+    "english": "Insert In Workspace",
+    "translation": "ワークスペースに挿入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.RigType",
+    "description": null,
+    "english": "Rig Type",
+    "translation": "リグタイプ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.FilePath",
+    "description": null,
+    "english": "File Path",
+    "translation": "ファイルパス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.Anchored",
+    "description": null,
+    "english": "If this object should be anchored",
+    "translation": "このオブジェクトをアンカリングする必要がある場合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.Dimensions",
+    "description": null,
+    "english": "The size of the given object in studs",
+    "translation": "指定されたオブジェクトのスタットでのサイズ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.FileDimensions",
+    "description": null,
+    "english": "The size of the extents of the file in studs",
+    "translation": "スタッド数でのファイル範囲のサイズ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.ImportName",
+    "description": null,
+    "english": "The name of the object",
+    "translation": "オブジェクトの名前",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.InsertInWorkspace",
+    "description": null,
+    "english": "If this object should be inserted into the workspace after import",
+    "translation": "インポート後にこのオブジェクトをワークスペースに挿入する場合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.PolygonCount",
+    "description": null,
+    "english": "The total count of polygons in this object",
+    "translation": "このオブジェクト内の多角形の合計数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PropertiesTooltip.RigType",
+    "description": null,
+    "english": "The type of Rig to import",
+    "translation": "インポートするリグの種類",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Plugin.Close",
+    "description": null,
+    "english": "Close",
+    "translation": "閉じる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.DefaultWarnings",
+    "description": null,
+    "english": "Import experienced a {type} warning.",
+    "translation": "インポート中に {type} の警告がありました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.DefaultError",
+    "description": null,
+    "english": "Import experienced a {type} error.",
+    "translation": "インポート中に {type} エラーが発生しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.WindowTitle",
+    "description": null,
+    "english": "Importing",
+    "translation": "インポート中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.Success",
+    "description": null,
+    "english": "Successfully Imported!",
+    "translation": "インポートできました！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.Failure",
+    "description": null,
+    "english": "Import failed",
+    "translation": "インポートできませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.FailureDescription",
+    "description": null,
+    "english": "Reason:",
+    "translation": "理由:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.Uploading",
+    "description": null,
+    "english": "Uploading",
+    "translation": "アップロード中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.WindowTitle",
+    "description": null,
+    "english": "Error",
+    "translation": "エラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.Header",
+    "description": null,
+    "english": "Failed to open the selected file.",
+    "translation": "選択済みファイルを開けませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.Default",
+    "description": null,
+    "english": "Status: {type}",
+    "translation": "状況: {type}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.DefaultNoStatus",
+    "description": null,
+    "english": "Import failed",
+    "translation": "インポートできませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.OK",
+    "description": null,
+    "english": "OK",
+    "translation": "了解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.R15",
+    "description": null,
+    "english": "R15",
+    "translation": "15才以上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Rthro",
+    "description": null,
+    "english": "Rthro",
+    "translation": "Rthro",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Custom",
+    "description": null,
+    "english": "Custom",
+    "translation": "カスタム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.None",
+    "description": null,
+    "english": "No Rig",
+    "translation": "リグなし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Back",
+    "description": null,
+    "english": "Back",
+    "translation": "背面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Front",
+    "description": null,
+    "english": "Front",
+    "translation": "正面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Right",
+    "description": null,
+    "english": "Right",
+    "translation": "右",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Left",
+    "description": null,
+    "english": "Left",
+    "translation": "左",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Top",
+    "description": null,
+    "english": "Top",
+    "translation": "上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Bottom",
+    "description": null,
+    "english": "Bottom",
+    "translation": "下",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Stud",
+    "description": null,
+    "english": "Stud",
+    "translation": "スタッド",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Meter",
+    "description": null,
+    "english": "Meter",
+    "translation": "メートル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.CM",
+    "description": null,
+    "english": "CM",
+    "translation": "CM",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.MM",
+    "description": null,
+    "english": "MM",
+    "translation": "MM",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Foot",
+    "description": null,
+    "english": "Foot",
+    "translation": "フィート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "EnumItem.Inch",
+    "description": null,
+    "english": "Inch",
+    "translation": "インチ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.TextureBadFileFormatError",
+    "description": null,
+    "english": "Unsupported texture file format.",
+    "translation": "テクスチャのファイル形式に対応していません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Upload.FailureDescriptionNoError",
+    "description": null,
+    "english": "Something went wrong. Please try again.",
+    "translation": "問題が発生しました。もう一度やり直してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "HttpError.OK",
+    "description": null,
+    "english": "OK",
+    "translation": "了解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "HttpError.422",
+    "description": null,
+    "english": "Name was moderated. Please rename and try again.",
+    "translation": "名前が内容規制されました。名前を変更してもう一度お試し下さい。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "HttpError.429",
+    "description": null,
+    "english": "Upload failed. Endpoint has too many requests - please try again later.",
+    "translation": "アップロードできませんでした。エンドポイントにリクエストが多すぎます。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "HttpError.UnknownStatusCode",
+    "description": null,
+    "english": "Upload failed. Status Code:",
+    "translation": "アップロードできませんでした。状況コード:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "HttpError.UploadResultBadIdParse",
+    "description": null,
+    "english": "Could not upload. Asset name may have been rejected by moderation.",
+    "translation": "アップロードできませんでした。アセット名が内容規制によって却下された可能性があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.NormalBadFileFormatError",
+    "description": null,
+    "english": "Unsupported normal texture file format.",
+    "translation": "対応していない通常テクスチャファイル形式です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.NormalFilePath",
+    "description": null,
+    "english": "Normal File Path",
+    "translation": "通常のファイルパス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.NoFilePath",
+    "description": null,
+    "english": "No file provided",
+    "translation": "ファイルが提供されていません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "PreviewTooltip.ResetCam",
+    "description": null,
+    "english": "Reset camera",
+    "translation": "カメラをリセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.CageUVMatchedPreview",
+    "description": null,
+    "english": "Modified UV map",
+    "translation": "修正済みUVマップ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.UseImportedPivot",
+    "description": null,
+    "english": "Use Imported Pivot",
+    "translation": "インポートされたピボットを使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.CageUVMisMatchedPreview",
+    "description": null,
+    "english": "Modified UV map",
+    "translation": "修正済みUVマップ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.MeshHoleDetectedPreview",
+    "description": null,
+    "english": "Not watertight",
+    "translation": "防水性なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.IrrelevantCageModifiedPreview",
+    "description": null,
+    "english": "Unnecessary cage edits",
+    "translation": "不要なケージ編集",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Properties.OuterCageFarExtendedFromMeshPreview",
+    "description": null,
+    "english": "Outer cage extends too far",
+    "translation": "外側のケージが遠すぎます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsRootFaceJointNotStringError",
+    "description": null,
+    "english": "RootFaceJoint attribute must be of type string",
+    "translation": "RootFaceJoint 属性は文字列型でなければなりません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsRootFaceJointNoValueError",
+    "description": null,
+    "english": "RootFaceJoint attribute has no value",
+    "translation": "RootFaceJoint 属性に値がありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsNoAnimationStackError",
+    "description": null,
+    "english": "No animation timeline found in FBX file.",
+    "translation": "FBX ファイルにアニメーションのタイムラインが見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Error.FileOpenError",
+    "description": null,
+    "english": "Could not open. File may be corrupted.",
+    "translation": "開けませんでした。ファイルが破損している可能性があります。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DevModule",
     "key": "ProfileCard.StatusPlaceholder",
     "description": null,
@@ -59485,6 +60317,894 @@
     "description": null,
     "english": "Failed to insert assetId to AssetManager",
     "translation": "assetId を AssetManager に挿入できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GlobalWind",
+    "key": "Plugin.Name",
+    "description": null,
+    "english": "GlobalWind",
+    "translation": "GlobalWind",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GlobalWind",
+    "key": "Plugin.Toolbar",
+    "description": null,
+    "english": "GlobalWind",
+    "translation": "GlobalWind",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GlobalWind",
+    "key": "Plugin.Button",
+    "description": null,
+    "english": "Toggle",
+    "translation": "切り換え",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GlobalWind",
+    "key": "Plugin.Description",
+    "description": null,
+    "english": "Toggles the Template plugin window.",
+    "translation": "テンプレートのプラグインウィンドウを切り換え。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Main.Title",
+    "description": null,
+    "english": "Accessory Fitting Tool",
+    "translation": "アクセサリフィッティングツール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Main.ToolbarButton",
+    "description": null,
+    "english": "Accessory Fitting Tool",
+    "translation": "アクセサリフィッティングツール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Meta.PluginName",
+    "description": null,
+    "english": "Layered Clothing Editor",
+    "translation": "重ね着用の服装エディタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Meta.ToolbarName",
+    "description": null,
+    "english": "Avatar",
+    "translation": "アバター",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.Preview",
+    "description": null,
+    "english": "Preview",
+    "translation": "プレビュー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.Edit",
+    "description": null,
+    "english": "Edit",
+    "translation": "編集",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.Select",
+    "description": null,
+    "english": "Select",
+    "translation": "選ぶ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.EditAndPreview",
+    "description": null,
+    "english": "Edit And Preview",
+    "translation": "編集とプレビュー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.Generate",
+    "description": null,
+    "english": "Generate",
+    "translation": "作成する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.CageGenerate",
+    "description": null,
+    "english": "Cage Generate",
+    "translation": "ケージ作成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.LatticeTool",
+    "description": null,
+    "english": "Lattice Tool",
+    "translation": "格子ツール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.RingTool",
+    "description": null,
+    "english": "Ring Tool",
+    "translation": "リングツール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.PointTool",
+    "description": null,
+    "english": "Point Tool",
+    "translation": "ポイントツール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.Reset",
+    "description": null,
+    "english": "Reset",
+    "translation": "リセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.MeshPartMode",
+    "description": null,
+    "english": "Move, rotate, and scale MeshPart to adjust fitting.",
+    "translation": "フィッティング調整のための MeshPart の移動、回転、スケール。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.ResumeEditing",
+    "description": null,
+    "english": "Click here to resume editing cages.",
+    "translation": "ケージ編集を再開するにはこちらをクリック。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.Prompt",
+    "description": null,
+    "english": "Click the part you want to become the accessory.",
+    "translation": "アクセサリにしたいパーツをクリック。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.Click",
+    "description": null,
+    "english": "Click here to begin selecting...",
+    "translation": "ここをクリックして選択を開始...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.PromptGeneric",
+    "description": null,
+    "english": "Click the part or model that you would like to edit.",
+    "translation": "編集したいパーツかモデルをクリック。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.Part",
+    "description": null,
+    "english": "Part:",
+    "translation": "パーツ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.Selection",
+    "description": null,
+    "english": "Selection:",
+    "translation": "選択肢:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.Invalid",
+    "description": null,
+    "english": "Invalid Selection",
+    "translation": "選択が無効です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Select.LoseChanges",
+    "description": null,
+    "english": "You have unpublished changes on the previous item. You will lose those changes if you select this new item. Proceed?",
+    "translation": "前のアイテムに未公開の変更内容があります。この新しいアイテムを選ぶと変更内容が失われます。続行しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Flow.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "次へ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Flow.Back",
+    "description": null,
+    "english": "Back",
+    "translation": "戻る",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Flow.Generate",
+    "description": null,
+    "english": "Generate",
+    "translation": "作成する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Avatars",
+    "description": null,
+    "english": "Avatars",
+    "translation": "アバター",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Clothing",
+    "description": null,
+    "english": "Clothing",
+    "translation": "服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Animations",
+    "description": null,
+    "english": "Animations",
+    "translation": "アニメーション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.AddNew",
+    "description": null,
+    "english": "Add new...",
+    "translation": "新規を追加...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Asset",
+    "description": null,
+    "english": "Asset",
+    "translation": "アセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.PanelBlockerAddAvatar",
+    "description": null,
+    "english": "Add an avatar item from the Explorer",
+    "translation": "エクスプローラからアバターアイテムを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.PanelBlockerAddClothing",
+    "description": null,
+    "english": "Add clothing item from the Explorer",
+    "translation": "エクスプローラから服装アイテムを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.PanelBlockerAddAnimation",
+    "description": null,
+    "english": "Add a KeyframeSequence Instance from the Explorer",
+    "translation": "エクスプローラから KeyframeSequence インスタンスを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.AvatarInvalidAdd",
+    "description": null,
+    "english": "Only an avatar item can be added",
+    "translation": "アバターアイテムしか追加できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.ClothingInvalidAdd",
+    "description": null,
+    "english": "Only a clothing item can be added",
+    "translation": "服装アイテムしか追加できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.AnimationInvalidAdd",
+    "description": null,
+    "english": "Only a KeyframeSequence Instance can be added",
+    "translation": "KeyframeSequence インスタンスしか追加できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.ConfirmAddTile",
+    "description": null,
+    "english": "Add {itemName} tile?",
+    "translation": "{itemName} タイルを追加しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Transparency",
+    "description": null,
+    "english": "Transparency",
+    "translation": "透明度",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Accessory",
+    "description": null,
+    "english": "Accessory",
+    "translation": "アクセサリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Clothing",
+    "description": null,
+    "english": "Clothing",
+    "translation": "服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.AssetType",
+    "description": null,
+    "english": "Asset Type",
+    "translation": "アセットタイプ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Prompt",
+    "description": null,
+    "english": "Select the asset type:",
+    "translation": "アセットタイプを選択",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Hat",
+    "description": null,
+    "english": "Hat",
+    "translation": "帽子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Hair",
+    "description": null,
+    "english": "Hair",
+    "translation": "髪",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Face",
+    "description": null,
+    "english": "Face",
+    "translation": "顔",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Neck",
+    "description": null,
+    "english": "Neck",
+    "translation": "首",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Shoulder",
+    "description": null,
+    "english": "Shoulder",
+    "translation": "肩",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Front",
+    "description": null,
+    "english": "Front",
+    "translation": "正面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Back",
+    "description": null,
+    "english": "Back",
+    "translation": "背面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Waist",
+    "description": null,
+    "english": "Waist",
+    "translation": "腰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.RightCollar",
+    "description": null,
+    "english": "Right Collar",
+    "translation": "右えり",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.LeftCollar",
+    "description": null,
+    "english": "Left Collar",
+    "translation": "左えり",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.RightShoulder",
+    "description": null,
+    "english": "Right Shoulder",
+    "translation": "右肩",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.LeftShoulder",
+    "description": null,
+    "english": "Left Shoulder",
+    "translation": "左肩",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Center",
+    "description": null,
+    "english": "Center",
+    "translation": "中央",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.TeeShirt",
+    "description": null,
+    "english": "Tee Shirt",
+    "translation": "Tシャツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Shirt",
+    "description": null,
+    "english": "Shirt",
+    "translation": "シャツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Pants",
+    "description": null,
+    "english": "Pants",
+    "translation": "ズボン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Jacket",
+    "description": null,
+    "english": "Jacket",
+    "translation": "ジャケット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Sweater",
+    "description": null,
+    "english": "Sweater",
+    "translation": "セーター",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Shorts",
+    "description": null,
+    "english": "Shorts",
+    "translation": "短パン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.LeftShoe",
+    "description": null,
+    "english": "LeftShoe",
+    "translation": "左靴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.RightShoe",
+    "description": null,
+    "english": "RightShoe",
+    "translation": "右靴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Dress",
+    "description": null,
+    "english": "Dress",
+    "translation": "ワンピース",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AssetType.Skirt",
+    "description": null,
+    "english": "Skirt",
+    "translation": "スカート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Generate.Prompt",
+    "description": null,
+    "english": "The asset is ready.",
+    "translation": "アセットの準備ができました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Generate.Wait",
+    "description": null,
+    "english": "Please wait while the asset is being generated...",
+    "translation": "アセットが作成されるまでしばらくお待ちください...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Actions.Undo",
+    "description": null,
+    "english": "Undo",
+    "translation": "元に戻す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Actions.Redo",
+    "description": null,
+    "english": "Redo",
+    "translation": "やり直す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Actions.ToggleTransform",
+    "description": null,
+    "english": "Toggle Transform",
+    "translation": "変形を切り替え",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Actions.SelectLattice",
+    "description": null,
+    "english": "Select Lattice",
+    "translation": "格子を選択",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ToolSettings.FalloffDistance",
+    "description": null,
+    "english": "Falloff Distance",
+    "translation": "減衰距離",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ToolSettings.Target",
+    "description": null,
+    "english": "Target",
+    "translation": "ターゲット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ToolSettings.Generate",
+    "description": null,
+    "english": "Generate",
+    "translation": "作成する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ToolSettings.LocalAlignment",
+    "description": null,
+    "english": "Local Alignment",
+    "translation": "ローカル整列",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "SelectItem.Delete",
+    "description": null,
+    "english": "Delete",
+    "translation": "削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "EditingMode.Text",
+    "description": null,
+    "english": "Enable/Disable Cage Editing",
+    "translation": "ケージ編集のオン/オフ切り替え",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "EditingMode.OuterCage",
+    "description": null,
+    "english": "Outer Cage Mode",
+    "translation": "外側ケージモード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "EditingMode.InnerCage",
+    "description": null,
+    "english": "Inner Cage Mode",
+    "translation": "内側ケージモード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "EditingMode.MeshPart",
+    "description": null,
+    "english": "Mesh Part",
+    "translation": "メッシュパーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AddEditingItemFromExplorer.Tooltip",
+    "description": null,
+    "english": "Add assets from Explorer",
+    "translation": "エクスプローラからアセットを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "AddEditingItemFromExplorer.ConfirmAddText",
+    "description": null,
+    "english": "Adding {itemName} to asset list?",
+    "translation": "アセットリストに {itemName} を追加しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Dialog.DefaultTitle",
+    "description": null,
+    "english": "Layered Clothing Editor",
+    "translation": "重ね着用の服装エディタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Dialog.Confirm",
+    "description": null,
+    "english": "Confirm",
+    "translation": "確認する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Dialog.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "キャンセル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Transparency.Title",
+    "description": null,
+    "english": "Transparency",
+    "translation": "透明度",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Transparency.Mesh",
+    "description": null,
+    "english": "Mesh",
+    "translation": "メッシュ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Transparency.OuterCage",
+    "description": null,
+    "english": "OuterCage",
+    "translation": "OuterCage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Transparency.InnerCage",
+    "description": null,
+    "english": "InnerCage",
+    "translation": "InnerCage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Reset.OuterCage",
+    "description": null,
+    "english": "Reset Outer Cage",
+    "translation": "ケージの外側をリセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Reset.InnerCage",
+    "description": null,
+    "english": "Reset Inner Cage",
+    "translation": "ケージの内側をリセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Editor.BringMannequinToView",
+    "description": null,
+    "english": "Bring Mannequin To View",
+    "translation": "マネキンを持ってきて表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Default",
+    "description": null,
+    "english": "Default",
+    "translation": "デフォルト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.Custom",
+    "description": null,
+    "english": "Custom",
+    "translation": "カスタム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "Preview.FocusCamera",
+    "description": null,
+    "english": "Focus camera on Mannequin",
+    "translation": "マネキンにカメラをフォーカス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ScaleType.Classic",
+    "description": null,
+    "english": "Classic",
+    "translation": "定番",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AccessoryFittingTool",
+    "key": "ScaleType.Select",
+    "description": null,
+    "english": "Select Avatar Part Scale Type",
+    "translation": "アバターパーツの拡大/縮小タイプを選択",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarToolsShared",
+    "key": "InstanceSelectorGrid.AddNew",
+    "description": null,
+    "english": "Add New",
+    "translation": "新規を追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarToolsShared",
+    "key": "InstanceSelectorTile.AddNew",
+    "description": null,
+    "english": "Add New",
+    "translation": "新規を追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Plugin.Name",
+    "description": null,
+    "english": "InternalAvatarTools",
+    "translation": "InternalAvatarTools",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Plugin.Toolbar",
+    "description": null,
+    "english": "InternalAvatarTools",
+    "translation": "InternalAvatarTools",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Plugin.Export",
+    "description": null,
+    "english": "Export Accessories",
+    "translation": "アクセサリをエクスポート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Plugin.ExportTip",
+    "description": null,
+    "english": "Multi-export the selected Accessories",
+    "translation": "選択したアクセサリを複数エクスポート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "DialogTitle.ExportNonAccessory",
+    "description": null,
+    "english": "Export selected non accessory?",
+    "translation": "アクセサリ以外の選択済みのものをアクスポートしますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Dialog.Export",
+    "description": null,
+    "english": "Export",
+    "translation": "書き出す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.InternalAvatarTools",
+    "key": "Dialog.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "キャンセル",
     "isDeprecated": false
   },
   {
