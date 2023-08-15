@@ -4488,6 +4488,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalAvailability",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "Dieses Erlebnis is in deiner Region aus rechtlichen Gründen nicht verfügbar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalCompliance",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "Dieses Erlebnis is in deiner Region aus rechtlichen Gründen nicht verfügbar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable due to your account settings.",
+    "translation": "Dieses Erlebnis ist aufgrund deiner Kontoeinstellungen nicht verfügbar.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.WebUtil",
     "key": "GetLabelYear",
     "description": null,
@@ -11371,7 +11395,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteWarning",
     "description": null,
-    "english": "Security keys protects your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
+    "english": "Security keys protect your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
     "translation": "Sicherheitsschlüssel schützen deine Robux, Erlebnisse, limitierten Items und vieles mehr. Wir empfehlen dir, Schlüssel zu löschen, die du verloren hast oder die nicht mehr gültig sind. {lineBreak}{lineBreak}Möchtest du deinen Schlüssel wirklich löschen?",
     "isDeprecated": false
   },
@@ -11411,7 +11435,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Heading.ContentControls",
     "description": null,
-    "english": "Age-Based Experience Controls",
+    "english": "Allowed Experiences",
     "translation": "Altersbasierte Erlebniskontrollen",
     "isDeprecated": false
   },
@@ -11420,7 +11444,7 @@
     "key": "Description.ContentControls",
     "description": null,
     "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.",
-    "translation": "Wähle die höchste {linkStart}Altersrichtlinie{linkEnd} von Erlebnissen, die dieses Konto besuchen darf",
+    "translation": "Wähle die höchste Erlebnis-{linkStart}Altersgrenze{linkEnd}, die dieses Konto besuchen darf.",
     "isDeprecated": false
   },
   {
@@ -11523,7 +11547,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Message.ContentControls",
     "description": null,
-    "english": "Note: All Experiences will still be able to be searched and seen. Unrated experiences are currently treated as 13+.",
+    "english": "All Experiences are still searchable. Unrated experiences are currently treated as 13+.",
     "translation": "Hinweis: Alle Erlebnisse können weiterhin gesucht und gesehen werden. Unbewertete Erlebnisse werden derzeit als 13+ behandelt.",
     "isDeprecated": false
   },
@@ -11548,7 +11572,7 @@
     "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
     "description": null,
     "english": "Some actions like logging in will require you to enter a text message code. Codes will be sent to {phoneNumber}",
-    "translation": "Für einige Aktionen, z.B. die Anmeldung, wird die Eingabe eines SMS-Codes erforderlich. Codes werden an {phoneNumber} gesendet.",
+    "translation": "Für einige Aktionen, z.B. die Anmeldung, wird die Eingabe eines SMS-Codes erforderlich. Codes werden an {phoneNumber} gesendet",
     "isDeprecated": false
   },
   {
@@ -11669,6 +11693,54 @@
     "description": null,
     "english": "your messaging service API announcements",
     "translation": "deine Nachrichtendienst-API-Ankündigung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.ForgotYourPassword",
+    "description": null,
+    "english": "Forgot your Password?",
+    "translation": "Passwort vergessen?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationTitle",
+    "description": null,
+    "english": "An Extra Layer of Account Security",
+    "translation": "Eine zusätzliche Ebene der Kontosicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationSingleMethodDescription",
+    "description": null,
+    "english": "In addition to your password, add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. Note: you can only enable one option below at a time.",
+    "translation": "Neben deinem Passwort fügst du deinem Konto mit zweistufiger Verifizierung eine zusätzliche Sicherheitsebene bei der Anmeldung, Kontowiederherstellung und Transaktionen mit hohen Beträgen hinzu. Hinweis: Du kannst nur eine der unten angezeigten Optionen gleichzeitig aktivieren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.EnableTwoStepVerificationSingleMethodWarning",
+    "description": null,
+    "english": "To turn on a new 2 Step Verification option, your previous option will be turned off. Do you want to continue?",
+    "translation": "Um eine neue zweistufige Verifizierungsoption zu aktivieren, wird die bisherige Option deaktiviert. Möchtest du fortfahren?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.OneOptionAtATime",
+    "description": null,
+    "english": "One Option At A Time",
+    "translation": "Nur eine Option gleichzeitig",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Warning",
+    "description": null,
+    "english": "Are you sure you want to delete your key?",
+    "translation": "Möchtest du deinen Schlüssel wirklich löschen?",
     "isDeprecated": false
   },
   {
@@ -24264,6 +24336,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceededRobuxBalance",
+    "description": null,
+    "english": "Your balance is now {userRobuxBalance}.",
+    "translation": "Dein Guthaben beträgt nun {userRobuxBalance}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseErrorOccured",
+    "description": "generic purchase error message",
+    "english": "An error occurred with your purchase. Please try again later.",
+    "translation": "Es ist ein Fehler bei deinem Kauf aufgetreten. Bitte versuche es später erneut.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -26021,6 +26109,22 @@
     "description": null,
     "english": "Connect with your real life friends via phone number (opt-in only).",
     "translation": "Verbinde dich mit deinen Freund:innen aus dem echten Leben per Telefonnummer (nur Opt-in).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.FinishAccountSetup",
+    "description": null,
+    "english": "Finish Account Set Up",
+    "translation": "Kontoeinrichtung abschließen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.ContactMethodAccessLoss",
+    "description": null,
+    "english": "Without a Contact Method, you may lose access to game progress, items, and Robux if your account is lost.",
+    "translation": "Ohne eine angegebene Kontaktmethode kann es passieren, dass du Zugriff auf Spielfortschritt, Items und Robux verlierst, falls du jemals Zugriff auf dein Konto verlierst.",
     "isDeprecated": false
   },
   {
@@ -52096,6 +52200,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Response.CompletingRequest",
+    "description": "use Message.CompletingRequest",
+    "english": "Completing your request",
+    "translation": "Anfrage wird abgeschlossen",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.BackToTransactions",
+    "description": null,
+    "english": "Back to Transactions",
+    "translation": "Zurück zu Transaktionen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.CompletingRequest",
+    "description": null,
+    "english": "Completing your request\t",
+    "translation": "Anfrage wird abgeschlossen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadInstructions",
+    "description": null,
+    "english": "Please select the date range of the transactions you want to download, up to a 90 day window.",
+    "translation": "Bitte wähle eine Zeitspanne von bis zu 90 Tagen für die Transaktionen, die du herunterladen möchtest.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.Download",
+    "description": null,
+    "english": "Download",
+    "translation": "Herunterladen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DateRangeSelection",
+    "description": null,
+    "english": "Select Date Range to Download",
+    "translation": "Wähle Zeitspanne zum Herunterladen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -54544,6 +54696,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenExperienceDetails",
+    "description": null,
+    "english": "Open Experience Details",
+    "translation": "Erlebnisinfos öffnen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -54825,6 +54985,86 @@
   },
   {
     "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Shirt",
+    "description": "Asset type Shirt, singular form",
+    "english": "Shirt",
+    "translation": "Shirt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.TShirt",
+    "description": "Asset type T-Shirt, singular form",
+    "english": "T-Shirt",
+    "translation": "T-Shirt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Hat",
+    "description": "Asset type Hat, singular form",
+    "english": "Hat",
+    "translation": "Hut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.HairAccessory",
+    "description": null,
+    "english": "Hair Accessory",
+    "translation": "Haar-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.FaceAccessory",
+    "description": null,
+    "english": "Face Accessory\t",
+    "translation": "Gesicht-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.NeckAccessory",
+    "description": null,
+    "english": "Neck Accessory",
+    "translation": "Hals-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ShoulderAccessory",
+    "description": null,
+    "english": "Shoulder Accessory",
+    "translation": "Schulter-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.FrontAccessory",
+    "description": "asset type Front Accessory",
+    "english": "Front Accessory",
+    "translation": "Vorderseite-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.BackAccessory",
+    "description": "asset type Back Accessory",
+    "english": "Back Accessory",
+    "translation": "Rücken-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.WaistAccessory",
+    "description": "asset type Waist Accessory",
+    "english": "Waist Accessory",
+    "translation": "Taillen-Accessoire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Decal",
     "description": "asset type Decal, singular form",
     "english": "Decal",
@@ -54837,6 +55077,14 @@
     "description": "asset type Model, singular form",
     "english": "Model",
     "translation": "Modell",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Mesh",
+    "description": "asset type Mesh, singular form",
+    "english": "Mesh",
+    "translation": "Mesh",
     "isDeprecated": false
   },
   {
@@ -59809,10 +60057,58 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.GuidelinesSubmittedModeratorRejected",
+    "description": null,
+    "english": "Questionnaire {redColorStart}Submission Not Accepted{redColorEnd}",
+    "translation": "Fragebogen-{redColorStart}Einreichung nicht akzeptiert{redColorEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.UponReviewModerationText",
+    "description": null,
+    "english": "Upon review, your latest questionnaire submission was determined to be inaccurate due to the following reasons:",
+    "translation": "Bei der Überprüfung deines letzten eingereichten Fragebogens wurden folgende Ungenauigkeiten festgestellt:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.YourSubmissionModeration",
+    "description": null,
+    "english": "Your submission",
+    "translation": "Deine Einreichung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.ModeratorFeedbackModeration",
+    "description": null,
+    "english": "Moderator feedback",
+    "translation": "Moderatoren-Feedback",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.NextStepsModeration",
+    "description": null,
+    "english": "Next Step: Please retake the questionnaire and answer accurately based on your experience content and the moderator feedback.",
+    "translation": "Nächster Schritt: Bitte fülle den Fragebogen erneut aus und beantworte die Fragen richtig anhand des Inhalts deines Erlebnisses und des Moderatoren-Feedbacks.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.NextStepsModeration",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
     "translation": "Klicke auf „Beginnen“, um einige Fragen über dein Erlebnis zu beantworten. Deine Antworten werden eine Reihe von Richtlinien für den Inhalt deines Erlebnisses erstellen, die derzeit eine Altersempfehlung und eine regionale Compliance-Bewertung beinhalten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.NotPresentDescriptorUsage",
+    "description": null,
+    "english": "Not Present",
+    "translation": "Nicht vorhanden",
     "isDeprecated": false
   },
   {
@@ -60753,10 +61049,42 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OpenForComments",
+    "description": "Used for form labels on items that can be enabled for comments (i.e avatar Shirt asset). Paried with a toggle input usually.",
+    "english": "Open for comments",
+    "translation": "Für Kommentare öffnen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Heading.Configure",
     "description": null,
     "english": "Configure",
     "translation": "Konfigurieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.assetUpdateSuccess",
+    "description": "Patch request success message when updating an asset",
+    "english": "{assetType} Updated",
+    "translation": "{assetType} aktualisiert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.SaveChangesFailure",
+    "description": null,
+    "english": "Save changes failed. Please try again later.",
+    "translation": "Änderungen konnten nicht gespeichtert werden. Bitte versuche es später erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.InvalidNumber",
+    "description": null,
+    "english": "Not a valid number",
+    "translation": "Keine gültige Zahl",
     "isDeprecated": false
   },
   {
@@ -64616,6 +64944,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Title.SaveSecret",
+    "description": null,
+    "english": "Save your secret now!",
+    "translation": "Speichere dein Geheimnis jetzt!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.SaveSecret",
+    "description": null,
+    "english": "Copy the secret before closing the page and save it to a secure place. The system will NOT store the secret for security reasons.",
+    "translation": "Kopiere das Geheimnis, bevor du diese Seite schließt, und bewahre es sicher auf. Aus Sicherheitsgründen speichert das System dein Geheimnis NICHT.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
@@ -64973,6 +65317,22 @@
     "description": null,
     "english": "This grants the ability to publish messages on behalf of users.",
     "translation": "Dies gewährt die Fähigkeit, Nachrichten im Namen von Nutzer:innen zu veröffentlichen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.profileRead",
+    "description": null,
+    "english": "This grants access to read your profile information",
+    "translation": "Dies gewährt Zugriff auf das Lesen deiner Profilinformationen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.openidRead",
+    "description": null,
+    "english": "This enables Single Sign-On functionality",
+    "translation": "Dies aktiviert Single Sign-On-Funktionalität",
     "isDeprecated": false
   },
   {
@@ -67669,6 +68029,14 @@
     "description": "Translations that have been recently updated by a user or by automatic translations",
     "english": "Recently Modified Translations",
     "translation": "Kürzlich geänderte Übersetzungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.Cancel",
+    "description": "Cancel operation - label for a button",
+    "english": "CANCEL",
+    "translation": "ABBRECHEN",
     "isDeprecated": false
   },
   {
@@ -70640,6 +71008,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RiskDescription",
+    "description": null,
+    "english": "The level of sensitive information or production impact a permission is asking for.",
+    "translation": "Das Ausmaß sensibler Informationen oder Produktionsauswirkungen, die eine Genehmigung ersucht.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -71059,7 +71435,7 @@
     "namespace": "AuthorizeWebsite.CommonErrors",
     "key": "Error.Description.ApplicationUnknownError",
     "description": null,
-    "english": "The request is invalid.\n\nPlease contact the creator of the application for help and share the details below.",
+    "english": "An unknown error has occurred.",
     "translation": "Die Anfrage ist ungültig.\n\nBitte kontaktiere den Ersteller der Anwendung für Hilfe und teile die Details unten.",
     "isDeprecated": false
   },
