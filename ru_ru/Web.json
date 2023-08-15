@@ -23784,6 +23784,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Home",
+    "key": "Label.AvatarItemsForYou",
+    "description": null,
+    "english": "Avatar Items For You",
+    "translation": "Предметы для твоего аватара",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.ReturnToStudio",
     "key": "Description.OpeningStudio",
     "description": null,
@@ -46528,6 +46536,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.CreatorsCreationsSelector",
+    "description": "The label for a dropdown selector that contains the creations (experiences, avatar items, groups) that are associated with a user or group with the name creatorName",
+    "english": "{creatorName}'s Creations",
+    "translation": "Работы автора {creatorName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsorAvatarItem",
+    "description": "Title heading for the page where the user creates a sponsorship ad for an avatar item",
+    "english": "Sponsor This Avatar Item",
+    "translation": "Спонсировать этот предмет",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47249,10 +47273,26 @@
   },
   {
     "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Details",
+    "description": null,
+    "english": "Details",
+    "translation": "Информация",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
     "key": "Heading.Configure",
     "description": null,
     "english": "Configure",
     "translation": "Настроить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.BasicSettings",
+    "description": null,
+    "english": "Basic Settings",
+    "translation": "Базовые настройки",
     "isDeprecated": false
   },
   {
@@ -47725,6 +47765,30 @@
     "description": null,
     "english": "You don't have permission to view this page",
     "translation": "Нет разрешения на просмотр этой страницы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Heading.FailedToLoadPage",
+    "description": null,
+    "english": "Oh noes!",
+    "translation": "О нет!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Message.FailedToLoadPage",
+    "description": null,
+    "english": "Could not load this page, please try again later.",
+    "translation": "Не удалось загрузить страницу. Повтори попытку позже.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Action.FailedToLoadPage",
+    "description": null,
+    "english": "Try again",
+    "translation": "Повтори попытку",
     "isDeprecated": false
   },
   {
@@ -50920,6 +50984,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.GamePass",
+    "description": null,
+    "english": "A Pass",
+    "translation": "Пропуск",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Badge",
+    "description": null,
+    "english": "A Badge",
+    "translation": "Значок",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.DeveloperProduct",
+    "description": null,
+    "english": "A Developer Product",
+    "translation": "Продукт разработчика",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SponsoredAdsList",
     "key": "Description.SpendTooltip",
     "description": null,
@@ -53404,7 +53492,7 @@
     "key": "Description.DAU",
     "description": null,
     "english": "Number of unique players who joined the game at least once in the day\n",
-    "translation": "Общее количество ежедневных активных пользователей (DAU) за период времени.\n",
+    "translation": "Количество уникальных пользователей, которые присоединились к игре хотя бы один раз в день\n",
     "isDeprecated": false
   },
   {
@@ -53412,7 +53500,7 @@
     "key": "Description.MAU",
     "description": null,
     "english": "Number of unique players who joined the game at least once in the past 30 days (rolling for 30 days).",
-    "translation": "Общее количество ежемесячных активных пользователей (MAU) за период времени.",
+    "translation": "Количество уникальных пользователей, которые присоединились к игре хотя бы один раз за последние 30 дней (в течение 30 дней).",
     "isDeprecated": false
   },
   {
@@ -53420,7 +53508,7 @@
     "key": "Description.NewUsers",
     "description": null,
     "english": "Number of DAUs who are first-time users",
-    "translation": "Количество новых пользователей, впервые посетивших твой плейс.",
+    "translation": "Количество DAU, впервые зарегистрированных",
     "isDeprecated": false
   },
   {
@@ -53452,7 +53540,7 @@
     "key": "Description.TotalPlayTime",
     "description": null,
     "english": "Sum of hours played by all sessions in a day.",
-    "translation": "Количество часов, в течение которых посетители находятся в твоём плейсе. ",
+    "translation": "Сумма часов в день.",
     "isDeprecated": false
   },
   {
@@ -53476,7 +53564,7 @@
     "key": "Description.D1Retention",
     "description": null,
     "english": "Percentage of new players who played again on Day 1 (the second day) after their first session ended.",
-    "translation": "Процент новых пользователей, которые повторно посетили плейс в течение 24 часов после первого сеанса. Обрати внимание, что новый посетитель определяется как новый человек, который посетил твой плейс впервые. ",
+    "translation": "Процент новых игроков, которые снова играли в День 1 (второй день) после окончания первой сессии.",
     "isDeprecated": false
   },
   {
@@ -53484,7 +53572,7 @@
     "key": "Description.D1Stickiness",
     "description": null,
     "english": "Percentage of players who played again on Day 1 (the second day) after their first session.",
-    "translation": "Процент новых и существующих посетителей, которые вернулись в твой плейс хотя бы один раз в течение 24 часов.",
+    "translation": "Процент игроков, которые снова играли в День 1 (второй день) после первой сессии.",
     "isDeprecated": false
   },
   {
@@ -53492,7 +53580,7 @@
     "key": "Description.D7Retention",
     "description": null,
     "english": "Percentage of new players who came back and played again on the 8th day (D7) after their first session.",
-    "translation": "Процент новых посетителей, которые посетили плейс снова в течение 7 дней. Обрати внимание, что новый посетитель определяется как новый человек, который впервые посетил твой плейс. D7 также включает в себя посетителей D1.",
+    "translation": "Процент новых игроков, которые вернулись и играли снова на 8-й день (D7) после первого сеанса.",
     "isDeprecated": false
   },
   {
@@ -53500,7 +53588,7 @@
     "key": "Description.D7Stickeness",
     "description": null,
     "english": "Percentage of players who came back and played again on Day 7 (8th day).",
-    "translation": "Процент посетителей (как новых, так и существующих), которые посещают твой плейс ежедневно в течение 7 дней",
+    "translation": "Процент игроков, которые вернулись и играли снова на 7 день (8-й день).",
     "isDeprecated": false
   },
   {
@@ -53508,7 +53596,7 @@
     "key": "Description.D30Retention",
     "description": null,
     "english": "Percentage of new players who came back and played again on the 31st day (D30).",
-    "translation": "Процент новых пользователей, которые посетили плейс снова в течение 30 дней. Обрати внимание, что новый посетитель определяется как новый человек, который впервые посетил твой плейс. D30 также включает в себя посетителей D7 и D1.",
+    "translation": "Процент новых игроков, которые вернулись и сыграли снова 31 день (D30).",
     "isDeprecated": false
   },
   {
@@ -53516,7 +53604,7 @@
     "key": "Description.D30Stickiness",
     "description": null,
     "english": "Percentage of players who came back and played again on Day 30 (31st day).",
-    "translation": "Процент новых и существующих посетителей, которые вернулись в твой плейс хотя бы один раз в течение 30 дней.",
+    "translation": "Процент игроков, которые вернулись и играли снова на 30 день (31-й день).",
     "isDeprecated": false
   },
   {
@@ -53804,7 +53892,7 @@
     "key": "Description.Visits",
     "description": null,
     "english": "Number of all sessions played in a day (count all sessions from the same user if they played multiple times).",
-    "translation": "Общее количество сеансов, созданных в день.",
+    "translation": "Количество сыгранных в день сессий (считаются все сессии одного и того же пользователя, если они играли несколько раз).",
     "isDeprecated": false
   },
   {
@@ -54924,7 +55012,7 @@
     "key": "Title.RestrictedCountries",
     "description": null,
     "english": "Affected Regions",
-    "translation": "Влияет на регионы",
+    "translation": "Затрагиваемые регионы",
     "isDeprecated": false
   },
   {
@@ -55029,6 +55117,22 @@
     "description": null,
     "english": "You will preview content moderation or restrictions that will be applied to your experience in affected regions before you submit. These restrictions will only take effect after you submit the form.",
     "translation": "Перед публикацией ты будешь просматривать модерацию или ограничения, которые будут применяться к твоему плейсу в затрагиваемых регионах. Эти ограничения вступят в силу только после того, как ты отправишь форму.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.QuestionnaireLandingCompliance",
+    "description": null,
+    "english": "Restrictions Review",
+    "translation": "Обзор ограничений",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.QuestionnaireLandingComplianceDescription",
+    "description": null,
+    "english": "As your experience contains the following feature(s) and does not respect Roblox’s policy APIs, it is unavailable in the following region(s) for compliance reasons.",
+    "translation": "Так как плейс содержит следующие функции и не учитывает API-политики Roblox, он недоступен в следующих регионах по причинам несоблюдения условий.",
     "isDeprecated": false
   },
   {
@@ -62676,7 +62780,7 @@
     "key": "Message.UserHasNoPermission",
     "description": null,
     "english": "Insufficient permission to view this data.",
-    "translation": "У пользователя нет доступа к этой странице",
+    "translation": "Недостаточно прав для просмотра этих данных.",
     "isDeprecated": false
   },
   {
@@ -62684,7 +62788,7 @@
     "key": "Message.RequestFailure",
     "description": null,
     "english": "Compute Telemetry request failure.",
-    "translation": "Ошибка запроса телеметрии",
+    "translation": "Ошибка вычисления запроса телеметрии.",
     "isDeprecated": false
   },
   {
@@ -63124,7 +63228,7 @@
     "key": "Label.Required",
     "description": "Created for app name description. Can be used elsewhere",
     "english": "(Required)",
-    "translation": "Обязательно",
+    "translation": "(Обязательно)",
     "isDeprecated": false
   },
   {
@@ -63408,6 +63512,110 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RedirectUris",
+    "description": "These are links (Uniform Resource Locator) that the app dev must enter. Users will be redirected to these links when at the end of the Authorizations flow.",
+    "english": "Redirect URLs",
+    "translation": "Ссылки переадресации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.WhyUseRedirectUris",
+    "description": "This tells the app dev why redirect urls are needed for the Authorization flow to work.",
+    "english": "(Optional) You must specify at least one URL for authentication to work. If you pass a URL in an OAuth request, it must be in this format.",
+    "translation": "(Необязательно) Необходимо указать хотя бы одну ссылку, чтобы аутентификация работала. Если вы зададите ссылку в запросе OAuth, необходим такой формат.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RedirectUri",
+    "description": "URL = uniform resource locator. These are links that users are redirected to.",
+    "english": "Redirect URL",
+    "translation": "Ссылка переадресации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.GeneralInofrmationSubheading",
+    "description": "deprecated",
+    "english": "The thumbnail, name, and other useful links of your new app",
+    "translation": "Миниатюра, название и другие полезные ссылки на нового приложения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.GeneralInformationSubheading",
+    "description": "subheader for general permissions accordion panel",
+    "english": "The thumbnail, name, and other useful links of your new app.",
+    "translation": "Миниатюра, название и другие полезные ссылки на нового приложения.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.PermissionsSubheading",
+    "description": "subheader for permissions accordion panel",
+    "english": "The permissions your app will ask for.",
+    "translation": "Разрешения для вашего приложения.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.EditThumbnail",
+    "description": null,
+    "english": "Edit Thumbnail",
+    "translation": "Редактировать миниатюру",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.OAuthDescriptionHelper",
+    "description": "nvm deprecated",
+    "english": "Up to 250 characters",
+    "translation": "Не более 250 символов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthThumbnailSizeConstraint",
+    "description": null,
+    "english": "Must be at least 276 pixels wide",
+    "translation": "Должно быть по крайней мере 276 пикселей в ширину",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OauthThumbnailModeration",
+    "description": null,
+    "english": "Will be subject to moderation",
+    "translation": "Будет подлежать модерации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RedirectUriFormat",
+    "description": "This tells the user how to format their redirect urls (e.g. protocol, domain name, path)",
+    "english": "Url format: https://www.MyApplication.com/redirect",
+    "translation": "Формат: https://www.MyApplication.com/redirect",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.AddAnotherUri",
+    "description": "label for button to add a new url",
+    "english": "Add another url",
+    "translation": "Добавить другую ссылку",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.LearnAboutRedirectUrisLink",
+    "description": "Link to documentation about redirect urls",
+    "english": "Learn more about redirect URLs",
+    "translation": "Подробнее о переадресации",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -63477,6 +63685,102 @@
     "description": null,
     "english": "*Please note, you are limited to creating 5 badges a day. After hitting the limit, you will be required to purchase additional badges.",
     "translation": "*Обрати внимание, что ты можешь создавать по 5 значков в день. После достижения лимита будет необходимо приобрести дополнительные значки.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Heading.ConfirmPurchase",
+    "description": null,
+    "english": "Confirm Purchase",
+    "translation": "Подтвердить покупку",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.BadgePurchaseConfirmation",
+    "description": null,
+    "english": "Do you want to create a badge for {price}?",
+    "translation": "Хочешь создать значок для {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Action.PurchaseBadge",
+    "description": null,
+    "english": "Purchase for {price}",
+    "translation": "Покупка за {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Label.CurrentBalance",
+    "description": null,
+    "english": "Current Balance:",
+    "translation": "Текущий баланс:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.BadgeCreationFailure",
+    "description": null,
+    "english": "Badge creation failed. Please try again later.",
+    "translation": "Не удалось создать значок. Повтори попытку позже.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.BadgeCreationSuccess",
+    "description": null,
+    "english": "Badge has been created successfully",
+    "translation": "Значок успешно создан",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Label.BasicSettings",
+    "description": null,
+    "english": "Basic Settings",
+    "translation": "Базовые настройки",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Action.SaveChanges",
+    "description": null,
+    "english": "Save Changes",
+    "translation": "Сохранить изменения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.Required",
+    "description": null,
+    "english": "This is required!",
+    "translation": "Это обязательно!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.Submit",
+    "description": null,
+    "english": "Save badge changes failed. Try again. ",
+    "translation": "Не удалось сохранить изменения. Повтори попытку. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Badge.UpdateSuccess",
+    "description": null,
+    "english": "Badge updated!",
+    "translation": "Значок обновлён!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.BadgeUpdateSuccess",
+    "description": null,
+    "english": "Badge Updated!",
+    "translation": "Значок обновлён!",
     "isDeprecated": false
   },
   {
