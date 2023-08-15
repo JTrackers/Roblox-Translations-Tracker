@@ -196,7 +196,7 @@
     "key": "Response.TencentRealNameUnVerified",
     "description": null,
     "english": "Your {var1} is not real-name verified. Please use a real-name verified {var1} account and try again. {var2}",
-    "translation": "{var1} kamu tidak terverifikasi sebagai nama nyata. Gunakan akun nama nyata yang terverifikasi di akun {var1} lalu coba lagi. {var2}",
+    "translation": "{var1} kamu tidak terverifikasi sebagai nama sebenarnya. Gunakan akun {var1} dengan nama sebenarnya yang terverifikasi lalu coba lagi. {var2}",
     "isDeprecated": false
   },
   {
@@ -1236,7 +1236,7 @@
     "key": "Description.SignupCompliance.TermsOfUse",
     "description": "goes together with Label.TermsofUse",
     "english": "I have reviewed and agreed to the {termsOfUseLink}",
-    "translation": "Saya telah meninjau dan menyetujui {termsOfUseLink}",
+    "translation": "Saya telah me-review dan menyetujui {termsOfUseLink}",
     "isDeprecated": false
   },
   {
@@ -2304,6 +2304,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.FeatureNotAvailableForAccount",
+    "description": "Text indicating that certain feature is not available for this account.",
+    "english": "Your account isn’t eligible for this feature.",
+    "translation": "Akun kamu tidak memenuhi syarat untuk fitur ini.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSettings",
     "key": "Heading.Tab.AccountInfo",
     "description": null,
@@ -2348,7 +2356,7 @@
     "key": "Label.TencentReputation",
     "description": null,
     "english": "Tencent Game Credit",
-    "translation": "Kredit Game Tencent",
+    "translation": "Dana Game Tencent",
     "isDeprecated": false
   },
   {
@@ -2428,7 +2436,7 @@
     "key": "OptOutBetaDialog.ContentSurvey",
     "description": null,
     "english": "We'd love to learn more about why you decided to leave the beta. A Roblox survey will open when you exit, please tell us what you think!",
-    "translation": "Kami ingin mengetahui alasan kamu memutuskan untuk keluar dari beta. Survei Roblox akan ditampilkan saat kamu keluar dari beta. Harap beri tahukan kami pengalaman kamu dalam menggunakan beta.",
+    "translation": "Kami ingin mengetahui alasan kamu memutuskan untuk keluar dari beta. Survei Roblox akan ditampilkan saat kamu keluar dari beta. Mohon beri tahukan kami pengalamanmu saat menggunakan beta.",
     "isDeprecated": false
   },
   {
@@ -3468,7 +3476,7 @@
     "key": "Label.ShopToAvatarPage",
     "description": null,
     "english": "You will leave shop to customize your avatar.",
-    "translation": "Kamu perlu meninggalkan toko untuk memodifikasi avatar.",
+    "translation": "Kamu perlu keluar dari toko untuk memodifikasi avatar.",
     "isDeprecated": false
   },
   {
@@ -3940,7 +3948,7 @@
     "key": "Message.ReportCatalogItemPhrase",
     "description": null,
     "english": "You can send a report to our moderation team. We will review the item and take appropriate action.",
-    "translation": "Kamu dapat mengirim laporan kepada tim moderasi kami. Kami akan meninjau item tersebut dan mengambil tindakan yang sesuai.",
+    "translation": "Kamu dapat mengirim laporan kepada tim moderasi kami. Kami akan me-review item tersebut dan mengambil tindakan yang sesuai.",
     "isDeprecated": false
   },
   {
@@ -4363,7 +4371,7 @@
     "namespace": "Feature.Catalog",
     "key": "Message.HoldingPolicy",
     "description": null,
-    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
     "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
     "isDeprecated": false
   },
@@ -4428,7 +4436,7 @@
     "key": "Label.MarketplaceToAvatarPage",
     "description": null,
     "english": "You will leave the marketplace to customize your avatar.",
-    "translation": "Kamu akan meninggalkan marketplace untuk mengustomisasi avatar kamu.",
+    "translation": "Kamu akan keluar dari marketplace untuk mengustomisasi avatar kamu.",
     "isDeprecated": false
   },
   {
@@ -4467,7 +4475,7 @@
     "namespace": "Feature.Catalog",
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
-    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
     "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
     "isDeprecated": false
   },
@@ -4509,6 +4517,22 @@
     "description": "Indicates the lowest available price of an item with resellers. Example: From (Robux icon) 100",
     "english": "From {itemPrice}",
     "translation": "Dari {itemPrice}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "Periode Penahanan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "Tersedia di Pengalaman Virtual",
     "isDeprecated": false
   },
   {
@@ -5892,7 +5916,7 @@
     "key": "Label.ManageFriendsListCaption",
     "description": null,
     "english": "Review the friends you've interacted with least to keep your friends list up to date.",
-    "translation": "Tinjau teman yang paling jarang berinteraksi dengan kamu agar daftar teman kamu selalu terbaru.",
+    "translation": "Review teman yang paling jarang berinteraksi dengan kamu agar daftar teman kamu selalu terbaru.",
     "isDeprecated": false
   },
   {
@@ -5900,7 +5924,7 @@
     "key": "Label.FewestInteractionsExplanation",
     "description": null,
     "english": "Review the friends you've interacted with least. If you change your mind after removing a friend, you can send them another friend request.",
-    "translation": "Tinjau teman yang paling jarang berinteraksi dengan kamu. Jika kamu berubah pikiran setelah menghapus teman, kamu dapat mengirim permintaan pertemanan lagi kepada mereka.",
+    "translation": "Review teman yang paling jarang berinteraksi dengan kamu. Jika kamu berubah pikiran setelah menghapus teman, kamu dapat mengirim permintaan pertemanan lagi kepada mereka.",
     "isDeprecated": false
   },
   {
@@ -6164,7 +6188,7 @@
     "key": "Message.LeaveRobloxForAnotherSite",
     "description": null,
     "english": "You are about to leave Roblox for another site that is governed by a separate privacy policy.",
-    "translation": "Kamu akan meninggalkan Roblox dan beralih ke situs lain yang diatur oleh kebijakan privasi terpisah.",
+    "translation": "Kamu akan keluar dari Roblox dan beralih ke situs lain yang diatur oleh kebijakan privasi terpisah.",
     "isDeprecated": false
   },
   {
@@ -6356,7 +6380,7 @@
     "key": "Label.GenreWestern",
     "description": null,
     "english": "Western",
-    "translation": "Barat",
+    "translation": "Koboi",
     "isDeprecated": false
   },
   {
@@ -6756,7 +6780,7 @@
     "key": "QuickLaunch.LaunchError.UnderReview",
     "description": null,
     "english": "This experience is currently under review.",
-    "translation": "Pengalaman virtual ini sedang ditinjau.",
+    "translation": "Pengalaman virtual ini sedang di-review.",
     "isDeprecated": false
   },
   {
@@ -9372,7 +9396,7 @@
     "key": "Heading.RenameCharacter",
     "description": "The heading of the rename costume prompt",
     "english": "Rename Character",
-    "translation": "Ganti Nama Karakter",
+    "translation": "Ubah Nama Karakter",
     "isDeprecated": false
   },
   {
@@ -9396,7 +9420,7 @@
     "key": "Message.FailedRenameCostume",
     "description": "Failure toast when renaming a costume fails",
     "english": "Failed to rename character",
-    "translation": "Gagal untuk mengganti nama karakter",
+    "translation": "Gagal untuk mengubah nama karakter",
     "isDeprecated": false
   },
   {
@@ -9636,7 +9660,7 @@
     "key": "Action.ProfilePicturePreview",
     "description": "Title for final page of profile picture editor where you can preview your edited picture",
     "english": "Profile Picture Preview",
-    "translation": "Pratinjau Foto Profil",
+    "translation": "Preview Foto Profil",
     "isDeprecated": false
   },
   {
@@ -9732,7 +9756,7 @@
     "key": "Label.PPEFinalHeader",
     "description": "Header for the final \"preview\" page of Profile Picture Editor.",
     "english": "Preview",
-    "translation": "Pratinjau",
+    "translation": "Preview",
     "isDeprecated": false
   },
   {
@@ -14852,7 +14876,7 @@
     "key": "Description.CheckYourEmailUnder13",
     "description": null,
     "english": "Please ask your parent to check the email we sent to {emailAddress} and follow the instructions to reset your password. They may need to refresh their inbox or check their spam folder.",
-    "translation": "Minta orang tua kamu untuk membaca email yang kami telah kirim ke {emailAddress} dan ikuti petunjuknya untuk mereset kata sandi kamu. Jika email tidak ditemukan, mulai ulang inbox atau periksa folder spam.",
+    "translation": "Minta orang tua kamu untuk membaca email yang kami telah kirim ke {emailAddress} dan ikuti petunjuknya untuk mereset kata sandi kamu. Jika email tidak ditemukan, refresh inbox atau periksa folder spam.",
     "isDeprecated": false
   },
   {
@@ -14860,7 +14884,7 @@
     "key": "Description.CheckYourEmail",
     "description": null,
     "english": "Please check the email we sent to {emailAddress} and follow the instructions to reset your password. You may need to refresh your inbox or check your spam folder.",
-    "translation": "Baca email yang kami telah kirim ke {emailAddress} dan ikuti petunjuknya untuk mereset kata sandi kamu. Jika email tidak ditemukan, mulai ulang inbox atau periksa folder spam.",
+    "translation": "Baca email yang kami telah kirim ke {emailAddress} dan ikuti petunjuknya untuk mereset kata sandi kamu. Jika email tidak ditemukan, refresh inbox atau periksa folder spam.",
     "isDeprecated": false
   },
   {
@@ -16139,8 +16163,8 @@
     "namespace": "CommonUI.UserAgreements",
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
-    "english": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following sections:",
-    "translation": "Untuk terus bermain di Roblox, harap setujui Ketentuan Layanan terbaru kami. Perubahan telah diterapkan ke bagian berikut:",
+    "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
+    "translation": "Untuk terus bermain di Roblox, setujui Ketentuan Layanan terbaru kami. Perubahan telah diterapkan ke bagian berikut:",
     "isDeprecated": false
   },
   {
@@ -16260,7 +16284,7 @@
     "key": "Title.Ban1Day",
     "description": "Title for the moderation prompt.",
     "english": "Banned for 1 Day",
-    "translation": "Diblokir untuk 1 Hari",
+    "translation": "Diblokir selama 1 Hari",
     "isDeprecated": false
   },
   {
@@ -16268,7 +16292,7 @@
     "key": "Title.Ban3Day",
     "description": "Title for the moderation prompt.",
     "english": "Banned for 3 Days",
-    "translation": "Diblokir untuk 3 Hari",
+    "translation": "Diblokir selama 3 Hari",
     "isDeprecated": false
   },
   {
@@ -16276,7 +16300,7 @@
     "key": "Feature.Moderation.Title.Ban7Day",
     "description": "DEPRECATED",
     "english": "Banned for 7 Day",
-    "translation": "Diblokir untuk 7 Hari",
+    "translation": "Diblokir selama 7 Hari",
     "isDeprecated": true
   },
   {
@@ -16284,7 +16308,7 @@
     "key": "Title.Ban7Day",
     "description": "Title for the moderation prompt.",
     "english": "Banned for 7 Days",
-    "translation": "Diblokir untuk 7 Hari",
+    "translation": "Diblokir selama 7 Hari",
     "isDeprecated": false
   },
   {
@@ -16292,7 +16316,7 @@
     "key": "Title.Ban14Day",
     "description": "Title for the moderation prompt.",
     "english": "Banned for 14 Days",
-    "translation": "Diblokir untuk 14 Hari",
+    "translation": "Diblokir selama 14 Hari",
     "isDeprecated": false
   },
   {
@@ -16356,7 +16380,7 @@
     "key": "Messages.ReviewedTitle",
     "description": "Reviewed date title",
     "english": "Reviewed",
-    "translation": "Ditinjau",
+    "translation": "Di-review",
     "isDeprecated": false
   },
   {
@@ -16956,7 +16980,7 @@
     "key": "Tile.Fighting",
     "description": "Genre Tile Title - Fighting",
     "english": "Fighting",
-    "translation": "Fighting",
+    "translation": "Pertarungan",
     "isDeprecated": false
   },
   {

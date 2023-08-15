@@ -2200,6 +2200,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "ControllerBar.Search",
+    "description": "Made this by accident.  Please ignore.",
+    "english": "Search",
+    "translation": "Search",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.Search",
+    "description": "The word \"search\" as displayed by the controller bar on console (xbox).",
+    "english": "Search",
+    "translation": "Search",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.HoldPrefix",
+    "description": "In english, this word precedes a controller-bar short-cut icon, as in \"Hold <A> to Play\" meaning hold down the A button on the gamepad to do an action",
+    "english": "Hold",
+    "translation": "Hold",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.ToPlaySuffix",
+    "description": "In english, this is the phrase that comes after the controller button icon such as: \"Hold <A> to Play\".  This phrase will be used together with Label.ControllerBar.HoldPrefix (and an image for the button icon) to create the full sentence \"Hold <A> to Play\".",
+    "english": "to play",
+    "translation": "to play",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Labels.OrYouCan",
+    "description": "Used to separate groups of buttons.  In particular, on the login/signup screen, when you can login or signup using the current Xbox account, _or you can_ switch Xbox accounts.",
+    "english": "Or you can",
+    "translation": "Or you can",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -4371,8 +4411,8 @@
     "namespace": "Feature.Catalog",
     "key": "Message.HoldingPolicy",
     "description": null,
-    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
-    "translation": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
+    "translation": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
     "isDeprecated": false
   },
   {
@@ -4475,8 +4515,8 @@
     "namespace": "Feature.Catalog",
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
-    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
-    "translation": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
+    "translation": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
     "isDeprecated": false
   },
   {
@@ -4549,6 +4589,54 @@
     "description": null,
     "english": "Quantity Left: {remaining}/{total}",
     "translation": "Quantity Left: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "Premium is required for reselling",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "Max Per User",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Unable to Buy",
+    "translation": "Unable to Buy",
     "isDeprecated": false
   },
   {
@@ -11184,6 +11272,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.QuantityLimitReached",
+    "description": "Purchase reached the limit of how many items the user can own.",
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.ConnectionError",
     "key": "Queued",
     "description": "<DEPRECATED, can be deleted as of 1-9-23>",
@@ -16243,8 +16339,8 @@
     "namespace": "CommonUI.UserAgreements",
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
-    "english": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following sections:",
-    "translation": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following sections:",
+    "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
+    "translation": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
     "isDeprecated": false
   },
   {
@@ -18560,27 +18656,27 @@
     "isDeprecated": false
   },
   {
-    "namespace": "Feature.TwoStepVerificationChallenge\t",
+    "namespace": "Feature.TwoStepVerificationChallenge",
     "key": "Header.TwoStepVerificationRequired",
     "description": "Header text for the two-step verification required modal.",
     "english": "2-Step Verification Required",
     "translation": "2-Step Verification Required",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
-    "namespace": "Feature.TwoStepVerificationChallenge\t",
+    "namespace": "Feature.TwoStepVerificationChallenge",
     "key": "Body.TwoStepVerificationRequired",
     "description": "Body text for the two-step verification challenge modal.",
     "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
     "translation": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
-    "namespace": "Feature.TwoStepVerificationChallenge\t",
+    "namespace": "Feature.TwoStepVerificationChallenge",
     "key": "Action.SetUp",
     "description": "Button text for the two-step verification challenge.",
     "english": "Set Up",
     "translation": "Set Up",
-    "isDeprecated": false
+    "isDeprecated": true
   }
 ]
