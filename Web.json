@@ -15423,6 +15423,11 @@
       "deprecated": false,
       "privateNote": "Error message for if the ItemConfiguration Api is unreachable or having another error.",
       "text": "This item can't be configured right now. Please try again later."
+    },
+    "Label.AvatarShopAndGroupPlaces": {
+      "deprecated": false,
+      "privateNote": "For the group version of Label.AvatarShopAndMyPlaces",
+      "text": "Avatar Shop and {groupName}’s Places"
     }
   },
   "Feature.FileUploadComponent": {
@@ -27381,6 +27386,11 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Retention"
+    },
+    "Heading.Credentials": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Credentials"
     }
   },
   "CreatorDashboard.Features": {
@@ -32581,10 +32591,147 @@
     }
   },
   "CreatorDashboard.OpenCloud": {
+    "Label.NDaysExpiration": {
+      "deprecated": false,
+      "privateNote": "For the open cloud expiration date picker. daysLastUsed will never be singular (i.e. always > 1).",
+      "text": "{daysLastUsed} Days From Today"
+    },
     "Label.CustomExpiration": {
       "deprecated": false,
       "privateNote": "For the expiration date picker if a user wishes to select a custom date",
       "text": "Custom"
+    },
+    "Label.NoExpiration": {
+      "deprecated": false,
+      "privateNote": "For the expiration date picker, to denote a user does not want to give an expiration date on the key",
+      "text": "No Expiration"
+    },
+    "Message.UniverseSearchError": {
+      "deprecated": false,
+      "privateNote": "For the universe search dropdown when there is an error fetching the user's search query.",
+      "text": "Error searching for universes. Please try again."
+    },
+    "Message.UniverseLoadingText": {
+      "deprecated": false,
+      "privateNote": "The loading state of the universe search dropdown",
+      "text": "Loading universes..."
+    },
+    "Message.NoOptionsText": {
+      "deprecated": false,
+      "privateNote": "For the universe search dropdown when there are no results from the user's search query.",
+      "text": "No results."
+    },
+    "Message.UniverseSearchPlaceholder": {
+      "deprecated": false,
+      "privateNote": "For the universe search dropdown initial input placeholder",
+      "text": "Search for a universe"
+    },
+    "Heading.AcceptedAddresses": {
+      "deprecated": false,
+      "privateNote": "For the IP / CIDR address form header",
+      "text": "Accepted IP Addresses"
+    },
+    "Heading.AcceptedAddressDescription": {
+      "deprecated": false,
+      "privateNote": "For the IP / CIDR address form sub heading description",
+      "text": "Requests will only be accepted from these IP Addresses"
+    },
+    "Button.AddIPAddress": {
+      "deprecated": false,
+      "privateNote": "For the button on the IP Address / CIDR form to add the IP string entered",
+      "text": "Add IP Address"
+    },
+    "Message.InputIpPlaceholder": {
+      "deprecated": false,
+      "privateNote": "Input placeholder for the IP Address / CIDR form",
+      "text": "Enter an IP Address"
+    },
+    "Message.AddIPInstructions": {
+      "deprecated": false,
+      "privateNote": "For the IP Address / CIDR form form (will be placed under the Input element)",
+      "text": "Enter an IPv4, an IPv6, or a subnet using CIDR notation (Examples: 2001:db8::/64, 192.168.0.0/22, 192.168.0.1/24, 192.168.0.1)"
+    },
+    "Message.NoIpAddresses": {
+      "deprecated": false,
+      "privateNote": "For the IP Address / CIDR form when there are currently no IPs entered or initialized into the form",
+      "text": "No IP Addresses Are Associated with the current key"
+    },
+    "Message.EmptyIPSubmitError": {
+      "deprecated": false,
+      "privateNote": "For the IP Address / CIDR form when user tries to enter an empty string (error message)",
+      "text": "Please Enter an IP Address or a CIDR"
+    },
+    "Message.InvalidCIDROrIP": {
+      "deprecated": false,
+      "privateNote": "For the IP Address / CIDR form when an invalid IP or CIDR is entered into the form",
+      "text": "The IP address or CIDR entered is invalid. Please try again."
+    },
+    "Message.DuplicateIPError": {
+      "deprecated": false,
+      "privateNote": "For the IP Address / CIDR form when a duplicate is attempted to be added",
+      "text": "IP or CIDR was already added."
+    },
+    "Message.MaxIpsAllowedError": {
+      "deprecated": false,
+      "privateNote": "For IP Address form to inform a user they've entered the maximum number of IP addresses allowed for that key. maxIpCount will always be > 1",
+      "text": "Maximum of {maxIPCount} IP Addresses can be added to the current API key"
+    },
+    "Button.CreateKey": {
+      "deprecated": false,
+      "privateNote": "Button Message to let a user create an API Key",
+      "text": "Create API Key"
+    },
+    "Label.Status": {
+      "deprecated": false,
+      "privateNote": "For the API key 'status' table head column value",
+      "text": "Status"
+    },
+    "Heading.APIKeys": {
+      "deprecated": false,
+      "privateNote": "For the API key / Credentials Table heading",
+      "text": "API Keys"
+    },
+    "Heading.AppCredentials": {
+      "deprecated": false,
+      "privateNote": "The main top heading for the open cloud credentials tab",
+      "text": "Application Credentials"
+    },
+    "Description.AppCredentials": {
+      "deprecated": false,
+      "privateNote": "Main description under the App Credentials Heading",
+      "text": "Create Credentials to programmatically access your game resources using Open Cloud APIs"
+    }
+  },
+  "CreatorDashboard.ScopeSystem": {
+    "Label.UniversePlaces": {
+      "deprecated": false,
+      "privateNote": "For the 'universe-places' scope type name",
+      "text": "Place Management"
+    },
+    "Label.UniverseTargetType": {
+      "deprecated": false,
+      "privateNote": "For the 'universe' target type name",
+      "text": "Universe Level Permissions"
+    },
+    "Label.Universe": {
+      "deprecated": false,
+      "privateNote": "For the 'universe' target part name",
+      "text": "Universe"
+    },
+    "Label.WriteOperation": {
+      "deprecated": false,
+      "privateNote": "For the 'write' operation (referenced in the universe-places scope type for beta)",
+      "text": "Write"
+    },
+    "Label.ReadOperation": {
+      "deprecated": false,
+      "privateNote": "For the 'read' operation (referenced in the universe-places scope type in the beta)",
+      "text": "Read"
+    },
+    "Label.NoAccess": {
+      "deprecated": false,
+      "privateNote": "The default operation selected state- which is no selected operations for the selected scope type",
+      "text": "No Access"
     }
   }
 }
