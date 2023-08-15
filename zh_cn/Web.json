@@ -1616,6 +1616,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "{accountName} 的两步验证更改",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}您已将 {accountName} 的两步验证方式从“{disabledTwoStepMethod}”改为“{enabledTwoStepMethod}”。如果您没有进行此操作，请立刻联系客服人员进行帐户恢复。{lineBreak}{lineBreak}谢谢，{lineBreak}{lineBreak}Roblox 团队",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}您孩子的帐户 {accountName} 的两步验证方式从“{disabledTwoStepMethod}”改为“{enabledTwoStepMethod}”。如果您或孩子没有进行此操作，请立刻联系客服人员进行帐户恢复。{lineBreak}{lineBreak}谢谢，{lineBreak}{lineBreak}Roblox 团队",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -10976,6 +11000,118 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentVoiceCollection",
+    "description": "similar to Label.ConsentVoiceCollection",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "点按“启用”，即表示我同意 Roblox 仅出于审核和安全目的收集、使用和存储我的{linkStart}音频录音{linkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ConfirmAuthDelete",
+    "description": "Confirmation modal message before deleting an OAuth app authorization",
+    "english": "Are you sure you want to remove the authorization for \"{appName}\"?",
+    "translation": "确定要移除“{appName}”的权限吗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteAuthorization",
+    "description": "Confirmation dialog modal header",
+    "english": "Delete Authorization",
+    "translation": "删除权限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.SuccessRemove",
+    "description": "Successful authorization deletion message",
+    "english": "The authorization to \"{appName}\" was successfully removed",
+    "translation": "已成功移除“{appName}”的权限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ErrorRemove",
+    "description": "Error message if authorization deletion fails",
+    "english": "There was an error removing the authorization. Please try again.",
+    "translation": "移除权限时发生错误，请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ExerciseDataRights",
+    "description": null,
+    "english": "Exercise Data Rights",
+    "translation": "行使数据权限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AccountDeletion",
+    "description": null,
+    "english": "Initiate Account Deletion",
+    "translation": "开始帐户删除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Initiate",
+    "description": "Button text",
+    "english": "Initiate",
+    "translation": "开始",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountDeletionDescription",
+    "description": null,
+    "english": "Once you begin this process, this account will no longer be accessible and the deletion cannot be reversed.",
+    "translation": "一旦开始此程序，此帐户将无法继续使用，删除也将无法复原。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.VerifiedUsernameChangeWarning",
+    "description": "A warning to users that changing their username will remove their verified badge status",
+    "english": "Warning: Changing your username will remove your verified badge status. Are you sure you want to do this?",
+    "translation": "警告：修改用户名将移除你的验证徽章状态。确定要继续？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.Verified2FAChangeWarning",
+    "description": "A warning to users that turning off their 2FA will remove their verified badge status",
+    "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
+    "translation": "警告：关闭你的两步验证将移除你的验证徽章状态。确定要继续？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoDescription",
+    "description": "Placeholder text when an OAuth app has no description.",
+    "english": "No Description",
+    "translation": "无描述",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoAuthorizations",
+    "description": null,
+    "english": "No Authorizations",
+    "translation": "无认证",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -12901,6 +13037,14 @@
     "description": null,
     "english": "2D",
     "translation": "2D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.AllItemsOnRoblox",
+    "description": "Similar to Label.FeaturedItemsOnRoblox",
+    "english": "All Items on {spanStart}{roblox}{spanEnd}",
+    "translation": "{spanStart}{roblox}{spanEnd} 所有道具",
     "isDeprecated": false
   },
   {
@@ -21184,6 +21328,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ServerList",
+    "key": "Label.NumberOfPlayers",
+    "description": null,
+    "english": "Number of Players",
+    "translation": "玩家数量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Label.ExcludeFullServers",
+    "description": null,
+    "english": "Exclude Full Servers",
+    "translation": "排除满额的服务器",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Action.Descending",
+    "description": null,
+    "english": "Descending",
+    "translation": "降序",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Action.Ascending",
+    "description": null,
+    "english": "Ascending",
+    "translation": "生序",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Support",
     "key": "Label.PC",
     "description": "PC",
@@ -24293,6 +24469,14 @@
     "description": null,
     "english": "Based on your past interests",
     "translation": "基于你以往的兴趣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Label.TopicSponsoredGames",
+    "description": null,
+    "english": "Sponsored",
+    "translation": "赞助",
     "isDeprecated": false
   },
   {
@@ -30141,6 +30325,14 @@
     "description": "Button that takes the user to the game.",
     "english": "Visit",
     "translation": "访问",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DownloadApp",
+    "key": "Message.AppBumpDesktopDevice",
+    "description": "The user is being encouraged to play on the native desktop universal app (windows, mac)",
+    "english": "Explore Roblox in our Desktop app!",
+    "translation": "在我们的桌面版 App 探索 Roblox！",
     "isDeprecated": false
   },
   {
@@ -49840,6 +50032,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Description.TermsAndRequirements",
+    "description": null,
+    "english": "To use DevEx, you must agree to DevEx Terms of Use and meet the simple requirements set out in those Terms, some of which are as follows:",
+    "translation": "若要使用 DevEx，你必须同意 DevEx 使用条款并符合条款中的基本条件，部分条件如下：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Description.FormInstructionV2",
+    "description": null,
+    "english": "Please complete this form to begin processing your payment. If you need assistance with this form, please visit the {helpLinkStart}Help Center{helpLinkEnd}",
+    "translation": "请填写此表格开始处理你的付款。如果在填写表格的过程中需要帮助，请访问{helpLinkStart}帮助中心{helpLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Label.CurrentExchangeRate",
+    "description": null,
+    "english": "Current rate",
+    "translation": "当前汇率",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Label.RobuxToUSD",
+    "description": null,
+    "english": "{robuxAmount} for {usdAmount}",
+    "translation": "{robuxAmount} Robux：{usdAmount} 美元",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Label.BalanceRequirementV2",
+    "description": null,
+    "english": "Minimum of {minCashoutValue} earned Robux in your account",
+    "translation": "帐户中赚得 Robux 至少为 {minCashoutValue}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.LogIn",
     "key": "Action.WeChatLogin",
     "description": null,
@@ -53168,6 +53400,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.DisplayName",
+    "key": "Description.WarningVerifiedStatusDisplayNameChange",
+    "description": "A warning to users that changing their display name will remove their verified badge status",
+    "english": "Warning: Changing your display name will remove your verified badge status. Are you sure you want to do this?",
+    "translation": "警告：修改昵称将移除你的验证徽章状态。确定要继续？",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Creations",
     "key": "Label.DevelopmentItems",
     "description": null,
@@ -54853,6 +55093,38 @@
     "description": "The label for a dropdown selector that contains the creations (experiences, avatar items, groups) that are owned the user or group named \"ownerName\"",
     "english": "{ownerName}'s Creations",
     "translation": "{ownerName} 的作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltip",
+    "description": null,
+    "english": "Roblox's estimate for how many impressions were attempted to be shown to users",
+    "translation": "Roblox 对尝试曝光给玩家的次数的预计数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.AttributedVisitsTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression or click on your ad",
+    "translation": "被曝光或点按广告后进入你的作品的人数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.PostImpressionTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression of your ad",
+    "translation": "被曝光或点按广告后进入你的作品的人数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.PostImpression",
+    "description": null,
+    "english": "Post Impression",
+    "translation": "曝光后",
     "isDeprecated": false
   },
   {
@@ -58088,6 +58360,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.DevProductSales",
+    "description": null,
+    "english": "You can view your developer products' total sales in daily and monthly stats.",
+    "translation": "你可以在单日和单月数据中查看开发者产品的总销售。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -58548,7 +58828,7 @@
     "key": "Message.NoRestrictedCountries",
     "description": null,
     "english": "None",
-    "translation": "你的作品符合所有地区的要求",
+    "translation": "无",
     "isDeprecated": false
   },
   {
@@ -61685,6 +61965,30 @@
     "description": "legal disclaimer text",
     "english": "I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
     "translation": "我同意 Roblox 仅出于审核和安全用途收集、使用并存储我的<b>音频录音</b>。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FollowCommunityStandards",
+    "description": "Identical to Feature.AccountSettings.Label.FollowCommunityStandards",
+    "english": "Follow our {linkStart}Community Standards{linkEnd} when talking and report abuse if you hear it.",
+    "translation": "交流时，请遵守{linkStart}社区准则{linkEnd}，听到不当言论时请及时举报。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ImplicitConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ImplicitConsentVoiceCollection",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "点按“启用”，即表示我同意 Roblox 仅出于审核和安全用途收集、使用并存储我的{linkStart}音频录音{linkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ConsentVoiceCollection",
+    "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "我同意 Roblox 仅出于审核和安全用途收集、使用并存储我的{linkStart}音频录音{linkEnd}。",
     "isDeprecated": false
   },
   {
@@ -70392,6 +70696,142 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureExperiencePageName",
+    "description": null,
+    "english": "Basic Settings Page",
+    "translation": "基本设置页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewPlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "场景页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewDeveloperProductsPageName",
+    "description": null,
+    "english": "Developer Products Page",
+    "translation": "开发者产品页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureSocialLinksPageName",
+    "description": null,
+    "english": "Social Links Page",
+    "translation": "社交链接页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureUpdatesPageName",
+    "description": null,
+    "english": "Updates Page",
+    "translation": "更新页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewExperiencePlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "场景页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAssetAdsPageName",
+    "description": null,
+    "english": "User Ads Page",
+    "translation": "用户广告页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateShirtsPageName",
+    "description": null,
+    "english": "Shirts Creation Page",
+    "translation": "衬衫创作页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreatePantsPageName",
+    "description": null,
+    "english": "Pants Creation Page",
+    "translation": "裤子创作页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateDecalPageName",
+    "description": null,
+    "english": "Decal Creation Page",
+    "translation": "贴花创建页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateAudioPageName",
+    "description": null,
+    "english": "Audio Creation Page",
+    "translation": "音频创建页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateTeeShirtsPageName",
+    "description": null,
+    "english": "T-Shirts Creation Page",
+    "translation": "T 恤创作页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewModelsPageName",
+    "description": null,
+    "english": "Models Page",
+    "translation": "模型页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateGamePassPageName",
+    "description": null,
+    "english": "Pass Creation Page",
+    "translation": "通行证创作页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewCreationsPageName",
+    "description": null,
+    "english": "Experiences Page",
+    "translation": "作品页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.DevExPageName",
+    "description": null,
+    "english": "Developer Exchange Page",
+    "translation": "开发者兑换页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAdvertiseExperiencePageName",
+    "description": null,
+    "english": "Sponsored Ads Page",
+    "translation": "赞助广告页面",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.Preferences",
     "key": "Label.CreatedBy",
     "description": null,
@@ -70533,6 +70973,14 @@
     "description": "Notification Type Experience",
     "english": "Experience",
     "translation": "体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeExperienceInvitation",
+    "description": "Notification Type ExperienceInvitation",
+    "english": "ExperienceInvitation",
+    "translation": "作品邀请",
     "isDeprecated": false
   },
   {

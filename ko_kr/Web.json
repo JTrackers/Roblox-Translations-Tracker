@@ -1616,6 +1616,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "{accountName}의 2단계 인증 방식 변경",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}{accountName} 님의 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었습니다. 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 계정을 복구하세요.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 계정인 {accountName}의 2단계 인증 방식이 {disabledTwoStepMethod}에서 {enabledTwoStepMethod}(으)로 변경되었습니다. 본인이나 자녀가 변경을 요청한 적이 없다면 즉시 지원 센터에 문의해 자녀의 계정을 복구하세요.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -11069,6 +11093,22 @@
     "description": "A warning to users that turning off their 2FA will remove their verified badge status",
     "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
     "translation": "주의: 2단계 인증을 끄면 배지 인증 상태가 제거됩니다. 정말 진행할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoDescription",
+    "description": "Placeholder text when an OAuth app has no description.",
+    "english": "No Description",
+    "translation": "설명 없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoAuthorizations",
+    "description": null,
+    "english": "No Authorizations",
+    "translation": "권한 없음",
     "isDeprecated": false
   },
   {
@@ -50216,6 +50256,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Description.DevExInfo",
+    "description": null,
+    "english": "The Developer Exchange Program (also known as DevEx) allows you to earn money by creating awesome experiences on Roblox.{lineBreak}Once you earn {minCashoutValue} Robux or more, you are eligible to convert your virtual earnings to real-world cash. DevEx participants are allowed one completed DevEx request per calendar month.",
+    "translation": "개발자 환전 프로그램(DevEx라고도 함)을 통해 Roblox에서 제작한 멋진 체험으로 돈을 벌 수 있습니다.{lineBreak}{minCashoutValue} Robux 이상을 벌게 되면 가상 수입을 실제 현금으로 환전할 수 있죠. DevEx 요청은 매월 1회 제출할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Message.MissingEmail2FA",
+    "description": null,
+    "english": "To cash out you will need to have a verified email address in {settingsLinkStart}Settings{settingsLinkEnd}",
+    "translation": "현금화하려면 먼저 {settingsLinkStart}설정{settingsLinkEnd}에서 이메일 주소를 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Label.AgreeToProvideInfoV2",
+    "description": null,
+    "english": "I acknowledge that I am required to provide information including but not limited to bank account details and tax documentation to a third party payment service in order to cash out.",
+    "translation": "본인은 현금화를 위해 제3자 결제 서비스 기관에 은행 계좌 정보 및 세금 관련 문서를 포함한 각종 정보를 제공해야 함에 동의합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.LogIn",
     "key": "Action.WeChatLogin",
     "description": null,
@@ -54480,6 +54544,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.ShutDownServers",
+    "description": null,
+    "english": "Shut Down Servers",
+    "translation": "서버 종료",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -55349,6 +55421,38 @@
     "description": "The label for a dropdown selector that contains the creations (experiences, avatar items, groups) that are owned the user or group named \"ownerName\"",
     "english": "{ownerName}'s Creations",
     "translation": "{ownerName} 님의 작품",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltip",
+    "description": null,
+    "english": "Roblox's estimate for how many impressions were attempted to be shown to users",
+    "translation": "사용자 대상 광고 노출 시도에 대한 Roblox의 추정치",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.AttributedVisitsTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression or click on your ad",
+    "translation": "광고 노출 또는 클릭 후 내 체험을 방문한 사람 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.PostImpressionTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression of your ad",
+    "translation": "광고 노출 후 내 체험을 방문한 사람 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.PostImpression",
+    "description": null,
+    "english": "Post Impression",
+    "translation": "광고 노출 이후",
     "isDeprecated": false
   },
   {
@@ -59052,7 +59156,7 @@
     "key": "Message.NoRestrictedCountries",
     "description": null,
     "english": "None",
-    "translation": "회원님의 체험은 모든 지역의 규정을 준수합니다",
+    "translation": "없음",
     "isDeprecated": false
   },
   {
@@ -59140,7 +59244,7 @@
     "key": "Message.PreviewComplianceWarning",
     "description": null,
     "english": "You will preview the Guidelines of your experience before submitting. Guidelines will only become active after you submit.",
-    "translation": "설문지 제출에 앞서, 영향받는 지역의 체험에 적용될 콘텐츠 검열 또는 제한 사항을 미리 보기합니다. 이러한 제한 사항은 양식을 제출한 후에만 적용됩니다.",
+    "translation": "제출하기 전에 체험의 가이드라인을 미리 보기합니다. 가이드라인은 제출한 후에만 활성화됩니다.",
     "isDeprecated": false
   },
   {
@@ -59196,7 +59300,7 @@
     "key": "Title.GuidelinesPreview",
     "description": null,
     "english": "Questionnaire Preview",
-    "translation": "가이드라인 미리 보기",
+    "translation": "설문지 미리 보기",
     "isDeprecated": false
   },
   {
@@ -59228,7 +59332,7 @@
     "key": "Message.GuidelinesInProgress",
     "description": null,
     "english": "You have started the questionnaire but didn’t submit. Click “Resume” to continue generating a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "설문지 작성을 시작했지만 제출하지 않았습니다. 연령별 권장 사항 및 지역 규정 준수 사항 등 이 체험에 대한 가이드라인을 계속해서 생성하려면 '재개'를 클릭하세요.",
+    "translation": "설문지 작성을 시작했지만 제출하지 않았습니다. 체험의 콘텐츠에 대한 현재 권장 연령 및 지역 규정 준수 평가를 포함하는 일련의 가이드라인을 계속해서 생성하려면 '다시 시작'을 클릭하세요.",
     "isDeprecated": false
   },
   {
@@ -59244,7 +59348,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "'시작'을 클릭해 본인의 체험에 관한 몇 가지 질문에 답하고, 연령별 권장 사항 및 지역 규정 준수 사항을 포함한 가이드라인을 생성하세요.",
+    "translation": "'시작'을 클릭해 본인의 체험에 관한 몇 가지 질문에 답하세요. 답변에 따라, 체험의 콘텐츠에 대한 현재 권장 연령 및 지역 규정 준수 평가를 포함하는 일련의 가이드라인이 생성됩니다.",
     "isDeprecated": false
   },
   {
@@ -59252,7 +59356,7 @@
     "key": "Title.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Questionnaire Requires Update",
-    "translation": "가이드라인 업데이트 필요",
+    "translation": "설문지 업데이트 필요",
     "isDeprecated": false
   },
   {
@@ -59260,7 +59364,7 @@
     "key": "Message.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Please update your response to answer a few additional questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "몇 가지 추가 질문에 응답하고, 연령별 권장 사항 및 지역 규정 준수 사항을 포함한 전체 가이드라인을 생성하세요.",
+    "translation": "체험에 관한 몇 가지 추가 질문의 답변을 업데이트하세요. 답변에 따라, 체험의 콘텐츠에 대한 현재 권장 연령 및 지역 규정 준수 평가를 포함하는 일련의 가이드라인이 생성됩니다.",
     "isDeprecated": false
   },
   {
@@ -59276,7 +59380,7 @@
     "key": "Message.GuidelinesSubmittedNewVersion",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below; at this time, the age recommendation is only visible to you but will soon be visible to users. Your experience is automatically unavailable in any non-compliant regions below.",
-    "translation": "이 체험에 대한 가이드라인이 아래와 같이 활성화됩니다. 현재는 연령별 권장 사항이 나에게만 표시되지만, 곧 사용자에게도 표시될 것입니다.\n규정을 준수하지 않는 지역에서는 자동으로 체험이 비활성화됩니다.",
+    "translation": "이 체험에 대한 가이드라인이 아래와 같이 활성화됩니다. 현재는 권장 연령이 나에게만 표시되지만, 곧 사용자에게도 표시될 것입니다. 규정을 준수하지 않는 지역에서는 자동으로 체험이 비활성화됩니다.",
     "isDeprecated": false
   },
   {
@@ -59313,10 +59417,18 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.GuidelinesSubmittedNewVersionInProgress",
+    "description": null,
+    "english": "Questionnaire Completed; New Submission Not Completed\t",
+    "translation": "설문지 작성 완료. 새 제출이 완료되지 않음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.GuidelinesSubmittedNewVersionInProgress",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below; at this time, the age recommendation is only visible to you but will soon be visible to users. Your experience is automatically unavailable in any non-compliant regions below.\nYou have started a new entry for the questionnaire but didn’t submit. Click “Resume” to continue generating a set of new Guidelines for the content in your experience.",
-    "translation": "이 체험에는 활성화된 연령별 권장 사항이 있습니다. 다음 미준수 지역(해당되는 경우)에서는 자동으로 체험이 비활성화됩니다. 기존에 설문의 새 항목 입력을 시작했지만 제출하지 않으셨습니다. 생성을 계속하려면 아래의 '재개''를 클릭하세요.",
+    "translation": "이 체험에 대한 가이드라인이 아래와 같이 활성화됩니다. 현재는 권장 연령이 나에게만 표시되지만, 곧 사용자에게도 표시될 것입니다. 규정을 준수하지 않는 지역에서는 자동으로 체험이 비활성화됩니다.\n기존에 설문의 새 항목 입력을 시작했지만 제출하지 않으셨습니다. 체험의 콘텐츠에 대한 일련의 새로운 가이드라인을 계속해서 생성하려면 '다시 시작'을 클릭하세요.",
     "isDeprecated": false
   },
   {
@@ -59332,7 +59444,7 @@
     "key": "Message.ImportantNoteRegenerateGuidelines",
     "description": null,
     "english": "You may retake the Questionnaire {boldStart}anytime{boldEnd} to accurately reflect the latest content in your experience.",
-    "translation": "{boldStart}언제든지{boldEnd} 가이드라인을 재작성해 본인의 체험에 대한 명확한 최신 업데이트 사항을 반영할 수 있습니다.",
+    "translation": "{boldStart}언제든지{boldEnd} 설문지를 재작성해 본인의 체험에 대한 명확한 최신 업데이트 사항을 반영할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -59348,7 +59460,7 @@
     "key": "Title.ImpactOfGuidelines",
     "description": null,
     "english": "Impacts on Your Experience",
-    "translation": "본인의 체험에 대한 가이드라인의 영향",
+    "translation": "체험에 미치는 영향",
     "isDeprecated": false
   },
   {
@@ -59356,7 +59468,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "At this time, Guidelines are only visible to you. We strongly recommend you to generate them as soon as your experience becomes eligible as they will soon become visible to users.",
-    "translation": "가이드라인 작성은 현재 선택 사항이지만, 체험이 적격성을 갖추게 되면 바로 작성하는 것이 좋습니다.",
+    "translation": "현재 가이드라인은 본인만 볼 수 있습니다. 그러나 곧 사용자에게도 표시될 것이므로 체험이 적격성을 갖추게 되면 바로 생성하는 것이 좋습니다.",
     "isDeprecated": false
   },
   {
@@ -59364,7 +59476,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendation",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: This information will soon become visible to users and parents will have parental controls they can use to manage their kids’ access to experiences.",
-    "translation": "{boldStart}연령별 권장 사항{boldEnd}: 현재 연령별 권장 사항은 체험의 검색 가능성에 영향을 미치지 않습니다. 그러나 이러한 권장 사항은 곧 사용자 및 보호자에게도 표시될 예정이며, 각자가 플랫폼에서의 검색 가능한 체험에 대한 통찰력 및 제어권을 갖게 됩니다.",
+    "translation": "{boldStart}권장 연령{boldEnd}: 이 정보는 곧 사용자에게 표시되며 보호자는 자녀의 체험 이용 관리를 위한 자녀 보호 기능을 이용할 수 있게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -59372,7 +59484,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliance",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}지역 규정 준수 사항{boldEnd}: 본인의 체험에 가이드라인이 적용되면, 규정을 준수하지 않는 모든 지역이 식별되어 해당 지역에서의 체험이 비활성화됩니다.",
+    "translation": "{boldStart}지역 규정 준수{boldEnd}: 가이드라인에 따라, 아래의 미준수 지역에서는 체험이 자동으로 비활성화됩니다.",
     "isDeprecated": false
   },
   {
@@ -59380,7 +59492,7 @@
     "key": "Message.LearnMoreAboutExperienceGuideline",
     "description": null,
     "english": "Learn more about our {linkStart}Policy APIs{linkEnd}, which help you make your experience dynamically compliant.",
-    "translation": "체험 가이드라인에 대해 더 자세히 알아보려면, 설문지 작성을 시작하기 전에 개발자 허브 페이지 및 {linkStart}정책 API{linkEnd}를 확인하세요.",
+    "translation": "{linkStart}정책 API{linkEnd}에 대해 자세히 알아보고, 본인의 체험에 대한 규정 준수를 유지하세요.",
     "isDeprecated": false
   },
   {
@@ -59388,7 +59500,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "At this time, Guidelines are only visible to you. We strongly recommend you to generate them as soon as your experience becomes eligible as they will soon become visible to users.",
-    "translation": "가이드라인 작성은 현재 선택 사항이지만, 체험이 적격성을 갖추게 되면 바로 작성하는 것이 좋습니다.",
+    "translation": "현재 가이드라인은 본인만 볼 수 있습니다. 그러나 곧 사용자에게도 표시될 것이므로 체험이 적격성을 갖추게 되면 바로 생성하는 것이 좋습니다.",
     "isDeprecated": false
   },
   {
@@ -59396,7 +59508,7 @@
     "key": "Title.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "Impacts on Your Experience",
-    "translation": "본인의 체험에 대한 가이드라인의 영향",
+    "translation": "체험에 미치는 영향",
     "isDeprecated": false
   },
   {
@@ -59404,7 +59516,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendationPreview",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: This information will soon become visible to users and parents will have parental controls they can use to manage their kids’ access to experiences.",
-    "translation": "{boldStart}연령별 권장 사항{boldEnd}: 현재 연령별 권장 사항은 체험의 검색 가능성에 영향을 미치지 않습니다. 그러나 이러한 권장 사항은 곧 사용자 및 보호자에게도 표시될 예정이며, 각자가 플랫폼에서의 검색 가능한 체험에 대한 통찰력 및 제어권을 갖게 됩니다. 체험이 적격성을 갖추게 되면 권장 사항을 바로 작성하는 것이 좋습니다.",
+    "translation": "{boldStart}권장 연령{boldEnd}: 이 정보는 곧 사용자에게 표시되며 보호자는 자녀의 체험 이용 관리를 위한 자녀 보호 기능을 이용할 수 있게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -59412,7 +59524,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliancePreview",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}지역 규정 준수 사항{boldEnd}: 본인의 체험에 가이드라인이 적용되면, 규정을 준수하지 않는 모든 지역이 식별되어 해당 지역에서의 체험이 비활성화됩니다.",
+    "translation": "{boldStart}지역 규정 준수{boldEnd}: 가이드라인에 따라, 아래의 미준수 지역에서는 체험이 자동으로 비활성화됩니다.",
     "isDeprecated": false
   },
   {
@@ -59420,7 +59532,7 @@
     "key": "Tooltip.AgeRecommendationRestrictionHeader",
     "description": null,
     "english": "An age recommendation provides general information about the ages of users an experience is generally suitable for.",
-    "translation": "연령별 권장 사항은 이 콘텐츠의 소비가 기대되는 연령층에 대한 일반적인 정보를 제공합니다.",
+    "translation": "권장 연령은 일반적으로 체험 이용에 적합한 연령대에 대한 정보를 제공합니다.",
     "isDeprecated": false
   },
   {
@@ -59428,7 +59540,7 @@
     "key": "Tooltip.ContentDescriptorRestrictionHeader",
     "description": null,
     "english": "Descriptors highlight significant elements in an experience.",
-    "translation": "콘텐츠 설명자는 체험 내에서 가이드라인이 영향을 미치는 요소를 나타내는 일반적인 콘텐츠 지표입니다.",
+    "translation": "설명자는 체험의 주요 요소를 강조해서 보여 줍니다.",
     "isDeprecated": false
   },
   {
@@ -59437,6 +59549,22 @@
     "description": null,
     "english": "Descriptors",
     "translation": "설명자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.ChangedQuestionnaireId",
+    "description": null,
+    "english": "Roblox just updated the questionnaire",
+    "translation": "Roblox에서 설문지를 업데이트했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.ChangedQuestionnaireId",
+    "description": null,
+    "english": "Please refresh to see the updated questions",
+    "translation": "업데이트된 질문을 보려면 새로 고침하세요.",
     "isDeprecated": false
   },
   {
@@ -64892,7 +65020,7 @@
     "key": "Message.FailedToAddEntry",
     "description": null,
     "english": "Failed to add new entry, please try again later",
-    "translation": "새 항목을 추가하지 못했습니다. 나중에 다시 시도하세요",
+    "translation": "새 항목을 추가하지 못했습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -64908,7 +65036,7 @@
     "key": "Message.FailedToSaveTranslation",
     "description": null,
     "english": "Failed to save translation, please try again later",
-    "translation": "번역을 저장하지 못했습니다. 나중에 다시 시도하세요",
+    "translation": "번역을 저장하지 못했습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -67124,7 +67252,7 @@
     "key": "Message.FailedToSaveTranslation",
     "description": null,
     "english": "Failed to save translation, please try again later",
-    "translation": "번역을 저장하지 못했습니다. 나중에 다시 시도하세요",
+    "translation": "번역을 저장하지 못했습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -71632,6 +71760,102 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewExperiencePlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "플레이스 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAssetAdsPageName",
+    "description": null,
+    "english": "User Ads Page",
+    "translation": "사용자 광고 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateShirtsPageName",
+    "description": null,
+    "english": "Shirts Creation Page",
+    "translation": "셔츠 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreatePantsPageName",
+    "description": null,
+    "english": "Pants Creation Page",
+    "translation": "바지 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateDecalPageName",
+    "description": null,
+    "english": "Decal Creation Page",
+    "translation": "데칼 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateAudioPageName",
+    "description": null,
+    "english": "Audio Creation Page",
+    "translation": "오디오 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateTeeShirtsPageName",
+    "description": null,
+    "english": "T-Shirts Creation Page",
+    "translation": "티셔츠 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewModelsPageName",
+    "description": null,
+    "english": "Models Page",
+    "translation": "모델 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateGamePassPageName",
+    "description": null,
+    "english": "Pass Creation Page",
+    "translation": "패스 제작 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewCreationsPageName",
+    "description": null,
+    "english": "Experiences Page",
+    "translation": "체험 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.DevExPageName",
+    "description": null,
+    "english": "Developer Exchange Page",
+    "translation": "개발자 환전 페이지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAdvertiseExperiencePageName",
+    "description": null,
+    "english": "Sponsored Ads Page",
+    "translation": "스폰서 광고 페이지",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.Preferences",
     "key": "Label.CreatedBy",
     "description": null,
@@ -71893,6 +72117,54 @@
     "description": null,
     "english": "Attributes",
     "translation": "특성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.MediaType",
+    "description": null,
+    "english": "Media Type",
+    "translation": "미디어 유형",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.ReturnsA",
+    "description": "['boolean', 'number', 'string'] are the types to fill in",
+    "english": "Returns a",
+    "translation": "반환:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.RequestBodyA",
+    "description": "['boolean', 'number', 'string'] art the types to fill in",
+    "english": "Request body is a",
+    "translation": "요청 본문은",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.ReturnsAn",
+    "description": "['integer', 'array', 'object'] are the types to fill in",
+    "english": "Returns an",
+    "translation": "반환:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "RequestBodyAn",
+    "description": "Deprecated",
+    "english": "Request body is an",
+    "translation": "요청 본문은",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.RequestBodyAn",
+    "description": "['integer', 'array', 'object'] are the types to fill in",
+    "english": "Request body is an\t",
+    "translation": "요청 본문은\t",
     "isDeprecated": false
   },
   {

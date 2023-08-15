@@ -1616,6 +1616,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "{accountName} 的雙步驟驗證變更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}您已將 {accountName} 的雙步驟驗證方式從「{disabledTwoStepMethod}」改為「{enabledTwoStepMethod}」。如果您沒有進行此操作，請立刻聯絡客服人員取回您的帳號。{lineBreak}{lineBreak}謝謝，{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}您的小孩的帳號 {accountName} 的雙步驟驗證方式已從「{disabledTwoStepMethod}」改為「{enabledTwoStepMethod}」。如果您或小孩沒有進行此操作，請立刻聯絡客服人員取回小孩的帳號。{lineBreak}{lineBreak}謝謝，{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -11069,6 +11093,22 @@
     "description": "A warning to users that turning off their 2FA will remove their verified badge status",
     "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
     "translation": "警告：若關閉雙步驟驗證，您將會失去驗證徽章狀態。確定繼續？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoDescription",
+    "description": "Placeholder text when an OAuth app has no description.",
+    "english": "No Description",
+    "translation": "無說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoAuthorizations",
+    "description": null,
+    "english": "No Authorizations",
+    "translation": "無權限",
     "isDeprecated": false
   },
   {
@@ -55320,6 +55360,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltip",
+    "description": null,
+    "english": "Roblox's estimate for how many impressions were attempted to be shown to users",
+    "translation": "Roblox 對嘗試曝光給玩家的次數的預測",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.AttributedVisitsTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression or click on your ad",
+    "translation": "被曝光或點擊廣告後進入您的體驗的人數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.PostImpressionTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression of your ad",
+    "translation": "被曝光後進入您的體驗的人數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.PostImpression",
+    "description": null,
+    "english": "Post Impression",
+    "translation": "曝光後",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TimedAllowance",
     "key": "Tips.Hourly.Warning",
     "description": null,
@@ -59028,7 +59100,7 @@
     "key": "Message.NoRestrictedCountries",
     "description": null,
     "english": "None",
-    "translation": "您的體驗符合所有區域法規",
+    "translation": "無",
     "isDeprecated": false
   },
   {
@@ -59116,7 +59188,7 @@
     "key": "Message.PreviewComplianceWarning",
     "description": null,
     "english": "You will preview the Guidelines of your experience before submitting. Guidelines will only become active after you submit.",
-    "translation": "您送出問卷前將可以預覽體驗在受影響區域所受到的內容過濾或限制。這些限制只會在送出問卷後生效。",
+    "translation": "您在提交之前將會預覽體驗準則。準則只會在提交後活躍。",
     "isDeprecated": false
   },
   {
@@ -59204,7 +59276,7 @@
     "key": "Message.GuidelinesInProgress",
     "description": null,
     "english": "You have started the questionnaire but didn’t submit. Click “Resume” to continue generating a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "您已開始填寫問卷，但問卷尚未提交。點擊「繼續」即可繼續生成此體驗的準則，其中包括年齡推薦和區域法規符合。",
+    "translation": "您已開始填寫問卷，但問卷尚未提交。點擊「繼續」即可繼續生成體驗內容的準則，其中目前包括年齡推薦和區域法規遵循評量。",
     "isDeprecated": false
   },
   {
@@ -59220,7 +59292,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "按下「開始」回答幾個關於體驗的問題，您就會獲得含有年齡推薦與合法區域的準則。",
+    "translation": "點擊「開始」回答一些關於您的體驗的問題。您的答案將會用來生成體驗內容的準則，其中目前包括年齡推薦和區域法規遵循評量。",
     "isDeprecated": false
   },
   {
@@ -59236,7 +59308,7 @@
     "key": "Message.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Please update your response to answer a few additional questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "請在最新的回覆中回答額外的問題生成完整準則，完整準則現在包括年齡推薦和合法區域。",
+    "translation": "請更新您的作答；請您回答關於您的體驗的額外問題。您的答案將會用來生成體驗內容的準則，其中目前包括年齡推薦和區域法規遵循評量。",
     "isDeprecated": false
   },
   {
@@ -59348,7 +59420,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliance",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}區域法規{boldEnd}：當體驗獲得準則時，我們會判斷未符合當地法規的區域，體驗將不會在這些區域開放。",
+    "translation": "{boldStart}法規遵循{boldEnd}：根據準則，您的體驗將自動不會在下列未合法的區域開放。",
     "isDeprecated": false
   },
   {
@@ -59388,7 +59460,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliancePreview",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}區域法規{boldEnd}：當體驗獲得準則時，我們會判斷未符合當地法規的區域，體驗將不會在這些區域開放。",
+    "translation": "{boldStart}法規遵循{boldEnd}：根據準則，您的體驗將自動不會在下列未合法的區域開放。",
     "isDeprecated": false
   },
   {
@@ -71589,6 +71661,102 @@
     "description": null,
     "english": "Updates Page",
     "translation": "更新頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewExperiencePlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "地點頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAssetAdsPageName",
+    "description": null,
+    "english": "User Ads Page",
+    "translation": "使用者廣告頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateShirtsPageName",
+    "description": null,
+    "english": "Shirts Creation Page",
+    "translation": "上衣創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreatePantsPageName",
+    "description": null,
+    "english": "Pants Creation Page",
+    "translation": "褲子創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateDecalPageName",
+    "description": null,
+    "english": "Decal Creation Page",
+    "translation": "貼花創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateAudioPageName",
+    "description": null,
+    "english": "Audio Creation Page",
+    "translation": "音訊創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateTeeShirtsPageName",
+    "description": null,
+    "english": "T-Shirts Creation Page",
+    "translation": "T 恤創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewModelsPageName",
+    "description": null,
+    "english": "Models Page",
+    "translation": "模型頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateGamePassPageName",
+    "description": null,
+    "english": "Pass Creation Page",
+    "translation": "特權證創作頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewCreationsPageName",
+    "description": null,
+    "english": "Experiences Page",
+    "translation": "體驗頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.DevExPageName",
+    "description": null,
+    "english": "Developer Exchange Page",
+    "translation": "開發者兌換頁面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAdvertiseExperiencePageName",
+    "description": null,
+    "english": "Sponsored Ads Page",
+    "translation": "贊助廣告頁面",
     "isDeprecated": false
   },
   {
