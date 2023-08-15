@@ -6176,26 +6176,6 @@
       "deprecated": false,
       "privateNote": "Display gender is optional on account settings",
       "text": "Gender (Optional)"
-    },
-    "Description.AccountEmailRevertEmail.PlainBody.V3": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak} Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
-    },
-    "Description.AccountEmailRevertEmail.HtmlBody.V3": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {revertAccountEmailLink}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak} Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
-    },
-    "Message.MonthlySpendLimitTooHighErrorMessage": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Monthly spend limit must be below "
-    },
-    "Message.MonthlySpendLimitBelowZeroErrorMessage": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Monthly spend limit must be above 0!"
     }
   },
   "Feature.BuildersClub": {
@@ -10222,6 +10202,11 @@
       "privateNote": "User is looking at the details of an item that cannot be purchased.",
       "text": "This item is not currently for sale."
     },
+    "Label.OffsaleCountdownHourMinuteSecond": {
+      "deprecated": false,
+      "privateNote": "Item will go offsale in a variable number of hours (h), minutes (m), and seconds (s). Please use a narrow translation if possible for h/m/s.",
+      "text": "Offsale in {numberOfHours} h {numberOfMinutes} m {numberOfSeconds} s"
+    },
     "Label.CountdownTimerDayHourMinute": {
       "deprecated": false,
       "privateNote": "Item will go offsale in a variable number of days (d), hours (h), and minutes (m). Please use a narrow translation if possible for d/h/m.",
@@ -13199,10 +13184,20 @@
       "privateNote": null,
       "text": "Your requests to join {groupOne} and {groupTwo} have been accepted."
     },
+    "Message.GroupJoinRequestAcceptedMultiple": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Your requests to join {groupOne}, {groupTwo}, and {groupMultipleCount, plural, =1 {# other} other {# others}} have been accepted."
+    },
     "Message.GroupJoinRequestAcceptedSingle": {
       "deprecated": false,
       "privateNote": null,
       "text": "Your request to join {groupOne} has been accepted."
+    },
+    "Message.YouHaveBeenAcceptedToNewGroups": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "You have {numberOfGroups} new {numberOfGroups, plural, =1 {group} other {groups}}."
     }
   },
   "Notifications.PushNotifications": {
@@ -15628,11 +15623,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Learn more"
-    },
-    "Description.VerifiedCreator": {
-      "deprecated": true,
-      "privateNote": "try to fix [linkEnd} => {linkEnd} , does not let me save the correct version",
-      "text": "In order to share content in Marketplace, you must add & verify an email address to your account. This can be done in {linkStart}Account Settings[linkEnd}."
     },
     "Message.DescriptionFieldEmptyError": {
       "deprecated": false,
@@ -25120,11 +25110,6 @@
       "privateNote": null,
       "text": "The maximum amount of Robux eligible to be transferred is {robux}"
     },
-    "Label.MembersCount": {
-      "deprecated": false,
-      "privateNote": "label for number of members in a group",
-      "text": "{memberCount, plural, =0 {# Members} =1 {# Member} other {# Members}}"
-    },
     "Action.MyGroups": {
       "deprecated": false,
       "privateNote": "link to the My Groups page (as a button kinda)",
@@ -25254,16 +25239,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Group max member limit exceeded."
-    },
-    "Action.ShowLess": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Show Less"
-    },
-    "Action.ReadMore": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Read More"
     }
   },
   "Common.Captcha": {
@@ -25370,6 +25345,18 @@
       "deprecated": false,
       "privateNote": null,
       "text": "We have a problem loading the Midas script now. Please try again later"
+    }
+  },
+  "Studio.GameSettings": {
+    "Message.TitlePrivateServers": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Private Servers"
+    },
+    "Monetization.TitlePrivateServers": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Private Servers"
     }
   },
   "Feature.PremiumMigration": {
@@ -26290,11 +26277,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Redeem"
-    },
-    "Description.ConfirmRedeemCreditForRobux": {
-      "deprecated": true,
-      "privateNote": "\"NOT BEING USED\" Incorrect message",
-      "text": "Redeem your {balance} Roblox credit to {robuxAmount}"
     },
     "Description.ConfirmRobloxCreditToRobuxRedemption": {
       "deprecated": false,
@@ -28311,11 +28293,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Localization"
-    },
-    "Label.Accessibility": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Accessibility"
     }
   },
   "CreatorDashboard.Features": {
@@ -28328,6 +28305,555 @@
       "deprecated": false,
       "privateNote": null,
       "text": "DevEx"
+    }
+  },
+  "DevHub.ApiReference": {
+    "Label.ExpectedReturnType": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Expected return type: {typeName}"
+    },
+    "Label.EventOf": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Event of: {className}"
+    },
+    "Label.ReturnType": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Return Type"
+    },
+    "Label.Returns": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Returns"
+    },
+    "Label.Default": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Default"
+    },
+    "Label.Type": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Type"
+    },
+    "Label.Parameters": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Parameters"
+    },
+    "Label.ValueType": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Value Type: {type}"
+    },
+    "Label.PropertyOf": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Property of: {className}"
+    },
+    "Label.FunctionOf": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Function of: {className}"
+    },
+    "Label.LuaDocumentsIndex": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Lua Documents Index"
+    },
+    "Label.Constants": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Constants"
+    },
+    "Label.ReferencedBy": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Referenced by: {className}"
+    },
+    "Label.Description": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Description"
+    },
+    "Label.Value": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Value"
+    },
+    "Label.Name": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Name"
+    },
+    "Math.Operations": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Math Operations"
+    },
+    "Constructors": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Constructors"
+    },
+    "Label.DataTypeIndex": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "DataType Index"
+    },
+    "Label.Callback": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Callback"
+    },
+    "Label.Events": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Events"
+    },
+    "Label.Functions": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Functions"
+    },
+    "Label.Properties": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Properties"
+    },
+    "Label.ShowDeprecated": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Show deprecated"
+    },
+    "Label.TypeIndexPages": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Type Index Pages"
+    },
+    "Placeholder.FilterClasses": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Filter Classes"
+    },
+    "Label.ClassTree": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Class Tree"
+    },
+    "Label.Grouped": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Grouped"
+    },
+    "Label.ApiReference": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "API Reference"
+    },
+    "Label.InheritedFrom": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Inherited from {className}"
+    }
+  },
+  "DevHub.Resource": {
+    "Label.Game": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Game"
+    },
+    "Label.Prize": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Prize"
+    },
+    "Label.Mission": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Mission"
+    },
+    "Label.Improvements": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Improvements"
+    },
+    "Label.Fixes": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Fixes"
+    },
+    "Label.Pending": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Pending"
+    },
+    "Label.Live": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Live"
+    },
+    "Label.Status": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Status"
+    },
+    "Label.Note": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Note"
+    },
+    "Label.Changes": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Changes"
+    },
+    "Header.WhatOurCreatorsAreSaying": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "WHAT OUR CREATORS ARE SAYING"
+    },
+    "Created.By.Roblox": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Created by: Roblox"
+    },
+    "Header.ReleaseNote": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Release Note"
+    }
+  },
+  "DevHub.LearnRoblox": {
+    "Label.Articles": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Articles"
+    },
+    "Label.LearningMaterials": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Learning Materials"
+    },
+    "Label.LetsBegin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Let's begin"
+    },
+    "Label.RelatedArticles": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Related Articles"
+    },
+    "Label.Videos": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Videos"
+    },
+    "Label.Recipes": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Recipes"
+    },
+    "Label.LearnRoblox": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Learn Roblox"
+    }
+  },
+  "DevHub.Template": {
+    "Label.ShowContent": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Show content"
+    },
+    "Label.Show": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Show"
+    },
+    "Label.HideContent": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Hide content"
+    },
+    "Label.Hide": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Hide"
+    },
+    "Label.Library": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Library"
+    },
+    "Label.PleasePressContinueToGoTo": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Please press Continue to go to:"
+    },
+    "Action.Continue": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Continue"
+    },
+    "Action.Back": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Back"
+    },
+    "Label.YouAreLeavingRoblox": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "You are leaving Roblox"
+    },
+    "Description.CreativeCommonsHTML": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "<small>These documents are licensed by Roblox Corporation under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='text-primary'> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. </a>Roblox, Powering Imagination, and Robux are trademarks of Roblox Corporation, registered in the United States and other countries.</small>"
+    },
+    "Label.Newsletter": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Newsletter"
+    },
+    "Label.Blog": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Blog"
+    },
+    "Studio": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Studio"
+    },
+    "Education": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Education"
+    },
+    "Label.Home": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Home"
+    },
+    "Label.CollapseSidebar": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Collapse Sidebar"
+    },
+    "Label.Content": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Content"
+    },
+    "Label.MainPage": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Main Page"
+    },
+    "Label.Resources": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Resources"
+    },
+    "Description.CreativeCommons": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "These documents are licensed by Roblox Corporation under a {linkStart} Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. {linkEnd} Roblox, Powering Imagination, and Robux are trademarks of Roblox Corporation, registered in the United States and other countries."
+    }
+  },
+  "DevHub.EduHub": {
+    "Header.CreatorChallenge": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Creator Challenge"
+    },
+    "Label.Prerequisites": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Prerequisites"
+    },
+    "Label.StudentsShould": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Students should:"
+    },
+    "Label.StudentsWillBeAbleTo": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Students will be able to:"
+    },
+    "Header.Introduction": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Introduction"
+    },
+    "Header.LessonOverview": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Lesson Overview"
+    },
+    "Header.Requirements": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Requirements"
+    },
+    "Header.GettingReady": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Getting Ready"
+    },
+    "Header.LessonPlan": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Lesson Plan"
+    },
+    "Header.Appendix": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Appendix"
+    },
+    "Label.Materials": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Materials"
+    },
+    "Label.Preparation": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Preparation"
+    },
+    "Label.SkillsAndConcepts": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Skills and Concepts"
+    },
+    "Label.SixteenAndUp": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "16 and up"
+    },
+    "Label.ThirteenAndUp": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "13 and up"
+    },
+    "Label.TenAndUp": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "10 and up"
+    },
+    "Label.MiscResource": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Misc. Resource"
+    },
+    "Label.CustomizingTheLesson": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Customizing the Lesson"
+    },
+    "Label.TroubleshootingTips": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Troubleshooting Tips"
+    },
+    "Label.Other": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Other"
+    },
+    "Action.Next": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Next"
+    },
+    "Action.Expand": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Expand"
+    },
+    "Action.Previous": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "Previous"
+    },
+    "Label.DevelopedBy": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Developed by"
+    },
+    "Label.ISTEStandards": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "ISTE Standards"
+    },
+    "Label.LearningObjectives": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Learning Objectives"
+    },
+    "Label.AgeAndUp": {
+      "deprecated": false,
+      "privateNote": "Example: 16 and up where 16 is age",
+      "text": "{age} and up"
+    }
+  },
+  "DevHub.CodeSample": {
+    "Label.CodeSample": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Code Sample"
+    },
+    "Label.ExpectedOutput": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Expected Output"
+    },
+    "Action.DarkTheme": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Dark Theme"
+    },
+    "Action.CopyCode": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Copy Code"
+    },
+    "Action.LightTheme": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Light Theme"
+    }
+  },
+  "DevHub.Search": {
+    "Label.ApiDocumentation": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "API Documentation"
+    },
+    "Placeholder.Search": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Search"
+    },
+    "Label.AllResults": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "All results"
+    },
+    "Label.AllTutorials": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "All Tutorials"
+    },
+    "Label.Tutorials": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Tutorials"
     }
   },
   "CreatorDashboard.DevEx": {
@@ -28552,11 +29078,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Don't have a Luobu account? {linkStart}Sign up{linkEnd}"
-    },
-    "Action.LoginHelper": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Need help signing in?"
     }
   },
   "CreatorDashboard.Error": {
@@ -30804,16 +31325,6 @@
       "privateNote": null,
       "text": "Last {num} months"
     },
-    "Label.LastNMonthSingle": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Last {num} month"
-    },
-    "Label.LastNYear": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Last {num} year"
-    },
     "Label.LastNDays": {
       "deprecated": false,
       "privateNote": null,
@@ -32243,16 +32754,6 @@
       "deprecated": false,
       "privateNote": "Toast notification that is displayed when a user agrees to the PlayFab Custom Queries Terms of Use.",
       "text": "You can now access your game in PlayFab and run custom queries. Check your inbox for a PlayFab account activation email."
-    },
-    "Label.MedianBenchmarkForGamesInTierAbove": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Median Benchmark for Games in Tier Above"
-    },
-    "Description.Benchmarking": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Updated quarterly, benchmarks allow you to compare your game’s performance to others with similar rankings so you can set reasonable goals to get to the next tier."
     }
   },
   "Authentication.SuspiciousActivity": {
@@ -33762,61 +34263,6 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Don't have a smartphone? {linkStart}Continue with your current device{linkEnd}"
-    },
-    "Label.FailedVerificationInvalidDocument": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "The document provided could not be verified.\n\nPlease ensure your document is valid and try again."
-    },
-    "Label.FailedVerificationLowQuality": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "The documents provided could not be verified.\n\nPlease try again, ensuring that submitted images are centered and focused on the subject."
-    },
-    "Label.FailedVerificationUnsupportedDocument": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "The document provided is not supported by our verification provider.\n\nPlease try again with a different document."
-    },
-    "Label.VerifyInBrowser": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Please complete the verification flow on your mobile browser to continue."
-    },
-    "Label.ConnectingToMobile": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Connecting to your mobile"
-    },
-    "Label.VerifyingYou": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Verifying you"
-    },
-    "Label.VerificationDataSubmitted": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Your verification data has been successfully submitted "
-    },
-    "Label.PleaseDoNotClose": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Please do not close this window until the verification process is complete."
-    },
-    "Label.DontShowAgain": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Don't Show Again"
-    },
-    "Label.VerificationWaitingForResults": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Waiting for results"
-    },
-    "Label.UpdatingRoblox": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Updating your Roblox profile"
     }
   },
   "CreatorDashboard.GameLocalization": {
@@ -34455,51 +34901,6 @@
       "deprecated": false,
       "privateNote": "Generic error For Get by Id endpoint",
       "text": "There was an error loading the API key details. Please try again"
-    },
-    "Response.DuplicateKey": {
-      "deprecated": false,
-      "privateNote": "Duplicate Error",
-      "text": "An API key with the given name already exists. Please choose a unique name for your API key."
-    },
-    "Response.TooManyApiKeys": {
-      "deprecated": false,
-      "privateNote": "Max keys created reached",
-      "text": "You have created the maximum number of keys. Please delete some keys to create another one."
-    },
-    "Response.FieldContainsDisallowedChars": {
-      "deprecated": false,
-      "privateNote": "Happens from specific security updates.",
-      "text": "The API key name or description contains some disallowed characters."
-    },
-    "Response.InvalidNameOrDescription": {
-      "deprecated": false,
-      "privateNote": "We assume this happens from text filter",
-      "text": "The API key name or description contained inappropriate content."
-    },
-    "Response.MaxCharactersForName": {
-      "deprecated": false,
-      "privateNote": "Cloud auth name input too long",
-      "text": "The API key name is too long. Please use a shorter name."
-    },
-    "Response.MaxCharactersForDescription": {
-      "deprecated": false,
-      "privateNote": "Cloud auth description input too long",
-      "text": "The API key description is too long. Please use a shorter description."
-    },
-    "Response.MaxIpRangesReached": {
-      "deprecated": false,
-      "privateNote": "Too many IP Addresses submitted with API key error",
-      "text": "The API key has too many IPs associated with it. Please remove some CIDRs or IPs."
-    },
-    "Response.InvalidIpRange": {
-      "deprecated": false,
-      "privateNote": "One or multiple IP Addresses submitted with the key are not valid.",
-      "text": "The API key has one or more invalid IP Ranges. Please make sure you have entered an IP Address or a proper CIDR format."
-    },
-    "Response.InvalidScopes": {
-      "deprecated": false,
-      "privateNote": "Invalid ScopeInfo object submitted in API request or update",
-      "text": "The API key has an incorrect API configuration associated with it. Please ensure all your API Systems are configured correctly."
     }
   },
   "CreatorDashboard.ScopeSystem": {
@@ -35250,11 +35651,6 @@
       "privateNote": null,
       "text": "Analytics"
     },
-    "Message.LoadAssetError": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "Unable to load asset analytics."
-    },
     "Heading.HistoricalData": {
       "deprecated": false,
       "privateNote": null,
@@ -35264,11 +35660,6 @@
       "deprecated": false,
       "privateNote": "Heading for sales chart",
       "text": "Hourly Sales Over Time"
-    },
-    "Description.SalesTooltip": {
-      "deprecated": false,
-      "privateNote": null,
-      "text": "This chart shows the how many units of this item has been sold each hour in the last 24 hours"
     },
     "Title.Sales": {
       "deprecated": false,
