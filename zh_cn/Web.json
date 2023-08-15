@@ -61868,7 +61868,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After acquiring, items enter a hold for up to 2 days. Items can only be traded or resold after this hold period ends.",
-    "translation": "获取后，道具将进入最多 30 天的存放期。道具只能在存放期结束后进行交易或转售。",
+    "translation": "获取后，道具会进入最多 2 天的存放期。道具只能在存放期结束后进行交易或转售。",
     "isDeprecated": false
   },
   {
@@ -61877,6 +61877,86 @@
     "description": null,
     "english": "Holding",
     "translation": "存放中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCompleteSubject",
+    "description": "subject line of inbox message sent when trade is completed.",
+    "english": "Trade with {username} completed!",
+    "translation": "已完成与 {username} 的交易！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCompleteMessage",
+    "description": "content of inbox message when trade is completed.",
+    "english": "Your Trade is complete. Go to the <a href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "你的交易已完成。前往<a href=\"/trades\">交易页面</a>查看你的交易。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeRejectedSubject",
+    "description": "subject line of inbox message when trade is rejected by system.",
+    "english": "Trade with {username} could not be completed.",
+    "translation": "未完成与 {username} 的交易。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeRejectedMessage",
+    "description": "the content of inbox message when trade is rejected.",
+    "english": "Your Trade was not able to be completed. This can happen if one of the items is no longer tradeable. You may want to try sending your request again. Go to the <a href=\"/transactions\">My Transactions page</a> to review your trades.",
+    "translation": "你的交易无法完成。这种情况发生的原因可能是由于其中一件道具已无法交易。你可以尝试重新发送请求。前往<a href=\"/transactions\">我的交易页面</a>查看你的交易。\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedSubject",
+    "description": "subject line of inbox message when the trade is declined by another user.",
+    "english": "Your trade with {username} was declined.",
+    "translation": "与 {username} 的交易被拒。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeDeclinedMessage",
+    "description": "the content of inbox message when trade is declined by another user.",
+    "english": "Trade declined. If you wish to review this trade, go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> and select \"Inactive\".",
+    "translation": "交易被拒绝。如果你想查看此交易，请前往<a class=\"text-link\" href=\"/trades\">交易页面</a> 并选择“不活跃”。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeIncomingSubject",
+    "description": "subject line of inbox message when trade request is sent by another user.",
+    "english": "Your have a Trade request from {username}.",
+    "translation": "你收到一个来自 {username} 的交易请求。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCounteredSubject",
+    "description": "subject line of inbox message when another user sent a counter offer.",
+    "english": "{username} has countered your Trade.",
+    "translation": "{username} 对你的交易进行了还价。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeCounteredMessage",
+    "description": "the content of inbox message when received counter request from another user.",
+    "english": "You received a counter request! Go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "你收到了一个还价请求！前往<a class=\"text-link\" href=\"/trades\">交易页面</a>查看你的交易。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Trades",
+    "key": "Inbox.TradeIncomingMessage",
+    "description": "the content of inbox message when received trade request from another user.",
+    "english": "You have a new trade! Go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> to review your trades.",
+    "translation": "你有新的交易！前往<a class=\"text-link\" href=\"/trades\">交易页面</a>查看你的交易。",
     "isDeprecated": false
   },
   {
@@ -70187,7 +70267,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.TopUsersByCountry",
     "description": null,
-    "english": "Percent of monthly active users by countries",
+    "english": "Percent of top monthly active users by country",
     "translation": "按国家/地区划分的月活用户百分比",
     "isDeprecated": false
   },
@@ -84643,7 +84723,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.Likes",
     "description": null,
-    "english": "Likes",
+    "english": "Favorites",
     "translation": "赞",
     "isDeprecated": false
   },
@@ -90956,7 +91036,7 @@
     "key": "Label.CategoryOauth2",
     "description": "Notification for oauth applications",
     "english": "OAuth 2.0 Apps",
-    "translation": "OAuth 应用程序",
+    "translation": "OAuth 2.0 应用",
     "isDeprecated": false
   },
   {
@@ -90969,6 +91049,166 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeDeprecated",
+    "description": "Cloud Services notifications type definition",
+    "english": "Cloud Services",
+    "translation": "云服务",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeDeprecated",
+    "description": "Cloud services alert fired.",
+    "english": "Cloud Services Alert",
+    "translation": "云服务提醒",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCloudServices",
+    "description": null,
+    "english": "Cloud Services Insights",
+    "translation": "云服务洞察报告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeDeprecatedAlert",
+    "description": null,
+    "english": "There are issues related to Cloud Services in your experiences",
+    "translation": "你的体验出现了云服务相关的问题。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeCloudServices",
+    "description": "Memory Stores is referring to this service: https://create.roblox.com/docs/cloud-services/memory-stores",
+    "english": "There are issues related to Cloud Services such as Memory Stores in your experiences",
+    "translation": "你的体验中出现了云服务（例如记忆存储）相关的问题",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCloudServices",
+    "description": null,
+    "english": "Cloud Services Notification",
+    "translation": "云服务通知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCreatorOutreach",
+    "description": null,
+    "english": "Creator Outreach",
+    "translation": "创作者推广",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCreatorSentimentSurvey",
+    "description": null,
+    "english": "Creator Sentiment Survey",
+    "translation": "创作者情绪调查",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCreatorFeedbackSurvey",
+    "description": null,
+    "english": "Creator Feedback Survey",
+    "translation": "创作者反馈调查",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeCreatorFeedbackSurvey",
+    "description": null,
+    "english": "I am selected for a feedback survey",
+    "translation": "我被选中参加反馈调查",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryCreatorOutreach",
+    "description": null,
+    "english": "Creator Outreach notifications, such as invitations to participate in surveys.",
+    "translation": "创作者推广通知，例如参与调查的邀请。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeCreatorAnalyticsSummary",
+    "description": "jira DSA-1432",
+    "english": "Weekly analytics summary with personalized insights",
+    "translation": "包含个性化洞察报告的每周分析摘要",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCreatorAnalyticsSummary",
+    "description": "name for the analytics weekly summary with per-experience personalized insights",
+    "english": "Experience Analytics Summary",
+    "translation": "体验分析摘要",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCreatorAnalytics",
+    "description": "Label for the NotificationCategory.CreatorAnalytics category of notifications, containing (initially) the weekly per-experience analytics summary email with insights. Soon this might expand to include realtime monitoring emails, and/or emails about things other than experiences.",
+    "english": "Analytics",
+    "translation": "分析",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryCreatorAnalytics",
+    "description": "description of the NotificationCategory.CreatorAnalytics",
+    "english": "Statistics and insights about your Roblox creations",
+    "translation": "关于你的 Roblox 创作的统计数据和洞察报告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryMarketing",
+    "description": null,
+    "english": "Marketing",
+    "translation": "营销",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypePromotionalEmails",
+    "description": "Emails that are promotional in nature, such as newsletters, upcoming promotions, events, etc.",
+    "english": "Promotional Emails",
+    "translation": "宣传电子邮件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.UnsubscribeFromCreatorAnalyticsSummary",
+    "description": "Unsubscribe confirmation for the \"CreatorAnalyticsSummary\" notification type",
+    "english": "Stop sending me Experience Analytics Summaries",
+    "translation": "不要再发送体验分析摘要给我",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.UnsubscribeFromOAuthAppReviewed",
+    "description": null,
+    "english": "Stop notifying me about my OAuth 2.0 app application results",
+    "translation": "不要再通知我关于 OAuth 2.0 应用的申请结果",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryOauth2",
+    "description": null,
+    "english": "Notifications about your OAuth 2.0 apps, such as updates on the review process",
+    "translation": "关于你的 OAuth 2.0 应用的通知，例如审核流程的更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Message.VirtualEventOngoingTitle",
     "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
     "english": "Happening Now: {title}",
@@ -90977,10 +91217,66 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryExperienceUpdates",
+    "description": null,
+    "english": "Experience Updates",
+    "translation": "体验更新",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryExperienceUpdates",
+    "description": null,
+    "english": "Updates about changes to experiences that you have access to.",
+    "translation": "关于你拥有访问权的体验的任何更新",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Label.NotificationTypeExperiencePermissions",
     "description": null,
     "english": "Permissions",
     "translation": "权限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeExperiencePermissions",
+    "description": null,
+    "english": "My experiences' permissions have changed",
+    "translation": "我的体验权限已更改",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.UnsubscribeFromExperiencePermissions",
+    "description": null,
+    "english": "Stop notifying me about experience permission changes",
+    "translation": "不要再通知我体验权限变更的信息",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypePromotionalEmails",
+    "description": null,
+    "english": "Receive emails from Roblox about newest releases, limited-time promotions, and more",
+    "translation": "接收来自 Roblox 有关最新版本、限时推广及更多信息的电子邮件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryCreatorExperienceUpdates",
+    "description": null,
+    "english": "Updates about changes to experiences that you have access to.",
+    "translation": "关于你拥有访问权的体验的任何更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCreatorExperienceUpdates",
+    "description": null,
+    "english": "Experience Updates",
+    "translation": "体验更新",
     "isDeprecated": false
   },
   {
@@ -101341,7 +101637,7 @@
     "description": null,
     "english": "Gambling",
     "translation": "赌博",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",
@@ -101357,7 +101653,7 @@
     "description": null,
     "english": "Unplayable gambling content",
     "translation": "无法游玩的赌博内容",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",

@@ -20696,6 +20696,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameDetails",
+    "key": "RatingPercentOnly",
+    "description": "This rating is displayed on the GridTile on homepage in the subtitle",
+    "english": "{percentRating}% Rating",
+    "translation": "เรตติ้ง {percentRating}%",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameGear",
     "key": "Heading.GearForThisGame",
     "description": null,
@@ -56595,7 +56603,7 @@
     "namespace": "Feature.NotApproved",
     "key": "Label.ParentVerificationNotice",
     "description": null,
-    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account. ",
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
     "translation": "บัญชีของคุณถูกระงับเนื่องจากมีค่าใช้จ่ายที่ไม่ได้รับอนุญาต พ่อแม่หรือผู้ปกครองของคุณต้องยินยอมให้ปลดล็อคบัญชีของคุณ ",
     "isDeprecated": false
   },
@@ -67581,7 +67589,7 @@
     "description": null,
     "english": "Gambling",
     "translation": "การพนัน",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",
@@ -67597,7 +67605,7 @@
     "description": null,
     "english": "Unplayable gambling content",
     "translation": "เนื้อหาการพนันที่ไม่สามารถเล่นได้",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",
@@ -69205,6 +69213,118 @@
     "description": "For when the age rating for a game is inappropriate",
     "english": "Wrong age guidelines",
     "translation": "อายุที่แนะนำไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailSubject",
+    "description": "email subject for parent account setup email",
+    "english": "Your child needs your permission on Roblox",
+    "translation": "บุตรหลานของคุณต้องได้รับอนุญาตจากคุณบน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailTopBodyText",
+    "description": "top body text for parent account setup email",
+    "english": "Your child, {childUsername}, needs your permission to unlock their Roblox account. To help them, you’ll need a Roblox account with parent privileges.",
+    "translation": "บุตรหลานของคุณ \"{childUsername}\" ต้องได้รับอนุญาตจากคุณเพื่อปลดล็อคบัญชี Roblox ของเขา หากต้องการช่วยเหลือบุตรหลานของคุณ คุณต้องมีบัญชี Roblox ที่มีสิทธิ์ของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSignupButton",
+    "description": "label for signup button on parent account setup email",
+    "english": "Create Account",
+    "translation": "สร้างบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Label.ParentAccountSetupEmailSigninButton",
+    "description": "label for signin button on parent account setup email",
+    "english": "Use an Existing Account",
+    "translation": "ใช้บัญชีที่มีอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooter",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "โปรดอย่าตอบกลับข้อความนี้เนื่องจากจะไม่มีผู้รับข้อความตอบกลับ{lineBreak}{lineBreak}{htmlAHrefLearnMorePage}เรียนรู้เพิ่มเติม{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}ความปลอดภัยของบัญชี{htmlCloseAHref} | {htmlAhrefSupportPage}บริการช่วยเหลือ{htmlCloseAHref}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailLinks",
+    "description": "footer links for parent account setup email",
+    "english": "{htmlAHrefLearnMorePage}Learn More{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref} | {htmlAhrefSupportPage}Support{htmlCloseAHref}",
+    "translation": "{htmlAHrefLearnMorePage}เรียนรู้เพิ่มเติม{htmlCloseAHref} | {htmlAHrefAccountSafetyPage}ความปลอดภัยของบัญชี{htmlCloseAHref} | {htmlAhrefSupportPage}บริการช่วยเหลือ{htmlCloseAHref}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailFooterText",
+    "description": "footer text for parent account setup email",
+    "english": "Please do not reply to this message as the response will not be delivered to the originator.",
+    "translation": "โปรดอย่าตอบกลับข้อความนี้เนื่องจากจะไม่มีผู้รับข้อความตอบกลับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentAccountSetupEmailBottomBodyText",
+    "description": "bottom body text for parent account setup email",
+    "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have a Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
+    "translation": "{htmlBoldOpen}บัญชี Roblox ที่มีสิทธิ์ของผู้ปกครองคืออะไร?{htmlBoldClose}{lineBreak}{lineBreak}บัญชีที่มีสิทธิ์ของผู้ปกครองของคุณสามารถอนุมัติการดำเนินการต่างๆ บางอย่างสำหรับบุตรหลานของคุณบน Roblox ได้ นอกจากนี้คุณยังสามารถใช้อวาตาร์ของคุณเพื่อสำรวจ Roblox ด้วยตัวเองหรือกับบุตรหลานของคุณก็ได้{lineBreak}{lineBreak}{htmlBoldOpen}หากฉันมีบัญชี Roblox อยู่แล้วล่ะ?{htmlBoldClose}{lineBreak}{lineBreak}หากคุณมีบัญชี Roblox อยู่แล้ว คุณสามารถเชื่อมต่อบัญชีนั้นกับบุตรหลานของคุณและเพิ่มสิทธิ์ของผู้ปกครองได้{lineBreak}{lineBreak}{htmlBoldOpen}ฉันต้องเริ่มต้นอย่างไร?{htmlBoldClose}{lineBreak}{lineBreak}การสร้างบัญชีที่มีสิทธิ์ของผู้ปกครองใช้เวลาเพียงแค่สองสามนาที คุณจะถูกขอให้กรอกข้อมูลวันเกิด ตรวจสอบยืนยันอายุของคุณโดยใช้บัตรประจำตัวที่ออกให้โดยรัฐบาล และทำการเชื่อมต่อกับบัญชี Roblox ของบุตรหลานของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PurchaseRefundSubject",
+    "description": null,
+    "english": "Credit applied for purchase made on {purchaseDate} for items that are no longer available.",
+    "translation": "คืนเครดิตให้กับการซื้อไอเท็มในวันที่ {purchaseDate} ซึ่งไอเท็มดังกล่าวไม่สามารถใช้ได้อีกต่อไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PurchaseRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}On {purchaseDate}, you purchased an avatar clothing item that can no longer be worn by your avatar. The amount you paid for this item, which is the amount of {refundAmount} Robux, was credited to your account.{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "สวัสดี!{lineBreak}{lineBreak}ในวันที่ {purchaseDate} คุณได้ซื้อไอเท็มเสื้อผ้าอวาตาร์ซึ่งไม่สามารถใช้สวมใส่ให้กับอวาตาร์ของคุณได้อีกต่อไป ค่าใช้จ่ายจำนวน {refundAmount} Robux ที่คุณได้จ่ายไปสำหรับไอเท็มนี้ได้รับการเครดิตกลับไปยังบัญชีของคุณ{lineBreak}เราขออภัยในความไม่สะดวก{lineBreak}{lineBreak}ขอแสดงความนับถือ{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PaymentRefundSubject",
+    "description": null,
+    "english": "Credit applied for purchase made on {purchaseDate} for items that are no longer available.",
+    "translation": "เครดิตที่ใช้ในวันที่ {purchaseDate} เพื่อซื้อไอเท็มที่ไม่สามารถใช้ได้อีกต่อไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.PaymentRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}On {purchaseDate}, you purchased an avatar clothing item that can no longer be worn by your avatar. The amount you paid for this item, which is the amount of {refundAmount} Robux, was credited to your account.{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "สวัสดี!{lineBreak}{lineBreak}ในวันที่ {purchaseDate} คุณได้ซื้อไอเท็มเสื้อผ้าอวาตาร์ซึ่งไม่สามารถใช้สวมใส่ให้กับอวาตาร์ของคุณได้อีกต่อไป ค่าใช้จ่ายจำนวน {refundAmount} Robux ที่คุณได้จ่ายไปสำหรับไอเท็มนี้ได้รับการเครดิตกลับไปยังบัญชีของคุณ{lineBreak}เราขออภัยในความไม่สะดวก{lineBreak}{lineBreak}ขอแสดงความนับถือ{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.AgreementRefundSubject",
+    "description": null,
+    "english": "Robux credit pending, please review and accept the agreement.",
+    "translation": "เครดิต Robux กำลังรอการดำเนินการ โปรดตรวจสอบและยอมรับข้อตกลง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Refunds",
+    "key": "Inbox.AgreementRefundMessage",
+    "description": null,
+    "english": "Hello!{lineBreak}{lineBreak}Your account is eligible for Robux credit for the items you purchased that can no longer be worn by your avatar. To receive the credit please review and accept the terms of the: {aTagStartWithHref}{agreementLink}{hrefEnd}{lineBreak}We apologize for any inconvenience.{lineBreak}{lineBreak}Sincerely,{lineBreak}The Roblox Team",
+    "translation": "สวัสดี!{lineBreak}{lineBreak}บัญชีของคุณมีสิทธิ์ได้รับเครดิต Robux สำหรับไอเท็มที่คุณซื้อซึ่งอวาตาร์ของคุณไม่สามารถใช้สวมใส่ได้อีกต่อไป หากต้องการได้รับเครดิต โปรดตรวจสอบและยอมรับข้อกำหนดของ: {aTagStartWithHref}{agreementLink}{hrefEnd}{lineBreak}เราขออภัยในความไม่สะดวก{lineBreak}{lineBreak}ขอแสดงความนับถือ{lineBreak}ทีมงาน Roblox",
     "isDeprecated": false
   }
 ]

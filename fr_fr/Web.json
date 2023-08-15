@@ -20736,6 +20736,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameDetails",
+    "key": "RatingPercentOnly",
+    "description": "This rating is displayed on the GridTile on homepage in the subtitle",
+    "english": "{percentRating}% Rating",
+    "translation": "{percentRating}% note",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameGear",
     "key": "Heading.GearForThisGame",
     "description": null,
@@ -60795,7 +60803,7 @@
     "namespace": "Feature.NotApproved",
     "key": "Label.ParentVerificationNotice",
     "description": null,
-    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account. ",
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
     "translation": "Ton compte a été suspendu pour des frais non autorisés. Ton parent ou tuteur légal doit accepter de débloquer ton compte. ",
     "isDeprecated": false
   },
@@ -71699,7 +71707,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.TopUsersByCountry",
     "description": null,
-    "english": "Percent of monthly active users by countries",
+    "english": "Percent of top monthly active users by country",
     "translation": "Pourcentage d'utilisateurs actifs mensuels par pays",
     "isDeprecated": false
   },
@@ -78397,7 +78405,7 @@
     "description": null,
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation, safety and quality purposes and for the improvement of safety & audio processing tools.",
     "translation": "En cliquant sur Activer, je consens à ce que Roblox collecte, utilise et stocke mon enregistrement vocal à des fins de modération, de sécurité et de qualité et pour l'amélioration des outils de traitement audio et de sécurité.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.GameLocalization",
@@ -86299,7 +86307,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.Likes",
     "description": null,
-    "english": "Likes",
+    "english": "Favorites",
     "translation": "Likes",
     "isDeprecated": false
   },
@@ -103421,7 +103429,7 @@
     "description": null,
     "english": "Gambling",
     "translation": "Jeux d'argent",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",
@@ -103437,7 +103445,7 @@
     "description": null,
     "english": "Unplayable gambling content",
     "translation": "Contenu de jeu injouable",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AgeGuidelines",
@@ -105261,6 +105269,14 @@
     "description": "Subject text for the email",
     "english": "Roblox: New login for {username}",
     "translation": "Roblox : Nouvelle connexion pour {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousLoginEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.\tUsed for V2 security alerts",
+    "english": "{boldStart}We noticed a login from a new device or location for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Nous avons remarqué une connexion à partir d'un nouvel appareil ou d'un nouvel emplacement {username} et nous voulons nous assurer que c'est bien toi.{boldEnd}",
     "isDeprecated": false
   },
   {
@@ -109872,6 +109888,54 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Notifications.RiskyTradeEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Trade Attempt for {username}",
+    "translation": "Alerte de sécurité : tentative d'échange pour {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyTradeEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed a trade attempt for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Nous avons remarqué une tentative d'échange pour {username} et je veux m'assurer que c'était toi.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskySpendEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Robux Spend Attempt for {username}",
+    "translation": "Alerte sécurité : tentative de dépense de Robux pour {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskySpendEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed an attempt to spend Robux for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Nous avons remarqué une tentative de dépenser des Robux pour {username} et voulons nous assurer que c'était bien toi.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyResaleEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Security Alert: Resale Attempt for {username}",
+    "translation": "Alerte de sécurité : tentative de revente pour {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.RiskyResaleEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.",
+    "english": "{boldStart}We noticed an attempt to list an item for resale for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Nous avons remarqué une tentative d'inscription d'un item à la revente pour {username} et nous voulons nous assurer que c'était bien toi.{boldEnd}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorMarketplace.Reviews",
     "key": "Label.Reviews",
     "description": "Reviews label",
@@ -109941,6 +110005,30 @@
     "description": "Label to display the remaining length for a review",
     "english": "{currentLength}/{maxLength}",
     "translation": "{currentLength}/{maxLength}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.BottomContent",
+    "description": "Generic bottom body for a security alert sent from Security Alerts Processor. (Owned by Account Security)",
+    "english": "If this was you: You’re good to go. No action is required.{lineBreak}{lineBreak}If this was not you: Please take immediate action to secure your account by {passwordHelpLinkStart}changing your password{passwordHelpLinkEnd}.{lineBreak}You will be logged out of all your active devices except the one you are using at this time.",
+    "translation": "Si c'était toi : tout est bon. Aucune action n'est requise.{lineBreak}{lineBreak}Si ce n'est pas toi : prends des mesures immédiates pour sécuriser ton compte en {passwordHelpLinkStart}modifiant ton mot de passe{passwordHelpLinkEnd}.{lineBreak}tu seras déconnecté de tous tes appareils actifs à l'exception de celui que tu utilises en ce moment.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.Links",
+    "description": "Relevant links that are sent to the user as part of a Security Alert email (Owned by Account Security)",
+    "english": "{learnMoreLinkStart}Learn More{learnMoreLinkEnd} | {accountSafetyLinkStart}Account Safety{accountSafetyLinkEnd} | {twoStepLinkStart}2-Step Verification{twoStepLinkEnd} | {supportLinkStart}Support{supportLinkEnd}",
+    "translation": "{learnMoreLinkStart}En savoir plus{learnMoreLinkEnd} | {accountSafetyLinkStart}Sécurité du compte{accountSafetyLinkEnd} | {twoStepLinkStart}Vérification en 2 étapes{twoStepLinkEnd} | {supportLinkStart}Soutien{supportLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousActivityEmailNotification",
+    "key": "Email.Body.ActivityRecord",
+    "description": "Describes data relative to the activity which triggered the alert.",
+    "english": "{listStart}{pointStart}Regional Location: {location}{pointEnd}{pointStart}Device: {device}{pointEnd}{pointStart}Time: {time}{pointEnd}{listEnd}",
+    "translation": "{listStart}{pointStart}Location régionale : {location}{pointEnd}{pointStart}Appareil : {device}{pointEnd}{pointStart}Temps : {time}{pointEnd}{listEnd}",
     "isDeprecated": false
   },
   {
