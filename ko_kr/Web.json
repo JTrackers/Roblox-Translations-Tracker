@@ -20000,6 +20000,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ErrorAssetInfoNotLoaded",
+    "description": "Error message when asset information (name and creator name of a given asset) is not loaded. It does not effect the report submission process.",
+    "english": "The asset information could not be loaded, but you may still be able to submit a report.",
+    "translation": "애셋 정보는 불러올 수 없지만, 보고서 제출은 가능할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ServerList",
     "key": "Heading.RunningServers",
     "description": null,
@@ -53704,6 +53712,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Country",
+    "description": "Segmentation of DAU/New players by countries",
+    "english": "by Country (top 5)",
+    "translation": "국가별(상위 5)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Locale",
+    "description": "Segmentation of DAU/New players by languages",
+    "english": "by Language (top 5)",
+    "translation": "언어별(상위 5)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AgeGroup",
+    "description": "Segmentation of DAU/New players by age group",
+    "english": "by Age Group",
+    "translation": "연령대별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.DeviceType",
+    "description": "Segmentation of DAU/New players by device type - eg phone, tablet",
+    "english": "by Platform",
+    "translation": "플랫폼별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.OperatingSystem",
+    "description": "Segmentation of DAU/New players by operating systems",
+    "english": "by OS",
+    "translation": "OS별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.View",
+    "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
+    "english": "View:",
+    "translation": "보기:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Unknown",
+    "description": "No breakdown information (eg type of device) is known about this user",
+    "english": "Unknown",
+    "translation": "알 수 없음",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -58060,7 +58124,7 @@
     "key": "Message.Expired",
     "description": "API key expiration tooltip message",
     "english": "The API key is expired. Either clear the expiration or set a new expiration date.",
-    "translation": "API 키가 만료되었습니다. 다시 활성화하려면 현재 날짜 이후로 새 만료일을 설정하세요.",
+    "translation": "API 키가 만료되었습니다. 만료를 해제하거나 새 만료 날짜를 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -58097,6 +58161,110 @@
   },
   {
     "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Disabled",
+    "description": "Disabled tooltip message",
+    "english": "The API key is disabled. Re-enable the key to use it again.",
+    "translation": "API 키가 비활성화되었습니다. 다시 사용하려면 키를 다시 활성화하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Messaged.ExpiredAuto",
+    "description": "Auto Expired tooltip message\nupdate: *DEPRECATED",
+    "english": "The API key has auto-expired since it has not been used or updated within the last 60 days. Update or re-enable the key to activate it.",
+    "translation": "API 키가 지난 60일 동안 사용되거나 업데이트되지 않았기 때문에 자동 만료되었습니다. 활성화하려면 키를 업데이트하거나 재활성화하세요.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Moderated",
+    "description": null,
+    "english": "The API key has been moderated by an administrator for your safety. Regenerate the key to use it again.",
+    "translation": "보안을 위해 관리자가 API 키를 검열 처리하였습니다. 다시 사용하려면 키를 다시 생성하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Revoked",
+    "description": "revoked tooltip message",
+    "english": "The API key has been revoked since the user who last generated the secret can no longer manage the group's credentials. Regenerate the key to use it again.",
+    "translation": "마지막으로 암호를 생성한 사용자가 더 이상 그룹의 자격 증명을 관리할 수 없기 때문에 API 키가 해지되었습니다. 다시 사용하려면 키를 다시 생성하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.UserModerated",
+    "description": "user moderated tooltip message (for group workflow)",
+    "english": "The API key has been disabled since the user who last generated the secret has been moderated. Regenerate the key to use it again, or remove the ban on the affected user account.",
+    "translation": "마지막으로 비밀을 생성한 사용자가 검열되었기 때문에 API 키가 비활성화되었습니다. 키를 다시 사용하려면 다시 생성하거나, 영향을 받은 사용자 계정에 대한 금지를 해제하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.InvalidStatus",
+    "description": null,
+    "english": "Unknown API key status. An error has occurred.",
+    "translation": "알 수 없는 API 키 상태. 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ExpiredAuto",
+    "description": "chip label for auto expired",
+    "english": "Auto Expired",
+    "translation": "자동 만료됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ModeratedKey",
+    "description": "chip label for a moderated key",
+    "english": "Moderated Key",
+    "translation": "검열 조치된 키",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Revoked",
+    "description": "chip label for a revoked key",
+    "english": "Revoked",
+    "translation": "해지됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ModeratedUser",
+    "description": "chip label for moderated user",
+    "english": "Moderated User",
+    "translation": "검열 조치된 사용자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.InvalidStatus",
+    "description": "invalid status (backend default error)",
+    "english": "Invalid",
+    "translation": "유효하지 않음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Button.Refresh",
+    "description": "refresh button for auto-expiration",
+    "english": "Refresh",
+    "translation": "새로 고침",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.EnableKey",
+    "description": "For enable form label",
+    "english": "Enable Key",
+    "translation": "키 활성화",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
     "key": "Label.YesEnable",
     "description": "for enabling the key (for toggle)",
     "english": "Yes",
@@ -58109,6 +58277,14 @@
     "description": "Do not enable (for toggle)",
     "english": "No",
     "translation": "아니요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.ExpiredAuto",
+    "description": "tooltip message for auto expiration",
+    "english": "The API key has auto-expired since it has not been used or updated within the last 60 days. Update or re-enable the key to activate it.",
+    "translation": "API 키가 지난 60일 동안 사용되거나 업데이트되지 않았기 때문에 자동 만료되었습니다. 활성화하려면 키를 업데이트하거나 재활성화하세요.",
     "isDeprecated": false
   },
   {
@@ -60901,6 +61077,62 @@
     "description": null,
     "english": "Root PlaceId",
     "translation": "루트 PlaceId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.Limit",
+    "description": null,
+    "english": "Limit",
+    "translation": "한도",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Title.TotalPlayerCount",
+    "description": null,
+    "english": "Total Player Count",
+    "translation": "총 플레이어 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Title.InstanceCount",
+    "description": null,
+    "english": "Instance Count",
+    "translation": "인스턴스 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.TotalPlayerCount",
+    "description": null,
+    "english": "Count",
+    "translation": "수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.InstanceCount",
+    "description": null,
+    "english": "Count",
+    "translation": "수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Description.TotalPlayerCount",
+    "description": null,
+    "english": "Total Player Count",
+    "translation": "총 플레이어 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Description.InstanceCount",
+    "description": null,
+    "english": "Instance Count",
+    "translation": "인스턴스 수",
     "isDeprecated": false
   },
   {

@@ -52552,6 +52552,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Country",
+    "description": "Segmentation of DAU/New players by countries",
+    "english": "by Country (top 5)",
+    "translation": "nach Land (Top 5)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Locale",
+    "description": "Segmentation of DAU/New players by languages",
+    "english": "by Language (top 5)",
+    "translation": "nach Sprache (Top 5)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AgeGroup",
+    "description": "Segmentation of DAU/New players by age group",
+    "english": "by Age Group",
+    "translation": "nach Altersgruppe",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.DeviceType",
+    "description": "Segmentation of DAU/New players by device type - eg phone, tablet",
+    "english": "by Platform",
+    "translation": "nach Plattform",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.OperatingSystem",
+    "description": "Segmentation of DAU/New players by operating systems",
+    "english": "by OS",
+    "translation": "nach OS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.View",
+    "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
+    "english": "View:",
+    "translation": "Ansehen:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Unknown",
+    "description": "No breakdown information (eg type of device) is known about this user",
+    "english": "Unknown",
+    "translation": "Unbekannt",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -52692,7 +52748,7 @@
     "key": "Button.Previous",
     "description": "Changes the section in developer questionnaire to the previous section",
     "english": "Previous",
-    "translation": "Zurück",
+    "translation": "Vorherige",
     "isDeprecated": false
   },
   {
@@ -56108,7 +56164,7 @@
     "key": "Message.APIKeyDescriptionPlaceholder",
     "description": "For the Create Form Description input placeholder",
     "english": "Enter a description here...",
-    "translation": "Gib hier eine Beschreibung ein...",
+    "translation": "Gib hier eine Beschreibung ein ...",
     "isDeprecated": false
   },
   {
@@ -56916,7 +56972,7 @@
     "key": "Message.Expired",
     "description": "API key expiration tooltip message",
     "english": "The API key is expired. Either clear the expiration or set a new expiration date.",
-    "translation": "Der API-Schlüssel ist abgelaufen. Lege ein neues Ablaufdatum fest, das einen zukünftigen Tag fällt, um ihn zu reaktivieren.",
+    "translation": "Der API-Schlüssel ist abgelaufen. Lösche den Ablauf oder setze ein neues Ablaufdatum.",
     "isDeprecated": false
   },
   {
@@ -56964,7 +57020,7 @@
     "key": "Message.GenericLoadingText",
     "description": null,
     "english": "Loading...",
-    "translation": "Lädt ...",
+    "translation": "Lädt...",
     "isDeprecated": false
   },
   {
@@ -56985,6 +57041,110 @@
   },
   {
     "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Disabled",
+    "description": "Disabled tooltip message",
+    "english": "The API key is disabled. Re-enable the key to use it again.",
+    "translation": "Der API-Schlüssel ist deaktiviert. Aktiviere den Schlüssel wieder, um ihn erneut zu verwenden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Messaged.ExpiredAuto",
+    "description": "Auto Expired tooltip message\nupdate: *DEPRECATED",
+    "english": "The API key has auto-expired since it has not been used or updated within the last 60 days. Update or re-enable the key to activate it.",
+    "translation": "Der API-Schlüssel ist automatisch abgelaufen, da er in den letzten 60 Tagen nicht verwendet oder aktualisiert wurde. Aktualisiere oder aktiviere den Schlüssel neu, um ihn zu aktivieren.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Moderated",
+    "description": null,
+    "english": "The API key has been moderated by an administrator for your safety. Regenerate the key to use it again.",
+    "translation": "Der API-Schlüssel wurde für deine Sicherheit von einem Administrator bzw. einer Administratorin moderiert. Erstelle den Schlüssel neu, um ihn wieder zu verwenden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.Revoked",
+    "description": "revoked tooltip message",
+    "english": "The API key has been revoked since the user who last generated the secret can no longer manage the group's credentials. Regenerate the key to use it again.",
+    "translation": "Der API-Schlüssel wurde zurückgezogen, da der Benutzer bzw. die Benutzerin, der oder die zuletzt das Geheimnis erstellt hat hat, die Anmeldedaten der Gruppe nicht mehr verwalten kann. Generiere den Schlüssel neu, um ihn wieder zu verwenden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.UserModerated",
+    "description": "user moderated tooltip message (for group workflow)",
+    "english": "The API key has been disabled since the user who last generated the secret has been moderated. Regenerate the key to use it again, or remove the ban on the affected user account.",
+    "translation": "Der API-Schlüssel wurde deaktiviert, da der Benutzer bzw. die Benutzerin, der oder die das Geheimnis zuletzt erstellt hat, moderiert wurde. Regeneriere den Schlüssel, um ihn wieder zu verwenden, oder entferne die Sperre für das betroffene Benutzerkonto.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.InvalidStatus",
+    "description": null,
+    "english": "Unknown API key status. An error has occurred.",
+    "translation": "Unbekannter API-Schlüsselstatus. Ein Fehler ist aufgetreten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ExpiredAuto",
+    "description": "chip label for auto expired",
+    "english": "Auto Expired",
+    "translation": "Automatisch abgelaufen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ModeratedKey",
+    "description": "chip label for a moderated key",
+    "english": "Moderated Key",
+    "translation": "Moderierter Schlüssel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Revoked",
+    "description": "chip label for a revoked key",
+    "english": "Revoked",
+    "translation": "Widerrufen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ModeratedUser",
+    "description": "chip label for moderated user",
+    "english": "Moderated User",
+    "translation": "Moderierte:r Benutzer:in",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.InvalidStatus",
+    "description": "invalid status (backend default error)",
+    "english": "Invalid",
+    "translation": "Ungültig",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Button.Refresh",
+    "description": "refresh button for auto-expiration",
+    "english": "Refresh",
+    "translation": "Neu laden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.EnableKey",
+    "description": "For enable form label",
+    "english": "Enable Key",
+    "translation": "Schlüssel aktivieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
     "key": "Label.YesEnable",
     "description": "for enabling the key (for toggle)",
     "english": "Yes",
@@ -56997,6 +57157,14 @@
     "description": "Do not enable (for toggle)",
     "english": "No",
     "translation": "Nein",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.ExpiredAuto",
+    "description": "tooltip message for auto expiration",
+    "english": "The API key has auto-expired since it has not been used or updated within the last 60 days. Update or re-enable the key to activate it.",
+    "translation": "Der API-Schlüssel ist automatisch abgelaufen, da er in den letzten 60 Tagen nicht verwendet oder aktualisiert wurde. Aktualisiere oder aktiviere den Schlüssel neu, um ihn zu aktivieren.",
     "isDeprecated": false
   },
   {
@@ -58428,7 +58596,7 @@
     "key": "Heading.HistoricalData",
     "description": null,
     "english": "Historical Data",
-    "translation": "Vergangenheitsdaten",
+    "translation": "Verlaufsdaten",
     "isDeprecated": false
   },
   {
@@ -59781,6 +59949,62 @@
     "description": null,
     "english": "Root PlaceId",
     "translation": "Root PlaceId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.Limit",
+    "description": null,
+    "english": "Limit",
+    "translation": "Limit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Title.TotalPlayerCount",
+    "description": null,
+    "english": "Total Player Count",
+    "translation": "Gesamtspieleranzahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Title.InstanceCount",
+    "description": null,
+    "english": "Instance Count",
+    "translation": "Instanzenanzahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.TotalPlayerCount",
+    "description": null,
+    "english": "Count",
+    "translation": "Anzahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Label.InstanceCount",
+    "description": null,
+    "english": "Count",
+    "translation": "Anzahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Description.TotalPlayerCount",
+    "description": null,
+    "english": "Total Player Count",
+    "translation": "Gesamtspieleranzahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ComputeTelemetry",
+    "key": "Description.InstanceCount",
+    "description": null,
+    "english": "Instance Count",
+    "translation": "Instanzenanzahl",
     "isDeprecated": false
   },
   {
