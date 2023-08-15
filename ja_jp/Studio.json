@@ -28172,7 +28172,7 @@
     "key": "FBXDynamicHeadImporter.EmptyAttribute1",
     "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
     "english": "Failed importing dynamic head: Empty value found for Extra Attribute named \"%1\".",
-    "translation": "動的な頭のインポートができませんでした: 「%1」という名前の追加属性に対して空の値が見つかりました。",
+    "translation": "ダイナミックヘッドのインポートができませんでした。「%1」という名前の追加属性に対して空の値が見つかりました。",
     "isDeprecated": false
   },
   {
@@ -28532,7 +28532,7 @@
     "key": "AnimationFromVideoCreatorStudioService.SelectMP4VideoFile",
     "description": null,
     "english": "Select a video",
-    "translation": "mp4ビデオを選択",
+    "translation": "ビデオを選ぶ",
     "isDeprecated": false
   },
   {
@@ -28772,7 +28772,7 @@
     "key": "BetaFeatures.DebuggerV2Title",
     "description": null,
     "english": "Intuitive Debugger",
-    "translation": "直感的Lua Debugger",
+    "translation": "直感型デバッガー",
     "isDeprecated": false
   },
   {
@@ -29333,6 +29333,158 @@
     "description": null,
     "english": "Animation clip editor will have a \"Create from video\" option in the Import menu to transfer 3D pose from a video to an avatar.",
     "translation": "アニメーションクリップエディタには、インポートメニューでビデオからアバターに3Dのポーズを転送する「ビデオから作成」のオプションがあります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.RootFaceJointExtraChars1",
+    "description": "Error message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.  Do not translate \"RootFaceJoint\".  This is a particular string that is expected to be in the FBX file.",
+    "english": "Failed importing FACS Control data: \"%1\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
+    "translation": "FACS制御データをインポートできませんでした。「%1」はスペースやアンダーバーなしで正確に ROOTFaceJoint でなければなりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.FrameExtraChars1",
+    "description": "Warning message when importing FBX file.  Do not translate \"Frame#\" and leave \"#\" as is.  These refer to specific computer-readable strings.",
+    "english": "Ignoring \"%1\" because it contains underscores or spaces.  Must be of the form \"Frame#\" where \"#\" is an integer with no spaces or underscores.",
+    "translation": "アンダースコアやスペースが含まれているため、「%1」を無視しました。 「#」は、スペースやアンダースコアがついていない整数の「Frame#」の形式でなければなりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.WarnEmptyAttribute1",
+    "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
+    "english": "Empty value found for Extra Attribute named \"%1\".  Ignoring this.",
+    "translation": "「%1」という名前の追加属性に空の値が見つかりました。これを無視してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoAnimationTimeline",
+    "description": "Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing FACS Control data: Animation does not exist.",
+    "translation": "FACS制御データをインポートできませんでした。アニメーションがありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.UploadError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video uploading.",
+    "translation": "ビデオのアップロード中にエラーが発生しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ProcessError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video processing.",
+    "translation": "ビデオの処理中にエラーが発生しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ValidationError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "The file does not meet our requirement.",
+    "translation": "そのファイルは要件を満たしていません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.CodeSnippet",
+    "description": null,
+    "english": "Code Snippet",
+    "translation": "コードスニペット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.ViewCodeSnippetElps",
+    "description": null,
+    "english": "View Code Snippet...",
+    "translation": "コードスニペットを表示…",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.PublishToPackage",
+    "description": null,
+    "english": "Publish to Package",
+    "translation": "パッケージに公開",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RobloxRibbonMainWindow.ViewCodeSnippet",
+    "description": null,
+    "english": "View Code Snippet",
+    "translation": "コードスニペットを表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PackageManagementVerbs.PublishNoop",
+    "description": null,
+    "english": "The package instance matched the newest version; no new version was created.",
+    "translation": "そのパッケージインスタンスは最新バージョンと一致し、新しいバージョンは作成されませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RobloxStudioVerbs.ShouldUnscale",
+    "description": null,
+    "english": "This nonuniformly scaled union contains parts which can't be exactly represented separately, before separating:\nReset the scale to make re-unioning easier, or Apply the scale as closely as possible.",
+    "translation": "この非均一にスケールされたユニオンには、分割する前に正確には別々に表示できないパーツが含まれています。再ユニオンをしやすくするためにスケールをリセットするか、スケールをできるだけ近くに適用します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RobloxStudioVerbs.ResetScale",
+    "description": "Remove the 3d scale that an object had resetting it back to its original size.",
+    "english": "Reset Scale",
+    "translation": "スケールをリセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RobloxStudioVerbs.ApplyScale",
+    "description": "Apply the 3d scale that on object had to all of its children instead.",
+    "english": "Apply Scale",
+    "translation": "スケールを適用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.NonuniformUnionsTitle",
+    "description": null,
+    "english": "Nonuniform Unions",
+    "translation": "不均一ユニオン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.NonuniformUnionsDescription",
+    "description": null,
+    "english": "Allow unions created with the CSG system to scale nonuniformly in the same way as MeshParts. Change the interpretation of existing nonuniformly scaled unions.",
+    "translation": "CSGシステムで作成されたユニオンが、MeshParts と同じ方法で不均一にスケーリングできるようにします。既存の不均一なスケールのユニオンの解釈を変更します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ScriptEditorApiTitle",
+    "description": null,
+    "english": "Script Editor API",
+    "translation": "スクリプトエディタ API",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ScriptEditorApiDescription",
+    "description": null,
+    "english": "Allow plugins to access the ScriptEditorService and ScriptDocument objects, permitting them to interact with an active editor.",
+    "translation": "ScriptEditorService と ScriptDocument オブジェクトへのプラグインのアクセスを許可し、アクティブなエディタと交流できるようにします。",
     "isDeprecated": false
   },
   {
@@ -34060,7 +34212,7 @@
     "key": "AssetConfigPackagePermissions.UserOwnedWarning",
     "description": null,
     "english": "Users you share with will always have access to the current and previous versions of this package. Removing collaborators will discontinue their access to newer versions of the package.",
-    "translation": " あなたが共有するユーザーは、このパッケージの現在と前のバージョンにいつもアクセスできます。共同作業者を削除すると、共同作業者による新しいバージョンへのアクセスが停止されます。",
+    "translation": "あなたが共有するユーザーは、このパッケージの現在と前のバージョンにいつでもアクセスできます。共同制作者を削除すると、共同制作者による新しいバージョンへのアクセスが停止されます。",
     "isDeprecated": false
   },
   {
@@ -38133,6 +38285,94 @@
     "description": null,
     "english": "What's my limit?",
     "translation": "上限は？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaRemaining2",
+    "description": null,
+    "english": "{remaining} Marketplace shares left through {date}.",
+    "translation": "{date} まであと {remaining} 件、マーケットプレース共有できます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaExhausted1",
+    "description": null,
+    "english": "Sharing limit exceeded. Try again on {dateTime}.",
+    "translation": "共有制限を超えました。 {dateTime} にもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaUnavailable",
+    "description": null,
+    "english": "Marketplace sharing has been temporarily disabled.",
+    "translation": "マーケットプレース共有が一時的に無効になっています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.MultipleLabelTooltip",
+    "description": null,
+    "english": "Not all roles have the same access; expand the group for details.",
+    "translation": "すべての役割に同じアクセス権限があるわけではありません。詳しくはグループを展開してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.LockedGroup",
+    "description": null,
+    "english": "To change access for the \"{roleName}\" role, visit the Configure Group page on the website.",
+    "translation": "「{roleName}」の役割のアクセス権限を変更するには、ウェブサイトの「グループ設定」ページを参照してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.UserOwnedWarningAllVersions",
+    "description": null,
+    "english": "The user access granted here applies to all versions of this package.",
+    "translation": "ここで付与されたユーザーアクセスは、このパッケージのすべてのバージョンに適用されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedWarningAllVersions",
+    "description": null,
+    "english": "Group roles that have not been assigned in Group Configuration can be set here. Permissions set here affect all users with the group role for all versions of this package.",
+    "translation": "グループ設定ページで割り当てられていないグループの役割は、ここで設定できます。ここで設定された権限は、このパッケージのすべてのバージョンでユーザー全員に影響します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedTooltip",
+    "description": null,
+    "english": "The creator always has full access.",
+    "translation": "クリエーターには、常にすべてのアクセス権限があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogTitle",
+    "description": null,
+    "english": "Insert Tool",
+    "translation": "ツールを挿入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogText",
+    "description": null,
+    "english": "Put this tool into the starter pack?",
+    "translation": "スターターパックにこのツールを入れますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.SearchResultsBackToHome",
+    "description": null,
+    "english": "< All {assetType} /",
+    "translation": "< すべての {assetType}/",
     "isDeprecated": false
   },
   {
@@ -48956,7 +49196,7 @@
     "key": "AnimationFromVideo.Initializing",
     "description": null,
     "english": "Getting started...",
-    "translation": "ビデオをアップロード中...",
+    "translation": "初期化中…",
     "isDeprecated": false
   },
   {
@@ -48964,7 +49204,127 @@
     "key": "AnimationFromVideo.Pending",
     "description": null,
     "english": "Video pending – please wait...",
-    "translation": "ビデオからアニメーションを作成する準備をしています...",
+    "translation": "動画は保留中です。しばらくお待ちください...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Processing",
+    "description": null,
+    "english": "Your video is processing...",
+    "translation": "ビデオを処理しています...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.RequiresModeration",
+    "description": null,
+    "english": "Our moderation team is taking a look – we'll be in touch shortly.",
+    "translation": "当社のモデレーションチームが確認中です。まもなくご連絡いたします。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Error",
+    "description": null,
+    "english": "We encountered an error. Please try again in a bit, and if you continue to see this error, you may need to try a new video.",
+    "translation": "エラーが発生しました。 もう一度やり直してください。このエラーが引き続き表示される場合は、新しいビデオで試してみる必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ModerationRejected",
+    "description": null,
+    "english": "Your animation did not comply with our moderation rules. Please try a different video.",
+    "translation": "あなたのアニメーションは内容規制のルールを守っていません。別のビデオを試してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Success",
+    "description": null,
+    "english": "Success! Your animation is ready.",
+    "translation": "完了！アニメーションの準備ができました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputTooLong",
+    "description": null,
+    "english": "That video is too long – try a video shorter than 10 seconds.",
+    "translation": "ビデオが長すぎます。10秒未満の動画をお試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputHasNoPerson",
+    "description": null,
+    "english": "Couldn't detect a person – try a video with a person fully in frame, facing the camera.",
+    "translation": "人を検出できませんでした 。カメラの方を向いているフレーム内の人物があるビデオを試してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputUnstable",
+    "description": null,
+    "english": "That video is too shaky – try a more stable video.",
+    "translation": "そのビデオは不安定です。もっと安定性のあるビデオをお試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TimedOut",
+    "description": null,
+    "english": "Sorry, we're unable to process your video right now due to a high volume of requests. Please try again in a bit.",
+    "translation": "申し訳ありませんが、現在はリクエストが多すぎるためビデオを処理できません。もう少し後にまたお試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Cancelled",
+    "description": null,
+    "english": "Your animation creation has been canceled.",
+    "translation": "アニメーションの作成がキャンセルされました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TutorialTitle",
+    "description": null,
+    "english": "Create animation from video",
+    "translation": "ビデオからアニメーションを作成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TutorialText",
+    "description": null,
+    "english": "Choose a short video (10 seconds or less) containing a single person, fully in frame. Try to use a video with a stable, unmoving camera.",
+    "translation": "一人の人物を完全にフレームに収めた短いビデオ（10秒以下）を選択してください。動かない安定したカメラでビデオを使用してみてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ChooseVideo",
+    "description": null,
+    "english": "Choose Video",
+    "translation": "ビデオを選ぶ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "CurveEditorCallout.Title",
+    "description": null,
+    "english": "Curve Editor",
+    "translation": "曲線エディタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "CurveEditorCallout.Description",
+    "description": null,
+    "english": "The Curve Editor is a new way to visually create and edit rich animations within the Animation Editor.",
+    "translation": "曲線エディタは、アニメーションエディタ内でリッチアニメーションを視覚的に作成し、編集する新しい方法です。",
     "isDeprecated": false
   },
   {
@@ -50720,6 +51080,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.PluginInstallation",
+    "key": "PluginEntry.AutoUpdateText",
+    "description": null,
+    "english": "Auto Update",
+    "translation": "自動アップデート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PluginInstallation",
+    "key": "PluginEntry.AutoUpdateEntry",
+    "description": null,
+    "english": "Last updated on {date:shortdate}",
+    "translation": "最終更新日: {date:shortdate}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.AssetManager",
     "key": "Main.Title",
     "description": null,
@@ -51221,6 +51597,14 @@
     "description": null,
     "english": " This asset has failed moderation review",
     "translation": " このアセットは、内容審査のレビューをパスしませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetManager",
+    "key": "MainView.AssetPreviewError",
+    "description": null,
+    "english": " Failed to load asset preview data",
+    "translation": " アセットのプレビューデータを読み込めませんでした",
     "isDeprecated": false
   },
   {
@@ -52581,6 +52965,46 @@
     "description": null,
     "english": "Scripts can change your experience's behavior when it is running.",
     "translation": "スクリプトは、実行中のあなたの体験の動作を変更できます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "VoteBar.VoteCountTooSmall",
+    "description": null,
+    "english": "NOT ENOUGH RATINGS",
+    "translation": "レーティングが足りません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "VoteBar.VoteCountGreaterThanEqualTen1",
+    "description": null,
+    "english": "{count}+",
+    "translation": "{count}+",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "VoteBar.VoteCountWrappedInParens1",
+    "description": null,
+    "english": "({count})",
+    "translation": "({count})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "VoteBar.VoteCountAndText1",
+    "description": null,
+    "english": "{count} VOTES",
+    "translation": "{count} 票",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "VoteButons.Rate",
+    "description": null,
+    "english": "Rate:",
+    "translation": "フレームレート:",
     "isDeprecated": false
   },
   {
@@ -54301,6 +54725,22 @@
     "description": null,
     "english": "None",
     "translation": "なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.LocalTooltip",
+    "description": null,
+    "english": "A local variable is accessible only within the block of code where it's declared",
+    "translation": "ローカル変数は宣言されたコードブロック内でのみアクセスできます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.GlobalTooltip",
+    "description": null,
+    "english": "A global variable is accessible from multiple blocks of code following where it's declared if the blocks are within the same script",
+    "translation": "グローバル変数は、ブロックが同じスクリプト内にある場合に宣言されたところで後に続く複数のコードブロックからアクセスできます",
     "isDeprecated": false
   },
   {
