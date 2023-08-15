@@ -103491,7 +103491,7 @@
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Message.DecalResolutionLimits",
     "description": null,
-    "english": "Decal uploads must be smaller than 8000x8000.",
+    "english": "Decal uploads must be smaller than 8000x8000 and will be downsized if larger than 1024x1024.",
     "translation": "贴花上传必须小于 8000 x 8000。",
     "isDeprecated": false
   },
@@ -105429,6 +105429,38 @@
     "description": null,
     "english": "\"{placeholder}\" can not be used more than once.",
     "translation": "“{placeholder}”不能被多次使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.InstructionPlayerInvitePrompt",
+    "description": "Instructions for creating notification strings for player invite prompts",
+    "english": "For {linkStart}Player Invite Prompts{linkEnd}, {strongStartExpName}{strongEndExpName} is required and {strongStartDisName}{strongEndDisName} is optional. Additional custom placeholders are not supported. The notification's title will automatically include the inviter's name.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.InstructionExperienceNotification",
+    "description": "Instructions for creating notification strings for experience notifications.",
+    "english": "For {linkStart}Experience Notifications{linkEnd}, you can include {strongStartUserIdSuffix}{strongEndUserIdSuffix} as well as any other custom placeholders. The title will automatically be the Experience Name.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.ExamplePlayerInvitePrompt",
+    "description": "Example for notification strings for player invite prompts",
+    "english": "Example String: {strongStartDisName}{strongEndDisName} is inviting you to join {strongStartExpName}{strongEndExpName}!",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.ExampleExperienceNotification",
+    "description": "Example for creating notification strings for experience notifications.",
+    "english": "Example: {strongStartUserIdHighScore}{strongEndUserIdHighScore} beat your high score by {strongStartPoints}{strongEndPoints} points!",
+    "translation": "",
     "isDeprecated": false
   },
   {
@@ -114432,6 +114464,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Add",
+    "description": "Button on switcher modal to start add account flow.",
+    "english": "Add",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "AdvertiseCreationAndManagement.Metadata",
     "key": "OpenGraph.Title",
     "description": null,
@@ -114587,7 +114627,7 @@
     "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.ProfileReportHeading",
     "description": null,
-    "english": "Report Profile",
+    "english": "Report This Profile",
     "translation": "",
     "isDeprecated": false
   },
@@ -114603,7 +114643,7 @@
     "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.Dating",
     "description": null,
-    "english": "Dating or sexual content",
+    "english": "Dating or sexual related",
     "translation": "",
     "isDeprecated": false
   },
@@ -114748,6 +114788,214 @@
     "key": "Translation.Reporting.WrongAgeGuidelines",
     "description": "For when the age rating for a game is inappropriate",
     "english": "Wrong age guidelines",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SaidOrDid",
+    "description": "For reporting someone for something they said or did that was bad.",
+    "english": "Something they said or did",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SaidOrDidQuestion",
+    "description": null,
+    "english": "Can you tell us what this person said or did?",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SomethingRomantic",
+    "description": "When reporting someone for saying or doing something sexual, this person was doing \"something romantic\"",
+    "english": "Something romantic",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedToMeetOutside",
+    "description": "For reporting someone for asking to meet outside of Roblox.",
+    "english": "Asked to meet outside Roblox (like Discord, Snap, Instagram, TikTok or other social media)",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedForPII",
+    "description": "When reporting someone for asking for personal information.",
+    "english": "Asked for personal information (like an address, age, or phone number)",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedToMeetInPerson",
+    "description": "For reporting someone for asking to meet in person",
+    "english": "Asked to meet in person",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedForPhotos",
+    "description": "For reporting someone for asking for real photos of another person.",
+    "english": "Asked for real photos",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.HurtMyself",
+    "description": "For reporting someone for asking to hurt myself.",
+    "english": "Said I should hurt myself",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.HurtThemself",
+    "description": "For reporting someone who said they would hurt themself",
+    "english": "Said they would hurt themself",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AccountInformation",
+    "description": "For reporting someone who asked or gave out account information.",
+    "english": "Asked or gave account information (like password)",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AskedForPersonalInformation",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Username",
+    "description": null,
+    "english": "Username or displayname",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AvatarClothing",
+    "description": "An in-game avatar clothing or accessory",
+    "english": "Avatar clothing or accessory",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.SomethingOnProfile",
+    "description": "When reporting a user for something bad that's on their user profile",
+    "english": "Something on their profile",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.CreationsInventory",
+    "description": "When reporting a user profile, for something bad that they've created or something bad in their inventory",
+    "english": "Creations or inventory",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Badges",
+    "description": "For reporting someone's user profile for having a bad badge.",
+    "english": "Badges",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Groups",
+    "description": "When reporting someone for being in a bad user group",
+    "english": "Groups",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.AboutSection",
+    "description": "For reporting someone's user profile because there's something bad in the \"About\" section.",
+    "english": "Profile's \"About\" section",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChosePersonalInformation",
+    "description": "For reporting someone for giving out personal information. This is after the user has selected Personal Information and we are trying to gather some more details.",
+    "english": "You chose Personal information. What did they say?",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChoseSuicideSelfharm",
+    "description": "When reporting someone after the user chooses the \"Suicide or self-harm\" category in the reporting form. This is asking for more information.",
+    "english": "You chose Suicide or self-harm. What did they say?",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ChoseDating",
+    "description": "After reporting a user for the category \"Dating or sexual related\", this is asking for more information.",
+    "english": "You chose Dating or sexual related. What did they say or do?",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.BullyingHarassmentHate",
+    "description": null,
+    "english": "Bullying, Harassment, Hate",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.DatingSexualContent",
+    "description": "Reporting someone for \"Dating or sexual content\"",
+    "english": "Dating or sexual content",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.NotAgeAppropriate",
+    "description": "Reporting something for being \"Not age appropriate\"",
+    "english": "Not age appropriate",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.OffsiteLinks",
+    "description": "For reporting someone or something that has website links that takes you outside the Roblox platform.",
+    "english": "Contains links that takes you outside Roblox",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.DrugsIntoxication",
+    "description": null,
+    "english": "Drugs, intoxication, gambling, and other adult/illegal content",
     "translation": "",
     "isDeprecated": false
   },
@@ -115682,7 +115930,7 @@
   {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.SupportedLanguages",
-    "description": null,
+    "description": "{action} can be \"added\" (Description.ActionAdded) or \"removed\" (Description.ActionRemoved)",
     "english": "Supported Language ({language}) was {action}",
     "translation": "",
     "isDeprecated": false
@@ -116338,7 +116586,7 @@
   {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsGroupAdded",
-    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)",
+    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)\nExample: Admin in MyGroup was added as an editor",
     "english": "{groupRole} in {groupName} was added as {role}",
     "translation": "",
     "isDeprecated": false
@@ -116370,7 +116618,7 @@
   {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsGroupRemoved",
-    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)",
+    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)\nExample: Member in MyGroup was removed as a player",
     "english": "{groupRole} in {groupName} was removed as {role}",
     "translation": "",
     "isDeprecated": false
@@ -116483,7 +116731,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.ParentAccountSetupEmailBottomBodyText",
     "description": "bottom body text for parent account setup email",
-    "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
+    "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have a Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
     "translation": "",
     "isDeprecated": false
   },
