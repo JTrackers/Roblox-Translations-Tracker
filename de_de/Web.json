@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "Hallo {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten per E-Mail für dein Roblox-Konto deaktiviert. Für einige Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode von deiner E-Mail mehr nötig.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hallo {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten per E-Mail für dein Roblox-Konto deaktiviert.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "Hallo {accountName},{lineBreak}{lineBreak}die Verifizierung in 2 Schritten per E-Mail für das Roblox-Konto deines Kindes ist deaktiviert. Für Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode von deiner E-Mail mehr nötig.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hallo,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten per E-Mail wurde für das Roblox-Konto deines Kindes, {accountName}, deaktiviert.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,14 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "Du hast keine 2SV-Konto-Wiederherstellungscodes für dein Roblox-Konto mehr übrig. Bitte kontaktiere den Kunden-Support für weitere Unterstützung bei der Wiederherstellung deines Kontos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "Roblox 2SV für {accountName} deaktiviert.",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3493,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "Okay",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Zum Hauptinhalt springen",
     "isDeprecated": false
   },
   {
@@ -46776,6 +46792,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "Tägliches Budget muss mindestens {miniumBid} Robux betragen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "Tägliches Budget muss zwischen {minimumBid} und {maximumBid} Robux liegen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47372,7 +47404,7 @@
     "key": "Heading.Credentials",
     "description": "though the route and product is called credentials, api-extensions was thought to be more indicative of what the page actually has\n\ntbd if we want to change the routes to match and remove all usages of the term 'credentials'",
     "english": "API Extensions",
-    "translation": "Anmeldeinformationen",
+    "translation": "API-Erweiterungen",
     "isDeprecated": false
   },
   {
@@ -47557,6 +47589,14 @@
     "description": null,
     "english": "Translator Game",
     "translation": "Übersetzerspiel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "API-Erweiterungen",
     "isDeprecated": false
   },
   {
@@ -54604,7 +54644,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "Spielpass",
+    "translation": "Pässe",
     "isDeprecated": false
   },
   {
@@ -54860,7 +54900,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "Durchschnittliche Spielzeit pro Sitzung",
+    "translation": "Durchschnittliche Sitzungszeit",
     "isDeprecated": false
   },
   {
@@ -54925,6 +54965,14 @@
     "description": null,
     "english": "minutes",
     "translation": "Minuten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Average",
+    "description": "The label for average in the chart",
+    "english": "Average",
+    "translation": "Durchschnitt",
     "isDeprecated": false
   },
   {
@@ -63956,7 +64004,7 @@
     "key": "Label.Required",
     "description": "Created for app name description. Can be used elsewhere",
     "english": "(Required)",
-    "translation": "(Erforderlich)",
+    "translation": "Erforderlich",
     "isDeprecated": false
   },
   {
@@ -64733,6 +64781,54 @@
     "description": null,
     "english": "You are leaving Roblox",
     "translation": "Du verlässt Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "Über uns",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Barrierefreiheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "Mach mit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "Datenschutz",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "Bedingungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": "©{copyrightYear} Roblox Corporation. Roblox, das Roblox-Logo und „Powering Imagination“ gehören zu unseren eingetragenen und nicht eingetragenen Markenzeichen in den USA und anderen Ländern.",
     "isDeprecated": false
   }
 ]

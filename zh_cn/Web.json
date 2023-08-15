@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "你好，{accountName}，{lineBreak}{lineBreak}你已成功为你的 Roblox 帐户停用电子邮件两步验证。当你登录帐户或进行其他操作时，将不再需要使用邮件中的安全码。{lineBreak}{lineBreak}Roblox",
+    "translation": "你好 {accountName}，{lineBreak}{lineBreak}你已经停用了 Roblox 帐户的两步验证。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}已为您孩子的帐户：{accountName} 停用电子邮件两步认证。当登录帐户或进行其他操作时，将不再需要使用邮件中的安全码。{lineBreak}{lineBreak}Roblox",
+    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户 “{accountName}” 使用的通过电子邮件的两步验证已停用。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,14 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "你 Roblox 帐户的两步验证恢复验证码已用完。如果你还需要更多关于帐户恢复的帮助，请联系客户服务团队。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "已为 Roblox 帐户“{accountName}”启用两步验证。",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3493,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "好",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "跳转到主内容",
     "isDeprecated": false
   },
   {
@@ -10573,6 +10589,14 @@
     "description": null,
     "english": "Success! Monthly Spend Restrictions have been set up.",
     "translation": "成功！月度支出限额已设置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.FreeCommConsentOnly",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
+    "translation": "我同意 Roblox 仅出于审核和安全用途收集、使用并存储我的音频录音。",
     "isDeprecated": false
   },
   {
@@ -24573,6 +24597,14 @@
     "description": null,
     "english": "Secure Your Account",
     "translation": "保护您的帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Response.InvalidPhoneNumberError",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "此电话号码无效。请输入另一个电话号码。",
     "isDeprecated": false
   },
   {
@@ -46808,6 +46840,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "每日预算必须至少为 {miniumBid} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "每日预算必须介于 {minimumBid} 和 {maximumBid} Robux 之间",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47404,7 +47452,7 @@
     "key": "Heading.Credentials",
     "description": "though the route and product is called credentials, api-extensions was thought to be more indicative of what the page actually has\n\ntbd if we want to change the routes to match and remove all usages of the term 'credentials'",
     "english": "API Extensions",
-    "translation": "验证信息",
+    "translation": "API 扩展程序",
     "isDeprecated": false
   },
   {
@@ -47589,6 +47637,14 @@
     "description": null,
     "english": "Translator Game",
     "translation": "译者游戏",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "API 扩展程序",
     "isDeprecated": false
   },
   {
@@ -55764,7 +55820,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "游戏通行证",
+    "translation": "通行证",
     "isDeprecated": false
   },
   {
@@ -55844,7 +55900,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Average session time measures how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Breaking it down by age group, platform, etc. will give you an idea where to iterate your content. It can be used together with D1 retention as an early indicator of your long term retention.",
-    "translation": "作为互动性的核心指标，总游戏时间可以帮你了解你游戏的互动程度。如果总游戏时间偏低或者有下降趋势，那么你可能需要查看游戏设计中是否有让玩家过早离开的部分，或检查游戏中是否有其他漏洞。",
+    "translation": "平均会话时间测量的是每次访问你游戏的用户的游玩时间。你可以根据你的游戏设计和类型将它与你的期望值进行比较。 按年龄组、平台等标准分解这个指标会让你更好地了解哪里需要对内容作出调整。你还可以与 D1 留存率一起作为长期留存率的指标。",
     "isDeprecated": false
   },
   {
@@ -56020,7 +56076,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "每个会话的平均游玩时间",
+    "translation": "平均会话时间",
     "isDeprecated": false
   },
   {
@@ -56069,6 +56125,30 @@
     "description": null,
     "english": "Average percent of W1 Vistors",
     "translation": "首周访客平均百分比",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分钟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分钟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Average",
+    "description": "The label for average in the chart",
+    "english": "Average",
+    "translation": "平均",
     "isDeprecated": false
   },
   {
@@ -61240,6 +61320,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Duplicate",
+    "description": null,
+    "english": "Duplicate",
+    "translation": "复制",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -65776,6 +65864,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorCreating",
+    "description": null,
+    "english": "There was an error with creating your app",
+    "translation": "创建你的应用程序时出错",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorDeleting",
+    "description": null,
+    "english": "There was an error with deleting your app",
+    "translation": "删除你的应用程序时出错",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthSuccessDeleting",
+    "description": null,
+    "english": "Your app was successfully deleted!",
+    "translation": "你的应用已成功删除！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthSuccessTitle",
+    "description": null,
+    "english": "Success!",
+    "translation": "成功！",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -66013,6 +66133,54 @@
     "description": null,
     "english": "Please try again.",
     "translation": "请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "关于我们",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "辅助功能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "加入我们",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "隐私政策",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "条款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": " ©{copyrightYear} Roblox Corporation、Roblox、Roblox 标志及 Powering Imagination 是我们在美国及其他国家或地区的注册与未注册商标。",
     "isDeprecated": false
   }
 ]

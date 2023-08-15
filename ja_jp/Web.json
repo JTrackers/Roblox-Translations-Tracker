@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントのメールによる2段階認証プロセスが無効化されました。 ログインなど一部の動作には、Eメールからのセキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
+    "translation": "こんにちは、 {accountName}さん。{lineBreak}{lineBreak} お持ちのRobloxアカウントでEメールによる2段階認証を無効にしました。{lineBreak}{lineBreak}Robloxより",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}のメールによる2段階認証プロセスが無効化されました。 お子様がログインする時など一部の動作には、Eメールからのセキュリティコード入力が不要になります。{lineBreak}{lineBreak}Robloxより",
+    "translation": "こんにちは。{lineBreak}{lineBreak} お子様のRobloxアカウント、{accountName} のEメールによる2段階認証が無効になりました。{lineBreak}{lineBreak}Robloxより",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,14 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "お持ちのRobloxアカウントには2段階認証アカウント復元コードが残っていません。アカウントの復元にヘルプが必要な場合は、カスタマーサポートにお問い合わせください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "{accountName} のRobloxの2段階認証が有効になりました。",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3493,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "スキップして主なコンテンツへ",
     "isDeprecated": false
   },
   {
@@ -46700,7 +46716,7 @@
     "key": "Heading.DailyBudgetSelector",
     "description": "Heading that labels a numeric type box where the user specifies the daily budget they want to spend on their ad",
     "english": "Daily Budget",
-    "translation": "1日あたりの予算",
+    "translation": "1日の予算",
     "isDeprecated": false
   },
   {
@@ -46781,6 +46797,22 @@
     "description": "The suffix for the default name for an sponsorship ad campaign. For example, for an ad campaign sponsoring an item called \"Korblox Deathspeaker\", the default campaign name would be \"Korblox Deathspeaker: 22 days starting 04/01/2022\"",
     "english": ": {numberOfDays, plural, =1 {# day} other {# days}} starting {shortStartDateString}",
     "translation": ": {shortStartDateString} から {numberOfDays, plural, =1 {# 日} other {# 日}}間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "1日の予算は少なくとも {miniumBid} Robuxでなければなりません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "1日の予算は {minimumBid} から {maximumBid} Robuxでなければなりません",
     "isDeprecated": false
   },
   {
@@ -47380,7 +47412,7 @@
     "key": "Heading.Credentials",
     "description": "though the route and product is called credentials, api-extensions was thought to be more indicative of what the page actually has\n\ntbd if we want to change the routes to match and remove all usages of the term 'credentials'",
     "english": "API Extensions",
-    "translation": "認証資格情報",
+    "translation": "拡張 API",
     "isDeprecated": false
   },
   {
@@ -47557,6 +47589,22 @@
     "description": null,
     "english": "Pass",
     "translation": "パス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.TranslatorGame",
+    "description": null,
+    "english": "Translator Game",
+    "translation": "翻訳者ゲーム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "拡張 API",
     "isDeprecated": false
   },
   {
@@ -55732,7 +55780,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "ゲームパス",
+    "translation": "パス",
     "isDeprecated": false
   },
   {
@@ -55812,7 +55860,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Average session time measures how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Breaking it down by age group, platform, etc. will give you an idea where to iterate your content. It can be used together with D1 retention as an early indicator of your long term retention.",
-    "translation": "主要エンゲージメント指標として、合計プレイ時間は、ゲームにどれだけ魅力があるかを理解するのに役立ちます。これが低いか低下している場合、プレイヤーが早く離脱することにつながるゲームのデザインを調べたり、バグがあるかどうかを調べたほうがいいかもしれません。",
+    "translation": "平均セッション時間は、ユーザーがあなたのゲームを訪問するたびにどのくらいプレイするかを計ります。ゲームのデザインやジャンルに基づいて期待値と比較できます。年齢層やプラットフォームなどに分けると、どこでコンテンツをまた使うべきかが分かります。長期リテンションのための早期指標として、D1リテンションと一緒に利用できます。",
     "isDeprecated": false
   },
   {
@@ -55988,7 +56036,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "セッションごとの平均プレイタイム",
+    "translation": "平均セッション時間",
     "isDeprecated": false
   },
   {
@@ -55997,6 +56045,14 @@
     "description": null,
     "english": "Total play time divided by number of sessions on each day.",
     "translation": "合計プレイタイムをそれぞれの日のセッション数で割ったもの。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.AveragePlayTimeInsight",
+    "description": null,
+    "english": "Average session time indicates how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Break it down by age group, platform, etc. will give you an idea where to iterate your content. Use it together with D1 retention as an early indicator of your long term retention. ",
+    "translation": "平均セッション時間は、ユーザーがあなたのゲームを訪問するたびにどのくらいプレイするかを表しています。ゲームのデザインやジャンルに基づいて期待値と比較できます。年齢層やプラットフォームなどに分けると、どこでコンテンツをまた使うべきかが分かります。長期リテンションのための早期指標として、D1リテンションと一緒に利用してください。 ",
     "isDeprecated": false
   },
   {
@@ -56029,6 +56085,30 @@
     "description": null,
     "english": "Average percent of W1 Vistors",
     "translation": "D1訪問者の平均的割合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Average",
+    "description": "The label for average in the chart",
+    "english": "Average",
+    "translation": "平均",
     "isDeprecated": false
   },
   {
@@ -61200,6 +61280,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Duplicate",
+    "description": null,
+    "english": "Duplicate",
+    "translation": "複製",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -65596,7 +65684,7 @@
     "key": "Description.DialogSubContentLink",
     "description": "link to clientID and secret documentation",
     "english": "{linkStart}Learn how to use your ClientID and Secret{linkEnd}",
-    "translation": "{linkStart}ClientID と秘密の質問の使い方を覚える{linkEnd}",
+    "translation": "{linkStart}ClientID と秘密の使い方を覚える{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -65612,7 +65700,7 @@
     "key": "Description.DialogLinkContent",
     "description": null,
     "english": "Learn how to use your ClientID and Secret",
-    "translation": "ClientID と秘密の質問の使い方を覚える",
+    "translation": "ClientID と秘密の使い方を覚える",
     "isDeprecated": false
   },
   {
@@ -65636,7 +65724,7 @@
     "key": "Label.Secret",
     "description": null,
     "english": "Secret",
-    "translation": "秘密の質問",
+    "translation": "秘密",
     "isDeprecated": false
   },
   {
@@ -65945,6 +66033,14 @@
   },
   {
     "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthRegenerate",
+    "description": null,
+    "english": "Confirm App Secret Regeneration?",
+    "translation": "アプリの秘密をもう一度生成しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
     "key": "Description.RegenerateDialogContent1",
     "description": null,
     "english": "This action will generate a new secret and cannot be undone. Are you sure you want to regenerate the secret?",
@@ -65973,6 +66069,38 @@
     "description": null,
     "english": "Error",
     "translation": "エラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorCreating",
+    "description": null,
+    "english": "There was an error with creating your app",
+    "translation": "アプリの作成中にエラーが発生しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorDeleting",
+    "description": null,
+    "english": "There was an error with deleting your app",
+    "translation": "アプリの削除中にエラーが発生しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthSuccessDeleting",
+    "description": null,
+    "english": "Your app was successfully deleted!",
+    "translation": "アプリを削除できました！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthSuccessTitle",
+    "description": null,
+    "english": "Success!",
+    "translation": "完了！",
     "isDeprecated": false
   },
   {
@@ -66245,6 +66373,54 @@
     "description": null,
     "english": "You are leaving Roblox",
     "translation": "Robloxではないサイトに移動中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "当社について",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "アクセシビリティ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "採用情報",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "プライバシー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "規約",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": "©{copyrightYear} Roblox Corporation。Roblox、RobloxロゴおよびPowering Imaginationは、米国並びにその他の国における登録商標および非登録商標です。",
     "isDeprecated": false
   }
 ]

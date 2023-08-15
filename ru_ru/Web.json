@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Двухшаговая проверка через эл. почту отключена для аккаунта Roblox. Код безопасности из эл. почты больше не требуется для некоторых действий, например для входа.{lineBreak}{lineBreak}Roblox",
+    "translation": "Привет, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью электронной почты для твоего аккаунта Roblox деактивирована.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Двухшаговая проверка через эл. почту была отключена для аккаунта Roblox вашего ребёнка,{accountName}. Код безопасности из эл. почты больше не требуется для некоторых действий, например для входа.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью электронной почты для аккаунта вашего ребёнка Roblox деактивирована.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,14 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "2SV коды для восстановления аккаунта Roblox закончились. Обратись в службу поддержки для дальнейшей помощи с восстановлением аккаунта.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "Roblox 2SV для аккаунта {accountName} отключён.",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3493,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Перейти к основному контенту",
     "isDeprecated": false
   },
   {
@@ -46740,7 +46756,7 @@
     "key": "Label.ExampleAvatarItem",
     "description": "Faux name of example of an avatar item (t-shirt, pants, etc)",
     "english": "Example Avatar Item",
-    "translation": "Пример аватара",
+    "translation": "Пример предмета для аватара",
     "isDeprecated": false
   },
   {
@@ -46765,6 +46781,22 @@
     "description": "Title for a page where the user creates a sponsorship ad for an experience",
     "english": "Sponsor This Experience",
     "translation": "Спонсировать плейс",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "Ежедневный бюджет должен быть не менее {miniumBid} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "Ежедневный бюджет должен быть между {minimumBid} и {maximumBid} Robux",
     "isDeprecated": false
   },
   {
@@ -47364,7 +47396,7 @@
     "key": "Heading.Credentials",
     "description": "though the route and product is called credentials, api-extensions was thought to be more indicative of what the page actually has\n\ntbd if we want to change the routes to match and remove all usages of the term 'credentials'",
     "english": "API Extensions",
-    "translation": "Учётные данные",
+    "translation": "Расширения API",
     "isDeprecated": false
   },
   {
@@ -47549,6 +47581,14 @@
     "description": null,
     "english": "Translator Game",
     "translation": "Игра переводчика",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "Расширения API",
     "isDeprecated": false
   },
   {
@@ -54596,7 +54636,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "Игровой пропуск",
+    "translation": "Пропуски",
     "isDeprecated": false
   },
   {
@@ -54676,7 +54716,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Average session time measures how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Breaking it down by age group, platform, etc. will give you an idea where to iterate your content. It can be used together with D1 retention as an early indicator of your long term retention.",
-    "translation": "Являясь основным показателем вовлечённости, общее игровое время помогает понять, насколько увлекателен твой плейс. Если этот показатель низкий или снижается, ты можешь проанализировать дизайн своей игры, чтобы узнать, что заставляет игроков бросать игру слишком рано, или проверить, есть ли какие-либо ошибки.",
+    "translation": "Среднее время сессии показывает, сколько времени пользователь играет каждый раз при посещении твоей игры. Ты можешь сравнить его со своими ожиданиями, основываясь на дизайне игры и жанре. Раздели его по возрастным группам, платформе и т. д. Это даст тебе представление о том, где изменить содержимое. Используй его вместе с удержанием D1 как ранний индикатор долговременного удержания.",
     "isDeprecated": false
   },
   {
@@ -54852,7 +54892,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "Среднее время игры за сессию",
+    "translation": "Среднее время сессии",
     "isDeprecated": false
   },
   {
@@ -54901,6 +54941,30 @@
     "description": null,
     "english": "Average percent of W1 Vistors",
     "translation": "Средний процент посетителей W1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "мин.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "мин.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Average",
+    "description": "The label for average in the chart",
+    "english": "Average",
+    "translation": "Среднее",
     "isDeprecated": false
   },
   {
@@ -60072,6 +60136,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Duplicate",
+    "description": null,
+    "english": "Duplicate",
+    "translation": "Скопировать",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -64096,6 +64168,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorCreating",
+    "description": null,
+    "english": "There was an error with creating your app",
+    "translation": "Произошла ошибка при создании приложения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorDeleting",
+    "description": null,
+    "english": "There was an error with deleting your app",
+    "translation": "Произошла ошибка при удалении приложения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthSuccessDeleting",
+    "description": null,
+    "english": "Your app was successfully deleted!",
+    "translation": "Приложение успешно удалено!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthSuccessTitle",
+    "description": null,
+    "english": "Success!",
+    "translation": "Готово!",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -64333,6 +64437,54 @@
     "description": null,
     "english": "Please try again.",
     "translation": "Повтори попытку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "О нас",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Специальные возможности",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "Присоединиться",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "Конфиденциальность",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "Условия",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": "©{copyrightYear} Roblox Corporation. Roblox, логотоп Roblox logo и Powering Imagination входят в число наших зарегистрированных и незарегистрированных товарных знаков в США и других странах.",
     "isDeprecated": false
   }
 ]

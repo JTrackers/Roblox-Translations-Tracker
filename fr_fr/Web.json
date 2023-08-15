@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour {accountName},{lineBreak}{lineBreak} Tu as désactivé la vérification en 2 étapes par e-mail pour ton compte Roblox. Un code de sécurité ne sera dorénavant plus requis pour te connecter.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}Vous avez désactivé la vérification en 2 étapes avec l'e-mail de votre compte Roblox.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour,{lineBreak}{lineBreak}. La vérification en deux étapes par e-mail a été désactivée pour le compte Roblox de votre enfant, {accountName}. Un code de sécurité provenant de votre e-mail ne sera plus nécessaire pour certaines actions comme la connexion.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour, {lineBreak}{lineBreak}La vérification en 2 étapes de avec e-mail a été désactivée pour le compte Roblox de votre enfant, {accountName}.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,14 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "Tu n'as plus de codes de récupération de compte 2SV pour ton compte Roblox. Contacter le service clientèle pour obtenir de l'aide afin de récupérer ton compte.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "Roblox 2SV pour {accountName} activé.",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3493,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Passer au contenu principal",
     "isDeprecated": false
   },
   {
@@ -12284,7 +12300,7 @@
     "key": "Heading.AvatarShop",
     "description": "A heading for the shop page where you can buy items to customize your avatar",
     "english": "Avatar Shop",
-    "translation": "Boutique des avatars",
+    "translation": "Boutique Avatar",
     "isDeprecated": false
   },
   {
@@ -46776,6 +46792,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "Le budget quotidien doit être d'au moins de {miniumBid} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "Le budget quotidien doit être compris entre {minimumBid} et {maximumBid} Robux",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47372,7 +47404,7 @@
     "key": "Heading.Credentials",
     "description": "though the route and product is called credentials, api-extensions was thought to be more indicative of what the page actually has\n\ntbd if we want to change the routes to match and remove all usages of the term 'credentials'",
     "english": "API Extensions",
-    "translation": "Références",
+    "translation": "Extensions API",
     "isDeprecated": false
   },
   {
@@ -47549,6 +47581,14 @@
     "description": null,
     "english": "Pass",
     "translation": "Pass",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "Extensions API",
     "isDeprecated": false
   },
   {
@@ -55724,7 +55764,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "Passe de jeu",
+    "translation": "Passes",
     "isDeprecated": false
   },
   {
@@ -55804,7 +55844,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Average session time measures how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Breaking it down by age group, platform, etc. will give you an idea where to iterate your content. It can be used together with D1 retention as an early indicator of your long term retention.",
-    "translation": "En tant que mesure de base de l'engagement, le temps de jeu total t'aide à comprendre comment ton jeu est engagé. S'il est faible ou en baisse, tu peux examiner la conception de ton jeu qui conduit les joueurs à abandonner trop tôt ou vérifier s'il y a des bugs.",
+    "translation": "Le temps de session moyen mesure la durée de jeu d'un utilisateur à chaque fois qu'il visite votre jeu. Vous pouvez le comparer à vos attentes en fonction de la conception et du genre de votre jeu. La ventilation par groupe d'âge, plateforme, etc. vous donnera une idée de la manière dont vous devez itérer votre contenu. Elle peut être utilisée avec la rétention J1 comme un indicateur précoce de votre rétention à long terme.",
     "isDeprecated": false
   },
   {
@@ -55980,7 +56020,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "Temps de jeu moyen par session",
+    "translation": "Durée moyenne de la session",
     "isDeprecated": false
   },
   {
@@ -56029,6 +56069,30 @@
     "description": null,
     "english": "Average percent of W1 Vistors",
     "translation": "Pourcentage moyen de visiteurs en S1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "minutes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "minutes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Average",
+    "description": "The label for average in the chart",
+    "english": "Average",
+    "translation": "Moyenne",
     "isDeprecated": false
   },
   {
@@ -61200,6 +61264,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Duplicate",
+    "description": null,
+    "english": "Duplicate",
+    "translation": "Reproduire",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -65508,7 +65580,7 @@
     "key": "Label.Required",
     "description": "Created for app name description. Can be used elsewhere",
     "english": "(Required)",
-    "translation": "(Requis)",
+    "translation": "Requis",
     "isDeprecated": false
   },
   {
@@ -65984,6 +66056,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorCreating",
+    "description": null,
+    "english": "There was an error with creating your app",
+    "translation": "Une erreur s'est produite lors de la création de votre application",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthErrorDeleting",
+    "description": null,
+    "english": "There was an error with deleting your app",
+    "translation": "Une erreur s'est produite lors de la suppression de votre application",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthSuccessDeleting",
+    "description": null,
+    "english": "Your app was successfully deleted!",
+    "translation": "Votre application a été supprimée avec succès !",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthSuccessTitle",
+    "description": null,
+    "english": "Success!",
+    "translation": "Réussi !",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -66253,6 +66357,54 @@
     "description": null,
     "english": "You are leaving Roblox",
     "translation": "Vous quittez Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "À propos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Accessibilité",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "Nous rejoindre",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "Confidentialité",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "Termes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": "©{copyrightYear} Société Roblox. Roblox, le logo Roblox et Powering Imagination font partie de nos marques déposées aux États-Unis et dans d'autres pays.",
     "isDeprecated": false
   }
 ]
