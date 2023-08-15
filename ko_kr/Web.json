@@ -3323,7 +3323,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Response.GlobalAppAccessError",
     "description": null,
-    "english": "The account is unable to log in. Please log in to the LuoBu app.",
+    "english": "The account is unable to log in.",
     "translation": "로그인할 수 없어요. LuoBu 앱에서 로그인하세요.",
     "isDeprecated": false
   },
@@ -6964,7 +6964,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "누가 나와 합류할 수 있나요?",
+    "translation": "누가 나와 함께 체험에 참가할 수 있나요?",
     "isDeprecated": false
   },
   {
@@ -10677,6 +10677,78 @@
     "description": null,
     "english": "Private Servers",
     "translation": "비공개 서버",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "Roblox가 내 연락처를 사용해 Roblox에서 나와 내 지인들이 서로를 찾을 수 있도록 도와줍니다. {linkStart}자세히 알아보기{linkEnd}{lineBreak}이 기능을 사용하려면 휴대폰 번호 인증을 완료해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "휴대폰 번호 인증이 완료되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to other verified users who have your phone number?",
+    "translation": "내 휴대폰 번호를 알고 있는 다른 인증된 사용자에게 나를 추천할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When users see you as a contact recommendation, they will be shown your contact name as stored in their device instead of your Roblox username.",
+    "translation": "사용자가 내 연락처를 추천받을 때, Roblox 사용자 이름 대신 기기에 저장된 연락처 이름이 표시됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "이 기기의 연락처에 대한 액세스 허용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "Roblox는 기기 연락처를 주기적으로 동기화해 최신 권장 사항을 제공합니다. 기존 Roblox 사용자와 일치하는 항목만 Roblox 서버에 저장됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "동기화된 연락처 데이터 삭제",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "기기 연락처에 대한 액세스 권한을 제거하면, 동기화된 연락처 데이터를 삭제할 수 있는 옵션이 제공됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "휴대폰 번호 인증이 완료되지 않았습니다.",
     "isDeprecated": false
   },
   {
@@ -24693,6 +24765,14 @@
     "description": null,
     "english": "This phone number is not valid. Please enter a different phone number.",
     "translation": "유효하지 않은 전화번호입니다. 다른 전화번호를 입력하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.PhoneNumbersPrivacyVisibility",
+    "description": "This will be displayed as the user is submitting their phone number as a verified contact method",
+    "english": "You phone number will never be displayed publicly.",
+    "translation": "전화번호는 공개적으로 표시되지 않습니다.",
     "isDeprecated": false
   },
   {
@@ -42460,7 +42540,7 @@
     "key": "Heading.GroupNameChangeSubject",
     "description": "Subject line for direct message regarding group name change",
     "english": "Group Name Changed: {previousGroupName}",
-    "translation": "그룹 이름이 변경됨: {previousGroupName}",
+    "translation": "그룹 이름 변경 알림: {previousGroupName}",
     "isDeprecated": false
   },
   {
@@ -42468,7 +42548,7 @@
     "key": "Description.GroupNameChangeBody",
     "description": null,
     "english": "{oldName} has been renamed to {newName}. You can visit the group here: {groupLink}",
-    "translation": "{oldName}이(가) {newName}(으)로 변경되었습니다. 다음 링크에서 그룹을 방문할 수 있습니다: {groupLink}",
+    "translation": "그룹 이름 {oldName}이(가) {newName}(으)로 변경되었습니다. 다음 링크에서 그룹을 방문할 수 있습니다. 링크: {groupLink}",
     "isDeprecated": false
   },
   {
@@ -47548,7 +47628,7 @@
     "key": "Heading.Credentials",
     "description": "We will need to discuss changing this to \"API Extensions\" and will make all changes to references and routes at once",
     "english": "Credentials",
-    "translation": "API 확장",
+    "translation": "자격 증명",
     "isDeprecated": false
   },
   {
@@ -52372,7 +52452,7 @@
     "key": "Message.EmptyMessage",
     "description": null,
     "english": "You haven't created any {itemType} ",
-    "translation": "아직 제작한 {itemType}이(가) 없습니다 ",
+    "translation": "아직 제작한 {itemType}이(가) 없습니다.",
     "isDeprecated": false
   },
   {
@@ -55716,7 +55796,7 @@
     "key": "Label.Country",
     "description": "Segmentation of DAU/New players by countries",
     "english": "Country (top 5)",
-    "translation": "국가별(상위 5)",
+    "translation": "국가(상위 5)",
     "isDeprecated": false
   },
   {
@@ -55724,7 +55804,7 @@
     "key": "Label.Locale",
     "description": "Segmentation of DAU/New players by languages",
     "english": "Language (top 5)",
-    "translation": "언어별(상위 5)",
+    "translation": "언어(상위 5)",
     "isDeprecated": false
   },
   {
@@ -55732,7 +55812,7 @@
     "key": "Label.AgeGroup",
     "description": "Segmentation of DAU/New players by age group",
     "english": "Age Group",
-    "translation": "연령대별",
+    "translation": "연령대",
     "isDeprecated": false
   },
   {
@@ -55756,7 +55836,7 @@
     "key": "Label.View",
     "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
     "english": "Breakdown by",
-    "translation": "보기:",
+    "translation": "분류 기준:",
     "isDeprecated": false
   },
   {
@@ -57676,7 +57756,7 @@
     "key": "Message.Moderation",
     "description": null,
     "english": "Image will be visible to others after moderation.",
-    "translation": "이미지는 검열을 거친 후 다른 사람에게 공개됩니다.",
+    "translation": "이미지는 검열을 거친 후에 공개됩니다.",
     "isDeprecated": false
   },
   {
@@ -61736,6 +61816,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.openid",
+    "description": "OpenId scope used to support single-sign-on (SSO)",
+    "english": "OpenId",
+    "translation": "OpenId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.NoDescriptionProvided",
+    "description": "This message will appear if there is no description for the given scope and operation",
+    "english": "No description provided.",
+    "translation": "설명을 입력하지 않았습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.profile",
+    "description": "this scope grants access to view the user's profile info",
+    "english": "Profile",
+    "translation": "프로필",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -65352,6 +65456,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "다음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Previous",
+    "description": null,
+    "english": "Previous",
+    "translation": "이전",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.APIReference",
     "key": "Label.Deprecated",
     "description": null,
@@ -65541,6 +65661,14 @@
     "description": "Allow for the \"Default Value\" text and actual value to be styled independently",
     "english": "Default Value: {defaultValueStart}{defaultValueEnd}",
     "translation": "기본값: {defaultValueStart}{defaultValueEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.MathOperations",
+    "description": null,
+    "english": "Math Operations",
+    "translation": "수학 연산",
     "isDeprecated": false
   },
   {
@@ -66464,6 +66592,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "저장하지 않은 변경 사항이 있습니다. 정말 나갈까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "정말 나갈까요?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -66692,7 +66836,7 @@
     "key": "Error.TextModerated",
     "description": null,
     "english": "Text moderated. Please change your badge name and/or description and try again.",
-    "translation": "텍스트가 검열되었습니다. 배지 이름 및/또는 설명을 변경하고 다시 시도하세요.",
+    "translation": "텍스트가 검열되었습니다. 배지 이름이나 설명을 변경하고 다시 시도하세요.",
     "isDeprecated": false
   },
   {

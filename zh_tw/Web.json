@@ -3323,7 +3323,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Response.GlobalAppAccessError",
     "description": null,
-    "english": "The account is unable to log in. Please log in to the LuoBu app.",
+    "english": "The account is unable to log in.",
     "translation": "帳號無法登入，請登入羅布 App。",
     "isDeprecated": false
   },
@@ -6964,7 +6964,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "誰可以加入我？",
+    "translation": "誰可以加入我所在的體驗？",
     "isDeprecated": false
   },
   {
@@ -10677,6 +10677,78 @@
     "description": null,
     "english": "Private Servers",
     "translation": "私人伺服器",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "Roblox 會使用您的聯絡人資料幫助您們可以在 Roblox 找到彼此。{linkStart}了解更多{linkEnd}{lineBreak}若要使用此功能，您必須擁有經過驗證的手機號碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "您的手機號碼已經過驗證。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to other verified users who have your phone number?",
+    "translation": "您想被推薦給其他經過驗證並擁有您的手機號碼的使用者嗎？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When users see you as a contact recommendation, they will be shown your contact name as stored in their device instead of your Roblox username.",
+    "translation": "當您成為其他使用者的推薦聯絡人時，他不會看到您的 Roblox 使用者名稱，而會看到您在他的裝置上的聯絡人名稱。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "允許存取此裝置的聯絡人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "Roblox 會定時同步您的裝置的聯絡人，並給您最新的推薦聯絡人。Roblox 伺服器只會儲存與現有 Roblox 使用者相符的聯絡人的資訊。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "刪除同步的聯絡人資料",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "當您取消裝置聯絡人的存取權時，您也可以選擇刪除同步的聯絡人資料。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "您的手機號碼未經過驗證。",
     "isDeprecated": false
   },
   {
@@ -47524,7 +47596,7 @@
     "key": "Heading.Credentials",
     "description": "We will need to discuss changing this to \"API Extensions\" and will make all changes to references and routes at once",
     "english": "Credentials",
-    "translation": "API 外掛程式",
+    "translation": "憑證",
     "isDeprecated": false
   },
   {
@@ -55692,7 +55764,7 @@
     "key": "Label.Country",
     "description": "Segmentation of DAU/New players by countries",
     "english": "Country (top 5)",
-    "translation": "依國家（前五）",
+    "translation": "國家（前五）",
     "isDeprecated": false
   },
   {
@@ -55700,7 +55772,7 @@
     "key": "Label.Locale",
     "description": "Segmentation of DAU/New players by languages",
     "english": "Language (top 5)",
-    "translation": "依語言（前五）",
+    "translation": "語言（前五）",
     "isDeprecated": false
   },
   {
@@ -55708,7 +55780,7 @@
     "key": "Label.AgeGroup",
     "description": "Segmentation of DAU/New players by age group",
     "english": "Age Group",
-    "translation": "依年齡層",
+    "translation": "年齡層",
     "isDeprecated": false
   },
   {
@@ -55732,7 +55804,7 @@
     "key": "Label.View",
     "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
     "english": "Breakdown by",
-    "translation": "檢視：",
+    "translation": "劃分方式",
     "isDeprecated": false
   },
   {
@@ -61720,6 +61792,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.openid",
+    "description": "OpenId scope used to support single-sign-on (SSO)",
+    "english": "OpenId",
+    "translation": "OpenID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.NoDescriptionProvided",
+    "description": "This message will appear if there is no description for the given scope and operation",
+    "english": "No description provided.",
+    "translation": "無說明。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.profile",
+    "description": "this scope grants access to view the user's profile info",
+    "english": "Profile",
+    "translation": "個人檔案",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -65669,6 +65765,22 @@
     "description": null,
     "english": "You have invalid changes",
     "translation": "您有無效變更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "您有未儲存的變更。確定離開？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "確定離開？",
     "isDeprecated": false
   },
   {

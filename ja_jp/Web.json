@@ -3323,7 +3323,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Response.GlobalAppAccessError",
     "description": null,
-    "english": "The account is unable to log in. Please log in to the LuoBu app.",
+    "english": "The account is unable to log in.",
     "translation": "アカウントにログインできません。LuoBuアプリにログインしてください。",
     "isDeprecated": false
   },
@@ -6964,7 +6964,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "参加できる相手。",
+    "translation": "体験で一緒に参加できる人。",
     "isDeprecated": false
   },
   {
@@ -10677,6 +10677,78 @@
     "description": null,
     "english": "Private Servers",
     "translation": "プライベートサーバー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "Robloxは、あなたとあなたの連絡先リストにある方々がRobloxでお互いを見つけられるように連絡先リストを利用しています。 {linkStart}詳細{linkEnd}{lineBreak}この機能を使用するには、認証済みの電話番号が必要です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "電話番号の確認が完了しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to other verified users who have your phone number?",
+    "translation": "あなたの電話番号を知っている認証済みユーザーへのおすすめ表示を希望しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When users see you as a contact recommendation, they will be shown your contact name as stored in their device instead of your Roblox username.",
+    "translation": "あなたを連絡先がユーザーへのおすすめとして表示される場合、Robloxのユーザーネームではなく、デバイスに保存されている連絡先名が表示されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "このデバイスの連絡先リストへのアクセスを許可する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "Robloxは定期的にデバイスの連絡先を同期し、最新のおすすめを提供します。 既存のRobloxユーザーと一致する場合のみにRobloxサーバーに保存されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "同期された連絡先データを削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "デバイスの連絡先リストへのアクセスを削除すると、同期した連絡先データを削除することもできます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "電話番号の確認ができていません。",
     "isDeprecated": false
   },
   {
@@ -47524,7 +47596,7 @@
     "key": "Heading.Credentials",
     "description": "We will need to discuss changing this to \"API Extensions\" and will make all changes to references and routes at once",
     "english": "Credentials",
-    "translation": "拡張 API",
+    "translation": "認証資格情報",
     "isDeprecated": false
   },
   {
@@ -47676,7 +47748,7 @@
     "key": "Heading.Create",
     "description": null,
     "english": "Create {itemType}",
-    "translation": "{itemType} を作成",
+    "translation": "{itemType}を作成",
     "isDeprecated": false
   },
   {
@@ -52164,7 +52236,7 @@
     "key": "Heading.WonEver",
     "description": null,
     "english": "Won Ever",
-    "translation": "過去に獲得",
+    "translation": "獲得者数",
     "isDeprecated": false
   },
   {
@@ -52172,7 +52244,7 @@
     "key": "Heading.WonYesterday",
     "description": null,
     "english": "Won Yesterday",
-    "translation": "昨日獲得",
+    "translation": "昨日の獲得者数",
     "isDeprecated": false
   },
   {
@@ -52348,7 +52420,7 @@
     "key": "Message.EmptyMessage",
     "description": null,
     "english": "You haven't created any {itemType} ",
-    "translation": "{itemType} は作成していません ",
+    "translation": "{itemType}はまだ作成していません ",
     "isDeprecated": false
   },
   {
@@ -52364,7 +52436,7 @@
     "key": "Message.EmptyMessagesWithLink",
     "description": null,
     "english": "Creating {itemType} can increase player engagement in your experience. {LinkStart}Learn more{LinkEnd}",
-    "translation": "{itemType} を作成すると、体験内でのプレイヤーのエンゲージメント向上につながります。 {LinkStart}詳細はこちら{LinkEnd}",
+    "translation": "{itemType}を作成すると、体験内でのプレイヤーのエンゲージメント向上につながります。 {LinkStart}詳細はこちら{LinkEnd}",
     "isDeprecated": false
   },
   {
@@ -55700,7 +55772,7 @@
     "key": "Label.Locale",
     "description": "Segmentation of DAU/New players by languages",
     "english": "Language (top 5)",
-    "translation": "言語別 （トップ 5）",
+    "translation": "言語別 （上位5位）",
     "isDeprecated": false
   },
   {
@@ -55732,7 +55804,7 @@
     "key": "Label.View",
     "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
     "english": "Breakdown by",
-    "translation": "表示:",
+    "translation": "内訳：",
     "isDeprecated": false
   },
   {
@@ -61236,7 +61308,7 @@
     "key": "Message.SelectAllDatastores",
     "description": "for the datastores form",
     "english": "Select operations for ALL data stores in your experience. Current and future.",
-    "translation": "体験内ですべてのデータストアの操作を選択してください。（現在と未来のもの。）",
+    "translation": "体験内のすべてのデータストアの操作を選択してください。（現在と未来のもの。）",
     "isDeprecated": false
   },
   {
@@ -61284,7 +61356,7 @@
     "key": "Label.LoadingInitialDatastores",
     "description": "loading state for datastores",
     "english": "Loading the first {loadCount} data stores...",
-    "translation": "最初の {loadCount} のデータストアを読み込んでいます...",
+    "translation": "最初の {loadCount} 件のデータストアをロード中...",
     "isDeprecated": false
   },
   {
@@ -61300,7 +61372,7 @@
     "key": "Message.ErrorLoadingDatastores",
     "description": "error message for loading datastores",
     "english": "There was an error loading the data stores",
-    "translation": "データストアの読み込み中にエラーが発生しました",
+    "translation": "データストアのロード中にエラーが発生しました",
     "isDeprecated": false
   },
   {
@@ -61717,6 +61789,30 @@
     "description": "Description for the Write operation for the universe-places scope.",
     "english": "This operation grants access to publish new versions of experiences to Roblox.",
     "translation": "この操作によって、Robloxに新しいバージョンの体験を公開するアクセス権限が与えられます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.openid",
+    "description": "OpenId scope used to support single-sign-on (SSO)",
+    "english": "OpenId",
+    "translation": "OpenId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.NoDescriptionProvided",
+    "description": "This message will appear if there is no description for the given scope and operation",
+    "english": "No description provided.",
+    "translation": "説明がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.profile",
+    "description": "this scope grants access to view the user's profile info",
+    "english": "Profile",
+    "translation": "プロフィール",
     "isDeprecated": false
   },
   {
@@ -65336,6 +65432,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "次へ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Previous",
+    "description": null,
+    "english": "Previous",
+    "translation": "前へ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.APIReference",
     "key": "Label.Deprecated",
     "description": null,
@@ -65525,6 +65637,14 @@
     "description": "Allow for the \"Default Value\" text and actual value to be styled independently",
     "english": "Default Value: {defaultValueStart}{defaultValueEnd}",
     "translation": "デフォルト値: {defaultValueStart}{defaultValueEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.MathOperations",
+    "description": null,
+    "english": "Math Operations",
+    "translation": "演算機能",
     "isDeprecated": false
   },
   {
@@ -66448,6 +66568,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "保存されていない変更内容があります。退出しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "退出しますか？",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -66532,7 +66668,7 @@
     "key": "Message.BadgePurchaseConfirmation",
     "description": null,
     "english": "Do you want to create a badge for {price}?",
-    "translation": "{price} のバッジを作成しますか？",
+    "translation": "{price}でバッジを作成しますか？",
     "isDeprecated": false
   },
   {
@@ -66965,6 +67101,14 @@
     "description": null,
     "english": "Badge Creation Page",
     "translation": "バッジ作成ページ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkTex",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
     "isDeprecated": false
   },
   {

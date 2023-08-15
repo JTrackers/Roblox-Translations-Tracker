@@ -3323,7 +3323,7 @@
     "namespace": "Authentication.SignUp",
     "key": "Response.GlobalAppAccessError",
     "description": null,
-    "english": "The account is unable to log in. Please log in to the LuoBu app.",
+    "english": "The account is unable to log in.",
     "translation": "Anmeldung mit diesem Konto nicht möglich. Melde dich bitte bei der LuoBu-App an.",
     "isDeprecated": false
   },
@@ -6964,7 +6964,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "Wer kann mitmachen?",
+    "translation": "Wer kann mit mir in die Erlebnisse?",
     "isDeprecated": false
   },
   {
@@ -10677,6 +10677,78 @@
     "description": null,
     "english": "Private Servers",
     "translation": "Private Server",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "Roblox nutzt deine Kontakte, um dir und deinen Kontakten zu helfen, euch auf Roblox zu finden. {linkStart}Mehr erfahren{linkEnd}{lineBreak}Du musst eine verifizierte Telefonnummer haben, um diese Funktion nutzen zu können.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "Deine Telefonnummer ist verifiziert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to other verified users who have your phone number?",
+    "translation": "Möchtest du anderen verifizierten Nutzer:innen, die deine Telefonnummer haben, vorgeschlagen werden?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When users see you as a contact recommendation, they will be shown your contact name as stored in their device instead of your Roblox username.",
+    "translation": "Wenn dich Nutzer:innen als Kontaktvorschlag sehen, wird ihnen dein Kontaktname so angezeigt, wie er auf ihren Geräten gespeichert ist, anstelle deines Roblox-Nutzernamens.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "Zugriff auf die Kontakte dieses Geräts erlauben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "Roblox wird die Kontakte auf deinem Gerät regelmäßig synchronisieren, um dir die aktuellsten Vorschläge machen zu können. Nur Übereinstimmungen mit existierenden Roblox-Nutzer:innen werden auf den Roblox-Servern gespeichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "Synchronisierte Kontaktdaten löschen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "Wenn du den Zugriff auf die Kontakte auf deinem Gerät entfernst, hast du die Möglichkeit, deine synchronisierten Kontaktdaten zu löschen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "Deine Telefonnummer ist nicht verifiziert.",
     "isDeprecated": false
   },
   {
@@ -47516,7 +47588,7 @@
     "key": "Heading.Credentials",
     "description": "We will need to discuss changing this to \"API Extensions\" and will make all changes to references and routes at once",
     "english": "Credentials",
-    "translation": "API-Erweiterungen",
+    "translation": "Anmeldeinformationen",
     "isDeprecated": false
   },
   {
@@ -54556,7 +54628,7 @@
     "key": "Label.Country",
     "description": "Segmentation of DAU/New players by countries",
     "english": "Country (top 5)",
-    "translation": "nach Land (Top 5)",
+    "translation": "Land (Top 5)",
     "isDeprecated": false
   },
   {
@@ -54564,7 +54636,7 @@
     "key": "Label.Locale",
     "description": "Segmentation of DAU/New players by languages",
     "english": "Language (top 5)",
-    "translation": "nach Sprache (Top 5)",
+    "translation": "Sprache (Top 5)",
     "isDeprecated": false
   },
   {
@@ -54572,7 +54644,7 @@
     "key": "Label.AgeGroup",
     "description": "Segmentation of DAU/New players by age group",
     "english": "Age Group",
-    "translation": "nach Altersgruppe",
+    "translation": "Altersgruppe",
     "isDeprecated": false
   },
   {
@@ -54596,7 +54668,7 @@
     "key": "Label.View",
     "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
     "english": "Breakdown by",
-    "translation": "Ansehen:",
+    "translation": "Aufteilung nach",
     "isDeprecated": false
   },
   {
@@ -60584,6 +60656,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.openid",
+    "description": "OpenId scope used to support single-sign-on (SSO)",
+    "english": "OpenId",
+    "translation": "OpenId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.NoDescriptionProvided",
+    "description": "This message will appear if there is no description for the given scope and operation",
+    "english": "No description provided.",
+    "translation": "Keine Beschreibung vorhanden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.profile",
+    "description": "this scope grants access to view the user's profile info",
+    "english": "Profile",
+    "translation": "Profil",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -63912,6 +64008,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "Weiter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Previous",
+    "description": null,
+    "english": "Previous",
+    "translation": "Zurück",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.APIReference",
     "key": "Label.Name",
     "description": null,
@@ -63957,6 +64069,14 @@
     "description": "Allow for the \"Default Value\" text and actual value to be styled independently",
     "english": "Default Value: {defaultValueStart}{defaultValueEnd}",
     "translation": "Standardwert: {defaultValueStart}{defaultValueEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.MathOperations",
+    "description": null,
+    "english": "Math Operations",
+    "translation": "Mathe-Operationen",
     "isDeprecated": false
   },
   {
@@ -64853,6 +64973,22 @@
     "description": null,
     "english": "You have invalid changes",
     "translation": "Du hast ungültige Änderungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "Du hast ungespeicherte Änderungen. Bist du sicher, dass du dies verlassen möchtest?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "Möchtest du dies wirklich verlassen?",
     "isDeprecated": false
   },
   {
