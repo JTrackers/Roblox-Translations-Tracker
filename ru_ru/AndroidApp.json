@@ -620,7 +620,7 @@
     "key": "Action.QQLogin",
     "description": null,
     "english": "QQ Login",
-    "translation": "QQ вход",
+    "translation": "Вход через QQ",
     "isDeprecated": false
   },
   {
@@ -812,7 +812,7 @@
     "key": "Label.PleaseRate",
     "description": null,
     "english": "Please rate us!",
-    "translation": "Поставьте нам оценку!",
+    "translation": "Поставь нам оценку!",
     "isDeprecated": false
   },
   {
@@ -820,7 +820,7 @@
     "key": "Label.RatingMessage",
     "description": null,
     "english": "If you’re enjoying Roblox please rate our app.",
-    "translation": "Нравится Roblox? Оцените приложение!",
+    "translation": "Нравится Roblox? Оцени приложение!",
     "isDeprecated": false
   },
   {
@@ -876,7 +876,7 @@
     "key": "Response.LeaveAppConfirmation",
     "description": null,
     "english": "Do you want to leave the app?",
-    "translation": "Хотите выйти из приложения?",
+    "translation": "Хочешь выйти из приложения?",
     "isDeprecated": false
   },
   {
@@ -892,7 +892,7 @@
     "key": "Response.UpgradeBodyString",
     "description": null,
     "english": "Your version of Roblox is out of date and will not work properly. Taking you to the {var1} for an upgrade.",
-    "translation": "Ваша версия Roblox устарела и может работать некорректно. Перенаправляем вас в {var1} для обновления версии.",
+    "translation": "Версия Roblox устарела и может работать некорректно. Перенаправляем в {var1} для обновления версии.",
     "isDeprecated": false
   },
   {
@@ -917,6 +917,78 @@
     "description": null,
     "english": "Not now",
     "translation": "Не сейчас",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Label.NewApplicationNeeded",
+    "description": "Text letting the user know that they need to upgrade their app to use Roblox.",
+    "english": "Need to upgrade the current version, please download the new version to login.",
+    "translation": "Необходимо обновить текущую версию. Пожалуйста, загрузи последнюю версию.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Error.InvalidUrl",
+    "description": "Error message when the app cannot be upgraded because the upgrade URL is invalid",
+    "english": "APK URL error.",
+    "translation": "Ошибка APK URL.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Title.ApkExternalStoragePermission",
+    "description": "Title of the storage permissions prompt.",
+    "english": "Roblox wants to access your storage",
+    "translation": "Roblox хочет получить доступ к хранилищу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Title.DownloadingApp",
+    "description": null,
+    "english": "Downloading App",
+    "translation": "Загрузка приложения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Action.DownloadErrorRetry",
+    "description": "Action for the user to retry when a apk download fails",
+    "english": "Try Again",
+    "translation": "Повторить попытку",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Message.DownloadError",
+    "description": "Error message shown when APK download fails",
+    "english": "Please check the internet connection for downloading the new APK.",
+    "translation": "Пожалуйста, проверь подключение к интернету для загрузки APK.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Title.DownloadError",
+    "description": "APK Download Error prompt title",
+    "english": "Upgrade APK download failed",
+    "translation": "Не удалось загрузить обновление APK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Message.ApkInstallPermission",
+    "description": "Informational message telling the user they may need to allow app installs for Roblox/Luobu app to do automatic upgrade.",
+    "english": "Before we get started, you might have to click the SETTINGS and Allow app installs.",
+    "translation": "Перед началом необходимо нажать НАСТРОЙКИ и разрешить загрузку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Application.Upgrade",
+    "key": "Response.LuobuUpgradeBodyString",
+    "description": "你的罗布乐思版本已过时，无法正确运行。需要下载最新版本以升级。",
+    "english": "Your Luobu version is out of date and cannot run correctly. You need to download the latest version to continue.",
+    "translation": "Версия Luobu устарела и может работать некорректно. Необходимо загрузить последнюю версию, чтобы продолжить.",
     "isDeprecated": false
   },
   {
@@ -948,7 +1020,7 @@
     "key": "Label.LoggingOutOfAccount",
     "description": null,
     "english": "Logging out of account.",
-    "translation": "Выход из учетной записи.",
+    "translation": "Выход из аккаунта.",
     "isDeprecated": false
   },
   {
@@ -2632,6 +2704,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.VoucherExpired",
+    "description": "Only sued for Luobu, when Wechat/QQ voucher expired.",
+    "english": "Signup session expired, please visit the signup page again.",
+    "translation": "Регистрационная сессия устарела, перейди на страницу с регистрацией ещё раз.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.ContentDescription",
     "key": "Loading.Dot",
     "description": null,
@@ -3448,6 +3528,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.InvalidBirthday",
+    "description": null,
+    "english": "Invalid birthday.",
+    "translation": "Неверная дата рождения.",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.Catalog",
     "key": "Label.Ios",
     "description": "label",
@@ -3904,6 +3992,14 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Action.AccountDeleted",
+    "description": null,
+    "english": "Account deleted",
+    "translation": "Аккаунт удалён",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameDetails",
     "key": "Label.Favorites",
     "description": "Number users who added this game to favorites",
@@ -4300,7 +4396,7 @@
     "key": "Message.GameNotPlayableOnDevice",
     "description": "Message displayed on game update card when the game is not playable on the device type.",
     "english": "Not available on this device",
-    "translation": "Невозможно запустить на этом устройстве",
+    "translation": "Недоступно на этом устройстве",
     "isDeprecated": true
   },
   {
@@ -4308,7 +4404,7 @@
     "key": "Action.Play",
     "description": "Label for button to launch game.",
     "english": "Join",
-    "translation": "Играть",
+    "translation": "Присоединиться",
     "isDeprecated": true
   },
   {
@@ -4688,6 +4784,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Search.GlobalSearch",
+    "key": "Example.SearchPeople",
+    "description": null,
+    "english": "Search people",
+    "translation": "Поиск людей",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.Logout",
     "key": "Action.Logout",
     "description": null,
@@ -4700,7 +4804,7 @@
     "key": "Response.LogoutConfirmation",
     "description": null,
     "english": "Do you want to log out?",
-    "translation": "Хотите выйти?",
+    "translation": "Хочешь выйти?",
     "isDeprecated": false
   },
   {
@@ -4708,7 +4812,7 @@
     "key": "Response.SorryLoggedOut",
     "description": null,
     "english": "Sorry! You are logged out.",
-    "translation": "Извините! Вы вышли из системы.",
+    "translation": "Был выполнен выход",
     "isDeprecated": false
   },
   {
@@ -5028,7 +5132,7 @@
     "key": "Message",
     "description": null,
     "english": "In the near future, Roblox will no longer support OS v{var1}. Please upgrade your OS to v{var2} or higher to continue playing Roblox.",
-    "translation": "Roblox скоро прекратит поддержку ОС вер. {var1}. Чтобы использовать Roblox и дальше, обновите ОС до версии {var2} или более новой.",
+    "translation": "Roblox скоро прекратит поддержку ОС вер. {var1}. Чтобы использовать Roblox и дальше, обнови ОС до версии {var2} или более новой.",
     "isDeprecated": false
   },
   {
@@ -5036,7 +5140,7 @@
     "key": "Message.With.Date",
     "description": null,
     "english": "On {var1}, Roblox will no longer support OS v{var2}. Please upgrade your OS to v{var3} or higher to continue playing Roblox.",
-    "translation": "Roblox прекратит поддержку ОС вер. {var2} {var1}. Чтобы использовать Roblox и дальше, обновите ОС до версии {var3} или более новой.",
+    "translation": "Roblox прекратит поддержку ОС вер. {var2} {var1}. Чтобы использовать Roblox и дальше, обнови ОС до версии {var3} или более новой.",
     "isDeprecated": false
   },
   {
@@ -8044,7 +8148,7 @@
     "key": "Action.ClickHerer",
     "description": null,
     "english": "Click here",
-    "translation": "Щелкните здесь",
+    "translation": "Нажми здесь",
     "isDeprecated": true
   },
   {
@@ -8052,7 +8156,7 @@
     "key": "Action.Remove",
     "description": null,
     "english": "Remove",
-    "translation": "Убрать",
+    "translation": "Удалить",
     "isDeprecated": true
   },
   {
@@ -8100,7 +8204,7 @@
     "key": "Label.YouAreSupporting",
     "description": null,
     "english": "You are supporting ",
-    "translation": "Вы поддерживаете ",
+    "translation": "Ты поддерживаешь ",
     "isDeprecated": true
   },
   {
@@ -8108,7 +8212,7 @@
     "key": "Action.TapHere",
     "description": null,
     "english": "Tap here",
-    "translation": "Коснитесь здесь,",
+    "translation": "Нажми здесь",
     "isDeprecated": true
   },
   {
@@ -8116,7 +8220,7 @@
     "key": "Action.ClickHere",
     "description": null,
     "english": "Click here",
-    "translation": "Щелкните здесь,",
+    "translation": "Нажми здесь",
     "isDeprecated": true
   },
   {
@@ -8124,7 +8228,7 @@
     "key": "Label.StarCodeTooltip",
     "description": null,
     "english": "Enter a {StarCode} to support your favorite Video Star! They will earn 5% of your purchase and you will keep the Robux you paid for.",
-    "translation": "Введите {StarCode}, чтобы поддержать свою любимую звезду! Звезда получит 5% от вашей покупки, но вы сохраните оплаченные вами Robux.",
+    "translation": "Введи {StarCode}, чтобы поддержать свою любимую звезду! Звезда получит 5% от твоей покупки, но ты сохранишь оплаченные тобой Robux.",
     "isDeprecated": true
   },
   {
@@ -8140,7 +8244,7 @@
     "key": "Action.ClickHereForStarCode",
     "description": null,
     "english": "{spanStart}Click Here{spanEnd} to add a {StarCode}",
-    "translation": "{spanStart}Щелкните здесь{spanEnd}, чтобы добавить {StarCode}",
+    "translation": "{spanStart}Нажми здесь{spanEnd}, чтобы добавить {StarCode}",
     "isDeprecated": true
   },
   {
@@ -8148,7 +8252,7 @@
     "key": "Action.TapHereForStarCode",
     "description": null,
     "english": "{spanStart}Tap here{spanEnd} to add a {StarCode}",
-    "translation": "{spanStart}Коснитесь здесь{spanEnd}, чтобы добавить {StarCode}",
+    "translation": "{spanStart}Нажми здесь{spanEnd}, чтобы добавить {StarCode}",
     "isDeprecated": true
   },
   {
@@ -8156,7 +8260,7 @@
     "key": "Label.YouAreSupportingStar",
     "description": null,
     "english": "You are supporting {StarName}",
-    "translation": "Вы поддерживаете {StarName}",
+    "translation": "Ты поддерживаешь: {StarName}",
     "isDeprecated": true
   },
   {
@@ -8164,7 +8268,7 @@
     "key": "Label.YouAreSupportingStarName",
     "description": null,
     "english": "You are supporting {startSpan}{StarName}{endSpan}",
-    "translation": "Вы поддерживаете {startSpan}{StarName}{endSpan}",
+    "translation": "Ты поддерживаешь: {startSpan}{StarName}{endSpan}",
     "isDeprecated": true
   },
   {
@@ -8172,7 +8276,7 @@
     "key": "Label.EnterStarCode",
     "description": null,
     "english": "Enter Star Code",
-    "translation": "Введите код звезды",
+    "translation": "Введи код звезды",
     "isDeprecated": true
   },
   {
@@ -8197,6 +8301,54 @@
     "description": null,
     "english": "Skip",
     "translation": "Пропустить",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Action.GoBack",
+    "description": "Go back to preview page",
+    "english": "Go Back",
+    "translation": "Назад",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Action.ScanQrCode",
+    "description": "Action to go to the QR code scanner",
+    "english": "Scan QR Code",
+    "translation": "Сканировать QR-код",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Label.MyQrCode",
+    "description": "The users QR code for the add friends by QR code feature",
+    "english": "My QR Code",
+    "translation": "Мой QR-код",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Action.ShowQrCode",
+    "description": "Action for the user to show the QR code which other users can scan to add them as a friend",
+    "english": "Show QR Code",
+    "translation": "Показать QR-код",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Title.CameraPermission",
+    "description": "Title of the Camera Permission modal, which prompts the user to grant the Roblox app camera permission",
+    "english": "Camera Permission",
+    "translation": "Разрешение на доступ к камере",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Description.CameraPermissionWarning",
+    "description": "Content of the camera permission warning dialog when the user tries to access the QR code scanner despite not enabling camera permissions for the app.",
+    "english": "Camera Access Not Enabled. To use the scanning QR code feature, please allow access of camera in your phone \"Settings\" > \"Applications\" > \"Roblox\"",
+    "translation": "Доступ к камере отключён. Чтобы использовать функцию сканирования QR-кода, разреши доступ к камере, перейдя в «‎Настройки»‎ > «‎Приложения»‎ > «‎Roblox»‎",
     "isDeprecated": true
   }
 ]
