@@ -475,7 +475,7 @@
     "namespace": "Authentication.Login",
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
-    "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
+    "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "Tu cuenta de Roblox se vinculará a tu cuenta de {platform} y la próxima vez que te unas, ¡se te conectará automáticamente! Puedes desenlazarla desde la pantalla de Configuración en cualquier momento. Puede haber un periodo de recuperación antes de enlazar una nueva cuenta.",
     "isDeprecated": false
   },
@@ -2477,6 +2477,14 @@
     "description": "Toast to show when a specific action is not supported.",
     "english": "This action is not supported in the current country yet.",
     "translation": "Esta acción aún no está soportada en el país actual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.AgeBlock",
+    "description": "A text to show when Roblox is blocking user from entering the app due to age restriction.",
+    "english": "This account is not eligible due to age restrictions.",
+    "translation": "Esta cuenta no es elegible debido a restricciones de edad.",
     "isDeprecated": false
   },
   {
@@ -4852,7 +4860,7 @@
     "key": "Message.HoldingPolicyL2",
     "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
-    "translation": "Después de la compra, las ventas originales se retienen hasta {purchaseDays, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que finalice este periodo de retención y las reventas se retienen hasta {resaleDays, plural,=1 {# día}other {# días}}. Solo los usuarios Premium pueden revender objetos.",
+    "translation": "Después de la compra, las ventas originales se retienen hasta {purchaseDays} día(s). El objeto solo puede revenderse después de que finalice este periodo de retención y las reventas se retienen hasta {resaleDays} día(s). Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": false
   },
   {
@@ -4860,7 +4868,7 @@
     "key": "Message.HoldingPolicyL1",
     "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
-    "translation": "Las compras procedentes de las reventas se retienen hasta {days, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que este periodo de retención termine. Solo los usuarios Premium pueden revender objetos.",
+    "translation": "Las compras procedentes de las reventas se retienen hasta {days} día(s). El objeto solo puede revenderse después de que este periodo de retención termine. Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": false
   },
   {
@@ -20645,6 +20653,22 @@
     "description": "Cross-play welcome alert message",
     "english": "You can now use Roblox on {platform} with people on every platform including Desktop, Phone, and Tablet!\n\nThis means you’ll see more people and you can explore with your friends, no matter what device they’re using! This option can be updated in Account Settings.",
     "translation": "Ahora puedes usar Roblox en {platform} con gente de todas las plataformas, incluyendo escritorio, teléfono y tablet.\n\nEsto significa que verás a más gente y que podrás explorar con tus amigos, independientemente del dispositivo que utilicen. Esta opción se puede actualizar en Configuración de la cuenta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Title",
+    "description": "Title text of modal when gamepad is disconnected",
+    "english": "Missing Controller",
+    "translation": "Falta el controlador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Message",
+    "description": "Message of gamepad disconnect modal. First string replacement is user name and second is the button to press",
+    "english": "Controller for user \"%s\" has been disconnected, please press '%s' on the controller you would like to continue with.",
+    "translation": "El controlador para el usuario \"%s\" se desconectó. Presiona '%s' en el controlador con el que te gustaría continuar.",
     "isDeprecated": false
   }
 ]

@@ -475,7 +475,7 @@
     "namespace": "Authentication.Login",
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
-    "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
+    "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "お持ちのRobloxアカウントは、{platform} アカウントにリンクされ、次に参加するときに自動的にログインされます！設定画面でアカウントの連携をいつでも解除できます。新しいアカウントと連携できるようになるまでクールダウン期間があるかもしれません。",
     "isDeprecated": false
   },
@@ -2477,6 +2477,14 @@
     "description": "Toast to show when a specific action is not supported.",
     "english": "This action is not supported in the current country yet.",
     "translation": "この動作は現在の国ではまだ対応していません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.AgeBlock",
+    "description": "A text to show when Roblox is blocking user from entering the app due to age restriction.",
+    "english": "This account is not eligible due to age restrictions.",
+    "translation": "このアカウントは年齢制限のため対象外です。",
     "isDeprecated": false
   },
   {
@@ -4845,6 +4853,22 @@
     "description": null,
     "english": "Sold Out",
     "translation": "売り切れ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "購入後、最初の販売は最長で{purchaseDays} 日間保留状態になります。アイテムは保留期間終了後しか再販売できず、再販売には最長 {resaleDays} 日間保留状態になります。アイテムの再販売は、プレミアム会員のユーザーしかできません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "再販売からの購入には、最長 {days} 日間の保留期間があります。アイテムはこの保留期間の終了後にしか再販売できません。アイテムの再販売は、プレミアム会員のユーザーしかできません。",
     "isDeprecated": false
   },
   {
@@ -14145,6 +14169,14 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "このアカウントを再度有効にするには、アカウント所有者の親または法定後見人である必要があります。完了したら、{startLink}このページを再読み込み{endLink}してください。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.ParentVerificationButtonText",
     "description": null,
     "english": "I'm a Parent or Guardian",
@@ -14157,6 +14189,22 @@
     "description": null,
     "english": "Verify Email",
     "translation": "メールアドレスを確認",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "お持ちのアカウントは不正請求により一時停止されました。アカウントのロック解除をするには、メールアドレスの確認が必要です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "このアカウントを再度有効にするには、アカウント所有者の親または法定後見人である必要があります。",
     "isDeprecated": false
   },
   {
@@ -17180,7 +17228,7 @@
     "key": "Description.PreferredTransparency",
     "description": "Describes the Preferred Transparency user setting",
     "english": "Improve contrast by adjusting transparency on some backgrounds",
-    "translation": "仮想空間内メニューをもっと不透明にする",
+    "translation": "一部の背景の透明度を調整してコントラストを改善",
     "isDeprecated": false
   },
   {
@@ -20584,11 +20632,51 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Settings",
+    "key": "Label.Allowed",
+    "description": "Setting allowed state",
+    "english": "Allowed",
+    "translation": "許可済み",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disallowed",
+    "description": "Setting disallowed state",
+    "english": "Disallowed",
+    "translation": "許可なし",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.CrossPlay",
     "key": "Alert.Heading.Welcome",
     "description": "Cross-play welcome alert heading",
     "english": "Welcome to Cross-Platform Play!",
     "translation": "クロスプラットフォームプレイへようこそ！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CrossPlay",
+    "key": "Alert.Message.Welcome",
+    "description": "Cross-play welcome alert message",
+    "english": "You can now use Roblox on {platform} with people on every platform including Desktop, Phone, and Tablet!\n\nThis means you’ll see more people and you can explore with your friends, no matter what device they’re using! This option can be updated in Account Settings.",
+    "translation": "デスクトップ、スマホ、タブレットなど、あらゆるプラットフォームを使っている方々と一緒に{platform} でRobloxを利用できるようになりました！\n\nさらに大勢の人に会えるようになって、相手がどんなデバイスを使っていても友達と一緒に探検できるということです。このオプションはアカウント設定から更新できます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Title",
+    "description": "Title text of modal when gamepad is disconnected",
+    "english": "Missing Controller",
+    "translation": "コントローラーが見つかりません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Message",
+    "description": "Message of gamepad disconnect modal. First string replacement is user name and second is the button to press",
+    "english": "Controller for user \"%s\" has been disconnected, please press '%s' on the controller you would like to continue with.",
+    "translation": "ユーザーの \"%s\" のコントローラーへの接続が切断されました。接続したいコントローラーで '%s' を押してください。",
     "isDeprecated": false
   }
 ]

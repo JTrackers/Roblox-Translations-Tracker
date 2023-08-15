@@ -475,7 +475,7 @@
     "namespace": "Authentication.Login",
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
-    "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
+    "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "Sua conta Roblox será vinculada à sua conta da {platform} e na próxima vez que você entrar, será conectado automaticamente! Você pode se desvincular nas tela de configurações a qualquer momento. Pode haver um período de espera antes de ser possível vincular a uma nova conta.",
     "isDeprecated": false
   },
@@ -4840,6 +4840,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotBeResold",
+    "description": null,
+    "english": "This item cannot be resold",
+    "translation": "Este item não pode ser revendido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Esgotado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Após a compra, vendas originais entram em retenção por até {purchaseDays} dias. O item só pode ser revendido após o período de retenção terminar e as revendas são retidas por até {resaleDays} dias. Apenas usuários Premium podem revender itens.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "As compras da revenda terão uma retenção de até {days} dias. O item só pode ser revendido após o término desse período de retenção. Apenas usuários premium podem revender itens.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -7769,10 +7801,58 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Description.UsernamePrice",
+    "description": "Cost of changing username",
+    "english": "1000",
+    "translation": "1000",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameTooShort",
+    "description": "Error message that shows up when a display name is too short",
+    "english": "Display name should be at least 3 characters.",
+    "translation": "O nome de exibição deve ter pelo menos 3 caracteres.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
     "translation": "Diga algo...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.InsufficientFunds",
+    "description": "Heading for a warning modal that informs users that they do not have enough Robux",
+    "english": "Insufficient Funds",
+    "translation": "Saldo insuficiente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernameInsufficientFunds",
+    "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
+    "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
+    "translation": "Você precisa de mais {icon}{rbx} para mudar seu nome de usuário. Gostaria de comprar mais Robux?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayNameUpdated",
+    "description": "Confirmation that pops up after user successfully updates their displayname",
+    "english": "Display Name Updated",
+    "translation": "Nome de exibição atualizado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "Nome de usuário atualizado",
     "isDeprecated": false
   },
   {
@@ -11512,6 +11592,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.Description",
+    "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
+    "translation": "Veja quais de suas amizades estão na Roblox adicionando seu número de telefone.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.DescriptionPV",
+    "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
+    "english": "Contacts who are on Roblox will appear here when available.",
+    "translation": "Os contatos que estão na Roblox aparecerão aqui quando disponíveis.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameFollows",
     "key": "TooltipFollowLimitReached",
     "description": "Tooltip for follow game button",
@@ -14065,10 +14161,58 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account. ",
+    "translation": "Sua conta foi suspensa por cobranças não autorizadas. Seus pais ou responsáveis devem concordar em desbloquear sua conta. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "Você deve ser o responsável ou guardião legal do titular da conta para reativar esta conta. {startLink}Recarregue esta página{endLink} quando concluído. ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationButtonText",
+    "description": null,
+    "english": "I'm a Parent or Guardian",
+    "translation": "Eu sou um responsável ou guardião legal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
     "translation": "Verificar e-mail",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "Sua conta foi suspensa por cobranças não autorizadas. Você deve verificar seu endereço de e-mail para desbloquear sua conta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "Você deve ser o pai ou guardião legal do titular da conta para reativar esta conta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNoticeUA",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. ",
+    "translation": "Verifique seu endereço de e-mail para reativar esta conta. ",
     "isDeprecated": false
   },
   {
@@ -17084,7 +17228,7 @@
     "key": "Description.PreferredTransparency",
     "description": "Describes the Preferred Transparency user setting",
     "english": "Improve contrast by adjusting transparency on some backgrounds",
-    "translation": "Tornar os menus em experiência mais opacos",
+    "translation": "Melhore o contraste ajustando a transparência em alguns planos de fundos",
     "isDeprecated": false
   },
   {
@@ -17100,7 +17244,7 @@
     "key": "Description.UiNavigationKeyBind",
     "description": "Describes the Ui Navigation Toggle user setting",
     "english": "Use the {uiNavigationKey} key to enter and exit UI navigation mode",
-    "translation": "Use a tecla {uiNavigationKey} para navegar entre os elementos",
+    "translation": "Use a tecla {uiNavigationKey} para entrar e sair do modo de navegação da interface",
     "isDeprecated": false
   },
   {
@@ -20337,10 +20481,138 @@
   },
   {
     "namespace": "Feature.Settings",
+    "key": "Heading.SwitchProfile",
+    "description": "Profile switcher",
+    "english": "Switch Profile",
+    "translation": "Trocar de perfil",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.SwitchProfile",
+    "description": "Description of profile switcher",
+    "english": "You can switch your {platform} profile here.",
+    "translation": "Você pode mudar o seu perfil {platform} aqui.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.AccountSettings",
+    "description": "Account settings heading",
+    "english": "Account Settings",
+    "translation": "Configurações da conta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsWebsite",
+    "description": "Visit website heading",
+    "english": "Visit Website",
+    "translation": "Visite o site",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsWebsite",
+    "description": "Account settings visit website description",
+    "english": "To access your Privacy, Security Controls, and more\nplease visit the web or a companion device.",
+    "translation": "Para acessar sua privacidade, controles de segurança e\nmuito mais, visite a web ou um dispositivo companheiro.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsScan",
+    "description": "Account settings scan CTA",
+    "english": "Scan QR Code",
+    "translation": "Digitalize o código QR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsScan",
+    "description": "Account settings scan description",
+    "english": "Scan the QR code using your companion device's camera\nto open the Account Settings in the Roblox App.",
+    "translation": "Digitalize o código QR usando a câmera do seu dispositivo companheiro\npara abrir as configurações da conta no aplicativo Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.PlatformAccountSettings",
+    "description": "Platform-specific account settings heading",
+    "english": "{platform} Account Settings",
+    "translation": "{platform} Configurações da conta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.PlatformAccountSettingsSuccess",
+    "description": "Account settings verification that settings will allow online play with other players",
+    "english": "Your {platform} settings are correctly set and you are ready to visit!",
+    "translation": "Suas configurações {platform} estão configuradas corretamente e você está pronto para visitar!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.CrossPlatform",
+    "description": "Cross-play label",
+    "english": "Cross-Platform Play",
+    "translation": "Jogo entre plataformas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.CrossPlatform",
+    "description": "Cross-play setting description",
+    "english": "You will join experiences with people from all platforms,\nand you will see more people in more experiences.",
+    "translation": "Você se juntará a experiências com pessoas de todas as\nplataformas e verá mais pessoas em mais experiências.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Multiplayer",
+    "description": "Multiplayer privilege label",
+    "english": "Multiplayer",
+    "translation": "Multijogador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.SharedContent",
+    "description": "Shared content privilege label",
+    "english": "Shared Content",
+    "translation": "Conteúdo compartilhado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Open",
+    "description": "CTA when when platform system UI is triggered",
+    "english": "Open",
+    "translation": "Abrir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
     "key": "Label.Recommended",
     "description": "Label denoting a recommended setting value",
     "english": "Recommended",
     "translation": "Recomendado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Enabled",
+    "description": "Setting enabled state",
+    "english": "Enabled",
+    "translation": "Ativado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disabled",
+    "description": "Setting disabled state",
+    "english": "Disabled",
+    "translation": "Desabilitado",
     "isDeprecated": false
   },
   {
@@ -20357,6 +20629,54 @@
     "description": "Setting error state",
     "english": "Error",
     "translation": "Erro",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Allowed",
+    "description": "Setting allowed state",
+    "english": "Allowed",
+    "translation": "Permitido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disallowed",
+    "description": "Setting disallowed state",
+    "english": "Disallowed",
+    "translation": "Proibido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CrossPlay",
+    "key": "Alert.Heading.Welcome",
+    "description": "Cross-play welcome alert heading",
+    "english": "Welcome to Cross-Platform Play!",
+    "translation": "Boas-vindas ao jogo entre plataformas!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CrossPlay",
+    "key": "Alert.Message.Welcome",
+    "description": "Cross-play welcome alert message",
+    "english": "You can now use Roblox on {platform} with people on every platform including Desktop, Phone, and Tablet!\n\nThis means you’ll see more people and you can explore with your friends, no matter what device they’re using! This option can be updated in Account Settings.",
+    "translation": "Agora você pode usar a Roblox na {platform} com pessoas de todas as plataformas, incluindo desktop, celular e tablet!\n\nIsso significa que você verá mais pessoas e você pode explorar com seus amizades, não importa que dispositivo elas estejam usando! Esta opção pode ser atualizada nas Configurações da conta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Title",
+    "description": "Title text of modal when gamepad is disconnected",
+    "english": "Missing Controller",
+    "translation": "Controle desconectado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamepadDisconnect",
+    "key": "Label.Message",
+    "description": "Message of gamepad disconnect modal. First string replacement is user name and second is the button to press",
+    "english": "Controller for user \"%s\" has been disconnected, please press '%s' on the controller you would like to continue with.",
+    "translation": "O controle para o usuário \"%s\" foi desconectado, por favor pressione '%s' no controle com o qual você gostaria de continuar.",
     "isDeprecated": false
   }
 ]
