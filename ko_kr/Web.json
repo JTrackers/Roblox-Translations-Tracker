@@ -53812,7 +53812,7 @@
     "key": "Label.AgeUnder13",
     "description": "Users under the ages of 13",
     "english": "13 and Under",
-    "translation": "13세 이하",
+    "translation": "13세 미만",
     "isDeprecated": false
   },
   {
@@ -53908,7 +53908,7 @@
     "key": "Description.DoubleCountingWarning",
     "description": null,
     "english": "Users may be double counted if they played with more than one device",
-    "translation": "두 개 이상의 기기로 플레이하는 경우 두 명의 사용자로 간주될 수 있습니다",
+    "translation": "두 개 이상의 기기로 플레이하는 경우 중복 계산될 수 있습니다",
     "isDeprecated": false
   },
   {
@@ -58568,6 +58568,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.DatastoreOverrideWarning",
+    "description": "for the datastores form",
+    "english": "{boldStart} Note! {boldEnd} Specific datastore permissions may be overridden.",
+    "translation": "{boldStart} 참고! {boldEnd} 특정 데이터 저장소 권한이 무시될 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.ExperiencePermissionsLessSecure",
+    "description": "For the datastores form",
+    "english": "{boldStart} Warning! {boldEnd} Experience-level operations may be less secure.",
+    "translation": "{boldStart} 주의! {boldEnd} 체험 수준 작업이 덜 안전할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.SelectAllDatastores",
+    "description": "for the datastores form",
+    "english": "Select operations for ALL datastores in your experience. Current and future.",
+    "translation": "체험의 모든 데이터 저장소에 대한 현재 및 미래 작업을 선택하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.TargetPartOperations",
+    "description": "For the access permissions form (i.e. 'Experience operations')",
+    "english": "{targetPartName} Operations",
+    "translation": "{targetPartName} 작업",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.SelectOperations",
+    "description": "for multi select component for choosing scope operations",
+    "english": "Select Operations to Add",
+    "translation": "추가할 작업 선택",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -58633,6 +58673,14 @@
   },
   {
     "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoresObjects",
+    "description": "datastores object scope type",
+    "english": "Entry",
+    "translation": "항목",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.DatastoreDeleteVersion",
     "description": "operation delete version (datstores)",
     "english": "Delete Version",
@@ -58641,10 +58689,58 @@
   },
   {
     "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreListVersions",
+    "description": "operation list versions (datastore)",
+    "english": "List Versions",
+    "translation": "버전 나열",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreReadVersion",
+    "description": "operation read version (datastores)",
+    "english": "Read Version",
+    "translation": "버전 읽기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreListObjectKeys",
+    "description": "operation list object keys (datastores)",
+    "english": "List Object Keys",
+    "translation": "개체 키 나열",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.DatastoreDeleteObject",
     "description": "operation delete operation (datastore)",
     "english": "Delete Entry",
     "translation": "항목 삭제",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreUpdateObject",
+    "description": "operation update object (datastore)",
+    "english": "Update Entry",
+    "translation": "항목 업데이트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreCreateObject",
+    "description": "operation create object (datastore)",
+    "english": "Create Entry",
+    "translation": "항목 만들기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoreReadObject",
+    "description": "operation read object (datastore)",
+    "english": "Read Entry",
+    "translation": "항목 읽기",
     "isDeprecated": false
   },
   {
@@ -61565,6 +61661,38 @@
     "description": null,
     "english": "API Reference",
     "translation": "API 참조",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.DefaultValue",
+    "description": null,
+    "english": "Default Value: {defaultValue}",
+    "translation": "기본값: {defaultValue}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CSModSites.CSWebsite",
+    "key": "RtbfDefaultMessageBodyTemplate",
+    "description": null,
+    "english": "Hi Dev, We received a right-of-erasure-request for the following User ID(s): {{{{UserId}}}} Please delete this User ID immediately from all of your records (e.g. games, data stores, etc.) from the following Game(s): {{{{Places}}}} This is an obligation under data protection laws. If you would like more information about how to delete a User ID from a data store, please visit our Developer Hub at https://developer.roblox.com/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore and https://developer.roblox.com/en-us/articles/managing-personal-information. Please note that you must delete the User ID from all of your records, and not just from your data stores. The pages linked above are provided for informational purposes and are not intended to provide a comprehensive method of deleting User IDs. Regards, The Roblox Team",
+    "translation": "안녕하세요 개발자님, 다음 사용자 ID {{{{UserId}}}}에 대한 삭제권이 접수되었음을 알려 드리고자 합니다. 게임 {{{{Places}}}} 내 모든 기록(예: 게임, 데이터 저장소 등)에서 이 사용자 ID를 즉시 삭제하세요. 이는 데이터 보호법에 따른 의무 사항입니다. 데이터 저장소에서 사용자 ID를 삭제하는 방법에 대해 좀 더 정보가 필요할 경우 https://developer.roblox.com/articles/Data-store, https://developer.roblox.com/api-reference/class/GlobalDataStore, https://developer.roblox.com/en-us/articles/managing-personal-information에서 개발자 허브를 방문하세요. 삭제 시 데이터 저장소뿐만 아니라 모든 기록에서 해당 사용자 ID를 삭제해야 합니다. 각 링크의 페이지는 정보 제공의 목적으로 제공된 것이며, 사용자 ID를 삭제하는 포괄적인 방법을 제공하기 위한 것이 아닙니다. Roblox 드림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CSModSites.CSWebsite",
+    "key": "Message.RtbfDefaultMessageTitle",
+    "description": null,
+    "english": "[Important] Right to Erasure - Action Requested",
+    "translation": "[Important] 삭제권 - 작업 요청",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CSModSites.CSWebsite",
+    "key": "Message.RtbfDefaultMessageBodyTemplate",
+    "description": null,
+    "english": "Hi Dev, We received a right-of-erasure-request for the following User ID(s): {{{{UserId}}}} Please delete this User ID immediately from all of your records (e.g. games, data stores, etc.) from the following Game(s): {{{{Places}}}} This is an obligation under data protection laws. If you would like more information about how to delete a User ID from a data store, please visit our Developer Hub at https://developer.roblox.com/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore and https://developer.roblox.com/en-us/articles/managing-personal-information. Please note that you must delete the User ID from all of your records, and not just from your data stores. The pages linked above are provided for informational purposes and are not intended to provide a comprehensive method of deleting User IDs. Regards, The Roblox Team",
+    "translation": "안녕하세요 개발자님, 다음 사용자 ID {{{{UserId}}}}에 대한 삭제권이 접수되었음을 알려 드리고자 합니다. 게임 {{{{Places}}}} 내 모든 기록(예: 게임, 데이터 저장소 등)에서 이 사용자 ID를 즉시 삭제하세요. 이는 데이터 보호법에 따른 의무 사항입니다. 데이터 저장소에서 사용자 ID를 삭제하는 방법에 대해 좀 더 정보가 필요할 경우 https://developer.roblox.com/articles/Data-store, https://developer.roblox.com/api-reference/class/GlobalDataStore, https://developer.roblox.com/en-us/articles/managing-personal-information에서 개발자 허브를 방문하세요. 삭제 시 데이터 저장소뿐만 아니라 모든 기록에서 해당 사용자 ID를 삭제해야 합니다. 각 링크의 페이지는 정보 제공의 목적으로 제공된 것이며, 사용자 ID를 삭제하는 포괄적인 방법을 제공하기 위한 것이 아닙니다. Roblox 드림",
     "isDeprecated": false
   }
 ]

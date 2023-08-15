@@ -369,10 +369,98 @@
   },
   {
     "namespace": "Feature.Friends",
+    "key": "Label.FollowsYou",
+    "description": "Label for a user that follows you",
+    "english": "Follows You",
+    "translation": "나를 팔로우 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.YouAreFollowing",
+    "description": "Label for a user that you are following",
+    "english": "You are following",
+    "translation": "내가 팔로우 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
     "key": "Action.EditProfile",
     "description": "text for action to edit profile",
     "english": "Edit Profile",
     "translation": "프로필 편집",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Action.PendingRequest",
+    "description": "text for a pending friend request",
+    "english": "Pending Request",
+    "translation": "요청 대기 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Action.AcceptFriend",
+    "description": "text for accepting a friendship request",
+    "english": "Accept Friend",
+    "translation": "친구 수락",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Action.FriendAdded",
+    "description": "text for success toast for friend added",
+    "english": "Friend Added",
+    "translation": "친구 추가됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Action.UserBlocked",
+    "description": "text for when a user is blocked",
+    "english": "User Blocked",
+    "translation": "사용자 차단됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Action.AllRequestsIgnored",
+    "description": "text for success toast for all requests ignored",
+    "english": "All Requests Ignored",
+    "translation": "모든 요청이 무시됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UnableToJoin",
+    "description": "text for Unable to Join an experience",
+    "english": "Unable to Join",
+    "translation": "참가할 수 없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.ViewDetails",
+    "description": "text to view details on an alert dialog",
+    "english": "View Details",
+    "translation": "자세히 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Message.NoAccessToExperience",
+    "description": "Alert Dialog message for when users are unable to join friend's experience",
+    "english": "%s is in an experience that you do not have access to.",
+    "translation": "%s을(를) 이용할 수 있는 권한이 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Action.TryOn",
+    "description": "text to try on an item for an avatar",
+    "english": "Try On",
+    "translation": "장착해 보기",
     "isDeprecated": false
   },
   {
@@ -2628,7 +2716,7 @@
     "key": "IdeDoc.SorryPublishedPlaceCannotBeLoaded1",
     "description": "Roblox IDE Doc",
     "english": "Sorry, this place could not be loaded.\n\nDetails: \"%1\"",
-    "translation": "죄송합니다. 게시된 해당 플레이스를 불러올 수 없습니다.\n\n세부 정보: \"%1\"",
+    "translation": "죄송합니다. 해당 플레이스를 불러올 수 없습니다.\n\n세부 정보: '%1'",
     "isDeprecated": false
   },
   {
@@ -21924,7 +22012,7 @@
     "key": "MainWindow.OpenPlaceFailureReportToForum1",
     "description": "Devforum link field displayed in error message dialog",
     "english": "If you continue to encounter this error, please report it on the <a href='%1'>Developer Forum</a>. ",
-    "translation": "이 오류가 계속 발생한다면 <a href='%1'>개발자 포럼</a>에 신고해 주세요.",
+    "translation": "이 오류가 계속 발생한다면 <a href='%1'>개발자 포럼</a>에 신고해 주세요. ",
     "isDeprecated": false
   },
   {
@@ -28233,6 +28321,190 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "MainWindow.UnableToJoinTeamCreateSessionForPlaceName2",
+    "description": "Main Window",
+    "english": "We could not join the Team Create session for place \"%1\". %2",
+    "translation": "플레이스 '%1'에 대한 팀 제작 세션에 참가할 수 없습니다. %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "MainWindow.UnableToJoinTeamCreateSessionForPlaceId2",
+    "description": "Main Window",
+    "english": "We could not join the Team Create session for place [%1]. %2",
+    "translation": "플레이스 [%1]에 대한 팀 제작 세션에 참가할 수 없습니다. %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "MainWindow.OpenPlaceFailureIncidentAndPlaceId2",
+    "description": "Incident ID and Place ID field displayed in error message dialog",
+    "english": "Incident ID: %1<br>Place ID: %2",
+    "translation": "인시던트 ID: %1<br>플레이스 ID: %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "LoginManager.FailToFetchModerationInfo",
+    "description": null,
+    "english": "Fail to get moderation status. Please try to login again or contact support if problem persists.",
+    "translation": "검열 상태를 가져오지 못했습니다. 다시 로그인하세요. 문제가 지속되면 지원 센터에 문의하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.ExportForUploadElps",
+    "description": null,
+    "english": "(INTERNAL) Export for upload...",
+    "translation": "(내부) 업로드를 위해 내보내기...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.ExportSelectionForUploadElps",
+    "description": null,
+    "english": "(INTERNAL) Export selection for upload...",
+    "translation": "(내부) 업로드를 위한 내보내기 선택...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.ExportSelectionForUpload",
+    "description": null,
+    "english": "(INTERNAL) Export selection for upload via admin site",
+    "translation": "(내부) 관리자 사이트를 통해 업로드를 위한 내보내기 선택",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Error.Publishing.Dependancies",
+    "description": null,
+    "english": "Error publishing asset dependancies",
+    "translation": "애셋 종속성을 게시하는 동안 오류가 발생했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ContextualSaveTitle",
+    "description": null,
+    "english": "Save shortcut is contextual",
+    "translation": "바로 가기 저장은 컨텍스트에 따라 다릅니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ContextualSaveDescription",
+    "description": null,
+    "english": "Saves the place to the location (Local or Roblox) currently open in Studio.",
+    "translation": "현재 Studio에서 열려 있는 위치(로컬 또는 Roblox)에 플레이스를 저장합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyItems.MaterialOverride.Disabled",
+    "description": "Note to localization: Make sure <font></font> remain unchanged, they are needed for text wrapping with rtf. Tooltip that displays if a MaterialOverride is set to a MaterialVariant that is not a descendant of MaterialService.",
+    "english": "<font>The Override will not function unless the MaterialVariant is placed in MaterialService. Place the variant in MaterialService or choose another variant.</font>",
+    "translation": "<font>MaterialVariant가 MaterialService에 배치되지 않으면 Override가 작동하지 않습니다. MaterialService에 변형을 배치하거나 다른 변형을 선택하세요.</font>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyItems.MaterialOverride.Invalid",
+    "description": "Note to localization: Make sure <font></font> remain unchanged, they are needed for text wrapping with rtf. Tooltip that displays if a MaterialOverride is set to a MaterialVariant whose BaseMaterial does not equal to the Material it is supposed to be overriding.",
+    "english": "<font>The Base Material for the MaterialVariant does not match the Override material. Select matching materials for the variant to function.</font>",
+    "translation": "<font>MaterialVariant의 기본 재질이 Override 재질과 일치하지 않습니다. 변형이 작동하도록 하려면 일치하는 재질을 선택하세요.</font>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyItems.MaterialOverride.Missing",
+    "description": "Note to localization: Make sure <font></font> remain unchanged, they are needed for text wrapping with rtf. Tooltip that displays if a MaterialOverride is set to a MaterialVariant that has been deleted.",
+    "english": "<font>The Override will not be functional because the MaterialVariant no longer exists. Apply a new variant or set the Override to None.</font>",
+    "translation": "<font>MaterialVariant가 더 이상 존재하지 않기 때문에 Override가 작동하지 않습니다. 새 변형을 적용하거나 Override를 None으로 설정하세요.</font>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "OpenIDEDocErr.CloudEditConnectCancelledByUser.Concise",
+    "description": null,
+    "english": "The connection was cancelled. ",
+    "translation": "연결이 취소되었습니다. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "OpenIDEDocErr.HTTPCallFailed.Concise",
+    "description": null,
+    "english": "Please check that you are connected to the internet and try again. ",
+    "translation": "인터넷에 연결되어 있는지 확인하고 다시 시도하세요. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "OpenIDEDocErr.Others.Concise",
+    "description": null,
+    "english": "Please restart your application and try again. ",
+    "translation": "응용 프로그램을 다시 시작하고 다시 시도하세요. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FileType.VideoFiles",
+    "description": null,
+    "english": "Video Files",
+    "translation": "비디오 파일",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "EmulatorMainWidget.StarterGuiModeNotEnabledMessage1",
+    "description": null,
+    "english": "%1 mode is not enabled for your game.",
+    "translation": "게임에 %1 모드가 활성화되어 있지 않습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "EmulatorMainWidget.StarterGuiEnabledModeMessage3",
+    "description": null,
+    "english": "To enable it, stop the experience if running, and set the %1 setting of %2 to one of the following: %3",
+    "translation": "활성화하려면 실행 중인 체험을 종료하고 %2의 %1 설정을 다음 중 하나로 변경하세요: %3",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "EmulatorMainWidget.StarterGui",
+    "description": null,
+    "english": "StarterGui",
+    "translation": "StarterGui",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "AnimationFromVideoCreatorStudioService.SelectMP4VideoFile",
+    "description": null,
+    "english": "Select a mp4 video",
+    "translation": "mp4 비디오 선택",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "AnimationFromVideoCreatorStudioService.NoFileSelected",
+    "description": null,
+    "english": "No file selected",
+    "translation": "선택된 파일 없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RobloxRibbonMainWindow.RecentPlaces",
+    "description": null,
+    "english": "Recent Places",
+    "translation": "최근 플레이스",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "RESTRICTED.QtUtilities.DontAskMeAgain",
     "description": null,
     "english": "Don't ask me again",
@@ -30467,7 +30739,7 @@
     "namespace": "Studio.GameSettings",
     "key": "Places.NumberError",
     "description": null,
-    "english": "Please enter a number betwen {minRange:int} and {maxRange:int}.",
+    "english": "Please enter a number between {minRange:int} and {maxRange:int}.",
     "translation": "{minRange:int}에서 {maxRange:int} 사이의 숫자를 입력하세요.",
     "isDeprecated": false
   },
@@ -33605,6 +33877,38 @@
     "description": null,
     "english": "Creator is ID verified",
     "translation": "크리에이터 본인 인증 완료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "ScriptWarning.DontShowAgain",
+    "description": null,
+    "english": "Don't show this again.",
+    "translation": "다시 표시하지 않습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "ScriptWarning.DetailText",
+    "description": null,
+    "english": "{assetName} includes {numScripts:int} script(s).",
+    "translation": "{assetName}에는 {numScripts:int} 스크립트가 포함되어 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "ScriptWarning.InstructionText",
+    "description": null,
+    "english": "Please review the scripts to prevent unwanted changes to your experience.",
+    "translation": "원하지 않는 체험 변경을 방지하려면 스크립트를 검토하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "ScriptWarning.InstructionText2",
+    "description": null,
+    "english": "You can disable scripts by right-clicking in Explorer.",
+    "translation": "탐색기에서 마우스 오른쪽 버튼을 클릭하면 스크립트를 비활성화할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -45365,6 +45669,70 @@
     "description": null,
     "english": "Learn more",
     "translation": "더 알아보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RolloutOptionDefault",
+    "description": null,
+    "english": "Default",
+    "translation": "기본값",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RolloutOption",
+    "description": null,
+    "english": "RolloutOption",
+    "translation": "RolloutOption",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RolloutOptionDefaultDesc",
+    "description": null,
+    "english": "New player join updated server",
+    "translation": "새로운 플레이어가 업데이트된 서버에 참가합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RolloutOptionForceDesc",
+    "description": null,
+    "english": "On publish, all servers running this place are shutdown. Players are teleproted to new, updated servers, New player join updated server.",
+    "translation": "게시하면, 이 플레이스를 실행하는 모든 서버가 종료됩니다. 플레이어는 업데이트된 새 서버로 텔레포트되고, 새로운 플레이어는 업데이트된 서버에 참가합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RollbackToggleTitle",
+    "description": null,
+    "english": "Enable Rollback to Previous Version",
+    "translation": "이전 버전으로 롤백 활성화",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RollbackToggleDesclinkText",
+    "description": null,
+    "english": "Learn more",
+    "translation": "더 알아보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "FooterButton.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "다음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "ScreenHeader.PublishManagement",
+    "description": null,
+    "english": "How would you like to release the overwrite to {1} under {2}?",
+    "translation": "{2} 아래에 {1} 덮어쓰기를 어떻게 릴리스할까요?",
     "isDeprecated": false
   },
   {

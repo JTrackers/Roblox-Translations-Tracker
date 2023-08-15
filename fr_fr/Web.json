@@ -9172,7 +9172,7 @@
     "key": "Description.AccountPin",
     "description": null,
     "english": "When this setting is enabled, the PIN must be provided before changing settings.",
-    "translation": "Lorsque ce paramètres est activé, le code PIN doit être fourni avant de changer les paramètres.",
+    "translation": "Lorsque ce paramètre est activé, le code PIN doit être fourni avant de modifier les paramètres.",
     "isDeprecated": false
   },
   {
@@ -49224,6 +49224,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.CompleteSetupOnLogout",
+    "description": "Add verified email to complete account setup prior to logging out.",
+    "english": "Finish Account Setup Before Log Out",
+    "translation": "Terminer la configuration du compte avant de te déconnecter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.AddEmailTextStrongMessaging",
+    "description": "Stronger messaging to help users understand why adding verified emails is important",
+    "english": "Finish setting up your account by adding an email for account recovery. By skipping this step, you are accepting that you may lose access to any game progress, items, and Robux.",
+    "translation": "Termine la configuration de ton compte en ajoutant un e-mail pour la récupération de ton compte. En ignorant cette étape, tu acceptes de perdre l'accès à tous les progrès du jeu, articles et Robux.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.FinishSetup",
+    "description": "Primary action button of modal for adding your verified email, where the body of modal explains that an account with an verified email is not finished with setup",
+    "english": "Finish Setup",
+    "translation": "Terminer la configuration",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.LogoutWithRisk",
+    "description": "Secondary action button text to allow users to skip adding a verified email. The content explains the potential risk of logging out without adding a verified email.",
+    "english": "Accept Risk of Losing Account and Log Out",
+    "translation": "Accepter le risque de perte de compte et se déconnecter",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -58512,6 +58544,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.DatastoreOverrideWarning",
+    "description": "for the datastores form",
+    "english": "{boldStart} Note! {boldEnd} Specific datastore permissions may be overridden.",
+    "translation": "{boldStart} Remarque ! {boldEnd} Les permissions spécifiques du datastore peuvent être remplacées.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.ExperiencePermissionsLessSecure",
+    "description": "For the datastores form",
+    "english": "{boldStart} Warning! {boldEnd} Experience-level operations may be less secure.",
+    "translation": "{boldStart} Attention ! {boldEnd} Les opérations de niveau Expérience peuvent être moins sécurisées.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.SelectAllDatastores",
+    "description": "for the datastores form",
+    "english": "Select operations for ALL datastores in your experience. Current and future.",
+    "translation": "Sélectionnez des opérations pour TOUS les datastores dans votre expérience. Actuel et futur.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.TargetPartOperations",
+    "description": "For the access permissions form (i.e. 'Experience operations')",
+    "english": "{targetPartName} Operations",
+    "translation": "{targetPartName} Opérations",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.SelectOperations",
+    "description": "for multi select component for choosing scope operations",
+    "english": "Select Operations to Add",
+    "translation": "Sélectionner les opérations à ajouter",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -61936,11 +62008,19 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.DefaultValue",
+    "description": null,
+    "english": "Default Value: {defaultValue}",
+    "translation": "Valeur par défaut : {defaultValue}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CSModSites.CSWebsite",
     "key": "RtbfDefaultMessageBodyTemplate",
     "description": null,
     "english": "Hi Dev, We received a right-of-erasure-request for the following User ID(s): {{{{UserId}}}} Please delete this User ID immediately from all of your records (e.g. games, data stores, etc.) from the following Game(s): {{{{Places}}}} This is an obligation under data protection laws. If you would like more information about how to delete a User ID from a data store, please visit our Developer Hub at https://developer.roblox.com/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore and https://developer.roblox.com/en-us/articles/managing-personal-information. Please note that you must delete the User ID from all of your records, and not just from your data stores. The pages linked above are provided for informational purposes and are not intended to provide a comprehensive method of deleting User IDs. Regards, The Roblox Team",
-    "translation": "Salut Dev, Nous avons reçu une demande de droit d'effacement pour le(s) identifiant(s) d'utilisateur suivant(s) : {{UserId}} Veuillez supprimer cet identifiant d'utilisateur immédiatement de tous vos enregistrements (e. . jeux, magasins de données, etc. de la (des) partie(s) suivante(s): {{Places}} Ceci est une obligation en vertu des lois sur la protection des données. Si vous souhaitez plus d'informations sur la façon de supprimer un ID utilisateur d'un magasin de données, veuillez visiter notre Hub de Développeurs sur https://developer.roblox. om/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore et https://developer.roblox.com/fr-us/articles/managing-personal-information. Veuillez noter que vous devez supprimer l'identifiant de l'utilisateur de tous vos enregistrements, et pas seulement de vos magasins de données. Les pages liées ci-dessus sont fournies à titre informatif et ne sont pas destinées à fournir une méthode complète de suppression des identifiants d'utilisateur. Cordialement, l'équipe Roblox",
+    "translation": "Bonjour Dev, Nous avons reçu une demande de droit d'effacement pour le(s) identifiant(s) d'utilisateur suivant(s): {{{{UserId}}}} Veuillez supprimer cet identifiant d'utilisateur immédiatement de tous vos enregistrements (e. jeux, bases de données, etc.) des Jeu(x) suivants : {{{{Places}}}} Ceci est une obligation en vertu des lois sur la protection des données. Si vous souhaitez plus d'informations sur la façon de supprimer un ID utilisateur d'un magasin de données, veuillez visiter notre Hub de développeurs sur https://developer.roblox. om/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore et https://developer.roblox.com/fr-us/articles/managing-personal-information. Veuillez noter que vous devez supprimer l'ID de l'utilisateur de tous vos enregistrements, et pas seulement de vos stocks. Les pages mentionnées ci-dessus sont fournies à titre informatif et ne sont pas destinées à fournir une méthode complète de suppression des identifiants d'utilisateur. Cordialement, l’équipe Roblox",
     "isDeprecated": false
   },
   {
@@ -61956,7 +62036,7 @@
     "key": "Message.RtbfDefaultMessageBodyTemplate",
     "description": null,
     "english": "Hi Dev, We received a right-of-erasure-request for the following User ID(s): {{{{UserId}}}} Please delete this User ID immediately from all of your records (e.g. games, data stores, etc.) from the following Game(s): {{{{Places}}}} This is an obligation under data protection laws. If you would like more information about how to delete a User ID from a data store, please visit our Developer Hub at https://developer.roblox.com/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore and https://developer.roblox.com/en-us/articles/managing-personal-information. Please note that you must delete the User ID from all of your records, and not just from your data stores. The pages linked above are provided for informational purposes and are not intended to provide a comprehensive method of deleting User IDs. Regards, The Roblox Team",
-    "translation": "Salut Dev, Nous avons reçu une demande de droit d'effacement pour le(s) identifiant(s) d'utilisateur suivant(s) : {{UserId}} Veuillez supprimer cet identifiant d'utilisateur immédiatement de tous vos enregistrements (e. . jeux, magasins de données, etc. de la (des) partie(s) suivante(s): {{Places}} Ceci est une obligation en vertu des lois sur la protection des données. Si vous souhaitez plus d'informations sur la façon de supprimer un ID utilisateur d'un magasin de données, veuillez visiter notre Hub de Développeurs sur https://developer.roblox. om/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore et https://developer.roblox.com/fr-us/articles/managing-personal-information. Veuillez noter que vous devez supprimer l'Identifiant de l'utilisateur de tous vos enregistrements, et pas seulement de vos magasins de données. Les pages liées ci-dessus sont fournies à titre informatif et ne sont pas destinées à fournir une méthode complète de suppression des identifiants d'utilisateur. Cordialement, l'équipe Roblox",
+    "translation": "Bonjour Dev, Nous avons reçu une demande de droit d'effacement pour le(s) identifiant(s) d'utilisateur suivant(s): {{{{UserId}}}} Veuillez supprimer cet identifiant d'utilisateur immédiatement de tous vos enregistrements (e. jeux, bases de données, etc.) des Jeu(x) suivants : {{{{Places}}}} Ceci est une obligation en vertu des lois sur la protection des données. Si vous souhaitez plus d'informations sur la façon de supprimer un ID utilisateur d'un magasin de données, veuillez visiter notre Hub de développeurs sur https://developer.roblox. om/articles/Data-store , https://developer.roblox.com/api-reference/class/GlobalDataStore et https://developer.roblox.com/fr-us/articles/managing-personal-information. Veuillez noter que vous devez supprimer l'ID de l'utilisateur de tous vos enregistrements, et pas seulement de vos stocks. Les pages mentionnées ci-dessus sont fournies à titre informatif et ne sont pas destinées à fournir une méthode complète de suppression des identifiants d'utilisateur. Cordialement, l’équipe Roblox",
     "isDeprecated": false
   }
 ]
