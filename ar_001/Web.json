@@ -12451,7 +12451,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.AuthenticatorOff",
     "description": null,
-    "english": "Turning off authenticator 2-Step verification will also delete all of your security keys.",
+    "english": "Turning off 2-Step Verification via Authenticator will also delete all of your security keys.",
     "translation": "إيقاف التحقق من المصادقة 2-خطوة سيؤدي أيضا إلى حذف جميع مفاتيح الأمان الخاصة بك.",
     "isDeprecated": false
   },
@@ -58336,6 +58336,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "تمكين التحقق بخطوتين عن طريق المصادقة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "يمكنك القيام بذلك عن طريق الذهاب إلى {linkStart}إعدادات الحساب{linkEnd}. إذا تعرض حسابك للخطر، فمن غير المحتمل أن يتمكن Roblox من استعادة حسابك أو استرداد قيمته، بما في ذلك العناصر المفقودة والعملة الافتراضية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "إذا تعرض حسابك للخطر، فمن غير المحتمل أن يتمكن Roblox من استعادة حسابك أو استرداد قيمته، بما في ذلك العناصر المفقودة والعملة الافتراضية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "حماية حسابك!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "الرجاء تمكين التحقق بخطوتين عن طريق تطبيق Authenticator للمساعدة في حماية حسابك. يمكنك القيام بذلك عن طريق الذهاب إلى {linkStartSettings}إعدادات الحساب{linkEndSettings}. إذا تعرض حسابك للخطر، فمن غير المحتمل أن يتمكن Roblox من استعادة حسابك أو استرداد قيمته، بما في ذلك العناصر المفقودة والعملة الافتراضية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
+    "description": "Button action string for the account restores policy upsell banner.",
+    "english": "Set Up Authenticator",
+    "translation": "تعيين المصادقة",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -60893,6 +60941,22 @@
     "description": null,
     "english": "Users under 13 cannot log in with a one-time code.",
     "translation": "لا يمكن للمستخدمين الذين تقل أعمارهم عن 13 سنة تسجيل الدخول باستخدام رمز لمرة واحدة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} هو رمز Roblox الخاص بك لمرة واحدة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "مرحبا،{lineBreak}{lineBreak}طلب طفلك إنشاء حساب على Roblox، منصة ترفيهية على الانترنت تمكن الأطفال من تخيل و خلق و لعب معا في عالم ثلاثي الأبعاد غير مغمر و مصدره المستخدم.{lineBreak}{lineBreak}رمز التحقق: {code}{lineBreak}{lineBreak}طفلك أعطانا اسم مستخدم، تاريخ الميلاد، وعنوان البريد الإلكتروني للوالد لإنشاء حساب. لإكمال عملية إنشاء الحساب، يجب عليك الموافقة على استخدام روبلوكس لطفلك.{lineBreak}{lineBreak}يجب عليك إدخال الرمز أدناه لإكمال تدفق التسجيل والموافقة على استخدام طفلك للروبلوكس. بإدخال الرمز ، فإنك توافق على {linkTagWithTermsLinkStart}شروط Roblox{linkTagEnd}، بما في ذلك التحكيم و {linkTagWithPrivacyPolicyLinkStart}سياسة الخصوصية{linkTagEnd}، سوف تشرف على استخدام الروبلوكس لطفلك وتكون مسؤولاً فقط عن استخدامه، كما توافق على ذلك، عندما يكون ذلك مناسباً لتداول البيانات الشخصية للطفل فيما يتعلق بالخدمة.{lineBreak}{lineBreak}{boldStart}دليل الوالدين إلى Roblox{boldEnd}{lineBreak}{lineBreak}نوصي بزيارة دليل الوالدين لمساعدتك على التعرف على منصتنا وإيجاد نصائح مفيدة لإنشاء تجربة إيجابية لأطفالك على Roblox.{lineBreak}{lineBreak}{boldStart}الخصوصية{boldEnd}{lineBreak}{lineBreak}يمكنك إزالة حساب طفلك في أي وقت من خلال الاتصال بخدمة العملاء على https://www. oblox.com/support. لن يتم استخدام بريدك الإلكتروني لأي غرض آخر، أو الكشف عنه لأطراف ثالثة، أو دمجه مع أي معلومات شخصية أخرى تم جمعها من طفلك. الرجاء مراجعة سياسة الخصوصية لدينا لمزيد من المعلومات.{lineBreak}{lineBreak}شكرا،{lineBreak}{lineBreak}فريق الروبلوكس",
     "isDeprecated": false
   }
 ]

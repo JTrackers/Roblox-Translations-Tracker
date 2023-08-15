@@ -1340,7 +1340,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{accountName}：{lineBreak}{lineBreak}您已成功为您的 Roblox 帐户停用验证 App 两步验证。当登录帐户或进行其他操作时，将不再需要输入身份验证程序的安全代码。{lineBreak}{lineBreak}Roblox",
+    "translation": "{accountName}您好，{lineBreak}{lineBreak}您的 Roblox 帐户已停用验证程序两步验证。在您登录或进行部分操作时将不再需要在验证程序上输入安全码。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他人分享安全码。Roblox 不会向您要求安全码。当您与他人分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -4141,6 +4141,62 @@
     "description": null,
     "english": "Enter your parent's email address to receive a verification code.",
     "translation": "输入你家长的电子邮件地址来接收验证码。  ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "验证码",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "我已阅读并同意{termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "了解{privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "请输入我们刚发送至你父母电子邮件的验证码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "输入验证码即表示您同意您的孩子访问 Roblox。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "密码必须包含大写字母、小写字母及数字。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "密码必须包含大写字母、小写字母及数字。",
     "isDeprecated": false
   },
   {
@@ -12427,7 +12483,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.AuthenticatorOff",
     "description": null,
-    "english": "Turning off authenticator 2-Step verification will also delete all of your security keys.",
+    "english": "Turning off 2-Step Verification via Authenticator will also delete all of your security keys.",
     "translation": "关闭身份验证器的两步验证将删除你的所有安全密钥。",
     "isDeprecated": false
   },
@@ -12525,6 +12581,14 @@
     "description": null,
     "english": "Spending Limit:",
     "translation": "支出限额:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Dialog.Confirm",
+    "description": null,
+    "english": "Confirm",
+    "translation": "确认",
     "isDeprecated": false
   },
   {
@@ -14981,6 +15045,22 @@
     "description": null,
     "english": "Show Less",
     "translation": "收起",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Yes",
+    "description": null,
+    "english": "Yes",
+    "translation": "是",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.No",
+    "description": null,
+    "english": "No",
+    "translation": "否",
     "isDeprecated": false
   },
   {
@@ -24272,6 +24352,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Support",
+    "key": "Label.AssetID",
+    "description": null,
+    "english": "Asset ID",
+    "translation": "素材 ID",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VotingPanel",
     "key": "Label.EmailVerifiedTitle",
     "description": null,
@@ -24925,6 +25013,38 @@
     "description": null,
     "english": "Report",
     "translation": "举报",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Dating",
+    "description": null,
+    "english": "Dating",
+    "translation": "约会",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "其他",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Scamming",
+    "description": null,
+    "english": "Scamming",
+    "translation": "诈骗行为",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Profanity",
+    "description": null,
+    "english": "Swearing",
+    "translation": "粗话",
     "isDeprecated": false
   },
   {
@@ -62236,7 +62356,7 @@
     "key": "Label.DateRange",
     "description": "Label for the date range selector (DSA-823)",
     "english": "Date Range",
-    "translation": "数据范围：",
+    "translation": "日期范围",
     "isDeprecated": false
   },
   {
@@ -64253,6 +64373,14 @@
     "description": "Segmentation of DAU/New players by Top Countries(The union of top 5 countries and top growing countries)",
     "english": "Top Countries",
     "translation": "国家排行",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.LastNinetyDays",
+    "description": "Used in the dropdown for date preset range",
+    "english": "Last 90 Days",
+    "translation": "90 天内",
     "isDeprecated": false
   },
   {
@@ -68123,6 +68251,14 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorInBanner",
     "description": "Banner text for setting up authenticator through broad upsell.",
+    "english": "Set Up Authenticator",
+    "translation": "设置身份验证程序",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
+    "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
     "translation": "设置身份验证程序",
     "isDeprecated": false
@@ -85864,6 +86000,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.InvalidImageFormat",
+    "description": null,
+    "english": "Invalid file format. ",
+    "translation": "文件格式无效。 ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -86461,6 +86605,14 @@
     "description": null,
     "english": "Are you sure you want to buy this thumbnail for{value}?",
     "translation": "是否确定购买此缩略图并花费 {value}？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.FailToLoadPreview",
+    "description": null,
+    "english": "Unavailable",
+    "translation": "不可用",
     "isDeprecated": false
   },
   {
@@ -89033,6 +89185,30 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "SeeMore",
+    "description": "Used for a button that will expand a list of events to show more of them",
+    "english": "See More",
+    "translation": "查看更多",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NotifyMe",
+    "description": "Displayed on a button for an upcoming event so users can request to be notified later when it's live",
+    "english": "Notify Me",
+    "translation": "通知我",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventsListTitle",
+    "description": "Title for list of events shown on the experience details page",
+    "english": "Events",
+    "translation": "活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "GetNotifiedButton",
     "description": "Button text for the \"Event Push Notifications\" modal to enable push notifications for events",
     "english": "Enable",
@@ -89448,6 +89624,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.WebhookName",
+    "description": "The name the user gives to the webhook",
+    "english": "Name",
+    "translation": "名称",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.WebhookSecret",
+    "description": "A string used to provide security and authorization. More info here: https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks#secret",
+    "english": "Secret",
+    "translation": "密钥",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Action.Close",
+    "description": "Button text that closes some UI.",
+    "english": "Close",
+    "translation": "关闭",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -89524,7 +89724,7 @@
     "key": "Description.LearnMore",
     "description": null,
     "english": " Learn more about CSV localization table management ",
-    "translation": " 了解更多关于 CSV 本地化表格管理的信息",
+    "translation": "了解更多关于 CSV 本地化表格管理的信息",
     "isDeprecated": false
   },
   {
@@ -89660,7 +89860,7 @@
     "key": "Description.MakeChanges",
     "description": null,
     "english": "Please make changes before uploading the file again or try again later.",
-    "translation": "请在再次上传文件完成更改或稍后重试。",
+    "translation": "请先更改文件再进行上传，或稍后重试。",
     "isDeprecated": false
   },
   {
@@ -89941,6 +90141,22 @@
     "description": null,
     "english": "Error Loading Current Table",
     "translation": "加载当前表格时出错",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.Under13NotAllowed",
+    "description": null,
+    "english": "Users under 13 cannot log in with a one-time code.",
+    "translation": "13 岁以下的用户不能使用一次性验证码登录。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} 是你的 Roblox 一次性验证码",
     "isDeprecated": false
   }
 ]
