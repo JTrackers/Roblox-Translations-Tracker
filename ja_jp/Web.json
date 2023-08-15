@@ -7420,7 +7420,7 @@
     "key": "Label.TwoStepPrerequisite",
     "description": null,
     "english": "Receive unique security codes at your specified email.",
-    "translation": "指定したメールアドレスでユニークコードを受け取ること。",
+    "translation": "指定したメールアドレスで一意のセキュリティコードを受け取ること。",
     "isDeprecated": false
   },
   {
@@ -8124,7 +8124,7 @@
     "key": "Description.TwoStepVerificationSecondary",
     "description": null,
     "english": "Receive unique security codes at your specified email.",
-    "translation": "指定したメールアドレスでユニークコードを受け取ります。",
+    "translation": "指定したメールアドレスで一意のセキュリティコードを受け取ること。",
     "isDeprecated": false
   },
   {
@@ -8132,7 +8132,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique security codes at {email}.",
-    "translation": "{email} でユニークコードを受け取ります。",
+    "translation": "{email} で一意のセキュリティコードを受け取ります。",
     "isDeprecated": false
   },
   {
@@ -10156,7 +10156,7 @@
     "key": "Label.AuthenticatorHelpText",
     "description": "Displayed as help text when authenticator-based two step verification is already enabled.",
     "english": "Download an app on your phone to generate unique security codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "スマホ上でユニークコードを生成するアプリです。推奨アプリには、Google 認証システム、Microsoft Authenticator、Twilio の Authy が含まれています。",
+    "translation": "スマホ上で一意のセキュリティコードを生成するアプリをダウンロードしてください。推奨アプリには、Google 認証システム、Microsoft Authenticator、Twilio の Authy があります。",
     "isDeprecated": false
   },
   {
@@ -25637,6 +25637,14 @@
     "description": null,
     "english": "Your balance after this transaction will be {remainingBalance}",
     "translation": "この取引後の残高は {remainingBalance} になります",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PromptBatchBuy",
+    "description": "Would you like to buy these 5 items for [Robux icon]400?",
+    "english": "Would you like to buy these {itemCount} items for {robux}?",
+    "translation": "こちらの {itemCount} アイテムを {robux} で購入しますか？",
     "isDeprecated": false
   },
   {
@@ -51824,6 +51832,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Advertise",
+    "description": null,
+    "english": "Advertise",
+    "translation": "広告する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.MyInventory",
+    "description": null,
+    "english": "My Inventory",
+    "translation": "インベントリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Sales",
+    "description": null,
+    "english": "Sales",
+    "translation": "売り上げ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Features",
     "key": "Label.CreatorDashboard",
     "description": null,
@@ -63649,6 +63681,54 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.GameSessionsPerSourceInsight",
+    "description": "Chart Tooltip in User Acquisitions",
+    "english": "The number of game sessions from a given source can tell you how much of your experience's activity is coming from that source",
+    "translation": "特定の経路からのゲームセッション数で、あなたの仮想空間上でのアクティビティがどのくらいその経路から来ているかが分かります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.NewUsersPerSource",
+    "description": "Chart Tooltip in User Acquisitions",
+    "english": "Number of new users in the experience per day, broken down by which source they initially came from",
+    "translation": "最初に辿ってきた各経路ごとの仮想空間での1日あたりの新規ユーザー数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.NewUsersPerSourceInsight",
+    "description": "Chart Tooltip in User Acquisitions",
+    "english": "The number of new users from a given source can tell you how appealing your experience is to people coming from that source",
+    "translation": "特定の経路からの新規ユーザー数で、その経路から来ている人にとってあなたの仮想空間がどのくらい魅力的かが分かります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ImpressionsInsight",
+    "description": "Chart Tooltip in User Acquisitions",
+    "english": "The number of impressions from a given source can tell you how much opportunity there is for people to discover your experience from that source",
+    "translation": "特定の経路から来たインプレッション数によって、そこからどれだけの人があなたの仮想空間を見つけるチャンスがあるかを教えてくれます。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ImpressionCTR",
+    "description": "Table Column Header Tooltip in User Acquisitions",
+    "english": "The proportion of people who saw your experience that expressed further interest in it (such as by clicking its thumbnail image or link)",
+    "translation": "あなたの仮想空間を見て、さらに興味を示した（サムネイル画像やリンクをクリックするなど）人の割合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.GameDetailCTR",
+    "description": "Table Column Header Tooltip in User Acquisitions",
+    "english": "The proportion of people who saw the game details page that decided to visit the experience and thus had a play session",
+    "translation": "ゲームの概要ページを見て仮想空間を訪問することを決め、プレイセッションをした人の割合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Description.E2ECVR",
     "description": "Table Column Header and Summary Item Tooltip in User Acquisitions",
     "english": "The proportion of people who saw information about your experience who ultimately ended up in a play session",
@@ -63693,6 +63773,14 @@
     "description": "Platform Option in User Acquisition (meaning tablet + phone)",
     "english": "Mobile",
     "translation": "モバイル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewTerms",
+    "description": null,
+    "english": "View full terms",
+    "translation": "利用規約全体を表示",
     "isDeprecated": false
   },
   {
@@ -84616,6 +84704,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.InsufficientFunds",
+    "description": null,
+    "english": "Insufficient Funds",
+    "translation": "資金が足りません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "UploadWithRobux",
+    "description": null,
+    "english": "Upload ({price} Robux)",
+    "translation": "アップロードする ({price} Robux)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Heading.UploadForRobux",
+    "description": null,
+    "english": "Upload for {price} Robux?",
+    "translation": "{price} Robuxでアップロードしますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AssetUploadWithRobuxConfirmation",
+    "description": null,
+    "english": "Uploading this asset type requires {price} Robux. Are you sure you want to continue uploading?",
+    "translation": "このアセットタイプをアップロードするには {price} Robux が必要です。アップロードを続けますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "もっと詳しく",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.AudioLimitInfo",
+    "description": null,
+    "english": "Audio uploads may have limits. ",
+    "translation": "オーディオのアップロードに制限がある可能性があります。 ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -85468,7 +85604,7 @@
     "key": "Description.NotificationsIncreaseEngagement",
     "description": "Description encouraging developers to use this feature. And a link to the devhub documentation",
     "english": "Customizing Notifications can increase player engagement in your experience. {linkStart}Learn more{linkEnd}",
-    "translation": "通知を作成すると、仮想空間内でのプレイヤーのエンゲージメント向上につながります。 {linkStart}詳しくはこちら{linkEnd}",
+    "translation": "通知をカスタマイズすると、仮想空間内でのプレイヤーのエンゲージメント向上につながります。 {linkStart}詳しくはこちら{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -85532,7 +85668,7 @@
     "key": "Common.ID",
     "description": "column header. (here ID is the header for asset ID which is a unique id generated when a notification string is created)",
     "english": "Asset ID",
-    "translation": "ID番号",
+    "translation": "アセット ID",
     "isDeprecated": false
   },
   {
@@ -85736,6 +85872,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.createNotificationRestrictions2",
+    "description": null,
+    "english": "Note: All text will be filtered. Only invite notifications are customizable at this time.",
+    "translation": "ご注意：すべてのテキストはフィルタされます。現在、招待通知だけがカスタマイズ可能です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.PlaceHolder.ExperienceName",
+    "description": "Note: Do not translate experienceName. \ntext explaining usage of experienceName.",
+    "english": "Personalizing notifications with your {strongStart}experienceName{strongEnd} is required.",
+    "translation": "{strongStart}experienceName{strongEnd} で通知をパーソナライズする必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.PlaceHolder.DisplayName",
+    "description": "Note: Do not translate experienceName.\ntext explaining usage of displayName placeholder.",
+    "english": "Including the sender’s display name using {strongStart}displayName{strongEnd} is optional.",
+    "translation": "{strongStart}displayName{strongEnd} の使用して送信者の表示名を入れるかどうかは、オプションです。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Message.NotificationContentCreateFailedDuplicateLabel",
+    "description": null,
+    "english": "This experience already has a notification string with this name.",
+    "translation": "この仮想空間には、すでにこの名前の通知文字列があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.NotificationContentStringName",
+    "description": null,
+    "english": "Name (only visible to you)",
+    "translation": "名前（自分だけが見える）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.NotificationString",
+    "description": null,
+    "english": "Notification String",
+    "translation": "通知文字列",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.Name",
+    "description": null,
+    "english": "Name",
+    "translation": "名前",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Passes",
     "key": "Action.CreatePass",
     "description": null,
@@ -85755,7 +85947,7 @@
     "namespace": "CreatorDashboard.Passes",
     "key": "Message.CreatePassInfo",
     "description": null,
-    "english": "Passes let you create special items that can only be bought once per player using Robux (⬡).",
+    "english": "Passes let you create special items that can only be bought once per player using Robux",
     "translation": "パスによって、Robux (⬡) を使って1人のプレイヤーにつき1回しか購入できない特別なアイテムを作れます。",
     "isDeprecated": false
   },
@@ -85893,6 +86085,14 @@
     "description": "Displayed if user enters non-positive price.",
     "english": "Pass price must be greater than 0",
     "translation": "パスの価格は必ず 0 以上にしてください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Passes",
+    "key": "Message.CreatePassInfoWithIcon",
+    "description": null,
+    "english": "Passes let you create special items that can only be bought once per player using Robux ({robuxIcon}).",
+    "translation": "パスがあると、Robux ({robuxIcon}) を使って1人のプレイヤーにつき1回しか購入できない特別なアイテムを作れます。",
     "isDeprecated": false
   },
   {
@@ -87211,7 +87411,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarnings",
     "description": null,
-    "english": "Daily Earnings",
+    "english": "Daily Earnings (Robux)",
     "translation": "1日の収益",
     "isDeprecated": false
   },
@@ -87219,7 +87419,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarnings",
     "description": null,
-    "english": "Total amount of Robux earned by the experience from ads in a day.",
+    "english": "Total Robux amount earned from immersive ads in this experience.",
     "translation": "この仮想空間が1日に広告で稼いだRobuxの合計額。",
     "isDeprecated": false
   },
@@ -87235,7 +87435,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyImpressions",
     "description": null,
-    "english": "Total number of impressions across all ad instances in the experience in a day.",
+    "english": "Total number of impressions generated from all ad units in this experience.",
     "translation": "1日あたりのすべての広告インスタンスのインプレッション数の合計。",
     "isDeprecated": false
   },
@@ -87275,7 +87475,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyTeleports",
     "description": null,
-    "english": "Total number of teleports across all ad portals in the experience in a day.",
+    "english": "Total number of teleports generated from portal ad units in this experience.",
     "translation": "1つの仮想空間につき1日あたりのすべての広告ポータルからのテレポート数の合計。",
     "isDeprecated": false
   },
@@ -87283,7 +87483,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarningsPerMille",
     "description": null,
-    "english": "EPM",
+    "english": "Earnings Per Mille (EPM)",
     "translation": "EPM",
     "isDeprecated": false
   },
@@ -87291,7 +87491,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarningsPerMille",
     "description": null,
-    "english": "Earnings Per Mille: the Robux earned across all ad GUI instances in the experience per thousand impressions in a day.",
+    "english": "The Robux amount earned for every thousand impressions generated from Image ad units in this experience.",
     "translation": "1000回あたりの収益: 特定の仮想空間ですべての広告GUIインスタンスが1日に1000回のインプレッション数につき稼いだRobux。",
     "isDeprecated": false
   },
@@ -87299,7 +87499,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarningsPerThousandTeleports",
     "description": null,
-    "english": "EPT",
+    "english": "Earnings Per Thousand Teleports (EPT)",
     "translation": "EPT",
     "isDeprecated": false
   },
@@ -87307,7 +87507,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarningsPerThousandTeleports",
     "description": null,
-    "english": "Earnings Per Thousand Teleports: the Robux earned across all ad portals in the experience per thousand teleports in a day.",
+    "english": "The Robux amount earned for every thousand teleports generated from Portal ad units in this experience.",
     "translation": "テレポート1000回あたりの収益: 特定の仮想空間ですべての広告ポータルが1日に1000回のテレポートにつき稼いだRobux。",
     "isDeprecated": false
   },
@@ -87315,7 +87515,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
-    "english": "Estimated Earnings Ad Instance Breakdown",
+    "english": "Estimated Earnings per Ad Unit",
     "translation": "広告インスタンスの推定収益の内訳",
     "isDeprecated": false
   },
@@ -87323,7 +87523,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEstimatedEarningsBreakdown",
     "description": null,
-    "english": "The estimated Robux earned by each ad instance in a day. If more than one ad instance has the same name, then the earnings are aggregated.",
+    "english": "The estimated Robux amount earned per ad unit in this experience. If more than one ad unit has the same name, then earnings are aggregated.",
     "translation": "各広告インスタンスが1日に稼ぐRobuxの推定値。複数の広告インスタンスに同じ名前がついている場合、収益はまとめて集計されます。",
     "isDeprecated": false
   },
@@ -87331,7 +87531,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
-    "english": "Impressions Ad Instance Breakdown",
+    "english": "Impressions per Ad Unit",
     "translation": "インプレッション広告インスタンスの内訳",
     "isDeprecated": false
   },
@@ -87339,7 +87539,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyImpressionsBreakdown",
     "description": null,
-    "english": "The impressions on each ad GUI instance in a day. If more than one ad GUI instance has the same name, then the impressions are aggregated.",
+    "english": "The number of impressions generated per ad unit in this experience. If more than one ad unit has the same name, then impressions are aggregated.",
     "translation": "各広告GUIインスタンスの1日のインプレッション数。 複数の広告GUIインスタンスに同じ名前がついている場合、インプレッション数がまとめて集計されます。",
     "isDeprecated": false
   },
@@ -87347,7 +87547,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyTeleportsBreakdown",
     "description": null,
-    "english": "Teleports Ad Instance Breakdown",
+    "english": "Teleports per Ad Unit",
     "translation": "テレポート広告インスタンスの内訳",
     "isDeprecated": false
   },
@@ -87355,7 +87555,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyTeleportsBreakdown",
     "description": null,
-    "english": "The teleports from each ad portal in a day. If more than one ad portal has the same name, then the teleports are aggregated.",
+    "english": "The number of teleports generated per portal ad unit in this experience. If more than one portal ad unit has the same name, then teleports are aggregated.",
     "translation": "各広告ポータルからの1日のテレポート数。複数の広告ポータルが同じ名前がついている場合は、テレポート数がまとめて集計されます。",
     "isDeprecated": false
   },
@@ -87932,7 +88132,7 @@
     "key": "Title.EventSettings",
     "description": "Title for settings related to events for creators. Events in this context are things like emails, push notifications, and messages.",
     "english": "Events",
-    "translation": "イベント設定",
+    "translation": "イベント",
     "isDeprecated": false
   },
   {
@@ -88219,7 +88419,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.ParsingError",
     "description": null,
-    "english": "An error has occurred.",
+    "english": "Error: Click for details",
     "translation": "エラーが発生しました。",
     "isDeprecated": false
   },
@@ -88227,7 +88427,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.SeeMore",
     "description": null,
-    "english": "Click here for more details.",
+    "english": "See more.",
     "translation": "詳しくはこちらをクリック。",
     "isDeprecated": false
   },
@@ -88252,7 +88452,7 @@
     "key": "Description.MakeChanges",
     "description": null,
     "english": "Please make changes before uploading the file again or try again later.",
-    "translation": "またファイルをアップロードする前に変更してください。",
+    "translation": "またファイルをアップロードする前に変更を加えるか、後でもう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -88316,7 +88516,7 @@
     "key": "Label.DeletedEntries",
     "description": null,
     "english": "- Deleted Translations:",
-    "translation": "- 削除済み入力内容:",
+    "translation": "- 削除済みの翻訳内容:",
     "isDeprecated": false
   },
   {
@@ -88421,6 +88621,70 @@
     "description": null,
     "english": "- Language(s) not supported: ",
     "translation": "- 言語に対応していません: ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.LocalizationTableTooLarge",
+    "description": null,
+    "english": "- Adding new entries from your CSV file would cause your localization table to be over the maximum size of {maxTableSize} entries. Please review your table and remove any old entries.",
+    "translation": "- CSVファイルから新しい入力内容を追加すると、多言語化テーブルの入力内容が最大量の {maxTableSize} 件を超えることになります。 テーブルを確認して、古い入力内容を削除してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.TooManyRows",
+    "description": null,
+    "english": "- There are {userCsvRowCount} rows in your CSV file. The maximum number of rows allowed is {maxCsvRowCount}.",
+    "translation": "- CSVファイルに {userCsvRowCount} 行あります。許可されている最大行数は {maxCsvRowCount} です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailedToLoadCurrentTable",
+    "description": null,
+    "english": "- An error occurred while loading the current localization table. Please try again in a few minutes.",
+    "translation": "- 現在の多言語化テーブルの読み込み中にエラーが発生しました。数分後にもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.AddLanguagesFailure",
+    "description": null,
+    "english": "- An error occurred while adding new supported language(s). Please try again in a few minutes.",
+    "translation": "- 新規対応言語の追加中にエラーが発生しました。数分後にもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailureToUploadTable",
+    "description": null,
+    "english": "- An error occurred while updating the table. Please try uploading the CSV file again in a few minutes.",
+    "translation": "- テーブルの更新中にエラーが発生しました。数分後にCSVファイルをもう一度アップロードしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.UploadFailureMsg",
+    "description": null,
+    "english": "- {errorMsg}.",
+    "translation": "- テーブルのアップデート中にエラーが発生: {errorMsg}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailedEntryDetails",
+    "description": null,
+    "english": "- source: {source}, context: {context}, errorMessage: {errorMessage}",
+    "translation": "- ソース: {source}、 コンテキスト: {context}、 エラーメッセージ: {errorMessage}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.UpdateFailure",
+    "description": null,
+    "english": "Some entries failed to update because of the following error(s):",
+    "translation": "以下のエラーのため、一部の入力内容を更新できませんでした。",
     "isDeprecated": false
   }
 ]

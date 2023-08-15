@@ -624,6 +624,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInAnotherDevice",
+    "description": null,
+    "english": "Log In With Another Device",
+    "translation": "使用其他裝置登入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInEmailOneTimeCode",
+    "description": null,
+    "english": "Email Me a One-Time Code",
+    "translation": "透過電子郵件給我一次性驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "傳送驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "驗證碼已傳送",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "取得一次性驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "輸入一次性驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "輸入帳號上經過驗證的電子郵件地址即可獲得一次性驗證碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelp",
+    "description": null,
+    "english": "A code was sent to your email if it is verified on your account. Enter the code to log in.",
+    "translation": "若您輸入了經過驗證的電子郵件地址，我們已向該電子郵件地址傳送驗證碼。輸入驗證碼即可登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LoginCodeLearnMore",
+    "description": null,
+    "english": "Learn more about Login Codes",
+    "translation": "了解更多關於登入驗證碼的資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.LoginCode",
+    "description": "placeholder for login code field",
+    "english": "Login Code",
+    "translation": "登入驗證碼",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12340,7 +12420,7 @@
     "key": "Label.ToolTip.WhosePrivateServerICanJoin",
     "description": null,
     "english": "People create private servers to control who can play in an experience with them. You can prevent this account from following links into private servers.",
-    "translation": "私人伺服器的擁有人可以生成並分享私人伺服器的連結。此設定能控制您可以透過連結加入誰的私人伺服器。",
+    "translation": "使用者可以透過私人伺服器控制誰可以和自己遊玩同一個體驗。您可以禁止此帳號使用私人伺服器連結。",
     "isDeprecated": false
   },
   {
@@ -12348,7 +12428,7 @@
     "key": "Label.WhosePrivateServerICanJoin",
     "description": null,
     "english": "Whose private servers can this account join through links?",
-    "translation": "我可以透過連結加入誰的私人伺服器？",
+    "translation": "此帳號可以透過連結加入誰的私人伺服器？",
     "isDeprecated": false
   },
   {
@@ -12380,7 +12460,7 @@
     "key": "Label.ToolTip.WhoCanInvitePrivateServerV2",
     "description": null,
     "english": "If you’re a member of a private server, you can access it any time. You can control who’s automatically allowed to make you a member.",
-    "translation": "私人伺服器的所有者可以允許好友或特定使用者成為私人伺服器的成員。此設定控制誰可以讓您成為他的私人伺服器的成員。",
+    "translation": "如果您是私人伺服器的成員，您就可以隨時進入該伺服器。您可以控制誰能自動讓您成為成員。",
     "isDeprecated": false
   },
   {
@@ -12397,6 +12477,46 @@
     "description": null,
     "english": "Who can make me a member of their private server?",
     "translation": "誰可以讓我成為他的私人伺服器的成員？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanInvitePrivateServerV3",
+    "description": null,
+    "english": "If you’re a member of a private server, you can access it any time. You can control who’s automatically allowed to make you a member.",
+    "translation": "如果您是私人伺服器的成員，您就可以隨時進入該伺服器。您可以控制誰能自動讓您成為成員。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhosePrivateServerICanJoinV2",
+    "description": null,
+    "english": "People create private servers to control who can play in an experience with them. You can prevent this account from following links into private servers.",
+    "translation": "使用者可以透過私人伺服器控制誰可以和自己遊玩同一個體驗。您可以禁止此帳號使用私人伺服器連結。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhosePrivateServerICanJoinV2",
+    "description": null,
+    "english": "Whose private servers can this account join through links?",
+    "translation": "此帳號可以透過連結加入誰的私人伺服器？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowersV2",
+    "description": null,
+    "english": "Friends, users I follow, and my followers",
+    "translation": "好友、我追蹤的使用者及追蹤者",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowingV2",
+    "description": null,
+    "english": "Friends and users I follow",
+    "translation": "好友及我追蹤的使用者",
     "isDeprecated": false
   },
   {
@@ -14577,6 +14697,38 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.InvalidPrice",
+    "description": null,
+    "english": "Price is invalid",
+    "translation": "價格無效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumber",
+    "description": null,
+    "english": "Serial Number",
+    "translation": "序列號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.AddToCart",
+    "description": null,
+    "english": "Add to cart",
+    "translation": "加到購物車",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.RemoveFromCart",
+    "description": null,
+    "english": "Remove from cart",
+    "translation": "從購物車取出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.Add",
     "description": null,
     "english": "Add",
@@ -14585,10 +14737,98 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.ShoppingCart",
+    "description": null,
+    "english": "Shopping cart",
+    "translation": "購物車",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TotalUnformatted",
+    "description": null,
+    "english": "Total",
+    "translation": "合計",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.Processing",
+    "description": null,
+    "english": "Processing",
+    "translation": "正在處理",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Message.Unavailable",
     "description": null,
     "english": "Unavailable",
     "translation": "無法使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemAddedToCart",
+    "description": null,
+    "english": "{itemName} has been added to your cart",
+    "translation": "{itemName} 已加到購物車",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemRemovedFromCart",
+    "description": null,
+    "english": "{itemName} has been removed from your cart",
+    "translation": "{itemName} 已從購物車取出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartLimitFailure",
+    "description": null,
+    "english": "Add to cart failed, you reached the {itemLimit} item limit",
+    "translation": "無法加到購物車，您已達到 {itemLimit} 個道具的上限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartFailure",
+    "description": null,
+    "english": "Add to cart failed, please try again later",
+    "translation": "無法加到購物車，請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartRemoveFailure",
+    "description": null,
+    "english": "Remove from cart failed, please try again later",
+    "translation": "無法從購物車移除，請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartAddFailure",
+    "description": null,
+    "english": "Add to cart failed, please try again later",
+    "translation": "無法加到購物車，請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.BuyCartItems",
+    "description": null,
+    "english": "Buy cart items",
+    "translation": "購買購物車中的道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.InsufficientFundsForTransaction",
+    "description": null,
+    "english": "You have insufficient funds for this transaction",
+    "translation": "資金不足，無法完成交易",
     "isDeprecated": false
   },
   {
@@ -25373,6 +25613,118 @@
     "description": null,
     "english": "Buy",
     "translation": "購買",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance after this transaction will be {remainingBalance}",
+    "translation": "您在此交易後的餘額將為 {remainingBalance}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PromptBatchBuy",
+    "description": "Would you like to buy these 5 items for [Robux icon]400?",
+    "english": "Would you like to buy these {itemCount} items for {robux}?",
+    "translation": "以 {robux} 購買這 {itemCount} 個道具？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseCompleted",
+    "description": null,
+    "english": "Purchase Completed",
+    "translation": "購買成功",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.GeneralError",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again later",
+    "translation": "發生錯誤，請重新整理並稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessGeneralFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed",
+    "translation": "已成功購買 {itemCountSuccess} 個道具，無法購買 {itemCountFailure} 個道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessItemsOwnedFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) you already own",
+    "translation": "已成功購買 {itemCountSuccess} 個道具，您已擁有 {itemCountFailure} 個道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessInsufficientFundsFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to insufficient funds",
+    "translation": "已成功購買 {itemCountSuccess} 個道具，因資金不足而無法購買 {itemCountFailure} 個道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNetworkErrorFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to network error",
+    "translation": "已成功購買 {itemCountSuccess} 個道具，因網路問題而無法購買 {itemCountFailure} 個道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessFloodcheckFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to too many requests",
+    "translation": "已成功購買 {itemCountSuccess} 個道具，因請求過多而無法購買 {itemCountFailure} 個道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseFailure",
+    "description": null,
+    "english": "Purchase failed, please try again later",
+    "translation": "無法購買，請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.ItemsOwnedFailure",
+    "description": null,
+    "english": "Purchase failed, item(s) already owned",
+    "translation": "無法購買，已擁有道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientFundsFailure",
+    "description": null,
+    "english": "Purchase failed, insufficient funds",
+    "translation": "無法購買，資金不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NetworkErrorFailure",
+    "description": null,
+    "english": "Purchase failed, network error, please try again later",
+    "translation": "無法購買，網路問題，請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.FloodcheckFailure",
+    "description": null,
+    "english": "Purchase failed, too many requests, please try again in {throttleTime} minutes",
+    "translation": "無法購買，請求過多，請在 {throttleTime} 分鐘後重試",
     "isDeprecated": false
   },
   {
@@ -51509,6 +51861,22 @@
     "description": null,
     "english": "Permissions",
     "translation": "權限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Advertise",
+    "description": null,
+    "english": "Advertise",
+    "translation": "宣傳",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Sales",
+    "description": null,
+    "english": "Sales",
+    "translation": "買賣",
     "isDeprecated": false
   },
   {
@@ -82920,6 +83288,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.RobloxGroup",
+    "description": null,
+    "english": "Roblox Group",
+    "translation": "Roblox 群組",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.TagLabel",
     "key": "Label.PluginSecurity",
     "description": null,
@@ -84176,6 +84552,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "了解更多",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -85092,7 +85476,7 @@
     "key": "Common.ID",
     "description": "column header. (here ID is the header for asset ID which is a unique id generated when a notification string is created)",
     "english": "Asset ID",
-    "translation": "ID",
+    "translation": "素材 ID\n",
     "isDeprecated": false
   },
   {
@@ -85296,6 +85680,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.NotificationString",
+    "description": null,
+    "english": "Notification String",
+    "translation": "通知字串",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Label.Name",
+    "description": null,
+    "english": "Name",
+    "translation": "名稱",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Passes",
     "key": "Action.CreatePass",
     "description": null,
@@ -85315,7 +85715,7 @@
     "namespace": "CreatorDashboard.Passes",
     "key": "Message.CreatePassInfo",
     "description": null,
-    "english": "Passes let you create special items that can only be bought once per player using Robux (⬡).",
+    "english": "Passes let you create special items that can only be bought once per player using Robux",
     "translation": "遊戲證可以讓您製作給每個玩家使用 Robux（⬡）進行一次性購買的特殊道具。",
     "isDeprecated": false
   },
@@ -86771,7 +87171,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarnings",
     "description": null,
-    "english": "Daily Earnings",
+    "english": "Daily Earnings (Robux)",
     "translation": "每日收入",
     "isDeprecated": false
   },
@@ -86779,7 +87179,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarnings",
     "description": null,
-    "english": "Total amount of Robux earned by the experience from ads in a day.",
+    "english": "Total Robux amount earned from immersive ads in this experience.",
     "translation": "體驗單日從廣告賺取的 Robux 總額。",
     "isDeprecated": false
   },
@@ -86795,7 +87195,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyImpressions",
     "description": null,
-    "english": "Total number of impressions across all ad instances in the experience in a day.",
+    "english": "Total number of impressions generated from all ad units in this experience.",
     "translation": "單日體驗中所有廣告實體的曝光數總和",
     "isDeprecated": false
   },
@@ -86835,7 +87235,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyTeleports",
     "description": null,
-    "english": "Total number of teleports across all ad portals in the experience in a day.",
+    "english": "Total number of teleports generated from portal ad units in this experience.",
     "translation": "單日體驗中所有廣告傳送門的傳送次數總和",
     "isDeprecated": false
   },
@@ -86843,7 +87243,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarningsPerMille",
     "description": null,
-    "english": "EPM",
+    "english": "Earnings Per Mille (EPM)",
     "translation": "EPM",
     "isDeprecated": false
   },
@@ -86851,7 +87251,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarningsPerMille",
     "description": null,
-    "english": "Earnings Per Mille: the Robux earned across all ad GUI instances in the experience per thousand impressions in a day.",
+    "english": "The Robux amount earned for every thousand impressions generated from Image ad units in this experience.",
     "translation": "每千曝光收入：單日每 1,000 次曝光在體驗中所有廣告 GUI 實體賺取的 Robux",
     "isDeprecated": false
   },
@@ -86859,7 +87259,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEarningsPerThousandTeleports",
     "description": null,
-    "english": "EPT",
+    "english": "Earnings Per Thousand Teleports (EPT)",
     "translation": "EPT",
     "isDeprecated": false
   },
@@ -86867,7 +87267,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEarningsPerThousandTeleports",
     "description": null,
-    "english": "Earnings Per Thousand Teleports: the Robux earned across all ad portals in the experience per thousand teleports in a day.",
+    "english": "The Robux amount earned for every thousand teleports generated from Portal ad units in this experience.",
     "translation": "每千傳送收入：單日每 1,000 次傳送在體驗中所有廣告傳送門賺取的 Robux",
     "isDeprecated": false
   },
@@ -86875,7 +87275,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
-    "english": "Estimated Earnings Ad Instance Breakdown",
+    "english": "Estimated Earnings per Ad Unit",
     "translation": "預計收入廣告實體拆解",
     "isDeprecated": false
   },
@@ -86883,7 +87283,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyEstimatedEarningsBreakdown",
     "description": null,
-    "english": "The estimated Robux earned by each ad instance in a day. If more than one ad instance has the same name, then the earnings are aggregated.",
+    "english": "The estimated Robux amount earned per ad unit in this experience. If more than one ad unit has the same name, then earnings are aggregated.",
     "translation": "單一廣告實體單日預計賺取的 Robux。如果有多個名稱相同的廣告實體，賺取金額將會合計。",
     "isDeprecated": false
   },
@@ -86891,7 +87291,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
-    "english": "Impressions Ad Instance Breakdown",
+    "english": "Impressions per Ad Unit",
     "translation": "曝光廣告實體拆解",
     "isDeprecated": false
   },
@@ -86899,7 +87299,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyImpressionsBreakdown",
     "description": null,
-    "english": "The impressions on each ad GUI instance in a day. If more than one ad GUI instance has the same name, then the impressions are aggregated.",
+    "english": "The number of impressions generated per ad unit in this experience. If more than one ad unit has the same name, then impressions are aggregated.",
     "translation": "單一廣告 GUI 實體單日曝光數。如果有多個名稱相同的廣告 GUI 實體，曝光數將會合計。",
     "isDeprecated": false
   },
@@ -86907,7 +87307,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailyTeleportsBreakdown",
     "description": null,
-    "english": "Teleports Ad Instance Breakdown",
+    "english": "Teleports per Ad Unit",
     "translation": "傳送廣告實體拆解",
     "isDeprecated": false
   },
@@ -86915,7 +87315,7 @@
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Description.DailyTeleportsBreakdown",
     "description": null,
-    "english": "The teleports from each ad portal in a day. If more than one ad portal has the same name, then the teleports are aggregated.",
+    "english": "The number of teleports generated per portal ad unit in this experience. If more than one portal ad unit has the same name, then teleports are aggregated.",
     "translation": "單一廣告傳送門單日傳送次數。如果有多個名稱相同的廣告傳送門，傳送次數將會合計。",
     "isDeprecated": false
   },
@@ -87201,6 +87601,14 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "GoHome",
+    "description": "Used on a button to prompt the user to return to the homepage",
+    "english": "Go Home",
+    "translation": "返回首頁",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "RsvpGoing",
     "description": "Displayed on a button when the user has marked themselves as being interested in going to the event",
     "english": "Interested",
@@ -87217,10 +87625,58 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "JoinEvent",
+    "description": "Displayed on a button when an event is active, allowing the user to join the associated experience",
+    "english": "Join Event",
+    "translation": "加入活動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "DescriptionLabel",
     "description": "Title of the \"Description\" section of the page",
     "english": "Description",
     "translation": "說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "HostedByLabel",
+    "description": "Text for the Hosted By label, referring to which creator is hosting the event.",
+    "english": "Hosted By",
+    "translation": "主辦者：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventCancelledText",
+    "description": "Displayed in place of event time for a cancelled event",
+    "english": "This event has been cancelled.",
+    "translation": "活動已取消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Cancelled",
+    "description": "used to show the state of the event",
+    "english": "CANCELLED",
+    "translation": "已取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Unpublished",
+    "description": "Used to show the current event state",
+    "english": "UNPUBLISHED",
+    "translation": "未發布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "TodayString",
+    "description": "used in the text for when an event is happening (ex: TODAY AT 5pm)",
+    "english": "TODAY",
+    "translation": "今天",
     "isDeprecated": false
   },
   {
@@ -87436,7 +87892,7 @@
     "key": "Title.EventSettings",
     "description": "Title for settings related to events for creators. Events in this context are things like emails, push notifications, and messages.",
     "english": "Events",
-    "translation": "事件設定",
+    "translation": "活動",
     "isDeprecated": false
   },
   {
@@ -87723,7 +88179,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.ParsingError",
     "description": null,
-    "english": "An error has occurred.",
+    "english": "Error: Click for details",
     "translation": "發生錯誤。",
     "isDeprecated": false
   },
@@ -87731,7 +88187,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.SeeMore",
     "description": null,
-    "english": "Click here for more details.",
+    "english": "See more.",
     "translation": "點擊此處獲得詳細資訊。",
     "isDeprecated": false
   },
@@ -87869,6 +88325,102 @@
     "description": null,
     "english": "Please only upload one CSV file of max size 3MB. ",
     "translation": "請上傳一個 3MB 以內的 CSV 檔案。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.ModifiedEntries",
+    "description": null,
+    "english": "Modified Entries",
+    "translation": "已修改的條目",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.ModifiedTranslations",
+    "description": null,
+    "english": "- Modified Translations:",
+    "translation": "- 已修改的翻譯：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.AnalyzingTable",
+    "description": null,
+    "english": "Analyzing current table",
+    "translation": "正在分析目前表格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.Loading",
+    "description": null,
+    "english": "Loading",
+    "translation": "正在載入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.MissingMandatoryHeaders",
+    "description": null,
+    "english": "- Missing mandatory header(s):",
+    "translation": "- 缺少必填標題：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.EmptyCsv",
+    "description": null,
+    "english": "- The uploaded CSV file is empty. If you would like to clear your localization table, please use the 'Delete Table' button to do so",
+    "translation": "- 已上傳空白 CSV 檔案。若要清除在地化表格，請使用「刪除表格」按鈕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.InvalidSupportedLanguage",
+    "description": null,
+    "english": "- Language(s) not supported: ",
+    "translation": "- 為支援的語言：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.LocalizationTableTooLarge",
+    "description": null,
+    "english": "- Adding new entries from your CSV file would cause your localization table to be over the maximum size of {maxTableSize} entries. Please review your table and remove any old entries.",
+    "translation": "- 若從 CSV 檔案新增條目，在地化表格將會超過 {maxTableSize} 個條目的上限。請重新檢查表格並移除舊條目。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.TooManyRows",
+    "description": null,
+    "english": "- There are {userCsvRowCount} rows in your CSV file. The maximum number of rows allowed is {maxCsvRowCount}.",
+    "translation": "- CSV 檔案有 {userCsvRowCount} 行，行數上限為 {maxCsvRowCount} 行。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailedToLoadCurrentTable",
+    "description": null,
+    "english": "- An error occurred while loading the current localization table. Please try again in a few minutes.",
+    "translation": "- 載入目前在地化表格時發生錯誤，請過幾分鐘後重試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.AddLanguagesFailure",
+    "description": null,
+    "english": "- An error occurred while adding new supported language(s). Please try again in a few minutes.",
+    "translation": "- 新增支援語言時發生錯誤，請過幾分鐘後重試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailureToUploadTable",
+    "description": null,
+    "english": "- An error occurred while updating the table. Please try uploading the CSV file again in a few minutes.",
+    "translation": "- 更新表格時發生錯誤，請過幾分鐘後再重新上傳 CSV 檔案。",
     "isDeprecated": false
   }
 ]
