@@ -432,6 +432,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "只有 13 岁及以上的用户可以通过一次性验证码登录。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -10208,12 +10216,28 @@
     "isDeprecated": false
   },
   {
+    "namespace": "InGame.ConnectionError",
+    "key": "Queued",
+    "description": "<DEPRECATED, can be deleted as of 1-9-23>",
+    "english": "Requested experience is full. Position in queue is N...",
+    "translation": "请求加入的体验已满员。排队位置为 N...",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.Groups",
     "key": "Message.UnkownError",
     "description": null,
     "english": "An unknown error occurred.",
     "translation": "发生未知错误。",
     "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.NotificationScript2",
+    "key": "UINavigation",
+    "description": "Unused - missed the .Text suffix in the key",
+    "english": "Backslash to toggle",
+    "translation": "按下“\\”切换",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.SettingsHub",
@@ -10240,11 +10264,67 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporarySuspension2",
+    "description": "Slightly edited text for voice exit beta",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice until",
+    "translation": "根据用户举报，我们认为你在使用语音聊天时的行为违反了我们的社区规则。我们暂时终止你使用语音聊天的权利，结束时间为",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.MicUseSuspended",
+    "description": null,
+    "english": "Microphone use Suspended",
+    "translation": "麦克风使用已禁用",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.CommonUI",
     "key": "Label.FAQWebviewTitle",
     "description": "Title of the FAQ webview",
     "english": "Voice FAQ",
     "translation": "语音常见问题",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.MicOff",
+    "description": "Shown to the user when their microphone is off",
+    "english": "Mic Off",
+    "translation": "麦克风关闭",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.MicOnRecording",
+    "description": "Shown to the user when their microphone is on and recording",
+    "english": "Mic On (recording audio)",
+    "translation": "麦克风开启（正在录音）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.Return",
+    "description": "DEPRECATED - do not use",
+    "english": "Return to",
+    "translation": "返回",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnFallback",
+    "description": null,
+    "english": "Return to previous experience",
+    "translation": "返回至上一个体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnTo",
+    "description": null,
+    "english": "Return to \"{placeName}\"",
+    "translation": "返回至“{placeName}”",
     "isDeprecated": false
   },
   {
@@ -10749,6 +10829,46 @@
     "description": "Displayed in the language selection dropdown to indicate that the user has selected {LanguageName} as their experience language. The (Original) tag is an indicator that {LanguageName} is the source language of the experience.",
     "english": "{LanguageName} (Original)",
     "translation": "{LanguageName}（原始语言）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.MicOnRecording",
+    "description": "Shown to the user when their microphone is on and recording",
+    "english": "Mic On (recording audio)",
+    "translation": "麦克风开启（正在录音）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.MicOff",
+    "description": "Shown to the user when their microphone is off",
+    "english": "Mic Off",
+    "translation": "麦克风关闭",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.Copied",
+    "description": "Text to be shown when share invite link has been copied to clipboard",
+    "english": "Copied",
+    "translation": "已复制",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "QuickActions.SelfView",
+    "description": null,
+    "english": "Self View",
+    "translation": "个人视图",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "QuickActions.Camera",
+    "description": null,
+    "english": "Camera",
+    "translation": "摄像头",
     "isDeprecated": false
   },
   {
@@ -14209,6 +14329,14 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "请通过身份验证程序启用两步验证以帮助保护您的帐户。您可以通过前往{linkStartSettings}帐户设置{linkEndSettings}来进行操作。如果您的帐户已被入侵， 那么 Roblox 可能无法复原你的帐户并恢复帐户价值，包括丢失的道具和虚拟货币等。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
@@ -14467,7 +14595,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "我同意 Roblox 出于审核和安全用途并改良安全工具而收集、使用并存储我的音频录音。",
     "isDeprecated": false
   },
@@ -14475,7 +14603,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "点按“启用”，即表示我同意 Roblox 出于审核和安全用途并改良安全工具而收集、使用并存储我的音频录音。",
     "isDeprecated": false
   },
@@ -16059,15 +16187,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "与虚拟形象聊天需要开启摄像头",
     "isDeprecated": false
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "无法与虚拟形象聊天",
     "isDeprecated": false
   },
@@ -16075,7 +16203,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "与虚拟形象聊天",
     "isDeprecated": false
   },
@@ -16083,7 +16211,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "前往你的设置，允许 Roblox 使用你的摄像头。",
     "isDeprecated": false
   },
@@ -16099,7 +16227,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暂时无法使用，请稍后重试。",
     "isDeprecated": false
   },
@@ -16107,7 +16235,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暂时无法使用，请稍后重试。",
     "isDeprecated": false
   },
@@ -16572,7 +16700,63 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "13 岁以下的用户不能使用一次性验证码登录。",
+    "translation": "只有 13 岁及以上的用户可以通过一次性验证码登录。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "请返回并选择其他登录方式来登录一下帐户。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "如果你的电子邮件已通过验证，那么我们会将一次性验证码发送至该邮箱。请输入发送至一下电子邮件地址的验证码：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "更改电子邮件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "返回登录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.ContactList",
+    "key": "Label.Outgoing",
+    "description": "Label to indicate that the record was an outgoing call. The user placed a call to another individual.",
+    "english": "Outgoing",
+    "translation": "拨出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.ContactList",
+    "key": "Label.Incoming",
+    "description": "Label to indicate that the record was an incoming call. The user received and answered this call from another individual.",
+    "english": "Incoming",
+    "translation": "拨入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.ContactList",
+    "key": "Label.Missed",
+    "description": "Label to indicate that the record was a missing call. The user received this call from another individual but did not answer the call.",
+    "english": "Missed",
+    "translation": "未接听",
     "isDeprecated": false
   }
 ]

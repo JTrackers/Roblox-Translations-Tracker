@@ -800,6 +800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "只有 13 歲以上的使用者可以使用一次性代碼登入。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12915,7 +12923,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "我同意 Roblox 為審查和安全用途並改良安全工具而收集、使用及儲存我的錄音。",
     "isDeprecated": false
   },
@@ -12923,7 +12931,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "點擊「啟用」即代表我同意 Roblox 為審查和安全用途並改良安全工具而收集、使用及儲存我的錄音。",
     "isDeprecated": false
   },
@@ -16317,6 +16325,14 @@
     "description": null,
     "english": "Tradable",
     "translation": "可交易",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMore",
+    "description": null,
+    "english": "See More",
+    "translation": "查看更多",
     "isDeprecated": false
   },
   {
@@ -35200,6 +35216,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Inventory",
+    "key": "Heading.Marketplace",
+    "description": null,
+    "english": "Marketplace",
+    "translation": "市集",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AssetTypes",
     "key": "Label.Accessories",
     "description": null,
@@ -53804,7 +53828,7 @@
     "key": "Action.Back",
     "description": null,
     "english": "Back",
-    "translation": "背面",
+    "translation": "返回",
     "isDeprecated": false
   },
   {
@@ -71195,7 +71219,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "我同意 Roblox 為審查和安全用途並改良安全工具而收集、使用及儲存我的錄音。",
     "isDeprecated": false
   },
@@ -71203,7 +71227,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "點擊「啟用」即代表我同意 Roblox 為審查和安全用途並改良安全工具而收集、使用及儲存我的錄音。",
     "isDeprecated": false
   },
@@ -78564,7 +78588,7 @@
     "key": "Label.Back",
     "description": "back button",
     "english": "Back",
-    "translation": "背面",
+    "translation": "返回",
     "isDeprecated": false
   },
   {
@@ -86995,15 +87019,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "虛擬人偶聊天需要攝影機",
     "isDeprecated": true
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "無法使用虛擬人偶聊天",
     "isDeprecated": true
   },
@@ -87011,7 +87035,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "虛擬人偶聊天",
     "isDeprecated": true
   },
@@ -87019,7 +87043,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "前往您的設定並允許 Roblox 使用您的攝影機。",
     "isDeprecated": true
   },
@@ -87035,7 +87059,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暫時無法使用，請稍後再試。",
     "isDeprecated": true
   },
@@ -87043,7 +87067,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暫時無法使用，請稍後再試。",
     "isDeprecated": true
   },
@@ -87284,7 +87308,7 @@
     "key": "Action.Back",
     "description": null,
     "english": "Back",
-    "translation": "背面",
+    "translation": "返回",
     "isDeprecated": false
   },
   {
@@ -92480,6 +92504,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.RequiredTriggers",
+    "description": "Error displayed to user when they haven't selected a trigger. A trigger is an event that a user wants to know about in the future when it happens.",
+    "english": "Required. Select one or more triggers to save changes.",
+    "translation": "必選。選擇一個或更多觸發點即可儲存變更。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -93064,6 +93096,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "返回登入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "變更電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.Resend",
+    "description": null,
+    "english": "Resend",
+    "translation": "重新傳送",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "驗證碼已傳送",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -93123,7 +93187,7 @@
     "namespace": "Notifications.VirtualEvent",
     "key": "Stream.Elapsed.Title",
     "description": "Message displayed on virtual event notification title when a virtual event is over.",
-    "english": "Event Ended: {title}",
+    "english": "Ended: {title}",
     "translation": "活動已結束：{title}",
     "isDeprecated": false
   },
@@ -93157,6 +93221,62 @@
     "description": "Button to exit out of sign out modal",
     "english": "Cancel",
     "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOut",
+    "description": "Button to take user to sign out confirmation modal",
+    "english": "Sign Out",
+    "translation": "登出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOutOfSession",
+    "description": "Button to sign user out of selected session",
+    "english": "Sign Out of Session",
+    "translation": "登出作業",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.CurrentlySignedIn",
+    "description": "Explanation of what the session management feature displays to the user",
+    "english": "These are all the places you're currently signed into your Roblox account.",
+    "translation": "以下是所有目前登入 Roblox 帳號的地方。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.YouWillBeSignedOut",
+    "description": "Text to confirm user wants to sign out of the selected session",
+    "english": "You will be signed out of the selected session. Are you sure?",
+    "translation": "您將會從選擇的作業登出。確定？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.WhereYoureSignedIn",
+    "description": "Header for the entire session management feature",
+    "english": "Where You're Signed In",
+    "translation": "您登入的地方",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.SignOutOfSession",
+    "description": "Header for sign out confirmation modal",
+    "english": "Sign Out of Session",
+    "translation": "登出作業",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.YourSession",
+    "description": "Header for modal that displays session information",
+    "english": "Your Session",
+    "translation": "您的作業",
     "isDeprecated": false
   }
 ]

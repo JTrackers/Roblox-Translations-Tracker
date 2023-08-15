@@ -800,6 +800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "Seuls les utilisateurs de 13 et plus peuvent se connecter avec un code unique.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12931,7 +12939,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "Je consens à ce que Roblox recueille, utilise et conserve mon enregistrement vocal à des fins de modération et de sécurité et pour améliorer nos outils de sécurité.",
     "isDeprecated": false
   },
@@ -12939,7 +12947,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "En cliquant sur activer, je consens à ce que Roblox collecte, utilise et stocke mon enregistrement vocal à des fins de modération et de sécurité et pour améliorer nos outils de sécurité.",
     "isDeprecated": false
   },
@@ -16333,6 +16341,14 @@
     "description": null,
     "english": "Tradable",
     "translation": "Échangeable",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMore",
+    "description": null,
+    "english": "See More",
+    "translation": "Afficher plus",
     "isDeprecated": false
   },
   {
@@ -35205,6 +35221,14 @@
     "description": null,
     "english": "Shoes",
     "translation": "Chaussures",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Inventory",
+    "key": "Heading.Marketplace",
+    "description": null,
+    "english": "Marketplace",
+    "translation": "Marketplace",
     "isDeprecated": false
   },
   {
@@ -71179,7 +71203,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "Je consens à ce que Roblox recueille, utilise et conserve mon enregistrement vocal à des fins de modération et de sécurité et pour améliorer nos outils de sécurité.",
     "isDeprecated": false
   },
@@ -71187,7 +71211,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "En cliquant sur activer, je consens à ce que Roblox collecte, utilise et stocke mon enregistrement vocal à des fins de modération et de sécurité et pour améliorer nos outils de sécurité.",
     "isDeprecated": false
   },
@@ -87235,15 +87259,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "Discuter avec des avatars requiert une caméra",
     "isDeprecated": true
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "Chat avec avatars non disponible",
     "isDeprecated": true
   },
@@ -87251,7 +87275,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "Discuter avec des avatars",
     "isDeprecated": true
   },
@@ -87259,7 +87283,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "Aller dans tes paramètres pour permettre à Roblox d'utiliser la caméra.",
     "isDeprecated": true
   },
@@ -87275,7 +87299,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "Cette fonctionnalité est temporairement indisponible. Essayer plus tard.",
     "isDeprecated": true
   },
@@ -87283,7 +87307,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "Cette fonctionnalité est temporairement indisponible. Essayer plus tard.",
     "isDeprecated": true
   },
@@ -92736,6 +92760,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.RequiredTriggers",
+    "description": "Error displayed to user when they haven't selected a trigger. A trigger is an event that a user wants to know about in the future when it happens.",
+    "english": "Required. Select one or more triggers to save changes.",
+    "translation": "Requis. Sélectionnez un ou plusieurs déclencheurs pour enregistrer les modifications.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -93320,6 +93352,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "Revenir à la connexion",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.LearnMoreOneTimeCode",
+    "description": null,
+    "english": "Learn more about One-Time Code",
+    "translation": "En savoir plus sur le Code à usage unique",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "Changer d'email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelp",
+    "description": null,
+    "english": "A one time code was sent to your email if it is verified on your account. Enter the code we sent to:",
+    "translation": "Un code à usage unique vient d'être envoyé à ton email si celui-ci est vérifié sur ton compte. Entre le code que nous venons de t'envoyer :",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.Resend",
+    "description": null,
+    "english": "Resend",
+    "translation": "Renvoyer",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "Code envoyé",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -93379,7 +93459,7 @@
     "namespace": "Notifications.VirtualEvent",
     "key": "Stream.Elapsed.Title",
     "description": "Message displayed on virtual event notification title when a virtual event is over.",
-    "english": "Event Ended: {title}",
+    "english": "Ended: {title}",
     "translation": "Événement terminé : {title}",
     "isDeprecated": false
   },
@@ -93413,6 +93493,62 @@
     "description": "Button to exit out of sign out modal",
     "english": "Cancel",
     "translation": "Annuler",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOut",
+    "description": "Button to take user to sign out confirmation modal",
+    "english": "Sign Out",
+    "translation": "Déconnexion",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOutOfSession",
+    "description": "Button to sign user out of selected session",
+    "english": "Sign Out of Session",
+    "translation": "Se déconnecter de la session",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.CurrentlySignedIn",
+    "description": "Explanation of what the session management feature displays to the user",
+    "english": "These are all the places you're currently signed into your Roblox account.",
+    "translation": "Ce sont tous les endroits où vous êtes actuellement connecté à votre compte Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.YouWillBeSignedOut",
+    "description": "Text to confirm user wants to sign out of the selected session",
+    "english": "You will be signed out of the selected session. Are you sure?",
+    "translation": "Vous serez déconnecté.e de la session sélectionnée. Vous êtes sûr.e ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.WhereYoureSignedIn",
+    "description": "Header for the entire session management feature",
+    "english": "Where You're Signed In",
+    "translation": "Où vous êtes connecté",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.SignOutOfSession",
+    "description": "Header for sign out confirmation modal",
+    "english": "Sign Out of Session",
+    "translation": "Se déconnecter de la session",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.YourSession",
+    "description": "Header for modal that displays session information",
+    "english": "Your Session",
+    "translation": "Votre session",
     "isDeprecated": false
   }
 ]

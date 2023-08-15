@@ -800,6 +800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "只有 13 岁及以上的用户可以通过一次性验证码登录。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12356,7 +12364,7 @@
     "key": "Label.TwoStepVerificationSingleMethodDescription",
     "description": null,
     "english": "Add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. You can only enable one of the following options at a time.",
-    "translation": "除了你的密码外，在登录、帐户恢复和大额度交易时使用两步验证，让你的帐户获得更多一层的保护。请注意：下列选项一次只能启用一种。",
+    "translation": "在登录、帐户恢复和大额度交易时使用两步验证，让你的帐户获得更多一层的保护。下列选项一次只能启用一种。",
     "isDeprecated": false
   },
   {
@@ -12484,7 +12492,7 @@
     "key": "Label.AuthenticatorDisabledHelpText",
     "description": null,
     "english": "Download an app on your phone to generate unique security codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "能在你手机生成唯一验证码的应用。我们建议使用 Google 身份验证器、微软身份验证器和 Twilio Authy 等应用。",
+    "translation": "在手机上下载能生成唯一安全码的应用。我们建议使用 Google 身份验证器、微软身份验证器和 Twilio Authy 等应用。",
     "isDeprecated": false
   },
   {
@@ -12521,6 +12529,30 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.UserCannotTrade",
+    "description": null,
+    "english": "You do not have permission to trade.",
+    "translation": "你没有交易权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.EnableMicrophone",
+    "description": "Similar usage to Description.CommunityStandards",
+    "english": "This setting allows you to {startLink}Chat with your Voice{endLink} in Roblox experiences.",
+    "translation": "此设置可以让你在 Roblox 体验中使用{startLink}语音聊天{endLink}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.EnableCamera",
+    "description": "Similar usage to Description.CommunityStandards",
+    "english": "This setting allows you to {startLink}Chat as your Avatar{endLink} in Roblox Experiences.",
+    "translation": "此设置可以让你在 Roblox 体验中使用{startLink}虚拟形象聊天{endLink}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.ImplicitConsentVoiceCollectionNoLink",
     "description": "Similar to Label.ImplicitConsentVoiceCollection with no link",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
@@ -12533,6 +12565,38 @@
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
     "translation": "我同意 Roblox 仅出于审核和安全用途收集、使用并存储我的音频录音。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentCamera",
+    "description": null,
+    "english": "I consent to Roblox’s temporary use of my facial movements to animate my avatar’s face.",
+    "translation": "我同意 Roblox 暂时将我的脸部动作用于虚拟形象的脸部动画。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LearnMoreAboutFacialAnimationPrivacy",
+    "description": null,
+    "english": "Learn More about Facial Animation Privacy",
+    "translation": "进一步了解脸部动画隐私。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RedDotAudio",
+    "description": "🔴 The red dot indicates that Roblox is recording audio.",
+    "english": "{redDot} The red dot indicates that Roblox is recording audio.",
+    "translation": "{redDot} 红点表示 Roblox 正在录制音频。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.GreenDotCamera",
+    "description": "🟢 The green dot indicates that the app is using your camera.",
+    "english": "{greenDot} The green dot indicates that the app is using your camera.",
+    "translation": "{greenDot} 绿点表示应用程序正在使用摄像头。",
     "isDeprecated": false
   },
   {
@@ -12585,10 +12649,18 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhosePrivateServerICanJoin",
+    "description": null,
+    "english": "People create private servers to control who can play in an experience with them. You can prevent this account from following links into private servers.",
+    "translation": "用户可以通过私人服务器控制谁可以和自己在一个体验中游玩，你可以禁止此帐户使用私人服务器链接。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.WhosePrivateServerICanJoin",
     "description": null,
     "english": "Whose private servers can this account join through links?",
-    "translation": "我可以通过链接加入谁的私人服务器？",
+    "translation": "此帐户可以通过链接加入谁的私人服务器？",
     "isDeprecated": false
   },
   {
@@ -12601,10 +12673,194 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.TurnOnLowerSecurity2SVMethod",
+    "description": null,
+    "english": "Turning on a new 2-Step Verification method will disable 2-Step Verification via Authenticator app, our most secure verification method. We strongly do not recommend this. Are you sure? ",
+    "translation": "开启新的两步验证方式将会停用我们最安全的身份验证器两步验证。我们不建议你做出此修改。是否确定继续？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhoCanInvitePrivateServersV2",
+    "description": null,
+    "english": "Who can make me a member of their private server?",
+    "translation": "谁可以让我成为他们私人服务器的成员？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanInvitePrivateServerV2",
+    "description": null,
+    "english": "If you’re a member of a private server, you can access it any time. You can control who’s automatically allowed to make you a member.",
+    "translation": "如果你是私人服务器的成员，你可以随时访问并进入。你可以控制自动允许你成为会员的人员权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructionsWeb",
+    "description": null,
+    "english": "This will delete your contact data from across all your synced devices.",
+    "translation": "此操作将会删除你所有同步设备中的联系人数据。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhoseCanInvitePrivateServerV3",
+    "description": null,
+    "english": "Who can make me a member of their private server?",
+    "translation": "谁能让我成为他的私人服务器成员？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanInvitePrivateServerV3",
+    "description": null,
+    "english": "If you’re a member of a private server, you can access it any time. You can control who’s automatically allowed to make you a member.",
+    "translation": "如果你是私人服务器的成员，你可以随时访问并进入。你可以控制自动允许你成为会员的人员权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhosePrivateServerICanJoinV2",
+    "description": null,
+    "english": "People create private servers to control who can play in an experience with them. You can prevent this account from following links into private servers.",
+    "translation": "用户可以通过私人服务器控制谁可以和自己在一个体验中游玩，你可以禁止此帐户使用私人服务器链接。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhosePrivateServerICanJoinV2",
+    "description": null,
+    "english": "Whose private servers can this account join through links?",
+    "translation": "此帐户可以通过链接加入谁的私人服务器？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowersV2",
+    "description": null,
+    "english": "Friends, users I follow, and my followers",
+    "translation": "好友、我关注的用户和粉丝",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowingV2",
+    "description": null,
+    "english": "Friends and users I follow",
+    "translation": "好友和我关注的用户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhoCanInvitePrivateServerV3",
+    "description": null,
+    "english": "Who can make me a member of their private server?",
+    "translation": "谁能让我成为他的私人服务器成员？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityWarning",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don’t share your security codes with anyone. This can include things like texting your code, screensharing, etc. Do not change security settings at someone else's request. Roblox will never ask you for your codes or to change settings to prove account ownership.",
+    "translation": "{boldStart}重要信息：{boldEnd}请不要以短信、屏幕分享的方式与他人分享安全码。请不要按照他人的指示更改安全设置。Roblox 不会为了确认你的帐户所有权而像向你索取安全码或让你更改设置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}重要信息：{boldEnd}请不要与任何人分享安全码。Roblox 不会以短信、屏幕分享的方式向你索要安全码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they don't have an account email",
+    "english": "You must provide and verify your email before you can delete your PIN.",
+    "translation": "你必须先提供并验证电子邮件，才能删除 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified email",
+    "english": "You must verify your email before you can delete your PIN.",
+    "translation": "你必须先验证电子邮件，才能删除 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can add a PIN.",
+    "translation": "你必须先提供并验证你父母的电子邮件，才能添加 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can delete your PIN.",
+    "translation": "你必须先提供并验证你父母的电子邮件，才能删除 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can delete your PIN.",
+    "translation": "你必须先验证你父母的电子邮件，才能删除 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can add a PIN.",
+    "translation": "你必须先验证你父母的电子邮件，才能添加 PIN 码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.ChangeEmailDisablePinWarning",
+    "description": "modal body when users attempt to change their email with pin enabled",
+    "english": "You must disable parent PIN in Parental Controls to change your email. ",
+    "translation": "你必须在“家长控制”中停用父母 PIN 码，才能更改你的电子邮件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ChatWithYourVoice",
+    "description": "DUPLICATE",
+    "english": "This setting allows you to {linkStart}Chat with your Voice{linkEnd} in Roblox experiences.",
+    "translation": "此设置可以让你在 Roblox 体验中使用{linkStart}语音聊天{linkEnd}。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ChatFeatures",
+    "description": null,
+    "english": "Chat Features",
+    "translation": "聊天功能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.SpendingLimit",
     "description": null,
     "english": "Spending Limit:",
     "translation": "支出限额:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContactsV2",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}Verify your phone number to unlock more features.",
+    "translation": "Roblox 会使用你的联系人信息帮助你们在 Roblox 上找到彼此。{linkStart}了解更多{linkEnd}{lineBreak}请验证你的手机号码以解锁更多功能。",
     "isDeprecated": false
   },
   {
@@ -15365,6 +15621,14 @@
     "description": null,
     "english": "No",
     "translation": "否",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMore",
+    "description": null,
+    "english": "See More",
+    "translation": "查看更多",
     "isDeprecated": false
   },
   {
@@ -46920,6 +47184,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "InGame.NotificationScript2",
+    "key": "UINavigation",
+    "description": "Unused - missed the .Text suffix in the key",
+    "english": "Backslash to toggle",
+    "translation": "按下“\\”切换",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.ChinaPayment",
     "key": "Heading.Error",
     "description": null,
@@ -46957,6 +47229,30 @@
     "description": "This is currently only for Luobu",
     "english": "Please moderate your entertainment and make rational consumption",
     "translation": "请调节您的娱乐活动并进行合理的消耗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.Return",
+    "description": "DEPRECATED - do not use",
+    "english": "Return to",
+    "translation": "返回",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnFallback",
+    "description": null,
+    "english": "Return to previous experience",
+    "translation": "返回至上一个体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnTo",
+    "description": null,
+    "english": "Return to \"{placeName}\"",
+    "translation": "返回至“{placeName}”",
     "isDeprecated": false
   },
   {
@@ -68937,6 +69233,14 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "请通过身份验证程序启用两步验证以帮助保护您的帐户。您可以通过前往{linkStartSettings}帐户设置{linkEndSettings}来进行操作。如果您的帐户已被入侵， 那么 Roblox 可能无法复原你的帐户并恢复帐户价值，包括丢失的道具和虚拟货币等。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
@@ -69587,7 +69891,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "我同意 Roblox 出于审核和安全用途并改良安全工具而收集、使用并存储我的音频录音。",
     "isDeprecated": false
   },
@@ -69595,7 +69899,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "点按“启用”，即表示我同意 Roblox 出于审核和安全用途并改良安全工具而收集、使用并存储我的音频录音。",
     "isDeprecated": false
   },
@@ -85443,15 +85747,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "与虚拟形象聊天需要开启摄像头",
     "isDeprecated": true
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "无法与虚拟形象聊天",
     "isDeprecated": true
   },
@@ -85459,7 +85763,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "与虚拟形象聊天",
     "isDeprecated": true
   },
@@ -85467,7 +85771,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "前往你的设置，允许 Roblox 使用你的摄像头。",
     "isDeprecated": true
   },
@@ -85483,7 +85787,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暂时无法使用，请稍后重试。",
     "isDeprecated": true
   },
@@ -85491,7 +85795,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "此功能暂时无法使用，请稍后重试。",
     "isDeprecated": true
   },
@@ -90576,6 +90880,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.RequiredTriggers",
+    "description": "Error displayed to user when they haven't selected a trigger. A trigger is an event that a user wants to know about in the future when it happens.",
+    "english": "Required. Select one or more triggers to save changes.",
+    "translation": "必填。选择一个或多个触发器以保存更改。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -91108,7 +91420,7 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "13 岁以下的用户不能使用一次性验证码登录。",
+    "translation": "只有 13 岁及以上的用户可以通过一次性验证码登录。",
     "isDeprecated": false
   },
   {
@@ -91136,6 +91448,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "请返回并选择其他登录方式来登录一下帐户。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "如果你的电子邮件已通过验证，那么我们会将一次性验证码发送至该邮箱。请输入发送至一下电子邮件地址的验证码：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "更改电子邮件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "返回登录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "更改电子邮件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.Resend",
+    "description": null,
+    "english": "Resend",
+    "translation": "重新发送",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "验证码已发送",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.VirtualEvent",
     "key": "Push.Ongoing.Title",
     "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
@@ -91155,7 +91523,7 @@
     "namespace": "Notifications.VirtualEvent",
     "key": "Stream.Elapsed.Title",
     "description": "Message displayed on virtual event notification title when a virtual event is over.",
-    "english": "Event Ended: {title}",
+    "english": "Ended: {title}",
     "translation": "活动结束时间：{title}",
     "isDeprecated": false
   },

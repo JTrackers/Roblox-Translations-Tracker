@@ -800,6 +800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "ワンタイムコードでのログインは13歳以上のユーザーに限られます。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -11860,7 +11868,7 @@
     "key": "Heading.SecurityKey",
     "description": null,
     "english": "Security Keys (Very Secure)",
-    "translation": "ウェブ上のみのセキュリティキー（セキュリティレベル：高）",
+    "translation": "セキュリティキー（セキュリティレベル：高）",
     "isDeprecated": false
   },
   {
@@ -11876,7 +11884,7 @@
     "key": "Label.SecurityKey",
     "description": null,
     "english": "Supported on web browsers, iPhone, and iPad. A hardware security key or device’s biometrics like fingerprint or facial recognition.",
-    "translation": "ハードウェアセキュリティキーか指紋や顔認証などのデバイスの生体認証。",
+    "translation": "ウェブブラウザ、iPhone、iPadでサポートされています。指紋や顔認識などのハードウェアセキュリティキーまたはデバイスの生体認証です。",
     "isDeprecated": false
   },
   {
@@ -12931,7 +12939,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "内容規制と安全上の理由、当社の安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
@@ -12939,8 +12947,24 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "有効化をクリックすることで、内容規制と安全上の理由、当社の安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.TwoStepDisableAdditionalWarningAuthenticator",
+    "description": null,
+    "english": "This action will make your account less secure. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "この動作をするとアカウントの安全性が低下します。アカウントが危険にさらされた場合、Robloxがアカウントの復元や失くなってしまったアイテムの回復、バーチャル通貨の払い戻しはいたしかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DisableAuthenticator.Acknowledge",
+    "description": null,
+    "english": "I acknowledge this message",
+    "translation": "このメッセージを承認します",
     "isDeprecated": false
   },
   {
@@ -16297,10 +16321,34 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Tradeable",
+    "description": null,
+    "english": "Tradeable",
+    "translation": "取引可能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.LimitedUHoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "購入後、アイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Tradable",
     "description": null,
     "english": "Tradable",
     "translation": "取引可能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMore",
+    "description": null,
+    "english": "See More",
+    "translation": "もっと見る",
     "isDeprecated": false
   },
   {
@@ -25680,6 +25728,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Support",
+    "key": "AppealAccount",
+    "description": null,
+    "english": "Appeal Account",
+    "translation": "アカウントについて異議申し立て",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.AppealContent",
+    "description": null,
+    "english": "Appeal Content",
+    "translation": "コンテンツについて異議申し立て",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Response.InvalidAssetID",
+    "description": null,
+    "english": "Please enter a valid asset ID",
+    "translation": "有効なアセットIDを入力",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.AppealAccount",
+    "description": null,
+    "english": "Appeal Account",
+    "translation": "アカウントについて異議申し立て",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VotingPanel",
     "key": "Label.EmailVerifiedTitle",
     "description": null,
@@ -26417,6 +26497,22 @@
   },
   {
     "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Bullying",
+    "description": null,
+    "english": "Bullying",
+    "translation": "いじめ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.CheatingAndExploiting",
+    "description": null,
+    "english": "Cheating/Exploiting",
+    "translation": "不正行為・悪用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
     "key": "AbuseReason.Dating",
     "description": null,
     "english": "Dating",
@@ -26425,10 +26521,26 @@
   },
   {
     "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.DirectingOffPlatform",
+    "description": null,
+    "english": "Offsite Links",
+    "translation": "外部リンク",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
     "key": "AbuseReason.Other",
     "description": null,
     "english": "Other",
     "translation": "その他",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.AskingPII",
+    "description": null,
+    "english": "Personal Question",
+    "translation": "個人情報の収集",
     "isDeprecated": false
   },
   {
@@ -26445,6 +26557,22 @@
     "description": null,
     "english": "Swearing",
     "translation": "汚い言葉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Error.FieldRequired",
+    "description": null,
+    "english": "This field is required.",
+    "translation": "この項目は必須です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Error.MaxLength.AbuseReporterComment",
+    "description": null,
+    "english": "Please limit your comment to under {maxLength} characters.",
+    "translation": "コメントを {maxLength} 文字未満にしてください。",
     "isDeprecated": false
   },
   {
@@ -35109,6 +35237,14 @@
     "description": null,
     "english": "Shoes",
     "translation": "靴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Inventory",
+    "key": "Heading.Marketplace",
+    "description": null,
+    "english": "Marketplace",
+    "translation": "マーケットプレイス",
     "isDeprecated": false
   },
   {
@@ -57244,7 +57380,7 @@
     "key": "Label.AbuseType.DirectingUsersOffPlatform.Note",
     "description": null,
     "english": "Roblox does not permit the use of off-site links of any kind. Links to Guilded, YouTube, Facebook, Discord, Twitter, and Twitch must be wrapped in the applicable Policy API or listed in the Social Networks and Social Links settings of your profile or experience description page. Links that appear in locations where the API cannot be deployed - such as text chat - are prohibited.",
-    "translation": "Robloxではいかなる種類のサイト外リンクの使用は禁止されています。Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
+    "translation": "Robloxではいかなる種類の外部リンクの使用も禁止されています。Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -70361,6 +70497,54 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "認証システムを使った2段階認証を有効化",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "これは{linkStart}アカウント設定{linkEnd}でできます。アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "アカウントを保護するには認証システムを使って2段階認証を有効化してください。これは{linkStartSettings}アカウント設定{linkEndSettings}でできます。{lineBreak}{lineBreak}アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。詳しくは当社の {linkStartHelp}ヘルプページ{linkEndHelp}をごらんください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "アカウントを保護しましょう！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "アカウントを保護するには認証システムを使って2段階認証を有効化してください。これは{linkStartSettings}アカウント設定{linkEndSettings}でできます。アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
@@ -71011,7 +71195,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "内容規制と安全上の理由、当社の安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
@@ -71019,7 +71203,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "有効化をクリックすることで、内容規制と安全上の理由、当社の安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
@@ -87043,15 +87227,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "アバターでチャットを使用するにはカメラが必要です",
     "isDeprecated": true
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "アバターでチャットが利用できません",
     "isDeprecated": true
   },
@@ -87059,7 +87243,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "アバターでチャット",
     "isDeprecated": true
   },
@@ -87067,7 +87251,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "Roblox がカメラを使用できるようにするには設定へ行ってください。",
     "isDeprecated": true
   },
@@ -87083,7 +87267,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "この機能は一時的に利用できません。後ほどお試しください。",
     "isDeprecated": true
   },
@@ -87091,7 +87275,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "この機能は一時的に利用できません。後ほどお試しください。",
     "isDeprecated": true
   },
@@ -91912,6 +92096,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VirtualEvents",
+    "key": "UnfollowEvent",
+    "description": "unsubscribe from notifications about when an event is starting",
+    "english": "Unfollow Event",
+    "translation": "イベントのフォロー解除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NetworkError",
+    "description": null,
+    "english": "Something went wrong. Please try again later",
+    "translation": "問題が発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.Settings",
     "description": "Title for page that controls settings across Creator Dashboard",
@@ -92552,6 +92752,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.RequiredTriggers",
+    "description": "Error displayed to user when they haven't selected a trigger. A trigger is an event that a user wants to know about in the future when it happens.",
+    "english": "Required. Select one or more triggers to save changes.",
+    "translation": "必須です。変更を保存するにはトリガーを1つ以上選択してください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -93105,6 +93313,14 @@
   },
   {
     "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "こんにちは。{lineBreak}{lineBreak}お子様が没入型のユーザーが生成した3D世界で想像力を発揮したり、制作したり、一緒に遊んだりできるネット上のエンターテイメント・プラットフォーム、Roblox（ロブロックス）でアカウントを作成するリクエストをしました。{lineBreak}{lineBreak}認証コード: {code}{lineBreak}{lineBreak}アカウント作成にあたり、お子様が当社にユーザーネーム、生年月日、保護者のメールアドレスを提供しています。アカウント作成の手続きを完了するためには、お子様がRobloxを使用することへの保護者の方の同意が必要です。{lineBreak}{lineBreak}以下のコードを入力して新規登録の手続きを完了して、お子様がRobloxを使用することに同意してください。コードを入力することによって、仲裁条項と {linkTagWithPrivacyPolicyLinkStart}プライバシーポリシー{linkTagEnd}を含む {linkTagWithTermsLinkStart}Roblox Terms利用規約{linkTagEnd}に同意し、お子様によるRobloxの使用を監督し、これに責任を持ち、必要に応じてこのサービスの利用に関わるお子様の個人データの処理に同意するするものとみなされます。{lineBreak}{lineBreak}{boldStart}Roblox保護者ガイド{boldEnd}{lineBreak}{lineBreak}当社では、保護者の方に当プラットフォームについて知っていただき、お子様がRobloxでポジティブな体験ができるようにするためのアドバイスをまとめた「保護者ガイド」をお読みくださるようお勧めしています。{lineBreak}{lineBreak}{boldStart}プライバシー{boldEnd}{lineBreak}{lineBreak}こちらのページ https://www.roblox.com/support からカスタマーサービスに連絡して、いつでもお子様のアカウントを削除することができます。あなたのメールアドレスは、いかなる目的でも使用されることはなく、第三者に開示されたり、お子様から集めたその他のいかなる個人情報ともリンクさせたりすることはありません。詳しくは、プライバシーポリシーをご覧ください。{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak} Roblox チームより",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
     "key": "Response.ChooseAnotherMethod",
     "description": null,
     "english": "Please go back to choose another method to log into the following accounts.",
@@ -93113,10 +93329,66 @@
   },
   {
     "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "お持ちのアカウントのメールアドレスが認証済みの場合、1回限り有効なコードが送信されています。ログインするには、以下に送信したコードを入力してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
     "key": "Label.ChangeEmail",
     "description": null,
     "english": "Change email",
     "translation": "メールアドレスを変更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "ログインに戻る",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "メールアドレスを変更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.Resend",
+    "description": null,
+    "english": "Resend",
+    "translation": "再送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "コードが送信されました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.StripeIntegration",
+    "key": "Stripe.OneTimePurchase.Disclosure",
+    "description": null,
+    "english": "By submitting payment information you acknowledge that you are at least 18 years old, and that you agree to [Roblox Terms](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and [revocation policy](https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy).",
+    "translation": "支払い情報を送信することによって、あなたが18歳以上であることを認め、仲裁条項と [キャンセルポリシー](https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy)を含む [Roblox利用規約](https://en.help.roblox.com/hc/ja/articles/115004647846-Roblox-Terms-of-Use) と [プライバシーポリシー](https://en.help.roblox.com/hc/ja/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-)に同意したとみなされます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.StripeIntegration",
+    "key": "Stripe.RecurringPurchase.Disclosure",
+    "description": null,
+    "english": "I acknowledge that I am at least 18 years old, and that I agree to [Roblox Terms](https://www.roblox.com/info/terms) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and revocation policy. I consent to the immediate performance of the contract and acknowledge that I thereby lose my right of withdrawal. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
+    "translation": "私は18歳以上であり、仲裁条項とキャンセルポリシーを含む [Roblox利用規約](https://en.help.roblox.com/hc/ja/articles/115004647846) と [プライバシーポリシー](https://en.help.roblox.com/hc/ja/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-)に同意します。この契約の即時履行に同意し、これを撤回する権利を失うことを認めます。このページに表示してある合計金額が毎月、カードに課金することを許可します。 [支払い設定](https://www.roblox.com/my/account#!/billing)でいつでもキャンセルできます。",
     "isDeprecated": false
   },
   {
@@ -93163,7 +93435,7 @@
     "namespace": "Notifications.VirtualEvent",
     "key": "Stream.Elapsed.Title",
     "description": "Message displayed on virtual event notification title when a virtual event is over.",
-    "english": "Event Ended: {title}",
+    "english": "Ended: {title}",
     "translation": "イベント終了日: {title}",
     "isDeprecated": false
   },
@@ -93197,6 +93469,62 @@
     "description": "Button to exit out of sign out modal",
     "english": "Cancel",
     "translation": "キャンセル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOut",
+    "description": "Button to take user to sign out confirmation modal",
+    "english": "Sign Out",
+    "translation": "サインアウト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOutOfSession",
+    "description": "Button to sign user out of selected session",
+    "english": "Sign Out of Session",
+    "translation": "セッションからサインアウト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.CurrentlySignedIn",
+    "description": "Explanation of what the session management feature displays to the user",
+    "english": "These are all the places you're currently signed into your Roblox account.",
+    "translation": "こちらは現在、Robloxアカウントでサインインしているすべての場所です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Description.YouWillBeSignedOut",
+    "description": "Text to confirm user wants to sign out of the selected session",
+    "english": "You will be signed out of the selected session. Are you sure?",
+    "translation": "選択したセッションからサインアウトします。いいですか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.WhereYoureSignedIn",
+    "description": "Header for the entire session management feature",
+    "english": "Where You're Signed In",
+    "translation": "サインインしている場所",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.SignOutOfSession",
+    "description": "Header for sign out confirmation modal",
+    "english": "Sign Out of Session",
+    "translation": "セッションからサインアウト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.YourSession",
+    "description": "Header for modal that displays session information",
+    "english": "Your Session",
+    "translation": "セッション",
     "isDeprecated": false
   }
 ]

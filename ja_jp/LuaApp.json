@@ -432,6 +432,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpUnder13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "ワンタイムコードでのログインは13歳以上のユーザーに限られます。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -4337,10 +4345,42 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Tradeable",
+    "description": null,
+    "english": "Tradeable",
+    "translation": "取引可能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.LimitedUHoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "購入後、アイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Tradable",
     "description": null,
     "english": "Tradable",
     "translation": "取引可能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemsOnSale",
+    "description": "A heading for a section showing a list of item that the user has put up for sale",
+    "english": "Items On Sale",
+    "translation": "販売中のアイテム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.AvailableItems",
+    "description": "A heading for a section showing a list of items that the user can put up for sale, but which are currently not being sold.",
+    "english": "Available Items",
+    "translation": "利用可能なアイテム",
     "isDeprecated": false
   },
   {
@@ -6941,6 +6981,14 @@
     "description": "Message when QRCode fails to load",
     "english": "Failed to load.",
     "translation": "ロードできませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Message.QRNofificationRequest",
+    "description": "The message from the QR code notification banner to inform X sent you a friend request from your QR code",
+    "english": "sent you a friend request from your QR code",
+    "translation": "さんがQRコードから友達リクエストを送信しました",
     "isDeprecated": false
   },
   {
@@ -12548,7 +12596,7 @@
     "key": "Label.AbuseType.DirectingUsersOffPlatform.Note",
     "description": null,
     "english": "Roblox does not permit the use of off-site links of any kind. Links to Guilded, YouTube, Facebook, Discord, Twitter, and Twitch must be wrapped in the applicable Policy API or listed in the Social Networks and Social Links settings of your profile or experience description page. Links that appear in locations where the API cannot be deployed - such as text chat - are prohibited.",
-    "translation": "Robloxではいかなる種類のサイト外リンクの使用は禁止されています。Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
+    "translation": "Robloxではいかなる種類の外部リンクの使用も禁止されています。Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -14937,6 +14985,54 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "認証システムを使った2段階認証を有効化",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "これは{linkStart}アカウント設定{linkEnd}でできます。アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "アカウントを保護するには認証システムを使って2段階認証を有効化してください。これは{linkStartSettings}アカウント設定{linkEndSettings}でできます。{lineBreak}{lineBreak}アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。詳しくは当社の {linkStartHelp}ヘルプページ{linkEndHelp}をごらんください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "アカウントを保護しましょう！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "アカウントを保護するには認証システムを使って2段階認証を有効化してください。これは{linkStartSettings}アカウント設定{linkEndSettings}でできます。アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
@@ -15195,7 +15291,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "内容規制と安全上の理由、当社の安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
@@ -15203,7 +15299,7 @@
     "namespace": "Verification.Identity",
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
-    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "有効化をクリックすることで、内容規制と安全上の理由、当社の安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
@@ -16827,15 +16923,15 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
-    "english": "Chat with Avatars Requires Camera",
+    "english": "Chat as your Avatar Requires Camera",
     "translation": "アバターでチャットを使用するにはカメラが必要です",
     "isDeprecated": false
   },
   {
     "namespace": "Feature.FaceChat",
     "key": "Heading.NotAvailable",
-    "description": "Generic message displayed when Chat with Avatars is unavailable on this device.",
-    "english": "Chat with Avatars Unavailable",
+    "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
+    "english": "Chat as your Avatar Currently Unavailable",
     "translation": "アバターでチャットが利用できません",
     "isDeprecated": false
   },
@@ -16843,7 +16939,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
-    "english": "Chat with Avatars",
+    "english": "Chat as your Avatar",
     "translation": "アバターでチャット",
     "isDeprecated": false
   },
@@ -16851,7 +16947,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
-    "english": "Go to your settings to allow Roblox to use the camera.",
+    "english": "Visit your device settings to allow Roblox to access your camera.",
     "translation": "Roblox がカメラを使用できるようにするには設定へ行ってください。",
     "isDeprecated": false
   },
@@ -16867,7 +16963,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "この機能は一時的に利用できません。後ほどお試しください。",
     "isDeprecated": false
   },
@@ -16875,7 +16971,7 @@
     "namespace": "Feature.FaceChat",
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
-    "english": "This feature is temporarily not available. Please try later.",
+    "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
     "translation": "この機能は一時的に利用できません。後ほどお試しください。",
     "isDeprecated": false
   },
@@ -17545,6 +17641,22 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalTitle",
+    "description": "The title of a modal that prompts the user to allow events to send push notifications",
+    "english": "Event Push Notifications",
+    "translation": "イベントのプッシュ通知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalBody",
+    "description": "The body text for the modal that prompts the user to allow events to send them push notifications",
+    "english": "Get updates about events, even when you’re not on Roblox.",
+    "translation": "Robloxを使っていないときでも興味のあるイベントのアップデートをゲット。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "NotNowButton",
     "description": "Button text for the \"Enable Events Notifications\" modal to allow the user to close the modal",
     "english": "Not Now",
@@ -17593,10 +17705,26 @@
   },
   {
     "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "お持ちのアカウントのメールアドレスが認証済みの場合、1回限り有効なコードが送信されています。ログインするには、以下に送信したコードを入力してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
     "key": "Label.ChangeEmail",
     "description": null,
     "english": "Change email",
     "translation": "メールアドレスを変更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.BackToLogin",
+    "description": null,
+    "english": "Back to Login",
+    "translation": "ログインに戻る",
     "isDeprecated": false
   },
   {
