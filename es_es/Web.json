@@ -564,7 +564,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "No puedes iniciar sesión con esta cuenta. Inicia sesión en la aplicación de LuoBu.",
+    "translation": "La cuenta no puede iniciar sesión.",
     "isDeprecated": false
   },
   {
@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "Hola, {accountName}:{lineBreak}{lineBreak}Has desactivado la verificación en dos pasos con correo electrónico para tu cuenta de Roblox. Para realizar algunas acciones como iniciar sesión, ya no será necesario ingresar un código de seguridad.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hola, {accountName}:{lineBreak}{lineBreak}Desactivaste la verificación en dos pasos con correo electrónico para tu cuenta de Roblox.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "Estimado padre de familia:{lineBreak}{lineBreak}Se ha desactivado la verificación en dos pasos con correo electrónico para la cuenta de Roblox de su hijo(a), {accountName}. Para realizar algunas acciones como iniciar sesión, ya no será necesario ingresar un código de seguridad.{lineBreak}{lineBreak}Roblox",
+    "translation": "Estimado padre de familia: {lineBreak}{lineBreak}Se desactivó la verificación en dos pasos con correo electrónico para la cuenta Roblox de su hijo(a), {accountName}.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1497,10 +1497,42 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "Verificación en dos pasos activada para {accountName}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Label.SmsMediaType",
     "description": "Name of SMS media type",
     "english": "SMS",
     "translation": "SMS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Hola,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} es tu código de verificación en dos pasos de Roblox para {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Introduce el código de arriba en la pantalla de Verificación en dos pasos para seguir revirtiendo los cambios de la cuenta. El código caducará en 15 minutos.{paragraphEnd}{paragraphStart}Esta solicitud se recibió de {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Gracias,{lineBreak}{emphasisStart}El equipo de Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "No respondas a este correo electrónico directamente. Estás recibiendo esta notificación porque se intentó revertir los cambios de la cuenta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "Solicitud para reveritr la cuenta de Roblox: {accountName}",
     "isDeprecated": false
   },
   {
@@ -3573,6 +3605,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "Aceptar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Ir a Contenido principal",
     "isDeprecated": false
   },
   {
@@ -7660,7 +7700,7 @@
     "key": "Description.SuccessDialogMessage",
     "description": null,
     "english": "Saved Successfully!",
-    "translation": "¡Guardado!",
+    "translation": "¡Guardado correctamente!",
     "isDeprecated": false
   },
   {
@@ -10740,7 +10780,7 @@
     "key": "Label.RecommendedContact",
     "description": null,
     "english": "Do you want to be recommended to Roblox users who have your phone number?",
-    "translation": "¿Quieres que te recomendemos a otros usuarios verificados que tienen tu número de teléfono?",
+    "translation": "¿Quieres que te recomendemos a otros usuarios de Roblox que tienen tu número de teléfono?",
     "isDeprecated": false
   },
   {
@@ -10748,7 +10788,7 @@
     "key": "Description.RecommendedContact",
     "description": null,
     "english": "When using Roblox, users with your phone number will be able to see your name as saved in their device.",
-    "translation": "Cuando los usuarios te vean como una recomendación de contacto, se les mostrará tu nombre de contacto tal y como está almacenado en su dispositivo en lugar de mostrar tu nombre de usuario de Roblox.",
+    "translation": "Al usar Roblox, los usuarios con tu número de teléfono podrán ver tu nombre tal y como se guarda en sus dispositivos.",
     "isDeprecated": false
   },
   {
@@ -33432,6 +33472,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InviterNotHereError",
+    "description": "Error shown when a user joins an invite link and the inviter is no longer in that experience",
+    "english": "Inviter Not Here",
+    "translation": "La persona que te invitó no está aquí",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InviterNotHereError",
+    "description": "Description for the error shown when a user joins an invite link and the inviter is no longer in that experience",
+    "english": "The inviter has left the experience. Would you still like to join {experienceName}?",
+    "translation": "La persona que te invitó salió de la experiencia. ¿Todavía quieres unirte a {experienceName}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InviteExpiredError",
+    "description": "Error shown when a user joins an invite link that is expired",
+    "english": "Invite Link Expired",
+    "translation": "El enlace de la invitación caducó",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InviteExpiredError",
+    "description": "Description for the error shown when a user joins an invite link that is expired",
+    "english": "The invite link has expired. Would you still like to join {experienceName}?",
+    "translation": "El enlace de la invitación caducó. ¿Todavía quieres unirte a {experienceName}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.ExperienceDoesNotExist",
+    "description": "Error shown when a user tries to join an invite link to an experience that no longer exists",
+    "english": "This experience no longer exists.",
+    "translation": "Esta experiencia ya no existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Label.InvalidLinkError",
+    "description": "Error shown when user tries to open a deep link that doesn't exist",
+    "english": "Invalid Link",
+    "translation": "Enlace no válido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Description.InvalidLinkError",
+    "description": "Description for the error shown when a user tries to open a deep link that doesn't exist",
+    "english": "This link doesn't exist.",
+    "translation": "Este enlace no existe.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PlacesList",
     "key": "Action.SeeAll",
     "description": null,
@@ -42749,6 +42845,14 @@
     "description": null,
     "english": "Ally request sent to {group}",
     "translation": "Solicitud de aliado enviada a {group}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Heading.GroupSearchCategoryClansGuilds",
+    "description": "Group search category name \"Clans & Guilds\" for the groups/join page",
+    "english": "Clans & Guilds",
+    "translation": "Clanes y gremios",
     "isDeprecated": false
   },
   {
@@ -65868,7 +65972,7 @@
     "key": "Title.ReadOpenId",
     "description": null,
     "english": "View your Roblox User ID to know who you are.",
-    "translation": "Leer ID de usuario",
+    "translation": "Visualiza tu ID de usuario para saber quién eres.",
     "isDeprecated": false
   },
   {
@@ -65876,7 +65980,7 @@
     "key": "Title.ReadProfile",
     "description": null,
     "english": "View your username, display name, user avatar and profile link.",
-    "translation": "Leer perfil",
+    "translation": "Visualiza tu nombre de usuario, nombre de visualización, avatar de usuario y enlace de perfil.",
     "isDeprecated": false
   },
   {
@@ -65884,7 +65988,7 @@
     "key": "Title.ReadEmail",
     "description": null,
     "english": "View your verified email address.",
-    "translation": "Leer correo electrónico",
+    "translation": "Visualiza tu dirección de correo electrónico verificada.",
     "isDeprecated": false
   },
   {
@@ -65892,7 +65996,7 @@
     "key": "Title.ReadVerification",
     "description": null,
     "english": "View whether your account is age-verified or not. Roblox does not store or share the personal information you submitted during age verification.",
-    "translation": "Leer verificación",
+    "translation": "Comprueba si la edad está verificada para tu cuenta. Roblox no almacena o comparte la información personal que enviaste durante la verificación de edad.",
     "isDeprecated": false
   },
   {
@@ -65900,7 +66004,7 @@
     "key": "Description.ReadOpenId",
     "description": null,
     "english": "View your Roblox User ID to know who you are.",
-    "translation": "Detalles de tu openID",
+    "translation": "Visualiza tu ID de usuario de Roblox para saber quién eres.",
     "isDeprecated": false
   },
   {
@@ -65908,7 +66012,7 @@
     "key": "Description.ReadProfile",
     "description": null,
     "english": "View your username, display name, user avatar and profile link.",
-    "translation": "Enlace a tu página de perfil e imagen",
+    "translation": "Visualiza tu nombre de usuario, nombre de visualización, avatar de usuario y enlace de perfil.",
     "isDeprecated": false
   },
   {
@@ -65916,7 +66020,7 @@
     "key": "Description.ReadEmail",
     "description": null,
     "english": "View your verified email address.",
-    "translation": "Tu dirección de correo electrónico",
+    "translation": "Visualiza tu dirección de correo electrónico verificada.",
     "isDeprecated": false
   },
   {
@@ -65924,7 +66028,7 @@
     "key": "Description.ReadVerification",
     "description": null,
     "english": "View whether your account is age-verified or not. Roblox does not store or share the personal information you submitted during age verification.",
-    "translation": "Tu información de verificación",
+    "translation": "Comprueba si la edad está verificada para tu cuenta. Roblox no almacena o comparte la información personal que enviaste durante la verificación de edad.",
     "isDeprecated": false
   },
   {
@@ -65972,7 +66076,7 @@
     "key": "Label.profile",
     "description": null,
     "english": "User Profile",
-    "translation": "Perfil",
+    "translation": "Perfil de usuario",
     "isDeprecated": false
   },
   {
@@ -65980,7 +66084,7 @@
     "key": "Label.email",
     "description": null,
     "english": "Email Address",
-    "translation": "Correo electrónico",
+    "translation": "Dirección de correo electrónico",
     "isDeprecated": false
   },
   {
@@ -65988,7 +66092,7 @@
     "key": "Label.verification",
     "description": null,
     "english": "Verification Status",
-    "translation": "Verificación",
+    "translation": "Estado de la verificación",
     "isDeprecated": false
   },
   {
@@ -66109,6 +66213,22 @@
     "description": null,
     "english": "Permissions will be granted for the following {targetPart}:",
     "translation": "Se otorgarán permisos para lo siguiente {targetPart}:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.RiskLevel",
+    "description": null,
+    "english": "Risk Level",
+    "translation": "Nivel de riesgo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Description.RequestAccessForTargetPart",
+    "description": "This is displayed to users on top of each target part grouping",
+    "english": "{applicationName} is requesting access to the following {targetPart} permissions:",
+    "translation": "{applicationName} está solicitando acceso a los siguientes permisos de {targetPart}:",
     "isDeprecated": false
   },
   {
@@ -67492,7 +67612,7 @@
     "key": "Error.Description.EmailCollision",
     "description": null,
     "english": "Your email address is already taken by another account registered on the application. Please change the email address on the other account and log into the application with it to make it available again.",
-    "translation": "Otra cuenta en la aplicación está utilizando este correo electrónico.",
+    "translation": "Tu dirección de correo electrónico ya está registrada en otra cuenta de la aplicación. Cambia la dirección de correo electrónico de la otra cuenta e inicia sesión en la aplicación con ella para que vuelva a estar disponible.",
     "isDeprecated": false
   },
   {
@@ -67516,7 +67636,7 @@
     "key": "Error.Description.RedirectToApplication",
     "description": null,
     "english": "An error happened, redirecting back...",
-    "translation": "Algo salió mal con la aplicación, redireccionando...",
+    "translation": "Se produjo un error. Redireccionando...",
     "isDeprecated": false
   },
   {
@@ -67564,7 +67684,7 @@
     "key": "Error.Description.TargetUnauthorizedAccess",
     "description": null,
     "english": "The page is out of date. Please try again.",
-    "translation": "Los permisos están desactualizados. Inténtalo de nuevo.",
+    "translation": "La página está desactualizada. Inténtelo de nuevo.",
     "isDeprecated": false
   },
   {
@@ -67580,7 +67700,7 @@
     "key": "Title.UnAuthorized",
     "description": null,
     "english": "Not logged in",
-    "translation": "No autorizado",
+    "translation": "Sin conexión",
     "isDeprecated": false
   },
   {
@@ -67604,7 +67724,7 @@
     "key": "Description.RedirectToApplication",
     "description": null,
     "english": "An error occurred, redirecting back...",
-    "translation": "Algo salió mal con la aplicación, redireccionando...",
+    "translation": "Se produjo un error. Redireccionando...",
     "isDeprecated": false
   },
   {
@@ -67976,6 +68096,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionMessageWithLink",
+    "description": null,
+    "english": "The {pageName} has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkStart}here{linkEnd}.",
+    "translation": "{pageName} se trasladó a Interfaz del creador. Puedes navegar a la página actualizada haciendo clic {linkStart}aquí{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.UserAgreementLinks",
     "key": "Link.TermsOfService",
     "description": null,
@@ -68029,6 +68157,62 @@
     "description": null,
     "english": "Send me notifications from",
     "translation": "Envíame notificaciones de",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Heading.Notifications",
+    "description": null,
+    "english": "Notifications",
+    "translation": "Notificaciones",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CustomizeNotifications",
+    "description": null,
+    "english": "Customize push notifications for all logged in devices.",
+    "translation": "Personaliza las notificaciones push para todos los dispositivos conectados.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationsDisabled",
+    "description": null,
+    "english": "You don't have {platform} notifications turned on for this device.",
+    "translation": "No tienes las notificaciones de {platform} activadas para este dispositivo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationDisabledWarning",
+    "description": null,
+    "english": "You won't be able to receive notifications on this device until you turn notifications on. ",
+    "translation": "No podrás recibir notificaciones en este dispositivo hasta que no actives las notificaciones. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.IOS",
+    "description": null,
+    "english": "iOS",
+    "translation": "iOS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.Android",
+    "description": null,
+    "english": "Android",
+    "translation": "Android",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Action.GotoSettings",
+    "description": null,
+    "english": "Go to Settings",
+    "translation": "Ir a Configuración",
     "isDeprecated": false
   }
 ]
