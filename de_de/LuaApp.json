@@ -260,7 +260,7 @@
     "key": "WeChat.ReputationScoreTooLow",
     "description": null,
     "english": "Since your Game Credit score is too low, you cannot use the Login functionality.",
-    "translation": "Dein Spielgutschrift ist zu niedrig, um die Anmeldefunktion zu verwenden.",
+    "translation": "Dein Spielguthaben ist zu niedrig, um die Anmeldefunktion zu verwenden.",
     "isDeprecated": true
   },
   {
@@ -276,7 +276,7 @@
     "key": "Tencent.ReputationScoreTooLow",
     "description": null,
     "english": "Since your Game Credit score is too low, you cannot use the Login functionality.",
-    "translation": "Dein Spielgutschrift ist zu niedrig, um die Anmeldefunktion zu verwenden.",
+    "translation": "Dein Spielguthaben ist zu niedrig, um die Anmeldefunktion zu verwenden.",
     "isDeprecated": false
   },
   {
@@ -292,7 +292,7 @@
     "key": "Response.TencentReputationScoreTooLow",
     "description": null,
     "english": "Your Game Credit score is <{var1} points. Based on your gameplay behavior, you cannot log into the app at this time.",
-    "translation": "Dein Spielgutschrift liegt unter {var1} Punkten. Aufgrund deines Spielverhaltens kannst du dich derzeit nicht in die App einloggen.",
+    "translation": "Dein Spielguthaben liegt unter {var1} Punkten. Aufgrund deines Spielverhaltens kannst du dich derzeit nicht in die App einloggen.",
     "isDeprecated": false
   },
   {
@@ -1333,6 +1333,14 @@
     "description": null,
     "english": "Offline",
     "translation": "Offline",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.Presence",
+    "key": "Label.Invisible",
+    "description": "For users who have explicitly chosen to appear offline",
+    "english": "Invisible",
+    "translation": "Unsichtbar",
     "isDeprecated": false
   },
   {
@@ -6064,6 +6072,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Text.NoFriends",
+    "description": null,
+    "english": "You haven't added any friends yet. To get started, find and add your friends on Roblox.",
+    "translation": "Du hast noch keine Freund:innen hinzugefügt. Um loszulegen, finde deine Freund:innen auf Roblox und füge sie hinzu.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -7572,7 +7588,7 @@
     "key": "Label.RobuxBalance",
     "description": "Balance : [quantity] Robux",
     "english": "Balance: {var1} Robux",
-    "translation": "Guthaben: {var1} Robux",
+    "translation": "Kontostand: {var1} Robux",
     "isDeprecated": false
   },
   {
@@ -7733,6 +7749,14 @@
     "description": "Button text for Join button on the Join Your Friends Tile.",
     "english": "Join",
     "translation": "Beitreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Heading.FriendVisited",
+    "description": null,
+    "english": "Friend Visited",
+    "translation": "Freund:in besucht",
     "isDeprecated": false
   },
   {
@@ -12228,7 +12252,7 @@
     "key": "unused",
     "description": "Warning title of the moderation prompt",
     "english": "Warning",
-    "translation": "Warnung",
+    "translation": "Achtung",
     "isDeprecated": true
   },
   {
@@ -13349,6 +13373,14 @@
     "description": "Cheats and Exploits note specific to Game Engine exploits",
     "english": "Roblox does not permit the use of third-party software to modify the client.",
     "translation": "Roblox erlaubt nicht die Nutzung von Software Dritter zur Änderung des Clients.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback",
+    "description": null,
+    "english": "Chargeback",
+    "translation": "Rückbuchung",
     "isDeprecated": false
   },
   {
@@ -15840,6 +15872,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.Email2SVUpsell",
+    "description": "Header text for the email-2SV upsell prompt.",
+    "english": "Boost Your Account Security!",
+    "translation": "Erhöhe deine Kontosicherheit!",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -16220,7 +16260,7 @@
     "key": "Text.RemainingBalance",
     "description": "Footer text at the bottom of the modal, use to tell the user their balance after the purchase. The robux amount will be shown after the text.",
     "english": "Your balance after this transaction will be",
-    "translation": "Nach dieser Transaktion beträgt dein Guthaben",
+    "translation": "Nach dieser Transaktion beträgt dein Kontostand",
     "isDeprecated": false
   },
   {
@@ -16244,7 +16284,7 @@
     "key": "Text.RemainingBalanceV2",
     "description": null,
     "english": "Your balance after this transaction will be {robux}",
-    "translation": "Nach dieser Transaktion beträgt dein Guthaben {robux}",
+    "translation": "Nach dieser Transaktion beträgt dein Kontostand {robux}",
     "isDeprecated": false
   },
   {
@@ -16308,7 +16348,7 @@
     "key": "Text.RemainingBalance",
     "description": "Text shown on the footer explaining how much robux will be used + how much will be left over after the purchase added to the balance.",
     "english": "The remaining {robux} will be credited to your balance.",
-    "translation": "Die verbleibenden {robux} werden deinem Guthaben gutgeschrieben.",
+    "translation": "Die verbleibenden {robux} werden deinem Kontostand gutgeschrieben.",
     "isDeprecated": false
   },
   {
@@ -17384,6 +17424,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Platformer",
+    "description": "Genre Tile Title - Platformer",
+    "english": "Platformer",
+    "translation": "Plattformen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Puzzle",
+    "description": "Genre Tile Title - Puzzle",
+    "english": "Puzzle",
+    "translation": "Rätsel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Survival",
+    "description": "Genre Tile Title - Survival",
+    "english": "Survival",
+    "translation": "Survival",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ContactMethodUpsell",
     "key": "Action.AddYourEmail",
     "description": null,
@@ -17652,7 +17716,7 @@
     "key": "Text.RobuxCredit",
     "description": "Text informing the user, the rest of the robux that was not used to purchase the item is now in their account.",
     "english": "{robux} has been credited to your balance.",
-    "translation": "{robux} wurden deinem Guthaben gutgeschrieben.",
+    "translation": "{robux} wurden deinem Kontostand gutgeschrieben.",
     "isDeprecated": false
   },
   {
@@ -17684,7 +17748,7 @@
     "key": "Text.BalanceNow",
     "description": null,
     "english": "Your balance is now {robux}.",
-    "translation": "Dein Guthaben beträgt nun {robux}.",
+    "translation": "Dein Kontostand beträgt nun {robux}.",
     "isDeprecated": false
   },
   {
@@ -18356,7 +18420,7 @@
     "key": "Text.CurrentBalance",
     "description": null,
     "english": "Current Balance",
-    "translation": "Aktuelles Guthaben",
+    "translation": "Aktueller Kontostand",
     "isDeprecated": false
   },
   {
@@ -18813,6 +18877,78 @@
     "description": "Header text for the two-step verification challenge modal.",
     "english": "2-Step Verification Required",
     "translation": "Verifizierung in 2 Schritten erforderlich",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Action.Next",
+    "description": "Next button to advance FTUX slideshow",
+    "english": "Next",
+    "translation": "Weiter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Action.Skip",
+    "description": "Skip Button to advance FTUX slideshow",
+    "english": "Skip",
+    "translation": "Überspringen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Message.LeaveDialog",
+    "description": "FTUX's custom leave game dialog",
+    "english": "Are you sure you want to leave the experience? You can access the tutorial again from “More”.",
+    "translation": "Bist du sicher, dass du dieses Erlebnis verlassen möchtest? Du kannst dieses Tutorial erneut unter \"Mehr\" besuchen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Heading.Header",
+    "description": "Slideshow Header",
+    "english": "Welcome to Roblox",
+    "translation": "Willkommen bei Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Label.Footer",
+    "description": "slideshow footer",
+    "english": "We hope you have fun!",
+    "translation": "Wir wünschen dir viel Spaß!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Heading.Perspective",
+    "description": "Header for perspective slide",
+    "english": "Switch Your Perspective",
+    "translation": "Perspektive wechseln",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Description.Perspective.Body1",
+    "description": "Perspective description body 1",
+    "english": "Try to switch between first and third-person perspective by clicking the thumbstick on your <b>right</b> controller.",
+    "translation": "Versuche, zwischen der Perspektive der ersten und der dritten Person zu wechseln, indem du auf den Thumbstick des <b>rechten</b> Controllers klickst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Description.Perspective.Body2",
+    "description": "Perspective description body 2",
+    "english": "By default, your perspective in Roblox is set to third-person, but you can choose to experience Roblox immersively in first-person.",
+    "translation": "Standardmäßig ist deine Perspektive auf Roblox auf die dritte Person gesetzt, aber du kannst Roblox auch immersiv in erster Person erleben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.VRFTUX",
+    "key": "Heading.Movement",
+    "description": "Header for movement slide",
+    "english": "Movement Control",
+    "translation": "Bewegungssteuerung",
     "isDeprecated": false
   }
 ]
