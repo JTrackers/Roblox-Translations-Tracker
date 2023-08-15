@@ -28172,7 +28172,7 @@
     "key": "FBXDynamicHeadImporter.EmptyAttribute1",
     "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
     "english": "Failed importing dynamic head: Empty value found for Extra Attribute named \"%1\".",
-    "translation": "Error al importar la cabecera dinámica: Se ha encontrado un valor vacío para el atributo extra llamado\"%1\".",
+    "translation": "Error al importar la cabecera dinámica. Se encontró un valor vacío para el atributo extra llamado \"%1\".",
     "isDeprecated": false
   },
   {
@@ -28772,7 +28772,7 @@
     "key": "BetaFeatures.DebuggerV2Title",
     "description": null,
     "english": "Intuitive Debugger",
-    "translation": "Depurador Lua intuitivo",
+    "translation": "Depurador intuitivo",
     "isDeprecated": false
   },
   {
@@ -29333,6 +29333,70 @@
     "description": null,
     "english": "Animation clip editor will have a \"Create from video\" option in the Import menu to transfer 3D pose from a video to an avatar.",
     "translation": "El Editor de clips de animación tendrá una opción \"Crear desde un video\" en el menú Importar para transferir la pose 3D de un video a un avatar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.RootFaceJointExtraChars1",
+    "description": "Error message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.  Do not translate \"RootFaceJoint\".  This is a particular string that is expected to be in the FBX file.",
+    "english": "Failed importing FACS Control data: \"%1\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
+    "translation": "Error al importar datos de control FACS: \"%1\" debe ser exactamente \"RootFaceJoint\" sin espacios o guiones bajos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.FrameExtraChars1",
+    "description": "Warning message when importing FBX file.  Do not translate \"Frame#\" and leave \"#\" as is.  These refer to specific computer-readable strings.",
+    "english": "Ignoring \"%1\" because it contains underscores or spaces.  Must be of the form \"Frame#\" where \"#\" is an integer with no spaces or underscores.",
+    "translation": "Se ignora \"%1\" porque contiene guiones bajos o espacios. Debe ser de la forma \"Frame#\" donde \"#\" es un entero sin espacios o guiones bajos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.HasFramesNoRootFaceJoint1",
+    "description": "Warning message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.  Do not translate \"Frame#\" or \"RootFaceJoint\".",
+    "english": "Found \"Frame#\" attributes in mesh \"%1\" but no \"RootFaceJoint\" attribute.  No FACS mapping will be created for this mesh.",
+    "translation": "Se encontraron atributos \"Frame#\" en la malla \"%1\", pero no se encontró ningún atributo \"RootFaceJoint\". No se asignará FACS para esta malla.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.WarnEmptyAttribute1",
+    "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
+    "english": "Empty value found for Extra Attribute named \"%1\".  Ignoring this.",
+    "translation": "Valor vacío encontrado para el atributo extra llamado \"%1\". Se ignorará.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoAnimationTimeline",
+    "description": "Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing FACS Control data: Animation does not exist.",
+    "translation": "Error al importar datos de control FACS: la animación no existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.UploadError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video uploading.",
+    "translation": "Se produjo un error al cargar el video.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ProcessError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video processing.",
+    "translation": "Se produjo un error al procesar el video.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ValidationError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "The file does not meet our requirement.",
+    "translation": "El archivo no cumple con nuestros requisitos.",
     "isDeprecated": false
   },
   {
@@ -34060,7 +34124,7 @@
     "key": "AssetConfigPackagePermissions.UserOwnedWarning",
     "description": null,
     "english": "Users you share with will always have access to the current and previous versions of this package. Removing collaborators will discontinue their access to newer versions of the package.",
-    "translation": " Los usuarios con quienes lo compartes tendrán siempre acceso a la versión actual y pasada de este paquete. Si eliminas a los colaboradores, se suspenderá el acceso a las versiones más recientes del paquete.",
+    "translation": "Los usuarios con quienes lo compartes tendrán siempre acceso a la versión actual y pasada de este paquete. Si eliminas a los colaboradores, se suspenderá su acceso a las versiones más recientes del paquete.",
     "isDeprecated": false
   },
   {
@@ -38125,6 +38189,94 @@
     "description": null,
     "english": "Private - Specific Experiences",
     "translation": "Privado - Experiencias específicas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaInfoShortLink",
+    "description": null,
+    "english": "What's my limit?",
+    "translation": "¿Cuál es mi límite?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaRemaining2",
+    "description": null,
+    "english": "{remaining} Marketplace shares left through {date}.",
+    "translation": "{remaining} Compartir en el Mercado desde {date}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaExhausted1",
+    "description": null,
+    "english": "Sharing limit exceeded. Try again on {dateTime}.",
+    "translation": "Se superó el límite para compartir. Inténtalo de nuevo el {dateTime}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaUnavailable",
+    "description": null,
+    "english": "Marketplace sharing has been temporarily disabled.",
+    "translation": "Se desactivó temporalmente el modo Compartir en el Mercado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.MultipleLabelTooltip",
+    "description": null,
+    "english": "Not all roles have the same access; expand the group for details.",
+    "translation": "No todos los roles tienen el mismo acceso; expande el grupo para más detalles.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.LockedGroup",
+    "description": null,
+    "english": "To change access for the \"{roleName}\" role, visit the Configure Group page on the website.",
+    "translation": "Para cambiar el acceso para el rol \"{roleName}\", visit la página Configurar grupo en el sitio web.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.UserOwnedWarningAllVersions",
+    "description": null,
+    "english": "The user access granted here applies to all versions of this package.",
+    "translation": "El acceso de usuario concedido aquí se aplica a todas las versiones de este paquete.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedWarningAllVersions",
+    "description": null,
+    "english": "Group roles that have not been assigned in Group Configuration can be set here. Permissions set here affect all users with the group role for all versions of this package.",
+    "translation": "Los roles de grupo que no se han asignado en Configuración del grupo pueden establecerse aquí. Los permisos establecidos aquí afectan a todos los usuarios con el rol de grupo para todas las versiones de este paquete.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedTooltip",
+    "description": null,
+    "english": "The creator always has full access.",
+    "translation": "El creador siempre tiene acceso completo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogTitle",
+    "description": null,
+    "english": "Insert Tool",
+    "translation": "Insertar Herramienta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogText",
+    "description": null,
+    "english": "Put this tool into the starter pack?",
+    "translation": "¿Poner esta herramienta en el paquete de inicio?",
     "isDeprecated": false
   },
   {
@@ -48944,6 +49096,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Initializing",
+    "description": null,
+    "english": "Uploading video...",
+    "translation": "Cargando video...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Pending",
+    "description": null,
+    "english": "Preparing to create animation from video...",
+    "translation": "Preparando animación de un video...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Processing",
+    "description": null,
+    "english": "Creating animation from video. This may take a minute...",
+    "translation": "Creando animación de un video. Esto puede tardar un minuto...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.RequiresModeration",
+    "description": null,
+    "english": "Video requires moderation.",
+    "translation": "El video requiere moderación.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Error",
+    "description": null,
+    "english": "An unknown error occurred while processing the video.",
+    "translation": "Se produjo un error desconocido al procesar el video.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ModerationRejected",
+    "description": null,
+    "english": "Video was rejected due to moderation.",
+    "translation": "Se rechazó el video debido a moderación.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Success",
+    "description": null,
+    "english": "Success! Applying animation to avatar...",
+    "translation": "¡Hecho! Aplicando animación al avatar...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputTooLong",
+    "description": null,
+    "english": "Error: the video was too long. Please use a video less than 15 seconds long.",
+    "translation": "Error: el video es demasiado largo. Usa un video de menos de 15 segundos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputHasNoPerson",
+    "description": null,
+    "english": "Error: to person could be detected in the video.",
+    "translation": "Error: una persona puede ser detectada en el video.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputUnstable",
+    "description": null,
+    "english": "Error: the video was too unstable. Please use a more stable video.",
+    "translation": "Error: el video es demasiado inestable. Usa un video más estable.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.ConvertToPackage",
     "key": "Meta.PluginName",
     "description": null,
@@ -53676,7 +53908,7 @@
     "key": "BreakpointsWindow.WindowName",
     "description": null,
     "english": "Breakpoints",
-    "translation": "Ventana de puntos de interrupción",
+    "translation": "Puntos de interrupción",
     "isDeprecated": false
   },
   {
@@ -54140,7 +54372,7 @@
     "key": "Watch.FilterScopes",
     "description": null,
     "english": "Filter variables by scope",
-    "translation": "Filtrar por Ámbito",
+    "translation": "Filtrar variables por ámbito",
     "isDeprecated": false
   },
   {
@@ -54269,6 +54501,38 @@
     "description": null,
     "english": "The data type of a variable",
     "translation": "El tipo de datos de una variable",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Common.None",
+    "description": null,
+    "english": "None",
+    "translation": "Ninguno",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.LocalTooltip",
+    "description": null,
+    "english": "A local variable is accessible only within the block of code where it's declared",
+    "translation": "Una variable local es accesible solo dentro del bloque de código donde se declara",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.UpvalueTooltip",
+    "description": null,
+    "english": "An upvalue is a local variable that an inner function or loop uses",
+    "translation": "Un valor Upvalue es una variable local utilizada por una función interna o bucle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.GlobalTooltip",
+    "description": null,
+    "english": "A global variable is accessible from multiple blocks of code following where it's declared if the blocks are within the same script",
+    "translation": "Una variable global es accesible desde varios bloques de código que sigue donde se declara si los bloques están dentro del mismo script",
     "isDeprecated": false
   },
   {

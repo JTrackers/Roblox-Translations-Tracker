@@ -28172,7 +28172,7 @@
     "key": "FBXDynamicHeadImporter.EmptyAttribute1",
     "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
     "english": "Failed importing dynamic head: Empty value found for Extra Attribute named \"%1\".",
-    "translation": "다이내믹 헤드 가져오기 실패: 추가 속성 '%1'에 대한 빈 값이 있습니다.",
+    "translation": "다이내믹 헤드 가져오기 실패: 추가 속성 '%1'에 빈 값이 있습니다.",
     "isDeprecated": false
   },
   {
@@ -28772,7 +28772,7 @@
     "key": "BetaFeatures.DebuggerV2Title",
     "description": null,
     "english": "Intuitive Debugger",
-    "translation": "직관적인 Lua 디버거",
+    "translation": "직관적인 디버거",
     "isDeprecated": false
   },
   {
@@ -29333,6 +29333,70 @@
     "description": null,
     "english": "Animation clip editor will have a \"Create from video\" option in the Import menu to transfer 3D pose from a video to an avatar.",
     "translation": "애니메이션 클립 편집기의 가져오기 메뉴에 '비디오로부터 만들기' 옵션이 추가되어, 비디오에서 아바타로 3D 포즈를 전송할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.RootFaceJointExtraChars1",
+    "description": "Error message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.  Do not translate \"RootFaceJoint\".  This is a particular string that is expected to be in the FBX file.",
+    "english": "Failed importing FACS Control data: \"%1\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
+    "translation": "FACS 제어 데이터 가져오기 실패: '%1'은(는) 공백이나 밑줄 없이 정확히 'RootFaceJoint'여야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.FrameExtraChars1",
+    "description": "Warning message when importing FBX file.  Do not translate \"Frame#\" and leave \"#\" as is.  These refer to specific computer-readable strings.",
+    "english": "Ignoring \"%1\" because it contains underscores or spaces.  Must be of the form \"Frame#\" where \"#\" is an integer with no spaces or underscores.",
+    "translation": "밑줄이나 공백이 포함되어 있으므로 '%1'을(를) 무시합니다. 유형은 'Frame#'이어야 하며 '#'은 공백이나 밑줄이 없는 정수여야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.HasFramesNoRootFaceJoint1",
+    "description": "Warning message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.  Do not translate \"Frame#\" or \"RootFaceJoint\".",
+    "english": "Found \"Frame#\" attributes in mesh \"%1\" but no \"RootFaceJoint\" attribute.  No FACS mapping will be created for this mesh.",
+    "translation": "메시 '%1'에서 'Frame#' 속성은 찾았지만 'RootFaceJoint' 속성은 찾지 못했습니다. 이 메시에 대해 FACS 매핑이 생성되지 않습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.WarnEmptyAttribute1",
+    "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
+    "english": "Empty value found for Extra Attribute named \"%1\".  Ignoring this.",
+    "translation": "이름이 '%1'인 추가 속성에 빈 값이 있어 이를 무시합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoAnimationTimeline",
+    "description": "Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing FACS Control data: Animation does not exist.",
+    "translation": "FACS 제어 데이터 가져오기 실패: 애니메이션이 존재하지 않습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.UploadError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video uploading.",
+    "translation": "동영상 업로드 중 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ProcessError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "An error occurred during video processing.",
+    "translation": "동영상 처리 중 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkVideoImportErrors.ValidationError",
+    "description": "WIP feature: This error message will be revisited",
+    "english": "The file does not meet our requirement.",
+    "translation": "파일이 요구 사항을 충족하지 않습니다.",
     "isDeprecated": false
   },
   {
@@ -34060,7 +34124,7 @@
     "key": "AssetConfigPackagePermissions.UserOwnedWarning",
     "description": null,
     "english": "Users you share with will always have access to the current and previous versions of this package. Removing collaborators will discontinue their access to newer versions of the package.",
-    "translation": " 공유 받는 사용자는 항상 이 패키지의 현재 및 이전 버전에 액세스할 수 있습니다. 공동 작업자를 제거하면 최신 버전의 패키지에 대한 액세스가 중단됩니다.",
+    "translation": "공유하는 사용자들은 항상 이 패키지의 현재 및 이전 버전에 액세스할 수 있습니다. 공동 작업자를 제거하면 최신 버전의 패키지에 대한 액세스가 중단됩니다.",
     "isDeprecated": false
   },
   {
@@ -38125,6 +38189,94 @@
     "description": null,
     "english": "Private - Specific Experiences",
     "translation": "비공개 - 특정 체험",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaInfoShortLink",
+    "description": null,
+    "english": "What's my limit?",
+    "translation": "한도가 어떻게 되나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaRemaining2",
+    "description": null,
+    "english": "{remaining} Marketplace shares left through {date}.",
+    "translation": "{date}까지 {remaining}회의 마켓플레이스 공유가 남았습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaExhausted1",
+    "description": null,
+    "english": "Sharing limit exceeded. Try again on {dateTime}.",
+    "translation": "공유 한도를 초과했습니다. {dateTime}에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.DistributeMarketplaceQuotaUnavailable",
+    "description": null,
+    "english": "Marketplace sharing has been temporarily disabled.",
+    "translation": "마켓플레이스 공유가 일시적으로 비활성화되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.MultipleLabelTooltip",
+    "description": null,
+    "english": "Not all roles have the same access; expand the group for details.",
+    "translation": "모든 역할이 동일한 액세스 권한을 갖는 것은 아닙니다. 자세한 내용은 그룹을 확장해 확인하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.LockedGroup",
+    "description": null,
+    "english": "To change access for the \"{roleName}\" role, visit the Configure Group page on the website.",
+    "translation": "'{roleName}' 역할에 대한 액세스 권한을 변경하려면 웹사이트의 그룹 구성 페이지를 방문하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.UserOwnedWarningAllVersions",
+    "description": null,
+    "english": "The user access granted here applies to all versions of this package.",
+    "translation": "여기에서 부여된 사용자 액세스는 이 패키지의 모든 버전에 적용됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedWarningAllVersions",
+    "description": null,
+    "english": "Group roles that have not been assigned in Group Configuration can be set here. Permissions set here affect all users with the group role for all versions of this package.",
+    "translation": "그룹 구성에서 할당되지 않은 그룹 역할은 여기에서 설정할 수 있습니다. 여기에 설정된 권한은 이 패키지의 모든 버전에 대한 그룹 역할이 있는 모든 사용자에게 영향을 줍니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackagePermissions.GroupOwnedTooltip",
+    "description": null,
+    "english": "The creator always has full access.",
+    "translation": "크리에이터는 항상 전체 액세스 권한을 갖습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogTitle",
+    "description": null,
+    "english": "Insert Tool",
+    "translation": "삽입 도구",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "InsertTool.DialogText",
+    "description": null,
+    "english": "Put this tool into the starter pack?",
+    "translation": "이 도구를 스타터 팩에 넣을까요?",
     "isDeprecated": false
   },
   {
@@ -48944,6 +49096,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Initializing",
+    "description": null,
+    "english": "Uploading video...",
+    "translation": "비디오 업로드 중...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Pending",
+    "description": null,
+    "english": "Preparing to create animation from video...",
+    "translation": "비디오로부터 애니메이션을 만들기 위한 준비 중...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Processing",
+    "description": null,
+    "english": "Creating animation from video. This may take a minute...",
+    "translation": "비디오로부터 애니메이션을 만드는 중입니다. 1분 정도 걸릴 수 있습니다...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.RequiresModeration",
+    "description": null,
+    "english": "Video requires moderation.",
+    "translation": "비디오가 검열을 거쳐야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Error",
+    "description": null,
+    "english": "An unknown error occurred while processing the video.",
+    "translation": "비디오를 처리하는 중에 알 수 없는 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ModerationRejected",
+    "description": null,
+    "english": "Video was rejected due to moderation.",
+    "translation": "검열로 인해 동영상이 거부되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Success",
+    "description": null,
+    "english": "Success! Applying animation to avatar...",
+    "translation": "완료되었습니다! 아바타에 애니메이션을 적용하고 있습니다...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputTooLong",
+    "description": null,
+    "english": "Error: the video was too long. Please use a video less than 15 seconds long.",
+    "translation": "오류: 비디오가 너무 깁니다. 15초 미만의 비디오를 사용하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputHasNoPerson",
+    "description": null,
+    "english": "Error: to person could be detected in the video.",
+    "translation": "오류: 비디오에서 사람을 감지할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputUnstable",
+    "description": null,
+    "english": "Error: the video was too unstable. Please use a more stable video.",
+    "translation": "오류: 비디오가 불안정합니다. 안정적인 상태의 비디오를 사용하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.ConvertToPackage",
     "key": "Meta.PluginName",
     "description": null,
@@ -53676,7 +53908,7 @@
     "key": "BreakpointsWindow.WindowName",
     "description": null,
     "english": "Breakpoints",
-    "translation": "중단점 창",
+    "translation": "중단점",
     "isDeprecated": false
   },
   {
@@ -54140,7 +54372,7 @@
     "key": "Watch.FilterScopes",
     "description": null,
     "english": "Filter variables by scope",
-    "translation": "범위로 필터링",
+    "translation": "범위로 변수 필터링",
     "isDeprecated": false
   },
   {
@@ -54269,6 +54501,38 @@
     "description": null,
     "english": "The data type of a variable",
     "translation": "변수의 데이터 형식",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Common.None",
+    "description": null,
+    "english": "None",
+    "translation": "없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.LocalTooltip",
+    "description": null,
+    "english": "A local variable is accessible only within the block of code where it's declared",
+    "translation": "지역 변수는 선언된 코드 블록 내에서만 액세스할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.UpvalueTooltip",
+    "description": null,
+    "english": "An upvalue is a local variable that an inner function or loop uses",
+    "translation": "Upvalue는 내부 함수 또는 루프에서 사용하는 지역 변수입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "Watch.GlobalTooltip",
+    "description": null,
+    "english": "A global variable is accessible from multiple blocks of code following where it's declared if the blocks are within the same script",
+    "translation": "전역 변수는 블록들이 동일한 스크립트 내에 있는 경우, 선언된 후 여러 코드 블록에서 액세스할 수 있습니다.",
     "isDeprecated": false
   },
   {
