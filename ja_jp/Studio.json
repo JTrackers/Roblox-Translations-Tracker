@@ -1644,7 +1644,7 @@
     "key": "CalibrateDeviceScalingDialog.CalibrateDeviceScaling",
     "description": null,
     "english": "Calibrate Device Scaling",
-    "translation": "デバイスのスケーリングを調整",
+    "translation": "デバイスの拡大/縮小を調整",
     "isDeprecated": false
   },
   {
@@ -2004,7 +2004,7 @@
     "key": "EmulatorMainWidget.CalibratePhysicalScaling",
     "description": null,
     "english": "Calibrate Physical Scaling",
-    "translation": "物理スケーリングを調整",
+    "translation": "物理的な拡大/縮小を調整",
     "isDeprecated": false
   },
   {
@@ -4020,7 +4020,7 @@
     "key": "RBXMainWindow.CalibratePhysicalSizeScaling",
     "description": null,
     "english": "Calibrate Physical Size scaling for your screen",
-    "translation": "お使いのスクリーンに物理的なサイズのスケーリングを調整",
+    "translation": "お使いのスクリーンで物理的なサイズの拡大/縮小を調整",
     "isDeprecated": false
   },
   {
@@ -4028,7 +4028,7 @@
     "key": "RBXMainWindow.CalibrateScalingElps",
     "description": null,
     "english": "Calibrate scaling...",
-    "translation": "スケーリングを調整...",
+    "translation": "拡大/縮小を調整...",
     "isDeprecated": false
   },
   {
@@ -30028,7 +30028,7 @@
     "key": "BaseDataModel.MigrateOneUnionBody",
     "description": null,
     "english": "Do you want Studio to perform a one-time migration resizing one union to retain its original appearance?\n\nThe migration should only be used on content created under the old scaling behavior. In particular this means you should not use the migration on new content you've been working on under the Nonuniform Unions beta feature.",
-    "translation": "Studioで、元の外観を保持できるように1つのユニオンのサイズ変更をして一度だけの移行を実行しますか？\n\n移行は、古いスケーリング動作で作成されたコンテンツでのみ使用する必要があります。 特に、これはあなたが不均一ユニオンのベータ機能の下で取り組んでいる新しいコンテンツの移行には使用すべきではないことを意味します。",
+    "translation": "Studioで、元の外観を保持できるように1つのユニオンのサイズ変更をして一度だけの移行を実行しますか？\n\n移行は、古い拡大/縮小動作で作成されたコンテンツでのみ使用する必要があります。 特に、これはあなたが不均一ユニオンのベータ機能の下で取り組んでいる新しいコンテンツの移行には使用すべきではないことを意味します。",
     "isDeprecated": false
   },
   {
@@ -30044,7 +30044,7 @@
     "key": "BaseDataModel.MigrateUnionsBody1",
     "description": null,
     "english": "Do you want Studio to perform a one-time migration resizing %1 unions to retain their original appearance?\n\nThe migration should only be used on content created under the old scaling behavior. In particular this means you should not use the migration on new content you've been working on under the Nonuniform Unions beta feature.",
-    "translation": "Studioで、元の外観を保持できるように %1 個のユニオンのサイズ変更をして一度だけの移行を実行しますか？\n\n移行は、古いスケーリング動作で作成されたコンテンツでのみ使用する必要があります。 特に、これはあなたが不均一ユニオンのベータ機能の下で取り組んでいる新しいコンテンツの移行には使用すべきではないことを意味します。",
+    "translation": "Studioで、元の外観を保持できるように %1 個のユニオンのサイズ変更をして一度だけの移行を実行しますか？\n\n移行は、古い拡大/縮小動作で作成されたコンテンツでのみ使用する必要があります。 特に、これはあなたが不均一ユニオンのベータ機能の下で取り組んでいる新しいコンテンツの移行には使用すべきではないことを意味します。",
     "isDeprecated": false
   },
   {
@@ -32089,6 +32089,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "BetaFeature.SmoothVoxelsDescription",
+    "description": null,
+    "english": "Enable the terrain upgrade changing the way voxels are rendered to make them much smoother in cases where there were terracing issues and LOD artefacts before. (NOTE: Requires Upgrade Shorelines!)",
+    "translation": "棚田やLODアーティファクトの問題があった場合、地形のアップグレードを有効化することで、ボクセルがさらに平らになるようにレンダリングされるやり方を変えます。（注：海岸線のアップグレードが必要です！）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "BetaFeatures.ScriptEditorMultiCursorTitle",
     "description": null,
     "english": "Multi-Cursor Script Editing",
@@ -32105,6 +32113,22 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ExplorerFiltering.PropertyUnsupportedFields2",
+    "description": "User typed a search like Locked.What = true -- Locked does not have fields, like 'What'",
+    "english": "'%1' does not support fields, like '%2'",
+    "translation": "'%1' は '%2' のようなフィールドには対応していません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ExplorerFiltering.BackslashNotEscapingAnything",
+    "description": null,
+    "english": "backslash not escaping anything",
+    "translation": "バックスラッシュ（逆斜線）でエスケープができない",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ExplorerFiltering.InvalidTilde",
     "description": null,
     "english": "'%1' is invalid other than for '%2'",
@@ -32117,6 +32141,22 @@
     "description": null,
     "english": "unfinished quote, you forgot a %1",
     "translation": "引用が終了していません。 %1 を忘れています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ModelScaleTitle",
+    "description": null,
+    "english": "Scale factor for Models",
+    "translation": "モデルの拡大/縮小係数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.ModelScaleDescription",
+    "description": null,
+    "english": "Models now have a Scale property, and packages can be scaled without it counting as a modification.",
+    "translation": "モデルに拡大/縮小の属性が追加され、パッケージに変更を加えたとみなさずに拡大/縮小ができるようになりました。",
     "isDeprecated": false
   },
   {
@@ -50645,6 +50685,30 @@
     "description": null,
     "english": "Upgrade to Smooth Voxels",
     "translation": "スムーズ・ボクセルにアップグレード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainToolsV2",
+    "key": "UpgradeSmoothVoxels.Unavailable",
+    "description": null,
+    "english": "Upgrade Shorelines first to enable Smooth Voxels upgrading.",
+    "translation": "スムーズ・ボクセルのアップグレードをするには、まず海岸線をアップグレードしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainToolsV2",
+    "key": "UpgradeSmoothVoxels.Description",
+    "description": null,
+    "english": "Click Upgrade to make terrain smoother while retaining the current shape.",
+    "translation": "現在の形状を維持しながら地形を平らにするには、アップグレードをクリックしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainToolsV2",
+    "key": "UpgradeSmoothVoxels.Explanation",
+    "description": null,
+    "english": "Note that some baked-in terracing can't be automatically eliminated. Manual edits are needed to achieve the full effect in such areas.",
+    "translation": "固定された棚田には、自動では削除できないものがあるのでご注意ください。このような場所で最大限の効果を得るには、手動で編集する必要があります。",
     "isDeprecated": false
   },
   {

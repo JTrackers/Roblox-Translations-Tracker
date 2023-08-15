@@ -1992,6 +1992,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "이미 사용된 코드입니다. 새 코드를 입력하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -3149,6 +3157,14 @@
     "description": "An error message if the user's proposed password fails the backend password validation.",
     "english": "Please use a different password. Use any special characters or numbers.",
     "translation": "다른 비밀번호를 사용하세요. 특수 문자나 숫자를 포함하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "'계속'을 클릭하면 전화번호를 제출하고 {linkTagWithSmsTos}SMS 이용 약관{linkTagEnd} 및 {linkTagWithPrivacyPolicy}개인정보 처리방침{linkTagEnd}에 동의하게 됩니다. 또한 일회용 인증 코드를 받게 됩니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요할 경우 답장으로 'Help'라고 작성해 보내 주세요.",
     "isDeprecated": false
   },
   {
@@ -11668,7 +11684,7 @@
     "key": "Label.EnableVoiceToChat",
     "description": null,
     "english": "Enable voice chat to talk with others in this experience.",
-    "translation": "이 체험에서 다른 사람과 대화하려면 음성 채팅을 켜세요.",
+    "translation": "이 체험에서 다른 사람과 대화하려면 음성 채팅을 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -12516,7 +12532,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionNoLink",
     "description": "Similar to Label.ImplicitConsentVoiceCollection with no link",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
-    "translation": "음성 채팅 사용을 클릭하면, 검열 및 안전을 위해 Roblox가 내 음성 녹음 내용을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
+    "translation": "'사용'을 클릭하면, 검열 및 안전을 위해 Roblox가 내 음성 녹음 내용을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -12564,7 +12580,7 @@
     "key": "Heading.EnableMicrophone",
     "description": null,
     "english": "Enable Microphone",
-    "translation": "마이크 켜기",
+    "translation": "마이크 사용",
     "isDeprecated": false
   },
   {
@@ -12572,7 +12588,7 @@
     "key": "Heading.EnableCamera",
     "description": null,
     "english": "Enable Camera",
-    "translation": "카메라 켜기",
+    "translation": "카메라 사용",
     "isDeprecated": false
   },
   {
@@ -12588,7 +12604,7 @@
     "key": "Label.EnableChatWithVoice",
     "description": null,
     "english": "Enable your microphone to Chat with your Voice in this experience.",
-    "translation": "이 체험에서 음성 채팅을 하려면 마이크를 켜세요.",
+    "translation": "이 체험에서 음성 채팅을 하려면 마이크를 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -12596,7 +12612,7 @@
     "key": "Label.EnableChatWithVoiceWithLink",
     "description": null,
     "english": "Enable your microphone to {startLink}Chat with your Voice{endLink} in this experience.",
-    "translation": "이 체험에서 {startLink}음성 채팅{endLink}을 하려면 마이크를 켜세요.",
+    "translation": "이 체험에서 {startLink}음성 채팅{endLink}을 하려면 마이크를 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -12837,6 +12853,22 @@
     "description": null,
     "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}Verify your phone number to unlock more features.",
     "translation": "Roblox에서 내 연락처를 사용해 나와 내 지인들이 서로를 찾을 수 있도록 도와주는 기능입니다. {linkStart}자세히 알아보기{linkEnd}{lineBreak}더 많은 기능을 사용하려면 휴대폰 번호 인증을 완료하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.CameraAndMicrophone",
+    "description": null,
+    "english": "Use your camera and microphone to share your voice and move your avatar's face in enabled experiences.",
+    "translation": "카메라와 마이크를 사용해 음성을 공유하고 기능이 활성화된 체험에서 아바타의 얼굴을 움직입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentCameraCollection",
+    "description": "similar to Label.ImplicitConsentCamera",
+    "english": "By clicking on Enable, I consent to Roblox’s temporary use of my facial movements to animate my avatar’s face.",
+    "translation": "'사용'을 클릭하면, Roblox가 일시적으로 내 얼굴의 움직임을 사용해 아바타 얼굴을 애니메이션화하는 데 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -15561,6 +15593,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.AveragePriceColon",
+    "description": "The average selling price of an item.",
+    "english": "Average Price:",
+    "translation": "평균 가격:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.SerialNumberColon",
     "description": "The serial number for a sale item.",
     "english": "Serial Number:",
@@ -16085,6 +16125,14 @@
     "description": "i.e. #32",
     "english": "#{serialNumber}",
     "translation": "#{serialNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ShowLess",
+    "description": null,
+    "english": "Show Less",
+    "translation": "간략히 보기",
     "isDeprecated": false
   },
   {
@@ -26061,6 +26109,30 @@
     "description": null,
     "english": "Failed to join experience. Please try again later.",
     "translation": "체험에 참가하지 못했습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "ReportedCard.Title",
+    "description": null,
+    "english": "Thank you for your report.",
+    "translation": "신고해 주셔서 감사합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "ReportedCard.Description",
+    "description": null,
+    "english": "We will review your report soon and take action if needed.",
+    "translation": "신고 내용을 곧 검토하고 필요한 경우 조치를 취하겠습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AriaText.MoreActions",
+    "description": null,
+    "english": "More actions on this notification.",
+    "translation": "이 알림에 대한 추가 작업입니다.",
     "isDeprecated": false
   },
   {
@@ -37128,6 +37200,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.BuyRobux",
+    "description": "Buy Robux",
+    "english": "Buy Robux",
+    "translation": "Robux 구매",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PeopleList",
     "key": "Label.Chat",
     "description": "Chat with friends",
@@ -40484,7 +40564,7 @@
     "key": "Response.BraintreePending",
     "description": null,
     "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please check the My Transactions page to see if it processed successfully.",
-    "translation": "예상치 못한 오류가 발생했습니다. 거래가 처리되는 데 최대 5분이 소요될 수 있습니다. 처리 완료 여부를 확인하려면 페이지를 새로 고침하세요.",
+    "translation": "예상치 못한 오류가 발생했습니다. 거래가 처리되는 데 최대 5분이 소요될 수 있습니다. 처리 완료 여부를 확인하려면 '내 거래' 페이지를 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -49413,6 +49493,14 @@
     "description": null,
     "english": "There has been an issue processing your Roblox credit. Please try again later!",
     "translation": "Roblox 크레딧 처리에 문제가 발생했습니다. 나중에 다시 시도해 주세요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.RobloxCredit",
+    "key": "Action.BuyRobux",
+    "description": "Buy Robux",
+    "english": "Buy Robux",
+    "translation": "Robux 구매",
     "isDeprecated": false
   },
   {
@@ -60468,7 +60556,7 @@
     "key": "Label.UpcomingEvents",
     "description": "Label for the list of scheduled events that occur in the future",
     "english": "Upcoming Events",
-    "translation": "곧 공개",
+    "translation": "예정된 이벤트",
     "isDeprecated": false
   },
   {
@@ -60476,7 +60564,7 @@
     "key": "Label.DraftEvents",
     "description": "Label for the list of unpublished scheduled events",
     "english": "Draft Events",
-    "translation": "초안",
+    "translation": "초안 이벤트",
     "isDeprecated": false
   },
   {
@@ -60484,7 +60572,7 @@
     "key": "Label.PastEvents",
     "description": "Label for the list of scheduled events that have already ended",
     "english": "Past Events",
-    "translation": "종료",
+    "translation": "과거 이벤트",
     "isDeprecated": false
   },
   {
@@ -60973,6 +61061,30 @@
     "description": "Label for an event tile that has been cancelled",
     "english": "Cancelled",
     "translation": "취소되었습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.UpcomingEventsMenuName",
+    "description": "Label for the Upcoming events tab",
+    "english": "Upcoming",
+    "translation": "곧 공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.PastEventsMenuName",
+    "description": "Label for the Past events tab",
+    "english": "Past",
+    "translation": "과거",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DraftEventsMenuName",
+    "description": "Label for the Draft events tab",
+    "english": "Drafts",
+    "translation": "초안",
     "isDeprecated": false
   },
   {
@@ -62740,7 +62852,7 @@
     "key": "Label.QrInstructions",
     "description": null,
     "english": "Scan this QR code from your logged in device's camera.",
-    "translation": "로그인 중인 기기에서 이 QR 코드를 스캔하세요.",
+    "translation": "로그인 중인 기기의 카메라로 이 QR 코드를 스캔하세요.",
     "isDeprecated": false
   },
   {
@@ -63970,8 +64082,8 @@
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.DateRange",
-    "description": null,
-    "english": "Date range:",
+    "description": "Label for the date range selector (DSA-823)",
+    "english": "Date Range",
     "translation": "날짜 범위:",
     "isDeprecated": false
   },
@@ -68424,6 +68536,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.AssetMediaLimit",
+    "description": null,
+    "english": "You can upload up to {limit} images.",
+    "translation": "최대 {limit}개의 이미지를 업로드할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PluginImages",
+    "description": "Used in form control input labels if the plugin images cannot be reordered for some reason.",
+    "english": "Plugin Images",
+    "translation": "플러그인 이미지",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -70332,7 +70460,7 @@
     "key": "Label.UsesVoiceChat",
     "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
     "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
-    "translation": "이 체험에서는 음성 채팅을 할 수 있습니다. 음성 채팅 기능을 켜면, 음성 기능이 활성화된 체험에서 마이크 입력이 가능해집니다.",
+    "translation": "이 체험에서는 음성 채팅을 할 수 있습니다. 음성 채팅 기능을 사용하도록 설정하면, 음성 기능이 활성화된 체험에서 마이크 입력이 가능해집니다.",
     "isDeprecated": false
   },
   {
@@ -70372,7 +70500,7 @@
     "key": "Label.EnableVoiceChat1",
     "description": null,
     "english": "Enable voice chat to talk with others in this experience.",
-    "translation": "이 체험에서 다른 사람과 대화하려면 음성 채팅을 켜세요.",
+    "translation": "이 체험에서 다른 사람과 대화하려면 음성 채팅을 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -70388,7 +70516,7 @@
     "key": "Label.ClickToConsent",
     "description": "Legal disclaimer text",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
-    "translation": "음성 채팅 사용을 클릭하면, 검열 및 안전을 위해 Roblox가 내 <b>음성 녹음 내용</b>을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
+    "translation": "'사용'을 클릭하면, 검열 및 안전을 위해 Roblox가 내 <b>음성 녹음 내용</b>을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -70452,7 +70580,7 @@
     "key": "Label.EnableChatWithVoice",
     "description": null,
     "english": "Enable your microphone to Chat with your Voice in this experience.",
-    "translation": "이 체험에서 음성 채팅을 하려면 마이크를 켜세요.",
+    "translation": "이 체험에서 음성 채팅을 하려면 마이크를 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -70460,7 +70588,7 @@
     "key": "Label.EnableChatWithVoiceWithLink",
     "description": null,
     "english": "Enable your microphone to {linkStart}Chat with your Voice{linkEnd} in this experience.",
-    "translation": "이 체험에서 {linkStart}음성 채팅{linkEnd}을 하려면 마이크를 켜세요.",
+    "translation": "이 체험에서 {linkStart}음성 채팅{linkEnd}을 하려면 마이크를 사용하도록 설정하세요.",
     "isDeprecated": false
   },
   {
@@ -70468,7 +70596,7 @@
     "key": "Label.EnableMicrophone",
     "description": null,
     "english": "Enable Microphone",
-    "translation": "마이크 켜기",
+    "translation": "마이크 사용",
     "isDeprecated": false
   },
   {
@@ -88948,7 +89076,31 @@
     "key": "Description.Placeholder.Instruction",
     "description": null,
     "english": "{strongStartExpName}{strongEndExpName} is a placeholder that will insert your experience's name - using this placeholder is required. {strongStartDisName}{strongEndDisName} is a placeholder that will insert the inviter's display name - using this placeholder is optional.",
-    "translation": "{strongStartExpName}{strongEndExpName} 자리 표시자를 사용해 알림을 맞춤 설정해야 합니다. 선택 사항으로 {strongStartDisName}{strongEndDisName} 자리 표시자를 사용해 보낸 사람의 표시 이름을 포함할 수 있습니다.",
+    "translation": "{strongStartExpName}{strongEndExpName}(은)는 체험의 이름을 삽입할 자리 표시자입니다. 이 자리 표시자의 사용은 필수 사항입니다.\n{strongStartDisName}{strongEndDisName}(은)는 초대자의 표시 이름을 삽입할 자리 표시자입니다. 이 자리 표시자의 사용은 선택 사항입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Message.DeleteSuccess",
+    "description": null,
+    "english": "Notification String has been deleted.",
+    "translation": "알림 문자열을 삭제했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.Instruction1",
+    "description": null,
+    "english": "{strongStartExpName}{strongEndExpName} is a placeholder that will insert your experience's name - using this placeholder is required.",
+    "translation": "{strongStartExpName}{strongEndExpName}(은)는 체험의 이름을 삽입할 자리 표시자입니다. 이 자리 표시자의 사용은 필수 사항입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.Instruction2",
+    "description": null,
+    "english": "{strongStartDisName}{strongEndDisName} is a placeholder that will insert the inviter's display name - using this placeholder is optional.",
+    "translation": "{strongStartDisName}{strongEndDisName}(은)는 초대자의 표시 이름을 삽입할 자리 표시자입니다. 이 자리 표시자의 사용은 선택 사항입니다.",
     "isDeprecated": false
   },
   {
@@ -88957,6 +89109,14 @@
     "description": null,
     "english": "All",
     "translation": "전체",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Message.NotificationContentCreateFailedTooManyPlaceholders",
+    "description": null,
+    "english": "\"{placeholder}\" can not be used more than once.",
+    "translation": "\"{placeholder}\"(은)는 두 번 이상 사용할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -91504,6 +91664,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.NotificationsForEmail",
+    "description": null,
+    "english": "You will receive these notifications to your email.",
+    "translation": "이 알림들은 이메일로 전송됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.NotificationFormSelectLabelV2",
+    "description": "Label asking the user when a notification should be sent. In English, this example looks like: \"Tell me immediately\" or \"Tell me never\"",
+    "english": "Tell me {when}",
+    "translation": "알림 시간: {when}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -91997,6 +92173,14 @@
     "description": null,
     "english": "Error Loading Current Table",
     "translation": "현재 테이블을 로드하는 동안 오류가 발생했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.Under13NotAllowed",
+    "description": null,
+    "english": "Users under 13 cannot log in with a one-time code.",
+    "translation": "13세 미만의 사용자는 일회용 코드로 로그인할 수 없습니다.",
     "isDeprecated": false
   }
 ]
