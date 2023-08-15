@@ -9739,8 +9739,8 @@
     "namespace": "Studio.App",
     "key": "PackageManagementVerbs.ErrorUnpublishedPackages",
     "description": null,
-    "english": "Error: Cannot convert to package while the object contains packages with unpublished changes.",
-    "translation": "Error: Cannot convert to package while the object contains packages with unpublished changes.",
+    "english": "Error: Cannot publish because packages cannot contain modified child packages.",
+    "translation": "Error: Cannot publish because packages cannot contain modified child packages.",
     "isDeprecated": false
   },
   {
@@ -39624,6 +39624,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.Toolbox",
+    "key": "General.UnverifiedCreatorBadgeTooltipText",
+    "description": null,
+    "english": "Creator is unverified",
+    "translation": "Creator is unverified",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertMultipleInstancesWarning",
+    "description": null,
+    "english": "Cannot convert to package unless package has a single root instance.",
+    "translation": "Cannot convert to package unless package has a single root instance.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertIfChildPackageHasUnpublishedChangesWarning",
+    "description": null,
+    "english": "Cannot convert to package while the instance contains packages with unpublished changes.",
+    "translation": "Cannot convert to package while the instance contains packages with unpublished changes.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertModelWithPrimaryPartNonArchivableWarning",
+    "description": null,
+    "english": "Cannot publish a Model package when the PrimaryPart is not archivable.",
+    "translation": "Cannot publish a Model package when the PrimaryPart is not archivable.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.Non3DRoot3DDescendentsWarning",
+    "description": null,
+    "english": "This object has 3D content but is not a Model, so moving or rotating it will count as modifying the package.",
+    "translation": "This object has 3D content but is not a Model, so moving or rotating it will count as modifying the package.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.Common",
     "key": "Action.Apply",
     "description": null,
@@ -63605,6 +63645,110 @@
     "description": null,
     "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
     "translation": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsFrameExtraCharsWarning1",
+    "description": null,
+    "english": "Ignoring {FrameAttr} because it contains underscores or spaces.  Must be of the form \"Frame#\" where \"#\" is an integer with no spaces or underscores.",
+    "translation": "Ignoring {FrameAttr} because it contains underscores or spaces.  Must be of the form \"Frame#\" where \"#\" is an integer with no spaces or underscores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsMax3CorrectivesError3",
+    "description": null,
+    "english": "Correctives can be for at most 3 control names.  Found {Size} for attribute \"{FrameAttr}\": \"{FacsControlName}\"",
+    "translation": "Correctives can be for at most 3 control names.  Found {Size} for attribute \"{FrameAttr}\": \"{FacsControlName}\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsUnrecognizedFACSError2",
+    "description": null,
+    "english": "Unrecognized FACS control name \"{FacsControlName}\" for attribute \"{FrameAttr}\"",
+    "translation": "Unrecognized FACS control name \"{FacsControlName}\" for attribute \"{FrameAttr}\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsInvalidCorrectiveError2",
+    "description": null,
+    "english": "Invalid corrective name \"{FacsControlName}\" for attribute\"{FrameAttr}\": Neutral cannot be part of a corrective",
+    "translation": "Invalid corrective name \"{FacsControlName}\" for attribute\"{FrameAttr}\": Neutral cannot be part of a corrective",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsCorrectiveDupeError3",
+    "description": null,
+    "english": "Found duplicate FACS control name \"{FacsDupeName}\" for corrective \"{FacsControlName}\" in attribute \"{FrameAttr}\"",
+    "translation": "Found duplicate FACS control name \"{FacsDupeName}\" for corrective \"{FacsControlName}\" in attribute \"{FrameAttr}\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsRootFaceJointNotStringError",
+    "description": null,
+    "english": "RootFaceJoint attribute must be of type string",
+    "translation": "RootFaceJoint attribute must be of type string",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsRootFaceJointNoValueError",
+    "description": null,
+    "english": "RootFaceJoint attribute has no value",
+    "translation": "RootFaceJoint attribute has no value",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsFrameAttrNotStringError1",
+    "description": null,
+    "english": "\"{FrameAttr}\" attribute must be of type string",
+    "translation": "\"{FrameAttr}\" attribute must be of type string",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsUnparseableFrameNumberError1",
+    "description": null,
+    "english": "Couldn't parse the frame number in attribute \"{FrameAttr}\".",
+    "translation": "Couldn't parse the frame number in attribute \"{FrameAttr}\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsEmptyAttributeWarning1",
+    "description": null,
+    "english": "Empty value found for attribute \"{FrameAttr}\".  Ignoring this.",
+    "translation": "Empty value found for attribute \"{FrameAttr}\".  Ignoring this.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsDupeControlError3",
+    "description": null,
+    "english": "Duplicate control name found: \"{FacsControlName}\" in frame {FrameNumber1} and frame {FrameNumber2}",
+    "translation": "Duplicate control name found: \"{FacsControlName}\" in frame {FrameNumber1} and frame {FrameNumber2}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsRootFaceJointExtraCharsError1",
+    "description": null,
+    "english": "\"{FacsControlName}\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
+    "translation": "\"{FacsControlName}\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.FacsHasFramesNoRootFaceJointError1",
+    "description": null,
+    "english": "Found \"Frame#\" attributes in mesh \"{ParentNodeName}\" but no \"RootFaceJoint\" attribute.  No FACS mapping will be created for this mesh.",
+    "translation": "Found \"Frame#\" attributes in mesh \"{ParentNodeName}\" but no \"RootFaceJoint\" attribute.  No FACS mapping will be created for this mesh.",
     "isDeprecated": false
   },
   {
