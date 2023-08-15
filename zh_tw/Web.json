@@ -840,6 +840,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowed",
+    "description": null,
+    "english": "Your account cannot log in with a one-time code",
+    "translation": "您的帳號無法使用一次性代碼登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV2",
+    "description": null,
+    "english": "You must log in with a different method",
+    "translation": "您必須以其他方式登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV3",
+    "description": null,
+    "english": "Your account is ineligible to log in with a one-time code",
+    "translation": "您的帳號不適用一次性代碼登入。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -4252,7 +4276,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
-    "translation": "您輸入驗證碼並勾選方塊即表示您同意小孩使用 Roblox。",
+    "translation": "勾選此格子並點擊繼續即表示您同意小孩使用 Roblox。",
     "isDeprecated": false
   },
   {
@@ -4269,6 +4293,14 @@
     "description": null,
     "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
     "translation": "密碼必須包含大寫字母、小寫字母及數字。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupOtpModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By checking the box and clicking continue, you are giving consent to your child to access Roblox.",
+    "translation": "勾選此格子並點擊繼續即表示您同意小孩使用 Roblox。",
     "isDeprecated": false
   },
   {
@@ -13149,6 +13181,46 @@
     "description": null,
     "english": "17+ (Suitable for ages 17 and older)",
     "translation": "17+（適合 17 歲以上使用者）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "驗證您的年齡",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ToAccountInfo",
+    "description": null,
+    "english": "Go to Account Info",
+    "translation": "前往帳戶資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NeedIdVerification",
+    "description": null,
+    "english": "To gain access to 17+ content, you must verify that you are 17 years old or older.",
+    "translation": "若要存取 17+ 內容，您必須驗證您是 17 歲以上的使用者。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowedExperience",
+    "description": null,
+    "english": "All experiences are searchable. Experiences without {linkStart}Experience Guidelines{linkEnd} are treated as 13+ and are prohibited from displaying any 17+ content. All content on Roblox must comply with the {communityLinkStart}Roblox Community Standards{communityLinkEnd}.",
+    "translation": "所有體驗仍可以被找到。沒有{linkStart}體驗準則{linkEnd}的體驗將會視為 13+ 體驗，且不會顯示 17+ 內容。Roblox 的所有內容皆需符合 {communityLinkStart}Roblox 社群準則{communityLinkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.BillingAnnotateWithHelpLink",
+    "description": null,
+    "english": "You can manage previously saved credit or debit cards in Checkout when purchasing Robux. For billing and payment questions, please see the {aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}billing help pages{aTagEnd}.",
+    "translation": "購買 Robux 時，您可以在結帳畫面管理先前儲存的信用卡或簽帳金融卡。如為帳務和付款問題，請見{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}帳務說明頁面{aTagEnd}。",
     "isDeprecated": false
   },
   {
@@ -22421,6 +22493,14 @@
     "description": null,
     "english": "No results found",
     "translation": "找不到結果",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PlayerSearchResults",
+    "key": "Label.Previously",
+    "description": "Used to display previous username context under the playertile, such as \"Previously @previousUsername\". (This translation should be as short as possible since we don't have a lot of space to display context)",
+    "english": "Previously",
+    "translation": "之前為",
     "isDeprecated": false
   },
   {
@@ -48440,6 +48520,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Heading.Commissions",
+    "description": null,
+    "english": "Commissions",
+    "translation": "抽成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Label.Commissions",
+    "description": null,
+    "english": "Commissions",
+    "translation": "抽成",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -53428,7 +53524,7 @@
     "key": "Heading.DeveloperHub",
     "description": null,
     "english": "Developer Hub",
-    "translation": "開發人員中心",
+    "translation": "開發者平台",
     "isDeprecated": true
   },
   {
@@ -53525,6 +53621,54 @@
     "description": null,
     "english": "Manage My Content",
     "translation": "管理我的內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.WorldIsOurs",
+    "description": null,
+    "english": "This world is ours for the making.",
+    "translation": "世界由我們打造。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.CreatorDashboard",
+    "description": null,
+    "english": "Creator Dashboard",
+    "translation": "創作者後台",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.Talent",
+    "description": null,
+    "english": "Talent",
+    "translation": "人才",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.Analytics",
+    "description": null,
+    "english": "Analytics",
+    "translation": "數據",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.DeveloperExchange",
+    "description": null,
+    "english": "Developer Exchange",
+    "translation": "Developer Exchange",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Description.RobloxStudio",
+    "description": null,
+    "english": "Roblox Studio",
+    "translation": "Roblox Studio",
     "isDeprecated": false
   },
   {
@@ -53796,7 +53940,7 @@
     "key": "Label.Accessibility",
     "description": null,
     "english": "Accessibility",
-    "translation": "無障礙功能",
+    "translation": "無障礙",
     "isDeprecated": false
   },
   {
@@ -61876,7 +62020,7 @@
     "key": "Label.FiltersNoColon",
     "description": null,
     "english": "Filters",
-    "translation": "篩選條件",
+    "translation": "篩選",
     "isDeprecated": false
   },
   {
@@ -63436,7 +63580,7 @@
     "key": "Description.PremiumPayoutSum",
     "description": null,
     "english": "To see how much you’ve earned from Premium Payouts, check your {sumLinkStart}Robux history{sumLinkEnd}.",
-    "translation": "若要查看您從 Premium 支付獲得的 Robux，請前往您的 {sumLinkStart}Robux 紀錄{sumLinkEnd}。",
+    "translation": "若要查看您從 Premium 支付獲得的 Robux，請前往您的 {sumLinkStart}Robux 紀錄{sumLinkEnd}。",
     "isDeprecated": false
   },
   {
@@ -63484,7 +63628,7 @@
     "key": "Heading.PremiumVisits",
     "description": null,
     "english": "Premium Visits",
-    "translation": "Premium 造訪次數",
+    "translation": "Premium 參訪次數",
     "isDeprecated": false
   },
   {
@@ -63596,7 +63740,7 @@
     "key": "Label.TotalVisits",
     "description": null,
     "english": "Total Visits",
-    "translation": "總造訪次數",
+    "translation": "總參訪次數",
     "isDeprecated": false
   },
   {
@@ -63604,7 +63748,7 @@
     "key": "Label.PremiumVisitPercentage",
     "description": null,
     "english": "Premium Visit Percentage",
-    "translation": "Premium 造訪百分比",
+    "translation": "Premium 參訪百分比",
     "isDeprecated": false
   },
   {
@@ -66044,7 +66188,7 @@
     "key": "Label.Tablet",
     "description": "Tablet devices like the iPad",
     "english": "Tablet",
-    "translation": "平板",
+    "translation": "平板電腦",
     "isDeprecated": false
   },
   {
@@ -66060,7 +66204,7 @@
     "key": "Label.Phone",
     "description": "Phone",
     "english": "Phone",
-    "translation": "手機",
+    "translation": "電話",
     "isDeprecated": false
   },
   {
@@ -66196,7 +66340,7 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "遊戲證",
+    "translation": "特權證",
     "isDeprecated": false
   },
   {
@@ -66204,7 +66348,7 @@
     "key": "Label.GameshopItem",
     "description": null,
     "english": "Developer Products",
-    "translation": "開發者產品",
+    "translation": "開發人員產品",
     "isDeprecated": false
   },
   {
@@ -67272,6 +67416,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Ok",
+    "description": "used on button text to confirm an action",
+    "english": "Ok",
+    "translation": "確定",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -68324,7 +68476,7 @@
     "key": "Questionnaire.No",
     "description": null,
     "english": "No",
-    "translation": "否",
+    "translation": "無",
     "isDeprecated": false
   },
   {
@@ -68444,7 +68596,7 @@
     "key": "Questionnaire.Blood",
     "description": null,
     "english": "Blood",
-    "translation": "血",
+    "translation": "血腥",
     "isDeprecated": false
   },
   {
@@ -68952,6 +69104,150 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.Navigation",
+    "key": "Heading.Title",
+    "description": null,
+    "english": "Talent Hub",
+    "translation": "人才中心",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Action.LogIn",
+    "description": null,
+    "english": "Log In",
+    "translation": "登入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Action.SignUp",
+    "description": null,
+    "english": "Sign Up",
+    "translation": "註冊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.AboutUs",
+    "description": null,
+    "english": "About Us",
+    "translation": "關於我們",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.JoinUs",
+    "description": null,
+    "english": "Join Us",
+    "translation": "加入我們",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "挑款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "隱私權",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Description.CopyrightMessage",
+    "description": null,
+    "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
+    "translation": "©{copyrightYear} Roblox Corporation。Roblox、Roblox 標誌及 Powering Imagination 是我們在美國及其它國家的部分註冊與未註冊商標。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Action.LogOut",
+    "description": null,
+    "english": "Log Out",
+    "translation": "登出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Action.Settings",
+    "description": null,
+    "english": "Settings",
+    "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.Moderated",
+    "description": null,
+    "english": "No Access",
+    "translation": "沒有權限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.Restricted",
+    "description": null,
+    "english": "No Access",
+    "translation": "沒有權限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "無障礙",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Features",
+    "key": "Label.Inbox",
+    "description": null,
+    "english": "Inbox",
+    "translation": "收件箱",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Features",
+    "key": "Label.CreatorSettings",
+    "description": null,
+    "english": "Settings",
+    "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Features",
+    "key": "Label.Account",
+    "description": null,
+    "english": "Account",
+    "translation": "帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Error",
+    "key": "Error.InternalServerError",
+    "description": null,
+    "english": "Internal server error",
+    "translation": "伺服器內部錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Error",
+    "key": "Error.InvalidName",
+    "description": null,
+    "english": "Invalid name",
+    "translation": "名稱無效",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Controls",
     "key": "Action.Cancel",
     "description": null,
@@ -69020,7 +69316,7 @@
     "key": "Action.No",
     "description": null,
     "english": "No",
-    "translation": "否",
+    "translation": "無",
     "isDeprecated": false
   },
   {
@@ -69468,7 +69764,7 @@
     "key": "Action.No",
     "description": null,
     "english": "No",
-    "translation": "否",
+    "translation": "無",
     "isDeprecated": false
   },
   {
@@ -69781,6 +70077,14 @@
     "description": null,
     "english": "Show for sale only",
     "translation": "只顯示上架道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.CreatedDate",
+    "description": null,
+    "english": "Created {date}",
+    "translation": "創作日期：{date}",
     "isDeprecated": false
   },
   {
@@ -70264,6 +70568,30 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.NoPremiumBenefits",
+    "description": null,
+    "english": "No Premium benefits",
+    "translation": "無 Premium 福利",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.DiscountForPremium",
+    "description": null,
+    "english": "Discount for Premium",
+    "translation": "Premium 折扣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExclusiveForPremium",
+    "description": null,
+    "english": "Exclusive for Premium",
+    "translation": "Premium 限定",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -70742,6 +71070,742 @@
     "english": "Your Email",
     "translation": "您的電子郵件地址",
     "isDeprecated": true
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Heading.FormBio",
+    "description": null,
+    "english": "Bio",
+    "translation": "簡介",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Heading.FormExperience",
+    "description": null,
+    "english": "Experience",
+    "translation": "體驗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.CurrentJob",
+    "description": null,
+    "english": "Current Job",
+    "translation": "目前工作",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.AddExperience",
+    "description": null,
+    "english": "Add Experience",
+    "translation": "新增體驗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.ExperiencesFormDescription",
+    "description": null,
+    "english": "Description",
+    "translation": "說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Filters",
+    "description": null,
+    "english": "Filters",
+    "translation": "篩選條件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Title.LeavingRoblox",
+    "description": "Moved to TalentHub.Alerts",
+    "english": "You are leaving Roblox",
+    "translation": "您將要離開 Roblox",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Description.RedirectDisclaimer",
+    "description": "Moved to TalentHub.Alerts",
+    "english": "This site is not owned or operated by Roblox. They may have different terms and privacy policies.",
+    "translation": "Roblox 不擁有或營運此網站，該網站的條款和隱私權政策可能有異。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Delete",
+    "description": null,
+    "english": "Delete",
+    "translation": "刪除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.JobTypeInvalid",
+    "description": null,
+    "english": "Invalid",
+    "translation": "無效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.JobTypeFullTime",
+    "description": null,
+    "english": "Full Time",
+    "translation": "全職",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.JobTypeCommission",
+    "description": null,
+    "english": "Commission",
+    "translation": "抽成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Experience.Media.UploadDescription",
+    "description": null,
+    "english": "Drag and drop media here to upload",
+    "translation": "將媒體拖曳至此即可上傳",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Experience.Media.DragOverDescription",
+    "description": null,
+    "english": "Release media here to upload",
+    "translation": "將媒體放至此處即可上傳",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Experience.Media.Error.TooManyFilesUploaded",
+    "description": "Deprecated",
+    "english": "Too many files",
+    "translation": "檔案過多",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Save",
+    "description": null,
+    "english": "Save",
+    "translation": "儲存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Heading.Skills",
+    "description": null,
+    "english": "Skills",
+    "translation": "技能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.NoOptions",
+    "description": null,
+    "english": "No Options",
+    "translation": "沒有選項",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Team",
+    "description": null,
+    "english": "Team",
+    "translation": "團隊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Action.Add",
+    "description": null,
+    "english": "Add",
+    "translation": "新增",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.ExperienceId",
+    "description": null,
+    "english": "Experience ID",
+    "translation": "體驗 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.AssetId",
+    "description": null,
+    "english": "Asset ID",
+    "translation": "素材 ID\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Label.Assets",
+    "description": null,
+    "english": "Assets",
+    "translation": "資產",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Action.Close",
+    "description": null,
+    "english": "Close",
+    "translation": "關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.StartDate",
+    "description": null,
+    "english": "Start Date",
+    "translation": "開始日期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.EndDate",
+    "description": null,
+    "english": "End Date",
+    "translation": "結束日期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Month",
+    "description": null,
+    "english": "Month",
+    "translation": "月",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Year",
+    "description": null,
+    "english": "Year",
+    "translation": "年",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Or",
+    "description": null,
+    "english": "Or",
+    "translation": "或",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Confirm",
+    "description": null,
+    "english": "Confirm",
+    "translation": "確認",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Ok",
+    "description": null,
+    "english": "Ok",
+    "translation": "確定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Filters",
+    "description": null,
+    "english": "Filters",
+    "translation": "篩選條件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Skills",
+    "description": null,
+    "english": "Skills",
+    "translation": "技能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Save",
+    "description": null,
+    "english": "Save",
+    "translation": "儲存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Delete",
+    "description": null,
+    "english": "Delete",
+    "translation": "刪除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Edit",
+    "description": null,
+    "english": "Edit",
+    "translation": "編輯",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Apply",
+    "description": null,
+    "english": "Apply",
+    "translation": "套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Applied",
+    "description": null,
+    "english": "Applied",
+    "translation": "已套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.CopyUrl",
+    "description": null,
+    "english": "Copy URL",
+    "translation": "複製網址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Requirements",
+    "description": null,
+    "english": "Requirements",
+    "translation": "需求",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Yes",
+    "description": null,
+    "english": "Yes",
+    "translation": "是",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.No",
+    "description": null,
+    "english": "No",
+    "translation": "否",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "繼續",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "隱私權",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Safety",
+    "description": null,
+    "english": "Safety",
+    "translation": "安全",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.DoNotShowAgain",
+    "description": null,
+    "english": "Do not show again",
+    "translation": "不要再顯示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Action.Submit",
+    "description": null,
+    "english": "Submit",
+    "translation": "提交",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Title.Error",
+    "description": null,
+    "english": "Error",
+    "translation": "錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Approved",
+    "description": null,
+    "english": "Approved",
+    "translation": "批准",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Pending",
+    "description": null,
+    "english": "Pending",
+    "translation": "待推出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.InReview",
+    "description": null,
+    "english": "In Review",
+    "translation": "審查中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Rejected",
+    "description": null,
+    "english": "Rejected",
+    "translation": "遭拒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Unknown",
+    "description": null,
+    "english": "Unknown",
+    "translation": "未知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Home",
+    "description": null,
+    "english": "Home",
+    "translation": "首頁",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Profile",
+    "description": null,
+    "english": "Profile",
+    "translation": "個人檔案",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.NextStep",
+    "description": "Next Step",
+    "english": "Next Step",
+    "translation": "下一步",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Back",
+    "description": null,
+    "english": "Back",
+    "translation": "返回",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.NoContent",
+    "description": null,
+    "english": "No Content",
+    "translation": "沒有內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Action.ReportAbuse",
+    "description": null,
+    "english": "Report Abuse",
+    "translation": "檢舉濫用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.Relevance",
+    "description": null,
+    "english": "Relevance",
+    "translation": "相關性",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.BlueCheckVerified",
+    "description": "For verified badge",
+    "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
+    "translation": "認證徽章代表創作者是知名且正牌的創作者、品牌或公眾人物。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "繼續",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeDraft",
+    "description": null,
+    "english": "Draft",
+    "translation": "草稿",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeClose",
+    "description": null,
+    "english": "Close",
+    "translation": "關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeOpen",
+    "description": null,
+    "english": "Open",
+    "translation": "打開",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeFill",
+    "description": null,
+    "english": "Fill",
+    "translation": "填滿",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeDelete",
+    "description": null,
+    "english": "Delete",
+    "translation": "刪除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeClosed",
+    "description": null,
+    "english": "Closed",
+    "translation": "已關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeInvalid",
+    "description": null,
+    "english": "Invalid",
+    "translation": "無效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeExpired",
+    "description": null,
+    "english": "Expired",
+    "translation": "已過期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeFullTime",
+    "description": null,
+    "english": "Full Time",
+    "translation": "全職",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.JobTypeCommission",
+    "description": null,
+    "english": "Commission",
+    "translation": "抽成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Skills",
+    "description": null,
+    "english": "Skills",
+    "translation": "技能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Apply",
+    "description": null,
+    "english": "Apply",
+    "translation": "套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Edit",
+    "description": null,
+    "english": "Edit",
+    "translation": "編輯",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Requirements",
+    "description": null,
+    "english": "Requirements",
+    "translation": "需求",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Payment",
+    "description": null,
+    "english": "Payment",
+    "translation": "付款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Total",
+    "description": null,
+    "english": "Total",
+    "translation": "合計",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Max",
+    "description": null,
+    "english": "Max",
+    "translation": "上限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.MinLabel",
+    "description": null,
+    "english": "Min",
+    "translation": "分鐘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.New",
+    "description": null,
+    "english": "New",
+    "translation": "建立",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Active",
+    "description": null,
+    "english": "Active",
+    "translation": "活躍",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Message",
+    "description": null,
+    "english": "Message",
+    "translation": "訊息",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Invited",
+    "description": null,
+    "english": "Invited",
+    "translation": "已邀請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Applied",
+    "description": null,
+    "english": "Applied",
+    "translation": "已套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Screen",
+    "description": null,
+    "english": "Screen",
+    "translation": "螢幕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.Archived",
+    "description": null,
+    "english": "Archived",
+    "translation": "已封存",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
@@ -71684,7 +72748,7 @@
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
     "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
-    "translation": "啟用驗證器雙步驟驗證",
+    "translation": "確保透過驗證器的雙步驟驗證已啟用",
     "isDeprecated": false
   },
   {
@@ -71700,7 +72764,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
     "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
-    "translation": "如果您的帳號遭到侵入，Roblox 將難以還原您的帳號或取回道具、虛擬貨幣等有價值的物品。",
+    "translation": "若您的帳號遭到侵入，Roblox 便很難還原您的帳號。",
     "isDeprecated": false
   },
   {
@@ -72533,6 +73597,110 @@
     "description": null,
     "english": "Playtime Warning",
     "translation": "遊戲時間警告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Action.Save",
+    "description": null,
+    "english": "Save",
+    "translation": "儲存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Heading.Settings",
+    "description": null,
+    "english": "Settings",
+    "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Action.StopAllEmails",
+    "description": null,
+    "english": "Stop All Emails",
+    "translation": "停止所有電子郵件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Label.DailyUpdate",
+    "description": null,
+    "english": "Daily Update",
+    "translation": "每日更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Label.NoUpdate",
+    "description": null,
+    "english": "No Update",
+    "translation": "不更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Label.Immediate",
+    "description": null,
+    "english": "Immediate",
+    "translation": "即時",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Description.JobApplication",
+    "description": "Description for notification settings about when someone applies to my job",
+    "english": "Someone applies to my job",
+    "translation": "有人申請我的職缺",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Description.ApplicantRescinded",
+    "description": "Description for notification settings about when someone rescinds an in-progress application for my job",
+    "english": "Someone rescinds an in-progress application for my job",
+    "translation": "有人收回了填寫中的工作申請表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Description.NewMessage",
+    "description": "Description for notification settings about when someone sends me a message",
+    "english": "Someone sends me a message",
+    "translation": "有人向我傳送訊息",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Description.ApplicationStatus",
+    "description": "Description for notification settings about when someone makes a decision on my job application",
+    "english": "Someone makes a decision on my job application",
+    "translation": "有人對我的工作申請做出決定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Description.InviteToJob",
+    "description": "Description for notification settings about when someone invites me to apply to their job",
+    "english": "Someone invites me to apply to their job",
+    "translation": "有人邀請我申請他的職缺",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.CreatorSettings",
+    "key": "Heading.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "隱私權",
     "isDeprecated": false
   },
   {
@@ -73612,7 +74780,7 @@
     "key": "Input.Copy",
     "description": "DEPRECATED\n\nFor when the user hits duplicate and we need a new title (i.e {Sample Title} to {Sample Title Copy})",
     "english": "Copy",
-    "translation": "副本",
+    "translation": "複製",
     "isDeprecated": false
   },
   {
@@ -73892,7 +75060,7 @@
     "key": "Label.NoEnable",
     "description": "Do not enable (for toggle)",
     "english": "No",
-    "translation": "否",
+    "translation": "無",
     "isDeprecated": false
   },
   {
@@ -74460,7 +75628,7 @@
     "key": "OperationDescription.UniversePlacesWrite",
     "description": "Description for the Write operation for the universe-places scope.",
     "english": "This operation grants access to publish new versions of experiences to Roblox.",
-    "translation": "此操作將會允許發布新版本的體驗到 Roblox。",
+    "translation": "此操作將會給予發布新版本體驗到 Roblox 的權限。",
     "isDeprecated": false
   },
   {
@@ -74664,6 +75832,566 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.Alerts",
+    "key": "Description.RedirectDisclaimer",
+    "description": null,
+    "english": "This site is not owned or operated by Roblox. They may have different terms and privacy policies.",
+    "translation": "Roblox 不擁有或營運此網站，該網站的條款和隱私權政策可能有異。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Alerts",
+    "key": "Title.LeavingRoblox",
+    "description": null,
+    "english": "You are leaving Roblox",
+    "translation": "您將要離開 Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Alerts",
+    "key": "Description.BrokenLink",
+    "description": "Fills in Description.RedirectConfirmation if link doesn't work",
+    "english": "[broken link]",
+    "translation": "【無效連結】",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Alerts",
+    "key": "Label.IAgree",
+    "description": null,
+    "english": "I Agree",
+    "translation": "我同意",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Alerts",
+    "key": "Description.RedirectConfirmationWrapper",
+    "description": "Allows for word wrap for the link",
+    "english": "By clicking \"Continue\", you will be directed to {redirectLinkStart}{redirectLinkEnd}",
+    "translation": "您點擊「繼續」時將會導向 {redirectLinkStart}{redirectLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Alerts",
+    "key": "Label.Terms",
+    "description": null,
+    "english": "Terms",
+    "translation": "挑款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Inbox",
+    "description": null,
+    "english": "Inbox",
+    "translation": "收件箱",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Accepted",
+    "description": null,
+    "english": "Accepted",
+    "translation": "已接受",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Applied",
+    "description": null,
+    "english": "Applied",
+    "translation": "已套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Rejected",
+    "description": null,
+    "english": "Rejected",
+    "translation": "遭拒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Applied",
+    "description": null,
+    "english": "Apply",
+    "translation": "套用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Invite",
+    "description": null,
+    "english": "Invite",
+    "translation": "邀請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Open",
+    "description": null,
+    "english": "Open",
+    "translation": "打開",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Closed",
+    "description": null,
+    "english": "Closed",
+    "translation": "已關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Open",
+    "description": null,
+    "english": "Open",
+    "translation": "打開",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Invited",
+    "description": null,
+    "english": "Invited",
+    "translation": "已邀請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Incoming",
+    "description": null,
+    "english": "Incoming",
+    "translation": "來電",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.Declined",
+    "description": null,
+    "english": "Declined",
+    "translation": "已拒絕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Retry",
+    "description": null,
+    "english": "Retry",
+    "translation": "重試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Default",
+    "description": null,
+    "english": "Default",
+    "translation": "預設",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Action.Relevance",
+    "description": null,
+    "english": "Relevance",
+    "translation": "相關性",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Chat",
+    "key": "Label.SortBy",
+    "description": null,
+    "english": "Sort By",
+    "translation": "排序方式",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cacctthft",
+    "description": null,
+    "english": "Account Theft",
+    "translation": "帳號竊盜",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_castown",
+    "description": null,
+    "english": "Asset Ownership",
+    "translation": "素材所有權",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cbill",
+    "description": null,
+    "english": "Billing",
+    "translation": "帳務",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_ccompd",
+    "description": null,
+    "english": "Compromised Account",
+    "translation": "帳號遭到侵入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_ccopy",
+    "description": null,
+    "english": "Intellectual Property Violations",
+    "translation": "侵犯智慧財產權",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cdiscrim",
+    "description": null,
+    "english": "Discrimination, Slurs, and Hate Speech",
+    "translation": "歧視、汙言及仇恨言論",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cdmca",
+    "description": null,
+    "english": "DMCA",
+    "translation": "DMCA",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cexplt",
+    "description": null,
+    "english": "Cheating and Exploits",
+    "translation": "密技和作弊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cgroom",
+    "description": null,
+    "english": "Grooming",
+    "translation": "誘拐",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_chrss",
+    "description": null,
+    "english": "Bullying and Harassment",
+    "translation": "霸凌和騷擾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cillicit",
+    "description": null,
+    "english": "Illegal and Regulated Activities",
+    "translation": "違法和被管制活動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cmalc",
+    "description": null,
+    "english": "Malicious",
+    "translation": "惡意",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cmislead",
+    "description": null,
+    "english": "Misleading Impersonation and Misrepresentation",
+    "translation": "誤導性假冒和代表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_colink",
+    "description": null,
+    "english": "Directing Users Off-Platform",
+    "translation": "企圖將使用者引到站外",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cok",
+    "description": null,
+    "english": "OK",
+    "translation": "確定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_conldtg",
+    "description": null,
+    "english": "Dating and Romantic Content",
+    "translation": "約會和愛情內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cphish",
+    "description": null,
+    "english": "Phishing",
+    "translation": "網路釣魚",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cprofanity",
+    "description": null,
+    "english": "Profanity",
+    "translation": "髒話",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_crmt",
+    "description": null,
+    "english": "RMT",
+    "translation": "現實金錢交易",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_csxlcntnt",
+    "description": null,
+    "english": "Sexual Content",
+    "translation": "色情內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cshock",
+    "description": null,
+    "english": "Shock",
+    "translation": "震撼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cspam",
+    "description": null,
+    "english": "Spam",
+    "translation": "垃圾內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cthreat",
+    "description": null,
+    "english": "Threats of Violence",
+    "translation": "暴力威脅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cunknwn",
+    "description": null,
+    "english": "Unknown",
+    "translation": "未知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cabuserblxppl",
+    "description": null,
+    "english": "Abuse of Roblox Employees or Affiliates",
+    "translation": "欺凌 Roblox 員工或夥伴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cadvert",
+    "description": null,
+    "english": "Advertising",
+    "translation": "廣告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cchildendan",
+    "description": null,
+    "english": "Child Endangerment",
+    "translation": "兒童危害",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_ccontest",
+    "description": null,
+    "english": "Contests and Sweepstakes",
+    "translation": "比賽和抽獎",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cdispaudio",
+    "description": null,
+    "english": "Disruptive Audio",
+    "translation": "干擾性音訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cextort",
+    "description": null,
+    "english": "Extortion and Blackmail",
+    "translation": "勒索",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_coffplat",
+    "description": null,
+    "english": "Harmful Off-Platform Speech and Behavior",
+    "translation": "有害平台外言論和行為",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cmisuserblx",
+    "description": null,
+    "english": "Misusing Roblox Systems",
+    "translation": "不當使用 Roblox 系統",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cpoli",
+    "description": null,
+    "english": "Political Content",
+    "translation": "政治內容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_crwdanact",
+    "description": null,
+    "english": "Real World Physically Dangerous Activities",
+    "translation": "真實世界具有人身風險之活動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_crblxecon",
+    "description": null,
+    "english": "Roblox Economy",
+    "translation": "Roblox 經濟體系",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cscam",
+    "description": null,
+    "english": "Scams",
+    "translation": "詐騙",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_crealinfoshare",
+    "description": null,
+    "english": "Sharing Personal Information",
+    "translation": "分享個人資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cselfharm",
+    "description": null,
+    "english": "Suicide and Self Harm",
+    "translation": "自殺和自殘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Moderation",
+    "key": "Label.aptp_cviolentgore",
+    "description": null,
+    "english": "Violent Content and Gore",
+    "translation": "暴力內容和血腥",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Action.ReportAbuse",
+    "description": null,
+    "english": "Report Abuse",
+    "translation": "檢舉濫用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Subject",
+    "description": null,
+    "english": "Subject",
+    "translation": "主題",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Comment",
+    "description": null,
+    "english": "Comment",
+    "translation": "註解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Description.UserReportDescription",
+    "description": null,
+    "english": "Not sure if the thing you are trying to report is really against the rules?",
+    "translation": "不確定您舉報的事項是否違反規則？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Harassment",
+    "description": null,
+    "english": "Harassment",
+    "translation": "騷擾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Violence",
+    "description": null,
+    "english": "Violence",
+    "translation": "暴力",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Dating",
+    "description": null,
+    "english": "Dating",
+    "translation": "約會",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Exploiting",
+    "description": null,
+    "english": "Exploiting",
+    "translation": "剝削",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.UserReport",
+    "key": "Label.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "其他",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -74684,7 +76412,7 @@
     "key": "Label.GameStrings",
     "description": null,
     "english": "Strings",
-    "translation": "字串",
+    "translation": "弦",
     "isDeprecated": false
   },
   {
@@ -74740,7 +76468,7 @@
     "key": "Title.TextToTranslate",
     "description": null,
     "english": "Text to translate",
-    "translation": "待翻譯文字",
+    "translation": "帶翻譯文字",
     "isDeprecated": false
   },
   {
@@ -74964,7 +76692,7 @@
     "key": "Label.Required",
     "description": null,
     "english": "Required",
-    "translation": "必填",
+    "translation": "需要",
     "isDeprecated": false
   },
   {
@@ -75460,7 +77188,7 @@
     "key": "Label.Complete",
     "description": null,
     "english": "Complete",
-    "translation": "已完成",
+    "translation": "完成",
     "isDeprecated": false
   },
   {
@@ -77172,7 +78900,7 @@
     "key": "Title.TextToTranslate",
     "description": null,
     "english": "Text to translate",
-    "translation": "待翻譯文字",
+    "translation": "帶翻譯文字",
     "isDeprecated": false
   },
   {
@@ -77356,7 +79084,7 @@
     "key": "Label.Required",
     "description": null,
     "english": "Required",
-    "translation": "必填",
+    "translation": "需要",
     "isDeprecated": false
   },
   {
@@ -78676,7 +80404,7 @@
     "key": "Action.Next",
     "description": null,
     "english": "Next",
-    "translation": "下一個",
+    "translation": "繼續",
     "isDeprecated": false
   },
   {
@@ -78732,7 +80460,7 @@
     "key": "Label.Returns",
     "description": null,
     "english": "Returns",
-    "translation": "返回",
+    "translation": "傳回列表清單",
     "isDeprecated": false
   },
   {
@@ -79940,7 +81668,7 @@
     "key": "Label.Required",
     "description": "Created for app name description. Can be used elsewhere",
     "english": "Required",
-    "translation": "必填",
+    "translation": "需要",
     "isDeprecated": false
   },
   {
@@ -80212,7 +81940,7 @@
     "key": "Label.TryAgain",
     "description": null,
     "english": "Try Again",
-    "translation": "重新嘗試",
+    "translation": "再試一次",
     "isDeprecated": false
   },
   {
@@ -80572,7 +82300,7 @@
     "key": "Label.Disabled",
     "description": null,
     "english": "Disabled",
-    "translation": "已停用",
+    "translation": "已定身",
     "isDeprecated": false
   },
   {
@@ -80725,6 +82453,14 @@
     "description": null,
     "english": "Image upload failed. Supported file types are JPG, PNG, and BMP",
     "translation": "無法上傳圖像。支援檔案類型為 JPG、PNG 及 BMP",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.UserAccessedLinkFormat",
+    "description": null,
+    "english": "Must have secure SSL certificate (starts with https://)",
+    "translation": "必須擁有安全 SSL 憑證（開頭為 https://）",
     "isDeprecated": false
   },
   {
@@ -82084,7 +83820,7 @@
     "key": "Label.Accessibility",
     "description": null,
     "english": "Accessibility",
-    "translation": "無障礙功能",
+    "translation": "無障礙",
     "isDeprecated": false
   },
   {
@@ -82108,7 +83844,7 @@
     "key": "Label.Terms",
     "description": null,
     "english": "Terms",
-    "translation": "條款",
+    "translation": "挑款",
     "isDeprecated": false
   },
   {
@@ -82116,7 +83852,7 @@
     "key": "Description.CopyrightMessage",
     "description": null,
     "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
-    "translation": "©{copyrightYear} Roblox Corporation、Roblox、Roblox 標誌及 Powering Imagination 是我們在美國及其他國家地區的部分註冊與未註冊商標。",
+    "translation": "©{copyrightYear} Roblox Corporation。Roblox、Roblox 標誌及 Powering Imagination 是我們在美國及其它國家的部分註冊與未註冊商標。",
     "isDeprecated": false
   },
   {
@@ -82404,7 +84140,7 @@
     "key": "Heading.Filters",
     "description": null,
     "english": "Filters",
-    "translation": "篩選條件",
+    "translation": "篩選",
     "isDeprecated": false
   },
   {
@@ -83188,7 +84924,7 @@
     "key": "Label.NotificationTypeMatchedContact",
     "description": "Notification Type Matched Contact",
     "english": "Contact on Roblox",
-    "translation": "相符聯絡人",
+    "translation": "Roblox 上的聯絡人",
     "isDeprecated": false
   },
   {
@@ -83196,7 +84932,7 @@
     "key": "Description.NotificationTypeMatchedContact",
     "description": null,
     "english": "Someone in my contacts is on Roblox.",
-    "translation": "我們在 Roblox 找到手機上的聯絡人",
+    "translation": "我的聯絡人之中有人在 Roblox。",
     "isDeprecated": false
   },
   {
@@ -83233,10 +84969,50 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeOAuthAppReviewed",
+    "description": "OAuth application was reviewed by a moderator",
+    "english": "Application Reviewed",
+    "translation": "申請已審核",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Label.CategoryOAuth2",
     "description": "Notification for oauth applications",
     "english": "OAuth Apps",
     "translation": "OAuth App",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeOAuthAppReviewed",
+    "description": null,
+    "english": "My application has been reviewed",
+    "translation": "我的申請內容已經過審核",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Media",
+    "key": "Label.UploadDescription",
+    "description": null,
+    "english": "Drag and drop media here to upload",
+    "translation": "將媒體拖曳至此即可上傳",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Media",
+    "key": "Label.DragOverDescription",
+    "description": null,
+    "english": "Release media here to upload",
+    "translation": "將媒體放至此處即可上傳",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Media",
+    "key": "Label.Media",
+    "description": null,
+    "english": "Media",
+    "translation": "媒體",
     "isDeprecated": false
   },
   {
@@ -83340,7 +85116,7 @@
     "key": "Label.Returns",
     "description": null,
     "english": "Returns",
-    "translation": "返回",
+    "translation": "傳回列表清單",
     "isDeprecated": false
   },
   {
@@ -88724,7 +90500,7 @@
     "key": "Heading.Tablet",
     "description": null,
     "english": "Tablet",
-    "translation": "平板",
+    "translation": "平板電腦",
     "isDeprecated": false
   },
   {
@@ -88732,7 +90508,7 @@
     "key": "Heading.Phone",
     "description": null,
     "english": "Phone",
-    "translation": "手機",
+    "translation": "電話",
     "isDeprecated": false
   },
   {
@@ -88740,7 +90516,7 @@
     "key": "Label.Play",
     "description": null,
     "english": "Play",
-    "translation": "播放",
+    "translation": "玩耍",
     "isDeprecated": false
   },
   {
@@ -89744,6 +91520,134 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.About",
+    "description": null,
+    "english": "About",
+    "translation": "關於",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Members",
+    "description": null,
+    "english": "Members",
+    "translation": "成員",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Preview",
+    "description": null,
+    "english": "Preview",
+    "translation": "預覽",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Experiences",
+    "description": null,
+    "english": "Experiences",
+    "translation": "體驗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.ExperienceId",
+    "description": null,
+    "english": "Experience ID",
+    "translation": "體驗 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Action.Close",
+    "description": null,
+    "english": "Close",
+    "translation": "關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Action.Add",
+    "description": null,
+    "english": "Add",
+    "translation": "新增",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Assets",
+    "description": null,
+    "english": "Assets",
+    "translation": "資產",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.AssetId",
+    "description": null,
+    "english": "Asset ID",
+    "translation": "素材 ID\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Owner",
+    "description": null,
+    "english": "Owner",
+    "translation": "所有人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Member",
+    "description": null,
+    "english": "Member",
+    "translation": "成員",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Search",
+    "description": null,
+    "english": "Search",
+    "translation": "搜尋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Skills",
+    "description": null,
+    "english": "Skills",
+    "translation": "技能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.TeamPages",
+    "description": null,
+    "english": "Teams",
+    "translation": "隊伍",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "說明",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Leave",
+    "description": null,
+    "english": "Leave",
+    "translation": "離開",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -89940,7 +91844,7 @@
     "key": "Label.Submit",
     "description": null,
     "english": "Submit",
-    "translation": "送出",
+    "translation": "提交",
     "isDeprecated": false
   },
   {
@@ -91324,7 +93228,7 @@
     "key": "Action.Restore",
     "description": null,
     "english": "Restore",
-    "translation": "復原",
+    "translation": "回復",
     "isDeprecated": false
   },
   {
@@ -91516,7 +93420,7 @@
     "key": "Message.ExperienceAccessNotAvailable",
     "description": null,
     "english": "Audio files cannot be made public at this time. Please check back at a later date.",
-    "translation": "目前無法啟用商城，請稍後再回來查看。",
+    "translation": "目前無法將音訊檔案設為公開，請日後再回來查看。",
     "isDeprecated": false
   },
   {
@@ -91820,7 +93724,7 @@
     "key": "Label.DeviceType.Tablet",
     "description": null,
     "english": "Tablet",
-    "translation": "平板",
+    "translation": "平板電腦",
     "isDeprecated": false
   },
   {
@@ -92396,7 +94300,7 @@
     "key": "Label.Disable",
     "description": null,
     "english": "Disable",
-    "translation": "停用",
+    "translation": "定身術",
     "isDeprecated": false
   },
   {
@@ -93333,6 +95237,14 @@
     "description": null,
     "english": "Something went wrong. Please try again later",
     "translation": "發生錯誤，請稍後再試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventModeratedTitle",
+    "description": "shown in place of title when content is moderated",
+    "english": "[CONTENT MODERATED]",
+    "translation": "[內容已受仲裁]",
     "isDeprecated": false
   },
   {
@@ -94419,7 +96331,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Description.FailedEntryDetails",
     "description": null,
-    "english": "- source: {source}, context: {context}, errorMessage: {errorMessage}",
+    "english": "- source: {source}, context: {context}, error message: {errorMessage}",
     "translation": "- 來源：{source}，語境：{context}，錯誤訊息：{errorMessage}",
     "isDeprecated": false
   },
@@ -94621,6 +96533,22 @@
     "description": null,
     "english": "One-Time Code",
     "translation": "一次性代碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V2.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}{boldStart}Verification Code: {code}{boldEnd}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code above to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our {linkTagWithParentGuideLinkStart}Parent’s Guide{linkTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}您的小孩已請求在 Roblox 建立帳號。Roblox 是一個讓兒童在使用者創作的沉浸式 3D 世界裡一起想像、創作和玩樂的網路娛樂平台。{lineBreak}{lineBreak}{boldStart}驗證碼：{code}{boldEnd}{lineBreak}{lineBreak}為了建立帳號，您的小孩已經向我們提供使用者名稱、出生日期及家長的電子郵件地址。您必須同意小孩使用 Roblox 才可完成帳號建立流程。{lineBreak}{lineBreak}若要完成註冊流程並同意小孩使用 Roblox，您必須輸入上方代碼。您輸入代碼即表示同意 {linkTagWithTermsLinkStart}Roblox 條款{linkTagEnd}，包括仲裁條例，以及{linkTagWithPrivacyPolicyLinkStart}隱私權政策{linkTagEnd}。您會監督小孩使用 Roblox，並獨自為其行為負責。您也同意我們在適當情況下處理您小孩與本服務相關的個人資料。{lineBreak}{lineBreak}{boldStart}Roblox 家長指南{boldEnd}{lineBreak}{lineBreak}我們建議您閱讀{linkTagWithParentGuideLinkStart}家長指南{linkTagEnd}， 讓您可以更加了解我們的平台，以及學習如何為小孩營造正面的 Roblox 體驗。{lineBreak}{lineBreak}{boldStart}隱私權{boldEnd}{lineBreak}{lineBreak}您可以隨時在 https://www.roblox.com/support 請求客服人員移除小孩的帳號。您的電子郵件地址將不會用在其他用途上、洩漏給第三方組織或與您的小孩提供的其他個人資訊合併。若要了解更多資訊，請閱讀我們的隱私權政策。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.ReauthOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it onto your screen. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This Roblox One-Time Code request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "您好，{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} 是您的 Roblox 一次性驗證碼。請將它輸入至畫面中。此驗證碼將在 15 分鐘後失效。{lineBreak}{lineBreak}{boldStart}請勿{boldEnd}分享此驗證碼。我們{boldStart}不會{boldEnd}主動向您要求驗證碼。如果您未要求此驗證碼，您目前不必採取任何動作。如果您持續獲得未要求的驗證碼，我們強烈建議您連結其他電子郵件地址到您的帳號，並{linkTagWithAuthenticatorHelpLinkStart}設定驗證器 App 雙步驟驗證{linkTagEnd}。{lineBreak}{lineBreak}此 Roblox 一次性驗證碼請求來自 {geolocation}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊",
     "isDeprecated": false
   },
   {
@@ -94976,11 +96904,35 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownDevice",
+    "description": "Displayed when information about a session's user agent is unknown",
+    "english": "Unknown Device",
+    "translation": "未知裝置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownLocation",
+    "description": "Displayed when information about a session's location is unknown",
+    "english": "Unknown Location",
+    "translation": "未知位置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownTime",
+    "description": "Displayed when information about a session's last active time is unknown",
+    "english": "Unknown Time",
+    "translation": "未知時間",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.MatchedContact",
     "key": "Stream.Desktop.NewMatchedContacts",
     "description": "Desktop stream notification for a newly matched contact",
     "english": "Visit Contact Importer in the Roblox app to add them as a friend.",
-    "translation": "在行動裝置開啟即可找到聯絡人。",
+    "translation": "至 Roblox 應用程式的匯入通訊錄功能將他們加為好友。",
     "isDeprecated": false
   },
   {
@@ -95008,6 +96960,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Archived",
+    "description": null,
+    "english": "Archived",
+    "translation": "已封存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Declined",
+    "description": null,
+    "english": "Declined",
+    "translation": "已拒絕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Decline",
+    "description": null,
+    "english": "Decline",
+    "translation": "拒絕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Filters",
+    "description": null,
+    "english": "Filters",
+    "translation": "篩選條件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Skills",
+    "description": null,
+    "english": "Skills",
+    "translation": "技能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "其他",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.New",
+    "description": null,
+    "english": "New",
+    "translation": "建立",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.ApplicantTracking",
+    "key": "Label.Status",
+    "description": null,
+    "english": "Status",
+    "translation": "狀態",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.Title",
+    "description": "Modal title",
+    "english": "Age Verification Required",
+    "translation": "需要驗證年齡",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.ContentText",
+    "description": "Text shown in modal",
+    "english": "Please verify your age to access this experience.\n\n1. Go to Account Info in Settings\n2. Choose Verify My Age\n3. Complete the process\n",
+    "translation": "請驗證您的年齡以參與此體驗。\n\n1. 前往設定中的帳戶資訊\n2. 選擇驗證我的年齡\n3. 完成驗證過程\n",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AgeVerificationUpsell",
     "key": "Button.Cancel",
     "description": "Cancel button text",
@@ -95021,6 +97053,30 @@
     "description": "Settings button text",
     "english": "Settings",
     "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.AccountInfo",
+    "description": "Text for button taking user to the 'Account Info' page",
+    "english": "Account Info",
+    "translation": "帳號資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Title.MemoryUsage",
+    "description": null,
+    "english": "Memory Usage",
+    "translation": "記憶體使用率",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.ApiRequestUnits",
+    "description": null,
+    "english": "Usage",
+    "translation": "使用率",
     "isDeprecated": false
   }
 ]
