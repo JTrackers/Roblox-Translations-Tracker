@@ -728,6 +728,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "Endereço de e-mail inválido.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} É seu código único para Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Olá,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} é o seu código único Roblox. Insira-o na tela de login para entrar. Este código irá expirar em 15 minutos.{lineBreak}{lineBreak}Não {boldStart}compartilhe{boldEnd} este código. Nós {boldStart}nunca{boldEnd} contataremos você para pedir códigos. Se você não solicitou esse código, não é necessário tomar nenhuma ação adicional. Se você receber vários códigos que não solicitou, incentivamos você a vincular um e-mail diferente a sua(s) conta(s) e {linkTagWithAuthenticatorHelpLinkStart}configurar a verificação em duas etapas por aplicativo autenticador{linkTagEnd}.{lineBreak}{lineBreak}Este pedido de login foi recebido de {geolocation}.{lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A Equipe Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorOtpTimeWarning",
+    "description": "timeLimitSec will be a number",
+    "english": "Please select one within {timeLimitSec} seconds.",
+    "translation": "Selecione um dentro de {timeLimitSec} segundos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.IncorrectOtpCode",
+    "description": null,
+    "english": "Your code is incorrect. Please double check and try again.",
+    "translation": "Seu código está incorreto. Confira e tente novamente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "Está tendo problemas?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -8972,7 +9020,7 @@
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
     "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
-    "translation": "Se você desativar a verificação em duas etapas, somente a sua senha será necessária para ações como iniciar uma sessão. Tem certeza?",
+    "translation": "Se você desativar a verificação em duas etapas, sua conta ficará menos segura e somente sua senha será necessária para ações como entrar na conta. Você tem certeza?",
     "isDeprecated": false
   },
   {
@@ -12584,6 +12632,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they don't have an account email",
+    "english": "You must provide and verify your email before you can delete your PIN.",
+    "translation": "Você deve fornecer e verificar seu e-mail antes de excluir seu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified email",
+    "english": "You must verify your email before you can delete your PIN.",
+    "translation": "Você deve verificar seu e-mail antes de excluir seu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can add a PIN.",
+    "translation": "Você deve fornecer e verificar o e-mail de seu responsável antes de adicionar um PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can delete your PIN.",
+    "translation": "Você deve fornecer e verificar o e-mail de seu responsável antes de excluir seu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can delete your PIN.",
+    "translation": "Você deve verificar o e-mail de seu responsável antes de excluir seu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can add a PIN.",
+    "translation": "Você deve verificar o e-mail de seu responsável antes de adicionar um PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.ChangeEmailDisablePinWarning",
+    "description": "modal body when users attempt to change their email with pin enabled",
+    "english": "You must disable parent PIN in Parental Controls to change your email. ",
+    "translation": "Você deve desativar o PIN no Controle dos responsáveis para alterar seu e-mail. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ChatWithYourVoice",
+    "description": "DUPLICATE",
+    "english": "This setting allows you to {linkStart}Chat with your Voice{linkEnd} in Roblox experiences.",
+    "translation": "Esta configuração permite que você {linkStart}converse com a sua voz{linkEnd} em experiências Roblox.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ChatFeatures",
+    "description": null,
+    "english": "Chat Features",
+    "translation": "Recursos de chat",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -14885,6 +15005,14 @@
     "description": null,
     "english": "You have insufficient funds for this transaction",
     "translation": "Você não tem fundos suficientes para esta transação",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RecentlyCreated",
+    "description": "Used for sorting items in the catalog",
+    "english": "Recently Created",
+    "translation": "Criados recentemente",
     "isDeprecated": false
   },
   {
@@ -25784,6 +25912,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "Comprar itens",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.Get",
+    "description": null,
+    "english": "Get",
+    "translation": "Obter",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -29132,7 +29276,7 @@
     "key": "Label.Sales",
     "description": null,
     "english": "Sales",
-    "translation": "Promoções",
+    "translation": "Vendas",
     "isDeprecated": false
   },
   {
@@ -39192,6 +39336,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "translation": "Ocorreu um erro inesperado. Pode levar até 5 minutos para sua transação processar. Atualize a página para ver se a transação foi processada com sucesso.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "Ocorreu um erro e o pagamento não foi bem-sucedido. Tente novamente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Label.Error",
+    "description": null,
+    "english": "Error",
+    "translation": "Erro",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Label.Ok",
+    "description": null,
+    "english": "Ok",
+    "translation": "OK",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TranslationLanguageSwitch",
     "key": "Label.CurrentLanguage",
     "description": "The label for the field that displays user's current language",
@@ -45388,7 +45564,7 @@
     "key": "Heading.Sales",
     "description": null,
     "english": "Sales",
-    "translation": "Promoções",
+    "translation": "Vendas",
     "isDeprecated": false
   },
   {
@@ -56344,6 +56520,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "Valor é o valor de pagamento líquido, excluindo comissões, taxa de mercado e pagamentos recorrentes em grupo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadMonthInstructions",
+    "description": "Description for 1 month",
+    "english": "Please select the month of the transactions you want to download.",
+    "translation": "Selecione o mês das transações que deseja baixar.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -58988,7 +59180,7 @@
     "key": "Label.DraftEvents",
     "description": "Label for the list of unpublished scheduled events",
     "english": "Draft Events",
-    "translation": "Propor eventos",
+    "translation": "Rascunhos de eventos",
     "isDeprecated": false
   },
   {
@@ -59044,7 +59236,7 @@
     "key": "Error.FailedToPublish",
     "description": "Error message displayed when the network call to publish a scheduled event fails for any reason",
     "english": "Unable to publish event, please try again later",
-    "translation": "Não foi possível publicar o evento; tente de novo mais tarde",
+    "translation": "Não foi possível publicar o evento. Tente novamente mais tarde",
     "isDeprecated": false
   },
   {
@@ -59052,7 +59244,7 @@
     "key": "Error.FailedToCreate",
     "description": "Error displayed when the call to save a scheduled event fails for any reason",
     "english": "Unable to create event, please try again later",
-    "translation": "Não foi possível criar o evento; tente de novo mais tarde",
+    "translation": "Não foi possível criar o evento. Tente novamente mais tarde",
     "isDeprecated": false
   },
   {
@@ -59060,7 +59252,7 @@
     "key": "Error.StartTime",
     "description": "Error displayed when a scheduled event's start date/time is invalid",
     "english": "Start must be at least a day from now",
-    "translation": "O evento deve começar após pelo menos um dia a partir de agora",
+    "translation": "O evento deve começar pelo menos um dia a partir de agora",
     "isDeprecated": false
   },
   {
@@ -59188,7 +59380,7 @@
     "key": "Message.CancelEventFailed",
     "description": "Message displayed when a scheduled event's requested cancellation fails for any reason",
     "english": "Event cancellation failed, please try again",
-    "translation": "Falha ao cancelar o evento; tente de novo mais tarde",
+    "translation": "Falha ao cancelar o evento. Tente novamente mais tarde",
     "isDeprecated": false
   },
   {
@@ -59212,7 +59404,7 @@
     "key": "Description.CancelEvent",
     "description": "Text in a dialog that confirms if a user wants to cancel a scheduled event",
     "english": "This event will be cancelled. This action cannot be undone.",
-    "translation": "O evento será cancelado; esta ação não poderá ser desfeita.",
+    "translation": "O evento será cancelado. Esta ação não poderá ser desfeita.",
     "isDeprecated": false
   },
   {
@@ -59228,7 +59420,7 @@
     "key": "Error.FailedToUpdateEvent",
     "description": "Error displayed when an update to a scheduled event fails for any reason",
     "english": "Failed to update the event, please try again later",
-    "translation": "Falha ao atualizar o evento; tente de novo mais tarde",
+    "translation": "Falha ao atualizar o evento. Tente novamente mais tarde",
     "isDeprecated": false
   },
   {
@@ -59276,7 +59468,7 @@
     "key": "Message.PrivateExperienceWarning",
     "description": "Message displayed to warn a user that they have selected a private experience to associate with a scheduled event",
     "english": "The experience you have chosen is private and therefore won't be playable when the event becomes live.",
-    "translation": "A experiência escolhida é privada, e por isso, não será jogável quando o evento iniciar.",
+    "translation": "A experiência escolhida é privada e não será jogável quando o evento iniciar.",
     "isDeprecated": false
   },
   {
@@ -59316,7 +59508,7 @@
     "key": "Message.ConfirmPublishEvent",
     "description": "Message displayed in a modal confirming that a user would like to publish a scheduled event",
     "english": "When an event is published, it is immediately visible to everyone, and the attached experience cannot be swapped. Assets that are pending review or are moderated will display a placeholder instead.",
-    "translation": "Quando um evento é publicado, o mesmo se tornará imediatamente visível para todos, e a experiência anexada não poderá ser trocada. Ativos com avaliação pendente ou sob moderação irão exibir um placeholder.",
+    "translation": "Quando um evento é publicado, o mesmo se torna imediatamente visível para todos e a experiência anexada não poderá ser trocada. Ativos com avaliação pendente ou sob moderação irão exibir um substituto temporário.",
     "isDeprecated": false
   },
   {
@@ -59356,7 +59548,7 @@
     "key": "Description.DeleteEvent",
     "description": "Text for a confirmation dialog that a user wants to permanently delete a scheduled event",
     "english": "This event will be deleted and you will no longer be able to access it again. This action cannot be undone.",
-    "translation": "O evento será excluído, e você não poderá mais acessá-lo novamente; esta ação não poderá ser desfeita.",
+    "translation": "O evento será excluído, e você não poderá mais acessá-lo novamente. Esta ação não poderá ser desfeita.",
     "isDeprecated": false
   },
   {
@@ -59372,7 +59564,7 @@
     "key": "Message.DeleteEventSuccess",
     "description": "Message displayed when a user successfully deletes a scheduled event",
     "english": "Event was deleted successfully",
-    "translation": "O evento foi excluído",
+    "translation": "O evento foi excluído com sucesso",
     "isDeprecated": false
   },
   {
@@ -59380,7 +59572,7 @@
     "key": "Message.DeleteEventFailed",
     "description": "Message displayed when a scheduled event fails to be deleted for any reason",
     "english": "Event deletion failed, please try again",
-    "translation": "Falha ao excluir o evento; tente de novo mais tarde",
+    "translation": "Falha ao excluir o evento. Tente novamente mais tarde",
     "isDeprecated": false
   },
   {
@@ -59404,7 +59596,7 @@
     "key": "Action.BackToEvents",
     "description": "An action to return the list of scheduled events from another area of the site",
     "english": "Back to Events",
-    "translation": "Voltar aos Eventos",
+    "translation": "Voltar aos eventos",
     "isDeprecated": false
   },
   {
@@ -59414,6 +59606,22 @@
     "english": "View on Roblox",
     "translation": "Ver na Roblox",
     "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventOverDateTime",
+    "description": "Label to describe a scheduled event that has ended on {endDate} date at {endTime} time",
+    "english": "Ended on {endDate} at {endTime}",
+    "translation": "Terminado em {endDate} às {endTime}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEndDateTime",
+    "description": "Label for a scheduled event that begins on {startDate} at {startTime}, and runs until {endDate} at {endTime}",
+    "english": "{startDate} at {startTime} - {endDate} at {endTime}",
+    "translation": "{startDate} em {startTime} - {endDate} em {endTime}",
+    "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.AssetTypes",
@@ -64132,7 +64340,7 @@
     "key": "Title.OrganicTrafficConversionFunnel",
     "description": "Chart Title in User Acquisitions",
     "english": "Search & Discovery Conversion Funnel",
-    "translation": "Funil de conversão de Busca e descoberta",
+    "translation": "Funil de conversão de busca e descoberta",
     "isDeprecated": false
   },
   {
@@ -65396,7 +65604,7 @@
     "key": "Questionnaire.TheMostMatureContent",
     "description": null,
     "english": "the most mature/extreme content a player can possibly experience in your experience (e.g. If your experience depicts mild violence infrequently and moderate violence frequently, declare “Frequent Moderate Violence”);",
-    "translation": "o conteúdo mais extremo/voltado para maiores que um jogador pode vivenciar em sua experiência (por exemplo, se sua experiência possui representações ocasionais de violência leve e representações frequentes de violência moderada, declare \"Violência moderada frequente\");",
+    "translation": "o conteúdo mais extremo ou voltado para maiores que um jogador pode vivenciar em sua experiência (por exemplo, se sua experiência possui representações ocasionais de violência leve e representações frequentes de violência moderada, declare \"Violência moderada frequente\");",
     "isDeprecated": false
   },
   {
@@ -65412,7 +65620,7 @@
     "key": "Questionnaire.UserGeneratedContentNotMeasured",
     "description": null,
     "english": "creator generated content only; user generated content is not measured. (E.g. you don’t need to account for blood in a player’s platform avatar brought into your experience.)",
-    "translation": "somente conteúdos gerados pelo criador; conteúdos gerados por usuários não são avaliados. (Por exemplo, você não precisa considerar a presença de sangue em um avatar da plataforma de um jogador participante da sua experiência.)",
+    "translation": "somente conteúdos gerados pelo criador; conteúdos gerados por usuários não são avaliados. (Por exemplo, você não precisa considerar a presença de sangue em um avatar de um jogador da plataforma participando em sua experiência.)",
     "isDeprecated": false
   },
   {
@@ -65452,7 +65660,7 @@
     "key": "Questionnaire.NonViolentAdversarial",
     "description": null,
     "english": "Nonviolent adversarial games.",
-    "translation": "Competições antagônicas sem violência.",
+    "translation": "Competições sem violência.",
     "isDeprecated": false
   },
   {
@@ -65596,7 +65804,7 @@
     "key": "Questionnaire.Blood",
     "description": null,
     "english": "Blood",
-    "translation": "Frequente",
+    "translation": "Sangue",
     "isDeprecated": false
   },
   {
@@ -65740,7 +65948,7 @@
     "key": "Questionnaire.LearnMoreAboutPaidItemTradingPolicyApi",
     "description": null,
     "english": "Learn about IsPaidItemTradingAllowed policy API.",
-    "translation": "Esta experiência respeita a API da política \"A troca de itens pagos é permitida\"?",
+    "translation": "Saiba mais sobre a política de API IsPaidItemTradingAllowed.",
     "isDeprecated": false
   },
   {
@@ -77080,6 +77288,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidImageFile2",
+    "description": null,
+    "english": "Image upload failed. Supported file types are JPG, PNG, and BMP",
+    "translation": "O carregamento de imagem falhou. Os tipos de arquivo suportados são JPG, PNG e BMP",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -79421,6 +79637,30 @@
     "description": null,
     "english": "Someone accepts my group join request",
     "translation": "Alguém aceita o meu pedido de adesão ao grupo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryExperienceGuidelines",
+    "description": "Notification Category Experience Guidelines",
+    "english": "Experience Guidelines",
+    "translation": "Diretrizes de experiência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeExperienceGuidelines",
+    "description": "Experience Guidelines Notification Label",
+    "english": "Experience Guidelines",
+    "translation": "Diretrizes de experiência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeExperienceGuidelines",
+    "description": "Experience Guidelines Notification Type Description",
+    "english": "Guidelines of my experience are moderated",
+    "translation": "Diretrizes da minha experiência estão moderadas",
     "isDeprecated": false
   },
   {
@@ -85764,7 +86004,7 @@
     "key": "Heading.UploadForRobux",
     "description": null,
     "english": "Upload for {price} Robux?",
-    "translation": "Upload por ({price} Robux?",
+    "translation": "Upload por {price} Robux?",
     "isDeprecated": false
   },
   {
@@ -87931,7 +88171,7 @@
     "namespace": "CreatorDashboard.Access",
     "key": "Message.ContentListSwear",
     "description": null,
-    "english": "Strong Lanage(Swearing)",
+    "english": "Strong Language (Swearing)",
     "translation": "Linguagem forte (palavrões)",
     "isDeprecated": false
   },
@@ -88524,7 +88764,7 @@
     "key": "Title.DailyEarnings",
     "description": null,
     "english": "Daily Earnings (Robux)",
-    "translation": "Rendimento",
+    "translation": "Renda diária (Robux)",
     "isDeprecated": false
   },
   {
@@ -88540,7 +88780,7 @@
     "key": "Title.DailyImpressions",
     "description": null,
     "english": "Daily Impressions",
-    "translation": "Impressões",
+    "translation": "Impressões diárias",
     "isDeprecated": false
   },
   {
@@ -88556,7 +88796,7 @@
     "key": "Title.DailyTeleports",
     "description": null,
     "english": "Daily Teleports",
-    "translation": "Teleportes",
+    "translation": "Teleportes diários",
     "isDeprecated": false
   },
   {
@@ -88628,7 +88868,7 @@
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "Estimated Earnings Per Ad Unit",
-    "translation": "Rendimento estimado",
+    "translation": "Renda estimada por unidade de anúncio",
     "isDeprecated": false
   },
   {
@@ -88644,7 +88884,7 @@
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
     "english": "Impressions Per Ad Unit",
-    "translation": "Impressões",
+    "translation": "Impressões por unidade de anúncio",
     "isDeprecated": false
   },
   {
@@ -88660,7 +88900,7 @@
     "key": "Title.DailyTeleportsBreakdown",
     "description": null,
     "english": "Teleports Per Ad Unit",
-    "translation": "Teleportes",
+    "translation": "Teletransportes por unidade de anúncio",
     "isDeprecated": false
   },
   {
@@ -88829,6 +89069,70 @@
     "description": null,
     "english": "The Robux amount earned for every teleport generated from Portal ad units in this experience.",
     "translation": "A quantidade de Robux recebida para cada teletransporte gerado por unidades de anúncios do portal nesta experiência.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarnings",
+    "description": null,
+    "english": "Earnings",
+    "translation": "Ganhos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyImpressions",
+    "description": null,
+    "english": "Impressions",
+    "translation": "Impressões",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyTeleports",
+    "description": null,
+    "english": "Teleports",
+    "translation": "Teleportes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEstimatedEarningsBreakdown",
+    "description": null,
+    "english": "Estimated Earnings",
+    "translation": "Ganhos estimados",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarningsPerMille",
+    "description": null,
+    "english": "Earnings Per Mille (EPM)",
+    "translation": "Renda por milhares (RPM)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "Earnings Per Teleport (EPT)",
+    "translation": "Renda por teletransporte (RPT)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyImpressionsBreakdown",
+    "description": null,
+    "english": "Impressions",
+    "translation": "Impressões",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyTeleportsBreakdown",
+    "description": null,
+    "english": "Teleports",
+    "translation": "Teleportes",
     "isDeprecated": false
   },
   {

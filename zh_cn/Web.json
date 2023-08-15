@@ -744,6 +744,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "你好，{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} 是你的 Roblox 一次性验证码。在登陆页面输入此验证码即可登录。此验证码将在 15 分钟后失效。{lineBreak}{lineBreak}{boldStart}请勿{boldEnd}与他人分享此验证码。我们{boldStart}永远不会{boldEnd}主动联系你并要求此验证码。如果你没有要求此验证码，那么当前无需采取任何行动。如果你连续收到从未要求过的验证码，那么我们则强烈建议你使用其他电子邮件地址与你的帐户关联，并{linkTagWithAuthenticatorHelpLinkStart}设置身份验证程序的两步验证{linkTagEnd}。{lineBreak}{lineBreak}此登录请求来自于 {geolocation}。{lineBreak}{lineBreak}感谢你的支持，{lineBreak}{lineBreak}Roblox 团队",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorOtpTimeWarning",
+    "description": "timeLimitSec will be a number",
+    "english": "Please select one within {timeLimitSec} seconds.",
+    "translation": "请在 {timeLimitSec} 秒内做出选择。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.IncorrectOtpCode",
+    "description": null,
+    "english": "Your code is incorrect. Please double check and try again.",
+    "translation": "你的验证码不正确。请再次检查并重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "遇到问题？",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -996,7 +1028,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Under13",
     "description": "Body for 2SV activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}已为您孩子的帐户：{accountName} 激活电子邮件两步认证。当他们登录帐户或进行其他操作时，将需要输入一个 6 位数的安全代码，Roblox 会通过电子邮件将此代码发送给您。{lineBreak}{lineBreak}Roblox",
+    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户 {accountName} 已启用电子邮件两步验证。之后，在其进行登陆或部分操作时，您的孩子将需要输入 Roblox 发送至您的电子邮箱的 6 位安全码。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他们分享安全代码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1004,7 +1036,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "你好，{accountName}，{lineBreak}{lineBreak}你已成功为你的 Roblox 帐户激活电子邮件两步验证。当你登录帐户或进行其他操作时，你将需要输入 Roblox 通过电子邮件发送给你的 6 位安全代码。{lineBreak}{lineBreak}Roblox",
+    "translation": "{accountName}您好，{lineBreak}{lineBreak}您的 Roblox 帐户已启用电子邮件两步验证。之后，在其进行登陆或部分操作时，您将需要输入 Roblox 发送至您的电子邮箱的 6 位安全码。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他们分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1012,7 +1044,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "你好 {accountName}，{lineBreak}{lineBreak}你已经停用了 Roblox 帐户的两步验证。{lineBreak}{lineBreak}Roblox",
+    "translation": "{accountName}您好，{lineBreak}{lineBreak}您的 Roblox 帐户已停用电子邮件两步验证。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他人分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1020,7 +1052,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户 “{accountName}” 使用的通过电子邮件的两步验证已停用。{lineBreak}{lineBreak}Roblox",
+    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户 {accountName} 已停用电子邮件两步验证。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他人分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1148,7 +1180,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}您好：{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} 是 {emphasisStart}{accountName}{emphasisEnd}的 Roblox 两步验证码。{paragraphEnd}{paragraphStart}在两步验证窗口中输入上方显示的代码来完成登录。本代码将在15分钟之后失效。{paragraphEnd}{paragraphStart}本次登录请求来自{emphasisStart}{geoLocationInformation}{emphasisEnd}。{paragraphEnd}{lineBreak}{paragraphStart}感谢您的支持，{lineBreak}{emphasisStart} Roblox 团队{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}您好，{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} 是您的 Roblox 帐户 {emphasisStart}{accountName}{emphasisEnd} 的两步验证码。{paragraphEnd}{paragraphStart}在两步验证页面输入上方验证码即可完成登录。此验证码将在 15 分钟后失效。{paragraphEnd}{paragraphStart}此登录请求来自 {emphasisStart}{geoLocationInformation}{emphasisEnd}。{paragraphEnd}{paragraphStart}重要信息：请勿以短信、屏幕分享等方式与其他人共享您的安全码。您的帐户及其内容处于高风险。{paragraphEnd}{lineBreak}{paragraphStart}谢谢您，{lineBreak}{emphasisStart}Roblox 团队{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1260,7 +1292,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{accountName}：{lineBreak}{lineBreak}您已成功为 Roblox 帐户激活身份验证程序两步验证。当您登录帐户或进行其他操作时，将需要输入验证 App 中的 6 位安全码。{lineBreak}{lineBreak}请妥善保管您的备用代码，以防无法访问验证 App。{lineBreak}{lineBreak}Roblox",
+    "translation": "{accountName}您好，{lineBreak}{lineBreak}您的 Roblox 帐户已启用身份验证程序两步验证。之后，在其进行登陆或部分操作时，您将需要输入 Roblox 发送至您身份验证程序的 6 位安全码。{lineBreak}{lineBreak}请保存好你的备份验证码，在身份验证程序无法访问时可以使用。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他人分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1268,7 +1300,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}您已为孩子的帐户：{accountName} 激活身份验证程序两步认证。当登录帐户或进行其他操作时，他们将需要输入验证 App 中的 6 位安全码。{lineBreak}{lineBreak}请妥善保管您的备用代码，以防无法访问验证器 App。{lineBreak}{lineBreak}Roblox",
+    "translation": "{accountName}您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户已启用身份验证程序两步验证。之后，在其进行登陆或部分操作时，您将需要输入 Roblox 发送至您身份验证程序的 6 位安全码。{lineBreak}{lineBreak}重要信息：请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全码。当您与他人分享安全码时，您的帐户及其内容的安全性将会大幅降低。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1917,6 +1949,22 @@
     "description": null,
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
     "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帐户 “{accountName}” 的安全密钥两步验证已停用。{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}重要信息：{boldEnd}请勿以短信、屏幕分享等方式与他们分享安全码。Roblox 不会向您要求安全代码。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}重要信息：{boldEnd}请勿以短信、屏幕分享等方式与他们分享备用验证码。Roblox 不会向您要求安全码。",
     "isDeprecated": false
   },
   {
@@ -14457,6 +14505,62 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Unlimited",
+    "description": "Refers to the \"Unlimited\" category of items: items that are sold in unlimited quantities and cannot be resold by users (as opposed to Limited and Limited U items)",
+    "english": "Unlimited",
+    "translation": "无限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.SellYourCollectibleItem",
+    "description": null,
+    "english": "Sell Your Collectible Item",
+    "translation": "出售你的收藏道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PriceMinimum1",
+    "description": null,
+    "english": "Price (minimum 1)",
+    "translation": "价格（最低为 1）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MarketplaceFee30Percent",
+    "description": null,
+    "english": "Marketplace fee (at 30%)",
+    "translation": "商城费用（30%）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.YouGet",
+    "description": null,
+    "english": "You get",
+    "translation": "你将获得",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SellNow",
+    "description": null,
+    "english": "Sell Now",
+    "translation": "现在出售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.TakeOffSale",
+    "description": null,
+    "english": "Take Off Sale",
+    "translation": "下架",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.Add",
     "description": null,
     "english": "Add",
@@ -25213,6 +25317,14 @@
     "description": null,
     "english": "Buy",
     "translation": "购买",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.Get",
+    "description": null,
+    "english": "Get",
+    "translation": "获取",
     "isDeprecated": false
   },
   {
@@ -38589,6 +38701,22 @@
     "description": null,
     "english": "PIX",
     "translation": "PIX",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Label.Error",
+    "description": null,
+    "english": "Error",
+    "translation": "错误",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Label.Ok",
+    "description": null,
+    "english": "Ok",
+    "translation": "好的",
     "isDeprecated": false
   },
   {
@@ -58496,6 +58624,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventOverDateTime",
+    "description": "Label to describe a scheduled event that has ended on {endDate} date at {endTime} time",
+    "english": "Ended on {endDate} at {endTime}",
+    "translation": "于 {endDate} {endTime} 结束",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEndDateTime",
+    "description": "Label for a scheduled event that begins on {startDate} at {startTime}, and runs until {endDate} at {endTime}",
+    "english": "{startDate} at {startTime} - {endDate} at {endTime}",
+    "translation": "{startDate} {startTime} 至 {endDate} {endTime} ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -64676,7 +64820,7 @@
     "key": "Questionnaire.Blood",
     "description": null,
     "english": "Blood",
-    "translation": "频繁",
+    "translation": "血液",
     "isDeprecated": false
   },
   {
@@ -64820,7 +64964,7 @@
     "key": "Questionnaire.LearnMoreAboutPaidItemTradingPolicyApi",
     "description": null,
     "english": "Learn about IsPaidItemTradingAllowed policy API.",
-    "translation": "此作品是否遵守 IsPaidItemTradingAllowed 政策 API？",
+    "translation": "了解 IsPaidItemTradingAllowed 政策 API。",
     "isDeprecated": false
   },
   {
@@ -76160,6 +76304,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidImageFile2",
+    "description": null,
+    "english": "Image upload failed. Supported file types are JPG, PNG, and BMP",
+    "translation": "图像上传失败。支持的文件类型： JPG、PNG 和 BMP",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -86875,7 +87027,7 @@
     "namespace": "CreatorDashboard.Access",
     "key": "Message.ContentListSwear",
     "description": null,
-    "english": "Strong Lanage(Swearing)",
+    "english": "Strong Language (Swearing)",
     "translation": "粗暴语言 (脏话)",
     "isDeprecated": false
   },
@@ -87468,7 +87620,7 @@
     "key": "Title.DailyEarnings",
     "description": null,
     "english": "Daily Earnings (Robux)",
-    "translation": "收入",
+    "translation": "每日收入 (Robux)",
     "isDeprecated": false
   },
   {
@@ -87484,7 +87636,7 @@
     "key": "Title.DailyImpressions",
     "description": null,
     "english": "Daily Impressions",
-    "translation": "曝光量",
+    "translation": "每日曝光量",
     "isDeprecated": false
   },
   {
@@ -87500,7 +87652,7 @@
     "key": "Title.DailyTeleports",
     "description": null,
     "english": "Daily Teleports",
-    "translation": "传送数",
+    "translation": "每日传送数",
     "isDeprecated": false
   },
   {
@@ -87572,7 +87724,7 @@
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "Estimated Earnings Per Ad Unit",
-    "translation": "预计收入",
+    "translation": "每个广告单位的预计收入",
     "isDeprecated": false
   },
   {
@@ -87588,7 +87740,7 @@
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
     "english": "Impressions Per Ad Unit",
-    "translation": "曝光量",
+    "translation": "每个广告单位的曝光量",
     "isDeprecated": false
   },
   {
@@ -87604,7 +87756,7 @@
     "key": "Title.DailyTeleportsBreakdown",
     "description": null,
     "english": "Teleports Per Ad Unit",
-    "translation": "传送数",
+    "translation": "每个广告单位的传送数",
     "isDeprecated": false
   },
   {
@@ -87773,6 +87925,70 @@
     "description": null,
     "english": "The Robux amount earned for every teleport generated from Portal ad units in this experience.",
     "translation": "在此作品中门户广告单位每次传送赚取的 Robux 金额。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarnings",
+    "description": null,
+    "english": "Earnings",
+    "translation": "收入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyImpressions",
+    "description": null,
+    "english": "Impressions",
+    "translation": "曝光量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyTeleports",
+    "description": null,
+    "english": "Teleports",
+    "translation": "传送数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEstimatedEarningsBreakdown",
+    "description": null,
+    "english": "Estimated Earnings",
+    "translation": "预计收入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarningsPerMille",
+    "description": null,
+    "english": "Earnings Per Mille (EPM)",
+    "translation": "每千次展示收入 (EPM)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "Earnings Per Teleport (EPT)",
+    "translation": "单次传送收入 (EPT)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyImpressionsBreakdown",
+    "description": null,
+    "english": "Impressions",
+    "translation": "曝光量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "View.DailyTeleportsBreakdown",
+    "description": null,
+    "english": "Teleports",
+    "translation": "传送数",
     "isDeprecated": false
   },
   {
