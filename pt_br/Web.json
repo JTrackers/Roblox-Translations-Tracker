@@ -864,12 +864,36 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.UseAnotherDevice",
+    "description": null,
+    "english": "Use Another Device",
+    "translation": "Use outro dispositivo",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
     "english": "This is a test",
     "translation": "Isto é um teste",
     "isDeprecated": false
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Another.Test",
+    "description": null,
+    "english": "Test string",
+    "translation": "Test string",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Test3",
+    "description": null,
+    "english": "a test",
+    "translation": "a test",
+    "isDeprecated": true
   },
   {
     "namespace": "Application.Settings",
@@ -16632,6 +16656,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "Período de retenção",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "Disponível na experiência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "A venda original deste item está disponível apenas em experiência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "A venda original deste item está disponível apenas em experiência.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Label.Offline",
     "description": null,
@@ -21720,6 +21776,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "A venda original deste item está disponível apenas em experiência.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Landing",
     "key": "Label.Play",
     "description": "play link on top left",
@@ -26037,6 +26101,30 @@
     "description": null,
     "english": "Appeal Account",
     "translation": "Apelar por conta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.LabelGCCurrencyAlignment",
+    "description": "This one is a typo",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "A moeda do meu cartão presente não coincide com o país de minha conta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.PurchaseCreditBalanceCurrency",
+    "description": "I have a question about my credit balance currency",
+    "english": "I have a question about my credit balance currency",
+    "translation": "Tenho uma pergunta sobre a moeda de meu saldo de crédito",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.GCCurrencyAlignment",
+    "description": "My Gift Card currency doesn’t match my account country",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "A moeda do meu cartão presente não coincide com o país de minha conta",
     "isDeprecated": false
   },
   {
@@ -38137,10 +38225,90 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "A moeda do seu cartão presente deve corresponder ao país de sua conta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "Ao marcar a caixa, você reconhece que tem pelo menos 18 anos de idade, ou que você é um dos pais ou responsável legal do proprietário da conta e concorda com nossos Termos de Uso, incluindo a cláusula de arbitragem, e nossa Política de Privacidade. <br />Você também reconhece e concorda que o valor declarado na face do seu cartão presente irá resgatar o valor equivalente de crédito Roblox na sua moeda local.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Label.AvailableCreditWithColon",
     "description": null,
     "english": "Available Credit:",
     "translation": "Crédito disponível:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
+    "description": null,
+    "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
+    "translation": "Ao resgatar seu código, você confirma que você e um de seus pais ou responsável legal, se você tiver menos de 18 anos, aceita nossos {termsOfUseLinkStart}Termos de Uso{termsOfUseLinkEnd}, incluindo a cláusula de arbitragem, e os {giftCardTermsLinkStart}Termos e Condições do cartão presente{giftCardTermsLinkEnd} e aceita nossa {privacyPolicyLinkStart}Política de Privacidade{privacyPolicyLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "Ao marcar a caixa, você concorda que tem pelo menos 18 anos de idade, ou que você é um dos pais ou responsável legal do proprietário da conta e concorda com nossos {termsOfUseLinkStart}Termos de Uso{termsOfUseLinkEnd}, incluindo a cláusula de arbitragem, com os {giftCardTermsLinkStart}Termos e Condições do cartão presente{giftCardTermsLinkEnd} e que concorda com nossa {privacyPolicyLinkStart}Política de Privacidade{privacyPolicyLinkEnd}. Você também reconhece e concorda que o valor declarado na face do seu cartão presente irá resgatar o valor equivalente de crédito Roblox na sua moeda local.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "A moeda do cartão presente deve corresponder com o país de sua conta. Contate {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "Algo deu errado. Tente novamente mais tarde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step1LargestAvailablePackageYouCanBuy",
+    "description": null,
+    "english": "Largest package you can buy with your available credit:",
+    "translation": "O maior pacote que você pode comprar com seu crédito disponível:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.RobuxPackagePurchaseFailed",
+    "description": null,
+    "english": "Something went wrong! Unable to purchase the product. Please try again later.\t",
+    "translation": "Algo deu errado! Não é possível comprar o produto. Tente novamente mais tarde.\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "Ocorreu um erro. Contate o Serviço de Atendimento ao Cliente, se o problema persistir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedemptionDisabled",
+    "description": null,
+    "english": "Code redemption is temporarily unavailable. Please try again at a later time.",
+    "translation": "O resgate de código está temporariamente indisponível. Tente novamente mais tarde.",
     "isDeprecated": false
   },
   {
@@ -48688,6 +48856,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Action.SearchMyGroups",
+    "description": "placeholder text for input field where someone types in a search query to filter their groups list",
+    "english": "Search my groups",
+    "translation": "Pesquisar meus grupos",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -50504,6 +50680,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.RobloxCredit",
+    "key": "Label.LocalizedCurrentBalance",
+    "description": null,
+    "english": "Current Balance:",
+    "translation": "Saldo Atual:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.EngagementPayout",
     "key": "Heading.EngagementPayout",
     "description": null,
@@ -51981,6 +52165,14 @@
     "description": null,
     "english": "An error has occurred. Please contact Customer Service if the problem persists.",
     "translation": "Ocorreu um erro. Contate o Serviço de Atendimento ao Cliente, se o problema persistir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "A moeda do cartão presente deve corresponder com o país de sua conta. Contate {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
     "isDeprecated": false
   },
   {
@@ -54027,7 +54219,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Description.DevForumsTool",
     "description": null,
-    "english": "Ask questions in our tight knit dev community",
+    "english": "Ask questions in our tight-knit creator community",
     "translation": "Faça perguntas em nossa solícita comunidade de desenvolvedores",
     "isDeprecated": false
   },
@@ -54099,7 +54291,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Label.PlayingCount",
     "description": null,
-    "english": "{count} Playing",
+    "english": "{count} Online",
     "translation": "{count} jogando",
     "isDeprecated": false
   },
@@ -54853,6 +55045,14 @@
     "description": "Title of navigation to webhooks configuration",
     "english": "Webhooks",
     "translation": "Webhooks",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "Locais criados",
     "isDeprecated": false
   },
   {
@@ -59965,7 +60165,7 @@
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
     "translation": "Você atingiu o número máximo de contas vinculadas a um número de telefone.",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
@@ -65900,7 +66100,7 @@
     "key": "Title.NewUsers",
     "description": null,
     "english": "New Users",
-    "translation": "Novos visitantes",
+    "translation": "Novos usuários",
     "isDeprecated": false
   },
   {
@@ -68045,6 +68245,118 @@
     "description": "Funnel Source Label in User Acquisitions",
     "english": "Teleport",
     "translation": "Teletransporte",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "title.ConcurrentUsers",
+    "description": "Chart title for chart showing number of concurrent users",
+    "english": "Concurrent users",
+    "translation": "Usuários simultâneos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.SessionTime",
+    "description": "title for chart showing session time for different user cohorts",
+    "english": "Session time",
+    "translation": "Tempo de sessão",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerFrameRate",
+    "description": "Title for chart showing average server framerate",
+    "english": "Server frame rate (heartbeat)",
+    "translation": "Taxa de quadros do servidor (heartbeat)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemory",
+    "description": "Title for chart showing server memory usage",
+    "english": "Server memory usage",
+    "translation": "Uso de memória do servidor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemoryByAge",
+    "description": "Title for chart showing server memory usage based on server age",
+    "english": "Server memory usage by server age",
+    "translation": "Uso de memória do servidor pela idade do servidor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkTermsOfService",
+    "description": "Message shown on tooltip near benchmark toggle.",
+    "english": "By using analytics, you consent to our Analytics Terms of Use to maintain the benchmark information in confidence. You agree not to share, sell, publish, or disseminate this in any way. Click to view full terms.",
+    "translation": "Ao utilizar as análises, você concorda com nossos Termos de Uso de dados analíticos para manter as informações de referência em confiança. Você concorda em não compartilhar, vender, publicar ou divulgar isto de qualquer forma. Clique para ver os termos completos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewEngagement",
+    "description": "Text for button that redirects users to the engagement page",
+    "english": "View all engagement charts",
+    "translation": "Ver todas os gráficos de engajamento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewUserAcquisition",
+    "description": "Text for button that redirects users to the user acquisition page",
+    "english": "View all acquisition charts",
+    "translation": "Ver todos os gráficos de aquisição",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewRetention",
+    "description": "Text for button that redirects users to retention page",
+    "english": "View all retention charts",
+    "translation": "Ver todos os gráficos de retenção",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewMonetization",
+    "description": "Text for button that redirects users to monetization page",
+    "english": "View all monetization charts",
+    "translation": "Ver todos os gráficos de monetização",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.LearnMoreAnalytics",
+    "description": null,
+    "english": "{linkStart}Learn more{linkEnd} about using analytics to grow your experience. ",
+    "translation": "{linkStart}Saiba mais{linkEnd} sobre o uso da análise para aumentar sua experiência. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinsSuffix",
+    "description": "The shorthand for minutes. Should be the shorthand for whatever the locale is",
+    "english": "mins",
+    "translation": "mins.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.Revenue",
+    "description": null,
+    "english": "Revenue",
+    "translation": "Receita",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Tooltip.PeriodComparison",
+    "description": "This is a tooltip for the comparison chip that shows a percentage increase or decrease of the charts values from the current period (range selected in the filter bar) versus the previous period. We are using this tooltip to be explicit in the dates we are comparing. An example would be like so:\n\nMar 30 - Apr 7 vs. Mar 22 - Mar 29\n\nThe `vs.` is shorthand for `versus` in whatever locale. If a shorthand doesn't exist, it's fine to use a full length equivalent of `versus`",
+    "english": "{currentPeriod} vs. {previousPeriod}",
+    "translation": "{currentPeriod} vs. {previousPeriod}",
     "isDeprecated": false
   },
   {
@@ -71221,6 +71533,38 @@
     "description": null,
     "english": "Exclusive for Premium",
     "translation": "Exclusivo para Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByPlaceID",
+    "description": null,
+    "english": "Experience By Place ID (API Only)",
+    "translation": "Experiência por ID do local (apenas API)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PlaceID",
+    "description": null,
+    "english": "Place ID",
+    "translation": "ID do local",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.InvalidPlaceID",
+    "description": null,
+    "english": "Invalid Place ID",
+    "translation": "ID do local inválida",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishV2",
+    "description": null,
+    "english": "Once you publish a Limited, you can only modify Tags, Comments, and Sale Locations",
+    "translation": "Depois de publicar um item Limitado, você só pode modificar marcadores, comentários e locais de venda",
     "isDeprecated": false
   },
   {
@@ -79376,6 +79720,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Label.Note",
+    "description": "Heading for label before we display warning for non-text filter supported languages",
+    "english": "Note:",
+    "translation": "Obs.:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Message.TextFilterNotSupportedWarning",
+    "description": null,
+    "english": "This language is not yet officially supported on Roblox, so manual name and description translations may be incorrectly filtered.",
+    "translation": "Este idioma ainda não é oficialmente suportado na Roblox, portanto as traduções manuais e a descrição podem ser filtradas incorretamente.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameProductTranslation",
     "key": "Label.OptionShowAll",
     "description": null,
@@ -81364,7 +81724,7 @@
     "key": "Action.GiveAccess",
     "description": null,
     "english": "Confirm and Give Access",
-    "translation": "Dar acesso",
+    "translation": "Confirmar e conceder acesso",
     "isDeprecated": false
   },
   {
@@ -81997,6 +82357,22 @@
     "description": null,
     "english": "Create or update information about your entries.",
     "translation": "Crie ou atualize informações sobre suas entradas.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Message.AcknowledgeAgreementPolicy",
+    "description": "Deprecated",
+    "english": "By Clicking \"Confirm and Give Access\", you acknowledge that you have read and agree to {appName}'s {tosLinkStart}Terms of Service{tosLinkEnd} and {privacyLinkStart}Privacy Policy{privacyLinkEnd}. You can view and remove access from {accountLinkStart}App Permissions{accountLinkEnd}.",
+    "translation": "Ao clicar em \"Confirmar e conceder acesso\", você reconhece que leu e concorda com os {tosLinkStart}Termos de Serviço{tosLinkEnd} e a {privacyLinkStart}Política de Privacidade{privacyLinkEnd} de {appName}. Você pode visualizar e remover o acesso nas {accountLinkStart}Permissões de aplicativos{accountLinkEnd}.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Message.AppSettingsLinkReminder",
+    "description": null,
+    "english": "You can view and remove access from {accountLinkStart}App Permissions{accountLinkEnd}.",
+    "translation": "Você pode ver e remover o acesso nas {accountLinkStart}Permissões do aplicativo{accountLinkEnd}.",
     "isDeprecated": false
   },
   {
@@ -83221,6 +83597,22 @@
     "description": null,
     "english": "Verify Your ID for OAuth App Creation",
     "translation": "Verifique sua identidade para a criação de aplicativos OAuth",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.ScopeSelectionError",
+    "description": null,
+    "english": "Scope Selection Error",
+    "translation": "Erro na seleção de escopo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ScopeSelectionError",
+    "description": null,
+    "english": "Cannot save app. The openid scope must be selected with the profile scope",
+    "translation": "Não é possível salvar o aplicativo. O escopo openid deve ser selecionado com o escopo do perfil",
     "isDeprecated": false
   },
   {
@@ -92024,6 +92416,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "Locais criados",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.EmptyCreatedPlaces",
+    "description": null,
+    "english": "You can use the {apiLinkStart}Create and Save Place API{apiLinkEnd} for creating Places. Check the {docLinkStart}documentation{docLinkEnd} for more information.",
+    "translation": "Você pode usar a {apiLinkStart}API de criar e salvar locais{apiLinkEnd} para criar locais. Verifique a documentação {docLinkStart}{docLinkEnd} para mais informações.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Label.Name",
     "description": null,
@@ -95272,6 +95680,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedError",
+    "description": null,
+    "english": "Allowed social slot is 1.",
+    "translation": "Espaço social permitido é 1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedRange",
+    "description": null,
+    "english": "Value should be between 1 and {value}.",
+    "translation": "O valor deve ser entre 1 e {value}.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailySummary",
     "description": null,
@@ -97520,6 +97944,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to:",
+    "translation": "Insira o código do texto enviado para:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.SixDigitCode",
+    "description": "Placeholder for 6-digit code field",
+    "english": "6-Digit Code",
+    "translation": "Código de 6 dígitos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.DidntReceiveCode",
+    "description": null,
+    "english": "Didn't receive code? Click here",
+    "translation": "Não recebeu o código? Clique aqui",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelpV3",
+    "description": null,
+    "english": "Enter the code we just sent to: {email}",
+    "translation": "Insira o código enviado para: {email}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -98213,6 +98669,302 @@
     "description": null,
     "english": "New",
     "translation": "Novo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.SearchEllipses",
+    "description": null,
+    "english": "Search...",
+    "translation": "Pesquisar...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Normal",
+    "description": null,
+    "english": "Normal",
+    "translation": "Normal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Muted",
+    "description": null,
+    "english": "Muted",
+    "translation": "Silenciado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Category",
+    "description": null,
+    "english": "Category",
+    "translation": "Categoria",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.ReportBug",
+    "description": null,
+    "english": "Report Bug",
+    "translation": "Comunicar bug",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Position",
+    "description": null,
+    "english": "Position",
+    "translation": "Posição",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "Últimos 7 dias",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "Últimos 30 dias",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.AllTime",
+    "description": null,
+    "english": "All Time",
+    "translation": "Qualquer data",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Views",
+    "description": null,
+    "english": "Views",
+    "translation": "Visualizações",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Activity",
+    "description": null,
+    "english": "Activity",
+    "translation": "Atividade",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Posts",
+    "description": null,
+    "english": "Posts",
+    "translation": "Publicações",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Users",
+    "description": null,
+    "english": "Users",
+    "translation": "Usuários",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.All",
+    "description": null,
+    "english": "All",
+    "translation": "Todos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Daily",
+    "description": null,
+    "english": "Daily",
+    "translation": "Por dia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Weekly",
+    "description": null,
+    "english": "Weekly",
+    "translation": "Semanal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "Por mês",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.AboutRoblox",
+    "description": null,
+    "english": "About Roblox",
+    "translation": "Sobre a Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Acessibilidade",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Careers",
+    "description": null,
+    "english": "Careers",
+    "translation": "Carreiras",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Technology",
+    "description": null,
+    "english": "Technology",
+    "translation": "Tecnologia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.TermsOfService",
+    "description": null,
+    "english": "Terms Of Service",
+    "translation": "Termos de Serviço",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.PrivacyPolicy",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "Política de Privacidade",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Parents",
+    "description": null,
+    "english": "Parents",
+    "translation": "Pais",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Learn",
+    "description": null,
+    "english": "Learn",
+    "translation": "Aprender",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Articles",
+    "description": null,
+    "english": "Articles",
+    "translation": "Artigos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Reference",
+    "description": null,
+    "english": "Reference",
+    "translation": "Referência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Announcements",
+    "description": null,
+    "english": "Announcements",
+    "translation": "Avisos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Twitter",
+    "description": null,
+    "english": "Twitter",
+    "translation": "Twitter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Facebook",
+    "description": null,
+    "english": "Facebook",
+    "translation": "Facebook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.LinkedIn",
+    "description": null,
+    "english": "LinkedIn",
+    "translation": "LinkedIn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Instagram",
+    "description": null,
+    "english": "Instagram",
+    "translation": "Instagram",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.YouTube",
+    "description": null,
+    "english": "YouTube",
+    "translation": "YouTube",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Company",
+    "description": null,
+    "english": "Company",
+    "translation": "Empresa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Developer",
+    "description": null,
+    "english": "Developer",
+    "translation": "Desenvolvedor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.SocialMedia",
+    "description": null,
+    "english": "Social Media",
+    "translation": "Redes Sociais",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.About",
+    "key": "Title.ContactUs",
+    "description": null,
+    "english": "Contact Us",
+    "translation": "Entre em contato",
     "isDeprecated": false
   }
 ]

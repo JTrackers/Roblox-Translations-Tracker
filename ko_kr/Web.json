@@ -292,7 +292,7 @@
     "key": "Label.ForgotUsernamePassword",
     "description": "landing page top right link for password reset",
     "english": "Forgot Username/Password?",
-    "translation": "사용자 이름/비밀번호를 잊으셨나요?",
+    "translation": "사용자 이름 또는 비밀번호를 잊으셨나요?",
     "isDeprecated": false
   },
   {
@@ -324,7 +324,7 @@
     "key": "Message.UsernameAndPasswordRequired",
     "description": "message shown to user when they attempt to login without entering a username or password",
     "english": "Username and password required",
-    "translation": "사용자 이름 및 비밀번호가 필요합니다",
+    "translation": "사용자 이름 및 비밀번호를 입력해야 합니다",
     "isDeprecated": false
   },
   {
@@ -864,12 +864,36 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.UseAnotherDevice",
+    "description": null,
+    "english": "Use Another Device",
+    "translation": "다른 기기 사용",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
     "english": "This is a test",
     "translation": "테스트입니다",
     "isDeprecated": false
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Another.Test",
+    "description": null,
+    "english": "Test string",
+    "translation": "테스트 문자열",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Test3",
+    "description": null,
+    "english": "a test",
+    "translation": "테스트",
+    "isDeprecated": true
   },
   {
     "namespace": "Application.Settings",
@@ -3212,7 +3236,7 @@
     "key": "MessagePasswordBadLength",
     "description": "A error message for users that try to change to an invalid length password",
     "english": "Passwords must be between 8 and 200 characters long.",
-    "translation": "비밀번호는 8자에서 200자 사이여야 합니다.",
+    "translation": "비밀번호는 영문 알파벳 8자에서 200자 사이여야 합니다.",
     "isDeprecated": false
   },
   {
@@ -3356,7 +3380,7 @@
     "key": "Response.PasswordWrongShort",
     "description": null,
     "english": "Passwords must be at least 8 characters long.",
-    "translation": "비밀번호는 8자 이상이어야 합니다.",
+    "translation": "비밀번호는 영문 알파벳 8자 이상이어야 합니다.",
     "isDeprecated": false
   },
   {
@@ -3388,7 +3412,7 @@
     "key": "Response.UsernameInvalidLength",
     "description": null,
     "english": "Usernames can be 3 to 20 characters long.",
-    "translation": "사용자 이름은 3~20자로 구성됩니다.",
+    "translation": "사용자 이름은 3~20자여야 합니다.",
     "isDeprecated": false
   },
   {
@@ -4020,7 +4044,7 @@
     "key": "Response.PasswordBadLength",
     "description": null,
     "english": "Passwords must be between 8 and 200 characters long.",
-    "translation": "비밀번호는 8자에서 200자 사이여야 해요.",
+    "translation": "비밀번호는 영문 알파벳 8자에서 200자 사이여야 합니다.",
     "isDeprecated": false
   },
   {
@@ -4052,7 +4076,7 @@
     "key": "Label.PasswordPlaceholder",
     "description": null,
     "english": "At least 8 characters",
-    "translation": "최소 8자 이상",
+    "translation": "영문 알파벳 최소 8자 이상",
     "isDeprecated": false
   },
   {
@@ -10284,7 +10308,7 @@
     "key": "Description.VerificationEmail.Body.Under13.V2",
     "description": "First part of the body text for the 'email verification' email for users under 13. This is directed at the parent of the user. Below this text is an \"I Agree, Verify Email\" button that the parent can click to proceed.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address. Please confirm this email address is correct by {emphasisStart}clicking the button below to complete the validation process{emphasisEnd}. Regardless of whether you validate the parental email address or not, the child will still be able to retain their account and chat with others.{paragraphEnd}{paragraphStart}By clicking the \"I Agree, Validate Email\" button you also agree that (a) You and your child agree to the Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요?{paragraphEnd}{paragraphStart}몰입형 사용자 생성 3D 세상에서 아이들이 함께 상상하고, 만들고, 플레이할 수 있는 온라인 엔터테인먼트 플랫폼, Roblox입니다. 이곳에서 보호자님의 자녀 {emphasisStart}{username}{emphasisEnd}님이 계정을 생성하였음을 알려 드립니다.{paragraphEnd}{paragraphStart}그 과정에서 자녀가 사용자 이름, 생년월일, 보호자 이메일 주소를 제공했습니다. 이메일 주소가 정확한지 확인하신 후, {emphasisStart}아래 버튼을 클릭하여 인증 절차를 완료{emphasisEnd}하세요. 단, 보호자님와 이메일 주소 인증 여부와 관계없이, 자녀는 여전히 자신의 계정을 유지하고 다른 사람과 채팅을 할 수 있습니다.{paragraphEnd}{paragraphStart}'동의합니다. 이메일을 인증합니다.'를 클릭하면 (a) 귀하와 귀하의 자녀는 중재 조항을 포함한 Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}약관{aTagEnd}에 동의하며, (b) 귀하는 자녀의 Roblox 사용을 감독하며 이에 대한 책임을 전적으로 맡는다는 데 모두 동의하는 것으로 간주됩니다.{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요?{paragraphEnd}{paragraphStart}몰입형 사용자 생성 3D 세상에서 아이들이 함께 상상하고, 만들고, 플레이할 수 있는 온라인 엔터테인먼트 플랫폼, Roblox입니다. 이곳에서 보호자님의 자녀 {emphasisStart}{username}{emphasisEnd}님이 계정을 생성하였음을 알려 드립니다.{paragraphEnd}{paragraphStart}그 과정에서 자녀의 사용자 이름, 생년월일, 보호자 이메일 주소가 Roblox에 제공되었습니다. 이메일 주소가 정확한지 확인하신 후, {emphasisStart}아래 버튼을 클릭해 인증 절차를 완료{emphasisEnd}하세요. 단, 보호자님의 이메일 주소 인증 여부와 관계없이, 자녀는 여전히 자신의 계정을 유지하고 다른 사람과 채팅을 할 수 있습니다.{paragraphEnd}{paragraphStart}'동의 및 이메일 인증'을 클릭하면 (a) 귀하와 귀하의 자녀는 중재 조항을 포함한 Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}약관{aTagEnd}에 동의하며, (b) 귀하는 자녀의 Roblox 사용을 감독하며 이에 대한 책임을 전적으로 맡는다는 데 모두 동의하는 것으로 간주됩니다.{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -10292,7 +10316,7 @@
     "key": "Description.VerificationEmail.ButtonText.Under13.V2",
     "description": "Text of the button in the 'email verification' email for users under 13. The text of this button is referred to by name in the first part of the email body ('by clicking \"I Agree, Validate Email\"...'), so the name should be consistent.",
     "english": "I Agree, Validate Email",
-    "translation": "동의합니다. 이메일을 인증합니다",
+    "translation": "동의 및 이메일 인증",
     "isDeprecated": false
   },
   {
@@ -10940,7 +10964,7 @@
     "key": "Label.ThirdPartyVerificationDisclaimer",
     "description": null,
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider.",
-    "translation": "'나이 인증'을 클릭하면 제3자 서비스 제공 업체에서 운영하는 본인 인증 절차를 완료하게 됩니다.",
+    "translation": "'나이 인증'을 클릭하면 제3자 서비스 제공 업체에서 운영하는 본인 인증 절차를 수행할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -10956,7 +10980,7 @@
     "key": "Description.VerificationEmail.Body.Under13.V3",
     "description": "First part of the body text for the 'email verification' email for users under 13. This is directed at the parent of the user. Below this text is an \"I Agree, Validate Email\" button that the parent can click to proceed.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address. Please confirm this email address is correct by {emphasisStart}clicking the button below to complete the validation process{emphasisEnd}. Regardless of whether you validate the parental email address or not, the child will still be able to retain their account and chat with others.{paragraphEnd}{paragraphStart}By clicking the \"I Agree, Validate Email\" button you also agree that (a) You and your child agree to the Roblox Terms, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}",
-    "translation": "{paragraphStart}안녕하세요?{paragraphEnd}{paragraphStart}몰입형 사용자 생성 3D 세상에서 아이들이 함께 상상하고, 만들고, 플레이할 수 있는 온라인 엔터테인먼트 플랫폼, Roblox입니다. 이곳에서 보호자님의 자녀 {emphasisStart}{username}{emphasisEnd}님이 계정을 생성하였음을 알려 드립니다.{paragraphEnd}{paragraphStart}그 과정에서 자녀가 사용자 이름, 생년월일, 보호자 이메일 주소를 제공했습니다. 이메일 주소가 정확한지 확인하신 후, {emphasisStart}아래 버튼을 클릭하여 인증 절차를 완료{emphasisEnd}하세요. 단, 보호자님의 이메일 주소 인증 여부와 관계없이, 자녀는 여전히 자신의 계정을 유지하고 다른 사람과 채팅을 할 수 있습니다.{paragraphEnd}{paragraphStart}'동의합니다. 이메일을 인증합니다.'를 클릭하면 (a) 귀하와 귀하의 자녀는 중재 조항을 포함한 Roblox 약관에 동의하며, (b) 귀하가 자녀의 Roblox 사용을 감독하며 이에 대한 책임을 전적으로 맡는다는 데 모두 동의하는 것으로 간주됩니다.{paragraphEnd}",
+    "translation": "{paragraphStart}안녕하세요?{paragraphEnd}{paragraphStart}몰입형 사용자 생성 3D 세상에서 아이들이 함께 상상하고, 만들고, 플레이할 수 있는 온라인 엔터테인먼트 플랫폼, Roblox입니다. 이곳에서 보호자님의 자녀 {emphasisStart}{username}{emphasisEnd}님이 계정을 생성하였음을 알려 드립니다.{paragraphEnd}{paragraphStart}그 과정에서 자녀의 사용자 이름, 생년월일, 보호자 이메일 주소가 Roblox에 제공되었습니다. 이메일 주소가 정확한지 확인하신 후, {emphasisStart}아래 버튼을 클릭해 인증 절차를 완료{emphasisEnd}하세요. 단, 보호자님의 이메일 주소 인증 여부와 관계없이, 자녀는 여전히 자신의 계정을 유지하고 다른 사람과 채팅을 할 수 있습니다.{paragraphEnd}{paragraphStart}'동의 및 이메일 인증'을 클릭하면 (a) 귀하와 귀하의 자녀는 중재 조항을 포함한 Roblox 약관에 동의하며, (b) 귀하는 자녀의 Roblox 사용을 감독하며 이에 대한 책임을 전적으로 맡는다는 데 모두 동의하는 것으로 간주됩니다.{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -10964,7 +10988,7 @@
     "key": "Description.VerificationEmail.ButtonText.Under13.V3",
     "description": "Text of the button in the 'email verification' email for users under 13. The text of this button is referred to by name in the first part of the email body ('By clicking \"I Agree, Validate Email\"...'), so the name should be consistent with \nDescription.VerificationEmail.Body.Under13.V3.",
     "english": "I Agree, Validate Email",
-    "translation": "동의합니다. 이메일을 인증합니다.",
+    "translation": "동의 및 이메일 인증",
     "isDeprecated": false
   },
   {
@@ -15420,7 +15444,7 @@
     "key": "Label.PremiumOnly",
     "description": "Used to describe that an item is for premium members only and they are not premium.",
     "english": "Available for Premium users only",
-    "translation": "Premium 회원만 이용 가능합니다",
+    "translation": "Premium 사용자만 이용 가능합니다",
     "isDeprecated": false
   },
   {
@@ -15764,7 +15788,7 @@
     "key": "Message.CollectiblesInfo",
     "description": "Displays some info about the new \"Collectibles\" item category.",
     "english": "Collectible items can be resold from user to user after a holding period, even if the original stock is not sold out. Premium subscribers can list Collectible items for resale.",
-    "translation": "컬렉터블 아이템은 보유 기간이 지나면 재고가 남아 있더라도 다른 사용자에게 재판매할 수 있습니다. Premium 가입자가 되면 콜렉터블 아이템을 재판매할 수 있습니다.",
+    "translation": "컬렉터블 아이템은 보류 기간이 지나면 재고가 남아 있더라도 다른 사용자에게 재판매할 수 있습니다. Premium 멤버가 되면 컬렉터블 아이템을 재판매할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -16645,6 +16669,38 @@
     "description": null,
     "english": "See More",
     "translation": "더 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "보류 기간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "체험 내에서 획득 가능",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "이 아이템의 최초 판매 및 구매는 체험 내에서만 가능합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "이 아이템의 최초 판매 및 구매는 체험 내에서만 가능합니다.",
     "isDeprecated": false
   },
   {
@@ -21736,6 +21792,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "이 아이템의 최초 판매 및 구매는 체험 내에서만 가능합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Landing",
     "key": "Label.Play",
     "description": "play link on top left",
@@ -26053,6 +26117,30 @@
     "description": null,
     "english": "Appeal Account",
     "translation": "계정 이의 제기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.LabelGCCurrencyAlignment",
+    "description": "This one is a typo",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "기프트 카드의 통화가 계정 소유자 국가의 통화가 아닙니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.PurchaseCreditBalanceCurrency",
+    "description": "I have a question about my credit balance currency",
+    "english": "I have a question about my credit balance currency",
+    "translation": "크레딧 잔액의 통화에 대한 질문이 있어요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.GCCurrencyAlignment",
+    "description": "My Gift Card currency doesn’t match my account country",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "기프트 카드의 통화가 계정 소유자 국가의 통화가 아닙니다",
     "isDeprecated": false
   },
   {
@@ -38145,10 +38233,90 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "기프트 카드의 통화는 계정 소유자 국가의 통화여야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "확인란을 선택하면, 본인은 18세 이상이거나 계정 소유자의 부모 또는 법적 보호자이며 중재 조항을 포함한 이용 약관 및 개인정보 처리방침에 동의하는 것으로 간주됩니다. <br />또한 기프트 카드 상에 명시된 가치가 현지 통화의 Roblox 크레딧과 동등한 가치로 교환됨을 이해하고 동의하게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Label.AvailableCreditWithColon",
     "description": null,
     "english": "Available Credit:",
     "translation": "사용 가능한 크레딧:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
+    "description": null,
+    "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
+    "translation": "코드를 사용하면, 본인(또는 18세 미만인 경우 부모 또는 법적 보호자)은 중재 조항 및{giftCardTermsLinkStart}기프트 카드 이용 약관{giftCardTermsLinkEnd}을 포함한 당사의 {termsOfUseLinkStart}이용 약관{termsOfUseLinkEnd}에 동의하고 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해한 것으로 간주됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "확인란을 선택하면, 본인은 18세 이상이거나 계정 소유자의 부모 또는 법적 보호자이며 중재 조항 및 {giftCardTermsLinkStart}기프트 카드 이용 약관{giftCardTermsLinkEnd}을 포함한 당사의{termsOfUseLinkStart}이용 약관{termsOfUseLinkEnd}에 동의하고 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해한 것으로 간주됩니다. 또한 기프트 카드 상에 명시된 가치가 현지 통화의 Roblox 크레딧과 동등한 가치로 교환됨을 이해하고 동의하게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "기프트 카드의 통화는 계정의 국가와 일치해야 합니다. {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}에 문의하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "오류가 발생했어요. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step1LargestAvailablePackageYouCanBuy",
+    "description": null,
+    "english": "Largest package you can buy with your available credit:",
+    "translation": "사용 가능한 크레딧으로 구매할 수 있는 최대 사이즈 패키지:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.RobuxPackagePurchaseFailed",
+    "description": null,
+    "english": "Something went wrong! Unable to purchase the product. Please try again later.\t",
+    "translation": "오류가 발생해 제품을 구매할 수 없습니다. 나중에 다시 시도하세요.\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "오류가 발생했습니다. 문제가 계속되면 지원 센터에 문의하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedemptionDisabled",
+    "description": null,
+    "english": "Code redemption is temporarily unavailable. Please try again at a later time.",
+    "translation": "일시적으로 코드를 사용할 수 없습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -39652,7 +39820,7 @@
     "key": "Label.MembershipManagementRecurring",
     "description": null,
     "english": "To manage your Premium subscription, please go to your Billing settings using a browser.",
-    "translation": "Premium 가입을 관리하려면, 브라우저에서 청구 설정으로 이동하세요.",
+    "translation": "Premium 멤버십을 관리하려면, 브라우저에서 결제 설정 메뉴로 이동하세요.",
     "isDeprecated": false
   },
   {
@@ -39828,7 +39996,7 @@
     "key": "Heading.YourPremium",
     "description": null,
     "english": "Your Premium Membership",
-    "translation": "회원님의 Premium 멤버십",
+    "translation": "내 Premium 멤버십",
     "isDeprecated": false
   },
   {
@@ -48696,6 +48864,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Action.SearchMyGroups",
+    "description": "placeholder text for input field where someone types in a search query to filter their groups list",
+    "english": "Search my groups",
+    "translation": "내 그룹 검색",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -50504,6 +50680,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.RobloxCredit",
+    "key": "Label.LocalizedCurrentBalance",
+    "description": null,
+    "english": "Current Balance:",
+    "translation": "현재 잔액:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.EngagementPayout",
     "key": "Heading.EngagementPayout",
     "description": null,
@@ -51989,6 +52173,14 @@
     "description": null,
     "english": "An error has occurred. Please contact Customer Service if the problem persists.",
     "translation": "오류가 발생했습니다. 문제가 계속되면 지원 센터에 문의하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "기프트 카드의 통화는 계정의 국가와 일치해야 합니다. {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}에 문의하세요.",
     "isDeprecated": false
   },
   {
@@ -54043,7 +54235,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Description.DevForumsTool",
     "description": null,
-    "english": "Ask questions in our tight knit dev community",
+    "english": "Ask questions in our tight-knit creator community",
     "translation": "유대감 넘치는 개발자 커뮤니티에 질문하세요",
     "isDeprecated": false
   },
@@ -54115,7 +54307,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Label.PlayingCount",
     "description": null,
-    "english": "{count} Playing",
+    "english": "{count} Online",
     "translation": "{count}명 플레이 중",
     "isDeprecated": false
   },
@@ -54893,6 +55085,14 @@
     "description": "Sidebar entry for the analytics acquisition page",
     "english": "Acquisition",
     "translation": "획득",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "만든 플레이스",
     "isDeprecated": false
   },
   {
@@ -60005,7 +60205,7 @@
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
     "translation": "한 휴대폰 번호에 연결 가능한 최대 계정 수에 도달했습니다.",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
@@ -65964,7 +66164,7 @@
     "key": "Title.NewUsers",
     "description": null,
     "english": "New Users",
-    "translation": "신규 방문자",
+    "translation": "신규 사용자",
     "isDeprecated": false
   },
   {
@@ -68181,6 +68381,118 @@
     "description": "Funnel Source Label in User Acquisitions",
     "english": "Teleport",
     "translation": "텔레포트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "title.ConcurrentUsers",
+    "description": "Chart title for chart showing number of concurrent users",
+    "english": "Concurrent users",
+    "translation": "동시 접속 사용자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.SessionTime",
+    "description": "title for chart showing session time for different user cohorts",
+    "english": "Session time",
+    "translation": "세션 시간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerFrameRate",
+    "description": "Title for chart showing average server framerate",
+    "english": "Server frame rate (heartbeat)",
+    "translation": "서버 프레임 속도(하트비트)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemory",
+    "description": "Title for chart showing server memory usage",
+    "english": "Server memory usage",
+    "translation": "서버 메모리 사용량",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemoryByAge",
+    "description": "Title for chart showing server memory usage based on server age",
+    "english": "Server memory usage by server age",
+    "translation": "서버 사용 기간별 서버 메모리 사용량",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkTermsOfService",
+    "description": "Message shown on tooltip near benchmark toggle.",
+    "english": "By using analytics, you consent to our Analytics Terms of Use to maintain the benchmark information in confidence. You agree not to share, sell, publish, or disseminate this in any way. Click to view full terms.",
+    "translation": "애널리틱스를 사용하면 벤치마크 정보를 기밀로 유지하기 위한 애널리틱스 이용 약관에 동의하는 것으로 간주됩니다. 그리고 어떤 식으로든 이를 공유, 판매, 게시, 유포하지 않을 것임에 동의하게 됩니다. 전체 약관을 보려면 클릭하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewEngagement",
+    "description": "Text for button that redirects users to the engagement page",
+    "english": "View all engagement charts",
+    "translation": "전체 참여 차트 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewUserAcquisition",
+    "description": "Text for button that redirects users to the user acquisition page",
+    "english": "View all acquisition charts",
+    "translation": "전체 획득 차트 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewRetention",
+    "description": "Text for button that redirects users to retention page",
+    "english": "View all retention charts",
+    "translation": "전체 유지율 차트 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewMonetization",
+    "description": "Text for button that redirects users to monetization page",
+    "english": "View all monetization charts",
+    "translation": "전체 수익 창출 차트 보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.LearnMoreAnalytics",
+    "description": null,
+    "english": "{linkStart}Learn more{linkEnd} about using analytics to grow your experience. ",
+    "translation": "애널리틱스를 사용하여 체험을 성장시키는 방법에 대해 {linkStart}자세히 알아보세요{linkEnd}. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinsSuffix",
+    "description": "The shorthand for minutes. Should be the shorthand for whatever the locale is",
+    "english": "mins",
+    "translation": "분",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.Revenue",
+    "description": null,
+    "english": "Revenue",
+    "translation": "수입",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Tooltip.PeriodComparison",
+    "description": "This is a tooltip for the comparison chip that shows a percentage increase or decrease of the charts values from the current period (range selected in the filter bar) versus the previous period. We are using this tooltip to be explicit in the dates we are comparing. An example would be like so:\n\nMar 30 - Apr 7 vs. Mar 22 - Mar 29\n\nThe `vs.` is shorthand for `versus` in whatever locale. If a shorthand doesn't exist, it's fine to use a full length equivalent of `versus`",
+    "english": "{currentPeriod} vs. {previousPeriod}",
+    "translation": "{currentPeriod} 대 {previousPeriod}",
     "isDeprecated": false
   },
   {
@@ -71449,10 +71761,34 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByPlaceID",
+    "description": null,
+    "english": "Experience By Place ID (API Only)",
+    "translation": "플레이스 ID별 체험(API 전용)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.PlaceID",
     "description": null,
     "english": "Place ID",
-    "translation": "장소 ID",
+    "translation": "플레이스 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.InvalidPlaceID",
+    "description": null,
+    "english": "Invalid Place ID",
+    "translation": "유효하지 않은 플레이스 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishV2",
+    "description": null,
+    "english": "Once you publish a Limited, you can only modify Tags, Comments, and Sale Locations",
+    "translation": "리미티드를 게시하고 나면 태그, 코멘트, 판매 위치만 수정할 수 있습니다",
     "isDeprecated": false
   },
   {
@@ -73180,7 +73516,7 @@
     "key": "Message.Error.PasswordValidation.WeakPassword",
     "description": null,
     "english": "Password must be at least 8 characters long and include at least 2 digits, 4 letters, and 1 symbol.",
-    "translation": "비밀번호는 8자 이상이어야 하며, 숫자 2개, 문자 4개, 기호 1개를 포함해야 합니다.",
+    "translation": "비밀번호는 영문 알파벳 8자 이상이어야 하며, 숫자 2개, 알파벳 4개, 기호 1개를 포함해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -73188,7 +73524,7 @@
     "key": "Message.Error.PasswordValidation.ShortPassword",
     "description": null,
     "english": "Password must be at least 8 characters long.",
-    "translation": "비밀번호는 8자 이상이어야 합니다.",
+    "translation": "비밀번호는 영문 알파벳 8자 이상이어야 합니다.",
     "isDeprecated": false
   },
   {
@@ -73964,7 +74300,7 @@
     "key": "Label.UseSmartphone",
     "description": null,
     "english": "Use a smartphone",
-    "translation": "스마트폰 사용",
+    "translation": "스마트폰을 사용하세요",
     "isDeprecated": false
   },
   {
@@ -79760,6 +80096,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Label.Note",
+    "description": "Heading for label before we display warning for non-text filter supported languages",
+    "english": "Note:",
+    "translation": "참고:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Message.TextFilterNotSupportedWarning",
+    "description": null,
+    "english": "This language is not yet officially supported on Roblox, so manual name and description translations may be incorrectly filtered.",
+    "translation": "이 언어는 아직 Roblox에서 공식적으로 지원하지 않는 언어이므로, 이름 및 설명의 번역 필터링에 오류가 있을 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameProductTranslation",
     "key": "Label.OptionShowAll",
     "description": null,
@@ -81748,7 +82100,7 @@
     "key": "Action.GiveAccess",
     "description": null,
     "english": "Confirm and Give Access",
-    "translation": "액세스 권한 부여",
+    "translation": "확인 및 액세스 허용",
     "isDeprecated": false
   },
   {
@@ -82381,6 +82733,30 @@
     "description": null,
     "english": "Create or update information about your entries.",
     "translation": "항목 관련 정보를 생성하거나 업데이트하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Message.AcknowledgeAgreementPolicy",
+    "description": "Deprecated",
+    "english": "By Clicking \"Confirm and Give Access\", you acknowledge that you have read and agree to {appName}'s {tosLinkStart}Terms of Service{tosLinkEnd} and {privacyLinkStart}Privacy Policy{privacyLinkEnd}. You can view and remove access from {accountLinkStart}App Permissions{accountLinkEnd}.",
+    "translation": "'확인 및 액세스 허용'을 클릭하면, {appName}의 {tosLinkStart}서비스 약관{tosLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privacyLinkEnd}을 읽고 동의한 것으로 간주됩니다. {accountLinkStart}앱 권한{accountLinkEnd}에서 액세스를 확인하고 해제할 수 있습니다.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Message.AcknowledgeAppAgreementPolicies",
+    "description": "Disclaimer users will get before authorizing an app. {appName}'s here denotes the possessive, i.e. \"OAuth App Name's\" where appName is \"OAuth App Name\"",
+    "english": "By Clicking \"Confirm and Give Access\", you acknowledge that you have read and agree to {appName}'s {tosLinkStart}Terms of Service{tosLinkEnd} and {privacyLinkStart}Privacy Policy{privacyLinkEnd}.",
+    "translation": "'확인 및 액세스 허용'을 클릭하면, {appName}의 {tosLinkStart}서비스 약관{tosLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privacyLinkEnd}을 읽고 동의한 것으로 간주됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Message.AppSettingsLinkReminder",
+    "description": null,
+    "english": "You can view and remove access from {accountLinkStart}App Permissions{accountLinkEnd}.",
+    "translation": "{accountLinkStart}앱 권한{accountLinkEnd}에서 액세스를 확인하고 해제할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -83661,6 +84037,22 @@
     "description": null,
     "english": "Verify Your ID for OAuth App Creation",
     "translation": "OAuth 앱 제작을 위한 본인 인증",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.ScopeSelectionError",
+    "description": null,
+    "english": "Scope Selection Error",
+    "translation": "범위 선택 오류",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ScopeSelectionError",
+    "description": null,
+    "english": "Cannot save app. The openid scope must be selected with the profile scope",
+    "translation": "앱을 저장할 수 없습니다. OpenID 범위를 프로필 범위와 함께 선택해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -92464,6 +92856,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "만든 플레이스",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.EmptyCreatedPlaces",
+    "description": null,
+    "english": "You can use the {apiLinkStart}Create and Save Place API{apiLinkEnd} for creating Places. Check the {docLinkStart}documentation{docLinkEnd} for more information.",
+    "translation": "{apiLinkStart}플레이스 만들기 및 저장 API{apiLinkEnd}를 사용해 플레이스를 만들 수 있습니다. 자세한 내용은 {docLinkStart}설명서{docLinkEnd}를 통해 확인하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Label.Name",
     "description": null,
@@ -95720,6 +96128,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedError",
+    "description": null,
+    "english": "Allowed social slot is 1.",
+    "translation": "허용되는 소셜 슬롯은 1개입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedRange",
+    "description": null,
+    "english": "Value should be between 1 and {value}.",
+    "translation": "값은 1에서 {value} 사이여야 합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailySummary",
     "description": null,
@@ -97924,7 +98348,7 @@
     "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
     "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
     "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 일회용 코드는 {boldStart}{code}{boldEnd}입니다. 로그인 화면에 코드를 입력하고 로그인을 완료하세요. 이 코드는 15분 후에 만료됩니다.{lineBreak}{lineBreak}다른 사람과 코드를 {boldStart}공유하지 마세요{boldEnd}. Roblox는 {boldStart}절대로{boldEnd} 사용자에게 코드를 요청하지 않습니다. 코드를 요청한 적이 없을 경우 더 이상 다른 조치를 취하지 않으셔도 됩니다. 본인이 요청하지 않은 코드를 다수 전송받은 경우, 계정에 다른 이메일을 연결하고 {linkTagWithAuthenticatorHelpLinkStart}인증 앱을 통한 2단계 인증을 설정{linkTagEnd}할 것을 적극 권장해 드립니다.{lineBreak}{lineBreak}이 로그인 요청은 {geolocation}에서 발생했습니다.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}Roblox 일회용 코드는 {boldStart}{code}{boldEnd}입니다. 로그인 화면에 코드를 입력하고 로그인을 완료하세요. 이 코드는 15분 후에 만료됩니다.{lineBreak}{lineBreak}다른 사람과 코드를 {boldStart}공유하지 마세요{boldEnd}. Roblox는 {boldStart}절대로{boldEnd} 사용자에게 코드 전송을 요청하지 않습니다. 코드를 요청한 적이 없을 경우 더 이상 다른 조치를 취하지 않으셔도 됩니다. 본인이 요청하지 않은 코드를 다수 전송받은 경우, 계정에 다른 이메일을 연결하고 {linkTagWithAuthenticatorHelpLinkStart}인증 앱을 통한 2단계 인증을 설정{linkTagEnd}할 것을 적극 권장해 드립니다.{lineBreak}{lineBreak}이 로그인 요청은 {geolocation}에서 발생했습니다.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -98053,6 +98477,38 @@
     "description": null,
     "english": "Try another way",
     "translation": "다른 방법 시도",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to:",
+    "translation": "아래에 코드를 입력하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.SixDigitCode",
+    "description": "Placeholder for 6-digit code field",
+    "english": "6-Digit Code",
+    "translation": "6자리 코드",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.DidntReceiveCode",
+    "description": null,
+    "english": "Didn't receive code? Click here",
+    "translation": "코드를 받지 못하셨나요? 여기를 클릭하세요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelpV3",
+    "description": null,
+    "english": "Enter the code we just sent to: {email}",
+    "translation": "{email}(으)로 방금 전송된 코드를 입력하세요",
     "isDeprecated": false
   },
   {
@@ -98228,7 +98684,7 @@
     "key": "Label.ApproximateLocationAndTimestamp",
     "description": "Tooltip telling users the session information is approximate",
     "english": "Regional location and last active timestamp for each session are approximations and should only be used as rough guidelines.",
-    "translation": "각 세션의 지역적 위치 및 마지막 활성 타임스탬프는 근사치이므로 대략적인 지침으로만 사용해야 합니다.",
+    "translation": "각 세션의 지역 및 마지막 활동 기록은 근사치이므로 대략적인 지침으로만 사용해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -98244,7 +98700,7 @@
     "key": "Label.Location",
     "description": "label for last location associated with selected session",
     "english": "REGIONAL LOCATION",
-    "translation": "지역적 위치",
+    "translation": "지역",
     "isDeprecated": false
   },
   {
@@ -98252,7 +98708,7 @@
     "key": "Label.LastActive",
     "description": "label for date and time the selected session was last active",
     "english": "LAST ACTIVE",
-    "translation": "마지막 활성",
+    "translation": "마지막 활동 기록",
     "isDeprecated": false
   },
   {
@@ -98412,7 +98868,7 @@
     "key": "Label.Value.UnknownLocation",
     "description": "Displayed when information about a session's location is unknown",
     "english": "Unknown Regional Location",
-    "translation": "알 수 없는 지역적 위치",
+    "translation": "알 수 없는 지역",
     "isDeprecated": false
   },
   {
@@ -98821,6 +99277,318 @@
     "description": null,
     "english": "New",
     "translation": "신규",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.SearchEllipses",
+    "description": null,
+    "english": "Search...",
+    "translation": "검색...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Watching",
+    "description": null,
+    "english": "Watching",
+    "translation": "보는 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Normal",
+    "description": null,
+    "english": "Normal",
+    "translation": "일반",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Muted",
+    "description": null,
+    "english": "Muted",
+    "translation": "음소거됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Category",
+    "description": null,
+    "english": "Category",
+    "translation": "카테고리",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.ReportBug",
+    "description": null,
+    "english": "Report Bug",
+    "translation": "버그 신고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Position",
+    "description": null,
+    "english": "Position",
+    "translation": "위치",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "지난 7일",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "지난 30일",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.AllTime",
+    "description": null,
+    "english": "All Time",
+    "translation": "전체 기간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Views",
+    "description": null,
+    "english": "Views",
+    "translation": "조회 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Activity",
+    "description": null,
+    "english": "Activity",
+    "translation": "활동",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Posts",
+    "description": null,
+    "english": "Posts",
+    "translation": "게시물 관련 권한",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Users",
+    "description": null,
+    "english": "Users",
+    "translation": "사용자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.All",
+    "description": null,
+    "english": "All",
+    "translation": "전체",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Daily",
+    "description": null,
+    "english": "Daily",
+    "translation": "일별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Weekly",
+    "description": null,
+    "english": "Weekly",
+    "translation": "주간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "월별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Yearly",
+    "description": null,
+    "english": "Yearly",
+    "translation": "이얼리",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.AboutRoblox",
+    "description": null,
+    "english": "About Roblox",
+    "translation": "Roblox 소개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "접근성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Careers",
+    "description": null,
+    "english": "Careers",
+    "translation": "채용 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Technology",
+    "description": null,
+    "english": "Technology",
+    "translation": "기술",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.TermsOfService",
+    "description": null,
+    "english": "Terms Of Service",
+    "translation": "서비스 약관",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.PrivacyPolicy",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "개인정보 처리방침",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Parents",
+    "description": null,
+    "english": "Parents",
+    "translation": "보호자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Learn",
+    "description": null,
+    "english": "Learn",
+    "translation": "배우기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Articles",
+    "description": null,
+    "english": "Articles",
+    "translation": "아티클",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Reference",
+    "description": null,
+    "english": "Reference",
+    "translation": "참조",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Announcements",
+    "description": null,
+    "english": "Announcements",
+    "translation": "공지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Twitter",
+    "description": null,
+    "english": "Twitter",
+    "translation": "Twitter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Facebook",
+    "description": null,
+    "english": "Facebook",
+    "translation": "Facebook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.LinkedIn",
+    "description": null,
+    "english": "LinkedIn",
+    "translation": "LinkedIn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Instagram",
+    "description": null,
+    "english": "Instagram",
+    "translation": "Instagram",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.YouTube",
+    "description": null,
+    "english": "YouTube",
+    "translation": "YouTube",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Company",
+    "description": null,
+    "english": "Company",
+    "translation": "회사",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Developer",
+    "description": null,
+    "english": "Developer",
+    "translation": "개발자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.SocialMedia",
+    "description": null,
+    "english": "Social Media",
+    "translation": "소셜 미디어",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.About",
+    "key": "Title.ContactUs",
+    "description": null,
+    "english": "Contact Us",
+    "translation": "문의하기",
     "isDeprecated": false
   }
 ]

@@ -864,12 +864,36 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.UseAnotherDevice",
+    "description": null,
+    "english": "Use Another Device",
+    "translation": "使用另一台设备",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
     "english": "This is a test",
     "translation": "测试用字串",
     "isDeprecated": false
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Another.Test",
+    "description": null,
+    "english": "Test string",
+    "translation": "测试字符串",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Test3",
+    "description": null,
+    "english": "a test",
+    "translation": "测试",
+    "isDeprecated": true
   },
   {
     "namespace": "Application.Settings",
@@ -16648,6 +16672,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "存放期限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "在体验中可用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "此道具的原始销售仅在体验中可用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "此道具的原始销售仅在体验中可用.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Label.Offline",
     "description": null,
@@ -21736,6 +21792,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "此道具的原始销售仅在体验中可用.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Landing",
     "key": "Label.Play",
     "description": "play link on top left",
@@ -26053,6 +26117,30 @@
     "description": null,
     "english": "Appeal Account",
     "translation": "申诉帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.LabelGCCurrencyAlignment",
+    "description": "This one is a typo",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "我的礼品卡货币与我的帐户所在国家不匹配",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.PurchaseCreditBalanceCurrency",
+    "description": "I have a question about my credit balance currency",
+    "english": "I have a question about my credit balance currency",
+    "translation": "我有一个关于我的点数余额货币的问题",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.GCCurrencyAlignment",
+    "description": "My Gift Card currency doesn’t match my account country",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "我的礼品卡货币与我的帐户所在国家不匹配",
     "isDeprecated": false
   },
   {
@@ -38145,10 +38233,74 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "你礼品卡的货币必须与你帐户所在的国家匹配。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "勾选选框，即表示您同意您已年满 18 周岁，或者您是帐户所有人的父母或法定监护人，并同意我们包括仲裁条款在内的使用条款及我们的隐私政策。<br />您同时也了解并同意您礼品卡上显示的面值将兑换为使用您当地货币的同等面值的 Roblox 点数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Label.AvailableCreditWithColon",
     "description": null,
     "english": "Available Credit:",
     "translation": "可用点数:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
+    "description": null,
+    "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
+    "translation": "使用你的兑换码，即代表您（如果您未满 18 周岁，你的家长或合法监护人）同意我们包括仲裁条款在内的{termsOfUseLinkStart}使用条款{termsOfUseLinkEnd}、{giftCardTermsLinkStart}礼品卡条款与条例{giftCardTermsLinkEnd}并了解我们的{privacyPolicyLinkStart}隐私政策{privacyPolicyLinkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "勾选选框，即表示您同意您已年满 18 周岁，或者您是帐户所有人的父母或法定监护人，并同意我们包括仲裁条款在内的{termsOfUseLinkStart}使用条款{termsOfUseLinkEnd}、{giftCardTermsLinkStart}礼品卡条款与条例{giftCardTermsLinkEnd}并了解我们的{privacyPolicyLinkStart}隐私政策{privacyPolicyLinkEnd}。您同时也了解并同意您礼品卡上显示的面值将兑换为使用您当地货币的同等面值的 Roblox 点数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "礼品卡货币必须与你帐户所在国家相匹配。请联系 {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "发生错误！请稍后重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "发生错误。如果问题仍然存在，请联系客服人员。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedemptionDisabled",
+    "description": null,
+    "english": "Code redemption is temporarily unavailable. Please try again at a later time.",
+    "translation": "代码兑换暂时不可用。请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -48672,6 +48824,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Action.SearchMyGroups",
+    "description": "placeholder text for input field where someone types in a search query to filter their groups list",
+    "english": "Search my groups",
+    "translation": "搜索我的群组",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -48814,6 +48974,22 @@
     "english": "Backslash to toggle",
     "translation": "按下“\\”切换",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporarySuspensionAvatarChat",
+    "description": "Temporary suspension text for Avatar Chat Enabled Users.",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice and chat as your avatar until",
+    "translation": "由于违反了我们的社区准则，我们已暂时撤销你使用语音及使用虚拟形象聊天的权限，直到",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.FutureViolations",
+    "description": "Future Violations",
+    "english": "Future violations may result in additional account actions.",
+    "translation": "今后的违规行为可能会导致更多的帐户行动。",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.ChinaPayment",
@@ -50472,6 +50648,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.RobloxCredit",
+    "key": "Label.LocalizedCurrentBalance",
+    "description": null,
+    "english": "Current Balance:",
+    "translation": "当前余额：",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.EngagementPayout",
     "key": "Heading.EngagementPayout",
     "description": null,
@@ -51957,6 +52141,14 @@
     "description": null,
     "english": "An error has occurred. Please contact Customer Service if the problem persists.",
     "translation": "发生错误。如果问题仍然存在，请联系客服人员。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "礼品卡货币必须与你帐户所在国家相匹配。请联系 {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}。",
     "isDeprecated": false
   },
   {
@@ -54011,7 +54203,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Description.DevForumsTool",
     "description": null,
-    "english": "Ask questions in our tight knit dev community",
+    "english": "Ask questions in our tight-knit creator community",
     "translation": "在我们团结互助的社区中提问",
     "isDeprecated": false
   },
@@ -54083,7 +54275,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Label.PlayingCount",
     "description": null,
-    "english": "{count} Playing",
+    "english": "{count} Online",
     "translation": "{count} 人正在游玩",
     "isDeprecated": false
   },
@@ -54861,6 +55053,14 @@
     "description": "Sidebar entry for the analytics acquisition page",
     "english": "Acquisition",
     "translation": "获取",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "已创建的场景",
     "isDeprecated": false
   },
   {
@@ -59965,7 +60165,7 @@
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
     "translation": "你已经达到同一手机号码可以关联的帐户数量上限。",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
@@ -68120,6 +68320,118 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "title.ConcurrentUsers",
+    "description": "Chart title for chart showing number of concurrent users",
+    "english": "Concurrent users",
+    "translation": "并发用户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.SessionTime",
+    "description": "title for chart showing session time for different user cohorts",
+    "english": "Session time",
+    "translation": "会话时间",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerFrameRate",
+    "description": "Title for chart showing average server framerate",
+    "english": "Server frame rate (heartbeat)",
+    "translation": "服务器帧速率（心跳）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemory",
+    "description": "Title for chart showing server memory usage",
+    "english": "Server memory usage",
+    "translation": "服务器内存使用情况",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ServerMemoryByAge",
+    "description": "Title for chart showing server memory usage based on server age",
+    "english": "Server memory usage by server age",
+    "translation": "服务器内存使用情况（按服务器年龄）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkTermsOfService",
+    "description": "Message shown on tooltip near benchmark toggle.",
+    "english": "By using analytics, you consent to our Analytics Terms of Use to maintain the benchmark information in confidence. You agree not to share, sell, publish, or disseminate this in any way. Click to view full terms.",
+    "translation": "使用分析，即表示你同意我们的分析使用条款，以对基准信息保密。你同意不以任何方式分享、出售、发布或传播此信息。点按以查看完整条款。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewEngagement",
+    "description": "Text for button that redirects users to the engagement page",
+    "english": "View all engagement charts",
+    "translation": "查看所有参与度图表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewUserAcquisition",
+    "description": "Text for button that redirects users to the user acquisition page",
+    "english": "View all acquisition charts",
+    "translation": "查看所有获取图表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewRetention",
+    "description": "Text for button that redirects users to retention page",
+    "english": "View all retention charts",
+    "translation": "查看所有留存率图表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Action.ViewMonetization",
+    "description": "Text for button that redirects users to monetization page",
+    "english": "View all monetization charts",
+    "translation": "查看所有盈利图表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.LearnMoreAnalytics",
+    "description": null,
+    "english": "{linkStart}Learn more{linkEnd} about using analytics to grow your experience. ",
+    "translation": "{linkStart}了解更多{linkEnd}使用分析来发展你的体验。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinsSuffix",
+    "description": "The shorthand for minutes. Should be the shorthand for whatever the locale is",
+    "english": "mins",
+    "translation": "分钟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.Revenue",
+    "description": null,
+    "english": "Revenue",
+    "translation": "收入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Tooltip.PeriodComparison",
+    "description": "This is a tooltip for the comparison chip that shows a percentage increase or decrease of the charts values from the current period (range selected in the filter bar) versus the previous period. We are using this tooltip to be explicit in the dates we are comparing. An example would be like so:\n\nMar 30 - Apr 7 vs. Mar 22 - Mar 29\n\nThe `vs.` is shorthand for `versus` in whatever locale. If a shorthand doesn't exist, it's fine to use a full length equivalent of `versus`",
+    "english": "{currentPeriod} vs. {previousPeriod}",
+    "translation": "{currentPeriod} vs {previousPeriod}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -71393,10 +71705,34 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByPlaceID",
+    "description": null,
+    "english": "Experience By Place ID (API Only)",
+    "translation": "按场景 ID 排序作品（仅 API）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.PlaceID",
     "description": null,
     "english": "Place ID",
     "translation": "放置ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.InvalidPlaceID",
+    "description": null,
+    "english": "Invalid Place ID",
+    "translation": "场景 ID 无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishV2",
+    "description": null,
+    "english": "Once you publish a Limited, you can only modify Tags, Comments, and Sale Locations",
+    "translation": "一旦你发布了限量道具，你只能修改标签、评论和发售地点",
     "isDeprecated": false
   },
   {
@@ -79728,6 +80064,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Label.Note",
+    "description": "Heading for label before we display warning for non-text filter supported languages",
+    "english": "Note:",
+    "translation": "注意：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameInfoTranslation",
+    "key": "Message.TextFilterNotSupportedWarning",
+    "description": null,
+    "english": "This language is not yet officially supported on Roblox, so manual name and description translations may be incorrectly filtered.",
+    "translation": "Roblox 尚未支持该语言，因此手动输入名称和描述的翻译内容可能被错误过滤。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameProductTranslation",
     "key": "Label.OptionShowAll",
     "description": null,
@@ -83621,6 +83973,22 @@
     "description": null,
     "english": "Verify Your ID for OAuth App Creation",
     "translation": "为了 OAuth 应用创建来验证你的 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.ScopeSelectionError",
+    "description": null,
+    "english": "Scope Selection Error",
+    "translation": "范围选择错误",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ScopeSelectionError",
+    "description": null,
+    "english": "Cannot save app. The openid scope must be selected with the profile scope",
+    "translation": "无法保存应用。必须选择配置文件范围的 openid 范围",
     "isDeprecated": false
   },
   {
@@ -91452,7 +91820,7 @@
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
     "english": "Chat as your Avatar Unavailable",
-    "translation": "与虚拟形象聊天需要开启摄像头",
+    "translation": "无法使用虚拟形象聊天功能",
     "isDeprecated": true
   },
   {
@@ -91460,7 +91828,7 @@
     "key": "Heading.NotAvailable",
     "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
     "english": "Chat as your Avatar Currently Unavailable",
-    "translation": "无法与虚拟形象聊天",
+    "translation": "当前无法使用虚拟形象聊天功能",
     "isDeprecated": true
   },
   {
@@ -91468,7 +91836,7 @@
     "key": "Heading.FacialAnimation",
     "description": "Heading for generic message used for Chat with Avatars feature.",
     "english": "Chat as your Avatar",
-    "translation": "与虚拟形象聊天",
+    "translation": "使用虚拟形象聊天",
     "isDeprecated": true
   },
   {
@@ -91492,7 +91860,7 @@
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "此功能暂时无法使用，请稍后重试。",
+    "translation": "暂时无法使用虚拟形象聊天功能，请稍后重试。",
     "isDeprecated": true
   },
   {
@@ -91500,7 +91868,7 @@
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "此功能暂时无法使用，请稍后重试。",
+    "translation": "暂时无法使用虚拟形象聊天功能，请稍后重试。",
     "isDeprecated": true
   },
   {
@@ -92429,6 +92797,22 @@
     "description": null,
     "english": "Placeholder image",
     "translation": "占位图像",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.CreatedPlaces",
+    "description": null,
+    "english": "Created Places",
+    "translation": "已创建的场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.EmptyCreatedPlaces",
+    "description": null,
+    "english": "You can use the {apiLinkStart}Create and Save Place API{apiLinkEnd} for creating Places. Check the {docLinkStart}documentation{docLinkEnd} for more information.",
+    "translation": "你可以使用{apiLinkStart}创建并保存场景 API{apiLinkEnd} 来创建场景。请查看{docLinkStart}文档{docLinkEnd}以获取更多信息。",
     "isDeprecated": false
   },
   {
@@ -95680,6 +96064,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedError",
+    "description": null,
+    "english": "Allowed social slot is 1.",
+    "translation": "允许的社交栏位为 1。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceAccess",
+    "key": "Error.SocialSlotAllowedRange",
+    "description": null,
+    "english": "Value should be between 1 and {value}.",
+    "translation": "值应在 1 和 {value} 之间。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.DailySummary",
     "description": null,
@@ -98016,6 +98416,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.SixDigitCode",
+    "description": "Placeholder for 6-digit code field",
+    "english": "6-Digit Code",
+    "translation": "6 位验证码",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -98781,6 +99189,334 @@
     "description": null,
     "english": "New",
     "translation": "新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.SearchEllipses",
+    "description": null,
+    "english": "Search...",
+    "translation": "搜索...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Watching",
+    "description": null,
+    "english": "Watching",
+    "translation": "观看",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Normal",
+    "description": null,
+    "english": "Normal",
+    "translation": "标准",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Muted",
+    "description": null,
+    "english": "Muted",
+    "translation": "已静音",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Category",
+    "description": null,
+    "english": "Category",
+    "translation": "类别",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.ReportBug",
+    "description": null,
+    "english": "Report Bug",
+    "translation": "报告bug",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Position",
+    "description": null,
+    "english": "Position",
+    "translation": "位置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "过去 7 天",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "过去 30 天",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.AllTime",
+    "description": null,
+    "english": "All Time",
+    "translation": "所有时间",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Views",
+    "description": null,
+    "english": "Views",
+    "translation": "浏览次数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Activity",
+    "description": null,
+    "english": "Activity",
+    "translation": "活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Posts",
+    "description": null,
+    "english": "Posts",
+    "translation": "帖子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Users",
+    "description": null,
+    "english": "Users",
+    "translation": "用户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Likes",
+    "description": null,
+    "english": "Likes",
+    "translation": "喜欢",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.All",
+    "description": null,
+    "english": "All",
+    "translation": "全部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Daily",
+    "description": null,
+    "english": "Daily",
+    "translation": "每日",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Weekly",
+    "description": null,
+    "english": "Weekly",
+    "translation": "每周",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "每月",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Yearly",
+    "description": null,
+    "english": "Yearly",
+    "translation": "年度号",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.AllLowercase",
+    "description": null,
+    "english": "all",
+    "translation": "all",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.AboutRoblox",
+    "description": null,
+    "english": "About Roblox",
+    "translation": "关于 Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "无障碍环境",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Careers",
+    "description": null,
+    "english": "Careers",
+    "translation": "工作机会",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Technology",
+    "description": null,
+    "english": "Technology",
+    "translation": "技术",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.TermsOfService",
+    "description": null,
+    "english": "Terms Of Service",
+    "translation": "服务条款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.PrivacyPolicy",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "隐私政策",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Parents",
+    "description": null,
+    "english": "Parents",
+    "translation": "家长指南",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Learn",
+    "description": null,
+    "english": "Learn",
+    "translation": "学习",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Articles",
+    "description": null,
+    "english": "Articles",
+    "translation": "文章",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Reference",
+    "description": null,
+    "english": "Reference",
+    "translation": "参考",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Announcements",
+    "description": null,
+    "english": "Announcements",
+    "translation": "通知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Twitter",
+    "description": null,
+    "english": "Twitter",
+    "translation": "Twitter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Facebook",
+    "description": null,
+    "english": "Facebook",
+    "translation": "Facebook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.LinkedIn",
+    "description": null,
+    "english": "LinkedIn",
+    "translation": "LinkedIn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Instagram",
+    "description": null,
+    "english": "Instagram",
+    "translation": "Instagram",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.YouTube",
+    "description": null,
+    "english": "YouTube",
+    "translation": "YouTube",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Company",
+    "description": null,
+    "english": "Company",
+    "translation": "公司",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Developer",
+    "description": null,
+    "english": "Developer",
+    "translation": "开发者",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.SocialMedia",
+    "description": null,
+    "english": "Social Media",
+    "translation": "社交媒体",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.About",
+    "key": "Title.ContactUs",
+    "description": null,
+    "english": "Contact Us",
+    "translation": "联系我们",
     "isDeprecated": false
   }
 ]

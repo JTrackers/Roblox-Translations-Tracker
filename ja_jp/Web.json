@@ -864,12 +864,36 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.UseAnotherDevice",
+    "description": null,
+    "english": "Use Another Device",
+    "translation": "別のデバイスを使用",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
     "english": "This is a test",
     "translation": "これはテストです",
     "isDeprecated": false
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Another.Test",
+    "description": null,
+    "english": "Test string",
+    "translation": "文字列をテスト",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "X.Remove1",
+    "key": "Test3",
+    "description": null,
+    "english": "a test",
+    "translation": "テスト",
+    "isDeprecated": true
   },
   {
     "namespace": "Application.Settings",
@@ -3380,7 +3404,7 @@
     "key": "Response.UsernameInvalidCharacters",
     "description": null,
     "english": "Only a-z, A-Z, 0-9 and _ are allowed.",
-    "translation": "a-z、A-Z、0-9、および_のみ使用可。",
+    "translation": "半角の英字（a〜z、A〜Z）数字（0〜9）の混合と下線 _ のみ使用可。",
     "isDeprecated": false
   },
   {
@@ -3604,7 +3628,7 @@
     "key": "Response.UsernameAllowedCharactersError",
     "description": "error showing which characters are allowed for username",
     "english": "Usernames may only contain letters, numbers, and _.",
-    "translation": "ユーザーネームには、半角英数字と下線 _ のみ使用可。",
+    "translation": "ユーザーネームには、半角の英字と数字の混合、下線 _ のみ使用可。",
     "isDeprecated": false
   },
   {
@@ -3780,7 +3804,7 @@
     "key": "Label.UsernameCharacterLimit",
     "description": "label",
     "english": "3-20 alphanumeric characters, no spaces.",
-    "translation": "3〜20文字の半角英数字、スペースは不可",
+    "translation": "半角英字と数字の混合3〜20文字、スペースは不可",
     "isDeprecated": false
   },
   {
@@ -8668,7 +8692,7 @@
     "key": "Response.Dialog.ChangeUsernameNoInput",
     "description": null,
     "english": "Please enter a username.",
-    "translation": "ユーザーネームを入力して下さい。",
+    "translation": "ユーザーネーム（あだな）を半角英字と数字の混合で入力して下さい。",
     "isDeprecated": false
   },
   {
@@ -10940,7 +10964,7 @@
     "key": "Label.ThirdPartyVerificationDisclaimer",
     "description": null,
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider.",
-    "translation": "「年齢を認証」をクリックすると、当社の第三者サービスプロバイダが本人確認プロセスを完了することになります。",
+    "translation": "「年齢を確認」をクリックすると、当社の第三者サービスプロバイダが本人確認プロセスを完了することになります。",
     "isDeprecated": false
   },
   {
@@ -16648,6 +16672,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "保留期間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "仮想空間内で入手可",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Label.Offline",
     "description": null,
@@ -20396,7 +20452,7 @@
     "key": "Label.Sponsored",
     "description": null,
     "english": "Sponsored",
-    "translation": "スポンサー付き",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -20404,7 +20460,7 @@
     "key": "Label.SponsoredAd",
     "description": "text for label of sponsored game cards",
     "english": "Sponsored Ad",
-    "translation": "スポンサーつき広告",
+    "translation": "スポンサー広告",
     "isDeprecated": false
   },
   {
@@ -21733,6 +21789,14 @@
     "description": "new text with no asset type",
     "english": "Use {assetName} and thousands of other assets to build an immersive experience. Select from a wide range of models, decals, meshes, plugins, or audio that help bring your imagination into reality.",
     "translation": "{assetName} やその他の数千種類のアセットを使って、没入型体験を作り上げましょう。バラエティ豊富なモデル、デカール、メッシュ、プラグイン、オーディオを使って、イマジネーションを現実にしましょう。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません.",
     "isDeprecated": false
   },
   {
@@ -26064,6 +26128,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Support",
+    "key": "Label.LabelGCCurrencyAlignment",
+    "description": "This one is a typo",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "ギフトカードの通貨がアカウントの国と一致しない場合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.PurchaseCreditBalanceCurrency",
+    "description": "I have a question about my credit balance currency",
+    "english": "I have a question about my credit balance currency",
+    "translation": "通貨クレジットの残高についての質問がある場合",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.GCCurrencyAlignment",
+    "description": "My Gift Card currency doesn’t match my account country",
+    "english": "My Gift Card currency doesn’t match my account country",
+    "translation": "ギフトカードの通貨がアカウントの国と一致しない場合",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VotingPanel",
     "key": "Label.EmailVerifiedTitle",
     "description": null,
@@ -28844,7 +28932,7 @@
     "key": "Label.TopicSponsoredGames",
     "description": null,
     "english": "Sponsored",
-    "translation": "スポンサーつき",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -38153,10 +38241,74 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "ギフトカードの通貨はお持ちのアカウントで設定している国の通貨と一致する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "ボックスにチェックマークを入れることで、あなたの年齢が18歳以上であるかアカウント所有者の親か法的保護者であることを認め、仲裁条項を含む当社の利用規約とプライバシーポリシーに同意したことになります。<br />また、ギフトカードの表に表示してある金額は、お住まいの場所の現地通貨でのRobloxクレジットと同等の額で引き換えられることを承認し、同意したことになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Label.AvailableCreditWithColon",
     "description": null,
     "english": "Available Credit:",
     "translation": "利用できるクレジット:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
+    "description": null,
+    "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
+    "translation": "お持ちのコードを引き換えることで、あなた（18歳未満の場合はアカウント所有者の親か法的保護者も）は仲裁条項と {giftCardTermsLinkStart}ギフトカード規約と条件{giftCardTermsLinkEnd} を含む当社の {termsOfUseLinkStart}利用規約{termsOfUseLinkEnd} と {privacyPolicyLinkStart}プライバシーポリシー{privacyPolicyLinkEnd} に同意したことになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "ボックスにチェックマークを入れることで、あなたの年齢が18歳以上であるかアカウント所有者の親か法的保護者であることを認め、仲裁条項と {giftCardTermsLinkStart}ギフトカード利用規約と条件{giftCardTermsLinkEnd} を含む当社の {termsOfUseLinkStart}利用規約{termsOfUseLinkEnd} と {privacyPolicyLinkStart}プライバシーポリシー{privacyPolicyLinkEnd} に同意したことになります。また、ギフトカードの表に表示してある金額は、お住まいの場所の現地通貨でのRobloxクレジットと同等の額で引き換えられることを承認し、同意したことになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "ギフトカードの通貨はアカウントで設定してある国と一致している必要があります。 {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd} にお問い合わせください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "何らかの問題が発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "エラーが発生しました。問題が解決しない場合はカスタマーサービスにお問い合わせください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedemptionDisabled",
+    "description": null,
+    "english": "Code redemption is temporarily unavailable. Please try again at a later time.",
+    "translation": "コードの引き換えは一時的に利用できません。後でもう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -48672,6 +48824,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Action.SearchMyGroups",
+    "description": "placeholder text for input field where someone types in a search query to filter their groups list",
+    "english": "Search my groups",
+    "translation": "マイグループで探す",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -50488,6 +50648,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.RobloxCredit",
+    "key": "Label.LocalizedCurrentBalance",
+    "description": null,
+    "english": "Current Balance:",
+    "translation": "現在の残高:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.EngagementPayout",
     "key": "Heading.EngagementPayout",
     "description": null,
@@ -51976,6 +52144,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "ギフトカードの通貨はアカウントで設定してある国と一致している必要があります。 {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd} にお問い合わせください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.NativeAds",
     "key": "Heading.SponsorGame",
     "description": null,
@@ -52244,7 +52420,7 @@
     "key": "Heading.StopAd",
     "description": null,
     "english": "Stop Sponsored Experience",
-    "translation": "仮想空間のスポンサーを停止",
+    "translation": "スポンサー仮想空間を停止",
     "isDeprecated": false
   },
   {
@@ -52316,7 +52492,7 @@
     "key": "Heading.RunAd",
     "description": null,
     "english": "Run Sponsored Ad",
-    "translation": "スポンサー付き広告を実行する",
+    "translation": "スポンサー広告を掲載",
     "isDeprecated": false
   },
   {
@@ -52356,7 +52532,7 @@
     "key": "Message.InvalidAdId",
     "description": null,
     "english": "The sponsored experience code is invalid",
-    "translation": "スポンサーつき仮想空間コードが無効です",
+    "translation": "スポンサー仮想空間コードが無効です",
     "isDeprecated": false
   },
   {
@@ -52436,7 +52612,7 @@
     "key": "Description.ImpressionsTooltip",
     "description": null,
     "english": "This estimator uses data from sponsored ads run yesterday to guess how many impressions your sponsored ad will receive.",
-    "translation": "この推定器は、昨日実行されたスポンサーつき体験からのデータを使用してあなたのスポンサーつき体験の推定インプレッション数を割り出します。",
+    "translation": "この推定器は、昨日実行されたスポンサー仮想空間からのデータを使用してあなたのスポンサー仮想空間の推定インプレッション数を割り出します。",
     "isDeprecated": false
   },
   {
@@ -52476,7 +52652,7 @@
     "key": "Description.SponsoredAdCreation",
     "description": null,
     "english": "Sponsored Experience Ad Creation",
-    "translation": "スポンサーつき仮想空間の広告作成",
+    "translation": "スポンサー仮想空間の広告作成",
     "isDeprecated": false
   },
   {
@@ -52732,7 +52908,7 @@
     "key": "Label.SponsoredAd",
     "description": null,
     "english": "Sponsored Ad",
-    "translation": "スポンサーつき広告",
+    "translation": "スポンサー広告",
     "isDeprecated": false
   },
   {
@@ -53164,7 +53340,7 @@
     "key": "Label.Sponsored",
     "description": "Label applied to sponsored experiences / avatar items / groups etc",
     "english": "Sponsored",
-    "translation": "スポンサー済み",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -53220,7 +53396,7 @@
     "key": "Heading.SponsoredExperiencePreview",
     "description": "This is a header for the page which shows a preview for a new sponsored experience upon creation.",
     "english": "Sponsored Experience Preview",
-    "translation": "スポンサーつき仮想空間のプレビュー",
+    "translation": "スポンサー仮想空間のプレビュー",
     "isDeprecated": false
   },
   {
@@ -53228,7 +53404,7 @@
     "key": "Heading.SponsoredCatalogPreview",
     "description": null,
     "english": "Sponsored Catalog Preview",
-    "translation": "スポンサーつきカタログのプレビュー",
+    "translation": "スポンサーカタログのプレビュー",
     "isDeprecated": false
   },
   {
@@ -54027,7 +54203,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Description.DevForumsTool",
     "description": null,
-    "english": "Ask questions in our tight knit dev community",
+    "english": "Ask questions in our tight-knit creator community",
     "translation": "結びつきが強い当社の開発者コミュニティで質問する",
     "isDeprecated": false
   },
@@ -54099,7 +54275,7 @@
     "namespace": "CreatorDashboard.Landing",
     "key": "Label.PlayingCount",
     "description": null,
-    "english": "{count} Playing",
+    "english": "{count} Online",
     "translation": "{count} 人がプレイ中",
     "isDeprecated": false
   },
@@ -58916,7 +59092,7 @@
     "key": "Description.AdSpend",
     "description": null,
     "english": "Sponsored Ad Spend",
-    "translation": "スポンサー付き広告費用",
+    "translation": "スポンサー広告費用",
     "isDeprecated": false
   },
   {
@@ -58924,7 +59100,7 @@
     "key": "Description.AdSpendAdjustment",
     "description": null,
     "english": "Sponsored Ad Spend Adjustment",
-    "translation": "スポンサー付き広告費用額の調整",
+    "translation": "スポンサー広告費用額の調整",
     "isDeprecated": false
   },
   {
@@ -58932,7 +59108,7 @@
     "key": "Label.TransactionTypeAdSpend",
     "description": null,
     "english": "Sponsored Ad Spend",
-    "translation": "スポンサー付き広告費用",
+    "translation": "スポンサー広告費用",
     "isDeprecated": false
   },
   {
@@ -59981,7 +60157,7 @@
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
     "translation": "1つの電話番号にリンクされたアカウント数が上限に達しました。",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
@@ -63364,7 +63540,7 @@
     "key": "Heading.SponsoredGameAds",
     "description": null,
     "english": "Sponsored Experience Ads",
-    "translation": "スポンサーつき仮想空間の広告",
+    "translation": "スポンサー仮想空間の広告",
     "isDeprecated": false
   },
   {
@@ -63372,7 +63548,7 @@
     "key": "Link.ViewOldSponsoredAds",
     "description": null,
     "english": "View old sponsored experience ads",
-    "translation": "古いスポンサー付き仮想空間の広告を表示",
+    "translation": "古いスポンサー仮想空間の広告を表示",
     "isDeprecated": false
   },
   {
@@ -63388,7 +63564,7 @@
     "key": "Label.CreateSponsoredAd",
     "description": null,
     "english": "Create Sponsored Ad",
-    "translation": "スポンサー付き広告の作成",
+    "translation": "スポンサー広告の作成",
     "isDeprecated": false
   },
   {
@@ -63524,7 +63700,7 @@
     "key": "Label.SponsoredAdTag",
     "description": null,
     "english": "Sponsored Ad",
-    "translation": "スポンサー付き広告",
+    "translation": "スポンサー広告",
     "isDeprecated": false
   },
   {
@@ -63724,7 +63900,7 @@
     "key": "Description.SelectGame",
     "description": "wrong key, dont use",
     "english": "You can create ads by clicking “Create Sponsored Ad” button.",
-    "translation": "「スポンサー付き広告の作成」ボタンをクリックして広告を作成できます。",
+    "translation": "「スポンサー広告の作成」ボタンをクリックして広告を作成できます。",
     "isDeprecated": true
   },
   {
@@ -63756,7 +63932,7 @@
     "key": "Description.CreateAdByButton",
     "description": null,
     "english": "You can create ads by clicking “Create Sponsored Ad” button.",
-    "translation": "「スポンサー付き広告の作成」ボタンをクリックして広告を作成できます。",
+    "translation": "「スポンサー広告の作成」ボタンをクリックして広告を作成できます。",
     "isDeprecated": false
   },
   {
@@ -63828,7 +64004,7 @@
     "key": "Heading.SponsoredAds",
     "description": null,
     "english": "Sponsored Ads",
-    "translation": "スポンサーつき広告",
+    "translation": "スポンサー広告",
     "isDeprecated": false
   },
   {
@@ -65940,7 +66116,7 @@
     "key": "Title.NewUsers",
     "description": null,
     "english": "New Users",
-    "translation": "新規の訪問者",
+    "translation": "新規ユーザー",
     "isDeprecated": false
   },
   {
@@ -68157,6 +68333,14 @@
     "description": "Funnel Source Label in User Acquisitions",
     "english": "Teleport",
     "translation": "テレポート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.Revenue",
+    "description": null,
+    "english": "Revenue",
+    "translation": "収入",
     "isDeprecated": false
   },
   {
@@ -71433,10 +71617,34 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByPlaceID",
+    "description": null,
+    "english": "Experience By Place ID (API Only)",
+    "translation": "仮想空間をプレースIDで表示（APIのみ）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.PlaceID",
     "description": null,
     "english": "Place ID",
-    "translation": "IDを置く",
+    "translation": "プレース ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.InvalidPlaceID",
+    "description": null,
+    "english": "Invalid Place ID",
+    "translation": "無効なプレースID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishV2",
+    "description": null,
+    "english": "Once you publish a Limited, you can only modify Tags, Comments, and Sale Locations",
+    "translation": "一度、限定版を公開すると、タグやコメント、販売場所しか変更できません",
     "isDeprecated": false
   },
   {
@@ -81732,7 +81940,7 @@
     "key": "Action.GiveAccess",
     "description": null,
     "english": "Confirm and Give Access",
-    "translation": "アクセス権限を与える",
+    "translation": "確認してアクセスを許可する",
     "isDeprecated": false
   },
   {
@@ -83613,6 +83821,30 @@
     "description": null,
     "english": "Must have secure SSL certificate (starts with https://)",
     "translation": "セキュリティで保護されたSSL証明書が必要です（「https://」から始まるもの）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.TermsOfServiceAgreement",
+    "description": null,
+    "english": "By Selecting 'CREATE', you agree to the Roblox {linkStart}Terms of Service{linkEnd}",
+    "translation": "「作成（制作）」を選ぶとRoblox {linkStart}利用規約{linkEnd}に同意したことになります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthAgeVerificationRequirements",
+    "description": null,
+    "english": "Verify your identity through age verification on Roblox to become a trusted OAuth2 app developer. This helps prevent malicious apps that could harm users.",
+    "translation": "Robloxの年齢確認を使って本人確認をして、信頼できるOAuth2 アプリ開発者になりましょう。ユーザーに害を及ぼす悪意のあるアプリの防止に役立ちます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthAgeVerificationInstructions",
+    "description": null,
+    "english": "To begin, click on the \"VERIFY\" button to navigate to your Roblox Account Settings, and select the \"Verify My Age\" button.",
+    "translation": "始めるには、「確認」ボタンをクリックしてRobloxの [アカウント設定] ページに行き、[年齢を確認] のボタンを選んでください。",
     "isDeprecated": false
   },
   {
@@ -85692,7 +85924,7 @@
     "key": "Label.ViewAdvertiseExperiencePageName",
     "description": null,
     "english": "Sponsored Ads Page",
-    "translation": "スポンサーつき広告ページ",
+    "translation": "スポンサー広告ページ",
     "isDeprecated": false
   },
   {
@@ -92424,6 +92656,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.Placeholder",
+    "description": null,
+    "english": "Placeholder image",
+    "translation": "プレースホルダーの画像",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Label.Name",
     "description": null,
@@ -97312,6 +97552,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Error.TestWebhookWithCode",
+    "description": "Same thing as Error.TestWebhook, but it includes a code at the end with information about what kind of error occurred from the backend API.",
+    "english": "Error when sending test response. Error Code: {errorCode}",
+    "translation": "テスト応答を送信中にエラーが発生しました。エラーコード: {errorCode}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Error.SavingWithErrorCode",
+    "description": "Error message with some helpful error code when saving a change.",
+    "english": "Can't save changes. Error Code: {errorCode}",
+    "translation": "変更を保存できません。エラーコード: {errorCode}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength300",
+    "description": null,
+    "english": "Max length of 300 characters exceeded.",
+    "translation": "最大文字数の300文字を超えています。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -97989,6 +98253,30 @@
     "description": null,
     "english": "Try another way",
     "translation": "他の方法を試してください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to:",
+    "translation": "以下に送信したコードを入力してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.SixDigitCode",
+    "description": "Placeholder for 6-digit code field",
+    "english": "6-Digit Code",
+    "translation": "6桁のコード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.DidntReceiveCode",
+    "description": null,
+    "english": "Didn't receive code? Click here",
+    "translation": "コードを受信しなかった場合は、こちらをクリック",
     "isDeprecated": false
   },
   {
@@ -98757,6 +99045,318 @@
     "description": null,
     "english": "New",
     "translation": "新着",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.SearchEllipses",
+    "description": null,
+    "english": "Search...",
+    "translation": "サーチ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Watching",
+    "description": null,
+    "english": "Watching",
+    "translation": "監視中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Normal",
+    "description": null,
+    "english": "Normal",
+    "translation": "標準",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Muted",
+    "description": null,
+    "english": "Muted",
+    "translation": "ミュート済み",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Category",
+    "description": null,
+    "english": "Category",
+    "translation": "カテゴリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.ReportBug",
+    "description": null,
+    "english": "Report Bug",
+    "translation": "バグ報告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Position",
+    "description": null,
+    "english": "Position",
+    "translation": "位置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last7Days",
+    "description": null,
+    "english": "Last 7 days",
+    "translation": "過去7日間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Last30Days",
+    "description": null,
+    "english": "Last 30 days",
+    "translation": "過去30日間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.AllTime",
+    "description": null,
+    "english": "All Time",
+    "translation": "通算",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Views",
+    "description": null,
+    "english": "Views",
+    "translation": "表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Activity",
+    "description": null,
+    "english": "Activity",
+    "translation": "アクティビティー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Posts",
+    "description": null,
+    "english": "Posts",
+    "translation": "ポスト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Users",
+    "description": null,
+    "english": "Users",
+    "translation": "ユーザー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.All",
+    "description": null,
+    "english": "All",
+    "translation": "すべて",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Daily",
+    "description": null,
+    "english": "Daily",
+    "translation": "1日ごと",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Weekly",
+    "description": null,
+    "english": "Weekly",
+    "translation": "毎週",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "月間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.HomePage",
+    "key": "Label.Yearly",
+    "description": null,
+    "english": "Yearly",
+    "translation": "イアリー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.AboutRoblox",
+    "description": null,
+    "english": "About Roblox",
+    "translation": "Robloxについて",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "アクセシビリティ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Careers",
+    "description": null,
+    "english": "Careers",
+    "translation": "採用情報",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Technology",
+    "description": null,
+    "english": "Technology",
+    "translation": "テクノロジー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.TermsOfService",
+    "description": null,
+    "english": "Terms Of Service",
+    "translation": "利用規約",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.PrivacyPolicy",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "プライバシーポリシー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Parents",
+    "description": null,
+    "english": "Parents",
+    "translation": "保護者の方へ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Learn",
+    "description": null,
+    "english": "Learn",
+    "translation": "学ぶ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Articles",
+    "description": null,
+    "english": "Articles",
+    "translation": "記事",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Reference",
+    "description": null,
+    "english": "Reference",
+    "translation": "参照",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Announcements",
+    "description": null,
+    "english": "Announcements",
+    "translation": "お知らせ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Twitter",
+    "description": null,
+    "english": "Twitter",
+    "translation": "Twitter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Facebook",
+    "description": null,
+    "english": "Facebook",
+    "translation": "Facebook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.LinkedIn",
+    "description": null,
+    "english": "LinkedIn",
+    "translation": "LinkedIn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Instagram",
+    "description": null,
+    "english": "Instagram",
+    "translation": "Instagram",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.YouTube",
+    "description": null,
+    "english": "YouTube",
+    "translation": "YouTube",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Company",
+    "description": null,
+    "english": "Company",
+    "translation": "当社について",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.Developer",
+    "description": null,
+    "english": "Developer",
+    "translation": "開発者",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.Navigation",
+    "key": "Label.SocialMedia",
+    "description": null,
+    "english": "Social Media",
+    "translation": "ソーシャルメディア",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "DevForum.About",
+    "key": "Title.ContactUs",
+    "description": null,
+    "english": "Contact Us",
+    "translation": "お問い合わせ",
     "isDeprecated": false
   }
 ]

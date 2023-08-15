@@ -732,7 +732,7 @@
     "key": "Response.UsernameInvalidCharacters",
     "description": null,
     "english": "Only a-z, A-Z, 0-9 and _ are allowed.",
-    "translation": "a-z、A-Z、0-9、および_のみ使用可。",
+    "translation": "半角の英字（a〜z、A〜Z）数字（0〜9）の混合と下線 _ のみ使用可。",
     "isDeprecated": false
   },
   {
@@ -2301,6 +2301,14 @@
     "description": "Text to show user when they need to purchase Robux on VR head sets.",
     "english": "Insufficient Robux. Buying Robux is not supported on headset devices yet. Please try on a different device.",
     "translation": "Robux（ロバックス）が足りません。Robuxの購入は、ヘッドセットデバイスにはまだ対応していません。別のデバイスでお試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.FeatureNotAvailableForAccount",
+    "description": "Text indicating that certain feature is not available for this account.",
+    "english": "Your account isn’t eligible for this feature.",
+    "translation": "お持ちのアカウントはこの機能の利用対象外です。",
     "isDeprecated": false
   },
   {
@@ -4512,6 +4520,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.HoldingPeriod",
+    "description": null,
+    "english": "Holding Period",
+    "translation": "保留期間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.InExperienceOnly",
+    "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
+    "english": "Available In Experience",
+    "translation": "仮想空間内で入手可",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -6644,7 +6676,7 @@
     "key": "Label.Sponsored",
     "description": null,
     "english": "Sponsored",
-    "translation": "スポンサー付き",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -6868,7 +6900,7 @@
     "key": "Label.Sponsored.AllCap",
     "description": "This is for labeling the Roblox sponsored experience. The same label as Label.Sponsored, but it is empathized",
     "english": "SPONSORED",
-    "translation": "スポンサーつき",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -6893,6 +6925,14 @@
     "description": null,
     "english": "Passes",
     "translation": "パス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません.",
     "isDeprecated": false
   },
   {
@@ -7509,6 +7549,22 @@
     "description": "Shown as the header text for recommended avatar items on home page carousel",
     "english": "Avatar Items For You",
     "translation": "あなたのためのアバターアイテム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Heading.JoinYourFriends",
+    "description": "Heading for the Join Your Friends carousel on home page",
+    "english": "Join Your Friends",
+    "translation": "友達と一緒に参加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Button.Join",
+    "description": "Button text for Join button on the Join Your Friends Tile.",
+    "english": "Join",
+    "translation": "一緒に参加",
     "isDeprecated": false
   },
   {
@@ -10384,6 +10440,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Message.TryOnCameraHeadWarning",
+    "description": "Message to show for Universal App Camera Button if trying to toggle on while having a Classic Head on your avatar.",
+    "english": "Classic Heads do not support Facial Animation",
+    "translation": "定番の頭は、表情アニメーションに対応していません",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PromotedChannels",
     "key": "Message.SocialLinkoffPlatformModalTitle",
     "description": "A message displayed to users after they click a link that takes them to a different website (like twitter or amazon etc)",
@@ -11177,6 +11241,22 @@
   },
   {
     "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.MicAndCamera",
+    "description": "Error message for banned users who have access to camera chat",
+    "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice and avatar.",
+    "translation": "当社のシステムがコミュニティ基準に違反している可能性のある言動を検知しました。予防措置として、「音声でチャット」と「アバターでチャット」へのアクセスを一時的に無効にしました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.Microphone",
+    "description": "Error message for temporarily suspended users with only microphone",
+    "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice.",
+    "translation": "当社のシステムがコミュニティ基準に違反している可能性のある言動を検知しました。予防措置として、「音声でチャット」へのアクセスを一時的に無効にしました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
     "key": "Prompt.MicAndCameraUseSuspended",
     "description": null,
     "english": "Microphone and Camera Use Suspended",
@@ -11964,7 +12044,7 @@
     "key": "Label.Sponsored",
     "description": "Label applied to sponsored experiences / avatar items / groups etc",
     "english": "Sponsored",
-    "translation": "スポンサー済み",
+    "translation": "スポンサー広告つき",
     "isDeprecated": false
   },
   {
@@ -13361,6 +13441,14 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Response.ErrorTryAgain",
+    "description": null,
+    "english": "Something went wrong. Please try again later.",
+    "translation": "何らかの問題が発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Response.PhoneNumberAlreadyLinked",
     "description": null,
     "english": "This number has already been associated with another account.",
@@ -13430,6 +13518,14 @@
     "english": "Please enter your parent's email address to add to your account.",
     "translation": "アカウントに追加する保護者のメールアドレスを入力してください。",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.PleaseAddEmail",
+    "description": null,
+    "english": "Add Email",
+    "translation": "メールアドレスを追加",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
@@ -13505,6 +13601,22 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Response.ErrorPhoneFormatInvalid",
+    "description": null,
+    "english": "This phone number format is invalid. Please check and try again.",
+    "translation": "この電話番号の形式が無効です。確認してもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.PhoneIsVerified",
+    "description": null,
+    "english": "Your Phone Number Is Verified!",
+    "translation": "電話番号が認証されました！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Description.PhoneForRecovery",
     "description": null,
     "english": "You can now use your phone number to recover your account in the future.",
@@ -13517,6 +13629,14 @@
     "description": null,
     "english": "Done",
     "translation": "完了",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.InvalidPhoneNumberError",
+    "description": null,
+    "english": "This phone number cannot be used. Please enter a different phone number.",
+    "translation": "この電話番号は使用できません。別の電話番号を入力してください。",
     "isDeprecated": false
   },
   {
@@ -13677,7 +13797,7 @@
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
     "translation": "1つの電話番号にリンクされたアカウント数が上限に達しました。",
-    "isDeprecated": true
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.VerificationUpsell",
