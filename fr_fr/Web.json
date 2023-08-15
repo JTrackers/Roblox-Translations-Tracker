@@ -11411,7 +11411,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully deleted.",
+    "english": "{deletedKeyList} successfully deleted.",
     "translation": "{deletedKeyList} ont été désactivés avec succès.",
     "isDeprecated": false
   },
@@ -11452,7 +11452,7 @@
     "key": "Description.ContentControls",
     "description": null,
     "english": "Choose the {linkStart}highest age guideline{linkEnd} of experiences this account can join.",
-    "translation": "Choisir la {linkStart}ligne directrice d'âge{linkEnd} la plus élevée des expériences auxquelles ce compte peut participer.",
+    "translation": "Choisir la limite d'âge {linkStart} la plus élevée{linkEnd} des expériences auxquelles ce compte peut participer.",
     "isDeprecated": false
   },
   {
@@ -11757,6 +11757,22 @@
     "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
     "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
     "translation": "Choisir la {linkStart}recommandation d'âge{linkEnd} la plus élevée des expériences auxquelles ce compte peut participer{lineBreak} Toutes les expériences sont toujours consultables. Les expériences non évaluées sont actuellement traitées comme des expériences 13+.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AllowedExperiences",
+    "description": "heading for content restrictions - representing the age level of experiences this user can play",
+    "english": "Allowed Experiences",
+    "translation": "Expériences autorisées",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteSecurityKeySuccess",
+    "description": null,
+    "english": "Security Key Deleted",
+    "translation": "Clé de sécurité supprimée",
     "isDeprecated": false
   },
   {
@@ -34227,7 +34243,7 @@
     "namespace": "Purchasing.RedeemGameCard",
     "key": "Response.UnexpectedError",
     "description": null,
-    "english": "An unexpected error occured. Please try your request again later.",
+    "english": "An unexpected error occurred. Please try your request again later.",
     "translation": "Une erreur imprévue est survenue. Renouveler ta demande ultérieurement.",
     "isDeprecated": false
   },
@@ -55824,6 +55840,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PutBackOnSale",
+    "description": "Put an asset item back on sale",
+    "english": "Put Back On Sale",
+    "translation": "Remettre en vente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.TakeOffSale",
+    "description": "Take an asset item off sale",
+    "english": "Take Off Sale",
+    "translation": "Retirer de la vente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PutBackOnSaleSuccess",
+    "description": null,
+    "english": "Put Back On Sale Successfully",
+    "translation": "Remise en vente réussie",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.TakeOffSaleSuccess",
+    "description": null,
+    "english": "Take Off Sale Successfully\n",
+    "translation": "Retirer de la vente avec succès\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PutBackOnSaleFailed",
+    "description": null,
+    "english": "Put back on sale failed, please try again later",
+    "translation": "La remise en vente a échoué, veuillez réessayer plus tard",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.TakeOffSaleFailed",
+    "description": null,
+    "english": "Take off sale failed, please try again later",
+    "translation": "La vente au rabais a échoué, veuillez réessayer plus tard",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Sponsor",
+    "description": "link label for the sponsor page of an asset item",
+    "english": "Sponsor",
+    "translation": "Sponsor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Advertise",
+    "description": "link label, to the advertise page of an asset item",
+    "english": "Advertise",
+    "translation": "Publier",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -62253,6 +62333,54 @@
     "description": null,
     "english": "The maximum price for this item is {price}",
     "translation": "Le prix maximum pour cet article est de {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PutOnSale",
+    "description": null,
+    "english": "Put On Sale for {price} Robux",
+    "translation": "Mettre en vente pour {price} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.PutOnSale",
+    "description": "Used for button label, to put an asset item on sale",
+    "english": "Put On Sale",
+    "translation": "Mettre en vente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PutOnSalePrompt",
+    "description": null,
+    "english": "Putting this asset type on sell will cost {price} Robux. Are you sure you want to proceed?",
+    "translation": "La mise en vente de ce type de bien coûtera {price}. Robux. Es-tu sûr de vouloir continuer ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.InsufficientSellingFeeFunds",
+    "description": null,
+    "english": "You don't have enough funds to sell this {assetType}! ({price} Robux)",
+    "translation": "Vous n'avez pas assez de fonds pour vendre ce {assetType} ! ({price} Robux)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PutBackOnSale",
+    "description": "Put an asset item on sale",
+    "english": "Put Back On Sale",
+    "translation": "Remettre en vente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.TakeOffSale",
+    "description": "Take an asset item off sale",
+    "english": "Take Off Sale",
+    "translation": "Retirer de la vente",
     "isDeprecated": false
   },
   {

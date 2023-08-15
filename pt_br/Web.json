@@ -608,6 +608,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Application.Settings",
+    "key": "Permissions.NSContactsUsageDescription3",
+    "description": "Permission OS prompt on iOS and Android",
+    "english": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
+    "translation": "Conecte-se com amigos no Roblox. Seus contatos serão regularmente sincronizados e suas partidas com outros usuários Roblox serão armazenadas para ajudá-lo a encontrar amigos. Você pode gerenciar isto a qualquer momento nas configurações.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Cancel",
     "description": null,
@@ -4488,6 +4496,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalAvailability",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "Esta experiência não está disponível na sua região para cumprir com regulamentos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalCompliance",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "Esta experiência não está disponível na sua região para cumprir com regulamentos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable due to your account settings.",
+    "translation": "Esta experiência não está disponível devido às suas configurações de conta.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.WebUtil",
     "key": "GetLabelYear",
     "description": null,
@@ -7668,7 +7700,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Some actions like logging in will require you to enter an Email code. Codes will be sent to {email}",
-    "translation": "Algumas ações como iniciar uma sessão irão requerer que você insira um código enviado por e-mail. Este código será enviado para {email}",
+    "translation": "Algumas ações como entrar na conta requerem que você insira um código enviado por e-mail. Os códigos serão enviados para {email}",
     "isDeprecated": false
   },
   {
@@ -11372,14 +11404,14 @@
     "key": "Description.SecurityKey.DeleteWarning",
     "description": null,
     "english": "Security keys protect your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
-    "translation": "As chaves de segurança protegem seus robux, experiências, artigos limitados e muito mais. Recomendamos apagar uma chave se você a perdeu ou se ela não é mais válida. {lineBreak}{lineBreak}Você tem certeza que deseja excluir sua chave?",
+    "translation": "As chaves de segurança protegem seus Robux, experiências, artigos limitados e muito mais. Recomendamos apagar uma chave se você a perdeu ou se ela não é mais válida. {lineBreak}{lineBreak}Você tem certeza que deseja excluir sua chave?",
     "isDeprecated": false
   },
   {
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully deleted.",
+    "english": "{deletedKeyList} successfully deleted.",
     "translation": "{deletedKeyList} foram desativadas com sucesso.",
     "isDeprecated": false
   },
@@ -11412,7 +11444,7 @@
     "key": "Heading.ContentControls",
     "description": null,
     "english": "Allowed Experiences",
-    "translation": "Controles de experiência com base na idade",
+    "translation": "Experiências permitidas",
     "isDeprecated": false
   },
   {
@@ -11524,7 +11556,7 @@
     "key": "Message.ContentControls",
     "description": null,
     "english": "All Experiences are still searchable. Unrated experiences are currently treated as 13+.",
-    "translation": "Nota: Todas as experiências ainda poderão ser pesquisadas e vistas. Experiências não avaliadas são atualmente tratadas como para maiores de 13 anos.",
+    "translation": "Todas as experiências ainda poderão ser pesquisadas e vistas. Experiências sem recomendações de idade são tratadas como para maiores de 13 anos.",
     "isDeprecated": false
   },
   {
@@ -11661,6 +11693,54 @@
     "description": null,
     "english": "One Option At A Time",
     "translation": "Uma opção de cada vez",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Deletion",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds, and more. We would recommend deleting a key if you have lost it or it is no longer valid.",
+    "translation": "As chaves de segurança protegem seus Robux, experiências, artigos limitados e muito mais. Recomendamos apagar uma chave se você a perdeu ou se ela não é mais válida.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Warning",
+    "description": null,
+    "english": "Are you sure you want to delete your key?",
+    "translation": "Tem certeza de que deseja excluir sua chave?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControlsWithUnratedDescription",
+    "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
+    "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
+    "translation": "Escolha a diretriz de {linkStart}idade máxima{linkEnd} para experiências em que esta conta pode participar.{lineBreak}Todas as experiências ainda são pesquisáveis. Experiências sem recomendações de idade são tratadas como para maiores de 13 anos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AllowedExperiences",
+    "description": "heading for content restrictions - representing the age level of experiences this user can play",
+    "english": "Allowed Experiences",
+    "translation": "Experiências permitidas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteSecurityKeySuccess",
+    "description": null,
+    "english": "Security Key Deleted",
+    "translation": "Chave de segurança excluída",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeletedKeysList",
+    "description": null,
+    "english": "{deletedKeyList} {verbTense} successfully deleted.",
+    "translation": "{deletedKeyList} {verbTense} excluídas com sucesso.",
     "isDeprecated": false
   },
   {
@@ -24288,6 +24368,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseErrorOccured",
+    "description": "generic purchase error message",
+    "english": "An error occurred with your purchase. Please try again later.",
+    "translation": "Ocorreu um erro durante sua compra. Tente novamente mais tarde.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -34131,7 +34219,7 @@
     "namespace": "Purchasing.RedeemGameCard",
     "key": "Response.UnexpectedError",
     "description": null,
-    "english": "An unexpected error occured. Please try your request again later.",
+    "english": "An unexpected error occurred. Please try your request again later.",
     "translation": "Ocorreu um erro inesperado. Tente fazer a solicitação novamente mais tarde.",
     "isDeprecated": false
   },
@@ -53232,6 +53320,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Response.CompletingRequest",
+    "description": "use Message.CompletingRequest",
+    "english": "Completing your request",
+    "translation": "Completando seu pedido",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadPopup",
+    "description": null,
+    "english": "Once your data is ready, we will send the download link to your verified email.",
+    "translation": "Assim que seus dados estiverem prontos, enviaremos o link para download para seu e-mail verificado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.BackToTransactions",
+    "description": null,
+    "english": "Back to Transactions",
+    "translation": "Voltar para transações",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.CompletingRequest",
+    "description": null,
+    "english": "Completing your request\t",
+    "translation": "Completando seu pedido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.MaxDaysLimitExceeded",
+    "description": null,
+    "english": "You cannot select more than 90 days.",
+    "translation": "Você não pode selecionar mais de 90 dias.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadInstructions",
+    "description": null,
+    "english": "Please select the date range of the transactions you want to download, up to a 90 day window.",
+    "translation": "Selecione o intervalo de datas das transações que você deseja baixar, até um limite de janela de 90 dias.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.Download",
+    "description": null,
+    "english": "Download",
+    "translation": "Baixar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DateRangeSelection",
+    "description": null,
+    "english": "Select Date Range to Download",
+    "translation": "Selecione o intervalo de datas para baixar",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -55685,6 +55837,70 @@
     "description": null,
     "english": "Open Experience Details",
     "translation": "Abrir detalhes de experiência",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PutBackOnSale",
+    "description": "Put an asset item back on sale",
+    "english": "Put Back On Sale",
+    "translation": "Colocar de volta à venda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.TakeOffSale",
+    "description": "Take an asset item off sale",
+    "english": "Take Off Sale",
+    "translation": "Remover da venda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PutBackOnSaleSuccess",
+    "description": null,
+    "english": "Put Back On Sale Successfully",
+    "translation": "Colocado(a) de volta à venda com sucesso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.TakeOffSaleSuccess",
+    "description": null,
+    "english": "Take Off Sale Successfully\n",
+    "translation": "Removido da venda com sucesso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PutBackOnSaleFailed",
+    "description": null,
+    "english": "Put back on sale failed, please try again later",
+    "translation": "Falha ao colocar de volta à venda. Tente novamente mais tarde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.TakeOffSaleFailed",
+    "description": null,
+    "english": "Take off sale failed, please try again later",
+    "translation": "Falha ao remover da venda. Tente novamente mais tarde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Sponsor",
+    "description": "link label for the sponsor page of an asset item",
+    "english": "Sponsor",
+    "translation": "Patrocinador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Advertise",
+    "description": "link label, to the advertise page of an asset item",
+    "english": "Advertise",
+    "translation": "Promover",
     "isDeprecated": false
   },
   {
@@ -62065,10 +62281,106 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ProgressiveCharacterLimit",
+    "description": null,
+    "english": "{count} characters remaining",
+    "translation": "{count} caracteres restantes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OnSale",
+    "description": "Used for form labels on items that can be put on sale (i.e avatar Shirt asset). Paired with a toggle input usually.",
+    "english": "On Sale",
+    "translation": "À venda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SetPrice",
+    "description": "Used as form input label, set a price for items (i.e avatar Shirt asset)",
+    "english": "Set a price",
+    "translation": "Definir um preço",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Error.InvalidNumber",
     "description": null,
     "english": "Not a valid number",
     "translation": "Não é um número válido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CreatorEarnings",
+    "description": "Message to tell how much profit creator can earn",
+    "english": "Creator earnings ({percentage})",
+    "translation": "Ganhos do criador ({percentage})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MinimumPrice",
+    "description": null,
+    "english": "The minimum price for this item is {price}",
+    "translation": "O preço mínimo para este item é {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MaximumPrice",
+    "description": null,
+    "english": "The maximum price for this item is {price}",
+    "translation": "O preço máximo para este item é {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PutOnSale",
+    "description": null,
+    "english": "Put On Sale for {price} Robux",
+    "translation": "Colocar à venda por {price} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.PutOnSale",
+    "description": "Used for button label, to put an asset item on sale",
+    "english": "Put On Sale",
+    "translation": "Colocar à venda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PutOnSalePrompt",
+    "description": null,
+    "english": "Putting this asset type on sell will cost {price} Robux. Are you sure you want to proceed?",
+    "translation": "Colocar este tipo de ativo à venda custará {price} Robux. Tem certeza de que deseja continuar?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.InsufficientSellingFeeFunds",
+    "description": null,
+    "english": "You don't have enough funds to sell this {assetType}! ({price} Robux)",
+    "translation": "Você não tem fundos suficientes para vender este(a) {assetType}! ({price} Robux)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PutBackOnSale",
+    "description": "Put an asset item on sale",
+    "english": "Put Back On Sale",
+    "translation": "Colocar de volta à venda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.TakeOffSale",
+    "description": "Take an asset item off sale",
+    "english": "Take Off Sale",
+    "translation": "Remover da venda",
     "isDeprecated": false
   },
   {
@@ -69017,10 +69329,58 @@
   },
   {
     "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.SortBy",
+    "description": "eg sort by newest to oldest entries, a to z etc",
+    "english": "SORT BY",
+    "translation": "ORDENAR POR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByCompletionStatus",
+    "description": "filter by whether an entry has translations",
+    "english": "FILTER BY COMPLETION STATUS",
+    "translation": "FILTRAR POR STATUS DE CONCLUSÃO",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByTranslationType",
+    "description": "Whether the translation was added manually (ie by a user) or by automatic translation",
+    "english": "FILTER BY TRANSLATION TYPE",
+    "translation": "FILTRAR POR TIPO DE TRADUÇÃO",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByRecency",
+    "description": "filter by whether a translation or entry was added recently",
+    "english": "FILTER BY RECENCY",
+    "translation": "FILTRAR POR MAIS RECENTES",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
     "key": "Label.Cancel",
     "description": "Cancel operation - label for a button",
     "english": "CANCEL",
     "translation": "CANCELAR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ClearAll",
+    "description": "Button label to clear all selected items",
+    "english": "CLEAR ALL",
+    "translation": "LIMPAR TUDO",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ApplyChanges",
+    "description": "Button label to apply changes",
+    "english": "APPLY CHANGES",
+    "translation": "APLICAR MUDANÇAS",
     "isDeprecated": false
   },
   {
@@ -70912,6 +71272,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Common",
+    "key": "Label.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "Saiba mais",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.TagDescription",
     "key": "Description.PluginSecurity",
     "description": null,
@@ -71965,6 +72333,14 @@
     "description": null,
     "english": "The level of sensitive information or production impact a permission is asking for.",
     "translation": "O nível de informação sensível ou de impacto na produção que uma permissão está solicitando.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthMaxNumberApps",
+    "description": null,
+    "english": "You have exceeded the user limit for number of OAuth applications.",
+    "translation": "Você excedeu o limite de usuário para o número de aplicações OAuth.",
     "isDeprecated": false
   },
   {
