@@ -249,6 +249,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "続ける",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "WeChat.ReputationScoreTooLow",
     "description": null,
     "english": "Since your Game Credit score is too low, you cannot use the Login functionality.",
@@ -1252,7 +1260,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By entering the code and checking this box, you are giving consent to your child to access Roblox.",
-    "translation": "コードを入力すると、お子様がRobloxにアクセスすることに同意することになります。",
+    "translation": "コードを入力して、このボックスにチェックマークを入れるとお子様がRobloxにアクセスすることに同意したことになります。",
     "isDeprecated": false
   },
   {
@@ -2525,6 +2533,14 @@
     "description": "heading for content restrictions - representing the age level of experiences this user can play",
     "english": "Allowed Experiences",
     "translation": "許可された仮想空間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentContrls17",
+    "description": null,
+    "english": "17+ (Suitable for ages 17 and older)",
+    "translation": "17歳以上（17歳以上が対象）",
     "isDeprecated": false
   },
   {
@@ -4276,7 +4292,7 @@
     "key": "Label.TakenOffSaleSuccess",
     "description": "The text that displays when you've successfully taken an item off sale.",
     "english": "Item off sale",
-    "translation": "アイテムを非売品にしました",
+    "translation": "アイテムは非売品です",
     "isDeprecated": false
   },
   {
@@ -15011,7 +15027,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
-    "english": "Enable 2-Step Verification via Authenticator",
+    "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
     "translation": "認証システムを使った2段階認証を有効化",
     "isDeprecated": false
   },
@@ -15027,7 +15043,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
-    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
     "translation": "アカウントが危険にさらされた場合、Robloxはアカウントを復元したり、失くしたアイテムやバーチャル通貨を含むものの額を払い戻しすることはできかねます。",
     "isDeprecated": false
   },
@@ -15316,7 +15332,7 @@
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "内容規制と安全上の理由、当社の安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
+    "translation": "内容規制と安全上の理由、安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -15324,7 +15340,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "有効化をクリックすることで、内容規制と安全上の理由、当社の安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
+    "translation": "有効化をクリックすることで、内容規制と安全上の理由、安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -16948,7 +16964,7 @@
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
     "english": "Chat as your Avatar Unavailable",
-    "translation": "アバターでチャットを使用するにはカメラが必要です",
+    "translation": "アバターでチャットが利用できません",
     "isDeprecated": false
   },
   {
@@ -16956,7 +16972,7 @@
     "key": "Heading.NotAvailable",
     "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
     "english": "Chat as your Avatar Currently Unavailable",
-    "translation": "アバターでチャットが利用できません",
+    "translation": "現在、アバターでチャットが利用できません",
     "isDeprecated": false
   },
   {
@@ -16988,7 +17004,7 @@
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "この機能は一時的に利用できません。後ほどお試しください。",
+    "translation": "「アバターでチャット」が一時的に利用できません。後ほどお試しください。",
     "isDeprecated": false
   },
   {
@@ -16996,7 +17012,23 @@
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "この機能は一時的に利用できません。後ほどお試しください。",
+    "translation": "「アバターでチャット」が一時的に利用できません。後ほどお試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.FaceChat",
+    "key": "Heading.VideoPerformancePromptDisable",
+    "description": "Heading for notifying user that their camera maybe affecting performance negatively and recommending to turn it off.",
+    "english": "Performance Issues with Camera",
+    "translation": "カメラのパフォーマンスに関する問題",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.FaceChat",
+    "key": "Subtitle.VideoPerformancePromptDisable",
+    "description": "Displayed when camera is affecting performance negatively and recommending to turn it off.",
+    "english": "Turning off your camera may improve experience performance.",
+    "translation": "カメラをオフにすると、パフォーマンスが向上する可能性があります。",
     "isDeprecated": false
   },
   {
@@ -17773,6 +17805,14 @@
     "description": "Label to indicate that the record was a missing call. The user received this call from another individual but did not answer the call.",
     "english": "Missed",
     "translation": "不在着信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Banner.Title",
+    "description": null,
+    "english": "Get Robux",
+    "translation": "Robuxをゲット",
     "isDeprecated": false
   }
 ]

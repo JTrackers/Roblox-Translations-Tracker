@@ -601,6 +601,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "继续",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Action.DeviceCode",
     "description": null,
     "english": "Quick Log In",
@@ -821,6 +829,14 @@
     "description": null,
     "english": "Log In With One-Time Code",
     "translation": "使用一次性验证码登录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.LoginBlocked",
+    "description": null,
+    "english": "Unable to log in. Please wait a bit.",
+    "translation": "无法登录，请稍候。",
     "isDeprecated": false
   },
   {
@@ -4220,7 +4236,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By entering the code and checking this box, you are giving consent to your child to access Roblox.",
-    "translation": "输入验证码即表示您同意您的孩子访问 Roblox。",
+    "translation": "输入验证码并勾选此选框，则表示您同意您的孩子访问 Roblox。",
     "isDeprecated": false
   },
   {
@@ -13061,6 +13077,54 @@
     "description": "similar to Label.EnableCamera",
     "english": "This setting allows you to {startLink}Chat as your Avatar.{endLink}",
     "translation": "此设置可以让你使用{startLink}虚拟形象聊天{endLink}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.GreenDotIndication",
+    "description": "similar to Label.GreenDotCamera",
+    "english": "{greenDot} The green dot indicates that Roblox is using your camera.",
+    "translation": "{greenDot} 绿点表示 Roblox 正在使用摄像头。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentAvatar",
+    "description": "similar to Label.ImplicitConsentCameraCollection",
+    "english": "By clicking on Enable, I consent to Roblox’s temporary use of my movements to animate my avatar.",
+    "translation": "点按“启用”，即表示我同意 Roblox 暂时将我的动作用于我的虚拟形象动画。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ExplicitConsentAvatar",
+    "description": "similar to Label.ImplicitConsentAvatar and Label.ImplicitConsentCameraCollection",
+    "english": "I consent to Roblox’s temporary use of my movements to animate my avatar.",
+    "translation": "我同意 Roblox 暂时将我的动作用于我的虚拟形象动画。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanTextChatInApp",
+    "description": "similar to Label.ToolTip.WhoCanChatInApp",
+    "english": "This setting controls who this user will be allowed to text chat with in the app and on the web (separate from in experience). The setting also prevents this user from posting on group walls.",
+    "translation": "此设置决定此用户在 App 中及网页上可以进行文字聊天的对象（无法控制作品中的聊天对象）。此设置也可阻止此用户在群组留言板上发帖。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanTextChatInGame",
+    "description": "similar to Label.ToolTip.WhoCanChatInGame",
+    "english": "This setting controls who this user will be allowed to text chat with in experience.",
+    "translation": "此设置决定此用户在作品中可以进行文字聊天的对象。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentContrls17",
+    "description": null,
+    "english": "17+ (Suitable for ages 17 and older)",
+    "translation": "17+（适用于 17 岁及以上用户）",
     "isDeprecated": false
   },
   {
@@ -26817,6 +26881,14 @@
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.GoToRobuxStore",
+    "description": null,
+    "english": "Go to Robux Store",
+    "translation": "前往 Robux 商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
     "key": "Action.Buy",
     "description": null,
     "english": "Buy",
@@ -26825,10 +26897,170 @@
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance after this transaction will be {remainingBalance}",
+    "translation": "您在此次交易后的余额将为 {remainingBalance}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PromptBatchBuy",
+    "description": "Would you like to buy these 5 items for [Robux icon]400?",
+    "english": "Would you like to buy these {itemCount} items for {robux}?",
+    "translation": "以 {robux} 的价格购买这 {itemCount} 个道具？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseCompleted",
+    "description": null,
+    "english": "Purchase Completed",
+    "translation": "购买成功",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.GeneralError",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again later",
+    "translation": "发生错误，请刷新并稍后重试",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessGeneralFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessItemsOwnedFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) you already own",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，你已拥有 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessInsufficientFundsFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to insufficient funds",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，因资金不足无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNetworkErrorFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to network error",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，因网络错误无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessFloodcheckFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to too many requests",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，因请求次数过多无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseFailure",
+    "description": null,
+    "english": "Purchase failed, please try again later",
+    "translation": "购买失败，请稍后重试",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.ItemsOwnedFailure",
+    "description": null,
+    "english": "Purchase failed, item(s) already owned",
+    "translation": "购买失败，已拥有道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientFundsFailure",
+    "description": null,
+    "english": "Purchase failed, insufficient funds",
+    "translation": "购买失败，资金不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NetworkErrorFailure",
+    "description": null,
+    "english": "Purchase failed, network error, please try again later",
+    "translation": "购买失败、网络错误，请稍后重试",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.FloodcheckFailure",
+    "description": null,
+    "english": "Purchase failed, too many requests, please try again in {throttleTime} minutes",
+    "translation": "购买失败、请求次数过多，请在 {throttleTime} 分钟后重试",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "购买道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
     "key": "Action.Get",
     "description": null,
     "english": "Get",
     "translation": "获取",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessPremiumNeededFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased, {itemCountFailure} failed due to premium account needed",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，因需要 Premium 帐户而无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNoSellersFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased,{itemCountFailure} failed due to no sellers",
+    "translation": "已成功购买 {itemCountSuccess} 个道具，因没有卖家而无法购买 {itemCountFailure} 个道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PremiumNeededFailure",
+    "description": null,
+    "english": "Purchase failed, premium account needed",
+    "translation": "购买失败，需要 Premium 帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NoSellersFailure",
+    "description": null,
+    "english": "Purchase failed, no sellers",
+    "translation": "购买失败，没有卖家",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PlusNumber",
+    "description": "i.e. +3",
+    "english": "+{numberCount}",
+    "translation": "+{numberCount}",
     "isDeprecated": false
   },
   {
@@ -40204,7 +40436,7 @@
     "key": "Message.FraudWarningMessageFor13To17",
     "description": null,
     "english": "By selecting a payment type, I agree that I am the parent or legal guardian of the account owner and I authorize this purchase.",
-    "translation": "点击继续，即表示我是此帐户持有者的家长或法定监护人，并且我允许此次购买。",
+    "translation": "选择付款方式，即表示我是此帐户持有者的家长或法定监护人，并同意此次购买。",
     "isDeprecated": false
   },
   {
@@ -57520,6 +57752,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Label.GroupAdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payout from Group",
+    "translation": "群组沉浸式广告支付",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -60696,6 +60936,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Accessories",
+    "description": null,
+    "english": "Accessories",
+    "translation": "配饰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.FiltersNoColon",
+    "description": null,
+    "english": "Filters",
+    "translation": "筛选条件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.InReview",
+    "description": null,
+    "english": "In Review",
+    "translation": "审核中",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -61109,6 +61373,14 @@
     "description": "Audio (singular)",
     "english": "Audio",
     "translation": "音频",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.PantsAccessories",
+    "description": null,
+    "english": "Pants",
+    "translation": "裤子",
     "isDeprecated": false
   },
   {
@@ -65728,6 +66000,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkV3RangeLabel",
+    "description": "BROKEN -- WRONG TOKENS\nShown as a tooltip over the top of the range in analytics charts that have genre-based range benchmarks",
+    "english": " Experiences like yours (e.g. genre){br} 50th-90th Percentile: {bottom}-{top}",
+    "translation": "与你风格类似的作品（例如：类型）{br}\n50 - 90% 百分比：{bottom} - {top}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.BenchmarkV3RangeLegend",
+    "description": "Shown in the legend for charts that are showing a range benchmark",
+    "english": "Similar Experiences (e.g. Genre)",
+    "translation": "与你风格类似的作品（例如：类型）",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -66499,7 +66787,7 @@
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.ImpactOfGuidelines",
     "description": null,
-    "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
+    "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
     "translation": "用户可以在作品详情页面看到作品适用准则。请在作品符合资格时立刻生成准则。",
     "isDeprecated": false
   },
@@ -66531,7 +66819,7 @@
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
-    "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
+    "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
     "translation": "用户可以在作品详情页面看到作品适用准则。请在作品符合资格时立刻生成准则。",
     "isDeprecated": false
   },
@@ -68184,6 +68472,126 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Accessories",
+    "description": null,
+    "english": "Accessories",
+    "translation": "配饰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Filters",
+    "description": null,
+    "english": "Filters",
+    "translation": "筛选条件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Lable.Offsale",
+    "description": null,
+    "english": "Offsale",
+    "translation": "下架",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BackToCreations",
+    "description": null,
+    "english": "Back to Creations",
+    "translation": "返回作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Details",
+    "description": null,
+    "english": "Details",
+    "translation": "详细信息",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Configure",
+    "description": null,
+    "english": "Configure",
+    "translation": "配置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Sponsor",
+    "description": null,
+    "english": "Sponsor",
+    "translation": "赞助",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Advertise",
+    "description": null,
+    "english": "Advertise",
+    "translation": "宣传",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.RelatedLinks",
+    "description": null,
+    "english": "Related Links",
+    "translation": "相关链接",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.OpenInMarketplace",
+    "description": null,
+    "english": "Open in Marketplace",
+    "translation": "在商城中打开",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Creations",
+    "description": null,
+    "english": "Creations",
+    "translation": "作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Title",
+    "description": null,
+    "english": "Title",
+    "translation": "标题",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.OnSale",
+    "description": null,
+    "english": "On Sale",
+    "translation": "在售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "了解更多",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Publish",
+    "description": null,
+    "english": "Publish",
+    "translation": "发布",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -69603,7 +70011,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
-    "english": "Enable 2-Step Verification via Authenticator",
+    "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
     "translation": "通过身份验证程序启用两步验证",
     "isDeprecated": false
   },
@@ -72565,6 +72973,14 @@
     "description": "Name of service",
     "english": "Ordered DataStore",
     "translation": "OrderedDataStore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.OrderedDatastoresDepreciated",
+    "description": "Depreciated Ordered DataStores scopes.",
+    "english": "Ordered DataStores (Depreciated)",
+    "translation": "已定制的 DataStores（已弃用）",
     "isDeprecated": false
   },
   {
@@ -90601,10 +91017,82 @@
   },
   {
     "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.Violence",
+    "description": null,
+    "english": "Violence",
+    "translation": "暴力",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.Blood",
+    "description": null,
+    "english": "Blood",
+    "translation": "血腥",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ViolenceFrequent",
+    "description": null,
+    "english": "Frequent",
+    "translation": "常见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ViolenceInfrequent",
+    "description": null,
+    "english": "Infrequent",
+    "translation": "罕见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ViolenceMild",
+    "description": null,
+    "english": "Mild",
+    "translation": "轻微",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ViolenceModerate",
+    "description": null,
+    "english": "Moderate",
+    "translation": "中等",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
     "key": "DisplayName.BloodLevelLight",
     "description": null,
     "english": "Light",
     "translation": "简约白",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.BloodLevelHeavy",
+    "description": null,
+    "english": "Heavy",
+    "translation": "大量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.BloodRealistic",
+    "description": null,
+    "english": "Realistic",
+    "translation": "真实",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.BloodUnrealistic",
+    "description": null,
+    "english": "Unrealistic",
+    "translation": "非真实",
     "isDeprecated": false
   },
   {
@@ -90617,10 +91105,42 @@
   },
   {
     "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.NinePlus",
+    "description": null,
+    "english": "Ages 9+",
+    "translation": "9 岁及以上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ThirteenPlus",
+    "description": null,
+    "english": "Ages 13+",
+    "translation": "13 岁及以上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
     "key": "DisplayName.SuitableForEveryone",
     "description": null,
     "english": "Suitable for everyone",
     "translation": "适合所有人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.PaidItemTrading",
+    "description": null,
+    "english": "Paid Item Trading",
+    "translation": "付费道具交易",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.PaidRandomItems",
+    "description": null,
+    "english": "Paid Random Items",
+    "translation": "付费随机道具",
     "isDeprecated": false
   },
   {
@@ -90632,11 +91152,251 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ProfanityInfrequent",
+    "description": null,
+    "english": "Infrequent",
+    "translation": "罕见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.ProfanityFrequent",
+    "description": null,
+    "english": "Frequent",
+    "translation": "常见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.RomanceAndDating",
+    "description": null,
+    "english": "Romance and Dating",
+    "translation": "浪漫和约会",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.RomanceAndDatingRomanticThemes",
+    "description": null,
+    "english": "Romantic themes",
+    "translation": "浪漫主题",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.Gambling",
+    "description": null,
+    "english": "Gambling",
+    "translation": "赌博",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.GamblingGamblingThemes",
+    "description": null,
+    "english": "Gambling themes",
+    "translation": "赌博主题",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.GamblingUnplayableGamblingContent",
+    "description": null,
+    "english": "Unplayable gambling content",
+    "translation": "无法游玩的赌博内容",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.GamblingSimulatedGambling",
+    "description": null,
+    "english": "Simulated gambling",
+    "translation": "模拟赌博",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.Alcohol",
+    "description": null,
+    "english": "Alcohol",
+    "translation": "酒精",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.AlcoholReference",
+    "description": null,
+    "english": "Reference",
+    "translation": "暗示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.AlcoholUse",
+    "description": null,
+    "english": "Use",
+    "translation": "使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.AlcoholFrequent",
+    "description": null,
+    "english": "Frequent",
+    "translation": "常见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeGuidelines",
+    "key": "DisplayName.AlcoholInfrequent",
+    "description": null,
+    "english": "Infrequent",
+    "translation": "罕见",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalTitle",
+    "description": "Title of the sharing modal",
+    "english": "Share This Event",
+    "translation": "分享此活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalBody",
+    "description": "The body content of the share modal",
+    "english": "Copy the event link below to invite people to this event or share the event in chat.",
+    "translation": "复制下方活动链接，邀请其他人参加活动或在聊天窗口分享活动。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalLinkCopy",
+    "description": "\"Copy\" in this case meaning \"copy and paste.\" This is the text for the button that allows the user to copy a link to their clipboard",
+    "english": "Copy",
+    "translation": "复制",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalCallToAction",
+    "description": "Text of the main call-to-action button that allows the user to share the link via the app's chat",
+    "english": "Share via Chat...",
+    "translation": "分享至聊天窗口...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceDuringEvent",
+    "description": "The text display next to the number of users that are currently attending an event",
+    "english": "Attending Now",
+    "translation": "立即参加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceBeforeEvent",
+    "description": "The text that is displayed next to the number of users that are interested in attending the event",
+    "english": "Interested",
+    "translation": "感兴趣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "GoHome",
+    "description": "Used on a button to prompt the user to return to the homepage",
+    "english": "Go Home",
+    "translation": "返回首页",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpGoing",
+    "description": "Displayed on a button when the user has marked themselves as being interested in going to the event",
+    "english": "Interested",
+    "translation": "感兴趣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpNotGoing",
+    "description": "Displayed on a button when the user has not yet marked themselves as interested to an event. The text is asking the user if they would like to become interested",
+    "english": "Interested?",
+    "translation": "感兴趣？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "JoinEvent",
+    "description": "Displayed on a button when an event is active, allowing the user to join the associated experience",
+    "english": "Join Event",
+    "translation": "加入活动",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VirtualEvents",
     "key": "DescriptionLabel",
     "description": "Title of the \"Description\" section of the page",
     "english": "Description",
     "translation": "描述",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "HostedByLabel",
+    "description": "Text for the Hosted By label, referring to which creator is hosting the event.",
+    "english": "Hosted By",
+    "translation": "主办方：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventCancelledText",
+    "description": "Displayed in place of event time for a cancelled event",
+    "english": "This event has been cancelled.",
+    "translation": "此活动已取消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Cancelled",
+    "description": "used to show the state of the event",
+    "english": "CANCELLED",
+    "translation": "已取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Unpublished",
+    "description": "Used to show the current event state",
+    "english": "UNPUBLISHED",
+    "translation": "未发布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "TodayString",
+    "description": "used in the text for when an event is happening (ex: TODAY AT 5pm)",
+    "english": "TODAY",
+    "translation": "今天",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "FriendsInterestedTextMulti",
+    "description": "Used to display which of your friends are interested in an event in the event more than 2 friends are interested",
+    "english": "{username1}, {username2} and {number} friends or following",
+    "translation": "{username1}、{username2} 和另外 {number} 名好友或正在关注",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "PrivateExperienceErrorDescriptor",
+    "description": "used to explain a greyed-out experience thumbnail",
+    "english": "This experience is private.",
+    "translation": "此活动为私人体验。",
     "isDeprecated": false
   },
   {
@@ -90669,6 +91429,22 @@
     "description": "Button text for the \"Event Push Notifications\" modal to enable push notifications for events",
     "english": "Enable",
     "translation": "启用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "UnfollowEvent",
+    "description": "unsubscribe from notifications about when an event is starting",
+    "english": "Unfollow Event",
+    "translation": "取消关注活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NetworkError",
+    "description": null,
+    "english": "Something went wrong. Please try again later",
+    "translation": "发生错误，请稍后重试",
     "isDeprecated": false
   },
   {
@@ -91320,6 +92096,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.DeleteWebhookStylized",
+    "description": "Stylized version of Description.DeleteWebhook",
+    "english": "{webhookNameStart}\"{webhookName}\"{webhookNameEnd} with payload URL {webhookPayloadUrlStart}{webhookPayloadUrl}{webhookPayloadUrlEnd} will be deleted. This action cannot be undone.",
+    "translation": "带有有效载荷网址的{webhookNameStart}“{webhookName}”{webhookNameEnd} {webhookPayloadUrlStart}{webhookPayloadUrl}{webhookPayloadUrlEnd} 将被删除。此操作不能撤消。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -91952,6 +92736,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "一次性验证码",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -91965,6 +92757,30 @@
     "description": null,
     "english": "I acknowledge that I am at least 18 years old, and that I agree to [Roblox Terms](https://www.roblox.com/info/terms) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and revocation policy. I consent to the immediate performance of the contract and acknowledge that I thereby lose my right of withdrawal. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
     "translation": "我确认我已满 18 周岁，并同意【Roblox 条款】（https://en.help.roblox.com/hc/zh-cn/articles/115004647846-Roblox-Terms-of-Use）和【隐私政策】（https://en.help.roblox.com/hc/zh-cn/articles/115004630823-Roblox-Privacy-and-Cookie-Policy），包括仲裁条款和【撤回政策】（https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy）。我同意合约立即生效，并了解我将失去退出合约的权利。我同意 Roblox 每个月向我的银行卡收取此页面显示的总金额。我可以随时在【帐户设置】（https://www.roblox.com/my/account#!/billing）取消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousLoginEmailNotification",
+    "key": "Email.Body.TopContent",
+    "description": "Top content in the email body for the suspicious login email html body.",
+    "english": "{boldStart}We noticed a login from a new device or location for {username} and want to make sure it was you.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}Location: {location}{pointEnd}{pointStart}Device: {device}{pointEnd}{pointStart}Time: {time}{pointEnd}{listEnd}",
+    "translation": "{boldStart}我们注意到 {username} 从新的设备或位置的登录记录，并想确认是否是你本人操作。{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}位置：{location}{pointEnd}{pointStart}设备：{device}{pointEnd}{pointStart}时间：{time}{pointEnd}{listEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousLoginEmailNotification",
+    "key": "Email.Body.BottomContent",
+    "description": "Bottom content for the suspicious login email html body.",
+    "english": "If this was you: You're good to go. No action is required. If this was not you {passwordHelpLinkStart}Change your password{passwordHelpLinkEnd}. You will be logged out of all your active devices except the one you are using at this time. {lineBreak}{lineBreak}Thank You,{lineBreak}The Roblox Team{lineBreak}{lineBreak}{learnMoreLinkStart}Learn More{learnMoreLinkEnd} | {accountSafetyLinkStart}Account Safety{accountSafetyLinkEnd} | {twoStepLinkStart}2-Step Verification{twoStepLinkEnd} | {supportLinkStart}Support{supportLinkEnd}{lineBreak}{lineBreak}{lightTextStyleStart}Please do not reply to this message as the response will not be delivered to the originator.{lightTextStyleEnd}",
+    "translation": "如果是你本人，你无需任何操作。如果不是你，请{passwordHelpLinkStart}更改你的密码{passwordHelpLinkEnd}。你将会从所有已登录的设备上注销（当前使用的设备除外）。{lineBreak}{lineBreak}谢谢，{lineBreak}Roblox 团队{lineBreak}{lineBreak}{learnMoreLinkStart}了解更多{learnMoreLinkEnd} | {accountSafetyLinkStart}帐户安全{accountSafetyLinkEnd}{accountSafetyLinkEnd} | {twoStepLinkStart}两步验证{twoStepLinkEnd}{twoStepLinkEnd} | {supportLinkStart}客户支持{supportLinkEnd}{lineBreak}{lineBreak}{lightTextStyleStart}请勿直接回复此信息，回复将无法发送至发件人。{lightTextStyleEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousLoginEmailNotification",
+    "key": "Email.Subject",
+    "description": "Subject text for the email",
+    "english": "Roblox: New login for {username}",
+    "translation": "Roblox：{username} 的新登录记录",
     "isDeprecated": false
   },
   {
@@ -92008,6 +92824,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Stream.Moderated.Title",
+    "description": "Message displayed on virtual event notification title when the virtual event is moderated.",
+    "english": "Unavailable",
+    "translation": "无法使用",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SessionManagement",
     "key": "Action.ShowMore",
     "description": "Button to show more sessions to the user",
@@ -92021,6 +92845,38 @@
     "description": "Button to exit out of sign out modal",
     "english": "Cancel",
     "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Desktop.NewMatchedContacts",
+    "description": "Desktop stream notification for a newly matched contact",
+    "english": "Open on your mobile device to connect with contacts.",
+    "translation": "在你的移动设备上打开，和你的联系人沟通。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.SingleNewlyMatchedContact",
+    "description": "One single contact is found in your contact book, stream notification",
+    "english": "Your contact {ContactName} is on Roblox.",
+    "translation": "你的联系人“{ContactName}”在 Roblox 上。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.MutlipleNewlyMatchedContacts",
+    "description": "multiple contacts are found in your contact book, stream notification",
+    "english": "Your contact {contactName} and {numberContacts} other contacts are on Roblox.",
+    "translation": "你的联系人“{contactName}”和其他 {numberContacts} 个联系人在 Roblox 上。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.Description.MatchedContact",
+    "description": "subtitle for mobile stream notification",
+    "english": "Add them as a friend to explore Roblox together.",
+    "translation": "将他们添加为好友，一起探索 Roblox。",
     "isDeprecated": false
   }
 ]

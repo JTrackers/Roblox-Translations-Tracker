@@ -36,7 +36,7 @@
     "key": "Response.TooManyAttemptsPleaseWait",
     "description": null,
     "english": "Too many attempts. Please wait a bit.",
-    "translation": "시도 가능 횟수를 초과했습니다. 잠시 기다려주세요.",
+    "translation": "시도 가능 횟수를 초과했습니다. 잠시 기다려 주세요.",
     "isDeprecated": false
   },
   {
@@ -601,6 +601,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "계속",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Action.DeviceCode",
     "description": null,
     "english": "Quick Log In",
@@ -821,6 +829,14 @@
     "description": null,
     "english": "Log In With One-Time Code",
     "translation": "일회용 코드로 로그인",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.LoginBlocked",
+    "description": null,
+    "english": "Unable to log in. Please wait a bit.",
+    "translation": "로그인할 수 없습니다. 잠시 기다려 주세요.",
     "isDeprecated": false
   },
   {
@@ -4236,7 +4252,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By entering the code and checking this box, you are giving consent to your child to access Roblox.",
-    "translation": "코드를 입력하면 자녀가 Roblox를 이용하는 데 동의하게 됩니다.",
+    "translation": "코드를 입력하고 확인란을 선택하면 자녀의 Roblox 이용에 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -12972,7 +12988,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "​​사용을 클릭하면 검열 및 안전, 안전 관련 툴의 개선을 위해 Roblox가 내 음성 녹음 내용을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
+    "translation": "사용을 클릭하면 검열 및 안전, 안전 관련 툴의 개선을 위해 Roblox가 내 음성 녹음 내용을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -13077,6 +13093,54 @@
     "description": "similar to Label.EnableCamera",
     "english": "This setting allows you to {startLink}Chat as your Avatar.{endLink}",
     "translation": "이 설정을 사용하면 {startLink}아바타 채팅{endLink}을 할 수 있습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.GreenDotIndication",
+    "description": "similar to Label.GreenDotCamera",
+    "english": "{greenDot} The green dot indicates that Roblox is using your camera.",
+    "translation": "{greenDot} 녹색 점은 Roblox에서 카메라를 사용하고 있음을 나타냅니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentAvatar",
+    "description": "similar to Label.ImplicitConsentCameraCollection",
+    "english": "By clicking on Enable, I consent to Roblox’s temporary use of my movements to animate my avatar.",
+    "translation": "'사용'을 클릭하면, Roblox가 일시적으로 내 움직임을 사용해 아바타를 애니메이션화하는 데 동의하게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ExplicitConsentAvatar",
+    "description": "similar to Label.ImplicitConsentAvatar and Label.ImplicitConsentCameraCollection",
+    "english": "I consent to Roblox’s temporary use of my movements to animate my avatar.",
+    "translation": "내 아바타를 애니메이션화하기 위해 Roblox에서 일시적으로 내 움직임을 사용하는 데 동의합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanTextChatInApp",
+    "description": "similar to Label.ToolTip.WhoCanChatInApp",
+    "english": "This setting controls who this user will be allowed to text chat with in the app and on the web (separate from in experience). The setting also prevents this user from posting on group walls.",
+    "translation": "본 설정은 이 사용자가 앱 및 웹에서 문자 채팅을 할 수 있는 사람을 제어합니다(체험에 대해서는 별도로 적용). 또한 이 사용자는 그룹 담벼락에 게시물을 올릴 수 없게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanTextChatInGame",
+    "description": "similar to Label.ToolTip.WhoCanChatInGame",
+    "english": "This setting controls who this user will be allowed to text chat with in experience.",
+    "translation": "본 설정은 이 사용자가 체험에서 문자 채팅을 할 수 있는 사람을 제어합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentContrls17",
+    "description": null,
+    "english": "17+ (Suitable for ages 17 and older)",
+    "translation": "17+ (만 17세 이상 이용 가능)",
     "isDeprecated": false
   },
   {
@@ -61760,6 +61824,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Accessories",
+    "description": null,
+    "english": "Accessories",
+    "translation": "장신구",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.FiltersNoColon",
+    "description": null,
+    "english": "Filters",
+    "translation": "필터",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.InReview",
+    "description": null,
+    "english": "In Review",
+    "translation": "검토 중",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -62173,6 +62261,14 @@
     "description": "Audio (singular)",
     "english": "Audio",
     "translation": "오디오",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.PantsAccessories",
+    "description": null,
+    "english": "Pants",
+    "translation": "바지",
     "isDeprecated": false
   },
   {
@@ -66816,6 +66912,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkV3RangeLabel",
+    "description": "BROKEN -- WRONG TOKENS\nShown as a tooltip over the top of the range in analytics charts that have genre-based range benchmarks",
+    "english": " Experiences like yours (e.g. genre){br} 50th-90th Percentile: {bottom}-{top}",
+    "translation": "내 체험과 유사한 체험(예: 장르){br}\n50-90% 비율: {bottom}-{top}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.BenchmarkV3RangeLegend",
+    "description": "Shown in the legend for charts that are showing a range benchmark",
+    "english": "Similar Experiences (e.g. Genre)",
+    "translation": "유사한 체험(예: 장르)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.BenchmarkV3RangeTooltip",
+    "description": "Second line of the benchmark tooltip when showing a range benchmark",
+    "english": "50th-90th Percentile: {bottom} - {top}",
+    "translation": "50-90% 비율: {bottom}-{top}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -67579,7 +67699,7 @@
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.ImpactOfGuidelines",
     "description": null,
-    "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
+    "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
     "translation": "체험 가이드라인은 세부 정보 페이지에서 사용자에게 표시됩니다. 체험이 적격성을 갖추게 되면 바로 가이드라인을 생성하세요.",
     "isDeprecated": false
   },
@@ -67611,7 +67731,7 @@
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
-    "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
+    "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
     "translation": "체험 가이드라인은 세부 정보 페이지에서 사용자에게 표시됩니다. 체험이 적격성을 갖추게 되면 바로 가이드라인을 생성하세요.",
     "isDeprecated": false
   },
@@ -69264,6 +69384,126 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Accessories",
+    "description": null,
+    "english": "Accessories",
+    "translation": "장신구",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Filters",
+    "description": null,
+    "english": "Filters",
+    "translation": "필터",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Lable.Offsale",
+    "description": null,
+    "english": "Offsale",
+    "translation": "판매 중단",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BackToCreations",
+    "description": null,
+    "english": "Back to Creations",
+    "translation": "작품으로 돌아가기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Details",
+    "description": null,
+    "english": "Details",
+    "translation": "세부 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Configure",
+    "description": null,
+    "english": "Configure",
+    "translation": "구성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Sponsor",
+    "description": null,
+    "english": "Sponsor",
+    "translation": "스폰서",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Advertise",
+    "description": null,
+    "english": "Advertise",
+    "translation": "광고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.RelatedLinks",
+    "description": null,
+    "english": "Related Links",
+    "translation": "관련 링크",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.OpenInMarketplace",
+    "description": null,
+    "english": "Open in Marketplace",
+    "translation": "마켓플레이스에서 열기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Creations",
+    "description": null,
+    "english": "Creations",
+    "translation": "작품",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Title",
+    "description": null,
+    "english": "Title",
+    "translation": "제목",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.OnSale",
+    "description": null,
+    "english": "On Sale",
+    "translation": "판매",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "자세한 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.Publish",
+    "description": null,
+    "english": "Publish",
+    "translation": "게시",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -70683,7 +70923,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
-    "english": "Enable 2-Step Verification via Authenticator",
+    "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
     "translation": "인증 앱을 통한 2단계 인증 사용",
     "isDeprecated": false
   },
@@ -73645,6 +73885,14 @@
     "description": "Name of service",
     "english": "Ordered DataStore",
     "translation": "정렬된 DataStore",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.OrderedDatastoresDepreciated",
+    "description": "Depreciated Ordered DataStores scopes.",
+    "english": "Ordered DataStores (Depreciated)",
+    "translation": "정렬된 DataStores(사용되지 않음)",
     "isDeprecated": false
   },
   {
@@ -82176,6 +82424,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeMatchedContact",
+    "description": "Notification Type Matched Contact",
+    "english": "Matched Contact",
+    "translation": "일치하는 연락처",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeMatchedContact",
+    "description": null,
+    "english": "A contact on your phone list is found on Roblox",
+    "translation": "Roblox에서 휴대폰 목록의 연락처를 찾을 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeRightToErasureRequest",
+    "description": "Notification Type for Right To Erasure Request",
+    "english": "Right to Erasure Request",
+    "translation": "삭제권 이행 요청",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeRightToErasureRequest",
+    "description": "Right to Erasure",
+    "english": "User has submitted a right to erasure request to delete their personal information",
+    "translation": "사용자가 개인정보 삭제를 위해 삭제권 이행 요청을 제출했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCompliance",
+    "description": "Actions required to be compliant with various regulations",
+    "english": "Compliance",
+    "translation": "규정 준수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryCompliance",
+    "description": "Description for Compliance",
+    "english": "Actions required to be compliant with various regulations",
+    "translation": "각종 규제를 준수하기 위해 필요한 조치",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.OpenCloud",
     "key": "Label.DownloadSpec",
     "description": null,
@@ -87420,7 +87716,7 @@
     "key": "Heading.VideoNoPermission",
     "description": "Displayed when camera is not permitted but required for Chat with Avatars.",
     "english": "Chat as your Avatar Unavailable",
-    "translation": "아바타 채팅을 하려면 카메라가 필요합니다",
+    "translation": "아바타 채팅을 이용할 수 없습니다",
     "isDeprecated": true
   },
   {
@@ -87428,7 +87724,7 @@
     "key": "Heading.NotAvailable",
     "description": "Generic message displayed when Chat as your Avatar is unavailable on this device.",
     "english": "Chat as your Avatar Currently Unavailable",
-    "translation": "아바타 채팅을 할 수 없습니다",
+    "translation": "현재 아바타 채팅을 이용할 수 없습니다",
     "isDeprecated": true
   },
   {
@@ -87460,7 +87756,7 @@
     "key": "Subtitle.FeatureDisabled",
     "description": "Explain to user that the feature is currently disabled and to try again later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "일시적으로 이용할 수 없는 기능입니다. 나중에 다시 시도하세요.",
+    "translation": "아바타 채팅을 일시적으로 이용할 수 없습니다. 나중에 다시 시도하세요.",
     "isDeprecated": true
   },
   {
@@ -87468,7 +87764,7 @@
     "key": "Subtitle.ServerDisabled",
     "description": "The server has disabled this feature currently. User should try rejoining later.",
     "english": "Chat as your Avatar is temporarily unavailable. Please try again later.",
-    "translation": "일시적으로 이용할 수 없는 기능입니다. 나중에 다시 시도하세요.",
+    "translation": "아바타 채팅을 일시적으로 이용할 수 없습니다. 나중에 다시 시도하세요.",
     "isDeprecated": true
   },
   {
@@ -92952,6 +93248,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.DeleteWebhookStylized",
+    "description": "Stylized version of Description.DeleteWebhook",
+    "english": "{webhookNameStart}\"{webhookName}\"{webhookNameEnd} with payload URL {webhookPayloadUrlStart}{webhookPayloadUrl}{webhookPayloadUrlEnd} will be deleted. This action cannot be undone.",
+    "translation": "페이로드 URL이 {webhookPayloadUrlStart}{webhookPayloadUrl}{webhookPayloadUrlEnd}인 {webhookNameStart}\"{webhookName}\"{webhookNameEnd}(이)가 삭제됩니다. 이 작업은 취소할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Table",
     "key": "Label.PageRange",
     "description": null,
@@ -93584,6 +93888,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "일회용 코드",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -93661,6 +93973,14 @@
     "description": "[DEPRECATED] Message displayed on virtual event notification body when there is a live virtual event ongoing.",
     "english": "Join the event now",
     "translation": "지금 이벤트 참가",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Stream.Moderated.Title",
+    "description": "Message displayed on virtual event notification title when the virtual event is moderated.",
+    "english": "Unavailable",
+    "translation": "사용할 수 없음",
     "isDeprecated": false
   },
   {
@@ -93893,6 +94213,54 @@
     "description": "Text to confirm user wants to sign out all other sessions",
     "english": "You will be signed out of all other sessions. Are you sure?",
     "translation": "다른 모든 세션에서 로그아웃됩니다. 계속할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.PleaseTryAgain",
+    "description": "prompts user to try again if request failed",
+    "english": "Please try again.",
+    "translation": "다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Message.Error.Default",
+    "description": "displayed when a request fails",
+    "english": "An unknown error occured.",
+    "translation": "알 수 없는 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Desktop.NewMatchedContacts",
+    "description": "Desktop stream notification for a newly matched contact",
+    "english": "Open on your mobile device to connect with contacts.",
+    "translation": "모바일 기기에서 열고 연락처와 연결합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.SingleNewlyMatchedContact",
+    "description": "One single contact is found in your contact book, stream notification",
+    "english": "Your contact {ContactName} is on Roblox.",
+    "translation": "연락처 {ContactName}(이)가 Roblox에 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.MutlipleNewlyMatchedContacts",
+    "description": "multiple contacts are found in your contact book, stream notification",
+    "english": "Your contact {contactName} and {numberContacts} other contacts are on Roblox.",
+    "translation": "연락처 {contactName} 외 {numberContacts}개의 다른 연락처가 Roblox에 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.Description.MatchedContact",
+    "description": "subtitle for mobile stream notification",
+    "english": "Add them as a friend to explore Roblox together.",
+    "translation": "친구로 추가하고 Roblox를 함께 체험하세요.",
     "isDeprecated": false
   }
 ]

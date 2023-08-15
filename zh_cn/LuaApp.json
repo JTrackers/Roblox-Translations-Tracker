@@ -249,6 +249,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "继续",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "WeChat.ReputationScoreTooLow",
     "description": null,
     "english": "Since your Game Credit score is too low, you cannot use the Login functionality.",
@@ -1252,7 +1260,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By entering the code and checking this box, you are giving consent to your child to access Roblox.",
-    "translation": "输入验证码即表示您同意您的孩子访问 Roblox。",
+    "translation": "输入验证码并勾选此选框，则表示您同意您的孩子访问 Roblox。",
     "isDeprecated": false
   },
   {
@@ -2525,6 +2533,14 @@
     "description": "heading for content restrictions - representing the age level of experiences this user can play",
     "english": "Allowed Experiences",
     "translation": "允许的体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentContrls17",
+    "description": null,
+    "english": "17+ (Suitable for ages 17 and older)",
+    "translation": "17+（适用于 17 岁及以上用户）",
     "isDeprecated": false
   },
   {
@@ -14451,7 +14467,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
-    "english": "Enable 2-Step Verification via Authenticator",
+    "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
     "translation": "通过身份验证程序启用两步验证",
     "isDeprecated": false
   },
@@ -14467,7 +14483,7 @@
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
-    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
     "translation": "如果你的帐户被入侵，那么 Roblox 可能无法复原你的帐户并恢复帐户价值，包括丢失的道具和虚拟货币等。",
     "isDeprecated": false
   },
@@ -16785,6 +16801,14 @@
   },
   {
     "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Text.DontHaveEnough",
+    "description": null,
+    "english": "You don't have enough Robux to buy this item.",
+    "translation": "Robux 不足，无法购买此道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
     "key": "Text.CurrentBalance",
     "description": null,
     "english": "Current Balance",
@@ -16808,11 +16832,139 @@
     "isDeprecated": false
   },
   {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Text.YouNeed",
+    "description": null,
+    "english": "You need additional {robux}. Please purchase more Robux Packages then come back to the experience.",
+    "translation": "你还需要 {robux}。请购买更多 Robux 套装再返回体验。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.InsufficientRobux",
+    "key": "Action.RobuxStore",
+    "description": null,
+    "english": "Go to Robux Store",
+    "translation": "前往 Robux 商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalTitle",
+    "description": "Title of the sharing modal",
+    "english": "Share This Event",
+    "translation": "分享此活动",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalBody",
+    "description": "The body content of the share modal",
+    "english": "Copy the event link below to invite people to this event or share the event in chat.",
+    "translation": "复制下方活动链接，邀请其他人参加活动或在聊天窗口分享活动。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalLinkCopy",
+    "description": "\"Copy\" in this case meaning \"copy and paste.\" This is the text for the button that allows the user to copy a link to their clipboard",
+    "english": "Copy",
+    "translation": "复制",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalCallToAction",
+    "description": "Text of the main call-to-action button that allows the user to share the link via the app's chat",
+    "english": "Share via Chat...",
+    "translation": "分享至聊天窗口...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceLabelBeforeEvent",
+    "description": "DO NOT USE",
+    "english": "DO NOT USE",
+    "translation": "请勿使用",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceDuringEvent",
+    "description": "The text display next to the number of users that are currently attending an event",
+    "english": "Attending Now",
+    "translation": "立即参加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceBeforeEvent",
+    "description": "The text that is displayed next to the number of users that are interested in attending the event",
+    "english": "Interested",
+    "translation": "感兴趣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "GoHome",
+    "description": "Used on a button to prompt the user to return to the homepage",
+    "english": "Go Home",
+    "translation": "返回首页",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpGoing",
+    "description": "Displayed on a button when the user has marked themselves as being interested in going to the event",
+    "english": "Interested",
+    "translation": "感兴趣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpNotGoing",
+    "description": "Displayed on a button when the user has not yet marked themselves as interested to an event. The text is asking the user if they would like to become interested",
+    "english": "Interested?",
+    "translation": "感兴趣？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "JoinEvent",
+    "description": "Displayed on a button when an event is active, allowing the user to join the associated experience",
+    "english": "Join Event",
+    "translation": "加入活动",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VirtualEvents",
     "key": "DescriptionLabel",
     "description": "Title of the \"Description\" section of the page",
     "english": "Description",
     "translation": "描述",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "HostedByLabel",
+    "description": "Text for the Hosted By label, referring to which creator is hosting the event.",
+    "english": "Hosted By",
+    "translation": "主办方：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventCancelledText",
+    "description": "Displayed in place of event time for a cancelled event",
+    "english": "This event has been cancelled.",
+    "translation": "此活动已取消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventNotFound",
+    "description": "Displayed when navigating to link that is supposed to show an event but one could not be found there",
+    "english": "Event not found",
+    "translation": "未找到活动",
     "isDeprecated": false
   },
   {
@@ -16841,6 +16993,22 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalTitle",
+    "description": "The title of a modal that prompts the user to allow events to send push notifications",
+    "english": "Event Push Notifications",
+    "translation": "活动推送通知",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EnableNotificationsModalBody",
+    "description": "The body text for the modal that prompts the user to allow events to send them push notifications",
+    "english": "Get updates about events, even when you’re not on Roblox.",
+    "translation": "即时不在 Roblox 上，你也能获得活动更新。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "NotNowButton",
     "description": "Button text for the \"Enable Events Notifications\" modal to allow the user to close the modal",
     "english": "Not Now",
@@ -16854,6 +17022,22 @@
     "english": "Enable",
     "translation": "启用",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "SubscribedModalTitle",
+    "description": null,
+    "english": "DO NOT USE",
+    "translation": "请勿使用",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "SubscribedModalBody",
+    "description": null,
+    "english": "DO NOT USE",
+    "translation": "请勿使用",
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.OneTimePasscode",
@@ -16917,6 +17101,14 @@
     "description": "Label to indicate that the record was a missing call. The user received this call from another individual but did not answer the call.",
     "english": "Missed",
     "translation": "未接听",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.BuyRobux",
+    "key": "Banner.Title",
+    "description": null,
+    "english": "Get Robux",
+    "translation": "取得 Robux",
     "isDeprecated": false
   }
 ]
