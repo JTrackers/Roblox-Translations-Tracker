@@ -10224,6 +10224,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationEmailWarningNew",
+    "description": "Description that appears in the background when both email and authenticator 2sv are enabled",
+    "english": "You currently have both 2-Step Verification via Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to log in via Authenticator.",
+    "translation": "이메일과 인증 앱을 통한 2단계 인증이 현재 모두 켜져 있습니다. 대부분의 경우, 계정 보안을 위해 인증 앱을 통한 로그인만 허용됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationPopUpEmailWarning",
+    "description": "Warning that appears when we ask user for password after they turn on authenticator.",
+    "english": "Warning: If you choose to enable 2-Step Verification via both Email and the Authenticator App, you will be forced to use the Authenticator App for verification in most cases.",
+    "translation": "주의: 이메일 및 인증 앱을 통한 2단계 인증을 모두 활성화하면, 대부분의 경우 인증 앱을 사용하도록 강제 적용됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitExceedRangeError",
+    "description": null,
+    "english": "Please input a whole number between 0 and {maxSpendLimit}",
+    "translation": "0에서 {maxSpendLimit} 사이의 정수를 입력하세요",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -16340,7 +16364,7 @@
     "key": "Label.MarketplaceFee",
     "description": "Marketplace fee amount",
     "english": "Marketplace fee (at {percent}%)",
-    "translation": "장터 수수료 ({percent}%)",
+    "translation": "마켓플레이스 수수료 ({percent}%)",
     "isDeprecated": false
   },
   {
@@ -24096,6 +24120,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.HomePageUpsellCardAddPhoneText",
+    "description": null,
+    "english": "Add your phone number so you don’t lose access to your friends, avatars and Robux.",
+    "translation": "친구, 아바타, Robux에 대한 접근 권한을 잃는 일이 발생하지 않도록 전화번호를 추가해 두세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.DesktopPushNotificationPrompts",
     "key": "Message.SendNotificationsPrompt",
     "description": "Can we send you notifications on this computer?",
@@ -25396,7 +25428,7 @@
     "key": "Label.MarketplaceFee",
     "description": null,
     "english": "Marketplace Fee",
-    "translation": "장터 수수료",
+    "translation": "마켓플레이스 수수료",
     "isDeprecated": false
   },
   {
@@ -25780,7 +25812,7 @@
     "key": "Description.VerifiedCreatorEmail",
     "description": null,
     "english": "In order to share content in Marketplace, you must add & verify an email address to your account. This can be done in {linkStart}Account Settings{linkEnd}.",
-    "translation": "콘텐츠를 장터에서 공유하려면, 계정에 이메일 주소를 추가하고 인증해야 합니다. {linkStart}계정 설정{linkEnd}에서 가능합니다.",
+    "translation": "콘텐츠를 마켓플레이스에서 공유하려면, 계정에 이메일 주소를 추가하고 인증해야 합니다. {linkStart}계정 설정{linkEnd}에서 가능합니다.",
     "isDeprecated": false
   },
   {
@@ -26197,6 +26229,118 @@
     "description": null,
     "english": "3D",
     "translation": "3D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.DistributeOnMarketplace",
+    "description": null,
+    "english": "Distribute on Marketplace",
+    "translation": "마켓플레이스에 배포",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Heading.Sharing",
+    "description": null,
+    "english": "Sharing",
+    "translation": "공유 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.OnlyMe",
+    "description": null,
+    "english": "Only Me",
+    "translation": "나만",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.AnyoneOnRoblox",
+    "description": null,
+    "english": "Anyone on Roblox",
+    "translation": "Roblox의 모든 사용자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Message.FailedToShareError",
+    "description": null,
+    "english": "Failed to share with anyone on Roblox.",
+    "translation": "Roblox의 모든 사용자와 공유하지 못했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Message.ShareSuccess",
+    "description": null,
+    "english": "Successfully shared with anyone on Roblox",
+    "translation": "Roblox의 모든 사용자와 공유를 완료했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.WhoCanUseThisAsset",
+    "description": null,
+    "english": "Who can use this asset?",
+    "translation": "누가 이 애셋을 사용할 수 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.AllowDistributeOnMarketplace",
+    "description": null,
+    "english": "To maintain community safety, Roblox may terminate accounts that publish spam or assets with malicious or obfuscated code. {linkStart}Learn More{linkEnd}.",
+    "translation": "커뮤니티의 안전을 유지하기 위해, Roblox는 악성 또는 난독화된 코드가 포함된 스팸 또는 애셋을 게시하는 계정을 영구 정지할 수 있습니다. {linkStart}자세히 알아보기{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.AnyoneOnRobloxWarning",
+    "description": null,
+    "english": "I certify I am the creator of this asset, and grant anyone the ability to use it. This cannot be undone. {linkStart}Terms of Use{linkEnd}.",
+    "translation": "본인은 이 애셋의 크리에이터임을 보증하며, 모두에게 해당 애셋을 사용할 수 있는 권한을 부여합니다. 이 작업은 취소할 수 없습니다. {linkStart}이용 약관{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Warning.MustShareWithAnyone",
+    "description": null,
+    "english": "Must share with anyone on Roblox",
+    "translation": "Roblox의 모든 사용자와 공유해야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Title.AssetConfig",
+    "description": null,
+    "english": "Asset Config",
+    "translation": "애셋 구성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.VerifyShare",
+    "description": null,
+    "english": "Are you sure you want to share this asset with anyone on Roblox?",
+    "translation": "이 애셋을 Roblox의 모든 사용자와 정말 공유할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.CannotBeUndone",
+    "description": null,
+    "english": "This cannot be undone.",
+    "translation": "이 작업은 취소할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.ShareWithAnyone",
+    "description": null,
+    "english": "Share with Anyone on Roblox",
+    "translation": "Roblox의 모든 사용자와 공유",
     "isDeprecated": false
   },
   {
@@ -49512,6 +49656,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.TooManyAttemptsTryAgainLater",
+    "description": null,
+    "english": "Too many attempts. Please try again later.",
+    "translation": "시도 가능 횟수를 초과했습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -59033,10 +59185,90 @@
   },
   {
     "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.ApiExtensions",
+    "description": "Credentials page description",
+    "english": "Unleash your creativity and extend what you can do with Roblox through our public APIs. {linkStart}Learn how to use APIs{linkEnd}",
+    "translation": "공용 API를 통해 창의력을 발휘하고 Roblox에서의 가능성을 확장하세요. {linkStart}API 사용 방법 알아보기{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Heading.ApiExtensions",
+    "description": null,
+    "english": "API Extensions",
+    "translation": "API 확장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ApiKeys",
+    "description": null,
+    "english": "\tAPI Keys",
+    "translation": "API 키",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.CreateOAuthApp",
+    "description": null,
+    "english": "Create OAuth2 App",
+    "translation": "OAuth2 앱 만들기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.OAuthApps",
+    "description": null,
+    "english": "OAuth Apps",
+    "translation": "OAuth 앱",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.EmptyOAuthApps",
+    "description": null,
+    "english": "Create external applications that connect to Roblox user content. \n\n{linkStart}Learn more about OAuth2 Apps{linkEnd}",
+    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 애플리케이션을 만듭니다. \n\n{linkStart}OAuth2 앱에 대해 자세히 알아보기{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.NoOAuthApps",
+    "description": null,
+    "english": "Create external applications that connect to Roblox user content. \n\n{linkBreak}\n\n{linkStart}Learn more about OAuth2 Apps{linkEnd}",
+    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 애플리케이션을 만듭니다. \n\n{linkBreak}\n\n{linkStart}OAuth2 앱에 대해 자세히 알아보기{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
     "key": "Label.View",
     "description": "lets the user switch between list view or grid view for credentials page",
     "english": "View:",
     "translation": "보기:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.FilterBy",
+    "description": "label for letting a user decide filters on credentials page",
+    "english": "Filter by:",
+    "translation": "필터링 기준:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.PlaceHolderFilter",
+    "description": "A temporary placeholder for the default filter supported by credentials until BE returns their own translation keys",
+    "english": "Date of Creation",
+    "translation": "만든 날짜",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.PlaceHolderView",
+    "description": "A placeholder for the view in the filter bar in credentials until BE returns their own translation keys",
+    "english": "Grid",
+    "translation": "그리드",
     "isDeprecated": false
   },
   {
@@ -61803,7 +62035,7 @@
     "namespace": "CreatorDashboard.ComputeTelemetry",
     "key": "Heading.Compute",
     "description": null,
-    "english": "Compute",
+    "english": "Server Performance",
     "translation": "계산",
     "isDeprecated": false
   },
@@ -62261,6 +62493,46 @@
     "description": null,
     "english": "Accessibility",
     "translation": "접근성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Classes",
+    "description": "Label for the classes category",
+    "english": "Classes",
+    "translation": "클래스",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Enums",
+    "description": "Label for the enums category",
+    "english": "Enums",
+    "translation": "열거형",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.DataTypes",
+    "description": "Label for the data types category",
+    "english": "Data Types",
+    "translation": "데이터 형식",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Globals",
+    "description": "Label for the globals category",
+    "english": "Globals",
+    "translation": "전역",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Libraries",
+    "description": "Label for the libraries category",
+    "english": "Libraries",
+    "translation": "라이브러리",
     "isDeprecated": false
   },
   {

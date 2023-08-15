@@ -2556,7 +2556,7 @@
     "key": "Response.PasswordWrongShort",
     "description": null,
     "english": "Passwords must be at least 8 characters long.",
-    "translation": "パスワードは英数字8文字以上であることが必須。",
+    "translation": "パスワードは半角英数字8文字以上であることが必須。",
     "isDeprecated": false
   },
   {
@@ -2588,7 +2588,7 @@
     "key": "Response.UsernameInvalidLength",
     "description": null,
     "english": "Usernames can be 3 to 20 characters long.",
-    "translation": "ユーザーネームは英数字3〜20文字以内にする必要があります。",
+    "translation": "ユーザーネームは半角英数字3〜20文字以内にする必要があります。",
     "isDeprecated": false
   },
   {
@@ -2804,7 +2804,7 @@
     "key": "Response.UsernameAllowedCharactersError",
     "description": "error showing which characters are allowed for username",
     "english": "Usernames may only contain letters, numbers, and _.",
-    "translation": "ユーザーネームに使用できるのは、英数字、 および下線 _ だけです。",
+    "translation": "ユーザーネームに使用できるのは、半角英数字、 および下線 _ だけです。",
     "isDeprecated": false
   },
   {
@@ -2980,7 +2980,7 @@
     "key": "Label.UsernameCharacterLimit",
     "description": "label",
     "english": "3-20 alphanumeric characters, no spaces.",
-    "translation": "3〜20文字の英数字、スペースは不可",
+    "translation": "3〜20文字の半角英数字、スペースは不可",
     "isDeprecated": false
   },
   {
@@ -3252,7 +3252,7 @@
     "key": "Label.PasswordPlaceholder",
     "description": null,
     "english": "At least 8 characters",
-    "translation": "英数字で8文字以上",
+    "translation": "半角英数字で8文字以上",
     "isDeprecated": false
   },
   {
@@ -10221,6 +10221,30 @@
     "description": null,
     "english": "This setting limits the amount of spend permitted on the under {age} year old user's account per calendar month. Default platform spending restrictions will apply when this setting is turned off.",
     "translation": "この設定により、 {age} 歳未満のユーザーアカウントで一ヶ月（暦月）あたりに許可される課金が制限されます。 この設定がオフの場合、デフォルトのプラットフォームの課金制限が適用されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationEmailWarningNew",
+    "description": "Description that appears in the background when both email and authenticator 2sv are enabled",
+    "english": "You currently have both 2-Step Verification via Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to log in via Authenticator.",
+    "translation": "現在、Eメールと認証アプリによる2段階認証が有効になっています。 ほとんどの場合、アカウントを安全に保つために、認証アプリ経由でのみログインが許可されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationPopUpEmailWarning",
+    "description": "Warning that appears when we ask user for password after they turn on authenticator.",
+    "english": "Warning: If you choose to enable 2-Step Verification via both Email and the Authenticator App, you will be forced to use the Authenticator App for verification in most cases.",
+    "translation": "警告: Eメールと認証アプリで2段階認証を有効にするとき、 ほとんどの場合は認証するのに認証アプリを使用することを強制されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitExceedRangeError",
+    "description": null,
+    "english": "Please input a whole number between 0 and {maxSpendLimit}",
+    "translation": "0から {maxSpendLimit} の間の整数を入力してください",
     "isDeprecated": false
   },
   {
@@ -24096,6 +24120,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.HomePageUpsellCardAddPhoneText",
+    "description": null,
+    "english": "Add your phone number so you don’t lose access to your friends, avatars and Robux.",
+    "translation": "友達やアバター、Robuxにアクセスし続けるには、電話番号を追加してください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.DesktopPushNotificationPrompts",
     "key": "Message.SendNotificationsPrompt",
     "description": "Can we send you notifications on this computer?",
@@ -26197,6 +26229,118 @@
     "description": null,
     "english": "3D",
     "translation": "3D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.DistributeOnMarketplace",
+    "description": null,
+    "english": "Distribute on Marketplace",
+    "translation": "マーケットプレイスで流通させる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Heading.Sharing",
+    "description": null,
+    "english": "Sharing",
+    "translation": "シェアしています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.OnlyMe",
+    "description": null,
+    "english": "Only Me",
+    "translation": "自分のみ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.AnyoneOnRoblox",
+    "description": null,
+    "english": "Anyone on Roblox",
+    "translation": "Robloxの誰でも",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Message.FailedToShareError",
+    "description": null,
+    "english": "Failed to share with anyone on Roblox.",
+    "translation": "Robloxの誰とも共有できませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Message.ShareSuccess",
+    "description": null,
+    "english": "Successfully shared with anyone on Roblox",
+    "translation": "Robloxの誰とでも共有できました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.WhoCanUseThisAsset",
+    "description": null,
+    "english": "Who can use this asset?",
+    "translation": "このアセットを使える人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.AllowDistributeOnMarketplace",
+    "description": null,
+    "english": "To maintain community safety, Roblox may terminate accounts that publish spam or assets with malicious or obfuscated code. {linkStart}Learn More{linkEnd}.",
+    "translation": "コミュニティの安全を維持するために、Robloxはスパムや悪意のあるコードや難読化されたコードのついたアセットを公開するアカウントを閉鎖する可能性があります。 {linkStart}詳しくは{linkEnd} をごらんください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.AnyoneOnRobloxWarning",
+    "description": null,
+    "english": "I certify I am the creator of this asset, and grant anyone the ability to use it. This cannot be undone. {linkStart}Terms of Use{linkEnd}.",
+    "translation": "私はこの資産の作成者であることを正式に認め、これを使用する能力を誰にでも付与します。 これは元に戻すことはできません。 {linkStart}利用規約{linkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Warning.MustShareWithAnyone",
+    "description": null,
+    "english": "Must share with anyone on Roblox",
+    "translation": "Robloxの誰とでも共有することが必須です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Title.AssetConfig",
+    "description": null,
+    "english": "Asset Config",
+    "translation": "アセット環境設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.VerifyShare",
+    "description": null,
+    "english": "Are you sure you want to share this asset with anyone on Roblox?",
+    "translation": "このアセットをRobloxの誰とでも共有してもよろしいですか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.CannotBeUndone",
+    "description": null,
+    "english": "This cannot be undone.",
+    "translation": "この操作は元に戻せません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.ShareWithAnyone",
+    "description": null,
+    "english": "Share with Anyone on Roblox",
+    "translation": "Robloxの誰とでも共有する",
     "isDeprecated": false
   },
   {
@@ -49480,6 +49624,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.TooManyAttemptsTryAgainLater",
+    "description": null,
+    "english": "Too many attempts. Please try again later.",
+    "translation": "試行回数が多すぎます。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -56420,7 +56572,7 @@
     "key": "Message.Error.PasswordValidation.ShortPassword",
     "description": null,
     "english": "Password must be at least 8 characters long.",
-    "translation": "パスワードは英数字8文字以上であることが必須です。",
+    "translation": "パスワードは半角英数字8文字以上であることが必須です。",
     "isDeprecated": false
   },
   {
@@ -59009,10 +59161,74 @@
   },
   {
     "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.ApiKeys",
+    "description": null,
+    "english": "\tAPI Keys",
+    "translation": "APIキー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.CreateOAuthApp",
+    "description": null,
+    "english": "Create OAuth2 App",
+    "translation": "OAuth2 アプリを作成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.OAuthApps",
+    "description": null,
+    "english": "OAuth Apps",
+    "translation": "OAuth アプリ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.EmptyOAuthApps",
+    "description": null,
+    "english": "Create external applications that connect to Roblox user content. \n\n{linkStart}Learn more about OAuth2 Apps{linkEnd}",
+    "translation": "Robloxユーザーコンテンツに接続する外部アプリケーションを作成。 \n\n{linkStart}OAuth2 アプリについてもっと詳しく{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.NoOAuthApps",
+    "description": null,
+    "english": "Create external applications that connect to Roblox user content. \n\n{linkBreak}\n\n{linkStart}Learn more about OAuth2 Apps{linkEnd}",
+    "translation": "Robloxユーザーコンテンツに接続する外部アプリケーションを作成。\n\n{linkBreak} \n\n{linkStart}OAuth2 アプリについてもっと詳しく{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
     "key": "Label.View",
     "description": "lets the user switch between list view or grid view for credentials page",
     "english": "View:",
     "translation": "表示:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.FilterBy",
+    "description": "label for letting a user decide filters on credentials page",
+    "english": "Filter by:",
+    "translation": "フィルタ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.PlaceHolderFilter",
+    "description": "A temporary placeholder for the default filter supported by credentials until BE returns their own translation keys",
+    "english": "Date of Creation",
+    "translation": "作成日",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.PlaceHolderView",
+    "description": "A placeholder for the view in the filter bar in credentials until BE returns their own translation keys",
+    "english": "Grid",
+    "translation": "グリッド",
     "isDeprecated": false
   },
   {
@@ -61779,7 +61995,7 @@
     "namespace": "CreatorDashboard.ComputeTelemetry",
     "key": "Heading.Compute",
     "description": null,
-    "english": "Compute",
+    "english": "Server Performance",
     "translation": "算出",
     "isDeprecated": false
   },
@@ -62493,6 +62709,22 @@
     "description": null,
     "english": "Accessibility",
     "translation": "アクセシビリティ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Classes",
+    "description": "Label for the classes category",
+    "english": "Classes",
+    "translation": "クラス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Libraries",
+    "description": "Label for the libraries category",
+    "english": "Libraries",
+    "translation": "ライブラリ",
     "isDeprecated": false
   },
   {
