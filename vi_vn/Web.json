@@ -596,7 +596,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Không thể đăng nhập vào tài khoản này. Vui lòng đăng nhập vào ứng dụng LuoBu.",
+    "translation": "Không thể đăng nhập vào tài khoản này.",
     "isDeprecated": false
   },
   {
@@ -617,6 +617,62 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.AnotherLoggedInDevice",
+    "description": null,
+    "english": "Another Logged In Device",
+    "translation": "Một thiết bị đã đăng nhập khác",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.VerificationError",
+    "description": null,
+    "english": "System error occurred during verification.",
+    "translation": "Đã xảy ra lỗi hệ thống trong quá trình xác minh.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.AccountSelectorTitle",
+    "description": null,
+    "english": "Select Account to Log In",
+    "translation": "Chọn tài khoản để đăng nhập",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorHelp",
+    "description": null,
+    "english": "All of your associated accounts are listed here.",
+    "translation": "Tất cả các tài khoản từng liên kết của bạn được liệt kê ở đây.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInAnotherDevice",
+    "description": null,
+    "english": "Log In With Another Device",
+    "translation": "Đăng nhập bằng thiết bị khác",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInEmailOneTimeCode",
+    "description": null,
+    "english": "Email Me a One-Time Code",
+    "translation": "Gửi mã một lần cho tôi qua email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "Gửi mã",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.CodeSent",
     "description": null,
     "english": "Code Sent",
@@ -625,10 +681,122 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "Nhận mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "Nhập mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "Nhập email đã xác minh cho tài khoản của bạn để nhận mã một lần.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelp",
+    "description": null,
+    "english": "A code was sent to your email if it is verified on your account. Enter the code to log in.",
+    "translation": "Chúng tôi đã gửi một mã vào email của bạn nếu bạn đã xác minh email trên tài khoản của mình. Nhập mã để đăng nhập.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LoginCodeLearnMore",
+    "description": null,
+    "english": "Learn more about Login Codes",
+    "translation": "Tìm hiểu thêm về mã đăng nhập",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.LoginCode",
     "description": "placeholder for login code field",
     "english": "Login Code",
     "translation": "Mã đăng nhập",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "Địa chỉ email không hợp lệ.\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} là mã Roblox một lần của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Xin chào,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} là mã Roblox một lần của bạn. Hãy nhập mã này vào màn hình đăng nhập để đăng nhập. Mã sẽ hết hạn sau 15 phút.{lineBreak}{lineBreak}Không {boldStart}được{boldEnd} chia sẻ mã. Chúng tôi sẽ {boldStart}không bao giờ{boldEnd} liên hệ với bạn để yêu cầu bạn cung cấp mã. Nếu không yêu cầu nhận mã, bạn không cần thực hiện thêm hành động nào. Nếu bạn nhận được nhiều mã nhưng không thực hiện yêu cầu, chúng tôi chân thành khuyến cáo bạn dùng một email khác để liên kết với (các) tài khoản của mình và {linkTagWithAuthenticatorHelpLinkStart}thiết lập Xác minh 2 bước bằng Ứng dụng xác thực{linkTagEnd}.{lineBreak}{lineBreak}Yêu cầu thông tin đăng nhập này được nhận từ {geolocation}.{lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorOtpTimeWarning",
+    "description": "timeLimitSec will be a number",
+    "english": "Please select one within {timeLimitSec} seconds.",
+    "translation": "Vui lòng chọn một lựa chọn trong vòng {timeLimitSec} giây.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.IncorrectOtpCode",
+    "description": null,
+    "english": "Your code is incorrect. Please double check and try again.",
+    "translation": "Mã của bạn không chính xác. Vui lòng kiểm tra và thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "Bạn gặp rắc rối?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Nhập địa chỉ email của cha mẹ bạn để nhận mã xác minh.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Bạn phải dùng mạng Công ty để đăng nhập.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Bạn phải dùng mạng Công ty để đăng nhập.",
     "isDeprecated": false
   },
   {
@@ -668,7 +836,7 @@
     "key": "Label.EnterEmailCode",
     "description": null,
     "english": "Enter the code we just sent you via email.",
-    "translation": "Nhập mã chúng tôi vừa gửi cho bạn qua email.",
+    "translation": "Hãy nhập mã chúng tôi vừa gửi cho bạn qua email.",
     "isDeprecated": false
   },
   {
@@ -676,7 +844,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "Nhập mã chúng tôi vừa gửi cho bạn qua tin nhắn văn bản.",
+    "translation": "Hãy nhập mã chúng tôi vừa gửi cho bạn qua tin nhắn văn bản.",
     "isDeprecated": false
   },
   {
@@ -852,7 +1020,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Subject",
     "description": "Subject for 2SV activation email",
     "english": "2-Step Verification with Email Activated for Roblox Account: {accountName}",
-    "translation": "Xác minh 2 bước đã được kích hoạt cho Tài khoản Roblox: {accountName}",
+    "translation": "Đã kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox: {accountName}",
     "isDeprecated": false
   },
   {
@@ -860,7 +1028,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Subject\t",
     "description": "Subject for 2SV deactivation email",
     "english": "2-Step Verification with Email Deactivated for Roblox Account: {accountName}",
-    "translation": "Xác minh 2 bước đã được hủy kích hoạt cho Tài khoản Roblox: {accountName}",
+    "translation": "Đã hủy kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox: {accountName}",
     "isDeprecated": false
   },
   {
@@ -868,7 +1036,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Under13",
     "description": "Body for 2SV activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Chào bạn,{lineBreak}{lineBreak}Xác minh 2 bước đã được kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Lần tới, khi đăng nhập từ thiết bị mới, con bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua email.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào bạn,{lineBreak}{lineBreak}Xác minh 2 bước bằng Email đã được kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Đối với một số hành động như đăng nhập, con bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua email.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -876,7 +1044,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã kích hoạt Xác minh 2 bước cho tài khoản Roblox của mình. Lần tới, khi đăng nhập từ thiết bị mới, bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua email.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox của mình. Đối với một số hành động như đăng nhập, bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua email.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -884,7 +1052,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã hủy kích hoạt Xác minh 2 bước cho tài khoản Roblox của mình. Khi đăng nhập vào tài khoản, bạn sẽ không còn cần mã bảo mật.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã hủy kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox của mình.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật với người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -892,7 +1060,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Chào bạn,{lineBreak}{lineBreak}Xác minh 2 bước đã được hủy kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Khi đăng nhập vào tài khoản, con bạn sẽ không còn cần mã bảo mật.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Email cho tài khoản Roblox của con bạn {accountName} đã bị hủy.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1020,7 +1188,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Xin chào!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã xác minh 2 bước trên Roblox của bạn cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình đăng nhập. Mã này sẽ hết hạn sử dụng sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn bạn!{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn thành quá trình đăng nhập. Mã này sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1084,7 +1252,7 @@
     "key": "Label.RecoveryCodeMediaType",
     "description": "The name of the recovery code media type.",
     "english": "Backup Code",
-    "translation": "Mã khôi phục",
+    "translation": "Mã dự phòng",
     "isDeprecated": false
   },
   {
@@ -1100,7 +1268,7 @@
     "key": "Label.EnterRecoveryCode",
     "description": "Summary for passing two step verification given a previously saved code.",
     "english": "Enter a previously saved backup code.",
-    "translation": "Nhập mã khôi phục đã lưu trước đó.",
+    "translation": "Nhập mã dự phòng đã lưu trước đó.",
     "isDeprecated": false
   },
   {
@@ -1129,10 +1297,690 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator activation email for over 13 users",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của mình. Đối với một số hành động như đăng nhập, bạn sẽ cần nhập mã bảo mật 6 chữ số từ Ứng dụng xác thực.{lineBreak}{lineBreak}Hãy nhớ lưu lại mã dự phòng của bạn phòng khi bạn không thể truy cập vào Ứng dụng xác thực.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator activation email for under 13 users",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của con bạn đã được kích hoạt, {accountName}. Đối với một số hành động như đăng nhập, con bạn sẽ cần nhập mã bảo mật 6 chữ số từ Ứng dụng xác thực.{lineBreak}{lineBreak}Hãy nhớ lưu lại mã dự phòng của bạn phòng khi bạn không thể truy cập vào Ứng dụng xác thực.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator activation email.",
+    "english": "2-Step Verification with Authenticator Activated for Roblox Account: {accountName}",
+    "translation": "Đã kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã hủy kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của mình. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật từ Ứng dụng xác thực nữa.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator deactivation email for under 13 users",
+    "english": "Hello,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been deactivated for your child's Roblox account, {accountName}. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của con bạn {accountName} đã bị hủy. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật từ Ứng dụng xác thực nữa.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator deactivation email.",
+    "english": "2-Step Verification with Authenticator Deactivated for Roblox Account: {accountName}",
+    "translation": "Đã hủy kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của bạn. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật từ Ứng dụng xác thực nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd} của mình.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản Roblox của con bạn, {accountName}. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật từ Ứng dụng xác thực nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Authenticator Deactivated by Roblox Support: {accountName}",
+    "translation": "Hỗ trợ Roblox đã hủy kích hoạt Xác minh 2 bước bằng Ứng dụng xác thực cho tài khoản: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox của bạn. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd} của mình.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Email cho tài khoản Roblox của con bạn, {accountName}. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Email Deactivated by Roblox Support: {accountName}",
+    "translation": "Hỗ trợ Roblox đã hủy kích hoạt Xác minh 2 bước bằng Email cho tài khoản: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}All valid backup codes have been used on your child's Roblox account, {accountName}. To avoid getting locked out, they can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Tài khoản Roblox của con bạn, {accountName}, đã sử dụng hết mã dự phòng hợp lệ. Để tránh bị khóa tài khoản, con bạn có thể tạo mã dự phòng mới trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã sử dụng hết mã dự phòng hợp lệ. Để tránh bị khóa tài khoản, bạn có thể tạo mã dự phòng mới trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.Subject",
+    "description": null,
+    "english": "No Remaining Backup Codes for Roblox Account: {accountName}",
+    "translation": "Đã hết mã dự phòng cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Subject",
+    "description": "Subject for email when 2SV is triggered by a virtual purchase.",
+    "english": "Roblox Virtual Purchase Verification Request: {accountName}",
+    "translation": "Yêu cầu xác minh giao dịch mua hàng ảo Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.HtmlBody",
+    "description": null,
+    "english": "{geoLocationInformation}{spanStartTagWithBold}Virtual transaction code for {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request.{lineBreak}{lineBreak}Resources:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Change Your Password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More About 2-Step Verification{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Keeping Your Account Safe{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}General Roblox Support{aTagEnd} {lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}{spanStartTagWithBold}Mã giao dịch ảo cho {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Nhập mã này vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch ảo của bạn. Mã sẽ hết hạn sau 15 phút.{lineBreak}{lineBreak}Chúng tôi gửi email này vì tài khoản của bạn có hoạt động gây ra cảnh báo. Nếu bạn không giao dịch trong Roblox, có thể có người đang cố gắng truy cập tài khoản của bạn. Bạn nên thay đổi mật khẩu của mình nếu không tạo yêu cầu này.{lineBreak}{lineBreak}Tài liệu:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Thay đổi mật khẩu của bạn{aTagEnd}{lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Tìm hiểu thêm về Xác minh 2 bước{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Đảm bảo an toàn cho tài khoản của bạn{aTagEnd}{lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Hỗ trợ chung về Roblox{aTagEnd} {lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.PlainBody",
+    "description": null,
+    "english": "{geoLocationInformation}Virtual transaction code for {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request. {lineBreak}{lineBreak}Resources: {lineBreak}Change Your Password [{accountInfoPageLink}] {lineBreak}Learn More About 2-Step Verification [{twoStepVerificationHelpArticleLink}]{lineBreak}Keeping Your Account Safe [{keepAccountSafeArticleLink}] {lineBreak}General Roblox Support [{supportPageLink}] {lineBreak}{lineBreak}Thank you, {lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}Mã giao dịch ảo cho {accountName}: {lineBreak}{lineBreak} {code}{lineBreak}{lineBreak}Nhập mã này vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch ảo của bạn. Mã sẽ hết hạn sau 15 phút.{lineBreak}{lineBreak}Chúng tôi gửi email này vì tài khoản của bạn có hoạt động gây ra cảnh báo. Nếu bạn không giao dịch trong Roblox, có thể có người đang cố gắng truy cập vào tài khoản của bạn. Bạn nên thay đổi mật khẩu của mình nếu không tạo yêu cầu này.{lineBreak}{lineBreak}Tài liệu:{lineBreak}Thay đổi mật khẩu của bạn [{accountInfoPageLink}{lineBreak}] Tìm hiểu thêm về Xác minh 2 bước [{twoStepVerificationHelpArticleLink}]{lineBreak}Đảm bảo an toàn cho tài khoản của bạn [{keepAccountSafeArticleLink}] {lineBreak}Hỗ trợ chung về Roblox [{supportPageLink}] {lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch ảo của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox virtual transaction activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này bởi có sự gia tăng trong hoạt động giao dịch ảo trên Roblox. Nếu bạn không thực hiện yêu cầu, chúng tôi khuyến cáo bạn thay đổi mật khẩu của mình.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Bod",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch ảo của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.Footer.GeneratedBy",
+    "description": null,
+    "english": "This message was generated by {environmentIdentifier}.",
+    "translation": "Tin nhắn này được tạo bởi {environmentIdentifier}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerification",
+    "description": "robux spend friction",
+    "english": "You have successfully verified!",
+    "translation": "Bạn đã xác minh thành công!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.InvalidCodeTryAgain",
+    "description": "robux spend friction",
+    "english": "Invalid code. Please try again.",
+    "translation": "Mã không hợp lệ. Vui lòng thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.VerificationError",
+    "description": "robux spend friction",
+    "english": "System error occurred during verification.",
+    "translation": "Đã xảy ra lỗi hệ thống trong quá trình xác minh.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequired",
+    "description": "robux spend friction",
+    "english": "2-Step Verification is required to make further transactions.",
+    "translation": "Yêu cầu Xác minh 2 bước để thực hiện các giao dịch tiếp theo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch ảo của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerificationV2",
+    "description": "robux spend friction",
+    "english": "You have successfully verified! Please retry your previous action.",
+    "translation": "Bạn đã xác minh thành công! Vui lòng thử lại thao tác trước đó.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequiredV2",
+    "description": null,
+    "english": "Verification is required to continue with your previous action.",
+    "translation": "Yêu cầu xác minh để tiếp tục thao tác trước đó của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SystemErrorSwitchingToEmail",
+    "description": "Error message that appears when someone tries to switch to email as a two step verification method but fails.",
+    "english": "Error sending email code. Please choose alternate verification method or try again later.",
+    "translation": "Lỗi khi gửi mã đến email. Vui lòng chọn phương thức xác minh thay thế hoặc thử lại sau.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.VerificationRequiredForAction",
+    "description": null,
+    "english": "Verification is required to perform this action.",
+    "translation": "Yêu cầu xác minh để thực hiện hành động này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Heading.VerifyAccount",
+    "description": null,
+    "english": "Verify Account",
+    "translation": "Xác minh tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.DefaultError",
+    "description": null,
+    "english": "An error occurred. Please try again.",
+    "translation": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SessionExpired",
+    "description": null,
+    "english": "Session has expired. Please try again.",
+    "translation": "Phiên đã hết hạn. Vui lòng thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Reload",
     "description": null,
     "english": "Reload",
     "translation": "Tải lại",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your trade. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox dành cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu đăng nhập này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Subject",
+    "description": null,
+    "english": "Roblox Trade Verification Request: {accountName}",
+    "translation": "Yêu cầu xác minh giao dịch Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox trade activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này bởi có sự gia tăng trong hoạt động giao dịch trên Roblox. Nếu bạn không thực hiện yêu cầu, chúng tôi khuyến cáo bạn thay đổi mật khẩu của mình.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Resale Verification Request: {accountName}",
+    "translation": "Yêu cầu xác minh giao dịch bán lại Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased resale activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này bởi có sự gia tăng trong hoạt động giao dịch bán lại. Nếu bạn không thực hiện yêu cầu, chúng tôi khuyến cáo bạn thay đổi mật khẩu của mình.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your resale. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình xác minh giao dịch bán lại của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue your password reset. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để hoàn tất quá trình đặt lại mật khẩu của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to reset your password.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này vì mật khẩu của bạn được yêu cầu đặt lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Password Reset Request: {accountName}",
+    "translation": "Yêu cầu đặt lại mật khẩu Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSLogin.Body",
+    "description": "SMS message for 2sv login.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to verify your account",
+    "translation": "Xác minh 2 bước Roblox cho {accountName}: vui lòng nhập {code} để xác minh tài khoản của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSActivationText.Body",
+    "description": "SMS message for activating SMS 2sv.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to activate 2SV.",
+    "translation": "Xác minh 2 bước Roblox cho {accountName}: vui lòng nhập {code} để kích hoạt Xác minh 2 bước.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
+    "description": "SMS message for disabling SMS 2sv.",
+    "english": "Roblox 2SV for {accountName} disabled.",
+    "translation": "Xác minh 2 bước Roblox cho {accountName} đã bị vô hiệu hóa.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSCustomerSupportDeactivationText.Body",
+    "description": "SMS message for CS deactivation of SMS 2sv.",
+    "english": "Customer support has deactivated 2SV for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from SMS will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in Account Settings under “Security”.",
+    "translation": "Bộ phận hỗ trợ khách hàng đã hủy kích hoạt Xác minh 2 bước cho tài khoản Roblox của bạn. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật từ SMS nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong mục “Bảo mật” tại Cài đặt tài khoản.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSRecoveryCodeDepletedText",
+    "description": "SMS message for when out of recovery codes.",
+    "english": "You have no remaining 2SV account backup codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
+    "translation": "Mã dự phòng Xác minh 2 bước cho tài khoản Roblox của bạn đã hết. Vui lòng liên hệ bộ phận hỗ trợ khách hàng nếu cần thêm hỗ trợ khôi phục tài khoản.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "Đã bật Xác minh 2 bước Roblox cho {accountName}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SmsMediaType",
+    "description": "Name of SMS media type",
+    "english": "SMS",
+    "translation": "SMS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để tiếp tục hoàn tác các thay đổi đối với tài khoản của bạn. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này vì các thay đổi trong tài khoản của bạn được yêu cầu hoàn tác.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "Yêu cầu hoàn tác tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Over13",
+    "description": "Email to user when activating SMS 2SV.",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Text Messages for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox của mình. Đối với một số hành động như đăng nhập, bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua tin nhắn văn bản.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng SMS đã được kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Đối với một số hành động như đăng nhập, con bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua SMS.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Under13",
+    "description": "Email when user activates SMS 2SV.",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Tin nhắn văn bản đã được kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Đối với một số hành động như đăng nhập, con bạn sẽ cần nhập mã bảo mật 6 chữ số được Roblox gửi cho bạn qua Tin nhắn văn bản.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Đã kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.Subject",
+    "description": "Email to send when CS deactivates SMS 2SV",
+    "english": "2-Step Verification with Text Messages Deactivated by Roblox Support: {accountName}",
+    "translation": "Hỗ trợ Roblox đã hủy kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Over13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Text Messages for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Bạn đã hủy kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox của mình.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật của mình với người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Under13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox của con bạn {accountName} đã bị hủy.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Subject",
+    "description": "Email Subject when user deactivates SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Deactivated for Roblox Account: {accountName}",
+    "translation": "Đã hủy kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox của bạn. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd} của mình.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào!{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Tin nhắn văn bản cho tài khoản Roblox của con bạn, {accountName}. Việc hủy kích hoạt này là do phiếu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu mã bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "Thay đổi Xác minh 2 bước cho {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Bạn đã thay đổi phương thức Xác minh 2 bước cho {accountName} từ {disabledTwoStepMethod} thành {enabledTwoStepMethod}. Nếu bạn không yêu cầu thay đổi, hãy liên hệ ngay với bộ phận Hỗ trợ khách hàng để khôi phục tài khoản của mình.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Xin chào!{lineBreak}{lineBreak}Phương thức Xác minh 2 bước cho tài khoản Roblox của con bạn, {accountName}, đã thay đổi từ {disabledTwoStepMethod} thành {enabledTwoStepMethod}. Nếu bạn hay con bạn không yêu cầu thay đổi, hãy liên hệ ngay với bộ phận Hỗ trợ khách hàng để khôi phục tài khoản của con bạn.{lineBreak}{lineBreak}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.VerifyWithSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.",
+    "translation": "Sử dụng Khóa bảo mật của bạn để đăng nhập.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyMediaType",
+    "description": null,
+    "english": "Security Key",
+    "translation": "Khóa bảo mật",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UseSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.{lineBreak}When prompted, touch your key or use biometrics on this device.",
+    "translation": "Sử dụng Khóa bảo mật của bạn để đăng nhập.{lineBreak}Khi thông báo hiện lên, hãy chạm vào khóa của bạn hoặc sử dụng sinh trắc học trên thiết bị này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox 2-Step Verification: {accountName}",
+    "translation": "Xác minh 2 bước Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because 2-Step Verification was required to complete your desired action.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này vì chúng tôi cần Xác minh 2 bước để hoàn tất hành động mà bạn muốn thực hiện.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue taking your desired action. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Xin chào,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} là mã Xác minh 2 bước Roblox cho {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Hãy nhập mã trên vào màn hình Xác minh 2 bước để tiếp tục hành động bạn muốn thực hiện. Mã sẽ hết hạn sau 15 phút.{paragraphEnd}{paragraphStart}Yêu cầu này được nhận từ {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}QUAN TRỌNG: Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v. Khi chia sẻ mã bảo mật cho người khác, bạn đặt tài khoản và nội dung trong tài khoản của mình vào tình trạng rủi ro cao.{paragraphEnd}{lineBreak}{paragraphStart}Cảm ơn,{lineBreak}{emphasisStart}Đội ngũ Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyDirections",
+    "description": null,
+    "english": "When prompted, touch your key or use biometrics on this device.",
+    "translation": "Khi thông báo hiện lên, hãy chạm vào khóa của bạn hoặc sử dụng sinh trắc học trên thiết bị này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Security Key for your Roblox account. For some actions like logging in, you will need to have your security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào {accountName},{lineBreak}{lineBreak}Bạn đã kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox của mình. Đối với một số hành động như đăng nhập, bạn sẽ cần dùng khóa bảo mật.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.EmailSubject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Activated for Roblox Account: {accountName}",
+    "translation": "Đã kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to have their security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Khóa bảo mật đã được kích hoạt cho tài khoản Roblox của con bạn, {accountName}. Đối với một số hành động như đăng nhập, con bạn sẽ cần dùng khóa bảo mật.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated by Roblox Support: {accountName}",
+    "translation": "Hỗ trợ Roblox đã hủy kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Chào {accountName},{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox của bạn. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu khóa bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd} của mình.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Tin nhắn này là để thông báo cho bạn biết rằng đội ngũ hỗ trợ của chúng tôi đã hủy kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox của con bạn, {accountName}. Việc hủy kích hoạt này là do yêu cầu hỗ trợ mà bạn đã gửi hoặc là một biện pháp bảo mật để đảm bảo an toàn cho tài khoản của bạn. Các hành động như đăng nhập sẽ không yêu cầu khóa bảo mật nữa. Bạn có thể kích hoạt lại Xác minh 2 bước trong {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}cài đặt tài khoản{aTagEnd}.{lineBreak}{lineBreak}Nếu bạn cần thêm hỗ trợ, {spanStartTagWithBold}xin đừng trả lời email này{spanEndTag}, hãy phản hồi yêu cầu hỗ trợ hiện tại của bạn hoặc gửi yêu cầu hỗ trợ mới tại đây: {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated for Roblox Account: {accountName}",
+    "translation": "Đã hủy kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Security Key for your Roblox account.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào {accountName},{lineBreak}{lineBreak}Bạn đã hủy kích hoạt Xác minh 2 bước bằng Khóa bảo mật cho tài khoản Roblox của mình.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Xác minh 2 bước bằng Khóa bảo mật đã được hủy kích hoạt cho tài khoản Roblox của con bạn, {accountName}.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}QUAN TRỌNG:{boldEnd} Không chia sẻ mã bảo mật với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}QUAN TRỌNG:{boldEnd} Không chia sẻ mã dự phòng với bất kỳ ai. Roblox sẽ không bao giờ hỏi mã của bạn. Việc chia sẻ này bao gồm các hành động như nhắn tin mã của bạn, chia sẻ màn hình, v.v.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "Mã này đã được sử dụng. Vui lòng nhập mã mới.",
     "isDeprecated": false
   },
   {
@@ -1161,10 +2009,42 @@
   },
   {
     "namespace": "Authentication.Captcha",
+    "key": "Header.PleaseConfirmYouAreHuman",
+    "description": null,
+    "english": "Please Confirm You Are Human",
+    "translation": "Vui lòng xác nhận bạn là người thật",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Message.Error.Default",
+    "description": null,
+    "english": "An unknown error occurred while displaying captcha.",
+    "translation": "Đã xảy ra lỗi không xác định khi hiển thị captcha.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
     "translation": "Vui lòng thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Header.RobotChallenge",
+    "description": null,
+    "english": "Robot Challenge",
+    "translation": "Thử thách Robot",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Description.VerifyingYouAreNotBot",
+    "description": null,
+    "english": "Verifying you're not a bot",
+    "translation": "Xác minh bạn không phải robot",
     "isDeprecated": false
   },
   {
@@ -1945,10 +2825,26 @@
   },
   {
     "namespace": "Authentication.ResetPassword",
+    "key": "Message.AccountSecurityTicketExpired",
+    "description": "can't revert cuz ticket is expired.",
+    "english": "The account security ticket is expired.",
+    "translation": "Yêu cầu bảo mật tài khoản đã hết hạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordComplex",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Vui lòng sử dụng mật khẩu khác. Sử dụng ký tự đặc biệt hoặc chữ số bất kỳ.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
     "key": "MessageDifferentPasswordComplexShort",
     "description": "A shorter error message for users that use a weak password.",
     "english": "Please create a more complex password.",
-    "translation": "Vui lòng tạo mật khẩu khó đoán hơn.",
+    "translation": "Vui lòng tạo mật khẩu phức tạp hơn.",
     "isDeprecated": false
   },
   {
@@ -1964,7 +2860,23 @@
     "key": "MessagePasswordContainsUsername",
     "description": "An error message for users that try to use his/her username for new password.",
     "english": "Password shouldn't match username.",
-    "translation": "Mật khẩu không nên trùng với tên người dùng.",
+    "translation": "Mật khẩu không được trùng với tên người dùng.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordRequired",
+    "description": "An error message if the user's proposed password fails the backend password validation.",
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Vui lòng sử dụng mật khẩu khác. Sử dụng ký tự đặc biệt hoặc chữ số bất kỳ.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "Bằng cách nhấp vào \"Tiếp tục\", bạn đang gửi số điện thoại của mình và đồng ý với {linkTagWithSmsTos}Điều khoản sử dụng SMS{linkTagEnd} và {linkTagWithPrivacyPolicy}Chính sách riêng tư{linkTagEnd} của chúng tôi. Chúng tôi sẽ gửi cho bạn mã xác minh một lần. Bạn có thể bị tính phí tin nhắn hoặc dữ liệu. Soạn và gửi tin HELP để được trợ giúp.",
     "isDeprecated": false
   },
   {
@@ -2740,7 +3652,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Không thể đăng nhập vào tài khoản này. Vui lòng đăng nhập vào ứng dụng LuoBu.",
+    "translation": "Không thể đăng nhập vào tài khoản này.",
     "isDeprecated": false
   },
   {
@@ -2785,6 +3697,54 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Label.ParentEmailAddress",
+    "description": null,
+    "english": "Parent's Email Address",
+    "translation": "Địa chỉ email của cha mẹ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePhoneNumber",
+    "description": null,
+    "english": "Use phone number",
+    "translation": "Sử dụng số điện thoại",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email address",
+    "translation": "Sử dụng địa chỉ email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePasswordPlaceholder",
+    "description": null,
+    "english": "Enter your password again",
+    "translation": "Nhập lại mật khẩu của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePassword",
+    "description": null,
+    "english": "Confirm Password",
+    "translation": "Xác nhận mật khẩu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.CodeResent",
+    "description": null,
+    "english": "Code Resent",
+    "translation": "Đã gửi lại mã",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Response.InvalidPassword",
     "description": null,
     "english": "Invalid password.",
@@ -2793,10 +3753,186 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "Đã tạo tài khoản thành công nhưng không thể đăng nhập vào lúc này. Vui lòng thử lại sau.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Vui lòng sử dụng mật khẩu khác. Sử dụng ký tự đặc biệt hoặc chữ số bất kỳ.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "Bạn phải đồng ý với Điều khoản sử dụng và chấp nhận Chính sách riêng tư để tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Body",
+    "description": null,
+    "english": "{paragraphStart}Your child is requesting to create the account {emphasisStart}{userName}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address to create an account. In order for your child to complete the account creation process, you must consent to your child’s use of Roblox. You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you and your child agree to the Roblox {aTagStartWithHref}{termsLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Verification Code: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}Parent's Guide To Roblox{emphasisEnd}{paragraphEnd}{paragraphStart}We recommend that you visit our {aTagStartWithHref}{parentsLink}{hrefEnd}Parent’s Guide{aTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Privacy{emphasisEnd}{paragraphEnd}{paragraphStart}You may remove your child's account anytime by contacting customer service at {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our {aTagStartWithHref}{privacyPolicyLink}{hrefEnd}Privacy Policy{aTagEnd} for more information.{paragraphEnd}",
+    "translation": "{paragraphStart}Con bạn đang yêu cầu tạo tài khoản {emphasisStart}{userName}{emphasisEnd} trên Roblox, nền tảng giải trí trực tuyến cho phép trẻ tưởng tượng, sáng tạo và chơi cùng bạn bè trong thế giới 3D nhập vai do người dùng khởi tạo.{paragraphEnd}{paragraphStart}Con bạn đã cung cấp cho chúng tôi tên người dùng, ngày sinh và địa chỉ email của cha mẹ để tạo tài khoản. Để con bạn hoàn tất quy trình tạo tài khoản, bạn phải đồng ý cho con sử dụng Roblox. Bạn phải nhập mã bên dưới để hoàn tất quy trình đăng ký và đồng ý cho con sử dụng Roblox. Bằng cách nhập mã, bạn và con bạn đồng ý với các {aTagStartWithHref}{termsLink}{hrefEnd}Điều khoản{aTagEnd} của Roblox, bao gồm điều khoản trọng tài và (b) Bạn sẽ giám sát và tự chịu trách nhiệm về hành vi sử dụng Roblox của con mình.{paragraphEnd}{paragraphStart}{emphasisStart}Mã xác minh: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}Hướng dẫn dành cho cha mẹ về Roblox{emphasisEnd}{paragraphEnd}{paragraphStart}Chúng tôi khuyến nghị bạn truy cập {aTagStartWithHref}{parentsLink}{hrefEnd}Hướng dẫn dành cho cha mẹ{aTagEnd} để làm quen với nền tảng của chúng tôi và tìm đọc các hướng dẫn hữu ích để tạo ra những trải nghiệm tích cực cho con trên Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Quyền riêng tư{emphasisEnd}{paragraphEnd} {paragraphStart}Bạn có thể xóa tài khoản của con bất cứ lúc nào bằng cách liên hệ với dịch vụ khách hàng tại {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd}. Chúng tôi sẽ không sử dụng email của bạn cho các mục đích khác, không tiết lộ cho bên thứ ba, hoặc không kết hợp với thông tin cá nhân bất kỳ được thu thập từ con bạn. Vui lòng xem lại {aTagStartWithHref}{privacyPolicyLink}{hrefEnd}Chính sách riêng tư{aTagEnd} của chúng tôi để biết thông tin chi tiết.{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Description.VerifiedParentalConsentEmail.Links",
     "description": null,
     "english": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Account Safety{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Support{aTagEnd}",
     "translation": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Tìm hiểu thêm{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}An toàn cho tài khoản{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Hỗ trợ{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there has been an attempt to sign up for a Roblox account with your email. If you did not make this request, please disregard this email.",
+    "translation": "Vui lòng không trả lời trực tiếp email này. Bạn nhận được email này vì email của bạn đã được dùng để đăng ký tài khoản Roblox. Nếu bạn không thực hiện yêu cầu, vui lòng bỏ qua.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Subject",
+    "description": null,
+    "english": "Approval Request To Sign Up For Roblox",
+    "translation": "Yêu cầu chấp thuận để đăng ký Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code. ",
+    "translation": "Nhập địa chỉ email của cha mẹ bạn để nhận mã xác minh. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerifiedParentalConsentModal.ExampleEmail",
+    "description": null,
+    "english": "example@email.com",
+    "translation": "example@email.com",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.AddHeader",
+    "description": null,
+    "english": "Add Parent's Email",
+    "translation": "Thêm email của cha mẹ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.VerifyHeader",
+    "description": null,
+    "english": "Verify Your Parent's Email",
+    "translation": "Xác minh email của cha mẹ bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to {email}",
+    "translation": "Nhập mã chúng tôi vừa gửi tới {email}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerifiedParentalConsentModal.ChangeEmail",
+    "description": null,
+    "english": "Change Email Address",
+    "translation": "Thay đổi địa chỉ email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterContinue",
+    "description": null,
+    "english": "By entering the code and clicking Continue, you are giving consent to your child to access Roblox.",
+    "translation": "Bằng cách nhập mã và nhấp vào Tiếp tục, bạn đồng ý cho con mình truy cập Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.VerifiedParentalConsentModal.ResendCode",
+    "description": null,
+    "english": "Resend Code ({time})",
+    "translation": "Gửi lại mã ({time})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Nhập địa chỉ email của cha mẹ bạn để nhận mã xác minh.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "Mã xác minh",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "Tôi đã xem và đồng ý với {termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "Chấp nhận {privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "Nhập mã chúng tôi vừa gửi đến email của cha mẹ bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "Bằng cách nhập mã, bạn đồng ý cho con mình truy cập Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Mật khẩu là một tổ hợp bắt buộc bao gồm chữ in hoa, chữ in thường và chữ số.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Mật khẩu là một tổ hợp bắt buộc bao gồm chữ in hoa, chữ in thường và chữ số.",
     "isDeprecated": false
   },
   {
@@ -2865,10 +4001,34 @@
   },
   {
     "namespace": "Common.AlertsAndOptions",
+    "key": "Description.KoreaScreentimeToastText",
+    "description": "Alert text showing to korea user how many hours they've been playing",
+    "english": "Excessive experience use can interfere with normal daily life. You have visited on Roblox for {NumberOfHours} hour(s).",
+    "translation": "Trải nghiệm quá nhiều có thể gây ra những cản trở trong cuộc sống đời thường. Bạn đã chơi Roblox trong {NumberOfHours} giờ.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Title.Warning",
+    "description": "Warning title shows on toast alert",
+    "english": "Warning",
+    "translation": "Cảnh báo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
     "key": "Action.OK",
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Chuyển đến Nội dung chính",
     "isDeprecated": false
   },
   {
@@ -3416,6 +4576,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Refresh",
+    "description": null,
+    "english": "Refresh",
+    "translation": "Làm mới",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Feature",
     "key": "Heading.VisibleAgeOver13",
     "description": null,
@@ -3668,7 +4836,7 @@
     "key": "Label.Players",
     "description": "search context for user search",
     "english": "People",
-    "translation": "Người chơi",
+    "translation": "Mọi người",
     "isDeprecated": false
   },
   {
@@ -3724,7 +4892,7 @@
     "key": "Label.CreateGame",
     "description": "Create Game",
     "english": "Create Experience",
-    "translation": "Tạo Trò chơi",
+    "translation": "Tạo trải nghiệm",
     "isDeprecated": false
   },
   {
@@ -3756,7 +4924,7 @@
     "key": "Label.ConfigureGame",
     "description": "configure game page title",
     "english": "Configure Experience",
-    "translation": "Thiết lập game",
+    "translation": "Thiết lập trải nghiệm",
     "isDeprecated": false
   },
   {
@@ -3900,7 +5068,7 @@
     "key": "Description.UnsupportedLanguage",
     "description": null,
     "english": "While some experiences may use the selected language, it is not fully supported by roblox.com.",
-    "translation": "Mặc dù một số trò chơi có thể sử dụng ngôn ngữ đã chọn, nhưng ngôn ngữ này không được roblox.com hỗ trợ đầy đủ.",
+    "translation": "Mặc dù một số trải nghiệm có thể sử dụng ngôn ngữ đã chọn, nhưng ngôn ngữ này không được roblox.com hỗ trợ đầy đủ.",
     "isDeprecated": false
   },
   {
@@ -4020,7 +5188,47 @@
     "key": "Label.MyMoney",
     "description": null,
     "english": "My Transactions",
-    "translation": "Tiền của tôi",
+    "translation": "Giao dịch của tôi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Khả năng truy cập",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Experience",
+    "description": null,
+    "english": "Experiences",
+    "translation": "Trải nghiệm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Heading.PrivateServers",
+    "description": null,
+    "english": "Private Servers",
+    "translation": "Máy chủ cá nhân",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.CreatorMarketplace",
+    "description": "a storefront for assets, similar to the Library",
+    "english": "Creator Marketplace",
+    "translation": "Thị trường người sáng tạo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Robux10PercentMore",
+    "description": "10% more label on the Robux Menu button",
+    "english": "10% More",
+    "translation": "Thêm 10%",
     "isDeprecated": false
   },
   {
@@ -4353,6 +5561,14 @@
   },
   {
     "namespace": "CommonUI.Messages",
+    "key": "Description.ErrorPageCheckStatus",
+    "description": "message shown on common error pages, directing users to the Roblox status page",
+    "english": "If you continue to receive this message, check out {startLink}our status{endLink}.",
+    "translation": "Nếu bạn tiếp tục nhận được thông báo này, hãy xem {startLink}trạng thái của chúng tôi{endLink}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
     "key": "Action.Accept",
     "description": "Accept button for Cookie Banner",
     "english": "Accept All",
@@ -4365,6 +5581,30 @@
     "description": "Decline button for Cookie Banner",
     "english": "Decline All",
     "translation": "Từ chối tất cả",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirection",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking.",
+    "translation": "Trang này đã được chuyển sang Trang tổng quan của người tạo. Bạn có thể sử dụng trang đã cập nhật bằng cách nhấp vào.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[đây]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionMessage",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkText}.",
+    "translation": "Trang này đã được chuyển sang Trang tổng quan của người tạo. Bạn có thể sử dụng trang đã cập nhật bằng cách nhấp vào {linkText}.",
     "isDeprecated": false
   },
   {
@@ -5841,10 +7081,154 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeLong",
+    "description": null,
+    "english": "Keep Your Account Safe With 2-Step Verification Via Authenticator",
+    "translation": "Giữ an toàn cho tài khoản của bạn bằng Xác minh 2 bước thông qua Ứng dụng xác thực",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeShort",
+    "description": null,
+    "english": "Keep Your Account Safe With Authenticator",
+    "translation": "Giữ an toàn cho tài khoản của bạn bằng Ứng dụng xác thực",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNew",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to make your account more secure. This would help keep your account safe even if your password or email is stolen. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Chúng tôi khuyến nghị bạn bật Xác minh 2 bước qua Ứng dụng xác thực để tăng cường bảo mật tài khoản của bạn hơn. Thao tác này sẽ giúp bảo đảm sự an toàn cho tài khoản ngay cả khi mật khẩu hoặc email của bạn bị đánh cắp. Nếu tài khoản của bạn bị xâm phạm, bộ phận Hỗ trợ khách hàng sẽ đánh giá các biện pháp bảo mật đã được bạn áp dụng trong quá trình hỗ trợ khôi phục các dữ liệu quý giá bị mất của bạn. Tìm hiểu thêm tại {linkStart}trang trợ giúp{linkEnd} của chúng tôi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNewShort",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to keep your account safe. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Chúng tôi khuyến nghị bạn bật Xác minh 2 bước qua Ứng dụng xác thực để giúp bảo đảm sự an toàn cho tài khoản của bạn. Nếu tài khoản của bạn bị xâm phạm, bộ phận Hỗ trợ khách hàng sẽ đánh giá các biện pháp bảo mật đã được bạn áp dụng trong quá trình hỗ trợ khôi phục các dữ liệu quý giá bị mất của bạn. Tìm hiểu thêm tại {linkStart}trang trợ giúp{linkEnd} của chúng tôi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestorePolicyMessageSubject",
+    "description": null,
+    "english": "Enable 2-step verification via authenticator to keep your account safe",
+    "translation": "Bật Xác minh 2 bước thông qua Ứng dụng xác thực để giữ an toàn cho tài khoản của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestorePolicyMessageBody",
+    "description": null,
+    "english": "Hi, {lineBreak}{lineBreak}We recommend that you enable 2-step verification via an authenticator app to make your account more secure. This will help keep your account safe even if your password or email is stolen. In the event that your account is ever compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. {lineBreak}{lineBreak}You can set up an authenticator app on your account by going to {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}For more information, please visit our {helpPageLinkStart}help page{linkEnd}.",
+    "translation": "Xin chào, {lineBreak}{lineBreak}Chúng tôi khuyến nghị bạn bật Xác minh 2 bước qua Ứng dụng xác thực để bảo mật tài khoản của bạn hơn. Thao tác này sẽ giúp bảo đảm sự an toàn cho tài khoản của bạn ngay cả khi mật khẩu hoặc email của bạn bị đánh cắp. Trong trường hợp tài khoản của bạn bị xâm phạm, bộ phận Hỗ trợ khách hàng sẽ đánh giá các biện pháp bảo mật đã được bạn áp dụng trong quá trình hỗ trợ khôi phục các dữ liệu quý giá bị mất của bạn. {lineBreak}{lineBreak} Bạn có thể thiết lập ứng dụng xác thực trên tài khoản của mình bằng cách truy cập vào trang {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}Tìm hiểu thêm tại {helpPageLinkStart}trang trợ giúp{linkEnd} của chúng tôi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.TwoStepVerificationUpdate",
+    "description": null,
+    "english": "2-Step Verification Update",
+    "translation": "Cập nhật Xác minh 2 bước",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmail",
+    "description": null,
+    "english": "You have recently had 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Bạn vừa bật Xác minh 2 bước qua cả Email lẫn Ứng dụng xác thực trong thời gian gần đây. Trong hầu hết các trường hợp, để giữ an toàn cho tài khoản của bạn, bạn sẽ chỉ được tiến hành xác minh qua Ứng dụng xác thực.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmailPresent",
+    "description": null,
+    "english": "You currently have 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Hiện tại bạn đã bật Xác minh 2 bước qua cả Email lẫn Ứng dụng xác thực. Trong hầu hết các trường hợp, để giữ an toàn cho tài khoản của bạn, bạn sẽ chỉ được tiến hành xác minh qua Ứng dụng xác thực.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.LearnMoreHere",
+    "description": null,
+    "english": "Learn more {linkStart}here{linkEnd}.",
+    "translation": "Tìm hiểu thêm tại {linkStart}đây{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "Tăng cường bảo mật cho tài khoản của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "Nhận mã bảo mật trên một thiết bị khác để bảo vệ trải nghiệm, robux, vật phẩm giới hạn, nhóm của bạn, và nhiều dữ liệu khác.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorInBanner",
     "description": "Banner text for setting up authenticator through broad upsell.",
     "english": "Set Up Authenticator",
-    "translation": "Thiết lập Authenticator",
+    "translation": "Thiết lập Ứng dụng xác thực",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "Bật Xác minh 2 bước thông qua Ứng dụng xác thực",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Bạn có thể thực hiện thao tác này bằng cách đi đến {linkStart}Cài đặt tài khoản{linkEnd}. Nếu tài khoản của bạn bị xâm phạm, Roblox không chắc có thể khôi phục tài khoản của bạn hoặc khôi phục các dữ liệu có giá trị của tài khoản, bao gồm các vật phẩm và tiền ảo bị mất.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Nếu tài khoản của bạn bị xâm phạm, Roblox không chắc có thể khôi phục tài khoản của bạn hoặc khôi phục các dữ liệu có giá trị của tài khoản, bao gồm các vật phẩm và tiền ảo bị mất.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "Vui lòng bật Xác minh 2 bước thông qua Ứng dụng xác thực để bảo vệ tài khoản của bạn. Bạn có thể thực hiện thao tác này bằng cách đi đến {linkStartSettings}Cài đặt tài khoản{linkEndSettings}. {lineBreak}{lineBreak}Nếu tài khoản của bạn bị xâm phạm, Roblox không chắc có thể khôi phục tài khoản của bạn hoặc khôi phục các dữ liệu có giá trị của tài khoản, bao gồm các vật phẩm và tiền ảo bị mất. Tìm hiểu thêm trong {linkStartHelp}Trang trợ giúp{linkEndHelp} của chúng tôi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "Hãy bảo vệ tài khoản của bạn!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Vui lòng bật Xác minh 2 bước thông qua Ứng dụng xác thực để bảo vệ tài khoản của bạn. Bạn có thể thực hiện thao tác này bằng cách đi đến {linkStartSettings}Cài đặt tài khoản{linkEndSettings}. Nếu tài khoản của bạn bị xâm phạm, Roblox không thể đảm bảo sẽ có thể khôi phục tài khoản của bạn hoặc khôi phục các dữ liệu có giá trị của tài khoản, bao gồm các vật phẩm và tiền ảo bị mất.",
     "isDeprecated": false
   },
   {
@@ -5852,7 +7236,7 @@
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
-    "translation": "Thiết lập Authenticator",
+    "translation": "Thiết lập Ứng dụng xác thực",
     "isDeprecated": false
   },
   {
@@ -5865,6 +7249,14 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Action.PickN",
+    "description": null,
+    "english": "Pick {count}.",
+    "translation": "Chọn {count}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
@@ -5873,10 +7265,74 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Action.SelectAllThatApply",
+    "description": null,
+    "english": "Select all that apply.",
+    "translation": "Chọn tất cả các đáp án phù hợp.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.VerifyYourIdentity",
+    "description": null,
+    "english": "To keep your account secure, please verify your identity.",
+    "translation": "Để bảo đảm bảo mật cho tài khoản, vui lòng xác minh danh tính của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.WhichGames",
+    "description": null,
+    "english": "Which of these experiences have you joined in the last {days} days?",
+    "translation": "Bạn đã tham gia trải nghiệm nào trong số những trải nghiệm này trong {days} ngày qua?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Header.PleaseConfirmYourIdentity",
+    "description": null,
+    "english": "Please Confirm Your Identity",
+    "translation": "Vui lòng xác nhận danh tính của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
     "translation": "Đã xảy ra lỗi không xác định.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.MustPickN",
+    "description": null,
+    "english": "You must pick the required number of choices.",
+    "translation": "Bạn phải chọn một số lựa chọn bắt buộc.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.SessionInactive",
+    "description": null,
+    "english": "Session has expired.",
+    "translation": "Phiên đã hết hạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownGame",
+    "description": null,
+    "english": "Unknown Game",
+    "translation": "Trò chơi không xác định",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownChoice",
+    "description": null,
+    "english": "Unknown Choice",
+    "translation": "Lựa chọn không xác định",
     "isDeprecated": false
   },
   {
@@ -5889,10 +7345,66 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.AnswerIncorrect",
+    "description": null,
+    "english": "Your last answer was incorrect.",
+    "translation": "Câu trả lời cuối cùng của bạn không chính xác.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.YourPasswordHasBeenReset",
+    "description": null,
+    "english": "To protect your account, your password has been reset.",
+    "translation": "Để bảo vệ tài khoản, mật khẩu của bạn đã được đặt lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccess",
+    "description": null,
+    "english": "To regain access to your account, please contact Roblox Customer Support {linkStart}here{linkEnd}.",
+    "translation": "Để lấy lại quyền truy cập tài khoản, vui lòng liên hệ Bộ phận hỗ trợ khách hàng Roblox {linkStart}tại đây{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.UserWasForceReset",
+    "description": null,
+    "english": "Password was reset.",
+    "translation": "Mật khẩu đã được đặt lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "Tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccessGeneric",
+    "description": null,
+    "english": "To regain access to your account, please click {styledLinkText}.",
+    "translation": "Để lấy lại quyền truy cập tài khoản, vui lòng nhấp vào {styledLinkText}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "Xác minh mật khẩu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "Vui lòng nhập mật khẩu để tiếp tục.",
     "isDeprecated": false
   },
   {
@@ -5905,6 +7417,22 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Label.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "Mật khẩu của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ForgotYourPassword",
+    "description": null,
+    "english": "{linkStart}Forgot your password?{linkEnd}",
+    "translation": "{linkStart}Bạn quên mật khẩu?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
@@ -5913,10 +7441,42 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.PasswordIncorrect",
+    "description": null,
+    "english": "Password incorrect.",
+    "translation": "Mật khẩu không đúng.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
     "translation": "Vui lòng thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team\t",
+    "translation": "Xin chào,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} là mã Roblox một lần của bạn. Hãy nhập mã này vào màn hình đăng nhập để đăng nhập. Mã sẽ hết hạn sau 15 phút.{lineBreak}{lineBreak}Không {boldStart}được{boldEnd} chia sẻ mã. Chúng tôi sẽ {boldStart}không bao giờ{boldEnd} liên hệ với bạn để yêu cầu bạn cung cấp mã. Nếu không yêu cầu nhận mã, bạn không cần thực hiện thêm hành động nào. Nếu bạn nhận được nhiều mã nhưng không thực hiện yêu cầu, chúng tôi chân thành khuyến cáo bạn dùng một email khác để liên kết với (các) tài khoản của mình và {linkTagWithAuthenticatorHelpLinkStart}thiết lập Xác minh 2 bước bằng Ứng dụng xác thực{linkTagEnd}.{lineBreak}{lineBreak}Yêu cầu thông tin đăng nhập này được nhận từ {geolocation}.{lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} là mã Roblox một lần của bạn",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Xin chào,{lineBreak}{lineBreak}Con bạn đã yêu cầu tạo tài khoản trên Roblox, nền tảng giải trí trực tuyến cho phép trẻ tưởng tượng, sáng tạo và chơi cùng bạn bè trong thế giới 3D nhập vai do người dùng khởi tạo.{lineBreak}{lineBreak}Mã xác minh: {code}{lineBreak}{lineBreak}Con bạn đã cung cấp cho chúng tôi tên người dùng, ngày sinh và địa chỉ email của cha mẹ để tạo tài khoản. Để hoàn tất quy trình tạo tài khoản, bạn phải đồng ý cho con sử dụng Roblox.{lineBreak}{lineBreak}Bạn phải nhập mã bên dưới để hoàn tất quy trình đăng ký và đồng ý cho con sử dụng Roblox. Bằng cách nhập mã, bạn đồng ý với các {linkTagWithTermsLinkStart}Điều khoản của Roblox{linkTagEnd}, bao gồm điều khoản trọng tài và {linkTagWithPrivacyPolicyLinkStart}Chính sách riêng tư{linkTagEnd}, bạn sẽ giám sát và tự chịu trách nhiệm về hành vi sử dụng Roblox của con mình, và bạn đồng ý với quy trình xử lý dữ liệu cá nhân liên quan đến Dịch vụ của con bạn trong trường hợp thích đáng.{lineBreak}{lineBreak}{boldStart}Hướng dẫn dành cho cha mẹ về Roblox{boldEnd}{lineBreak}{lineBreak}Chúng tôi khuyến nghị bạn truy cập Hướng dẫn dành cho cha mẹ để làm quen với nền tảng của chúng tôi và tìm đọc các hướng dẫn hữu ích để tạo ra những trải nghiệm tích cực cho con trên Roblox.{lineBreak}{lineBreak}{boldStart}Quyền riêng tư{boldEnd}{lineBreak} {lineBreak}Bạn có thể xóa tài khoản của con bất cứ lúc nào bằng cách liên hệ với dịch vụ khách hàng tại https://www.roblox.com/support. Chúng tôi sẽ không sử dụng email của bạn cho các mục đích khác, không tiết lộ cho bên thứ ba, hoặc không kết hợp với thông tin cá nhân bất kỳ được thu thập từ con bạn. Vui lòng xem lại Chính sách riêng tư của chúng tôi để biết thêm thông tin.{lineBreak}{lineBreak}Cảm ơn bạn,{lineBreak}{lineBreak}Đội ngũ Roblox",
     "isDeprecated": false
   }
 ]

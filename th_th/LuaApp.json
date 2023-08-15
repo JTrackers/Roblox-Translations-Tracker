@@ -364,7 +364,7 @@
     "key": "Label.ConnectionError.RetryWait",
     "description": "After a failure connecting to authentication servers, the message shown to uses during the time they have to wait between retry attempts.",
     "english": "Sorry, there was a problem reaching our servers.\n\nPlease wait and try again.",
-    "translation": "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์การตรวจสอบสิทธิ์",
+    "translation": "ขออภัย มีปัญหาในการติดต่อกับเซิร์ฟเวอร์ของเรา\n\nกรุณารอ แล้วค่อยลองใหม่อีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -372,7 +372,7 @@
     "key": "Label.ConnectionError.RetryReady",
     "description": "After failure connecting to authentication servers, the message shown to users when they are able to retry.",
     "english": "Sorry, there was a problem reaching our servers.\n\nPlease try again.",
-    "translation": "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์การตรวจสอบสิทธิ์\n\nโปรดรีสตาร์ทแอปแล้วลองอีกครั้งในภายหลัง",
+    "translation": "ขออภัย มีปัญหาในการติดต่อกับเซิร์ฟเวอร์ของเรา\n\nกรุณาลองใหม่อีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -380,7 +380,55 @@
     "key": "Label.ConnectionError.RetryDisabled",
     "description": "After a failure connecting to authentication, the message shown to users after we manually turn off the retry capability. (we would do this to protect a server that is struggling)",
     "english": "Sorry, there was a problem reaching our servers.\n\nRetrying has been disabled for now. Please try again later.",
-    "translation": "เรากำลังดำเนินการแก้ไขเซิร์ฟเวอร์การตรวจสอบสิทธิ์ของเรา\n\nปิดใช้งานการลองอีกครั้งแล้ว โปรดกลับมาลองอีกครั้งในภายหลัง",
+    "translation": "ขออภัย มีปัญหาในการติดต่อกับเซิร์ฟเวอร์ของเรา\n\nการลองใหม่ถูกปิดการใช้งานอยู่ในขณะนี้ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.AnotherLoggedInDevice",
+    "description": null,
+    "english": "Another Logged In Device",
+    "translation": "อีกหนึ่งอุปกรณ์ที่เข้าระบบอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.AccountSelectorTitle",
+    "description": null,
+    "english": "Select Account to Log In",
+    "translation": "เลือกบัญชีที่จะเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorHelp",
+    "description": null,
+    "english": "All of your associated accounts are listed here.",
+    "translation": "จะระบุบัญชีทั้งหมดที่เกี่ยวข้องของคุณไว้ที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "ป้อนอีเมลของผู้ปกครองของคุณเพื่อรับรหัสตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "คุณจะต้องอยู่บนเครือข่ายของบริษัทเพื่อเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "คุณจะต้องอยู่บนเครือข่ายของบริษัทเพื่อเข้าสู่ระบบ",
     "isDeprecated": false
   },
   {
@@ -388,7 +436,7 @@
     "key": "Label.EnterEmailCode",
     "description": null,
     "english": "Enter the code we just sent you via email.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล",
     "isDeprecated": false
   },
   {
@@ -396,7 +444,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ",
     "isDeprecated": false
   },
   {
@@ -489,10 +537,34 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.TwoStepRequired",
+    "description": null,
+    "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification.",
+    "translation": "จำเป็นต้องมีการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการทำธุรกรรมต่อ ไปที่ การตั้งค่า > การรักษาความปลอดภัย เพื่อตั้งการตรวจสอบยืนยันตัวตน 2 ขั้นให้เสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Title.VerificationRequired",
+    "description": null,
+    "english": "Verification Required",
+    "translation": "จำเป็นต้องทำการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Action.GoToSecurity",
     "description": null,
     "english": "Settings",
     "translation": "การตั้งค่า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.TwoStepRequiredLogout",
+    "description": null,
+    "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification. Enabling 2-Step Verification will log you out of your current session.",
+    "translation": "จำเป็นต้องมีการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการทำธุรกรรมต่อ ไปที่ การตั้งค่า > การรักษาความปลอดภัย เพื่อตั้งการตรวจสอบยืนยันตัวตน 2 ขั้นให้เสร็จสิ้น การเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นจะให้คุณออกจากระบบสำหรับช่วงเซสชันปัจจุบันของคุณ",
     "isDeprecated": false
   },
   {
@@ -1009,10 +1081,154 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Response.UsernameMustBeSetFirst",
+    "description": null,
+    "english": "Username must be set first.",
+    "translation": "จะต้องตั้งชื่อผู้ใช้ก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ParentEmailAddress",
+    "description": null,
+    "english": "Parent's Email Address",
+    "translation": "ที่อยู่อีเมลของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePhoneNumber",
+    "description": null,
+    "english": "Use phone number",
+    "translation": "ใช้หมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email address",
+    "translation": "ใช้ที่อยู่อีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.ConfirmPassword",
+    "description": null,
+    "english": "Confirm Password",
+    "translation": "ยืนยันรหัสผ่าน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Response.PasswordsDoNotMatch",
     "description": null,
     "english": "Passwords do not match.",
     "translation": "รหัสผ่านไม่ตรงกัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordMustBeSetFirst",
+    "description": null,
+    "english": "Password must be set first.",
+    "translation": "จะต้องตั้งรหัสผ่านก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "กรุณาใช้รหัสผ่านอื่น ใช้ตัวอักขระพิเศษหรือหมายเลขพิเศษใดก็ตาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "คุณจะต้องยอมรับข้อตกลงการใช้งานและรับทราบถึงนโยบายความเป็นส่วนตัวเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "ป้อนอีเมลของผู้ปกครองของคุณเพื่อรับรหัสตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "รหัสการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "ข้าพเจ้าได้อ่านและยอมรับ {termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "รับทราบถึง {privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมลผู้ปกครองของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "การป้อนรหัส จะถือว่าคุณยินยอมให้บุตรหลานของคุณเข้าถึง Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "จำเป็นต้องใช้รหัสผ่านที่มีการผสมผสานระหว่างตัวอักษรพิมพ์ใหญ่และตัวพิมพ์เล็กและหมายเลข",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "จำเป็นต้องใช้รหัสผ่านที่มีการผสมผสานระหว่างตัวอักษรพิมพ์ใหญ่และตัวพิมพ์เล็กและหมายเลข",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Description.KoreaScreentimeToastText",
+    "description": "Alert text showing to korea user how many hours they've been playing",
+    "english": "Excessive experience use can interfere with normal daily life. You have visited on Roblox for {NumberOfHours} hour(s).",
+    "translation": "การใช้ประสบการณ์มากเกินไปอาจรบกวนการใช้ชีวิตประจำวันตามปกติได้ คุณได้มายัง Roblox เป็นเวลา {NumberOfHours} ชั่วโมงแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Title.Warning",
+    "description": "Warning title shows on toast alert",
+    "english": "Warning",
+    "translation": "คำเตือน",
     "isDeprecated": false
   },
   {
@@ -1180,7 +1396,7 @@
     "key": "Label.AutoUpgradeForce",
     "description": null,
     "english": "Roblox needs to be updated! To visit this experience, you will need to install an update.",
-    "translation": "จำเป็นต้องอัปเดต Roblox! คุณจะต้องติดตั้งและอัปเดตเพื่อที่จะเล่นเกมนี้",
+    "translation": "จำเป็นต้องอัปเดต Roblox! คุณจะต้องติดตั้งและอัปเดตเพื่อไปเยี่ยมชมประสบการณ์นี้",
     "isDeprecated": false
   },
   {
@@ -1388,7 +1604,7 @@
     "key": "Label.Game",
     "description": null,
     "english": "Experiences",
-    "translation": "เกม",
+    "translation": "ประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -1540,7 +1756,7 @@
     "key": "Heading.GameDetails",
     "description": null,
     "english": "Experience Details",
-    "translation": "รายละเอียดเกม",
+    "translation": "รายละเอียดประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -1548,7 +1764,7 @@
     "key": "Label.Players",
     "description": "search context for user search",
     "english": "People",
-    "translation": "ผู้เล่น",
+    "translation": "ผู้คน",
     "isDeprecated": false
   },
   {
@@ -1737,6 +1953,94 @@
   },
   {
     "namespace": "CommonUI.Features",
+    "key": "Label.TencentNotice",
+    "description": "For Luobu MSDK notification title.",
+    "english": "Notice",
+    "translation": "การแจ้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Licensing",
+    "description": "Refers to the licenses for the third-party software that is used in the App (ex: open source licenses)",
+    "english": "Licensing",
+    "translation": "การออกใบอนุญาต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Action.Restart",
+    "description": "Restart button on prompt, e.g VR disconnected",
+    "english": "Restart",
+    "translation": "เริ่มใหม่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Heading.VRDisconnected",
+    "description": "Title of VR disconnected prompt",
+    "english": "Headset Disconnected",
+    "translation": "เฮดเซ็ตขาดการเชื่อมต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Description.RestartApp",
+    "description": "Body content of VR disconnected prompt",
+    "english": "To continue playing, please restart the app.",
+    "translation": "กรุณาปิดและเปิดแอปขึ้นมาใหม่เพื่อทำการเล่นต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.LuobuThirdPartyDataUse",
+    "description": "Only used by Luobu, no other languages needed.\n第三方共享清单",
+    "english": "Third party share list",
+    "translation": "รายชื่อการแบ่งปันกับบุคคลภายนอก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ChannelWithChannelName",
+    "description": null,
+    "english": "Channel: {channelName}",
+    "translation": "ช่อง: {channelName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ClientCoreScriptVersion",
+    "description": "Shows the core script version the app is running.",
+    "english": "Client-CoreScript-Version: {clientCoreScriptVersion}",
+    "translation": "เวอร์ชัน-คอร์สคริปต์-ของไคลเอนต์: {clientCoreScriptVersion}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ChannelWithChannelName",
+    "description": "Shows the current channel for the client.",
+    "english": "Channel: {channelName}",
+    "translation": "ช่อง: {channelName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ClientCoreScriptVersion",
+    "description": "Shows the lua core script version the app is running.",
+    "english": "Client-CoreScript-Version: {clientCoreScriptVersion}",
+    "translation": "เวอร์ชัน-คอร์สคริปต์-ของไคลเอนต์: {clientCoreScriptVersion}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Menu",
+    "description": "The label from the Menu tab of the IA system nav bar",
+    "english": "Menu",
+    "translation": "เมนู",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
     "key": "StudioCTA.Tooltip.Title",
     "description": "The tooltip title of the open Studio CTA button.",
     "english": "Start creating on Roblox",
@@ -1813,6 +2117,46 @@
     "description": "Webviews on Windows require that Internet Explorer 11 or higher.  If the user invokes a webview, and the webview code detects that Internet Explorer on the system is out of date, it shows this dialog to the user and asks them for confirmation before linking them to an installation screen.",
     "english": "Roblox requires Internet Explorer 11 in order to bring you the best experience. Please upgrade your Internet Explorer to access this feature!\n\nWould you like to update your browser now?",
     "translation": "Roblox จำเป็นต้องใช้ Internet Explorer 11 เพื่อที่จะมอบประสบการณ์ที่ดีที่สุด กรุณาอัปเกรด Internet Explorer ของคุณเพื่อเข้าถึงฟีเจอร์นี้!\n\nคุณต้องการอัปเดตเบราว์เซอร์ของคุณตอนนี้เลยหรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.NoLicenses",
+    "description": "No third-party software licenses available to display.",
+    "english": "No Licenses",
+    "translation": "ไม่มีใบอนุญาต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Response.NoResults",
+    "description": "Generic message displayed when searching for anything (players, games, etc.)",
+    "english": "No Results",
+    "translation": "ไม่มีผลการค้นหา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Response.PageError",
+    "description": "When a page fails to load, for whatever reason.",
+    "english": "Error loading page",
+    "translation": "ข้อผิดพลาดการโหลดหน้าเพจ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.ActionNotAvailableOnVRHeadsetDevice",
+    "description": "A toast text to show user when certain actions (e.g opening a webpage) is not available for VR head set device.",
+    "english": "This action is not supported on headset devices yet. Please try on a different device.",
+    "translation": "ไม่รองรับคำสั่งนี้บนอุปกรณ์เฮดเซ็ต กรุณาลองอีกครั้งบนอุปกรณ์อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.NoRobuxPuchaseOnVRHeadSets",
+    "description": "Text to show user when they need to purchase Robux on VR head sets.",
+    "english": "Insufficient Robux. Buying Robux is not supported on headset devices yet. Please try on a different device.",
+    "translation": "มี Robux ไม่เพียงพอ ยังไม่รองรับการซื้อ Robux บนอุปกรณ์เฮดเซ็ต กรุณาลองอีกครั้งบนอุปกรณ์อื่น",
     "isDeprecated": false
   },
   {
@@ -2649,10 +2993,154 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeLong",
+    "description": null,
+    "english": "Keep Your Account Safe With 2-Step Verification Via Authenticator",
+    "translation": "เพื่อปกป้องบัญชีของคุณให้ปลอดภัยด้วยการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeShort",
+    "description": null,
+    "english": "Keep Your Account Safe With Authenticator",
+    "translation": "เพื่อปกป้องบัญชีของคุณให้ปลอดภัยด้วย Authenticator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNew",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to make your account more secure. This would help keep your account safe even if your password or email is stolen. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัยยิ่งขึ้น การทำเช่นนี้จะช่วยให้บัญชีของคุณปลอดภัย แม้ว่ารหัสผ่านหรืออีเมลของคุณจะถูกขโมยไป หากบัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป เรียนรู้เพิ่มเติมที่{linkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNewShort",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to keep your account safe. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัย หากบัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป เรียนรู้เพิ่มเติมที่{linkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestorePolicyMessageSubject",
+    "description": null,
+    "english": "Enable 2-step verification via authenticator to keep your account safe",
+    "translation": "เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย authenticator เพื่อปกป้องบัญชีของคุณให้ปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestorePolicyMessageBody",
+    "description": null,
+    "english": "Hi, {lineBreak}{lineBreak}We recommend that you enable 2-step verification via an authenticator app to make your account more secure. This will help keep your account safe even if your password or email is stolen. In the event that your account is ever compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. {lineBreak}{lineBreak}You can set up an authenticator app on your account by going to {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}For more information, please visit our {helpPageLinkStart}help page{linkEnd}.",
+    "translation": "สวัสดี {lineBreak}{lineBreak}เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัย การทำเช่นนี้จะช่วยให้บัญชีของคุณปลอดภัยได้ แม้ว่ารหัสผ่านหรืออีเมลของคุณจะถูกขโมยไป ในกรณีที่บัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป {lineBreak}{lineBreak}คุณสามารถติดตั้งแอป authenticator สำหรับบัญชีของคุณได้โดยการไปที่ {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}สำหรับข้อมูลเพิ่มเติม กรุณาไปยัง{helpPageLinkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.TwoStepVerificationUpdate",
+    "description": null,
+    "english": "2-Step Verification Update",
+    "translation": "อัปเดตเรื่องการตรวจสอบยืนยันตัวตน 2 ขั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmail",
+    "description": null,
+    "english": "You have recently had 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "คุณได้ตั้งค่าและเปิดใช้การตรวจสอบยืนยันตัวตน 2 ขั้นอยู่ในขณะนี้สำหรับทั้งอีเมลและแอป Authenticator ในกรณีส่วนใหญ่แล้ว ด้วยเหตุผลด้านการรักษาความปลอดภัยของบัญชีของคุณ คุณจะได้รับอนุญาตให้ใช้ได้เพียงแค่ Authenticator เท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmailPresent",
+    "description": null,
+    "english": "You currently have 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "คุณได้ตั้งค่าและเปิดใช้การตรวจสอบยืนยันตัวตน 2 ขั้นเมื่อไม่นานมานี้สำหรับทั้งอีเมลและแอป Authenticator ในกรณีส่วนใหญ่แล้ว ด้วยเหตุผลด้านการรักษาความปลอดภัยของบัญชีของคุณ คุณจะได้รับอนุญาตให้ใช้ได้เพียงแค่ Authenticator เท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.LearnMoreHere",
+    "description": null,
+    "english": "Learn more {linkStart}here{linkEnd}.",
+    "translation": "เรียนรู้เพิ่มเติม{linkStart}ที่นี่{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "เพิ่มการรักษาความปลอดภัยให้บัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "รับรหัสรักษาความปลอดภัยบนอีกอุปกรณ์หนึ่งเพื่อปกป้องค่าประสบการณ์, Robux, แบบจำกัด, กลุ่มของคุณ และอย่างอื่นอีกมากมาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorInBanner",
     "description": "Banner text for setting up authenticator through broad upsell.",
     "english": "Set Up Authenticator",
     "translation": "ตั้งค่า Authenticator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "คุณสามารถทำได้โดยไปที่ {linkStart}การตั้งค่าบัญชี{linkEnd} หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงสิ่งของที่สูญหายและสกุลเงินเสมือนด้วย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงไอเทมที่สูญหายและสกุลเงินเสมือนด้วย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "กรุณาเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น โดยใช้ Authenticator เพื่อช่วยปกป้องบัญชีของคุณ คุณสามารถทำได้โดยไปที่ {linkStartSettings}การตั้งค่าบัญชี{linkEndSettings}{lineBreak}{lineBreak}หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงสิ่งของที่สูญหายและสกุลเงินเสมือนด้วย เรียนรู้เพิ่มเติมได้ที่{linkStartHelp}เพจความช่วยเหลือ{linkEndHelp}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "ปกป้องบัญชีของคุณ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "กรุณาเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น โดยใช้แอป Authenticator เพื่อช่วยปกป้องบัญชีของคุณ คุณสามารถทำได้โดยไปที่ {linkStartSettings}การตั้งค่าบัญชี{linkEndSettings}หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงไอเทมที่สูญหายและสกุลเงินเสมือนด้วย",
     "isDeprecated": false
   },
   {
@@ -2689,6 +3177,14 @@
   },
   {
     "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Message.Confirmation",
+    "description": null,
+    "english": "We'll text your verification code to %s. SMS fees may apply.",
+    "translation": "เราจะส่งรหัสตรวจสอบยืนยันของคุณไปยัง %s อาจมีการคิดค่าบริการข้อความ SMS",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
     "key": "Label.VerifyPhoneNumber",
     "description": null,
     "english": "Verify Phone Number",
@@ -2696,11 +3192,67 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use Email Instead",
+    "translation": "ใช้อีเมลแทน",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Label.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to %s",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้ถึง %s",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Action.ChangeNumber",
+    "description": null,
+    "english": "Change Number",
+    "translation": "เปลี่ยนหมายเลข",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "การตรวจสอบยืนยันรหัสผ่าน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "กรุณาป้อนรหัสผ่านของคุณเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Reauthentication",
     "key": "Action.Verify",
     "description": null,
     "english": "Verify",
     "translation": "ตรวจสอบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "รหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ForgotYourPassword",
+    "description": null,
+    "english": "{linkStart}Forgot your password?{linkEnd}",
+    "translation": "{linkStart}ลืมรหัสผ่านของคุณอย่างนั้นหรือ?{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -2713,10 +3265,18 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.PasswordIncorrect",
+    "description": null,
+    "english": "Password incorrect.",
+    "translation": "รหัสผ่านไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
-    "translation": "กรุณาลองใหม่อีกครั้ง.",
+    "translation": "กรุณาลองใหม่อีกครั้ง",
     "isDeprecated": false
   }
 ]

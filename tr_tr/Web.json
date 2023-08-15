@@ -492,7 +492,7 @@
     "key": "Label.LoginWithYour",
     "description": "Label for a partition line between login with email and facebook login. Please keep the text in lowercase for roman characters.",
     "english": "login with",
-    "translation": "Şununla giriş yap:",
+    "translation": "şununla giriş yap:",
     "isDeprecated": false
   },
   {
@@ -596,7 +596,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Hesaba giriş yapılamıyor. Lütfen LuoBu uygulamasına giriş yap.",
+    "translation": "Hesaba giriş yapılamıyor.",
     "isDeprecated": false
   },
   {
@@ -617,6 +617,62 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.AnotherLoggedInDevice",
+    "description": null,
+    "english": "Another Logged In Device",
+    "translation": "Başka Bir Cihazla Giriş Yapıldı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.VerificationError",
+    "description": null,
+    "english": "System error occurred during verification.",
+    "translation": "Doğrulama sırasında sistemde hata meydana geldi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.AccountSelectorTitle",
+    "description": null,
+    "english": "Select Account to Log In",
+    "translation": "Giriş Yapılacak Hesabı Seç",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorHelp",
+    "description": null,
+    "english": "All of your associated accounts are listed here.",
+    "translation": "Seninle bağlantılı hesapların hepsi burada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInAnotherDevice",
+    "description": null,
+    "english": "Log In With Another Device",
+    "translation": "Başka Bir Cihazla Giriş Yap",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInEmailOneTimeCode",
+    "description": null,
+    "english": "Email Me a One-Time Code",
+    "translation": "Bana Tek Seferlik Kod Gönder",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "Kod Gönder",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.CodeSent",
     "description": null,
     "english": "Code Sent",
@@ -625,10 +681,122 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "Tek Seferlik Kod Al",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "Tek Seferlik Kodu Gir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "Tek seferlik kod almak için hesabında doğruladığın e-posta adresini gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelp",
+    "description": null,
+    "english": "A code was sent to your email if it is verified on your account. Enter the code to log in.",
+    "translation": "Hesabında doğrulandığı takdirde e-posta adresine bir kod gelecek. Giriş yapmak için kodu gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LoginCodeLearnMore",
+    "description": null,
+    "english": "Learn more about Login Codes",
+    "translation": "Giriş Kodlarıyla ilgili daha fazla bilgi edin",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.LoginCode",
     "description": "placeholder for login code field",
     "english": "Login Code",
     "translation": "Giriş Kodu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "Geçersiz e-posta adresi.\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "Tek Seferlik Roblox Kodun: {code}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Tek Seferlik Roblox Kodun: {boldStart}{code}{boldEnd}. Giriş yapmak için bu kodu giriş ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu kodu kimseyle {boldStart}paylaşma{boldEnd}. Biz {boldStart}asla{boldEnd} seninle iletişime geçip bu kodu vermeni istemeyiz. Bu kodu talep eden sen değilsen herhangi bir şey yapmana gerek yok. İstemediğin halde çok sayıda kod alıyorsan hesabına başka bir e-posta adresi bağlamanı ve {linkTagWithAuthenticatorHelpLinkStart}bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini{linkTagEnd} etkinleştirmeni tavsiye ederiz.{lineBreak}{lineBreak}Giriş talebinin geldiği yer: {geolocation}.{lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorOtpTimeWarning",
+    "description": "timeLimitSec will be a number",
+    "english": "Please select one within {timeLimitSec} seconds.",
+    "translation": "Lütfen {timeLimitSec} saniye içinde birini seç.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.IncorrectOtpCode",
+    "description": null,
+    "english": "Your code is incorrect. Please double check and try again.",
+    "translation": "Kodun yanlış. Lütfen kontrol edip tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "Bir sorun mu çıktı?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Doğrulama kodu almak için ebeveyninin e-posta adresini gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Giriş yapmak için Kurumsal ağda olmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Giriş yapmak için Kurumsal ağda olmalısın.",
     "isDeprecated": false
   },
   {
@@ -676,7 +844,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "SMS ile gönderdiğimiz kodu gir.",
+    "translation": "Kısa mesaj ile gönderdiğimiz kodu gir.",
     "isDeprecated": false
   },
   {
@@ -852,7 +1020,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Subject",
     "description": "Subject for 2SV activation email",
     "english": "2-Step Verification with Email Activated for Roblox Account: {accountName}",
-    "translation": "Roblox Hesabı için 2-Adımlı Doğrulama Etkinleştirildi: {accountName}",
+    "translation": "Roblox Hesabı İçin E-posta ile 2 Adımlı Doğrulama Etkinleştirildi: {accountName}",
     "isDeprecated": false
   },
   {
@@ -860,7 +1028,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Subject\t",
     "description": "Subject for 2SV deactivation email",
     "english": "2-Step Verification with Email Deactivated for Roblox Account: {accountName}",
-    "translation": "Roblox Hesabı için 2-Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}",
+    "translation": "Roblox Hesabı İçin E-posta ile 2 Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}",
     "isDeprecated": false
   },
   {
@@ -868,7 +1036,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Under13",
     "description": "Body for 2SV activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için 2-Adımlı Doğrulama etkinleştirildi. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla size göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için E-posta ile 2 Adımlı Doğrulama etkinleştirildi. Giriş yapma gibi bazı işlemleri gerçekleştirmesi için Roblox'un size e-postayla göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -876,7 +1044,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı etkinleştirdin. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla göndereceği 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için E-posta ile 2 Adımlı Doğrulama özelliğini etkinleştirdin. Giriş yapma gibi işlemleri gerçekleştirmek için Roblox'un sana e-postayla göndereceği 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -884,7 +1052,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı devre dışı bıraktın. Hesabına giriş yaptığında bir güvenlik kodu girmen gerekmeyecek.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için E-posta ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktın.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -892,7 +1060,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabında 2-Adımlı Doğrulama devre dışı bırakıldı. Hesaba giriş yaptığında bir güvenlik kodu girmesi gerekmeyecek.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için E-posta ile 2 Adımlı Doğrulama devre dışı bırakıldı.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1020,7 +1188,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd}, {emphasisStart}{accountName}{emphasisEnd} için Roblox 2 Adımlı Doğrulama kodundur.{paragraphEnd}{paragraphStart}Giriş yapmayı tamamlamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. 15 dakika sonra bu kodun süresi dolacak.{paragraphEnd}{paragraphStart}Bu giriş isteği, şuradan alındı: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkür Ederiz,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Giriş işlemini tamamlamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu giriş talebi {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1084,7 +1252,7 @@
     "key": "Label.RecoveryCodeMediaType",
     "description": "The name of the recovery code media type.",
     "english": "Backup Code",
-    "translation": "Kurtarma Kodu",
+    "translation": "Yedek Kod",
     "isDeprecated": false
   },
   {
@@ -1100,7 +1268,7 @@
     "key": "Label.EnterRecoveryCode",
     "description": "Summary for passing two step verification given a previously saved code.",
     "english": "Enter a previously saved backup code.",
-    "translation": "Daha önce kaydedilmiş bir kurtarma kodu gir.",
+    "translation": "Daha önce kaydettiğin bir yedek kodu gir.",
     "isDeprecated": false
   },
   {
@@ -1129,10 +1297,690 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator activation email for over 13 users",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için Doğrulama Uygulaması ile 2 Adımlı Doğrulama özelliğini etkinleştirdin. Giriş yapma gibi işlemleri gerçekleştirmek için doğrulama uygulamasından alacağın 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Doğrulama uygulamasına erişememe ihtimaline karşı yedek kodlarını bir yere kaydetmeyi unutma.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator activation email for under 13 users",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Doğrulama Uygulaması ile 2 Adımlı Doğrulama etkinleştirildi. Giriş yapma gibi işlemleri gerçekleştirebilmesi için doğrulama uygulamasından alacağı 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Doğrulama uygulamasına erişememe ihtimalinize karşı yedek kodlarınızı bir yere kaydetmeyi unutmayın.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator activation email.",
+    "english": "2-Step Verification with Authenticator Activated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Doğrulama Uygulaması ile 2-Adımlı Doğrulama Etkinleştirildi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için Doğrulama Uygulaması ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktın. Artık giriş yapma gibi işlemleri gerçekleştirmek için doğrulama uygulamasından güvenlik kodu alman gerekmeyecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator deactivation email for under 13 users",
+    "english": "Hello,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been deactivated for your child's Roblox account, {accountName}. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Doğrulama Uygulaması ile 2 Adımlı Doğrulama devre dışı bırakıldı. Artık giriş yapma gibi işlemleri gerçekleştirmek için doğrulama uygulamasından güvenlik kodu alması gerekmeyecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator deactivation email.",
+    "english": "2-Step Verification with Authenticator Deactivated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Doğrulama Uygulaması ile 2-Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Bu mesajı destek ekibimizin Roblox hesabın için Doğrulama Uygulaması ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğin bir destek biletinden veya hesabını korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için doğrulama uygulamasından güvenlik kodu alman gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsin.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacın varsa {spanStartTagWithBold}bu e-postaya yanıt verme{spanEndTag}, onun yerine mevcut destek biletini yanıtla veya buradan yeni bir destek talebinde bulun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Bu mesajı destek ekibimizin çocuğunuza ait {accountName} adlı Roblox hesabı için Doğrulama Uygulaması ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğiniz bir destek biletinden veya hesabınızı korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık çocuğunuzun giriş yapma gibi işlemleri gerçekleştirmek için doğrulama uygulamasından güvenlik kodu alması gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsiniz.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacınız varsa {spanStartTagWithBold}bu e-postaya yanıt vermeyin{spanEndTag}, onun yerine mevcut destek biletinizi yanıtlayın veya buradan yeni bir destek talebinde bulunun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Authenticator Deactivated by Roblox Support: {accountName}",
+    "translation": "Doğrulama Uygulaması ile 2 Adımlı Doğrulama Roblox Desteği Tarafından Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Bu mesajı destek ekibimizin Roblox hesabın için E-posta ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğin bir destek biletinden veya hesabını korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için güvenlik kodunu girmen gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsin.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacın varsa {spanStartTagWithBold}bu e-postaya yanıt verme{spanEndTag}, onun yerine mevcut destek biletini yanıtla veya buradan yeni bir destek talebinde bulun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Bu mesajı destek ekibimizin çocuğunuza ait {accountName} Roblox hesabı için E-posta ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğiniz bir destek biletinden veya hesabınızı korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık çocuğunuzun giriş yapma gibi işlemleri gerçekleştirmek için güvenlik kodu girmesi gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsiniz.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacınız varsa {spanStartTagWithBold}bu e-postaya yanıt vermeyin{spanEndTag}, onun yerine mevcut destek biletinizi yanıtlayın veya buradan yeni bir destek talebinde bulunun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Email Deactivated by Roblox Support: {accountName}",
+    "translation": "E-posta ile 2 Adımlı Doğrulama Roblox Desteği Tarafından Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}All valid backup codes have been used on your child's Roblox account, {accountName}. To avoid getting locked out, they can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak} Yedek kodların tamamı çocuğunuzun {accountName} adlı Roblox hesabında kullanıldı. Çocuğunuz hesaba girmek için {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeni yedek kod üretebilir.{lineBreak}{lineBreak}ÖNEMLİ: Yedek kodları kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Yedek kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak} Yedek kodların tamamını kullandın. Hesaba girmek için {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeni yedek kod üretebilirsin.{lineBreak}{lineBreak}ÖNEMLİ: Yedek kodlarını kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Yedek kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.Subject",
+    "description": null,
+    "english": "No Remaining Backup Codes for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Yedek Kod Kalmadı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Subject",
+    "description": "Subject for email when 2SV is triggered by a virtual purchase.",
+    "english": "Roblox Virtual Purchase Verification Request: {accountName}",
+    "translation": "Roblox Sanal Satın Alım Doğrulama Talebi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.HtmlBody",
+    "description": null,
+    "english": "{geoLocationInformation}{spanStartTagWithBold}Virtual transaction code for {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request.{lineBreak}{lineBreak}Resources:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Change Your Password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More About 2-Step Verification{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Keeping Your Account Safe{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}General Roblox Support{aTagEnd} {lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}{spanStartTagWithBold}{accountName} için sanal alışveriş kodu: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Sanal alışverişini onaylamak için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabında yapılan işlemler şüphe uyandırdığı için gönderildi. Roblox'ta alışveriş yapmaya çalışmadıysan başka biri hesabına erişmeye çalışıyor olabilir. Böyle bir talepte bulunmadıysan şifreni değiştirmeni tavsiye ederiz.{lineBreak}{lineBreak}Kaynaklar:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Şifreni Değiştir{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2 Adımlı Doğrulama Hakkında Daha Fazla Bilgi Edin{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Hesabını Güvende Tutmak{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Genel Roblox Desteği{aTagEnd} {lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.PlainBody",
+    "description": null,
+    "english": "{geoLocationInformation}Virtual transaction code for {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request. {lineBreak}{lineBreak}Resources: {lineBreak}Change Your Password [{accountInfoPageLink}] {lineBreak}Learn More About 2-Step Verification [{twoStepVerificationHelpArticleLink}]{lineBreak}Keeping Your Account Safe [{keepAccountSafeArticleLink}] {lineBreak}General Roblox Support [{supportPageLink}] {lineBreak}{lineBreak}Thank you, {lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}{accountName} için sanal alışveriş kodu: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Sanal alışverişini onaylamak için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabında yapılan işlemler şüphe uyandırdığı için gönderildi. Roblox'ta alışveriş yapmaya çalışmadıysan başka biri hesabına erişmeye çalışıyor olabilir. Böyle bir talepte bulunmadıysan şifreni değiştirmeni tavsiye ederiz. {lineBreak}{lineBreak}Kaynaklar: {lineBreak}Şifreni Değiştir [{accountInfoPageLink}] {lineBreak}2 Adımlı Doğrulama Hakkında Daha Fazla Bilgi Edin [{twoStepVerificationHelpArticleLink}]{lineBreak}Hesabını Güvende Tutmak [{keepAccountSafeArticleLink}] {lineBreak}Genel Roblox Desteği [{supportPageLink}] {lineBreak}{lineBreak}Teşekkürler, {lineBreak}{lineBreak}Roblox Ekibi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Sanal alışveriş işlemini doğrulamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu giriş talebi {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox virtual transaction activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı Roblox'ta hesabından çok sayıda sanal alışveriş işlemi yapıldığı için alıyorsun. Böyle bir talepte bulunmadıysan şifreni değiştirmeni şiddetle tavsiye ederiz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Bod",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Sanal alışveriş işlemini doğrulamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu giriş talebi {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.Footer.GeneratedBy",
+    "description": null,
+    "english": "This message was generated by {environmentIdentifier}.",
+    "translation": "Bu mesaj {environmentIdentifier} tarafından oluşturuldu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerification",
+    "description": "robux spend friction",
+    "english": "You have successfully verified!",
+    "translation": "Başarılı bir şekilde doğruladın!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.InvalidCodeTryAgain",
+    "description": "robux spend friction",
+    "english": "Invalid code. Please try again.",
+    "translation": "Geçersiz kod. Lütfen tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.VerificationError",
+    "description": "robux spend friction",
+    "english": "System error occurred during verification.",
+    "translation": "Doğrulama sırasında sistemde hata meydana geldi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequired",
+    "description": "robux spend friction",
+    "english": "2-Step Verification is required to make further transactions.",
+    "translation": "Daha fazla satın alım yapabilmen için 2 Adımlı Doğrulama gerekli.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Sanal alışveriş işlemini doğrulamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu giriş talebi {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerificationV2",
+    "description": "robux spend friction",
+    "english": "You have successfully verified! Please retry your previous action.",
+    "translation": "Başarılı bir şekilde doğruladın! Lütfen az önceki işlemi tekrar yapmayı dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequiredV2",
+    "description": null,
+    "english": "Verification is required to continue with your previous action.",
+    "translation": "İşleme devam edebilmen için doğrulama yapman gerekiyor.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SystemErrorSwitchingToEmail",
+    "description": "Error message that appears when someone tries to switch to email as a two step verification method but fails.",
+    "english": "Error sending email code. Please choose alternate verification method or try again later.",
+    "translation": "E-posta kodunu gönderirken bir hata meydana geldi. Lütfen alternatif bir doğrulama yöntemi seç veya tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.VerificationRequiredForAction",
+    "description": null,
+    "english": "Verification is required to perform this action.",
+    "translation": "Bu işlemi gerçekleştirmek için doğrulama gerekli.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Heading.VerifyAccount",
+    "description": null,
+    "english": "Verify Account",
+    "translation": "Hesabı Doğrula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.DefaultError",
+    "description": null,
+    "english": "An error occurred. Please try again.",
+    "translation": "Hata meydana geldi. Lütfen tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SessionExpired",
+    "description": null,
+    "english": "Session has expired. Please try again.",
+    "translation": "Oturumun süresi doldu. Lütfen tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Reload",
     "description": null,
     "english": "Reload",
     "translation": "Yeniden Yükle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your trade. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Takas işlemini doğrulamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu giriş talebi {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Subject",
+    "description": null,
+    "english": "Roblox Trade Verification Request: {accountName}",
+    "translation": "Roblox Takas Doğrulama Talebi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox trade activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı Roblox'ta hesabından çok sayıda takas işlemi yapıldığı için alıyorsun. Böyle bir talepte bulunmadıysan şifreni değiştirmeni şiddetle tavsiye ederiz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Resale Verification Request: {accountName}",
+    "translation": "Roblox Yeniden Satış Doğrulama Talebi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased resale activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı Roblox'ta hesabından çok sayıda yeniden satış işlemi yapıldığı için alıyorsun. Böyle bir talepte bulunmadıysan şifreni değiştirmeni şiddetle tavsiye ederiz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your resale. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Yeniden satış işlemini doğrulamak için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu talep {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue your password reset. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Şifre sıfırlama işlemine devam etmek için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu talep {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to reset your password.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı şifren değiştirilmeye çalışıldığı için alıyorsun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Password Reset Request: {accountName}",
+    "translation": "Roblox Şifre Değiştirme Talebi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSLogin.Body",
+    "description": "SMS message for 2sv login.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to verify your account",
+    "translation": "{accountName} için Roblox 2 Adımlı Doğrulama: Lütfen hesabını doğrulamak için {code} kodunu gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSActivationText.Body",
+    "description": "SMS message for activating SMS 2sv.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to activate 2SV.",
+    "translation": "{accountName} için Roblox 2 Adımlı Doğrulama: Lütfen 2 Adımlı Doğrulamayı etkinleştirmek için {code} kodunu gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
+    "description": "SMS message for disabling SMS 2sv.",
+    "english": "Roblox 2SV for {accountName} disabled.",
+    "translation": "{accountName} için Roblox 2 Adımlı Doğrulama devre dışı bırakıldı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSCustomerSupportDeactivationText.Body",
+    "description": "SMS message for CS deactivation of SMS 2sv.",
+    "english": "Customer support has deactivated 2SV for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from SMS will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in Account Settings under “Security”.",
+    "translation": "Müşteri Desteği, Roblox hesabının 2 Adımlı Doğrulama özelliğini devre dışı bıraktı. Bu durum genelde gönderdiğin bir destek biletinden veya hesabını korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için SMS güvenlik koduna ihtiyacın olmayacak. 2 Adımlı Doğrulama özelliğini Hesap Ayarlarındaki “Güvenlik” sekmesinden tekrar etkinleştirebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSRecoveryCodeDepletedText",
+    "description": "SMS message for when out of recovery codes.",
+    "english": "You have no remaining 2SV account backup codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
+    "translation": "Roblox hesabına ait yedek 2 Adımlı Doğrulama kodlarının tamamını kullandın. Hesabını kurtarmaya yönelik daha fazla yardım almak için müşteri desteğiyle iletişime geç.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "{accountName} için Roblox 2 Adımlı Doğrulama etkinleştirildi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SmsMediaType",
+    "description": "Name of SMS media type",
+    "english": "SMS",
+    "translation": "SMS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Hesabındaki değişiklikleri geri alma işlemine devam etmek için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu talep {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı hesabındaki bazı değişiklikler geri alınmaya çalışıldığı için alıyorsun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "Roblox Hesap Değişikliklerini Geri Alma Talebi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Over13",
+    "description": "Email to user when activating SMS 2SV.",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Text Messages for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için Kısa Mesaj ile 2 Adımlı Doğrulama özelliğini etkinleştirdin. Giriş yapma gibi işlemleri gerçekleştirmek için Roblox'un sana SMS ile göndereceği 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için SMS ile 2 Adımlı Doğrulama etkinleştirildi. Giriş yapma gibi işlemleri gerçekleştirmek için Roblox'un size SMS ile göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Under13",
+    "description": "Email when user activates SMS 2SV.",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Kısa Mesaj ile 2 Adımlı Doğrulama etkinleştirildi. Giriş yapma gibi işlemleri gerçekleştirmek için Roblox'un size Kısa Mesaj ile göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Kısa Mesaj ile 2 Adımlı Doğrulama Etkinleştirildi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.Subject",
+    "description": "Email to send when CS deactivates SMS 2SV",
+    "english": "2-Step Verification with Text Messages Deactivated by Roblox Support: {accountName}",
+    "translation": "Kısa Mesaj ile 2 Adımlı Doğrulama Roblox Desteği Tarafından Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Over13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Text Messages for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Hesabın için Kısa Mesaj ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktın.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Under13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Kısa Mesaj ile 2 Adımlı Doğrulama devre dışı bırakıldı.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Subject",
+    "description": "Email Subject when user deactivates SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Deactivated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Kısa Mesaj ile 2 Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Bu mesajı destek ekibimizin Roblox hesabın için Kısa Mesaj ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğin bir destek biletinden veya hesabını korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için güvenlik kodunu girmen gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsin.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacın varsa {spanStartTagWithBold}bu e-postaya yanıt verme{spanEndTag}, onun yerine mevcut destek biletini yanıtla veya buradan yeni bir destek talebinde bulun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Bu mesajı destek ekibimizin çocuğunuza ait {accountName} adlı Roblox hesabı için Kısa Mesaj ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek için gönderiyoruz. Bu durum genelde gönderdiğiniz bir destek biletinden veya hesabınızı korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Çocuğunuzun artık giriş yapma gibi işlemleri gerçekleştirmek için güvenlik kodu girmesi gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsiniz.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacınız varsa {spanStartTagWithBold}bu e-postaya yanıt vermeyin{spanEndTag}, onun yerine mevcut destek biletinizi yanıtlayın veya buradan yeni bir destek talebinde bulunun: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "{accountName} İçin 2 Adımlı Doğrulama Değişikliği",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Merhaba,{lineBreak}{lineBreak}{accountName} adlı hesabın için kullandığın {disabledTwoStepMethod} ile 2 Adımlı Doğrulama yöntemini {enabledTwoStepMethod} olarak değiştirdin. Böyle bir talepte bulunmadıysan hesabını kurtarmak için hemen Müşteri Desteği ile iletişime geç.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için kullandığınız {disabledTwoStepMethod} ile 2 Adımlı Doğrulama yöntemini {enabledTwoStepMethod} olarak değiştirdiniz. Böyle bir talepte bulunmadıysanız hesabınızı kurtarmak için hemen Müşteri Desteği ile iletişime geçin.{lineBreak}{lineBreak}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşmayın. Roblox hiçbir zaman sizden kodunuzu talep etmez. Buna kodunuzu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunuzu başkasıyla paylaşırsanız hesabınızı ve hesabınızdaki içeriği büyük riske atmış olursunuz.{lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.VerifyWithSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.",
+    "translation": "Giriş yapmak için Güvenlik Anahtarı kullan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyMediaType",
+    "description": null,
+    "english": "Security Key",
+    "translation": "Güvenlik Anahtarı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UseSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.{lineBreak}When prompted, touch your key or use biometrics on this device.",
+    "translation": "Giriş yapmak için Güvenlik Anahtarı kullan.{lineBreak}Komut gelince anahtara dokun veya cihazdaki biyometrik doğrulama özelliğini kullan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox 2-Step Verification: {accountName}",
+    "translation": "Roblox 2 Adımlı Doğrulama: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because 2-Step Verification was required to complete your desired action.",
+    "translation": "Bu e-postayı doğrudan yanıtlama. Bu e-postayı, yapmaya çalıştığın işlem 2 Adımlı Doğrulama gerektirdiği için alıyorsun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue taking your desired action. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Merhaba,{paragraphEnd}{paragraphStart}{emphasisStart}{accountName}{emphasisEnd} adlı hesabın için Roblox 2 Adımlı Doğrulama kodun: {emphasisStart}{code}{emphasisEnd}{paragraphEnd}{paragraphStart}Yapmaya çalıştığın işleme devam etmek için yukarıdaki kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{paragraphEnd}{paragraphStart}Bu talep {emphasisStart}{geoLocationInformation}{emphasisEnd} konumundan yapıldı.{paragraphEnd}{paragraphStart}ÖNEMLİ: Güvenlik kodunu kimseyle paylaşma. Roblox hiçbir zaman senden kodunu talep etmez. Buna kodunu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir. Güvenlik kodunu başkasıyla paylaşırsan hesabını ve hesabındaki içeriği büyük riske atmış olursun.{paragraphEnd}{lineBreak}{paragraphStart}Teşekkürler,{lineBreak}{emphasisStart}Roblox Ekibi{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyDirections",
+    "description": null,
+    "english": "When prompted, touch your key or use biometrics on this device.",
+    "translation": "Komut geldiğinde anahtara dokun veya cihazdaki biyometrik doğrulama özelliğini kullan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Security Key for your Roblox account. For some actions like logging in, you will need to have your security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliğini etkinleştirdin. Giriş yapma gibi işlemleri gerçekleştirmek için güvenlik anahtarına ihtiyacın olacak.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.EmailSubject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Activated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Güvenlik Anahtarı ile 2 Adımlı Doğrulama Etkinleştirildi: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to have their security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliği etkinleştirildi. Çocuğunuzun giriş yapma gibi işlemleri gerçekleştirmek için güvenlik anahtarını kullanması gerekecek.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated by Roblox Support: {accountName}",
+    "translation": "Güvenlik Anahtarı ile 2 Adımlı Doğrulama Roblox Desteği Tarafından Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Bu mesajı destek ekibimizin Roblox hesabın için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek adına gönderiyoruz. Bu durum genelde gönderdiğin bir destek biletinden veya hesabını korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için güvenlik kodunu girmen gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsin.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacın varsa {spanStartTagWithBold}bu e-postaya yanıt verme{spanEndTag}, onun yerine mevcut destek biletini yanıtla veya buradan yeni bir destek talebinde bulun:{aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Bu mesajı destek ekibimizin çocuğunuza ait {accountName} adlı Roblox hesabı için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktığını bildirmek adına gönderiyoruz. Bu durum genelde gönderdiğiniz bir destek biletinden veya hesabınızı korumak için alınmış bir güvenlik önleminden dolayı meydana gelir. Artık giriş yapma gibi işlemleri gerçekleştirmek için güvenlik anahtarı gerekmeyecek. 2 Adımlı Doğrulama özelliğini {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}hesap ayarlarından{aTagEnd} yeniden etkinleştirebilirsiniz.{lineBreak}{lineBreak}Daha fazla yardıma ihtiyacınız varsa {spanStartTagWithBold}bu e-postaya yanıt vermeyin{spanEndTag}, onun yerine mevcut destek biletinizi yanıtlayın veya buradan yeni bir destek talebinde bulunun:{aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Desteği{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated for Roblox Account: {accountName}",
+    "translation": "Roblox Hesabı İçin Güvenlik Anahtarı ile 2 Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Security Key for your Roblox account.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliğini devre dışı bıraktın.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Merhaba ,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için Güvenlik Anahtarı ile 2 Adımlı Doğrulama özelliği devre dışı bırakıldı.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}ÖNEMLİ:{boldEnd} Güvenlik kodunun kimseyle paylaşılmaması gerekir. Roblox hiçbir zaman bu kodları talep etmez. Buna kodu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}ÖNEMLİ:{boldEnd} Yedek kodların kimseyle paylaşılmaması gerekir. Roblox hiçbir zaman bu kodları talep etmez. Buna kodu mesajla göndermek, ekran paylaşmak vb. talepler de dahildir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "Bu kod zaten kullanıldı. Lütfen yeni bir kod gir.",
     "isDeprecated": false
   },
   {
@@ -1161,10 +2009,42 @@
   },
   {
     "namespace": "Authentication.Captcha",
+    "key": "Header.PleaseConfirmYouAreHuman",
+    "description": null,
+    "english": "Please Confirm You Are Human",
+    "translation": "Lütfen İnsan Olduğunu Doğrula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Message.Error.Default",
+    "description": null,
+    "english": "An unknown error occurred while displaying captcha.",
+    "translation": "Captcha görüntülenirken bilinmeyen bir hata meydana geldi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
     "translation": "Lütfen tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Header.RobotChallenge",
+    "description": null,
+    "english": "Robot Challenge",
+    "translation": "Robot Sınaması",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Description.VerifyingYouAreNotBot",
+    "description": null,
+    "english": "Verifying you're not a bot",
+    "translation": "Robot olmadığını doğrula",
     "isDeprecated": false
   },
   {
@@ -1945,10 +2825,26 @@
   },
   {
     "namespace": "Authentication.ResetPassword",
+    "key": "Message.AccountSecurityTicketExpired",
+    "description": "can't revert cuz ticket is expired.",
+    "english": "The account security ticket is expired.",
+    "translation": "Hesaba ait güvenlik biletinin süresi doldu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordComplex",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Lütfen farklı bir şifre dene. Özel karakter ve sayılar kullanmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
     "key": "MessageDifferentPasswordComplexShort",
     "description": "A shorter error message for users that use a weak password.",
     "english": "Please create a more complex password.",
-    "translation": "Lütfen daha karmaşık bir şifre oluştur.",
+    "translation": "Lütfen daha zor bir şifre oluştur.",
     "isDeprecated": false
   },
   {
@@ -1964,7 +2860,23 @@
     "key": "MessagePasswordContainsUsername",
     "description": "An error message for users that try to use his/her username for new password.",
     "english": "Password shouldn't match username.",
-    "translation": "Şifreler ve kullanıcı adları aynı olmamalı.",
+    "translation": "Şifren ve kullanıcı adın aynı olmamalı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordRequired",
+    "description": "An error message if the user's proposed password fails the backend password validation.",
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Lütfen farklı bir şifre dene. Özel karakter ve sayılar kullanmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "\"Devam Et\"e bastığında telefon numaranı göndermiş ve {linkTagWithSmsTos}SMS Kullanım Koşullarımız{linkTagEnd} ile {linkTagWithPrivacyPolicy}Gizlilik Politikamızı{linkTagEnd} kabul etmiş olacaksın. Sana tek seferlik bir doğrulama kodu göndereceğiz. Mesaj ve veri ücreti uygulanabilir. Yardım için YARDIM yaz.",
     "isDeprecated": false
   },
   {
@@ -2740,7 +3652,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Hesaba giriş yapılamıyor. Lütfen LuoBu uygulamasına giriş yap.",
+    "translation": "Hesaba giriş yapılamıyor.",
     "isDeprecated": false
   },
   {
@@ -2785,6 +3697,54 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Label.ParentEmailAddress",
+    "description": null,
+    "english": "Parent's Email Address",
+    "translation": "Ebeveynin E-posta Adresi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePhoneNumber",
+    "description": null,
+    "english": "Use phone number",
+    "translation": "Telefon numarası kullan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email address",
+    "translation": "E-posta adresi kullan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePasswordPlaceholder",
+    "description": null,
+    "english": "Enter your password again",
+    "translation": "Şifreni tekrar gir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePassword",
+    "description": null,
+    "english": "Confirm Password",
+    "translation": "Şifreyi Onayla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.CodeResent",
+    "description": null,
+    "english": "Code Resent",
+    "translation": "Kod Yeniden Gönderildi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Response.InvalidPassword",
     "description": null,
     "english": "Invalid password.",
@@ -2793,10 +3753,186 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "Hesap başarıyla oluşturuldu fakat şu anda giriş yapılamıyor. Lütfen daha sonra tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Lütfen farklı bir şifre dene. Özel karakter ve sayılar kullanmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "Devam etmek için Kullanım Koşulları ve Gizlilik Politikasını kabul etmelisin",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Body",
+    "description": null,
+    "english": "{paragraphStart}Your child is requesting to create the account {emphasisStart}{userName}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address to create an account. In order for your child to complete the account creation process, you must consent to your child’s use of Roblox. You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you and your child agree to the Roblox {aTagStartWithHref}{termsLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Verification Code: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}Parent's Guide To Roblox{emphasisEnd}{paragraphEnd}{paragraphStart}We recommend that you visit our {aTagStartWithHref}{parentsLink}{hrefEnd}Parent’s Guide{aTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Privacy{emphasisEnd}{paragraphEnd}{paragraphStart}You may remove your child's account anytime by contacting customer service at {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our {aTagStartWithHref}{privacyPolicyLink}{hrefEnd}Privacy Policy{aTagEnd} for more information.{paragraphEnd}",
+    "translation": "{paragraphStart}Çocuğunuz Roblox'ta {emphasisStart}{userName}{emphasisEnd} adlı bir hesap açma talebinde bulundu. Roblox, çocukların kullanıcılar tarafından tasarlanan heyecan verici 3B dünyalarda hep birlikte hayal kurmasına, üretmesine ve oynamasına olanak tanıyan çevrimiçi bir eğlence platformudur.{paragraphEnd}{paragraphStart}Çocuğunuz hesap oluşturmak için bize bir kullanıcı adı, doğum tarihi ve ebeveyninin e-posta adresini verdi. Hesap oluşturma işlemini tamamlamak için çocuğunuzun Roblox oynamasına rıza göstermelisiniz. Kayıt sürecini tamamlamak ve çocuğunuzun Roblox'u kullanmasına rıza göstermek için aşağıdaki kodu girin. Kodu girerek tahkim şartı da dahil olmak üzere {aTagStartWithHref}{termsLink}{hrefEnd}Kullanım Koşullarını{aTagEnd} kabul etmiş sayılırsınız, ayrıca (b) çocuğunuzu gözeteceğinizi ve çocuğunuzun Roblox kullanımından tamamen sorumlu olacağınızı da kabul etmiş olursunuz.{paragraphEnd}{paragraphStart}{emphasisStart}Doğrulama Kodu: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}Ebeveynler İçin Roblox Rehberi{emphasisEnd}{paragraphEnd}{paragraphStart}Platformu daha yakından tanımak ve çocuğunuz için olumlu bir Roblox deneyimi yaratmaya yönelik ipuçlarından faydalanmak için {aTagStartWithHref}{parentsLink}{hrefEnd}Ebeveyn Rehberimizi{aTagEnd} okumanızı tavsiye ederiz.{paragraphEnd}{paragraphStart}{emphasisStart}Gizlilik{emphasisEnd}{paragraphEnd}{paragraphStart}Müşteri hizmetleriyle buradan iletişime geçerek çocuğunuzun hesabını istediğiniz zaman sildirebilirsiniz: {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd}. E-posta adresiniz başka bir amaçla kullanılmayacak, üçüncü taraflarla paylaşılmayacak veya çocuğunuzdan edinilen diğer kişisel bilgilerle birleştirilmeyecek. Lütfen daha fazla bilgi için {aTagStartWithHref}{privacyPolicyLink}{hrefEnd}Gizlilik Politikamıza{aTagEnd} göz atın.{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Description.VerifiedParentalConsentEmail.Links",
     "description": null,
     "english": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Account Safety{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Support{aTagEnd}",
     "translation": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Daha Fazlasını Öğren{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Hesap Güvenliği{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Destek{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there has been an attempt to sign up for a Roblox account with your email. If you did not make this request, please disregard this email.",
+    "translation": "Bu e-postayı doğrudan yanıtlamayın. Bu e-postayı, e-posta adresiniz ile Roblox hesabı açılmaya çalışıldığı için alıyorsunuz. Böyle bir talepte bulunmadıysanız lütfen bu e-postayı görmezden gelin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Subject",
+    "description": null,
+    "english": "Approval Request To Sign Up For Roblox",
+    "translation": "Roblox'a Kayıt Onayı Talebi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code. ",
+    "translation": "Doğrulama kodu almak için ebeveyninin e-posta adresini gir. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerifiedParentalConsentModal.ExampleEmail",
+    "description": null,
+    "english": "example@email.com",
+    "translation": "örnek@eposta.com",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.AddHeader",
+    "description": null,
+    "english": "Add Parent's Email",
+    "translation": "Ebeveyn E-posta Adresini Ekle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.VerifyHeader",
+    "description": null,
+    "english": "Verify Your Parent's Email",
+    "translation": "Ebeveyninin E-posta Adresini Doğrula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to {email}",
+    "translation": "{email} adresine gönderdiğimiz kodu gir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerifiedParentalConsentModal.ChangeEmail",
+    "description": null,
+    "english": "Change Email Address",
+    "translation": "E-posta Adresini Değiştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterContinue",
+    "description": null,
+    "english": "By entering the code and clicking Continue, you are giving consent to your child to access Roblox.",
+    "translation": "Kodu girip Devam Et'e tıklayarak çocuğunuzun Roblox'a erişmesine rıza göstermiş olursunuz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.VerifiedParentalConsentModal.ResendCode",
+    "description": null,
+    "english": "Resend Code ({time})",
+    "translation": "Kodu Tekrar Gönder ({time})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Doğrulama kodu almak için ebeveyninin e-posta adresini gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "Doğrulama Kodu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "{termsOfUseLink} sözleşmesini okudum ve kabul ediyorum.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "{privacyPolicyLink} bildirisini anladım",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "Ebeveyninin e-posta adresine gönderdiğimiz kodu gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "Kodu girerek çocuğunuzun Roblox'a erişmesine rıza göstermiş olursunuz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Büyük harf, küçük harf ve sayılardan oluşan bir şifre gerekli.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Büyük harf, küçük harf ve sayılardan oluşan bir şifre gerekli.",
     "isDeprecated": false
   },
   {
@@ -2865,10 +4001,34 @@
   },
   {
     "namespace": "Common.AlertsAndOptions",
+    "key": "Description.KoreaScreentimeToastText",
+    "description": "Alert text showing to korea user how many hours they've been playing",
+    "english": "Excessive experience use can interfere with normal daily life. You have visited on Roblox for {NumberOfHours} hour(s).",
+    "translation": "Uzun süreli bir oyun deneyimi günlük yaşantına engel olabilir. {NumberOfHours} saattir Roblox'ta vakit geçiriyorsun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Title.Warning",
+    "description": "Warning title shows on toast alert",
+    "english": "Warning",
+    "translation": "Uyarı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
     "key": "Action.OK",
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
-    "translation": "TAMAM",
+    "translation": "Tamam",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "Ana İçeriğe Geç",
     "isDeprecated": false
   },
   {
@@ -3412,7 +4572,15 @@
     "key": "Action.Done",
     "description": null,
     "english": "Done",
-    "translation": "Tamam",
+    "translation": "Tamamlandı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Refresh",
+    "description": null,
+    "english": "Refresh",
+    "translation": "Yenile",
     "isDeprecated": false
   },
   {
@@ -3668,7 +4836,7 @@
     "key": "Label.Players",
     "description": "search context for user search",
     "english": "People",
-    "translation": "Oyuncular",
+    "translation": "Kişiler",
     "isDeprecated": false
   },
   {
@@ -3724,7 +4892,7 @@
     "key": "Label.CreateGame",
     "description": "Create Game",
     "english": "Create Experience",
-    "translation": "Oyun Oluştur",
+    "translation": "Deneyim Oluştur",
     "isDeprecated": false
   },
   {
@@ -3756,7 +4924,7 @@
     "key": "Label.ConfigureGame",
     "description": "configure game page title",
     "english": "Configure Experience",
-    "translation": "Oyunu Yapılandır",
+    "translation": "Deneyimi Yapılandır",
     "isDeprecated": false
   },
   {
@@ -3900,7 +5068,7 @@
     "key": "Description.UnsupportedLanguage",
     "description": null,
     "english": "While some experiences may use the selected language, it is not fully supported by roblox.com.",
-    "translation": "Bazı oyunlar seçilen dili kullanıyor olsa da bu dil roblox.com tam olarak desteklenmemektedir.",
+    "translation": "Seçilen dil bazı deneyimlerde kullanılıyor olsa da bu dil roblox.com tarafından tamamen desteklenmemektedir.",
     "isDeprecated": false
   },
   {
@@ -4020,7 +5188,47 @@
     "key": "Label.MyMoney",
     "description": null,
     "english": "My Transactions",
-    "translation": "Param",
+    "translation": "Alışverişlerim",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "Erişilebilirlik",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Experience",
+    "description": null,
+    "english": "Experiences",
+    "translation": "Deneyimler",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Heading.PrivateServers",
+    "description": null,
+    "english": "Private Servers",
+    "translation": "Özel Sunucular",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.CreatorMarketplace",
+    "description": "a storefront for assets, similar to the Library",
+    "english": "Creator Marketplace",
+    "translation": "Üretici Pazarı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Robux10PercentMore",
+    "description": "10% more label on the Robux Menu button",
+    "english": "10% More",
+    "translation": "%10 Daha Fazla",
     "isDeprecated": false
   },
   {
@@ -4353,6 +5561,14 @@
   },
   {
     "namespace": "CommonUI.Messages",
+    "key": "Description.ErrorPageCheckStatus",
+    "description": "message shown on common error pages, directing users to the Roblox status page",
+    "english": "If you continue to receive this message, check out {startLink}our status{endLink}.",
+    "translation": "Bu mesajı almaya devam edersen lütfen {startLink}sunucu durumumuzu{endLink} kontrol et.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
     "key": "Action.Accept",
     "description": "Accept button for Cookie Banner",
     "english": "Accept All",
@@ -4365,6 +5581,30 @@
     "description": "Decline button for Cookie Banner",
     "english": "Decline All",
     "translation": "Tümünü Reddet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirection",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking.",
+    "translation": "Bu sayfa Üretici Panosu kısmına taşındı. Şuraya tıklayarak güncellenmiş sayfayı kullanabilirsin:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[Buraya Tıkla]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionMessage",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkText}.",
+    "translation": "Bu sayfa Üretici Panosu kısmına taşındı. Buraya tıklayarak güncellenmiş sayfayı kullanabilirsin: {linkText}",
     "isDeprecated": false
   },
   {
@@ -5849,10 +7089,154 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeLong",
+    "description": null,
+    "english": "Keep Your Account Safe With 2-Step Verification Via Authenticator",
+    "translation": "Doğrulama Uygulamasıyla 2 Adımlı Doğrulamayı Etkinleştir, Hesabını Güvende Tut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeShort",
+    "description": null,
+    "english": "Keep Your Account Safe With Authenticator",
+    "translation": "Doğrulama Uygulamasıyla Hesabını Güvende Tut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNew",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to make your account more secure. This would help keep your account safe even if your password or email is stolen. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Bu sayede şifren veya e-posta adresin çalınsa bile hesabın güvende kalır. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. Daha fazla bilgi için {linkStart}yardım sayfamızı{linkEnd} ziyaret edebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNewShort",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to keep your account safe. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. Daha fazla bilgi için {linkStart}yardım sayfamızı{linkEnd} ziyaret edebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestorePolicyMessageSubject",
+    "description": null,
+    "english": "Enable 2-step verification via authenticator to keep your account safe",
+    "translation": "Hesabını güvende tutmak için doğrulama uygulamasıyla 2 Adımlı Doğrulama özelliğini etkinleştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestorePolicyMessageBody",
+    "description": null,
+    "english": "Hi, {lineBreak}{lineBreak}We recommend that you enable 2-step verification via an authenticator app to make your account more secure. This will help keep your account safe even if your password or email is stolen. In the event that your account is ever compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. {lineBreak}{lineBreak}You can set up an authenticator app on your account by going to {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}For more information, please visit our {helpPageLinkStart}help page{linkEnd}.",
+    "translation": "Merhaba, {lineBreak}{lineBreak}Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Bu sayede şifren veya e-posta adresin çalınsa bile hesabın güvende kalır. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. {lineBreak}{lineBreak}{securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd} adresini ziyaret ederek hesabına bağlı bir doğrulama uygulaması kurabilirsin.{lineBreak}{lineBreak}Daha fazla bilgi için lütfen {helpPageLinkStart}yardım sayfamızı{linkEnd} ziyaret et.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.TwoStepVerificationUpdate",
+    "description": null,
+    "english": "2-Step Verification Update",
+    "translation": "2 Adımlı Doğrulama Güncellemesi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmail",
+    "description": null,
+    "english": "You have recently had 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Yakın zamanda hem e-posta hem doğrulama uygulaması üzerinden 2 Adımlı Doğrulama özelliğini etkinleştirdin. Çoğu durumda hesabını güvende tutmak adına yalnızca doğrulama uygulamasıyla doğrulama yapmana izin verilecek.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmailPresent",
+    "description": null,
+    "english": "You currently have 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Şu anda hem e-posta hem doğrulama uygulaması ile 2 Adımlı Doğrulama özelliği açık. Çoğu durumda hesabını güvende tutmak adına yalnızca doğrulama uygulamasıyla doğrulama yapmana izin verilecek.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.LearnMoreHere",
+    "description": null,
+    "english": "Learn more {linkStart}here{linkEnd}.",
+    "translation": "{linkStart}Buradan{linkEnd} daha fazlasını öğrenebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "Hesabını Daha Güvenli Hale Getir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "Deneyimlerini, robux paranı, sınırlı süreli öğelerini, gruplarını ve daha fazlasını güvende tutmak için başka bir cihazdan güvenlik kodu al.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorInBanner",
     "description": "Banner text for setting up authenticator through broad upsell.",
     "english": "Set Up Authenticator",
     "translation": "Kimlik Doğrulayıcıyı Ayarla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "Doğrulama Uygulamasıyla 2 Adımlı Doğrulamayı Etkinleştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Bunu {linkStart}Hesap Ayarları{linkEnd} sayfasından yapabilirsin. Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "Lütfen hesabını korumak için 2 Aşamalı Doğrulama özelliğini etkinleştir. Bunu {linkStartSettings}Hesap Ayarları{linkEndSettings} sayfasından yapabilirsin.{lineBreak}{lineBreak}Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir. {linkStartHelp}Yardım sayfasından{linkEndHelp} bu konuda daha fazla bilgi edinebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "Hesabını Koru!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Lütfen hesabını korumak için 2 Aşamalı Doğrulama özelliğini etkinleştir. Bunu {linkStartSettings}Hesap Ayarları{linkEndSettings} sayfasından yapabilirsin. Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
     "isDeprecated": false
   },
   {
@@ -5868,7 +7252,15 @@
     "key": "Action.Confirm",
     "description": null,
     "english": "Confirm",
-    "translation": "Doğrula",
+    "translation": "Onayla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Action.PickN",
+    "description": null,
+    "english": "Pick {count}.",
+    "translation": "{count} seçim yap.",
     "isDeprecated": false
   },
   {
@@ -5881,10 +7273,74 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Action.SelectAllThatApply",
+    "description": null,
+    "english": "Select all that apply.",
+    "translation": "Geçerli olanların hepsini seç.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.VerifyYourIdentity",
+    "description": null,
+    "english": "To keep your account secure, please verify your identity.",
+    "translation": "Hesabını güvende tutmak için lütfen kimliğini doğrula.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.WhichGames",
+    "description": null,
+    "english": "Which of these experiences have you joined in the last {days} days?",
+    "translation": "Geçtiğimiz {days} gün içinde bu deneyimlerden hangisine dahil oldun?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Header.PleaseConfirmYourIdentity",
+    "description": null,
+    "english": "Please Confirm Your Identity",
+    "translation": "Lütfen Kimliğini Doğrula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
     "translation": "Beklenmedik bir hata meydana geldi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.MustPickN",
+    "description": null,
+    "english": "You must pick the required number of choices.",
+    "translation": "Gerekli sayıda seçim yapmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.SessionInactive",
+    "description": null,
+    "english": "Session has expired.",
+    "translation": "Oturumun süresi doldu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownGame",
+    "description": null,
+    "english": "Unknown Game",
+    "translation": "Bilinmeyen Oyun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownChoice",
+    "description": null,
+    "english": "Unknown Choice",
+    "translation": "Bilinmeyen Seçim",
     "isDeprecated": false
   },
   {
@@ -5897,10 +7353,66 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.AnswerIncorrect",
+    "description": null,
+    "english": "Your last answer was incorrect.",
+    "translation": "Son cevabın yanlıştı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.YourPasswordHasBeenReset",
+    "description": null,
+    "english": "To protect your account, your password has been reset.",
+    "translation": "Hesabını korumak için şifreni sıfırladık.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccess",
+    "description": null,
+    "english": "To regain access to your account, please contact Roblox Customer Support {linkStart}here{linkEnd}.",
+    "translation": "Hesabına erişmek için lütfen {linkStart}buradan{linkEnd} Roblox Müşteri Desteği ile iletişime geç.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.UserWasForceReset",
+    "description": null,
+    "english": "Password was reset.",
+    "translation": "Şifre sıfırlandı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "Devam Et",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccessGeneric",
+    "description": null,
+    "english": "To regain access to your account, please click {styledLinkText}.",
+    "translation": "Hesabına erişmek için lütfen buraya tıkla: {styledLinkText}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "Şifre Doğrulaması",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "Lütfen devam etmek için şifreni gir.",
     "isDeprecated": false
   },
   {
@@ -5913,6 +7425,22 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Label.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "Şifren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ForgotYourPassword",
+    "description": null,
+    "english": "{linkStart}Forgot your password?{linkEnd}",
+    "translation": "{linkStart}Şifreni mi unuttun?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
@@ -5921,10 +7449,42 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.PasswordIncorrect",
+    "description": null,
+    "english": "Password incorrect.",
+    "translation": "Şifre yanlış.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
     "translation": "Lütfen tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team\t",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Tek Seferlik Roblox Kodun: {boldStart}{code}{boldEnd}. Giriş yapmak için bu kodu giriş ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu kodu kimseyle {boldStart}paylaşma{boldEnd}. Biz {boldStart}asla{boldEnd} seninle iletişime geçip bu kodu vermeni istemeyiz. Bu kodu talep eden sen değilsen herhangi bir şey yapmana gerek yok. İstemediğin halde çok sayıda kod alıyorsan hesabına başka bir e-posta adresi bağlamanı ve {linkTagWithAuthenticatorHelpLinkStart}bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini{linkTagEnd} etkinleştirmeni tavsiye ederiz.{lineBreak}{lineBreak}Giriş talebinin geldiği yer: {geolocation}.{lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "Tek Seferlik Roblox Kodun: {code}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Merhaba,{lineBreak}{lineBreak}Çocuğunuz Roblox'ta hesap açma talebinde bulundu. Roblox, çocukların kullanıcılar tarafından tasarlanan heyecan verici 3B dünyalarda hep birlikte hayal kurmasına, üretmesine ve oynamasına olanak tanıyan çevrimiçi bir eğlence platformudur.{lineBreak}{lineBreak}Doğrulama Kodu: {code}{lineBreak}{lineBreak}Çocuğunuz hesap oluşturmak için bize bir kullanıcı adı, doğum tarihi ve ebeveyninin e-posta adresini verdi. Hesap oluşturma işlemini tamamlamak için çocuğunuzun Roblox oynamasına rıza göstermelisiniz.{lineBreak}{lineBreak}Kayıt sürecini tamamlamak ve çocuğunuzun Roblox'u kullanmasına rıza göstermek için aşağıdaki kodu girin. Kodu girerek tahkim şartı da dahil olmak üzere {linkTagWithTermsLinkStart}Roblox Kullanım Koşullarını{linkTagEnd} ve {linkTagWithPrivacyPolicyLinkStart}Gizlilik Politikasını{linkTagEnd} kabul etmiş sayılırsınız. Ayrıca çocuğunuzu gözeteceğinizi ve çocuğunuzun Roblox kullanımından tamamen sorumlu olacağınızı kabul etmiş, gerekli yerlerde hizmete bağlanmak amacıyla çocuğunuzun kişisel bilgilerinin işlenmesine rıza göstermiş de olursunuz.{lineBreak}{lineBreak}{boldStart}Ebeveynler İçin Roblox Rehberi{boldEnd}{lineBreak}{lineBreak}Platformu daha yakından tanımak ve çocuklarınız için olumlu bir Roblox deneyimi oluşturmaya yönelik ipuçlarından faydalanmak için Ebeveyn Rehberimizi okumanızı tavsiye ederiz.{lineBreak}{lineBreak}{boldStart}Gizlilik{boldEnd}{lineBreak}{lineBreak}Müşteri hizmetleriyle buradan iletişime geçerek çocuğunuzun hesabını istediğiniz zaman sildirebilirsiniz: https://www.roblox.com/support. E-posta adresiniz başka bir amaçla kullanılmayacak, üçüncü taraflarla paylaşılmayacak veya çocuğunuzdan edinilen diğer kişisel bilgilerle birleştirilmeyecek. Lütfen daha fazla bilgi için Gizlilik Politikamıza göz atın.{lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi",
     "isDeprecated": false
   }
 ]

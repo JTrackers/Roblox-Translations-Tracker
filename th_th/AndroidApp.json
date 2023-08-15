@@ -668,7 +668,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ กรุณาเข้าสู่ระบบของแอป LuoBu",
+    "translation": "ไม่สามารถเข้าสู่ระบบบัญชีนี้ได้",
     "isDeprecated": false
   },
   {
@@ -676,7 +676,7 @@
     "key": "Response.LuoBuAccount",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ กรุณาเข้าสู่ระบบของแอป LuoBu",
+    "translation": "ไม่สามารถเข้าสู่ระบบบัญชีนี้ได้",
     "isDeprecated": true
   },
   {
@@ -828,7 +828,7 @@
     "key": "Label.EnterEmailCode",
     "description": null,
     "english": "Enter the code we just sent you via email.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล",
     "isDeprecated": false
   },
   {
@@ -836,7 +836,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ",
     "isDeprecated": false
   },
   {
@@ -2488,6 +2488,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.VoucherExpired",
+    "description": "Only sued for Luobu, when Wechat/QQ voucher expired.",
+    "english": "Signup session expired, please visit the signup page again.",
+    "translation": "เซสชันการสมัครหมดอายุแล้ว กรุณาไปที่หน้าเพจการสมัครอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "คุณจะต้องยอมรับข้อตกลงการใช้งานและรับทราบถึงนโยบายความเป็นส่วนตัวเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Controls",
     "key": "Action.Cancel",
     "description": null,
@@ -2684,7 +2700,7 @@
     "key": "Label.Game",
     "description": null,
     "english": "Experiences",
-    "translation": "เกม",
+    "translation": "ประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -2924,7 +2940,7 @@
     "key": "Heading.GameDetails",
     "description": null,
     "english": "Experience Details",
-    "translation": "รายละเอียดเกม",
+    "translation": "รายละเอียดประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -2988,7 +3004,7 @@
     "key": "Label.SearchGames",
     "description": null,
     "english": "Search Experiences",
-    "translation": "ค้นหาเกม",
+    "translation": "ค้นหาประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -3077,6 +3093,22 @@
     "description": "Used in the CJV version of the app for the Luobu Rider Terms (Luobu specific Terms of Service)",
     "english": "Luobu Rider Terms",
     "translation": "เงื่อนไขนักขี่ Luobu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Action.Deny",
+    "description": "Deny action in response to an accept/deny prompt, e.g a permissions prompt",
+    "english": "Deny",
+    "translation": "ปฏิเสธ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Menu",
+    "description": "The label from the Menu tab of the IA system nav bar",
+    "english": "Menu",
+    "translation": "เมนู",
     "isDeprecated": false
   },
   {
@@ -3196,7 +3228,7 @@
     "key": "Response.UnsupportedDevice",
     "description": null,
     "english": "Sorry, your device does not meet the minimum requirements to join Roblox experiences.",
-    "translation": "ขออภัย อุปกรณ์ของคุณไม่ตรงตามความต้องการขั้นต่ำในการเล่นเกม",
+    "translation": "ขออภัย อุปกรณ์ของคุณไม่ตรงตามความต้องการขั้นต่ำเพื่อเข้าร่วมประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -3280,6 +3312,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CommonUI.Messages",
+    "key": "Response.SSLHandshakeException",
+    "description": "SSL Handshake Exception error message",
+    "english": "Unable to contact server: SSL Handshake Exception!",
+    "translation": "ไม่สามารถติดต่อกับเซิร์ฟเวอร์ได้: SSL Handshake Exception!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.ActionNotAvailableOnVRHeadsetDevice",
+    "description": "A toast text to show user when certain actions (e.g opening a webpage) is not available for VR head set device.",
+    "english": "This action is not supported on headset devices yet. Please try on a different device.",
+    "translation": "ไม่รองรับคำสั่งนี้บนอุปกรณ์เฮดเซ็ต กรุณาลองอีกครั้งบนอุปกรณ์อื่น",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Features.ChooseAdv",
     "key": "Label.WhatsNext",
     "description": null,
@@ -3292,7 +3340,7 @@
     "key": "Label.ImNearSomeone",
     "description": null,
     "english": "I'm near someone exploring Roblox.",
-    "translation": "ฉันอยู่ใกล้เคียงใครบางคนที่เล่น Roblox อยู่",
+    "translation": "ฉันอยู่ใกล้เคียงใครบางคนที่สำรวจ Roblox อยู่",
     "isDeprecated": true
   },
   {
@@ -3300,7 +3348,7 @@
     "key": "Label.FindNearbyUsers",
     "description": null,
     "english": "Find users nearby who are currently exploring Roblox.",
-    "translation": "ค้นหาผู้ใช้ที่อยู่ใกล้เคียงที่กำลังเล่น Roblox อยู่",
+    "translation": "ค้นหาผู้ใช้ที่อยู่ใกล้เคียงที่กำลังสำรวจ Roblox อยู่",
     "isDeprecated": true
   },
   {
@@ -3324,7 +3372,7 @@
     "key": "Label.LookThroughYourContacts",
     "description": null,
     "english": "Look through your contacts to find friends who explore Roblox.",
-    "translation": "มองหาในรายชื่อผู้ติดต่อของคุณเพื่อหาเพื่อนที่เล่น Roblox",
+    "translation": "มองหาในรายชื่อผู้ติดต่อของคุณเพื่อหาเพื่อนที่ออกสำรวจ Roblox",
     "isDeprecated": true
   },
   {
@@ -3356,7 +3404,7 @@
     "key": "Label.ShowMeTheGames",
     "description": null,
     "english": "Just show me the experiences.",
-    "translation": "แสดงเกมให้ฉันดูก็พอ",
+    "translation": "แค่แสดงประสบการณ์ให้ฉันดูก็พอ",
     "isDeprecated": true
   },
   {

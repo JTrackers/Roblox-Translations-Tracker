@@ -12516,7 +12516,7 @@
     "key": "Description.SecurityKey.AuthenticatorOff",
     "description": null,
     "english": "Turning off 2-Step Verification via Authenticator will also delete all of your security keys.",
-    "translation": "2段階認証をオフにすると、セキュリティキーもすべて削除されます。",
+    "translation": "認証システムを使った2段階認証をオフにすると、セキュリティキーもすべて削除されます。",
     "isDeprecated": false
   },
   {
@@ -15812,7 +15812,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
-    "translation": "購入後、コレクタブルアイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "translation": "購入後、アイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
     "isDeprecated": false
   },
   {
@@ -16269,6 +16269,14 @@
     "description": null,
     "english": "No",
     "translation": "なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradable",
+    "description": null,
+    "english": "Tradable",
+    "translation": "取引可能",
     "isDeprecated": false
   },
   {
@@ -19341,6 +19349,14 @@
     "description": null,
     "english": "None",
     "translation": "なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Label.Camera",
+    "description": "Tells the user that camera chat features are available",
+    "english": "Camera",
+    "translation": "カメラ",
     "isDeprecated": false
   },
   {
@@ -26380,7 +26396,7 @@
     "key": "AbuseReason.Profanity",
     "description": null,
     "english": "Swearing",
-    "translation": "冒涜",
+    "translation": "汚い言葉",
     "isDeprecated": false
   },
   {
@@ -26605,6 +26621,22 @@
     "description": "The default title for an experience invite notification.",
     "english": "Invite from {displayName} @{username}",
     "translation": "@{username} （ {displayName} ）さんからの招待",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.VirtualEventOngoingTitle",
+    "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
+    "english": "Happening Now: {title}",
+    "translation": "現在進行中: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.VirtualEventOngoingBody",
+    "description": "Message displayed on virtual event notification body when there is a live virtual event ongoing.",
+    "english": "Join the event now",
+    "translation": "今すぐイベントに参加",
     "isDeprecated": false
   },
   {
@@ -48128,6 +48160,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.Return",
+    "description": "DEPRECATED - do not use",
+    "english": "Return to",
+    "translation": "次に戻る：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnFallback",
+    "description": null,
+    "english": "Return to previous experience",
+    "translation": "前の仮想空間に戻る",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.CommonUI",
+    "key": "Label.ReturnTo",
+    "description": null,
+    "english": "Return to \"{placeName}\"",
+    "translation": "「{placeName}」に戻る",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.GameSettings",
     "key": "Message.TitlePrivateServers",
     "description": null,
@@ -53725,6 +53781,14 @@
     "description": "Name of link that points back to www.roblox.com",
     "english": "Roblox Home",
     "translation": "Roblox ホーム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Webhooks",
+    "description": "Title of navigation to webhooks configuration",
+    "english": "Webhooks",
+    "translation": "Webhook",
     "isDeprecated": false
   },
   {
@@ -66341,6 +66405,30 @@
     "description": "Used in the dropdown for date preset range",
     "english": "Last 90 Days",
     "translation": "過去90日間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ExportTab",
+    "description": "BROKEN -- WRONG TOKENS",
+    "english": "BROKEN -- WRONG TOKENS {li}{personalTransactionsLink}{_personalTransactionsLink}{configureGroupLink}{_configureGroupLink}{exportLink}{_exportLink}{_li}{li}{monetizationLink}{_monetizationLink}{_li}{br}",
+    "translation": "破損しています -- トークンに間違いがあります \n{li}{personalTransactionsLink}{_personalTransactionsLink}{configureGroupLink}{_configureGroupLink}{exportLink}{_exportLink}{_li}{li}{monetizationLink}{_monetizationLink}{_li}{br}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ExportTab-2",
+    "description": "Description with links in export tab of Developer /stats page.",
+    "english": "This report has been deprecated. To get your revenue stats, please visit:{ol}{li}Your {personalTransactionsLink}personal Transactions page{_personalTransactionsLink} or your group's {configureGroupLink}Configure Group page{_configureGroupLink}, where you can {exportLink}export{_exportLink} your revenue data.{_li}{li}The {monetizationLink}monetization page{_monetizationLink} in your analytics dashboard.{_li}{_ol}",
+    "translation": "このレポートは非推奨です。 収益データを出すには、{ol}{li}あなたの {personalTransactionsLink}個人取引ページ {_personalTransactionsLink} か、収益データを {exportLink}エクスポート{_exportLink} できるグループの{configureGroupLink}「グループページを環境設定」{_configureGroupLink} にアクセスしてください。{_li}{li}解析ダッシュボードにある {monetizationLink}収益化ページ{_monetizationLink} 。{_li}{_ol}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ExportTab2",
+    "description": "Description with links in export tab of Developer /stats page.",
+    "english": "This report has been deprecated. To get your revenue stats, please visit:{ol}{li}Your {personalTransactionsLink}personal Transactions page{_personalTransactionsLink} or your group's {configureGroupLink}Configure Group page{_configureGroupLink}, where you can {exportLink}export{_exportLink} your revenue data.{_li}{li}The {monetizationLink}monetization page{_monetizationLink} in your analytics dashboard.{_li}{_ol}",
+    "translation": "このレポートは非推奨です。 収益データを出すには、{ol}{li}あなたの {personalTransactionsLink}個人取引ページ {_personalTransactionsLink} か、収益データを {exportLink}エクスポート{_exportLink} できるグループの{configureGroupLink}「グループページを環境設定」{_configureGroupLink} にアクセスしてください。{_li}{li}解析ダッシュボードにある {monetizationLink}収益化ページ{_monetizationLink} 。{_li}{_ol}",
     "isDeprecated": false
   },
   {
@@ -88700,7 +88788,7 @@
     "key": "Error.RequestBodyMissing",
     "description": null,
     "english": "Error managing thumbnails. Please try again later.",
-    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "translation": "サムネイルの管理でエラーが発生しました。後でもう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -88724,7 +88812,7 @@
     "key": "Error.InvalidThumbnailId",
     "description": null,
     "english": "Error managing thumbnails. Please try again later.",
-    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "translation": "サムネイルの管理でエラーが発生しました。後でもう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -88756,7 +88844,7 @@
     "key": "Message.SuccessfullyReorderThumbnail",
     "description": null,
     "english": "Thumbnails successfully updated.",
-    "translation": "サムネイルを並べ替えできました。",
+    "translation": "サムネイルをアップデートできました。",
     "isDeprecated": false
   },
   {
@@ -88773,6 +88861,30 @@
     "description": null,
     "english": "Unavailable",
     "translation": "利用できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AltText",
+    "description": null,
+    "english": "Alt Text ",
+    "translation": "代替テキスト ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Description.AltText",
+    "description": null,
+    "english": "Add a description to your thumbnails so they're accessible to everyone. Descriptions should be concise and describe your thumbnails accurately enough to understand their context.",
+    "translation": "全員がアクセスできるように、サムネイルに説明文を追加してください。 説明文は、サムネイルの文脈を理解できるように簡潔で正確に書く必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.FullyModerated",
+    "description": null,
+    "english": "The alt text is not acceptable.",
+    "translation": "この代替テキストは使用できません。",
     "isDeprecated": false
   },
   {
@@ -92153,10 +92265,74 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Label.WebhooksNav",
+    "description": "Text in navigation to go to the Webhooks page. Information about webhooks: https://en.wikipedia.org/wiki/Webhook",
+    "english": "Webhooks",
+    "translation": "Webhook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Title.Webhooks",
+    "description": "Title for page that configures Webhooks. Information about webhooks: https://en.wikipedia.org/wiki/Webhook",
+    "english": "Webhooks",
+    "translation": "Webhook",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.Webhooks",
+    "description": "Description on how webhooks and information on using them. More info on webhooks: https://en.wikipedia.org/wiki/Webhook",
+    "english": "Webhooks allow you to send Roblox notifications to any platform that accepts webhook integration. You can create up to {webhookCount, plural, =1 {# webhook} other {# webhooks}} at a time. Learn more about {setupLinkStart}setting up webhooks{setupLinkEnd} or how to {useWebhookLinkStart}make the most of webhooks{useWebhookLinkEnd}. ",
+    "translation": "Webhookを使えば連携可能な、どのプラットフォームにもRoblox（ロブロックス）の通知を送信できるようになります。一度にWebhookを {webhookCount, plural, =1 {#件} other {#件}} まで作成できます。{setupLinkStart}Webhookの設定{setupLinkEnd} の仕方や {useWebhookLinkStart}Webhookの活用法{useWebhookLinkEnd} について詳しく知りましょう。 ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Action.AddWebhook",
+    "description": "Action to add a new webhook.",
+    "english": "Add Webhook",
+    "translation": "Webhookを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Title.WebhookConfiguration",
+    "description": "Title of page that creates or edits a webhook",
+    "english": "Configure Webhook",
+    "translation": "Webhookを設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.WebhookConfiguration",
+    "description": "A more detailed description on what Roblox as a company does to send requests to a user's webhook URL.",
+    "english": "Webhooks notify your apps about server-specific events, so you can respond to them accordingly. When an event occurs, Roblox sends an HTTP POST request with a payload to the webhook's configured URL. Learn more about {setupLinkStart}setting up outgoing webhooks{setupLinkEnd}.",
+    "translation": "Webhookはサーバー固有のイベントについてお持ちのアプリに通知するため、適宜、これに対応できます。イベントが発生するとRobloxは、Webhookの設定済みURLにペイロードをつけてHTTP POST リクエストを送信します。詳しくは {setupLinkStart}送信Webhookの設定{setupLinkEnd}をごらんください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.WebhookUrl",
+    "description": "Form label to enter URL of webhook. More info here: https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks#payload-url",
+    "english": "Webhook URL",
+    "translation": "WebhookのURL",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Label.WebhookName",
     "description": "The name the user gives to the webhook",
     "english": "Name",
     "translation": "名前",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.WebhookContentType",
+    "description": "The data format that is used when using webhooks. More information here: https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks#content-type",
+    "english": "Content Type",
+    "translation": "コンテンツのタイプ",
     "isDeprecated": false
   },
   {
@@ -92169,10 +92345,122 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Title.Triggers",
+    "description": "Title of page that configures which kind of events causes something else to happen. As of today, events trigger a request to a webhook URL.",
+    "english": "Triggers",
+    "translation": "トリガー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.WebhookTrigger",
+    "description": "Description for page that configures which events trigger requests to a webhook.",
+    "english": "Select the events that trigger this webhook.",
+    "translation": "このWebhookをトリガーするイベントを選択します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Action.ViewWebhookResponseFormat",
+    "description": "Events trigger requests sent to a webhook URL. This action is used to see what was actually sent to the webhook URL.",
+    "english": "View Response Formats",
+    "translation": "応答形式を表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.PayloadUrlHint",
+    "description": "Hint text about what kind of services support webhooks.",
+    "english": "{guideLinkStart}Follow our guides{guideLinkEnd} to configure webhooks with Discord, Slack, and other popular services.",
+    "translation": "Discord、Slack、その他の一般的なサービスでWebhookを設定するには、{guideLinkStart}ガイド{guideLinkEnd} に従ってください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.PayloadUrlHint",
+    "description": "Hint text describing the Webhook URL that Roblox should send its request to",
+    "english": "Location to where the POST request should be sent.",
+    "translation": "POSTリクエストの送信先の場所。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.SecretHint",
+    "description": "Information on what a webhook secret is",
+    "english": "String token used to create a hash signature for each payload.",
+    "translation": "各ペイロードのハッシュ署名にの作成に使用される文字列トークン。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.SecretHint",
+    "description": "Additional information about how a webhook secret is used.",
+    "english": "The signature is sent along with each request to ensure that the requests you receive came from Roblox.",
+    "translation": "受け取ったリクエストがRobloxから来ていることを確認するために、各リクエストと一緒に署名が送信されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.WebhookMaximumLimitReached",
+    "description": "Text that pops up when no more webhooks are allowed to be created. (Max = Maximum in this case)",
+    "english": "Max limit of {webhookCount, plural, =1 {# webhook} other {# webhooks}} reached.\t",
+    "translation": "Webhookが上限の {webhookCount, plural, =1 {#件} other {#件}}に達しました。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Title.DeleteWebhook",
+    "description": "Title of dialog asking users if they're sure they want to delete a webhook",
+    "english": "Delete Webhook?",
+    "translation": "Webhookを削除しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.DeleteWebhook",
+    "description": "Description of dialog specifying which webhook will be deleted and that this is irreversible.",
+    "english": "\"{webhookName}\" with payload URL {webhookPayloadUrl} will be deleted. This action cannot be undone.",
+    "translation": "ペイロードURL、 {webhookPayloadUrl} のついた「{webhookName}」が削除されます。この操作は元に戻せません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Action.DeleteWebhook",
+    "description": "Button text that deletes a webhook.",
+    "english": "Delete Webhook",
+    "translation": "Webhookを削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Action.Close",
     "description": "Button text that closes some UI.",
     "english": "Close",
     "translation": "閉じる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.TypographicalMistake",
+    "description": "Tells the users to check for any typographical mistakes in a form and fix them.",
+    "english": "Check for typos and try again.",
+    "translation": "タイプミスがないか確認してから、もう一度やり直してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.WebhookMaximumLimitReachedUnpluralized",
+    "description": "Hardcoded version of webhooks limit since pluralization isn't supported @rbx/intl",
+    "english": "Max limit of 5 webhooks reached.",
+    "translation": "Webhookが上限の5件に達しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Description.WebhooksUnpluralized",
+    "description": "Description of what the webhooks does and what our webhooks page is for. Unpluralized in the interim until @rbx/intl supports pluralization.",
+    "english": "Webhooks notify your apps about server-specific events, so you can respond to them accordingly. You can create up to 5 webhooks at a time. Learn more about {setupLinkStart}setting up webhooks{setupLinkEnd} or how to {useWebhookLinkStart}make the most of webhooks{useWebhookLinkEnd}.",
+    "translation": "Webhookはアプリにサーバー固有のイベント通知をするため、適宜、これに応答できます。一度にWebhookを 5件まで作成できます。{setupLinkStart}Webhookの設定{setupLinkEnd} の仕方や {useWebhookLinkStart}Webhookの活用法{useWebhookLinkEnd} について詳しく知りましょう。",
     "isDeprecated": false
   },
   {
@@ -92388,7 +92676,7 @@
     "key": "Description.MakeChanges",
     "description": null,
     "english": "Please make changes before uploading the file again or refresh the page to upload a new CSV file.",
-    "translation": "またファイルをアップロードする前に変更を加えるか、後でもう一度お試しください。",
+    "translation": "再度アップロードする前にファイルに変更を加えるか、ページをリフレッシュしてから新しいCSVファイルをアップロードしてください。",
     "isDeprecated": false
   },
   {
@@ -92672,11 +92960,51 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.RefreshPage",
+    "description": null,
+    "english": "Please refresh your page to see updates to your experience's localization table.",
+    "translation": "仮想空間の多言語化テーブルのアップデートを確認するには、ページをリフレッシュしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.RefreshToRetry",
+    "description": null,
+    "english": "Please refresh the page to upload a new CSV file.",
+    "translation": "新しいCSVファイルをアップロードするには、ページをリフレッシュしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.FailedToFetchSupportedLanguage",
+    "description": null,
+    "english": "- Failed to fetch supporting languages",
+    "translation": "- 対応済み言語を取得できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.LearnMoreHere",
+    "description": null,
+    "english": "Learn more about CSV localization table management {csvManagementLinkStart}here{csvManagementLinkEnd}",
+    "translation": "CSV多言語化テーブルの管理について詳しくは {csvManagementLinkStart}こちら{csvManagementLinkEnd}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.OneTimePasscode",
     "key": "Response.Under13NotAllowed",
     "description": null,
-    "english": "Users under 13 cannot log in with a one-time code.",
+    "english": "Only users 13 and older can log in with a one-time code.",
     "translation": "13歳未満のユーザーの方は、ワンタイムコード（1回のみ使用可）でログインすることはできません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team\t",
+    "translation": "こんにちは。{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} がRobloxで1回限り使用可能なコードです。ログインするには、ログイン画面にこちらを入力してください。このコードは、15分後に有効期限が切れます。{lineBreak}{lineBreak}このコードは誰にも {boldStart}教えない{boldEnd} でください。当社のほうからコードを聞き出すことは {boldStart}絶対にありません{boldEnd} 。このコードをリクエストしていない場合は、何もする必要はありません。リクエストしていない複数のコードを受け取った場合は、お持ちのアカウントを他のメールアドレスと紐づけ、 {linkTagWithAuthenticatorHelpLinkStart}認証アプリによる2段階認証を設定{linkTagEnd} することを強くおすすめします。{lineBreak}{lineBreak}このログインリクエストは {geolocation} から発信されています。{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Robloxチームより　",
     "isDeprecated": false
   },
   {
@@ -92685,6 +93013,46 @@
     "description": "Subject of an email for OTP login",
     "english": "{code} Is Your Roblox One-Time Code",
     "translation": "{code} が1回のみ使用可能なRobloxのコードです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Push.Ongoing.Title",
+    "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
+    "english": "Happening Now: {title}",
+    "translation": "現在進行中: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Push.Ongoing.Body",
+    "description": "Message displayed on virtual event notification body when there is a live virtual event ongoing.",
+    "english": "Join the event now",
+    "translation": "今すぐイベントに参加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Stream.Elapsed.Title",
+    "description": "Message displayed on virtual event notification title when a virtual event is over.",
+    "english": "Event Ended: {title}",
+    "translation": "イベント終了日: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Stream.Ongoing.Title",
+    "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
+    "english": "Happening Now: {title}",
+    "translation": "現在進行中: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.VirtualEvent",
+    "key": "Stream.Ongoing.Body",
+    "description": "Message displayed on virtual event notification body when there is a live virtual event ongoing.",
+    "english": "Join the event now",
+    "translation": "今すぐイベントに参加",
     "isDeprecated": false
   }
 ]

@@ -364,7 +364,7 @@
     "key": "Label.ConnectionError.RetryWait",
     "description": "After a failure connecting to authentication servers, the message shown to uses during the time they have to wait between retry attempts.",
     "english": "Sorry, there was a problem reaching our servers.\n\nPlease wait and try again.",
-    "translation": "Kimlik doğrulama sunucularına bağlanılamıyor.\n\nTekrar denerken lütfen bekleyin.",
+    "translation": "Üzgünüz, sunuculara erişim sırasında bir sorun çıktı.\n\nLütfen biraz bekleyip tekrar dene.",
     "isDeprecated": false
   },
   {
@@ -372,7 +372,7 @@
     "key": "Label.ConnectionError.RetryReady",
     "description": "After failure connecting to authentication servers, the message shown to users when they are able to retry.",
     "english": "Sorry, there was a problem reaching our servers.\n\nPlease try again.",
-    "translation": "Kimlik doğrulama sunucularına bağlanılamıyor.\n\nTekrar denerken lütfen bekleyin.",
+    "translation": "Üzgünüz, sunuculara erişim sırasında bir sorun çıktı.\n\nLütfen tekrar dene.",
     "isDeprecated": false
   },
   {
@@ -380,7 +380,55 @@
     "key": "Label.ConnectionError.RetryDisabled",
     "description": "After a failure connecting to authentication, the message shown to users after we manually turn off the retry capability. (we would do this to protect a server that is struggling)",
     "english": "Sorry, there was a problem reaching our servers.\n\nRetrying has been disabled for now. Please try again later.",
-    "translation": "Kimlik doğrulama sunucularımızı düzeltmeye çalışıyoruz.\n\nYeniden deneme devre dışı bırakıldı, tekrar denemek için lütfen daha sonra tekrar gelin.",
+    "translation": "Üzgünüz, sunuculara erişim sırasında bir sorun çıktı.\n\nŞu anda tekrar deneyemezsin. Lütfen daha sonra tekrar dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.AnotherLoggedInDevice",
+    "description": null,
+    "english": "Another Logged In Device",
+    "translation": "Başka Bir Cihazla Giriş Yapıldı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.AccountSelectorTitle",
+    "description": null,
+    "english": "Select Account to Log In",
+    "translation": "Giriş Yapılacak Hesabı Seç",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorHelp",
+    "description": null,
+    "english": "All of your associated accounts are listed here.",
+    "translation": "Seninle bağlantılı hesapların hepsi burada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Doğrulama kodu almak için ebeveyninin e-posta adresini gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Giriş yapmak için Kurumsal ağda olmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "Giriş yapmak için Kurumsal ağda olmalısın.",
     "isDeprecated": false
   },
   {
@@ -396,7 +444,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "SMS ile gönderdiğimiz kodu gir.",
+    "translation": "Kısa mesaj ile gönderdiğimiz kodu gir.",
     "isDeprecated": false
   },
   {
@@ -489,10 +537,34 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.TwoStepRequired",
+    "description": null,
+    "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification.",
+    "translation": "Daha çok alışveriş yapabilmen için 2 Adımlı Doğrulama gerekli. Ayarlar > Güvenlik sekmesinden 2 Adımlı Doğrulama özelliğini etkinleştirebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Title.VerificationRequired",
+    "description": null,
+    "english": "Verification Required",
+    "translation": "Doğrulama Gerekli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Action.GoToSecurity",
     "description": null,
     "english": "Settings",
     "translation": "Ayarlar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.TwoStepRequiredLogout",
+    "description": null,
+    "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification. Enabling 2-Step Verification will log you out of your current session.",
+    "translation": "Daha çok alışveriş yapabilmen için 2 Adımlı Doğrulama gerekli. Ayarlar > Güvenlik sekmesinden 2 Adımlı Doğrulama özelliğini etkinleştirebilirsin. 2 Adımlı Doğrulama özelliğini etkinleştirdiğinde mevcut oturumun kapanacak.",
     "isDeprecated": false
   },
   {
@@ -1009,10 +1081,154 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Response.UsernameMustBeSetFirst",
+    "description": null,
+    "english": "Username must be set first.",
+    "translation": "Önce kullanıcı adı ayarlanmalı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ParentEmailAddress",
+    "description": null,
+    "english": "Parent's Email Address",
+    "translation": "Ebeveynin E-posta Adresi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePhoneNumber",
+    "description": null,
+    "english": "Use phone number",
+    "translation": "Telefon numarası kullan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email address",
+    "translation": "E-posta adresi kullan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.ConfirmPassword",
+    "description": null,
+    "english": "Confirm Password",
+    "translation": "Şifreyi Onayla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Response.PasswordsDoNotMatch",
     "description": null,
     "english": "Passwords do not match.",
     "translation": "Şifreler eşleşmiyor.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordMustBeSetFirst",
+    "description": null,
+    "english": "Password must be set first.",
+    "translation": "Önce şifre ayarlanmalı.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Lütfen farklı bir şifre dene. Özel karakter ve sayılar kullanmalısın.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "Devam etmek için Kullanım Koşulları ve Gizlilik Politikasını kabul etmelisin",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Doğrulama kodu almak için ebeveyninin e-posta adresini gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "Doğrulama Kodu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "{termsOfUseLink} sözleşmesini okudum ve kabul ediyorum.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "{privacyPolicyLink} bildirisini anladım",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "Ebeveyninin e-posta adresine gönderdiğimiz kodu gir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "Kodu girerek çocuğunuzun Roblox'a erişmesine rıza göstermiş olursunuz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Büyük harf, küçük harf ve sayılardan oluşan bir şifre gerekli.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "Büyük harf, küçük harf ve sayılardan oluşan bir şifre gerekli.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Description.KoreaScreentimeToastText",
+    "description": "Alert text showing to korea user how many hours they've been playing",
+    "english": "Excessive experience use can interfere with normal daily life. You have visited on Roblox for {NumberOfHours} hour(s).",
+    "translation": "Uzun süreli bir oyun deneyimi günlük yaşantına engel olabilir. {NumberOfHours} saattir Roblox'ta vakit geçiriyorsun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Title.Warning",
+    "description": "Warning title shows on toast alert",
+    "english": "Warning",
+    "translation": "Uyarı",
     "isDeprecated": false
   },
   {
@@ -1180,7 +1396,7 @@
     "key": "Label.AutoUpgradeForce",
     "description": null,
     "english": "Roblox needs to be updated! To visit this experience, you will need to install an update.",
-    "translation": "Roblox'un güncellenmesi gerekiyor! Bu oyunu oynamak için bir güncelleme yüklemelisin.",
+    "translation": "Roblox'un güncellenmesi gerekiyor! Bu deneyimi görmek için güncellemeyi yüklemen gerekecek.",
     "isDeprecated": false
   },
   {
@@ -1388,7 +1604,7 @@
     "key": "Label.Game",
     "description": null,
     "english": "Experiences",
-    "translation": "Oyunlar",
+    "translation": "Deneyimler",
     "isDeprecated": false
   },
   {
@@ -1540,7 +1756,7 @@
     "key": "Heading.GameDetails",
     "description": null,
     "english": "Experience Details",
-    "translation": "Oyun Ayrıntıları",
+    "translation": "Deneyim Detayları",
     "isDeprecated": false
   },
   {
@@ -1548,7 +1764,7 @@
     "key": "Label.Players",
     "description": "search context for user search",
     "english": "People",
-    "translation": "Oyuncular",
+    "translation": "Kişiler",
     "isDeprecated": false
   },
   {
@@ -1737,6 +1953,94 @@
   },
   {
     "namespace": "CommonUI.Features",
+    "key": "Label.TencentNotice",
+    "description": "For Luobu MSDK notification title.",
+    "english": "Notice",
+    "translation": "Bildiri",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Licensing",
+    "description": "Refers to the licenses for the third-party software that is used in the App (ex: open source licenses)",
+    "english": "Licensing",
+    "translation": "Lisanslar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Action.Restart",
+    "description": "Restart button on prompt, e.g VR disconnected",
+    "english": "Restart",
+    "translation": "Yeniden Başlat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Heading.VRDisconnected",
+    "description": "Title of VR disconnected prompt",
+    "english": "Headset Disconnected",
+    "translation": "Başlık Bağlantısı Kesildi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Description.RestartApp",
+    "description": "Body content of VR disconnected prompt",
+    "english": "To continue playing, please restart the app.",
+    "translation": "Oynamaya devam etmek için uygulamayı yeniden başlat.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.LuobuThirdPartyDataUse",
+    "description": "Only used by Luobu, no other languages needed.\n第三方共享清单",
+    "english": "Third party share list",
+    "translation": "Üçüncü taraf paylaşım listesi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ChannelWithChannelName",
+    "description": null,
+    "english": "Channel: {channelName}",
+    "translation": "Kanal: {channelName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ClientCoreScriptVersion",
+    "description": "Shows the core script version the app is running.",
+    "english": "Client-CoreScript-Version: {clientCoreScriptVersion}",
+    "translation": "İstemci CoreScript Sürümü: {clientCoreScriptVersion}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ChannelWithChannelName",
+    "description": "Shows the current channel for the client.",
+    "english": "Channel: {channelName}",
+    "translation": "Kanal: {channelName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ClientCoreScriptVersion",
+    "description": "Shows the lua core script version the app is running.",
+    "english": "Client-CoreScript-Version: {clientCoreScriptVersion}",
+    "translation": "İstemci CoreScript Sürümü: {clientCoreScriptVersion}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Menu",
+    "description": "The label from the Menu tab of the IA system nav bar",
+    "english": "Menu",
+    "translation": "Menü",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
     "key": "StudioCTA.Tooltip.Title",
     "description": "The tooltip title of the open Studio CTA button.",
     "english": "Start creating on Roblox",
@@ -1813,6 +2117,46 @@
     "description": "Webviews on Windows require that Internet Explorer 11 or higher.  If the user invokes a webview, and the webview code detects that Internet Explorer on the system is out of date, it shows this dialog to the user and asks them for confirmation before linking them to an installation screen.",
     "english": "Roblox requires Internet Explorer 11 in order to bring you the best experience. Please upgrade your Internet Explorer to access this feature!\n\nWould you like to update your browser now?",
     "translation": "Roblox'un en iyi deneyimi sağlayabilmesi için Internet Explorer 11 gerekli. Bu özelliğe erişebilmek için lütfen Internet Explorer tarayıcını yükselt!\n\nTarayıcını şimdi güncellemek ister misin?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.NoLicenses",
+    "description": "No third-party software licenses available to display.",
+    "english": "No Licenses",
+    "translation": "Lisans Yok",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Response.NoResults",
+    "description": "Generic message displayed when searching for anything (players, games, etc.)",
+    "english": "No Results",
+    "translation": "Sonuç Yok",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Response.PageError",
+    "description": "When a page fails to load, for whatever reason.",
+    "english": "Error loading page",
+    "translation": "Hesabı yüklerken hata oluştu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.ActionNotAvailableOnVRHeadsetDevice",
+    "description": "A toast text to show user when certain actions (e.g opening a webpage) is not available for VR head set device.",
+    "english": "This action is not supported on headset devices yet. Please try on a different device.",
+    "translation": "Bu işlem henüz VR başlıkları için desteklenmiyor. Lütfen başka bir cihazda dene.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.NoRobuxPuchaseOnVRHeadSets",
+    "description": "Text to show user when they need to purchase Robux on VR head sets.",
+    "english": "Insufficient Robux. Buying Robux is not supported on headset devices yet. Please try on a different device.",
+    "translation": "Yetersiz Robux. VR başlığı türündeki cihazlardan Robux satın alımı henüz desteklenmiyor. Lütfen başka bir cihazda dene.",
     "isDeprecated": false
   },
   {
@@ -2649,10 +2993,154 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeLong",
+    "description": null,
+    "english": "Keep Your Account Safe With 2-Step Verification Via Authenticator",
+    "translation": "Doğrulama Uygulamasıyla 2 Adımlı Doğrulamayı Etkinleştir, Hesabını Güvende Tut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeShort",
+    "description": null,
+    "english": "Keep Your Account Safe With Authenticator",
+    "translation": "Doğrulama Uygulamasıyla Hesabını Güvende Tut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNew",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to make your account more secure. This would help keep your account safe even if your password or email is stolen. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Bu sayede şifren veya e-posta adresin çalınsa bile hesabın güvende kalır. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. Daha fazla bilgi için {linkStart}yardım sayfamızı{linkEnd} ziyaret edebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNewShort",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to keep your account safe. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. Daha fazla bilgi için {linkStart}yardım sayfamızı{linkEnd} ziyaret edebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestorePolicyMessageSubject",
+    "description": null,
+    "english": "Enable 2-step verification via authenticator to keep your account safe",
+    "translation": "Hesabını güvende tutmak için doğrulama uygulamasıyla 2 Adımlı Doğrulama özelliğini etkinleştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestorePolicyMessageBody",
+    "description": null,
+    "english": "Hi, {lineBreak}{lineBreak}We recommend that you enable 2-step verification via an authenticator app to make your account more secure. This will help keep your account safe even if your password or email is stolen. In the event that your account is ever compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. {lineBreak}{lineBreak}You can set up an authenticator app on your account by going to {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}For more information, please visit our {helpPageLinkStart}help page{linkEnd}.",
+    "translation": "Merhaba, {lineBreak}{lineBreak}Hesabını daha güvenli hale getirmek için bir doğrulama uygulaması kullanarak 2 Adımlı Doğrulama özelliğini etkinleştirmeni tavsiye ediyoruz. Bu sayede şifren veya e-posta adresin çalınsa bile hesabın güvende kalır. Hesabın ele geçirildiği takdirde, Müşteri Desteği kaybı telafi etmene yardımcı olurken kullandığın güvenlik önemlerini de değerlendirmeye alacaktır. {lineBreak}{lineBreak}{securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd} adresini ziyaret ederek hesabına bağlı bir doğrulama uygulaması kurabilirsin.{lineBreak}{lineBreak}Daha fazla bilgi için lütfen {helpPageLinkStart}yardım sayfamızı{linkEnd} ziyaret et.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.TwoStepVerificationUpdate",
+    "description": null,
+    "english": "2-Step Verification Update",
+    "translation": "2 Adımlı Doğrulama Güncellemesi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmail",
+    "description": null,
+    "english": "You have recently had 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Yakın zamanda hem e-posta hem doğrulama uygulaması üzerinden 2 Adımlı Doğrulama özelliğini etkinleştirdin. Çoğu durumda hesabını güvende tutmak adına yalnızca doğrulama uygulamasıyla doğrulama yapmana izin verilecek.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorForcedOverEmailPresent",
+    "description": null,
+    "english": "You currently have 2-Step Verification via both Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to verify via Authenticator.",
+    "translation": "Şu anda hem e-posta hem doğrulama uygulaması ile 2 Adımlı Doğrulama özelliği açık. Çoğu durumda hesabını güvende tutmak adına yalnızca doğrulama uygulamasıyla doğrulama yapmana izin verilecek.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.LearnMoreHere",
+    "description": null,
+    "english": "Learn more {linkStart}here{linkEnd}.",
+    "translation": "{linkStart}Buradan{linkEnd} daha fazlasını öğrenebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "Hesabını Daha Güvenli Hale Getir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "Deneyimlerini, robux paranı, sınırlı süreli öğelerini, gruplarını ve daha fazlasını güvende tutmak için başka bir cihazdan güvenlik kodu al.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorInBanner",
     "description": "Banner text for setting up authenticator through broad upsell.",
     "english": "Set Up Authenticator",
     "translation": "Kimlik Doğrulayıcıyı Ayarla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "Doğrulama Uygulamasıyla 2 Adımlı Doğrulamayı Etkinleştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Bunu {linkStart}Hesap Ayarları{linkEnd} sayfasından yapabilirsin. Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "Lütfen hesabını korumak için 2 Aşamalı Doğrulama özelliğini etkinleştir. Bunu {linkStartSettings}Hesap Ayarları{linkEndSettings} sayfasından yapabilirsin.{lineBreak}{lineBreak}Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir. {linkStartHelp}Yardım sayfasından{linkEndHelp} bu konuda daha fazla bilgi edinebilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "Hesabını Koru!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Lütfen hesabını korumak için 2 Aşamalı Doğrulama özelliğini etkinleştir. Bunu {linkStartSettings}Hesap Ayarları{linkEndSettings} sayfasından yapabilirsin. Hesabın ele geçirilirse Roblox'un hesabını kurtarması veya kayıp öğelerle paralar da dahil olmak üzere hesabındaki içerikleri geri getirmesi mümkün olmayabilir.",
     "isDeprecated": false
   },
   {
@@ -2689,11 +3177,59 @@
   },
   {
     "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Message.Confirmation",
+    "description": null,
+    "english": "We'll text your verification code to %s. SMS fees may apply.",
+    "translation": "Doğrulama kodunu %s numarasına göndereceğiz. SMS ücreti uygulanabilir.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
     "key": "Label.VerifyPhoneNumber",
     "description": null,
     "english": "Verify Phone Number",
     "translation": "Telefon Numarasını Doğrula",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use Email Instead",
+    "translation": "Bunun Yerine E-posta Kullan",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Label.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to %s",
+    "translation": "%s numarasına gönderdiğimiz kodu gir",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Application.ConfirmPhoneNumber",
+    "key": "Action.ChangeNumber",
+    "description": null,
+    "english": "Change Number",
+    "translation": "Numarayı Değiştir",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "Şifre Doğrulaması",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "Lütfen devam etmek için şifreni gir.",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.Reauthentication",
@@ -2705,10 +3241,34 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Label.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "Şifren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ForgotYourPassword",
+    "description": null,
+    "english": "{linkStart}Forgot your password?{linkEnd}",
+    "translation": "{linkStart}Şifreni mi unuttun?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
     "translation": "Beklenmedik bir hata meydana geldi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.PasswordIncorrect",
+    "description": null,
+    "english": "Password incorrect.",
+    "translation": "Şifre yanlış.",
     "isDeprecated": false
   },
   {

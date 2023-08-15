@@ -492,7 +492,7 @@
     "key": "Label.LoginWithYour",
     "description": "Label for a partition line between login with email and facebook login. Please keep the text in lowercase for roman characters.",
     "english": "login with",
-    "translation": "มีบางอย่างผิดปกติ กรุณาเข้าสู่บัญชีของคุณ",
+    "translation": "เข้าสู่ระบบด้วย",
     "isDeprecated": false
   },
   {
@@ -596,7 +596,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ กรุณาเข้าสู่ระบบของแอป LuoBu",
+    "translation": "ไม่สามารถเข้าสู่ระบบบัญชีนี้ได้",
     "isDeprecated": false
   },
   {
@@ -617,6 +617,62 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.AnotherLoggedInDevice",
+    "description": null,
+    "english": "Another Logged In Device",
+    "translation": "อีกหนึ่งอุปกรณ์ที่เข้าระบบอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.VerificationError",
+    "description": null,
+    "english": "System error occurred during verification.",
+    "translation": "เกิดข้อผิดพลาดของระบบในระหว่างการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.AccountSelectorTitle",
+    "description": null,
+    "english": "Select Account to Log In",
+    "translation": "เลือกบัญชีที่จะเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorHelp",
+    "description": null,
+    "english": "All of your associated accounts are listed here.",
+    "translation": "จะระบุบัญชีทั้งหมดที่เกี่ยวข้องของคุณไว้ที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInAnotherDevice",
+    "description": null,
+    "english": "Log In With Another Device",
+    "translation": "เข้าสู่ระบบด้วยอุปกรณ์อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInEmailOneTimeCode",
+    "description": null,
+    "english": "Email Me a One-Time Code",
+    "translation": "ส่งอีเมลรหัสผ่านแบบใช้ครั้งเดียว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "ส่งรหัส",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.CodeSent",
     "description": null,
     "english": "Code Sent",
@@ -625,10 +681,122 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "รับรหัสแบบใช้ครั้งเดียว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "ป้อนรหัสที่ถูกต้องแบบใช้ครั้งเดียว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "ป้อนอีเมลที่ได้ตรวจสอบยืนยันกับบัญชีของคุณแล้วเพื่อรับรหัสแบบใช้ครั้งเดียว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelp",
+    "description": null,
+    "english": "A code was sent to your email if it is verified on your account. Enter the code to log in.",
+    "translation": "ได้มีการส่งรหัสไปยังอีเมลของคุณหากคุณได้ยืนยันอีเมลของคุณไว้สำหรับบัญชีนี้ กรุณาป้อนรหัสด้านล่างนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LoginCodeLearnMore",
+    "description": null,
+    "english": "Learn more about Login Codes",
+    "translation": "เรียนรู้เพิ่มเติมเกี่ยวกับรหัสการเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.LoginCode",
     "description": "placeholder for login code field",
     "english": "Login Code",
     "translation": "รหัสการเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "ที่อยู่อีเมลไม่ถูกต้อง\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} คือรหัสแบบใช้ครั้งเดียวของคุณสำหรับ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} คือรหัสแบบใช้ครั้งเดียวของคุณสำหรับ Roblox ป้อนรหัสนี้ลงในหน้าจอการเข้าสู่ระบบ รหัสนี้จะหมดอายุลงใน 15 นาที{lineBreak}{lineBreak}{boldStart}ห้าม{boldEnd}แบ่งปันรหัสนี้กับผู้อื่น เราจะ{boldStart}ไม่{boldEnd}ติดต่อถามรหัสนี้จากคุณ หากคุณไม่ได้ทำการร้องขอรหัสนี้ คุณก็ไม่จำเป็นต้องดำเนินการต่อ หากคุณได้รับหลายรหัสที่คุณไม่ได้ร้องขอ เราขอแนะนำให้คุณเชื่อมโยงอีเมลอื่นกับบัญชีของคุณ และ {linkTagWithAuthenticatorHelpLinkStart}ตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นโดยแอป Authenticator {linkTagEnd}{lineBreak}{lineBreak}ได้รับคำร้องขอเข้าสู่ระบบนี้จาก {geolocation}{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.AccountSelectorOtpTimeWarning",
+    "description": "timeLimitSec will be a number",
+    "english": "Please select one within {timeLimitSec} seconds.",
+    "translation": "กรุณาเลือกหนึ่งรายการภายใน {timeLimitSec} วินาที",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.IncorrectOtpCode",
+    "description": null,
+    "english": "Your code is incorrect. Please double check and try again.",
+    "translation": "รหัสของคุณไม่ถูกต้อง กรุณาตรวจสอบแล้วลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "ประสบปัญหา?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "ป้อนอีเมลของผู้ปกครองของคุณเพื่อรับรหัสตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpLoginRobloxEmailNetworkError",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "คุณจะต้องอยู่บนเครือข่ายของบริษัทเพื่อเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.ErrorUseCorporateNetwork",
+    "description": null,
+    "english": "You must be on the Corporate network to log in.",
+    "translation": "คุณจะต้องอยู่บนเครือข่ายของบริษัทเพื่อเข้าสู่ระบบ",
     "isDeprecated": false
   },
   {
@@ -668,7 +836,7 @@
     "key": "Label.EnterEmailCode",
     "description": null,
     "english": "Enter the code we just sent you via email.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมล",
     "isDeprecated": false
   },
   {
@@ -676,7 +844,7 @@
     "key": "Label.EnterTextCode",
     "description": null,
     "english": "Enter the code we just sent you via text message.",
-    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางการส่งข้อความ",
     "isDeprecated": false
   },
   {
@@ -852,7 +1020,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Subject",
     "description": "Subject for 2SV activation email",
     "english": "2-Step Verification with Email Activated for Roblox Account: {accountName}",
-    "translation": "เปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox แล้ว: {accountName}",
+    "translation": "เปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox แล้ว: {accountName}",
     "isDeprecated": false
   },
   {
@@ -860,7 +1028,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Subject\t",
     "description": "Subject for 2SV deactivation email",
     "english": "2-Step Verification with Email Deactivated for Roblox Account: {accountName}",
-    "translation": "ปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox แล้ว: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ถูกปิดการใช้งานแล้ว: {accountName}",
     "isDeprecated": false
   },
   {
@@ -868,7 +1036,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Under13",
     "description": "Body for 2SV activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "สวัสดี{lineBreak}{lineBreak}มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชีลูกของ Roblox ของคุณ {accountName} ครั้งถัดไปที่พวกเขาเข้าสู่ระบบจากอุปกรณ์ใหม่ พวกเขาก็จะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักที่ทาง Roblox ได้ส่งให้กับคุณทางอีเมล{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี{lineBreak}{lineBreak}มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ครั้งถัดไปที่พวกเขาเข้าสู่ระบบจากอุปกรณ์ใหม่ พวกเขาก็จะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักที่ทาง Roblox ได้ส่งให้กับคุณทางอีเมล{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -876,7 +1044,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox ของคุณ ครั้งถัดไปที่คุณเข้าสู่ระบบจากอุปกรณ์ใหม่ คุณก็จะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักที่ทาง Roblox ได้ส่งให้กับคุณทางอีเมล{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของคุณ สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักจากที่ Roblox ส่งให้ทางอีเมล{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -884,7 +1052,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "สวัสดี{accountName}{lineBreak}{lineBreak}คุณปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox ของคุณ คุณจะไม่จำเป็นต้องป้อนรหัสรักษาความปลอดภัยสำหรับการเข้าสู่บัญชีของคุณอีกต่อไป{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้ปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของคุณ{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -892,7 +1060,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "สวัสดี{lineBreak}{lineBreak}มีการปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชีลูกของ Roblox ของคุณ {accountName} พวกเขาจะไม่จำเป็นต้องป้อนรหัสรักษาความปลอดภัยสำหรับการเข้าสู่บัญชีนั้นอีกต่อไป{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}การใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของบุตรหลานของคุณถูกปิดการใช้งานแล้ว {accountName}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1020,7 +1188,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}สวัสดี{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสสำหรับการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสข้างต้นนี้ที่หน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการเข้าสู่ระบบให้เสร็จสิ้น รหัสนี้จะหมดอายุในอีก 15 นาที{paragraphEnd}{paragraphStart}คำร้องขอเข้าสู่ระบบนี้มาจาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}ขอขอบพระคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการเข้าสู่ระบบให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอการเข้าสู่ระบบนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1084,7 +1252,7 @@
     "key": "Label.RecoveryCodeMediaType",
     "description": "The name of the recovery code media type.",
     "english": "Backup Code",
-    "translation": "รหัสการกู้คืน",
+    "translation": "รหัสสำรอง",
     "isDeprecated": false
   },
   {
@@ -1100,7 +1268,7 @@
     "key": "Label.EnterRecoveryCode",
     "description": "Summary for passing two step verification given a previously saved code.",
     "english": "Enter a previously saved backup code.",
-    "translation": "ป้อนรหัสการกู้คืนที่ได้บันทึกไว้ก่อนหน้านี้",
+    "translation": "ป้อนรหัสสำรองที่ได้บันทึกไว้ก่อนหน้านี้",
     "isDeprecated": false
   },
   {
@@ -1129,10 +1297,682 @@
   },
   {
     "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator activation email for over 13 users",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักจากแอป Authenticator{lineBreak}{lineBreak}อย่าลืมบันทึกรหัสสำรองในกรณีที่ท่านไม่สามารถเข้าถึงแอป Authenticator {lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator activation email for under 13 users",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ได้มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักจากแอป Authenticator{lineBreak}{lineBreak}อย่าลืมบันทึกรหัสสำรองในกรณีที่ท่านไม่สามารถเข้าถึงแอป Authenticator {lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator activation email.",
+    "english": "2-Step Verification with Authenticator Activated for Roblox Account: {accountName}",
+    "translation": "เปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับบัญชี Roblox แล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
+    "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้ปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator จะไม่จำเป็นต้องใช้รหัสการรักษาความปลอดภัยสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Under13",
+    "description": "Body for 2SV with Authenticator deactivation email for under 13 users",
+    "english": "Hello,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been deactivated for your child's Roblox account, {accountName}. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}การตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator ถูกปิดสำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} จะไม่จำเป็นต้องใช้รหัสการรักษาความปลอดภัยจากแอป Authenticator สำหรับการเข้าสู่ระบบอีกต่อไป{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Subject",
+    "description": "Subject for 2SV with Authenticator deactivation email.",
+    "english": "2-Step Verification with Authenticator Deactivated for Roblox Account: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับบัญชี Roblox ถูกปิดการใช้งานแล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับบัญชี Roblox ของคุณ ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator สำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Authenticator Deactivated by Roblox Support: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator ถูกปิดการใช้งานโดยฝ่ายสนับสนุน Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของคุณ ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลสำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.Subject",
+    "description": null,
+    "english": "2-Step Verification with Email Deactivated by Roblox Support: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยอีเมลถูกปิดการใช้งานโดยฝ่ายสนับสนุน Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}All valid backup codes have been used on your child's Roblox account, {accountName}. To avoid getting locked out, they can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ได้มีการใช้รหัสสำรองที่ถูกต้องทั้งหมดของบัญชี Roblox ของบุตรหลานของคุณแล้ว {accountName} เพื่อหลีกเลี่ยงการถูกล็อคไม่ให้เข้าระบบ คุณสามารถสร้างรหัสสำรองใหม่ได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้ใช้รหัสสำรองที่ถูกต้องทั้งหมดแล้ว เพื่อหลีกเลี่ยงการถูกล็อคไม่ให้เข้าระบบ คุณสามารถสร้างรหัสสำรองใหม่ได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.Subject",
+    "description": null,
+    "english": "No Remaining Backup Codes for Roblox Account: {accountName}",
+    "translation": "ไม่มีรหัสสำรองสำหรับบัญชี Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Subject",
+    "description": "Subject for email when 2SV is triggered by a virtual purchase.",
+    "english": "Roblox Virtual Purchase Verification Request: {accountName}",
+    "translation": "คำร้องขอตรวจสอบยืนยันการซื้อเสมือนจริงสำหรับ Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.HtmlBody",
+    "description": null,
+    "english": "{geoLocationInformation}{spanStartTagWithBold}Virtual transaction code for {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request.{lineBreak}{lineBreak}Resources:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Change Your Password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More About 2-Step Verification{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Keeping Your Account Safe{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}General Roblox Support{aTagEnd} {lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}{spanStartTagWithBold}รหัสธุรกรรมเสมือนจริงสำหรับ {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}ป้อนรหัสนี้ในหน้าจอการยืนยัน 2 ขั้นตอนเพื่อจบการตรวจสอบยืนยันธุรกรรมเสมือนจริงของคุณ รหัสนี้จะหมดอายุใน 15 นาที {lineBreak}{lineBreak}อีเมลนี้ส่งมาให้คุณเนื่องจากการใช้งานของบัญชีของคุณทำให้สัญญาณเตือนทำงาน หากคุณยังไม่ได้ลองทำธุรกรรมใน Roblox อาจมีบุคคลอื่นพยายามเข้าถึงบัญชีของคุณ เราขอแนะนำเป็นอย่างยิ่งให้คุณเปลี่ยนรหัสผ่านของคุณหากคุณไม่ได้เป็นผู้ทำการร้องขอนี้{lineBreak}{lineBreak}รีซอร์ส: {lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}เปลี่ยนรหัสผ่านของคุณ{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}เรียนรู้เพิ่มเติมเกี่ยวกับการยืนยัน 2 ขั้นตอน{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ปกป้องบัญชีของคุณให้ปลอดภัย{aTagEnd}{lineBreak} {aTagStartWithHref}{SupportLink}{hrefEnd}ฝ่ายสนับสนุนทั่วไปของ Roblox{aTagEnd} {lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.PlainBody",
+    "description": null,
+    "english": "{geoLocationInformation}Virtual transaction code for {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Enter this code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{lineBreak}{lineBreak}This email was sent because your account's activity raised an alarm. If you haven't tried transacting in Roblox, someone else may be trying to access your account. You are strongly advised to change your password if you did not generate this request. {lineBreak}{lineBreak}Resources: {lineBreak}Change Your Password [{accountInfoPageLink}] {lineBreak}Learn More About 2-Step Verification [{twoStepVerificationHelpArticleLink}]{lineBreak}Keeping Your Account Safe [{keepAccountSafeArticleLink}] {lineBreak}General Roblox Support [{supportPageLink}] {lineBreak}{lineBreak}Thank you, {lineBreak}{lineBreak}The Roblox Team",
+    "translation": "{geoLocationInformation}รหัสธุรกรรมเสมือนจริงสำหรับ {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}ป้อนรหัสนี้ในหน้าจอการยืนยัน 2 ขั้นตอนเพื่อจบการตรวจสอบยืนยันธุรกรรมเสมือนจริงของคุณ รหัสนี้จะหมดอายุใน 15 นาที {lineBreak}{lineBreak}อีเมลนี้ส่งมาให้คุณเนื่องจากการใช้งานของบัญชีของคุณทำให้สัญญาณเตือนทำงาน หากคุณยังไม่ได้ลองทำธุรกรรมใน Roblox อาจมีบุคคลอื่นพยายามเข้าถึงบัญชีของคุณ เราขอแนะนำเป็นอย่างยิ่งให้คุณเปลี่ยนรหัสผ่านของคุณหากคุณไม่ได้เป็นผู้ทำการร้องขอนี้{lineBreak}{lineBreak}รีซอร์ส: {lineBreak}เปลี่ยนรหัสผ่านของคุณ [{accountInfoPageLink}] {lineBreak}เรียนรู้เพิ่มเติมเกี่ยวกับการยืนยัน 2 ขั้นตอน [{twoStepVerificationHelpArticleLink}]{lineBreak}ปกป้องบัญชีของคุณให้ปลอดภัย [{keepAccountSafeArticleLink}]{lineBreak}ฝ่ายสนับสนุนทั่วไปของ Roblox [{supportPageLink}] {lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของ Roblox ของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการตรวจสอบยืนยันธุรกรรมเสมือนจริงให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอการเข้าสู่ระบบนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox virtual transaction activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เพราะมีการกิจกรรมการทำธุรกรรมเสมือนจริงของ Roblox เพิ่มสูงขึ้น หากคุณไม่ได้ทำการร้องขอนี้ เราขอแนะนำเป็นอย่างยิ่งให้คุณเปลี่ยนรหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Bod",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของ Roblox ของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการตรวจสอบยืนยันธุรกรรมเสมือนจริงให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอการเข้าสู่ระบบนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.Footer.GeneratedBy",
+    "description": null,
+    "english": "This message was generated by {environmentIdentifier}.",
+    "translation": "ข้อความนี้ถูกสร้างขึ้นโดย {environmentIdentifier}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerification",
+    "description": "robux spend friction",
+    "english": "You have successfully verified!",
+    "translation": "คุณทำการตรวจสอบยืนยันได้สำเร็จแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.InvalidCodeTryAgain",
+    "description": "robux spend friction",
+    "english": "Invalid code. Please try again.",
+    "translation": "รหัสไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.VerificationError",
+    "description": "robux spend friction",
+    "english": "System error occurred during verification.",
+    "translation": "เกิดข้อผิดพลาดของระบบในระหว่างการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequired",
+    "description": "robux spend friction",
+    "english": "2-Step Verification is required to make further transactions.",
+    "translation": "จำเป็นต้องมีการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการทำธุรกรรมต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของ Roblox ของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการตรวจสอบยืนยันธุรกรรมเสมือนจริงให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอการเข้าสู่ระบบนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SuccessfulVerificationV2",
+    "description": "robux spend friction",
+    "english": "You have successfully verified! Please retry your previous action.",
+    "translation": "คุณทำการตรวจสอบยืนยันได้สำเร็จแล้ว! กรุณาลองดำเนินการของคุณก่อนหน้านี้อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.RobuxSpendTwoStepVerificationRequiredV2",
+    "description": null,
+    "english": "Verification is required to continue with your previous action.",
+    "translation": "จำเป็นต้องทำการตรวจสอบยืนยันเพื่อดำเนินการตามคำสั่งก่อนหน้าของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SystemErrorSwitchingToEmail",
+    "description": "Error message that appears when someone tries to switch to email as a two step verification method but fails.",
+    "english": "Error sending email code. Please choose alternate verification method or try again later.",
+    "translation": "รหัสข้อผิดพลาดการส่งอีเมล กรุณาเลือกวิธีการการตรวจสอบแบบอื่น หรือลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Message.VerificationRequiredForAction",
+    "description": null,
+    "english": "Verification is required to perform this action.",
+    "translation": "จำเป็นต้องทำการตรวจสอบยืนยันเพื่อดำเนินคำสั่งนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Heading.VerifyAccount",
+    "description": null,
+    "english": "Verify Account",
+    "translation": "ตรวจสอบบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.DefaultError",
+    "description": null,
+    "english": "An error occurred. Please try again.",
+    "translation": "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.SessionExpired",
+    "description": null,
+    "english": "Session has expired. Please try again.",
+    "translation": "เซสชันหมดอายุแล้ว กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Reload",
     "description": null,
     "english": "Reload",
     "translation": "รีโหลด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your trade. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของ Roblox ของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการตรวจสอบยืนยันการแลกเปลี่ยนให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอการเข้าสู่ระบบนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Subject",
+    "description": null,
+    "english": "Roblox Trade Verification Request: {accountName}",
+    "translation": "คำร้องขอตรวจสอบยืนยันการแลกเปลี่ยนสำหรับ Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationItemTradeEmail.V2.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased Roblox trade activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เพราะมีการกิจกรรมการแลกเปลี่ยน Roblox เพิ่มสูงขึ้น หากคุณไม่ได้ทำการร้องขอนี้ เราขอแนะนำเป็นอย่างยิ่งให้คุณเปลี่ยนรหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Resale Verification Request: {accountName}",
+    "translation": "คำร้องขอตรวจสอบยืนยันการขายต่อสำหรับ Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased resale activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เพราะมีการกิจกรรมการขายต่อเพิ่มสูงขึ้น หากคุณไม่ได้ทำการร้องขอนี้ เราขอแนะนำเป็นอย่างยิ่งให้คุณเปลี่ยนรหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your resale. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อทำการตรวจสอบยืนยันการขายต่อให้เสร็จสิ้น รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue your password reset. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการรีเซ็ตรหัสผ่านต่อ รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to reset your password.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เนื่องจากมีการพยายามรีเซ็ตรหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Password Reset Request: {accountName}",
+    "translation": "มีการร้องขอรีเซ็ตรหัสผ่าน Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSLogin.Body",
+    "description": "SMS message for 2sv login.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to verify your account",
+    "translation": "2SV สำหรับ Roblox สำหรับ {accountName}: กรุณาป้อน {code} เพื่อตรวจสอบยืนยันบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSActivationText.Body",
+    "description": "SMS message for activating SMS 2sv.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to activate 2SV.",
+    "translation": "2SV สำหรับ Roblox สำหรับ {accountName}: กรุณาป้อน {code} เพื่อเปิดใช้งาน 2SV",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
+    "description": "SMS message for disabling SMS 2sv.",
+    "english": "Roblox 2SV for {accountName} disabled.",
+    "translation": "2SV สำหรับ Roblox สำหรับ {accountName} ถูกปิดการใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSCustomerSupportDeactivationText.Body",
+    "description": "SMS message for CS deactivation of SMS 2sv.",
+    "english": "Customer support has deactivated 2SV for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from SMS will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in Account Settings under “Security”.",
+    "translation": "ฝ่ายสนับสนุนลูกค้าได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox ของคุณ ซึ่งมักเกิดจากตั๋วขอการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้รหัสความปลอดภัยจาก SMS อีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นอีกครั้งในการตั้งค่าบัญชีภายใต้ \"การรักษาความปลอดภัย\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSRecoveryCodeDepletedText",
+    "description": "SMS message for when out of recovery codes.",
+    "english": "You have no remaining 2SV account backup codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
+    "translation": "คุณไม่มีรหัสสำรองบัญชี 2SV เหลืออยู่สำหรับบัญชี Roblox ของคุณ โปรดติดต่อฝ่ายสนับสนุนลูกค้าเพื่อขอความช่วยเหลือเพิ่มเติมในการกู้คืนบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "2SV สำหรับ Roblox สำหรับ {accountName} ถูกเปิดใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการแก้การเปลี่ยนแปลงบัญชีของคุณกลับคืน รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอนี้จาก{emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เนื่องจากมีการพยายามยกเลิกการเปลี่ยนแปลงที่มีขึ้นกับบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "คำร้องการแปลงบัญชี Roblox กลับคืน: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Over13",
+    "description": "Email to user when activating SMS 2SV.",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Text Messages for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของคุณ สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักจากที่ Roblox ส่งให้ทางข้อความ SMS{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี{lineBreak}{lineBreak}มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ครั้งถัดไปที่พวกเขาเข้าสู่ระบบจากอุปกรณ์ใหม่ พวกเขาก็จะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักที่ทาง Roblox ได้ส่งให้กับคุณทางข้อความ SMS{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Body.Under13",
+    "description": "Email when user activates SMS 2SV.",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี{lineBreak}{lineBreak}มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ครั้งถัดไปที่พวกเขาเข้าสู่ระบบจากอุปกรณ์ใหม่ พวกเขาก็จะต้องป้อนรหัสรักษาความปลอดภัย 6 หลักที่ทาง Roblox ได้ส่งให้กับคุณทางข้อความ SMS{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "เปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox แล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.Subject",
+    "description": "Email to send when CS deactivates SMS 2SV",
+    "english": "2-Step Verification with Text Messages Deactivated by Roblox Support: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS ถูกปิดการใช้งานโดยฝ่ายสนับสนุน Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Over13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Text Messages for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้ปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของคุณ{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Body.Under13",
+    "description": "Email content when SMS 2SV is deactivated",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}การใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของบุตรหลานของคุณถูกปิดการใช้งานแล้ว {accountName}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationText.Subject",
+    "description": "Email Subject when user deactivates SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Deactivated for Roblox Account: {accountName}",
+    "translation": "การทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ถูกปิดการใช้งานแล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของคุณ ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยข้อความ SMS สำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับ {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "สวัสดี {lineBreak}{lineBreak}คุณได้เปลี่ยนวิธีการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี {accountName} จาก {disabledTwoStepMethod} เป็น {enabledTwoStepMethod} หากคุณไม่ได้ทำการร้องขอนี้ ให้ติดต่อฝ่ายสนับสนุนลูกค้าในทันทีเพื่อกู้คืนบัญชีของบุตรหลานของคุณ{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "สวัสดี {lineBreak}{lineBreak}วิธีการตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ได้ถูกเปลี่ยนจาก {disabledTwoStepMethod} เป็น {enabledTwoStepMethod} หากคุณหรือบุตรหลานของคุณไม่ได้ทำการร้องขอนี้ ให้ติดต่อฝ่ายสนับสนุนลูกค้าในทันทีเพื่อกู้คืนบัญชีของบุตรหลานของคุณ{lineBreak}{lineBreak}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.VerifyWithSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.",
+    "translation": "ใช้คีย์การรักษาความปลอดภัยของคุณเพื่อเข้าสู่ระบบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyMediaType",
+    "description": null,
+    "english": "Security Key",
+    "translation": "รหัสการรักษาความปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UseSecurityKey",
+    "description": null,
+    "english": "Use your Security Key to log in.{lineBreak}When prompted, touch your key or use biometrics on this device.",
+    "translation": "ใช้คีย์การรักษาความปลอดภัยของคุณเพื่อเข้าสู่ระบบ{lineBreak}เมื่อได้รับแจ้ง ให้แตะที่คีย์หรือใช้ชีวมิติบนอุปกรณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox 2-Step Verification: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นสำหรับ Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because 2-Step Verification was required to complete your desired action.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลนี้เนื่องจากจำเป็นต้องใช้การตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการตามที่คุณต้องการให้เสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationGenericEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue taking your desired action. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}สวัสดี {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} คือรหัสการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณสำหรับ {emphasisStart}{accountName}{emphasisEnd}{paragraphEnd}{paragraphStart}ป้อนรหัสด้านบนนี้ในหน้าจอการตรวจสอบยืนยันตัวตน 2 ขั้นเพื่อดำเนินการตามที่คุณต้องการต่อ รหัสนี้จะหมดอายุใน 15 นาที{paragraphEnd}{paragraphStart}ได้รับคำร้องขอนี้จาก {emphasisStart}{geoLocationInformation}{emphasisEnd}{paragraphEnd}{paragraphStart}สำคัญ: อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น การแบ่งปันรหัสรักษาความปลอดภัยของคุณกับบุคคลอื่นจะทำให้บัญชีและเนื้อหาในบัญชีของคุณตกอยู่ในความเสี่ยงสูง{paragraphEnd}{lineBreak}{paragraphStart}ขอบคุณ{lineBreak}{emphasisStart}ทีมงาน Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SecurityKeyDirections",
+    "description": null,
+    "english": "When prompted, touch your key or use biometrics on this device.",
+    "translation": "เมื่อได้รับแจ้ง ให้แตะที่คีย์หรือใช้ชีวมิติบนอุปกรณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Security Key for your Roblox account. For some actions like logging in, you will need to have your security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของคุณ สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนคีย์การรักษาความปลอดภัย{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.EmailSubject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Activated for Roblox Account: {accountName}",
+    "translation": "เปิดการทำงานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox แล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to have their security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ได้มีการเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของคุณ {accountName} สำหรับการดำเนินการบางอย่างเช่นการเข้าสู่ระบบ คุณจะต้องป้อนคีย์การรักษาความปลอดภัย{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated by Roblox Support: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยถูกปิดการใช้งานโดยฝ่ายสนับสนุน Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของคุณ ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}ข้อความนี้ถูกส่งให้คุณเพื่อแจ้งว่าทีมฝ่ายสนับสนุนของเราได้ปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของบุตรหลานของคุณ {accountName} ซึ่งมักเกิดจากตั๋วรับการสนับสนุนที่คุณส่งมา หรือเป็นมาตรการรักษาความปลอดภัยเพื่อรับรองความปลอดภัยของบัญชีของคุณ จะไม่จำเป็นต้องใช้คีย์การรักษาความปลอดภัยอีกต่อไปสำหรับการดำเนินการบางอย่าง เช่นการเข้าสู่ระบบ คุณสามารถเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นของคุณใหม่อีกครั้งได้ใน{aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}การตั้งค่าบัญชี{aTagEnd}{lineBreak}{lineBreak}หากคุณต้องการความช่วยเหลือ {spanStartTagWithBold}ไม่ต้องตอบกลับอีเมลฉบับนี้{spanEndTag} ให้ตอบกลับไปยังตั๋วขอการสนับสนุนที่คุณมีอยู่แล้ว หรือส่งคำร้องขอรับบริการใหม่ที่นี่: {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน Roblox{aTagEnd}{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated for Roblox Account: {accountName}",
+    "translation": "การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ถูกปิดการใช้งานแล้ว: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Security Key for your Roblox account.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {accountName}{lineBreak}{lineBreak}คุณได้ปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของคุณ{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
+    "translation": "สวัสดี {lineBreak}{lineBreak}การตรวจสอบยืนยันตัวตน 2 ขั้นด้วยคีย์การรักษาความปลอดภัยสำหรับบัญชี Roblox ของบุตรหลานของคุณได้ถูกปิดการใช้งานแล้ว {accountName}{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}สำคัญ:{boldEnd} อย่าแบ่งปันรหัสการรักษาความปลอดภัยให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}สำคัญ:{boldEnd} อย่าแบ่งปันรหัสสำรองให้กับใครก็ตาม ทาง Roblox จะไม่ถามรหัสของคุณ ซึ่งอาจรวมถึงการขอในรูปแบบต่างๆ เช่นการส่งรหัสของคุณทางข้อความ การแชร์หน้าจอเป็นต้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "รหัสนี้ถูกใช้อยู่ก่อนแล้ว กรุณาเข้าสู่รหัสใหม่",
     "isDeprecated": false
   },
   {
@@ -1161,10 +2001,42 @@
   },
   {
     "namespace": "Authentication.Captcha",
+    "key": "Header.PleaseConfirmYouAreHuman",
+    "description": null,
+    "english": "Please Confirm You Are Human",
+    "translation": "กรุณายืนยันว่าคุณเป็นมนุษย์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Message.Error.Default",
+    "description": null,
+    "english": "An unknown error occurred while displaying captcha.",
+    "translation": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุในระหว่างการแสดง captcha",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
-    "translation": "กรุณาลองใหม่อีกครั้ง.",
+    "translation": "กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Header.RobotChallenge",
+    "description": null,
+    "english": "Robot Challenge",
+    "translation": "ความท้าทายหุ่นยนต์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Description.VerifyingYouAreNotBot",
+    "description": null,
+    "english": "Verifying you're not a bot",
+    "translation": "การตรวจสอบยืนยันว่าคุณไม่ใช่บอท",
     "isDeprecated": false
   },
   {
@@ -1945,6 +2817,22 @@
   },
   {
     "namespace": "Authentication.ResetPassword",
+    "key": "Message.AccountSecurityTicketExpired",
+    "description": "can't revert cuz ticket is expired.",
+    "english": "The account security ticket is expired.",
+    "translation": "ตั๋วการรักษาความปลอดภัยของบัญชีนี้หมดอายุแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordComplex",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "กรุณาใช้รหัสผ่านอื่น ใช้ตัวอักขระพิเศษหรือหมายเลขพิเศษใดก็ตาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
     "key": "MessageDifferentPasswordComplexShort",
     "description": "A shorter error message for users that use a weak password.",
     "english": "Please create a more complex password.",
@@ -1965,6 +2853,22 @@
     "description": "An error message for users that try to use his/her username for new password.",
     "english": "Password shouldn't match username.",
     "translation": "รหัสผ่านไม่ควรตรงกับชื่อผู้ใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "MessageDifferentPasswordRequired",
+    "description": "An error message if the user's proposed password fails the backend password validation.",
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "กรุณาใช้รหัสผ่านอื่น ใช้ตัวอักขระพิเศษหรือหมายเลขพิเศษใดก็ตาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "การคลิกที่ \"ดำเนินการต่อ\" จะถือว่าคุณได้ส่งหมายเลขโทรศัพท์ของคุณ และยอมรับ{linkTagWithSmsTos}ข้อตกลงการใช้งาน SMS{linkTagEnd} และ{linkTagWithPrivacyPolicy}นโยบายความเป็นส่วนตัว{linkTagEnd}ของเรา เราจะส่งรหัสยืนยันแบบใช้ครั้งเดียวให้กับคุณ อาจมีการคิดอัตราค่าบริการในการใช้ข้อความ SMS และข้อมูลเครือข่าย ให้พิมพ์ต่อด้วยข้อความว่า HELP เพื่อขอความช่วยเหลือ",
     "isDeprecated": false
   },
   {
@@ -2740,7 +3644,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "บัญชีนี้ไม่สามารถเข้าสู่ระบบได้ กรุณาเข้าสู่ระบบของแอป LuoBu",
+    "translation": "ไม่สามารถเข้าสู่ระบบบัญชีนี้ได้",
     "isDeprecated": false
   },
   {
@@ -2785,10 +3689,90 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Label.ParentEmailAddress",
+    "description": null,
+    "english": "Parent's Email Address",
+    "translation": "ที่อยู่อีเมลของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePhoneNumber",
+    "description": null,
+    "english": "Use phone number",
+    "translation": "ใช้หมายเลขโทรศัพท์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UseEmail",
+    "description": null,
+    "english": "Use email address",
+    "translation": "ใช้ที่อยู่อีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePasswordPlaceholder",
+    "description": null,
+    "english": "Enter your password again",
+    "translation": "เปลี่ยนรหัสผ่านของคุณอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.RetypePassword",
+    "description": null,
+    "english": "Confirm Password",
+    "translation": "ยืนยันรหัสผ่าน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.CodeResent",
+    "description": null,
+    "english": "Code Resent",
+    "translation": "ส่งรหัสให้อีกครั้งแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Response.InvalidPassword",
     "description": null,
     "english": "Invalid password.",
-    "translation": "รหัสผ่านไม่ถูกต้อง.",
+    "translation": "รหัสผ่านไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "สร้างบัญชีได้สำเร็จ แต่ยังไม่สามารถเข้าสู่ระบบได้ในขณะนี้ กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "กรุณาใช้รหัสผ่านอื่น ใช้ตัวอักขระพิเศษหรือหมายเลขพิเศษใดก็ตาม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.ErrorAcceptTermsToContinue",
+    "description": null,
+    "english": "You must agree to the Terms of Use and acknowledge the Privacy Policy to continue",
+    "translation": "คุณจะต้องยอมรับข้อตกลงการใช้งานและรับทราบถึงนโยบายความเป็นส่วนตัวเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Body",
+    "description": null,
+    "english": "{paragraphStart}Your child is requesting to create the account {emphasisStart}{userName}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address to create an account. In order for your child to complete the account creation process, you must consent to your child’s use of Roblox. You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you and your child agree to the Roblox {aTagStartWithHref}{termsLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Verification Code: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}Parent's Guide To Roblox{emphasisEnd}{paragraphEnd}{paragraphStart}We recommend that you visit our {aTagStartWithHref}{parentsLink}{hrefEnd}Parent’s Guide{aTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{paragraphEnd}{paragraphStart}{emphasisStart}Privacy{emphasisEnd}{paragraphEnd}{paragraphStart}You may remove your child's account anytime by contacting customer service at {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our {aTagStartWithHref}{privacyPolicyLink}{hrefEnd}Privacy Policy{aTagEnd} for more information.{paragraphEnd}",
+    "translation": "{paragraphStart}บุตรหลานของคุณได้ขอสร้างบัญชี {emphasisStart}{userName}{emphasisEnd} ที่ Roblox ซึ่งเป็นแพลตฟอร์มความบันเทิงออนไลน์ที่ช่วยให้เด็กๆ จินตนาการ, สร้างสรรค์ และเล่นด้วยกันในโลก 3 มิติที่สมจริง และมาจากการสร้างสรรค์ขึ้นโดยผู้ใช้ด้วยกันเอง{paragraphEnd}{paragraphStart}บุตรหลานของคุณได้ให้ชื่อผู้ใช้, วันเดือนปีเกิด และที่อยู่อีเมลของผู้ปกครองแก่เราเพื่อสร้างบัญชี เพื่อให้บุตรหลานของคุณดำเนินกระบวนการสร้างบัญชีให้เสร็จสมบูรณ์ คุณจะต้องยินยอมให้บุตรหลานใช้ Roblox คุณต้องป้อนรหัสด้านล่างเพื่อดำเนินการสมัครให้เสร็จสิ้น และยินยอมให้บุตรหลานของคุณใช้ Roblox การป้อนรหัสจะแสดงว่าคุณและบุตรหลานของคุณยอมรับ{aTagStartWithHref}{termsLink}{hrefEnd}ข้อตกลง{aTagEnd} รวมทั้งการตัดสินชี้ขาด และนโยบายความเป็นส่วนตัว คุณจะควบคุมดูแล และ (b)คุณจะเป็นผู้รับผิดชอบแต่เพียงผู้เดียวสำหรับการใช้งาน Roblox ของบุตรหลานของคุณ{paragraphEnd}{paragraphStart}{emphasisStart}รหัสการตรวจสอบยืนยัน: {code}{emphasisEnd}{paragraphEnd}{lineBreak}{paragraphStart}{emphasisStart}คำแนะนำเรื่อง Roblox สำหรับผู้ปกครอง{emphasisEnd}{paragraphEnd}{paragraphStart}เราขอแนะนำให้คุณไปที่{aTagStartWithHref}{parentsLink}{hrefEnd}คำแนะนำของเราสำหรับผู้ปกครอง{aTagEnd}เพื่อช่วยให้คุณได้คุ้นเคยกับแพลตฟอร์มของเรา และค้นหาคำแนะนำที่เป็นประโยชน์สำหรับการสร้างประสบการณ์ที่ดีให้กับบุตรหลานของคุณใน Roblox{paragraphEnd}{paragraphStart}{emphasisStart}ความเป็นส่วนตัว{emphasisEnd}{paragraphEnd}{paragraphStart}คุณสามารถลบบัญชีของบุตรหลานของคุณได้ทุกเมื่อโดยการติดต่อฝ่ายบริการลูกค้าที่ {aTagStartWithHref}{supportLink}{hrefEnd}https://www.roblox.com/support{aTagEnd} จะไม่มีการใช้ที่อยู่อีเมลเพื่อวัตถุประสงค์อื่น, ไม่เปิดเผยให้บุคคลภายนอก หรือใช้รวมกับข้อมูลส่วนตัวอื่นที่เรารวบรวมมาจากบุตรหลานของคุณ กรุณาทบทวน{aTagStartWithHref}{privacyPolicyLink}{hrefEnd}นโยบายความเป็นส่วนตัว{aTagEnd}ของเราสำหรับข้อมูลเพิ่มเติม{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -2797,6 +3781,142 @@
     "description": null,
     "english": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Learn More{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Account Safety{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Support{aTagEnd}",
     "translation": "{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}เรียนรู้เพิ่มเติม{aTagEnd} | {aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ความปลอดภัยของบัญชี{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}ฝ่ายสนับสนุน{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there has been an attempt to sign up for a Roblox account with your email. If you did not make this request, please disregard this email.",
+    "translation": "อย่าตอบกลับอีเมลนี้โดยตรง คุณได้รับอีเมลฉบับนี้เพราะมีเพราะมีการพยายามสมัครบัญชี Roblox ด้วยอีเมลของคุณ หากคุณไม่ได้ทำการร้องขอนี้ โปรดอย่าสนใจอีเมลนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentEmail.Subject",
+    "description": null,
+    "english": "Approval Request To Sign Up For Roblox",
+    "translation": "คำร้องขอการอนุมัติเพื่อสมัคร Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code. ",
+    "translation": "ป้อนอีเมลของผู้ปกครองของคุณเพื่อรับรหัสตรวจสอบยืนยัน ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.AddHeader",
+    "description": null,
+    "english": "Add Parent's Email",
+    "translation": "เพิ่มอีเมลของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.VerifiedParentalConsentModal.VerifyHeader",
+    "description": null,
+    "english": "Verify Your Parent's Email",
+    "translation": "ตรวจสอบอีเมลของผู้ปกครองของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCode",
+    "description": null,
+    "english": "Enter the code we just sent to {email}",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้ถึง {email}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerifiedParentalConsentModal.ChangeEmail",
+    "description": null,
+    "english": "Change Email Address",
+    "translation": "เปลี่ยนที่อยู่อีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterContinue",
+    "description": null,
+    "english": "By entering the code and clicking Continue, you are giving consent to your child to access Roblox.",
+    "translation": "การป้อนรหัสแล้วคลิกที่ดำเนินการต่อ จะถือว่าคุณยินยอมให้บุตรหลานของคุณเข้าถึง Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.VerifiedParentalConsentModal.ResendCode",
+    "description": null,
+    "english": "Resend Code ({time})",
+    "translation": "ส่งรหัสใหม่ ({time})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "ป้อนอีเมลของผู้ปกครองของคุณเพื่อรับรหัสตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "รหัสการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "ข้าพเจ้าได้อ่านและยอมรับ {termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "รับทราบถึง {privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
+    "description": null,
+    "english": "Enter the code we just sent to your parent's email.",
+    "translation": "ป้อนรหัสที่เราเพิ่งส่งให้คุณทางอีเมลผู้ปกครองของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By entering the code, you are giving consent to your child to access Roblox.",
+    "translation": "การป้อนรหัส จะถือว่าคุณยินยอมให้บุตรหลานของคุณเข้าถึง Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Reponse.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "จำเป็นต้องใช้รหัสผ่านที่มีการผสมผสานระหว่างตัวอักษรพิมพ์ใหญ่และตัวพิมพ์เล็กและหมายเลข",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.PasswordKISAComplexity",
+    "description": null,
+    "english": "A password containing a combination of uppercase and lowercase letter and number are required.",
+    "translation": "จำเป็นต้องใช้รหัสผ่านที่มีการผสมผสานระหว่างตัวอักษรพิมพ์ใหญ่และตัวพิมพ์เล็กและหมายเลข",
     "isDeprecated": false
   },
   {
@@ -2865,10 +3985,34 @@
   },
   {
     "namespace": "Common.AlertsAndOptions",
+    "key": "Description.KoreaScreentimeToastText",
+    "description": "Alert text showing to korea user how many hours they've been playing",
+    "english": "Excessive experience use can interfere with normal daily life. You have visited on Roblox for {NumberOfHours} hour(s).",
+    "translation": "การใช้ประสบการณ์มากเกินไปอาจรบกวนการใช้ชีวิตประจำวันตามปกติได้ คุณได้มายัง Roblox เป็นเวลา {NumberOfHours} ชั่วโมงแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Title.Warning",
+    "description": "Warning title shows on toast alert",
+    "english": "Warning",
+    "translation": "คำเตือน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
     "key": "Action.OK",
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "ตกลง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "ข้ามไปยังเนื้อหาหลัก",
     "isDeprecated": false
   },
   {
@@ -3416,6 +4560,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Refresh",
+    "description": null,
+    "english": "Refresh",
+    "translation": "รีเฟรช",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Feature",
     "key": "Heading.VisibleAgeOver13",
     "description": null,
@@ -3668,7 +4820,7 @@
     "key": "Label.Players",
     "description": "search context for user search",
     "english": "People",
-    "translation": "ผู้เล่น",
+    "translation": "ผู้คน",
     "isDeprecated": false
   },
   {
@@ -3724,7 +4876,7 @@
     "key": "Label.CreateGame",
     "description": "Create Game",
     "english": "Create Experience",
-    "translation": "สร้างเกม",
+    "translation": "สร้างประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -3756,7 +4908,7 @@
     "key": "Label.ConfigureGame",
     "description": "configure game page title",
     "english": "Configure Experience",
-    "translation": "กำหนดค่าเกม",
+    "translation": "กำหนดค่าประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -3900,7 +5052,7 @@
     "key": "Description.UnsupportedLanguage",
     "description": null,
     "english": "While some experiences may use the selected language, it is not fully supported by roblox.com.",
-    "translation": "ถึงแม้ว่าอาจจะมีบางเกมที่มีการใช้ภาษาที่เลือก ภาษานั้นก็ไม่ได้รับการรับรองจาก roblox.com อย่างสมบูรณ์",
+    "translation": "ถึงแม้ว่าอาจจะมีบางประสบการณ์จะใช้ภาษาที่เลือก ภาษานั้นก็ไม่ได้รับการรับรองจาก roblox.com อย่างสมบูรณ์",
     "isDeprecated": false
   },
   {
@@ -4020,7 +5172,47 @@
     "key": "Label.MyMoney",
     "description": null,
     "english": "My Transactions",
-    "translation": "เงินของฉัน",
+    "translation": "ธุรกรรมของฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Accessibility",
+    "description": null,
+    "english": "Accessibility",
+    "translation": "การเข้าถึง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Experience",
+    "description": null,
+    "english": "Experiences",
+    "translation": "ประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Heading.PrivateServers",
+    "description": null,
+    "english": "Private Servers",
+    "translation": "เซิร์ฟเวอร์ส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.CreatorMarketplace",
+    "description": "a storefront for assets, similar to the Library",
+    "english": "Creator Marketplace",
+    "translation": "สร้างตลาด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.Robux10PercentMore",
+    "description": "10% more label on the Robux Menu button",
+    "english": "10% More",
+    "translation": "เพิ่ม 10%",
     "isDeprecated": false
   },
   {
@@ -4353,6 +5545,14 @@
   },
   {
     "namespace": "CommonUI.Messages",
+    "key": "Description.ErrorPageCheckStatus",
+    "description": "message shown on common error pages, directing users to the Roblox status page",
+    "english": "If you continue to receive this message, check out {startLink}our status{endLink}.",
+    "translation": "หากคุณยังได้รับข้อความนี้อีก กรุณาตรวจสอบ{startLink}สถานะของเรา{endLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
     "key": "Action.Accept",
     "description": "Accept button for Cookie Banner",
     "english": "Accept All",
@@ -4365,6 +5565,30 @@
     "description": "Decline button for Cookie Banner",
     "english": "Decline All",
     "translation": "ปฏิเสธทั้งหมด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirection",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking.",
+    "translation": "หน้าเพจนี้ถูกย้ายไปที่ Creator Dashboard แล้ว คุณสามารถใช้หน้าเพจที่ได้รับการอัปเดตได้โดยคลิกที่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[ที่นี่]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionMessage",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkText}.",
+    "translation": "หน้าเพจนี้ถูกย้ายไปที่ Creator Dashboard แล้ว คุณสามารถใช้หน้าเพจที่ได้รับการอัปเดตได้โดยคลิกที่ {linkText}",
     "isDeprecated": false
   },
   {
@@ -5849,6 +7073,54 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeLong",
+    "description": null,
+    "english": "Keep Your Account Safe With 2-Step Verification Via Authenticator",
+    "translation": "เพื่อปกป้องบัญชีของคุณให้ปลอดภัยด้วยการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย Authenticator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.KeepYourAccountSafeShort",
+    "description": null,
+    "english": "Keep Your Account Safe With Authenticator",
+    "translation": "เพื่อปกป้องบัญชีของคุณให้ปลอดภัยด้วย Authenticator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNew",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to make your account more secure. This would help keep your account safe even if your password or email is stolen. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัยยิ่งขึ้น การทำเช่นนี้จะช่วยให้บัญชีของคุณปลอดภัย แม้ว่ารหัสผ่านหรืออีเมลของคุณจะถูกขโมยไป หากบัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป เรียนรู้เพิ่มเติมที่{linkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptNewShort",
+    "description": null,
+    "english": "We recommend that you enable 2-Step Verification via an authenticator app to keep your account safe. If your account is compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. Learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัย หากบัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป เรียนรู้เพิ่มเติมที่{linkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestorePolicyMessageSubject",
+    "description": null,
+    "english": "Enable 2-step verification via authenticator to keep your account safe",
+    "translation": "เปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วย authenticator เพื่อปกป้องบัญชีของคุณให้ปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestorePolicyMessageBody",
+    "description": null,
+    "english": "Hi, {lineBreak}{lineBreak}We recommend that you enable 2-step verification via an authenticator app to make your account more secure. This will help keep your account safe even if your password or email is stolen. In the event that your account is ever compromised, Customer Support will evaluate the security measures you put in place as we try to help you recover any lost value. {lineBreak}{lineBreak}You can set up an authenticator app on your account by going to {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}For more information, please visit our {helpPageLinkStart}help page{linkEnd}.",
+    "translation": "สวัสดี {lineBreak}{lineBreak}เราขอแนะนำให้คุณเปิดใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้นด้วยแอป authenticator เพื่อทำให้บัญชีของคุณปลอดภัย การทำเช่นนี้จะช่วยให้บัญชีของคุณปลอดภัยได้ แม้ว่ารหัสผ่านหรืออีเมลของคุณจะถูกขโมยไป ในกรณีที่บัญชีของคุณถูกบุกรุก ทางฝ่ายสนับสนุนลูกค้าจะประเมินมาตรการการรักษาความปลอดภัยที่คุณใช้เพื่อการช่วยกู้คืนมูลค่าใดก็ตามที่สูญเสียไป {lineBreak}{lineBreak}คุณสามารถติดตั้งแอป authenticator สำหรับบัญชีของคุณได้โดยการไปที่ {securityPageLinkStart}https://www.roblox.com/my/account#!/security{linkEnd}. {lineBreak}{lineBreak}สำหรับข้อมูลเพิ่มเติม กรุณาไปยัง{helpPageLinkStart}หน้าเพจส่วนช่วยเหลือ{linkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.TwoStepVerificationUpdate",
     "description": null,
     "english": "2-Step Verification Update",
@@ -5932,7 +7204,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
     "description": null,
     "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
-    "translation": "กรุณาเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น โดยใช้ Authenticator เพื่อช่วยปกป้องบัญชีของคุณ คุณสามารถทำได้โดยไปที่ {linkStartSettings}การตั้งค่าบัญชี {linkEndSettings}{lineBreak}{lineBreak}หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงสิ่งของที่สูญหายและสกุลเงินเสมือนด้วย เรียนรู้เพิ่มเติมได้ที่{linkStartHelp}เพจความช่วยเหลือ{linkEndHelp}ของเรา",
+    "translation": "กรุณาเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น โดยใช้ Authenticator เพื่อช่วยปกป้องบัญชีของคุณ คุณสามารถทำได้โดยไปที่ {linkStartSettings}การตั้งค่าบัญชี{linkEndSettings}{lineBreak}{lineBreak}หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงสิ่งของที่สูญหายและสกุลเงินเสมือนด้วย เรียนรู้เพิ่มเติมได้ที่{linkStartHelp}เพจความช่วยเหลือ{linkEndHelp}ของเรา",
     "isDeprecated": false
   },
   {
@@ -5941,6 +7213,14 @@
     "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
     "english": "Protect Your Account!",
     "translation": "ปกป้องบัญชีของคุณ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "กรุณาเปิดการใช้งานการตรวจสอบยืนยันตัวตน 2 ขั้น โดยใช้แอป Authenticator เพื่อช่วยปกป้องบัญชีของคุณ คุณสามารถทำได้โดยไปที่ {linkStartSettings}การตั้งค่าบัญชี{linkEndSettings}หากบัญชีของคุณถูกบุกรุก ทาง Roblox ไม่น่าจะสามารถกู้ หรือกู้คืนมูลค่าของบัญชีของคุณได้ ซึ่งรวมถึงไอเทมที่สูญหายและสกุลเงินเสมือนด้วย",
     "isDeprecated": false
   },
   {
@@ -5961,10 +7241,50 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Action.PickN",
+    "description": null,
+    "english": "Pick {count}.",
+    "translation": "เลือก {count}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
-    "translation": "กรุณาลองใหม่อีกครั้ง.",
+    "translation": "กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Action.SelectAllThatApply",
+    "description": null,
+    "english": "Select all that apply.",
+    "translation": "เลือกทั้งหมดที่ตรง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.VerifyYourIdentity",
+    "description": null,
+    "english": "To keep your account secure, please verify your identity.",
+    "translation": "กรุณาตรวจสอบยืนยันตัวตนของคุณเพื่อปกป้องบัญชีของคุณให้ปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.WhichGames",
+    "description": null,
+    "english": "Which of these experiences have you joined in the last {days} days?",
+    "translation": "ประสบการณ์ใดต่อไปนี้ที่คุณได้เข้าร่วมในช่วง {days} วันที่ผ่านมา?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Header.PleaseConfirmYourIdentity",
+    "description": null,
+    "english": "Please Confirm Your Identity",
+    "translation": "กรุณายืนยันตัวตนของคุณ",
     "isDeprecated": false
   },
   {
@@ -5973,6 +7293,38 @@
     "description": null,
     "english": "An unknown error occurred.",
     "translation": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.MustPickN",
+    "description": null,
+    "english": "You must pick the required number of choices.",
+    "translation": "คุณจะต้องเลือกตัวเลือกให้ครบจำนวนที่กำหนด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.SessionInactive",
+    "description": null,
+    "english": "Session has expired.",
+    "translation": "เซสชันหมดอายุแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownGame",
+    "description": null,
+    "english": "Unknown Game",
+    "translation": "เกมที่ไม่ทราบ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.UnknownChoice",
+    "description": null,
+    "english": "Unknown Choice",
+    "translation": "ตัวเลือกที่ไม่ทราบ",
     "isDeprecated": false
   },
   {
@@ -5985,10 +7337,66 @@
   },
   {
     "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.AnswerIncorrect",
+    "description": null,
+    "english": "Your last answer was incorrect.",
+    "translation": "คำตอบล่าสุดของคุณไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.YourPasswordHasBeenReset",
+    "description": null,
+    "english": "To protect your account, your password has been reset.",
+    "translation": "ได้มีการรีเซ็ตรหัสผ่านของคุณเพื่อปกป้องบัญชีของคุณให้ปลอดภัย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccess",
+    "description": null,
+    "english": "To regain access to your account, please contact Roblox Customer Support {linkStart}here{linkEnd}.",
+    "translation": "กรุณาติดต่อฝ่ายสนับสนุนลูกค้า Roblox {linkEnd}ที่นี่{linkStart}เพื่อกู้คืนการเข้าถึงบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Message.Error.SecurityQuestions.UserWasForceReset",
+    "description": null,
+    "english": "Password was reset.",
+    "translation": "รหัสผ่านถูกรีเซ็ต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "ต่อไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccessGeneric",
+    "description": null,
+    "english": "To regain access to your account, please click {styledLinkText}.",
+    "translation": "กรุณาคลิกที่ {styledLinkText} เพื่อกู้คืนการเข้าถึงบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "การตรวจสอบยืนยันรหัสผ่าน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "กรุณาป้อนรหัสผ่านของคุณเพื่อดำเนินการต่อ",
     "isDeprecated": false
   },
   {
@@ -6001,6 +7409,22 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Label.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "รหัสผ่านของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Action.ForgotYourPassword",
+    "description": null,
+    "english": "{linkStart}Forgot your password?{linkEnd}",
+    "translation": "{linkStart}ลืมรหัสผ่านของคุณอย่างนั้นหรือ?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred.",
@@ -6009,10 +7433,42 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.PasswordIncorrect",
+    "description": null,
+    "english": "Password incorrect.",
+    "translation": "รหัสผ่านไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Action.PleaseTryAgain",
     "description": null,
     "english": "Please try again.",
-    "translation": "กรุณาลองใหม่อีกครั้ง.",
+    "translation": "กรุณาลองใหม่อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team\t",
+    "translation": "สวัสดี{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} คือรหัสแบบใช้ครั้งเดียวของคุณสำหรับ Roblox ป้อนรหัสนี้ลงในหน้าจอการเข้าสู่ระบบ รหัสนี้จะหมดอายุลงใน 15 นาที{lineBreak}{lineBreak}{boldStart}ห้าม{boldEnd}แบ่งปันรหัสนี้กับผู้อื่น เราจะ{boldStart}ไม่{boldEnd}ติดต่อถามรหัสนี้จากคุณ หากคุณไม่ได้ทำการร้องขอรหัสนี้ คุณก็ไม่จำเป็นต้องดำเนินการต่อ หากคุณได้รับหลายรหัสที่คุณไม่ได้ร้องขอ เราขอแนะนำให้คุณเชื่อมโยงอีเมลอื่นกับบัญชีของคุณ และ {linkTagWithAuthenticatorHelpLinkStart}ตั้งค่าการตรวจสอบยืนยันตัวตน 2 ขั้นโดยแอป Authenticator {linkTagEnd}{lineBreak}{lineBreak}ได้รับคำร้องขอเข้าสู่ระบบนี้จาก {geolocation}{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} คือรหัสแบบใช้ครั้งเดียวของคุณสำหรับ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}บุตรหลานของคุณได้ขอสร้างบัญชี Roblox ซึ่งเป็นแพลตฟอร์มความบันเทิงออนไลน์ที่ช่วยให้เด็กๆ จินตนาการ, สร้างสรรค์ และเล่นด้วยกันในโลก 3 มิติที่สมจริง และมาจากการสร้างสรรค์ขึ้นโดยผู้ใช้ด้วยกันเอง{lineBreak}{lineBreak}รหัสการตรวจสอบยืนยัน: {code}{lineBreak}{lineBreak}บุตรหลานของคุณได้ให้ชื่อผู้ใช้, วันเดือนปีเกิด และที่อยู่อีเมลของผู้ปกครองแก่เราเพื่อสร้างบัญชี เพื่อให้กระบวนการสร้างบัญชีเสร็จสมบูรณ์ คุณจะต้องยินยอมให้บุตรหลานใช้ Roblox{lineBreak}{lineBreak}คุณต้องป้อนรหัสด้านล่างเพื่อดำเนินการสมัครให้เสร็จสิ้น และยินยอมให้บุตรหลานของคุณใช้ Roblox การป้อนรหัสจะแสดงว่าคุณยอมรับ{linkTagWithTermsLinkStart}ข้อตกลงของ Roblox{linkTagEnd} รวมทั้งอนุญาโตตุลาการและ {linkTagWithPrivacyPolicyLinkStart}นโยบายความเป็นส่วนตัว{linkTagEnd} คุณจะควบคุมดูแล และเป็นผู้รับผิดชอบแต่เพียงผู้เดียวสำหรับการใช้งาน Roblox ของบุตรหลานของคุณ และคุณยินยอมให้มีการประมวลผลข้อมูลของบุตรหลานของคุณที่เชื่อมโยงกับการบริการ{lineBreak}{lineBreak}{boldStart}คำแนะนำเรื่อง Roblox สำหรับผู้ปกครอง{boldEnd}{lineBreak}{lineBreak}เราขอแนะนำให้คุณไปที่คำแนะนำของเราสำหรับผู้ปกครองเพื่อช่วยให้คุณได้คุ้นเคยกับแพลตฟอร์มของเรา และค้นหาคำแนะนำที่เป็นประโยชน์สำหรับการสร้างประสบการณ์ที่ดีให้กับบุตรหลานของคุณใน Roblox{lineBreak}{lineBreak}{boldStart}ความเป็นส่วนตัว{boldEnd}{lineBreak}{lineBreak}คุณสามารถลบบัญชีของบุตรหลานของคุณได้ทุกเมื่อโดยการติดต่อฝ่ายบริการลูกค้าที่ https://www.roblox.com/support จะไม่มีการใช้ที่อยู่อีเมลเพื่อวัตถุประสงค์อื่น, ไม่เปิดเผยให้บุคคลภายนอก หรือใช้รวมกับข้อมูลส่วนตัวอื่นที่เรารวบรวมมาจากบุตรหลานของคุณ กรุณาทบทวนนโยบายความเป็นส่วนตัวของเราสำหรับข้อมูลเพิ่มเติม{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงาน Roblox",
     "isDeprecated": false
   }
 ]
