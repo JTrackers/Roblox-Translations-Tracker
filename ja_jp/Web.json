@@ -624,6 +624,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInAnotherDevice",
+    "description": null,
+    "english": "Log In With Another Device",
+    "translation": "他のデバイスでログイン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LogInEmailOneTimeCode",
+    "description": null,
+    "english": "Email Me a One-Time Code",
+    "translation": "1回限りのコードをメールで送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "コードを送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "コードが送信されました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "1回限りのコードを取得",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "1回限りのコードを入力",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "あなたのアカウントで認証済みのメールアドレスを入力し、一回限りのコードを受け取ります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelp",
+    "description": null,
+    "english": "A code was sent to your email if it is verified on your account. Enter the code to log in.",
+    "translation": "あなたのアカウントのメールアドレスが認証済みの場合、コードが送信されています。ログインするには、コードを入力してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.LoginCodeLearnMore",
+    "description": null,
+    "english": "Learn more about Login Codes",
+    "translation": "ログインコードについてもっと詳しく",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.LoginCode",
+    "description": "placeholder for login code field",
+    "english": "Login Code",
+    "translation": "ログインコード",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12364,7 +12444,7 @@
     "key": "Label.WhosePrivateServerICanJoin",
     "description": null,
     "english": "Whose private servers can this account join through links?",
-    "translation": "リンク経由で誰のプライベートサーバーに参加できますか？",
+    "translation": "リンクを使って、このアカウントが参加できるプライベートサーバーの所有者",
     "isDeprecated": false
   },
   {
@@ -12429,6 +12509,30 @@
     "description": null,
     "english": "People create private servers to control who can play in an experience with them. You can prevent this account from following links into private servers.",
     "translation": "仮想空間の中で誰がプレイできるかをコントロールするためにプライベートサーバーを作成できます。以下のリンクを使って、このアカウントがプライベートサーバーまで追いかけてくることを防げます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhosePrivateServerICanJoinV2",
+    "description": null,
+    "english": "Whose private servers can this account join through links?",
+    "translation": "リンクを通じてこのアカウントが参加できるプライベートサーバーの所有者",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowersV2",
+    "description": null,
+    "english": "Friends, users I follow, and my followers",
+    "translation": "友達とフォロー中のユーザーとフォロワー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.FollowingV2",
+    "description": null,
+    "english": "Friends and users I follow",
+    "translation": "フォローしている友達とユーザー",
     "isDeprecated": false
   },
   {
@@ -14684,7 +14788,7 @@
     "key": "Heading.ItemAddedToCart",
     "description": null,
     "english": "{itemName} has been added to your cart",
-    "translation": "{itemName} が買い物かごに追加しました",
+    "translation": "{itemName} を買い物かごに追加しました",
     "isDeprecated": false
   },
   {
@@ -25541,6 +25645,54 @@
     "description": null,
     "english": "Purchase Completed",
     "translation": "購入完了",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.GeneralError",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again later",
+    "translation": "問題が発生しました。後でもう一度お試しください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessGeneralFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed",
+    "translation": "{itemCountSuccess} 個のアイテムを購入しました。 {itemCountFailure} 個のアイテムは購入できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessItemsOwnedFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) you already own",
+    "translation": "{itemCountSuccess} 個のアイテムを購入しました。 {itemCountFailure} 個のアイテムは所有中です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessInsufficientFundsFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to insufficient funds",
+    "translation": "{itemCountSuccess} 個のアイテムを購入しました。 {itemCountFailure} 個のアイテムは資金不足のため購入できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNetworkErrorFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to network error",
+    "translation": "{itemCountSuccess} 個のアイテムを購入しました。 {itemCountFailure} 個のアイテムはネットワークエラーのため購入できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessFloodcheckFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to too many requests",
+    "translation": "{itemCountSuccess} 個のアイテムを購入しました。 {itemCountFailure} 個のアイテムはリクエストが多すぎたため購入できませんでした",
     "isDeprecated": false
   },
   {
@@ -63372,7 +63524,7 @@
     "key": "Title.OrganicTrafficConversionFunnel",
     "description": "Chart Title in User Acquisitions",
     "english": "Organic Traffic Conversion Funnel",
-    "translation": "ナチュラルトラフィック経由コンバージョン・ファネル",
+    "translation": "自然検索経由トラフィックのコンバージョン・ファネル",
     "isDeprecated": false
   },
   {
@@ -73728,6 +73880,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Overview",
+    "description": null,
+    "english": "Overview",
+    "translation": "概要",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -83192,6 +83352,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.RobloxGroup",
+    "description": null,
+    "english": "Roblox Group",
+    "translation": "Roblox グループ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.TagLabel",
     "key": "Label.PluginSecurity",
     "description": null,
@@ -84312,6 +84480,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.PersonalTransport",
+    "description": null,
+    "english": "Transport",
+    "translation": "移動",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Label.Name",
     "description": null,
@@ -84421,6 +84597,14 @@
     "description": null,
     "english": "Max size per file: {maxAttachmentSize} MB",
     "translation": "ファイルあたりの最大サイズ: {maxAttachmentSize} MB",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.TextFieldCharacterCount",
+    "description": null,
+    "english": "{currentTextLength}/{maxTextLength} characters",
+    "translation": "{currentTextLength}/{maxTextLength} 文字",
     "isDeprecated": false
   },
   {
@@ -85283,7 +85467,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.NotificationsIncreaseEngagement",
     "description": "Description encouraging developers to use this feature. And a link to the devhub documentation",
-    "english": "Creating Notifications can increase player engagement in your experience. {linkStart}Learn more{linkEnd}",
+    "english": "Customizing Notifications can increase player engagement in your experience. {linkStart}Learn more{linkEnd}",
     "translation": "通知を作成すると、仮想空間内でのプレイヤーのエンゲージメント向上につながります。 {linkStart}詳しくはこちら{linkEnd}",
     "isDeprecated": false
   },
@@ -85347,7 +85531,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Common.ID",
     "description": "column header. (here ID is the header for asset ID which is a unique id generated when a notification string is created)",
-    "english": "ID",
+    "english": "Asset ID",
     "translation": "ID番号",
     "isDeprecated": false
   },
@@ -87747,7 +87931,7 @@
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.EventSettings",
     "description": "Title for settings related to events for creators. Events in this context are things like emails, push notifications, and messages.",
-    "english": "Event Settings",
+    "english": "Events",
     "translation": "イベント設定",
     "isDeprecated": false
   },
@@ -87777,10 +87961,18 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Label.ApplicationStatusEvent",
+    "description": "DO NOT TRANSLATE",
+    "english": "application statuses",
+    "translation": "application statuses",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Description.JobApplications",
     "description": "DO NOT TRANSLATE",
     "english": "job applications",
-    "translation": "Job applications",
+    "translation": "job applications",
     "isDeprecated": true
   },
   {
@@ -87788,7 +87980,7 @@
     "key": "Label.JobApplications",
     "description": "label for job applications",
     "english": "job applications",
-    "translation": "job applications",
+    "translation": "求人応募",
     "isDeprecated": false
   },
   {
@@ -87796,7 +87988,7 @@
     "key": "Label.ApplicationRescindments",
     "description": "application rescindments (meaning to revoke the application)",
     "english": "application rescindments",
-    "translation": "application rescindments",
+    "translation": "応募の取り消し",
     "isDeprecated": false
   },
   {
@@ -87804,7 +87996,23 @@
     "key": "Label.NewMessages",
     "description": "label for new messages",
     "english": "new messages",
-    "translation": "new messages",
+    "translation": "新着メッセージ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.ApplicationStatuses",
+    "description": "label for application statuses",
+    "english": "application statuses",
+    "translation": "応募状況",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.JobInvitations",
+    "description": "label for job invitations (requests to apply for a job)",
+    "english": "job invitations",
+    "translation": "仕事への招待",
     "isDeprecated": false
   },
   {
@@ -88107,7 +88315,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.DeletedEntries",
     "description": null,
-    "english": "- Deleted entries:",
+    "english": "- Deleted Translations:",
     "translation": "- 削除済み入力内容:",
     "isDeprecated": false
   },
@@ -88157,6 +88365,62 @@
     "description": null,
     "english": "Please only upload one CSV file of max size 3MB. ",
     "translation": "最大サイズ3MBまでのCSVファイルを1つだけアップロードしてください。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.ModifiedEntries",
+    "description": null,
+    "english": "Modified Entries",
+    "translation": "修正済みの入力内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.ModifiedTranslations",
+    "description": null,
+    "english": "- Modified Translations:",
+    "translation": "- 修正済みの翻訳内容:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.AnalyzingTable",
+    "description": null,
+    "english": "Analyzing current table",
+    "translation": "現在のテーブルを分析中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Label.Loading",
+    "description": null,
+    "english": "Loading",
+    "translation": "ロード中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.MissingMandatoryHeaders",
+    "description": null,
+    "english": "- Missing mandatory header(s):",
+    "translation": "- 必須ヘッダーがありません:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.EmptyCsv",
+    "description": null,
+    "english": "- The uploaded CSV file is empty. If you would like to clear your localization table, please use the 'Delete Table' button to do so",
+    "translation": "- アップロードされたCSVファイルは空です。多言語化テーブルをクリアしたい場合は、「テーブルを削除」ボタンを使用してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationTableManagement",
+    "key": "Description.InvalidSupportedLanguage",
+    "description": null,
+    "english": "- Language(s) not supported: ",
+    "translation": "- 言語に対応していません: ",
     "isDeprecated": false
   }
 ]
