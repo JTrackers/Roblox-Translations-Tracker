@@ -7556,7 +7556,7 @@
     "key": "RobloxRibbonMainWindow.LockTool",
     "description": null,
     "english": "Lock Tool",
-    "translation": "ロックツール",
+    "translation": "ツールをロック",
     "isDeprecated": false
   },
   {
@@ -14324,7 +14324,7 @@
     "key": "RobloxStudioVerbs.Undo1",
     "description": null,
     "english": "Undo %s",
-    "translation": "%s を取り消す",
+    "translation": "取り消し %s",
     "isDeprecated": false
   },
   {
@@ -30600,6 +30600,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.NewExperiencesEnableTeamCreate",
+    "description": null,
+    "english": "New experiences enable Team Create",
+    "translation": "新しい仮想空間によってチームクリエイトを有効化",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.NewExperiencesEnableTeamCreateDesc",
+    "description": null,
+    "english": "New experiences in Studio are immediately saved to Roblox and enable Team Create by default.,",
+    "translation": "Studioで新しい仮想空間ができると、すぐに Roblox に保存され、デフォルトでチームクリエイトが有効化されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Diagnostics.LowOnMemory",
+    "description": "This is shown as title text for a dialog that is displayed to the user when Studio is running low on memory.",
+    "english": "Studio is low on memory",
+    "translation": "Studio がメモリ不足です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Diagnostics.LowOnMemoryAction",
+    "description": "This is shown as a description for a dialog that is displayed to the user when Studio is running low on memory to tell them to close Studio and try again.",
+    "english": "Please relaunch Studio and try again.",
+    "translation": "Studio を再起動してもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ResetLayoutSettingsTitle",
+    "description": null,
+    "english": "Reset Layout Settings",
+    "translation": "レイアウト設定をリセット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ResetLayoutSettingsText",
+    "description": null,
+    "english": "Resetting layout requires restarting Studio",
+    "translation": "レイアウトのリセットには、Studio の再起動が必要です",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.GameSettings",
     "key": "General.PluginName",
     "description": null,
@@ -37028,7 +37076,7 @@
     "key": "Subcategory.ModelStructureObby",
     "description": "A Roblox \"Obby\"",
     "english": "Obby",
-    "translation": "アスレ",
+    "translation": "障害物アスレ",
     "isDeprecated": false
   },
   {
@@ -39548,7 +39596,7 @@
     "key": "HomeView.Obby",
     "description": null,
     "english": "Obby",
-    "translation": "アスレ",
+    "translation": "障害物アスレ",
     "isDeprecated": false
   },
   {
@@ -54253,6 +54301,70 @@
     "description": null,
     "english": "Entry (key: {key}, source: {source}, context: {context}) cannot have an empty source",
     "translation": "出力 (キー: {key}、、ソース: {source}、コンテキスト: {context}) は空のソースを持つことはできません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.DuplicateSourceContextError",
+    "description": null,
+    "english": "Entry (key: {key}, source: {source}, context: {context}) cannot contain the same (source, context) pair as another entry",
+    "translation": "入力 （キー: {key}、ソース: {source}、 コンテキスト: {context}）は、他の入力内容として同じペア（ソース、コンテキスト）を入れることはできません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.EmptyCSVWarning",
+    "description": null,
+    "english": "An empty CSV has been uploaded. All entries and translations will be manually deleted from your table and these entries will not be scraped again via automatic text capture until a new game server is launched.",
+    "translation": "空の CSV がアップロードされました。 すべての入力内容と翻訳は手動でテーブルから削除され、新しいゲームサーバーが起動されるまでは、これらの入力内容が自動テキスト抽出を介して再度スクレイピングされることはありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.LocaleTooLong",
+    "description": null,
+    "english": "Locale for table entry (locale: {locale}, translation: {translation}) exceeds character limit",
+    "translation": "テーブル入力の地域（地域： {locale}、翻訳： {translation}） が文字数制限を超えています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.TranslationTooLong",
+    "description": null,
+    "english": "Translation string for table entry (locale: {locale}, translation: {translation}) exceeds character limit",
+    "translation": "テーブル入力の翻訳文字列（地域： {locale}、翻訳： {translation}） が文字数制限を超えています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.ContextTooLong",
+    "description": null,
+    "english": "Context for entry (key: {key}, example: {example}, source: {source}, context: {context}) exceeds character limit",
+    "translation": "コンテキストの入力 （キー: {key}、例: {example}、 ソース: {source}、 コンテキスト: {context}） が文字数制限を超えています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.KeyTooLong",
+    "description": null,
+    "english": "Key for entry (key: {key}, example: {example}, source: {source}, context: {context}) exceeds character limit",
+    "translation": "入力キー （キー: {key}、例: {example}、 ソース: {source}、 コンテキスト: {context}） が文字数制限を超えています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.ExampleTooLong",
+    "description": null,
+    "english": "Example for entry (key: {key}, example: {example}, source: {source}, context: {context}) exceeds character limit",
+    "translation": "入力の例 （キー: {key}、例: {example}、 ソース: {source}、 コンテキスト: {context}） が文字数制限を超えています",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LocalizationTools",
+    "key": "UploadTable.SourceTooLong",
+    "description": null,
+    "english": "Source for entry (key: {key}, example: {example}, source: {source}, context: {context}) exceeds character limit",
+    "translation": "入力ソース （キー: {key}、例: {example}、 ソース: {source}、 コンテキスト: {context}） が文字数制限を超えています",
     "isDeprecated": false
   },
   {
