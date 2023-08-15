@@ -768,6 +768,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "問題がある場合",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -2221,6 +2229,14 @@
     "description": null,
     "english": "The account security ticket is expired.",
     "translation": "アカウントのセキュリティチケットが有効期限切れです。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "LabelPhone",
+    "description": null,
+    "english": "Phone",
+    "translation": "電話番号",
     "isDeprecated": false
   },
   {
@@ -4101,6 +4117,22 @@
     "description": null,
     "english": "Resend Code ({time})",
     "translation": "コードを再送信（{time}）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "認証コードを受けとるには、保護者の方のメールアドレスを入力してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.VerificationCode",
+    "description": null,
+    "english": "Verification Code",
+    "translation": "認証コード",
     "isDeprecated": false
   },
   {
@@ -6252,7 +6284,7 @@
     "key": "ActionsGetPremium",
     "description": "Button to subscriptions page",
     "english": "Get Premium",
-    "translation": "プレミアム会員になる",
+    "translation": "プレミアムに入会",
     "isDeprecated": false
   },
   {
@@ -12641,6 +12673,62 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they don't have an account email",
+    "english": "You must provide and verify your email before you can delete your PIN.",
+    "translation": "PINを削除する前に、メールアドレスを入力して認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified email",
+    "english": "You must verify your email before you can delete your PIN.",
+    "translation": "PINを削除する前に、メールアドレスを認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can add a PIN.",
+    "translation": "PINを追加する前に、保護者の方のメールアドレスを入力して認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can delete your PIN.",
+    "translation": "PINを削除する前に、保護者の方のメールアドレスを入力して認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can delete your PIN.",
+    "translation": "PINを削除する前に、保護者の方のメールアドレスを認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can add a PIN.",
+    "translation": "PINを追加する前に、保護者の方のメールアドレスを認証する必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.ChangeEmailDisablePinWarning",
+    "description": "modal body when users attempt to change their email with pin enabled",
+    "english": "You must disable parent PIN in Parental Controls to change your email. ",
+    "translation": "メールアドレスを変更するには、保護者コントロールで保護者のPINを無効にする必要があります。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.ChatWithYourVoice",
     "description": "DUPLICATE",
     "english": "This setting allows you to {linkStart}Chat with your Voice{linkEnd} in Roblox experiences.",
@@ -12653,6 +12741,14 @@
     "description": null,
     "english": "Chat Features",
     "translation": "チャット機能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceChatNew",
+    "description": "similar to Description.HelpText.VoiceChat",
+    "english": "Enabling microphone allows eligible users to chat with their voice in your experience.",
+    "translation": "マイクを有効にすると、有資格ユーザーがあなたの仮想空間内でボイスを使ってチャットできるようになります。",
     "isDeprecated": false
   },
   {
@@ -13125,6 +13221,198 @@
     "description": null,
     "english": "{termLinkStart}DevEx Terms of Service{termLinkEnd}",
     "translation": "{termLinkStart}DevEx 利用規約{termLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Heading.SuccessEmailTitle",
+    "description": null,
+    "english": "Your Developer Exchange request has been processed",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストが受理されました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Heading.RejectionEmailTitle",
+    "description": null,
+    "english": "Your Developer Exchange request has been rejected",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストが却下されました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Label.Sincerely",
+    "description": null,
+    "english": "Sincerely,",
+    "translation": "敬具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Label.RobloxTeam",
+    "description": null,
+    "english": "The Roblox Team",
+    "translation": "Robloxチームより",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessage",
+    "description": null,
+    "english": "We have processed your request to our Developer Exchange; you should receive funds in your account shortly.",
+    "translation": "当社の開発者エクスチェンジにお送りいただいたリクエストが受理されました。お持ちのアカウントにまもなく入金されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessageFollowup",
+    "description": null,
+    "english": "If you have any questions about this transaction, please write in at",
+    "translation": "この取引について質問がある場合は、こちらに記入してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.BaseRejectionMessage",
+    "description": null,
+    "english": "Please visit the DevEx FAQ for more information regarding your Declined request. If you have any questions, please write in at",
+    "translation": "リクエストの却下についての詳しい情報は、開発者エクスチェンジ（DevEx）についてのよくあるご質問のページをごらんください。何かご質問がある場合は、こちらへどうぞ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessageThankYou",
+    "description": null,
+    "english": "Thank you for participating in the DevEx program!",
+    "translation": "開発者エクスチェンジ（DevExプログラム）にご参加いただきありがとうございます！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNotEligible",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Not Eligible.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：不適格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInvalidPayPalnformation",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Invalid PayPal information. The PayPal information you provided was invalid and the payment wasn't able to be processed and your DevEx request was declined. Please update your PayPal information for your next DevEx request.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：無効なPayPal（ペイパル）情報。ご提供いただいたPayPal情報が無効だったため、お支払い処理ができず、お送りいただいた開発者エクスチェンジリクエストが却下されました。次回の開発者エクスチェンジリクエストでは、PayPal情報をアップデートしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUserRequest",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: User Request.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：ユーザーからの要請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitTaxForm",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Tax Form. Please submit a valid Tax Form to the DevEx Portal.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由： DevEx ポータルに有効な納税関連書類が提供してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionTechnicalIssue",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Technical Issue. We are looking into resolving the issue.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：技術的な問題。現在、当社で問題の究明に努めています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalRegistrationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Portal Registration Incomplete. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：DevExポータルの登録手続きが未完了。DevExポータルについては、「開発者エクスチェンジ(DevEx) よくあるご質問」のページにある情報をご参照ください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInsufficientEarnedRobux",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Earned Robux.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：獲得済みロバックス（Earned Robux）の不足。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIneligibleFunds",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Funds. Your earnings aren't valid for DevEx and we are unable to accept your DevEx request at the amount you have submitted.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由： 資金不足。現在の収益では、DevEx の条件を満たさないため、ご提出いただいた額では開発者エクスチェンジリクエストを承認できません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUnableToReviewGameAssociatedToEarnings",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Unable to Review Game Associated to Earnings. We were unable to confirm the eligibility of your game because we weren't able to review the games(s) associated to your earnings.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：収益のあるゲームのレビューができませんでした。当社は、収益のあるゲームのレビューができなかったため、あなたのゲームに資格があるかどうかを判定できませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAccountOwnershipConcern",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Account Ownership Concern. ",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：アカウントの所有に関する問題。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNameDiscrepancy",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Name Discrepancy. We noticed that the name of your current DevEx request differs from the initial DevEx request and/or name listed on your DevEx Portal.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：名前の不一致。現在の開発者エクスチェンジリクエストにある名前が最初の開発者エクスチェンジリクエストにある名前かDevExポータルに記載されている名前と一致していないようです。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionSubmitDevExWithFullLegalName",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Submit DevEx with full legal name. ",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：開発者エクスチェンジリクエストは、法的に認められた実名を提出してください。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.IdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：本人確認書類の認証が未完了。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：本人確認書類の認証が未完了。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionEmailOnDevexRequestAlreadyInUse",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Email Provided on Devex Request is Already in Use. We are unable to send you a DevEx portal invitation to the email listed on your DevEx request because it is already in use.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：開発者エクスチェンジリクエストで提出されたメールアドレスはすでに使用中なため。開発者エクスチェンジリクエストに記載されていたメールアドレスはすでに使用されているため、DevExポータルへの招待状をそのメールアドレスに送ることはできません。　",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitPaymentMethod",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Payment Method. A Payment Method must be submitted in order to approve your DevEx Request.",
+    "translation": "お送りいただいた開発者エクスチェンジリクエストは、受理できませんでした。理由：支払い方法が提出できていません。開発者エクスチェンジリクエストが承認されるためには、支払い方法の提出が完了していなければなりません。",
     "isDeprecated": false
   },
   {
@@ -14117,7 +14405,7 @@
     "description": null,
     "english": "Offsale",
     "translation": "非売品",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Catalog",
@@ -15077,6 +15365,78 @@
     "description": "Used for sorting items in the catalog",
     "english": "Recently Created",
     "translation": "最近作成されたもの",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ResaleFeePolicy",
+    "description": "Title text appearing above a message stating the Roblox Resale Fee Policy when selling an item.",
+    "english": "Resale Fee Policy",
+    "translation": "再販手数料ポリシー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwned",
+    "description": null,
+    "english": "Item Owned",
+    "translation": "アイテムは所有済みです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tags",
+    "description": null,
+    "english": "Tags",
+    "translation": "タグ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Updated",
+    "description": null,
+    "english": "Updated",
+    "translation": "アップデート済み",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Description",
+    "description": null,
+    "english": "Description",
+    "translation": "詳細",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.BuyNow",
+    "description": null,
+    "english": "Buy Now",
+    "translation": "今すぐ買う",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance after this transaction will be {remainingBalance}.",
+    "translation": "この取引後の残高は {remainingBalance} になります.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.Wear",
+    "description": null,
+    "english": "Wear",
+    "translation": "装備",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Accessory",
+    "description": null,
+    "english": "Accessory",
+    "translation": "アクセサリ",
     "isDeprecated": false
   },
   {
@@ -25992,6 +26352,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessPremiumNeededFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased, {itemCountFailure} failed due to premium account needed",
+    "translation": "{itemCountSuccess} 個のアイテムが購入されました。 {itemCountFailure} 個のアイテムはプレミアムアカウントが必要なため完了できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNoSellersFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased,{itemCountFailure}] failed due to no sellers",
+    "translation": "{itemCountSuccess} 個のアイテムが購入されました。 {itemCountFailure} 個のアイテムは販売者がいないため完了できませんでした",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PremiumNeededFailure",
+    "description": null,
+    "english": "Purchase failed, premium account needed",
+    "translation": "購入できませんでした。プレミアムアカウントが必要です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NoSellersFailure",
+    "description": null,
+    "english": "Purchase failed, no sellers",
+    "translation": "購入できませんでした。販売者がいません",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -26933,7 +27325,7 @@
     "description": null,
     "english": "Opening Roblox Studio now...",
     "translation": "Roblox Studioを開いています...",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26941,7 +27333,7 @@
     "description": null,
     "english": "If Studio does not open, click here for help",
     "translation": "Studioが開かない場合は、こちらをクリックしてヘルプを確認してください",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26949,7 +27341,7 @@
     "description": "greeting to user",
     "english": "Hello, {username}!",
     "translation": "こんにちは、{username}さん！",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26957,7 +27349,7 @@
     "description": "The username that the user is using to login to studio",
     "english": "You were trying to log in to Studio as {username}",
     "translation": "{username} でStudioにログインします",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26965,7 +27357,7 @@
     "description": "Open studio as current authenticated user.",
     "english": "Do you want to open Studio as {username}?",
     "translation": "{username} でStudioを開きますか？",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26973,7 +27365,7 @@
     "description": "Open studio",
     "english": "Open Studio",
     "translation": "Studioを開く",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26981,7 +27373,7 @@
     "description": "Logout the current user",
     "english": "Switch Accounts",
     "translation": "アカウントの切り替え",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Authentication.ReturnToStudio",
@@ -26989,7 +27381,7 @@
     "description": null,
     "english": "Do you want to open Studio as {boldStart}{username}{boldEnd}?",
     "translation": "{boldStart}{username}{boldEnd} としてStudioを開きますか？",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ContactUpsell",
@@ -39409,10 +39801,18 @@
   },
   {
     "namespace": "Feature.Payment",
+    "key": "Message.BraintreePayPalPreparePaymentError",
+    "description": null,
+    "english": "There was an error connecting to PayPal. Please try again.",
+    "translation": "PayPal（ペイパル）への接続でエラーが発生しました。もう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
     "key": "Label.Ok",
     "description": null,
-    "english": "Ok",
-    "translation": "OK",
+    "english": "OK",
+    "translation": "了解",
     "isDeprecated": false
   },
   {
@@ -40310,6 +40710,14 @@
     "english": "The following content has been temporarily restricted on Roblox because it may violate our {communityStandardsHtmlUrlOpen}Community Standards{communityStandardsHtmlUrlClose}. These standards outline expectations to ensure that everyone on Roblox feels welcome and safe and is treated with respect.{lineBreak}{lineBreak}• {linkedAssetName}, assetID:{assetId}{lineBreak}{lineBreak}Restrictions will be lifted if the experience is found to be within Community Guidelines following our review.{lineBreak}{lineBreak}Thank you for keeping Roblox safe and civil.{lineBreak}{lineBreak}The Roblox Team",
     "translation": "以下のコンテンツは、当社の {communityStandardsHtmlUrlOpen}コミュニティ基準{communityStandardsHtmlUrlClose} に違反している可能性があるため、Roblox上で一時的に規制されています。このような基準は、 Robloxでみなさんが受け入れられていると感じ、安心でき、マナーある対応をされていると感じられるようにするための指針を述べたものです。{lineBreak}{lineBreak}• {linkedAssetName}、 assetID:{assetId}{lineBreak}{lineBreak}レビュー完了後、この仮想空間がコミュニティ基準に違反していないと判明した場合は、規制が解除されます。{lineBreak}{lineBreak}Robloxを安全でマナーのいい場所に保つためにご協力ありがとうございます。{lineBreak}{lineBreak}Robloxチームより",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.DMCALegalNoticePrivateMessage",
+    "description": "Generic group messaging when notifying users that an entity requested DMCA removal of their asset.",
+    "english": "Hello,{lineBreak}{lineBreak}Links: {contentLink}{lineBreak}{lineBreak}This content has been removed because it may infringe intellectual property owned by someone else, {company}.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. Please remove from your group, including within your Experiences, any content that you do not have permission to use. You should always confirm that you have permission from the intellectual property owners before uploading content you haven't created. Intellectual property infringement violates our Terms of Use and further use of infringing material may result in additional action, including account termination. If you believe that your content has been removed by mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) please provide us with documentation of the authorization from the party that owns the protected material so that we may review for consideration.{lineBreak}{lineBreak}How can I remove infringing content from my Roblox account?{lineBreak}{lineBreak}You can find more information on archiving assets & Experiences in the following article: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}For more information please reference the following articles:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team{strikeDescriptor}",
+    "translation": "こんにちは。{lineBreak}{lineBreak}リンク: {contentLink}{lineBreak}{lineBreak}このコンテンツは、他の方（{company}）が所有する知的財産権を侵害している可能性があるため削除されました。{lineBreak}{lineBreak}Roblox（ロブロックス）は、他の方々の知的財産権を尊重しており、Robloxコミュニティのメンバー全員も同様に知的財産権の尊重を義務付けています。使用許可のないすべてのコンテンツを仮想空間内を含むお持ちのグループから削除してください。自分が制作していないコンテンツをアップロードする場合には知的財産権の所有者の許可があるかどうかを毎回、必ず確認しなければなりません。知的所有権の侵害は、当社の利用規約の違反となり、侵害している内容を使い続けることは、アカウント削除を含む追加処分の対象となります。コンテンツが間違いまたは誤認（例えば、削除されたコンテンツの使用許可があったり、フェアユーズが適用される場合）によって削除されたと思う場合は、当社がレビューした上で検討できるように保護された内容の所有権を持つ者が出した書面による許可を当社に提出してください。{lineBreak}{lineBreak}自分のRobloxアカウントにある知的財産権を侵害しているコンテンツの削除の仕方について。{lineBreak}{lineBreak}アセットのアーカイブと仮想空間についての詳しい情報は、以下の記事をごらんください。: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}さらにくわしい情報はこちらをごらんください。:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}ありがとうございました。{lineBreak}{lineBreak}Roblox運営チーム{strikeDescriptor}",
+    "isDeprecated": true
   },
   {
     "namespace": "Moderation.ModeratorActions",
@@ -55444,7 +55852,7 @@
     "key": "Label.AbuseType.RealLifeThreats.Note",
     "description": "Moderator note shown to user when serving consequence",
     "english": "Roblox does not permit real threats of violence towards members of the Roblox Community.",
-    "translation": "Robloxは、Robloxコミュニティのメンバーに対する実際的な暴力のともなう脅しを許可しません。",
+    "translation": "Robloxでは、Robloxコミュニティのメンバーに対する実際的な暴力のともなう脅しは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55452,7 +55860,7 @@
     "key": "Label.AbuseType.TerrorismExtremism.Note",
     "description": null,
     "english": "Roblox does not permit associations with terrorism or violent extremism.",
-    "translation": "Robloxはテロや暴力的な過激思想に関わることを許可しません。",
+    "translation": "Robloxでは、テロや暴力的な過激思想への関与は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55460,7 +55868,7 @@
     "key": "Label.AbuseType.IrlDangerousActivities.Note",
     "description": null,
     "english": "Roblox does not permit the encouragement of or participation in real-life dangerous activities among community members",
-    "translation": "Robloxは、コミュニティメンバー間で実際に危険な活動を奨励したり、参加することを許可しません。",
+    "translation": "Robloxでは、コミュニティメンバー間で実際に危険な活動を奨励したり、参加したりすることは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55468,7 +55876,7 @@
     "key": "Label.AbuseType.PrivacyAskingforPII.Note",
     "description": null,
     "english": "Roblox does not permit the exchange of Personal Identifiable Information (PII) between community members.",
-    "translation": "Robloxは、コミュニティメンバー同士の個人識別情報（PII）の交換を許可しません。",
+    "translation": "Robloxでは、コミュニティメンバー同士の個人識別情報（PII）の交換は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55476,7 +55884,7 @@
     "key": "Label.AbuseType.Harassment.Note",
     "description": null,
     "english": "Roblox does not permit bullying or harassment towards community members.",
-    "translation": "Robloxは、コミュニティメンバーへのいじめやハラスメントを許可しません。",
+    "translation": "Robloxでは、コミュニティメンバーへのいじめやハラスメントは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55484,7 +55892,7 @@
     "key": "Label.AbuseType.Discriminatory.Note",
     "description": null,
     "english": "Roblox does not permit discriminatory language, behavior, or content of any kind.",
-    "translation": "Robloxは、差別的な言動、またはいかなる種類の差別的なコンテンツを許可しません。",
+    "translation": "Robloxでは、差別的な言動、またはいかなる種類の差別的なコンテンツも禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55492,7 +55900,7 @@
     "key": "Label.AbuseType.SexualContent.Note",
     "description": null,
     "english": "Roblox does not permit sexual content in any form on the platform.",
-    "translation": "Robloxは、プラットフォーム上のいかなる形態の性的コンテンツも許可しません。",
+    "translation": "Robloxでは、プラットフォーム上のいかなる形態の性的コンテンツも禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55500,7 +55908,7 @@
     "key": "Label.AbuseType.ViolentContentAndGore.Note",
     "description": null,
     "english": "Roblox does not permit violent content and gore, including excessive use of blood in images or videos.",
-    "translation": "Robloxは、画像やビデオでの過度な流血の描写を含む、暴力的なコンテンツやグロテスクな内容は許可しません。",
+    "translation": "Robloxでは、画像やビデオでの過度な流血の描写を含む、暴力的なコンテンツやグロテスクな内容は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55508,7 +55916,7 @@
     "key": "Label.AbuseType.IllegalandRegulatedContent.Note",
     "description": null,
     "english": "Roblox does not permit illegal or regulated content in any form. This can include alcohol, drugs, tobacco products, or bomb or weapon making.",
-    "translation": "Robloxは、いかなる形態でも違法または法律で規制されたコンテンツは許可しません。これには、アルコール類、薬物、タバコ製品、または爆弾や武器の製造が含まれます。",
+    "translation": "Robloxでは、いかなる形態でも違法または法律で規制されたコンテンツは禁止されています。これには、アルコール類、薬物、タバコ製品、または爆弾や武器の製造が含まれます。",
     "isDeprecated": false
   },
   {
@@ -55516,7 +55924,7 @@
     "key": "Label.AbuseType.DatingandRomanticContent.Note",
     "description": null,
     "english": "Roblox does not permit dating or romantic exchanges between avatars.",
-    "translation": "Robloxは、アバター同士のデートやロマンチックな交流を許可しません。",
+    "translation": "Robloxでは、アバター同士のデートやロマンチックな交流（恋愛）は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55524,7 +55932,7 @@
     "key": "Label.AbuseType.Profanity.Note",
     "description": null,
     "english": "Roblox does not permit profane language or slurs.",
-    "translation": "Robloxは、暴言または誹謗中傷を許可しません。",
+    "translation": "Robloxでは、暴言を言ったり誹謗中傷をすることは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55532,7 +55940,7 @@
     "key": "Label.AbuseType.PoliticalContent.Note",
     "description": null,
     "english": "Roblox does not permit support for current political candidates, parties, associated flags or symbols.",
-    "translation": "Robloxは、現在あるの政治的な役職への候補者、政党、関連した旗やシンボルへの支持表明を許可しません。",
+    "translation": "Robloxでは、政治的な役職に候補中の人物、政党、関連した旗やシンボルへの支持表明をすることを禁止します。",
     "isDeprecated": false
   },
   {
@@ -55540,7 +55948,7 @@
     "key": "Label.AbuseType.Scamming.Note",
     "description": null,
     "english": "Roblox does not permit phishing or scamming links, requests for passwords, selling of accounts, uploading of unauthorized accounts, selling Roblox assets for real money off platform, or artificially inflating numbers associated with experiences.",
-    "translation": "Robloxは、フィッシングや詐欺、パスワードを聞き出すこと、アカウントの売買、不正なアカウントのアップロード、Robloxのアセットのプラットフォーム外での売買、または仮想空間（体験）に関連した数値の人為的な改ざんを許可しません。",
+    "translation": "Robloxでは、フィッシングや詐欺、パスワードを聞き出すこと、アカウントの売買、不正なアカウントのアップロード、Robloxのアセットのプラットフォーム外での売買、または仮想空間（体験）に関連した数値の人為的な改ざんは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55548,7 +55956,7 @@
     "key": "Label.AbuseType.Spam.Note",
     "description": null,
     "english": "Roblox does not permit spamming in the form of clickbait, or repetitive, large volume messaging.",
-    "translation": "Robloxは、クリックベイト、または繰り返しのメッセージ、大量送信の形でのスパムを許可しません。",
+    "translation": "Robloxでは、クリックベイト、または繰り返しのメッセージ、大量送信の形でのスパムは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55556,7 +55964,7 @@
     "key": "Label.AbuseType.Impersonation.Note",
     "description": null,
     "english": "Roblox does not permit users to mislead others by impersonating other people’s real- or virtual-world identity or affiliations.",
-    "translation": "Robloxは、ユーザーが他人の実際または仮想世界のアイデンティティまたは所属になりすますことによって他人を欺くことを許可しません。",
+    "translation": "Robloxでは、ユーザーが他人の実際または仮想世界のアイデンティティまたは所属になりすますことによって他人を欺くことは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55564,7 +55972,7 @@
     "key": "Label.AbuseType.DirectingUsersOffPlatform.Note",
     "description": null,
     "english": "Roblox does not permit the use of off-site links of any kind. Links to Guilded, YouTube, Facebook, Discord, Twitter, and Twitch must be wrapped in the applicable Policy API or listed in the Social Networks and Social Links settings of your profile or experience description page. Links that appear in locations where the API cannot be deployed - such as text chat - are prohibited.",
-    "translation": "Robloxはいかなる種類のサイト外リンクの使用も許可しません。 Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
+    "translation": "Robloxではいかなる種類のサイト外リンクの使用は禁止されています。Guilded（ギルデッド）、YouTube、Facebook、Discord、Twitter、Twitchへのリンクは、該当するポリシーAPIでラッピングするか、プロフィールまたは仮想空間（体験）の概要ページのSNSとSNSリンクの設定に記載済みである必要があります。 テキストチャットなど、APIを使用できない場所に表示されるリンクは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55572,7 +55980,7 @@
     "key": "Label.AbuseType.ExtortionandBlackmail.Note",
     "description": null,
     "english": "Roblox does not permit attempts to threaten users in order to force them to do something they do not want to do. ",
-    "translation": "Robloxは、ユーザーがしたくないことを強制する目的でユーザーを脅そうとすることを許可していません。 ",
+    "translation": "Robloxでは、ユーザーがしたくないことを強制する目的でユーザーを脅そうとすることは禁止されています。 ",
     "isDeprecated": false
   },
   {
@@ -55580,7 +55988,7 @@
     "key": "Label.AbuseType.DisruptiveAudio.Note",
     "description": null,
     "english": "Roblox does not permit uploads of audio that is unintelligible, excessively loud, screaming, or high-pitched noises.",
-    "translation": "Robloxは、理解不能だったり、過度に大音量だったり、悲鳴や高音のノイズなどの音声のアップロードを許可しません。",
+    "translation": "Robloxでは、理解不能な音声や過度に大音量なもの、悲鳴や高音のノイズなどの音声のアップロードは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55588,7 +55996,7 @@
     "key": "Label.AbuseType.CheatandExploits.Note",
     "description": null,
     "english": "Roblox does not permit users to deploy or discuss any method of cheating on platform.",
-    "translation": "Robloxは、ユーザーがプラットフォーム上でいかなる不正行為を行う方法も導入したり議論したりすることを許可しません。",
+    "translation": "Robloxでは、いかなる形のものであってもユーザーがプラットフォーム上で不正行為を行う方法を導入したり議論したりすることは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55596,7 +56004,7 @@
     "key": "Label.AbuseType.MisusingRobloxSystems.Note",
     "description": null,
     "english": "Roblox does not permit bypasses of our systems that keep our platform and community safe and secure.",
-    "translation": "Robloxは、当社のプラットフォームとコミュニティを安全でセキュリティが保たれた状態にするためのシステムのバイパス（迂回）を許可しません。",
+    "translation": "Robloxでは、当社のプラットフォームとコミュニティを安全でセキュリティが保たれた状態にするためのシステムのバイパス（迂回）は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55604,7 +56012,7 @@
     "key": "Label.AbuseType.RobloxEconomy.Note",
     "description": null,
     "english": "Roblox does not permit using third-parties to buy, sell, or trade Robux, promotional codes that falsely appear to be from Roblox Corporation, or inappropriate use of the group payout system. ",
-    "translation": "Robloxは、第三者によるRobuxの購入、販売、取引、Roblox Corporationからだと偽ったプロモーションコード、またはグループ・ペイアウト制度の不適切な使用を許可しません。 ",
+    "translation": "Robloxでは、第三者によるRobuxの購入、販売、取引、Roblox Corporationからだと偽ったプロモーションコード、またはグループ・ペイアウト制度の不適切な使用は禁止されています。 ",
     "isDeprecated": false
   },
   {
@@ -55612,7 +56020,7 @@
     "key": "Label.AbuseType.RealLifeTragedy.Note",
     "description": null,
     "english": "Roblox does not permit content that recreates, mocks, or capitalizes off of specific real-world tragic events.",
-    "translation": "Robloxは、現実の社会で起きた特定の悲劇的な出来事を再現したり、嘲笑したり、商業利用したりするコンテンツを許可しません。",
+    "translation": "Robloxでは、現実の社会で起きた特定の悲劇的な出来事を再現したり、嘲笑したり、商業利用したりするコンテンツも禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55620,7 +56028,7 @@
     "key": "Label.AbuseType.IPViolation.Note",
     "description": null,
     "english": "Roblox does not permit users to violate intellectual property rights.",
-    "translation": "Robloxは、ユーザーが知的財産権を侵害することを許可しません。",
+    "translation": "Robloxでは、ユーザーが知的財産権を侵害することは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55636,7 +56044,7 @@
     "key": "Label.AbuseType.Advertising.Note",
     "description": null,
     "english": "Roblox does not permit ads that violate any Community Standards or Terms of Service.",
-    "translation": "Robloxは、コミュニティ基準または利用規約に違反する広告を許可しません。",
+    "translation": "Robloxでは、コミュニティ基準または利用規約に違反する広告は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55644,7 +56052,7 @@
     "key": "Label.AbuseType.PrivacyGivingPII.Note",
     "description": null,
     "english": "Roblox does not permit sharing Personal Identifiable Information in the form of full name, email address, passwords, physical address, telephone numbers, images of themselves, or unauthorized voice recordings of minors.",
-    "translation": "Robloxは、氏名（フルネーム）、Eメールアドレス、パスワード、実際の住所、電話番号、本人の画像、未成年者の不正な音声録音の形態で個人情報を共有することを許可していません。",
+    "translation": "Robloxでは、氏名（フルネーム）、Eメールアドレス、パスワード、実際の住所、電話番号、本人の画像、未成年者の不正な音声録音の形態で個人情報を共有することは禁止されています。",
     "isDeprecated": false
   },
   {
@@ -55660,7 +56068,7 @@
     "key": "Label.AbuseType.ThreatsorAbuseofRobloxEmployeesorAffiliates.Note",
     "description": null,
     "english": "Roblox does not permit real life threats or abuse of any Roblox Employees, Contractors, or Affiliates.",
-    "translation": "Robloxは、Robloxの社員、請負業者、または関連業者に対しての実生活での脅しや虐待を許容しません。",
+    "translation": "Robloxでは、Robloxの社員、請負業者、または関連業者に対しての実生活での脅しや虐待は禁止されています。",
     "isDeprecated": false
   },
   {
@@ -59369,6 +59777,14 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEnd",
+    "description": "Label for a scheduled event's start date/time to end/date time",
+    "english": "{startDateTime} - {endDateTime}",
+    "translation": "{startDateTime} 〜 {endDateTime}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.OpenEventInNewTab",
     "description": "Label for a menu item to open a scheduled event's details page",
     "english": "Open Event Details",
@@ -59622,6 +60038,22 @@
     "english": "View on Roblox",
     "translation": "Robloxで表示",
     "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventOverDateTime",
+    "description": "Label to describe a scheduled event that has ended on {endDate} date at {endTime} time",
+    "english": "Ended on {endDate} at {endTime}",
+    "translation": "{endDate} の {endTime} に終了",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEndDateTime",
+    "description": "Label for a scheduled event that begins on {startDate} at {startTime}, and runs until {endDate} at {endTime}",
+    "english": "{startDate} at {startTime} - {endDate} at {endTime}",
+    "translation": "{startDate} の {startTime} 〜 {endDate} の {endTime}",
+    "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.AssetTypes",
@@ -65941,6 +66373,14 @@
     "description": null,
     "english": "Does this experience respect the IsPaidItemTradingAllowed policy API?",
     "translation": "この仮想空間はIsPaidItemTradingAllowedポリシーAPIを尊重していますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.LearnMoreAboutPaidItemTradingPolicyApi",
+    "description": null,
+    "english": "Learn about IsPaidItemTradingAllowed policy API.",
+    "translation": "IsPaidItemTradingAllowed のポリシーAPIについて詳しく。",
     "isDeprecated": false
   },
   {
@@ -77280,6 +77720,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidImageFile2",
+    "description": null,
+    "english": "Image upload failed. Supported file types are JPG, PNG, and BMP",
+    "translation": "画像のアップロードに失敗しました。対応しているファイルの種類はJPG、PNG、BMPです。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -85891,7 +86339,7 @@
     "namespace": "CreatorDashboard.AssetUpload",
     "key": "Message.AudioLimits",
     "description": null,
-    "english": "Audio uploads must be less than 7 minutes.",
+    "english": "Audio uploads must be less than 7 minutes. ",
     "translation": "音声のアップロードは7分未満でなければなりません。",
     "isDeprecated": false
   },
@@ -88756,7 +89204,7 @@
     "key": "Title.DailyEarnings",
     "description": null,
     "english": "Daily Earnings (Robux)",
-    "translation": "1日の収益",
+    "translation": "毎日の収益（Robux)",
     "isDeprecated": false
   },
   {
@@ -88772,7 +89220,7 @@
     "key": "Title.DailyImpressions",
     "description": null,
     "english": "Daily Impressions",
-    "translation": "インプレッション数",
+    "translation": "デイリーインプレッション数",
     "isDeprecated": false
   },
   {
@@ -88788,7 +89236,7 @@
     "key": "Title.DailyTeleports",
     "description": null,
     "english": "Daily Teleports",
-    "translation": "テレポート数",
+    "translation": "1日のテレポート数",
     "isDeprecated": false
   },
   {
@@ -88820,7 +89268,7 @@
     "key": "Description.DailyTeleports",
     "description": null,
     "english": "Total number of teleports generated from portal ad units in this experience.",
-    "translation": "1つの仮想空間につき1日あたりのすべての広告ポータルからのテレポート数の合計。",
+    "translation": "この仮想空間でのポータル広告ユニットごとのテレポート合計数。",
     "isDeprecated": false
   },
   {
@@ -88860,7 +89308,7 @@
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "Estimated Earnings Per Ad Unit",
-    "translation": "広告インスタンスの推定収益の内訳",
+    "translation": "広告ユニットごとの推定収益",
     "isDeprecated": false
   },
   {
@@ -88876,7 +89324,7 @@
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
     "english": "Impressions Per Ad Unit",
-    "translation": "インプレッション数",
+    "translation": "広告ユニットごとのインプレッション数",
     "isDeprecated": false
   },
   {
@@ -88892,7 +89340,7 @@
     "key": "Title.DailyTeleportsBreakdown",
     "description": null,
     "english": "Teleports Per Ad Unit",
-    "translation": "テレポート数",
+    "translation": "広告ユニットごとのテレポート数",
     "isDeprecated": false
   },
   {
@@ -89381,6 +89829,14 @@
     "description": "used in the text for when an event is happening (ex: TODAY AT 5pm)",
     "english": "TODAY",
     "translation": "今日",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "PrivateExperienceErrorDescriptor",
+    "description": "used to explain a greyed-out experience thumbnail",
+    "english": "This experience is private.",
+    "translation": "この仮想空間はプライベートです。",
     "isDeprecated": false
   },
   {
