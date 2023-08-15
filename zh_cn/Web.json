@@ -6987,7 +6987,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.TwoStepPrerequisite",
     "description": null,
-    "english": "A verified email is required.",
+    "english": "Receive unique codes at your specified email.",
     "translation": "需要已验证的电子邮件。",
     "isDeprecated": false
   },
@@ -11172,7 +11172,7 @@
     "key": "Description.Dialog.VerifiedUsernameChangeWarning",
     "description": "A warning to users that changing their username will remove their verified badge status",
     "english": "Warning: Changing your username will remove your verified badge status. Are you sure you want to do this?",
-    "translation": "警告：修改用户名将移除你的验证徽章状态。确定要继续？",
+    "translation": "警告：修改用户名将移除你的认证徽章状态。确定要继续？",
     "isDeprecated": false
   },
   {
@@ -11180,7 +11180,7 @@
     "key": "Description.Dialog.Verified2FAChangeWarning",
     "description": "A warning to users that turning off their 2FA will remove their verified badge status",
     "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
-    "translation": "警告：关闭你的两步验证将移除你的验证徽章状态。确定要继续？",
+    "translation": "警告：关闭你的两步验证将移除你的认证徽章状态。确定要继续？",
     "isDeprecated": false
   },
   {
@@ -11776,6 +11776,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.VerifiedEmailOrPhoneRequired",
+    "description": null,
+    "english": "Verified Email or Phone Number Required",
+    "translation": "需要通过验证的电子邮件地址或手机号码",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailOrPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must provide and verify your email or phone number before you can enable 2-Step Verification via Authenticator App.",
+    "translation": "若要启用身份验证程序的两步验证，请先提供并验证你的电子邮件或手机号码。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -12156,7 +12172,7 @@
     "key": "Description.WelcomeDevExTermNoVerifiedEmail",
     "description": null,
     "english": "Have a {startVerifyEmailLink}verified{endVerifyEmailLink} email address",
-    "translation": "有{startVerifyEmailLink}已验证{endVerifyEmailLink}的电子邮件地址",
+    "translation": "拥有{startVerifyEmailLink}已验证{endVerifyEmailLink}的电子邮件地址",
     "isDeprecated": false
   },
   {
@@ -23646,6 +23662,14 @@
     "english": "Invite from {displayName} @{username}",
     "translation": "来自 {displayName} @{username} 的邀请",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.DefaultExperienceInviteMessage",
+    "description": "The default invite message for an experience invite notification.",
+    "english": "{displayName} is inviting you to join {experienceName}!",
+    "translation": "{displayName} 邀请你加入 {experienceName}！",
+    "isDeprecated": false
   },
   {
     "namespace": "Notifications.PushNotifications",
@@ -54908,7 +54932,7 @@
     "key": "Description.WarningVerifiedStatusDisplayNameChange",
     "description": "A warning to users that changing their display name will remove their verified badge status",
     "english": "Warning: Changing your display name will remove your verified badge status. Are you sure you want to do this?",
-    "translation": "警告：修改昵称将移除你的验证徽章状态。确定要继续？",
+    "translation": "警告：修改昵称将移除你的认证徽章状态。确定要继续？",
     "isDeprecated": false
   },
   {
@@ -58564,7 +58588,7 @@
     "key": "Creator.VerifiedBadgeIconAccessibilityText",
     "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
     "english": "Verified Badge Icon",
-    "translation": "已验证的徽章图标",
+    "translation": "认证徽章图标",
     "isDeprecated": false
   },
   {
@@ -58596,7 +58620,7 @@
     "key": "UsernameChangeWithVerifiedBadge",
     "description": "Text warning a user if they change their username they will lose the verified badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
-    "translation": "重要：此更改将导致你已验证的徽章丢失。\n\n你的原始帐户创建日期将延续至你的新用户名。",
+    "translation": "重要：此更改将导致你的认证徽章丢失。\n\n你的原始帐户创建日期将延续至你的新用户名。",
     "isDeprecated": false
   },
   {
@@ -58604,7 +58628,7 @@
     "key": "DisplayNameChangeWithVerifiedBadge",
     "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
-    "translation": "重要：此更改将导致你的验证徽章丢失。\n\n你的昵称只能每 7 天更改一次。",
+    "translation": "重要：此更改将导致你的认证徽章丢失。\n\n你的昵称只能每 7 天更改一次。",
     "isDeprecated": false
   },
   {
@@ -58612,7 +58636,7 @@
     "key": "ThisActionWillRemoveTheVerifiedBadge",
     "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
     "english": "The verified badge will be removed.",
-    "translation": "验证徽章将会被移除。",
+    "translation": "你的认证徽章将会被移除。",
     "isDeprecated": false
   },
   {
@@ -58628,7 +58652,7 @@
     "key": "TwoSVWithVerifiedBadge",
     "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
     "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
-    "translation": "禁用两步验证可能会导致你验证徽章丢失并降低你帐户的安全性。是否确定要继续？",
+    "translation": "禁用两步验证可能会导致你的认证徽章丢失并降低你帐户的安全性。是否确定要继续？",
     "isDeprecated": false
   },
   {
@@ -58636,7 +58660,7 @@
     "key": "VerifiedBadgeInfoTitle",
     "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
     "english": "Verified Badge",
-    "translation": "验证徽章",
+    "translation": "认证徽章",
     "isDeprecated": false
   },
   {
@@ -79277,6 +79301,38 @@
     "description": null,
     "english": "Image",
     "translation": "图像",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidFile",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "上传的文件不符合已知图像格式。请尝试转换为 PNG 格式。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.TooManyAttempts",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "上传内容过多，请稍后重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidPermissions",
+    "description": null,
+    "english": "You do not have permission to manage this item.",
+    "translation": "你没有管理此道具的权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidItem",
+    "description": null,
+    "english": "Target item is invalid or does not exist.",
+    "translation": "目标道具无效或不存在。",
     "isDeprecated": false
   },
   {

@@ -332,7 +332,7 @@
     "key": "Description.Dialog.VerifiedUsernameChangeWarning",
     "description": "A warning to users that changing their username will remove their verified badge status",
     "english": "Warning: Changing your username will remove your verified badge status. Are you sure you want to do this?",
-    "translation": "Advertencia: Cambiar tu nombre de usuario eliminará el estado de tu insignia verificada. ¿Quieres cambiarlo?",
+    "translation": "Advertencia: Cambiar tu nombre de usuario eliminará el estado de tu emblema de verificación. ¿Quieres cambiarlo?",
     "isDeprecated": false
   },
   {
@@ -526,6 +526,30 @@
     "english": "Face Chat Requires Camera",
     "translation": "El chat facial requiere cámara",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.LeftInitial",
+    "description": "First letter of \"left\"",
+    "english": "L",
+    "translation": "Izq.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.Right",
+    "description": "First letter of \"Right\"",
+    "english": "R",
+    "translation": "Der.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.RightInitial",
+    "description": "First letter of \"Right\" as in \"turn right\"",
+    "english": "R",
+    "translation": "Der.",
+    "isDeprecated": false
   },
   {
     "namespace": "Common.AssetTypes",
@@ -9740,7 +9764,7 @@
     "key": "PackageManagementVerbs.ErrorUnpublishedPackages",
     "description": null,
     "english": "Error: Cannot publish because packages cannot contain modified child packages.",
-    "translation": "Error: No se puede convertir en paquete mientras que el objeto contenga paquetes con cambios sin publicar.",
+    "translation": "Error: No se puede publicar porque los paquetes no pueden contener paquetes hijos modificados.",
     "isDeprecated": false
   },
   {
@@ -30360,6 +30384,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.CollapseChildren",
+    "description": null,
+    "english": "Collapse All",
+    "translation": "Contraer todos",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.GameSettings",
     "key": "General.PluginName",
     "description": null,
@@ -39621,6 +39653,46 @@
     "description": null,
     "english": "Your account must be verified in order to set a price for your plugin.",
     "translation": "Se debe verificar la cuenta antes de establecer un precio para tu plugin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.UnverifiedCreatorBadgeTooltipText",
+    "description": null,
+    "english": "Creator is unverified",
+    "translation": "El creador no está verificado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertMultipleInstancesWarning",
+    "description": null,
+    "english": "Cannot convert to package unless package has a single root instance.",
+    "translation": "No se puede convertir al paquete a menos que el paquete tenga una única instancia raíz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertIfChildPackageHasUnpublishedChangesWarning",
+    "description": null,
+    "english": "Cannot convert to package while the instance contains packages with unpublished changes.",
+    "translation": "No se puede convertir en paquete mientras que la instancia contenga paquetes con cambios sin publicar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertModelWithPrimaryPartNonArchivableWarning",
+    "description": null,
+    "english": "Cannot publish a Model package when the PrimaryPart is not archivable.",
+    "translation": "No se puede publicar un paquete Modelo cuando el PrimaryPart no es archivable.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.Non3DRoot3DDescendentsWarning",
+    "description": null,
+    "english": "This object has 3D content but is not a Model, so moving or rotating it will count as modifying the package.",
+    "translation": "Este objeto tiene contenido 3D, pero no es un Modelo, por lo que moverlo o girarlo implicará la modificación del paquete.",
     "isDeprecated": false
   },
   {
@@ -52720,6 +52792,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Ad",
+    "description": "Label for an advertisement",
+    "english": "Ad",
+    "translation": "Anuncio",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.AssetManager",
     "key": "Main.Title",
     "description": null,
@@ -54260,7 +54340,7 @@
     "key": "Creator.VerifiedBadgeIconAccessibilityText",
     "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
     "english": "Verified Badge Icon",
-    "translation": "Ícono del emblema verificado",
+    "translation": "Ícono del emblema de verificación",
     "isDeprecated": false
   },
   {
@@ -54292,7 +54372,7 @@
     "key": "UsernameChangeWithVerifiedBadge",
     "description": "Text warning a user if they change their username they will lose the verified badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
-    "translation": "Importante: Con este cambio, se perderá tu emblema verificado.\n\nLa fecha de creación de tu cuenta original se traslada a tu nuevo nombre de usuario.",
+    "translation": "Importante: Con este cambio, se perderá tu emblema de verificación.\n\nLa fecha de creación de tu cuenta original se traslada a tu nuevo nombre de usuario.",
     "isDeprecated": false
   },
   {
@@ -54300,7 +54380,7 @@
     "key": "DisplayNameChangeWithVerifiedBadge",
     "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
-    "translation": "Importante: Con este cambio, se perderá tu emblema verificado.\n\nEl nombre de visualización se puede cambiar solo una vez cada 7 días.",
+    "translation": "Importante: Con este cambio, se perderá tu emblema de verificación.\n\nEl nombre de visualización se puede cambiar solo una vez cada 7 días.",
     "isDeprecated": false
   },
   {
@@ -54308,7 +54388,7 @@
     "key": "ThisActionWillRemoveTheVerifiedBadge",
     "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
     "english": "The verified badge will be removed.",
-    "translation": "Se eliminará el emblema verificado.",
+    "translation": "Se eliminará el emblema de verificación.",
     "isDeprecated": false
   },
   {
@@ -54324,7 +54404,7 @@
     "key": "TwoSVWithVerifiedBadge",
     "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
     "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
-    "translation": "Al desactivar la verificación en dos pasos, perderás tu emblema verificado y la cuenta se hará menos segura. ¿Quieres continuar?",
+    "translation": "Al desactivar la Verificación en dos pasos, perderás tu emblema de verificación y la cuenta será menos segura. ¿Quieres continuar?",
     "isDeprecated": false
   },
   {
@@ -54332,7 +54412,7 @@
     "key": "VerifiedBadgeInfoTitle",
     "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
     "english": "Verified Badge",
-    "translation": "Emblema verificado",
+    "translation": "Emblema de verificación",
     "isDeprecated": false
   },
   {

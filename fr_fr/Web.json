@@ -1068,7 +1068,7 @@
     "key": "Label.RecoveryCodeMediaType",
     "description": "The name of the recovery code media type.",
     "english": "Backup Code",
-    "translation": "Code de recouvrement",
+    "translation": "Code de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -1084,7 +1084,7 @@
     "key": "Label.EnterRecoveryCode",
     "description": "Summary for passing two step verification given a previously saved code.",
     "english": "Enter a previously saved backup code.",
-    "translation": "Entrer un code de récupération préalablement enregistré.",
+    "translation": "Entrer un code de sauvegarde précédemment enregistré.",
     "isDeprecated": false
   },
   {
@@ -1124,7 +1124,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour,{lineBreak}{lineBreak}La vérification. en deux étapes a été activée par e-mail pour le compte Roblox de votre enfant, {accountName}. Pour certaines actions comme se connecter, il devra entrer un code de sécurité à 6 chiffres depuis l'application Authenticator.{lineBreak}{lineBreak}N'oublie pas de sauvegarder tes codes de secours au cas où tu n'aurais pas accès à l'application Authenticator.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour,{lineBreak}{lineBreak}La vérification. en deux étapes a été activée par e-mail pour le compte Roblox de votre enfant, {accountName}. Pour certaines actions comme se connecter, il devra entrer un code de sécurité à 6 chiffres depuis l'application Authenticator.{lineBreak}{lineBreak}N'oublie pas de sauvegarder tes codes de récupération au cas où tu n'aurais pas accès à l'application Authenticator.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1220,7 +1220,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}Tu as utilisé tous les codes de récupération valides. Pour éviter d'être bloqué, tu peux générer de nouveaux codes de récupération dans {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}Paramètres du compte{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}Tu as utilisé tous les codes de récupération valides. Pour éviter d'être bloqué, tu peux générer de nouveaux codes de secours dans {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}Paramètres du compte{aTagEnd}.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1228,7 +1228,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.Subject",
     "description": null,
     "english": "No Remaining Backup Codes for Roblox Account: {accountName}",
-    "translation": "Il ne reste plus de codes de récupération pour le compte Roblox : {accountName}",
+    "translation": "Il ne reste plus de codes de sauvegarde pour le compte Roblox : {accountName}",
     "isDeprecated": false
   },
   {
@@ -1701,6 +1701,78 @@
     "description": null,
     "english": "When prompted, touch your key or use biometrics on this device.",
     "translation": "Lorsque tu y es invité, appuie sur ta clé ou utilise des données biométriques sur cet appareil.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Security Key for your Roblox account. For some actions like logging in, you will need to have your security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}Vous avez activé la vérification en deux étapes avec clé de sécurité pour votre compte Roblox. Pour certaines actions comme la connexion, tu auras besoin de ta clé de sécurité.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.EmailSubject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Activated for Roblox Account: {accountName}",
+    "translation": "Vérification en 2 étapes avec clé de sécurité activée pour le compte Roblox : {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to have their security key.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour,{lineBreak}{lineBreak}La vérification en deux étapes avec clé de sécurité a été activée pour le compte Roblox de votre enfant, {accountName}. Pour certaines actions, comme la connexion, ils auront besoin de leur clé de sécurité.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated by Roblox Support: {accountName}",
+    "translation": "Vérification en 2 étapes avec la clé de sécurité désactivée par l'assistance Roblox : {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Over13",
+    "description": null,
+    "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour{accountName},{lineBreak}{lineBreak}Ce message a pour but de t'informer que notre équipe d'assistance a désactivé la vérification en deux étapes avec clé de sécurité pour ton compte Roblox. Cela se produit généralement en raison d'un ticket d'assistance que tu as soumis ou par mesure de sécurité pour assurer la sécurité de ton compte. Une clé de sécurité ne sera plus nécessaire pour certaines actions comme la connexion. Tu peux réactiver la vérification en deux étapes dans tes {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}Paramètres du compte{aTagEnd}.{lineBreak}{lineBreak}Si tu as besoin d'aide, {spanStartTagWithBold}ne réponds pas à cet e-mail{spanEndTag}, et réponds au ticket d'assistance existant ou soumets une nouvelle demande d'assistance ici : {aTagStartWithHref}{supportPageLink}{hrefEnd}Assistance Roblox{aTagEnd}{lineBreak}{lineBreak} Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationCustomerSupportDeactivationSecurityKey.HtmlBody.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Security Key on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security key will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour,{lineBreak}{lineBreak}Ce message a pour but de vous informer que notre équipe d'assistance a désactivé la vérification en deux étapes avec clé de sécurité pour le compte Roblox de votre enfant, {accountName}. Cela se produit généralement en raison d'un ticket d'assistance que vous avez soumis ou par mesure de sécurité pour assurer la sécurité de son compte. Une clé de sécurité ne sera plus nécessaire pour certaines actions comme la connexion. Vous pouvez réactiver la vérification en deux étapes dans les {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}Paramètres du compte{aTagEnd}.{lineBreak}{lineBreak}Si vous avez besoin d'aide, {spanStartTagWithBold}ne répondez pas à cet e-mail{spanEndTag}, et répondez au ticket d'assistance existant ou soumettez une nouvelle demande d'assistance ici : {aTagStartWithHref}{supportPageLink}{hrefEnd}Assistance Roblox{aTagEnd}{lineBreak}{lineBreak} Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Subject",
+    "description": null,
+    "english": "2-Step Verification with Security Key Deactivated for Roblox Account: {accountName}",
+    "translation": "Vérification en 2 étapes avec clé de sécurité désactivée pour le compte Roblox : {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Over13",
+    "description": null,
+    "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Security Key for your Roblox account.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}Tu as désactivé la vérification en 2 étapes avec la clé de sécurité pour ton compte Roblox.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationDeactivationSecurityKey.Body.Under13",
+    "description": null,
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour, {lineBreak}{lineBreak}La vérification en 2 étapes avec clé de sécurité a été désactivée pour le compte Roblox de votre enfant, {accountName}.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -7083,7 +7155,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.TwoStepPrerequisite",
     "description": null,
-    "english": "A verified email is required.",
+    "english": "Receive unique codes at your specified email.",
     "translation": "Vous devez fournir une adresse e-mail vérifiée.",
     "isDeprecated": false
   },
@@ -7788,7 +7860,7 @@
     "key": "Description.TwoStepVerificationSecondary",
     "description": null,
     "english": "Receive unique codes at your specified email.",
-    "translation": "Vous devez fournir une adresse e-mail vérifiée.",
+    "translation": "Reçois des codes uniques à ton adresse e-mail.",
     "isDeprecated": false
   },
   {
@@ -7796,7 +7868,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique codes at {email}.",
-    "translation": "Certaines actions, comme la connexion, vous demanderont d'entrer un code de courriel. Les codes seront envoyés à {email}",
+    "translation": "Reçois des codes uniques à {email}.",
     "isDeprecated": false
   },
   {
@@ -9796,7 +9868,7 @@
     "key": "Label.EmailTwoStepVerificationCodes",
     "description": "Label next to toggle for enabling email-based two step verification.",
     "english": "Email (Secure)",
-    "translation": "E-mail codes pour confirmer ton identité",
+    "translation": "Courriel (sécurisé)",
     "isDeprecated": false
   },
   {
@@ -9804,7 +9876,7 @@
     "key": "Label.AuthenticatorTwoStepVerificationCodes",
     "description": "Label next to toggle for enabling authenticator-based two step verification.",
     "english": "Authenticator App (Very Secure)",
-    "translation": "Récupérer les codes d'une application d'authentification pour confirmer ton identité",
+    "translation": "Application Authenticator (très sécurisée)",
     "isDeprecated": false
   },
   {
@@ -9820,7 +9892,7 @@
     "key": "Label.AuthenticatorHelpText",
     "description": "Displayed as help text when authenticator-based two step verification is already enabled.",
     "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "Certaines actions, comme la connexion, te demanderont d'entrer un code provenant de ton authentifiant. Vérifie ton application Authenticator pour le code.",
+    "translation": "Une application sur ton téléphone qui génère des codes uniques. Les applications suggérées incluent Google Authenticator, Microsoft Authenticator et Twilio Authy.",
     "isDeprecated": false
   },
   {
@@ -9900,7 +9972,7 @@
     "key": "Heading.GenerateNewRecoveryCodes",
     "description": "The title of the dialog that asks you to input your password before generating recovery codes.",
     "english": "Generate New Backup Codes",
-    "translation": "Générer de nouveaux codes de recouvrement",
+    "translation": "Générer de nouveaux codes de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -9908,7 +9980,7 @@
     "key": "Heading.RecoveryCodesGenerated",
     "description": "The title of the dialog displaying the newly generated recovery codes.",
     "english": "Backup Codes",
-    "translation": "Code de recouvrement",
+    "translation": "Codes de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -9916,7 +9988,7 @@
     "key": "Description.Dialog.GenerateNewRecoveryCodes",
     "description": "The description text on the dialog prompting the user to generate new recovery codes by providing their password.",
     "english": "Please enter your account password to generate new backup codes.",
-    "translation": "Entrer le mot de passe de ton compte pour générer de nouveaux codes de récupération.",
+    "translation": "Saisir le mot de passe de ton compte pour générer de nouveaux codes de sauvegarde.",
     "isDeprecated": false
   },
   {
@@ -9932,7 +10004,7 @@
     "key": "Description.Dialog.RecoveryCodesGenerated",
     "description": null,
     "english": "These are your new backup codes. Please save them as you will not be able to see the codes again later.",
-    "translation": "Ce sont vos nouveaux codes de recouvrement. Conserve-les dans un endroit sécurisé, car tu ne pourras pas les revoir plus tard.",
+    "translation": "Il s'agit de tes nouveaux codes de sauvegarde. Enregistre-les car tu ne pourras plus voir les codes plus tard.",
     "isDeprecated": false
   },
   {
@@ -9940,7 +10012,7 @@
     "key": "Label.Dialog.RecoveryCodesSavedConfirmation",
     "description": "Check box confirming the user has saved their recovery codes.",
     "english": "I've saved my backup codes",
-    "translation": "J'ai sauvegardé mes codes de récupération",
+    "translation": "J'ai sauvegardé mes codes de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -9948,7 +10020,7 @@
     "key": "Label.Dialog.GenerateNewRecoveryCodesClearNotice",
     "description": "A label on the modal for generating new recovery codes  giving notice that the number of remaining unused recovery codes will no longer work.",
     "english": "{activeCodeCount} backup codes will become invalid when new ones are generated.",
-    "translation": "Les codes de recouvrement {activeCodeCount} deviendront invalides lorsque de nouveaux codes seront générés.",
+    "translation": "Les codes de sauvegarde {activeCodeCount} deviendront invalides lorsque de nouveaux codes seront générés.",
     "isDeprecated": false
   },
   {
@@ -9956,7 +10028,7 @@
     "key": "Label.GenerateRecoveryCodes",
     "description": "Label next to button for generating two step verification recovery codes.",
     "english": "Backup Codes",
-    "translation": "Générer des codes de récupération à usage unique.",
+    "translation": "Codes de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -9964,7 +10036,7 @@
     "key": "Label.RecoveryCodesHelpText",
     "description": "Help text on the two step verification recovery codes section card.",
     "english": "Generate and use these codes in case you lose access to your 2 Step Verification option.",
-    "translation": "Si tu perds l'accès à ton application d'authentification, utilise-les pour récupérer ton compte.",
+    "translation": "Génère et utilise ces codes au cas où tu perdrais l'accès à l'option de vérification en deux étapes.",
     "isDeprecated": false
   },
   {
@@ -10036,7 +10108,7 @@
     "key": "Label.GenerateNewRecoveryCodes",
     "description": "Label next to button for generating two step verification recovery codes after two step verification recovery codes have already been generated.",
     "english": "Backup Codes",
-    "translation": "Générer de nouveaux codes de récupération à usage unique.",
+    "translation": "Codes de sauvegarde",
     "isDeprecated": false
   },
   {
@@ -10044,7 +10116,7 @@
     "key": "Label.UnusedRecoveryCodes",
     "description": "Message to user that appears after the user has generated recovery codes.",
     "english": "You have {activeCodeCount} unused backup codes.",
-    "translation": "Tu as {activeCodeCount} codes de récupération non utilisés.",
+    "translation": "Tu as {activeCodeCount} codes de sauvegarde inutilisés.",
     "isDeprecated": false
   },
   {
@@ -11660,7 +11732,7 @@
     "key": "Label.SmsTwoStepVerificationCodes",
     "description": null,
     "english": "Text Messages (Secure)",
-    "translation": "Codes SMS pour confirmer ton identité",
+    "translation": "Messages texte (sécurisés)",
     "isDeprecated": false
   },
   {
@@ -11668,7 +11740,7 @@
     "key": "Label.SmsTwoStepPrerequisite",
     "description": null,
     "english": "Receive unique codes by text message on your phone.",
-    "translation": "Un numéro de téléphone vérifié est requis.",
+    "translation": "Reçois des codes uniques par Sms sur ton téléphone.",
     "isDeprecated": false
   },
   {
@@ -11676,7 +11748,7 @@
     "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique codes by text message at {phoneNumber}.",
-    "translation": "Certaines actions comme la connexion vous obligeront à entrer un code de Sms. Les codes seront envoyés au {phoneNumber}",
+    "translation": "Reçois des codes uniques par SMS à l'adresse {phoneNumber}.",
     "isDeprecated": false
   },
   {
@@ -11893,6 +11965,38 @@
     "description": null,
     "english": "You must provide and verify your email or phone number before you can enable 2-Step Verification via Authenticator App.",
     "translation": "Tu dois fournir et vérifier ton courriel ou ton numéro de téléphone avant de pouvoir activer la vérification en deux étapes via l'application Authenticator.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SMS",
+    "description": null,
+    "english": "Text Messages (Secure)",
+    "translation": "Messages texte (sécurisés)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.SecurityKeyNickname",
+    "description": null,
+    "english": "Nickname must be less than 40 characters long.",
+    "translation": "Le pseudo doit contenir moins de 40 caractères.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.ExceededRegisteredKeysLimit",
+    "description": null,
+    "english": "The max number of keys have been registered.",
+    "translation": "Le nombre maximum de clés a été enregistré.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.InvalidCredentialNickname",
+    "description": null,
+    "english": "Please use a different nickname.",
+    "translation": "Utiliser un autre pseudo.",
     "isDeprecated": false
   },
   {
@@ -23768,6 +23872,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.DefaultExperienceInviteMessage",
+    "description": "The default invite message for an experience invite notification.",
+    "english": "{displayName} is inviting you to join {experienceName}!",
+    "translation": "{displayName} t'invite à rejoindre {experienceName}!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.DefaultExperienceInviteTitle",
+    "description": "The default title for an experience invite notification.",
+    "english": "Invite from {displayName} @{username}",
+    "translation": "Invitation de {displayName} @{username}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.PushNotifications",
     "key": "Message.NewChatMessage.Default",
     "description": "You have a new chat message.",
@@ -23974,6 +24094,22 @@
     "english": "Invite from {displayName} @{username}",
     "translation": "Invitation de {displayName} @{username}",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.DefaultExperienceInviteMessage",
+    "description": "The default invite message for an experience invite notification.",
+    "english": "{displayName} is inviting you to join {experienceName}!",
+    "translation": "{displayName} t'invite à rejoindre {experienceName}!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.DefaultExperienceInviteTitle",
+    "description": "The default title for an experience invite notification.",
+    "english": "Invite from {displayName} @{username}",
+    "translation": "Invitation de {displayName} @{username}",
+    "isDeprecated": false
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
@@ -31128,6 +31264,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Label.LeftInitial",
+    "description": "First letter of \"left\"",
+    "english": "L",
+    "translation": "L",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.Right",
+    "description": "First letter of \"Right\"",
+    "english": "R",
+    "translation": "R",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.RightInitial",
+    "description": "First letter of \"Right\" as in \"turn right\"",
+    "english": "R",
+    "translation": "R",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -36573,6 +36733,14 @@
     "description": "Part 2 of mobile heading for premium users",
     "english": "on Roblox packages as a Premium subscriber",
     "translation": "sur les packages Roblox en tant qu'abonné Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Premium",
+    "key": "Label.Popular",
+    "description": null,
+    "english": "Popular",
+    "translation": "Populaire",
     "isDeprecated": false
   },
   {
@@ -49056,6 +49224,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Ad",
+    "description": "Label for an advertisement",
+    "english": "Ad",
+    "translation": "Annonce",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -49885,6 +50061,14 @@
     "description": null,
     "english": "Updates",
     "translation": "Mises à jour",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Place",
+    "description": null,
+    "english": "Place",
+    "translation": "Lieu",
     "isDeprecated": false
   },
   {
@@ -56149,6 +56333,22 @@
     "description": "link label, to the advertise page of an asset item",
     "english": "Advertise",
     "translation": "Publier",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.removeFailed",
+    "description": null,
+    "english": "Failed to remove place",
+    "translation": "Impossible de supprimer le lieu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.BackToPlaces",
+    "description": null,
+    "english": "Back to Places",
+    "translation": "Retour aux lieux",
     "isDeprecated": false
   },
   {
@@ -70608,6 +70808,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.SearchDocs",
+    "description": null,
+    "english": "Search Docs",
+    "translation": "Rechercher dans les Docs",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -73904,6 +74112,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Label.LastUpdated",
+    "description": "Noting the data this item or asset was last updated.",
+    "english": "Last updated {date}",
+    "translation": "Dernière mise à jour {date}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorMarketplace.Navigation",
     "key": "Label.AboutUs",
     "description": null,
@@ -74173,6 +74389,14 @@
     "description": "Noting something that is able to be updated.\ne.g. this app is updateable via the app store. Every time a new version comes out, it gets updated.",
     "english": "Updateable",
     "translation": "Mise à jour possible",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.ItemDetails",
+    "key": "Label.LastUpdated",
+    "description": "Date an Item was last updated",
+    "english": "Last update: {date}",
+    "translation": "Dernière mise à jour : {date}",
     "isDeprecated": false
   },
   {
@@ -80185,10 +80409,58 @@
   },
   {
     "namespace": "CreatorDashboard.Places",
+    "key": "Message.ConfigurePlaceInfo",
+    "description": null,
+    "english": "Provide a name, description, and select a genre for your place. There may be multiple places in one experience so it's important to help your users differentiate them.",
+    "translation": "Fournissez un nom, une description et sélectionnez un genre pour votre place. Il peut y avoir plusieurs endroits dans une seule expérience donc il est important d'aider vos utilisateurs à les différencier.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.PlaceAlertInfo",
+    "description": null,
+    "english": "Experiences and Start Places share name and description.",
+    "translation": "Expériences et lieux de départ partagent le nom et la description.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.PlaceAlertInfo",
+    "description": null,
+    "english": "Updating a start place’s name or description will also apply to the experience.",
+    "translation": "La mise à jour du nom ou de la description d’un lieu de départ s’appliquera également à l’expérience.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.PlaceUpdateSuccess",
+    "description": null,
+    "english": "Place Updated!",
+    "translation": "Lieu mis à jour !",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
     "key": "Label.BasicSettings",
     "description": null,
     "english": "Basic Settings",
     "translation": "Paramètres de base",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.descriptionHelperText",
+    "description": null,
+    "english": "If you have built {linkStart}Premium benefits{linkEnd} into your experience, please list those benefits in the description.",
+    "translation": "Si vous avez intégré des {linkStart}avantages Premium{linkEnd} dans votre expérience, veuillez énumérer ces avantages dans la description.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.SaveChangesFailure",
+    "description": null,
+    "english": "Place update failed, please try again.",
+    "translation": "La mise à jour du lieu a échoué, veuillez réessayer.",
     "isDeprecated": false
   },
   {
@@ -80201,6 +80473,86 @@
   },
   {
     "namespace": "CreatorDashboard.Places",
+    "key": "Error.Generic",
+    "description": null,
+    "english": "Unknown error, please try again.",
+    "translation": "Erreur inconnue, veuillez réessayer.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.AssetDoesNotExist",
+    "description": null,
+    "english": "The referenced asset does not exist.",
+    "translation": "La ressource référencée n'existe pas.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.DoesNotHaveManagePermission",
+    "description": null,
+    "english": "User does not have permissions to manage the asset.",
+    "translation": "L'utilisateur n'a pas la permission de gérer le contenu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidAssetId",
+    "description": null,
+    "english": "AssetId is invalid.",
+    "translation": "AssetId est invalide.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidGenres",
+    "description": null,
+    "english": "At least one genre should be specified.",
+    "translation": "Au moins un genre doit être spécifié.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.OnlyMarketplaceAssetsCanUpdateIsCopyingAllowed",
+    "description": null,
+    "english": "Only a marketplace asset can be updated with IsCopyingAllowed.",
+    "translation": "Seul un actif de marketplace peut être mis à jour avec IsCopyingAllowed.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.PackageCanNotUpdateIsCopyingAllowed",
+    "description": null,
+    "english": "Package can not update IsCopyingAllowed.",
+    "translation": "Le package ne peut pas mettre à jour IsCopyingAllowed.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidName",
+    "description": null,
+    "english": "The name of an Asset should not be empty.",
+    "translation": "Le nom d'un contenu ne doit pas être vide.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.DescriptionTooLong",
+    "description": null,
+    "english": "Description too long.",
+    "translation": "Description trop longue.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.TextModerated",
+    "description": null,
+    "english": "Text moderated, please try again.",
+    "translation": "Texte modéré, veuillez réessayer.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
     "key": "Heading.Icon",
     "description": null,
     "english": "Icon",
@@ -80209,10 +80561,66 @@
   },
   {
     "namespace": "CreatorDashboard.Places",
+    "key": "Label.AutoGenerated",
+    "description": null,
+    "english": "Auto-generated image",
+    "translation": "Image auto-générée",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.default",
+    "description": null,
+    "english": "default",
+    "translation": "par défaut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
     "key": "Label.Image",
     "description": null,
     "english": "Image",
     "translation": "Image",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.MediaTypes",
+    "description": null,
+    "english": "Media type:",
+    "translation": "Type de média :",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidFile",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "Le fichier téléchargé ne correspond pas au format d'image connu. Essayer de convertir en png.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.TooManyAttempts",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "Vous téléchargez trop, patienter et réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidPermissions",
+    "description": null,
+    "english": "You do not have permission to manage this item.",
+    "translation": "Vous n'avez pas la permission de gérer cet article.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.InvalidItem",
+    "description": null,
+    "english": "Target item is invalid or does not exist.",
+    "translation": "L'élément cible est invalide ou n'existe pas.",
     "isDeprecated": false
   },
   {
@@ -80225,6 +80633,78 @@
   },
   {
     "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Medieval",
+    "description": null,
+    "english": "Medieval",
+    "translation": "Médiéval",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Adventure",
+    "description": null,
+    "english": "Adventure",
+    "translation": "Aventure",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.FPS",
+    "description": null,
+    "english": "FPS",
+    "translation": "FPS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Comedy",
+    "description": null,
+    "english": "Comedy",
+    "translation": "Comédie",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Fighting",
+    "description": null,
+    "english": "Fighting",
+    "translation": "Combat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Naval",
+    "description": null,
+    "english": "Naval",
+    "translation": "Naval",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.RPG",
+    "description": null,
+    "english": "RPG",
+    "translation": "RPG",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Horror",
+    "description": null,
+    "english": "Horror",
+    "translation": "Horreur",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Sci-Fi",
+    "description": "deprecated",
+    "english": "Sci-Fi",
+    "translation": "Sci-Fi",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
     "key": "Label.Sports",
     "description": null,
     "english": "Sports",
@@ -80233,10 +80713,42 @@
   },
   {
     "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.TownAndCity",
+    "description": null,
+    "english": "Town and city",
+    "translation": "Ville et cité",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Building",
+    "description": null,
+    "english": "Building",
+    "translation": "Construction",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
     "key": "Label.Military",
     "description": null,
     "english": "Military",
     "translation": "Militaire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.Western",
+    "description": null,
+    "english": "Western",
+    "translation": "Western",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GenreType",
+    "key": "Label.SciFi",
+    "description": null,
+    "english": "Sci-Fi",
+    "translation": "Sci-Fi",
     "isDeprecated": false
   }
 ]

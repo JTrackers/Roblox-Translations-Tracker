@@ -528,6 +528,30 @@
     "isDeprecated": true
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Label.LeftInitial",
+    "description": "First letter of \"left\"",
+    "english": "L",
+    "translation": "左",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.Right",
+    "description": "First letter of \"Right\"",
+    "english": "R",
+    "translation": "右",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.RightInitial",
+    "description": "First letter of \"Right\" as in \"turn right\"",
+    "english": "R",
+    "translation": "右",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AssetTypes",
     "key": "Label.Video",
     "description": "The Video asset type, singular",
@@ -1468,7 +1492,7 @@
     "key": "BulkImport.Collapse",
     "description": "Bulk importer",
     "english": "Collapse",
-    "translation": "收合",
+    "translation": "摺疊",
     "isDeprecated": false
   },
   {
@@ -3948,7 +3972,7 @@
     "key": "RBXMainWindow.CollapseAll",
     "description": null,
     "english": "Collapse All",
-    "translation": "全部收合",
+    "translation": "全部摺疊",
     "isDeprecated": false
   },
   {
@@ -3956,7 +3980,7 @@
     "key": "RBXMainWindow.CollapseAllDiffResults",
     "description": null,
     "english": "Collapse all diff results",
-    "translation": "收合所有差異結果",
+    "translation": "摺疊所有差異結果",
     "isDeprecated": false
   },
   {
@@ -6836,7 +6860,7 @@
     "key": "RobloxRibbonMainWindow.CollapseAllCollapsableSection",
     "description": null,
     "english": "Collapse all collapsable sections of scripts",
-    "translation": "收合所有可收合的指令碼區段",
+    "translation": "摺疊所有可摺疊的指令碼區段",
     "isDeprecated": false
   },
   {
@@ -6844,7 +6868,7 @@
     "key": "RobloxRibbonMainWindow.CollapseAllCollapsableSections",
     "description": null,
     "english": "Collapse all collapsable sections",
-    "translation": "收合所有可收合的區段",
+    "translation": "摺疊所有可摺疊的區段",
     "isDeprecated": false
   },
   {
@@ -6852,7 +6876,7 @@
     "key": "RobloxRibbonMainWindow.CollapseAllScripts",
     "description": null,
     "english": "Collapse all scripts",
-    "translation": "收合所有指令碼",
+    "translation": "摺疊所有指令碼",
     "isDeprecated": false
   },
   {
@@ -7212,7 +7236,7 @@
     "key": "RobloxRibbonMainWindow.ExpandAllCollapsedFolds",
     "description": null,
     "english": "Expand all collapsed folds in the script",
-    "translation": "展開指令碼中所有收合的資料夾",
+    "translation": "展開指令碼中所有摺疊的資料夾",
     "isDeprecated": false
   },
   {
@@ -9740,7 +9764,7 @@
     "key": "PackageManagementVerbs.ErrorUnpublishedPackages",
     "description": null,
     "english": "Error: Cannot publish because packages cannot contain modified child packages.",
-    "translation": "錯誤：物件包含的套件具有未發布的變更，因此無法轉換成套件。",
+    "translation": "錯誤：無法發布，套件目前含有修改過的子套件。",
     "isDeprecated": false
   },
   {
@@ -22988,7 +23012,7 @@
     "key": "ScriptingCmd.FOLDALLTooltip",
     "description": null,
     "english": "Collapse all foldable sections of scripts",
-    "translation": "收合所有可收合的指令碼區段",
+    "translation": "摺疊所有可摺疊的指令碼區段",
     "isDeprecated": false
   },
   {
@@ -30357,6 +30381,14 @@
     "description": null,
     "english": "Group the selected Instances into a new Folder",
     "translation": "將選取個體組合成新資料夾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.CollapseChildren",
+    "description": null,
+    "english": "Collapse All",
+    "translation": "全部折疊",
     "isDeprecated": false
   },
   {
@@ -39621,6 +39653,46 @@
     "description": null,
     "english": "Your account must be verified in order to set a price for your plugin.",
     "translation": "只有經過驗證的帳號才可為外掛程式訂定價格。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.UnverifiedCreatorBadgeTooltipText",
+    "description": null,
+    "english": "Creator is unverified",
+    "translation": "創作者未經過 ID 驗證",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertMultipleInstancesWarning",
+    "description": null,
+    "english": "Cannot convert to package unless package has a single root instance.",
+    "translation": "無法轉換成套件，除非套件只有一個根個體。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertIfChildPackageHasUnpublishedChangesWarning",
+    "description": null,
+    "english": "Cannot convert to package while the instance contains packages with unpublished changes.",
+    "translation": "個體包含的套件具有未發布的變更，因此無法轉換成套件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.CantConvertModelWithPrimaryPartNonArchivableWarning",
+    "description": null,
+    "english": "Cannot publish a Model package when the PrimaryPart is not archivable.",
+    "translation": "PrimaryPart 無法封存，因此無法發布模型套件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigPackage.Non3DRoot3DDescendentsWarning",
+    "description": null,
+    "english": "This object has 3D content but is not a Model, so moving or rotating it will count as modifying the package.",
+    "translation": "此物件含有 3D 內容但不是 Model，移動或旋轉物件將視為修改套件。",
     "isDeprecated": false
   },
   {
@@ -52720,6 +52792,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Ad",
+    "description": "Label for an advertisement",
+    "english": "Ad",
+    "translation": "廣告",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.AssetManager",
     "key": "Main.Title",
     "description": null,
@@ -55716,7 +55796,7 @@
     "key": "TreeViewToolbar.Collapse",
     "description": null,
     "english": "Collapse",
-    "translation": "收合",
+    "translation": "摺疊",
     "isDeprecated": false
   },
   {
