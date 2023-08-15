@@ -10912,6 +10912,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.AppPermissions",
+    "description": "Tab menu value for OAuth Authorizations",
+    "english": "App Permissions",
+    "translation": "앱 권한",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Remove",
+    "description": null,
+    "english": "Remove",
+    "translation": "제거",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ChangeExternalAppPermissions",
+    "description": null,
+    "english": "Change the permissions of external apps that have access to your information.",
+    "translation": "내 정보에 접근할 수 있는 외부 앱의 권한을 변경합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -27284,7 +27308,7 @@
     "key": "Description.MeAndSpecific",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked. {linkStart}Read more{linkEnd}.",
-    "translation": "비공개 오디오는 액세스 권한을 명시적으로 부여한 체험에서만 이용할 수 있습니다. 아래에 액세스 권한을 부여하려는 체험의 유니버스 ID를 입력하세요. 여러 ID를 입력할 경우 쉼표로 구분해 입력하세요. {linkStart}자세히 알아보기{linkEnd}.",
+    "translation": "오디오는 액세스 권한을 명시적으로 부여한 체험에서만 이용할 수 있습니다. 아래에 액세스 권한을 부여하려는 체험의 유니버스 ID를 입력하세요. 여러 ID를 입력할 경우 쉼표로 구분해 입력하세요. 일단 권한을 부여하고 나면 취소할 수 없습니다. {linkStart}자세히 알아보기{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -27372,7 +27396,7 @@
     "key": "Description.MeAndSpecificNoLink",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked.",
-    "translation": "비공개 오디오는 액세스 권한을 명시적으로 부여한 체험에서만 이용할 수 있습니다. 아래에 액세스 권한을 부여하려는 체험의 유니버스 ID를 입력하세요. 여러 ID를 입력할 경우 쉼표로 구분해 입력하세요.",
+    "translation": "오디오는 액세스 권한을 명시적으로 부여한 체험에서만 이용할 수 있습니다. 아래에 액세스 권한을 부여하려는 체험의 유니버스 ID를 입력하세요. 여러 ID를 입력할 경우 쉼표로 구분해 입력하세요. 일단 권한을 부여하고 나면 취소할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -27388,7 +27412,7 @@
     "key": "Label.AllExperiences",
     "description": null,
     "english": "Public - All Experiences",
-    "translation": "전체 체험",
+    "translation": "공개 - 전체 체험",
     "isDeprecated": false
   },
   {
@@ -27396,7 +27420,7 @@
     "key": "Label.SpecificExperiences",
     "description": null,
     "english": "Private - Specific Experiences",
-    "translation": "특정 체험",
+    "translation": "비공개 - 특정 체험",
     "isDeprecated": false
   },
   {
@@ -27421,6 +27445,62 @@
     "description": null,
     "english": "How many assets can I publish to the Creator Marketplace?",
     "translation": "크리에이터 마켓플레이스에 얼마나 많은 애셋을 게시할 수 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.MarketplaceSharingDisabled",
+    "description": null,
+    "english": "Marketplace sharing has been temporarily disabled.",
+    "translation": "마켓플레이스 공유가 일시적으로 비활성화되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.MarketplaceQuotaCapacityPerThirtyDays",
+    "description": null,
+    "english": "Share up to {capacity} assets per 30 days. {linkStart}What's my limit?{linkEnd}",
+    "translation": "30일당 최대 애셋 {capacity}개를 공유할 수 있습니다. {linkStart}내 한도가 어떻게 되나요?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.MarketplaceSingleShareLeft",
+    "description": null,
+    "english": "1 Marketplace share left through {date}. {linkStart}What's my limit?{linkEnd}",
+    "translation": "{date}까지 1건의 마켓플레이스 공유를 할 수 있습니다. {linkStart}내 한도가 어떻게 되나요?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.MarketplaceMultipleSharesLeft",
+    "description": null,
+    "english": "{remaining} Marketplace shares left through {date}. {linkStart}What's my limit?{linkEnd}",
+    "translation": "{date}까지 {remaining}건의 마켓플레이스 공유를 할 수 있습니다. {linkStart}내 한도가 어떻게 되나요?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.MarketplaceSharingLimitExceeded",
+    "description": null,
+    "english": "Sharing limit exceeded. Try again after {date}. {linkStart}What's my limit?{linkEnd}",
+    "translation": "공유 한도를 초과했습니다. {date} 이후에 다시 시도하세요. {linkStart}내 한도가 어떻게 되나요?{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.SuggestedPrice",
+    "description": null,
+    "english": "Suggested Price",
+    "translation": "권장 가격",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Description.PriceDisclaimer",
+    "description": null,
+    "english": "Suggested price range is based on historical market data.",
+    "translation": "권장 가격대는 과거 시장 데이터에 기반해 책정됩니다.",
     "isDeprecated": false
   },
   {
@@ -34868,7 +34948,7 @@
     "key": "Description.ScaryModalBody13To17",
     "description": null,
     "english": "I agree that I am the parent or legal guardian of the account owner. I authorize this purchase and agree to the Terms of Use.",
-    "translation": "본인은 계정 소유자의 부모 또는 법적 보호자임에 동의합니다. 이 구매를 승인하고 서비스 약관에 동의합니다.",
+    "translation": "본인은 계정 소유자의 부모 또는 법적 보호자입니다. 이 구매를 허용하고 이용 약관에 동의합니다.",
     "isDeprecated": false
   },
   {
@@ -50344,6 +50424,614 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.None",
+    "description": null,
+    "english": "None",
+    "translation": "없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Profanity",
+    "description": null,
+    "english": "Profanity",
+    "translation": "쌍욕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Harassment",
+    "description": null,
+    "english": "Harassment",
+    "translation": "괴롭힘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Spam",
+    "description": null,
+    "english": "Spam",
+    "translation": "스팸",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Advertisement",
+    "description": null,
+    "english": "Advertisement",
+    "translation": "광고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Scamming",
+    "description": null,
+    "english": "Scamming",
+    "translation": "신용 사기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.AdultContent",
+    "description": null,
+    "english": "Adult Content",
+    "translation": "성인용 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Inappropriate",
+    "description": null,
+    "english": "Inappropriate",
+    "translation": "부적절함",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Privacy",
+    "description": null,
+    "english": "Privacy",
+    "translation": "개인정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.UnclassifiedMild",
+    "description": null,
+    "english": "Unclassified Mild",
+    "translation": "경미한 미분류 위반",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.BlockedContent",
+    "description": null,
+    "english": "BlockedContent",
+    "translation": "BlockedContent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.MinorSwearing",
+    "description": null,
+    "english": "Minor Swearing",
+    "translation": "가벼운 욕설",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DistortedAudio",
+    "description": null,
+    "english": "Distorted Audio",
+    "translation": "왜곡된 오디오 파일",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.LoudEarbleeders",
+    "description": null,
+    "english": "Loud Earbleeders",
+    "translation": "귀가 찢어질 듯한 소음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PlayersScreamingintoMicrophone",
+    "description": null,
+    "english": "Players Screaming into Microphone",
+    "translation": "마이크에 대고 비명을 지르는 플레이어",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Swearing",
+    "description": null,
+    "english": "Swearing",
+    "translation": "욕설",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PornographicSounds",
+    "description": null,
+    "english": "Pornographic Sounds",
+    "translation": "음란한 소리",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExplicitSexualReferencesandInnuendo",
+    "description": null,
+    "english": "Explicit Sexual References and Innuendo",
+    "translation": "노골적인 성적 묘사 및 암시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DrugandAlcoholReferences",
+    "description": null,
+    "english": "Drug and Alcohol References",
+    "translation": "약물 및 술 관련 언급",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DiscriminatoryorNaziContent",
+    "description": null,
+    "english": "Discriminatory or Nazi Content",
+    "translation": "차별적 혹은 나치 관련 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DatingImagery",
+    "description": null,
+    "english": "Dating Imagery",
+    "translation": "데이트 관련 이미지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DiscriminatoryContent",
+    "description": null,
+    "english": "Discriminatory Content",
+    "translation": "차별적인 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DrugsAlcohol",
+    "description": null,
+    "english": "Drugs, Alcohol",
+    "translation": "약물 및 술",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DMCA",
+    "description": null,
+    "english": "DMCA",
+    "translation": "DMCA",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExplicitNudityPorn",
+    "description": null,
+    "english": "Explicit Nudity/Porn",
+    "translation": "노골적인 누드 또는 포르노",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.GangImages",
+    "description": null,
+    "english": "Gang Images",
+    "translation": "범죄 단체 이미지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Nazis",
+    "description": null,
+    "english": "Nazis",
+    "translation": "나치 관련",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PersonalAttackHarassmentBullying",
+    "description": null,
+    "english": "Personal Attack/Harassment/Bullying",
+    "translation": "인신공격, 괴롭힘, 왕따",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RedArmbandsNotNazis",
+    "description": null,
+    "english": "Red Armbands (Not Nazis)",
+    "translation": "빨간 완장(나치 관련 제외)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SuggestiveSexualizedImagery",
+    "description": null,
+    "english": "Suggestive/Sexualized Imagery",
+    "translation": "외설적이거나 선정적인 이미지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SuicideSelfHarm",
+    "description": null,
+    "english": "Suicide/Self-Harm",
+    "translation": "자살 또는 자해",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ClickbaitAds",
+    "description": null,
+    "english": "Clickbait Ads",
+    "translation": "낚시성 광고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.InappropriateContent",
+    "description": null,
+    "english": "Inappropriate Content",
+    "translation": "부적절한 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.NotRelatedtoRoblox",
+    "description": null,
+    "english": "Not Related to Roblox",
+    "translation": "Roblox와 관련 없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.OffSiteLinks",
+    "description": null,
+    "english": "Off-Site Links",
+    "translation": "외부 링크",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.HiddenMessageClothing",
+    "description": null,
+    "english": "Hidden Message Clothing",
+    "translation": "숨겨진 메시지 복장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.NoneoftheAbove",
+    "description": null,
+    "english": "None of the Above",
+    "translation": "해당 사항 없음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.AccountTheft",
+    "description": null,
+    "english": "Account Theft",
+    "translation": "계정 도난",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.AssetOwnership",
+    "description": null,
+    "english": "Asset Ownership",
+    "translation": "애셋 소유권",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Billing",
+    "description": null,
+    "english": "Billing",
+    "translation": "비용 청구",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CompromisedAccount",
+    "description": null,
+    "english": "Compromised Account",
+    "translation": "손상된 계정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CopyrightDMCA",
+    "description": null,
+    "english": "Copyright/DMCA",
+    "translation": "저작권 또는 DMCA",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DerogatoryHarrassment",
+    "description": null,
+    "english": "Derogatory/Harrassment",
+    "translation": "비하 또는 괴롭힘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Depressive",
+    "description": null,
+    "english": "Depressive",
+    "translation": "우울",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Discriminatory",
+    "description": null,
+    "english": "Discriminatory",
+    "translation": "차별",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Exploiting",
+    "description": null,
+    "english": "Exploiting",
+    "translation": "악용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.TextFilterProfanity",
+    "description": null,
+    "english": "Text Filter / Profanity",
+    "translation": "텍스트 필터링 또는 쌍욕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Grooming",
+    "description": null,
+    "english": "Grooming",
+    "translation": "그루밍",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IllicitSubstance",
+    "description": null,
+    "english": "Illicit Substance",
+    "translation": "불법 약물",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Malicious",
+    "description": null,
+    "english": "Malicious",
+    "translation": "악의적 행위",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Misleading",
+    "description": null,
+    "english": "Misleading",
+    "translation": "오해의 소지가 있음",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Dating",
+    "description": null,
+    "english": "Dating",
+    "translation": "데이트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PhishingScam",
+    "description": null,
+    "english": "Phishing/Scam",
+    "translation": "피싱 또는 사기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealInfo",
+    "description": null,
+    "english": "Real Info",
+    "translation": "실제 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RMT",
+    "description": null,
+    "english": "RMT",
+    "translation": "실제 화폐 거래",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SexualAdultContent",
+    "description": null,
+    "english": "Sexual/Adult Content",
+    "translation": "성적 또는 성인용 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Shock",
+    "description": null,
+    "english": "Shock",
+    "translation": "충격적인 내용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Threats",
+    "description": null,
+    "english": "Threats",
+    "translation": "협박",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeTragedy",
+    "description": null,
+    "english": "Real-Life Tragedy",
+    "translation": "현실 세계의 사건 및 사고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Politics",
+    "description": null,
+    "english": "Politics",
+    "translation": "정치",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.EncouragingDangerousBehavior",
+    "description": null,
+    "english": "Encouraging Dangerous Behavior",
+    "translation": "위험한 행위 조장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "기타",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DatingandRomanticContent",
+    "description": null,
+    "english": "Dating and Romantic Content",
+    "translation": "데이트 관련 또는 로맨틱한 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SexualContent",
+    "description": null,
+    "english": "Sexual Content",
+    "translation": "성적인 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DirectingUsersOffPlatform",
+    "description": null,
+    "english": "Directing Users Off-Platform",
+    "translation": "사용자를 플랫폼 외부로 유도함",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyAskingforPII",
+    "description": null,
+    "english": "Privacy: Asking for PII",
+    "translation": "개인정보 관련: 개인식별정보 요청",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PrivacyGivingPII",
+    "description": null,
+    "english": "Privacy: Giving PII",
+    "translation": "개인정보 관련: 개인식별정보 제공",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Impersonation",
+    "description": null,
+    "english": "Impersonation",
+    "translation": "사칭",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.ExtortionandBlackmail",
+    "description": null,
+    "english": "Extortion and Blackmail",
+    "translation": "협박 및 갈취",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.IllegalandRegulatedContent",
+    "description": null,
+    "english": "Illegal and Regulated Content",
+    "translation": "불법 및 규제 대상 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.MisusingRobloxSystems",
+    "description": null,
+    "english": "Misusing Roblox Systems",
+    "translation": "Roblox 시스템 오용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.PoliticalContent",
+    "description": null,
+    "english": "Political Content",
+    "translation": "정치적인 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.TerrorismExtremism",
+    "description": null,
+    "english": "Terrorism/Extremism",
+    "translation": "테러리즘 및 극단주의",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.RealLifeThreats",
+    "description": null,
+    "english": "Real-Life Threats",
+    "translation": "실제적 위협",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.CheatandExploits",
+    "description": null,
+    "english": "Cheat and Exploits",
+    "translation": "사기 및 악용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.SeekingSexualContent",
+    "description": null,
+    "english": "Seeking Sexual Content",
+    "translation": "성적인 콘텐츠 추구",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Transactions",
     "key": "Heading.Title",
     "description": null,
@@ -57836,7 +58524,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click on the “Start” below to answer a few questions about your experience to generate its Guidelines, which include an age recommendation and regional compliance.",
-    "translation": "연령별 권장 사항 및 지역 규정 준수 여부를 판단하려면 추가 정보가 필요합니다.",
+    "translation": "아래에서 '시작'을 클릭해 본인의 체험에 관한 몇 가지 질문에 답하고, 연령별 권장 사항 및 지역 규정 준수를 포함하는 가이드라인을 생성하세요.",
     "isDeprecated": false
   },
   {
@@ -57868,7 +58556,7 @@
     "key": "Message.GuidelinesSubmittedNewVersion",
     "description": null,
     "english": "This experience has an active age recommendation; it is automatically unavailable in the following non-compliant regions, if any.",
-    "translation": "연령별 권장 사항을 사용 중이며 이는 사용자에게 표시됩니다.",
+    "translation": "이 체험에는 실행 중인 연령별 권장 사항이 있으므로, 다음의 비준수 지역(해당하는 경우)에서는 자동으로 체험을 이용할 수 없게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -69000,6 +69688,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Label.MoreVotesNeededTooltip",
+    "description": "Text for the tooltip that shows to users when an asset doesn't have enough votes to have a color",
+    "english": "More votes needed for rating",
+    "translation": "평가를 위해 더 많은 투표가 필요합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Label.NotEnoughRatings",
+    "description": "Text showed in the vote count area when an asset does not have enough ratings, in lieu of showing an actual number",
+    "english": "Not enough ratings",
+    "translation": "평가가 부족합니다",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorMarketplace.Navigation",
     "key": "Label.AboutUs",
     "description": null,
@@ -69300,7 +70004,7 @@
     "key": "Label.ShowVerifiedCreatorsOnly",
     "description": null,
     "english": "Show verified only",
-    "translation": "인증 완료된 크리에이터만 표시",
+    "translation": "인증된 경우만 표시",
     "isDeprecated": false
   },
   {
@@ -69496,11 +70200,115 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryExperiences",
+    "description": "Notification Category Experiences",
+    "english": "Experiences",
+    "translation": "체험",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryFriends",
+    "description": "Notification Category Friends",
+    "english": "Friends",
+    "translation": "친구",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryAvatar",
+    "description": "Notification Category Avatar",
+    "english": "Avatar",
+    "translation": "아바타",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryRobloxPlatform",
+    "description": "Notification Category RobloxPlatform",
+    "english": "RobloxPlatform",
+    "translation": "RobloxPlatform",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeExperience",
+    "description": "Notification Type Experience",
+    "english": "Experience",
+    "translation": "체험",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.OpenCloud",
     "key": "Label.DownloadSpec",
     "description": null,
     "english": "Download {version} spec",
     "translation": "{version} 사양 다운로드",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Version",
+    "description": null,
+    "english": "Version",
+    "translation": "버전",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.OAuth2",
+    "description": null,
+    "english": "OAuth2",
+    "translation": "OAuth2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.ApiKey",
+    "description": null,
+    "english": "API Keys",
+    "translation": "API 키",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Cookie",
+    "description": null,
+    "english": "Cookie",
+    "translation": "쿠키",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Optional",
+    "description": null,
+    "english": "Optional",
+    "translation": "선택 사항",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Endpoints",
+    "description": null,
+    "english": "Endpoints",
+    "translation": "끝점",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Objects",
+    "description": null,
+    "english": "Objects",
+    "translation": "개체",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.RequestBody",
+    "description": null,
+    "english": "Request Body",
+    "translation": "요청 본문",
     "isDeprecated": false
   },
   {
