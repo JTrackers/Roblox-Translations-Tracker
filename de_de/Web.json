@@ -728,6 +728,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.\t",
+    "translation": "Ungültige E-Mail-Adresse.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "{code} ist dein einmaliger Roblox-Code",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Hallo,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} ist dein einmaliger Roblox-Code. Gib ihn im Anmeldebildschirm ein, um dich anzumelden.{lineBreak}{lineBreak}Teile diesen Code mit {boldStart}niemandem{boldEnd}. Wir werden dich {boldStart}niemals{boldEnd} kontaktieren, um deinen Code zu erfragen. Wenn du diesen Code nicht angefordert hast, musst du nichts weiter tun. Wenn du mehrere Codes erhalten hast, die du nicht angefordert hast, raten wir dir dringend, eine andere E-Mail-Adresse mit deinem Konto zu verbinden und {linkTagWithAuthenticatorHelpLinkStart}zweistufige Verifizierung per Authenticator-App einzurichten{linkTagEnd}.{lineBreak}{lineBreak}Diese Anmeldeanfrage wurde von \n {geolocation} aus erhalten.{lineBreak}{lineBreak}Danke{lineBreak}{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -8172,7 +8196,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Receive unique security codes at {email}.",
-    "translation": "Erhalte eindeutige Sicherheitscode an {email}.",
+    "translation": "Erhalte eindeutige Sicherheitscodes an {email}.",
     "isDeprecated": false
   },
   {
@@ -8972,7 +8996,7 @@
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
     "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
-    "translation": "Wenn du zweistufige Verifizierung ausschaltest, wird für einige Aktionen, wie z.B. Anmeldungen, nur ein Passwort erforderlich sein. Bist du dir sicher?",
+    "translation": "Wenn du zweistufige Verifizierung ausschaltest, wird dein Konto weniger sicher und für einige Aktionen, wie z.B. Anmeldungen, nur noch ein Passwort erforderlich sein. Bist du dir sicher?",
     "isDeprecated": false
   },
   {
@@ -25776,6 +25800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "Items kaufen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -39181,6 +39213,22 @@
     "description": null,
     "english": "PIX",
     "translation": "PIX",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "translation": "Ein unerwarteter Fehler ist aufgetreten. Es kann bis zu 5 Minuten dauern, bis deine Transaktion verarbeitet wird. Bitte aktualisiere die Seite, um zu sehen, ob sie erfolgreich verarbeitet wurde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "Ein Fehler ist aufgetreten und die Zahlung war nicht erfolgreich. Bitte versuche es erneut.",
     "isDeprecated": false
   },
   {
@@ -55192,6 +55240,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "Der Betrag ist der Nettozahlungsbetrag ohne Provision, Marktplatzgebühr und wiederkehrende Gruppenauszahlungen.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -62491,7 +62547,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Title.GameSessionsPerSource",
     "description": "Chart Title in User Acquisitions",
-    "english": "Game Sessions Per Source",
+    "english": "Sessions Per Source",
     "translation": "Spielesitzungen pro Quelle",
     "isDeprecated": false
   },
@@ -62546,8 +62602,8 @@
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Title.ImpressionCTR",
-    "description": "Column Label in User Acquisitions",
-    "english": "Impression CTR",
+    "description": "Column Label in User Acquisitions (CVR means \"conversion rate\")",
+    "english": "Impression CVR",
     "translation": "Impression CTR",
     "isDeprecated": false
   },
@@ -62555,15 +62611,15 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Title.GameDetails",
     "description": "Column Label in User Acquisitions",
-    "english": "Game Detail Page Visits",
+    "english": "Experience Detail Page Visits",
     "translation": "Spielinfo-Seitenbesuche",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Title.GameDetailCTR",
-    "description": "Column Label in User Acquisitions",
-    "english": "Game Detail CTR",
+    "description": "Column Label in User Acquisitions (CVR means \"conversion rate\")",
+    "english": "Experience Detail CVR",
     "translation": "Spielinfo CTR",
     "isDeprecated": false
   },
@@ -62578,7 +62634,7 @@
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Title.E2ECVR",
-    "description": "Column Label in User Acquisitions",
+    "description": "Column Label in User Acquisitions (CVR means \"conversion rate\"; E2E means \"end to end\")",
     "english": "E2E CVR",
     "translation": "E2E CVR",
     "isDeprecated": false
@@ -62587,7 +62643,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.FunnelSourceOrganic",
     "description": "Funnel Source Label in User Acquisitions",
-    "english": "Organic",
+    "english": "Search & Discovery",
     "translation": "Organisch",
     "isDeprecated": false
   },
@@ -62603,7 +62659,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.FunnelSourceCrossGameTeleport",
     "description": "Funnel Source Label in User Acquisitions",
-    "english": "Cross Game Teleport",
+    "english": "Cross Experience Teleport",
     "translation": "Spieleübergreifendes Teleport",
     "isDeprecated": false
   },
@@ -62651,7 +62707,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.GameSessionsPerSource",
     "description": "Chart Tooltip in User Acquisitions",
-    "english": "Number of game sessions in the experience per day, broken down by which source they initially came from",
+    "english": "Daily session counts show how much activity comes from each traffic source",
     "translation": "Anzahl der Spielsitzungen im Erlebnis pro Tag, aufgeschlüsselt von welcher Quelle sie ursprünglich stammten",
     "isDeprecated": false
   },
@@ -62667,7 +62723,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.NewUsersPerSource",
     "description": "Chart Tooltip in User Acquisitions",
-    "english": "Number of new users in the experience per day, broken down by which source they initially came from",
+    "english": "Daily new user counts show which traffic sources are most effective for acquisition",
     "translation": "Anzahl neuer Nutzer:innen im Erlebnis pro Tag, aufgeschlüsselt von welcher Quelle sie ursprünglich stammten",
     "isDeprecated": false
   },
@@ -62691,7 +62747,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.OrganicTrafficConversionFunnel",
     "description": "Chart Tooltip in User Acquisitions",
-    "english": "A daily chart showing various ratios representing conversion success across all sources. The Impression CTR is the proportion of people who saw your experience that expressed further interest in it (such as by clicking its thumbnail image or link). The Game Detail CTR is the proportion of people who saw the game details page that decided to visit the experience and thus had a play session. The E2E CVR is the proportion of people who saw information about your experience who ultimately ended up in a play session.",
+    "english": "This daily chart shows how successful your ads are at generating play sessions. Low conversion rates can indicate opporturnity to grow your audience. Impression Conversion Rate (CVR) divides the number of associated clicks or play sessions by the count of impressions for your experience. Experience Detail CVR is the count of associated play sessions divided by experience detail page views. The End to End (E2E) CVR measures play sessions than can be attributed to an impression.",
     "translation": "Ein Tagesdiagramm mit verschiedenen Kennzahlen, die den Konvertierungserfolg über alle Quellen hinweg darstellen. Die Impression-CTR ist der Anteil der Menschen, die dein Erlebnis sahen und weiteres Interesse an ihm zeigten (wie etwa durch das Anklicken des Miniaturbilds oder des Links). Die Spielinfo-CTR ist der Anteil der Leute, die die Spielinfoseite sahen und daraufhin beschlossen, das Erlebnis zu besuchen und so eine Spielsitzung hatten. Die E2E CVR ist der Anteil der Leute, die Informationen über dein Erlebnis gesehen haben und darauf in einer Spielsitzung landeten.",
     "isDeprecated": false
   },
@@ -62707,7 +62763,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.AllStats",
     "description": "Chart Tooltip in User Acquisitions",
-    "english": "Table showing the count and ratios of various acquisition data about how people are discovering your experience. Totals over the range of time between the start and end date are shown, and the rows provide a breakdown by source.",
+    "english": "This table provides an overview of your conversion data between the start and end dates above, broken down by source.",
     "translation": "Tabelle zeigt die Anzahl und das Verhältnis der verschiedenen Erfassungsdaten darüber, wie Menschen dein Erlebnis entdecken. Summen über den Zeitraum zwischen dem Start- und Enddatum werden angezeigt, und die Zeilen bieten eine Aufschlüsselung nach Quelle.",
     "isDeprecated": false
   },
@@ -62715,7 +62771,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.ImpressionCTR",
     "description": "Table Column Header Tooltip in User Acquisitions",
-    "english": "The proportion of people who saw your experience that expressed further interest in it (such as by clicking its thumbnail image or link)",
+    "english": "Count of clicks or play sessions attributed to an impression, divided by the count of impressions",
     "translation": "Der Anteil der Leute, die dein Erlebnis gesehen haben und weiteres Interesse an ihm zeigten (wie zum Beispiel durch Klicken auf dein Miniaturbild oder Link)",
     "isDeprecated": false
   },
@@ -62723,7 +62779,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.GameDetailCTR",
     "description": "Table Column Header Tooltip in User Acquisitions",
-    "english": "The proportion of people who saw the game details page that decided to visit the experience and thus had a play session",
+    "english": "Count of attributed play sessions, divided by the count of experience detail page views",
     "translation": "Der Anteil der Leute, die die Spielinfoseite gesehen und darauf dein Erlebnis besucht haben und somit eine Spielsitzung hatten",
     "isDeprecated": false
   },
@@ -62731,7 +62787,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.E2ECVR",
     "description": "Table Column Header and Summary Item Tooltip in User Acquisitions",
-    "english": "The proportion of people who saw information about your experience who ultimately ended up in a play session",
+    "english": "Count of play sessions attributed to an impression, divided by the count of impressions",
     "translation": "Der Anteil der Leute, die Informationen über dein Erlebnis gesehen haben und darauf in einer Spielsitzung landeten",
     "isDeprecated": false
   },
@@ -62755,7 +62811,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.ImpressionsPerSource",
     "description": "Chart Tooltip in User Acquisitions",
-    "english": "Number of times someone could have seen your experience from each source",
+    "english": "Impression counts show the number of times your content was displayed per traffic source",
     "translation": "Anzahl der Male, die jemand dein Erlebnis aus jeder Quelle gesehen haben könnte",
     "isDeprecated": false
   },
