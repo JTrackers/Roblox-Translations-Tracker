@@ -768,6 +768,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "문제가 있으신가요?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -12637,6 +12645,62 @@
     "description": null,
     "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
     "translation": "{boldStart}중요:{boldEnd} 보안 코드를 다른 사람과 공유하지 마세요. Roblox에서는 절대 사용자의 코드를 요청하지 않습니다. 코드를 문자 메시지로 보내거나 화면을 공유하는 행위 또한 해서는 안 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they don't have an account email",
+    "english": "You must provide and verify your email before you can delete your PIN.",
+    "translation": "PIN을 삭제하기 전에 계정에 이메일 주소를 입력하고 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified email",
+    "english": "You must verify your email before you can delete your PIN.",
+    "translation": "PIN을 삭제하기 전에 먼저 이메일 인증을 해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can add a PIN.",
+    "translation": "PIN을 추가하기 전에 계정에 보호자 이메일 주소를 입력하고 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can delete your PIN.",
+    "translation": "PIN을 삭제하기 전에 계정에 보호자 이메일 주소를 입력하고 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can delete your PIN.",
+    "translation": "PIN을 삭제하기 전에 먼저 보호자 이메일 인증을 해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can add a PIN.",
+    "translation": "PIN을 추가하기 전에 먼저 보호자 이메일 인증을 해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.ChangeEmailDisablePinWarning",
+    "description": "modal body when users attempt to change their email with pin enabled",
+    "english": "You must disable parent PIN in Parental Controls to change your email. ",
+    "translation": "이메일 주소를 변경하려면 자녀 보호 기능에서 보호자 PIN을 비활성화해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -59065,6 +59129,150 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Event",
+    "description": "Label for a single scheduled event managed by a creator",
+    "english": "Event",
+    "translation": "이벤트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.UpcomingEvents",
+    "description": "Label for the list of scheduled events that occur in the future",
+    "english": "Upcoming Events",
+    "translation": "예정된 이벤트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DraftEvents",
+    "description": "Label for the list of unpublished scheduled events",
+    "english": "Draft Events",
+    "translation": "초안 이벤트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.PastEvents",
+    "description": "Label for the list of scheduled events that have already ended",
+    "english": "Past Events",
+    "translation": "과거 이벤트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.StartTime",
+    "description": "Label designating the start date/time for a scheduled event",
+    "english": "From",
+    "translation": "시작",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EndTime",
+    "description": "Label designating the end date/time for a scheduled event",
+    "english": "To",
+    "translation": "종료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PublishEvent",
+    "description": "Action for a user to publish a scheduled event",
+    "english": "Publish Event",
+    "translation": "이벤트 게시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.SaveDraft",
+    "description": "Action for a user to save a draft of a scheduled event they are creating/editing",
+    "english": "Save Draft",
+    "translation": "초안 저장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventTitle",
+    "description": "Label for a scheduled event's name/title",
+    "english": "Event Name",
+    "translation": "이벤트 이름",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToPublish",
+    "description": "Error message displayed when the network call to publish a scheduled event fails for any reason",
+    "english": "Unable to publish event, please try again later",
+    "translation": "이벤트를 게시할 수 없습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToCreate",
+    "description": "Error displayed when the call to save a scheduled event fails for any reason",
+    "english": "Unable to create event, please try again later",
+    "translation": "이벤트를 만들 수 없습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.StartTime",
+    "description": "Error displayed when a scheduled event's start date/time is invalid",
+    "english": "Start must be at least a day from now",
+    "translation": "시작은 최소 1일 이후여야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.EndTime",
+    "description": "Error displayed when a scheduled event's end time is invalid",
+    "english": "End must be at least one hour after start",
+    "translation": "종료는 시작 후 최소 1시간 이후여야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ConfirmDiscardChanges",
+    "description": "Heading for a dialog confirming that a user wishes to discard changes they have not saved",
+    "english": "Discard Changes?",
+    "translation": "변경 사항을 취소할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ConfirmDiscardChanges",
+    "description": "Message in a dialog confirming that a user wishes to discard unsaved changes",
+    "english": "You have unsaved changes. Do you wish to discard them?",
+    "translation": "저장하지 않은 변경 사항이 있습니다. 취소할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Discard",
+    "description": "Action for a user to discard unsaved changes",
+    "english": "Discard",
+    "translation": "취소",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.MissingFields",
+    "description": "Tooltip displayed when a control is disabled due to missing field data",
+    "english": "You must fill in all required fields first",
+    "translation": "먼저 모든 필수 입력란을 작성해야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.SelectExperience",
+    "description": "Heading for a dialog allowing a user to select an experience",
+    "english": "Select Experience",
+    "translation": "체험 선택",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Confirm",
     "description": "Action for a user to confirm a selection or choice",
     "english": "Confirm",
@@ -59073,10 +59281,290 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.StartDate",
+    "description": "Label to specify ordering scheduled events by soonest start date/time",
+    "english": "Starting Soonest",
+    "translation": "가능한 한 빨리 시작",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventHappeningNow",
+    "description": "Label for a scheduled event that is occurring now",
+    "english": "Happening Now",
+    "translation": "지금 진행 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventHappeningSoon",
+    "description": "Label for a scheduled event that is starting in {minutes} minutes from now",
+    "english": "Starts in {minutes} Minutes",
+    "translation": "{minutes}분 후 시작",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventOver",
+    "description": "Label for a scheduled event that ended at {endDateTime} date/time",
+    "english": "Ended on {endDateTime}",
+    "translation": "{endDateTime}에 종료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEnd",
+    "description": "Label for a scheduled event's start date/time to end/date time",
+    "english": "{startDateTime} - {endDateTime}",
+    "translation": "{startDateTime}~{endDateTime}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenEventInNewTab",
+    "description": "Label for a menu item to open a scheduled event's details page",
+    "english": "Open Event Details",
+    "translation": "이벤트 세부 정보 열기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.CopyEventURL",
+    "description": "Action for a user to copy a scheduled event's details page URL",
+    "english": "Copy Event Details URL",
+    "translation": "이벤트 세부 정보 URL 복사",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.CancelEventSuccess",
+    "description": "Message when a scheduled event is cancelled successfully",
+    "english": "Event was cancelled successfully",
+    "translation": "이벤트 취소를 완료했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.CancelEventFailed",
+    "description": "Message displayed when a scheduled event's requested cancellation fails for any reason",
+    "english": "Event cancellation failed, please try again",
+    "translation": "이벤트를 취소하지 못했습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.CancelEvent",
+    "description": "Action for a user to cancel a scheduled event",
+    "english": "Cancel Event",
+    "translation": "이벤트 취소",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.CancelEvent",
+    "description": "Title for a dialog confirming if the user wants to cancel a scheduled event",
+    "english": "Cancel Event?",
+    "translation": "이벤트를 취소할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.CancelEvent",
+    "description": "Text in a dialog that confirms if a user wants to cancel a scheduled event",
+    "english": "This event will be cancelled. This action cannot be undone.",
+    "translation": "이벤트를 취소합니다. 이 작업은 실행 취소할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Close",
+    "description": "Action for a user to close a modal",
+    "english": "Close",
+    "translation": "닫기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToUpdateEvent",
+    "description": "Error displayed when an update to a scheduled event fails for any reason",
+    "english": "Failed to update the event, please try again later",
+    "translation": "이벤트를 업데이트하지 못했습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.UpdateEvent",
     "description": "Action to save changes to an updated scheduled event",
     "english": "Save",
     "translation": "저장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EventCreationSuccess",
+    "description": "Message displayed when a scheduled event is created/updated succesfully",
+    "english": "Successfully saved event",
+    "translation": "이벤트 저장을 완료했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PrivateExperience",
+    "description": "A menu label describing a scheduled event's experience as private",
+    "english": "Private Experience",
+    "translation": "체험 비공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ChangeExperience",
+    "description": "Action to indicate that a user wishes to change the experience associated with a scheduled event",
+    "english": "Change Experience",
+    "translation": "체험 변경",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.PrivateExperience",
+    "description": "Heading for a modal asking if the user would like to change their selected experience away from a private one",
+    "english": "Private Experience",
+    "translation": "체험 비공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PrivateExperienceWarning",
+    "description": "Message displayed to warn a user that they have selected a private experience to associate with a scheduled event",
+    "english": "The experience you have chosen is private and therefore won't be playable when the event becomes live.",
+    "translation": "선택한 체험은 비공개이므로 이벤트 공개 후 플레이할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.LeaveAsIs",
+    "description": "Label describing the option to keep a private experience selected for a scheduled event",
+    "english": "Continue with private experience",
+    "translation": "비공개 체험으로 계속하기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.MakeExperiencePublicNow",
+    "description": "Label for an option to allow a user to make a private experience associated with a scheduled event public",
+    "english": "Make experience public now",
+    "translation": "지금 체험 공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Placeholder",
+    "description": "Label describing a placeholder of some sort",
+    "english": "Placeholder",
+    "translation": "자리 표시자",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ConfirmPublishEvent",
+    "description": "Heading for a modal confirming that the user would like to publish a scheduled event",
+    "english": "Publish Event?",
+    "translation": "이벤트를 게시할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ConfirmPublishEvent",
+    "description": "Message displayed in a modal confirming that a user would like to publish a scheduled event",
+    "english": "When an event is published, it is immediately visible to everyone, and the attached experience cannot be swapped. Assets that are pending review or are moderated will display a placeholder instead.",
+    "translation": "이벤트를 게시하면 모두에게 바로 공개되며, 연결된 체험은 교체할 수 없습니다. 검토 중이거나 검열된 애셋은 자리 표시자로 나타납니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.EditExperienceDetails",
+    "description": "Action to let a user edit the experience associated with their scheduled event",
+    "english": "Edit Experience Details",
+    "translation": "체험 세부 정보 편집",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenEventExperienceDetails",
+    "description": "Action for opening an experience details page associated with a scheduled event",
+    "english": "Open Experience Details",
+    "translation": "체험 세부 정보 열기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EndingSoon",
+    "description": "Label for an event that is ending in {minutes} minutes",
+    "english": "Ending in {minutes} Minutes",
+    "translation": "{minutes}분 후 종료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.DeleteEvent",
+    "description": "Title for a confirmation dialog that a user wants to permanently delete a scheduled event",
+    "english": "Delete Event?",
+    "translation": "이벤트를 삭제할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.DeleteEvent",
+    "description": "Text for a confirmation dialog that a user wants to permanently delete a scheduled event",
+    "english": "This event will be deleted and you will no longer be able to access it again. This action cannot be undone.",
+    "translation": "이 이벤트는 삭제되며 더 이상 액세스할 수 없습니다. 이 작업은 실행 취소할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.DeleteEvent",
+    "description": "Action for a user to permanently delete a scheduled event",
+    "english": "Delete Event",
+    "translation": "이벤트 삭제",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DeleteEventSuccess",
+    "description": "Message displayed when a user successfully deletes a scheduled event",
+    "english": "Event was deleted successfully",
+    "translation": "이벤트 삭제를 완료했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DeleteEventFailed",
+    "description": "Message displayed when a scheduled event fails to be deleted for any reason",
+    "english": "Event deletion failed, please try again",
+    "translation": "이벤트를 삭제하지 못했습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ConfigureEvent",
+    "description": "Action for a user to configure an already-created scheduled event",
+    "english": "Configure Event",
+    "translation": "이벤트 구성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.EventAlreadyPublished",
+    "description": "Tooltip displayed on the \"Publish Event\" button when editing a scheduled event that has already been published",
+    "english": "Event is already published",
+    "translation": "이미 게시된 이벤트입니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.BackToEvents",
+    "description": "An action to return the list of scheduled events from another area of the site",
+    "english": "Back to Events",
+    "translation": "이벤트로 돌아가기",
     "isDeprecated": false
   },
   {
@@ -60468,7 +60956,7 @@
     "key": "Description.ConversionRate",
     "description": null,
     "english": "Conversion rate is calculated as the proportion of conversions to impressions (# of conversions / # of impressions).",
-    "translation": "전환율은 광고 노출 횟수 대비 실제 발생한 전환 비율입니다(전환 횟수/광고 노출 횟수).",
+    "translation": "전환율은 노출 수 대비 실제 발생한 전환 비율입니다(전환 수/노출 수).",
     "isDeprecated": false
   },
   {
@@ -60476,7 +60964,7 @@
     "key": "Description.Impressions",
     "description": null,
     "english": "Impressions are how many times your Premium upsell is shown.",
-    "translation": "광고 노출 횟수란 Premium 업셀이 나타난 횟수를 뜻합니다.",
+    "translation": "노출 수란 Premium 업셀이 나타난 횟수를 뜻합니다.",
     "isDeprecated": false
   },
   {
@@ -60508,7 +60996,7 @@
     "key": "Label.PremiumUpsellImpressions",
     "description": null,
     "english": "Impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -63756,7 +64244,7 @@
     "key": "Label.ImpressionsSuffix",
     "description": null,
     "english": "impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -63796,7 +64284,7 @@
     "key": "Title.Impressions",
     "description": "Chart Title & Axis Label in User Acquisitions",
     "english": "Impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -63804,7 +64292,7 @@
     "key": "Title.OrganicTrafficConversionFunnel",
     "description": "Chart Title in User Acquisitions",
     "english": "Search & Discovery Conversion Funnel",
-    "translation": "자연 트래픽 전환 유입 경로",
+    "translation": "검색 및 발견 전환 유입 경로",
     "isDeprecated": false
   },
   {
@@ -63980,7 +64468,7 @@
     "key": "Description.OrganicTrafficConversionFunnel",
     "description": "Chart Tooltip in User Acquisitions",
     "english": "This daily chart shows how successful your ads are at generating play sessions. Low conversion rates can indicate opporturnity to grow your audience. Impression Conversion Rate (CVR) divides the number of associated clicks or play sessions by the count of impressions for your experience. Experience Detail CVR is the count of associated play sessions divided by experience detail page views. The End to End (E2E) CVR measures play sessions than can be attributed to an impression.",
-    "translation": "모든 소스에서의 전환 성공을 나타내는 다양한 비율을 보여주는 일일 차트입니다. 노출 클릭률(CTR)은 회원님의 체험을 본 사람들이 더 많은 관심을 표명한 비율입니다(예: 섬네일 이미지 또는 링크 클릭). 게임 세부 정보 클릭률(CTR)은 게임 세부 정보 페이지를 보고 체험 방문을 결정해 플레이 세션을 가진 사람들의 비율입니다. 엔드투엔드 전환율은 회원님의 체험 정보를 본 사람들 중에서 플레이 세션에 참가한 사람들의 비율입니다.",
+    "translation": "이 일일 차트는 광고가 플레이 세션 생성에 얼마나 성공적인지 보여 줍니다. 전환율이 낮다는 것은 사용자 수를 늘릴 수 있는 기회가 많음을 의미할 수 있습니다. 노출 전환율(CVR)은 관련 클릭 또는 플레이 세션 수를 체험의 노출 수로 나눕니다. 체험 세부 정보 CVR은 관련 플레이 세션 수를 체험 세부 정보 페이지 조회 수로 나눈 값입니다. 엔드투엔드(End to End, E2E) CVR은 노출로 인해 발생할 수 있는 플레이 세션을 측정합니다.",
     "isDeprecated": false
   },
   {
@@ -63996,7 +64484,7 @@
     "key": "Description.AllStats",
     "description": "Chart Tooltip in User Acquisitions",
     "english": "This table provides an overview of your conversion data between the start and end dates above, broken down by source.",
-    "translation": "사람들이 체험을 발견하는 방법에 대한 다양한 획득 데이터의 수와 비율을 보여주는 표입니다. 시작 날짜와 종료 날짜 사이의 시간 범위에 대한 총계가 표시되고, 행은 소스별로 분석을 제공합니다.",
+    "translation": "이 표는 위의 시작일과 종료일 사이의 전환 데이터에 대한 개요를 소스별로 분류해 제공합니다.",
     "isDeprecated": false
   },
   {
@@ -64004,7 +64492,7 @@
     "key": "Description.ImpressionCTR",
     "description": "Table Column Header Tooltip in User Acquisitions",
     "english": "Count of clicks or play sessions attributed to an impression, divided by the count of impressions",
-    "translation": "체험을 보고 더 많은 관심을 표명한 사람의 비율입니다(예: 섬네일 이미지 또는 링크 클릭)",
+    "translation": "노출로 인한 클릭 수 또는 플레이 세션 수를 노출 수로 나눈 값",
     "isDeprecated": false
   },
   {
@@ -64012,7 +64500,7 @@
     "key": "Description.GameDetailCTR",
     "description": "Table Column Header Tooltip in User Acquisitions",
     "english": "Count of attributed play sessions, divided by the count of experience detail page views",
-    "translation": "게임 세부 정보 페이지를 보고 체험 방문을 결정해 플레이 세션을 가진 사람의 비율입니다",
+    "translation": "기여 플레이 세션 수를 체험 세부 정보 페이지 조회 수로 나눈 값",
     "isDeprecated": false
   },
   {
@@ -64020,7 +64508,7 @@
     "key": "Description.E2ECVR",
     "description": "Table Column Header and Summary Item Tooltip in User Acquisitions",
     "english": "Count of play sessions attributed to an impression, divided by the count of impressions",
-    "translation": "체험 정보를 보고 플레이 세션에 참가한 사람의 비율입니다",
+    "translation": "노출로 인한 플레이 세션 수를 노출 수로 나눈 값",
     "isDeprecated": false
   },
   {
@@ -64028,7 +64516,7 @@
     "key": "Title.ImpressionsPerSource",
     "description": "Chart Title in User Acquisitions",
     "english": "Impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -64044,7 +64532,7 @@
     "key": "Description.ImpressionsPerSource",
     "description": "Chart Tooltip in User Acquisitions",
     "english": "Impression counts show the number of times your content was displayed per traffic source",
-    "translation": "각 소스를 통해 체험을 볼 수도 있었던 사람의 수입니다",
+    "translation": "노출 수는 트래픽 소스당 콘텐츠가 표시된 횟수를 보여 줍니다",
     "isDeprecated": false
   },
   {
@@ -65033,6 +65521,110 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Description",
+    "description": null,
+    "english": "The experience questionnaire.",
+    "translation": "체험 설문지.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Violence",
+    "description": null,
+    "english": "Violence",
+    "translation": "폭력",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.AnswerAccurately",
+    "description": null,
+    "english": "Please answer the questions accurately based on:",
+    "translation": "다음을 기준으로 질문에 정확하게 답하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.TheMostMatureContent",
+    "description": null,
+    "english": "the most mature/extreme content a player can possibly experience in your experience (e.g. If your experience depicts mild violence infrequently and moderate violence frequently, declare “Frequent Moderate Violence”);",
+    "translation": "체험 내에서 플레이어가 경험할 수 있는 가장 극단적이며 미성년자에 부적합한 콘텐츠(예: 체험이 가벼운 폭력은 드물게 묘사하고 보통 수준의 폭력은 자주 묘사하는 경우, '빈번한 보통 수준의 폭력'으로 간주)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContentInAnyForms",
+    "description": null,
+    "english": "content in any forms, including and not limited to any assets (textures, models, animations, audio, video, etc.) and/or narratives;",
+    "translation": "애셋(텍스처, 모델, 애니메이션, 오디오, 비디오 등) 및/또는 내러티브를 포함하되 이에 국한되지 않는 모든 형식의 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UserGeneratedContentNotMeasured",
+    "description": null,
+    "english": "creator generated content only; user generated content is not measured. (E.g. you don’t need to account for blood in a player’s platform avatar brought into your experience.)",
+    "translation": "크리에이터가 제작한 콘텐츠만 해당하며, 사용자 제작 콘텐츠는 고려하지 않습니다. (예: 체험 내 플레이어의 플랫폼 아바타에 나타난 유혈 묘사는 고려할 필요가 없습니다.)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContainViolence",
+    "description": null,
+    "english": "Does this experience contain violence and/or violent content?",
+    "translation": "이 체험에 폭력 및/또는 폭력적인 콘텐츠가 포함되어 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DepictionOfViolence",
+    "description": null,
+    "english": "Violence: Depictions of the act and/or the consequence of intentional, threatened and/or actual, use of physical and/or psychological force against characters and/or players.",
+    "translation": "폭력: 캐릭터 및/또는 플레이어에 대한 의도적, 위협적 및/또는 실제의 신체적 및/또는 심리적 공격 행위 및/또는 행위 및/또는 결과의 묘사.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DoNotMeasure",
+    "description": null,
+    "english": "Do NOT measure",
+    "translation": "고려하지 마세요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NonGraphicDeath",
+    "description": null,
+    "english": "Non-graphic character death due to accidents.",
+    "translation": "사고로 인한 비그래픽 캐릭터의 죽음.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NonViolentAdversarial",
+    "description": null,
+    "english": "Nonviolent adversarial games.",
+    "translation": "비폭력 대결 게임.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NaturalDisasters",
+    "description": null,
+    "english": "Depictions of natural disasters.",
+    "translation": "자연재해 묘사.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DefaultCharacterDeath",
+    "description": null,
+    "english": "Roblox default character reset/death mechanics.",
+    "translation": "Roblox 기본 캐릭터 재설정 또는 죽음 메커니즘.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Questionnaire.No",
     "description": null,
     "english": "No",
@@ -65045,6 +65637,262 @@
     "description": null,
     "english": "Yes",
     "translation": "예",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.YesContainsViolence",
+    "description": null,
+    "english": "Yes (Contains Violence)",
+    "translation": "예(폭력을 포함함)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.WhatIntensity",
+    "description": null,
+    "english": "What is the level of intensity?",
+    "translation": "강도 수준이 어떻게 되나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.MildIntesityDescription",
+    "description": null,
+    "english": "Mild: Implied or unrealistic depictions of violence.",
+    "translation": "약함: 암시적이거나 비현실적인 폭력 묘사.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.MildIntensityExplanation",
+    "description": null,
+    "english": "The consequence to the victim is unrealistic (e.g. blood is pixelated or discolored, bodies disappear the moment they are shot).",
+    "translation": "피해자에 대한 결과가 비현실적임(예: 피가 모자이크 처리되거나 변색됨, 시체가 총에 맞는 순간 사라짐).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ModerateIntensityDescription",
+    "description": null,
+    "english": "Moderate: Realistic depictions of violence that do not violate the Roblox Community Standards.",
+    "translation": "보통: 폭력을 사실적으로 묘사하지만 Roblox 커뮤니티 규정을 위반하지 않음.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ModerateIntensityExplanation",
+    "description": null,
+    "english": "The consequence to the victim is realistic (e.g. realistic blood and/or depictions of real-life injury and death).",
+    "translation": "피해자에 대한 결과가 현실적임(예: 현실적인 피 및/또는 실제 부상 및 사망 묘사).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Mild",
+    "description": null,
+    "english": "Mild",
+    "translation": "약함",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Moderate",
+    "description": null,
+    "english": "Moderate",
+    "translation": "보통",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.HowFrequent",
+    "description": null,
+    "english": "How frequent is the occurrence?",
+    "translation": "얼마나 자주 발생하나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.InfrequentDescription",
+    "description": null,
+    "english": "Infrequent: Occurs occasionally/rarely.",
+    "translation": "드묾: 가끔 또는 드물게 발생함.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FrequentDescription",
+    "description": null,
+    "english": "Frequent: Occurs often and/or in quick succession.",
+    "translation": "자주: 자주 및/또는 빠르게 연속적으로 발생함.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Infrequent",
+    "description": null,
+    "english": "Infrequent",
+    "translation": "드묾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Frequent",
+    "description": null,
+    "english": "Frequent",
+    "translation": "자주",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Blood",
+    "description": null,
+    "english": "Blood",
+    "translation": "자주",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DoesDepictBlood",
+    "description": null,
+    "english": "Does this experience depict blood?",
+    "translation": "체험이 피를 묘사하나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.HowRealisticIsBlood",
+    "description": null,
+    "english": "How realistic is the blood?",
+    "translation": "피가 얼마나 현실적인가요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UnrealisticBloodDescription",
+    "description": null,
+    "english": "Unrealistic: Depictions of blood that do not look like real blood (e.g. pixelated, discolored).",
+    "translation": "비현실적: 실제 피처럼 보이지 않는 묘사(예: 모자이크, 변색).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.RealisticBloodDescription",
+    "description": null,
+    "english": "Realistic: Depictions of light bloodshed that look like real blood.",
+    "translation": "현실적: 실제 피처럼 보이는 가벼운 묘사.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UnrealisticBlood",
+    "description": null,
+    "english": "Unrealistic blood",
+    "translation": "비현실적인 피",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.IsInfrequentOrFleeting",
+    "description": null,
+    "english": "Are the depictions of blood infrequent and/or fleeting?",
+    "translation": "피에 대한 묘사가 드물거나 순간적인가요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.RealisticBlood",
+    "description": null,
+    "english": "Realistic blood",
+    "translation": "현실적인 피",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.PaidRandomItems",
+    "description": null,
+    "english": "Paid Random Items",
+    "translation": "유료 랜덤 아이템",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContainsPaidRandomItems",
+    "description": null,
+    "english": "Does this experience contain paid random items?",
+    "translation": "체험에 유료 랜덤 아이템이 포함되어 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.VirtualCoinExample",
+    "description": null,
+    "english": "Example: The experience allows a user to receive a virtual coin in exchange for Robux.",
+    "translation": "예: 사용자가 체험 내에서 Robux를 사용해 가상 코인을 받을 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.VirtualRandomItemExample",
+    "description": null,
+    "english": "The user then goes to a different place in the experience and throws the coin into a fountain and then the user gets a random virtual item.",
+    "translation": "그런 다음 사용자가 체험의 다른 위치로 이동해 동전을 분수에 던지면 랜덤 가상 아이템을 받게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FollowsPaidRandomItemsApi",
+    "description": null,
+    "english": "Does this experience respect the ArePaidRandomItemsRestricted policy API?",
+    "translation": "체험이 ArePaidRandomItemsRestricted 정책 API를 준수하나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.LearnMoreAboutPaidRandomItemsPolicyApi",
+    "description": null,
+    "english": "Learn about ArePaidRandomItemsRestricted policy API",
+    "translation": "ArePaidRandomItemsRestricted 정책 API에 대해 알아보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.PaidItemTrading",
+    "description": null,
+    "english": "Paid Item Trading",
+    "translation": "유료 아이템 거래",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.AllowsUsersToTradePaidItems",
+    "description": null,
+    "english": "Does this experience allow users to trade items that they paid for?",
+    "translation": "사용자가 기존에 구매한 아이템을 체험에서 거래할 수 있나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.YesAllowsPaidItemTrading",
+    "description": null,
+    "english": "Yes, allows paid item trading",
+    "translation": "예, 유료 아이템 거래를 허용합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FollowsPaidItemTradingApi",
+    "description": null,
+    "english": "Does this experience respect the IsPaidItemTradingAllowed policy API?",
+    "translation": "체험이 IsPaidItemTradingAllowed 정책 API를 준수하나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.LearnMoreAboutPaidItemTradingPolicyApi",
+    "description": null,
+    "english": "Learn about IsPaidItemTradingAllowed policy API.",
+    "translation": "체험이 IsPaidItemTradingAllowed 정책 API를 준수하나요?",
     "isDeprecated": false
   },
   {
@@ -81464,6 +82312,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.DeveloperProducts",
+    "key": "ErrorImageUpload.InternalAssetUploadFailed",
+    "description": null,
+    "english": "Failed to create Image asset. Please try again later.",
+    "translation": "이미지 애셋을 생성하지 못했습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperProducts",
+    "key": "ErrorImageUpload.InternalAssetUploadTookTooLong",
+    "description": null,
+    "english": "Image asset took too long to create. Please try again later.",
+    "translation": "이미지 애셋을 만드는 데 시간이 너무 오래 걸립니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorMarketplace.AudioCategories",
     "key": "Label.Air",
     "description": "Air sound effects",
@@ -85104,6 +85968,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.ItemConfigurationBadRequestError",
+    "description": null,
+    "english": "Upload failed. Did you use the template?",
+    "translation": "업로드하지 못했습니다. 템플릿을 사용하셨나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetUpload",
+    "key": "Message.NameOrDescriptionModeratedError",
+    "description": null,
+    "english": "Asset name or description was moderated. Please try again.",
+    "translation": "애셋 이름 또는 설명이 검열되었습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -86233,6 +87113,22 @@
   },
   {
     "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.PlaceHolder.ExperienceName",
+    "description": "Note: Do not translate experienceName. \ntext explaining usage of experienceName.",
+    "english": "Personalizing notifications with the {strongStart}experienceName{strongEnd} placeholder is required.",
+    "translation": "{strongStart}experienceName{strongEnd} 자리 표시자를 사용해 알림을 맞춤 설정해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.PlaceHolder.DisplayName",
+    "description": "Note: Do not translate displayName.\ntext explaining usage of displayName placeholder.",
+    "english": "Including the sender’s display name using the {strongStart}displayName{strongEnd} placeholder is optional.",
+    "translation": "선택 사항으로 {strongStart}displayName{strongEnd} 자리 표시자를 사용해 보낸 사람의 표시 이름을 포함할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
     "key": "Message.NotificationContentCreateFailedDuplicateLabel",
     "description": null,
     "english": "This experience already has a notification string with this name.",
@@ -86269,6 +87165,30 @@
     "description": null,
     "english": "Notification string needs to contain {placeholder} placeholder.",
     "translation": "알림 문자열에는 {placeholder} 자리 표시자를 포함해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.UsageLimit",
+    "description": null,
+    "english": "Note: You can only use each placeholder once.",
+    "translation": "참고: 각 자리 표시자는 한 번만 사용할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.PlaceHolder",
+    "description": null,
+    "english": "Personalizing notifications with the {strongStartExpName}{strongStartExpName} placeholder is required. Including the sender’s display name using the {strongStartDisName}{strongEndDisName} placeholder is optional.",
+    "translation": "{strongStartExpName}{strongStartExpName} 자리 표시자를 사용해 알림을 맞춤 설정해야 합니다. 선택 사항으로 {strongStartDisName}{strongEndDisName} 자리 표시자를 사용해 보낸 사람의 표시 이름을 포함할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.Instruction",
+    "description": null,
+    "english": "Personalizing notifications with the {strongStartExpName}{strongEndExpName} placeholder is required. Including the sender’s display name using the {strongStartDisName}{strongEndDisName} placeholder is optional.",
+    "translation": "{strongStartExpName}{strongEndExpName} 자리 표시자를 사용해 알림을 맞춤 설정해야 합니다. 선택 사항으로 {strongStartDisName}{strongEndDisName} 자리 표시자를 사용해 보낸 사람의 표시 이름을 포함할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -87708,7 +88628,7 @@
     "key": "Title.AdInstanceBreakdown",
     "description": null,
     "english": "Daily Stats Per Ad Unit",
-    "translation": "광고 인스턴스 분석",
+    "translation": "광고 단위당 일일 통계",
     "isDeprecated": false
   },
   {
@@ -87740,7 +88660,7 @@
     "key": "Title.Impressions",
     "description": null,
     "english": "Impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -87780,7 +88700,7 @@
     "key": "Title.DailyEarnings",
     "description": null,
     "english": "Daily Earnings (Robux)",
-    "translation": "일일 수익",
+    "translation": "수익",
     "isDeprecated": false
   },
   {
@@ -87788,7 +88708,7 @@
     "key": "Description.DailyEarnings",
     "description": null,
     "english": "Total Robux amount earned from immersive ads in this experience.",
-    "translation": "광고를 통해 하루에 획득한 Robux의 총 액수입니다.",
+    "translation": "이 체험에서 몰입형 광고로 획득한 총 Robux 금액입니다.",
     "isDeprecated": false
   },
   {
@@ -87796,7 +88716,7 @@
     "key": "Title.DailyImpressions",
     "description": null,
     "english": "Daily Impressions",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -87804,7 +88724,7 @@
     "key": "Description.DailyImpressions",
     "description": null,
     "english": "Total number of impressions generated from image ad units in this experience (excluding portal ad impressions).",
-    "translation": "하루 동안의 모든 광고 인스턴스에 대한 총 노출 횟수입니다.",
+    "translation": "이 체험의 이미지 광고 단위에서 생성된 총 노출 수입니다(포털 광고 노출 제외).",
     "isDeprecated": false
   },
   {
@@ -87844,7 +88764,7 @@
     "key": "Description.DailyTeleports",
     "description": null,
     "english": "Total number of impressions generated from image ad units in this experience (excluding portal ad impressions).",
-    "translation": "하루 동안 모든 광고 포털에서 발생한 총 텔레포트 횟수입니다.",
+    "translation": "이 체험의 이미지 광고 단위에서 생성된 총 노출 수입니다(포털 광고 노출 제외).",
     "isDeprecated": false
   },
   {
@@ -87852,7 +88772,7 @@
     "key": "Title.DailyEarningsPerMille",
     "description": null,
     "english": "Earnings Per Mille (EPM)",
-    "translation": "EPM",
+    "translation": "1,000회 노출당 수익(EPM)",
     "isDeprecated": false
   },
   {
@@ -87860,7 +88780,7 @@
     "key": "Description.DailyEarningsPerMille",
     "description": null,
     "english": "The Robux amount earned for every thousand impressions generated from Image ad units in this experience.",
-    "translation": "1,000회 노출당 수익: 하루에 1,000회 노출당 체험 내 모든 광고 GUI 인스턴스로부터 획득한 Robux입니다.",
+    "translation": "이 체험의 이미지 광고 단위에서 생성된 1,000회 노출당 획득한 Robux 금액입니다.",
     "isDeprecated": false
   },
   {
@@ -87868,7 +88788,7 @@
     "key": "Title.DailyEarningsPerThousandTeleports",
     "description": null,
     "english": "Earnings Per Thousand Teleports (EPT)",
-    "translation": "EPT",
+    "translation": "1,000회 텔레포트당 수익(EPT)",
     "isDeprecated": false
   },
   {
@@ -87876,7 +88796,7 @@
     "key": "Description.DailyEarningsPerThousandTeleports",
     "description": null,
     "english": "The Robux amount earned for every thousand teleports generated from Portal ad units in this experience.",
-    "translation": "1,000회 텔레포트당 수익: 체험 내 모든 광고 포털에서의 하루 1,000건 텔레포트당 획득한 Robux입니다.",
+    "translation": "이 체험의 포털 광고 단위에서 생성된 1,000회 텔레포트당 획득한 Robux 금액입니다.",
     "isDeprecated": false
   },
   {
@@ -87884,7 +88804,7 @@
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "Estimated Earnings Per Ad Unit",
-    "translation": "예상 수익 광고 인스턴스 분석",
+    "translation": "예상 수익",
     "isDeprecated": false
   },
   {
@@ -87892,7 +88812,7 @@
     "key": "Description.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "The estimated Robux amount earned per ad unit in this experience. If more than one ad unit has the same name, then earnings are aggregated.",
-    "translation": "각 광고 인스턴스에서 하루에 획득한 예상 Robux입니다. 동일한 이름의 광고 인스턴스가 여러 개 있는 경우, 수익이 합산됩니다.",
+    "translation": "이 체험에서 광고 단위당 획득이 예상되는 Robux 금액입니다. 동일한 이름의 광고 단위가 여러 개 있는 경우 수익이 합산됩니다.",
     "isDeprecated": false
   },
   {
@@ -87900,7 +88820,7 @@
     "key": "Title.DailyImpressionsBreakdown",
     "description": null,
     "english": "Impressions Per Ad Unit",
-    "translation": "광고 노출 횟수",
+    "translation": "노출 수",
     "isDeprecated": false
   },
   {
@@ -87908,7 +88828,7 @@
     "key": "Description.DailyImpressionsBreakdown",
     "description": null,
     "english": "The number of impressions generated per ad unit in this experience. If more than one ad unit has the same name, then impressions are aggregated.",
-    "translation": "각 광고 GUI 인스턴트에 대한 일일 노출 횟수입니다. 동일한 이름의 광고 GUI 인스턴스가 여러 개 있는 경우, 노출 횟수가 합산됩니다.",
+    "translation": "이 체험에서 광고 단위당 생성된 노출 수입니다. 동일한 이름의 광고 단위가 여러 개 있는 경우 노출 수가 합산됩니다.",
     "isDeprecated": false
   },
   {
@@ -87924,7 +88844,7 @@
     "key": "Description.DailyTeleportsBreakdown",
     "description": null,
     "english": "The number of teleports generated per portal ad unit in this experience. If more than one portal ad unit has the same name, then teleports are aggregated.",
-    "translation": "각 광고 포털에서의 하루 텔레포트 횟수입니다. 동일한 이름의 광고 포털이 여러 개 있는 경우, 텔레포트 횟수가 합산됩니다.",
+    "translation": "이 체험에서 포털 광고 단위당 생성된 텔레포트 수입니다. 동일한 이름의 포털 광고 단위가 여러 개 있는 경우 텔레포트가 수가 합산됩니다.",
     "isDeprecated": false
   },
   {
@@ -87964,7 +88884,7 @@
     "key": "Description.DailyImpressionsInsight",
     "description": null,
     "english": "Daily Impressions Insight",
-    "translation": "일일 광고 노출 횟수 인사이트",
+    "translation": "일일 노출 수 인사이트",
     "isDeprecated": false
   },
   {
@@ -87996,7 +88916,7 @@
     "key": "Description.DailyImpressionsBreakdownInsight",
     "description": null,
     "english": "Daily Impressions Breakdown Insight",
-    "translation": "일일 광고 노출 횟수 분석 인사이트",
+    "translation": "일일 노출 수 분석 인사이트",
     "isDeprecated": false
   },
   {
@@ -88033,10 +88953,58 @@
   },
   {
     "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Label.EarningsSummary",
+    "description": null,
+    "english": "Earnings over selected time period",
+    "translation": "선택한 기간 동안의 수익",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.ImpressionsSummary",
+    "description": null,
+    "english": "Currently impressions are only tracked for image ads.",
+    "translation": "현재 노출 수는 이미지 광고에 대해서만 추적됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.EarningsSummary",
+    "description": null,
+    "english": "Total Robux amount earned from immersive ads in this experience over the specified time period (includes estimated and validated).",
+    "translation": "지정된 기간 동안 이 체험의 몰입형 광고에서 획득한 총 Robux 금액입니다(예상 및 확인 포함).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.TeleportsSummary",
+    "description": null,
+    "english": "Total number of teleports generated from portal ad units in this experience over the specified time period (includes estimated and validated impressions).",
+    "translation": "지정된 기간 동안 이 체험의 포털 광고 단위에서 생성된 총 텔레포트 수입니다(예상 및 확인된 노출 포함).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
     "key": "Title.EarningsPerTeleport",
     "description": null,
     "english": "Robux",
     "translation": "Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Title.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "Earnings Per Teleport (EPT)",
+    "translation": "텔레포트당 수익(EPT)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "The Robux amount earned for every teleport generated from Portal ad units in this experience.",
+    "translation": "이 체험의 포털 광고 단위에서 생성된 모든 텔레포트에 대해 획득한 Robux 금액입니다.",
     "isDeprecated": false
   },
   {
@@ -88617,10 +89585,42 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Label.SenderPreferenceAll",
+    "description": "Option to send a notification type to a user as soon as possible",
+    "english": "Immediately",
+    "translation": "즉시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.SenderPreferenceNone",
+    "description": "Option to never send a notification type to a user",
+    "english": "Never",
+    "translation": "안 함",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Description.EmailNotifications",
     "description": "Used to describe one way notifications are delivered",
     "english": "Receive notifications via Email",
     "translation": "이메일로 알림 받기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Heading.UnsavedSettingsHeader",
+    "description": "Title of dialog asking telling user they have unsaved changes to their settings",
+    "english": "Unsaved Changes",
+    "translation": "저장되지 않은 변경 사항",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.NotificationFormSelectLabel",
+    "description": "Describes how often or at what time a notification should be sent",
+    "english": "Tell me when",
+    "translation": "알림 시간",
     "isDeprecated": false
   },
   {

@@ -768,6 +768,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Label.HavingTrouble",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "¿Tienes problemas?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -6708,7 +6716,7 @@
     "key": "Message.CDRedirectionMessage",
     "description": null,
     "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkText}.",
-    "translation": "Esta página se trasladó a Interfaz del creador. Puedes navegar a la página actualizada haciendo clic en {linkText}.",
+    "translation": "Esta página se trasladó a Interfaz de creación. Puedes navegar a la página actualizada haciendo clic en {linkText}.",
     "isDeprecated": false
   },
   {
@@ -12637,6 +12645,62 @@
     "description": null,
     "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
     "translation": "{boldStart}IMPORTANTE:{boldEnd} No compartas tus códigos de seguridad con nadie. Roblox nunca te pedirá que compartas tus códigos por mensajes de texto, compartiendo pantalla, etc.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they don't have an account email",
+    "english": "You must provide and verify your email before you can delete your PIN.",
+    "translation": "Debes proporcionar tu correo electrónico y verificarlo antes de poder eliminar tu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDelete",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified email",
+    "english": "You must verify your email before you can delete your PIN.",
+    "translation": "Debes verificar tu correo electrónico antes de poder eliminar tu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can add a PIN.",
+    "translation": "Debes proporcionar el correo electrónico de uno de tus padres y verificarlo antes de poder añadir un PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they don't have an parent email",
+    "english": "You must provide and verify your parent's email before you can delete your PIN.",
+    "translation": "Debes proporcionar el correo electrónico de uno de tus padres y verificarlo antes de poder eliminar tu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinDeleteU13",
+    "description": "modal dialog when user tries to delete PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can delete your PIN.",
+    "translation": "Debes verificar el correo electrónico de uno de tus padres antes de poder eliminar tu PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailAccountPinCreateU13",
+    "description": "modal dialog when user tries to create PIN and they have an unverified parent email",
+    "english": "You must verify your parent's email before you can add a PIN.",
+    "translation": "Debes verificar el correo electrónico de uno de tus padres antes de poder añadir un PIN.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.ChangeEmailDisablePinWarning",
+    "description": "modal body when users attempt to change their email with pin enabled",
+    "english": "You must disable parent PIN in Parental Controls to change your email. ",
+    "translation": "Debes desactivar el PIN parental en Controles parentales para cambiar tu correo electrónico. ",
     "isDeprecated": false
   },
   {
@@ -58793,6 +58857,150 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Event",
+    "description": "Label for a single scheduled event managed by a creator",
+    "english": "Event",
+    "translation": "Evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.UpcomingEvents",
+    "description": "Label for the list of scheduled events that occur in the future",
+    "english": "Upcoming Events",
+    "translation": "Próximos eventos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DraftEvents",
+    "description": "Label for the list of unpublished scheduled events",
+    "english": "Draft Events",
+    "translation": "Borrador de eventos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.PastEvents",
+    "description": "Label for the list of scheduled events that have already ended",
+    "english": "Past Events",
+    "translation": "Eventos pasados",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.StartTime",
+    "description": "Label designating the start date/time for a scheduled event",
+    "english": "From",
+    "translation": "De la(s)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EndTime",
+    "description": "Label designating the end date/time for a scheduled event",
+    "english": "To",
+    "translation": "A la(s)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PublishEvent",
+    "description": "Action for a user to publish a scheduled event",
+    "english": "Publish Event",
+    "translation": "Publicar evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.SaveDraft",
+    "description": "Action for a user to save a draft of a scheduled event they are creating/editing",
+    "english": "Save Draft",
+    "translation": "Guardar borrador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventTitle",
+    "description": "Label for a scheduled event's name/title",
+    "english": "Event Name",
+    "translation": "Nombre del evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToPublish",
+    "description": "Error message displayed when the network call to publish a scheduled event fails for any reason",
+    "english": "Unable to publish event, please try again later",
+    "translation": "No se puede publicar el evento. Inténtalo de nuevo más tarde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToCreate",
+    "description": "Error displayed when the call to save a scheduled event fails for any reason",
+    "english": "Unable to create event, please try again later",
+    "translation": "No se puede crear el evento. Inténtalo de nuevo más tarde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.StartTime",
+    "description": "Error displayed when a scheduled event's start date/time is invalid",
+    "english": "Start must be at least a day from now",
+    "translation": "El comienzo debe ser al menos un día a partir de ahora",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.EndTime",
+    "description": "Error displayed when a scheduled event's end time is invalid",
+    "english": "End must be at least one hour after start",
+    "translation": "El final debe ser al menos una hora después del inicio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ConfirmDiscardChanges",
+    "description": "Heading for a dialog confirming that a user wishes to discard changes they have not saved",
+    "english": "Discard Changes?",
+    "translation": "¿Eliminar cambios?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ConfirmDiscardChanges",
+    "description": "Message in a dialog confirming that a user wishes to discard unsaved changes",
+    "english": "You have unsaved changes. Do you wish to discard them?",
+    "translation": "Tienes cambios sin guardar. ¿Quieres eliminarlos?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Discard",
+    "description": "Action for a user to discard unsaved changes",
+    "english": "Discard",
+    "translation": "Eliminar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.MissingFields",
+    "description": "Tooltip displayed when a control is disabled due to missing field data",
+    "english": "You must fill in all required fields first",
+    "translation": "Primero debes llenar todos los campos obligatorios",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.SelectExperience",
+    "description": "Heading for a dialog allowing a user to select an experience",
+    "english": "Select Experience",
+    "translation": "Seleccionar experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Confirm",
     "description": "Action for a user to confirm a selection or choice",
     "english": "Confirm",
@@ -58801,10 +59009,290 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.StartDate",
+    "description": "Label to specify ordering scheduled events by soonest start date/time",
+    "english": "Starting Soonest",
+    "translation": "Que comienza lo más pronto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventHappeningNow",
+    "description": "Label for a scheduled event that is occurring now",
+    "english": "Happening Now",
+    "translation": "Que se lleva a cabo ahora",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventHappeningSoon",
+    "description": "Label for a scheduled event that is starting in {minutes} minutes from now",
+    "english": "Starts in {minutes} Minutes",
+    "translation": "Comienza en {minutes} minutos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventOver",
+    "description": "Label for a scheduled event that ended at {endDateTime} date/time",
+    "english": "Ended on {endDateTime}",
+    "translation": "Terminó el {endDateTime}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EventStartEnd",
+    "description": "Label for a scheduled event's start date/time to end/date time",
+    "english": "{startDateTime} - {endDateTime}",
+    "translation": "{startDateTime} a {endDateTime}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenEventInNewTab",
+    "description": "Label for a menu item to open a scheduled event's details page",
+    "english": "Open Event Details",
+    "translation": "Abrir detalles del evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.CopyEventURL",
+    "description": "Action for a user to copy a scheduled event's details page URL",
+    "english": "Copy Event Details URL",
+    "translation": "Copiar URL de detalles del evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.CancelEventSuccess",
+    "description": "Message when a scheduled event is cancelled successfully",
+    "english": "Event was cancelled successfully",
+    "translation": "El evento se canceló correctamente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.CancelEventFailed",
+    "description": "Message displayed when a scheduled event's requested cancellation fails for any reason",
+    "english": "Event cancellation failed, please try again",
+    "translation": "Error al cancelar el evento, inténtalo de nuevo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.CancelEvent",
+    "description": "Action for a user to cancel a scheduled event",
+    "english": "Cancel Event",
+    "translation": "Cancelar evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.CancelEvent",
+    "description": "Title for a dialog confirming if the user wants to cancel a scheduled event",
+    "english": "Cancel Event?",
+    "translation": "¿Cancelar evento?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.CancelEvent",
+    "description": "Text in a dialog that confirms if a user wants to cancel a scheduled event",
+    "english": "This event will be cancelled. This action cannot be undone.",
+    "translation": "Este evento se cancelará. Esta acción no se puede deshacer.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Close",
+    "description": "Action for a user to close a modal",
+    "english": "Close",
+    "translation": "Cerrar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.FailedToUpdateEvent",
+    "description": "Error displayed when an update to a scheduled event fails for any reason",
+    "english": "Failed to update the event, please try again later",
+    "translation": "Error al actualizar el evento. Inténtalo de nuevo más tarde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.UpdateEvent",
     "description": "Action to save changes to an updated scheduled event",
     "english": "Save",
     "translation": "Guardar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EventCreationSuccess",
+    "description": "Message displayed when a scheduled event is created/updated succesfully",
+    "english": "Successfully saved event",
+    "translation": "Evento guardado correctamente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.PrivateExperience",
+    "description": "A menu label describing a scheduled event's experience as private",
+    "english": "Private Experience",
+    "translation": "Experiencia privada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ChangeExperience",
+    "description": "Action to indicate that a user wishes to change the experience associated with a scheduled event",
+    "english": "Change Experience",
+    "translation": "Cambiar experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.PrivateExperience",
+    "description": "Heading for a modal asking if the user would like to change their selected experience away from a private one",
+    "english": "Private Experience",
+    "translation": "Experiencia privada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.PrivateExperienceWarning",
+    "description": "Message displayed to warn a user that they have selected a private experience to associate with a scheduled event",
+    "english": "The experience you have chosen is private and therefore won't be playable when the event becomes live.",
+    "translation": "La experiencia que elegiste es privada; por lo tanto, no podrás unirte a ella cuando el evento esté activo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.LeaveAsIs",
+    "description": "Label describing the option to keep a private experience selected for a scheduled event",
+    "english": "Continue with private experience",
+    "translation": "Continuar con experiencia privada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.MakeExperiencePublicNow",
+    "description": "Label for an option to allow a user to make a private experience associated with a scheduled event public",
+    "english": "Make experience public now",
+    "translation": "Hacer pública la experiencia ahora",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Placeholder",
+    "description": "Label describing a placeholder of some sort",
+    "english": "Placeholder",
+    "translation": "Marcador de posición",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ConfirmPublishEvent",
+    "description": "Heading for a modal confirming that the user would like to publish a scheduled event",
+    "english": "Publish Event?",
+    "translation": "¿Publicar evento?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ConfirmPublishEvent",
+    "description": "Message displayed in a modal confirming that a user would like to publish a scheduled event",
+    "english": "When an event is published, it is immediately visible to everyone, and the attached experience cannot be swapped. Assets that are pending review or are moderated will display a placeholder instead.",
+    "translation": "Cuando un evento se publica, se vuelve inmediatamente visible para todo el mundo, y no se puede cambiar la experiencia adjunta. Los recursos pendientes de revisión o moderados mostrarán un marcador de posición en su lugar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.EditExperienceDetails",
+    "description": "Action to let a user edit the experience associated with their scheduled event",
+    "english": "Edit Experience Details",
+    "translation": "Editar detalles de la experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenEventExperienceDetails",
+    "description": "Action for opening an experience details page associated with a scheduled event",
+    "english": "Open Experience Details",
+    "translation": "Abrir detalles de la experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EndingSoon",
+    "description": "Label for an event that is ending in {minutes} minutes",
+    "english": "Ending in {minutes} Minutes",
+    "translation": "Termina en {minutes} minutos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.DeleteEvent",
+    "description": "Title for a confirmation dialog that a user wants to permanently delete a scheduled event",
+    "english": "Delete Event?",
+    "translation": "¿Eliminar evento?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.DeleteEvent",
+    "description": "Text for a confirmation dialog that a user wants to permanently delete a scheduled event",
+    "english": "This event will be deleted and you will no longer be able to access it again. This action cannot be undone.",
+    "translation": "Este evento se eliminará y ya no se podrá acceder nuevamente a él. Esta acción no se puede deshacer.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.DeleteEvent",
+    "description": "Action for a user to permanently delete a scheduled event",
+    "english": "Delete Event",
+    "translation": "Eliminar evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DeleteEventSuccess",
+    "description": "Message displayed when a user successfully deletes a scheduled event",
+    "english": "Event was deleted successfully",
+    "translation": "Evento eliminado correctamente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DeleteEventFailed",
+    "description": "Message displayed when a scheduled event fails to be deleted for any reason",
+    "english": "Event deletion failed, please try again",
+    "translation": "Error al eliminar el evento, inténtalo de nuevo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ConfigureEvent",
+    "description": "Action for a user to configure an already-created scheduled event",
+    "english": "Configure Event",
+    "translation": "Configurar evento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Tooltip.EventAlreadyPublished",
+    "description": "Tooltip displayed on the \"Publish Event\" button when editing a scheduled event that has already been published",
+    "english": "Event is already published",
+    "translation": "El evento ya está publicado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.BackToEvents",
+    "description": "An action to return the list of scheduled events from another area of the site",
+    "english": "Back to Events",
+    "translation": "Volver a Eventos",
     "isDeprecated": false
   },
   {
@@ -63484,7 +63972,7 @@
     "key": "Message.TermsOfServiceNov2022Line2",
     "description": "<insert URL once existed>\n\nSource = https://docs.google.com/document/d/17xlX7p2F1IUCZnrQGAgfwh50mfGXeAAi6sMsetyNdOw/edit#",
     "english": "Additionally, by clicking “Agree” you expressly agree to maintain all the benchmarking information presented in and/or derived from the Dashboards in confidence and use such information only to evaluate the performance of your Roblox experience. Further, you agree not to share, sell, publish or disseminate the benchmarking information in any way.",
-    "translation": "Además, al hacer clic en Aceptar te comprometes expresamente a mantener toda la evaluación comparativa presentada y/o derivada de los Paneles de forma confidencial y a utilizar la información solo para evaluar el rendimiento de tu experiencia en Roblox. También te comprometes a no compartir, vender, publicar o difundir la evaluación comparativa de ninguna manera.",
+    "translation": "Además, al hacer clic en Aceptar te comprometes expresamente a mantener toda la evaluación comparativa presentada o derivada de los Paneles de forma confidencial y a utilizar la información solo para evaluar el rendimiento de tu experiencia en Roblox. También te comprometes a no compartir, vender, publicar o difundir la evaluación comparativa de ninguna manera.",
     "isDeprecated": false
   },
   {
@@ -63516,7 +64004,7 @@
     "key": "Title.OrganicTrafficConversionFunnel",
     "description": "Chart Title in User Acquisitions",
     "english": "Search & Discovery Conversion Funnel",
-    "translation": "Embudo de conversión de tráfico orgánico",
+    "translation": "Embudo de conversión de búsqueda y descubrimiento",
     "isDeprecated": false
   },
   {
@@ -64753,6 +65241,110 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Description",
+    "description": null,
+    "english": "The experience questionnaire.",
+    "translation": "Cuestionario de la experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Violence",
+    "description": null,
+    "english": "Violence",
+    "translation": "Violencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.AnswerAccurately",
+    "description": null,
+    "english": "Please answer the questions accurately based on:",
+    "translation": "Responde a las preguntas con precisión basándote en:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.TheMostMatureContent",
+    "description": null,
+    "english": "the most mature/extreme content a player can possibly experience in your experience (e.g. If your experience depicts mild violence infrequently and moderate violence frequently, declare “Frequent Moderate Violence”);",
+    "translation": "el contenido más maduro o extremo que un jugador puede encontrar en tu experiencia (p. ej. Si tu experiencia muestra con frecuencia violencia de leve a moderada, declara “Violencia moderada frecuente”);",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContentInAnyForms",
+    "description": null,
+    "english": "content in any forms, including and not limited to any assets (textures, models, animations, audio, video, etc.) and/or narratives;",
+    "translation": "contenido en cualquier forma, incluyendo y sin limitarse a cualquier recurso (texturas, modelos, animaciones, audio, video, etc.) o narrativas;",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UserGeneratedContentNotMeasured",
+    "description": null,
+    "english": "creator generated content only; user generated content is not measured. (E.g. you don’t need to account for blood in a player’s platform avatar brought into your experience.)",
+    "translation": "solo el contenido generado por el creador; el contenido generado por el usuario no se mide (p.ej. no necesitas tomar en cuenta la sangre que aparece en el avatar de un jugador que se une a tu experiencia.)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContainViolence",
+    "description": null,
+    "english": "Does this experience contain violence and/or violent content?",
+    "translation": "¿Esta experiencia contiene violencia o contenido violento?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DepictionOfViolence",
+    "description": null,
+    "english": "Violence: Depictions of the act and/or the consequence of intentional, threatened and/or actual, use of physical and/or psychological force against characters and/or players.",
+    "translation": "Violencia: Representaciones del acto violento o sus consecuencias intencionales, en forma de amenaza o real, de la fuerza física o psicológica contra personajes y jugadores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DoNotMeasure",
+    "description": null,
+    "english": "Do NOT measure",
+    "translation": "NO medir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NonGraphicDeath",
+    "description": null,
+    "english": "Non-graphic character death due to accidents.",
+    "translation": "Muerte no gráfica del personaje por causas accidentales.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NonViolentAdversarial",
+    "description": null,
+    "english": "Nonviolent adversarial games.",
+    "translation": "Juegos de adversarios no violentos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.NaturalDisasters",
+    "description": null,
+    "english": "Depictions of natural disasters.",
+    "translation": "Representaciones de desastres naturales.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DefaultCharacterDeath",
+    "description": null,
+    "english": "Roblox default character reset/death mechanics.",
+    "translation": "Reinicio por defecto de un personaje de Roblox o mecánicas de defunción.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Questionnaire.No",
     "description": null,
     "english": "No",
@@ -64765,6 +65357,262 @@
     "description": null,
     "english": "Yes",
     "translation": "Sí",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.YesContainsViolence",
+    "description": null,
+    "english": "Yes (Contains Violence)",
+    "translation": "Sí (contiene violencia)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.WhatIntensity",
+    "description": null,
+    "english": "What is the level of intensity?",
+    "translation": "¿Cuál es el grado de intensidad?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.MildIntesityDescription",
+    "description": null,
+    "english": "Mild: Implied or unrealistic depictions of violence.",
+    "translation": "Leve: Representaciones de violencia implícitas o poco realistas.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.MildIntensityExplanation",
+    "description": null,
+    "english": "The consequence to the victim is unrealistic (e.g. blood is pixelated or discolored, bodies disappear the moment they are shot).",
+    "translation": "Las consecuencias para la víctima son poco realistas (p. ej., la sangre está pixelada o descolorada, los cuerpos desaparecen en el momento en que reciben un disparo).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ModerateIntensityDescription",
+    "description": null,
+    "english": "Moderate: Realistic depictions of violence that do not violate the Roblox Community Standards.",
+    "translation": "Moderado: Representaciones realistas de violencia que no infrigen los Estándares de la Comunidad de Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ModerateIntensityExplanation",
+    "description": null,
+    "english": "The consequence to the victim is realistic (e.g. realistic blood and/or depictions of real-life injury and death).",
+    "translation": "Las consecuencias para la víctima son realistas (p. ej., sangre realista o representaciones de lesiones en la vida real y muerte).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Mild",
+    "description": null,
+    "english": "Mild",
+    "translation": "Leve",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Moderate",
+    "description": null,
+    "english": "Moderate",
+    "translation": "Moderado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.HowFrequent",
+    "description": null,
+    "english": "How frequent is the occurrence?",
+    "translation": "¿Con qué frecuencia ocurre?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.InfrequentDescription",
+    "description": null,
+    "english": "Infrequent: Occurs occasionally/rarely.",
+    "translation": "Poco frecuente: Ocurre solo ocasionalmente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FrequentDescription",
+    "description": null,
+    "english": "Frequent: Occurs often and/or in quick succession.",
+    "translation": "Frecuente: Ocurre a menudo o en rápida sucesión.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Infrequent",
+    "description": null,
+    "english": "Infrequent",
+    "translation": "Poco frecuente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Frequent",
+    "description": null,
+    "english": "Frequent",
+    "translation": "Frecuente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.Blood",
+    "description": null,
+    "english": "Blood",
+    "translation": "Frecuente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.DoesDepictBlood",
+    "description": null,
+    "english": "Does this experience depict blood?",
+    "translation": "¿Esta experiencia muestra sangre?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.HowRealisticIsBlood",
+    "description": null,
+    "english": "How realistic is the blood?",
+    "translation": "¿Qué tan realista es la sangre?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UnrealisticBloodDescription",
+    "description": null,
+    "english": "Unrealistic: Depictions of blood that do not look like real blood (e.g. pixelated, discolored).",
+    "translation": "No realista: Representaciones de sangre que no se parecen a la sangre real (p. ej., pixelada, descolorada).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.RealisticBloodDescription",
+    "description": null,
+    "english": "Realistic: Depictions of light bloodshed that look like real blood.",
+    "translation": "Realistista: Representaciones de derramamiento de sangre ligero que se parecen a la sangre real.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.UnrealisticBlood",
+    "description": null,
+    "english": "Unrealistic blood",
+    "translation": "Sangre poco realista",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.IsInfrequentOrFleeting",
+    "description": null,
+    "english": "Are the depictions of blood infrequent and/or fleeting?",
+    "translation": "¿Son las representaciones de sangre poco frecuentes o breves?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.RealisticBlood",
+    "description": null,
+    "english": "Realistic blood",
+    "translation": "Sangre realista",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.PaidRandomItems",
+    "description": null,
+    "english": "Paid Random Items",
+    "translation": "Objetos aleatorios de pago",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.ContainsPaidRandomItems",
+    "description": null,
+    "english": "Does this experience contain paid random items?",
+    "translation": "¿Esta experiencia contiene objetos aleatorios de pago?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.VirtualCoinExample",
+    "description": null,
+    "english": "Example: The experience allows a user to receive a virtual coin in exchange for Robux.",
+    "translation": "Ejemplo: La experiencia permite a un usuario recibir una moneda virtual a cambio de Robux.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.VirtualRandomItemExample",
+    "description": null,
+    "english": "The user then goes to a different place in the experience and throws the coin into a fountain and then the user gets a random virtual item.",
+    "translation": "El usuario entonces va a un lugar diferente en la experiencia y tira la moneda en una fuente y obtiene un objeto virtual aleatorio.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FollowsPaidRandomItemsApi",
+    "description": null,
+    "english": "Does this experience respect the ArePaidRandomItemsRestricted policy API?",
+    "translation": "¿Esta experiencia respeta la API de política ArePaidRandomItemsRestricted?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.LearnMoreAboutPaidRandomItemsPolicyApi",
+    "description": null,
+    "english": "Learn about ArePaidRandomItemsRestricted policy API",
+    "translation": "Aprende sobre la API de política ArePaidRandomItemsRestricted",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.PaidItemTrading",
+    "description": null,
+    "english": "Paid Item Trading",
+    "translation": "Intercambio de objeto de pago",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.AllowsUsersToTradePaidItems",
+    "description": null,
+    "english": "Does this experience allow users to trade items that they paid for?",
+    "translation": "¿Esta experiencia permite a los usuarios intercambiar objetos de pago?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.YesAllowsPaidItemTrading",
+    "description": null,
+    "english": "Yes, allows paid item trading",
+    "translation": "Sí, permite el intercambio de objetos de pago",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.FollowsPaidItemTradingApi",
+    "description": null,
+    "english": "Does this experience respect the IsPaidItemTradingAllowed policy API?",
+    "translation": "¿Esta experiencia respeta la API de política IsPaidItemTradingAllowed?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Questionnaire.LearnMoreAboutPaidItemTradingPolicyApi",
+    "description": null,
+    "english": "Learn about IsPaidItemTradingAllowed policy API.",
+    "translation": "¿Esta experiencia respeta la API de política IsPaidItemTradingAllowed?",
     "isDeprecated": false
   },
   {
@@ -87516,7 +88364,7 @@
     "key": "Title.AdInstanceBreakdown",
     "description": null,
     "english": "Daily Stats Per Ad Unit",
-    "translation": "Desglose de instancias de anuncios",
+    "translation": "Estadísticas diarias por unidad de anuncios",
     "isDeprecated": false
   },
   {
@@ -87588,7 +88436,7 @@
     "key": "Title.DailyEarnings",
     "description": null,
     "english": "Daily Earnings (Robux)",
-    "translation": "Ganancias diarias",
+    "translation": "Ganancias",
     "isDeprecated": false
   },
   {
@@ -87692,7 +88540,7 @@
     "key": "Title.DailyEstimatedEarningsBreakdown",
     "description": null,
     "english": "Estimated Earnings Per Ad Unit",
-    "translation": "Desglose de los ingresos estimados de los anuncios",
+    "translation": "Ganancias estimadas",
     "isDeprecated": false
   },
   {
@@ -88473,10 +89321,42 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Label.SenderPreferenceAll",
+    "description": "Option to send a notification type to a user as soon as possible",
+    "english": "Immediately",
+    "translation": "De inmediato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.SenderPreferenceNone",
+    "description": "Option to never send a notification type to a user",
+    "english": "Never",
+    "translation": "Nunca",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Description.EmailNotifications",
     "description": "Used to describe one way notifications are delivered",
     "english": "Receive notifications via Email",
     "translation": "Recibir notificaciones por correo electrónico",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Heading.UnsavedSettingsHeader",
+    "description": "Title of dialog asking telling user they have unsaved changes to their settings",
+    "english": "Unsaved Changes",
+    "translation": "Cambios sin guardar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Label.NotificationFormSelectLabel",
+    "description": "Describes how often or at what time a notification should be sent",
+    "english": "Tell me when",
+    "translation": "Dime cuándo",
     "isDeprecated": false
   },
   {
