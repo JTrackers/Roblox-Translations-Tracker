@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Olá {accountName},{lineBreak}{lineBreak}Você desativou a verificação em duas etapas com e-mail para sua conta Roblox. Um código de segurança não será mais necessário para ações como iniciar uma sessão.{lineBreak}{lineBreak}Roblox",
+    "translation": "Olá {accountName},{lineBreak}{lineBreak}Você desativou a verificação em duas etapas com e-mail para sua conta Roblox. Um código de segurança de seu e-mail não será mais necessário para ações como iniciar uma sessão.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Olá,{lineBreak}{lineBreak}A verificação em duas etapas com e-mail foi desativada para a conta Roblox do seu filho(a), {accountName}. Um código de segurança não será mais necessário para algumas ações como iniciar uma sessão.{lineBreak}{lineBreak}Roblox",
+    "translation": "Olá,{lineBreak}{lineBreak}A verificação em duas etapas com e-mail foi desativada para a conta Roblox do seu filho(a), {accountName}. Um código de segurança de seu e-mail não será mais necessário para algumas ações como iniciar uma sessão.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -3285,6 +3285,22 @@
     "description": null,
     "english": "Code Resent",
     "translation": "Código reenviado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.InvalidPassword",
+    "description": null,
+    "english": "Invalid password.",
+    "translation": "Senha inválida.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "A conta foi criada com sucesso mas não pode ser logada neste momento. Tente novamente mais tarde.",
     "isDeprecated": false
   },
   {
@@ -10057,6 +10073,22 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.TemporarySuspension",
+    "description": "This text will replace the normal text next to the voice chat opt in toggle if they have been banned from voice chat. The date they will be banned until will be right after this text, which is why the sentence ends partway.",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to voice chat until",
+    "translation": "Devido à violação dos nossos Padrões da Comunidade, revogamos temporariamente o seu acesso ao chat de voz até",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.Revoked",
+    "description": "This text will replace the normal description next to the voice chat opt-in toggle if the user has been MVP banned from voice chat.",
+    "english": "Due to multiple violations of our Community Standards, we have temporarily revoked your access to voice chat until the Beta phase ends.",
+    "translation": "Devido à violação dos nossos Padrões da Comunidade, revogamos temporariamente o seu acesso ao chat de voz até o fim da fase beta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Message.Error.InvalidGuildedUrl",
     "description": "Error message.",
     "english": "The Guilded profile url is invalid.",
@@ -10077,6 +10109,22 @@
     "description": null,
     "english": "Guilded",
     "translation": "Guilded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceBan",
+    "description": "Message a user gets when they have been banned from voice chat.",
+    "english": "Your access to voice chat has been suspended for violating our Community Standards.",
+    "translation": "Seu acesso ao chat de voz foi suspenso por violar nossos Padrões da Comunidade.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ResaleTwoStepVerificationMessage",
+    "description": null,
+    "english": "Verification is required to continue with your resale.",
+    "translation": "A verificação é necessária para continuar com a sua reversão.",
     "isDeprecated": false
   },
   {
@@ -19934,6 +19982,14 @@
     "english": "Your comment must be less than {characterLimit} characters.",
     "translation": "Seu comentário deve ter menos de {characterLimit} caracteres.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Label.TellUsWhy",
+    "description": null,
+    "english": "Tell us why this asset does not meet your expectations. Please include as much detail as possible.",
+    "translation": "Conte-nos por que este recurso não cumpre suas expectativas. Inclua quantos detalhes forem necessários.",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.ServerList",
@@ -41136,6 +41192,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Message.DistributeFundsError",
+    "description": null,
+    "english": "Unable to distribute funds.",
+    "translation": "Não é possível distribuir fundos.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -53608,6 +53672,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Total",
+    "description": "For the total number of DAU/ new players without any segmentation type",
+    "english": "Total",
+    "translation": "Total",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -56061,6 +56133,70 @@
     "description": null,
     "english": "Next",
     "translation": "Próximo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "Atualizar Política da Conta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "A partir do dia 10 de jan 2022, você deve ativar a Verificação em Duas Etapas via Autenticador para poder restaurar a conta se sua conta estiver hackeada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "Sua segurança é importante para nós: {styleTagStart}Clique aqui{styleTagEnd} para configurar o autenticador.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Sua segurança é importante para nós: Abra as configurações para configurar o Autenticador e saiba mais na nossa {linkStart}página de ajuda{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "Abrir as configurações",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "Iniciando {date}, você deve ativar a Verificação em Duas Etapas via Authenticator para ser elegível para restaurar a conta se sua conta estiver hackeada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "Para manter sua conta segura, por favor {styleTagStart}clique aqui{styleTagEnd} para alterar a sua senha.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "Para manter a sua conta segura, por favor {styleTagStart}clique aqui{styleTagEnd} para mudar a sua senha imediatamente.",
     "isDeprecated": false
   },
   {

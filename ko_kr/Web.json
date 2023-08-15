@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "{accountName} 님 안녕하세요.{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시 이메일을 통한 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시, 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(이메일 사용)이 비활성화되었습니다. 이제 로그인과 같은 작업 진행 시 이메일을 통한 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox 드림",
     "isDeprecated": false
   },
   {
@@ -3285,6 +3285,22 @@
     "description": null,
     "english": "Code Resent",
     "translation": "코드 재전송 완료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.InvalidPassword",
+    "description": null,
+    "english": "Invalid password.",
+    "translation": "유효하지 않은 비밀번호입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "계정 생성을 완료했지만 지금은 로그인할 수 없습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -10057,6 +10073,22 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.TemporarySuspension",
+    "description": "This text will replace the normal text next to the voice chat opt in toggle if they have been banned from voice chat. The date they will be banned until will be right after this text, which is why the sentence ends partway.",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to voice chat until",
+    "translation": "커뮤니티 표준을 위반하셨습니다. 다음 날짜까지 일시적으로 음성 채팅 이용이 정지됩니다:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.Revoked",
+    "description": "This text will replace the normal description next to the voice chat opt-in toggle if the user has been MVP banned from voice chat.",
+    "english": "Due to multiple violations of our Community Standards, we have temporarily revoked your access to voice chat until the Beta phase ends.",
+    "translation": "커뮤니티 표준을 여러 번 위반하셨습니다. 베타 단계가 종료될 때까지 일시적으로 음성 채팅 이용이 정지됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Message.Error.InvalidGuildedUrl",
     "description": "Error message.",
     "english": "The Guilded profile url is invalid.",
@@ -10077,6 +10109,22 @@
     "description": null,
     "english": "Guilded",
     "translation": "Guilded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceBan",
+    "description": "Message a user gets when they have been banned from voice chat.",
+    "english": "Your access to voice chat has been suspended for violating our Community Standards.",
+    "translation": "커뮤니티 표준 위반으로 인해 음성 채팅 이용이 정지되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ResaleTwoStepVerificationMessage",
+    "description": null,
+    "english": "Verification is required to continue with your resale.",
+    "translation": "재판매를 계속하려면 인증이 필요합니다.",
     "isDeprecated": false
   },
   {
@@ -19936,6 +19984,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Label.TellUsWhy",
+    "description": null,
+    "english": "Tell us why this asset does not meet your expectations. Please include as much detail as possible.",
+    "translation": "해당 애셋이 기대에 미치지 못하는 이유를 알려 주세요. 가능한 한 많은 정보를 포함해 주세요.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ModCategoryOther",
+    "description": "Description of a button that opens a new page",
+    "english": "Inappropriate content & abuse reports (opens new page)",
+    "translation": "부적절한 콘텐츠 및 악용사례 신고(새 페이지 열기)",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ServerList",
     "key": "Heading.RunningServers",
     "description": null,
@@ -23813,6 +23877,22 @@
     "description": "Variant of Action.AddEmail",
     "english": "Add Your Email",
     "translation": "내 이메일 추가",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.FacebookSetPasswordUpsellText",
+    "description": null,
+    "english": "⚠️ We noticed you logged in with Facebook which is no longer supported. Please add a password so you don’t get locked out.",
+    "translation": "⚠️ Facebook 로그인은 더 이상 지원되지 않습니다. 계정이 잠기지 않도록 비밀번호를 추가해 두세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.SetPassword",
+    "description": null,
+    "english": "Set a Password",
+    "translation": "비밀번호 설정",
     "isDeprecated": false
   },
   {
@@ -35000,6 +35080,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.AccountIntegrityAutomatedPunishmentModeratorNote",
+    "description": "Message displayed to user as the Moderator Note when punishments are done via the Account Integrity Processor.",
+    "english": "You have been banned due to violations of our terms of use.",
+    "translation": "본 계정은 이용 약관 위반으로 인해 이용 정지되었습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameLocalization",
     "key": "Label.Title",
     "description": "Game Title (or Name) field label, corresponding text area editable by game developer",
@@ -41088,6 +41176,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Heading.GroupNameChangeSubject",
+    "description": "Subject line for direct message regarding group name change",
+    "english": "Group Name Changed: {previousGroupName}",
+    "translation": "그룹 이름이 변경됨: {previousGroupName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Description.GroupNameChangeBody",
+    "description": null,
+    "english": "{oldName} has been renamed to {newName}. You can visit the group here: {groupLink}",
+    "translation": "{oldName}이(가) {newName}(으)로 변경되었습니다. 다음 링크에서 그룹을 방문할 수 있습니다: {groupLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Message.DistributeFundsError",
+    "description": null,
+    "english": "Unable to distribute funds.",
+    "translation": "펀드를 분배할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -41253,6 +41365,14 @@
     "description": "When user chooses a invalid Robux package to purchase, this is shown.",
     "english": "The product you are purchasing is not supported. Please go back and choose a different one.",
     "translation": "구매하신 제품은 지원되지 않습니다. 돌아가서 다른 제품을 선택하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ChinaPayment",
+    "key": "Description.legalDisclosuresLuobuRobuxPage",
+    "description": "This is currently only for Luobu",
+    "english": "Please moderate your entertainment and make rational consumption",
+    "translation": "엔터테인먼트를 적당히 즐기며 합리적으로 소비하세요",
     "isDeprecated": false
   },
   {
@@ -45373,6 +45493,14 @@
     "description": null,
     "english": "Your experience is not eligible for advertising.",
     "translation": "회원님의 체험은 광고 대상이 아닙니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.NonDiscoverableExperienceV2",
+    "description": null,
+    "english": "Your experience is currently not eligible for advertising. If you are attempting to advertise a new experience, please note it may take up to five days for your experience to clear quality checks.",
+    "translation": "회원님의 체험은 현재 광고 권한이 없습니다. 새로운 체험을 광고하기 위해서는 해당 체험의 품질 검사를 통과해야 하며, 여기에는 최대 5일이 소요될 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -53568,6 +53696,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Total",
+    "description": "For the total number of DAU/ new players without any segmentation type",
+    "english": "Total",
+    "translation": "총계",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -56024,6 +56160,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "계정 복구 정책 업데이트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "2022년 1월 10일부터, 계정이 해킹된 경우 계정 복구 자격을 얻으려면 인증 앱을 통한 2단계 인증을 활성화해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "사용자의 보안은 우리에게 중요합니다. 인증 앱을 설정하려면 {styleTagStart}여기를 클릭{styleTagEnd}하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "사용자의 보안은 우리에게 중요합니다. 인증 앱을 설정하려면 설정을 열고, {linkStart}지원 센터{linkEnd}를 방문해 자세히 알아보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "설정 열기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "{date}부터, 계정이 해킹된 경우 계정 복구 자격을 얻으려면 인증 앱을 통한 2단계 인증을 활성화해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "계정 보안을 위해, {styleTagStart}여기를 클릭{styleTagEnd}한 후 비밀번호를 재설정하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "계정 보안을 위해, {styleTagStart}여기를 클릭{styleTagEnd}한 후 지금 바로 비밀번호를 재설정하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -56501,6 +56701,54 @@
     "description": null,
     "english": "Restart Session",
     "translation": "세션 다시 시작",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat",
+    "description": "Heading of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Enable Voice Chat",
+    "translation": "음성 채팅 활성화",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UsesVoiceChat",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "이 체험에서는 음성 채팅이 가능합니다. 음성 채팅을 활성화하면 음성 사용이 가능한 체험에서 마이크 입력을 사용하게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleInstruction",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "You can also toggle this feature on or off by accessing your Settings.",
+    "translation": "설정 메뉴에 들어가서 이 기능을 끄거나 켤 수도 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithout",
+    "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Join Without Voice Chat",
+    "translation": "음성 채팅 없이 참가하기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclinedGeneric",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "죄송합니다. 보안상의 이유로 인증이 거부되었습니다. 다시 시도하려면 며칠 후에 다시 확인하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclined",
+    "description": null,
+    "english": "Sorry, your verification was declined. For security reasons, please wait {days} day(s) before trying again.",
+    "translation": "죄송합니다. 인증이 거부되었습니다. 보안상의 이유로 인해 {days}일 후에 다시 시도하실 수 있습니다.",
     "isDeprecated": false
   },
   {

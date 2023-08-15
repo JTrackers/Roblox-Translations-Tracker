@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 您好，{lineBreak}{lineBreak}您已為 Roblox 帳號停用電子郵件雙步驟驗證。您登入或進行部分操作時將不再需要使用安全碼。{lineBreak}{lineBreak}Roblox 敬上",
+    "translation": "{accountName} 您好，{lineBreak}{lineBreak}您已為 Roblox 帳號停用電子郵件雙步驟驗證。您登入或進行部分操作時將不再需要使用電子郵件中的安全碼。{lineBreak}{lineBreak}Roblox 敬上",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帳號 {accountName} 已停用電子郵件雙步驟驗證。他登入或進行部分操作時將不再需要使用安全碼。{lineBreak}{lineBreak}Roblox 敬上",
+    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帳號 {accountName} 已停用電子郵件雙步驟驗證。他登入或進行部分操作時將不再需要使用電子郵件中的安全碼。{lineBreak}{lineBreak}Roblox 敬上",
     "isDeprecated": false
   },
   {
@@ -3285,6 +3285,22 @@
     "description": null,
     "english": "Code Resent",
     "translation": "已重新傳送驗證碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.InvalidPassword",
+    "description": null,
+    "english": "Invalid password.",
+    "translation": "密碼無效。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "帳號已成功建立，但目前無法登入。請稍後再試。",
     "isDeprecated": false
   },
   {
@@ -10057,6 +10073,22 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.TemporarySuspension",
+    "description": "This text will replace the normal text next to the voice chat opt in toggle if they have been banned from voice chat. The date they will be banned until will be right after this text, which is why the sentence ends partway.",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to voice chat until",
+    "translation": "因您違反社群標準，我們已暫時收回您使用語音聊天的權限，期限為",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.Revoked",
+    "description": "This text will replace the normal description next to the voice chat opt-in toggle if the user has been MVP banned from voice chat.",
+    "english": "Due to multiple violations of our Community Standards, we have temporarily revoked your access to voice chat until the Beta phase ends.",
+    "translation": "因您多次違反社群標準，我們已在 Beta 測試階段結束前暫時收回您使用語音聊天的權限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Message.Error.InvalidGuildedUrl",
     "description": "Error message.",
     "english": "The Guilded profile url is invalid.",
@@ -10077,6 +10109,22 @@
     "description": null,
     "english": "Guilded",
     "translation": "Guilded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceBan",
+    "description": "Message a user gets when they have been banned from voice chat.",
+    "english": "Your access to voice chat has been suspended for violating our Community Standards.",
+    "translation": "您因違反社群標準而失去了使用語音聊天的權限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ResaleTwoStepVerificationMessage",
+    "description": null,
+    "english": "Verification is required to continue with your resale.",
+    "translation": "若要繼續轉賣，請先完成驗證。",
     "isDeprecated": false
   },
   {
@@ -19928,6 +19976,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ErrorCommentCharacterLimit",
+    "description": "Error that appears when hitting max limit to the number of alpha-numeric characters in a user given textbox",
+    "english": "Your comment must be less than {characterLimit} characters.",
+    "translation": "您的留言必須少於 {characterLimit} 個字元。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Label.TellUsWhy",
+    "description": null,
+    "english": "Tell us why this asset does not meet your expectations. Please include as much detail as possible.",
+    "translation": "告訴我們此素材不符合您的標準的原因，請盡可能詳細描述。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ModCategoryOther",
+    "description": "Description of a button that opens a new page",
+    "english": "Inappropriate content & abuse reports (opens new page)",
+    "translation": "檢舉不當內容和濫用（將開啟新頁面）",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ServerList",
     "key": "Heading.RunningServers",
     "description": null,
@@ -23805,6 +23877,22 @@
     "description": "Variant of Action.AddEmail",
     "english": "Add Your Email",
     "translation": "新增電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.FacebookSetPasswordUpsellText",
+    "description": null,
+    "english": "⚠️ We noticed you logged in with Facebook which is no longer supported. Please add a password so you don’t get locked out.",
+    "translation": "⚠️ 我們已不再支援 Facebook 登入。我們偵測到您使用了 Facebook 登入，請新增密碼以免日後無法登入帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.SetPassword",
+    "description": null,
+    "english": "Set a Password",
+    "translation": "設定密碼",
     "isDeprecated": false
   },
   {
@@ -35000,6 +35088,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.AccountIntegrityAutomatedPunishmentModeratorNote",
+    "description": "Message displayed to user as the Moderator Note when punishments are done via the Account Integrity Processor.",
+    "english": "You have been banned due to violations of our terms of use.",
+    "translation": "您因違反使用條款而遭到停權。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameLocalization",
     "key": "Label.Title",
     "description": "Game Title (or Name) field label, corresponding text area editable by game developer",
@@ -36372,7 +36468,7 @@
     "key": "Label.TopVoiceGames",
     "description": "This will show on the game discovery page above a carousel of games that have voice chat enabled.",
     "english": "Voice Enabled",
-    "translation": "空間語音",
+    "translation": "已啟用語音",
     "isDeprecated": false
   },
   {
@@ -41088,6 +41184,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Heading.GroupNameChangeSubject",
+    "description": "Subject line for direct message regarding group name change",
+    "english": "Group Name Changed: {previousGroupName}",
+    "translation": "群組名稱已變更：{previousGroupName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Description.GroupNameChangeBody",
+    "description": null,
+    "english": "{oldName} has been renamed to {newName}. You can visit the group here: {groupLink}",
+    "translation": "{oldName} 已更名為 {newName}。您可以使用此連結前往群組：{groupLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Groups",
+    "key": "Message.DistributeFundsError",
+    "description": null,
+    "english": "Unable to distribute funds.",
+    "translation": "無法分發資金。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -41236,7 +41356,7 @@
     "key": "Message.SessionExpiredError",
     "description": null,
     "english": "Looks like your Tencent session has expired and we cannot process your request. Please log out and log in again.",
-    "translation": "無法處理請求，您的微信登入似乎逾時。請重新登入。",
+    "translation": "您的騰訊作業似乎逾時，無法處理您的請求。請登出再重新登入。",
     "isDeprecated": false
   },
   {
@@ -41245,6 +41365,22 @@
     "description": null,
     "english": "We have a problem loading the Midas script now. Please try again later",
     "translation": "載入 Midas 指令碼發生錯誤，請稍後再試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ChinaPayment",
+    "key": "Message.InvalidProductId",
+    "description": "When user chooses a invalid Robux package to purchase, this is shown.",
+    "english": "The product you are purchasing is not supported. Please go back and choose a different one.",
+    "translation": "未支援您正在購買的產品，請返回並選擇其他產品。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ChinaPayment",
+    "key": "Description.legalDisclosuresLuobuRobuxPage",
+    "description": "This is currently only for Luobu",
+    "english": "Please moderate your entertainment and make rational consumption",
+    "translation": "娛樂適當就好，注意消費金額。",
     "isDeprecated": false
   },
   {
@@ -45376,6 +45512,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.NonDiscoverableExperienceV2",
+    "description": null,
+    "english": "Your experience is currently not eligible for advertising. If you are attempting to advertise a new experience, please note it may take up to five days for your experience to clear quality checks.",
+    "translation": "您的體驗目前不符合宣傳資格。若您在嘗試宣傳新的體驗，您必須等待最多 5 天的品質審核過程完成。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -49061,6 +49205,22 @@
     "description": null,
     "english": "Add Email",
     "translation": "新增電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.SetPassword",
+    "description": null,
+    "english": "Set a Password",
+    "translation": "設定密碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.FacebookSetPasswordUpsellText",
+    "description": null,
+    "english": "We noticed that you logged in with Facebook, which is no longer supported. Please set a password so you don't get locked out.",
+    "translation": "我們已不再支援 Facebook 登入。我們偵測到您使用了 Facebook 登入，請設定密碼以免日後無法登入帳號。",
     "isDeprecated": false
   },
   {
@@ -53552,6 +53712,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Total",
+    "description": "For the total number of DAU/ new players without any segmentation type",
+    "english": "Total",
+    "translation": "合計",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -55916,7 +56084,7 @@
     "key": "Label.AuthenticatorUpsellTwoFactorMessage",
     "description": null,
     "english": "Enter password and unique codes from another device for logins, big purchases and more.",
-    "translation": "登入和購買昂貴商品時在手機輸入密碼和驗證碼。",
+    "translation": "登入和購買昂貴商品時在其他裝置輸入密碼和驗證碼。",
     "isDeprecated": false
   },
   {
@@ -56005,6 +56173,78 @@
     "description": null,
     "english": "If you don't change it, your password will be automatically reset in {boldStart}1 day{boldEnd}.",
     "translation": "如果您不變更密碼，密碼將在 {boldStart}1 天{boldEnd}後自動重置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.AuthenticatorUpsellNextButtonMessage",
+    "description": null,
+    "english": "Next",
+    "translation": "下一步",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "帳號還原政策更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "從 2022 年 1 月 10 日起，您必須在驗證器啟用雙步驟驗證才可在帳號遭入侵時符合帳號還原的資格。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "我們很重視您的安全：{styleTagStart}點擊此處{styleTagEnd}設定驗證器。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "我們很重視您的安全：開啟設定頁面即可設定驗證器，請前往{linkStart}支援專頁{linkEnd}了解更多。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "開啟設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "從 {date} 起，您必須在驗證器啟用雙步驟驗證才可在帳號遭入侵時符合帳號還原的資格。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "為了確保帳號安全，請{styleTagStart}點擊此處{styleTagEnd}變更您的密碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "為了確保帳號安全，請{styleTagStart}點擊此處{styleTagEnd}立刻變更您的密碼。",
     "isDeprecated": false
   },
   {
@@ -56469,6 +56709,70 @@
     "description": null,
     "english": "Warning",
     "translation": "警告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.HavingTroubleScanCode",
+    "description": null,
+    "english": "Having trouble? Scan the QR code above to restart the verification process.",
+    "translation": "有問題嗎？掃描上方 QR 碼重新開始驗證過程。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.RestartSession",
+    "description": null,
+    "english": "Restart Session",
+    "translation": "重新開始作業",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat",
+    "description": "Heading of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Enable Voice Chat",
+    "translation": "啟用語音聊天",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UsesVoiceChat",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "此體驗使用語音聊天。啟用語音聊天時，支援語音聊天的體驗將會使用您的麥克風輸入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleInstruction",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "You can also toggle this feature on or off by accessing your Settings.",
+    "translation": "您也可以在設定中啟用或停用此功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithout",
+    "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Join Without Voice Chat",
+    "translation": "不使用語音聊天加入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclinedGeneric",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "對不起，您的驗證因安全原因遭拒。請等幾天後再重新嘗試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclined",
+    "description": null,
+    "english": "Sorry, your verification was declined. For security reasons, please wait {days} day(s) before trying again.",
+    "translation": "對不起，您的驗證遭到拒絕。為了安全考量，請等 {days} 天後再重新嘗試。",
     "isDeprecated": false
   },
   {

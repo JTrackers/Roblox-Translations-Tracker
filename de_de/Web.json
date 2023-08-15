@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Hallo {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten per E-Mail für dein Roblox-Konto deaktiviert. Für einige Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode mehr nötig.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hallo {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten per E-Mail für dein Roblox-Konto deaktiviert. Für einige Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode von deiner E-Mail mehr nötig.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Hallo {accountName},{lineBreak}{lineBreak}die Verifizierung in 2 Schritten per E-Mail für das Roblox-Konto deines Kindes ist deaktiviert. Für Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode mehr nötig.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hallo {accountName},{lineBreak}{lineBreak}die Verifizierung in 2 Schritten per E-Mail für das Roblox-Konto deines Kindes ist deaktiviert. Für Aktionen, wie z.B. die Anmeldung, ist kein Sicherheitscode von deiner E-Mail mehr nötig.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -3285,6 +3285,22 @@
     "description": null,
     "english": "Code Resent",
     "translation": "Code erneut gesendet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.InvalidPassword",
+    "description": null,
+    "english": "Invalid password.",
+    "translation": "Ungültiges Passwort.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "Das Konto wurde erfolgreich angelegt, kann aber zu diesem Zeitpunkt nicht angemeldet werden. Bitte versuchen Sie es später erneut.",
     "isDeprecated": false
   },
   {
@@ -19958,6 +19974,14 @@
     "english": "Tell us why this asset does not meet your expectations. Please include as much detail as possible.",
     "translation": "Erkläre bitte, warum dieses Asset deinen Erwartungen nicht entspricht. Bitte beschreibe uns das Problem so genau wie möglich.",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ModCategoryOther",
+    "description": "Description of a button that opens a new page",
+    "english": "Inappropriate content & abuse reports (opens new page)",
+    "translation": "Unangemessene Inhalts- & Missbrauchsberichte (öffnet eine neue Seite)",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.ServerList",
@@ -52512,6 +52536,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Total",
+    "description": "For the total number of DAU/ new players without any segmentation type",
+    "english": "Total",
+    "translation": "Insgesamt",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -54965,6 +54997,70 @@
     "description": null,
     "english": "Next",
     "translation": "Weiter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "Konto Wiederherstellen Richtlinien-Aktualisierung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "Ab dem 10. Januar 2022 müssen Sie die 2-Schritt-Verifizierung via Authenticator aktivieren, damit sie für die Wiederherstellung Ihres Kontos in Anspruch nehmen können, wenn Ihr Konto gehackt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "Ihre Sicherheit ist uns wichtig: {styleTagStart}Klicken Sie hier{styleTagEnd}, um einen Authenticator einzurichten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Ihre Sicherheit ist uns wichtig: Öffnen Sie die Einstellungen zum Einrichten des Authenticators und erfahren Sie mehr auf unserer {linkStart}-Hilfeseite{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "Offene Einstellungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "Beginnend mit {date} müssen Sie die 2-Schritt-Verifizierung über den Authenticator aktivieren, um berechtigt zu sein, wenn Ihr Konto gehackt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "Um Ihr Konto sicher zu halten, klicken Sie bitte {styleTagStart}hier{styleTagEnd} um Ihr Passwort zu ändern.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "Um Ihr Konto sicher zu halten, klicken Sie bitte {styleTagStart}hier{styleTagEnd}, um Ihr Passwort sofort zu ändern.",
     "isDeprecated": false
   },
   {

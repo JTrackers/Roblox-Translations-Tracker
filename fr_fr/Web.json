@@ -844,7 +844,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour {accountName},{lineBreak}{lineBreak}. Tu as désactivé la vérification en 2 étapes par e-mail pour ton compte Roblox. Un code de sécurité ne sera dorénavant plus requis pour te connecter.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour {accountName},{lineBreak}{lineBreak} Tu as désactivé la vérification en 2 étapes par e-mail pour ton compte Roblox. Un code de sécurité ne sera dorénavant plus requis pour te connecter.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -852,7 +852,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}. A security code from your email will no longer be required for some actions like logging in.{lineBreak}{lineBreak}Roblox",
-    "translation": "Bonjour,{lineBreak}{lineBreak}. Vous avez désactivé la vérification en 2 étapes par e-mail pour le compte Roblox de votre enfant, {accountName}. Un code de sécurité ne sera plus nécessaire pour certaines actions comme la connexion.{lineBreak}{lineBreak}Roblox",
+    "translation": "Bonjour,{lineBreak}{lineBreak}. La vérification en deux étapes par e-mail a été désactivée pour le compte Roblox de votre enfant, {accountName}. Un code de sécurité provenant de votre e-mail ne sera plus nécessaire pour certaines actions comme la connexion.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -3285,6 +3285,22 @@
     "description": null,
     "english": "Code Resent",
     "translation": "Code renvoyé",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.InvalidPassword",
+    "description": null,
+    "english": "Invalid password.",
+    "translation": "Mot de passe invalide.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "Le compte a été créé avec succès mais ne peut pas être connecté pour le moment. Veuillez réessayer ultérieurement.",
     "isDeprecated": false
   },
   {
@@ -19974,6 +19990,14 @@
     "english": "Tell us why this asset does not meet your expectations. Please include as much detail as possible.",
     "translation": "Dis-nous pourquoi cet élément ne répond pas à tes attentes. Inclure autant de détails que possible.",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ModCategoryOther",
+    "description": "Description of a button that opens a new page",
+    "english": "Inappropriate content & abuse reports (opens new page)",
+    "translation": "Rapports inappropriés de contenu et d'abus (ouvre une nouvelle page)",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.ServerList",
@@ -53640,6 +53664,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Total",
+    "description": "For the total number of DAU/ new players without any segmentation type",
+    "english": "Total",
+    "translation": "Total",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -56104,6 +56136,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "Mise à jour de la politique de restauration de compte",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "À partir du 10 janvier 2022, vous devez activer la vérification en 2 étapes via l'authentificateur pour être éligible aux restaurations de compte si votre compte est piraté.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "Votre sécurité est importante pour nous: {styleTagStart}Cliquez ici{styleTagEnd} pour configurer l'authentificateur.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "Votre sécurité est importante pour nous: Ouvrez les paramètres pour configurer Authenticator et apprenez-en plus sur notre {linkStart}page d'aide{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "Ouvrir Paramètres",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "À partir de {date}, vous devez activer la vérification en 2 étapes via Authenticator pour être éligible aux restaurations de compte si votre compte est piraté.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "Pour sécuriser votre compte, veuillez {styleTagStart}cliquer ici{styleTagEnd} pour changer votre mot de passe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "Pour garder votre compte en sécurité, veuillez {styleTagStart}cliquer ici{styleTagEnd} pour changer votre mot de passe immédiatement.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -56613,6 +56709,22 @@
     "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
     "english": "Join Without Voice Chat",
     "translation": "Rejoindre sans chat vocal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclinedGeneric",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "Désolé, votre vérification a été refusée pour des raisons de sécurité. Si vous voulez essayer à nouveau, veuillez vérifier dans quelques jours.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclined",
+    "description": null,
+    "english": "Sorry, your verification was declined. For security reasons, please wait {days} day(s) before trying again.",
+    "translation": "Désolé, votre vérification a été refusée. Pour des raisons de sécurité, veuillez attendre {days} jour(s) avant de réessayer.",
     "isDeprecated": false
   },
   {
