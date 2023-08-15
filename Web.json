@@ -13770,7 +13770,7 @@
     "Description.PrivateServerStatus": {
       "deprecated": false,
       "privateNote": null,
-      "text": "This makes the private server inaccessible for you and other players that you have invited to this private server. You can reactivate the private server at any time. Disabling joining will invalidate the current link code."
+      "text": "Disabling this makes the private server inaccessible for you and other players that you have invited to this private server, and invalidates the current link code. You can reactivate the private server at any time."
     },
     "Label.ServerName": {
       "deprecated": false,
@@ -27667,7 +27667,7 @@
     "Description.CSAdjustment": {
       "deprecated": false,
       "privateNote": null,
-      "text": "CS Adjustment"
+      "text": "Roblox Adjustment"
     },
     "Description.Contest": {
       "deprecated": false,
@@ -27812,7 +27812,7 @@
     "Label.TransactionTypeCSAdjustment": {
       "deprecated": false,
       "privateNote": null,
-      "text": "CS Adjustments"
+      "text": "Roblox Adjustments"
     }
   },
   "CreatorDashboard.Metadata": {
@@ -30341,6 +30341,36 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Paying Users"
+    },
+    "Description.DAU": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "The total number of daily (DAU) active users over a period of time.\n"
+    },
+    "Description.MAU": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "The total number of monthly (MAU) active users over a period of time."
+    },
+    "Description.NewUsers": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "The number of DAUs or MAUs that are first time players of your game (over the history of the entire game). *Note that players who come to your game once in a while are not counted as new users."
+    },
+    "Description.PayingUsers": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "The number of paying users in a day (DAU) or month (MAU). This includes the same user playing your game in different sessions.\n"
+    },
+    "Description.AnalyticsOverview": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Below are some top level metrics that can be used to help analyze game performance. Information here can be filtered by date range. Individual chart filters are shown for each KPI chart. All metrics are updated on a 24 hour cadence."
+    },
+    "Description.Engagement": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Below are some metrics related to acquiring new users and the number of active users you have for your game. Information here can be filtered by date range. Individual chart filters are shown for each KPI chart. All metrics are updated on a 24 hour cadence."
     }
   },
   "Authentication.SuspiciousActivity": {
@@ -30911,6 +30941,320 @@
       "deprecated": false,
       "privateNote": "Message to display as the heading of the alert dialog asking if user wants to save changes before leaving (take two since first attempt bugged out)",
       "text": "Save Changes?"
+    }
+  },
+  "Feature.AccountCompromisePrompt": {
+    "Action.AbortDismissForeverAddEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Add Email"
+    },
+    "Action.AbortDismissForeverChangePassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Change Password"
+    },
+    "Action.ChangeEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Change Email"
+    },
+    "Action.ConfirmDismissForeverAddEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Yes, I'm Sure"
+    },
+    "Action.ConfirmDismissForeverChangePassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Yes, I'm Sure"
+    },
+    "Action.ContinueAddEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Continue"
+    },
+    "Action.ContinueChangePassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Continue"
+    },
+    "Action.DismissForever": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Don't Show This Again"
+    },
+    "Action.RemindMeLater": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Remind Me Later"
+    },
+    "Action.ResendPasswordResetEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Resend Password Reset Email"
+    },
+    "Action.SecureAccount": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Secure My Account"
+    },
+    "Action.SubmitChangePassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Change Password"
+    },
+    "Action.UnlockAccountPin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Unlock Account"
+    },
+    "Message.Error.Email.FeatureDisabled": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "This feature is currently disabled. Please try again later."
+    },
+    "Message.Error.Email.TooManyAccountsOnEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "There are too many accounts associated with this email address."
+    },
+    "Message.Error.Email.TooManyAttemptsToUpdateEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Too many attempts to update email. Please try again later."
+    },
+    "Message.Error.Email.InvalidEmailAddress": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Invalid email address."
+    },
+    "Message.Error.Email.Default": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "An unknown error occured."
+    },
+    "Message.Error.Input.InvalidEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Invalid email address."
+    },
+    "Message.Error.Input.PasswordsDoNotMatch": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "New password does not match confirmation."
+    },
+    "Message.Error.Password.Flooded": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Too many attempts. Please try again later."
+    },
+    "Message.Error.Password.InvalidPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "New password did not meet security requirements."
+    },
+    "Message.Error.Password.InvalidCurrentPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Current password is incorrect."
+    },
+    "Message.Error.Password.PinLocked": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Your account is locked with a PIN."
+    },
+    "Message.Error.Password.Default": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "An unknown error occured."
+    },
+    "Message.Error.PasswordReset.UserDoesNotHaveEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "No email address is associated with your account."
+    },
+    "Message.Error.PasswordReset.Default": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "An unknown error occured."
+    },
+    "Message.Error.Pin.NoAccountPin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "No PIN exists on your account."
+    },
+    "Message.Error.Pin.AccountLocked": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Your account is locked."
+    },
+    "Message.Error.Pin.Flooded": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Too many attempts. Please try again later."
+    },
+    "Message.Error.Pin.IncorrectPin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Incorrect PIN."
+    },
+    "Message.Error.Pin.Default": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "An unknown error occured."
+    },
+    "Description.AddYourEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "To keep your account safe, please add your parent's email and reset your password."
+    },
+    "Description.AddYourEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "To keep your account safe, please add your email and reset your password."
+    },
+    "Description.AreYouSureDismissForeverAddEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Someone might be using your account without your permission. To keep your account safe, please add your parent's email and reset your password."
+    },
+    "Description.AreYouSureDismissForeverAddEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Someone might be using your account without your permission. To keep your account safe, please add your email and reset your password."
+    },
+    "Description.AreYouSureDismissForeverChangePassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Someone might be using your account without your permission. To keep your account safe, please change your password."
+    },
+    "Description.ChangeYourPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "To keep your account safe, please change your password."
+    },
+    "Description.ChangeYourPasswordSuccess": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "You have successfully changed your password."
+    },
+    "Description.CheckYourEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Please ask your parent to check the email we sent to {emailAddress} and follow the instructions to reset your password. They may need to refresh their inbox or check their spam folder."
+    },
+    "Description.CheckYourEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Please check the email we sent to {emailAddress} and follow the instructions to reset your password. You may need to refresh your inbox or check your spam folder."
+    },
+    "Description.EnterYourAccountPin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Please enter the PIN for this account to change your password."
+    },
+    "Description.UnusualActivity": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "We have detected some unusual activity on your account."
+    },
+    "Header.AccountPinExpired": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Account PIN Expired"
+    },
+    "Header.AccountPinRequired": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Enter Your Account PIN"
+    },
+    "Header.AddYourEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Add Your Parent's Email"
+    },
+    "Header.AddYourEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Add Your Email"
+    },
+    "Header.AreYouSure": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Are You Sure"
+    },
+    "Header.ChangeYourPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Change Your Password"
+    },
+    "Header.CheckYourEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Check Your Parent's Email"
+    },
+    "Header.CheckYourEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Check Your Email"
+    },
+    "Header.Success": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Success"
+    },
+    "Label.AccountPin": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Account PIN"
+    },
+    "Label.ConfirmNewPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Confirm New Password"
+    },
+    "Label.CurrentPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Current Password"
+    },
+    "Label.MinutesSeconds": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "{minutes} min {seconds} sec"
+    },
+    "Label.NewPassword": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "New Password"
+    },
+    "Label.TimeRemaining": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Time Remaining"
+    },
+    "Label.YourEmailUnder13": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Your Parent's Email"
+    },
+    "Label.YourEmail": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Your Email"
+    }
+  },
+  "TalentHub.CreatorPages": {
+    "Label.OpenToWork": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Open to work"
+    },
+    "Label.YearsOfExperience": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "years of experience"
     }
   }
 }
