@@ -1392,6 +1392,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationResaleEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because there was increased resale activity. If you did not make this request, you are strongly advised to change your password.",
+    "translation": "Не отвечай на это письмо. Мы отправили его, потому что мы заметили возросшую торговую активность в Roblox. Если это был(а) не ты, мы настоятельно рекомендуем изменить пароль.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -6148,7 +6156,7 @@
     "key": "Heading.Dialog.ChangePasswordConfirmation",
     "description": null,
     "english": "Success",
-    "translation": "Успех",
+    "translation": "Готово",
     "isDeprecated": false
   },
   {
@@ -9601,6 +9609,134 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Label.Every",
+    "description": "ex. Every Wednesday, Monday, Tuesday. Should include the space after \"every\" (if this is relevant in translated language)",
+    "english": "Every ",
+    "translation": "Кажд. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ScreentimeRestrictions",
+    "description": "heading for section where parents can add restrictions to when their children can play Roblox",
+    "english": "Screen Time Restrictions",
+    "translation": "Ограничение экранного времени",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.MissingDaySelection",
+    "description": null,
+    "english": "You must select at least one day of the week.",
+    "translation": "Необходимо выбрать как минимум один день недели.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CinderellaLawTooltip",
+    "description": "tooltip label for korea screentime curfew law",
+    "english": "12am - 6am is automatically restricted and cannot be edited.",
+    "translation": "Период с 0:00-6:00 является автоматическим ограничением, изменить это нельзя.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationDescription",
+    "description": "robux spend friction",
+    "english": "Improve your account security. A code will be required for some actions like logging in.",
+    "translation": "Повысь безопасность своего аккаунта. Потребуется код для выполнения некоторых действий, например для входа.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AgeRestrictedFeatures",
+    "description": null,
+    "english": "Beta Features",
+    "translation": "Функции бета-версии",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.Subject.Under13.V3",
+    "description": "Subject line for the 'email verification' email for users under 13. This is sent to the parent of the user, who is responsible for taking action on authorizing the email.",
+    "english": "Roblox Email Validation",
+    "translation": "Подтверждение адреса эл. почты Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.ButtonText.Under13.V3",
+    "description": "Text of the button in the 'email verification' email for users under 13. The text of this button is referred to by name in the first part of the email body ('By clicking \"I Agree, Validate Email\"...'), so the name should be consistent with \nDescription.VerificationEmail.Body.Under13.V3.",
+    "english": "I Agree, Validate Email",
+    "translation": "Соглашаюсь. Подтвердить эл. почту",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.AuthenticatorHelpMessage",
+    "description": "Appears on the Authenticator enabling modal.",
+    "english": "Click here for more info",
+    "translation": "Нажми здесь, чтобы узнать больше",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.TooManyResendCode",
+    "description": "Error message when resend code for verify phone is flooded.",
+    "english": "Too many requests to resend code. Please try again later.\t",
+    "translation": "Слишком много запросов повторной отправки кода. Пожалуйста, повтори попытку.\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DefaultNotifications",
+    "description": null,
+    "english": "Default Notifications",
+    "translation": "Уведомления по умолчанию",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AllNotifications",
+    "description": null,
+    "english": "All Notifications",
+    "translation": "Все уведомления",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.NotificationsOff",
+    "description": null,
+    "english": "Notifications Off",
+    "translation": "Уведомления отключены",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.GenderOptional",
+    "description": "Display gender is optional on account settings",
+    "english": "Gender (Optional)",
+    "translation": "Пол (необязательно)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.PlainBody.V3",
+    "description": null,
+    "english": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>.",
+    "translation": "Здравствуй, {username}!{lineBreak}{lineBreak}Мы заметили, что был изменён твой адрес эл. почты с {oldEmailAddress} на {newEmailAddress}. Если это сделано тобой, то игнорируй это письмо.{lineBreak}{lineBreak}Если это не было сделано тобой, или это было сделано по ошибке, нажми на ссылку, чтобы вернуть прежний адрес эл. почты: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. В целях безопасности твоего аккаунта мы попросим тебя задать новый пароль.{lineBreak}{lineBreak}Не отвечай на этой письмо. Если у тебя появились вопросы, посети наш <a target=\"_blank\" href=\"{accountHelpLink}\">справочный центр</a>.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.USDCurrency",
+    "description": null,
+    "english": "USD",
+    "translation": "USD",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Response.Dialog.EnableTwoStepVerification",
     "description": "Enable 2sv modal header.",
     "english": "Turn on 2 Step Verification",
@@ -9644,7 +9780,7 @@
     "key": "Label.ToolTip.ChatFilteringLevel",
     "description": null,
     "english": "All text chat is scanned for language that is inappropriate within the Roblox community. This setting controls what you can send and receive while chatting with others on Roblox. ",
-    "translation": "Все чаты проверяются на наличие ненормативной, неуместной лексики в соответствии с правилами сообщества Roblox. Эта настройка управляет тем, что ты можешь отправлять и получать при общении с другими пользователями Roblox. ",
+    "translation": "Все чаты проверяются на наличие ненормативной, неуместной лексики в соответствии с Правилами сообщества Roblox. Эта настройка управляет тем, что ты можешь отправлять и получать при общении с другими пользователями Roblox. ",
     "isDeprecated": false
   },
   {
@@ -13076,7 +13212,7 @@
     "key": "LabelNoFeedText",
     "description": null,
     "english": "No news about your best friends... want to know what your best friends are up to?",
-    "translation": "Никаких новостей о ваших лучших друзьях... Хотите знать, чем они заняты?",
+    "translation": "Никаких новостей о лучших друзьях... Хочешь узнать, чем они заняты?",
     "isDeprecated": false
   },
   {
@@ -13084,7 +13220,7 @@
     "key": "LabelNoFeedLink",
     "description": null,
     "english": "make some best friends now.",
-    "translation": "Найдите лучших друзей уже сейчас.",
+    "translation": "Найди лучших друзей уже сейчас.",
     "isDeprecated": false
   },
   {
@@ -13100,7 +13236,7 @@
     "key": "LabelCustomizeAvatarPhone",
     "description": null,
     "english": "Get new clothing in the {linkStart} catalog {linkEnd} and customize your avatar.",
-    "translation": "Подберите новую одежду в {linkStart} каталоге {linkEnd} и измените свой аватар.",
+    "translation": "Подбери новую одежду в {linkStart} каталоге {linkEnd} и измени свой аватар.",
     "isDeprecated": false
   },
   {
@@ -13108,7 +13244,7 @@
     "key": "LabelCustomizeAvatarDesktop",
     "description": null,
     "english": "Visit the {avatarLinkStart} Avatar page {avatarLinkEnd} to customize your avatar. Get new clothing in the {catalogLinkStart}catalog{catalogLinkEnd}.",
-    "translation": "Откройте {avatarLinkStart}страницу аватара{avatarLinkEnd}, чтобы изменить свой аватар. Найдите новую одежду в {catalogLinkStart}каталоге{catalogLinkEnd}.",
+    "translation": "Открой {avatarLinkStart}страницу аватара{avatarLinkEnd}, чтобы изменить свой аватар. Найди новую одежду в {catalogLinkStart}каталоге{catalogLinkEnd}.",
     "isDeprecated": false
   },
   {
@@ -13132,7 +13268,7 @@
     "key": "LabelForumHelp",
     "description": null,
     "english": "No matter what you're looking for, if it's Roblox related, there are people talking about it {linkStart}here{linkEnd}.",
-    "translation": "Что-то ищете? Если это связано с Roblox, найти обсуждения по теме можно {linkStart}здесь{linkEnd}.",
+    "translation": "Что-то ищешь? Если это связано с Roblox, найти обсуждения по теме можно {linkStart}здесь{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -13172,7 +13308,7 @@
     "key": "HeadingCustomizeAvatar",
     "description": null,
     "english": "Customize Your Avatar",
-    "translation": "Сделайте свой аватар уникальным",
+    "translation": "Сделай свой аватар уникальным",
     "isDeprecated": false
   },
   {
@@ -13300,7 +13436,7 @@
     "key": "Message.ForMaxFriendsError",
     "description": null,
     "english": "Unable to process Request. You currently have the max number of Friends allowed. ",
-    "translation": "Не удалось обработать запрос. Сейчас у вас максимум друзей. ",
+    "translation": "Не удалось обработать запрос. Достигнут максимум друзей. ",
     "isDeprecated": false
   },
   {
@@ -13308,7 +13444,7 @@
     "key": "Message.ForMaxFriendsFooter",
     "description": null,
     "english": "Unfriend someone before accepting any more Friend Requests.",
-    "translation": "Удалите кого-то из друзей, прежде чем принимать новые запросы дружбы.",
+    "translation": "Удали кого-то из друзей, прежде чем принимать новые запросы.",
     "isDeprecated": false
   },
   {
@@ -13324,7 +13460,7 @@
     "key": "Message.ForMaxRequestsFooter",
     "description": null,
     "english": "You can not accept their Friend Request until they remove a Friend.",
-    "translation": "Вы не сможете принять запрос дружбы, пока пользователь не удалит кого-то из друзей.",
+    "translation": "Ты не можешь принять запрос дружбы, пока пользователь не удалит кого-то из друзей.",
     "isDeprecated": false
   },
   {
@@ -13340,7 +13476,7 @@
     "key": "Message.ForGeneralFooter",
     "description": null,
     "english": "Please check back in few minutes.",
-    "translation": "Пожалуйста, вернитесь через пару минут.",
+    "translation": "Пожалуйста, вернись через пару минут.",
     "isDeprecated": false
   },
   {
@@ -13676,7 +13812,7 @@
     "key": "Label.NearbyUpsell",
     "description": "Shown when a user is on the Universal Friend Finder page and has no friend requests. This tells them to try another feature to find friends called \"Nearby\"",
     "english": "You have no pending friend requests. To add friends, check out {startSpan}Nearby{endSpan}.",
-    "translation": "У вас нет ожидающих рассмотрения запросов дружбы. Чтобы добавить друзей, попробуйте использовать функцию «{startSpan}Рядом с вами{endSpan}».",
+    "translation": "Нет запросов в друзья. Чтобы добавить друзей, попробуй использовать функцию «{startSpan}Рядом с вами{endSpan}».",
     "isDeprecated": false
   },
   {
@@ -13685,6 +13821,86 @@
     "description": "Shown instead of the Find Friends text when the action will use an external friends list",
     "english": "Invite {provider} Friends",
     "translation": "Пригласить друзей из: {provider}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.All",
+    "description": "Default status filter on Friends page",
+    "english": "All",
+    "translation": "Все",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.NoResults",
+    "description": "Shown on friends page whenever no users are found under a tab or when filtering friends",
+    "english": "No results found.",
+    "translation": "Ничего не найдено.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.FilterFriends",
+    "description": "Shown as filter-by-name placeholder on friends page",
+    "english": "Search Friends",
+    "translation": "Поиск друзей",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.SentFrom",
+    "description": "Is used to give context on which game friend requests were sent in. E.g. Sent from Adopt Me",
+    "english": "Sent from",
+    "translation": "Отправлено из:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.Inactive",
+    "description": "Label for deleted users presence.",
+    "english": "Inactive",
+    "translation": "Неактивно",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.Mobile",
+    "description": null,
+    "english": "Mobile",
+    "translation": "Моб. устройства",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.SentFromWithContext",
+    "description": "Is used to give context on which game friend requests were sent in. E.g. Sent from Adopt Me",
+    "english": "Sent From {gameName}",
+    "translation": "Отправлено из: {gameName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Action.JoinGame",
+    "description": null,
+    "english": "Join",
+    "translation": "Присоединиться",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Action.IgnoreAllFriendRequestsPrompt",
+    "description": "A prompt given to a user when clicking the ignore all button confirming before they ignore all friend requests.",
+    "english": "Are you sure you want to ignore all friend requests?",
+    "translation": "Ты действительно хочешь отменить все запросы на добавление в друзья?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.Cancel",
+    "description": "A cancel button used for modals.",
+    "english": "Cancel",
+    "translation": "Отмена",
     "isDeprecated": false
   },
   {
@@ -14084,7 +14300,7 @@
     "key": "Label.Playing",
     "description": null,
     "english": "Active",
-    "translation": "Играет",
+    "translation": "Активный",
     "isDeprecated": false
   },
   {
@@ -19773,6 +19989,14 @@
     "description": "Support page. Membership {{dc.field_membership}} stop_memb.",
     "english": "Membership",
     "translation": "Подписка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.Optional",
+    "description": null,
+    "english": "optional",
+    "translation": "необязательно",
     "isDeprecated": false
   },
   {
@@ -25749,6 +25973,14 @@
     "description": null,
     "english": "Head Accessories",
     "translation": "Головные аксессуары",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.SuccessCreateCharacter",
+    "description": null,
+    "english": "Created character",
+    "translation": "Созданный персонаж",
     "isDeprecated": false
   },
   {
@@ -33524,7 +33756,7 @@
     "key": "Label.TopGrossing",
     "description": null,
     "english": "Top Earning",
-    "translation": "Топ прибыльных",
+    "translation": "Самые прибыльные",
     "isDeprecated": false
   },
   {
@@ -33532,7 +33764,7 @@
     "key": "Label.TopPaid",
     "description": null,
     "english": "Top Paid",
-    "translation": "Топ платных",
+    "translation": "Популярные платные",
     "isDeprecated": false
   },
   {
@@ -33917,6 +34149,22 @@
     "description": "Luobu Sort",
     "english": "Newest",
     "translation": "Самые новые",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.ApiError",
+    "description": "Error message shown on api failures loading homepage topics",
+    "english": "Experiences failed to load",
+    "translation": "Не удалось загрузить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.TopVoiceGames",
+    "description": "This will show on the game discovery page above a carousel of games that have voice chat enabled.",
+    "english": "Spatial Voice",
+    "translation": "Трёхмерное звучание",
     "isDeprecated": false
   },
   {
@@ -38152,6 +38400,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Label.MembersCount",
+    "description": "label for number of members in a group",
+    "english": "{memberCount, plural, =0 {# Members} =1 {# Member} other {# Members}}",
+    "translation": "{memberCount, plural, one {# участник} few {# участника} many {# участников} =0 {# участников} =1 {# участник} other {# участников}}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -38316,7 +38572,7 @@
     "key": "PopUp.Title",
     "description": "As in, \"The program formerly known as Builder's Club is now called Premium.\"",
     "english": "Builders Club is now Roblox Premium",
-    "translation": "Клуб создателей теперь стал Roblox Премиум",
+    "translation": "Клуб создателей теперь стал Roblox Premium",
     "isDeprecated": true
   },
   {
@@ -39796,7 +40052,7 @@
     "key": "Heading.EngagementPayout",
     "description": null,
     "english": "Premium Payout",
-    "translation": "Премиальная выплата",
+    "translation": "Premium выплата",
     "isDeprecated": false
   },
   {
@@ -39804,7 +40060,7 @@
     "key": "Description.EngagementPayoutSubtitle",
     "description": null,
     "english": "Engagement score and payout based on engagement of monetized users.",
-    "translation": "Оценка вовлеченности и выплаты на основе вовлеченности монетизированных пользователей.",
+    "translation": "Оценка вовлечённости и выплаты на основе вовлечённости монетизированных пользователей.",
     "isDeprecated": false
   },
   {
@@ -39828,7 +40084,7 @@
     "key": "Label.Custom",
     "description": null,
     "english": "Custom",
-    "translation": "Особенное",
+    "translation": "Персонализированное",
     "isDeprecated": false
   },
   {
@@ -39996,7 +40252,7 @@
     "key": "Label.LastNMonthSingle",
     "description": null,
     "english": "Last {num} month",
-    "translation": "Последний {num} месяц",
+    "translation": "Последний {num} мес.",
     "isDeprecated": false
   },
   {
@@ -40004,7 +40260,7 @@
     "key": "Label.LastNYear",
     "description": null,
     "english": "Last {num} year",
-    "translation": "Последний {num} год",
+    "translation": "Последний {num} г.",
     "isDeprecated": false
   },
   {
@@ -40020,7 +40276,7 @@
     "key": "Message.IneligibleError",
     "description": null,
     "english": "The selected date range includes periods ineligible for Premium Payouts.",
-    "translation": "Выбранный диапазон дат включает периоды, в которые премиальные выплаты не осуществляются.",
+    "translation": "Выбранный диапазон дат включает периоды, в которые Premium выплаты не осуществляются.",
     "isDeprecated": false
   },
   {
@@ -40036,7 +40292,7 @@
     "key": "Heading.WelcomToPremiumPayout",
     "description": null,
     "english": "Welcome to Premium Payouts!",
-    "translation": "Добро пожаловать в премиальные выплаты!",
+    "translation": "Добро пожаловать в Premium выплаты!",
     "isDeprecated": false
   },
   {
@@ -40332,7 +40588,7 @@
     "key": "Description.StyledRobuxActualEarnedTooltip",
     "description": null,
     "english": "{divOneStart}Robux earned: {robuxAmount}{divOneEnd}{divTwoStart}(Based on {start}-{end} Premium engagement window){divTwoEnd}",
-    "translation": "{divOneStart}Заработано Robux: {robuxAmount}{divOneEnd}{divTwoStart}(на основе окна игрового премиум-времени {start}-{end}){divTwoEnd}",
+    "translation": "{divOneStart}Заработано Robux: {robuxAmount}{divOneEnd}{divTwoStart}(на основании вовлечённости пользователей Premium в период с {start} по {end}){divTwoEnd}",
     "isDeprecated": false
   },
   {
@@ -40340,7 +40596,7 @@
     "key": "Description.StyledProjectedPayoutTooltip",
     "description": null,
     "english": "{divOneStart}Projected Robux earned: {robuxAmount}{divOneEnd}{divTwoStart}(Based on {start}-{end} Premium engagement window){divTwoEnd}",
-    "translation": "{divOneStart}Прогнозируемый заработок в Robux: {robuxAmount}{divOneEnd}{divTwoStart}(на основе окна игрового премиум-времени {start}-{end}){divTwoEnd}",
+    "translation": "{divOneStart}Прогнозируемый заработок Robux: {robuxAmount}{divOneEnd}{divTwoStart}(на основании вовлечённости пользователей Premium в период с {start} по {end}){divTwoEnd}",
     "isDeprecated": false
   },
   {
@@ -40348,7 +40604,7 @@
     "key": "Description.PremiumStatsNote",
     "description": null,
     "english": "Premium stats are all calculated per experience in Central Standard Time (CST).",
-    "translation": "Вся статистика рассчитывается для каждой игры по центральному стандартному времени (CST).",
+    "translation": "Статистика Premium рассчитывается отдельно по каждому проекту по центральному стандартному времени (CST).",
     "isDeprecated": false
   },
   {
@@ -47577,6 +47833,14 @@
   },
   {
     "namespace": "Feature.Accessibility",
+    "key": "Description.AccessibilityStatement",
+    "description": null,
+    "english": "Roblox is committed to making its websites usable by all people, including those with disabilities by meeting or exceeding the requirements of the Web Content Accessibility Guidelines 2.1 Level A/AA (WCAG 2.1 A/AA).  We strive to make our sites an equal experience for everyone.{lineBreak}We continue to monitor our sites and make sure that all content provided is accessible to all visitors.  In order to help us in this process, we have engaged {linkStart}The Bureau of Internet Accessibility{linkEnd}, an accessibility consulting company, to conduct a full accessibility audit consisting of both automated and manual testing of our websites using BoIA’s A11Y® platform which provides us with specific recommendations that will assist us in ensuring that our Web presence is in conformance with the WCAG 2.1 A/AA.  \n",
+    "translation": "Roblox стремится к тому, чтобы наши веб-сайты были доступны всем пользователям, включая людей с ограниченными возможностями, поэтому мы стараемся отвечать требованиям Руководства по обеспечению доступности веб-контента (WCAG 2.1 A/AA). Мы хотим, чтобы использование наших веб-сайтов было доступно для всех.{lineBreak}Мы продолжаем вести контроль за нашими веб-сайтами, обращая внимание на то, чтобы наш контент был доступен всем посетителям. Чтобы получить помощь в данном процессе, мы сотрудничаем с консультационной компанией {linkStart}The Bureau of Internet Accessibility{linkEnd}, занимающейся доступностью интернета, для проведения аудита, состоящего из автоматизированного и ручного тестирования наших веб-сайтов с использованием платформы BoIA’s A11Y®, которая предоставляет нам определённые рекомендации, которые помогут нам удостовериться в том, что наше сетевое присутствие соответствует WCAG 2.1 A/AA.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
     "key": "Heading.AccessibilityStatement",
     "description": null,
     "english": "Accessibility Statement",
@@ -47597,6 +47861,22 @@
     "description": null,
     "english": "Third Party Applications",
     "translation": "Приложения третьих сторон",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.Disclaimer",
+    "description": null,
+    "english": "It is important to note that efforts to the websites are ongoing as we work to implement the relevant improvements to meet WCAG 2.1 A/AA guidelines over time.",
+    "translation": "Важно отметить, что усилия по улучшению веб-сайтов в соответствии с Руководством по обеспечению доступности веб-контента (WCAG 2.1 A/AA) производятся на постоянной основе.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.ThirdPartyApplications",
+    "description": null,
+    "english": "While you are visiting our sites, you will notice that we make use of third-party sites such as Facebook, Instagram, Glassdoor, Twitch, YouTube, LinkedIn and Twitter to provide information about Roblox.  Though individuals may have challenges with access to these particular sites, Roblox does not control or remedy the way content is portrayed.",
+    "translation": "Во время посещения нашего веб-сайта можно заметить, что мы пользуемся услугами таких компаний как Facebook, Instagram, Glassdoor, Twitch, YouTube, LinkedIn and Twitter для распространения информации о Roblox. Возможно. не у всех пользователей есть доступ к таким веб-сайтам, но Roblox никаким образом не регулирует содержимое таких страниц.",
     "isDeprecated": false
   },
   {
