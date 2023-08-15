@@ -592,6 +592,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.VerificationError",
+    "description": null,
+    "english": "System error occurred during verification.",
+    "translation": "認証中にシステムエラーが発生しました。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -2020,7 +2028,7 @@
     "key": "Message.PhoneForUsernameSuccessBody",
     "description": null,
     "english": "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account.",
-    "translation": "過去にアカウントで電話番号の認証を行ったことがある場合は、ユーザーネームが記載されたSMSメッセージを送信しています。",
+    "translation": "過去にアカウントで電話番号の認証を行ったことがある場合は、ユーザーネームが記載されたショートメッセージを送信しています。",
     "isDeprecated": false
   },
   {
@@ -23968,6 +23976,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.HomePageUpsellCardAddPhoneOrEmailText",
+    "description": null,
+    "english": "Add your phone number or email so you don’t lose access to your friends, avatars and Robux.",
+    "translation": "友達やアバター、Robuxにアクセスし続けるには、電話番号かメールアドレスを追加してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.AddPhoneOrEmail",
+    "description": "Launches modal which allows user to enter a phone or email.",
+    "english": "Add Phone or Email",
+    "translation": "電話番号かメールアドレスを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.AddPhoneInstead",
+    "description": null,
+    "english": "Add Phone Instead",
+    "translation": "代わりに電話番号を追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.AddEmailInstead",
+    "description": null,
+    "english": "Add Email Instead",
+    "translation": "代わりにメールアドレスを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.VerificationCodeSmsFeesMayApply",
+    "description": null,
+    "english": "We will text you a verification code. SMS fees may apply.",
+    "translation": "認証コードをテキスト送信します。ショートメッセージ利用料金がかかる場合があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Label.ExampleEmailPlaceholder",
+    "description": null,
+    "english": "email@address.com",
+    "translation": "email@address.com",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "続ける",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.DesktopPushNotificationPrompts",
     "key": "Message.SendNotificationsPrompt",
     "description": "Can we send you notifications on this computer?",
@@ -26037,6 +26101,38 @@
     "description": null,
     "english": "Creator earnings in {groupName}’s Places ({creatorCutPercentage}%)",
     "translation": "{groupName} のプレースでのクリエーターの収入 ({creatorCutPercentage}%)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.TryOn",
+    "description": "Used as a button to indicate to a user they can try on an item",
+    "english": "Try On",
+    "translation": "試着する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.TakeOff",
+    "description": "Button for a user to stop trying on an item",
+    "english": "Take Off",
+    "translation": "外す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.2D",
+    "description": null,
+    "english": "2D",
+    "translation": "2D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Label.3D",
+    "description": null,
+    "english": "3D",
+    "translation": "3D",
     "isDeprecated": false
   },
   {
@@ -49132,7 +49228,7 @@
     "key": "Message.Confirmation",
     "description": null,
     "english": "We'll text your verification code to {phoneNumber}. SMS fees may apply.",
-    "translation": "認証コードを {phoneNumber} にテキスト送信します。SMS利用料金が発生する場合があります。",
+    "translation": "認証コードを {phoneNumber} にテキスト送信します。ショートメッセージ利用料金が発生する場合があります。",
     "isDeprecated": false
   },
   {
@@ -49164,7 +49260,7 @@
     "key": "Message.InvalidSmsCode",
     "description": null,
     "english": "The code is invalid.",
-    "translation": "名前が無効です。",
+    "translation": "コードが無効です。",
     "isDeprecated": false
   },
   {
@@ -60276,7 +60372,7 @@
     "key": "Description.InformationPartnerCollection",
     "description": null,
     "english": "We use the following third parties to better improve your experience on Roblox. They may use cookies and other mechanisms to track usage statistics on our website. You may opt-out of this information collection by turning the analytics toggle to the off position.",
-    "translation": "当社は、Roblox上での体験を向上させるために以下の第三者を利用しています。第三者は当社のサイト上での利用統計を追跡調査するためにクッキーやその他のメカニズムを使っているかもしれません。解析の切り替えをオフのポジションにすることで、この情報収集からオプトアウトできます。",
+    "translation": "当社は、Roblox上での体験を向上させるために以下の第三者を利用しています。第三者は当社のサイト上での利用統計を追跡調査するためにクッキーやその他のメカニズムを使っているかもしれません。解析の切り替えをオフのポジションにすることで、この情報収集にオプトアウト（不参加表明）できます。",
     "isDeprecated": false
   },
   {
