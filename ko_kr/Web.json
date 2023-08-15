@@ -668,7 +668,7 @@
     "key": "Action.LogInEmailOneTimeCode",
     "description": null,
     "english": "Email Me a One-Time Code",
-    "translation": "일회용 코드를 이메일로 보내 주세요",
+    "translation": "이메일로 일회용 코드 받기",
     "isDeprecated": false
   },
   {
@@ -925,6 +925,14 @@
     "description": "Label under heading for switching accounts on the log in page when users is logged out of active account.",
     "english": "Switch to your other logged in accounts.",
     "translation": "로그인 중인 다른 계정으로 전환합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.EmailMeALoginCode",
+    "description": null,
+    "english": "Email Me a Login Code",
+    "translation": "이메일로 \b로그인 코드 받기",
     "isDeprecated": false
   },
   {
@@ -4496,6 +4504,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Label.sSwitchAccount",
+    "description": "Switch account option on settings nav.",
+    "english": "Switch Account",
+    "translation": "계정 전환",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Presence",
     "key": "Label.Online",
     "description": null,
@@ -5997,6 +6013,14 @@
     "description": null,
     "english": "Refresh",
     "translation": "새로 고침",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.SwitchAccount",
+    "description": "Text for menu to open the account switching modal.",
+    "english": "Switch Account",
+    "translation": "계정 전환",
     "isDeprecated": false
   },
   {
@@ -28357,6 +28381,14 @@
     "description": null,
     "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
     "translation": "1인당 구매 가능한 아이템 수에 제한이 있습니다. 이는 각 크리에이터가 설정합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.ItemGrantDelay",
+    "description": "Message displayed when there will be a delay between purchasing and receiving an item.",
+    "english": "There may be a delay before you see the item in your inventory.",
+    "translation": "인벤토리에 아이템이 나타나기까지 다소 지연이 발생할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -60832,6 +60864,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.FinishAccountSetup",
+    "description": null,
+    "english": "Finish Account Setup",
+    "translation": "계정 설정 완료",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -75050,8 +75090,8 @@
   {
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpEmail2SV",
-    "description": "Button action string for the email 2-SV upsell prompt.",
-    "english": "Set Up Email 2-SV",
+    "description": "Button action string for the email 2-SV upsell prompt. Avoided the acronym \"2-SV\" for better language portability.",
+    "english": "Set Up",
     "translation": "이메일 2단계 인증 설정",
     "isDeprecated": false
   },
@@ -75725,6 +75765,94 @@
     "description": null,
     "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
     "translation": "​​사용을 클릭하면 검열 및 안전, 안전 관련 툴의 개선을 위해 Roblox가 내 음성 녹음 내용을 수집, 사용 및 저장하는 데 동의하게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VerificationSuccessful",
+    "description": null,
+    "english": "Verification Successful",
+    "translation": "인증 완료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.AccessWiderVariety",
+    "description": null,
+    "english": "You now have access to a wider variety of games.",
+    "translation": "이제 더 다양한 게임을 이용할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.DateOfBirthUpdate",
+    "description": null,
+    "english": "Roblox has automatically updated the date of birth on your account to match your ID. Verified: {dateOfBirth}.",
+    "translation": "Roblox에서 회원님의 계정에 신분증에 표기된 생년월일을 자동으로 업데이트했습니다. 인증 완료: {dateOfBirth}.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Title.CameraUpsell",
+    "description": null,
+    "english": "Bring Your Avatar To Life!",
+    "translation": "아바타에 생명력을 불어넣으세요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableCameraUpsell",
+    "description": null,
+    "english": "Enable Camera",
+    "translation": "카메라 사용",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithoutCameraUpsell",
+    "description": null,
+    "english": "Join without Camera",
+    "translation": "카메라 없이 참가하기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.CameraLearnMoreUpsell",
+    "description": null,
+    "english": "Learn More about Facial Animation Privacy",
+    "translation": "얼굴 애니메이션 개인정보 보호에 대한 자세한 정보",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CameraUpsell",
+    "description": null,
+    "english": "Enable your camera to animate your avatar with your movement in this experience.",
+    "translation": "이 체험에서 카메라를 켜고 내 움직임에 따라 아바타를 애니메이션화하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CommunityStandardsUpsell",
+    "description": null,
+    "english": "Follow our Community Standards when talking and report abuse if you hear it.",
+    "translation": "대화 시 커뮤니티 규정을 지키며, 이를 위반하는 사람이 있으면 신고해 주세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ExplicitConsentCameraUpsell",
+    "description": null,
+    "english": "I consent to Roblox's temporary use of my movements to animate my avatar.",
+    "translation": "내 아바타를 애니메이션화하기 위해 Roblox에서 일시적으로 내 움직임을 사용하는 데 동의합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.DefaultConsentCameraUpsell",
+    "description": null,
+    "english": "By clicking on enable, I consent to Roblox's temporary use of my movements to animate my avatar.",
+    "translation": "사용을 클릭하면, Roblox가 일시적으로 내 움직임을 사용해 아바타를 애니메이션화하는 데 동의하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -85491,7 +85619,7 @@
     "namespace": "CreatorDashboard.OAuth",
     "key": "Description.RedirectUrlsSection",
     "description": null,
-    "english": "To enable authentication, provide at least one URL in the specified format: https://www.MyApplication.com/redirect, when making an OAuth 2.0 request. {linkStart}Learn More{linkEnd}",
+    "english": "To enable authentication, provide at least one URL in the specified format: https://www.roblox.com/example-redirect, when making an OAuth 2.0 request. {linkStart}Learn More{linkEnd}",
     "translation": "인증을 활성화하려면 OAuth 요청 시 https://www.MyApplication.com/redirect와 같은 특정 형식의 URL을 하나 이상 제공하세요. {linkStart}자세한 정보{linkEnd}",
     "isDeprecated": false
   },
@@ -88244,7 +88372,7 @@
     "key": "Label.CategoryOauth2",
     "description": "Notification for oauth applications",
     "english": "OAuth 2.0 Apps",
-    "translation": "OAuth 앱",
+    "translation": "OAuth 2.0 앱",
     "isDeprecated": false
   },
   {
@@ -100915,7 +101043,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Title.MemoryUsage",
     "description": null,
-    "english": "Memory Usage",
+    "english": "Memory Usage by Size",
     "translation": "메모리 사용량",
     "isDeprecated": false
   },
@@ -101035,7 +101163,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.Requests",
     "description": null,
-    "english": "Requests per Second",
+    "english": "Requests per Minute",
     "translation": "요청",
     "isDeprecated": false
   },
@@ -101043,7 +101171,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.MemorySize",
     "description": null,
-    "english": "Memory Size (Bytes)",
+    "english": "Bytes",
     "translation": "메모리 크기(B)",
     "isDeprecated": false
   },
@@ -101083,7 +101211,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Unit.Bytes",
     "description": null,
-    "english": "Memory Size (Bytes)",
+    "english": "Bytes",
     "translation": "메모리 크기(B)",
     "isDeprecated": false
   },
@@ -101091,7 +101219,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Unit.Requests",
     "description": null,
-    "english": "Requests per Second",
+    "english": "Requests per Minute",
     "translation": "요청",
     "isDeprecated": false
   },
@@ -102100,7 +102228,7 @@
     "key": "Header.D1RetentionBelow50Percentile",
     "description": "day 1 retention (D1 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "🔁 Improve core loop & onboarding",
-    "translation": "🔁 핵심 루프 및 온보딩 개선",
+    "translation": "🔁 핵심 루프 및 온보딩 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102132,7 +102260,7 @@
     "key": "Header.D1RetentionPercentIncrease",
     "description": "day 1 retention (D1 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "📈 Day 1 retention up {value}",
-    "translation": "⬆️ 1일 유지율 {value} 증가",
+    "translation": "📈 1일 유지율 {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102156,7 +102284,7 @@
     "key": "Description.D1RetentionPercentDecrease",
     "description": "day 1 retention (D1 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "Your day 1 retention has dropped by {value} week over week. Look into user onboarding changes.",
-    "translation": "1일 유지율이 전주 대비 {value} 감소했습니다. 첫 방문 사용자 경험을 개선하세요.",
+    "translation": "1일 유지율이 전주 대비 {value} 감소했습니다. 사용자 온보딩 관련 변경 사항을 살펴보세요.",
     "isDeprecated": false
   },
   {
@@ -102172,7 +102300,7 @@
     "key": "Description.D1RetentionSixMonthHigh",
     "description": "day 1 retention (D1 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "Congrats! Your day 1 retention is at a 6-month high! Great progress getting users into the fun immediately.",
-    "translation": "축하드려요! 1일 유지율이 6개월 만에 최고 기록을 달성했네요!",
+    "translation": "축하드려요! 1일 유지율이 6개월 만에 최고 기록을 달성했네요! 사용자들로부터 즉시 긍정적인 반응을 얻고 있다는 증거입니다.",
     "isDeprecated": false
   },
   {
@@ -102180,7 +102308,7 @@
     "key": "Header.D7RetentionBelow50Percentile",
     "description": "day 7 retention (D7 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "💭 Improve user progression",
-    "translation": "🔍 사용자 진급 개선",
+    "translation": "💭 사용자 진급 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102212,7 +102340,7 @@
     "key": "Header.D7RetentionPercentIncrease",
     "description": "day 7 retention (D7 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "📈 Day 7 retention up {value}",
-    "translation": "⬆️ 7일 유지율 {value} 증가",
+    "translation": "📈 7일 유지율 {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102252,7 +102380,7 @@
     "key": "Description.D7RetentionSixMonthHigh",
     "description": "day 7 retention (D7 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "Your day 7 retention is at a 6-month high! Great progress getting users to work towards goals.",
-    "translation": "축하드려요! 7일 유지율이 6개월 만에 최고 기록을 달성했네요!",
+    "translation": "7일 유지율이 6개월 만에 최고 기록을 달성했네요! 많은 사용자들이 목표를 향해 전진하게끔 이끌어 주고 있다는 증거입니다.",
     "isDeprecated": false
   },
   {
@@ -102276,7 +102404,7 @@
     "key": "Header.D30RetentionBelow50Percentile",
     "description": "day 30 retention (D30 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "🎮 Improve long-term content",
-    "translation": "🎮 장기 콘텐츠 개선",
+    "translation": "🎮 장기 콘텐츠 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102292,7 +102420,7 @@
     "key": "Header.D30RetentionPercentIncrease",
     "description": "day 30 retention (D30 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "📈 Day 30 retention up {value}",
-    "translation": "⬆️ 30일 유지율 {value} 증가",
+    "translation": "📈 30일 유지율 {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102332,7 +102460,7 @@
     "key": "Description.D30RetentionSixMonthHigh",
     "description": "day 30 retention (D30 Retention) is the Key Performance Indicator that is shown in other charts",
     "english": "Wow! Your day 30 retention is at a 6-month high. Great progress with your late-game content updates.",
-    "translation": "와! 30일 유지율이 6개월 만에 최고 기록을 달성했네요.",
+    "translation": "30일 유지율이 6개월 만에 최고 기록을 달성했네요! 게임 후반 콘텐츠 업데이트로 큰 발전을 이루었다는 증거입니다.",
     "isDeprecated": false
   },
   {
@@ -102404,7 +102532,7 @@
     "key": "Header.AvgPlayTimeBelow50Percentile",
     "description": "session time is the Key Performance Indicator that is shown in other charts",
     "english": "⌛ Improve user engagement",
-    "translation": "⌛ 사용자 참여 개선",
+    "translation": "⌛ 사용자 참여 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102420,7 +102548,7 @@
     "key": "Header.AvgPlayTimePercentIncrease",
     "description": "session time is the Key Performance Indicator that is shown in other charts",
     "english": "📈 Session time up {value}",
-    "translation": "🔼 세션 시간 {value} 증가",
+    "translation": "📈 세션 시간 {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102460,7 +102588,7 @@
     "key": "Description.AvgPlayTimeSixMonthHigh",
     "description": "session time is the Key Performance Indicator that is shown in other charts",
     "english": "Congratulations! Your session time is at a 6-month high! See what number you reached.",
-    "translation": "축하드려요! 세션 시간이 6개월 최고 기록을 달성했네요! 여기서 멈추지 말고 계속해서 나아가세요.",
+    "translation": "축하드려요! 세션 시간이 6개월 최고 기록을 달성했네요! 몇 시간이나 되는지 확인해 보세요.",
     "isDeprecated": false
   },
   {
@@ -102500,7 +102628,7 @@
     "key": "Description.RobuxSpentSixMonthHigh",
     "description": null,
     "english": "Great job! Your revenue is at a 6-month high! Check your new revenue record.",
-    "translation": "최고 기록 돌파! 수익이 6개월 만에 최고 기록을 달성했네요!",
+    "translation": "멋지네요! 수익이 6개월 만에 최고 기록을 달성했어요! 새로운 수익 기록을 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -102524,7 +102652,7 @@
     "key": "Header.ConversionRateBelow50Percentile",
     "description": "conversion rate (CVR) is the Key Performance Indicator that is shown in other charts",
     "english": "🛒 Improve payer conversion rate",
-    "translation": "🛒 유료 사용자 전환 개선 필요",
+    "translation": "🛒 유료 사용자 전환율 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102540,7 +102668,7 @@
     "key": "Header.ConversionRatePercentIncrease",
     "description": "conversion rate (CVR) is the Key Performance Indicator that is shown in other charts",
     "english": "📈 Payer conversion up {value}",
-    "translation": "🔺 유료 사용자 전환 {value} 증가",
+    "translation": "📈 유료 사용자 전환 {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102580,7 +102708,7 @@
     "key": "Description.ConversionRateSixMonthHigh",
     "description": "conversion rate (CVR) is the Key Performance Indicator that is shown in other charts",
     "english": "New record! Your payer conversion rate is at a 6-month high! Monetization is an important signal for discovery.",
-    "translation": "최고 기록 달성! 유료 사용자 전환율이 6개월 만에 최고 기록을 달성했네요!",
+    "translation": "최고 기록 달성! 유료 사용자 전환율이 6개월 만에 최고 기록을 달성했네요! 수익 창출은 발견을 위한 중요한 신호입니다.",
     "isDeprecated": false
   },
   {
@@ -102620,7 +102748,7 @@
     "key": "Header.ArppuBelow50Percentile",
     "description": "ARPPU (average revenue per paying user) is the Key Performance Indicator that is shown in other charts",
     "english": "💳 Improve ARPPU",
-    "translation": "🧐 ARPPU 개선 필요",
+    "translation": "💳 ARPPU 개선 필요",
     "isDeprecated": false
   },
   {
@@ -102636,7 +102764,7 @@
     "key": "Header.ArppuPercentIncrease",
     "description": "ARPPU (average revenue per paying user) is the Key Performance Indicator that is shown in other charts",
     "english": "📈 ARPPU up {value}",
-    "translation": "🔺 ARPPU {value} 증가",
+    "translation": "📈 ARPPU {value} 증가",
     "isDeprecated": false
   },
   {
@@ -102644,7 +102772,7 @@
     "key": "Description.ArppuPercentIncrease",
     "description": "ARPPU (average revenue per paying user) is the Key Performance Indicator that is shown in other charts",
     "english": "Your average revenue per paying user has grown by {value} week over week. Well done!",
-    "translation": "ARPPU가 전주 대비 {value} 증가했습니다. 멋지네요!",
+    "translation": "유료 사용자당 평균 수익이 전주 대비 {value} 증가했습니다. 멋지네요!",
     "isDeprecated": false
   },
   {
@@ -102676,7 +102804,7 @@
     "key": "Description.ArppuSixMonthHigh",
     "description": "ARPPU (average revenue per paying user) is the Key Performance Indicator that is shown in other charts",
     "english": "It's working! Your average revenue per paying user is at a 6-month high! See your new peak.",
-    "translation": "최고 기록 달성! ARPPU가 6개월 만에 최고 기록을 달성했네요!",
+    "translation": "착착 진행 중이네요! 유료 사용자당 평균 수익이 6개월 만에 최고 기록을 달성했어요! 최정상 탈환의 기록을 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -102788,7 +102916,7 @@
     "key": "Description.NewUsersSixMonthHigh",
     "description": null,
     "english": "Amazing! Your new users are at a 6-month high! See where they came from.",
-    "translation": "최고 기록 달성! 신규 사용자가 6개월 만에 최고 기록을 달성했네요! 사용자 수를 확인하세요.",
+    "translation": "놀랍네요! 신규 사용자가 6개월 만에 최고 기록을 달성했어요! 자세한 내역을 확인해 보세요.",
     "isDeprecated": false
   },
   {
@@ -102820,7 +102948,7 @@
     "key": "Description.DauPercentIncreaseV2",
     "description": null,
     "english": "Your daily active users has increased by {value} week over week. Great job!",
-    "translation": "일일 활성 사용자가 전주 대비 {value} 증가했습니다. 계속 전진하세요!",
+    "translation": "일일 활성 사용자가 전주 대비 {value} 증가했습니다. 멋지네요!",
     "isDeprecated": false
   },
   {
@@ -103060,7 +103188,7 @@
     "key": "Description.ArppuBelow50PercentileV2",
     "description": "V2 version with link templates for charts.",
     "english": "Your {linkStart}average revenue per paying user{linkEnd} is lower than 50% of similar experiences. This may impact your discovery on Roblox.",
-    "translation": "{linkStart}ARPPU{linkEnd}가 유사한 체험의 50% 미만입니다. 구매 가능한 아이템 추가를 고려해 보세요.",
+    "translation": "{linkStart}ARPPU{linkEnd}가 유사한 체험의 50% 미만입니다. 이는 Roblox에서의 검색 및 발견에 영향을 미칠 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -103076,7 +103204,7 @@
     "key": "Description.AvgPlayTimeBelow50PercentileV2",
     "description": null,
     "english": "Your {linkStart}session time{linkEnd} is below 50% of similar experiences. Focus on getting new users into the fun immediately.",
-    "translation": "{linkStart}세션 시간{linkEnd}이 유사한 체험의 50% 미만입니다. 먼저 이 메트릭을 개선하는 데 집중하세요.",
+    "translation": "{linkStart}세션 시간{linkEnd}이 유사한 체험의 50% 미만입니다. 신규 사용자에게 즉각적인 재미를 선사하는 요소를 개발하는 데 집중하세요.",
     "isDeprecated": false
   },
   {
@@ -103084,7 +103212,7 @@
     "key": "Description.ConversionRateBelow50PercentileV2",
     "description": null,
     "english": "Your {linkStart}payer conversion{linkEnd} is lower than 50% of similar experiences. This may impact your discovery on Roblox.",
-    "translation": "{linkStart}유료 사용자 전환{linkEnd}이 유사한 체험의 50% 미만입니다. 사용자가 상점을 더욱 쉽게 방문할 수 있도록 체험을 개선해 보세요.",
+    "translation": "{linkStart}유료 사용자 전환{linkEnd}이 유사한 체험의 50% 미만입니다. 이는 Roblox에서의 검색 및 발견에 영향을 미칠 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -103092,7 +103220,7 @@
     "key": "Description.D1RetentionBelow50PercentileV2",
     "description": null,
     "english": "Your {linkStart}day 1 retention{linkEnd} is below 50% of similar experiences. Focus on your core loop and new user onboarding.",
-    "translation": "{linkStart}1일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 핵심 루프를 개선하세요.",
+    "translation": "{linkStart}1일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 핵심 루프와 신규 사용자 온보딩에 집중하세요.",
     "isDeprecated": false
   },
   {
@@ -103100,7 +103228,7 @@
     "key": "Description.D30RetentionBelow50PercentileV2",
     "description": null,
     "english": "Your {linkStart}day 30 retention{linkEnd} is lower than 50% of similar experiences. Invest in content for long-term users.",
-    "translation": "{linkStart}30일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 엔드 게임 콘텐츠 추가를 고려해 보세요.",
+    "translation": "{linkStart}30일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 장기 사용자를 위한 콘텐츠에 투자하세요.",
     "isDeprecated": false
   },
   {
@@ -103108,7 +103236,271 @@
     "key": "Description.D7RetentionBelow50PercentileV2",
     "description": null,
     "english": "Your {linkStart}day 7 retention{linkEnd} is lower than 50% of similar experiences. Give users more goals to work towards.",
-    "translation": "{linkStart}7일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 사용자 진급 시스템을 개선하세요.",
+    "translation": "{linkStart}7일 유지율{linkEnd}이 유사한 체험의 50% 미만입니다. 사용자가 수행할 수 있는 더 많은 목표를 제공하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Action.SnoozeV2",
+    "description": null,
+    "english": "Snooze for {value} days",
+    "translation": "{value}일 후 다시 알림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.D1RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "❤️ Top {value} day 1 retention",
+    "translation": "❤️ 1일 유지율 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D1RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "Great job! Your day 1 retention is in the top {value} of similar experiences.",
+    "translation": "멋지네요! 1일 유지율이 유사한 체험 중 상위 {value}(을)를 기록했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.D1RetentionPercentDecreaseV2",
+    "description": null,
+    "english": "🔍 Day 1 retention opportunity",
+    "translation": "🔍 1일 유지율 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D7RetentionPercentDecreaseV3",
+    "description": null,
+    "english": "Your {linkStart}day 7 retention{linkEnd} has dropped by {value} week over week. Look into user progression changes.",
+    "translation": "{linkStart}7일 유지율{linkEnd}이 전주 대비 {value} 감소했습니다. 사용자 진급의 변경 내역을 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D1RetentionPercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}day 1 retention{linkEnd} has dropped by {value} week over week. Look into user onboarding changes.",
+    "translation": "{linkStart}1일 유지율{linkEnd}이 전주 대비 {value} 감소했습니다. 사용자 온보딩의 변경 내역을 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D30RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "Your day 30 retention is in the top {value} of similar experiences. Great job!",
+    "translation": "30일 유지율이 유사한 체험 중 상위 {value}(을)를 기록했습니다. 훌륭하네요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D30RetentionPercentDecreaseV3",
+    "description": null,
+    "english": "Your {linkStart}day 30 retention{linkEnd} has dropped by {value} week over week. Look into content for long-term users.",
+    "translation": "{linkStart}30일 유지율{linkEnd}이 전주 대비 {value} 감소했습니다. 장기 사용자를 위한 콘텐츠를 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.DauPercentDecreaseV2",
+    "description": null,
+    "english": "🔍 Daily user opportunity",
+    "translation": "🔍 일일 사용자 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.DauPercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}daily active users{linkEnd} have dropped by {value} week over week. Check your engagement metrics.",
+    "translation": "{linkStart}일일 활성 사용자{linkEnd}가 전주 대비 {value} 감소했습니다. 참여도 메트릭을 확인하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.D30RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "💛 Top {value} day 30 retention",
+    "translation": "💛 30일 유지율 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.D7RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "💜 Top {value} day 7 retention",
+    "translation": "💜 7일 유지율 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.D7RetentionAbove90PercentileV2",
+    "description": null,
+    "english": "Your day 7 retention is in the top {value} of similar experiences. Great job on user progression.",
+    "translation": "7일 유지율이 유사한 체험 중 상위 {value}(을)를 기록했습니다. 사용자 진급이 훌륭합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.AvgPlayTimeAbove90PercentileV2",
+    "description": null,
+    "english": "🌟 Top {value} session time",
+    "translation": "🌟 세션 시간 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.AvgPlayTimeAbove90PercentileV2",
+    "description": null,
+    "english": "Your session time is in the top {value} of similar experiences. People love your experience!",
+    "translation": "세션 시간이 유사한 체험 중 상위 {value}(을)를 기록했습니다. 체험이 많은 사랑을 받고 있네요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.AvgPlayTimePercentDecreaseV2",
+    "description": null,
+    "english": "🔍 Session time opportunity",
+    "translation": "🔍 세션 시간 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.AvgPlayTimePercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}session time{linkEnd} has dropped by {value} week over week. Look into your core loop and new user onboarding.",
+    "translation": "{linkStart}세션 시간{linkEnd}이 전주 대비 {value} 감소했습니다. 핵심 루프와 신규 사용자 온보딩을 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.RobuxSpentPercentDecreaseV2",
+    "description": null,
+    "english": "💡 Revenue opportunity",
+    "translation": "💡 수익 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.RobuxSpentPercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}revenue{linkEnd} has fallen by {value} week over week. Get tips on how you can grow revenue.",
+    "translation": "{linkStart}수익{linkEnd}이 전주 대비 {value} 감소했습니다. 수익을 늘릴 수 있는 방법에 대한 팁을 얻으세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.ConversionRateAbove90PercentileV2",
+    "description": null,
+    "english": "🏆 Top {value} payer conversion",
+    "translation": "🏆 유료 사용자 전환 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.ConversionRateAbove90PercentileV2",
+    "description": null,
+    "english": "Your payer conversion is in the top {value} of similar experiences. Great job monetizing your experience!",
+    "translation": "유료 사용자 전환이 유사한 체험 중 상위 {value}(을)를 기록했습니다. 수익 창출 부문에서 훌륭한 성과를 달성하셨네요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.ConversionRatePercentDecreaseV2",
+    "description": null,
+    "english": "💡 Payer conversion opportunity",
+    "translation": "💡 유료 사용자 전환 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.ConversionRatePercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}payer conversion{linkEnd} has fallen by {value} week over week. Look into your first time purchase funnel.",
+    "translation": "{linkStart}유료 사용자 전환{linkEnd}이 전주 대비 {value} 감소했습니다. 최초 구매 유입 경로를 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.ArppuAbove90PercentileV2",
+    "description": null,
+    "english": "🎁 Top {value} ARPPU",
+    "translation": "🎁 ARPPU 상위 {value}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.ArppuAbove90PercentileV2",
+    "description": null,
+    "english": "Your average revenue per paying user is in the top {value} of similar experiences. Great job monetizing your experience!",
+    "translation": "ARPPU가 유사한 체험 중 상위 {value}(을)를 기록했습니다. 수익 창출 부문에서 훌륭한 성과를 달성하셨네요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.ArppuPercentDecreaseV2",
+    "description": null,
+    "english": "💡 ARPPU opportunity",
+    "translation": "💡 ARPPU 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.ArppuPercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}average revenue per paying user{linkEnd} has fallen by {value} week over week. Look into repeat purchases.",
+    "translation": "{linkStart}유료 사용자당 평균 수익{linkEnd}이 전주 대비 {value} 감소했습니다. 반복 구매 항목을 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.NewUsersPercentDecreaseV2",
+    "description": null,
+    "english": "Your {linkStart}new users{linkEnd} have fallen by {value} week over week. See what changed.",
+    "translation": "{linkStart}신규 사용자{linkEnd}가 전주 대비 {value} 감소했습니다. 변화를 살펴보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.NewUsersPercentDecreaseV2",
+    "description": null,
+    "english": "🍂 New user opportunity",
+    "translation": "🍂 신규 사용자 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Header.OrganicAcquisitionConversionPercentDecreaseV2",
+    "description": null,
+    "english": "🔍 Home conversion opportunity",
+    "translation": "🔍 홈 전환 개선 기회",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Description.OrganicAcquisitionConversionPercentDecreaseV2",
+    "description": null,
+    "english": "Your home and search {linkStart}conversion rate{linkEnd} has fallen by {value} week over week. Learn how to improve it.",
+    "translation": "홈 및 검색 {linkStart}전환율{linkEnd}이 전주 대비 {value} 감소했습니다. 개선 방법에 대해 알아보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Action.Snooze.Snackbar.Success",
+    "description": "Shown when an insight has been successfully snoozed.",
+    "english": "This insight has been snoozed for {value} days",
+    "translation": "{value}일 후 인사이트를 다시 알립니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Insights",
+    "key": "Action.Snooze.Snackbar.Failure",
+    "description": null,
+    "english": "Something went wrong, please try again later",
+    "translation": "오류 발생. 나중에 다시 시도하세요",
     "isDeprecated": false
   },
   {
