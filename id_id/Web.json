@@ -936,6 +936,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogoutFirst",
+    "description": "Message shown on login form to tell users they must logout first in order to login to another account after they reach account switching limit.",
+    "english": "You must log out of an account first.",
+    "translation": "Akun kamu harus log out terlebih dahulu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogBackIn",
+    "description": "Message shown on login form to tell user to log back into the account that was either logged out or cookie was invalid.",
+    "english": "Your account {display_name} is logged out, please log back in.",
+    "translation": "Akun {display_name} kamu telah log out. Harap log in kembali.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.LoginRequired",
+    "description": "Login form heading when telling user to log back into an account that was just logged out or cookie was invalid.",
+    "english": "Login Required",
+    "translation": "Log In Diperlukan",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -56212,7 +56236,7 @@
     "key": "Label.AbuseType.Advertising.Note",
     "description": null,
     "english": "Roblox does not allow this type of advertisement. Please ensure your ad content complies with the Roblox Advertising Standards.",
-    "translation": "Roblox tidak mengizinkan iklan yang melanggar Standar Komunitas atau Ketentuan Layanan.",
+    "translation": "Roblox tidak mengizinkan tipe iklan ini. Pastikan konten iklan kamu mematuhi Standar Periklanan Roblox.",
     "isDeprecated": false
   },
   {
@@ -64964,7 +64988,7 @@
     "key": "Action.SetUpEmail2SV",
     "description": "Button action string for the email 2-SV upsell prompt. Avoided the acronym \"2-SV\" for better language portability.",
     "english": "Set Up",
-    "translation": "Atur Verifikasi Dua Langkah dengan Email",
+    "translation": "Atur",
     "isDeprecated": false
   },
   {
@@ -69817,6 +69841,14 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeDeprecated",
+    "description": "Cloud services alert fired.",
+    "english": "Cloud Services Alert",
+    "translation": "Peringatan Layanan Cloud",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Label.CategoryCloudServices",
     "description": null,
     "english": "Cloud Services",
@@ -69837,6 +69869,54 @@
     "description": null,
     "english": "There are issues related to Cloud Services in your experiences.",
     "translation": "Ada masalah terkait dengan Layanan Cloud di pengalaman virtual kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCloudServicesNotification",
+    "description": null,
+    "english": "Cloud Services Notification",
+    "translation": "Notifikasi Layanan Cloud",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CategoryCreatorOutreach",
+    "description": null,
+    "english": "Creator Outreach",
+    "translation": "Komunikasi Kreator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCreatorSentimentSurvey",
+    "description": null,
+    "english": "Creator Sentiment Survey",
+    "translation": "Survey Masukan Kreator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeCreatorFeedbackSurvey",
+    "description": null,
+    "english": "Creator Feedback Survey",
+    "translation": "Survey Masukan Kreator",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypeCreatorFeedbackSurvey",
+    "description": null,
+    "english": "I am selected for a feedback survey",
+    "translation": "Saya terpilih untuk mengisi survei masukan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CategoryCreatorOutreach",
+    "description": null,
+    "english": "Creator Outreach notifications, such as invitations to participate in surveys.",
+    "translation": "Notifikasi Komunikasi Kreator, seperti undangan untuk berpartisipasi dalam survei.",
     "isDeprecated": false
   },
   {
@@ -72912,6 +72992,134 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountLimit",
+    "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
+    "english": "You have reached account limit. You must log out of at least one account to add new account.",
+    "translation": "Batas akun telah tercapai. Kamu harus log out dari setidaknya satu akun untuk dapat menambahkan akun baru.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresThrottling",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: More than 10% of Memory Store API requests are being throttled for the past hour.\n\nView a detailed breakdown here: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Lebih dari 10% permintaan API Layanan Penyimpanan Memori mengalami pembatasan dalam satu jam terakhir.\n\nLihat detail di sini: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreSizeThreshold",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size is above 90% of total quota for the past hour.\n\nView a detailed breakdown here: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Ukuran memori telah melebihi 90% dari kuota total selama 1 jam terakhir.\n\nLihat detail di sini: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresSizeAboveThreshold",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size quota has been reached for the past 5 minutes.\n\nView a detailed breakdown here: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Kuota ukuran memori telah telah tercapai selama 5 menit terakhir.\n\nLihat detail di sini: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresFailures",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory Store request failures are above 20% for the past 10 minutes.\n\nView a detailed breakdown here: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Kegagalan permintaan Penyimpanan Memori telah melebihi 20% selama 10 menit terakhir.\n\nLihat detail di sini: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated1",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated2",
+    "description": null,
+    "english": "Why are you reporting this person's profile?",
+    "translation": "Kenapa kamu melaporkan profil pengguna ini?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated3",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.BullyingHarassment",
+    "description": null,
+    "english": "Bullying, harassment, or hate speech",
+    "translation": "Perundungan, pelecehan, atau ujaran kebencian",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ProfileReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this person's profile?",
+    "translation": "Kenapa kamu melaporkan profil pengguna ini?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ProfileReportHeading",
+    "description": null,
+    "english": "Report Profile",
+    "translation": "Laporkan Profil",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.CheatingScamming",
+    "description": null,
+    "english": "Cheating, scamming, or spamming",
+    "translation": "Kecurangan, penipuan, atau spam",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Dating",
+    "description": null,
+    "english": "Dating or sexual content",
+    "translation": "Berkencan atau konten seksual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Suicide",
+    "description": null,
+    "english": "Suicide or self-harm",
+    "translation": "Bunuh diri atau menyakiti diri sendiri",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.PII",
+    "description": null,
+    "english": "Personal information (asking for it, or giving it)",
+    "translation": "Informasi pribadi (meminta atau memberikan)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Violence",
+    "description": null,
+    "english": "Violence or terrorism",
+    "translation": "Kekerasan atau terorisme",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.Politics",
     "description": null,
@@ -72921,10 +73129,66 @@
   },
   {
     "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Other",
+    "description": null,
+    "english": "Something else",
+    "translation": "Lainnya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.Cancel",
     "description": null,
     "english": "Cancel",
-    "translation": "Batal",
+    "translation": "Batalkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Summary",
+    "description": null,
+    "english": "Report Summary",
+    "translation": "Ringkasan Laporan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Submit",
+    "description": null,
+    "english": "Submit Report",
+    "translation": "Kirim Laporan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.DeliveredMessage",
+    "description": null,
+    "english": "Report Delivered to the Roblox Team",
+    "translation": "Laporan telah disampaikan kepada Tim Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ConfirmationMessage",
+    "description": null,
+    "english": "Your feedback helps us protect and improve the Roblox community. We will review your report very soon, and we'll take every action necessary to keep you safe. ",
+    "translation": "Masukan kamu membantu kami melindungi dan meningkatkan komunitas Roblox. Kami akan me-review laporan kamu secepatnya dan mengambil tindakan yang diperlukan untuk menjaga keamanan kamu. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ItemReportHeading",
+    "description": null,
+    "english": "Report Item",
+    "translation": "Laporkan Item",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ItemReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this item?",
+    "translation": "Kenapa kamu melaporkan item ini?",
     "isDeprecated": false
   },
   {
@@ -72933,6 +73197,38 @@
     "description": null,
     "english": "Political Content",
     "translation": "Konten Politis",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.IllegalContent",
+    "description": null,
+    "english": "Illegal Content",
+    "translation": "Konten Ilegal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ExperienceReportHeading",
+    "description": null,
+    "english": "Report Experience",
+    "translation": "Laporkan Pengalaman Virtual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ExperienceReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this experience?",
+    "translation": "Kenapa kamu melaporkan pengalaman virtual ini?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated4",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
     "isDeprecated": false
   }
 ]

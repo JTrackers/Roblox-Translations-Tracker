@@ -4,7 +4,7 @@
     "key": "Action.Login",
     "description": null,
     "english": "Login",
-    "translation": "เข้าสู่ระบบ",
+    "translation": "ลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -28,7 +28,7 @@
     "key": "Label.Login",
     "description": null,
     "english": "Log in",
-    "translation": "เข้าสู่ระบบ",
+    "translation": "ลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -36,7 +36,7 @@
     "key": "Label.NotAMember",
     "description": null,
     "english": "Not a member?",
-    "translation": "ไม่ใช่สมาชิกอย่างนั้นหรือ?",
+    "translation": "ไม่ได้เป็นสมาชิกใช่ไหม?",
     "isDeprecated": false
   },
   {
@@ -1116,7 +1116,7 @@
     "key": "Label.CaptchaTitleQuestion",
     "description": null,
     "english": "Are you a human?",
-    "translation": "คุณเป็นมนุษย์หรือเปล่า?",
+    "translation": "คุณเป็นมนุษย์ใช่หรือไม่?",
     "isDeprecated": false
   },
   {
@@ -1124,7 +1124,7 @@
     "key": "Label.CaptchaTryAgain",
     "description": null,
     "english": "The text entered did not match the image.  Please try again!",
-    "translation": "ข้อความที่ป้อนไม่ตรงกับภาพ กรุณาลองใหม่อีกครั้ง!",
+    "translation": "ข้อความที่กรอกไม่ตรงกับภาพ โปรดลองอีกครั้ง!",
     "isDeprecated": false
   },
   {
@@ -3556,7 +3556,7 @@
     "key": "Label.ArchivedMessages",
     "description": null,
     "english": "Archive",
-    "translation": "จัดเก็บ",
+    "translation": "เก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -3636,7 +3636,7 @@
     "key": "Label.UnarchivedMessages",
     "description": null,
     "english": "Unarchive",
-    "translation": "เลิกจัดเก็บ",
+    "translation": "เลิกเก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -3724,7 +3724,7 @@
     "key": "Label.UnsupportedDevicePlayError",
     "description": null,
     "english": "Roblox Mobile currently supports Experiences on iPhone 4+, iPad 2+, and iPod touch 5th gen.",
-    "translation": "แอป Roblox สำหรับโทรศัพท์มือถือตอนนี้รองรับ iPhone 4 ขึ้นไป, iPad 2 ขึ้นไป และ iPod touch (รุ่นที่ 5)",
+    "translation": "แอป Roblox สำหรับโทรศัพท์มือถือขณะนี้รองรับ iPhone 4 ขึ้นไป, iPad 2 ขึ้นไป และ iPod touch (รุ่นที่ 5)",
     "isDeprecated": false
   },
   {
@@ -4273,6 +4273,14 @@
   },
   {
     "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.PreviousReceiptProcessed",
+    "description": null,
+    "english": "Previous receipt has been processed. Please retry purchase. If this problem persists, sign out of iTunes and signing back in.",
+    "translation": "ใบเสร็จก่อนหน้าได้รับการประมวลผลแล้ว โปรดทำการซื้ออีกครั้ง หากยังคงเกิดปัญหาอยู่ ให้ลงชื่อออกจาก iTunes แล้วลงชื่อเข้าใช้อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
     "key": "Response.PurchasingInvalidPurchase",
     "description": null,
     "english": "Sorry, your transaction could not be completed.",
@@ -4305,10 +4313,66 @@
   },
   {
     "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.TransactionDelayedBody",
+    "description": null,
+    "english": "Your purchase is delayed. Please retry later.",
+    "translation": "การซื้อของคุณมีความล่าช้า โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
     "key": "Response.TransactionFailedBody",
     "description": null,
     "english": "Purchase failed.",
     "translation": "ทำการซื้อไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.UserNeedsToSignIn",
+    "description": null,
+    "english": "Roblox User {var1} needs to login to complete the pending purchase before you can buy.",
+    "translation": "ผู้ใช้ Roblox {var1} จำเป็นต้องลงชื่อเข้าใช้เพื่อทำการซื้อที่รอดำเนินการอยู่ก่อนที่คุณจะสามารถซื้อได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.WaitForAnotherBCPurchase",
+    "description": null,
+    "english": "A Builders Club purchase was recently made. Please wait before making another Builders Club purchase.",
+    "translation": "คุณเพิ่งทำการซื้อ Builders Club โปรดรอสักครู่ก่อนทำการซื้อ Builders Club อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.WaitForAnotherCatalogPurchase",
+    "description": null,
+    "english": "A Catalog purchase was recently made. Please wait before making another Catalog purchase.",
+    "translation": "คุณเพิ่งทำการซื้อในแค็ตตาล็อกเมื่อไม่นานนี้ โปรดรอสักครู่ก่อนทำการซื้อในแค็ตตาล็อกอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.WaitForAnotherRobuxPurchase",
+    "description": null,
+    "english": "A Robux purchase was recently made. Please wait before making another Robux purchase.",
+    "translation": "คุณเพิ่งทำการซื้อ Robux เมื่อไม่นานนี้ โปรดรอสักครู่ก่อนทำการซื้อ Robux อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.PreviousPurchaseInProgress",
+    "description": null,
+    "english": "Attempting to process a previous incomplete purchase.",
+    "translation": "กำลังพยายามประมวลผลการซื้อที่ไม่สมบูรณ์ก่อนหน้านี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RobloxProducts",
+    "key": "Response.OtherAppStoreError",
+    "description": null,
+    "english": "You have canceled this purchase or an error has occurred. You have not been charged.  Please try again later.",
+    "translation": "คุณยังไม่ถูกเรียกเก็บเงินเนื่องจากคุณยกเลิกการซื้อนี้หรือมีข้อผิดพลาดเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -4950,6 +5014,14 @@
     "english": "Monthly",
     "translation": "รายเดือน",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CopyrightedAudioRemoved",
+    "description": "The subject of the message sent to users when copyrighted audio is removed.",
+    "english": "Copyrighted Audio Removed",
+    "translation": "ลบเสียงที่มีลิขสิทธิ์แล้ว",
+    "isDeprecated": true
   },
   {
     "namespace": "Common.GameSorts",
@@ -6620,7 +6692,7 @@
     "key": "Label.ModerateDiscussion",
     "description": null,
     "english": "Moderate Discussion",
-    "translation": "การควบคุมการสนทนา",
+    "translation": "การกลั่นกรองการสนทนา",
     "isDeprecated": false
   },
   {

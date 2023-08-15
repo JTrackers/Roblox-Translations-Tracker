@@ -28289,6 +28289,14 @@
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.ItemGrantDelay",
+    "description": "Message displayed when there will be a delay between purchasing and receiving an item.",
+    "english": "There may be a delay before you see the item in your inventory.",
+    "translation": "道具栏可能会延迟显示道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
     "key": "Action.Done",
     "description": null,
     "english": "Done",
@@ -101131,7 +101139,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.ApiRequestQuota",
     "description": null,
-    "english": "Quota Request Units",
+    "english": "Request Unit Quota",
     "translation": "配额请求单位",
     "isDeprecated": false
   },
@@ -101139,7 +101147,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.ApiRequestUnits",
     "description": null,
-    "english": "Total Request Units",
+    "english": "Request Unit Usage",
     "translation": "总请求单位",
     "isDeprecated": false
   },
@@ -101235,7 +101243,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.MemorySizeUsage",
     "description": null,
-    "english": "Memory Size Usage",
+    "english": "Memory Usage",
     "translation": "内存大小容量",
     "isDeprecated": false
   },
@@ -101243,7 +101251,7 @@
     "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.MemorySizeQuota",
     "description": null,
-    "english": "Memory Size Quota",
+    "english": "Memory Quota",
     "translation": "内存大小配额",
     "isDeprecated": false
   },
@@ -101473,10 +101481,354 @@
   },
   {
     "namespace": "CreatorDashboard.CloudServices",
+    "key": "Title.RequestsByApiStatus",
+    "description": null,
+    "english": "Request Count by API x Status",
+    "translation": "按照 API & 状态的请求数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
     "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.Ok",
     "description": null,
     "english": "SortedMap.Get x Ok",
     "translation": "SortedMap.Get x Ok",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.NoContent",
+    "description": null,
+    "english": "SortedMap.Get x NoContent",
+    "translation": "SortedMap.Get x NoContent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.BytesQuotaExceeded",
+    "description": null,
+    "english": "SortedMap.Get x BytesQuotaExceeded",
+    "translation": "SortedMap.Get x BytesQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.Conflict",
+    "description": null,
+    "english": "SortedMap.Get x Conflict",
+    "translation": "SortedMap.Get x Conflict",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.Forbidden",
+    "description": null,
+    "english": "SortedMap.Get x Forbidden",
+    "translation": "SortedMap.Get x Forbidden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.Internal",
+    "description": null,
+    "english": "SortedMap.Get x Internal",
+    "translation": "SortedMap.Get x Internal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.InvalidRequest",
+    "description": null,
+    "english": "SortedMap.Get x InvalidRequest",
+    "translation": "SortedMap.Get x InvalidRequest",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.ItemCountQuotaExceeded",
+    "description": null,
+    "english": "SortedMap.Get x ItemCountQuotaExceeded",
+    "translation": "SortedMap.Get x ItemCountQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.TooManyObjectRequests",
+    "description": null,
+    "english": "SortedMap.Get x TooManyObjectRequests",
+    "translation": "SortedMap.Get x TooManyObjectRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.TooManyUniverseRequests",
+    "description": null,
+    "english": "SortedMap.Get x TooManyUniverseRequests",
+    "translation": "SortedMap.Get x TooManyUniverseRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.UniverseQuotaExceeded",
+    "description": null,
+    "english": "SortedMapGet x UniverseQuotaExceeded",
+    "translation": "SortedMapGet x UniverseQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.SortedMapGet.Status.ValueTooLong",
+    "description": null,
+    "english": "SortedMap.Get x ValueTooLong",
+    "translation": "SortedMap.Get x ValueTooLong",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.BytesQuotaExceeded",
+    "description": null,
+    "english": "Queue.Add x BytesQuotaExceeded",
+    "translation": "Queue.Add x BytesQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.Conflict",
+    "description": null,
+    "english": "Queue.Add x Conflict",
+    "translation": "Queue.Add x Conflict",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.Forbidden",
+    "description": null,
+    "english": "Queue.Add x Forbidden",
+    "translation": "Queue.Add x Forbidden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.Internal",
+    "description": null,
+    "english": "Queue.Add x Internal",
+    "translation": "Queue.Add x Internal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.InvalidRequest",
+    "description": null,
+    "english": "Queue.Add x InvalidRequest",
+    "translation": "Queue.Add x InvalidRequest",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.ItemCountQuotaExceeded",
+    "description": null,
+    "english": "Queue.Add x ItemCountQuotaExceeded",
+    "translation": "Queue.Add x ItemCountQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.NoContent",
+    "description": null,
+    "english": "Queue.Add x NoContent",
+    "translation": "Queue.Add x NoContent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.Ok",
+    "description": null,
+    "english": "Queue.Add x Ok",
+    "translation": "Queue.Add x Ok",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.TooManyObjectRequests",
+    "description": null,
+    "english": "Queue.Add x TooManyObjectRequests",
+    "translation": "Queue.Add x TooManyObjectRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.TooManyUniverseRequests",
+    "description": null,
+    "english": "Queue.Add x TooManyUniverseRequests",
+    "translation": "Queue.Add x TooManyUniverseRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.UniverseQuotaExceeded",
+    "description": null,
+    "english": "Queue.Add x UniverseQuotaExceeded",
+    "translation": "Queue.Add x UniverseQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueAdd.Status.ValueTooLong",
+    "description": null,
+    "english": "Queue.Add x ValueTooLong",
+    "translation": "Queue.Add x ValueTooLong",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.BytesQuotaExceeded",
+    "description": null,
+    "english": "Queue.Read x BytesQuotaExceeded",
+    "translation": "Queue.Read x BytesQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.Conflict",
+    "description": null,
+    "english": "Queue.Read x Conflict",
+    "translation": "Queue.Read x Conflict",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.Forbidden",
+    "description": null,
+    "english": "Queue.Read x Forbidden",
+    "translation": "Queue.Read x Forbidden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.Internal",
+    "description": null,
+    "english": "Queue.Read x Internal",
+    "translation": "Queue.Read x Internal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.InvalidRequest",
+    "description": null,
+    "english": "Queue.Read x InvalidRequest",
+    "translation": "Queue.Read x InvalidRequest",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.ItemCountQuotaExceeded",
+    "description": null,
+    "english": "Queue.Read x ItemCountQuotaExceeded",
+    "translation": "Queue.Read x ItemCountQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.NoContent",
+    "description": null,
+    "english": "Queue.Read x NoContent",
+    "translation": "Queue.Read x NoContent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.Ok",
+    "description": null,
+    "english": "QueueRead x Ok",
+    "translation": "QueueRead x Ok",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.TooManyObjectRequests",
+    "description": null,
+    "english": "Queue.Read x TooManyObjectRequests",
+    "translation": "Queue.Read x TooManyObjectRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.TooManyUniverseRequests",
+    "description": null,
+    "english": "Queue.Read x TooManyUniverseRequests",
+    "translation": "Queue.Read x TooManyUniverseRequests",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.UniverseQuotaExceeded",
+    "description": null,
+    "english": "Queue.Read x UniverseQuotaExceeded",
+    "translation": "Queue.Read x UniverseQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRead.Status.ValueTooLong",
+    "description": null,
+    "english": "Queue.Read x ValueTooLong",
+    "translation": "Queue.Read x ValueTooLong",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.BytesQuotaExceeded",
+    "description": null,
+    "english": "Queue.Remove x BytesQuotaExceeded",
+    "translation": "Queue.Remove x BytesQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.Conflict",
+    "description": null,
+    "english": "Queue.Remove x Conflict",
+    "translation": "Queue.Remove x Conflict",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.Forbidden",
+    "description": null,
+    "english": "Queue.Remove x Forbidden",
+    "translation": "Queue.Remove x Forbidden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.Internal",
+    "description": null,
+    "english": "Queue.Remove x Internal",
+    "translation": "Queue.Remove x Internal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.InvalidRequest",
+    "description": null,
+    "english": "Queue.Remove x InvalidRequest",
+    "translation": "Queue.Remove x InvalidRequest",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.ItemCountQuotaExceeded",
+    "description": null,
+    "english": "Queue.Remove x ItemCountQuotaExceeded",
+    "translation": "Queue.Remove x ItemCountQuotaExceeded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Dimension.MemoryStores.Operation.QueueRemove.Status.NoContent",
+    "description": null,
+    "english": "Queue.Remove x NoContent",
+    "translation": "Queue.Remove x NoContent",
     "isDeprecated": false
   },
   {

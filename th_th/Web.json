@@ -4,7 +4,7 @@
     "key": "Action.Login",
     "description": null,
     "english": "Login",
-    "translation": "เข้าสู่ระบบ",
+    "translation": "ลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -12,7 +12,7 @@
     "key": "Label.Login",
     "description": null,
     "english": "Log in",
-    "translation": "เข้าสู่ระบบ",
+    "translation": "ลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -68,7 +68,7 @@
     "key": "Response.SessionExpiredLoginAgain",
     "description": null,
     "english": "Your session has expired. Please login again.",
-    "translation": "เซสชันของคุณหมดอายุแล้ว โปรดเข้าสู่ระบบอีกครั้ง",
+    "translation": "เซสชันของคุณหมดอายุแล้ว โปรดลงชื่อเข้าใช้อีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -108,7 +108,7 @@
     "key": "Label.StartPlaying",
     "description": "You can start playing right now, in guest mode!",
     "english": "You can start playing right now, in guest mode!",
-    "translation": "คุณสามารถเริ่มเล่นในโหมดผู้เยี่ยมชมได้เลยตอนนี้!",
+    "translation": "คุณสามารถเริ่มเล่นได้ตอนนี้เลยในโหมดผู้เยี่ยมชม!",
     "isDeprecated": false
   },
   {
@@ -156,7 +156,7 @@
     "key": "Response.UseSocialSignOn",
     "description": "Unable to login. Please use Social Network sign on.",
     "english": "Unable to login. Please use Social Network sign on.",
-    "translation": "ไม่สามารถเข้าสู่ระบบได้ โปรดใช้บัญชีเครือข่ายสังคมออนไลน์เพื่อเข้าสู่ระบบ",
+    "translation": "ไม่สามารถลงชื่อเข้าใช้ได้ โปรดลงชื่อเข้าใช้ด้วยโซเชียลเน็ตเวิร์คของคุณ",
     "isDeprecated": false
   },
   {
@@ -164,7 +164,7 @@
     "key": "Action.SignInWithFacebook",
     "description": "Sign In with Facebook",
     "english": "Sign In with Facebook",
-    "translation": "เข้าสู่ระบบด้วย Facebook",
+    "translation": "ลงชื่อเข้าใช้ด้วย Facebook",
     "isDeprecated": false
   },
   {
@@ -308,7 +308,7 @@
     "key": "Action.ForgotPasswordOrUsernameQuestionCapitalized",
     "description": "link under login form",
     "english": "Forgot Password or Username?",
-    "translation": "ลืมรหัสผ่านหรือชื่อผู้ใช้?",
+    "translation": "ลืมรหัสผ่านหรือชื่อผู้ใช้ใช่ไหม?",
     "isDeprecated": false
   },
   {
@@ -933,6 +933,30 @@
     "description": null,
     "english": "Email Me a Login Code",
     "translation": "ส่งรหัสเข้าสู่ระบบให้ฉันทางอีเมล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogoutFirst",
+    "description": "Message shown on login form to tell users they must logout first in order to login to another account after they reach account switching limit.",
+    "english": "You must log out of an account first.",
+    "translation": "คุณต้องลงชื่อออกจากบัญชีหนึ่งก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogBackIn",
+    "description": "Message shown on login form to tell user to log back into the account that was either logged out or cookie was invalid.",
+    "english": "Your account {display_name} is logged out, please log back in.",
+    "translation": "ลงชื่อออกจากบัญชี {display_name} แล้ว โปรดลงชื่อเข้าใช้อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.LoginRequired",
+    "description": "Login form heading when telling user to log back into an account that was just logged out or cookie was invalid.",
+    "english": "Login Required",
+    "translation": "จำเป็นต้องลงชื่อเข้าใช้",
     "isDeprecated": false
   },
   {
@@ -2468,7 +2492,7 @@
     "key": "Message.Error.Default",
     "description": null,
     "english": "An unknown error occurred while displaying captcha.",
-    "translation": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุระหว่างการแสดง Captcha",
+    "translation": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุขณะแสดง Captcha",
     "isDeprecated": false
   },
   {
@@ -2484,7 +2508,7 @@
     "key": "Header.RobotChallenge",
     "description": null,
     "english": "Robot Challenge",
-    "translation": "การทดสอบความเป็นหุ่นยนต์",
+    "translation": "การทดสอบว่าคือหุ่นยนต์หรือไม่",
     "isDeprecated": false
   },
   {
@@ -6588,7 +6612,7 @@
     "key": "ActionsGetPremium",
     "description": "Button to subscriptions page",
     "english": "Get Premium",
-    "translation": "สมัครสมาชิก Premium",
+    "translation": "รับ Premium",
     "isDeprecated": false
   },
   {
@@ -10092,7 +10116,7 @@
     "key": "Description.HelpText.FastTrack.Accuracy",
     "description": "Help text that explains to users how we define Accuracy of abuse reports for the Fast Track program. Intention is to help avoid user confusion about the meaning of the scores.",
     "english": "Accuracy is how often moderation agreed with abuse reports. Your number will show after you submit several reports. 'Everyone' means all of the Fast Track members as a group.",
-    "translation": "ความถูกต้องคือ ความถี่ที่ทีมงานควบคุมเห็นด้วยกับรายงานการกระทำผิด ตัวเลขของคุณจะแสดงหลังจากที่คุณส่งรายงานไปจำนวนหนึ่งแล้ว \"ทุกคน\" หมายถึงสมาชิกของการติดตามอย่างรวดเร็วทั้งหมดเป็นกลุ่ม",
+    "translation": "ความถูกต้องคือ ความถี่ที่ทีมกลั่นกรองเห็นด้วยกับรายงานการกระทำผิด ตัวเลขของคุณจะแสดงหลังจากที่คุณส่งรายงานไปจำนวนหนึ่งแล้ว \"ทุกคน\" หมายถึงสมาชิกของการติดตามอย่างรวดเร็วทั้งหมดเป็นกลุ่ม",
     "isDeprecated": false
   },
   {
@@ -11628,7 +11652,7 @@
     "key": "Description.VoiceChatInfo.SafePreBody",
     "description": "The space at the end is intentional; there is a link mid-sentence",
     "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our ",
-    "translation": "หากคุณได้ยินใครบางคนใช้ภาษาที่รุนแรงหรือเป็นอันตราย โปรดปิดเสียงของเขาแล้วส่งรายการการกระทำผิด เพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัย Roblox อาจบันทึกเสียงพูดจากที่ใดก็ได้บนแพลตฟอร์ม สามารถดูข้อมูลเพิ่มเติมได้ที่ ",
+    "translation": "หากคุณได้ยินใครบางคนใช้ภาษาที่รุนแรงหรือเป็นอันตราย โปรดปิดเสียงของเขาแล้วส่งรายการการกระทำผิด เพื่อกลั่นกรองและดูแลความปลอดภัย Roblox อาจบันทึกเสียงพูดจากที่ใดก็ได้บนแพลตฟอร์ม สามารถดูข้อมูลเพิ่มเติมได้ที่ ",
     "isDeprecated": false
   },
   {
@@ -11652,7 +11676,7 @@
     "key": "Label.FreeCommConsent",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes.",
-    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัย",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัย",
     "isDeprecated": false
   },
   {
@@ -11692,7 +11716,7 @@
     "key": "Description.VoiceChatInfo.SafeBody",
     "description": "Previously Description.VoiceChatInfo.SafePreBody + Description.VoiceChatInfo.FAQ + .",
     "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our {startLink}Voice Recording FAQ{endLink}.",
-    "translation": "หากคุณได้ยินใครบางคนใช้ภาษาที่รุนแรงหรือเป็นอันตราย โปรดปิดเสียงของเขาแล้วส่งรายการการกระทำผิด เพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัย Roblox อาจบันทึกเสียงพูดจากที่ใดก็ได้บนแพลตฟอร์ม สามารถดูข้อมูลเพิ่มเติมได้ที่{startLink}คำถามที่พบบ่อยเกี่ยวกับการบันทึกเสียง{endLink}ของเรา",
+    "translation": "หากคุณได้ยินใครบางคนใช้ภาษาที่รุนแรงหรือเป็นอันตราย โปรดปิดเสียงของเขาแล้วส่งรายการการกระทำผิด เพื่อกลั่นกรองและดูแลความปลอดภัย Roblox อาจบันทึกเสียงพูดจากที่ใดก็ได้บนแพลตฟอร์ม สามารถดูข้อมูลเพิ่มเติมได้ที่{startLink}คำถามที่พบบ่อยเกี่ยวกับการบันทึกเสียง{endLink}ของเรา",
     "isDeprecated": false
   },
   {
@@ -11708,7 +11732,7 @@
     "key": "Label.FreeCommConsentOnly",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
-    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัยเท่านั้น",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
     "isDeprecated": false
   },
   {
@@ -11948,7 +11972,7 @@
     "key": "Label.ConsentVoiceCollection",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
-    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัยเท่านั้น",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
     "isDeprecated": false
   },
   {
@@ -11956,7 +11980,7 @@
     "key": "Label.ImplicitConsentVoiceCollection",
     "description": "similar to Label.ConsentVoiceCollection",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
-    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัยเท่านั้น",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
     "isDeprecated": false
   },
   {
@@ -12636,7 +12660,7 @@
     "key": "Description.ContentControlsWithUnratedDescription",
     "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
     "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
-    "translation": "เลือก{linkStart}อายุที่แนะนำ{linkEnd}สูงสุดสำหรับประสบการณ์ที่บัญชีนี้สามารถเข้าร่วมได้{lineBreak}คุณยังคงสามารถค้นหาประสบการณ์ทั้งหมดได้ ประสบการณ์ที่ยังไม่ได้จัดระดับความเหมาะสมถือว่าเป็นประสบการณ์สำหรับอายุ 13 ปีขึ้นไป",
+    "translation": "เลือก{linkStart}อายุที่แนะนำ{linkEnd}สูงสุดสำหรับประสบการณ์ที่บัญชีนี้สามารถเข้าร่วมได้{lineBreak}คุณยังคงสามารถค้นหาประสบการณ์ทั้งหมดได้ ประสบการณ์ที่ยังไม่ได้จัดระดับความเหมาะสมในตอนนี้จะถือว่าเป็นประสบการณ์สำหรับอายุ 13 ปีขึ้นไป",
     "isDeprecated": false
   },
   {
@@ -12780,7 +12804,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionNoLink",
     "description": "Similar to Label.ImplicitConsentVoiceCollection with no link",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
-    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัยเท่านั้น",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
     "isDeprecated": false
   },
   {
@@ -12788,7 +12812,7 @@
     "key": "Label.FreeCameraConsent",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
-    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัยเท่านั้น",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
     "isDeprecated": false
   },
   {
@@ -12796,7 +12820,7 @@
     "key": "Label.ImplicitConsentCamera",
     "description": null,
     "english": "I consent to Roblox’s temporary use of my facial movements to animate my avatar’s face.",
-    "translation": "ฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวบนใบหน้าของฉันเพื่อจำลองการเคลื่อนไหวบนใบหน้าอวาตาร์ของฉัน",
+    "translation": "ฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวบนใบหน้าของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวใบหน้าอวาตาร์ของฉัน",
     "isDeprecated": false
   },
   {
@@ -13116,7 +13140,7 @@
     "key": "Label.ImplicitConsentCameraCollection",
     "description": "similar to Label.ImplicitConsentCamera",
     "english": "By clicking on Enable, I consent to Roblox’s temporary use of my facial movements to animate my avatar’s face.",
-    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวบนใบหน้าของฉันเพื่อจำลองการเคลื่อนไหวบนใบหน้าอวาตาร์ของฉัน",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวบนใบหน้าของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวใบหน้าอวาตาร์ของฉัน",
     "isDeprecated": false
   },
   {
@@ -13148,7 +13172,7 @@
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัย รวมทั้งเพื่อปรับปรุงเครื่องมือความปลอดภัย",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัย รวมถึงปรับปรุงเครื่องมือความปลอดภัยด้วย",
     "isDeprecated": false
   },
   {
@@ -13156,7 +13180,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อวัตถุประสงค์ในการควบคุมดูแลและความปลอดภัย รวมทั้งเพื่อปรับปรุงเครื่องมือความปลอดภัย",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัย รวมถึงปรับปรุงเครื่องมือความปลอดภัยด้วย",
     "isDeprecated": false
   },
   {
@@ -13236,7 +13260,7 @@
     "key": "Heading.UseCamera",
     "description": null,
     "english": "Use camera to animate avatar",
-    "translation": "ใช้กล้องเพื่อจำลองการเคลื่อนไหวให้อวาตาร์",
+    "translation": "ใช้กล้องเพื่อเคลื่อนไหวอวาตาร์",
     "isDeprecated": false
   },
   {
@@ -13276,7 +13300,7 @@
     "key": "Label.ImplicitConsentAvatar",
     "description": "similar to Label.ImplicitConsentCameraCollection",
     "english": "By clicking on Enable, I consent to Roblox’s temporary use of my movements to animate my avatar.",
-    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเพื่อจำลองการเคลื่อนไหวให้อวาตาร์ของฉัน",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวอวาตาร์ของฉัน",
     "isDeprecated": false
   },
   {
@@ -13284,7 +13308,7 @@
     "key": "Label.ExplicitConsentAvatar",
     "description": "similar to Label.ImplicitConsentAvatar and Label.ImplicitConsentCameraCollection",
     "english": "I consent to Roblox’s temporary use of my movements to animate my avatar.",
-    "translation": "ฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเพื่อจำลองการเคลื่อนไหวให้อวาตาร์ของฉัน",
+    "translation": "ฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวอวาตาร์ของฉัน",
     "isDeprecated": false
   },
   {
@@ -13380,7 +13404,7 @@
     "key": "Message.Error.BlockUser.TargetNotBlocked",
     "description": "text shown to user when they try to unblock a user that is not currently blocked",
     "english": "Target user for unblock request is not currently blocked.",
-    "translation": "ผู้ใช้ที่คุณส่งคำขอเลิกบล็อคตอนนี้ไม่ได้ถูกบล็อคอยู่",
+    "translation": "ผู้ใช้ที่คุณส่งคำขอเลิกบล็อคไม่ได้ถูกบล็อคอยู่ในขณะนี้",
     "isDeprecated": false
   },
   {
@@ -13436,7 +13460,7 @@
     "key": "Heading.UseCameraMovement",
     "description": "similar to Heading.UseCamera",
     "english": "Use camera to animate your avatar with your movement",
-    "translation": "ใช้กล้องเพื่อจำลองการเคลื่อนไหวให้อวาตาร์ของคุณโดยใช้การเคลื่อนไหวของคุณ",
+    "translation": "ใช้กล้องเพื่อเคลื่อนไหวอวาตาร์ของคุณโดยใช้การเคลื่อนไหวของคุณ",
     "isDeprecated": false
   },
   {
@@ -13444,7 +13468,7 @@
     "key": "Label.SettingAllowsAnimateAvatar",
     "description": "similar to Label.SettingAllowsChatAsAvatar",
     "english": "This setting allows you to {startLink}animate your avatar with your movement.{endLink}",
-    "translation": "การตั้งค่านี้อนุญาตให้คุณ{startLink}ใช้การเคลื่อนไหวของคุณเพื่อจำลองการเคลื่อนไหวให้กับอวาตาร์ของคุณ{endLink}",
+    "translation": "การตั้งค่านี้อนุญาตให้คุณ{startLink}ใช้การเคลื่อนไหวของคุณเพื่อเคลื่อนไหวอวาตาร์ของคุณ{endLink}",
     "isDeprecated": false
   },
   {
@@ -14116,7 +14140,7 @@
     "key": "Description.IdVerificationIncomplete",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
-    "translation": "ไม่สามารถประมวลผลคำขอ Developer Exchange ของคุณได้เนื่องจากสาเหตุต่อไปนี้: การตรวจสอบยืนยัน ID ยังไม่เสร็จสมบูรณ์ ",
+    "translation": "ไม่สามารถประมวลผลคำขอ Developer Exchange ของคุณได้เนื่องจากสาเหตุต่อไปนี้: การตรวจสอบยืนยันตัวตนยังไม่เสร็จสมบูรณ์ ",
     "isDeprecated": false
   },
   {
@@ -14124,7 +14148,7 @@
     "key": "Description.RejectionIdVerificationIncomplete",
     "description": null,
     "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
-    "translation": "ไม่สามารถประมวลผลคำขอ Developer Exchange ของคุณได้เนื่องจากสาเหตุต่อไปนี้: การตรวจสอบยืนยัน ID ยังไม่เสร็จสมบูรณ์ ",
+    "translation": "ไม่สามารถประมวลผลคำขอ Developer Exchange ของคุณได้เนื่องจากสาเหตุต่อไปนี้: การตรวจสอบยืนยันตัวตนยังไม่เสร็จสมบูรณ์ ",
     "isDeprecated": false
   },
   {
@@ -17492,7 +17516,7 @@
     "key": "Message.MessageContentModerated",
     "description": null,
     "english": "Your message was moderated and not sent.",
-    "translation": "ข้อความของคุณไม่ผ่านเกณฑ์การควบคุมและจะไม่ถูกส่ง",
+    "translation": "ข้อความของคุณไม่ผ่านเกณฑ์การกลั่นกรองและจะไม่ถูกส่ง",
     "isDeprecated": false
   },
   {
@@ -17516,7 +17540,7 @@
     "key": "Message.ConversationTitleModerated",
     "description": "Chat group name was moderated.",
     "english": "Chat group name was moderated.",
-    "translation": "ชื่อกลุ่มแชทไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "ชื่อกลุ่มแชทไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -18172,7 +18196,7 @@
     "key": "Label.CommentModerated",
     "description": "Feedback for user when their comment has been moderated",
     "english": "Your comment has been moderated.",
-    "translation": "ความคิดเห็นของคุณไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "ความคิดเห็นของคุณไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -21900,7 +21924,7 @@
     "key": "Label.ItemHasBeenModerated",
     "description": null,
     "english": "This item has been moderated.",
-    "translation": "ไอเท็มนี้ไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "ไอเท็มนี้ไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -22444,7 +22468,7 @@
     "key": "Label.Archive",
     "description": null,
     "english": "Archive",
-    "translation": "จัดเก็บ",
+    "translation": "เก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -22452,7 +22476,7 @@
     "key": "Action.Archive",
     "description": null,
     "english": "Archive",
-    "translation": "จัดเก็บ",
+    "translation": "เก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -22612,7 +22636,7 @@
     "key": "Message.NotSendAndModerated",
     "description": null,
     "english": "Your message was not sent because it was moderated.",
-    "translation": "ข้อความของคุณไม่ถูกส่งเนื่องจากข้อความดังกล่าวไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "ข้อความของคุณไม่ถูกส่งเนื่องจากข้อความดังกล่าวไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -22724,7 +22748,7 @@
     "key": "Label.NoMessagesInArchive",
     "description": "Message that appears in Archive when a user doesn't have messages in their archive",
     "english": "You have no archived messages.",
-    "translation": "คุณไม่มีข้อความใดๆ ใน \"จัดเก็บ\"",
+    "translation": "คุณไม่มีข้อความใดๆ ใน \"เก็บถาวร\"",
     "isDeprecated": false
   },
   {
@@ -23740,7 +23764,7 @@
     "key": "Heading.CurrentlyWearing",
     "description": null,
     "english": "Currently Wearing",
-    "translation": "สวมใส่อยู่ในตอนนี้",
+    "translation": "สวมใส่อยู่ในขณะนี้",
     "isDeprecated": false
   },
   {
@@ -23996,7 +24020,7 @@
     "key": "Action.ImpersonateUser",
     "description": null,
     "english": "Impersonate User",
-    "translation": "ปลอมเป็นผู้ใช้อื่น",
+    "translation": "แอบอ้างเป็นผู้ใช้อื่น",
     "isDeprecated": false
   },
   {
@@ -24268,7 +24292,7 @@
     "key": "Message.ImpersonateUserError",
     "description": null,
     "english": "Unable to impersonate user.",
-    "translation": "ไม่สามารถปลอมเป็นผู้ใช้อื่นได้",
+    "translation": "ไม่สามารถแอบอ้างเป็นผู้ใช้อื่นได้",
     "isDeprecated": false
   },
   {
@@ -24748,7 +24772,7 @@
     "key": "Label.SelectReason",
     "description": null,
     "english": "Select a reason for your moderation action:",
-    "translation": "เลือกสาเหตุที่ทำให้ไม่ผ่านเกณฑ์การควบคุมของคุณ:",
+    "translation": "เลือกเหตุผลที่ทำให้ไม่ผ่านเกณฑ์การกลั่นกรองของคุณ:",
     "isDeprecated": false
   },
   {
@@ -25660,7 +25684,7 @@
     "key": "Label.Moderation",
     "description": "Moderation",
     "english": "Moderation",
-    "translation": "การควบคุม",
+    "translation": "การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -29060,7 +29084,7 @@
     "key": "Label.TopicScam",
     "description": "Deprecated. Inappropriate topic.",
     "english": "Scam",
-    "translation": "หลอกลวง",
+    "translation": "การหลอกลวง",
     "isDeprecated": true
   },
   {
@@ -31500,7 +31524,7 @@
     "key": "Description.ModeratorReview",
     "description": null,
     "english": "* Uploaded image will be reviewed by moderators before being made visible to other users",
-    "translation": "* ภาพที่อัปโหลดจะได้รับการตรวจสอบโดยผู้ควบคุมก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
+    "translation": "* ภาพที่อัปโหลดจะได้รับการตรวจสอบโดยผู้กลั่นกรองก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
     "isDeprecated": false
   },
   {
@@ -31804,7 +31828,7 @@
     "key": "Description.ModeratorFileReview",
     "description": null,
     "english": "* Uploaded file will be reviewed by moderators before being made visible to other users",
-    "translation": "* ไฟล์ที่อัปโหลดจะได้รับการตรวจสอบโดยผู้ควบคุมก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
+    "translation": "* ไฟล์ที่อัปโหลดจะได้รับการตรวจสอบโดยผู้กลั่นกรองก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
     "isDeprecated": false
   },
   {
@@ -31956,7 +31980,7 @@
     "key": "Label.Archive",
     "description": "Text on button for archiving an asset. Part of speech: verb",
     "english": "Archive",
-    "translation": "จัดเก็บ",
+    "translation": "เก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -31972,7 +31996,7 @@
     "key": "Description.ArchiveWarning",
     "description": null,
     "english": "Archiving this asset will prevent it from being used in experience. Archived assets can be restored.",
-    "translation": "การจัดเก็บทรัพยากรนี้จะทำให้ไม่สามารถใช้ได้ในประสบการณ์ โดยคุณสามารถกู้คืนทรัพยากรที่ถูกจัดเก็บได้",
+    "translation": "การเก็บทรัพยากรนี้ถาวรจะทำให้ไม่สามารถใช้ได้ในประสบการณ์ โดยคุณสามารถกู้คืนทรัพยากรที่ถูกเก็บถาวรได้",
     "isDeprecated": false
   },
   {
@@ -31980,7 +32004,7 @@
     "key": "Heading.Archive",
     "description": "header text for section about archiving assets",
     "english": "Archive",
-    "translation": "จัดเก็บ",
+    "translation": "เก็บถาวร",
     "isDeprecated": false
   },
   {
@@ -31988,7 +32012,7 @@
     "key": "Message.ArchiveSuccess",
     "description": null,
     "english": "Successfully archived",
-    "translation": "จับเก็บสำเร็จเรียบร้อยแล้ว",
+    "translation": "เก็บถาวรสำเร็จเรียบร้อยแล้ว",
     "isDeprecated": false
   },
   {
@@ -31996,7 +32020,7 @@
     "key": "Message.ArchiveError",
     "description": null,
     "english": "Failed to archive",
-    "translation": "จัดเก็บไม่สำเร็จ",
+    "translation": "เก็บถาวรไม่สำเร็จ",
     "isDeprecated": false
   },
   {
@@ -35372,7 +35396,7 @@
     "key": "Message.TitleModeratedError",
     "description": "The error message displayed when a title is moderated while being edited.",
     "english": "The title has been moderated, please try something else.",
-    "translation": "ชื่อนี้ไม่ผ่านเกณฑ์การควบคุม โปรดลองใช้ชื่ออื่น",
+    "translation": "ชื่อนี้ไม่ผ่านการกลั่นกรอง โปรดลองใช้ชื่ออื่น",
     "isDeprecated": false
   },
   {
@@ -37532,7 +37556,7 @@
     "key": "Label.InstructionForCombineCards",
     "description": null,
     "english": "Combine cards for more Roblox credit.",
-    "translation": "รวมบัตรเพื่อรับเครดิต Roblox เพิ่มขึ้น",
+    "translation": "รวมหลายๆ บัตรเพื่อรับเครดิต Roblox เพิ่มขึ้น",
     "isDeprecated": false
   },
   {
@@ -37668,7 +37692,7 @@
     "key": "Message.RixtyUnavailable",
     "description": null,
     "english": "Currently unavailable. Please try again later.",
-    "translation": "ไม่สามารถใช้ได้ในตอนนี้ โปรดลองอีกครั้งในภายหลัง",
+    "translation": "ไม่สามารถใช้ได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -37793,6 +37817,238 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.RedeemRobloxCards",
+    "description": "page heading",
+    "english": "Redeem Roblox cards",
+    "translation": "แลกใช้บัตร Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.HowToUse",
+    "description": "section heading",
+    "english": "How to Use",
+    "translation": "วิธีใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.RetailerLink",
+    "description": "bullet point in a list",
+    "english": "Buy a Roblox gift card at one of the {retailerLinkStart}participating retailers{retailerLinkEnd} or receive a Roblox gift card from someone. ",
+    "translation": "ซื้อบัตรของขวัญ Roblox จากหนึ่งใน{retailerLinkStart}ร้านค้าปลีกที่เข้าร่วม{retailerLinkEnd}หรือรับบัตรของขวัญ Roblox จากผู้อื่น ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.TypeCardPin",
+    "description": "bullet point in a list",
+    "english": "Type in your card PIN in the redeem section.",
+    "translation": "กรอก PIN จากบัตรของคุณในส่วนของการแลกใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.CombineCards",
+    "description": "bullet point in a list",
+    "english": "Combine cards for more Roblox credit.",
+    "translation": "รวมหลายๆ บัตรเพื่อรับเครดิต Roblox เพิ่มขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.EnterPin",
+    "description": "section heading  - please keep PIN capitalized if the languiage supports it",
+    "english": "Enter PIN Code",
+    "translation": "กรอกรหัส PIN",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.PinCode",
+    "description": "please keep PIN capitalized if language supports capitalization",
+    "english": "PIN Code",
+    "translation": "รหัส PIN",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.Redeem",
+    "description": "button text",
+    "english": "Redeem",
+    "translation": "แลกใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YourBalance",
+    "description": "label",
+    "english": "Your Credit Balance:",
+    "translation": "ยอดคงเหลือเครดิตของคุณ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalDisclaimer",
+    "description": "descrption text",
+    "english": "Purchases can be made with only one form of payment. Gift card credits cannot be combined with other forms of payment.",
+    "translation": "คุณสามารถใช้รูปแบบการชำระเงินได้เพียงรูปแบบเดียวในการซื้อ คุณไม่สามารถใช้เครดิตบัตรของขวัญร่วมกับรูปแบบการชำระเงินอื่นได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.NeedGameCard",
+    "description": "label",
+    "english": "Need a Roblox gift card?",
+    "translation": "หากต้องการบัตรของขวัญ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.PurchaseCard",
+    "description": "link text",
+    "english": "Purchase Card",
+    "translation": "ทำการซื้อบัตร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.GetRobloxCreditFor",
+    "description": "section heading",
+    "english": "Use Roblox Credit on",
+    "translation": "ใช้เครดิต Roblox กับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.CodeNotFoundError",
+    "description": "error message",
+    "english": "No matching code found.",
+    "translation": "ไม่พบรหัสที่ตรงกัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemSuccess",
+    "description": "success message",
+    "english": "Use your credit to buy Robux or Roblox Premium!",
+    "translation": "ใช้เครดิตของคุณเพื่อซื้อ Robux หรือ Roblox Premium!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.Dialog.RedeemGameCard",
+    "description": "dialog title",
+    "english": "Redeem Roblox Gift Card",
+    "translation": "แลกใช้บัตรของขวัญ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.Dialog.RobloxRedeemCard",
+    "description": "diglog main text",
+    "english": "You must be logged in to your Roblox account to redeem your Gift Card!",
+    "translation": "คุณต้องลงชื่อเข้าใช้บัญชี Roblox เพื่อแลกใช้บัตรของขวัญของคุณ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.Dialog.Login",
+    "description": "button text",
+    "english": "Login",
+    "translation": "ลงชื่อเข้าใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.Dialog.SignUp",
+    "description": "button text",
+    "english": "Sign Up",
+    "translation": "ลงทะเบียน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GenericError",
+    "description": "error message",
+    "english": "Something went wrong, please try again later.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.ObjectNotFoundError",
+    "description": "error message",
+    "english": "Could not find the requested object. Please try your request again and contact customer service if this problem persists.",
+    "translation": "ไม่พบวัตถุที่ร้องขอ โปรดส่งคำขอของคุณอีกครั้งและติดต่อฝ่ายบริการลูกค้าหากยังคงเกิดปัญหาอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.LoginRequiredError",
+    "description": "error message",
+    "english": "You must be logged in to perform this action.",
+    "translation": "คุณต้องลงชื่อเข้าใช้หากต้องการดำเนินการนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.CouldNotFindObject",
+    "description": "error message",
+    "english": "Could not find requested object.",
+    "translation": "ไม่พบวัตถุที่ร้องขอ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.AlreadyRedeemedError",
+    "description": "error message",
+    "english": "This gift card has already been redeemed.",
+    "translation": "แลกใช้บัตรของขวัญนี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.RetailersInfo",
+    "description": "bullet point of a list",
+    "english": "Buy a Roblox gift card at one of the participating retailers or receive a Roblox gift card from someone.",
+    "translation": "ซื้อบัตรของขวัญ Roblox จากหนึ่งในร้านค้าปลีกที่เข้าร่วมหรือรับบัตรของขวัญ Roblox จากผู้อื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.SpendRobloxCredit",
+    "description": "bullet point of a list",
+    "english": "Spend your Roblox credit on Robux and Builders Club!",
+    "translation": "ใช้เครดิต Roblox สำหรับ Robux และ Builders Club!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.HowToRedeem",
+    "description": "modal(dialog box) heading",
+    "english": "How to Redeem",
+    "translation": "วิธีแลกใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.Dialog.Close",
+    "description": "button text",
+    "english": "Close",
+    "translation": "ปิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.FeatureDisabledError",
+    "description": "error message",
+    "english": "This feature is currently disabled.",
+    "translation": "คุณสมบัตินี้ถูกปิดใช้งานอยู่ในขณะนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Response.BuildersClubRedeemed",
     "description": "success message",
     "english": "Your Builders Club Membership has successfully been redeemed!",
@@ -37809,10 +38065,242 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.BuildersClubExtendedSubText",
+    "description": "sub text on success message",
+    "english": "Please allow up to 5 minutes for the changes to take effect.",
+    "translation": "โปรดรอประมาณ 5 นาทีเพื่อให้การเปลี่ยนแปลงนี้มีผล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemSuccessForProduct",
+    "description": "success message",
+    "english": "You have successfully redeemed your card for {productName}",
+    "translation": "คุณแลกใช้บัตรของคุณสำหรับ {productName} สำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.MerchantNotFoundError",
+    "description": "error message",
+    "english": "User tried to redeem Pin but the merchant does not exist. UserId: {authenticatedUserId} Pin Number: {cardPin}",
+    "translation": "ผู้ใช้พยายามแลกใช้ PIN แต่ไม่มีร้านค้านี้อยู่ ID ผู้ใช้: {authenticatedUserId} หมายเลข PIN: {cardPin}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.InvalidPIN",
+    "description": "error message",
+    "english": "Invalid PIN",
+    "translation": "PIN ไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.TooManyCodesRedeemedError",
+    "description": "error message",
+    "english": "Too many codes redeemed. Try your request again later.",
+    "translation": "มีการแลกใช้รหัสมากเกินไป โปรดส่งคำขอของคุณอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Response.TooManyRequestsError",
     "description": "error messages",
     "english": "Too many failed request attempts. Try your request again later.",
     "translation": "มีการส่งคำขอไม่สำเร็จมากเกินไป โปรดส่งคำขอของคุณอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.TwoCardsBonus",
+    "description": "success message",
+    "english": "Thanks for redeeming two Roblox cards from GameStop. {robuxCount} Robux have been added to your account.",
+    "translation": "ขอบคุณสำหรับการแลกใช้บัตร Roblox จำนวน 2 ใบจาก GameStop เราได้เพิ่ม {robuxCount} Robux ไปยังบัญชีของคุณแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.BonusPreview",
+    "description": "success message upsell text",
+    "english": "Redeem one more Roblox card from GameStop to receive your bonus Robux.",
+    "translation": "แลกใช้บัตร Roblox จาก GameStop อีกหนึ่งใบเพื่อรับ Robux โบนัสของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.WalmartRewardUpsell",
+    "description": "upsell message",
+    "english": "Redeem one more Roblox card from Walmart to receive {rewardName}.",
+    "translation": "แลกใช้บัตร Roblox จาก Walmart อีกหนึ่งใบเพื่อรับ {rewardName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YouRedeemedRobux",
+    "description": null,
+    "english": "{robuxAmount}",
+    "translation": "{robuxAmount}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YourCreditBalanceDeprecated",
+    "description": null,
+    "english": "{robuxAmount}",
+    "translation": "{robuxAmount}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YourCreditBalance",
+    "description": null,
+    "english": "{creditBalance}",
+    "translation": "{creditBalance}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.RobuxRedeemed",
+    "description": null,
+    "english": "Robux Redeemed:",
+    "translation": "แลกใช้ Robux แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.UseCredit",
+    "description": null,
+    "english": "Use Credit",
+    "translation": "ใช้เครดิต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.Success",
+    "description": null,
+    "english": "Success!",
+    "translation": "สำเร็จเรียบร้อย!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemSuccessForRobux ",
+    "description": null,
+    "english": "You have successfully redeemed your card!",
+    "translation": "คุณแลกใช้บัตรของคุณสำเร็จเรียบร้อยแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.CaptchaCannotVerify",
+    "description": null,
+    "english": "We currently cannot verify FunCaptcha, please try again later.",
+    "translation": "เราไม่สามารถตรวจสอบยืนยัน FunCaptcha ได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.ConvertToRobux",
+    "description": "Button name and modal title",
+    "english": "Convert To Robux",
+    "translation": "แปลงเป็น Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.NoThanks",
+    "description": "No thanks button on convert modal",
+    "english": "No Thanks",
+    "translation": "ไม่ล่ะ ขอบคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.Confirm",
+    "description": "Confirmation on convert modal",
+    "english": "Confirm",
+    "translation": "ยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YourCreditBalanceIs",
+    "description": "For convert credit balance modal",
+    "english": "Your credit balance is {creditBalance}",
+    "translation": "ยอดคงเหลือของคุณคือ {creditBalance}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.ConvertToRobuxAmount",
+    "description": "Used in convert modal",
+    "english": "Convert to {robuxAmount}",
+    "translation": "แปลงเป็น {robuxAmount}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.ConvertToRobux",
+    "description": null,
+    "english": "Convert To Robux",
+    "translation": "แปลงเป็น Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.YourCreditBalanceIs2",
+    "description": null,
+    "english": "Your credit balance is",
+    "translation": "ยอดคงเหลือของคุณคือ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.ConvertTo",
+    "description": null,
+    "english": "Convert to",
+    "translation": "แปลงเป็น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.EnterGiftCardPin",
+    "description": "bullet point in list",
+    "english": "Enter your gift card PIN, and then select Redeem.",
+    "translation": "กรอก PIN บัตรของขวัญของคุณ จากนั้นเลือกแลกใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.FindInInventory",
+    "description": "bullet point in list",
+    "english": "If your gift card comes with a virtual item, you can find it in your {inventoryLinkStart}Inventory{inventoryLinkEnd}.",
+    "translation": "หากบัตรของขวัญมาพร้อมกับไอเท็มเสมือน คุณสามารถดูไอเท็มนั้นได้ใน{inventoryLinkStart}คลังไอเท็ม{inventoryLinkEnd}ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.SendAnotherGift",
+    "description": null,
+    "english": "Want to send another gift card? Visit {giftcardLinkStart}roblox.com/giftcards{giftcardLinkEnd} for details.",
+    "translation": "หากต้องการส่งบัตรของขวัญเพิ่มเติม โปรดไปที่{giftcardLinkStart}roblox.com/giftcards{giftcardLinkEnd}เพื่อดูรายละเอียด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.RedeemRobloxCodes",
+    "description": "Redeem Giftcard Page Heading",
+    "english": "Redeem Roblox Codes",
+    "translation": "แลกใช้รหัส Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.RedeemGiftCardInstructions",
+    "description": "Redeem Instructions for Input Field",
+    "english": "Enter a virtual item or gift card code below.",
+    "translation": "กรอกรหัสไอเท็มเสมือนหรือรหัสบัตรของขวัญได้ที่ด้านล่าง",
     "isDeprecated": false
   },
   {
@@ -37825,6 +38313,110 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.RobuxAdded",
+    "description": "Confirmation Message for Robux Amount Redeemed",
+    "english": "{robuxRedeemedAmount} will be added to your balance.",
+    "translation": "{robuxRedeemedAmount} จะเพิ่มไปยังยอดคงเหลือของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.ItemAdded",
+    "description": "Confirmation Message for Item Redeemed",
+    "english": "Now you own {itemName}!",
+    "translation": "คุณเป็นเจ้าของ \"{itemName}\" แล้วตอนนี้!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.AdditionalInfo",
+    "description": "Additional Information Header",
+    "english": "Additional Information",
+    "translation": "ข้อมูลเพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemBonusItem",
+    "description": "Link to Redeem Bonus Virtual Item Codes",
+    "english": "{redeemBonusItemLinkStart}How to Redeem Virtual Item Codes{redeemBonusItemLinkEnd}",
+    "translation": "{redeemBonusItemLinkStart}วิธีแลกใช้รหัสไอเท็มเสมือน{redeemBonusItemLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemGiftCard",
+    "description": "Link to Redeem Gift Cards",
+    "english": "{redeemGiftCardLinkStart}How to Redeem Gift Cards{redeemGiftCardLinkStart}",
+    "translation": "{redeemGiftCardLinkStart}วิธีแลกใช้บัตรของขวัญ{redeemGiftCardLinkStart}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.GotPromoCode",
+    "description": "Question directing to promo code redemption",
+    "english": "Got a promo code from an event or giveaway?",
+    "translation": "ได้รับรหัสโปรโมชันจากกิจกรรมหรือการแจกของรางวัลใช่ไหม?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.RedeemItHere",
+    "description": "Redeem It Here Link",
+    "english": "{redeemHereLinkStart}Redeem it here.{redeemHereLinkEnd}",
+    "translation": "{redeemHereLinkStart}แลกใช้ที่นี่ได้เลย{redeemHereLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.CodeSuccess",
+    "description": "Confirmation Header for Successfully Redeemed Code",
+    "english": "Code Successfully Redeemed",
+    "translation": "แลกใช้รหัสสำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.AlreadyRedeemedCodeError",
+    "description": "Error Message for Code Already Redeemed",
+    "english": "This code was already redeemed",
+    "translation": "แลกใช้รหัสนี้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.InvalidCode",
+    "description": "Error Message for Invalid Code",
+    "english": "Invalid Code",
+    "translation": "รหัสไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.EquipAvatar",
+    "description": "Button to Equip Avatar",
+    "english": "Equip My Avatar",
+    "translation": "สวมใส่ให้อวาตาร์ของฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.BackToRedeem",
+    "description": "Button Returning to Redeem Page",
+    "english": "Back to Redeem",
+    "translation": "กลับไปยังการแลกใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.Code",
+    "description": "Input Field Placeholder",
+    "english": "Code",
+    "translation": "รหัส",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Description.RobuxAddedEnd",
     "description": "End of sentence for robux added.",
     "english": "will be added to your balance.",
@@ -37833,10 +38425,402 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.AvailableCredit",
+    "description": "Displays user's amount of available credit.",
+    "english": "Available Credit",
+    "translation": "เครดิตที่สามารถใช้ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.ConvertCreditSuccess",
+    "description": "Button to convert credit to Robux.",
+    "english": "Convert Credit to Robux",
+    "translation": "แปลงเครดิตเป็น Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.ConvertSuccess",
+    "description": "Success Message after successful credit conversion.",
+    "english": "Success! Credit was converted to Robux and added to your balance.",
+    "translation": "สำเร็จแล้ว! เครดิตได้รับการแปลงเป็น Robux และเพิ่มไปยังยอดคงเหลือของคุณแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.RedeemCreditSuccess",
+    "description": "Success message after redeeming credit.",
+    "english": "will be added to your available credit.",
+    "translation": "จะเพิ่มไปยังเครดิตที่สามารถใช้ได้ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.CreditConversionFail",
+    "description": "Error Banner for failure in converting credit.",
+    "english": "Something went wrong! Unable to convert credit to Robux. Please try again later.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น! ไม่สามารถแปลงเครดิตไปเป็น Robux ได้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.CreditConversionSuccess",
+    "description": "Success Banner for success in converting credit.",
+    "english": "Success! Credit was converted to Robux and added to your balance.",
+    "translation": "สำเร็จแล้ว! เครดิตได้รับการแปลงเป็น Robux และเพิ่มไปยังยอดคงเหลือของคุณแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.GiftCardUpsell",
+    "description": "Heading for gift card upsell banner.",
+    "english": "Give the Gift of Imagination",
+    "translation": "มอบของขวัญแห่งจินตนาการ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.BuyGiftCard",
+    "description": "Label for Buy a Gift Card button.",
+    "english": "Buy Gift Cards",
+    "translation": "ซื้อบัตรของขวัญ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.IncludesExclusives",
+    "description": "Subtext for Buy a Gift Card button.",
+    "english": "Includes exclusive virtual item with purchase",
+    "translation": "รวมไอเท็มเสมือนสุดพิเศษเมื่อทำการสั่งซื้อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.UnexpectedError",
+    "description": null,
+    "english": "An unexpected error occurred. Please try your request again later.",
+    "translation": "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองส่งคำขอของคุณอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GatewayDown",
+    "description": null,
+    "english": "The payment gateway is down. Please try the transaction again later and contact Customer Service if the problem persists.",
+    "translation": "ระบบการชำระเงินไม่ทำงาน โปรดทำธุรกรรมใหม่อีกครั้งในภายหลังและติดต่อไปยังฝ่ายบริการลูกค้าหากยังคงเกิดปัญหาอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemGiftCardLink",
+    "description": "Link to Redeem Gift Cards",
+    "english": "{redeemGiftCardLinkStart}How to Redeem Gift Cards{redeemGiftCardLinkEnd}",
+    "translation": "{redeemGiftCardLinkStart}วิธีแลกใช้บัตรของขวัญ{redeemGiftCardLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.RedeemGiftCardOrPromoCodeInstructions",
+    "description": "Redeem Instructions for Input Field",
+    "english": "Enter a virtual item, gift card or promo code below.",
+    "translation": "กรอกรหัสไอเท็มเสมือน รหัสบัตรของขวัญ หรือรหัสโปรโมชันได้ที่ด้านล่าง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemPromoCodeLink",
+    "description": "Link to Redeem Promo Codes",
+    "english": "{redeemPromoCodeLinkStart}How to Redeem Promo Codes{redeemPromoCodeLinkEnd}",
+    "translation": "{redeemPromoCodeLinkStart}วิธีแลกใช้รหัสโปรโมชัน{redeemPromoCodeLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemVirtualItemCodes",
+    "description": null,
+    "english": "How to Redeem Virtual Item Codes",
+    "translation": "วิธีแลกใช้รหัสไอเท็มเสมือน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemGiftCards",
+    "description": null,
+    "english": "How to Redeem Gift Cards",
+    "translation": "วิธีแลกใช้บัตรของขวัญ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemPromoCodes",
+    "description": null,
+    "english": "How to Redeem Promo Codes",
+    "translation": "วิธีแลกใช้รหัสโปรโมชัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.PromotionCode",
+    "description": null,
+    "english": "Promotion Code",
+    "translation": "รหัสโปรโมชัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.RedeemGiftCardOrItemOrPromoCodeInstructions",
+    "description": "Redemption instructions in a different order.",
+    "english": "Enter your gift card, virtual item, or promo code below.",
+    "translation": "กรอกรหัสบัตรของขวัญ รหัสไอเท็มเสมือน หรือรหัสโปรโมชันได้ที่ด้านล่าง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemGiftCardVideo",
+    "description": "Link to Youtube video on how to redeem gift cards.",
+    "english": "{redeemGiftCardVideoLinkStart} How to Redeem Gift Cards (Video) {redeemGiftCardVideoLinkEnd}",
+    "translation": "{redeemGiftCardVideoLinkStart} วิธีแลกใช้บัตรของขวัญ (วิดีโอ) {redeemGiftCardVideoLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.MoreHelpOnGiftCardsLink",
+    "description": "Link to how to redeem gift cards Roblox help page.",
+    "english": "{moreGiftCardHelpLinkStart} More Help on Gift Cards {moreGiftCardHelpLinkEnd}",
+    "translation": "{moreGiftCardHelpLinkStart} ความช่วยเหลือเพิ่มเติมเกี่ยวกับบัตรของขวัญ {moreGiftCardHelpLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.AlreadyRedeemedCodeFullError",
+    "description": "Full error message for code redemption failure.",
+    "english": "This code has already been redeemed. Allow up to 5 minutes for it to be processed.",
+    "translation": "แลกใช้รหัสนี้เรียบร้อยแล้ว โปรดรอเวลาดำเนินการประมาณ 5 นาที",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.HowToRedeemGiftCardVideoText",
+    "description": "Text for link to Youtube video on how to redeem gift cards.",
+    "english": "How to Redeem Gift Cards (Video)",
+    "translation": "วิธีแลกใช้บัตรของขวัญ (วิดีโอ)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.MoreHelpOnGiftCardsLinkText",
+    "description": "Text for link to how to redeem gift cards Roblox help page.",
+    "english": "More Help on Gift Cards",
+    "translation": "ความช่วยเหลือเพิ่มเติมเกี่ยวกับบัตรของขวัญ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.LocalCreditBanner",
+    "description": "Local credit pre-launch banner 1 heading",
+    "english": "NOTICE: Upcoming Change to Redemption Rate for Roblox Credit (Local Currency)",
+    "translation": "โปรดทราบ: การเปลี่ยนแปลงอัตราการแลกใช้สำหรับเครดิต Roblox (สกุลเงินท้องถิ่น) ซึ่งกำลังจะเกิดขึ้นเร็วๆ นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.LocalCreditBanner",
+    "description": "Local credit banner pre-launch message 1",
+    "english": "Beginning in April 2023 Roblox credit will no longer be denominated in U.S. Dollars. All Roblox gift cards will be redeemable for credit denominated in your local currency. We will send messages to your Roblox Inbox starting in January with more information.",
+    "translation": "เริ่มตั้งแต่เดือนเมษายน 2023 เราจะไม่ระบุเครดิต Roblox ในดอลลาร์สหรัฐอีกต่อไป บัตรของขวัญ Roblox ทั้งหมดจะสามารถแลกใช้เป็นเครดิตในสกุลเงินท้องถิ่นของคุณได้ เราจะส่งข้อความไปยังกล่องเข้าของคุณบน Roblox เริ่มตั้งแต่เดือนมกราคมพร้อมข้อมูลเพิ่มเติม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.LocalCreditPreLaunchWarning",
+    "description": "Local credit prelaunch warning",
+    "english": "In April 2023 the Roblox credit in your account will be automatically converted to your local currency.",
+    "translation": "ตั้งแต่เดือนเมษายน 2023 เครดิต Roblox ในบัญชีของคุณจะถูกแปลงไปเป็นสกุลเงินท้องถิ่นของคุณโดยอัตโนมัติ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.BuyRobux",
+    "description": "Buy Robux",
+    "english": "Buy Robux",
+    "translation": "ซื้อ Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.GetRobux",
+    "description": null,
+    "english": "Get Robux",
+    "translation": "รับ Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.LargeCreditBalanceTooltip",
+    "description": null,
+    "english": "Your Roblox Credit balance is large\nenough to purchase Robux Packages\nor subscribe to Premium directly. ",
+    "translation": "ยอดคงเหลือเครดิต Roblox ของคุณมีมาก\nเพียงพอที่จะซื้อแพ็คเกจ Robux\nหรือสมัครสมาชิก Premium ได้โดยตรง ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Heading.BuyRobuxWithCredit",
+    "description": null,
+    "english": "Buy Robux with Credit",
+    "translation": "ซื้อ Robux ด้วยเครดิต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step1LargestPackageYouCanBuy",
+    "description": null,
+    "english": "Largest package you can buy with your credit:",
+    "translation": "แพ็คเกจที่ใหญ่ที่สุดที่คุณสามารถซื้อได้ด้วยเครดิตของคุณ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step2NextLargestPackage",
+    "description": null,
+    "english": "Your purchase was successful! \nNext largest package available with your credit",
+    "translation": "คุณทำการซื้อสำเร็จแล้ว! \nแพ็คเกจที่ใหญ่รองลงมาที่เครดิตของคุณสามารถซื้อได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step3ConvertRobux",
+    "description": null,
+    "english": "Your purchase was successful, but you still have some credit left. Do you want to convert\n{remainingCreditBalance} to Robux? {lineBreaker}{robuxConversionAmount} will be added to your balance",
+    "translation": "คุณทำการซื้อสำเร็จเรียบร้อยแล้วและคุณยังคงมีเครดิตเหลืออยู่ คุณต้องการแปลงกลับ\n{remainingCreditBalance}เป็น Robux หรือไม่? {lineBreaker}{robuxConversionAmount} จะเพิ่มไปยังยอดคงเหลือของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.RobuxPackagePurchased",
+    "description": null,
+    "english": "Robux package was successfully purchased!",
+    "translation": "ซื้อแพ็คเกจ Robux สำเร็จเรียบร้อยแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.SuccessfullyConvertedCreditToRobux",
+    "description": null,
+    "english": "Remaining credit successfully converted to Robux",
+    "translation": "แปลงเครดิตคงเหลือกลับไปเป็น Robux สำเร็จเรียบร้อยแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.BalanceDue",
+    "description": null,
+    "english": "Balance Due:",
+    "translation": "ยอดที่ต้องชำระ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.CreditAfterTransaction",
+    "description": null,
+    "english": "Credit After Transaction:",
+    "translation": "ยอดเครดิตหลังทำธุรกรรม:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "สกุลเงินของบัตรของขวัญของคุณต้องตรงกับประเทศของบัญชีของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "การทำเครื่องหมายที่กล่อง จะถือว่าคุณยอมรับว่าคุณมีอายุอย่างน้อย 18 ปี หรือว่าคุณคือพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้ และคุณยอมรับข้อกำหนดการใช้งานของเราซึ่งรวมถึงข้อกำหนดการใช้อนุญาโตตุลาการและนโยบายความเป็นส่วนตัวของเรา <br />นอกจากนี้คุณยังรับทราบและยอมรับว่ามูลค่าที่ระบุอยู่บนหน้าบัตรของขวัญของคุณจะถูกแลกใช้เป็นเครดิต Roblox มูลค่าเทียบเท่ากันในสกุลเงินท้องถิ่นของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.AvailableCreditWithColon",
+    "description": null,
+    "english": "Available Credit:",
+    "translation": "เครดิตที่สามารถใช้ได้:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
     "description": null,
     "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
     "translation": "การแลกใช้รหัสของคุณ จะถือว่าคุณและพ่อแม่หรือผู้ปกครองตามกฎหมายของคุณ (หากคุณมีอายุต่ำกว่า 18 ปี) ยอมรับ{termsOfUseLinkStart}ข้อกำหนดการใช้งาน{termsOfUseLinkEnd}ของเรา ซึ่งรวมถึงข้อกำหนดการใช้อนุญาโตตุลาการและ{giftCardTermsLinkStart}ข้อกำหนดและเงื่อนไขของบัตรของขวัญ{giftCardTermsLinkEnd} และรับทราบ{privacyPolicyLinkStart}นโยบายความเป็นส่วนตัว{privacyPolicyLinkEnd}ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
+    "description": null,
+    "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
+    "translation": "การทำเครื่องหมายที่กล่อง จะถือว่าคุณยอมรับว่าคุณมีอายุอย่างน้อย 18 ปี หรือว่าคุณคือพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีนี้ และคุณยอมรับ{termsOfUseLinkStart}ข้อกำหนดการใช้งาน{termsOfUseLinkEnd}ของเราซึ่งรวมถึงข้อกำหนดการใช้อนุญาโตตุลาการและ{giftCardTermsLinkStart}ข้อกำหนดและเงื่อนไขของบัตรของขวัญ{giftCardTermsLinkEnd} และรับทราบเกี่ยวกับ{privacyPolicyLinkStart}นโยบายความเป็นส่วนตัว{privacyPolicyLinkEnd}ของเรา นอกจากนี้คุณยังรับทราบและยอมรับว่ามูลค่าที่ระบุอยู่บนหน้าบัตรของขวัญของคุณจะถูกแลกใช้เป็นเครดิต Roblox มูลค่าเทียบเท่ากันในสกุลเงินท้องถิ่นของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "สกุลเงินบัตรของขวัญต้องตรงกับประเทศของบัญชีของคุณ โปรดติดต่อ{robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น! โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Message.Step1LargestAvailablePackageYouCanBuy",
+    "description": null,
+    "english": "Largest package you can buy with your available credit:",
+    "translation": "แพ็คเกจที่ใหญ่ที่สุดที่คุณสามารถซื้อได้ด้วยเครดิตที่สามารถใช้ได้ของคุณ:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.RobuxPackagePurchaseFailed",
+    "description": null,
+    "english": "Something went wrong! Unable to purchase the product. Please try again later.\t",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น! ไม่สามารถซื้อสินค้าได้ โปรดลองอีกครั้งในภายหลัง\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "เกิดข้อผิดพลาดขึ้น โปรดติดต่อฝ่ายบริการลูกค้าหากยังคงเกิดปัญหาอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedemptionDisabled",
+    "description": null,
+    "english": "Code redemption is temporarily unavailable. Please try again at a later time.",
+    "translation": "ไม่สามารถใช้งานการแลกใช้รหัสได้ชั่วคราว โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.NeedCaptcha",
+    "description": null,
+    "english": "Captcha",
+    "translation": "Captcha",
     "isDeprecated": false
   },
   {
@@ -41761,6 +42745,62 @@
   },
   {
     "namespace": "Moderation.ModeratorActions",
+    "key": "Label.ScrubText",
+    "description": null,
+    "english": "[ Content Deleted ]",
+    "translation": "[ เนื้อหาถูกลบแล้ว ]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CopyrightedAudioRemoved",
+    "description": "The subject of the message sent to users when copyrighted audio is removed.",
+    "english": "Copyrighted Audio Removed",
+    "translation": "ลบเสียงที่มีลิขสิทธิ์แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.InvalidAudioRemoved",
+    "description": "The subject of the message sent to users when invalid audio is removed.",
+    "english": "Invalid Audio Removed",
+    "translation": "ลบเสียงที่ไม่ถูกต้องแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.CopyrightedAudioRemovedMessage",
+    "description": "Messaging when notifying users that their audio has been removed for copyright.",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {AudioUrlLink}. This content has been removed under Roblox’s intellectual property policies and you have received a refund for the cost of the audio upload.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. You should make sure you have the legal right (such as permission from the copyright owner) to upload content you haven’t created yourself. You should remove from your account, including within your experiences, content that belongs to others that you don’t have the legal right to use. If you're not sure whether you have the right to use that content, you should remove it.{lineBreak}{lineBreak}Thank you,{lineBreak}- The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {AudioUrlLink} เนื้อหานี้ถูกลบออกภายใต้นโยบายทรัพย์สินทางปัญญาของ Roblox และคุณได้รับเงินคืนสำหรับค่าใช้จ่ายในการอัปโหลดเสียงแล้ว{lineBreak}{lineBreak}Roblox เคารพสิทธิ์ในทรัพย์สินทางปัญญาของผู้อื่นและกำหนดให้สมาชิกทุกคนของชุมชม Roblox ปฏิบัติเช่นเดียวกัน คุณควรตรวจสอบให้แน่ใจว่าคุณมีสิทธิตามกฎหมาย (เช่น ได้รับอนุญาตจากเจ้าของลิขสิทธิ์) ในการอัปโหลดเนื้อหาที่คุณไม่ได้จัดทำเอง คุณควรลบเนื้อหาที่เป็นของผู้อื่นซึ่งคุณไม่มีสิทธิตามกฎหมายที่จะใช้ออกจากบัญชีของคุณ รวมถึงภายในประสบการณ์ของคุณด้วย หากคุณไม่แน่ใจว่าคุณมีสิทธิ์ที่จะใช้เนื้อหานั้นหรือไม่ คุณควรลบเนื้อหาดังกล่าวออก{lineBreak}{lineBreak}ขอบคุณ{lineBreak}- ทีมงาน Roblox",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.InvalidAudioRemovedMessage",
+    "description": "Messaging when notifying users that their invalid audio has been removed.",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {audioUrlLink}. This content has been removed because we could not process the audio file. Your account has received a refund for the cost of the audio upload.{lineBreak}{lineBreak}Thank you,{lineBreak}- The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {audioUrlLink} เนื้อหานี้ถูกลบเนื่องจากเราไม่สามารถประมวลผลไฟล์เสียงได้ บัญชีของคุณได้รับเงินคืนสำหรับค่าใช้จ่ายในการอัปโหลดเสียงแล้ว{lineBreak}{lineBreak}ขอบคุณ{lineBreak}- ทีมงาน Roblox",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.CopyrightedAudioRemovedMsg",
+    "description": "Messaging when notifying users that their audio has been removed for copyright.",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {audioUrlLink}. This content has been removed under Roblox’s intellectual property policies and you have received a refund for the cost of the audio upload.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. You should make sure you have the legal right (such as permission from the copyright owner) to upload content you haven’t created yourself. You should remove from your account, including within your experiences, content that belongs to others that you don’t have the legal right to use. If you're not sure whether you have the right to use that content, you should remove it.{lineBreak}{lineBreak}Thank you,{lineBreak}- The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {audioUrlLink} เนื้อหานี้ถูกลบออกภายใต้นโยบายทรัพย์สินทางปัญญาของ Roblox และคุณได้รับเงินคืนสำหรับค่าใช้จ่ายในการอัปโหลดเสียงแล้ว{lineBreak}{lineBreak}Roblox เคารพสิทธิ์ในทรัพย์สินทางปัญญาของผู้อื่นและกำหนดให้สมาชิกทุกคนของชุมชม Roblox ปฏิบัติเช่นเดียวกัน คุณควรตรวจสอบให้แน่ใจว่าคุณมีสิทธิตามกฎหมาย (เช่น ได้รับอนุญาตจากเจ้าของลิขสิทธิ์) ในการอัปโหลดเนื้อหาที่คุณไม่ได้จัดทำเอง คุณควรลบเนื้อหาที่เป็นของผู้อื่นซึ่งคุณไม่มีสิทธิตามกฎหมายที่จะใช้ออกจากบัญชีของคุณ รวมถึงภายในประสบการณ์ของคุณด้วย หากคุณไม่แน่ใจว่าคุณมีสิทธิ์ที่จะใช้เนื้อหานั้นหรือไม่ คุณควรลบเนื้อหาดังกล่าวออก{lineBreak}{lineBreak}ขอบคุณ{lineBreak}- ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.InvalidAudioRemovedMsg",
+    "description": "Messaging when notifying users that their invalid audio has been removed.",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {audioUrlLink}. This content has been removed because we could not process the audio file. Your account has received a refund for the cost of the audio upload.{lineBreak}{lineBreak}Thank you,{lineBreak}- The Roblox Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {audioUrlLink} เนื้อหานี้ถูกลบเนื่องจากเราไม่สามารถประมวลผลไฟล์เสียงได้ บัญชีของคุณได้รับเงินคืนสำหรับค่าใช้จ่ายในการอัปโหลดเสียงแล้ว{lineBreak}{lineBreak}ขอบคุณ{lineBreak}- ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
     "key": "Description.AccountIntegrityAutomatedPunishmentModeratorNote",
     "description": "Message displayed to user as the Moderator Note when punishments are done via the Account Integrity Processor.",
     "english": "You have been banned due to violations of our terms of use.",
@@ -41968,6 +43008,166 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Scams",
+    "description": "Community standard label",
+    "english": "Scams",
+    "translation": "การหลอกลวง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Spam",
+    "description": "Community standard label",
+    "english": "Spam",
+    "translation": "สแปม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.CheatingandExploits",
+    "description": "Community standard label",
+    "english": "Cheating and Exploits",
+    "translation": "การโกงและการแสวงหาประโยชน์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.MisleadingImpersonationandMisrepresentation",
+    "description": "Community standard label",
+    "english": "Misleading Impersonation and Misrepresentation",
+    "translation": "การแอบอ้างเป็นบุคคลอื่นที่ทำให้เข้าใจผิดและการบิดเบือนความจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.IntellectualPropertyViolations",
+    "description": "Community standard label",
+    "english": "Intellectual Property Violations",
+    "translation": "ละเมิดทรัพย์สินทางปัญญา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ContestsandSweepstakes",
+    "description": "Community standard label",
+    "english": "Contests and Sweepstakes",
+    "translation": "การแข่งขันและชิงโชค",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.DirectingUsersOffPlatform",
+    "description": "Community standard label",
+    "english": "Directing Users Off Platform",
+    "translation": "การชี้นำผู้ใช้ให้ออกไปนอกแพลตฟอร์ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Advertising",
+    "description": "Community standard label",
+    "english": "Advertising",
+    "translation": "การโฆษณา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.UnauthorizedAccess",
+    "description": "Community standard label",
+    "english": "UnauthorizedAccess",
+    "translation": "การเข้าถึงที่ไม่ได้รับอนุญาต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.SharingPersonalInformation",
+    "description": "Community standard label",
+    "english": "Sharing Personal Information",
+    "translation": "การแชร์ข้อมูลส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.MisusingRobloxSystems",
+    "description": "Community standard label",
+    "english": "Misusing Roblox Systems",
+    "translation": "การใช้ Roblox ในทางที่ผิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.RobloxEconomy",
+    "description": "Community standard label",
+    "english": "Roblox Economy",
+    "translation": "เศรษฐกิจของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.SoftRestrictionPrivateMessage",
+    "description": "[DEPRECATED]",
+    "english": "[DEPRECATED] {lineBreak}{linkedAssetName}{assetId}",
+    "translation": "[DEPRECATED] {lineBreak}{linkedAssetName}{assetId}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.AssetSoftRestriction",
+    "description": "The subject of the message sent to users when their asset has been soft restricted.",
+    "english": "Content has been restricted",
+    "translation": "เนื้อหานี้ถูกจำกัด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.SoftRestrictionPrivateMsg",
+    "description": "Messaging notifying users that their asset has been soft restricted.",
+    "english": "The following content has been temporarily restricted on Roblox as we investigate whether it violates our {communityStandardsHtmlUrlOpen}Community Standards{communityStandardsHtmlUrlClose}. These standards outline expectations to ensure that everyone on Roblox feels welcome and safe and is treated with respect.{lineBreak}{lineBreak}• {linkedAssetName}, assetID: {assetId}{lineBreak}{lineBreak}Restrictions will be lifted if the experience is found to be compliant with our Community Standards following our review.{lineBreak}{lineBreak}Thank you for keeping Roblox safe and civil.{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "เนื้อหาต่อไปนี้จะถูกจำกัดชั่วคราวบน Roblox ระหว่างที่เราทำการตรวจสอบว่าเนื้อหาดังกล่าวละเมิด{communityStandardsHtmlUrlOpen}มาตรฐานชุมชน{communityStandardsHtmlUrlClose}ของเราหรือไม่ มาตรฐานเหล่านี้อธิบายถึงสิ่งที่ควรปฏิบัติเพื่อให้แน่ใจว่าทุกคนบน Roblox รู้สึกอบอุ่น ปลอดภัย และได้รับการปฏิบัติด้วยความเคารพ{lineBreak}{lineBreak}• {linkedAssetName} AssetID: {assetId}{lineBreak}{lineBreak} การจำกัดจะถูกยกเลิก หากพบว่าประสบการณ์นั้นเป็นไปตามมาตรฐานชุมชนของเราหลังจากที่ได้รับการตรวจสอบแล้ว{lineBreak}{lineBreak}ขอขอบคุณที่ช่วยกันรักษาให้ Roblox ปลอดภัยและสงบสุข{lineBreak}{lineBreak}ทีมงาน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.DMCALegalNoticePrivateMessage",
+    "description": "Generic group messaging when notifying users that an entity requested DMCA removal of their asset.",
+    "english": "Hello,{lineBreak}{lineBreak}Links: {contentLink}{lineBreak}{lineBreak}This content has been removed because it may infringe intellectual property owned by someone else, {company}.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. Please remove from your group, including within your Experiences, any content that you do not have permission to use. You should always confirm that you have permission from the intellectual property owners before uploading content you haven't created. Intellectual property infringement violates our Terms of Use and further use of infringing material may result in additional action, including account termination. If you believe that your content has been removed by mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) please provide us with documentation of the authorization from the party that owns the protected material so that we may review for consideration.{lineBreak}{lineBreak}How can I remove infringing content from my Roblox account?{lineBreak}{lineBreak}You can find more information on archiving assets & Experiences in the following article: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}For more information please reference the following articles:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team{strikeDescriptor}",
+    "translation": "สวัสดี{lineBreak}{lineBreak}ลิงก์: {contentLink}{lineBreak}{lineBreak}เนื้อหานี้ถูกลบออกเนื่องจากอาจละเมิดทรัพย์สินทางปัญญาของผู้อื่น{company}{lineBreak}{lineBreak}Roblox เคารพสิทธิ์ในทรัพย์สินทางปัญญาของผู้อื่นและกำหนดให้สมาชิกทุกคนของชุมชม Roblox ปฏิบัติเช่นเดียวกัน โปรดลบเนื้อหาใดๆ ที่คุณไม่มีสิทธิ์ในการใช้งานออกจากลุ่มของคุณ รวมถึงภายในประสบการณ์ของคุณด้วย คุณควรตรวจสอบยืนยันอยู่เสมอว่าคุณได้รับสิทธิ์จากเจ้าของทรัพย์สินทางปัญหาก่อนที่จะอัปโหลดเนื้อหาที่คุณไม่ได้เป็นผู้จัดทำ การละเมิดทรัพย์สินทางปัญญาเป็นการละเมิดข้อกำหนดการใช้งานของเรา และหากยังคงใช้เนื้อหาที่ละเมิดต่อไปอาจส่งผลให้มีการดำเนินการเพิ่มเติมได้ รวมถึงการยกเลิกบัญชีด้วย หากคุณเชื่อว่าการที่เนื้อหาของคุณถูกลบเกิดจากความผิดพลาดหรือการระบุที่ไม่ถูกต้อง (ตัวอย่างเช่น คุณได้รับอนุญาตให้ใช้เนื้อหาที่ถูกลบหรือใช้อย่างเป็นธรรม) โปรดส่งเอกสารการอนุญาตให้ใช้งานจากผู้ที่เป็นเจ้าของเนื้อหาที่ได้รับการคุ้มครองให้กับเรา เพื่อที่เราจะได้ตรวจสอบพิจารณา{lineBreak}{lineBreak}วิธีลบเนื้อหาที่ละเมิดจากบัญชี Roblox ของคุณ{lineBreak}{lineBreak}คุณสามารถดูข้อมูลเพิ่มเติมเกี่ยวกับการเก็บทรัพยากรและประสบการณ์ถาวรได้ในบทความต่อไปนี้: https://developer.roblox.com/en-us/articles/archiving-assets-and-games{lineBreak}{lineBreak}หากต้องการข้อมูลเพิ่มเติม โปรดอ้างอิงบทความต่อไปนี้:{lineBreak}{lineBreak}https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use {lineBreak}{lineBreak}https://developer.roblox.com/en-us/articles/Copyright-Guidance{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงานแอดมิน Roblox{strikeDescriptor}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.DMCALegalNoticeEarlyStrikePrivateMessage",
+    "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (1st/2nd strike)",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {contentLink}. This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. As the uploader or group owner responsible for that content, a strike was assigned to your account.{lineBreak}{lineBreak}Roblox respects the intellectual property rights of others and requires that all members of the Roblox community do the same. You should make sure you have permission from the relevant rights holder before uploading content you haven't created or allowing such content to be uploaded to a group that you own. You should remove from your account and/or group, including within your Experiences, content that belongs to others that you don’t have permission to use. Intellectual property infringement violates our Terms of Use and, if you accrue further strikes, may result in your account being terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of mistake or misidentification (for example, you have authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you. To file a counter-notice you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com. Please note that if you’re under 13 years old, your parent or legal guardian must submit the counter-notice on your behalf.{lineBreak}{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the content was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located (or if your address is outside of the United States, for any judicial district in which Roblox may be found) and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. We may forward this information to the intellectual property owner as part of your counter-notice.{lineBreak}Your electronic signature;{lineBreak}{lineBreak}Can I have the strike removed from my account?{lineBreak}{lineBreak}Roblox will not consider a strike under our repeat infringer policy if{lineBreak}(a) the claimant who filed the takedown notice withdraws the notice; or {lineBreak}(b) you successfully challenge the takedown notice through our counter-notification process.{lineBreak}{lineBreak}Is there anything else I should consider doing at this time?{lineBreak}{lineBreak}Yes. You should consider enrolling in the remediation program. If you enroll in the remediation program within 10 days of receiving this message (following the process described below) we will take that into consideration when reviewing your account for removal under our repeat infringer policy.{lineBreak}{lineBreak}How do I enroll in the remediation program?{lineBreak}Please follow these steps:{lineBreak}{lineBreak}1) Carefully read our educational materials, found at {copyrightEducationUrl}. They contain information about intellectual property rights.{lineBreak}2) Within 10 days of receiving this message, send an email to copyright_agent@roblox.com with the message “I have read the educational materials and want to enroll\" and your username in the body of the email. Please note that if you’re under 13 years old, your parent or legal guardian must contact us on your behalf.{lineBreak}3) Closely review content you previously uploaded on Roblox. If you're not sure whether you have the right to use that content, please archive it. You can find more about the archiving Assets and Experiences at {archivingUrl}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {contentLink} เนื้อหานี้ถูกลบเนื่องจากเจ้าของทรัพย์สินทางปัญญา ({company}) ส่งการแจ้งเตือนมายัง Roblox ว่าเนื้อหานี้ประกอบเนื้อหาที่ละเมิดทรัพย์สินทางปัญหาของพวกเขา ในฐานะผู้อัปโหลดหรือเจ้าของกลุ่มผู้รับผิดชอบต่อเนื้อหาดังกล่าว บัญชีของคุณจะถูกบันทึกว่าทำการละเมิดสิทธิ์{lineBreak}{lineBreak}Roblox เคารพสิทธิ์ในทรัพย์สินทางปัญญาของผู้อื่นและกำหนดให้สมาชิกทุกคนของชุมชม Roblox ปฏิบัติเช่นเดียวกัน คุณควรตรวจสอบให้แน่ใจว่าคุณได้รับสิทธิ์จากผู้ถือครองสิทธิ์ที่เกี่ยวข้องก่อนทำการอัปโหลดเนื้อหาที่คุณไม่ได้เป็นผู้จัดทำหรืออนุญาตให้อัปโหลดเนื้อหานั้นไปยังกลุ่มที่คุณเป็นเจ้าของ คุณควรลบเนื้อหาของผู้อื่นที่คุณไม่มีสิทธิ์ใช้ออกจากบัญชีและ/หรือกลุ่มของคุณ รวมถึงภายในประสบการณ์ของคุณด้วย การละเมิดทรัพย์สินทางปัญหาเป็นการละเมิดข้อกำหนดการใช้งานของเรา หากคุณยังคงทำการละเมิดต่อไป อาจส่งผลให้บัญชีของคุณถูกยกเลิกภายใต้นโยบายผู้ทำการละเมิดซ้ำของเรา{lineBreak}{lineBreak}ฉันต้องทำอย่างไรหากฉันมีสิทธิ์ในการใช้งานเนื้อหาที่ถูกลบแล้ว?{lineBreak}หากคุณเชื่อว่าการที่เนื้อหาของคุณถูกลบเกิดจากความผิดพลาดหรือการระบุที่ไม่ถูกต้อง (ตัวอย่างเช่น คุณได้รับอนุญาตให้ใช้เนื้อหาที่ถูกลบหรือใช้อย่างเป็นธรรม) คุณสามารถคัดค้านการแจ้งเตือนให้ลบเนื้อหาได้โดยยื่นเรื่องโต้แย้ง{lineBreak}{lineBreak}โปรดทราบว่าการยื่นเรื่องโต้แย้งอาจก่อให้เกิดผลกระทบร้ายแรงได้{lineBreak}หากผู้ที่ยืนเรื่องแจ้งเตือนให้ลบเนื้อหาเชื่อว่าการยื่นเรื่องโต้แย้งของคุณไม่ถูกต้อง หรือเนื้อหาของคุณได้มีการละเมิด เขาอาจยื่นฟ้องคุณได้ นอกจากนั้น การยื่นเรื่องโต้แย้งที่เป็นเท็จทั้งๆ ที่รู้ถือว่าเป็นสิ่งผิดกฎหมายและคุณอาจต้องรับผิดชอบทางกฎหมายด้วย{lineBreak}หากเราพิจารณาว่าการยื่นเรื่องโต้แย้งของคุณเป็นไปตามข้อกำหนด เราจะส่งต่อไปยังผู้ที่ยื่นเรื่องแจ้งเตือนให้ลบเนื้อหา โดยทั่วไปแล้ว Roblox จะกู้คืนเนื้อหาของคุณภายใน 10-14 วันทำการ ขึ้นอยู่กับความถูกต้องของการยื่นเรื่องโต้แย้ง และยกเว้นในกรณีที่เราได้รับแจ้งว่ามีการยื่นฟ้องคุณ หากต้องการยื่นเรื่องโต้แย้ง คุณสามารถใช้แบบฟอร์มฝ่ายบริการช่วยเหลือได้ที่ https://www.roblox.com/support หรือคุณสามารถส่งอีเมลยื่นเรื่องโต้แย้งมาที่ copyright_agent@roblox.com โปรดทราบว่า หากคุณมีอายุต่ำกว่า 13 ปี พ่อแม่หรือผู้ปกครองตามกฎหมายของคุณต้องเป็นผู้ยื่นเรื่องโต้แย้งในนามของคุณ{lineBreak}{lineBreak}โปรดตรวจสอบให้แน่ใจว่าการยื่นเรื่องโต้แย้งของคุณประกอบด้วยข้อมูลต่อไปนี้:{lineBreak}{lineBreak}ลิงก์ไปยังเนื้อหาที่ได้รับผลกระทบ;{lineBreak}คำแถลงภายใต้บทลงโทษฐานให้การเท็จว่าคุณมีความเชื่อโดยสุจริตว่าการที่เนื้อหาถูกลบ/ปิดการใช้งานเป็นผลมาจากความผิดพลาดหรือการระบุที่ไม่ถูกต้อง;{lineBreak}คำแถลงว่าคุณยินยอมอยู่ภายใต้เขตอำนาจของศาลแขวงของรัฐบาลกลางสหรัฐอเมริกาสำหรับเขตการพิจารณาคดีซึ่งที่อยู่ของคุณตั้งอยู่ (สำหรับเขตการพิจารณาคดีใดๆ ที่พบ Roblox หากคุณอยู่นอกสหรัฐอเมริกา) และคุณจะยอมรับบริการดำเนินการจากผู้ที่ยื่นเรื่องแจ้งเตือนให้ลบเนื้อหาหรือตัวแทนของพวกเขา{lineBreak}ชื่อ-นามสกุล, ที่อยู่สำหรับส่งไปรษณีย์ และหมายเลขโทรศัพท์ของคุณ เราอาจส่งต่อข้อมูลนี้ให้กับผู้ที่เป็นเจ้าของทรัพย์สินทางปัญญาโดยเป็นส่วนหนึ่งของการยื่นเรื่องโต้แย้งของคุณ{lineBreak}Your electronic signature;{lineBreak}{lineBreak}ฉันสามารถลบข้อมูลการละเมิดของฉันออกจากบัญชีของฉันได้หรือไม่?{lineBreak}{lineBreak}Roblox จะไม่พิจารณาว่าเป็นการละเมิดภายใต้นโยบายผู้ทำการละเมิดซ้ำของเรา หาก{lineBreak}(a) ผู้เรียกร้องที่ยื่นเรื่องแจ้งเตือนให้ลบเนื้อหาถอนการยื่นเรื่องออก; หรือ {lineBreak}(b) คุณคัดค้านการยื่นเรื่องแจ้งเตือนให้ลบเนื้อหาผ่านกระบวนการยื่นเรื่องโต้แย้งได้สำเร็จ{lineBreak}{lineBreak}มีอะไรที่ฉันควรทำในตอนนี้อีกหรือไม่?{lineBreak}{lineBreak}มี คุณควรลงทะเบียนในโปรแกรมการแก้ไขให้ถูกต้อง หากคุณลงทะเบียนในโปรแกรมการแก้ไขให้ถูกต้องภายใน 10 วันหลังจากได้รับข้อความนี้ (โดยทำตามกระบวนการที่ได้อธิบายไว้ด้านล่าง) เราจะนำสิ่งนั้นมาพิจารณาเมื่อทำการตรวจสอบบัญชีของคุณสำหรับการลบเนื้อหาภายใต้นโยบายผู้ทำการละเมิดซ้ำของเรา{lineBreak}{lineBreak}วิธีลงทะเบียนในโปรแกรมการแก้ไขให้ถูกต้อง{lineBreak}โปรดดำเนินการตามขั้นตอนต่อไปนี้:{lineBreak}{lineBreak}1) โปรดอ่านเอกสารการศึกษาของเราอย่างละเอียดที่ {copyrightEducationUrl} โดยเอกสารนี้ประกอบด้วยข้อมูลเกี่ยวกับสิทธิ์ในทรัพย์สินทางปัญญา{lineBreak}2) ภายใน 10 วันหลังจากได้รับข้อความนี้ ให้ส่งอีเมลไปยัง copyright_agent@roblox.com พร้อมเขียนข้อความ \"ฉันได้อ่านเอกสารการศึกษาแล้วและต้องการลงทะเบียน\" และชื่อผู้ใช้ของคุณลงในส่วนเนื้อหาของอีเมล โปรดทราบว่าหากคุณมีอายุต่ำกว่า 13 ปี พ่อแม่หรือผู้ปกครองตามกฎหมายของคุณต้องติดต่อเราในนามของคุณ{lineBreak}3) ตรวจสอบเนื้อหาที่คุณได้อัปโหลดก่อนหน้าบน Roblox อย่างละเอียด หากคุณไม่แน่ใจว่าคุณมีสิทธิ์ในการใช้เนื้อหานั้นหรือไม่ โปรดเก็บเนื้อหาดังกล่าวถาวร คุณสามารถดูข้อมูลเพิ่มเติมเกี่ยวกับทรัพยากรและประสบการณ์ที่เก็บถาวรได้ที่ {archivingUrl}{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงานแอดมิน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.DMCALegalNoticeFinalStrikePrivateMessage",
+    "description": "Messaging when notifying users that an entity requested DMCA removal of their asset. (Last strike)",
+    "english": "Hello,{lineBreak}{lineBreak}We're reaching out to you to let you know that the following content has been removed from Roblox: {lineBreak}{lineBreak}{contentLink}.{lineBreak}{lineBreak}This content has been removed because the intellectual property owner, {company}, sent Roblox a notification telling Roblox that the content contained material that infringed their intellectual property rights. Due to the prior takedown reports sent against your account, your account has been terminated under our Repeat Infringer Policy.{lineBreak}{lineBreak}What can I do if I have the right to use the removed content?{lineBreak}If you believe that your content has been removed because of a mistake or misidentification (for example, you have the authorization to use the removed content, or fair use applies) you may contest the takedown notice by submitting a counter-notice.{lineBreak}{lineBreak}Be aware that submitting a counter-notice may have serious consequences.{lineBreak}If the person who submitted the takedown notice believes that your counter-notice is not accurate, or your content is infringing, he/she may file a lawsuit against you. Likewise, submitting a knowingly false counter-notice is illegal and can subject you to liability.{lineBreak}{lineBreak}If we determine that your counter-notice is compliant, we will forward it to the person who submitted the takedown notice. Based on a valid counter-notice, Roblox will generally restore your content within 10-14 business days, unless we are informed that a lawsuit was filed against you.{lineBreak}{lineBreak}To file a counterclaim you may use our customer support form https://www.roblox.com/support or you can email your counter-notice to copyright_agent@roblox.com.{lineBreak}Please make sure that your counter-notice contains the following information:{lineBreak}{lineBreak}Link(s) to the affected content;{lineBreak}A statement under penalty of perjury that you have a good-faith belief that the material was removed/disabled as a result of a mistake or misidentification;{lineBreak}A statement that you consent to the jurisdiction of the United States federal district court for the judicial district in which your address is located and that you will accept service of process from the person who submitted the takedown notice or their agent.{lineBreak}Your full name, postal address, and telephone number. {lineBreak}Your electronic signature;{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Admin Team",
+    "translation": "สวัสดี{lineBreak}{lineBreak}เราติดต่อคุณเพื่อแจ้งให้ทราบว่าเนื้อหาต่อไปนี้ถูกลบออกจาก Roblox แล้ว: {lineBreak}{lineBreak}{contentLink}{lineBreak}{lineBreak}เนื้อหานี้ถูกลบเนื่องจากเจ้าของทรัพย์สินทางปัญญา ({company}) ส่งการแจ้งเตือนมายัง Roblox ว่าเนื้อหานี้ประกอบเนื้อหาที่ละเมิดทรัพย์สินทางปัญหาของพวกเขา เนื่องจากมีรายงานแจ้งให้ลบเนื้อหาสำหรับบัญชีของคุณก่อนหน้านี้ บัญชีของคุณจึงถูกยกเลิกภายใต้นโยบายผู้ทำการละเมิดซ้ำของเรา{lineBreak}{lineBreak}ฉันต้องทำอย่างไรหากฉันมีสิทธิ์ในการใช้งานเนื้อหาที่ถูกลบแล้ว?{lineBreak}หากคุณเชื่อว่าการที่เนื้อหาของคุณถูกลบเกิดจากความผิดพลาดหรือการระบุที่ไม่ถูกต้อง (ตัวอย่างเช่น คุณได้รับอนุญาตให้ใช้เนื้อหาที่ถูกลบหรือใช้อย่างเป็นธรรม) คุณสามารถคัดค้านการแจ้งเตือนให้ลบเนื้อหาได้โดยยื่นเรื่องโต้แย้ง{lineBreak}{lineBreak}โปรดทราบว่าการยื่นเรื่องโต้แย้งอาจก่อให้เกิดผลกระทบร้ายแรงได้{lineBreak}หากผู้ที่ยืนเรื่องแจ้งเตือนให้ลบเนื้อหาเชื่อว่าการยื่นเรื่องโต้แย้งของคุณไม่ถูกต้อง หรือเนื้อหาของคุณได้มีการละเมิด เขาอาจยื่นฟ้องคุณได้ นอกจากนั้น การยื่นเรื่องโต้แย้งที่เป็นเท็จทั้งๆ ที่รู้ถือว่าเป็นสิ่งผิดกฎหมายและคุณอาจต้องรับผิดชอบทางกฎหมายด้วย{lineBreak}{lineBreak}หากเราพิจารณาว่าการยื่นเรื่องโต้แย้งของคุณเป็นไปตามข้อกำหนด เราจะส่งต่อไปยังผู้ที่ยื่นเรื่องแจ้งเตือนให้ลบเนื้อหา โดยทั่วไปแล้ว Roblox จะกู้คืนเนื้อหาของคุณภายใน 10-14 วันทำการ ขึ้นอยู่กับความถูกต้องของการยื่นเรื่องโต้แย้ง และยกเว้นในกรณีที่เราได้รับแจ้งว่ามีการยื่นฟ้องคุณ{lineBreak}{lineBreak}หากต้องการยื่นเรื่องโต้แย้ง คุณสามารถใช้แบบฟอร์มฝ่ายบริการช่วยเหลือได้ที่ https://www.roblox.com/support หรือคุณสามารถส่งอีเมลยื่นเรื่องโต้แย้งมาที่ copyright_agent@roblox.com{lineBreak}โปรดตรวจสอบให้แน่ใจว่าการยื่นเรื่องโต้แย้งของคุณประกอบด้วยข้อมูลต่อไปนี้:{lineBreak}{lineBreak}ลิงก์ไปยังเนื้อหาที่ได้รับผลกระทบ;{lineBreak}คำแถลงภายใต้บทลงโทษฐานให้การเท็จว่าคุณมีความเชื่อโดยสุจริตว่าการที่เนื้อหาถูกลบ/ปิดการใช้งานเป็นผลมาจากความผิดพลาดหรือการระบุที่ไม่ถูกต้อง;{lineBreak}คำแถลงว่าคุณยินยอมอยู่ภายใต้เขตอำนาจของศาลแขวงของรัฐบาลกลางสหรัฐอเมริกาสำหรับเขตการพิจารณาคดีซึ่งที่อยู่ของคุณตั้งอยู่และคุณจะยอมรับบริการดำเนินการจากผู้ที่ยื่นเรื่องแจ้งเตือนให้ลบเนื้อหาหรือตัวแทนของพวกเขา{lineBreak}ชื่อ-นามสกุล, ที่อยู่สำหรับส่งไปรษณีย์ และหมายเลขโทรศัพท์ของคุณ{lineBreak}ลายเซ็นอิเล็กทรอนิกส์ของคุณ;{lineBreak}{lineBreak}ขอบคุณ{lineBreak}{lineBreak}ทีมงานแอดมิน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.AssetSoftRestrictionRemoved",
+    "description": "The subject of the message sent to users when their asset has had a soft restriction removed.",
+    "english": "Content had restriction removed",
+    "translation": "ยกเลิกการจำกัดเนื้อหาแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.SoftRestrictionRemovedPrivateMsg",
+    "description": "Messaging notifying users that a soft restriction has been removed.",
+    "english": "Following our investigation, all restrictions have been removed from the following content{lineBreak}{lineBreak}• {linkedAssetName}, assetID: {assetId}{lineBreak}{lineBreak}Thank you for complying with the Roblox {communityStandardsHtmlUrlOpen}Community Standards{communityStandardsHtmlUrlClose}.",
+    "translation": "หลังจากการตรวจสอบ เราได้ยกเลิกการจำกัดทั้งหมดจากเนื้อหาต่อไปนี้{lineBreak}{lineBreak}• {linkedAssetName}, assetID: {assetId}{lineBreak}{lineBreak}ขอบคุณที่ปฏิบัติตาม{communityStandardsHtmlUrlOpen}มาตรฐานชุมชน{communityStandardsHtmlUrlClose}ของ Roblox",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameLocalization",
     "key": "Label.Title",
     "description": "Game Title (or Name) field label, corresponding text area editable by game developer",
@@ -42084,7 +43284,7 @@
     "key": "Description.ContentModerationError",
     "description": "The error text when user's input does not pass the backend text filter",
     "english": "Error: Could not save. Please check content for moderation and try again.",
-    "translation": "ข้อผิดพลาด: ไม่สามารถบันทึกได้ โปรดตรวจสอบเกี่ยวกับการควบคุมเนื้อหาแล้วลองอีกครั้ง",
+    "translation": "ข้อผิดพลาด: ไม่สามารถบันทึกได้ โปรดตรวจสอบเนื้อหาว่ามีปัญหาเกี่ยวกับการกลั่นกรองหรือไม่แล้วลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -42180,7 +43380,7 @@
     "key": "Response.ContentModerationError",
     "description": "The error text when user's input does not pass the backend text filter",
     "english": "Error: Could not save. Please check content for moderation and try again.",
-    "translation": "ข้อผิดพลาด: ไม่สามารถบันทึกได้ โปรดตรวจสอบเกี่ยวกับการควบคุมเนื้อหาแล้วลองอีกครั้ง",
+    "translation": "ข้อผิดพลาด: ไม่สามารถบันทึกได้ โปรดตรวจสอบเนื้อหาว่ามีปัญหาเกี่ยวกับการกลั่นกรองหรือไม่แล้วลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -44612,7 +45812,7 @@
     "key": "Message.NameModerated",
     "description": null,
     "english": "The name is moderated.",
-    "translation": "ชื่อไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "ชื่อไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -44668,7 +45868,7 @@
     "key": "Message.GroupCreationDisabled",
     "description": null,
     "english": "Group creation is currently disabled.",
-    "translation": "การสร้างกลุ่มถูกปิดใช้งานอยู่ในตอนนี้",
+    "translation": "การสร้างกลุ่มถูกปิดใช้งานอยู่ในขณะนี้",
     "isDeprecated": false
   },
   {
@@ -45852,7 +47052,7 @@
     "key": "Label.ModerateDiscussion",
     "description": null,
     "english": "Moderate Discussion",
-    "translation": "การควบคุมการสนทนา",
+    "translation": "การกลั่นกรองการสนทนา",
     "isDeprecated": false
   },
   {
@@ -48436,7 +49636,7 @@
     "key": "Description.IconWillBeReviewed",
     "description": "Tell developers that their game icon image needs to be reviewed by moderators before the public can see it",
     "english": "Image will be reviewed by moderators before being made visible to other users",
-    "translation": "ภาพจะได้รับการตรวจสอบโดยผู้ควบคุมก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
+    "translation": "ภาพจะได้รับการตรวจสอบโดยผู้กลั่นกรองก่อนที่จะแสดงให้ผู้ใช้คนอื่นๆ เห็น",
     "isDeprecated": false
   },
   {
@@ -48644,7 +49844,7 @@
     "key": "Response.ContentModerationError",
     "description": "The error text when user's input does not pass the text filter",
     "english": "Could not save. Please check content for moderation and try again.",
-    "translation": "ไม่สามารถบันทึกได้ โปรดตรวจสอบเกี่ยวกับการควบคุมเนื้อหาแล้วลองอีกครั้ง",
+    "translation": "ไม่สามารถบันทึกได้ โปรดตรวจสอบเนื้อหาว่ามีปัญหาเกี่ยวกับการกลั่นกรองหรือไม่แล้วลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -51172,7 +52372,7 @@
     "key": "Response.AlreadyRedeemed",
     "description": null,
     "english": "This card has already been redeemed.",
-    "translation": "บัตรนี้ถูกแลกใช้แล้ว",
+    "translation": "แลกใช้บัตรนี้แล้ว",
     "isDeprecated": false
   },
   {
@@ -51188,7 +52388,7 @@
     "key": "Response.UnrecognizedMerchant",
     "description": null,
     "english": "We currently do not support the merchant you purchased this card from, please contact Customer Service.",
-    "translation": "ในขณะนี้เราไม่รองรับผู้จำหน่ายที่คุณได้ซื้อบัตรนี้มา โปรดติดต่อฝ่ายบริการลูกค้า",
+    "translation": "คุณซื้อบัตรนี้มาจากร้านค้าที่เราไม่รองรับในขณะนี้ โปรดติดต่อฝ่ายบริการลูกค้า",
     "isDeprecated": false
   },
   {
@@ -52956,7 +54156,7 @@
     "key": "Description.AdApproal",
     "description": null,
     "english": "The ad needs to be approved by a Moderator before it can be launched from your Ad page.",
-    "translation": "โฆษณาต้องได้รับการอนุมัติจากผู้ควบคุมก่อนจึงจะสามารถเผยแพร่ได้จากหน้าโฆษณาของคุณ",
+    "translation": "โฆษณาต้องได้รับการอนุมัติจากผู้กลั่นกรองก่อนจึงจะสามารถเผยแพร่ได้จากหน้าโฆษณาของคุณ",
     "isDeprecated": false
   },
   {
@@ -53692,7 +54892,7 @@
     "key": "Label.ModeratorMessage",
     "description": "To show the moderator note.\nE.g. Moderator Note: Banned for inappropriate content",
     "english": " Moderator Note",
-    "translation": " บันทึกจากผู้ควบคุม",
+    "translation": " บันทึกจากผู้กลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -54220,7 +55420,7 @@
     "key": "Label.AbuseType.DirectingUsersOffPlatform",
     "description": null,
     "english": "Directing Users Off-Platform",
-    "translation": "ชี้นำผู้ใช้ให้ออกไปนอกแพลตฟอร์ม",
+    "translation": "การชี้นำผู้ใช้ให้ออกไปนอกแพลตฟอร์ม",
     "isDeprecated": false
   },
   {
@@ -54244,7 +55444,7 @@
     "key": "Label.AbuseType.Impersonation",
     "description": null,
     "english": "Impersonation",
-    "translation": "การปลอมเป็นบุคคลอื่น",
+    "translation": "การแอบอ้างเป็นบุคคลอื่น",
     "isDeprecated": false
   },
   {
@@ -54452,7 +55652,7 @@
     "key": "Label.AbuseType.Impersonation.Note",
     "description": null,
     "english": "Roblox does not permit users to mislead others by impersonating other people’s real- or virtual-world identity or affiliations.",
-    "translation": "Roblox ไม่อนุญาตให้ผู้ใช้ทำให้คนอื่นๆ เข้าใจผิดโดยการปลอมเป็นบุคคลอื่นหรือผู้ที่เกี่ยวข้องในโลกจริงหรือโลกเสมือน",
+    "translation": "Roblox ไม่อนุญาตให้ผู้ใช้ทำให้คนอื่นๆ เข้าใจผิดโดยการแอบอ้างเป็นบุคคลอื่นหรือผู้ที่เกี่ยวข้องในโลกจริงหรือโลกเสมือน",
     "isDeprecated": false
   },
   {
@@ -54548,7 +55748,7 @@
     "key": "Label.AbuseType.OffPlatformSpeechandBehavior.Note",
     "description": null,
     "english": "Roblox may moderate reported users with off-platform behavior associated with organized crime, terrorist groups, hate groups, sharing others' Personal Identifiable Information, including making false reports about users. ",
-    "translation": "Roblox อาจควบคุมผู้ใช้ที่ได้รับการรายงานว่ามีพฤติกรรมนอกแพลตฟอร์มเกี่ยวข้องกับการก่ออาชญากรรม กลุ่มผู้ก่อการร้าย กลุ่มที่แสดงความเกลียดชัง การแชร์ข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII) รวมถึงการรายงานเท็จเกี่ยวกับผู้ใช้ ",
+    "translation": "Roblox อาจกลั่นกรองผู้ใช้ที่ถูกรายงานว่ามีพฤติกรรมนอกแพลตฟอร์มเกี่ยวข้องกับการก่ออาชญากรรม กลุ่มผู้ก่อการร้าย กลุ่มที่แสดงความเกลียดชัง การแชร์ข้อมูลที่ใช้ระบุตัวบุคคลได้ (PII) รวมถึงการรายงานเท็จเกี่ยวกับผู้ใช้ ",
     "isDeprecated": false
   },
   {
@@ -54637,6 +55837,22 @@
     "description": null,
     "english": "Chargeback",
     "translation": "การปฏิเสธการชำระเงิน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DMCAEarlyLegalStrike",
+    "description": null,
+    "english": "DMCA Early Legal Strike",
+    "translation": "DMCA - การละเมิดทางกฎหมายครั้งแรก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.DMCAFinalLegalStrike",
+    "description": null,
+    "english": "DMCA Final Legal Strike",
+    "translation": "DMCA - การละเมิดทางกฎหมายครั้งสุดท้าย",
     "isDeprecated": false
   },
   {
@@ -58508,7 +59724,7 @@
     "key": "Action.ImpersonateUser",
     "description": null,
     "english": "Impersonate User",
-    "translation": "ปลอมเป็นผู้ใช้อื่น",
+    "translation": "แอบอ้างเป็นผู้ใช้อื่น",
     "isDeprecated": false
   },
   {
@@ -59116,7 +60332,7 @@
     "key": "Heading.IDVerification",
     "description": null,
     "english": "ID Verification",
-    "translation": "การตรวจสอบยืนยัน ID",
+    "translation": "การตรวจสอบยืนยันตัวตน",
     "isDeprecated": false
   },
   {
@@ -59132,7 +60348,7 @@
     "key": "Description.KCBRedirectionDescription",
     "description": null,
     "english": "Heads up Robloxian - by clicking \"continue\" you will be redirected to a third-party ID verification website. Please note that the website is not affiliated with or owned or operated by Roblox and that the services under the website are provided under and subject to the separate terms and conditions of the third-party service.",
-    "translation": "โปรดทราบชาว Roblox - การคลิกที่ \"ดำเนินการต่อ\" จะนำคุณไปยังเว็บไซต์ภายนอกเพื่อทำการตรวจสอบยืนยัน ID นอกจากนี้โปรดทราบว่าเว็บไซต์ดังกล่าวไม่ได้เกี่ยวข้องหรือเป็นเจ้าของหรือดำเนินการโดย Roblox และบริการต่างๆ ที่เว็บไซต์มอบให้จะอยู่ภายใต้ข้อกำหนดและเงื่อนไขที่แยกออกไปของบริการภายนอก",
+    "translation": "โปรดทราบชาว Roblox - การคลิกที่ \"ดำเนินการต่อ\" จะนำคุณไปยังเว็บไซต์ภายนอกเพื่อทำการตรวจสอบยืนยันตัวตน นอกจากนี้โปรดทราบว่าเว็บไซต์ดังกล่าวไม่ได้เกี่ยวข้องหรือเป็นเจ้าของหรือดำเนินการโดย Roblox และบริการต่างๆ ที่เว็บไซต์มอบให้จะอยู่ภายใต้ข้อกำหนดและเงื่อนไขที่แยกออกไปของบริการภายนอก",
     "isDeprecated": false
   },
   {
@@ -59140,7 +60356,7 @@
     "key": "Description.VerificationNotComplete",
     "description": null,
     "english": "The system failed to verify your ID. Please try again",
-    "translation": "ระบบตรวจสอบยืนยัน ID ของคุณไม่สำเร็จ โปรดลองอีกครั้ง",
+    "translation": "ระบบตรวจสอบยืนยันตัวตนของคุณไม่สำเร็จ โปรดลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -61332,7 +62548,7 @@
     "key": "Action.SetUpEmail2SV",
     "description": "Button action string for the email 2-SV upsell prompt. Avoided the acronym \"2-SV\" for better language portability.",
     "english": "Set Up",
-    "translation": "ตั้งค่าอีเมลการตรวจสอบยืนยัน 2 ขั้นตอน",
+    "translation": "ตั้งค่า",
     "isDeprecated": false
   },
   {
@@ -61401,10 +62617,170 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Label.UnderageVerification",
+    "description": null,
+    "english": "Your age is now verified.\nYou will begin to unlock age-restricted features when you turn {age}:",
+    "translation": "ตรวจสอบยืนยันอายุของคุณแล้ว\nคุณสมบัติต่างๆ ที่จำกัดอายุจะเริ่มปลดล็อคเมื่อคุณอายุ {age}:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleFeatures",
+    "description": null,
+    "english": "You may turn these features on and off in privacy settings.",
+    "translation": "คุณสามารถปิดและเปิดใช้งานคุณสมบัติเหล่านี้ได้ในการตั้งค่าความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.Close",
+    "description": null,
+    "english": "Close",
+    "translation": "ปิด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.ContinueToGame",
+    "description": null,
+    "english": "Continue To Experience",
+    "translation": "ดำเนินการต่อไปยังประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VerificationFailed",
+    "description": null,
+    "english": "Verification Failed",
+    "translation": "ทำการตรวจสอบยืนยันไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FailedVerification",
+    "description": null,
+    "english": "The document provided could not be verified.\n\nPlease try again later.",
+    "translation": "ไม่สามารถตรวจสอบยืนยันเอกสารที่คุณมอบให้ได้\n\nโปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VerificationPending",
+    "description": null,
+    "english": "Verification Pending",
+    "translation": "การตรวจสอบยืนยันอยู่ระหว่างดำเนินการ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PendingVerification",
+    "description": null,
+    "english": "The verification request is taking longer than usual. \n\nPlease check back in a few minutes.",
+    "translation": "การขอทำการตรวจสอบยืนยันใช้เวลานานกว่าปกติ \n\nโปรดกลับมาอีกครั้งในอีกสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.OverageVerification2",
+    "description": null,
+    "english": "You may turn these on and off in Settings.",
+    "translation": "คุณสามารถเปิดและปิดการตั้งค่าเหล่านี้ได้ในการตั้งค่า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ExternalCompleteVerification",
+    "description": null,
+    "english": "Once you have completed the Veratad ID scanning process, please press Continue. ",
+    "translation": "เมื่อคุณดำเนินการตามขั้นตอนการสแกน ID ของ Veratad แล้ว โปรดกดที่ดำเนินการต่อ ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VoiceChatUpsell",
+    "description": null,
+    "english": "This experience supports spatial voice chat. To use this feature, you need to verify you are at least 13 years old.",
+    "translation": "ประสบการณ์นี้รองรับการแชทด้วยเสียงตามตำแหน่งทิศทาง หากต้องการใช้คุณสมบัตินี้ คุณต้องตรวจสอบยืนยันว่าคุณมีอายุอย่างน้อย 13 ปี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.SkipVoiceChat",
+    "description": null,
+    "english": "Join Without Voice Chat",
+    "translation": "เข้าร่วมโดยไม่ใช้การแชทด้วยเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PendingRobloxVerification",
+    "description": null,
+    "english": "Updating your Roblox profile...\n\nThis can take a few minutes.",
+    "translation": "กำลังอัปเดตโปรไฟล์ Roblox ของคุณ...\n\nการดำเนินการนี้อาจใช้เวลาสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VeratadSuccess",
+    "description": null,
+    "english": "Processing Complete!",
+    "translation": "ดำเนินการเสร็จสิ้นแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VeratadGenericResponse",
+    "description": null,
+    "english": "Your updated age will be securely submitted to Roblox.\nThis can take a few minutes.",
+    "translation": "อายุที่อัปเดตแล้วของคุณจะถูกส่งอย่างปลอดภัยไปยัง Roblox\nการดำเนินการนี้อาจใช้เวลาสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.EmailSent",
     "description": null,
     "english": "We have sent you a link to {email} to verify your identity.\n\nOnce you have completed the Veratad ID scanning process, please press Continue.",
     "translation": "เราได้ส่งลิงก์ไปยัง {email} เพื่อตรวจสอบยืนยันตัวตนของคุณ\n\nเมื่อคุณดำเนินการตามขั้นตอนการสแกน ID ของ Veratad แล้ว โปรดกดที่ดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PendingCallback",
+    "description": null,
+    "english": "The verification request is taking longer than usual. \n\nPlease check back in a few minutes.",
+    "translation": "การขอทำการตรวจสอบยืนยันใช้เวลานานกว่าปกติ \n\nโปรดกลับมาอีกครั้งในอีกสักครู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.GenericVerified",
+    "description": null,
+    "english": "Your age is now verified!",
+    "translation": "อายุของคุณได้รับการตรวจสอบแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VerifyEmail",
+    "description": null,
+    "english": "Check Your Email",
+    "translation": "ตรวจสอบอีเมลของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.Error",
+    "description": null,
+    "english": "Error",
+    "translation": "ข้อผิดพลาด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.GenericError",
+    "description": null,
+    "english": "ID verification is not available at this time. \n\nPlease try again later.",
+    "translation": "ไม่สามารถทำการตรวจสอบยืนยันตัวตนได้ในเวลานี้ \n\nโปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -61425,10 +62801,34 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Label.PrivacyNotice",
+    "description": null,
+    "english": "The information collected through the ID verification process will only be used for the purposes of securing your account and/or enabling Roblox features.  Roblox takes steps to ensure that all service providers with access to Roblox personal information are capable of protecting the information we share with them.  Our service providers are only allowed to use the personal information with them for the specific tasks they’ve been hired to do that are consistent with our Privacy Policy. Our services providers are not permitted to sell the personal information shared with them.  For more information, please visit our",
+    "translation": "ข้อมูลที่เก็บรวมรวมผ่านกระบวนการตรวจสอบยืนยันตัวตนจะถูกนำไปใช้ในการรักษาความปลอดภัยให้กับบัญชีของคุณและ/หรือเปิดใช้งานคุณสมบัติต่างๆ บน Roblox เท่านั้น Roblox ดำเนินการเพื่อให้แน่ใจว่าผู้ให้บริการทั้งหมดที่มีสิทธิ์เข้าถึงข้อมูลส่วนตัวบน Roblox สามารถปกป้องข้อมูลที่เราแชร์ให้กับเขาได้ ผู้ให้บริการของเราได้รับอนุญาตให้ใช้ข้อมูลส่วนตัวกับงานที่เฉพาะเจาะจงที่เราได้ว่าจ้างให้ทำซึ่งสอดคล้องกับนโยบายความเป็นส่วนตัวเท่านั้น ผู้ให้บริการของเราไม่มีสิทธิ์ขายข้อมูลส่วนตัวที่เราได้แชร์ให้กับเขา หากต้องการข้อมูลเพิ่มเติม โปรดไปที่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.PrivacyPolicy",
     "description": null,
     "english": "Privacy Policy",
     "translation": "นโยบายความเป็นส่วนตัว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PrivacyNoticeAndLink",
+    "description": null,
+    "english": "Please Note: You're about to start the ID verification process with our third party service provider. The information collected through this process will be used for the purposes of securing your account and/or enabling Roblox features. For more information, please visit our {spanStart} Roblox Biometric Privacy Notice.{spanEnd}",
+    "translation": "โปรดทราบ: คุณกำลังจะเริ่มกระบวนการตรวจสอบยืนยันตัวตนกับผู้ให้บริการของเราซึ่งเป็นบริษัทภายนอก ข้อมูลที่เก็บรวมรวมผ่านกระบวนการนี้จะถูกนำไปใช้ในการรักษาความปลอดภัยให้กับบัญชีของคุณและ/หรือเปิดใช้งานคุณสมบัติต่างๆ บน Roblox หากต้องการข้อมูลเพิ่มเติม โปรดไปที่{spanStart}ประกาศเกี่ยวกับความเป็นส่วนตัวของไบโอเมตริกบน Roblox{spanEnd} ของเรา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PrivacyNoticeShort",
+    "description": null,
+    "english": "You're about to start the ID verification process {boldStart}with our third party service provider.{boldEnd}\nThe information collected through this process will only be used for the purposes of securing your account and/or enabling Roblox features. For more information, please visit our {spanStart}Privacy Policy.{spanEnd}",
+    "translation": "โปรดทราบ: คุณกำลังจะเริ่มกระบวนการตรวจสอบยืนยันตัวตน{boldStart}กับผู้ให้บริการของเราซึ่งเป็นบริษัทภายนอก{boldEnd}\nข้อมูลที่เก็บรวมรวมผ่านกระบวนการนี้จะถูกนำไปใช้ในการรักษาความปลอดภัยให้กับบัญชีของคุณและ/หรือเปิดใช้งานคุณสมบัติต่างๆ บน Roblox หากต้องการข้อมูลเพิ่มเติม หากต้องการข้อมูลเพิ่มเติม โปรดไปที่{spanStart}นโยบายความเป็นส่วนตัว{spanEnd}ของเรา",
     "isDeprecated": false
   },
   {
@@ -61457,10 +62857,402 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Label.ValidIdList",
+    "description": null,
+    "english": "Driver's License, Passport, ID Card, Residence Permit",
+    "translation": "ใบขับขี่, พาสปอร์ต, บัตรประชาชน, ใบสำคัญถิ่นที่อยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UseSmartphone",
+    "description": null,
+    "english": "Use a smartphone",
+    "translation": "ใช้สมาร์ทโฟน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.SmartphoneRequired",
+    "description": null,
+    "english": "You need a smartphone in order to continue",
+    "translation": "คุณจำเป็นต้องใช้สมาร์ทโฟนเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.StartSession",
+    "description": null,
+    "english": "Start Session",
+    "translation": "เริ่มเซสชัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ScanQRCode",
+    "description": null,
+    "english": "Scan the QR Code with your camera app to begin.",
+    "translation": "สแกนรหัส QR ด้วยแอปกล้องของคุณเพื่อเริ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.QRAlternateLink",
+    "description": null,
+    "english": "Don't have a smartphone? {linkStart}Continue with your current device{linkEnd}",
+    "translation": "หากคุณไม่มีสมาร์ทโฟล {linkStart}ดำเนินการต่อโดยใช้อุปกรณ์ที่คุณใช้อยู่ตอนนี้{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FailedVerificationInvalidDocument",
+    "description": null,
+    "english": "The document provided could not be verified.\n\nPlease ensure your document is valid and try again.",
+    "translation": "ไม่สามารถตรวจสอบยืนยันเอกสารที่คุณมอบให้ได้\n\nโปรดตรวจสอบให้แน่ใจว่าเอกสารของคุณถูกต้องแล้วลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FailedVerificationLowQuality",
+    "description": null,
+    "english": "The documents provided could not be verified.\n\nPlease try again, ensuring that submitted images are centered and focused on the subject.",
+    "translation": "ไม่สามารถตรวจสอบยืนยันเอกสารที่คุณมอบให้ได้\n\nตรวจสอบให้แน่ใจว่าภาพที่ส่งมาอยู่กึ่งกลางและอยู่ในโฟกัส จากนั้นลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FailedVerificationUnsupportedDocument",
+    "description": null,
+    "english": "The document provided is not supported by our verification provider.\n\nPlease try again with a different document.",
+    "translation": "เอกสารที่คุณมอบให้ไม่ได้รับการรองรับจากผู้ให้บริการตรวจสอบยืนยันของเรา\n\nโปรดลองอีกครั้งโดยใช้เอกสารอื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerifyInBrowser",
+    "description": null,
+    "english": "Please complete the verification flow on your mobile browser to continue.",
+    "translation": "โปรดดำเนินการตามขั้นตอนการตรวจสอบยืนยันบนเบราว์เซอร์โทรศัพท์มือถือของคุณเพื่อดำเนินการต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ConnectingToMobile",
+    "description": null,
+    "english": "Connecting to your mobile",
+    "translation": "เชื่อมต่อกับโทรศัพท์มือถือของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.VerifyingYou",
     "description": null,
     "english": "Verifying you",
     "translation": "กำลังตรวจสอบยืนยันตัวตนของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDataSubmitted",
+    "description": null,
+    "english": "Your verification data has been successfully submitted ",
+    "translation": "ส่งข้อมูลการตรวจสอบยืนยันของคุณสำเร็จเรียบร้อยแล้ว ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.PleaseDoNotClose",
+    "description": null,
+    "english": "Please do not close this window until the verification process is complete.",
+    "translation": "โปรดอย่าปิดหน้าต่างนี้จนกว่าการประมวลผลการตรวจสอบยืนยันจะเสร็จสิ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.DontShowAgain",
+    "description": null,
+    "english": "Don't Show Again",
+    "translation": "ไม่ต้องแสดงอีก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationWaitingForResults",
+    "description": null,
+    "english": "Waiting for results",
+    "translation": "กำลังรอผลลัพธ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UpdatingRoblox",
+    "description": null,
+    "english": "Updating your Roblox profile",
+    "translation": "กำลังอัปเดตโปรไฟล์ Roblox ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.SessionTimeout",
+    "description": null,
+    "english": "Sorry, the verification process took too long. Please refresh the page and try again.",
+    "translation": "ขออภัยที่การประมวลผลการตรวจสอบยืนยันใช้เวลานานเกินไป โปรดรีเฟรชหน้าแล้วลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.VerificationFinished",
+    "description": null,
+    "english": "Your verification data has been successfully submitted. You can now close this window and return to Roblox.",
+    "translation": "ส่งข้อมูลการตรวจสอบยืนยันของคุณสำเร็จเรียบร้อยแล้ว ตอนนี้คุณสามารถปิดหน้าต่างนี้และกลับไปยัง Roblox ได้แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.HeadsUp",
+    "description": null,
+    "english": "Heads Up!",
+    "translation": "โปรดทราบ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.BirthdayChangeWarning",
+    "description": "Updated - https://jira.rbx.com/browse/AA-169",
+    "english": "You are about to change a birthday that has been verified.\n \nIf you change your date of birth, your age will no longer be verified and you will lose access to age restricted features. Are you sure you want to proceed?",
+    "translation": "คุณกำลังจะเปลี่ยนวันเกิดที่ได้รับการตรวจสอบยืนยันแล้ว\n \nหากคุณเปลี่ยนวันเกิด อายุของคุณจะไม่ได้รับการยืนยันอีกต่อไปและคุณจะสูญเสียสิทธิ์ในการเข้าถึงคุณสมบัติที่จำกัดอายุ คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.Warning",
+    "description": null,
+    "english": "Warning",
+    "translation": "คำเตือน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.HavingTroubleScanCode",
+    "description": null,
+    "english": "Having trouble? Scan the QR code above to restart the verification process.",
+    "translation": "หากประสบปัญหา โปรดสแกนรหัส QR ด้านบนเพื่อรีสตาร์ทการดำเนินการตรวจสอบยืนยัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.RestartSession",
+    "description": null,
+    "english": "Restart Session",
+    "translation": "รีสตาร์ทเซสชัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat",
+    "description": "Heading of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Enable Voice Chat",
+    "translation": "เปิดใช้งานการแชทด้วยเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UsesVoiceChat",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "ประสบการณ์นี้ใช้การแชทด้วยเสียง การเปิดใช้งานการแชทด้วยเสียงจะใช้อินพุตจากไมโครโฟนของคุณในประสบการณ์ที่เปิดการใช้งานเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleInstruction",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "You can also toggle this feature on or off by accessing your Settings.",
+    "translation": "คุณสามารถสลับเปิดหรือปิดใช้งานคุณสมบัตินี้ได้ในการตั้งค่าของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithout",
+    "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Join Without Voice Chat",
+    "translation": "เข้าร่วมโดยไม่ใช้การแชทด้วยเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclinedGeneric",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "ขออภัย การตรวจสอบยืนยันถูกปฏิเสธเนื่องจากเหตุผลด้านความปลอดภัย หากคุณต้องการลองอีกครั้ง โปรดกลับมาใหม่ในอีกสองสามวัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VerificationDeclined",
+    "description": null,
+    "english": "Sorry, your verification was declined. For security reasons, please wait {days} day(s) before trying again.",
+    "translation": "ขออภัย การตรวจสอบยืนยันถูกปฏิเสธ เนื่องด้วยเหตุผลด้านความปลอดภัย โปรดรอเป็นเวลา {days} วันก่อนลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat1",
+    "description": null,
+    "english": "Enable voice chat to talk with others in this experience.",
+    "translation": "เปิดใช้งานการแชทด้วยเสียงเพื่อพูดคุยกับคนอื่นๆ ในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat2",
+    "description": null,
+    "english": "Follow our <b>Community Standards</b> when talking and report abuse if you hear it.",
+    "translation": "ปฏิบัติตาม<b>มาตรฐานชุมชน</b>เมื่อทำการพูดคุย และโปรดรายงานหากมีการกระทำผิดเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ClickToConsent",
+    "description": "Legal disclaimer text",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ<b>การบันทึกเสียง</b>ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.LetsChat",
+    "description": null,
+    "english": "Let's Chat!",
+    "translation": "มาแชทกันเถอะ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.CheckboxConsentLabel",
+    "description": "legal disclaimer text",
+    "english": "I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ<b>การบันทึกเสียง</b>ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FollowCommunityStandards",
+    "description": "Identical to Feature.AccountSettings.Label.FollowCommunityStandards",
+    "english": "Follow our {linkStart}Community Standards{linkEnd} when talking and report abuse if you hear it.",
+    "translation": "ปฏิบัติตาม{linkStart}มาตรฐานชุมชน{linkEnd}เมื่อทำการพูดคุย และโปรดรายงานหากมีการกระทำผิดเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ImplicitConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ImplicitConsentVoiceCollection",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ConsentVoiceCollection",
+    "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บ{linkStart}การบันทึกเสียง{linkEnd}ของฉันเพื่อกลั่นกรองและดูแลความปลอดภัยเท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": "exact same as Label.LearnMoreAboutVoiceRecording in Feature.AccountSettings",
+    "english": "Learn More about Voice Recording",
+    "translation": "เรียนรู้เพิ่มเติมเกี่ยวกับการบันทึกเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.YourNewWayToChat",
+    "description": null,
+    "english": "Your New Way To Chat!",
+    "translation": "วิธีใหม่ในการแชท!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableChatWithVoice",
+    "description": null,
+    "english": "Enable your microphone to Chat with your Voice in this experience.",
+    "translation": "เปิดใช้งานไมโครโฟนเพื่อแชทด้วยเสียงของคุณในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableChatWithVoiceWithLink",
+    "description": null,
+    "english": "Enable your microphone to {linkStart}Chat with your Voice{linkEnd} in this experience.",
+    "translation": "เปิดใช้งานไมโครโฟนเพื่อ{linkStart}แชทด้วยเสียงของคุณ{linkEnd}ในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableMicrophone",
+    "description": null,
+    "english": "Enable Microphone",
+    "translation": "เปิดใช้งานไมโครโฟน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithoutMicrophone",
+    "description": null,
+    "english": "Join Without Microphone",
+    "translation": "เข้าร่วมโดยไม่ใช้ไมโครโฟน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ExplicitConsentVoiceCollectionWithML",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัย รวมถึงปรับปรุงเครื่องมือความปลอดภัยด้วย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ImplicitConsentVoiceCollectionWithML",
+    "description": null,
+    "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อกลั่นกรองและดูแลความปลอดภัย รวมถึงปรับปรุงเครื่องมือความปลอดภัยด้วย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.VerificationSuccessful",
+    "description": null,
+    "english": "Verification Successful",
+    "translation": "ตรวจสอบยืนสำเร็จแล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.AccessWiderVariety",
+    "description": null,
+    "english": "You now have access to a wider variety of games.",
+    "translation": "คุณสามารถเข้าถึงเกมได้หลากหลายมากยิ่งขึ้นแล้วตอนนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.DateOfBirthUpdate",
+    "description": null,
+    "english": "Roblox has automatically updated the date of birth on your account to match your ID. Verified: {dateOfBirth}.",
+    "translation": "Roblox ได้อัปเดตวันเกิดบนบัญชีของคุณโดยอัตโนมัติเพื่อให้ตรงกับ ID ของคุณ ตรวจสอบยืนยันแล้ว: {dateOfBirth}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Title.CameraUpsell",
+    "description": null,
+    "english": "Bring Your Avatar To Life!",
+    "translation": "ปลุกอวาตาร์ของคุณให้มีชีวิต!",
     "isDeprecated": false
   },
   {
@@ -61473,10 +63265,58 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Label.JoinWithoutCameraUpsell",
+    "description": null,
+    "english": "Join without Camera",
+    "translation": "เข้าร่วมโดยไม่ใช้กล้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.CameraLearnMoreUpsell",
     "description": null,
     "english": "Learn More about Facial Animation Privacy",
     "translation": "เรียนรู้เพิ่มเติมเกี่ยวกับความเป็นส่วนตัวของแอนิเมชันบนใบหน้า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CameraUpsell",
+    "description": null,
+    "english": "Enable your camera to animate your avatar with your movement in this experience.",
+    "translation": "เปิดใช้กล้องของคุณเพื่อให้อวาตาร์เคลื่อนไหวตามการเคลื่อนไหวของคุณในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CommunityStandardsUpsell",
+    "description": null,
+    "english": "Follow our Community Standards when talking and report abuse if you hear it.",
+    "translation": "ปฏิบัติตามมาตรฐานชุมชนเมื่อทำการพูดคุย และโปรดรายงานหากมีการกระทำผิดเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ExplicitConsentCameraUpsell",
+    "description": null,
+    "english": "I consent to Roblox's temporary use of my movements to animate my avatar.",
+    "translation": "ฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวอวาตาร์ของฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.DefaultConsentCameraUpsell",
+    "description": null,
+    "english": "By clicking on enable, I consent to Roblox's temporary use of my movements to animate my avatar.",
+    "translation": "การคลิกที่เปิดใช้งาน จะถือว่าฉันยินยอมให้ Roblox ใช้การเคลื่อนไหวของฉันเป็นการชั่วคราวเพื่อเคลื่อนไหวอวาตาร์ของฉัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.DateOfBirthUpdated",
+    "description": null,
+    "english": "Roblox has automatically updated the date of birth on your account to match your ID.",
+    "translation": "Roblox ได้อัปเดตวันเกิดบนบัญชีของคุณโดยอัตโนมัติเพื่อให้ตรงกับ ID ของคุณ",
     "isDeprecated": false
   },
   {
@@ -63932,7 +65772,7 @@
     "key": "Description.NotificationTypeExperienceGuidelines",
     "description": "Experience Guidelines Notification Type Description",
     "english": "Guidelines of my experience are moderated",
-    "translation": "คำแนะนำเกี่ยวกับประสบการณ์ของคุณไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "คำแนะนำเกี่ยวกับประสบการณ์ของคุณไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -65020,7 +66860,7 @@
     "key": "EventModeratedTitle",
     "description": "shown in place of title when content is moderated",
     "english": "[CONTENT MODERATED]",
-    "translation": "[เนื้อหาไม่ผ่านเกณฑ์การควบคุม]",
+    "translation": "[เนื้อหาไม่ผ่านเกณฑ์การกลั่นกรอง]",
     "isDeprecated": false
   },
   {
@@ -65324,7 +67164,7 @@
     "key": "Stream.Moderated.Body",
     "description": "Message displayed on virtual event notification body when a virtual event is moderated.",
     "english": "This event has been moderated",
-    "translation": "กิจกรรมนี้ไม่ผ่านเกณฑ์การควบคุม",
+    "translation": "กิจกรรมนี้ไม่ผ่านเกณฑ์การกลั่นกรอง",
     "isDeprecated": false
   },
   {
@@ -65940,7 +67780,7 @@
     "key": "Label.AddAccountWithoutLoggingOut",
     "description": "Helper text for account switching modal.",
     "english": "You can add a new account without logging out.",
-    "translation": "คุณสามารถเพิ่มบัญชีใหม่ได้โดยไม่ต้องออกจากระบบ",
+    "translation": "คุณสามารถเพิ่มบัญชีใหม่ได้โดยไม่ต้องลงชื่อออก",
     "isDeprecated": false
   },
   {
@@ -65948,7 +67788,7 @@
     "key": "Action.LogoutAllAccounts",
     "description": "Button for triggering logout on all logged in accounts.",
     "english": "Log Out of All Accounts",
-    "translation": "ออกจากบัญชีทั้งหมดที่อยู่ในระบบ",
+    "translation": "ลงชื่อออกจากบัญชีทั้งหมด",
     "isDeprecated": false
   },
   {
@@ -65956,7 +67796,7 @@
     "key": "Label.AddOrSwitchAccount",
     "description": "Helper text for account switching modal.",
     "english": "You can switch to another account or add a new account without logging out.",
-    "translation": "คุณสามารถสลับไปยังบัญชีอื่นหรือเพิ่มบัญชีใหม่ได้โดยไม่ต้องออกจากระบบ",
+    "translation": "คุณสามารถสลับไปยังบัญชีอื่นหรือเพิ่มบัญชีใหม่ได้โดยไม่ต้องลงชื่อออก",
     "isDeprecated": false
   },
   {
@@ -65965,6 +67805,134 @@
     "description": "Button on account switching modal to trigger switch account.",
     "english": "Switch",
     "translation": "สลับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountLimit",
+    "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
+    "english": "You have reached account limit. You must log out of at least one account to add new account.",
+    "translation": "คุณลงชื่อเข้าใช้บัญชีถึงจำนวนสูงสุดแล้ว คุณต้องลงชื่อออกจากบัญชีอย่างน้อยหนึ่งบัญชีก่อนที่จะเพิ่มบัญชีใหม่ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresThrottling",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: More than 10% of Memory Store API requests are being throttled for the past hour.\n\nView a detailed breakdown here: {url}",
+    "translation": "คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ต่อไปนี้แล้ว: คำขอ API เพื่อเข้าถึงที่จัดเก็บหน่วยความจำมากกว่า 10% ถูกจำกัดในช่วงชั่วโมงที่ผ่านมา\n\nดูรายละเอียดแยกย่อยได้ที่นี่: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreSizeThreshold",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size is above 90% of total quota for the past hour.\n\nView a detailed breakdown here: {url}",
+    "translation": "คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ต่อไปนี้แล้ว: ขนาดหน่วยความจำเกิน 90% ของโควต้าทั้งหมดในช่วงชั่วโมงที่ผ่านมา\n\nดูรายละเอียดแยกย่อยได้ที่นี่: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresSizeAboveThreshold",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size quota has been reached for the past 5 minutes.\n\nView a detailed breakdown here: {url}",
+    "translation": "คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ต่อไปนี้แล้ว: ใช้โควต้าขนาดหน่วยความจำถึงขีดสูงสุดที่กำหนดไว้แล้วในช่วง 5 นาทีที่ผ่านมา\n\nดูรายละเอียดแยกย่อยได้ที่นี่: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoresFailures",
+    "description": "{universeName}, {universeId} and {url} will be inserted on our end.",
+    "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory Store request failures are above 20% for the past 10 minutes.\n\nView a detailed breakdown here: {url}",
+    "translation": "คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ต่อไปนี้แล้ว: ขอเข้าถึงที่จัดเก็บหน่วยความจำไม่สำเร็จเกินกว่า 20% ใน 10 นาทีที่ผ่านมา\n\nดูรายละเอียดแยกย่อยได้ที่นี่: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated1",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated2",
+    "description": null,
+    "english": "Why are you reporting this person's profile?",
+    "translation": "ทำไมคุณถึงรายการเกี่ยวกับโปรไฟล์ของผู้ใช้นี้?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated3",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.BullyingHarassment",
+    "description": null,
+    "english": "Bullying, harassment, or hate speech",
+    "translation": "การกลั่นแกล้ง การล่วงละเมิด หรือคำพูดที่แสดงความเกลียดชัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ProfileReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this person's profile?",
+    "translation": "ทำไมคุณถึงรายการเกี่ยวกับโปรไฟล์ของผู้ใช้นี้?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ProfileReportHeading",
+    "description": null,
+    "english": "Report Profile",
+    "translation": "รายงานเกี่ยวกับโปรไฟล์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.CheatingScamming",
+    "description": null,
+    "english": "Cheating, scamming, or spamming",
+    "translation": "การโกง, การหลอกลวง หรือการสแปม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Dating",
+    "description": null,
+    "english": "Dating or sexual content",
+    "translation": "เนื้อหาเกี่ยวกับการออกเดทหรือเรื่องเพศ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Suicide",
+    "description": null,
+    "english": "Suicide or self-harm",
+    "translation": "การฆ่าตัวตายหรือการทำร้ายตัวเอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.PII",
+    "description": null,
+    "english": "Personal information (asking for it, or giving it)",
+    "translation": "ข้อมูลส่วนตัว (ขอหรือให้ข้อมูลส่วนตัว)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Violence",
+    "description": null,
+    "english": "Violence or terrorism",
+    "translation": "ความรุนแรงหรือการก่อการร้าย",
     "isDeprecated": false
   },
   {
@@ -65977,10 +67945,50 @@
   },
   {
     "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Other",
+    "description": null,
+    "english": "Something else",
+    "translation": "อื่นๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.Cancel",
     "description": null,
     "english": "Cancel",
     "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Summary",
+    "description": null,
+    "english": "Report Summary",
+    "translation": "ข้อมูลสรุปรายงาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.Submit",
+    "description": null,
+    "english": "Submit Report",
+    "translation": "ส่งรายงาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.DeliveredMessage",
+    "description": null,
+    "english": "Report Delivered to the Roblox Team",
+    "translation": "รายงานถูกส่งให้กับทีมงาน Roblox แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ConfirmationMessage",
+    "description": null,
+    "english": "Your feedback helps us protect and improve the Roblox community. We will review your report very soon, and we'll take every action necessary to keep you safe. ",
+    "translation": "ความเห็นของคุณช่วยเราในการปกป้องและปรับปรุงชุมชน Roblox เราจะตรวจสอบรายงานของคุณโดยเร็วที่สุด และเราจะดำเนินการทุกอย่างที่จำเป็นเพื่อให้คุณปลอดภัย ",
     "isDeprecated": false
   },
   {
@@ -65993,10 +68001,50 @@
   },
   {
     "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ItemReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this item?",
+    "translation": "ทำไมคุณถึงรายการเกี่ยวกับไอเท็มนี้?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
     "key": "Translation.Reporting.PoliticalContent",
     "description": null,
     "english": "Political Content",
     "translation": "เนื้อหาเกี่ยวกับการเมือง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.IllegalContent",
+    "description": null,
+    "english": "Illegal Content",
+    "translation": "เนื้อหาที่ผิดกฎหมาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ExperienceReportHeading",
+    "description": null,
+    "english": "Report Experience",
+    "translation": "รายงานเกี่ยวกับประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translation.Reporting.ExperienceReportSubheading",
+    "description": null,
+    "english": "Why are you reporting this experience?",
+    "translation": "ทำไมคุณถึงรายการเกี่ยวกับประสบการณ์นี้?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DynamicUI",
+    "key": "Translations.Deprecated4",
+    "description": null,
+    "english": "[deprecated]",
+    "translation": "[deprecated]",
     "isDeprecated": false
   }
 ]
