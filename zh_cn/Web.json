@@ -1456,6 +1456,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSLogin.Body",
+    "description": "SMS message for 2sv login.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to verify your account",
+    "translation": "Roblox 帐户 {accountName} 的两步验证：请输入 {code} 验证你的帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSActivationText.Body",
+    "description": "SMS message for activating SMS 2sv.",
+    "english": "Roblox 2SV for {accountName}: please enter {code} to activate 2SV.",
+    "translation": "Roblox 帐户 {accountName} 的两步验证：请输入 {code} 启用两步验证。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
+    "description": "SMS message for disabling SMS 2sv.",
+    "english": "Roblox 2SV for {accountName} disabled.",
+    "translation": "已禁用 Roblox 帐户 {accountName} 的两步验证。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSCustomerSupportDeactivationText.Body",
+    "description": "SMS message for CS deactivation of SMS 2sv.",
+    "english": "Customer support has deactivated 2SV for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from SMS will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in Account Settings under “Security”.",
+    "translation": "客服人员已禁用你 Roblox 帐户的两步验证。你可能在客服支持票单中提出过这项要求，或者客服人员为了确保你的帐户安全而采取了此行动。你登录或进行其他操作时将不再需要使用短信验证码。你可以在“安全性”选项中重新开启两步验证。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSRecoveryCodeDepletedText",
+    "description": "SMS message for when out of recovery codes.",
+    "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
+    "translation": "你 Roblox 帐户的两步验证恢复验证码已用完。如果你还需要更多关于帐户恢复的帮助，请联系客户服务团队。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -10525,6 +10565,14 @@
     "description": "Previously Description.VoiceChatInfo.SafePreBody + Description.VoiceChatInfo.FAQ + .",
     "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our {startLink}Voice Recording FAQ{endLink}.",
     "translation": "如果你听到有人使用有害或危险的言辞，请将他们静音并提交举报。处于审核和安全原因，Roblox 可能会在平台的任意地方将音频录音。如需了解更多信息，请参照我们的{startLink}音频录制常见问题{endLink}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Success.MonthlySpendUpdate.V2",
+    "description": null,
+    "english": "Success! Monthly Spend Restrictions have been set up.",
+    "translation": "成功！月度支出限额已设置。",
     "isDeprecated": false
   },
   {
@@ -29096,6 +29144,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Description.RenameCharacter",
+    "description": null,
+    "english": "Choose a new name for your character.",
+    "translation": "为角色选择一个新名称。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ErrorUpdateCharacter",
+    "description": null,
+    "english": "Character update failed, please try again later.",
+    "translation": "无法更新角色，请稍后重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.FailedDeleteCharacter",
+    "description": null,
+    "english": "Failed to delete character.",
+    "translation": "无法删除角色。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -46616,6 +46688,118 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.EditSponsorshipAndRetry",
+    "description": "If the user inputs invalid sponsorship details, this message prompts the user to edit the details and try again.",
+    "english": "Please edit your sponsorship and try again.",
+    "translation": "请编辑赞助商信息并重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.AtLeastOneOptionSelected",
+    "description": "Error message that appears when user has unselected all options from one or multiple categories.",
+    "english": "At least one option from each category must be selected.",
+    "translation": "每个类别必须至少选择一个选项。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.NumberOfDaysSelector",
+    "description": "Description explaining that the dropdown selector specifies how many days an ad will run",
+    "english": "Days your ad will last",
+    "translation": "你的广告将持续的天数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.DailyBudgetSelector",
+    "description": "Heading that labels a numeric type box where the user specifies the daily budget they want to spend on their ad",
+    "english": "Daily Budget",
+    "translation": "每日预算",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.RobuxPerDayExplanation",
+    "description": "Describes a numeric text box which is used to specify the daily cost of running an ad",
+    "english": "Robux you want to spend per day",
+    "translation": "你每天想要花费的 Robux 金额",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.AdNameRequired",
+    "description": "Error message explaining that the user needs to specify a name for their ad",
+    "english": "Ad name is required",
+    "translation": "广告名称必填",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.CampaignNameSelectionAdvice",
+    "description": "A description providing recommendations and context to help the user better choose a name for their ad.",
+    "english": "Choose a descriptive name. This ad name is only visible to you.",
+    "translation": "选择描述性名称。这个广告名称只对你可见。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.TargetAudience",
+    "description": "Header for a section of a form where the user specifies what audience (gender, age range, device type etc) they want to target for an ad.",
+    "english": "Target Audience",
+    "translation": "目标受众",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.TargetAudience",
+    "description": "Label for a section that summarizes the target audience for an ad.",
+    "english": "Target Audience:",
+    "translation": "目标受众：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.ExampleAvatarItem",
+    "description": "Faux name of example of an avatar item (t-shirt, pants, etc)",
+    "english": "Example Avatar Item",
+    "translation": "虚拟形象道具示例",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Sponsored",
+    "description": "Label applied to sponsored experiences / avatar items / groups etc",
+    "english": "Sponsored",
+    "translation": "赞助",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.UnknownError",
+    "description": "Generic error message associated when we do not have more specific diagnosis or recommendations.",
+    "english": "Something went wrong. Please refresh the page.",
+    "translation": "发生错误，请刷新页面。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsorExperience",
+    "description": "Title for a page where the user creates a sponsorship ad for an experience",
+    "english": "Sponsor This Experience",
+    "translation": "赞助此体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.DefaultCampaignName",
+    "description": "The suffix for the default name for an sponsorship ad campaign. For example, for an ad campaign sponsoring an item called \"Korblox Deathspeaker\", the default campaign name would be \"Korblox Deathspeaker: 22 days starting 04/01/2022\"",
+    "english": ": {numberOfDays, plural, =1 {# day} other {# days}} starting {shortStartDateString}",
+    "translation": "：从 {shortStartDateString} 起持续 {numberOfDays} 天",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47357,6 +47541,14 @@
     "description": null,
     "english": "Basic Settings",
     "translation": "基本设置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Game",
+    "description": null,
+    "english": "Experience",
+    "translation": "作品",
     "isDeprecated": false
   },
   {
@@ -52784,6 +52976,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Message.UnknownError",
+    "description": "A message advising the user when an unknown error occurs",
+    "english": "Something went wrong. Please refresh the page.",
+    "translation": "发生错误，请刷新页面。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TimedAllowance",
     "key": "Tips.Hourly.Warning",
     "description": null,
@@ -53645,6 +53845,14 @@
     "description": null,
     "english": "The account is unable to register",
     "translation": "帐户无法注册",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SignUp",
+    "key": "Response.UnableToRegisterDueToUnderAge",
+    "description": null,
+    "english": "You must meet age of 14 to have a Roblox account.",
+    "translation": "你必须年满 14 岁才能创建一个 Roblox 帐户。",
     "isDeprecated": false
   },
   {
@@ -61044,7 +61252,7 @@
     "key": "Label.UniverseDatastores",
     "description": "datastore product name",
     "english": "DataStore API",
-    "translation": "数据存储 API",
+    "translation": "Datastore API",
     "isDeprecated": false
   },
   {
@@ -62869,6 +63077,22 @@
     "description": null,
     "english": "Password was reset.",
     "translation": "密码已重置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "继续",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SecurityQuestions",
+    "key": "Description.RegainAccessGeneric",
+    "description": null,
+    "english": "To regain access to your account, please click {styledLinkText}.",
+    "translation": "要重新访问你的帐户，请点按 {styledLinkText}。",
     "isDeprecated": false
   },
   {
@@ -65429,6 +65653,14 @@
     "description": null,
     "english": "Save Changes",
     "translation": "保存更改",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.RegenerateDialogContent2",
+    "description": null,
+    "english": "Any unsaved changes will need to be saved separately.",
+    "translation": "任何未保存的更改都需要单独保存。",
     "isDeprecated": false
   },
   {
