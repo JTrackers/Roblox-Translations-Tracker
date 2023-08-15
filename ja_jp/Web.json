@@ -660,7 +660,7 @@
     "key": "Action.LogInEmailOneTimeCode",
     "description": null,
     "english": "Email Me a One-Time Code",
-    "translation": "1回限りのコードをメールで送信",
+    "translation": "ワンタイムコードをメールで送信",
     "isDeprecated": false
   },
   {
@@ -684,7 +684,7 @@
     "key": "Label.GetOneTimeCode",
     "description": null,
     "english": "Get One-Time Code",
-    "translation": "1回限りのコードを取得",
+    "translation": "ワンタイムコードを取得",
     "isDeprecated": false
   },
   {
@@ -692,7 +692,7 @@
     "key": "Label.EnterOneTimeCode",
     "description": null,
     "english": "Enter One-Time Code",
-    "translation": "1回限りのコードを入力",
+    "translation": "ワンタイムコードを入力",
     "isDeprecated": false
   },
   {
@@ -700,7 +700,7 @@
     "key": "Description.GetOneTimeCodeHelp",
     "description": null,
     "english": "Enter the email verified on your account to receive a one-time code.",
-    "translation": "あなたのアカウントで認証済みのメールアドレスを入力し、一回限りのコードを受け取ります。",
+    "translation": "あなたのアカウントで認証済みのメールアドレスを入力し、ワンタイムコード（一回のみ使用可）を受け取ります。",
     "isDeprecated": false
   },
   {
@@ -1989,6 +1989,14 @@
     "description": null,
     "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
     "translation": "{boldStart}重要：{boldEnd} バックアップコードは誰にも教えないようにしてください。Roblox のほうからコードを聞き出すことはありません。これには、コードをショートメッセージで送信するように言ったり、画面共有を要求することなども含まれます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "このコードはすでに使用済みです。新しいコードを入力してください。",
     "isDeprecated": false
   },
   {
@@ -12856,6 +12864,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agree to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "「続ける」をクリックすると、 お使いの電話番号を送信し、当社の {linkTagWithSmsTos}SMS利用規約{linkTagEnd} および {linkTagWithPrivacyPolicy}プライバシー ポリシー{linkTagEnd} に同意したとみなされます。 一回限りの確認コードをお送りします。メッセージやデータの送受信料金が適用される場合があります。ヘルプが必要な場合は、「ヘルプ」と書いて返信してください。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -16109,6 +16125,22 @@
     "description": "i.e. #32",
     "english": "#{serialNumber}",
     "translation": "#{serialNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCountSingular",
+    "description": "Owned Item (1)",
+    "english": "Owned Item ({itemCount})",
+    "translation": "所有しているアイテム ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Fee",
+    "description": "30% Fee:",
+    "english": "{feePercentage}% Fee:",
+    "translation": "{feePercentage}%の手数料：",
     "isDeprecated": false
   },
   {
@@ -26117,6 +26149,14 @@
     "description": null,
     "english": "More actions on this notification.",
     "translation": "この通知についてのその他の対応。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Action.Report",
+    "description": null,
+    "english": "Report",
+    "translation": "報告する",
     "isDeprecated": false
   },
   {
@@ -53456,6 +53496,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.RobloxHome",
+    "description": "Name of link that points back to www.roblox.com",
+    "english": "Roblox Home",
+    "translation": "Roblox ホーム",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Features",
     "key": "Label.CreatorDashboard",
     "description": null,
@@ -62845,6 +62893,14 @@
     "description": null,
     "english": "QR Code Log In",
     "translation": "QRコードでログイン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationWithIcons",
+    "description": null,
+    "english": "{settingsIcon} or {moreIcon} <b> > Quick Log In</b> to enter this code on that device.",
+    "translation": "{settingsIcon} または {moreIcon} <b> > クイックログイン</b> してデバイスにこのコードを入力してください。",
     "isDeprecated": false
   },
   {
@@ -92133,6 +92189,14 @@
     "description": null,
     "english": "Error Loading Current Table",
     "translation": "現在のテーブルの読み込みエラー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.Under13NotAllowed",
+    "description": null,
+    "english": "Users under 13 cannot log in with a one-time code.",
+    "translation": "13歳未満のユーザーの方は、ワンタイムコード（1回のみ使用可）でログインすることはできません。",
     "isDeprecated": false
   }
 ]
