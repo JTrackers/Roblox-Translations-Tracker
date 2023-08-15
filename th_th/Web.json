@@ -13984,6 +13984,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SavedCreditCard.EmailCannotBeChanged",
+    "description": null,
+    "english": "Your email will be saved to this payment method and cannot be changed.",
+    "translation": "อีเมลของคุณจะถูกบันทึกไว้ในวิธีการชําระเงินนี้และไม่สามารถเปลี่ยนแปลงได้",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -66612,7 +66620,7 @@
     "key": "Description.NotificationTypeCloudServices",
     "description": "Memory Stores is referring to this service: https://create.roblox.com/docs/cloud-services/memory-stores",
     "english": "There are issues related to Cloud Services such as Memory Stores in your experiences",
-    "translation": "เกิดปัญหาเกี่ยวกับบริการคลาวด์ในประสบการณ์ของคุณ",
+    "translation": "เกิดปัญหาเกี่ยวกับบริการคลาวด์ เช่น การจัดเก็บหน่วยความจำ ในประสบการณ์ของคุณ",
     "isDeprecated": false
   },
   {
@@ -68844,7 +68852,7 @@
     "key": "Description.MemoryStoresAlert",
     "description": null,
     "english": "Memory Stores Alert Triggered!",
-    "translation": "การแจ้งเตือนเกี่ยวกับที่จัดเก็บหน่วยความจำได้รับการทริกเกอร์!",
+    "translation": "การแจ้งเตือนเกี่ยวกับที่จัดเก็บหน่วยความจำถูกทริกเกอร์!",
     "isDeprecated": false
   },
   {
@@ -68868,7 +68876,31 @@
     "key": "Description.MemoryStoresFailureAlert",
     "description": "where {universeName} and {universeId} will be filled in on our end\n\nplease keep <br> and <h2> where they are. These will be used for formatting.",
     "english": "<h2>MemoryStores Alert Triggered!</h2><br>Hi,<br><br>Your Memory Store Service usage for {universeName} (universe Id: {universeId}) has reached a critical threshold. The number of Memory Store request failures has exceeded 20% within the past 10 minutes. <br><br>Visit the Memory Store Dashboard to view detailed usage information.<br><br>",
-    "translation": "คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ที่สำคัญต่อไปนี้แล้ว: จำนวนครั้งที่ขอเข้าถึงที่จัดเก็บหน่วยความจำไม่สำเร็จเกินกว่า 20% ในช่วง 10 นาทีที่ผ่านมา\n\nโปรดไปที่แดชบอร์ดที่จัดเก็บหน่วยความจำเพื่อดูข้อมูลการใช้งานโดยละเอียด",
+    "translation": "<h2>การแจ้งเตือนเกี่ยวกับ MemoryStores ถูกทริกเกอร์!</h2><br>สวัสดี<br><br>\nคุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ที่สำคัญต่อไปนี้แล้ว จำนวนครั้งที่ขอเข้าถึงที่จัดเก็บหน่วยความจำไม่สำเร็จเกินกว่า 20% ในช่วง 10 นาทีที่ผ่านมา \n<br><br>\nโปรดไปที่แดชบอร์ดที่จัดเก็บหน่วยความจำเพื่อดูข้อมูลการใช้งานโดยละเอียด<br><br>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreQuotaAlert",
+    "description": "We will fill in {universeName} and {universeId}. Please keep <h2> and <br> where they are since they're for formatting purposes.",
+    "english": "<h2>MemoryStores Alert Triggered!</h2><br>Hi,<br><br>Your Memory Store Service usage for {universeName} (universe Id: {universeId}) has reached a critical threshold. The Memory Size has exceeded 90% of the total quota within the past hour.<br><br>\nVisit the Memory Store Dashboard to view detailed usage information.<br><br>\n",
+    "translation": "<h2>การแจ้งเตือนเกี่ยวกับ MemoryStores ถูกทริกเกอร์!</h2><br>สวัสดี<br><br>คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ที่สำคัญต่อไปนี้แล้ว ใช้ขนาดหน่วยความจำไปเกินกว่า 90% ของโควต้าทั้งหมดภายในชั่วโมงที่ผ่านมา<br><br>\nโปรดไปที่แดชบอร์ดที่จัดเก็บหน่วยความจำเพื่อดูข้อมูลการใช้งานโดยละเอียด<br><br>\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreQuotaReachedAlert",
+    "description": "We will fill in {universeName} and {universeId}. Please keep <h2> and <br> where they are since they're for formatting purposes.",
+    "english": "<h2>MemoryStores Alert Triggered!</h2><br>Hi,<br><br>Your Memory Store Service usage for {universeName} (universe Id: {universeId}) has reached a critical threshold. The Memory Size quota has been reached for the past 5 minutes.<br><br>\nVisit the Memory Store Dashboard to view detailed usage information.<br><br>",
+    "translation": "<h2>การแจ้งเตือนเกี่ยวกับ MemoryStores ถูกทริกเกอร์!</h2><br>สวัสดี<br><br>คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ที่สำคัญต่อไปนี้แล้ว ใช้โควต้าขนาดหน่วยความจำถึงขีดสูงสุดที่กำหนดไว้แล้วในช่วง 5 นาทีที่ผ่านมา<br><br>\nโปรดไปที่แดชบอร์ดที่จัดเก็บหน่วยความจำเพื่อดูข้อมูลการใช้งานโดยละเอียด<br><br>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreThrottingAlert",
+    "description": "We will fill in {universeName} and {universeId}. Please keep <h2> and <br> where they are since they're for formatting purposes.",
+    "english": "<h2>MemoryStores Alert Triggered!</h2><br>Hi,<br><br>Your Memory Store Service usage for {universeName} (universe Id: {universeId}) has reached a critical threshold. Over 10% of Memory Store API requests have been experiencing throttling for the past hour.<br><br>Visit the Memory Store Dashboard to view detailed usage information.<br><br>",
+    "translation": "<h2>การแจ้งเตือนเกี่ยวกับ MemoryStores ถูกทริกเกอร์!</h2><br>สวัสดี<br><br>คุณได้ใช้บริการที่จัดเก็บหน่วยความจำของคุณสำหรับ {universeName} (ID ยูนิเวิร์ส: {universeId}) ถึงเกณฑ์ที่สำคัญต่อไปนี้แล้ว คำขอ API เพื่อเข้าถึงที่จัดเก็บหน่วยความจำถูกจำกัดเกินกว่า 10% ในช่วงชั่วโมงที่ผ่านมา<br><br>โปรดไปที่แดชบอร์ดที่จัดเก็บหน่วยความจำเพื่อดูข้อมูลการใช้งานโดยละเอียด<br><br>",
     "isDeprecated": false
   },
   {
@@ -68877,6 +68909,14 @@
     "description": null,
     "english": "View Dashboard",
     "translation": "ดูแดชบอร์ด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreEmailSubject",
+    "description": "We will fill in {universeId}",
+    "english": "Memory Stores Alert Triggered for {universeId}!",
+    "translation": "การแจ้งเตือนเกี่ยวกับที่จัดเก็บหน่วยความจำสำหรับ {universeId} ถูกทริกเกอร์!",
     "isDeprecated": false
   },
   {
