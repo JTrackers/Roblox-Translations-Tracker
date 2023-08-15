@@ -7156,7 +7156,7 @@
     "key": "Label.TwoStepPrerequisite",
     "description": null,
     "english": "Receive unique codes at your specified email.",
-    "translation": "認証済みメールアドレスが必要です。",
+    "translation": "指定したメールアドレスでユニークコードを受け取ること。",
     "isDeprecated": false
   },
   {
@@ -12005,6 +12005,14 @@
     "description": null,
     "english": "Please use a different nickname.",
     "translation": "別のニックネームを使用してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AuthenticatorDisabledHelpText",
+    "description": null,
+    "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
+    "translation": "スマホ上でユニークコードを生成するアプリです。推奨アプリには、Google 認証システム、Microsoft Authenticator、Twilio の Authy が含まれています。",
     "isDeprecated": false
   },
   {
@@ -38600,6 +38608,262 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Other",
+    "description": "Community standard label",
+    "english": "Other",
+    "translation": "その他",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ChildEndangerment",
+    "description": "Community standard label",
+    "english": "Child Endangerment",
+    "translation": "児童を危険にさらすこと",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ThreatsofViolence",
+    "description": "Community standard label",
+    "english": "Threats of Violence",
+    "translation": "暴力をともなう脅し",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.BullyingandHarassment",
+    "description": "Community standard label",
+    "english": "Bullying and Harassment",
+    "translation": "いじめと嫌がらせ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Description.CommunityStandard.SuicideandSelfHarm",
+    "description": "Community standard label",
+    "english": "Suicide and Self Harm",
+    "translation": "自殺や自傷行為",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.SuicideandSelfHarm",
+    "description": "Community standard label",
+    "english": "Suicide and Self Harm",
+    "translation": "自殺や自傷行為",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.SexualContent",
+    "description": "Community standard label",
+    "english": "Sexual Content",
+    "translation": "性的な内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ViolentContentandGore",
+    "description": "Community standard label",
+    "english": "Violent Content and Gore",
+    "translation": "暴力的・グロテスクな内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.TerrorismandViolentExtremismContent",
+    "description": "Community standard label",
+    "english": "Terrorism and Violent Extremism Content",
+    "translation": "テロや暴力的で過激な内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.IllegalandRegulatedActivities",
+    "description": "Community standard label",
+    "english": "Illegal and Regulated Activities",
+    "translation": "違法・規制された言動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.RealWorldPhysicallyDangerousActivities",
+    "description": "Community standard label",
+    "english": "Real World Physically Dangerous Activities",
+    "translation": "現実の世界で物理的に危険な言動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.DiscriminationSlursandHateSpeech",
+    "description": "Community standard label",
+    "english": "Discrimination, Slurs, and Hate Speech",
+    "translation": "差別、中傷、ヘイトスピーチ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.DatingandRomanticContent",
+    "description": "Community standard label",
+    "english": "Dating and Romantic Content",
+    "translation": "デートやロマンチックな内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Profanity",
+    "description": "Community standard label",
+    "english": "Profanity",
+    "translation": "暴言",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ExtortionandBlackmail",
+    "description": "Community standard label",
+    "english": "Extortion and Blackmail",
+    "translation": "強要と脅迫",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.PoliticalContent",
+    "description": "Community standard label",
+    "english": "Political Content",
+    "translation": "政治的な内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.RealWorldTragicEvents",
+    "description": "Community standard label",
+    "english": "Real-World Tragic Events",
+    "translation": "現実の世界での痛ましい事件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.HarmfulOffPlatformSpeechandBehavior",
+    "description": "Community standard label",
+    "english": "Harmful Off-Platform Speech and Behavior",
+    "translation": "有害なプラットフォーム外の言動",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.DisruptiveAudio",
+    "description": "Community standard label",
+    "english": "Disruptive Audio",
+    "translation": "迷惑な音声",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.AbuseofRobloxEmployeesorAffiliates",
+    "description": "Community standard label",
+    "english": "Abuse of Roblox Employees or Affiliates",
+    "translation": "Robloxの社員またはアフィリエイトの悪用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Scams",
+    "description": "Community standard label",
+    "english": "Scams",
+    "translation": "詐欺",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Spam",
+    "description": "Community standard label",
+    "english": "Spam",
+    "translation": "スパム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.CheatingandExploits",
+    "description": "Community standard label",
+    "english": "Cheating and Exploits",
+    "translation": "チートとエクスプロイト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.MisleadingImpersonationandMisrepresentation",
+    "description": "Community standard label",
+    "english": "Misleading Impersonation and Misrepresentation",
+    "translation": "誤解を招くなりすましと詐称",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.IntellectualPropertyViolations",
+    "description": "Community standard label",
+    "english": "Intellectual Property Violations",
+    "translation": "知的財産の侵害",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.ContestsandSweepstakes",
+    "description": "Community standard label",
+    "english": "Contests and Sweepstakes",
+    "translation": "コンテストと懸賞",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.DirectingUsersOffPlatform",
+    "description": "Community standard label",
+    "english": "Directing Users Off Platform",
+    "translation": "サイト外へのユーザー誘導",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.Advertising",
+    "description": "Community standard label",
+    "english": "Advertising",
+    "translation": "広告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.UnauthorizedAccess",
+    "description": "Community standard label",
+    "english": "UnauthorizedAccess",
+    "translation": "不正アクセス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.SharingPersonalInformation",
+    "description": "Community standard label",
+    "english": "Sharing Personal Information",
+    "translation": "個人情報の共有",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.MisusingRobloxSystems",
+    "description": "Community standard label",
+    "english": "Misusing Roblox Systems",
+    "translation": "Robloxシステムの不正利用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Moderation.ModeratorActions",
+    "key": "Label.CommunityStandard.RobloxEconomy",
+    "description": "Community standard label",
+    "english": "Roblox Economy",
+    "translation": "Robloxの経済活動",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameLocalization",
     "key": "Label.Title",
     "description": "Game Title (or Name) field label, corresponding text area editable by game developer",
@@ -49600,6 +49864,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Description.DocumentationSite",
+    "description": null,
+    "english": "Learn how to create engaging experiences through our wide set of tutorials and API reference materials.",
+    "translation": "当社の幅広いチュートリアルとAPI参考資料を通じて魅力的な体験を制作する方法を学ぼう。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Navigation",
     "key": "Heading.Creator",
     "description": null,
@@ -59068,7 +59340,15 @@
     "key": "GroupNameChangeWithVerifiedBadge",
     "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
     "english": "the verified badge will be removed.",
-    "translation": "いったんグループ名が変更された場合、以下を了承します。\n認証済みバッジが削除されること。\n名前は、90日間は変更できないこと。\nグループメンバーにこの変更が通知されること。\nグループは、元の名前で検索できなくなること。",
+    "translation": "認証済みバッジが削除されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "action.close",
+    "description": "A button that can be clicked to close a modal",
+    "english": "Close",
+    "translation": "閉じる",
     "isDeprecated": false
   },
   {
@@ -61492,7 +61772,7 @@
     "key": "Message.GuidelinesInProgress",
     "description": null,
     "english": "You have started the questionnaire but didn’t submit. Click “Resume” to continue generating a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.\n",
-    "translation": "質問フォームの入力を始めましたが、送信しませんでした。「再開」をクリックして、推奨年齢と地域の法的遵守を含む、この体験のガイドライン作成を続けてください。",
+    "translation": "質問フォームの入力を始めましたが、送信しませんでした。「再開」をクリックして、推奨年齢と地域の法的遵守アセスメントを含む、この体験（仮想空間）のガイドライン作成を続けてください。\n",
     "isDeprecated": false
   },
   {
@@ -61508,7 +61788,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about the content in your experience. Your answers will generate a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.",
-    "translation": "あなたの体験についての質問に答えるには「開始」をクリックしてください。回答内容によって、現在のところ推奨年齢と地域の法的遵守アセスメントを含む、あなたの体験のコンテンツに関するガイドラインが設定されます。",
+    "translation": "あなたの体験（仮想空間）にあるコンテンツについての質問に答えるには「開始」をクリックしてください。回答内容によって、推奨年齢と地域の法的遵守アセスメントを含む、あなたの体験のコンテンツに関するガイドラインが設定されます。",
     "isDeprecated": false
   },
   {
@@ -61524,7 +61804,7 @@
     "key": "Message.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Please update your response to answer a few additional questions about the content in your experience. Your answers will generate a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.",
-    "translation": "あなたの体験についての追加質問に答えて、回答内容をアップデートしてください。回答内容によって、現在のところ推奨年齢と地域の法的遵守アセスメントを含む、あなたの体験のコンテンツに関するガイドラインが設定されます。",
+    "translation": "あなたの体験（仮想空間）にあるコンテンツについての追加質問に答えて、回答内容をアップデートしてください。回答内容によって、推奨年齢と地域の法的遵守アセスメントを含む、あなたの体験のコンテンツに関するガイドラインが設定されます。",
     "isDeprecated": false
   },
   {
@@ -61540,7 +61820,7 @@
     "key": "Message.GuidelinesSubmittedNewVersion",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below. The age recommendation is now visible to users on its detail page. This experience is automatically unavailable in any non-compliant regions below.",
-    "translation": "この体験のガイドラインは、以下に表示してあるように有効です。 現時点では、推奨年齢はあなたにしか表示されませんが、まもなくユーザーに表示されるようになります。法的に遵守していない地域では、あなたの体験は自動的に利用できなくなります。",
+    "translation": "この体験（仮想空間）のガイドラインは、以下に表示してあるように有効です。推奨年齢は、ユーザーに概要ページで表示されるようになっています。法的に遵守していない地域では、この体験は自動的に利用できなくなります。",
     "isDeprecated": false
   },
   {
@@ -61588,7 +61868,7 @@
     "key": "Message.GuidelinesSubmittedNewVersionInProgress",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below. The age recommendation is now visible to users on its detail page. This experience is automatically unavailable in any non-compliant regions below. \nYou have started a new entry for the questionnaire but didn’t submit. Click “Resume” to continue generating a set of new Guidelines for this experience.",
-    "translation": "この体験のガイドラインは、以下に表示してあるように有効です。 現時点では、推奨年齢はあなたにしか表示されませんが、まもなくユーザーに表示されるようになります。法的に遵守していない地域では、あなたの体験は自動的に利用できなくなります。質問フォームの入力を始めましたが、送信していません。「再開」をクリックして、推奨年齢と地域の法的遵守を含む、この体験のガイドライン作成を続けてください。",
+    "translation": "この体験（仮想空間）のガイドラインは、以下に表示してあるように有効です。 推奨年齢は、ユーザーに概要ページで表示されるようになっています。法的に遵守していない以下の地域では、この体験は自動的に利用できなくなります。\n質問フォームの入力を始めましたが、送信していません。「再開」をクリックして、この体験の新しいガイドライン作成を続けてください。",
     "isDeprecated": false
   },
   {
@@ -61628,7 +61908,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "現在、ガイドラインはあなたにしか表示されていません。 ユーザーにはまもなく表示されますが、あなたの体験のガイドライン作成ができるようになったらすぐに作成することを強くお勧めします。",
+    "translation": "体験（仮想空間）のガイドラインは、ユーザーに向けて概要ページに表示してあります。あなたの体験が資格を満たしたら、すぐにガイドラインを作成してください。",
     "isDeprecated": false
   },
   {
@@ -61636,7 +61916,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendation",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: Guidelines can give users insights into the content in your experience. Parents have parental controls to customize their kids’ access.",
-    "translation": "{boldStart}推奨年齢{boldEnd}: この情報はまもなくユーザーに表示されるようになりますが、お子様の体験へのアクセスを保護者の方が管理するために使用できる保護者コントロール機能があります。",
+    "translation": "{boldStart}年齢推奨{boldEnd}: ガイドラインはユーザーにあなたの体験（仮想空間）のコンテンツについての情報を与えます。保護者の方々には、子供のアクセスをカスタマイズするための保護者コントロール機能があります。",
     "isDeprecated": false
   },
   {
@@ -61644,7 +61924,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliance",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Guidelines can help your experience automatically become unavailable in some non-compliant regions",
-    "translation": "{boldStart}地域別コンプライアンス{boldEnd}: ガイドラインに基づいて、以下の非準拠地域では、あなたの体験は自動的に利用できなくなります。",
+    "translation": "{boldStart}地域別コンプライアンス{boldEnd}: ガイドラインに基づいて、以下の法的に遵守していない地域では、あなたの体験は自動的に利用できなくなります。",
     "isDeprecated": false
   },
   {
@@ -61660,7 +61940,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "現在、ガイドラインはあなたにしか表示されていません。 ユーザーにはまもなく表示されますが、あなたの体験のガイドライン作成ができるようになったらすぐに作成することを強くお勧めします。",
+    "translation": "体験（仮想空間）のガイドラインは、ユーザーに向けて概要ページに表示してあります。あなたの体験が資格を満たしたら、すぐにガイドラインを作成してください。",
     "isDeprecated": false
   },
   {
@@ -61676,7 +61956,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendationPreview",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: Guidelines can give users insights into the content in your experience. Parents have parental controls to customize their kids’ access.",
-    "translation": "{boldStart}推奨年齢{boldEnd}: この情報はまもなくユーザーに表示されるようになりますが、お子様の体験へのアクセスを保護者の方が管理するために使用できる保護者コントロール機能があります。",
+    "translation": "{boldStart}年齢推奨{boldEnd}: ガイドラインはユーザーにあなたの体験（仮想空間）のコンテンツについての情報を与えます。保護者の方々には、子供のアクセスをカスタマイズするための保護者コントロール機能があります。",
     "isDeprecated": false
   },
   {
@@ -61684,7 +61964,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliancePreview",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Guidelines can help your experience automatically become unavailable in some non-compliant regions",
-    "translation": "{boldStart}地域別コンプライアンス{boldEnd}: ガイドラインに基づいて、以下の非準拠地域では、あなたの体験は自動的に利用できなくなります。",
+    "translation": "{boldStart}地域別コンプライアンス{boldEnd}: ガイドラインに基づいて、以下の法的に遵守していない地域では、あなたの体験は自動的に利用できなくなります。",
     "isDeprecated": false
   },
   {
@@ -61732,7 +62012,7 @@
     "key": "Tooltip.NonCompliantRegionRestrictionHeader",
     "description": null,
     "english": "Non-compliant regions are where Guidelines help your experience automatically become unavailable for compliance reasons.",
-    "translation": "遵守していない地域は、体験が利用できない地域のことです。",
+    "translation": "法的遵守していない地域では、コンプライアンス上の理由により、あなたの体験（仮想空間）がガイドラインによって自動的に利用できなくなるようにしてくれます。",
     "isDeprecated": false
   },
   {
@@ -62869,6 +63149,46 @@
     "description": "Take an asset item off sale",
     "english": "Take Off Sale",
     "translation": "非売品にする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.RemoveImage",
+    "description": null,
+    "english": "Remove Image",
+    "translation": "画像を削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.ChangeImage",
+    "description": null,
+    "english": "Change Image",
+    "translation": "画像の変更",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.NoImageUploaded",
+    "description": null,
+    "english": "No image uploaded",
+    "translation": "アップロード済み画像なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SelectedFile",
+    "description": null,
+    "english": "You have uploaded the image: {fileName}",
+    "translation": "画像をアップロードしました: {fileName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ModeratedNameAndDescription",
+    "description": "it is moderated error msg for users on item configuration page when users configure their assets",
+    "english": "The Name or Description you entered is not allowed\t",
+    "translation": "入力した名前または説明分は許可されていません\t",
     "isDeprecated": false
   },
   {
@@ -72516,7 +72836,7 @@
     "key": "Description.UrlFormat",
     "description": null,
     "english": "Must have secure SSL certificate (starts with https:// unless host name is localhost)",
-    "translation": "セキュリティで保護されたSSL証明書が必要です（「https://」から始まるもの）",
+    "translation": "安全なSSL証明書が必要です （ホスト名が localhost でない限り、https:// で開始）",
     "isDeprecated": false
   },
   {
@@ -72965,6 +73285,14 @@
     "description": "Warning message for hitting the create badge limit of 5 per day",
     "english": "Note the first 5 badge creations are free. You can pay {price} Robux for any additional badge.",
     "translation": "最初の5つのバッジは無料で作成できます。追加のバッジは、 {price} Robux支払うと作成できます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Label.BadgeImage",
+    "description": null,
+    "english": "Badge Image",
+    "translation": "バッジ画像",
     "isDeprecated": false
   },
   {
@@ -73837,6 +74165,14 @@
     "description": "Noting the data this item or asset was last updated.",
     "english": "Last updated {date}",
     "translation": "最終更新日 {date}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Message.CannotPurchaseItem",
+    "description": "A message popup that persist to tell the user that they cannot buy an item at this time.",
+    "english": "This item is not currently for sale",
+    "translation": "このアイテムは現在、販売されていません",
     "isDeprecated": false
   },
   {
@@ -80301,6 +80637,30 @@
     "description": null,
     "english": "Media type:",
     "translation": "メディアの種類:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.PlaceIconShapeRequirement",
+    "description": null,
+    "english": "Icon must be square.",
+    "translation": "アイコンは正方形でなければなりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.IconSubmitSuccess",
+    "description": null,
+    "english": "New icon successfully submitted",
+    "translation": "新しいアイコンを送信できました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.UpdatedTooOften",
+    "description": null,
+    "english": "You can only submit 12 auto generated icons to moderation every 24 hours.",
+    "translation": "自動生成されたアイコンは、24時間に12点しか内容規制チームに提出できません。",
     "isDeprecated": false
   },
   {
