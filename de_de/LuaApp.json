@@ -2792,6 +2792,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerfiyAgeConsent",
+    "description": "The legal consent a user agrees to by choosing to verify their age on roblox.com.",
+    "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
+    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsverifizierung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Catalog",
     "key": "Label.CategoryType",
     "description": null,
@@ -3052,7 +3060,7 @@
     "key": "LabelNoResellers",
     "description": null,
     "english": "No Resellers",
-    "translation": "Keine Verkäufer",
+    "translation": "Keine Wiederverkäufer:innen",
     "isDeprecated": false
   },
   {
@@ -3708,7 +3716,7 @@
     "key": "Heading.Resellers",
     "description": "Noun describing the people who are re-selling an item",
     "english": "Resellers",
-    "translation": "Wiederverkäufer",
+    "translation": "Wiederverkäufer:innen",
     "isDeprecated": false
   },
   {
@@ -3724,7 +3732,7 @@
     "key": "Label.Resell",
     "description": null,
     "english": "Resell",
-    "translation": "Wiederverkaufen",
+    "translation": "Weiterverkaufen",
     "isDeprecated": false
   },
   {
@@ -4476,7 +4484,7 @@
     "key": "Message.ResaleFeePolicy",
     "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
     "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
-    "translation": "Die Einnahmen aus allen Marktplatz-Transaktionen, einschließlich des Wiederverkaufs, werden zwischen Roblox und den an der Transaktion beteiligten Nutzer:innen aufgeteilt. Für Wiederverkäufe bedeutet dies, dass wenn jemand deinen Preis akzeptiert, {yourSharePercent}% der von dieser Person bezahlten Robux an dich als Wiederverkäufer gehen. Die anderen {robloxFeePercent}% gehen an Roblox und andere Nutzer:innen, einschließlich der Creator:innen des Items.",
+    "translation": "Die Einnahmen aus allen Marktplatz-Transaktionen, einschließlich des Weiterverkaufs, werden zwischen Roblox und den an der Transaktion beteiligten Nutzer:innen aufgeteilt. Für Weiterverkäufe bedeutet dies, dass wenn jemand deinen Preis akzeptiert, {yourSharePercent}% der von dieser Person bezahlten Robux an dich als Wiederverkäufer:in gehen. Die anderen {robloxFeePercent}% gehen an Roblox und andere Nutzer:innen, einschließlich der Creator:innen des Items.",
     "isDeprecated": false
   },
   {
@@ -4668,7 +4676,7 @@
     "key": "Label.PriceFromResale",
     "description": "Appears in the buy button, to indicate the the item will be purchased from a reseller. \nExample: (Robux icon) 100 From Resale",
     "english": "{itemPrice} From Resale",
-    "translation": "{itemPrice} aus dem Wiederverkauf",
+    "translation": "{itemPrice} aus dem Weiterverkauf",
     "isDeprecated": false
   },
   {
@@ -4757,6 +4765,14 @@
     "description": null,
     "english": "Creator Limit Reached",
     "translation": "Creator-Limit erreicht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Resellable",
+    "description": "Label for whether the item is resellable",
+    "english": "Resellable",
+    "translation": "Weiterverkaufbar",
     "isDeprecated": false
   },
   {
@@ -7312,6 +7328,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PlayerSearchResults",
+    "key": "Label.NoResultsTryAnotherWay",
+    "description": null,
+    "english": "Try another way to find friends.",
+    "translation": "Versuche, auf andere Art Freund:innen zu finden.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PrivateServers",
     "key": "Heading.VipServers",
     "description": null,
@@ -7553,6 +7577,54 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameCaption",
+    "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
+    "english": "This is how you will appear to others on Roblox. ",
+    "translation": "So wirst du anderen auf Roblox angezeigt. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.EditDisplayName",
+    "description": "This is the title on the modal that allows users to change their display name",
+    "english": "Edit Display Name",
+    "translation": "Anzeigenamen bearbeiten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameModalCaption",
+    "description": "Informs the user that their display name can only be changed every 7 days",
+    "english": "Your display name can only be changed once every 7 days.",
+    "translation": "Dein Anzeigename kann nur alle 7 Tage geändert werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameRecently",
+    "description": "Warning for the user that they cannot update their displayname due to having changed it too soon earlier.",
+    "english": "Your display name has been changed too recently. You will be able to edit it in [#] days.",
+    "translation": "Dein Anzeigename wurde vor kurzem geändert. Du kannst ihn in [#] Tagen bearbeiten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameFailed",
+    "description": "Failed to save display name",
+    "english": "Display name cannot be saved. Try again.\n",
+    "translation": "Anzeigename kann nicht gespeichert werden. Versuche es erneut.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.AboutModalCaption",
+    "description": "description of editing the \"about me\" section on the profile",
+    "english": "Let others know more about you. Keep yourself safe, do not share personal details.\n",
+    "translation": "Erzähl was über dich. Schütze dich dabei und teile keine persönlichen Daten. \n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Description.SaySomething",
     "description": "Empty placeholder text for the about me modal",
     "english": "Say something",
@@ -7565,6 +7637,30 @@
     "description": "Singular Custom Name",
     "english": "Custom Name",
     "translation": "Benutzerdefinierter Name",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.CustomNames",
+    "description": "Plural Custom Names",
+    "english": "Custom Names",
+    "translation": "Benutzerdefinierte Namen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Tooltip.CustomNames",
+    "description": "Informatory Tooltip for Alias uplevel on HomePage FriendCarousel",
+    "english": "Aliases you've set for friends now appear in more places. Visit friends' profiles to make updates.",
+    "translation": "Aliasse, die du für deine Freund:innen eingegeben hast, werden jetzt an mehr Orten angezeigt. Besuche die Profile deiner Freund:innen, um Änderungen vorzunehmen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Tooltip.CustomNameProfile",
+    "description": "Informatory tooltip to draw attention to the set-alias button on the profile card.",
+    "english": "Recognize friends more easily by setting a custom name.",
+    "translation": "Erkenne Freund:innen leichter, indem du einen benutzerdefinierten Namen für sie festlegst.",
     "isDeprecated": false
   },
   {
@@ -14560,6 +14656,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Body",
+    "description": null,
+    "english": "Body",
+    "translation": "Körper",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.CrossDevice",
     "key": "Heading.QuickLogin",
     "description": null,
@@ -14909,6 +15013,14 @@
     "description": "Tell user they are being logged in through cross device login",
     "english": "Confirming login as %s on your other device",
     "translation": "Die Anmeldung als %s auf deinem anderen Gerät wird bestätigt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.QrCodeError",
+    "description": "Error message when a QR code cannot display on the login page.",
+    "english": "We are having problems displaying a QR Code. Please refresh this page, or follow the instructions below to log in on another device.",
+    "translation": "Wir haben Probleme mit der Anzeige eines QR-Codes. Bitte aktualisiere diese Seite oder folge den Anweisungen unten, um dich auf einem anderen Gerät anzumelden.",
     "isDeprecated": false
   },
   {
@@ -17237,6 +17349,14 @@
     "description": null,
     "english": "Personal Information Policy",
     "translation": "Datenschutzerklärung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.PromotionalEmailsCheckbox",
+    "description": "Text for the promotional emails checkbox for lua app",
+    "english": "Optional: I'd also like to sign up to receive emails from Roblox about newest releases, limited-time promotions, and more.",
+    "translation": "Optional: Ich möchte zudem E-Mails von Roblox über neueste Veröffentlichungen, zeitlich begrenzte Aktionen und mehr erhalten.",
     "isDeprecated": false
   },
   {
