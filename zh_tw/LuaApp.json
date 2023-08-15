@@ -2344,6 +2344,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "Label.AdjustScreen",
+    "description": "Adjust screen / Overscan settings page label",
+    "english": "Adjust Screen",
+    "translation": "調整螢幕",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -2469,6 +2477,14 @@
     "description": "Toast to show when a specific action is not supported.",
     "english": "This action is not supported in the current country yet.",
     "translation": "目前所在國家／地區尚未支援此操作。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.AgeBlock",
+    "description": "A text to show when Roblox is blocking user from entering the app due to age restriction.",
+    "english": "This account is not eligible due to age restrictions.",
+    "translation": "由於年齡限制,此帳戶不符合資格。",
     "isDeprecated": false
   },
   {
@@ -4801,10 +4817,50 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Title.InExperienceItemsWidget",
+    "description": "Title text displayed at the top of the \"In-Experience Shops\" widget in the marketplace",
+    "english": "In-Experience Shops",
+    "translation": "體驗商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "ActionSeeAll",
     "description": "Button text for \"See All\" button used in carousel marketplace widgets",
     "english": "See All",
     "translation": "查看全部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotBeResold",
+    "description": null,
+    "english": "This item cannot be resold",
+    "translation": "此物品無法轉售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "已售罄",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "購買後,原始銷售進入保留最多 {purchaseDays} 天。物品只能在這個持有期結束後轉售,轉售將被保留最多 {resaleDays} 天。只有高級用戶可以轉售物品。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "從轉售中購買將被扣留最多 {days} 天。物品只能在此持有期間結束後轉售。只有高級用戶可以轉售物品。",
     "isDeprecated": false
   },
   {
@@ -7737,6 +7793,22 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Description.UsernamePrice",
+    "description": "Cost of changing username",
+    "english": "1000",
+    "translation": "1000",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameTooShort",
+    "description": "Error message that shows up when a display name is too short",
+    "english": "Display name should be at least 3 characters.",
+    "translation": "顯示名稱至少應有 3 個字符。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
@@ -7749,6 +7821,38 @@
     "description": "Heading for a warning modal that informs users that they do not have enough Robux",
     "english": "Insufficient Funds",
     "translation": "資金不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernameInsufficientFunds",
+    "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
+    "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
+    "translation": "你需要 {icon}{rbx} 更多更改您的使用者名稱。您想購買更多 Robux 嗎?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayNameUpdated",
+    "description": "Confirmation that pops up after user successfully updates their displayname",
+    "english": "Display Name Updated",
+    "translation": "已更新顯示名稱",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "使用者名稱已更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.PictureUpdated",
+    "description": "Toast for after a user saves their profile picture",
+    "english": "Profile Picture Updated",
+    "translation": "配置文件照片已更新",
     "isDeprecated": false
   },
   {
@@ -11485,6 +11589,22 @@
     "description": null,
     "english": "Find Friends",
     "translation": "尋找好友",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.Description",
+    "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
+    "translation": "通過添加您的電話號碼查看哪些朋友在Roblox上。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.DescriptionPV",
+    "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
+    "english": "Contacts who are on Roblox will appear here when available.",
+    "translation": "在 Roblox 上的聯繫人將在可用時在此顯示。",
     "isDeprecated": false
   },
   {
