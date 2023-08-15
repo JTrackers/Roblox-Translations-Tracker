@@ -1596,7 +1596,7 @@
     "key": "Description.UsernameReminderEmail.Body.V2",
     "description": "First part of the username reminder email. This text appears before a list of usernames associated with this email address.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}You have requested a reminder for the Roblox accounts associated with this email address. Your accounts are listed below:{paragraphEnd}",
-    "translation": "{paragraphStart}こんにちは。{paragraphEnd}{paragraphStart}このメールアドレスと関連付けられたRobloxアカウントのリマインターをリクエストしました。お持ちのアカウントは以下にリストアップされています:{paragraphEnd}",
+    "translation": "{paragraphStart}こんにちは。{paragraphEnd}{paragraphStart}このメールアドレスと関連付けられたRobloxアカウント名の再通知をリクエストしました。お持ちのアカウントは以下にリストアップされています:{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -2540,7 +2540,7 @@
     "key": "Label.PasswordRequirements",
     "description": null,
     "english": "Password (min length 8)",
-    "translation": "パスワード（8文字以上）",
+    "translation": "パスワード（半角英数字8文字以上）",
     "isDeprecated": false
   },
   {
@@ -2548,7 +2548,7 @@
     "key": "Label.UsernameRequirements",
     "description": null,
     "english": "Username (length 3-20, _ is allowed)",
-    "translation": "ユーザーネーム（長さは半角英数字3～20文字、下線 _ は使用可能）",
+    "translation": "ユーザーネーム（半角英数字3～20文字、下線 _ は使用可能）",
     "isDeprecated": false
   },
   {
@@ -3044,7 +3044,7 @@
     "key": "Response.CaptchaNotEnteredError",
     "description": "validation error message",
     "english": "Please fill out the Captcha",
-    "translation": "キャプチャ認証を入力してください",
+    "translation": "キャプチャコードを入力してください",
     "isDeprecated": false
   },
   {
@@ -3092,7 +3092,7 @@
     "key": "Message.Password.MinLength",
     "description": null,
     "english": "Min length 8",
-    "translation": "最低8文字",
+    "translation": "半角英数字で8文字以上",
     "isDeprecated": false
   },
   {
@@ -3148,7 +3148,7 @@
     "key": "Response.InvalidPhoneNumber",
     "description": null,
     "english": "Invalid phone number.",
-    "translation": "無効な電話番号。",
+    "translation": "電話番号が無効です。",
     "isDeprecated": false
   },
   {
@@ -3244,7 +3244,7 @@
     "key": "Response.PasswordBadLength",
     "description": null,
     "english": "Passwords must be between 8 and 200 characters long.",
-    "translation": "パスワードは8〜200文字であることが必須。",
+    "translation": "パスワードは半角英数字8〜200文字であることが必須。",
     "isDeprecated": false
   },
   {
@@ -3341,6 +3341,14 @@
     "description": null,
     "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
     "translation": "アカウントは正常に作成されましたが、ログインできません。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "別のパスワードを使用してください。半角の特殊文字か数字を使用してください。",
     "isDeprecated": false
   },
   {
@@ -9156,7 +9164,7 @@
     "key": "Description.VerificationEmail.Body.Over13.V2",
     "description": "Body text for email verification email. This comes before a button that the user can click to proceed with confirming that they want to associate this email to the given Roblox account.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Thanks for choosing to secure your Roblox account {emphasisStart}{username}{emphasisEnd} by providing an email address.{paragraphEnd}{paragraphStart}If you submitted this request, please click the button below to complete the verification process:{paragraphEnd}",
-    "translation": "{paragraphStart}こんにちは。{paragraphEnd}{paragraphStart}メールアドレスを提供することで、お持ちのRoblox アカウント {emphasisStart}{username}{emphasisEnd} を安全に保つことを選んでくださり、ありがとうございます。{paragraphEnd}{paragraphStart}このリクエストを送信したら、以下のボタンをクリックして認証プロセスを完了してください:{paragraphEnd}",
+    "translation": "{paragraphStart}こんにちは。{paragraphEnd}{paragraphStart}メールアドレスを提供することで、お持ちのRoblox アカウント {emphasisStart}{username}{emphasisEnd} を安全に保つことを選んでくださり、ありがとうございます。{paragraphEnd}{paragraphStart}このリクエストした場合は、以下のボタンをクリックして認証プロセスを完了してください:{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -9180,7 +9188,7 @@
     "key": "Description.VerificationEmail.Footer.Over13.V2",
     "description": "Footer displayed at the bottom of the 'email verification' email.",
     "english": "Do not reply to this email directly. You are receiving this email because there has been an attempt to verify a Roblox account with your email. If you did not make this request, please disregard this email.",
-    "translation": "このメールには直接、返信しないでください。あなたのメールアドレスでRobloxアカウントの認証しようとする試みがあったのでメールをお送りしています。もし、このリクエストを送信た覚えがない場合は、このメールを無視してください。",
+    "translation": "このメールには直接、返信しないでください。あなたのメールアドレスでRobloxアカウントの認証しようとする試みがあったのでメールをお送りしています。もし、このリクエストを送信した覚えがない場合は、このメールを無視してください。",
     "isDeprecated": false
   },
   {
@@ -14572,7 +14580,7 @@
     "key": "Label.FilterFriends",
     "description": "Shown as filter-by-name placeholder on friends page",
     "english": "Search Friends",
-    "translation": "友達を検索",
+    "translation": "友達をサーチ",
     "isDeprecated": false
   },
   {
@@ -15868,7 +15876,7 @@
     "key": "LabelSearchInsteadFor",
     "description": null,
     "english": "Search instead for",
-    "translation": "元の検索ワード:",
+    "translation": "この語句でサーチ:",
     "isDeprecated": false
   },
   {
@@ -15876,7 +15884,7 @@
     "key": "LabelSearchYouMightMean",
     "description": null,
     "english": "Did you mean:",
-    "translation": "次の検索結果を表示しています:",
+    "translation": "こちらでサーチしますか:",
     "isDeprecated": false
   },
   {
@@ -41276,7 +41284,7 @@
     "key": "Message.SearchTermMinMax",
     "description": null,
     "english": "The search term needs to be between {min} and {max} characters",
-    "translation": "サーチする語句は、{min} から{max} 文字である必要があります",
+    "translation": "サーチする語句は、{min} 〜 {max} 文字である必要があります",
     "isDeprecated": false
   },
   {
@@ -41396,7 +41404,7 @@
     "key": "Heading.GroupSearchCategoryGameStudios",
     "description": "Header and search query for groups that are game studios",
     "english": "Experience Studios",
-    "translation": "体験スタジオ",
+    "translation": "体験制作スタジオ",
     "isDeprecated": false
   },
   {
@@ -54300,7 +54308,7 @@
     "key": "Title.Robux",
     "description": null,
     "english": "Daily Revenue",
-    "translation": "Robux",
+    "translation": "毎日の収益",
     "isDeprecated": false
   },
   {
@@ -54340,7 +54348,7 @@
     "key": "Description.PayingUsers",
     "description": null,
     "english": "Total number of unique users who purchased this experience related items in a day.",
-    "translation": "1日（デイリーアクティブユーザー数）または1ヶ月（月間アクティブユーザー数）の課金ユーザーの数。これには、あなたのゲームを違う複数のセッションでプレイしている同じユーザーが含まれます。\n",
+    "translation": "1日でこの体験に関連したアイテムを購入したユニークユーザーの合計数。",
     "isDeprecated": false
   },
   {
@@ -54692,7 +54700,7 @@
     "key": "Label.PlayersSuffix",
     "description": "it is suffix for DAU/MAU, like {number} players",
     "english": "players",
-    "translation": "人",
+    "translation": "プレイヤー",
     "isDeprecated": false
   },
   {
@@ -55033,6 +55041,94 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RevenueSource",
+    "description": null,
+    "english": "Revenue Source",
+    "translation": "収益源",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPU",
+    "description": null,
+    "english": "Average Revenue per DAU (ARPDAU)",
+    "translation": "デイリーアクティブユーザーあたりの平均収益（ARPDAU）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPPU",
+    "description": null,
+    "english": "Average Revenue per Paying Users (ARPPU)",
+    "translation": "課金ユーザーあたりの平均収益（ARPPU）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ConversionRate",
+    "description": null,
+    "english": "Conversion Rate (CVR)",
+    "translation": "コンバージョン率（CVR）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.Robux",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience in a day.",
+    "translation": "この体験が1日で獲得したRobuxの合計額。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSource",
+    "description": null,
+    "english": "The daily revenue breakdown by source, e.g. game shop items, game passes, private servers, paid access, etc.",
+    "translation": "ゲームショップアイテム、ゲームパス、プライベートサーバー、有料アクセスなど、収益源ごとの毎日の収益の内訳。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPU",
+    "description": null,
+    "english": "Avg. revenue per user among all DAUs, measured by Robux, which equals Daily revenue / DAU.",
+    "translation": "DAU（デイリーアクティブユーザー）全員のユーザー1人あたりの平均収益は、Robuxによって測定され、毎日の収益/DAUに相当します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPPU",
+    "description": null,
+    "english": "Avg. revenue per paying user, which equals Daily revenue / Paying users.",
+    "translation": "課金ユーザー1人あたりの平均収益は、毎日の収益/課金ユーザー数に相当します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ConversionRate",
+    "description": null,
+    "english": "% of DAUs are paying users, which equals # of paying users / DAU.",
+    "translation": "DAU（デイリーアクティブユーザー）の課金ユーザーの割合は、課金ユーザー数/DAUの割合に相当します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arpu",
+    "description": null,
+    "english": "ARPDAU",
+    "translation": "ARPDAU（デイリーアクティブユーザーあたりの平均収益）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arppu",
+    "description": null,
+    "english": "ARPPU",
+    "translation": "ARPPU（課金ユーザーあたりの平均収益）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Label.TotalRobux",
     "description": null,
     "english": "Total",
@@ -55045,6 +55141,110 @@
     "description": null,
     "english": "Average",
     "translation": "平均",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GamePass",
+    "description": null,
+    "english": "Game Pass",
+    "translation": "ゲームパス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GameshopItem",
+    "description": null,
+    "english": "Gameshop Item",
+    "translation": "ゲームショップアイテム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PrivateServer",
+    "description": null,
+    "english": "Private Server",
+    "translation": "プライベートサーバー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PayToPlay",
+    "description": null,
+    "english": "Paid Access",
+    "translation": "有料アクセス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeGamePass",
+    "description": null,
+    "english": "Affiliate Fee For Game Pass",
+    "translation": "ゲームパスのアフィリエイト手数料",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeAvatar",
+    "description": null,
+    "english": "Affliate Fee For Avatar",
+    "translation": "アバターのアフィリエイト手数料",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DailyRevenueWarning",
+    "description": null,
+    "english": "Total includes pending transactions",
+    "translation": "*合計には保留中の取引が含まれます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceWarning",
+    "description": null,
+    "english": "Segmentation Filter does not apply to this Chart",
+    "translation": "セグメンテーションフィルタはこのグラフには適用されません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DAUInsight",
+    "description": null,
+    "english": "DAU over time can help indicate whether players are consistently engaging with and returning to your game (related to retention). DAU can shift rapidly as a result of new features or content that you release and is a good way to measure the impact of updates on your players.",
+    "translation": "DAU（デイリーアクティブユーザー）は、プレイヤーが段々と一貫してゲームに参加する（リテンションに関連）ようになり、戻って来ているかどうかを示すのに役立ちます。DAUは、あなたが発表する新しい機能やコンテンツの結果として迅速に変わることがあり、プレーヤーへのアップデートがもたらす影響を測定するのに適した方法です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.MAUInsight",
+    "description": null,
+    "english": "MAU can be maintained or grown by providing regular updates that motivate your players to continue staying in the game and addressing any issues that cause players to leave (such as bugs that cause crashes or buggy states).",
+    "translation": "MAU（月間アクティブユーザー数）は定期的にアップデートを提供することで、プレーヤーがゲーム内に留まり続ける動機を与え、プレーヤーが離脱する原因となる問題（クラッシュや不具合を引き起こすバグなど）に対処することで維持したり、増やすことができます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.NewUsersInsight",
+    "description": null,
+    "english": "This metric helps you measure the effectiveness of user acquisition efforts.",
+    "translation": "この指標は、ユーザー獲得の取り組みの有効性を測定するのに役立ちます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.PayingUsersInsight",
+    "description": null,
+    "english": "Understanding what’s valuable in your game to players can help you figure out what to sell, how to set prices for players with varying wallet sizes, and how to design progression and economy to encourage that first purchase, and then to create longer-term paying users.",
+    "translation": "プレイヤーにとって何が大切かを理解することは、何を売るべきかや予算の異なるプレイヤー層に向けた価格設定の仕方の決定、最初の購入を促すための流れと経済モデルの構築、より長期的な課金ユーザーを育てるのに役立ちます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceInsight",
+    "description": null,
+    "english": "This metric helps you understand your important revenue driver so that strategically choose the area to optimize for.",
+    "translation": "この指標は、重要な収益源を把握し、最適化する領域を戦略的に選択するのに役立ちます。",
     "isDeprecated": false
   },
   {
@@ -63712,6 +63912,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.CollapseSidebar",
+    "description": null,
+    "english": "Collapse Sidebar",
+    "translation": "サイドバーを折りたたむ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -64357,6 +64565,22 @@
     "description": "shows when user clicks on copy button in confirm dialog for oauth app creation",
     "english": "Copied!",
     "translation": "コピーしました！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.Secret",
+    "description": null,
+    "english": "Secret",
+    "translation": "秘密の質問",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.ClientId",
+    "description": null,
+    "english": "Client ID",
+    "translation": "クライアントID",
     "isDeprecated": false
   },
   {

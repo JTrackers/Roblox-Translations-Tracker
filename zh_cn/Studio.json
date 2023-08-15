@@ -2764,7 +2764,7 @@
     "key": "IdeDoc.SorryPublishedPlaceCannotBeLoaded1",
     "description": "Roblox IDE Doc",
     "english": "Sorry, this place could not be loaded.\n\nDetails: \"%1\"",
-    "translation": "很抱歉，无法加载这个已发布的场景。\n\n详情: “%1”",
+    "translation": "很抱歉，无法加载此场景。\n\n详情: “%1”",
     "isDeprecated": false
   },
   {
@@ -3084,7 +3084,7 @@
     "key": "MainWindow.CopyrightRobloxCorporation2",
     "description": "Main Window",
     "english": "%1%2 Roblox Corporation. ",
-    "translation": "%1%2 Roblox Corporation. ",
+    "translation": "%1%2Roblox Corporation",
     "isDeprecated": false
   },
   {
@@ -10020,7 +10020,7 @@
     "key": "PropertyEnum.English",
     "description": "DO NOT TRANSLATE THIS.  No matter the system language we want to offer language choice in that language.",
     "english": "English",
-    "translation": "English",
+    "translation": "英文",
     "isDeprecated": false
   },
   {
@@ -10268,7 +10268,7 @@
     "key": "PropertyEnum.Metal",
     "description": null,
     "english": "Metal",
-    "translation": "Metal",
+    "translation": "金属",
     "isDeprecated": false
   },
   {
@@ -16212,7 +16212,7 @@
     "key": "IdeDoc.PlaceNotDirty",
     "description": "Roblox IDE Doc",
     "english": "No changes to the place detected. Did not save.",
-    "translation": "未检测到更改。不保存。",
+    "translation": "未检测到对场景的更改，未保存。",
     "isDeprecated": false
   },
   {
@@ -27604,7 +27604,7 @@
     "key": "BetaFeatures.AssetImporterDescription",
     "description": null,
     "english": "Enable the new smart, unified Avatar and Mesh Importer",
-    "translation": "启用新的资源导入器。",
+    "translation": "启用全新智能化统一的虚拟形象和网格导入器",
     "isDeprecated": false
   },
   {
@@ -27985,6 +27985,62 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "DebuggerUIUtilities.EnableBreakpoint",
+    "description": null,
+    "english": "Enable Breakpoint",
+    "translation": "启用断点",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.FailureException1",
+    "description": "Error message that displays if an internal error occurred while importing dynamic head",
+    "english": "Failed importing dynamic head: %1",
+    "translation": "无法导入动态头部：%1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.Success2",
+    "description": "Success message when importing dynamic head.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Successfully loaded FACS control data: found %1 of %2 controls",
+    "translation": "成功加载 FACS 控制数据：找到 %1/%2 个控制项",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.UniqueJointNames1",
+    "description": "Error message when imported FBX file contains multiple joints with the same name.  \"joint\", also known as skeleton or bones, is a technical term in 3d animation that refers to a single part of a rig that can deform a 3d mesh geometry.  Please ensure the appropriate technical term for \"joint\" is used in the translation.",
+    "english": "Found more than one joint named %1.  All joints must have unique names.",
+    "translation": "找到多个名称为 %1 的关节。关节名称不能重复使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.Max3Correctives2",
+    "description": "Error message when importing FBX file.  Correctives refers to a corrective shape that is used to handle bad deformations in a rig in 3d animation.  Please ensure the appropriate technical term for \"corrective\" is used in the translation.",
+    "english": "Failed importing dynamic head: Correctives can be for at most 3 control names.  Found %1 in \"%2\"",
+    "translation": "导入动态头部失败：校正器最多可以是 3 个控制名称。在 %2 中找到 %1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.UnrecognizedFACS1",
+    "description": "Error message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing dynamic head: Unrecognized FACS control name \"%1\"",
+    "translation": "导入动态头部失败：无法识别的 FACS 控制项名称 \"%1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.InvalidCorrective1",
+    "description": "Error message when importing FBX file.  \"corrective\" is a technical term that refers to a corrective shape that is used to handle bad deformation.  Please ensure the appropriate technical term is used in the translation for \"corrective\".",
+    "english": "Failed importing dynamic head: Invalid corrective name \"%1\": Neutral cannot be part of a corrective",
+    "translation": "导入动态头部失败：无效的校正名称 \"%1\"：Neutral 不能成为校正器的一部分。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "BetaFeatures.CurveAnimationsTitle",
     "description": null,
     "english": "Channel Animations",
@@ -27997,6 +28053,22 @@
     "description": null,
     "english": "Enable single-channel animations with new curve-based format in the Animation Clip Editor.",
     "translation": "在动画片段编辑器中启用新曲线格式的单通道动画。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.EnableScripts",
+    "description": null,
+    "english": "Enable Scripts",
+    "translation": "启用脚本",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "RBXMainWindow.EnableScriptsTooltip",
+    "description": null,
+    "english": "Enable all Script and LocalScript instances",
+    "translation": "启用所有脚本和本地脚本实例",
     "isDeprecated": false
   },
   {
@@ -28149,6 +28221,62 @@
     "description": null,
     "english": "By uploading this content, you certify that you have the rights to put this on Roblox.",
     "translation": "上传此内容，即表示你拥有发布此内容至 Roblox 的权力。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ImportCostVerificationDialog.GrantExperiencePermissionDescription",
+    "description": null,
+    "english": "You also allow this experience to use these assets.",
+    "translation": "你也允许此作品使用这些素材。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportErrors.UploadLimitReached",
+    "description": null,
+    "english": "Reached your audio upload limit.",
+    "translation": "已达到音频上传限制。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportErrors.UploadUnavailable",
+    "description": null,
+    "english": "Audio file could not be uploaded at this time.",
+    "translation": "当前无法上传音频文件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportRateLimiting.UploadsLeft4",
+    "description": null,
+    "english": "%1 of %2 audio uploads left until %3.\n(<a href=%4>Learn more</a>)",
+    "translation": "%3 前还有 %1/%2 个音频上传。\n(<a href=%4>了解更多</a>)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportRateLimiting.UploadsReachedLimit2",
+    "description": null,
+    "english": "You've reached your audio upload limit. It refreshes on %1.\n(<a href=%2>Learn more</a>)",
+    "translation": "你已达到音频上传限制。上限会在 %1 上刷新。\n(<a href=%2>了解更多</a>)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportRateLimiting.NoCapacity",
+    "description": null,
+    "english": "Audio uploads are temporarily unavailable. Please try again later.",
+    "translation": "暂时无法上传音频。请稍后再试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BulkAudioImportRateLimiting.UploadsDefault2",
+    "description": null,
+    "english": "You have %1 audio uploads per 30 days.\n(<a href=%2>Learn more</a>)",
+    "translation": "每 30 天，你可以上传 %1 个音频。\n（<a href=%2>了解更多</a>）",
     "isDeprecated": false
   },
   {
@@ -33681,10 +33809,386 @@
   },
   {
     "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureTreehouse",
+    "description": null,
+    "english": "Treehouse",
+    "translation": "树屋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureHouse",
+    "description": null,
+    "english": "House",
+    "translation": "房子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureApartment",
+    "description": null,
+    "english": "Apartment",
+    "translation": "公寓",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureMansion",
+    "description": null,
+    "english": "Mansion",
+    "translation": "豪宅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureTownhouse",
+    "description": null,
+    "english": "Townhouse",
+    "translation": "联排别墅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureOffice",
+    "description": null,
+    "english": "Office",
+    "translation": "办公室",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureMilitaryBase",
+    "description": null,
+    "english": "Military Base",
+    "translation": "军事基地",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureLab",
+    "description": null,
+    "english": "Lab",
+    "translation": "实验室",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureRoads",
+    "description": null,
+    "english": "Roads",
+    "translation": "道路",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureRoadSigns",
+    "description": null,
+    "english": "Road Signs",
+    "translation": "路标",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureRailroad",
+    "description": null,
+    "english": "Railroad",
+    "translation": "铁路",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureStore",
+    "description": null,
+    "english": "Store",
+    "translation": "商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureRestaurant",
+    "description": null,
+    "english": "Restaurant",
+    "translation": "餐厅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureClub",
+    "description": "Dance club",
+    "english": "Club",
+    "translation": "俱乐部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructure",
+    "description": "A building or structure",
+    "english": "Structure",
+    "translation": "建筑",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleCar",
+    "description": null,
+    "english": "Car",
+    "translation": "汽车",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleBoat",
+    "description": null,
+    "english": "Boat",
+    "translation": "船只",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehiclePlane",
+    "description": "Airplane",
+    "english": "Plane",
+    "translation": "飞机",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleHelicopter",
+    "description": null,
+    "english": "Helicopter",
+    "translation": "直升机",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleSpaceship",
+    "description": null,
+    "english": "Spaceship",
+    "translation": "宇宙飞船",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleTank",
+    "description": "Military vehicle",
+    "english": "Tank",
+    "translation": "坦克",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleSubmarine",
+    "description": null,
+    "english": "Submarine",
+    "translation": "潜水艇",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicleTrain",
+    "description": null,
+    "english": "Train",
+    "translation": "火车",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelVehicle",
+    "description": null,
+    "english": "Vehicle",
+    "translation": "交通工具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelLight",
+    "description": null,
+    "english": "Light",
+    "translation": "灯光",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelTechComputer",
+    "description": null,
+    "english": "Computer",
+    "translation": "电脑",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelTechTelevision",
+    "description": null,
+    "english": "Television",
+    "translation": "电视",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelTechPhone",
+    "description": null,
+    "english": "Phone",
+    "translation": "电话",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelTechBag",
+    "description": null,
+    "english": "Bag",
+    "translation": "背包",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelTech",
+    "description": null,
+    "english": "Tech",
+    "translation": "科技",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeaponsGun",
+    "description": null,
+    "english": "Gun",
+    "translation": "枪",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeaponsSword",
+    "description": null,
+    "english": "Sword",
+    "translation": "剑",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeaponsKnife",
+    "description": null,
+    "english": "Knife",
+    "translation": "刀",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeaponsShield",
+    "description": null,
+    "english": "Shield",
+    "translation": "盾",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeaponsBat",
+    "description": "Baseball bat",
+    "english": "Bat",
+    "translation": "棍棒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelWeapons",
+    "description": null,
+    "english": "Weapons",
+    "translation": "武器",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelLandscapeTree",
+    "description": null,
+    "english": "Tree",
+    "translation": "树木",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelLandscapeSnow",
+    "description": null,
+    "english": "Snow",
+    "translation": "雪",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelLandscapeSand",
+    "description": null,
+    "english": "Sand",
+    "translation": "沙",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.Audio",
+    "description": null,
+    "english": "Audio",
+    "translation": "音频",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
     "key": "General.HasScripts",
     "description": null,
     "english": "Has scripts",
     "translation": "包含脚本",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.DistributeOnMarketplace",
+    "description": null,
+    "english": "Distribute on Marketplace",
+    "translation": "在商店中流通",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.DistributeAgreement",
+    "description": null,
+    "english": "To maintain community safety, Roblox may terminate accounts that publish spam or assets with malicious or obfuscated code.",
+    "translation": "为了维护社区安全，Roblox 可能会将发布含有恶意或模糊代码的垃圾邮件或素材的帐户停用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.MustShare",
+    "description": null,
+    "english": "Must share with anyone on Roblox",
+    "translation": "必须与 Roblox 上的所有人共享",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.PublicInformation",
+    "description": null,
+    "english": "I certify that I am the creator of this asset. I agree that the asset may be shared and used by others on Roblox. This cannot be undone.",
+    "translation": "我保证我是此素材的创作者，我同意其他人在 Roblox 上可以共享和使用此素材。此操作无法撤消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.AnyoneOnRoblox",
+    "description": null,
+    "english": "Anyone on Roblox",
+    "translation": "Roblox 上的所有人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.OnlyMe",
+    "description": null,
+    "english": "Only me",
+    "translation": "只有我",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.PublicConfirmationTitle",
+    "description": null,
+    "english": "Are you sure?",
+    "translation": "你确定吗？",
     "isDeprecated": false
   },
   {
@@ -33701,6 +34205,78 @@
     "description": null,
     "english": "You have allowed this asset to be shared with Anyone on Roblox",
     "translation": "你已允许此素材与在 Roblox 上所有人共享",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.SubTitle",
+    "description": null,
+    "english": "Who can use this asset?",
+    "translation": "谁可以使用此素材？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.PublishAssetDialogHeading",
+    "description": null,
+    "english": "This model contains private assets",
+    "translation": "此模型包含私人素材",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.PublishAssetDialogDescription",
+    "description": null,
+    "english": "On Publish, all private assets will be made public. If you do not wish to do so, do not proceed with Publish.",
+    "translation": "发布后，所有私人素材都将设为公开。如果你不想将素材设为公开，请勿发布。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfig.PublishAssetDialogPublish",
+    "description": null,
+    "english": "Publish",
+    "translation": "发布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.TemporarilyDisabledMessage",
+    "description": null,
+    "english": "Enabling Marketplace is unavailable at this time. Please check back later.",
+    "translation": "目前无法启用商城，请稍后再回来查看。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.PublicDisabledInformation",
+    "description": null,
+    "english": "Audio files cannot be made public at this time. Please check back at a later date.",
+    "translation": "当前无法将音频文件设为公开，请稍后再回来查看。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.CheckStatus",
+    "description": null,
+    "english": "Check Status",
+    "translation": "查看状态",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.VerificationNotice",
+    "description": null,
+    "english": "To make audio assets public, you must first verify your identity. Use the Refresh button to update your Verification status.",
+    "translation": "若要将因音频文件设为公开，请先验证你的身份。请使用刷新按钮更新你的验证状态。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigSharing.VerificationAction",
+    "description": null,
+    "english": "ID Verify your account",
+    "translation": "进行帐户 ID 验证",
     "isDeprecated": false
   },
   {
@@ -33773,6 +34349,78 @@
     "description": null,
     "english": "Grant",
     "translation": "授权",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelStructureObby",
+    "description": "A Roblox \"Obby\"",
+    "english": "Obby",
+    "translation": "跑酷",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelFurnitureTable",
+    "description": null,
+    "english": "Table",
+    "translation": "桌子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelFurniturePlant",
+    "description": "A decorative plant",
+    "english": "Plant",
+    "translation": "植物",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Subcategory.ModelFurnitureTelephone",
+    "description": null,
+    "english": "Telephone",
+    "translation": "电话",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.Categories",
+    "description": null,
+    "english": "Categories",
+    "translation": "类别",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "HomeView.TheEssentials",
+    "description": null,
+    "english": "The Essentials",
+    "translation": "必需品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "HomeView.newest",
+    "description": null,
+    "english": "Newest",
+    "translation": "最新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "HomeView.essential",
+    "description": null,
+    "english": "Essential",
+    "translation": "必备",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "HomeView.trending",
+    "description": null,
+    "english": "Trending",
+    "translation": "热门",
     "isDeprecated": false
   },
   {
@@ -44225,6 +44873,70 @@
   },
   {
     "namespace": "Studio.AnimationClipEditor",
+    "key": "Title.MinPBSParam",
+    "description": null,
+    "english": "Minimum playback speed is {speed}x",
+    "translation": "最慢播放速度为 {speed}x",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Title.MaxPBSParam",
+    "description": null,
+    "english": "Maximum playback speed is {speed}x",
+    "translation": "最快播放速度为 {speed}x",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "ContextMenu.GenerateCurve",
+    "description": null,
+    "english": "Generate Curve",
+    "translation": "生成曲线",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.Pause",
+    "description": null,
+    "english": "Pause the animation [Space]",
+    "translation": "暂停动画 [Space]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.Reverse",
+    "description": null,
+    "english": "Preview the animation in reverse",
+    "translation": "倒带预览动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.GoToFirstFrame",
+    "description": null,
+    "english": "Move the scrubber to the first frame",
+    "translation": "将进度条移动至第一帧",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.GoToLastFrame",
+    "description": null,
+    "english": "Move the scrubber to the last frame",
+    "translation": "将进度条移动至最后一帧",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.CreateFromVideo",
+    "description": null,
+    "english": "Create from video",
+    "translation": "从视频创建",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
     "key": "Menu.Action2",
     "description": null,
     "english": "Action2",
@@ -47536,6 +48248,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.PivotEditor",
+    "key": "Notification.InvalidTarget",
+    "description": null,
+    "english": "Object does not have a pivot",
+    "translation": "对象没有枢轴",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.DeveloperInspector",
     "key": "Plugin.Name",
     "description": null,
@@ -49389,6 +50109,14 @@
     "description": null,
     "english": "Delete All Breakpoints",
     "translation": "删除所有断点",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Debugger",
+    "key": "BreakpointsWindow.EnableAll",
+    "description": null,
+    "english": "Enable All Breakpoints",
+    "translation": "启用所有断点",
     "isDeprecated": false
   },
   {

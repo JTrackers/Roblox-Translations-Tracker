@@ -3344,6 +3344,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Utiliser un mot de passe différent. Utiliser des caractères spéciaux ou des chiffres.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Label.sRobux",
     "description": null,
@@ -54228,7 +54236,7 @@
     "key": "Title.Robux",
     "description": null,
     "english": "Daily Revenue",
-    "translation": "Robux",
+    "translation": "Revenu journalier",
     "isDeprecated": false
   },
   {
@@ -54268,7 +54276,7 @@
     "key": "Description.PayingUsers",
     "description": null,
     "english": "Total number of unique users who purchased this experience related items in a day.",
-    "translation": "Le nombre d'utilisateurs payants en un jour (DAU) ou un mois (MAU). Cela inclut le même utilisateur qui joue à ton jeu dans différentes sessions.\n",
+    "translation": "Nombre total d'utilisateurs uniques qui ont acheté les articles liés à cette expérience en une journée.",
     "isDeprecated": false
   },
   {
@@ -54961,6 +54969,94 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RevenueSource",
+    "description": null,
+    "english": "Revenue Source",
+    "translation": "Source des revenus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPU",
+    "description": null,
+    "english": "Average Revenue per DAU (ARPDAU)",
+    "translation": "Revenue moyen journalier par joueur actif (ARPDAU)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPPU",
+    "description": null,
+    "english": "Average Revenue per Paying Users (ARPPU)",
+    "translation": "Revenue moyen par utilisateur payant (ARPPU)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ConversionRate",
+    "description": null,
+    "english": "Conversion Rate (CVR)",
+    "translation": "Taux de conversion (CVR)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.Robux",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience in a day.",
+    "translation": "Total de Robux gagnés par l'expérience en une journée.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSource",
+    "description": null,
+    "english": "The daily revenue breakdown by source, e.g. game shop items, game passes, private servers, paid access, etc.",
+    "translation": "La répartition journalière des revenus par source, par exemple les objets de la boutique de jeux, les passes de jeux, les serveurs privés, les accès payants, etc.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPU",
+    "description": null,
+    "english": "Avg. revenue per user among all DAUs, measured by Robux, which equals Daily revenue / DAU.",
+    "translation": "Revenus moyens par utilisateur parmi tous les DAU (Day Active User), mesurés par Robux, ce qui équivaut aux revenus quotidiens / DAU.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPPU",
+    "description": null,
+    "english": "Avg. revenue per paying user, which equals Daily revenue / Paying users.",
+    "translation": "Revenus moyens par utilisateur payant, ce qui équivaut à des revenus quotidiens / utilisateurs payants.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ConversionRate",
+    "description": null,
+    "english": "% of DAUs are paying users, which equals # of paying users / DAU.",
+    "translation": "% des DAU (Day Active User) sont des utilisateurs payants, ce qui équivaut au nbre des utilisateurs payants / DAU.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arpu",
+    "description": null,
+    "english": "ARPDAU",
+    "translation": "ARPDAU (revenue moyen par utilisateur journalier actif)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arppu",
+    "description": null,
+    "english": "ARPPU",
+    "translation": "ARPPU (revenue moyen par utilisateur payant)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Label.TotalRobux",
     "description": null,
     "english": "Total",
@@ -54973,6 +55069,206 @@
     "description": null,
     "english": "Average",
     "translation": "Moyenne",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GamePass",
+    "description": null,
+    "english": "Game Pass",
+    "translation": "Passe de jeu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GameshopItem",
+    "description": null,
+    "english": "Gameshop Item",
+    "translation": "Article Gameshop",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PrivateServer",
+    "description": null,
+    "english": "Private Server",
+    "translation": "Serveur privé",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PayToPlay",
+    "description": null,
+    "english": "Paid Access",
+    "translation": "Accès payant",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeGamePass",
+    "description": null,
+    "english": "Affiliate Fee For Game Pass",
+    "translation": "Frais d'affiliation pour le passe de jeu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeAvatar",
+    "description": null,
+    "english": "Affliate Fee For Avatar",
+    "translation": "Frais d'affiliation pour Avatar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DailyRevenueWarning",
+    "description": null,
+    "english": "Total includes pending transactions",
+    "translation": "*Le total comprend les transactions en attente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceWarning",
+    "description": null,
+    "english": "Segmentation Filter does not apply to this Chart",
+    "translation": "Le filtre de segmentation ne s'applique pas à ce graphique",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DAUInsight",
+    "description": null,
+    "english": "DAU over time can help indicate whether players are consistently engaging with and returning to your game (related to retention). DAU can shift rapidly as a result of new features or content that you release and is a good way to measure the impact of updates on your players.",
+    "translation": "Le DAU (Day Active User) au fil du temps peut t'aider à déterminer si les joueurs s’engagent et retournent à ton jeu (liée à la rétention). Le DAU peut changer rapidement en raison de nouvelles fonctionnalités ou du contenu que tu publies et est un bon moyen de mesurer l'impact des mises à jour sur tes joueurs.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.MAUInsight",
+    "description": null,
+    "english": "MAU can be maintained or grown by providing regular updates that motivate your players to continue staying in the game and addressing any issues that cause players to leave (such as bugs that cause crashes or buggy states).",
+    "translation": "Le MAU (Monthly Active User) peut être maintenu ou développé en fournissant des mises à jour régulières qui motivent tes joueurs à continuer à rester dans le jeu et à résoudre tous les problèmes qui provoquent le départ des joueurs (comme des bugs qui causent des plantages ou des états bogués).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TotalPlayTimeInsight",
+    "description": null,
+    "english": "As core engagement metrics, total play time helps you understand how your game is engaging. If it’s low or declining, you may want to look into your game design that leads players to drop too early or check out if there are any bugs.",
+    "translation": "En tant que mesure de base de l'engagement, le temps de jeu total t'aide à comprendre comment ton jeu est engagé. S'il est faible ou en baisse, tu peux examiner la conception de ton jeu qui conduit les joueurs à abandonner trop tôt ou vérifier s'il y a des bugs.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.VisitsInsight",
+    "description": null,
+    "english": "The # sessions and DAU can give you an idea if your game is engaging enough that attracts players to come back multiple times a day.",
+    "translation": "Le nombre de sessions et le DAU peuvent te donner une idée et voir si ton jeu est suffisamment attrayant pour inciter les joueurs à revenir plusieurs fois par jour.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.NewUsersInsight",
+    "description": null,
+    "english": "This metric helps you measure the effectiveness of user acquisition efforts.",
+    "translation": "Cette métrique t'aide à mesurer l'efficacité des efforts d'acquisition d'utilisateurs.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D1RetentionInsight",
+    "description": null,
+    "english": "High Day 1 retention often leads to higher overall retention for your game. If your Day 1 Retention is low or drops, that typically means that your new user experience needs to be improved. You might be losing new players early in your game because of confusing tutorials, user interfaces, lack of immediate rewards, or a too-steep immediate progression curve.",
+    "translation": "Une rétention élevée au J1 entraîne souvent une rétention globale plus élevée pour ton jeu. Si ton taux de rétention au premier jour est faible ou en baisse, cela signifie généralement que ta nouvelle expérience utilisateur doit être améliorée. Il se peut que tu perdes de nouveaux joueurs dès le début de ton jeu à cause de didacticiels ou d'interfaces utilisateur confus, d'un manque de récompenses immédiates ou d'une courbe de progression immédiate trop raide.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D7RetentionInsight",
+    "description": null,
+    "english": "Day 7 (D7) Retention is a good metric to track if you are hoping to make your game a daily habit - something they are motivated to play every day. If you have a low D7 retention, this may indicate an issue with engagement (new players aren't motivated to continue playing your game) or progression (players are either completing your content too quickly or taking too long to progress to the next meaningful reward).",
+    "translation": "La rétention au 7e jour (J7) est une bonne mesure à suivre si tu espères faire de ton jeu une habitude quotidienne - quelque chose pour laquelle les joueurs soient motivés tous les jours. Si ton taux de rétention au 7e jour est faible, cela peut indiquer un problème d'engagement (les nouveaux joueurs ne sont pas motivés pour continuer à jouer à ton jeu) ou de progression (les joueurs complètent le contenu trop rapidement ou prennent trop de temps pour passer à la prochaine récompense significative).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D30RetentionInsight",
+    "description": null,
+    "english": "D30 retention helps you understand the effectiveness of converting new players to regular players.",
+    "translation": "La rétention J30 t'aide à comprendre l'efficacité de la conversion des nouveaux joueurs en joueurs réguliers.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D1StickinessInsight",
+    "description": null,
+    "english": "D1 stickiness indicates the overall engagement and retention for both new and returning players who play the game every day. It can be used to understand the impact of your updates.",
+    "translation": "L'adhérence J1 indique l'engagement global et la rétention des joueurs, nouveaux ou anciens, qui jouent au jeu tous les jours. Elle peut être utilisée pour comprendre l'impact de tes mises à jour.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D7StickinessInsight",
+    "description": null,
+    "english": "D7 stickiness can serve as an early indicator of whether your updates lead to long term retention for your overall player base.",
+    "translation": "L'adhérence du J7 peut servir d'indicateur précoce pour savoir si tes mises à jour conduisent à une rétention à long terme de ta base de joueurs globale.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D30StickinessInsight",
+    "description": null,
+    "english": "D30 stickiness, along with D30 retention, gives a full picture of long term retention for your game.",
+    "translation": "L'adhérence J30, ainsi que la rétention J30, donnent une image complète de la rétention à long terme pour votre jeu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxInsight",
+    "description": null,
+    "english": "Revenue, or total Robux earned, is the easiest metric to track for monetization. Knowing how many of your players are willing to pay money in your game and how much your players are willing to spend, among other key metrics, will allow you to understand the health of the monetization in your game and to adjust your monetization strategy more effectively.",
+    "translation": "Le revenu, ou le total des Robux gagnés, est la mesure la plus facile à suivre pour la monétisation. Savoir combien de tes joueurs sont prêts à payer dans ton jeu et combien tes joueurs sont prêts à dépenser, entre autres mesures clés, te permettra de comprendre la santé de la monétisation de ton jeu et d'ajuster ta stratégie de monétisation plus efficacement.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPUInsight",
+    "description": null,
+    "english": "ARPDAU is one of the key metrics to track for monetization. You can understand the value of each player in your game and use it to estimate the change in revenue you’ll see as your DAU and MAU change over time.",
+    "translation": "ARPDAU (revenue moyen par utilisateur journalier actif) est l'un des indicateurs clés à suivre pour la monétisation. tu peux comprendre la valeur de chaque joueur dans ton jeu et l'utiliser pour estimer le changement de revenu que tu verras lorsque tes DAU (Day Active User) et MAU (Monthly Active User) changent au fil du temps.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPPUInsight",
+    "description": null,
+    "english": "ARPPU focuses on the players who are willing to pay for your game and is most useful when considered alongside your conversion rate. Players who buy something in your game once are often more likely to buy again. A high ARPPU typically means that your paying players are finding high, repeat value in your game and is also indicative of high player engagement.",
+    "translation": "L'ARPPU (revenue moyen par utilisateur actif payant) se concentre sur les joueurs qui sont prêts à payer pour ton jeu et est plus utile lorsqu'il est considéré en même temps que ton taux de conversion. Les joueurs qui achètent quelque chose dans ton jeu une fois sont souvent plus susceptibles d'acheter à nouveau. Un ARPPU élevé signifie généralement que tes joueurs payants trouvent une valeur élevée et répétée dans ton jeu et indique également un engagement élevé des joueurs.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.PayingUsersInsight",
+    "description": null,
+    "english": "Understanding what’s valuable in your game to players can help you figure out what to sell, how to set prices for players with varying wallet sizes, and how to design progression and economy to encourage that first purchase, and then to create longer-term paying users.",
+    "translation": "Comprendre ce qui est précieux dans ton jeu pour les joueurs peut t'aider à trouver ce qu'il faut vendre, comment définir les prix pour les joueurs avec des tailles de portefeuille variées, et comment concevoir la progression et l'économie pour encourager ce premier achat, puis pour acquérir des utilisateurs payants à plus long terme.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ConversionRateInsight",
+    "description": null,
+    "english": "ARPDAU and ARPPU are most useful when considered alongside your conversion rate. Conversion rate reflects how well you are able to motivate players to spend money in your game.  If you have a high conversion rate, for example, and a low ARPPU, that indicates that you are good at getting players to buy at least one item in your game, but that there is little beyond that initial purchase that inspires further spending. Understanding what is inspiring that first-time purchase and examining its value could help you determine what content you need to create to inspire more purchases.",
+    "translation": "L'ARPDAU (revenue moyen par utilisateur journalier actif) et l'ARPPU (revenue moyen par utilisateur actif payant) sont plus utiles lorsqu'ils sont considérés en même temps que ton taux de conversion. Le taux de conversion indique dans quelle mesure tu es capable de motiver les joueurs à dépenser de l'argent dans ton jeu.  Si tu as un taux de conversion élevé, par exemple, et un ARPPU faible, cela signifie que tu es capable d'inciter les joueurs à acheter au moins un article dans ton jeu, mais qu'il y a peu de choses au-delà de cet achat initial qui incitent à dépenser davantage. Comprendre ce qui inspire ce premier achat et examiner sa valeur pourrait t'aider à déterminer le contenu que tu dois créer pour inspirer d'autres achats.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceInsight",
+    "description": null,
+    "english": "This metric helps you understand your important revenue driver so that strategically choose the area to optimize for.",
+    "translation": "Cette mesure vous aide à comprendre votre principal moteur de revenus afin de choisir stratégiquement le secteur à optimiser.",
     "isDeprecated": false
   },
   {
@@ -63632,6 +63928,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.CollapseSidebar",
+    "description": null,
+    "english": "Collapse Sidebar",
+    "translation": "Réduire la barre latérale",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -64277,6 +64581,22 @@
     "description": "shows when user clicks on copy button in confirm dialog for oauth app creation",
     "english": "Copied!",
     "translation": "Copié !",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.Secret",
+    "description": null,
+    "english": "Secret",
+    "translation": "Secret",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.ClientId",
+    "description": null,
+    "english": "Client ID",
+    "translation": "ID du client",
     "isDeprecated": false
   },
   {

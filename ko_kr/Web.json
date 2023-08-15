@@ -3344,6 +3344,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "다른 비밀번호를 사용하세요. 특수 문자나 숫자를 포함해야 합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Label.sRobux",
     "description": null,
@@ -54332,7 +54340,7 @@
     "key": "Title.Robux",
     "description": null,
     "english": "Daily Revenue",
-    "translation": "Robux",
+    "translation": "일일 수익",
     "isDeprecated": false
   },
   {
@@ -54372,7 +54380,7 @@
     "key": "Description.PayingUsers",
     "description": null,
     "english": "Total number of unique users who purchased this experience related items in a day.",
-    "translation": "1일(DAU) 또는 1개월(MAU) 동안의 유료 사용자 수입니다. 여기에는 다른 세션에서 게임을 하는 동일한 사용자가 포함됩니다.",
+    "translation": "하루에 이 체험 관련 아이템을 구매한 총 고유 사용자 수입니다.",
     "isDeprecated": false
   },
   {
@@ -55065,6 +55073,94 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RevenueSource",
+    "description": null,
+    "english": "Revenue Source",
+    "translation": "수익원",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPU",
+    "description": null,
+    "english": "Average Revenue per DAU (ARPDAU)",
+    "translation": "일일 활성 사용자당 평균 수익(ARPDAU)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ARPPU",
+    "description": null,
+    "english": "Average Revenue per Paying Users (ARPPU)",
+    "translation": "유료 사용자당 평균 수익(ARPPU)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ConversionRate",
+    "description": null,
+    "english": "Conversion Rate (CVR)",
+    "translation": "전환율(CVR)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.Robux",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience in a day.",
+    "translation": "체험에서 하루 발생한 Robux의 총 액수입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSource",
+    "description": null,
+    "english": "The daily revenue breakdown by source, e.g. game shop items, game passes, private servers, paid access, etc.",
+    "translation": "수익원별 일일 수익 구성(예: 게임 상점 아이템, 게임패스, 비공개 서버, 유료 액세스 등)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPU",
+    "description": null,
+    "english": "Avg. revenue per user among all DAUs, measured by Robux, which equals Daily revenue / DAU.",
+    "translation": "Robux에서 측정한 전체 일일 활성 사용자 중 각 사용자당 평균 수익으로, 일일 수익을 일일 활성 사용자로 나눈 값입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPPU",
+    "description": null,
+    "english": "Avg. revenue per paying user, which equals Daily revenue / Paying users.",
+    "translation": "유료 사용자당 평균 수익으로, 일일 수익을 유료 사용자로 나눈 값입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ConversionRate",
+    "description": null,
+    "english": "% of DAUs are paying users, which equals # of paying users / DAU.",
+    "translation": "일일 활성 사용자의 전환율은 유료 사용자로, 유료 사용자 수를 일일 활성 사용자로 나눈 값입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arpu",
+    "description": null,
+    "english": "ARPDAU",
+    "translation": "ARPDAU",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Arppu",
+    "description": null,
+    "english": "ARPPU",
+    "translation": "ARPPU",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Label.TotalRobux",
     "description": null,
     "english": "Total",
@@ -55077,6 +55173,206 @@
     "description": null,
     "english": "Average",
     "translation": "평균",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GamePass",
+    "description": null,
+    "english": "Game Pass",
+    "translation": "게임패스",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.GameshopItem",
+    "description": null,
+    "english": "Gameshop Item",
+    "translation": "게임 상점 아이템",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PrivateServer",
+    "description": null,
+    "english": "Private Server",
+    "translation": "비공개 서버",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.PayToPlay",
+    "description": null,
+    "english": "Paid Access",
+    "translation": "유료 액세스",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeGamePass",
+    "description": null,
+    "english": "Affiliate Fee For Game Pass",
+    "translation": "게임패스 제휴 수수료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeAvatar",
+    "description": null,
+    "english": "Affliate Fee For Avatar",
+    "translation": "아바타 제휴 수수료",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DailyRevenueWarning",
+    "description": null,
+    "english": "Total includes pending transactions",
+    "translation": "*총계에는 대기 중인 거래가 포함되어 있습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceWarning",
+    "description": null,
+    "english": "Segmentation Filter does not apply to this Chart",
+    "translation": "이 차트에는 세분화 필터가 적용되지 않습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DAUInsight",
+    "description": null,
+    "english": "DAU over time can help indicate whether players are consistently engaging with and returning to your game (related to retention). DAU can shift rapidly as a result of new features or content that you release and is a good way to measure the impact of updates on your players.",
+    "translation": "시간 경과에 따른 일일 활성 사용자 수는 플레이어가 지속적으로 게임에 참여하고 재방문하는지 여부를 보여 주는 데 도움이 될 수 있습니다(사용자 유지 관련). 일일 활성 사용자 수는 개발자가 출시하는 새로운 기능이나 콘텐츠에 따라 순식간에 변동될 수 있으며, 업데이트가 플레이어에 미치는 영향을 측정하는 좋은 방법입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.MAUInsight",
+    "description": null,
+    "english": "MAU can be maintained or grown by providing regular updates that motivate your players to continue staying in the game and addressing any issues that cause players to leave (such as bugs that cause crashes or buggy states).",
+    "translation": "정기적인 업데이트를 제공해 플레이어에게 게임에 대한 지속적인 방문 동기를 부여하고, 플레이어를 떠나게 하는 각종 문제(예: 충돌 유발 버그 또는 버그 지속 상태)를 해결함으로써 월간 활성 사용자 수를 유지하거나 늘릴 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TotalPlayTimeInsight",
+    "description": null,
+    "english": "As core engagement metrics, total play time helps you understand how your game is engaging. If it’s low or declining, you may want to look into your game design that leads players to drop too early or check out if there are any bugs.",
+    "translation": "핵심 사용자 참여 지표인 총 플레이 타임은 각 게임의 사용자 참여 현황을 이해하는 데 도움이 됩니다. 만약 지표가 낮거나 감소하는 경우 게임 설계를 검토해 플레이어를 너무 빨리 잃게 하는 요소가 있는지 살펴보거나, 버그가 있는지 확인해야 할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.VisitsInsight",
+    "description": null,
+    "english": "The # sessions and DAU can give you an idea if your game is engaging enough that attracts players to come back multiple times a day.",
+    "translation": "세션 수와 일일 활성 사용자 수는 플레이어를 하루에도 여러 번 재방문하도록 유도할 만큼 게임이 매력적인지 여부에 대한 정보를 제공할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.NewUsersInsight",
+    "description": null,
+    "english": "This metric helps you measure the effectiveness of user acquisition efforts.",
+    "translation": "이 지표는 사용자 확보 노력의 유효성을 측정하는 데 도움이 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D1RetentionInsight",
+    "description": null,
+    "english": "High Day 1 retention often leads to higher overall retention for your game. If your Day 1 Retention is low or drops, that typically means that your new user experience needs to be improved. You might be losing new players early in your game because of confusing tutorials, user interfaces, lack of immediate rewards, or a too-steep immediate progression curve.",
+    "translation": "1일 사용자 유지가 높으면 게임의 전반적인 사용자 유지율이 높아지는 경우가 많습니다. 1일 사용자 유지가 낮거나 감소한다면, 일반적으로 사용자 경험을 새롭게 개선해야 함을 의미합니다. 명쾌하지 않은 튜토리얼 및 사용자 인터페이스, 즉각적인 보상의 부족, 지나치게 빠르고 즉각적인 진행 등의 요소는 게임 초기에 플레이어를 잃게 하는 원인이 될 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D7RetentionInsight",
+    "description": null,
+    "english": "Day 7 (D7) Retention is a good metric to track if you are hoping to make your game a daily habit - something they are motivated to play every day. If you have a low D7 retention, this may indicate an issue with engagement (new players aren't motivated to continue playing your game) or progression (players are either completing your content too quickly or taking too long to progress to the next meaningful reward).",
+    "translation": "7일(D7) 사용자 유지는 사용자의 매일 일상적인 게임 플레이를 유도하기 위해 참고할 수 있는 좋은 지표입니다. D7 사용자 유지가 낮으면, 사용자 참여 관련 문제(신규 플레이어가 게임을 계속할 의욕이 없음) 또는 진행상의 문제(플레이어가 내용을 너무 빨리 정복하거나 유의미한 다음 보상을 획득하기까지 너무 오래 걸림)가 있음을 의미할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D30RetentionInsight",
+    "description": null,
+    "english": "D30 retention helps you understand the effectiveness of converting new players to regular players.",
+    "translation": "30일 사용자 유지는 신규 플레이어의 일반 플레이어 전환에 대한 유효성을 이해하는 데 도움이 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D1StickinessInsight",
+    "description": null,
+    "english": "D1 stickiness indicates the overall engagement and retention for both new and returning players who play the game every day. It can be used to understand the impact of your updates.",
+    "translation": "1일 사용자 정착률은 매일 게임 플레이하는 신규 및 재방문 플레이어 모두의 전반적인 참여율 및 유지율을 나타냅니다. 개발자가 수행한 업데이트의 영향을 이해하는 데 사용할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D7StickinessInsight",
+    "description": null,
+    "english": "D7 stickiness can serve as an early indicator of whether your updates lead to long term retention for your overall player base.",
+    "translation": "7일 사용자 정착률은 개발자가 수행한 업데이트가 전체 플레이어 베이스에 대한 장기 유지로 이어지는지 여부를 조기에 파악하는 지표로 활용할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.D30StickinessInsight",
+    "description": null,
+    "english": "D30 stickiness, along with D30 retention, gives a full picture of long term retention for your game.",
+    "translation": "30일 사용자 정착률은 30일 사용자 유지와 함께 게임의 장기 유지율에 대한 큰 그림을 제공합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxInsight",
+    "description": null,
+    "english": "Revenue, or total Robux earned, is the easiest metric to track for monetization. Knowing how many of your players are willing to pay money in your game and how much your players are willing to spend, among other key metrics, will allow you to understand the health of the monetization in your game and to adjust your monetization strategy more effectively.",
+    "translation": "수익 또는 획득한 총 Robux는 수익 창출을 추적할 수 있는 가장 쉬운 지표입니다. 다른 주요 지표들 중에서도 몇 명의 플레이어가 게임에서 기꺼이 돈을 지불할 의향이 있고 플레이어가 얼마를 지출할 의향이 있는지 알게 되면, 게임의 수익 창출 상태를 이해하고 수익 창출 전략을 보다 효과적으로 조정하는 데 도움이 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPUInsight",
+    "description": null,
+    "english": "ARPDAU is one of the key metrics to track for monetization. You can understand the value of each player in your game and use it to estimate the change in revenue you’ll see as your DAU and MAU change over time.",
+    "translation": "ARPDAU는 수익 창출을 추적하는 주요 지표 중 하나입니다. 게임에서 각 플레이어의 가치를 이해하고 이를 사용해 시간이 지나며 일일 활성 사용자 및 월간 활성 사용자 수가 변화함에 따라 보게 될 수익의 변화를 추정할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ARPPUInsight",
+    "description": null,
+    "english": "ARPPU focuses on the players who are willing to pay for your game and is most useful when considered alongside your conversion rate. Players who buy something in your game once are often more likely to buy again. A high ARPPU typically means that your paying players are finding high, repeat value in your game and is also indicative of high player engagement.",
+    "translation": "ARPPU는 게임에 비용을 지불할 의사가 있는 플레이어에 초점을 맞추며 전환율을 함께 고려할 때 가장 유용하게 참고할 수 있는 항목입니다. 게임에서 한 번 구매를 경험한 플레이어는 재구매의 가능성이 더 높습니다. 높은 ARPPU는 일반적으로 유료 플레이어가 게임을 반복적이고 높은 가치를 지닌 것으로 평가하고 있음을 의미하며, 높은 플레이어 참여를 나타냅니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.PayingUsersInsight",
+    "description": null,
+    "english": "Understanding what’s valuable in your game to players can help you figure out what to sell, how to set prices for players with varying wallet sizes, and how to design progression and economy to encourage that first purchase, and then to create longer-term paying users.",
+    "translation": "게임에서 플레이어에게 가치 있는 것이 무엇인지를 파악하게 되면, 판매 대상 및 항목, 플레이어의 다양한 구매력에 기반해 가격을 설정하는 방법, 첫 구매를 장려하고 장기 유료 사용자로 전환하기 위한 진행 방식 및 이코노미 시스템 설계 방법을 구상하는 데 도움이 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.ConversionRateInsight",
+    "description": null,
+    "english": "ARPDAU and ARPPU are most useful when considered alongside your conversion rate. Conversion rate reflects how well you are able to motivate players to spend money in your game.  If you have a high conversion rate, for example, and a low ARPPU, that indicates that you are good at getting players to buy at least one item in your game, but that there is little beyond that initial purchase that inspires further spending. Understanding what is inspiring that first-time purchase and examining its value could help you determine what content you need to create to inspire more purchases.",
+    "translation": "ARPDAU 및 ARPPU는 전환율을 함께 고려할 때 가장 유용한 항목입니다. 전환율은 플레이어가 게임에서 비용을 지출하도록 동기를 제대로 부여하고 있는지에 대한 여부를 반영합니다. 예를 들어 전환율이 높고 ARPPU가 낮다면 해당 게임은 플레이어가 게임에서 적어도 하나의 아이템을 구매하도록 잘 설계되어 있지만, 해당 구매 이상으로 추가 지출을 유발하는 요소가 거의 없음을 나타냅니다. 첫 구매를 유도하는 요소가 무엇인지 이해하고 그 가치에 대해 탐구해 보면, 더 많은 구매를 유도하기 위해 어떤 콘텐츠를 제작해야 하는지 결정하는 데 도움이 될 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RevenueSourceInsight",
+    "description": null,
+    "english": "This metric helps you understand your important revenue driver so that strategically choose the area to optimize for.",
+    "translation": "이 지표는 주요 수익 동인을 이해함으로써 최적화할 영역을 전략적으로 선택하는 데 도움이 됩니다.",
     "isDeprecated": false
   },
   {
@@ -63736,6 +64032,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.CollapseSidebar",
+    "description": null,
+    "english": "Collapse Sidebar",
+    "translation": "사이드바 축소",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -64381,6 +64685,22 @@
     "description": "shows when user clicks on copy button in confirm dialog for oauth app creation",
     "english": "Copied!",
     "translation": "복사 완료!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.Secret",
+    "description": null,
+    "english": "Secret",
+    "translation": "Secret",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.ClientId",
+    "description": null,
+    "english": "Client ID",
+    "translation": "클라이언트 ID",
     "isDeprecated": false
   },
   {
