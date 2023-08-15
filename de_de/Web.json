@@ -5824,6 +5824,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirection",
+    "description": null,
+    "english": "This page has been migrated to the Creator Dashboard. You can use the updated page by clicking",
+    "translation": "Diese Seite wurde zum Creator Dashboard migriert. Du kannst die aktualisierte Seite verwenden, indem du",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[hier klickst]",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSettings",
     "key": "MessageEmailAlreadyVerifiedError",
     "description": null,
@@ -10256,6 +10272,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForOver70KKRW",
+    "description": "Parental spend control launch email, Korean user over 70000 KRW limit",
+    "english": "{paragraphStart}This email is to inform you that the monthly spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been changed in accordance with local regulator requirements. These regulations require that accounts held by users under the age of 18 do not spend more than 70,000 KRW per month. As a result, your monthly spend restriction has been updated to {emphasisStart}70,000 KRW{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}You can make changes to your monthly spend restriction settings in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time, but you will not be able to remove this restriction or set a limit above 70,000 KRW. For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Diese E-Mail soll dich darüber informieren, dass die monatlichen Ausgabebeschränkungen für das Konto {emphasisStart}{username}{emphasisEnd} von {emphasisStart}{amountUsd} USD{emphasisEnd} pro Monat in Übereinstimmung mit den Anforderungen der lokalen Regulierungsbehörden geändert wurden. Diese Vorschriften verlangen, dass Konten von Benutzer:innen unter 18 Jahren nicht mehr als 70.000 KRW pro Monat ausgeben. Deshalb wurde deine monatliche Ausgabenbeschränkung auf {emphasisStart}70.000 KRW{emphasisEnd}angepasst.{paragraphEnd}{lineBreak}{paragraphStart}Du kannst jederzeit Änderungen an deinen Einstellungen zur monatlichen Ausgabebeschränkung im Bereich {parentalControlsLinkStart}Kindersicherung{linkEnd} vornehmen, aber du wirst nicht in der Lage sein, diese Einschränkung zu entfernen oder ein Limit von mehr als 70.000 KRW zu setzen. Für weitere Informationen über Kindersicherung, besuche bitte das {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Danke,{lineBreak}{emphasisStart}Das Roblox-Team{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForUnder70KKRW",
+    "description": "Parental spend control launch email, for Korean user with limit under 70000 KRW",
+    "english": "{paragraphStart}This email is to inform you that we now support setting monthly spend restrictions in your local currency, KRW. As a result, the spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been updated to {emphasisStart}{amountLocalCurrency} KRW{emphasisEnd} per month.{paragraphEnd}{lineBreak}{paragraphStart}In addition, local regulators require that accounts held by users under the age of 18 do not spend more than 70,000 KRW per month. You can make changes to your monthly spend restriction settings in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time, but you will not be able to remove this restriction or set a limit above 70,000 KRW.{paragraphEnd}{lineBreak}{paragraphStart}For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Diese E-Mail soll dich darüber informieren, dass wir jetzt die Einstellung monatlicher Ausgabebeschränkungen in deiner Landeswährung, KRW, unterstützen. Infolgedessen wurde die Ausgabebeschränkung für Konto {emphasisStart}{username}{emphasisEnd} von {emphasisStart}{amountUsd} USD{emphasisEnd} pro Monat auf {emphasisStart}{amountLocalCurrency} KRW{emphasisEnd} pro Monat aktualisiert.{paragraphEnd}{lineBreak}{paragraphStart}Zudem verlangen lokale Regulierungsbehörden, dass Konten, die Benutzer:innen unter 18 Jahren gehören, nicht mehr als 70.000 KRW pro Monat ausgeben. Du kannst jederzeit Änderungen an deinen Einstellungen zur monatlichen Ausgabenbeschränkung im Bereich {parentalControlsLinkStart}Kindersicherung{linkEnd} vornehmen, aber du wirst nicht in der Lage sein, diese Einschränkung zu entfernen oder ein Limit von über 70.000 KRW zu setzen.{paragraphEnd}{lineBreak}{paragraphStart}Für weitere Informationen zur Kindersicherung, besuche bitte das {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Vielen Dank,{lineBreak}{emphasisStart}Das Roblox-Team{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForOtherCurrency",
+    "description": "Parental spend controls launch email, for non-korean users whose local currency is supported and enabled",
+    "english": "{paragraphStart}This email is to inform you that we now support setting monthly spend restrictions in your local currency, {emphasisStart}{currencyCode}{emphasisEnd}. As a result, the spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been updated to {emphasisStart}{amountLocalCurrency} {currencyCode}{emphasisEnd} per month.{paragraphEnd}{lineBreak}{paragraphStart}You can make changes to your monthly spend restrictions in your local currency or disable this setting entirely in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time. For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Diese E-Mail soll dich darüber informieren, dass wir jetzt die Einstellung monatlicher Ausgabenbeschränkungen in deiner Landeswährung, {emphasisStart}{currencyCode}{emphasisEnd}, unterstützen. Infolgedessen wurde die Ausgabebeschränkung für Konto {emphasisStart}{username}{emphasisEnd} von {emphasisStart}{amountUsd} USD{emphasisEnd} pro Monat auf {emphasisStart}{amountLocalCurrency} {currencyCode}{emphasisEnd} pro Monat aktualisiert.{paragraphEnd}{lineBreak}{paragraphStart} Du kannst jederzeit Änderungen an deinen Einstellungen zur monatlichen Ausgabenbeschränkung in deiner lokalen Währung im Bereich {parentalControlsLinkStart}Kindersicherung{linkEnd} vornehmen, oder die Limits gänzlich deaktivieren. Für weitere Informationen zur Kindersicherung, besuche bitte das {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Vielen Dank,{lineBreak}{emphasisStart}Das Roblox-Team{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailSubject",
+    "description": null,
+    "english": "Changes to your Monthly Spend Restrictions settings",
+    "translation": "Änderungen an den Einstellungen deiner monatlichen Ausgabebeschränkungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailSubjectForKorea",
+    "description": null,
+    "english": "Your Monthly Spend Restrictions settings have been changed",
+    "translation": "Die Einstellung deiner monatlichen Ausgabebeschränkungen wurde geändert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlResetEmail.EmailSubject",
+    "description": null,
+    "english": "Your Monthly Spend Restrictions settings have been reset",
+    "translation": "Die Einstellung deiner monatlichen Ausgabebeschränkungen wurde zurückgesetzt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlResetEmail.EmailBody",
+    "description": null,
+    "english": "{paragraphStart}This email is to inform you that the country and purchase currency associated with the account {username} has recently changed. As a result, your previously set spend restrictions of {amount} {previousCurrency} per month have been reset and no longer apply to future purchases on this account. To set a new monthly spend restriction for the account in {newCurrency}, please visit {parentalControlsLinkStart}Parental Controls{linkEnd} in Settings.{paragraphEnd}{lineBreak}Thank you,{lineBreak}The Roblox Team",
+    "translation": "{paragraphStart}Diese E-Mail soll dich darüber informieren, dass das Land und die Kaufwährung, die mit diesem Konto, {username}, verbunden sind, neulich geändert wurden. Infolgedessen wurde deine zuvor festgelegte Ausgabebeschränkung von {amount}{previousCurrency} pro Monat zurückgesetzt und wird nicht mehr auf künftige Käufe mit diesem Konto angewandt. Um neue monatliche Ausgabebeschränkungen für dieses Konto in {newCurrency} festzulegen, besuche bitte den Bereich {parentalControlsLinkStart}Kindersicherung{linkEnd} in den Einstellungen.{paragraphEnd}{lineBreak}Vielen Dank,{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -12149,6 +12221,38 @@
     "description": "Apple is a brandnamd which does not change. Only Translate \"Only\" in the string",
     "english": "Apple Only",
     "translation": "Nur Apple",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TryOn",
+    "description": "Used as a button to indicate to a user they can try on an item",
+    "english": "Try On",
+    "translation": "Anprobieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TakeOff",
+    "description": "Button for a user to stop trying on an item",
+    "english": "Take Off",
+    "translation": "Ablegen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.3D",
+    "description": null,
+    "english": "3D",
+    "translation": "3D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.2D",
+    "description": null,
+    "english": "2D",
+    "translation": "2D",
     "isDeprecated": false
   },
   {
@@ -15101,6 +15205,22 @@
     "description": "As in yes or no",
     "english": "No",
     "translation": "Nein",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Action.SwapToSource",
+    "description": "Button to swap a game details page to the original language.",
+    "english": "Translate to Original Language",
+    "translation": "In Originalsprache übersetzen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Action.SwapToTranslation",
+    "description": "Button to swap a game details page to the user's language.",
+    "english": "Translate to {userLanguage}",
+    "translation": "Auf {userLanguage} übersetzen",
     "isDeprecated": false
   },
   {
@@ -26284,7 +26404,7 @@
     "key": "Description.AnyoneOnRobloxWarning",
     "description": null,
     "english": "I certify that I am the creator of this asset. I agree that the asset may be shared and used by others on Roblox. This cannot be undone. {linkStart}Terms of Use{linkEnd}.",
-    "translation": "Ich bestätige, dass ich Ersteller:in dieses Assets bin und jedem die Möglichkeit gebe, es zu nutzen. Dies kann nicht rückgängig gemacht werden. {linkStart}Nutzungsbedingungen{linkEnd}.",
+    "translation": "Ich bestätige, dass ich Schöpfer:in dieses Assets bin. Ich stimme zu, dass das Asset von anderen auf Roblox geteilt und genutzt werden kann. Dies kann nicht rückgängig gemacht werden. {linkStart}Nutzungsbedingungen{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -58272,6 +58392,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoresControl",
+    "description": null,
+    "english": "CONTROL",
+    "translation": "STEUERUNG",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoresList",
+    "description": "operations list for datastores",
+    "english": "List Datastores",
+    "translation": "Datenspeicher auflisten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.DatastoresCreate",
+    "description": "operation create for datastores",
+    "english": "Create Datastore",
+    "translation": "Datenspeicher erstellen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -60884,7 +61028,7 @@
     "key": "Heading.Compute",
     "description": null,
     "english": "Server Performance",
-    "translation": "Berechnen",
+    "translation": "Serverleistung",
     "isDeprecated": false
   },
   {
@@ -60956,7 +61100,7 @@
     "key": "Description.Cpu",
     "description": null,
     "english": "The CPU performs all the calculations needed to run a server. CPU usage is a measurement of how many CPU cores your place is using. The most likely causes of high CPU usage are complex scripts.",
-    "translation": "Verwendete Kerne oder verwendete virtuelle Kerne sind Maß der CPU-Auslastung und nimmt alle Berechnungen zur Ausführung deiner Orte.",
+    "translation": "Die CPU führt alle Berechnungen durch, die benötigt sind, um einen Server auszuführen. Die CPU-Auslastung ist eine Messung der Anzahl der CPU-Kerne, die dein Ort benutzt. Die wahrscheinlichsten Ursachen für die hohe CPU-Auslastung sind komplexe Skripte.",
     "isDeprecated": false
   },
   {
@@ -60964,7 +61108,7 @@
     "key": "Description.Memory",
     "description": null,
     "english": "Memory is used to store data for rapid access in a server. Objects, settings, and player data in your world would be stored here. The most likely causes of high memory usages are complex assets and settings.",
-    "translation": "Gebrauchter Speicher deiner Instanzen in Megabyte",
+    "translation": "Speicher wird verwendet, um Daten für den schnellen Zugriff auf einen Server zu speichern. Objekte, Einstellungen und Spielerdaten in deiner Welt würden hier gespeichert. Die wahrscheinlichsten Ursachen für hohe Speicherauslastungen sind komplexe Assets und Einstellungen.",
     "isDeprecated": false
   },
   {
@@ -60972,7 +61116,7 @@
     "key": "Description.HeartbeatRatio",
     "description": null,
     "english": "Server FPS, also known as the tick rate, is the rate of Roblox engine’s core game loop. Likely causes of server FPS dropping include complex scripts, network serialization, physics, and CPU contention on the host.",
-    "translation": "Taktverhältnis deiner Instanzen",
+    "translation": "Server-BpS, auch bekannt als Tick Rate, ist die Rate der Roblox Engine Core Game-Schleife. Wahrscheinlich sind die Ursachen für die BpS-Abnahme des Servers komplexe Skripte, Netzwerkserialisierung, Physik und CPU-Konflikte auf dem Host.",
     "isDeprecated": false
   },
   {
@@ -61341,6 +61485,22 @@
     "description": null,
     "english": "Accessibility",
     "translation": "Barrierefreiheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.Education",
+    "description": null,
+    "english": "Education",
+    "translation": "Bildung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Label.EngineAPI",
+    "description": null,
+    "english": "Engine APIs",
+    "translation": "Engine-APIs",
     "isDeprecated": false
   },
   {
