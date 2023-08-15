@@ -1536,6 +1536,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте,{lineBreak}{lineBreak}активирована двухшаговая проверка через СМС для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, отправленный по СМС.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Двухшаговая проверка с помощью СМС включена для аккаунта Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -3324,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Невозможно выполнить вход в аккаунт. Войди в приложение LuoBu.",
+    "translation": "Не удалось войти в аккаунт.",
     "isDeprecated": false
   },
   {
@@ -6964,7 +6980,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "Кто может ко мне присоединяться?",
+    "translation": "Кто может присоединиться к мне в плейсе?",
     "isDeprecated": false
   },
   {
@@ -7500,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "У этого аккаунта будет доступ только к проверенному контенту платформы. Также настройки контактов (раздел «{linkStart}Конфиденциальность{linkEnd}») будут переведены в режим «Выкл.».",
+    "translation": "Этот аккаунт может получить доступ только к нашему курируемому контенту на платформе. Кроме того, настройки общения (под заголовком {linkStart}«Конфиденциальность{linkEnd} ») будут отключены.",
     "isDeprecated": false
   },
   {
@@ -7508,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "Настройки контактов заблокированы из-за включённых ограничений аккаунта (раздел «{linkStart}Безопасность{linkEnd}»)",
+    "translation": "Настройки общения заблокированы из-за включённых ограничений аккаунта (раздел «{linkStart}Родительский контроль{linkEnd}»).",
     "isDeprecated": false
   },
   {
@@ -9364,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "Когда эта настройка включена, этому аккаунту будет доступен только контент, подходящий для всех возрастов. Кроме того, настройки контактов (раздел «{linkStart}Конфиденциальность{linkEnd}») будут переведены в режим «Выкл.».",
+    "translation": "Когда эта настройка включена, этот аккаунт будет иметь доступ только к контенту, подходящему для всех возрастов. Кроме того, настройки контактов (раздел «{linkStart}Конфиденциальность{linkEnd}») будут переведены в режим «Выкл.».",
     "isDeprecated": false
   },
   {
@@ -9444,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "Настройки контактов заблокированы из-за включенных ограничений аккаунта (раздел «{linkStart}Родительский контроль{linkEnd}»).",
+    "translation": "Настройки общения заблокированы из-за включённых ограничений аккаунта (под заголовком «{linkStart}Родительский контроль{linkEnd}»).",
     "isDeprecated": false
   },
   {
@@ -26980,7 +26996,7 @@
     "key": "Description.MeAndSpecific",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked. {linkStart}Read more{linkEnd}.",
-    "translation": "Аудио доступно только в тех плейсах, к которым ты предоставляешь доступ. Ниже можно ввести ID плейсов, к которым ты хочешь открыть доступ, отделив их запятыми. {linkStart}Подробнее{linkEnd}.",
+    "translation": "Аудио доступно только в тех плейсах, к которым ты предоставляешь доступ. Ниже можно ввести Universe ID, к которым ты хочешь открыть доступ, отделив их запятыми. {linkStart}Подробнее{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -26988,7 +27004,7 @@
     "key": "Label.EnterUniverseIds",
     "description": null,
     "english": "Enter Universe IDs",
-    "translation": "Введи ID",
+    "translation": "Введи Universe ID",
     "isDeprecated": false
   },
   {
@@ -27004,7 +27020,7 @@
     "key": "Message.UniverseIdNotFound",
     "description": null,
     "english": "Universe ID cannot be found",
-    "translation": "ID не найден",
+    "translation": "Universe ID не найден",
     "isDeprecated": false
   },
   {
@@ -27036,7 +27052,7 @@
     "key": "Label.UniverseId",
     "description": null,
     "english": "Universe ID",
-    "translation": "ID",
+    "translation": "Universe ID",
     "isDeprecated": false
   },
   {
@@ -27068,7 +27084,7 @@
     "key": "Description.MeAndSpecificNoLink",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked.",
-    "translation": "Аудио доступно только в тех плейсах, к которым ты предоставляешь доступ. Ниже можно ввести ID плейсов, к которым ты хочешь открыть доступ, отделив их запятыми.",
+    "translation": "Аудио доступно только в тех плейсах, к которым ты предоставляешь доступ. Ниже можно ввести Universe ID, к которым ты хочешь открыть доступ, отделив их запятыми. Отозвать это действие будет невозможно.",
     "isDeprecated": false
   },
   {
@@ -27076,7 +27092,7 @@
     "key": "Message.InsufficientUniversePermissions",
     "description": null,
     "english": "You don't have edit rights to the listed Universes and they have not been given asset permissions.",
-    "translation": "У тебя нет прав на редактирование перечисленных ID, и им не были предоставлены права доступа.",
+    "translation": "У тебя нет прав на редактирование перечисленных Universe ID, и им не были предоставлены права доступа.",
     "isDeprecated": false
   },
   {
@@ -27084,7 +27100,7 @@
     "key": "Label.AllExperiences",
     "description": null,
     "english": "Public - All Experiences",
-    "translation": "Все плейсы",
+    "translation": "Общий доступ: все плейсы",
     "isDeprecated": false
   },
   {
@@ -27092,7 +27108,7 @@
     "key": "Label.SpecificExperiences",
     "description": null,
     "english": "Private - Specific Experiences",
-    "translation": "Определённые плейсы",
+    "translation": "Частный: определённые плейсы",
     "isDeprecated": false
   },
   {
@@ -29304,6 +29320,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "Обновить персонажа",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "Хочешь обновить персонажа? На основе внешнего вида аватара будет создан новый наряд.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "Удалить персонаж",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "Действительно удалить этого персонажа?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -30156,7 +30204,7 @@
     "key": "Message.YouHaveNoItemsCategory",
     "description": null,
     "english": "You don't have items in this category.",
-    "translation": "Нет предметов в этой категории.",
+    "translation": "В этой категории ничего нет.",
     "isDeprecated": false
   },
   {
@@ -30172,7 +30220,7 @@
     "key": "Message.UserHasNoItemsCategory",
     "description": null,
     "english": "This user doesn't have items in this category.",
-    "translation": "У пользователя нет предметов в этой категории.",
+    "translation": "У пользователя ничего нет в этой категории.",
     "isDeprecated": false
   },
   {
@@ -46660,7 +46708,7 @@
     "key": "Message.InvalidUniverseId",
     "description": null,
     "english": "Cannot load the universe for the specified universe id.",
-    "translation": "Невозможно загрузить мир для указанного ID мира.",
+    "translation": "Невозможно загрузить мир для указанного Universe ID.",
     "isDeprecated": false
   },
   {
@@ -47588,7 +47636,7 @@
     "key": "Heading.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "Пропуски",
+    "translation": "Пропуска",
     "isDeprecated": false
   },
   {
@@ -50140,7 +50188,7 @@
     "key": "Label.YourInventoryEmpty",
     "description": null,
     "english": "You have no items in this category.",
-    "translation": "У вас нет предметов в этой категории.",
+    "translation": "В этой категории ничего нет.",
     "isDeprecated": false
   },
   {
@@ -50148,7 +50196,7 @@
     "key": "Label.TheirInventoryEmpty",
     "description": null,
     "english": "This user has no items in this category.",
-    "translation": "У пользователя нет предметов в этой категории.",
+    "translation": "У пользователя ничего нет в этой категории.",
     "isDeprecated": false
   },
   {
@@ -50956,7 +51004,7 @@
     "key": "Description.MakePrivate",
     "description": null,
     "english": "Are you sure you want to make this experiences private? This will shutdown all running servers.",
-    "translation": "Сделать этот плейс закрытым? Это отключит все запущенные сервера.",
+    "translation": "Сделать этот плейс закрытым? Это отключит все запущенные серверы.",
     "isDeprecated": false
   },
   {
@@ -51452,7 +51500,7 @@
     "key": "Label.GamePasses",
     "description": null,
     "english": "Passes",
-    "translation": "Пропуски",
+    "translation": "Пропуска",
     "isDeprecated": false
   },
   {
@@ -53552,6 +53600,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "Подтверждённая иконка значка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Иконка значка Premium",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileHeader",
     "key": "Action.AddFriend",
     "description": null,
@@ -54828,23 +54892,23 @@
     "key": "Label.GamePass",
     "description": null,
     "english": "Passes",
-    "translation": "Пропуски",
+    "translation": "Пропуска",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
-    "translation": "Продукт разработчика",
+    "english": "Developer Products",
+    "translation": "Продукты разработчика",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
-    "translation": "Частный сервер",
+    "english": "Private Servers",
+    "translation": "Частные серверы",
     "isDeprecated": false
   },
   {
@@ -54859,16 +54923,16 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
-    "translation": "Комиссия за игровые пропуска",
+    "english": "Affiliate Fees For Passes",
+    "translation": "Партнёрская комиссия за пропуска",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
-    "translation": "Комиссия за аватар",
+    "english": "Affliate Fees For Avatars",
+    "translation": "Партнёрская комиссия за аватары",
     "isDeprecated": false
   },
   {
@@ -54883,7 +54947,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "Фильтр сегментации не применяется к этому графику",
     "isDeprecated": false
   },
@@ -55165,6 +55229,22 @@
     "description": "Default view for the chart.",
     "english": "None",
     "translation": "Нет",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.StartDate",
+    "description": null,
+    "english": "Start Date",
+    "translation": "Дата начала",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.EndDate",
+    "description": null,
+    "english": "End Date",
+    "translation": "Дата окончания",
     "isDeprecated": false
   },
   {
@@ -60556,7 +60636,7 @@
     "key": "Label.CrossServerMessaging",
     "description": null,
     "english": "Messaging Service API",
-    "translation": "Cross Server Messaging API",
+    "translation": "API службы сообщений",
     "isDeprecated": false
   },
   {
@@ -62844,7 +62924,7 @@
     "key": "Label.OptionPasses",
     "description": null,
     "english": "Passes",
-    "translation": "Пропуски",
+    "translation": "Пропуска",
     "isDeprecated": false
   },
   {
@@ -63412,7 +63492,7 @@
     "key": "Description.Cpu",
     "description": null,
     "english": "The CPU performs all the calculations needed to run a server. CPU usage is a measurement of how many CPU cores your place is using. The most likely causes of high CPU usage are complex scripts.",
-    "translation": "CPU выполняет все расчеты, необходимые для запуска сервера. Использование CPU — это измерение количества ядер CPU вашей локации. Наиболее вероятные причины высокой загрузки CPU — сложные скрипты.",
+    "translation": "CPU выполняет все расчёты, необходимые для запуска сервера. Использование CPU — это измерение количества ядер CPU локации. Наиболее вероятные причины высокой загрузки CPU — сложные скрипты.",
     "isDeprecated": false
   },
   {
@@ -63420,7 +63500,7 @@
     "key": "Description.Memory",
     "description": null,
     "english": "Memory is used to store data for rapid access in a server. Objects, settings, and player data in your world would be stored here. The most likely causes of high memory usages are complex assets and settings.",
-    "translation": "Память используется для хранения данных для быстрого доступа к серверу. Объекты, настройки и данные пользователя в вашем плейсе будут храниться здесь. Наиболее вероятными причинами большого использования памяти являются сложные активы и настройки.",
+    "translation": "Память используется для хранения данных для быстрого доступа к серверу. Объекты, настройки и данные пользователя в плейсе будут храниться здесь. Наиболее вероятными причинами большого использования памяти являются сложные активы и настройки.",
     "isDeprecated": false
   },
   {
@@ -63732,7 +63812,7 @@
     "key": "Label.MemoryUsageLimitCopy",
     "description": null,
     "english": "Memory per server limit (GB):",
-    "translation": "Объем памяти на сервер (ГБ):",
+    "translation": "Объём памяти на сервер (ГБ):",
     "isDeprecated": true
   },
   {
@@ -64580,7 +64660,7 @@
     "key": "Description.OAuthConfirmLeaving",
     "description": null,
     "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
-    "translation": "Есть несохранённые изменения. Действительно выйти?",
+    "translation": "Прогресс в создании приложения OAuth. Действительно отменить этот прогресс?",
     "isDeprecated": false
   },
   {
@@ -64588,7 +64668,7 @@
     "key": "Title.OAuthCreateLeave",
     "description": "Title for creating intercept dialog",
     "english": "Unsaved Progress",
-    "translation": "Действительно выйти‎?",
+    "translation": "Несохранённый прогресс",
     "isDeprecated": false
   },
   {
@@ -64605,6 +64685,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "Вернуться к форме и исправить ошибки?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "На этой странице есть несохранённые изменения. Приложение OAuth не будет обновлено.",
     "isDeprecated": false
   },
   {
@@ -65157,6 +65245,30 @@
     "description": "deprecated",
     "english": "[here]",
     "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "Настроить страницу значка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "Автор: {creator}",
     "isDeprecated": false
   }
 ]

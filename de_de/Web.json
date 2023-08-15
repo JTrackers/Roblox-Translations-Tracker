@@ -1536,6 +1536,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "Hallo,{lineBreak}{lineBreak} die Verifizierung in 2 Schritten per SMS für das Roblox-Konto deines Kindes, {accountName}, ist aktiviert. Für einige Aktionen, wie z.B. die Anmeldung, muss ein 6-stelliger Sicherheitscode, den Roblox per SMS sendet, eingegeben werden.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Verifizierung in 2 Schritten per SMS ist für das folgende Roblox-Konto aktiviert: {accountName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -3324,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Anmeldung mit diesem Konto nicht möglich. Melde dich bitte bei der LuoBu-App an.",
+    "translation": "Das Konto kann nicht anmeldet werden.",
     "isDeprecated": false
   },
   {
@@ -7500,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "Mit diesem Konto kann nur auf unsere geprüften Inhalte auf der Plattform zugegriffen werden. Außerdem werden Kontakteinstellungen (siehe Seite {linkStart}Datenschutz{linkEnd}) auf „Aus“ gestellt.",
+    "translation": "Mit diesem Konto kann nur auf unsere geprüften Inhalte auf der Plattform zugegriffen werden. Außerdem werden Kommunikationseinstellungen (siehe {linkStart}Datenschutz{linkEnd}-Seite) auf „Aus“ gestellt.",
     "isDeprecated": false
   },
   {
@@ -7508,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "Die Kontakteinstellungen sind gesperrt, da die Kontoeinschränkungen (siehe Seite {linkStart}Sicherheit{linkEnd}) aktiviert sind.",
+    "translation": "Die Kommunikationseinstellungen sind gesperrt, da die Kontoeinschränkungen (siehe {linkStart}Sicherheits{linkEnd})-Seite aktiviert sind",
     "isDeprecated": false
   },
   {
@@ -9364,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "Wenn diese Einstellung aktiviert ist, kann dieses Konto nur auf Inhalte zugreifen, die für alle Altersgruppen angemessen sind. Zusätzlich sind die Kontakt-Einstellungen (auf der {linkStart}Datenschutz{linkEnd}-Seite) deaktiviert.",
+    "translation": "Wenn diese Einstellung aktiviert ist, kann dieses Konto nur auf Inhalte zugreifen, die für alle Altersgruppen angemessen sind. Zusätzlich sind die Kommunikationseinstellungen (auf der {linkStart}Datenschutz{linkEnd}-Seite) deaktiviert.",
     "isDeprecated": false
   },
   {
@@ -9444,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "Kontakteinstellungen sind gesperrt, weil Kontoeinschränkungen (unter {linkStart}Kindersicherung{linkEnd}) aktiviert sind",
+    "translation": "Kommunikationseinstellungen sind gesperrt, weil Kontoeinschränkungen (unter der {linkStart}Kindersicherungs{linkEnd}-Seite) aktiviert sind",
     "isDeprecated": false
   },
   {
@@ -10749,6 +10765,30 @@
     "description": null,
     "english": "Your phone number is not verified.",
     "translation": "Deine Telefonnummer ist nicht verifiziert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "Dies löscht deine synchronisierten Kontaktdaten nur von diesem Gerät. Wenn du Kontakte auf mehreren Geräten synchronisiert hast, dann musst du dies für jedes Gerät separat tun. Um sämtliche synchronosierten Daten von allen verbundenen Geräten gleichzeitig zu löschen, gehe zu den Datenschutzeinstellungen auf einem Desktop-Webbrowser.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "Synchronisierte Kontaktdaten erfolgreich gelöscht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "Synchronisierte Kontaktdaten konnten nicht gelöscht werden.",
     "isDeprecated": false
   },
   {
@@ -16036,7 +16076,7 @@
     "key": "LabelFilterTopRated",
     "description": null,
     "english": "Top Rated",
-    "translation": "Top-Bewertung",
+    "translation": "Top-Bewertungen",
     "isDeprecated": false
   },
   {
@@ -27036,7 +27076,7 @@
     "key": "Description.MeAndSpecific",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked. {linkStart}Read more{linkEnd}.",
-    "translation": "Audio ist nur für Erlebnisse verfügbar, zu denen du ausdrücklich Zugang gewährt hast. Du kannst die Universe IDs der Erlebnisse, zu denen du Zugang gewähren möchtest, unten eingeben und die IDs mit Kommas trennen. {linkStart}Mehr lesen{linkEnd}.",
+    "translation": "Audio ist nur in Erlebnissen verfügbar, denen du ausdrücklich die Berechtigung dazu gewährt hast. Gib die Universe IDs der Erlebnisse, denen du Berechtigung gewähren möchtest, unten ein und und trenne mehrere IDs mit Kommas. Diese Berechtigungen können nach Vergabe nicht zurückgezogen werden{linkStart}Mehr lesen{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -27124,7 +27164,7 @@
     "key": "Description.MeAndSpecificNoLink",
     "description": null,
     "english": "Audio is only accessible by experiences that you have explicitly granted permissions to. Enter the Universe IDs of the experiences you want to grant permissions to below, separating multiple IDs with commas. Once granted, permissions cannot be revoked.",
-    "translation": "Audio ist nur für Erlebnisse verfügbar, zu denen du ausdrücklich Zugang gewährt hast. Du kannst die Universe IDs der Erlebnisse, zu denen du Zugang gewähren möchtest, unten eingeben und die IDs mit Kommas trennen.",
+    "translation": "Audio ist nur in Erlebnissen verfügbar, denen du ausdrücklich die Berechtigung dazu gewährt hast. Gib die Universe IDs der Erlebnisse, denen du Berechtigung gewähren möchtest, unten ein und und trenne mehrere IDs mit Kommas. Diese Berechtigungen können nach Vergabe nicht zurückgezogen werden.",
     "isDeprecated": false
   },
   {
@@ -27140,7 +27180,7 @@
     "key": "Label.AllExperiences",
     "description": null,
     "english": "Public - All Experiences",
-    "translation": "Alle Erlebnisse",
+    "translation": "Öffentlich - Alle Erlebnisse",
     "isDeprecated": false
   },
   {
@@ -27148,7 +27188,7 @@
     "key": "Label.SpecificExperiences",
     "description": null,
     "english": "Private - Specific Experiences",
-    "translation": "Spezifische Erlebnisse",
+    "translation": "Privat - Bestimmte Erlebnisse",
     "isDeprecated": false
   },
   {
@@ -29357,6 +29397,38 @@
     "description": null,
     "english": "Unable To Equip",
     "translation": "Kann nicht angelegt werden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "Charakter aktualisieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "Möchtest du diesen Charakter aktualisieren? Dadurch wird der Charakter mit dem aktuellen Aussehen deines Avatars ersetzt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "Charakter löschen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "Möchtest du diesen Charakter wirklich löschen?",
     "isDeprecated": false
   },
   {
@@ -37404,7 +37476,7 @@
     "key": "Label.TopRated",
     "description": null,
     "english": "Top Rated",
-    "translation": "Top-Bewertung",
+    "translation": "Top-Bewertungen",
     "isDeprecated": false
   },
   {
@@ -37596,7 +37668,7 @@
     "key": "Label.UpAndComing",
     "description": null,
     "english": "Up-and-Coming",
-    "translation": "Aufstrebende",
+    "translation": "Aufstrebend",
     "isDeprecated": false
   },
   {
@@ -37612,7 +37684,7 @@
     "key": "Label.LearnAndExplore",
     "description": null,
     "english": "Learn & Explore",
-    "translation": "Lerne & erkunde",
+    "translation": "Lernen & Erkunden",
     "isDeprecated": false
   },
   {
@@ -37804,7 +37876,7 @@
     "key": "Label.TopVoiceGames",
     "description": "This will show on the game discovery page above a carousel of games that have voice chat enabled.",
     "english": "Voice Enabled",
-    "translation": "Sprache aktiviert",
+    "translation": "Sprachaktiviert",
     "isDeprecated": false
   },
   {
@@ -53632,6 +53704,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "Verifiziertes Abzeichensymbol",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Premium-Abzeichen-Symbol",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileHeader",
     "key": "Action.AddFriend",
     "description": null,
@@ -54915,15 +55003,15 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
-    "translation": "Entwicklerprodukt",
+    "english": "Developer Products",
+    "translation": "Entwicklerprodukte",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
+    "english": "Private Servers",
     "translation": "Privater Server",
     "isDeprecated": false
   },
@@ -54939,7 +55027,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
+    "english": "Affiliate Fees For Passes",
     "translation": "Affiliate-Gebühr für Pässe",
     "isDeprecated": false
   },
@@ -54947,7 +55035,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
+    "english": "Affliate Fees For Avatars",
     "translation": "Affliate-Gebühr für Avatar",
     "isDeprecated": false
   },
@@ -54963,7 +55051,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "Der Segmentierungsfilter gilt nicht für dieses Diagramm",
     "isDeprecated": false
   },
@@ -56476,7 +56564,7 @@
     "key": "Message.ModerationWarning",
     "description": "Moderation message depicted alongside form image uploaders to let users know that their uploaded files will be reviewed first before they can be viewed.",
     "english": "Image will be reviewed by moderators before being made visible to other users.",
-    "translation": "Bild wird vom Moderationsteam überprüft, bevor es für andere Benutzer:innen angezeigt wird.",
+    "translation": "Bild wird vom Moderationsteam überprüft, bevor es anderen Benutzer:innen angezeigt wird.",
     "isDeprecated": false
   },
   {
@@ -64980,7 +65068,7 @@
     "key": "Description.OAuthConfirmLeaving",
     "description": null,
     "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
-    "translation": "Du hast ungespeicherte Änderungen. Bist du sicher, dass du dies verlassen möchtest?",
+    "translation": "Du hast Fortschritt bei der Erstellung einer OAuth-App gemacht. Bist du sicher, dass du diesen Fortschritt verwerfen möchtest?",
     "isDeprecated": false
   },
   {
@@ -64988,7 +65076,7 @@
     "key": "Title.OAuthCreateLeave",
     "description": "Title for creating intercept dialog",
     "english": "Unsaved Progress",
-    "translation": "Möchtest du dies wirklich verlassen?",
+    "translation": "Ungespeicherter Fortschritt",
     "isDeprecated": false
   },
   {
@@ -65005,6 +65093,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "Möchtest du zum Formular zurückkehren und die Fehler beheben?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "Es gibt ungespeicherte Änderungen auf dieser Seite. Deine OAuth-App wird nicht aktualisiert.",
     "isDeprecated": false
   },
   {
@@ -65052,7 +65148,7 @@
     "key": "Message.CreateBadgeInfo",
     "description": null,
     "english": "Badges let you create special awards for players who do something exceptional within your experience.",
-    "translation": "Mit Abzeichen kannst du besondere Auszeichnungen für Spieler:innen erstellen, die etwas Außergewöhnliches in deinem Erlebnis schaffen.",
+    "translation": "Mit Abzeichen kannst du Auszeichnungen für Spieler:innen erstellen, die etwas Besonderes in deinem Erlebnis schaffen.",
     "isDeprecated": false
   },
   {
@@ -65592,6 +65688,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[hier]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "Abzeichen-Seite konfigurieren",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.UserAgreementLinks",
     "key": "Link.TermsOfService",
     "description": null,
@@ -65605,6 +65717,14 @@
     "description": null,
     "english": "https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-",
     "translation": "https://en.help.roblox.com/hc/de/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "Von {creator}",
     "isDeprecated": false
   }
 ]

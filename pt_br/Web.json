@@ -564,7 +564,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Não foi possível iniciar uma sessão na conta. Inicie uma sessão no aplicativo LuoBu.",
+    "translation": "Não é possível iniciar a sessão da conta.",
     "isDeprecated": false
   },
   {
@@ -1501,6 +1501,54 @@
     "description": "SMS message for enabling 2sv (without OTP code).",
     "english": "Roblox 2SV for {accountName} enabled.",
     "translation": "V2E Roblox para {accountName} desativada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SmsMediaType",
+    "description": "Name of SMS media type",
+    "english": "SMS",
+    "translation": "SMS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Olá,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} é o seu código de verificação em duas etapas para {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Insira o código acima na tela de verificação em duas etapas para continuar a reverter mudanças em sua conta. Este código expira em 15 minutos.{paragraphEnd}{paragraphStart}Esta requisição foi feita por {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Obrigada,{lineBreak}{emphasisStart}A equipe Roblox{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "Não responda a este e-mail diretamente. Você está recebendo este e-mail porque houve uma tentativa de reverter mudanças em sua conta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "Pedido de reversão de conta Roblox: {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "Olá,{lineBreak}{lineBreak}A verificação em duas etapas com mensagem de texto para conta Roblox {accountName} de seu filho(a) foi ativada. Para algumas ações como início de sessão, será necessário inserir um código de segurança de 6 dígitos que a Roblox enviará para você mensagem de texto.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "A verificação em duas etapas com mensagem de texto foi ativada para a conta Roblox: {accountName}",
     "isDeprecated": false
   },
   {
@@ -3292,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "Não foi possível iniciar uma sessão na conta. Inicie a sessão ao aplicativo LuoBu.",
+    "translation": "Não é possível iniciar a sessão da conta.",
     "isDeprecated": false
   },
   {
@@ -6932,7 +6980,7 @@
     "key": "Label.WhoCanJoinGame",
     "description": null,
     "english": "Who can join me in experiences?",
-    "translation": "Quem pode entrar na minha experiência?",
+    "translation": "Quem pode juntar-se a mim em experiências?",
     "isDeprecated": false
   },
   {
@@ -7468,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "Esta conta só pode acessar nosso conteúdo verificado na plataforma. Além disso, as configurações de contato (na página de {linkStart}Privacidade{linkEnd}) serão desligadas.",
+    "translation": "Esta conta só pode acessar o nosso conteúdo curado na plataforma. Além disso, as Configurações de comunicação (na Página de Privacidade {linkStart}{linkEnd} ) serão desativadas.",
     "isDeprecated": false
   },
   {
@@ -7476,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "As configurações de contato estão bloqueadas pois as restrições da conta (na página de {linkStart}Segurança{linkEnd}) estão habilitadas.",
+    "translation": "As Configurações de comunicação estão bloqueadas porque as Restrições de conta (em {linkStart}Segurança{linkEnd}) estão ativadas",
     "isDeprecated": false
   },
   {
@@ -9332,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "Quando esta configuração é ativada, esta conta só pode acessar conteúdo apropriado para todas as idades. Além disso, as configurações de contato (na seção {linkStart}Privacidade{linkEnd}) serão desligadas.",
+    "translation": "Quando esta configuração está ativada, esta conta só pode acessar o conteúdo apropriado para todos as audiências. Além disso, as Configurações de comunicação (na página de {linkEnd}Privacidade{linkStart}) serão desativadas.",
     "isDeprecated": false
   },
   {
@@ -9412,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "As configurações de contato estão bloqueadas porque as restrições de conta estão ativas (na página {linkStart}Controle dos responsáveis{linkEnd}).",
+    "translation": "As Configurações de comunicação estão bloqueadas porque as Restrições de conta (em {linkStart}Controles dos responsáveis{linkEnd}) estão ativadas",
     "isDeprecated": false
   },
   {
@@ -10597,6 +10645,142 @@
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
     "translation": "Eu concordo que a Roblox faça a coleta, uso e armazenamento da gravação da minha voz, somente para propósitos de segurança e moderação.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Respones.InvalidPhoneNumberType",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "Este número de telefone não é válido. Digite um número de telefone diferente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "De {creator}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Communication",
+    "description": null,
+    "english": "Communication",
+    "translation": "Comunicaçao",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ConnectWithContacts",
+    "description": null,
+    "english": "Connect With Contacts",
+    "translation": "Conectar com contatos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.PrivateServers",
+    "description": null,
+    "english": "Private Servers",
+    "translation": "Servidores privados",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "A Roblox usa seus contatos para ajudar você e seus contatos a se encontrarem na Roblox. {linkStart}Saiba mais{linkEnd}{lineBreak}Você precisa ter um número de telefone verificado para usar esta funcionalidade.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "Seu número de telefone foi verificado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to other verified users who have your phone number?",
+    "translation": "Você deseja ser recomendado para outros usuários verificados que têm seu número de telefone?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When users see you as a contact recommendation, they will be shown your contact name as stored in their device instead of your Roblox username.",
+    "translation": "Quando usuários verem você como uma recomendação de contato, eles serão mostrados seu nome de contato como armazenado no dispositivo em vez de seu nome de usuário Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "Permitir o acesso aos contatos deste dispositivo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "O Roblox sincronizará periodicamente os contatos do seu dispositivo para lhe dar recomendações mais atualizadas. Apenas correspondências com usuários Roblox existentes serão armazenadas em servidores Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "Excluir dados de contato sincronizados",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "Ao remover o acesso aos contatos do seu dispositivo, você terá a opção de excluir seus dados de contato sincronizados.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "Seu número de telefone não foi verificado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "Isto irá excluir seus dados de contato que foram sincronizados somente a partir deste dispositivo. Se você sincronizou os dados de contato em vários dispositivos, deve fazer isso separadamente em cada dispositivo. Para excluir todos os dados sincronizados de cada dispositivo conectado de uma vez, acesse suas configurações de privacidade em um navegador da web no computador.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "Dados de contato sincronizados excluídos com sucesso.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "Não foi possível excluir dados de contato sincronizados.",
     "isDeprecated": false
   },
   {
@@ -15924,7 +16108,7 @@
     "key": "LabelFilterFriendActivity",
     "description": null,
     "english": "Friend Activity",
-    "translation": "Atividade de amizade",
+    "translation": "Atividades de amizades",
     "isDeprecated": false
   },
   {
@@ -23036,7 +23220,7 @@
     "key": "HeadingFriendActivity",
     "description": null,
     "english": "Friend Activity",
-    "translation": "Atividade de amizade",
+    "translation": "Atividades de amizades",
     "isDeprecated": false
   },
   {
@@ -23880,6 +24064,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Home",
+    "key": "Label.TopicBasedOnYourInterests",
+    "description": null,
+    "english": "Based on your past interests",
+    "translation": "Baseado em seus interesses passados",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.ReturnToStudio",
     "key": "Description.OpeningStudio",
     "description": null,
@@ -24605,6 +24797,14 @@
     "description": null,
     "english": "This phone number cannot be used. Please enter a different phone number.",
     "translation": "Este número de telefone não é válido. Digite um número de telefone diferente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.PhoneNumbersPrivacyVisibility",
+    "description": "This will be displayed as the user is submitting their phone number as a verified contact method",
+    "english": "You phone number will never be displayed publicly.",
+    "translation": "O seu número de telefone nunca será exibido publicamente.",
     "isDeprecated": false
   },
   {
@@ -29213,6 +29413,46 @@
     "description": null,
     "english": "Failed to delete character.",
     "translation": "Falha ao excluir personagem.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Title.UnableToEquip",
+    "description": null,
+    "english": "Unable To Equip",
+    "translation": "Não foi possível equipar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "Atualizar personagem",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "Deseja atualizar este personagem? Isto substituirá o personagem com a aparência atual de seu avatar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "Excluir personagem",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "Quer mesmo excluir este personagem?",
     "isDeprecated": false
   },
   {
@@ -37292,7 +37532,7 @@
     "key": "Label.FriendActivity",
     "description": null,
     "english": "Friend Activity",
-    "translation": "Atividade de amizades",
+    "translation": "Atividades de amizades",
     "isDeprecated": false
   },
   {
@@ -37396,7 +37636,7 @@
     "key": "Label.MostEngaging",
     "description": null,
     "english": "Most Engaging",
-    "translation": "Mais atrativas",
+    "translation": "Mais cativantes",
     "isDeprecated": false
   },
   {
@@ -47444,7 +47684,7 @@
     "key": "Heading.Credentials",
     "description": "We will need to discuss changing this to \"API Extensions\" and will make all changes to references and routes at once",
     "english": "Credentials",
-    "translation": "Extensões de API",
+    "translation": "Credenciais",
     "isDeprecated": false
   },
   {
@@ -49253,6 +49493,78 @@
     "description": null,
     "english": "Try again",
     "translation": "Tentar novamente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.UnknownError",
+    "description": null,
+    "english": "Reserved for base level errors. Do not use in your endpoint directly, do not document.",
+    "translation": "Reservado para erros de nível base. Não use diretamente no seu endpoint, não documente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidFile",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "O arquivo enviado não corresponde a nenhum formato de imagem conhecido. Tente converter para png.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.MissingFile",
+    "description": null,
+    "english": "File not present in request.",
+    "translation": "O arquivo não está presente na requisição.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.TooManyAttempts",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "Você está fazendo uploads demais. Por favor, aguarde e tente novamente mais tarde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidItem",
+    "description": null,
+    "english": "Target item is invalid or does not exist.",
+    "translation": "O item alvo é inválido ou não existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidPermissions",
+    "description": null,
+    "english": "You do not have permission to manage this item.",
+    "translation": "Você não tem permissão para gerenciar este item.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.NoRootPlace",
+    "description": null,
+    "english": "The game has no root place.",
+    "translation": "O jogo não tem local raiz.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidAssetType",
+    "description": null,
+    "english": "The asset type is not appropriate for this request.",
+    "translation": "O tipo de recurso não é apropriado para esta solicitação.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidQuotaResourceType",
+    "description": null,
+    "english": "The resource type is not appropriate for this request.",
+    "translation": "O tipo de recurso não é apropriado para esta solicitação.",
     "isDeprecated": false
   },
   {
@@ -54528,6 +54840,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "Ícone do emblema verificado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Ícone de emblema Premium",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileHeader",
     "key": "Action.AddFriend",
     "description": null,
@@ -55524,7 +55852,7 @@
     "key": "Label.Country",
     "description": "Segmentation of DAU/New players by countries",
     "english": "Country (top 5)",
-    "translation": "por país (os 5 mais)",
+    "translation": "Por país (os 5 mais)",
     "isDeprecated": false
   },
   {
@@ -55532,7 +55860,7 @@
     "key": "Label.Locale",
     "description": "Segmentation of DAU/New players by languages",
     "english": "Language (top 5)",
-    "translation": "por idioma (os 5 mais)",
+    "translation": "Por idioma (os 5 mais)",
     "isDeprecated": false
   },
   {
@@ -55540,7 +55868,7 @@
     "key": "Label.AgeGroup",
     "description": "Segmentation of DAU/New players by age group",
     "english": "Age Group",
-    "translation": "por faixa etária",
+    "translation": "Por faixa etária",
     "isDeprecated": false
   },
   {
@@ -55556,7 +55884,7 @@
     "key": "Label.OperatingSystem",
     "description": "Segmentation of DAU/New players by operating systems",
     "english": "OS",
-    "translation": "OS",
+    "translation": "S.O.",
     "isDeprecated": false
   },
   {
@@ -55564,7 +55892,7 @@
     "key": "Label.View",
     "description": "Label to describe chart segmentation view - ie View by Language, view by age group",
     "english": "Breakdown by",
-    "translation": "Visualizar:",
+    "translation": "Detalhamento por",
     "isDeprecated": false
   },
   {
@@ -55811,15 +56139,15 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
-    "translation": "Produto do desenvolvedor",
+    "english": "Developer Products",
+    "translation": "Produtos do desenvolvedor",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
+    "english": "Private Servers",
     "translation": "Servidor privado",
     "isDeprecated": false
   },
@@ -55835,7 +56163,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
+    "english": "Affiliate Fees For Passes",
     "translation": "Taxa de afiliados para o passe de jogo",
     "isDeprecated": false
   },
@@ -55843,7 +56171,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
+    "english": "Affliate Fees For Avatars",
     "translation": "Taxa de afiliados para avatar",
     "isDeprecated": false
   },
@@ -55859,7 +56187,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "O filtro de segmentação não se aplica a este gráfico",
     "isDeprecated": false
   },
@@ -60100,7 +60428,7 @@
     "key": "Message.NoKeys",
     "description": "For the API key table empty state",
     "english": "You haven't created any API keys.",
-    "translation": "Não há chaves API",
+    "translation": "Você não criou chaves API.",
     "isDeprecated": false
   },
   {
@@ -61116,7 +61444,7 @@
     "key": "Label.LoadingInitialDatastores",
     "description": "loading state for datastores",
     "english": "Loading the first {loadCount} data stores...",
-    "translation": "Carregando os primeiros armazenamento de dados {loadCount}...",
+    "translation": "Carregando os primeiros {loadCount} armazenamento de dados...",
     "isDeprecated": false
   },
   {
@@ -61132,7 +61460,7 @@
     "key": "Message.ErrorLoadingDatastores",
     "description": "error message for loading datastores",
     "english": "There was an error loading the data stores",
-    "translation": "Houve um erro ao carregar os armazenamento de dados",
+    "translation": "Houve um erro ao carregar os armazenamentos de dados",
     "isDeprecated": false
   },
   {
@@ -61156,7 +61484,7 @@
     "key": "Message.NoDatastoreSearchResults",
     "description": "No datastore associated with search query message",
     "english": "There are no data stores matching that search",
-    "translation": "Não há armazenamento de dados que correspondem a esta busca",
+    "translation": "Não há armazenamentos de dados que correspondam a esta busca",
     "isDeprecated": false
   },
   {
@@ -61321,6 +61649,30 @@
   },
   {
     "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.OAuthApiExtension",
+    "description": null,
+    "english": "Use OAuth apps if you want to build apps for users outside of your team.",
+    "translation": "Use aplicativos OAuth se você quiser criar aplicativos para usuários fora da sua equipe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.LearnApis",
+    "description": null,
+    "english": "{linkStart}Learn how to use APIs{linkEnd}",
+    "translation": "{linkStart}Aprenda a usar APIs{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.ApiKeyExtension",
+    "description": null,
+    "english": "Use API keys if you want to build internal tools for yourself or your team.",
+    "translation": "Use chaves API se você quiser criar ferramentas internas para si mesmo ou para sua equipe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
     "key": "Label.ApiKeyNameRequired",
     "description": "deprecated",
     "english": "required",
@@ -61332,7 +61684,7 @@
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
     "english": "Place Publishing",
-    "translation": "Gerenciamento de local",
+    "translation": "Publicação de local",
     "isDeprecated": false
   },
   {
@@ -61380,7 +61732,7 @@
     "key": "Label.UniverseDatastores",
     "description": "datastore product name",
     "english": "DataStore",
-    "translation": "DataStore API",
+    "translation": "Armazenamento de dados",
     "isDeprecated": false
   },
   {
@@ -61468,7 +61820,7 @@
     "key": "Label.Datastore",
     "description": "For the 'datastore' target part name",
     "english": "data store",
-    "translation": "Armazenamento de dados",
+    "translation": "armazenamento de dados",
     "isDeprecated": false
   },
   {
@@ -61509,6 +61861,46 @@
     "description": null,
     "english": "Messaging Service API",
     "translation": "API de mensagens entre servidores",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.CrossServerMessagingPublishOperation",
+    "description": "Operation for publishing a message.",
+    "english": "Publish",
+    "translation": "Publicar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.UniversePlacesWrite",
+    "description": "Description for the Write operation for the universe-places scope.",
+    "english": "This operation grants access to publish new versions of experiences to Roblox.",
+    "translation": "Esta operação permite acesso para publicar novas versões de experiências para a Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.openid",
+    "description": "OpenId scope used to support single-sign-on (SSO)",
+    "english": "OpenId",
+    "translation": "OpenId",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.NoDescriptionProvided",
+    "description": "This message will appear if there is no description for the given scope and operation",
+    "english": "No description provided.",
+    "translation": "Nenhuma descrição fornecida.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.profile",
+    "description": "this scope grants access to view the user's profile info",
+    "english": "Profile",
+    "translation": "Perfil",
     "isDeprecated": false
   },
   {
@@ -62549,6 +62941,14 @@
     "description": null,
     "english": "Select Source Language",
     "translation": "Selecione o idioma de origem",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameLocalizationLanguages",
+    "key": "Label.NoOptions",
+    "description": null,
+    "english": "No Options",
+    "translation": "Sem opções",
     "isDeprecated": false
   },
   {
@@ -64152,6 +64552,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Message.ErrorLoadingTable",
+    "description": null,
+    "english": "An error has occurred while loading the full table. Please try refreshing your page.",
+    "translation": "Ocorreu um erro ao carregar a tabela completa. Tente atualizar sua página.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -64181,6 +64589,14 @@
     "description": null,
     "english": "You have not yet translated any experiences here",
     "translation": "Você ainda não traduziu experiências aqui",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.TranslatorPortal",
+    "key": "Message.NetworkError",
+    "description": "Message shown when a network error occurs while trying to retrieve the user's translation role.",
+    "english": "Something went wrong! Try again later. Status code: {status}",
+    "translation": "Algo deu errado! Tente novamente mais tarde. Código de estado {status}",
     "isDeprecated": false
   },
   {
@@ -65104,6 +65520,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "Próximo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.Article",
+    "key": "Action.Previous",
+    "description": null,
+    "english": "Previous",
+    "translation": "Anterior",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.APIReference",
     "key": "Label.Deprecated",
     "description": null,
@@ -65285,6 +65717,22 @@
     "description": null,
     "english": "This reference is null!",
     "translation": "Esta referência é nula!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Description.DefaultValue",
+    "description": "Allow for the \"Default Value\" text and actual value to be styled independently",
+    "english": "Default Value: {defaultValueStart}{defaultValueEnd}",
+    "translation": "Valor padrão: {defaultValueStart}{defaultValueEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.APIReference",
+    "key": "Label.MathOperations",
+    "description": null,
+    "english": "Math Operations",
+    "translation": "Operações matemáticas",
     "isDeprecated": false
   },
   {
@@ -66145,6 +66593,54 @@
   },
   {
     "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.RegenerationFailure",
+    "description": "displays when regeneration request fails",
+    "english": "Something went wrong trying to regenerate your app's secret.",
+    "translation": "Algo deu errado ao tentar regenerar o segredo de seu aplicativo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthDeleteFailure",
+    "description": null,
+    "english": "Something went wrong when trying to delete your app.",
+    "translation": "Algo deu errado ao tentar excluir seu aplicativo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthUpdateFailure",
+    "description": null,
+    "english": "There was an error when trying to update your app.",
+    "translation": "Houve um erro ao tentar atualizar seu aplicativo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthSuccessUpdating",
+    "description": null,
+    "english": "Your app was successfully updated!",
+    "translation": "Seu aplicativo foi atualizado com sucesso!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.RegenerationSuccess",
+    "description": null,
+    "english": "Your app's secret was successfully regenerated!",
+    "translation": "O segredo de seu aplicativo foi regenerado com sucesso!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthNotSupported",
+    "description": null,
+    "english": "OAuth currently does not support groups.",
+    "translation": "OAuth atualmente não suporta grupos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
     "key": "Title.OAuthValidEditTitle",
     "description": null,
     "english": "Save Changes?",
@@ -66153,10 +66649,34 @@
   },
   {
     "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthInvalidEditTitle",
+    "description": null,
+    "english": "You have invalid changes",
+    "translation": "Você possui mudanças inválidas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "Você fez progresso na criação de um aplicativo OAuth. Tem certeza que deseja descartar esse progresso?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "Progresso não salvo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
     "key": "Message.OAuthInvalidUnsavedChanges",
     "description": null,
     "english": "There are invalid changes on this page. We will not be able to save your firm until you fix them.",
-    "translation": "Há mudanças inválidas nesta página. Não poderemos salvar sua firma até você corrigí-las.",
+    "translation": "Há mudanças inválidas nesta página. Não poderemos salvar sua firma até que você as corrija.",
     "isDeprecated": false
   },
   {
@@ -66165,6 +66685,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "Gostaria de retornar ao formulário e corrigir os erros?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "Há mudanças não salvas nesta página. Seu aplicativo OAuth não será atualizado.",
     "isDeprecated": false
   },
   {
@@ -66352,6 +66880,158 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.UnknownError",
+    "description": null,
+    "english": "Reserved for base level errors. Do not use in your endpoint directly, do not document.",
+    "translation": "Reservado para erros de nível base. Não use diretamente no seu endpoint, não documente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidBadge",
+    "description": null,
+    "english": "Badge is invalid or does not exist.",
+    "translation": "O emblema é inválido ou não existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidBadgePermissions",
+    "description": null,
+    "english": "You do not have permission to manage this badge.",
+    "translation": "Você não tem permissão para gerenciar este emblema.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidUniverse",
+    "description": null,
+    "english": "The experience is invalid or does not exist.",
+    "translation": "A experiência é inválida ou não existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidUser",
+    "description": null,
+    "english": "The user account is invalid or does not exist.",
+    "translation": "A conta de usuário é inválida ou não existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.TooManyBadgeIds",
+    "description": null,
+    "english": "Too many badge Ids, please only do 50 at a time.",
+    "translation": "Há IDs de emblemas demais por favor faça apenas 50 de cada vez.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.TextModerated",
+    "description": null,
+    "english": "Text moderated. Please change your badge name and/or description and try again.",
+    "translation": "Texto moderado. Altere seu nome de emblema e/ou descrição e tente novamente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidPlace",
+    "description": null,
+    "english": "The place is invalid or does not exist.",
+    "translation": "O local é inválido ou não existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidPermissionsToAwardBadge",
+    "description": null,
+    "english": "The place doesn't have permission to award the badge.",
+    "translation": "O local não tem permissão para conceder o emblema.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.FailedToAwardBadge",
+    "description": null,
+    "english": "Failed to award badge. Please try again.",
+    "translation": "Falha ao conceder emblema. Tente novamente.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidUserPermissions",
+    "description": null,
+    "english": "You do not have permission to manage this user's badge.",
+    "translation": "Você não tem permissão para gerenciar o emblema deste usuário.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidBadgeIcon",
+    "description": null,
+    "english": "The badge icon is invalid.",
+    "translation": "O ícone do emblema é inválido.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidUniversePermissions",
+    "description": null,
+    "english": "You do not have permission to manage badges for this experience.",
+    "translation": "Você não tem permissão para gerenciar emblemas para esta experiência.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.TooManyRequests",
+    "description": null,
+    "english": "Too many requests, try again later.",
+    "translation": "Solicitações demais, tente novamente mais tarde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidName",
+    "description": null,
+    "english": "Invalid badge name.",
+    "translation": "Nome de emblema inválido.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidDescription",
+    "description": null,
+    "english": "Invalid badge description.",
+    "translation": "Descrição de emblema inválida.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidPaymentSource",
+    "description": null,
+    "english": "Payment source is invalid.",
+    "translation": "A fonte de pagamento é inválida.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InsufficientFunds",
+    "description": null,
+    "english": "You do not have sufficient funds.",
+    "translation": "Você não têm fundos suficientes.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.InvalidExpectedCost",
+    "description": null,
+    "english": "Expected badge cost is different from the actual badge cost.",
+    "translation": "O custo esperado do emblema é diferente do custo real do mesmo.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Reauthentication",
     "key": "Header.PasswordVerification",
     "description": null,
@@ -66445,6 +67125,14 @@
     "description": null,
     "english": "You are leaving Roblox",
     "translation": "Você está saindo da Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Heading.Title",
+    "description": "Creator Marketplace Heading",
+    "english": "Creator Marketplace",
+    "translation": "Mercado do Criador",
     "isDeprecated": false
   },
   {
@@ -66544,6 +67232,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Action.Search",
+    "description": "The search button text",
+    "english": "Search",
+    "translation": "Pesquisa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.SearchPlaceholder",
+    "description": "The placeholder text within a search textbox",
+    "english": "Search by keywords",
+    "translation": "Pesquisar por palavras-chave",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionMessage",
+    "description": null,
+    "english": "The {pageName} has been migrated to the Creator Dashboard. You can use the updated page by clicking {pageLinkText}.",
+    "translation": "A {pageName} foi migrada para o Painel do criador. Você pode usar a página atualizada clicando em {pageLinkText}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateBadgePageName",
+    "description": "deprecated",
+    "english": "Badge Creation Page",
+    "translation": "Página de criação de emblemas",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateBadgesPageName",
+    "description": null,
+    "english": "Badge Creation Page",
+    "translation": "Página de criação de emblemas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkTex",
+    "description": "deprecated",
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "Configurar página de emblema",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.UserAgreementLinks",
     "key": "Link.TermsOfService",
     "description": null,
@@ -66557,6 +67309,14 @@
     "description": null,
     "english": "https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-",
     "translation": "https://en.help.roblox.com/hc/pt-br/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "De {creator}",
     "isDeprecated": false
   }
 ]

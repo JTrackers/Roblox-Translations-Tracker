@@ -1512,6 +1512,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
+    "description": null,
+    "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}您好，您的 Roblox 帐户 {emphasisStart}{accountName}{emphasisEnd} 的两步验证码是 {paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd}。{paragraphEnd}{paragraphStart}在两步验证页面输入以上验证码即可继续撤回您帐户做出的更改。此验证码将会在 15 分钟后失效。{paragraphEnd}{paragraphStart}本次登录请求来自 {emphasisStart}{geoLocationInformation}{emphasisEnd}。{paragraphEnd}{lineBreak}{paragraphStart}谢谢您，{lineBreak}{emphasisStart}Roblox 团队{emphasisEnd}{paragraphEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Footer",
+    "description": null,
+    "english": "Do not reply to this email directly. You are receiving this email because an attempt was made to revert changes to your account.",
+    "translation": "请勿直接回复此邮件。因为有人尝试撤回对您帐户的更改，所以您会收到此电子邮件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Subject",
+    "description": null,
+    "english": "Roblox Revert Account Request: {accountName}",
+    "translation": "Roblox 帐户恢复请求：{accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "您好，{lineBreak}{lineBreak}已为您孩子的帐户：{accountName} 激活短信两步认证。当他们登录帐户或进行其他操作时，将需要输入一个 6 位数的安全代码，Roblox 会通过短信将此代码发送给您。{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "已激活 Roblox 帐户 {accountName} 的短信两步验证",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -3300,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "此帐户无法登录。请登录 LuoBu 应用程序。",
+    "translation": "帐户无法登录。",
     "isDeprecated": false
   },
   {
@@ -7476,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "此帐户只能访问我们平台上的已筛选内容。此外，“联系人设置”部分（位于{linkStart}隐私{linkEnd}页面上方）将被设为“关闭”。",
+    "translation": "此帐户只能访问我们平台上的已筛选内容。此外，“通讯设置”部分（位于{linkStart}隐私{linkEnd}页面上方）将被设为“关闭”。",
     "isDeprecated": false
   },
   {
@@ -7484,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "由于启用帐户限制（位于{linkStart}安全性{linkEnd}页面下方），“联系人设置”部分已锁定",
+    "translation": "由于启用帐户限制（位于{linkStart}安全性{linkEnd}页面下方），“通讯设置”部分已锁定",
     "isDeprecated": false
   },
   {
@@ -9340,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "当此设置启用时，此帐号只能访问老少皆宜的内容。另外，联系人设置（位于{linkStart}隐私{linkEnd}页面下方）将被设为关闭。",
+    "translation": "当此设置启用时，此帐号只能访问老少皆宜的内容。另外，通讯设置（位于{linkStart}隐私{linkEnd}页面下方）将被设为关闭。",
     "isDeprecated": false
   },
   {
@@ -9420,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "由于启用帐户限制（位于{linkStart}安全性{linkEnd}页面下方），“联系人设置”部分已锁定",
+    "translation": "由于启用帐户限制（位于{linkStart}安全性{linkEnd}页面下方），“通讯设置”部分已锁定",
     "isDeprecated": false
   },
   {
@@ -9428,7 +9468,7 @@
     "key": "Heading.ParentPin",
     "description": null,
     "english": "Parent PIN",
-    "translation": "家长 PIN",
+    "translation": "家长 PIN 码",
     "isDeprecated": false
   },
   {
@@ -10725,6 +10765,30 @@
     "description": null,
     "english": "Your phone number is not verified.",
     "translation": "你的手机号码未验证。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "这将删除仅从此设备同步的联系人数据。 如果你已经在多个设备上同步了联系人数据，那么你必须在每台设备上单独操作。 若要同时从每个已连接的设备上删除所有同步的数据，请前往桌面网络浏览器上的隐私设置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "成功删除同步联系人数据。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "无法删除同步的联系人数据。",
     "isDeprecated": false
   },
   {
@@ -29357,6 +29421,38 @@
     "description": null,
     "english": "Unable To Equip",
     "translation": "无法装备",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "更新角色",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "是否更新此角色？此操作将使用你虚拟形象的当前外观。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "删除角色",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "是否确定删除此角色？",
     "isDeprecated": false
   },
   {
@@ -54784,6 +54880,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "已验证的徽章图标",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Premium 徽章图标",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileHeader",
     "key": "Action.AddFriend",
     "description": null,
@@ -56067,7 +56179,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
+    "english": "Developer Products",
     "translation": "开发者产品",
     "isDeprecated": false
   },
@@ -56075,7 +56187,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
+    "english": "Private Servers",
     "translation": "私人服务器",
     "isDeprecated": false
   },
@@ -56091,7 +56203,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
+    "english": "Affiliate Fees For Passes",
     "translation": "游戏通行证加盟费",
     "isDeprecated": false
   },
@@ -56099,7 +56211,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
+    "english": "Affliate Fees For Avatars",
     "translation": "虚拟形象加盟费",
     "isDeprecated": false
   },
@@ -56115,7 +56227,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "分段筛选不适用于此图表",
     "isDeprecated": false
   },
@@ -66305,6 +66417,22 @@
   },
   {
     "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthConfirmLeaving",
+    "description": null,
+    "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
+    "translation": "你已经在创建 OAuth 应用方面取得了进展。确定要放弃此进度吗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthCreateLeave",
+    "description": "Title for creating intercept dialog",
+    "english": "Unsaved Progress",
+    "translation": "未保存的进度",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
     "key": "Message.OAuthInvalidUnsavedChanges",
     "description": null,
     "english": "There are invalid changes on this page. We will not be able to save your firm until you fix them.",
@@ -66317,6 +66445,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "你想返回表格并修正错误吗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "本页面中存在未保存的更改。你的 OAuth 应用将不会被更新。",
     "isDeprecated": false
   },
   {
@@ -66869,6 +67005,30 @@
     "description": "deprecated",
     "english": "[here]",
     "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "配置徽章页面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "创作者：{creator}",
     "isDeprecated": false
   }
 ]

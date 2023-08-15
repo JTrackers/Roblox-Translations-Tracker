@@ -828,7 +828,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Subject",
     "description": "Subject for 2SV activation email",
     "english": "2-Step Verification with Email Activated for Roblox Account: {accountName}",
-    "translation": "Roblox 계정 {accountName}의 2단계 인증(이메일 사용)이 활성화되었습니다",
+    "translation": "Roblox 계정 {accountName}의 2단계 인증(이메일 사용) 활성화 안내",
     "isDeprecated": false
   },
   {
@@ -836,7 +836,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Subject\t",
     "description": "Subject for 2SV deactivation email",
     "english": "2-Step Verification with Email Deactivated for Roblox Account: {accountName}",
-    "translation": "Roblox 계정 {accountName}의 2단계 인증(이메일 사용)이 비활성화되었습니다.",
+    "translation": "Roblox 계정 {accountName}의 2단계 인증(이메일 사용) 비활성화 안내",
     "isDeprecated": false
   },
   {
@@ -1124,7 +1124,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Subject",
     "description": "Subject for 2SV with Authenticator activation email.",
     "english": "2-Step Verification with Authenticator Activated for Roblox Account: {accountName}",
-    "translation": "Roblox 계정 {accountName}의 2단계 인증(인증 전용 앱 사용)이 활성화되었습니다.",
+    "translation": "Roblox 계정 {accountName}의 2단계 인증(인증 전용 앱 사용) 활성화 안내",
     "isDeprecated": false
   },
   {
@@ -1148,7 +1148,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Subject",
     "description": "Subject for 2SV with Authenticator deactivation email.",
     "english": "2-Step Verification with Authenticator Deactivated for Roblox Account: {accountName}",
-    "translation": "Roblox 계정 {accountName}의 2단계 인증(인증 전용 앱 사용)이 비활성화되었습니다.",
+    "translation": "Roblox 계정 {accountName}의 2단계 인증(인증 전용 앱 사용) 비활성화 안내",
     "isDeprecated": false
   },
   {
@@ -1533,6 +1533,22 @@
     "description": null,
     "english": "Roblox Revert Account Request: {accountName}",
     "translation": "Roblox 계정 {accountName}의 변경 사항 되돌리기 요청",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증(SMS 사용)이 활성화되었습니다. 이제 로그인과 같은 일부 작업 진행 시, Roblox에서 SMS를 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Roblox 계정 {accountName}의 2단계 인증(문자 메시지 사용) 활성화 안내",
     "isDeprecated": false
   },
   {
@@ -3324,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "로그인할 수 없어요. LuoBu 앱에서 로그인하세요.",
+    "translation": "로그인할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -7484,7 +7500,7 @@
     "key": "Description.TwoStepverificationSecondaryEnabled",
     "description": null,
     "english": "Some actions like logging In will require you to enter an Email code. Codes will be sent to {email}",
-    "translation": "로그인과 같은 일부 작업 시 이메일 코드를 입력해야 합니다. 코드는 {email}(으)로 전송됩니다",
+    "translation": "로그인과 같은 일부 작업 시 이메일 코드를 입력해야 합니다. 코드는 {email}(으)로 전송됩니다.",
     "isDeprecated": false
   },
   {
@@ -7500,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "이 계정은 Roblox에서 필터링한 콘텐츠만 이용할 수 있습니다. 또한, {linkStart}개인정보{linkEnd} 페이지의 연락처 설정이 끄기로 설정됩니다.",
+    "translation": "이 계정은 선별된 콘텐츠만 이용할 수 있으며, 커뮤니케이션 설정({linkStart}개인정보{linkEnd} 페이지에 위치)이 '끄기'로 설정됩니다.",
     "isDeprecated": false
   },
   {
@@ -7508,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "계정 제한({linkStart}보안{linkEnd} 페이지 내)을 사용 중이므로 연락처 설정 기능이 차단되어 있습니다.",
+    "translation": "계정 제한({linkStart}보안{linkEnd} 페이지 내) 기능을 사용 중이므로 커뮤니케이션 기능이 차단되어 있습니다.",
     "isDeprecated": false
   },
   {
@@ -8132,7 +8148,7 @@
     "key": "Description.Dialog.PinUnlock",
     "description": null,
     "english": "Enter the PIN attached to your account",
-    "translation": "계정에 연결된 PIN을 입력하세요",
+    "translation": "계정에 연결된 PIN을 입력하세요.",
     "isDeprecated": false
   },
   {
@@ -9364,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "이 기능을 사용하면, 이 계정은 모든 사용자에게 적합한 콘텐츠에만 접근이 가능하게 됩니다. 또한 연락처 설정({linkStart}개인정보{linkEnd} 페이지에 위치)이 끄기로 설정됩니다.",
+    "translation": "이 기능을 사용하면, 이 계정은 모든 사용자에게 적합한 콘텐츠에만 접근이 가능하게 됩니다. 또한 커뮤니케이션 기능({linkStart}개인정보{linkEnd} 페이지에 위치)이 끄기로 설정됩니다.",
     "isDeprecated": false
   },
   {
@@ -9444,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "계정 제한({linkStart}자녀 보호 기능{linkEnd} 페이지 내)이 사용 중이므로 연락처 설정 기능이 차단되어 있습니다.",
+    "translation": "계정 제한({linkStart}자녀 보호 기능{linkEnd} 페이지 내) 기능을 사용 중이므로 커뮤니케이션 기능이 차단되어 있습니다.",
     "isDeprecated": false
   },
   {
@@ -9644,7 +9660,7 @@
     "key": "Label.GenerateRecoveryCodes",
     "description": "Label next to button for generating two step verification recovery codes.",
     "english": "Generate one-time use recovery codes.",
-    "translation": "일회용 복구 코드를 생성합니다.",
+    "translation": "일회용 복구 코드 생성하기",
     "isDeprecated": false
   },
   {
@@ -9652,7 +9668,7 @@
     "key": "Label.RecoveryCodesHelpText",
     "description": "Help text on the two step verification recovery codes section card.",
     "english": "If you lose access to your authenticator application, use these to recover your account.",
-    "translation": "인증 앱에 대한 접근 권한을 잃은 경우, 이를 사용해 계정을 복구하세요.",
+    "translation": "인증 앱에 대한 접근 권한을 잃은 경우, 이를 사용해 계정을 복구할 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -10749,6 +10765,30 @@
     "description": null,
     "english": "Your phone number is not verified.",
     "translation": "휴대폰 번호 인증이 완료되지 않았습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "이 작업은 이 기기에서만 동기화된 연락처 데이터를 삭제합니다. 여러 기기에서 연락처 데이터를 동기화한 경우, 기기별로 이 작업을 별도로 수행해야 합니다. 동기화된 모든 데이터를 연결된 모든 기기에서 한 번에 삭제하려면, 데스크톱 웹 브라우저에서 개인정보 설정으로 이동하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "동기화된 연락처 데이터를 삭제했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "동기화된 연락처 데이터를 삭제할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -29384,6 +29424,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "캐릭터 업데이트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "이 캐릭터로 업데이트할까요? 아바타의 현재 모습을 덮어쓰게 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "캐릭터 삭제",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "이 캐릭터를 정말 삭제할까요?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -47316,7 +47388,7 @@
     "key": "Label.LearnMore",
     "description": null,
     "english": "Learn More",
-    "translation": "더 알아보기",
+    "translation": "자세한 정보",
     "isDeprecated": false
   },
   {
@@ -49292,7 +49364,7 @@
     "key": "Heading.NoAccountFound",
     "description": "The heading of the modal/popup when a Luobu user went through the WeChat/QQ login flow but we cannot find any Roblox account associated with the Tencent account.",
     "english": "No Account Found",
-    "translation": "계정을 찾을 수 없습니다",
+    "translation": "계정을 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -49340,7 +49412,7 @@
     "key": "Description.PageNotFound",
     "description": null,
     "english": "404 | Page not found",
-    "translation": "404 | 페이지를 찾을 수 없습니다",
+    "translation": "404 | 페이지를 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -51908,7 +51980,7 @@
     "key": "Message.NoItems",
     "description": null,
     "english": "No {itemType} found",
-    "translation": "{itemType}을(를) 찾을 수 없습니다",
+    "translation": "{itemType}을(를) 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -51916,7 +51988,7 @@
     "key": "Message.LoadItemsError",
     "description": null,
     "english": "Unable to load {itemType}",
-    "translation": "{itemType}을(를) 불러올 수 없습니다",
+    "translation": "{itemType}을(를) 불러올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -52148,7 +52220,7 @@
     "key": "Message.UnableToLoadGame",
     "description": null,
     "english": "Unable to load experiences details",
-    "translation": "체험 세부 정보를 불러올 수 없습니다",
+    "translation": "체험 세부 정보를 불러올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -52260,7 +52332,7 @@
     "key": "Message.UnableToLoadBadge",
     "description": null,
     "english": "Unable to load badge details",
-    "translation": "배지 세부 정보를 불러올 수 없습니다",
+    "translation": "배지 세부 정보를 불러올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -52404,7 +52476,7 @@
     "key": "Message.DetectPlatformFailure",
     "description": null,
     "english": "Not able to detect your platform",
-    "translation": "플랫폼을 감지할 수 없습니다",
+    "translation": "플랫폼을 감지할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -52468,7 +52540,7 @@
     "key": "Message.EmptyMessagesWithLink",
     "description": null,
     "english": "Creating {itemType} can increase player engagement in your experience. {LinkStart}Learn more{LinkEnd}",
-    "translation": "{itemType}을(를) 만들면 체험에서 플레이어의 참여도를 높일 수 있습니다. {LinkStart}자세히 알아보기{LinkEnd}",
+    "translation": "{itemType}을(를) 만들면 체험에서 플레이어의 참여도를 높일 수 있습니다. {LinkStart}자세한 정보{LinkEnd}",
     "isDeprecated": false
   },
   {
@@ -53572,7 +53644,7 @@
     "key": "Description.PlayerTimeAndLearnMoreSubtitle",
     "description": null,
     "english": "Increase {startLink}Roblox Premium{endLink} users' playtime in your experience to earn payouts. {learnLinkStart}Learn more{learnLinkEnd}.",
-    "translation": "내 체험에 더 많은 {startLink}Roblox Premium{endLink} 사용자를 확보해서 페이아웃 금액을 늘리세요. {learnLinkStart}더 알아보기{learnLinkEnd}.",
+    "translation": "내 체험에 더 많은 {startLink}Roblox Premium{endLink} 사용자를 확보해서 페이아웃 금액을 늘리세요. {learnLinkStart}자세한 정보{learnLinkEnd}",
     "isDeprecated": false
   },
   {
@@ -54196,7 +54268,7 @@
     "key": "Response.UnableToRegister",
     "description": null,
     "english": "The account is unable to register",
-    "translation": "계정을 등록할 수 없습니다",
+    "translation": "계정을 등록할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -54708,7 +54780,7 @@
     "key": "Description.DownloadCSVError11",
     "description": null,
     "english": "No report found by this name",
-    "translation": "이 이름의 보고서를 찾을 수 없습니다",
+    "translation": "이 이름의 보고서를 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -54748,7 +54820,7 @@
     "key": "Description.NoReportFound",
     "description": null,
     "english": "No report found by this name",
-    "translation": "이 이름의 보고서를 찾을 수 없습니다",
+    "translation": "이 이름의 보고서를 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -54797,6 +54869,22 @@
     "description": null,
     "english": "Roblox Badges",
     "translation": "Roblox 배지",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "인증된 배지 아이콘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Premium 배지 아이콘",
     "isDeprecated": false
   },
   {
@@ -56083,7 +56171,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
+    "english": "Developer Products",
     "translation": "개발자 상품",
     "isDeprecated": false
   },
@@ -56091,7 +56179,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
+    "english": "Private Servers",
     "translation": "비공개 서버",
     "isDeprecated": false
   },
@@ -56107,7 +56195,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
+    "english": "Affiliate Fees For Passes",
     "translation": "패스 제휴 수수료",
     "isDeprecated": false
   },
@@ -56115,7 +56203,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
+    "english": "Affliate Fees For Avatars",
     "translation": "아바타 제휴 수수료",
     "isDeprecated": false
   },
@@ -56131,7 +56219,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "이 차트에는 세분화 필터를 적용할 수 없습니다",
     "isDeprecated": false
   },
@@ -56596,7 +56684,7 @@
     "key": "Message.NotEligible",
     "description": null,
     "english": "This experience is not eligible for filling out the questionnaire at this time",
-    "translation": "이 체험에 대해서는 현재 설문지를 작성할 수 없습니다",
+    "translation": "이 체험에 대해서는 현재 설문지를 작성할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -56676,7 +56764,7 @@
     "key": "Message.SectionNotFoundError",
     "description": null,
     "english": "Section was not found.",
-    "translation": "부분을 찾을 수 없습니다.",
+    "translation": "섹션을 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -56780,7 +56868,7 @@
     "key": "Message.TextBoxNotEmpty",
     "description": null,
     "english": "Text input cannot be empty",
-    "translation": "텍스트 입력은 비워 둘 수 없습니다",
+    "translation": "텍스트 입력은 비워 둘 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -57628,7 +57716,7 @@
     "key": "Label.ItemIsActive",
     "description": "Used for form labels on items that can be activated/deactivated (i.e. dev badges). Paired with a toggle input usually.",
     "english": "Item is Active",
-    "translation": "아이템이 활성화 상태입니다",
+    "translation": "아이템을 활성화함",
     "isDeprecated": false
   },
   {
@@ -57796,7 +57884,7 @@
     "key": "Label.LearnMore",
     "description": null,
     "english": "Learn more.",
-    "translation": "더 알아보기.",
+    "translation": "자세한 정보",
     "isDeprecated": false
   },
   {
@@ -60492,7 +60580,7 @@
     "key": "Message.ApiKeyNameEmptyError",
     "description": "Form input for api key name error message for empty input",
     "english": "The API Key name cannot be blank",
-    "translation": "API 키 이름은 비워둘 수 없습니다",
+    "translation": "API 키 이름은 비워둘 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -61516,7 +61604,7 @@
     "key": "Message.EmptyOAuthApps",
     "description": null,
     "english": "Create external applications that connect to Roblox user content. {linkStart}Learn more about OAuth2 Apps{linkEnd}",
-    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. {linkStart}OAuth2 앱에 대해 자세히 알아보기{linkEnd}",
+    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. {linkStart}OAuth2 앱에 대한 자세한 정보{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -61524,7 +61612,7 @@
     "key": "Description.NoOAuthApps",
     "description": "deprecated",
     "english": "Create external applications that connect to Roblox user content. \n\n{linkBreak}\n\n{linkStart}Learn more about OAuth2 Apps{linkEnd}",
-    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. \n\n{linkBreak}\n\n{linkStart}OAuth2 앱에 대해 자세히 알아보기{linkEnd}",
+    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. \n\n{linkBreak}\n\n{linkStart}OAuth2 앱에 대한 자세한 정보{linkEnd}",
     "isDeprecated": true
   },
   {
@@ -61564,7 +61652,7 @@
     "key": "Description.NoOAuthAppsNew",
     "description": null,
     "english": "Create external applications that connect to Roblox user content. {lineBreak} {linkStart}Learn more about OAuth2 Apps{linkEnd}",
-    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. {lineBreak} {linkStart}OAuth2 앱에 대해 자세히 알아보기{linkEnd}",
+    "translation": "Roblox 사용자 콘텐츠에 연결하는 외부 응용 프로그램을 만듭니다. {lineBreak} {linkStart}OAuth2 앱에 대한 자세한 정보{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -62516,7 +62604,7 @@
     "key": "Message.TranslatorNameError",
     "description": null,
     "english": "Unable to get translator name",
-    "translation": "번역자 이름을 가져올 수 없습니다",
+    "translation": "번역자 이름을 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62524,7 +62612,7 @@
     "key": "Action.LearnMore",
     "description": null,
     "english": "Learn More",
-    "translation": "더 알아보기",
+    "translation": "자세한 정보",
     "isDeprecated": false
   },
   {
@@ -62748,7 +62836,7 @@
     "key": "Message.AutoTranslationStatusError",
     "description": null,
     "english": "Unable to load auto translation status",
-    "translation": "자동 번역 상태를 불러올 수 없습니다",
+    "translation": "자동 번역 상태를 불러올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62756,7 +62844,7 @@
     "key": "Message.AutoTranslationLanguagesError",
     "description": null,
     "english": "Unable to get languages eligible for auto translation",
-    "translation": "자동 번역 가능한 언어를 가져올 수 없습니다",
+    "translation": "자동 번역 가능한 언어를 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62764,7 +62852,7 @@
     "key": "Message.LocalesError",
     "description": null,
     "english": "Unable to get candidate languages",
-    "translation": "후보 언어를 가져올 수 없습니다",
+    "translation": "후보 언어를 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62772,7 +62860,7 @@
     "key": "Message.SourceLanguageError",
     "description": null,
     "english": "Unable to get source language",
-    "translation": "소스 언어를 가져올 수 없습니다",
+    "translation": "소스 언어를 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62780,7 +62868,7 @@
     "key": "Message.SupportedLanguagesError",
     "description": null,
     "english": "Unable to get supported languages",
-    "translation": "지원 언어를 가져올 수 없습니다",
+    "translation": "지원 언어를 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62788,7 +62876,7 @@
     "key": "Message.TranslationProgressError",
     "description": null,
     "english": "Unable to get translation progress",
-    "translation": "번역 진행 상황을 가져올 수 없습니다",
+    "translation": "번역 진행 상황을 가져올 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -63668,7 +63756,7 @@
     "key": "Toast.ToggleSuccess",
     "description": null,
     "english": "Changes saved successfully.",
-    "translation": "변경 내용이 성공적으로 저장되었습니다.",
+    "translation": "변경 내용을 저장했습니다.",
     "isDeprecated": false
   },
   {
@@ -63860,7 +63948,7 @@
     "key": "Message.UserNotFound",
     "description": null,
     "english": "User not found. Please check Username or User ID entered",
-    "translation": "사용자를 찾을 수 없습니다. 입력한 사용자 이름이나 ID가 정확한지 확인해 보세요",
+    "translation": "사용자를 찾을 수 없습니다. 입력한 사용자 이름이나 ID가 정확한지 확인해 보세요.",
     "isDeprecated": false
   },
   {
@@ -64124,7 +64212,7 @@
     "key": "Message.NoProductsFound",
     "description": null,
     "english": "No products found for this experience",
-    "translation": "이 체험의 상품을 찾을 수 없습니다",
+    "translation": "이 체험의 상품을 찾을 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -66404,7 +66492,7 @@
     "key": "Description.LearnAboutRedirectUrisLink",
     "description": "Link to documentation about redirect urls",
     "english": "Learn more about redirect URLs",
-    "translation": "리디렉션 URL에 대해 자세히 알아보기",
+    "translation": "리디렉션 URL에 대한 자세한 정보",
     "isDeprecated": false
   },
   {
@@ -66596,7 +66684,7 @@
     "key": "Description.OAuthConfirmLeaving",
     "description": null,
     "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
-    "translation": "저장하지 않은 변경 사항이 있습니다. 정말 나갈까요?",
+    "translation": "OAuth 앱을 만드는 과정이 진행 중입니다. 이 진행 사항을 정말 삭제할까요?",
     "isDeprecated": false
   },
   {
@@ -66604,7 +66692,7 @@
     "key": "Title.OAuthCreateLeave",
     "description": "Title for creating intercept dialog",
     "english": "Unsaved Progress",
-    "translation": "정말 나갈까요?",
+    "translation": "저장되지 않은 진행 사항",
     "isDeprecated": false
   },
   {
@@ -66621,6 +66709,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "양식으로 돌아가서 오류를 수정할까요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "이 페이지에는 저장되지 않은 변경 사항이 있습니다. OAuth 앱이 업데이트되지 않습니다.",
     "isDeprecated": false
   },
   {
@@ -67205,6 +67301,30 @@
     "description": "deprecated",
     "english": "[here]",
     "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "배지 페이지 구성",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "제작: {creator}",
     "isDeprecated": false
   }
 ]

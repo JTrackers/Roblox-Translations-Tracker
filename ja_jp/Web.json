@@ -1536,6 +1536,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
+    "description": "Email for when a user changes SMS 2SV",
+    "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}Roblox",
+    "translation": "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}のショートメッセージ（SMS）による2段階認証プロセスが有効になりました。 お子様がログインする時など一部の動作には、Robloxがショートメッセージでお送りする6桁のセキュリティコードの入力が必要となります。{lineBreak}{lineBreak}Robloxより",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationActivationText.Subject",
+    "description": "Email subject for a user who has activated SMS 2SV.",
+    "english": "2-Step Verification with Text Messages Activated for Roblox Account: {accountName}",
+    "translation": "Robloxアカウントのショートメッセージ（SMS）による2段階認証プロセスが有効化されました：{accountName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -3324,7 +3340,7 @@
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
-    "translation": "アカウントにログインできません。LuoBuアプリにログインしてください。",
+    "translation": "アカウントにログインできません。",
     "isDeprecated": false
   },
   {
@@ -7500,7 +7516,7 @@
     "key": "Description.AccountRestrictionsEnabled",
     "description": null,
     "english": "This account can only access our curated content on the platform. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "このアカウントは、プラットフォームで精選したコンテンツにのみアクセスできます。さらに連絡先設定（{linkStart}プライバシー{linkEnd}ページ内）はオフに設定されます。",
+    "translation": "このアカウントは、プラットフォーム上の厳選されたコンテンツにしかアクセスできません。さらに、コミュニケーション設定（{linkStart}プライバシー{linkEnd} ページ内）がオフになります。",
     "isDeprecated": false
   },
   {
@@ -7508,7 +7524,7 @@
     "key": "Description.ContactSetting",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Security{linkEnd} page) is enabled",
-    "translation": "アカウント制限（{linkStart}セキュリティ{linkEnd}ページ内）が有効のため連絡先設定はロックされています",
+    "translation": "アカウント制限（ {linkStart}セキュリティ{linkEnd} ページ内）が有効になっているため、コミュニケーション設定がロックされています",
     "isDeprecated": false
   },
   {
@@ -9364,7 +9380,7 @@
     "key": "Description.AccountRestrictions",
     "description": null,
     "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
-    "translation": "この設定が有効化されているとき、このアカウントはすべての閲覧者に適切なコンテンツのみにしかアクセスできません。さらに、連絡先設定（ {linkStart}プライバシー{linkEnd} ページ内）はオフに設定されます。",
+    "translation": "この設定が有効な場合、このアカウントは視聴者全員に適切なコンテンツにしかアクセスできません。 さらに、コミュニケーション設定（ {linkStart}プライバシー{linkEnd} ページ内）がオフに設定されます。",
     "isDeprecated": false
   },
   {
@@ -9444,7 +9460,7 @@
     "key": "Description.ContactSettings",
     "description": null,
     "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
-    "translation": "アカウント制限（{linkStart}保護者コントロール{linkEnd}ページ内）が有効のため連絡先設定はロックされています",
+    "translation": "アカウント制限（ {linkStart}保護者コントロール{linkEnd} ページ内）が有効になっているため、コミュニケーション設定がロックされています",
     "isDeprecated": false
   },
   {
@@ -10749,6 +10765,30 @@
     "description": null,
     "english": "Your phone number is not verified.",
     "translation": "電話番号の確認ができていません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "このデバイスから同期された連絡先データのみ削除されます。複数のデバイス上で連絡先データを同期した場合、デバイスごとにこの作業を必要があります。接続済みのデバイスから一度に同期したデータをすべて削除するには、デスクトップウェブブラウザのプライバシー設定に行ってください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "同期した連絡先データを削除しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "同期された連絡先データを削除できません。",
     "isDeprecated": false
   },
   {
@@ -29381,6 +29421,38 @@
     "description": null,
     "english": "Unable To Equip",
     "translation": "装備できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.UpdateCharacter",
+    "description": null,
+    "english": "Update Character",
+    "translation": "キャラクターをアップデート",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UpdateThisCharacter",
+    "description": null,
+    "english": "Do you want to update this character? This will overwrite the character with your avatar's current appearance.",
+    "translation": "このキャラクターをアップデートしますか？アップデートするとキャラクターがアバターの現在の外見で上書きされます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.DeleteCharacterTitle",
+    "description": null,
+    "english": "Delete Character",
+    "translation": "キャラクターを削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.DeleteThisCharacter",
+    "description": null,
+    "english": "Are you sure you want to delete this character?",
+    "translation": "このキャラクターを削除してよろしいですか？",
     "isDeprecated": false
   },
   {
@@ -54768,6 +54840,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "認証済みバッジアイコン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Premiumバッジアイコン",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileHeader",
     "key": "Action.AddFriend",
     "description": null,
@@ -56051,7 +56139,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.GameshopItem",
     "description": null,
-    "english": "Developer Product",
+    "english": "Developer Products",
     "translation": "開発者製品",
     "isDeprecated": false
   },
@@ -56059,7 +56147,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.PrivateServer",
     "description": null,
-    "english": "Private Server",
+    "english": "Private Servers",
     "translation": "プライベートサーバー",
     "isDeprecated": false
   },
@@ -56075,7 +56163,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeGamePass",
     "description": null,
-    "english": "Affiliate Fee For Passes",
+    "english": "Affiliate Fees For Passes",
     "translation": "パスのアフィリエイト手数料",
     "isDeprecated": false
   },
@@ -56083,7 +56171,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.AffiliateFeeAvatar",
     "description": null,
-    "english": "Affliate Fee For Avatar",
+    "english": "Affliate Fees For Avatars",
     "translation": "アバターのアフィリエイト手数料",
     "isDeprecated": false
   },
@@ -56099,7 +56187,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.RevenueSourceWarning",
     "description": null,
-    "english": "Segmentation Filter does not apply to this Chart",
+    "english": "Breakdown filter does not apply to this chart",
     "translation": "セグメンテーションフィルタはこのグラフには適用されません",
     "isDeprecated": false
   },
@@ -66572,7 +66660,7 @@
     "key": "Description.OAuthConfirmLeaving",
     "description": null,
     "english": "You have made progress towards creating an OAuth App. Are you sure you want to discard this progress?",
-    "translation": "保存されていない変更内容があります。退出しますか？",
+    "translation": "OAuth アプリの作成に向けて進展がありました。この進行状況を破棄してもよろしいですか？",
     "isDeprecated": false
   },
   {
@@ -66580,7 +66668,7 @@
     "key": "Title.OAuthCreateLeave",
     "description": "Title for creating intercept dialog",
     "english": "Unsaved Progress",
-    "translation": "退出しますか？",
+    "translation": "未保存の進行状況",
     "isDeprecated": false
   },
   {
@@ -66597,6 +66685,14 @@
     "description": null,
     "english": "Do you want to return to the form and fix the errors?",
     "translation": "フォームに戻ってエラーを修正しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.OAuthValidUnsavedChanges",
+    "description": null,
+    "english": "There are unsaved changes on this page. Your OAuth app will not be updated.",
+    "translation": "このページ上には、未保存の変更内容があります。あなたのOAuthアプリはアップデートされません。",
     "isDeprecated": false
   },
   {
@@ -67184,11 +67280,35 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionLinkText",
+    "description": null,
+    "english": "[here]",
+    "translation": "[here]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureBadgePageName",
+    "description": null,
+    "english": "Configure Badge Page",
+    "translation": "バッジページの環境設定",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.UserAgreementLinks",
     "key": "Link.TermsOfService",
     "description": null,
     "english": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use",
     "translation": "https://en.help.roblox.com/hc/ja/articles/115004647846-Roblox-Terms-of-Use",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "作： {creator}",
     "isDeprecated": false
   }
 ]
