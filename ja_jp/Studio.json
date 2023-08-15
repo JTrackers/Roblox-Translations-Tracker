@@ -22060,7 +22060,7 @@
     "key": "MainWindow.OpenPlaceFailureReportToForum1",
     "description": "Devforum link field displayed in error message dialog",
     "english": "If you continue to encounter this error, please report it on the <a href='%1'>Developer Forum</a>. ",
-    "translation": "もし、このエラーが発生し続ける場合は、 <a href='%1'>開発者フォーラム</a> 上で報告してください. ",
+    "translation": "もし、このエラーが発生し続ける場合は、 <a href='%1'>開発者フォーラム</a> 上で報告してください。 ",
     "isDeprecated": false
   },
   {
@@ -28073,6 +28073,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "RBXMainWindow.SaveTheActivePlace",
+    "description": null,
+    "english": "Save the active place to the location currently open in Studio",
+    "translation": "アクティブなプレースを現在、Studioで開いている場所に保存",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "Property.ShowPathfindingLinks",
     "description": null,
     "english": "Show Pathfinding Links",
@@ -28084,7 +28092,15 @@
     "key": "FBXDynamicHeadImporter.FailureException1",
     "description": "Error message that displays if an internal error occurred while importing dynamic head",
     "english": "Failed importing dynamic head: %1",
-    "translation": "動的ヘッドのインポートに失敗しました: %1",
+    "translation": "動的な頭のインポートに失敗しました: %1",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.Success2",
+    "description": "Success message when importing dynamic head.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Successfully loaded FACS control data: found %1 of %2 controls",
+    "translation": "FACS制御データをロードできました: %1 中 %2 のコントロールが見つかりました",
     "isDeprecated": false
   },
   {
@@ -28097,10 +28113,130 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.Max3Correctives2",
+    "description": "Error message when importing FBX file.  Correctives refers to a corrective shape that is used to handle bad deformations in a rig in 3d animation.  Please ensure the appropriate technical term for \"corrective\" is used in the translation.",
+    "english": "Failed importing dynamic head: Correctives can be for at most 3 control names.  Found %1 in \"%2\"",
+    "translation": "動的な頭のインポートができませんでした: 修正点は最大3つのコントロール名に対応します。「 %2 」内に %1 が見つかりました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.UnrecognizedFACS1",
+    "description": "Error message when importing FBX file.  Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing dynamic head: Unrecognized FACS control name \"%1\"",
+    "translation": "動的な頭のインポートができませんでした: 認識不能なFACSコントロール名 「%1」",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.CorrectiveDupe2",
+    "description": "Error message when importing FBX file.  \"corrective\" is a technical term that refers to a corrective shape that is used to handle bad deformation.  Please ensure the appropriate technical term is used in the translation for \"corrective\". Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing dynamic head: Found duplicate FACS control name %1 for corrective %2",
+    "translation": "動的な頭のインポートができませんでした: 修正用 %2 に対してFACSコントロール名の複製「%1」が見つかりました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.UnparseableFrameNumber1",
+    "description": "Frame refers to a frame of animation.  \"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
+    "english": "Failed importing dynamic head: Couldn't parse the frame number in Extra Attribute named \"%1\".",
+    "translation": "動的な頭のインポートができませんでした: 「%1」という名前の追加属性のフレーム番号を解析できませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.EmptyAttribute1",
+    "description": "\"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data",
+    "english": "Failed importing dynamic head: Empty value found for Extra Attribute named\"%1\".",
+    "translation": "動的な頭のインポートができませんでした: 「%1」という名前の追加属性に対して空の値が見つかりました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.DupeControl3",
+    "description": "\"frame\" refers to a frame of animation.  \"control\" refers to a FACS control, where FACS stands for Facial Action Coding System",
+    "english": "Failed importing dynamic head: Duplicate control name found: \"%1\" in frame %2 and frame %3",
+    "translation": "動的な頭のインポートができませんでした: 重複したコントロール名が見つかりました: フレーム %2 とフレーム %3 に「%1」",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.SkipAttribute2",
+    "description": "Warning message indicating that some key/value pair was missed.  attribute refers to a specific metadata that is attached to objects in an FBX file",
+    "english": "Skipping attribute %1: %2",
+    "translation": "属性 %1をスキップしています: %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoAttributes",
+    "description": "Error message when expected metadata is not found.  \"Head_Geo\" should not be translated as this refers to a string in the FBX file.  \"Extra Attribute\" refers to a specific data section of an FBX file that contains extra key/value pairs of data. Note FACS refers to the acronym Facial Action Coding System.  FACS may not need to be translated if the English acronym is used.",
+    "english": "Failed importing dynamic head: Head_Geo has no Extra Attributes that map FACS controls to animation frames.",
+    "translation": "動的な頭のインポートができませんでした: Head_Geo には、FACSコントロールをアニメーションフレームにマッピングする追加属性がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoNeutral",
+    "description": "\"frame\" refers to a frame of animation.  \"Neutral\" should not be translated as this refers to a string expected to be in the FBX file.",
+    "english": "Failed importing dynamic head: No frame was set to \"Neutral\" in animation.",
+    "translation": "動的な頭のインポートができませんでした: アニメーションで「Neutral」に設定されているフレームがありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.MissingSupportCorrective2",
+    "description": "Error message when importing FBX file.  \"corrective\" is a technical term that refers to a corrective shape that is used to handle bad deformation.  Please ensure the appropriate technical term is used in the translation for \"corrective\".",
+    "english": "You have corrective %1, but missing corrective %2 to support it.  This may cause odd deformations.",
+    "translation": "あなたは修正用の %1を持っていますが、修正用の %2 がありません。奇妙な変形を引き起こす可能性があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.MissingBase2",
+    "description": "Error message when importing FBX file.  \"corrective\" is a technical term that refers to a corrective shape that is used to handle bad deformation.  Please ensure the appropriate technical term is used in the translation for \"corrective\".",
+    "english": "Failed importing dynamic head: \"%1\" has not been specified. This is needed for corrective \"%2\".",
+    "translation": "動的な頭のインポートができませんでした: 「%1」 が指定されていません。これは修正用の「%2」に必要です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.MissingKeyFrame2",
+    "description": "Error message when importing FBX file.  \"key frame\" refers to an animation frame between which other frames are interpolated.  Please use the appropriate technical term for \"key frame\".",
+    "english": "Failed importing dynamic head: Missing key frame %1 for %2",
+    "translation": "動的な頭のインポートができませんでした: %2 の %1 キーフレームがありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.MissingNeutralKeyFrame1",
+    "description": "Error message when importing FBX file. \"key frame\" refers to an animation frame between which other frames are interpolated.  Do not translate \"Neutral\".  This is a particular string that is expected to be in the FBX file.",
+    "english": "Failed importing dynamic head: Missing key frame %1 for Neutral",
+    "translation": "動的な頭のインポートができませんでした: Neutral の %1 キーフレームがありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.NoJoints",
+    "description": "Error message when importing FBX file. \"joint\", also known as skeleton or bones, is a technical term in 3d animation that refers to a single part of a rig that can deform a 3d mesh geometry.  Please ensure the appropriate technical term for \"joint\" is used in the translation.  Do not translate \"DynamicHead\" because this refers to a string expected to be in the FBX file.",
+    "english": "Failed importing dynamic head: No joints were found under DynamicHead.",
+    "translation": "動的な頭のインポートができませんでした: DynamicHead でジョイントが見つかりませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "FBXDynamicHeadImporter.NearNeutral",
     "description": "Warning message when importing FBX file. \"Control\" refers to a FACS control, where FACS stands for Facial Action Coding System. \"Neutral\" should not be translated as this refers to a string expected to be in the FBX file.",
     "english": "Control %1 is nearly identical to Neutral",
     "translation": "コントロール %1 は Neutral とほぼ同一です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "FBXDynamicHeadImporter.IncompletePoses",
+    "description": "Warning message when importing FBX file.  \"base poses\" refers to the main facial expressions for an avatar.  \"character\" refers to the 3d avatar",
+    "english": "Found only %1 base poses. Your character may not be able to express itself.",
+    "translation": "%1 個の基本ポーズしか見つかりませんでした。あなたのキャラクターは自己表現できないかもしれません。",
     "isDeprecated": false
   },
   {
@@ -28117,6 +28253,22 @@
     "description": null,
     "english": "Start Page",
     "translation": "開始ページ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.CanvasGroupTitle",
+    "description": null,
+    "english": "Canvas Group",
+    "translation": "キャンバスグループ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.CanvasGroupDescription",
+    "description": null,
+    "english": "A new UI object that renders descendants as a single layer that can be tinted and made transparent.",
+    "translation": "子孫を単一のレイヤーとしてレンダリングする新しいUIオブジェクトは、すべて着色して透明にできます。",
     "isDeprecated": false
   },
   {
@@ -28149,6 +28301,14 @@
     "description": null,
     "english": "Channel Animations",
     "translation": "チャンネルアニメーション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.CurveAnimationsDescription",
+    "description": null,
+    "english": "Enable single-channel animations with new curve-based format in the Animation Clip Editor.",
+    "translation": "曲線ベースの新しいフォーマットを使ってアニメーションクリップエディタ上で単一チャンネルアニメーションを有効化。",
     "isDeprecated": false
   },
   {
@@ -28189,6 +28349,14 @@
     "description": "Main Window",
     "english": "We could not join the Team Create session for place \"%1\". %2",
     "translation": "プレース「%1」のチームクリエイトセッションに参加できませんでした。%2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "MainWindow.UnableToJoinTeamCreateSessionForPlaceId2",
+    "description": "Main Window",
+    "english": "We could not join the Team Create session for place [%1]. %2",
+    "translation": "プレース [%1] のチームクリエイトセッションに参加できませんでした。%2",
     "isDeprecated": false
   },
   {
@@ -28245,6 +28413,22 @@
     "description": null,
     "english": "Saves the place to the location (Local or Roblox) currently open in Studio.",
     "translation": "現在、Studio で開いている場所（ローカル または Roblox）にプレースを保存。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyItems.MaterialOverride.Disabled",
+    "description": "Note to localization: Make sure <font></font> remain unchanged, they are needed for text wrapping with rtf. Tooltip that displays if a MaterialOverride is set to a MaterialVariant that is not a descendant of MaterialService.",
+    "english": "<font>The Override will not function unless the MaterialVariant is placed in MaterialService. Place the variant in MaterialService or choose another variant.</font>",
+    "translation": "<font>MaterialVariant を MaterialService に配置しない限り、 Override は機能しません。 MaterialService にバリアントを配置するか、別のバリアントを選択してください。</font>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyItems.MaterialOverride.Missing",
+    "description": "Note to localization: Make sure <font></font> remain unchanged, they are needed for text wrapping with rtf. Tooltip that displays if a MaterialOverride is set to a MaterialVariant that has been deleted.",
+    "english": "<font>The Override will not be functional because the MaterialVariant no longer exists. Apply a new variant or set the Override to None.</font>",
+    "translation": "<font>MaterialVariant が存在しないため、Override は機能しません。新しいバリアントを適用するか、Override を None に設定してください。</font>",
     "isDeprecated": false
   },
   {
@@ -28541,6 +28725,22 @@
     "description": null,
     "english": "Text Chat",
     "translation": "テキストチャット",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.DebuggerV2Title",
+    "description": null,
+    "english": "Intuitive Lua Debugger",
+    "translation": "直感的Lua Debugger",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.DebuggerV2Description",
+    "description": null,
+    "english": "Enable a new debugging experience with a more powerful backend architecture and Lua-based UI for the Callstack, Watch, and Breakpoint windows.",
+    "translation": "より強力なバックエンドアーキテクチャと、Callstack、Watch、Breakpoint ウィンドウの Luaベースの UI で新しいデバッグ体験を有効化。",
     "isDeprecated": false
   },
   {
@@ -31728,6 +31928,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.GameSettings",
+    "key": "Permissions.NoEditMustBeFriendDescription",
+    "description": null,
+    "english": "User must be a friend to edit",
+    "translation": "編集するには友達である必要があります",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GameSettings",
+    "key": "Permissions.NoUserEditGroupGameDescription",
+    "description": null,
+    "english": "Must be in owner group to edit",
+    "translation": "編集するには所有者グループにいる必要があります",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.Toolbox",
     "key": "General.ToolboxToolbarName",
     "description": null,
@@ -34573,6 +34789,14 @@
     "description": null,
     "english": "Audio",
     "translation": "オーディオ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "General.HasScripts",
+    "description": null,
+    "english": "Has scripts",
+    "translation": "スクリプトあり",
     "isDeprecated": false
   },
   {
@@ -45088,6 +45312,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Action2",
+    "description": null,
+    "english": "Action2",
+    "translation": "Action2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Action3",
+    "description": null,
+    "english": "Action3",
+    "translation": "Action3",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Action4",
+    "description": null,
+    "english": "Action4",
+    "translation": "Action4",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.ConvertToPackage",
     "key": "Meta.PluginName",
     "description": null,
@@ -46377,6 +46625,14 @@
   },
   {
     "namespace": "Studio.PublishPlaceAs",
+    "key": "General.RolloutOptionForceDesc",
+    "description": null,
+    "english": "On publish, all servers running this place are shutdown. Players are teleproted to new, updated servers, New player join updated server.",
+    "translation": "公開時に、このプレースを実行しているすべてのサーバーはシャットダウンされます。プレーヤーは新しい更新されたサーバーにテレポートされ、新しいプレーヤーは更新されたサーバーに参加します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
     "key": "General.RollbackToggleTitle",
     "description": null,
     "english": "Enable Rollback to Previous Version",
@@ -46409,6 +46665,14 @@
   },
   {
     "namespace": "Studio.PublishPlaceAs",
+    "key": "ScreenHeader.PublishManagement",
+    "description": null,
+    "english": "How would you like to release the overwrite to {1} under {2}?",
+    "translation": "{2} の下の {1} への上書きをリリースしますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
     "key": "TcToggleCallout.Title",
     "description": null,
     "english": "New! Team Create",
@@ -46421,6 +46685,22 @@
     "description": null,
     "english": "Team Create enables collaboration and autosave to cloud!",
     "translation": "チームクリエイトは、共同作業とクラウドへの自動保存を有効化します！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "Button.AddNewPlaceToGame",
+    "description": null,
+    "english": "Add as a new place",
+    "translation": "新しいプレースとして追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PublishPlaceAs",
+    "key": "ScreenHeader.ChooseGameNew",
+    "description": null,
+    "english": "Choose a game to add this place to",
+    "translation": "このプレースに追加するゲームを選択",
     "isDeprecated": false
   },
   {
@@ -48600,6 +48880,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.Framework",
+    "key": "AssetPreview.HasScriptsMessage",
+    "description": null,
+    "english": "This model includes scripts.",
+    "translation": "このモデルにはスクリプトが含まれています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Framework",
+    "key": "AssetPreview.HasScriptsTooltip",
+    "description": null,
+    "english": "Scripts can change your experience's behavior when it is running.",
+    "translation": "スクリプトは、実行中のあなたの体験の動作を変更できます。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AddFriends",
     "key": "Action.FriendAdded",
     "description": "Text for a success toast when a friend has been added",
@@ -49445,6 +49741,22 @@
     "description": null,
     "english": "Invalid Selection",
     "translation": "選択が無効です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LayeredClothingEditor",
+    "key": "EditAndPreview.PromptNoCage",
+    "description": null,
+    "english": "Move, rotate and scale accessory within the bounding box to adjust fitting. Use preview to access fitting quality on different bodies and animations.",
+    "translation": "フィッティングを調整するには、バウンディングボックス内のアクセサリを移動、回転、およびスケーリングします。さまざまなボディとアニメーションでフィッティングのクオリティにアクセスするには、プレビューを使用します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.LayeredClothingEditor",
+    "key": "EditAndPreview.PromptCage",
+    "description": null,
+    "english": "Adjust fitting by editing the cage mesh vertices. Use preview to access fitting quality with different options for bodies and animations.",
+    "translation": "ケージメッシュの頂点を編集してフィッティングを調整します。プレビューを使用すると、ボディとアニメーションの異なるオプションでフィッティングのクオリティにアクセスできます。",
     "isDeprecated": false
   },
   {
