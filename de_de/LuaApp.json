@@ -1388,7 +1388,7 @@
     "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
     "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
     "english": "This experience is restricted by your Parental Controls > Allowed Experiences setting.",
-    "translation": "Dieses Erlebnis ist aufgrund deiner Kontoeinstellungen nicht verfügbar.",
+    "translation": "Dieses Erlebnis wird durch deine Kindersicherungs-Einstellungen > Erlaubte Erlebnisse eingeschränkt.",
     "isDeprecated": false
   },
   {
@@ -2456,6 +2456,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.ActionNotAvailableInCurrentCountry",
+    "description": "Toast to show when a specific action is not supported.",
+    "english": "This action is not supported in the current country yet.",
+    "translation": "Diese Aktion wird im aktuellen Land noch nicht unterstützt.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSettings",
     "key": "Heading.Tab.AccountInfo",
     "description": null,
@@ -2798,6 +2806,14 @@
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
     "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsverifizierung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerifyAgeConsent",
+    "description": "The legal consent a user agrees to by choosing to verify their age on the roblox.com account setting page.",
+    "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
+    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsverifizierung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.Catalog",
@@ -4540,7 +4556,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Nach dem Kauf werden Items bis zu 30 Tage lang gehalten. Das Item kann erst nach Ablauf der Haltezeit weiterverkauft werden. Diese Haltezeit gilt für jeden Weiterverkauf. Nur Premium-Nutzer:innen können Items weiterverkaufen.",
+    "translation": "Nach dem ursprünglichen Kauf wird eine Haltezeit von bis zu 30 Tagen festgelegt. Das Item kann erst nach Ablauf dieser Haltezeit wieder verkauft werden, wobei der Weiterverkauf eine Haltezeit von bis zu 7 Tagen hat. Nur Premium-Nutzer:innen können Items weiterverkaufen.",
     "isDeprecated": false
   },
   {
@@ -4644,7 +4660,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Nach dem Kauf werden Items bis zu 30 Tage lang gehalten. Das Item kann erst nach Ablauf der Haltezeit weiterverkauft werden. Diese Haltezeit gilt für jeden Weiterverkauf. Nur Premium-Nutzer:innen können Items weiterverkaufen.",
+    "translation": "Nach dem ursprünglichen Kauf wird eine Haltezeit von bis zu 30 Tagen festgelegt. Das Item kann erst nach Ablauf dieser Haltezeit wieder verkauft werden, wobei der Weiterverkauf eine Haltezeit von bis zu 7 Tagen hat. Nur Premium-Nutzer:innen können Items weiterverkaufen.",
     "isDeprecated": true
   },
   {
@@ -4774,6 +4790,14 @@
     "english": "Resellable",
     "translation": "Weiterverkaufbar",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Feature.Catalog.ActionSeeAll",
+    "description": "Button text for \"See All\" button used in carousel marketplace widgets",
+    "english": "See All",
+    "translation": "Alle ansehen",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Chat",
@@ -6824,6 +6848,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameDetails",
+    "key": "RatingPercentOnly",
+    "description": "This rating is displayed on the GridTile on homepage in the subtitle",
+    "english": "{percentRating}% Rating",
+    "translation": "{percentRating}% Bewertung",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameGear",
     "key": "Heading.GearForThisGame",
     "description": null,
@@ -7664,6 +7696,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Profile",
+    "key": "Label.RecentDisplayName",
+    "description": "Warning for users trying to change their display name too recently",
+    "english": "Your display name has been changed too recently. Your display name can only be changed once every 7 days.",
+    "translation": "Dein Anzeigename wurde vor kurzem geändert. Dein Anzeigename kann nur alle 7 Tage geändert werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UsernameCaption",
+    "description": "Description for changing one's username on Roblox. The \"R$\" represents a variable that is a UIBlox character.",
+    "english": "This is your unique name on Roblox. Changing your username will cost {R$}1000.",
+    "translation": "Das ist dein einzigartiger Name auf Roblox. Das Ändern deines Benutzernamens kostet {R$}1000.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.Username",
+    "description": "User's Username",
+    "english": "Username",
+    "translation": "Benutzername",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UsernameDescription",
+    "description": "Description for users to change their username, variables include an icon and then the price it costs to make the change.",
+    "english": "This is your unique name on Roblox. Changing your username will cost {icon}{price}.",
+    "translation": "Das ist dein einzigartiger Name auf Roblox. Das Ändern deines Benutzernamens kostet {icon}{price}.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ReportAbuse",
     "key": "Message.ErrorSubmit",
     "description": null,
@@ -8140,7 +8204,7 @@
     "key": "Heading.JoinYourFriends",
     "description": "Heading for the Join Your Friends carousel on home page",
     "english": "Join Your Friends",
-    "translation": "Schließ dich deinen Freund:innen an",
+    "translation": "Schließ dich Freund:innen an",
     "isDeprecated": false
   },
   {
@@ -11988,7 +12052,7 @@
     "key": "Prompt.Subtitle.VoiceToxicityModal",
     "description": "VoiceToxicityModal content",
     "english": "We've detected language that may violate Roblox's Community Standards.<br /><br />You may lose access to Chat with Voice after multiple violations.",
-    "translation": "Wir haben eine Sprache erkannt, die eventuell gegen unsere Community-Regeln verstößt. Wiederholte Verstöße könnten dazu führen, dass der Zugang zum Chat mit Voice verloren geht.",
+    "translation": "Wir haben Ausdrücke festgestellt, die eventuell gegen die Community-Regeln von Roblox verstoßen.<br /><br />Du kannst den Zugriff auf den Chat per Voice nach mehreren Verstößen verlieren.",
     "isDeprecated": false
   },
   {
@@ -11996,7 +12060,23 @@
     "key": "Prompt.Subtitle.VoiceToxicityToast",
     "description": null,
     "english": "We've detected language that may violate Roblox's Community Standards. You may lose access to Chat with Voice after multiple violations.",
-    "translation": "Wir haben eine Sprache erkannt, die eventuell gegen unsere Community-Regeln verstößt.",
+    "translation": "Wir haben Ausdrücke festgestellt, die eventuell gegen die Community-Regeln von Roblox verstoßen. Du kannst den Zugriff auf den Chat per Voice nach mehreren Verstößen verlieren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.RememberRules",
+    "description": null,
+    "english": "Remember our policies",
+    "translation": "Merke dir unsere Richtlinien",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.GotIt",
+    "description": "A more casual replacement for \"I Understand\"",
+    "english": "Got It",
+    "translation": "Verstanden",
     "isDeprecated": false
   },
   {
@@ -14656,6 +14736,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.AddPhoneBody",
+    "description": null,
+    "english": "Use your phone number to recover accounts, connect with friends, and more.",
+    "translation": "Verwende deine Telefonnummer, um Konten wiederherzustellen, dich mit Freund:innen zu verbinden und vieles mehr.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Body",
     "description": null,
@@ -17236,7 +17324,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue using Roblox, please select \"I Agree\" to agree to our updated Terms of Use and acknowledge our Privacy Policy. Changes have been made to the following documents:",
-    "translation": "Um weiterhin auf Roblox spielen zu können, stimme bitte unseren Nutzungsbedingungen und unserer Datenschutzrichtlinie zu. An den folgenden Abschnitten wurden Änderungen vorgenommen:",
+    "translation": "Um weiterhin Roblox nutzen zu können, wähle bitte \"Ich stimme zu\", um unseren aktualisierten Nutzungsbedingungen zuzustimmen und unsere Datenschutzrichtlinie anzuerkennen. An den folgenden Dokumenten wurden Änderungen vorgenommen:",
     "isDeprecated": false
   },
   {
@@ -18736,6 +18824,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.FaceChat",
+    "key": "Heading.UnableToAccessCamera",
+    "description": null,
+    "english": "Unable to access Camera",
+    "translation": "Zugriff auf Kamera nicht möglich",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.FaceChat",
+    "key": "Subtitle.UnableToAccessCamera",
+    "description": null,
+    "english": "In order to animate your avatar using camera, go to your OS Settings to allow Roblox to use the camera",
+    "translation": "Um deinen Avatar per Kamera zu animieren, gehe in die OS-Einstellungen, um Roblox die Verwendung der Kamera zu erlauben",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PurchaseError",
     "key": "Title.Error",
     "description": null,
@@ -20013,6 +20117,126 @@
     "description": null,
     "english": "Cancel",
     "translation": "Abbrechen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.ShareYourCapture",
+    "description": "Title shown on the Share Sheet when a user is sharing a screenshot or video capture",
+    "english": "Share your Capture",
+    "translation": "Teile deine Aufnahme",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Control.On",
+    "description": "Control to turn the Captures feature on",
+    "english": "On",
+    "translation": "An",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Control.Off",
+    "description": "Control to turn the Captures feature off",
+    "english": "Off",
+    "translation": "Aus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.EducationalText",
+    "description": "Educational text introducing the Captures feature to users.",
+    "english": "Capture, view, and share your favorite Roblox moments.",
+    "translation": "Erfasse, betrachte und teile deine Lieblingsmomente bei Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.Captures",
+    "description": "Title of the Captures feature, which allows users to capture screenshots and videos",
+    "english": "Captures",
+    "translation": "Aufnahmen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.NothingHereYet",
+    "description": "A label shown when the user does not have any captures in their gallery.",
+    "english": "Nothing here... yet. Take your first Captures then return to review, and share with your friends.",
+    "translation": "Nichts zu sehen hier ... noch nicht. Mach deine erste Aufnahme und kehre zurück, um sie zu überprüfen und mit deinen Freund:innen zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.Gallery",
+    "description": "Title for the gallery grid view which shows a gallery of the users Captures",
+    "english": "Gallery",
+    "translation": "Galerie",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Toast.CapturesEnabled",
+    "description": "The text of a toast shown to the user after they enable the Captures feature.",
+    "english": "Captures Enabled",
+    "translation": "Aufnahmen fehlgeschlagen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Toast.CaptureSavedToGallery",
+    "description": "The title of a toast shown to users after they capture a new screenshot or video",
+    "english": "Capture saved to Gallery",
+    "translation": "Aufnahme in Galerie gespeichert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Description.ShareCTA",
+    "description": "A description shown on a toast letting the user know that they can share their new Capture with friends",
+    "english": "Share your Capture with friends!",
+    "translation": "Teile deine Aufnahme mit Freund:innen!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.Share",
+    "description": "Action to Share a Capture",
+    "english": "Share",
+    "translation": "Teilen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.UsernameByline",
+    "description": "A \"byline\" showing who created the experience, shown below the experience name in the screenshot capture watermark.",
+    "english": "by @{username}",
+    "translation": "von @{username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Feature.Captures.Label.GroupNameByline",
+    "description": "A \"byline\" showing who created the experience (if the creator is a group), shown below the experience name in the screenshot capture watermark.",
+    "english": "by {groupName}",
+    "translation": "von {groupName}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Toast.CaptureSaved",
+    "description": "The title of a toast shown to users after they capture a new screenshot or video, this is a variant which does not mention the Gallery.",
+    "english": "Capture saved",
+    "translation": "Aufnahme gespeichert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.GroupNameByline",
+    "description": "A \"byline\" showing who created the experience (if the creator is a group), shown below the experience name in the screenshot capture watermark.",
+    "english": "by {groupName}",
+    "translation": "von {groupName}",
     "isDeprecated": false
   }
 ]
