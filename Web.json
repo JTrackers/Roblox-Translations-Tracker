@@ -5595,12 +5595,12 @@
     "Description.AccountEmailRevertEmail.HtmlBody.V2": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
     },
     "Description.AccountEmailRevertEmail.PlainBody.V2": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{revertAccountEmailLink}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.{lineBreak}Please do not reply to this message. If you have any questions, please visit our Help Center ({accountHelpLink})."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {revertAccountEmailLink}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our Help Center ({accountHelpLink})."
     },
     "Description.UsernameChangeEmail.Body.V2": {
       "deprecated": true,
@@ -6198,14 +6198,14 @@
       "text": "Gender (Optional)"
     },
     "Description.AccountEmailRevertEmail.PlainBody.V3": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak} Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
     },
     "Description.AccountEmailRevertEmail.HtmlBody.V3": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": null,
-      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {revertAccountEmailLink}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak} Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {revertAccountEmailLink}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
     },
     "Message.MonthlySpendLimitTooHighErrorMessage": {
       "deprecated": false,
@@ -25419,6 +25419,16 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Read More"
+    },
+    "Heading.TwoStepVerificationRequiredV3": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "2-Step Verification Required"
+    },
+    "Message.TwoStepVerificationRequiredV4": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "2-Step Verification is required to make further transactions. Go to your Security page to enable and complete 2-Step Verification.\t"
     }
   },
   "Common.Captcha": {
@@ -36144,39 +36154,84 @@
   },
   "CommonUI.UserAgreements": {
     "Popup.Title": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Tile for showing updated agreement popup dialog.",
       "text": "Updated Agreements"
     },
     "Popup.Message": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Description of the updated user agreement message in popup dialog.",
       "text": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following sections:"
     },
     "Popup.Agree": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Agree button text for update user agreements popup dialog.",
       "text": "I Agree"
     },
     "Popup.Agreement.TermsOfService": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Terms of service description.",
       "text": "Terms Of Use"
     },
     "Popup.Agreement.PrivacyPolicy": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Privacy protection guidelines.",
       "text": "Privacy Policy"
     },
     "Popup.Agreement.RiderTerms": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "Rider terms.",
       "text": "Rider Terms"
     },
     "Popup.Agreement.ChildrenPrivacyPolicy": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "The title of privacy protection guidelines for children.",
       "text": "Privacy Protection Guidelines for Children"
+    },
+    "Modal.Agree": {
+      "deprecated": false,
+      "privateNote": "Button text",
+      "text": "I Agree"
+    },
+    "Modal.Agreement.ChildrenPrivacyPolicy": {
+      "deprecated": false,
+      "privateNote": "Agreement name for the Children Privacy Policy",
+      "text": "Privacy Protection Guidelines for Children"
+    },
+    "Modal.Agreement.PrivacyPolicy": {
+      "deprecated": false,
+      "privateNote": "Agreement name for Privacy Policy",
+      "text": "Privacy Policy"
+    },
+    "Modal.Agreement.RiderTerms": {
+      "deprecated": false,
+      "privateNote": "Agreement name for Rider Terms",
+      "text": "Rider Terms"
+    },
+    "Modal.Agreement.TermsOfService": {
+      "deprecated": false,
+      "privateNote": "Agreement name for Terms of Service",
+      "text": "Terms of Service"
+    },
+    "Modal.Body": {
+      "deprecated": false,
+      "privateNote": "Body of the modal indicating the user CTA",
+      "text": "To continue playing on Roblox, please agree to our updated Terms of Service. Changes have been made to the following documents:"
+    },
+    "Modal.Title": {
+      "deprecated": false,
+      "privateNote": "Title of the agreements modal",
+      "text": "Updated Agreements"
+    },
+    "Modal.ConsentFlow": {
+      "deprecated": false,
+      "privateNote": "Agreement name for the TalentHub Consent Flow",
+      "text": "Consent Flow"
+    },
+    "Modal.Agreement.ConsentFlow": {
+      "deprecated": false,
+      "privateNote": "Agreement name for TalentHub Consent Flow",
+      "text": "Consent Flow"
     }
   },
   "CreatorDashboard.OpenCloud": {
