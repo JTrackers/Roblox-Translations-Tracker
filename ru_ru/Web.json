@@ -1624,6 +1624,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Привет!{lineBreak}{lineBreak}Был изменён метод двухшаговой проверки для аккаунта {accountName} ({disabledTwoStepMethod} > {enabledTwoStepMethod}). Если такой запрос сделан не тобой, немедленно обратись в службу поддержки, чтобы восстановить свой аккаунт.{lineBreak}{lineBreak}Благодарим,{lineBreak}{lineBreak} Команда Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Был изменён метод двухшаговой проверки для аккаунта вашего ребёнка {accountName} ({disabledTwoStepMethod} > {enabledTwoStepMethod}). Если такой запрос сделан не вами или вашим ребёнком, немедленно обратитесь в службу поддержки, чтобы восстановить аккаунт.{lineBreak}{lineBreak}Благодарим,{lineBreak}{lineBreak} Команда Roblox",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -10924,7 +10940,7 @@
     "key": "Description.ConnectWithContactsWeb",
     "description": null,
     "english": "To enable contacts, go to Add Friends in the Roblox app on your mobile device.",
-    "translation": "Чтобы включить контакты, перейдите в приложение Roblox на своём мобильном устройстве.",
+    "translation": "Чтобы включить контакты, перейди в раздел «Добавить друзей» в приложении Roblox на своём мобильном устройстве.",
     "isDeprecated": false
   },
   {
@@ -11069,6 +11085,430 @@
     "description": "A warning to users that turning off their 2FA will remove their verified badge status",
     "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
     "translation": "Внимание: отключение двухшаговой проверки приведёт к удалению подтверждённого значка. Продолжить?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoDescription",
+    "description": "Placeholder text when an OAuth app has no description.",
+    "english": "No Description",
+    "translation": "Нет описания",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoAuthorizations",
+    "description": null,
+    "english": "No Authorizations",
+    "translation": "Нет разрешений",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AdditionalVerificationMethod",
+    "description": null,
+    "english": "Additional Verification Method",
+    "translation": "Дополнительный метод верификации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKey",
+    "description": null,
+    "english": "Security Keys on Web Only (Very Secure)",
+    "translation": "Ключи безопасности только для компьютера (очень безопасно)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AdditionalVerificationMethod",
+    "description": null,
+    "english": "Use a physical key, your device's face ID, or touch ID to validate your identity.",
+    "translation": "Используй физический ключ, Face ID или Touch ID своего устройства, чтобы подтвердить свою личность.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey",
+    "description": null,
+    "english": "A hardware security key or device’s biometrics like TouchID or FaceID.",
+    "translation": "Ключ безопасности или TouchID/FaceID.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Email",
+    "description": null,
+    "english": "Email (Secure)",
+    "translation": "Электронная почта (безопасно)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationEmail",
+    "description": null,
+    "english": "Receive unique codes at your specified email.",
+    "translation": "Получай уникальные коды на указанную эл. почту.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.TextMessage",
+    "description": null,
+    "english": "Receive unique codes by text message on your phone.",
+    "translation": "Получай уникальные коды с помощью текстового сообщения на свой телефон.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Authenticator",
+    "description": null,
+    "english": "Authenticator (Very Secure)",
+    "translation": "Аутентификатор (очень безопасно)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Authenticator",
+    "description": null,
+    "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
+    "translation": "Приложение на телефоне, которое генерирует уникальные коды. Рекомендуемые приложения: Google Authenticator, Microsoft Authenticator и Twilio Authy.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.TwoStepVerification",
+    "description": null,
+    "english": "An Extra Layer of Account Security {lineBreaks}In addition to your password, add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. Note: you can only enable one option below at a time.",
+    "translation": "Дополнительный уровень безопасности аккаунта {lineBreaks}Кроме использования пароля, добавь дополнительный уровень защиты для своего аккаунта, включив двухэтапную проверку, которая будет использоваться при входе в систему, восстановлении аккаунта и при осуществлении операций с большими суммами. Примечание: одновременно можно использовать только один вариант.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.RegisterSecurityKey",
+    "description": null,
+    "english": "Register Your Security Key",
+    "translation": "Зарегистрируй свой ключ безопасности",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.PhysicalKey",
+    "description": null,
+    "english": "Insert your key in your computer’s USB port and touch it when prompted.",
+    "translation": "Вставь ключ в USB-порт компьютера и коснись его при появлении запроса.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.BiometricKey",
+    "description": null,
+    "english": "Alternatively, set up this device using TouchID or FaceID.",
+    "translation": "Или настрой это устройство с помощью TouchID или FaceID.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.SetupError",
+    "description": null,
+    "english": "Please try to set up your key again. If you’re still unable to set up, try another key.",
+    "translation": "Попробуй настроить ключ ещё раз. Если попытка не удалась, попробуй другой ключ.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.NameSecurityKey",
+    "description": null,
+    "english": "Name Your Key",
+    "translation": "Назови свой ключ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.NameKey",
+    "description": null,
+    "english": "Name your key so that later you will know which one it is.",
+    "translation": "Назови свой ключ, чтобы было легче распознать его в будущем.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.Name",
+    "description": null,
+    "english": "Security Key Name",
+    "translation": "Имя ключа безопасности",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKeyRegistered",
+    "description": null,
+    "english": "Security Key Registered",
+    "translation": "Ключ безопасности зарегистрирован",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Register2SV",
+    "description": null,
+    "english": "Next time you sign in on web, you’ll use your security key with 2 Step Verification.",
+    "translation": "В следующий раз при входе на компьютере необходимо будет использовать ключ безопасности с помощью двухшаговой проверки.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AddSecurityKey",
+    "description": null,
+    "english": "Add Another Key",
+    "translation": "Добавь ещё один ключ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.DeleteSecurityKey",
+    "description": null,
+    "english": "Delete Key",
+    "translation": "Удалить ключ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ManageYourKeys",
+    "description": null,
+    "english": "Manage Your Keys",
+    "translation": "Управление ключами",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.RegisteredKey",
+    "description": null,
+    "english": "{registeredKeysCount} out of {totalKeysCount} keys have been registered.",
+    "translation": "Зарегистрировано ключей: {registeredKeysCount} из {totalKeysCount}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.RegisteredKeysAtCapacity",
+    "description": null,
+    "english": "{registeredKeysCount} out of {totalKeysCount} keys have been registered. If you want to set up more keys, please delete 1 or more existing keys.",
+    "translation": "Зарегистрировано ключей: {registeredKeysCount} из {totalKeysCount}. Если ты хочешь настроить больше ключей, удали 1 или более существующих ключей.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteSecurityKey",
+    "description": null,
+    "english": "Delete Security Key",
+    "translation": "Удалить ключ безопасности",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeleteWarning",
+    "description": null,
+    "english": "Security keys protects your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
+    "translation": "Ключи безопасности защищают Robux, плейсы, предметы ограниченной серии и многое другое. Мы рекомендуем удалить ключ, если он утерян или больше не действует. {lineBreak}{lineBreak}Действительно удалить ключ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeleteSuccess",
+    "description": null,
+    "english": "{deletedKeyList} were successfully disabled.",
+    "translation": "Успешно отключено: {deletedKeyList}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactSuccess",
+    "description": null,
+    "english": "Successfully updated recommendation preferences.",
+    "translation": "Настройки рекомендаций успешно обновлены.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactFailure",
+    "description": null,
+    "english": "Unable to update recommendation preferences.",
+    "translation": "Не удаётся обновить настройки рекомендаций.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": null,
+    "english": "Learn More about Voice Recording",
+    "translation": "Подробнее о голосовой записи",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ContentControls",
+    "description": null,
+    "english": "Content Controls",
+    "translation": "Управление содержимым",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControls",
+    "description": null,
+    "english": "What is the maximum age recommendation that this account can access? See {linkStart}this page{linkEnd} for more details.",
+    "translation": "Какова максимальная возрастная рекомендация для доступа к этому аккаунту? Посмотри {linkStart}эту страницу{linkEnd} для получения дополнительной информации.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls13",
+    "description": null,
+    "english": "13 + (Includes 9 + and All-Ages Approved Content)",
+    "translation": "13 + (включает 9+ и все возрастные материалы)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls9",
+    "description": null,
+    "english": "9 + (Includes All-Ages Approved Content)",
+    "translation": "9+ (включает все возрастные материалы)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControlsAllAge",
+    "description": null,
+    "english": "All-Ages Approved Content",
+    "translation": "Содержимое для всех возрастов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ErrorLoadingAuthorizations",
+    "description": null,
+    "english": "There was a problem loading your app authorizations. Please try again.",
+    "translation": "Возникла проблема при загрузке авторизации приложения. Повтори попытку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "Что-то пошло не так",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.TurnOnAuthenticator",
+    "description": null,
+    "english": "Turn on Authenticator First",
+    "translation": "Сначала включи аутентификатор",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.TurnOnAuthenticator",
+    "description": null,
+    "english": "Security keys is currently on web only. Please set up Authenticator first so that you can use 2 Step Verification on all platforms.",
+    "translation": "Ключи безопасности в настоящее время доступны только в веб-версии. Сначала необходимо настроить аутентификацию, чтобы использовать двухшаговую проверку на всех платформах.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SetUp",
+    "description": null,
+    "english": "Set Up",
+    "translation": "Настроить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Manage",
+    "description": null,
+    "english": "Manage",
+    "translation": "Управление",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.VerifiedPhoneRequired",
+    "description": null,
+    "english": "Verified Phone Required",
+    "translation": "Требуется подтверждение телефона",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must provide and verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Необходимо предоставить и подтвердить номер телефона, прежде чем включать двухшаговую проверку по SMS.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Необходимо подтвердить номер телефона, прежде чем включать двухшаговую проверку по SMS.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ContentControls",
+    "description": null,
+    "english": "Note: All Experiences will still be able to be searched and seen. Unrated experiences are currently treated as 13+.",
+    "translation": "Примечание: все плейсы по-прежнему можно будет искать и просматривать. Плейсы без рейтинга в настоящее время рассматриваются как 13+.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepVerificationCodes",
+    "description": null,
+    "english": "Text message codes to confirm your identity",
+    "translation": "Коды из текстовых сообщений для подтверждения личности",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepPrerequisite",
+    "description": null,
+    "english": "A verified phone number is required.",
+    "translation": "Требуется подтверждённый номер телефона.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
+    "description": null,
+    "english": "Some actions like logging In will require you to enter a text message code. Codes will be sent to {phoneNumber}",
+    "translation": "Для выполнения некоторых действий, например для входа, потребуется ввести код из текстового сообщения, отправленного на номер: {phoneNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "Далее",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Okay",
+    "description": null,
+    "english": "Okay",
+    "translation": "ОК",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "Готово",
     "isDeprecated": false
   },
   {
@@ -15384,6 +15824,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Label.ConnectWithFriends",
+    "description": "Contact Importer Modal title text",
+    "english": "Connect With Friends",
+    "translation": "Объединяйся с друзьями",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.AllowContactsAccess",
+    "description": "description to tell user to allow access to find their friends",
+    "english": "Allow access to your contacts to see friends you already know on Roblox!",
+    "translation": "Разреши доступ к контактам, чтобы увидеть знакомых на Roblox!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.ContactsRecommendations",
+    "description": "caption label to explain that contacts are being used for better recommendations",
+    "english": "Roblox uses your contacts to help you and your existing connections find each other through recommendations. You can change this any time in your account settings.",
+    "translation": "Roblox использует твои контакты, чтобы помочь тебе и существующим контактам найти друг друга через рекомендации. Ты можешь изменить это в любое время в настройках своего аккаунта.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Description.FoundFromPhone",
+    "description": null,
+    "english": "Found you from your phone number",
+    "translation": "Нашёл тебя с помощью твоего номера телефона",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -16832,6 +17304,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GamePage",
+    "key": "Label.By",
+    "description": "As part of \"By {Creator Name}\"",
+    "english": "By",
+    "translation": "Автор:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GamePass",
     "key": "Heading.PassesForThisGame",
     "description": null,
@@ -18181,6 +18661,14 @@
     "description": "label for Italy content rating logo. Should be \"Acquisti In-Game (Include Oggetti Casuali)\" in Italian.",
     "english": "In-Experience Purchases (Includes Random Items)",
     "translation": "Встроенные покупки (включая случайные предметы)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Landing",
+    "key": "Action.LogIn",
+    "description": null,
+    "english": "Log In",
+    "translation": "Вход",
     "isDeprecated": false
   },
   {
@@ -25197,6 +25685,62 @@
     "description": null,
     "english": "Add Email Address",
     "translation": "Добавить адрес эл. почты",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.KeepAccountSecure",
+    "description": null,
+    "english": "Keep Your Account Secure",
+    "translation": "Защити свой аккаунт",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.DontGetLockedOut",
+    "description": null,
+    "english": "Don't Get Locked Out",
+    "translation": "Не потеряй доступ к своему аккаунту",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Label.RecoverIfPasswordLost",
+    "description": null,
+    "english": "Recover your account in case you lose your password.",
+    "translation": "Быстрое восстановление аккаунта в случае потери пароля.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.ImproveAccountSecurity",
+    "description": null,
+    "english": "Improve Account Security",
+    "translation": "Улучшить безопасность аккаунта",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Label.KeepBadActorsOut",
+    "description": null,
+    "english": "Help us keep the bad actors out.",
+    "translation": "Помоги нам в борьбе со злоумышленниками.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.LetFriendsFindYou",
+    "description": null,
+    "english": "Let Your Friends Find You",
+    "translation": "Пусть друзья находят тебя!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Label.ConnectWithRealLifeFriends",
+    "description": null,
+    "english": "Connect with your real life friends via phone number (opt-in only).",
+    "translation": "Связывайся с друзьями по телефону (нужна регистрация).",
     "isDeprecated": false
   },
   {
@@ -47728,6 +48272,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsoredExperiencePreview",
+    "description": "This is a header for the page which shows a preview for a new sponsored experience upon creation.",
+    "english": "Sponsored Experience Preview",
+    "translation": "Предпросмотр спонсируемых плейсов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsoredCatalogPreview",
+    "description": null,
+    "english": "Sponsored Catalog Preview",
+    "translation": "Предпросмотр спонсируемого каталога",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.CampaignTargetSelector",
+    "description": "the label for a dropdown menu where user can select which avatar item to create a sponsorship campaign advertisement for",
+    "english": "Select Avatar Item",
+    "translation": "Выбери предмет для аватара",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.Loading",
+    "description": "Displayed inside a dropdown selector while waiting for the options to be loaded.",
+    "english": "Loading...",
+    "translation": "Загрузка...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Audience",
+    "description": "The target audience for the ad",
+    "english": "Audience",
+    "translation": "Аудитория",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Status",
+    "description": "The status of the ad campaign",
+    "english": "Status:",
+    "translation": "Статус:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -48536,6 +49128,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.SocialLinks",
+    "description": null,
+    "english": "Social Links",
+    "translation": "Ссылки на соцсети",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Features",
     "key": "Label.CreatorDashboard",
     "description": null,
@@ -48844,7 +49444,7 @@
     "key": "Description.FormInstructionV2",
     "description": null,
     "english": "Please complete this form to begin processing your payment. If you need assistance with this form, please visit the {helpLinkStart}Help Center{helpLinkEnd}",
-    "translation": "Пожалуйста, заполнит эту форму, чтобы началась обработка платежа. Если нужна помощь с этой формой, пожалуйста, посети Справочный центр {helpLinkStart}{helpLinkEnd}",
+    "translation": "Заполни эту форму, чтобы началась обработка платежа. Если нужна помощь с этой формой, посети Справочный центр {helpLinkStart}{helpLinkEnd}",
     "isDeprecated": false
   },
   {
@@ -48924,7 +49524,7 @@
     "key": "Label.RobuxAmountToUSD",
     "description": null,
     "english": "You get up to",
-    "translation": "You get up to",
+    "translation": "Ты получаешь",
     "isDeprecated": false
   },
   {
@@ -49045,6 +49645,30 @@
     "description": null,
     "english": "You do not have enough Robux to complete this transaction.",
     "translation": "Недостаточно Robux для завершения этой транзакции.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Description.DevExInfo",
+    "description": null,
+    "english": "The Developer Exchange Program (also known as DevEx) allows you to earn money by creating awesome experiences on Roblox.{lineBreak}Once you earn {minCashoutValue} Robux or more, you are eligible to convert your virtual earnings to real-world cash. DevEx participants are allowed one completed DevEx request per calendar month.",
+    "translation": "Developer Exchange Program (DevEx) позволяет зарабатывать деньги, создавая классные плейсы в Roblox. {lineBreak}После того, как ты заработаешь {minCashoutValue} Robux или более, ты сможешь конвертировать виртуальный доход в реальные деньги. Участники DevEx могут отправлять один запрос DevEx в течение календарного месяца.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Message.MissingEmail2FA",
+    "description": null,
+    "english": "To cash out you will need to have a verified email address in {settingsLinkStart}Settings{settingsLinkEnd}",
+    "translation": "Для вывода средств необходимо иметь подтверждённый адрес электронной почты в {settingsLinkStart}Настройках{settingsLinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DevEx",
+    "key": "Label.AgreeToProvideInfoV2",
+    "description": null,
+    "english": "I acknowledge that I am required to provide information including but not limited to bank account details and tax documentation to a third party payment service in order to cash out.",
+    "translation": "Я подтверждаю, что мне необходимо предоставить информацию, включая, помимо прочего реквизиты банковского счёта и налоговые документы, услуги по оплате третьим лицам для снятия средств.",
     "isDeprecated": false
   },
   {
@@ -51592,6 +52216,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.KeepAccountSecure",
+    "description": null,
+    "english": "Keep Your Account Secure",
+    "translation": "Защити свой аккаунт",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.DontGetLockedOut",
+    "description": null,
+    "english": "Don't Get Locked Out",
+    "translation": "Не потеряй доступ к своему аккаунту",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.RecoverIfPasswordLost",
+    "description": null,
+    "english": "Recover your account in case you lose your password.",
+    "translation": "Быстрое восстановление аккаунта в случае потери пароля.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.ImproveAccountSecurity",
+    "description": null,
+    "english": "Improve Account Security",
+    "translation": "Улучшить безопасность аккаунта",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.KeepBadActorsOut",
+    "description": null,
+    "english": "Help us keep the bad actors out.",
+    "translation": "Помоги нам в борьбе со злоумышленниками.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.LetFriendsFindYou",
+    "description": null,
+    "english": "Let Your Friends Find You",
+    "translation": "Пусть друзья находят тебя!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.ConnectWithRealLifeFriends",
+    "description": null,
+    "english": "Connect with your real life friends via phone number (opt-in only).",
+    "translation": "Связывайся с друзьями по телефону (нужна регистрация).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddEmailAddress",
+    "description": null,
+    "english": "Add Email Address",
+    "translation": "Добавить адрес эл. почты",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -53312,6 +54000,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Title.ShutDownServers",
+    "description": null,
+    "english": "Shut Down Servers",
+    "translation": "Закрыть все серверы",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -54184,6 +54880,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltip",
+    "description": null,
+    "english": "Roblox's estimate for how many impressions were attempted to be shown to users",
+    "translation": "Roblox оценивает, сколько было попыток показов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.AttributedVisitsTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression or click on your ad",
+    "translation": "Сколько людей посетили твой плейс после просмотра или клика по рекламе",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.PostImpressionTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression of your ad",
+    "translation": "Сколько людей посетили твой плейс после просмотра или клика по рекламе",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.PostImpression",
+    "description": null,
+    "english": "Post Impression",
+    "translation": "Количество показов публикаций",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.Audience",
+    "description": "The target audience for the ad",
+    "english": "Audience",
+    "translation": "Аудитория",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.Status",
+    "description": "The status of the ad campaign",
+    "english": "Status:",
+    "translation": "Статус:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.SelectExperience",
+    "description": "A label used for a dropdown that allows the user to select which experience they want to advertise.",
+    "english": "Select Experience",
+    "translation": "Выбери плейс",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.CampaignTargetSelector",
+    "description": null,
+    "english": "Select Avatar Item",
+    "translation": "Выбери предмет для аватара",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TimedAllowance",
     "key": "Tips.Hourly.Warning",
     "description": null,
@@ -54845,6 +55605,30 @@
     "description": null,
     "english": "Enter 6 Character Code from New Device",
     "translation": "Введи 6 символов кода с нового устройства",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.QrInstructions",
+    "description": null,
+    "english": "Scan this QR code from your logged in device.",
+    "translation": "Отсканируй этот QR-код с залогиненного устройства.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.CodeHeader",
+    "description": null,
+    "english": "Option 2",
+    "translation": "Вариант 2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.QrHeader",
+    "description": null,
+    "english": "Option 1",
+    "translation": "Вариант 1",
     "isDeprecated": false
   },
   {
@@ -57432,6 +58216,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.DelayedChartsWarning",
+    "description": "Discussed in response to incident ~2022/07/19, see also https://roblox.slack.com/archives/GTM5ZS8GG/p1658260700293829",
+    "english": "Data for the following charts is inaccurate between {startDate} and {endDate}: {chartTitleListCommaSeparated}. We're aware of the issue and are working toward a resolution.",
+    "translation": "Данные для следующих диаграмм неточны с {startDate} по {endDate}: {chartTitleListCommaSeparated}. Нам известно о проблеме, и мы работаем над её решением.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -57980,7 +58772,7 @@
     "key": "Message.PreviewComplianceWarning",
     "description": null,
     "english": "You will preview the Guidelines of your experience before submitting. Guidelines will only become active after you submit.",
-    "translation": "Перед публикацией ты будешь просматривать модерацию или ограничения, которые будут применяться к твоему плейсу в затрагиваемых регионах. Эти ограничения вступят в силу только после того, как ты отправишь форму.",
+    "translation": "Перед отправкой предварительно ознакомься с Руководством по своему плейсу. Руководство станет активным только после отправки.",
     "isDeprecated": false
   },
   {
@@ -58036,7 +58828,7 @@
     "key": "Title.GuidelinesPreview",
     "description": null,
     "english": "Questionnaire Preview",
-    "translation": "Предварительный просмотр руководств",
+    "translation": "Предварительный просмотр анкеты",
     "isDeprecated": false
   },
   {
@@ -58084,7 +58876,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "Нажми «Начать», чтобы ответить на несколько вопросов о плейсе, чтобы составить его руководство, включающее возрастные рекомендации и соблюдение местного законодательства.",
+    "translation": "Нажми «Начать», чтобы ответить на несколько вопросов о своём плейсе. Твои ответы создадут набор рекомендаций для контента в твоём плейме, который в настоящее время включает возрастную рекомендацию и соблюдение местного законодательства.",
     "isDeprecated": false
   },
   {
@@ -58092,7 +58884,7 @@
     "key": "Title.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Questionnaire Requires Update",
-    "translation": "Руководство требует обновления",
+    "translation": "Необходимо обновить анкету",
     "isDeprecated": false
   },
   {
@@ -58100,7 +58892,7 @@
     "key": "Message.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Please update your response to answer a few additional questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "Ответь на несколько дополнительных вопросов, чтобы создать полное руководство, которое теперь включает возрастную рекомендацию и соблюдать местное законодательства.",
+    "translation": "Обнови свой ответ, чтобы ответить на несколько дополнительных вопросов о твоём плейсе. Твои ответы создадут набор рекомендаций для контента в твоём плейсе, который в настоящее время включает возрастную рекомендацию и региональную оценку соответствия.",
     "isDeprecated": false
   },
   {
@@ -58116,7 +58908,7 @@
     "key": "Message.GuidelinesSubmittedNewVersion",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below; at this time, the age recommendation is only visible to you but will soon be visible to users. Your experience is automatically unavailable in any non-compliant regions below.",
-    "translation": "Руководство этого плейса активно, как показано ниже; в настоящее время рекомендация по возрасту видна только тебе, но вскоре станет видна пользователям.\nТвой плейс автоматически недоступен в любых несовместимых регионах.",
+    "translation": "Руководство этого плейса активно, как показано ниже; в настоящее время рекомендация по возрасту видна только тебе, но вскоре станет видна пользователям. Твой плейс автоматически недоступен в любых несовместимых регионах.",
     "isDeprecated": false
   },
   {
@@ -58153,10 +58945,18 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.GuidelinesSubmittedNewVersionInProgress",
+    "description": null,
+    "english": "Questionnaire Completed; New Submission Not Completed\t",
+    "translation": "Анкета завершена; новая заявка не завершена\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.GuidelinesSubmittedNewVersionInProgress",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below; at this time, the age recommendation is only visible to you but will soon be visible to users. Your experience is automatically unavailable in any non-compliant regions below.\nYou have started a new entry for the questionnaire but didn’t submit. Click “Resume” to continue generating a set of new Guidelines for the content in your experience.",
-    "translation": "Этот плейс имеет активную возрастную рекомендацию; он автоматически недоступен в следующих несовместимых регионах, если таковые имеются. Анкета не заполнена до конца и не отправлена. Нажми «Возобновить» ниже, чтобы продолжить создание",
+    "translation": "Руководство в этом плейсе активно, как показано ниже; в настоящее время рекомендации по возрасту видны только тебе, но вскоре станут видны и пользователям. Твой плейс автоматически недоступен в любых несовместимых регионах, перечисленных ниже.\nНачата новая запись в анкете, но она не отправлена. Нажми «Возобновить», чтобы продолжить создание набора новых рекомендаций для своего плейса.",
     "isDeprecated": false
   },
   {
@@ -58188,7 +58988,7 @@
     "key": "Title.ImpactOfGuidelines",
     "description": null,
     "english": "Impacts on Your Experience",
-    "translation": "Влияние Руководства на плейс",
+    "translation": "Влияет на твой плейс",
     "isDeprecated": false
   },
   {
@@ -58196,7 +58996,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "At this time, Guidelines are only visible to you. We strongly recommend you to generate them as soon as your experience becomes eligible as they will soon become visible to users.",
-    "translation": "Хотя Руководство в настоящее время является необязательным, мы настоятельно рекомендуем создать его, как только плейс станет действующим.",
+    "translation": "В настоящее время рекомендации видны только тебе. Мы настоятельно рекомендуем сгенерировать их, как только плейс будет соответствовать всем правилам, поскольку вскоре рекомендации станут видны пользователям.",
     "isDeprecated": false
   },
   {
@@ -58204,7 +59004,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendation",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: This information will soon become visible to users and parents will have parental controls they can use to manage their kids’ access to experiences.",
-    "translation": "Рекомендация {boldStart}по возрасту:{boldEnd}на данный момент возрастные рекомендации не влияют на возможность обнаружения плейса; однако, мы скоро сделаем их видимыми для пользователей и родителей, предоставив им понимание и контроля над плейсами, которые они хотели бы находить на платформе.",
+    "translation": "{boldStart}Рекомендации по возрасту{boldEnd}: эта информация скоро станет видна пользователям, а родители получат родительский контроль, который они смогут использовать для управления доступом своих детей к функциям.",
     "isDeprecated": false
   },
   {
@@ -58212,7 +59012,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliance",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}Местное законодательство{boldEnd}: как только плейс получит руководство, мы определим регионы, в которых плейс не соответствует требованиям и сделаем его недоступным.",
+    "translation": "{boldStart}Региональное соответствие{boldEnd}: в соответствии с его рекомендациями твой плейс автоматически становится недоступным в любых регионах, не соответствующих требованиям, указанным ниже.",
     "isDeprecated": false
   },
   {
@@ -58220,7 +59020,7 @@
     "key": "Message.LearnMoreAboutExperienceGuideline",
     "description": null,
     "english": "Learn more about our {linkStart}Policy APIs{linkEnd}, which help you make your experience dynamically compliant.",
-    "translation": "Чтобы узнать подробнее о Руководстве по плейсу, посети страницу сайта разработчика и {linkStart}Полтику APIs{linkEnd} перед запуском вопросника.",
+    "translation": "Узнай подробнее о нашей {linkStart}Политике API{linkEnd} и сделай свой плейс динамически совместимым.",
     "isDeprecated": false
   },
   {
@@ -58228,7 +59028,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "At this time, Guidelines are only visible to you. We strongly recommend you to generate them as soon as your experience becomes eligible as they will soon become visible to users.",
-    "translation": "Хотя Руководство в настоящее время является необязательным, мы настоятельно рекомендуем создать его, как только плейс станет действующим.",
+    "translation": "В настоящее время рекомендации видны только тебе. Мы настоятельно рекомендуем сгенерировать их, как только плейс будет соответствовать всем правилам, поскольку вскоре рекомендации станут видны пользователям.",
     "isDeprecated": false
   },
   {
@@ -58236,7 +59036,7 @@
     "key": "Title.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "Impacts on Your Experience",
-    "translation": "Влияние Руководства на плейс",
+    "translation": "Влияет на твой плейс",
     "isDeprecated": false
   },
   {
@@ -58244,7 +59044,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendationPreview",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: This information will soon become visible to users and parents will have parental controls they can use to manage their kids’ access to experiences.",
-    "translation": "{boldStart}Рекомендация по возрасту{boldEnd}: в настоящее время рекомендации по возрасту не влияют на возможности обнаружения контента. Однако вскоре мы сделаем их видимыми для пользователей и родителей, предоставив им информацию и средства управления плейсами, которые они хотели бы находить на платформе. Мы настоятельно рекомендуем сгенерировать их, как только плейс станет действующим.",
+    "translation": "{boldStart}Рекомендации по возрасту{boldEnd}: эта информация скоро станет видна пользователям, а родители получат родительский контроль, который они смогут использовать для управления доступом своих детей к функциям.",
     "isDeprecated": false
   },
   {
@@ -58252,7 +59052,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliancePreview",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Based on its Guidelines, your experience automatically becomes unavailable in any non-compliant regions below.",
-    "translation": "{boldStart}Местное законодательство{boldEnd}: как только плейс получит руководство, мы определим регионы, в которых плейс не соответствует требованиям и сделаем его недоступным.",
+    "translation": "{boldStart}Региональное соответствие{boldEnd}: в соответствии с его рекомендациями твой плейс автоматически становится недоступным в любых регионах, не соответствующих требованиям, указанным ниже.",
     "isDeprecated": false
   },
   {
@@ -58260,7 +59060,7 @@
     "key": "Tooltip.AgeRecommendationRestrictionHeader",
     "description": null,
     "english": "An age recommendation provides general information about the ages of users an experience is generally suitable for.",
-    "translation": "Рекомендации по возрасту, содержащие общую информацию о том, какая аудитория должна потреблять этот контент с учётом их возраста.",
+    "translation": "Рекомендация по возрасту предоставляет общую информацию о возрасте пользователей, для которых обычно подходит плейс.",
     "isDeprecated": false
   },
   {
@@ -58268,7 +59068,7 @@
     "key": "Tooltip.ContentDescriptorRestrictionHeader",
     "description": null,
     "english": "Descriptors highlight significant elements in an experience.",
-    "translation": "Дескриптор контента — это общий показатель контента, обозначающий затрагивающие в плейск элемент руководства.",
+    "translation": "Дескрипторы выделяют важные элементы плейса.",
     "isDeprecated": false
   },
   {
@@ -58277,6 +59077,30 @@
     "description": null,
     "english": "Descriptors",
     "translation": "Дескрипторы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.ChangedQuestionnaireId",
+    "description": null,
+    "english": "Roblox just updated the questionnaire",
+    "translation": "Roblox только что обновил анкету",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.ChangedQuestionnaireId",
+    "description": null,
+    "english": "Please refresh to see the updated questions",
+    "translation": "Обнови страницу, чтобы увидеть обновлённые вопросы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Tooltip.NonCompliantRegionRestrictionHeader",
+    "description": null,
+    "english": "A non-compliant region is a region in which the experience is not available.",
+    "translation": "Несоответствующий регион — это регион, в котором плейс недоступен.",
     "isDeprecated": false
   },
   {
@@ -60600,6 +61424,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "Повысь безопасность аккаунта",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "Получай коды безопасности на другом устройстве, чтобы защитить свои плейсы, Robux, предметы ограниченной серии и многое другое.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.SetUpAuthenticatorInBanner",
+    "description": "Banner text for setting up authenticator through broad upsell.",
+    "english": "Set Up Authenticator",
+    "translation": "Настроить аутентификатор",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -61052,7 +61900,7 @@
     "key": "Label.BirthdayChangeWarning",
     "description": "Updated - https://jira.rbx.com/browse/AA-169",
     "english": "You are about to change a birthday that has been verified.\n \nIf you change your date of birth, your age will no longer be verified and you will lose access to age restricted features. Are you sure you want to proceed?",
-    "translation": "Ты собираешься изменить подтверждённую дату рождения.\n \nЕсли ты изменишь дату рождения сейчас, ты не сможешь снова подтвердить её и потеряешь доступ к функциям, которые имеют ограничение по возрасту. ЭТО НЕВОЗВРАТИМОЕ ДЕЙСТВИЕ. Продолжить?",
+    "translation": "Ты собираешься изменить подтверждённую дату рождения.\n \nЕсли ты изменишь дату рождения, ты больше не сможешь подтвердить возраст и потеряешь доступ к функциям, которые имеют ограничение по возрасту. Всё равно продолжить?",
     "isDeprecated": false
   },
   {
@@ -61189,6 +62037,14 @@
     "description": "Identical to Feature.AccountSettings.Label.ConsentVoiceCollection",
     "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
     "translation": "Я даю согласие на сбор, использование и хранение {linkStart}голосовых записей{linkEnd} только в целях модерации и безопасности.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": "exact same as Label.LearnMoreAboutVoiceRecording in Feature.AccountSettings",
+    "english": "Learn More about Voice Recording",
+    "translation": "Подробнее о голосовой записи",
     "isDeprecated": false
   },
   {
@@ -63364,7 +64220,7 @@
     "key": "Label.UniverseMemoryStores",
     "description": "For the 'Memory Store' target part name",
     "english": "MemoryStore",
-    "translation": "Хранилище памяти вселенной",
+    "translation": "MemoryStore",
     "isDeprecated": false
   },
   {
@@ -63373,6 +64229,14 @@
     "description": null,
     "english": "Publish",
     "translation": "Опубликовать",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.CreatorAssets",
+    "description": null,
+    "english": "New Assets can be published to the listed creator account above",
+    "translation": "Новые активы могут быть опубликованы в указанном аккаунте выше",
     "isDeprecated": false
   },
   {
@@ -66032,6 +66896,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionAutomaticallyTranslated",
+    "description": "strings that have been automatically translated (eg by Roblox Translate or Amazon Translate)",
+    "english": "Machine Translated",
+    "translation": "Машинный перевод",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionManuallyTranslated",
+    "description": "strings that have been translated by a user - ie manual translation",
+    "english": "Manually Translated",
+    "translation": "Перевод человеком",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -68032,6 +68912,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ErrorLoadingOAuthMetadata",
+    "description": null,
+    "english": "Unable to load Credentials metadata",
+    "translation": "Не удалось загрузить метаданные учетных данных",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -69632,6 +70520,142 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureExperiencePageName",
+    "description": null,
+    "english": "Basic Settings Page",
+    "translation": "Страница основных настроек",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewPlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "Страница локаций",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewDeveloperProductsPageName",
+    "description": null,
+    "english": "Developer Products Page",
+    "translation": "Страница продуктов разработчика",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureSocialLinksPageName",
+    "description": null,
+    "english": "Social Links Page",
+    "translation": "Страница со ссылками на соцсети",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureUpdatesPageName",
+    "description": null,
+    "english": "Updates Page",
+    "translation": "Страница обновлений",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewExperiencePlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "Страница локаций",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAssetAdsPageName",
+    "description": null,
+    "english": "User Ads Page",
+    "translation": "Страница рекламы пользователя",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateShirtsPageName",
+    "description": null,
+    "english": "Shirts Creation Page",
+    "translation": "Страница создания рубашек",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreatePantsPageName",
+    "description": null,
+    "english": "Pants Creation Page",
+    "translation": "Страница создания брюк",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateDecalPageName",
+    "description": null,
+    "english": "Decal Creation Page",
+    "translation": "Страница создания наклейки",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateAudioPageName",
+    "description": null,
+    "english": "Audio Creation Page",
+    "translation": "Страница создания аудио",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateTeeShirtsPageName",
+    "description": null,
+    "english": "T-Shirts Creation Page",
+    "translation": "Страница создания футболок",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewModelsPageName",
+    "description": null,
+    "english": "Models Page",
+    "translation": "Страница моделей",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateGamePassPageName",
+    "description": null,
+    "english": "Pass Creation Page",
+    "translation": "Страница создания пропусков",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewCreationsPageName",
+    "description": null,
+    "english": "Experiences Page",
+    "translation": "Страница плейса",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.DevExPageName",
+    "description": null,
+    "english": "Developer Exchange Page",
+    "translation": "Страница Developer Exchange",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAdvertiseExperiencePageName",
+    "description": null,
+    "english": "Sponsored Ads Page",
+    "translation": "Страница спонсируемой рекламы",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.Preferences",
     "key": "Label.CreatedBy",
     "description": null,
@@ -69837,6 +70861,22 @@
     "description": null,
     "english": "An unexpected error occurred. Please try again later.",
     "translation": "Произошла неизвестная ошибка. Повтори попытку позже.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Error",
+    "key": "Error.NotAvailableOnIosOrSafari",
+    "description": null,
+    "english": "Audio preview is not available on iOS or Safari.",
+    "translation": "Предварительный просмотр аудио недоступен в iOS или Safari.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Error",
+    "key": "Error.AudioPreviewUnavailableOnBrowser",
+    "description": null,
+    "english": "Audio preview is not available on your browser.",
+    "translation": "Предварительный просмотр аудио недоступен в твоём браузере.",
     "isDeprecated": false
   },
   {
@@ -74217,10 +75257,98 @@
   },
   {
     "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Heading.SaveLinks",
+    "description": null,
+    "english": "Social Links",
+    "translation": "Ссылки на соцсети",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Description.SocialLink",
+    "description": null,
+    "english": "Social links invites your users to follow you on social platforms. This is important to help you build a community around your experience.",
+    "translation": "Ссылки на соцсети приглашают твоих пользователей подписаться на социальных платформах. Это важно, чтобы помочь создать сообщество вокруг плейса.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Description.SocialLinkLimit",
+    "description": null,
+    "english": "You can add up to 3 social links:",
+    "translation": "Можно добавить до трёх ссылок на соцсети:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.DuplicateLinkType",
+    "description": null,
+    "english": "Cannot have more than one {linkType} social media links.",
+    "translation": "Не может быть более одной ссылки {linkType} на социальные сети.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.LinkTypeUrlMismatch",
+    "description": null,
+    "english": "The url must match the social media type.",
+    "translation": "URL-адрес должен соответствовать типу социальной сети.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.FailedToDeleteLink",
+    "description": null,
+    "english": "Failed to delete link.",
+    "translation": "Не удалось удалить ссылку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.FailedToSaveLink",
+    "description": null,
+    "english": "Failed to save {links} link(s).",
+    "translation": "Не удалось сохранить {links}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.SocialLinkTitleModerated",
+    "description": null,
+    "english": "The title has been moderated, please try something else.",
+    "translation": "Заголовок не прошел модерацию, попробуй что-нибудь другое.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.CharacterLimit",
+    "description": null,
+    "english": "Up to {number} characters.",
+    "translation": "Не более {number} симв.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.AddLink",
+    "description": null,
+    "english": "ADD LINK",
+    "translation": "ДОБАВИТЬ ССЫЛКУ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.Cancel",
     "description": null,
     "english": "CANCEL",
     "translation": "ОТМЕНА",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.Save",
+    "description": null,
+    "english": "SAVE",
+    "translation": "СОХРАНИТЬ",
     "isDeprecated": false
   },
   {
@@ -74233,6 +75361,14 @@
   },
   {
     "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.LinkType",
+    "description": null,
+    "english": "Link Type",
+    "translation": "Тип ссылки",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.URL",
     "description": null,
     "english": "URL",
@@ -74241,10 +75377,106 @@
   },
   {
     "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.Title",
+    "description": null,
+    "english": "Title",
+    "translation": "Название",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.ConfirmDeleteDialogTitle",
+    "description": null,
+    "english": "Confirm Deletion",
+    "translation": "Подтвердить удаление",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.DeleteLinkConfirmation",
+    "description": null,
+    "english": "Are you sure you want to delete this link {url}?",
+    "translation": "Действительно удалить эту ссылку {url}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.UrlCannotBeEmpty",
+    "description": null,
+    "english": "The url cannot be empty.",
+    "translation": "Ссылка не может быть пустой.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.TitleCannotBeEmpty",
+    "description": null,
+    "english": "The title cannot be empty.",
+    "translation": "Название не может быть пустым.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.MaxUrlLength",
+    "description": null,
+    "english": "The url length can only be up to {number} characters.",
+    "translation": "Длина ссылки не может превышать {number} симв.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.MaxTitleLength",
+    "description": null,
+    "english": "The title length can only be up to {number} characters.",
+    "translation": "Длина ссылки не может превышать {number} симв.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Message.SuccessfullyDeleteLink",
+    "description": null,
+    "english": "Link successfully deleted.",
+    "translation": "Ссылка успешно удалена.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Message.SuccessfullySaveLink",
+    "description": null,
+    "english": "Link(s) successfully saved.",
+    "translation": "Ссылка(и) успешно сохранена(ы).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.TitleModerated",
+    "description": null,
+    "english": "The title has been moderated, please try something else.",
+    "translation": "Заголовок не прошел модерацию, попробуй что-нибудь другое.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.All",
     "description": null,
     "english": "All",
     "translation": "Все",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Message.SaveLinkSuccess",
+    "description": null,
+    "english": "{links} link(s) successfully saved.",
+    "translation": "{links} ссылка(и) успешно сохранена(ы).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Error.UrlWrongFormat",
+    "description": null,
+    "english": "The social link url was improperly formatted.",
+    "translation": "Ссылка на социальные сети была отформатирована неправильно.",
     "isDeprecated": false
   }
 ]
