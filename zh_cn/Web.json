@@ -10932,7 +10932,7 @@
     "key": "Message.AllowAccessContactsSuccess",
     "description": null,
     "english": "Successfully updated access to this device's contacts.",
-    "translation": "已成功允许访问此设备的联系人。",
+    "translation": "已成功更新此设备联系人的访问权限。",
     "isDeprecated": false
   },
   {
@@ -10940,7 +10940,7 @@
     "key": "Message.AllowAccessContactsFailure",
     "description": null,
     "english": "Failed to update access to this devices contacts.",
-    "translation": "无法允许访问此设备的联系人。",
+    "translation": "无法更新此设备联系人的访问权限。",
     "isDeprecated": false
   },
   {
@@ -11355,7 +11355,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Heading.ContentControls",
     "description": null,
-    "english": "Content Controls",
+    "english": "Age-Based Experience Controls",
     "translation": "内容控制选项",
     "isDeprecated": false
   },
@@ -11363,7 +11363,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.ContentControls",
     "description": null,
-    "english": "What is the maximum age recommendation that this account can access? See {linkStart}this page{linkEnd} for more details.",
+    "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join",
     "translation": "此帐户可以访问的年龄推荐上限是什么？请参考{linkStart}此页面{linkEnd}获取更多信息。",
     "isDeprecated": false
   },
@@ -11371,7 +11371,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ContentControls13",
     "description": null,
-    "english": "13 + (Includes 9 + and All-Ages Approved Content)",
+    "english": "13+ (Suitable for ages 13 and older)",
     "translation": "13 岁以上（包括 9 岁以上和适合所有年龄段的内容）",
     "isDeprecated": false
   },
@@ -11379,7 +11379,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ContentControls9",
     "description": null,
-    "english": "9 + (Includes All-Ages Approved Content)",
+    "english": "9+ (Suitable for ages 9 and older)",
     "translation": "9 岁以上（包括适合所有年龄段的内容）",
     "isDeprecated": false
   },
@@ -11387,7 +11387,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Label.ContentControlsAllAge",
     "description": null,
-    "english": "All-Ages Approved Content",
+    "english": "All Ages (Suitable for everyone)",
     "translation": "适合所有年龄段的内容",
     "isDeprecated": false
   },
@@ -11517,6 +11517,22 @@
     "description": null,
     "english": "Done",
     "translation": "完成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.PhoneHasTooManyAssociatedAccounts",
+    "description": null,
+    "english": "You’ve reached the maximum number of accounts linked to one phone number.",
+    "translation": "你已经达到同一手机号码可以关联的帐户数量上限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NumSyncedContacts",
+    "description": null,
+    "english": "You have {numDays, plural, =0 {no synced contacts} =1 {# synced contact available} other {# synced contacts available}}.",
+    "translation": "你{numDays, plural, =0 {没有已同步的联系人} =1 {有 # 个已同步的联系人可用} other {有 # 个已同步的联系人可用}}。",
     "isDeprecated": false
   },
   {
@@ -13453,6 +13469,38 @@
     "description": "Similar to Label.FeaturedItemsOnRoblox",
     "english": "All Items on {spanStart}{roblox}{spanEnd}",
     "translation": "{spanStart}{roblox}{spanEnd} 所有道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "LabelLiveHeads",
+    "description": "A label for the Live heads category in the catalog",
+    "english": "Live Heads",
+    "translation": "动态头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "LabelClassicHeads",
+    "description": "Label for Classic Heads subcategory",
+    "english": "Classic Heads",
+    "translation": "经典头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "LabelClassicFaces",
+    "description": "Label for Classic Faces in the catalog",
+    "english": "Classic Faces",
+    "translation": "经典面部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "LabelAllHeads",
+    "description": "All Heads catagory label",
+    "english": "All Heads",
+    "translation": "所有头部",
     "isDeprecated": false
   },
   {
@@ -21948,7 +21996,7 @@
     "key": "Label.Robux",
     "description": "Purchases Using Robux",
     "english": "Purchases Using Robux",
-    "translation": "Robux",
+    "translation": "使用 Robux 购买",
     "isDeprecated": false
   },
   {
@@ -24005,6 +24053,78 @@
     "description": null,
     "english": "2-Step Verification is required to make further transactions. Go to your Security page to enable and complete 2-Step Verification.",
     "translation": "继续交易需要进行两步验证。请前往安全页面启用并完成两步验证。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "Insufficient Robux",
+    "translation": "Robux 余额不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.InsufficientRobux",
+    "description": "new upsell modal",
+    "english": "{divTagStart}You need an additional {robuxNeeded}. Would you like to buy a {robuxPackageAmount} package?{divTagEnd}{lineBreak}{divTagStart}Your payment method will be charged. Roblox {aTagStart}Terms of Use{aTagEnd} apply.{divTagEnd}",
+    "translation": "{divTagStart}你需要额外 {robuxNeeded}。 你想购买一个 {robuxPackageAmount} 套装吗？{divTagEnd}{lineBreak}{divTagStart}你的付款方法将被收费。 适用于 Roblox {aTagStart}使用条款{aTagEnd} 。{divTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BuyRobuxAndItem",
+    "description": "new upsell modal",
+    "english": "Buy Robux and Item",
+    "translation": "购买 Robux 和道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Purchase Succeeded",
+    "translation": "购买成功",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceeded",
+    "description": "new upsell suc modal",
+    "english": "Now you own {assetName}!",
+    "translation": "你已拥有“{assetName}”！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceededToBalance",
+    "description": "new upsell suc modal",
+    "english": "{robuxLeft} has been credited to your balance.",
+    "translation": "{robuxLeft} 已被添加至你的帐户余额。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.BackToShop",
+    "description": "new upsell suc modal",
+    "english": "Back to Shop",
+    "translation": "返回商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.EquipMyAvatar",
+    "description": "new upsell suc modal",
+    "english": "Equip My Avatar",
+    "translation": "装备我的虚拟形象",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PurchasingTheItem",
+    "description": "new upsell loading",
+    "english": "Purchasing the item...",
+    "translation": "正在购买道具...",
     "isDeprecated": false
   },
   {
@@ -28248,6 +28368,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ItemConfiguration",
+    "key": "Message.MinPriceFloor",
+    "description": null,
+    "english": "The minimum price for this item type is {minPrice}. To set the asset as free, enter 0.",
+    "translation": "此道具类型的最低价格是为 {minPrice}。要将此素材设置为免费，请输入 0。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.FileUploadComponent",
     "key": "Label.DragImage",
     "description": null,
@@ -30488,6 +30616,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Label.ClassicFaces",
+    "description": "Updated label to describe non-dynamic faces.",
+    "english": "Classic Faces",
+    "translation": "经典脸部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.ClassicHeads",
+    "description": "Updated label to describe non-dynamic heads.",
+    "english": "Classic Heads",
+    "translation": "经典头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.HeadBody",
+    "description": "Category to display head and body assets.",
+    "english": "Head & Body",
+    "translation": "头部 & 躯干",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.HeadStyle",
+    "description": "Used for showing dynamic head costumes in the avatar editor.",
+    "english": "Head Style",
+    "translation": "头部造型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Description.LiveHeadsSplashScreenDescription",
+    "description": "The description we show to users describing what dynamic heads are.",
+    "english": "Equip our new Live Heads to enable immersive Avatar facial expressions  on compatible experiences. ",
+    "translation": "装备我们全新的动态头部，在适用作品中开启沉浸式的虚拟形象面部表情。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.HeadType",
+    "description": "The name of a category that will display Dynamic Head costumes.",
+    "english": "Head Type",
+    "translation": "头部类型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "TrackerPrompt.VideoNoPermission",
+    "description": "The Face Chat feature requires a camera to track the user's facial expressions.",
+    "english": "Face Chat Requires Camera",
+    "translation": "面部聊天功能需要摄像头",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -32229,6 +32413,22 @@
     "description": null,
     "english": "Bundles",
     "translation": "套装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.ClassicHeads",
+    "description": null,
+    "english": "Classic Heads",
+    "translation": "经典头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.LiveHeads",
+    "description": null,
+    "english": "Live Heads",
+    "translation": "动态头部",
     "isDeprecated": false
   },
   {
@@ -51120,6 +51320,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.UnknownError",
+    "description": null,
+    "english": "Unknown Error, please try again later.",
+    "translation": "未知错误。请稍后重试。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ApplicationAuthorization",
     "key": "Label.AppName",
     "description": null,
@@ -52165,6 +52373,14 @@
     "description": null,
     "english": "Seeking Sexual Content",
     "translation": "寻找性爱内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.Evidence.VoiceRecording",
+    "description": "Shown as an offensive item when the player is moderated due to a voice chat conversation.",
+    "english": "Voice chat conversation on {date} at {time} in {experienceName}",
+    "translation": "{date} {time} 在“{experienceName}”中的语音聊天对话",
     "isDeprecated": false
   },
   {
@@ -53453,6 +53669,30 @@
     "description": null,
     "english": "Add Email Address",
     "translation": "添加电子邮件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.LogOutText",
+    "description": null,
+    "english": "Log Out",
+    "translation": "退出登录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Support",
+    "description": "Button to go to help page",
+    "english": "Support",
+    "translation": "技术支持",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerificationRequired",
+    "description": null,
+    "english": "Verification Required",
+    "translation": "需要验证",
     "isDeprecated": false
   },
   {
@@ -55184,6 +55424,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Remove",
+    "description": null,
+    "english": "Remove",
+    "translation": "移除",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -56824,6 +57072,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.QrTroubleshooting",
+    "description": null,
+    "english": "Having trouble?",
+    "translation": "遇到问题？ ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.SignUp",
     "key": "Heading.SignUp",
     "description": null,
@@ -57652,7 +57908,7 @@
     "key": "VerifiedBadgeInfo",
     "description": "Info that will be displayed in a modal if the verified badge is clicked",
     "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
-    "translation": "信息",
+    "translation": "此徽章证实其持有人是声誉良好的真实创作者、品牌或公共人物。",
     "isDeprecated": false
   },
   {
@@ -57668,7 +57924,7 @@
     "key": "UsernameChangeWithVerifiedBadge",
     "description": "Text warning a user if they change their username they will lose the verified badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
-    "translation": "信息",
+    "translation": "重要：此更改将导致你已验证的徽章丢失。\n\n你的原始帐户创建日期将延续至你的新用户名。",
     "isDeprecated": false
   },
   {
@@ -57676,7 +57932,7 @@
     "key": "DisplayNameChangeWithVerifiedBadge",
     "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
-    "translation": "信息",
+    "translation": "重要：此更改将导致你的验证徽章丢失。\n\n你的昵称只能每 7 天更改一次。",
     "isDeprecated": false
   },
   {
@@ -57700,7 +57956,23 @@
     "key": "TwoSVWithVerifiedBadge",
     "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
     "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
-    "translation": "信息",
+    "translation": "禁用两步验证可能会导致你验证徽章丢失并降低你帐户的安全性。是否确定要继续？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoTitle",
+    "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
+    "english": "Verified Badge",
+    "translation": "验证徽章",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "GroupNameChangeWithVerifiedBadge",
+    "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
+    "english": "I understand that once the group name has been changed:\nThe verified badge will be removed.\nThe name cannot be changed again for 90 days.\nGroup members will be notified of the change.\nThe group will no longer be searchable under the previous name.",
+    "translation": "我了解，一旦群组名称被更改：\n验证徽章将被移除。\n名称将无法在 90 天内再次更改。\n小组成员将收到此更改通知。\n该小组将不会在搜索原名称时显示。",
     "isDeprecated": false
   },
   {
@@ -60805,6 +61077,14 @@
     "description": null,
     "english": "Delete",
     "translation": "删除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Controls",
+    "key": "Action.Remove",
+    "description": null,
+    "english": "Remove",
+    "translation": "移除",
     "isDeprecated": false
   },
   {
@@ -77253,6 +77533,86 @@
     "description": null,
     "english": "Deprecated",
     "translation": "已弃用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceAuthenticator",
+    "key": "Header.TurnOnAuthenticator",
+    "description": "Header for the force authenticator modal",
+    "english": "Turn on Authenticator",
+    "translation": "开启身份验证器",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceAuthenticator",
+    "key": "Description.SetupAuthenticator",
+    "description": "First paragraph of the description in the force authenticator modal.",
+    "english": "You must set up 2-Step Verification via Authenticator to complete this action.",
+    "translation": "您必须通过身份验证器设置两步验证才能完成此操作。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceAuthenticator",
+    "key": "Description.Reason",
+    "description": "Reason for enabling Authenticator.",
+    "english": "2 steps of security will protect your login, Robux, big purchases, experiences and more.",
+    "translation": "两步验证将保护你的登录、Robux、大额消费、体验等等。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceAuthenticator",
+    "key": "Action.Setup",
+    "description": "Setup Button Text",
+    "english": "Set Up",
+    "translation": "设置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.All",
+    "description": null,
+    "english": "All",
+    "translation": "全部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Heading.Desktop",
+    "description": null,
+    "english": "Desktop",
+    "translation": "Desktop",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Heading.Tablet",
+    "description": null,
+    "english": "Tablet",
+    "translation": "平板电脑",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Heading.Phone",
+    "description": null,
+    "english": "Phone",
+    "translation": "手机",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Action.Back",
+    "description": null,
+    "english": "Back",
+    "translation": "背面",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.Places",
+    "description": null,
+    "english": "Places",
+    "translation": "场景",
     "isDeprecated": false
   }
 ]
