@@ -65,6 +65,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Response.SessionExpiredLoginAgain",
+    "description": null,
+    "english": "Your session has expired. Please login again.",
+    "translation": "你的会话已过期。请再次登录。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Response.AccountIssueErrorContactSupport",
     "description": null,
     "english": "Account issue. Please contact Support.",
@@ -569,6 +577,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Response.FloodCheckError",
+    "description": null,
+    "english": "You've exceeded the maximum number of attempts. Please try again later.",
+    "translation": "您已超过尝试次数上限。请稍后重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Response.GlobalAppAccessError",
     "description": null,
     "english": "The account is unable to log in.",
@@ -708,6 +724,22 @@
     "key": "Response.InvalidEmail",
     "description": null,
     "english": "Invalid email address.\t",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Code",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
     "translation": "",
     "isDeprecated": false
   },
@@ -8963,7 +8995,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
-    "english": "If you turn off 2-Step Verification, only your password will be needed for some actions like logging in. Are you sure?",
+    "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
     "translation": "如果关闭两步验证，那么下次当你从新设备登录时，你将只需要输入密码。是否确定？",
     "isDeprecated": false
   },
@@ -39224,6 +39256,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please refresh the page to see if it processed successfully.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.TranslationLanguageSwitch",
     "key": "Label.CurrentLanguage",
     "description": "The label for the field that displays user's current language",
@@ -56472,6 +56520,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -64112,6 +64168,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Message.ViewTerms",
+    "description": null,
+    "english": "Please read all agreements and click Agree below if you consent to the terms.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SuspiciousActivity",
     "key": "Description.Email.Subject",
     "description": null,
@@ -69368,6 +69432,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.DecimalPointValidation",
+    "description": null,
+    "english": "Enter a value with up to {decimalPoints} decimal points.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Jobs",
+    "key": "Label.ScientificNotationValidation",
+    "description": null,
+    "english": "Please do not use scientific notation.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -73397,6 +73477,14 @@
     "description": null,
     "english": "This enables Single Sign-On functionality",
     "translation": "启用单一登录功能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.OrderedDatastores",
+    "description": "Name of service",
+    "english": "Ordered DataStore",
+    "translation": "",
     "isDeprecated": false
   },
   {
@@ -91043,15 +91131,15 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.ExperienceName",
     "description": "Note: Do not translate experienceName. \ntext explaining usage of experienceName.",
-    "english": "Personalizing notifications with your {strongStart}experienceName{strongEnd} is required.",
+    "english": "Personalizing notifications with the {strongStart}experienceName{strongEnd} placeholder is required.",
     "translation": "",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.DisplayName",
-    "description": "Note: Do not translate experienceName.\ntext explaining usage of displayName placeholder.",
-    "english": "Including the sender’s display name using {strongStart}displayName{strongEnd} is optional.",
+    "description": "Note: Do not translate displayName.\ntext explaining usage of displayName placeholder.",
+    "english": "Including the sender’s display name using the {strongStart}displayName{strongEnd} placeholder is optional.",
     "translation": "",
     "isDeprecated": false
   },
@@ -91092,6 +91180,14 @@
     "key": "Message.NotificationContentCreateFailedMissingPlaceholder",
     "description": null,
     "english": "Notification string needs to contain {placeholder} placeholder.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Notifications",
+    "key": "Description.Placeholder.UsageLimit",
+    "description": null,
+    "english": "You can only use each placeholder once.",
     "translation": "",
     "isDeprecated": false
   },
@@ -91251,7 +91347,7 @@
     "namespace": "CreatorDashboard.Passes",
     "key": "InputError.PriceTooLow",
     "description": "Displayed if user enters non-positive price.",
-    "english": "Pass price must be greater than 0",
+    "english": "Price must be at least 1",
     "translation": "通行证价格必须大于 0",
     "isDeprecated": false
   },
@@ -91260,6 +91356,30 @@
     "key": "Message.CreatePassInfoWithIcon",
     "description": null,
     "english": "Passes let you create special items that can only be bought once per player using Robux ({robuxIcon}).",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Passes",
+    "key": "InputError.PriceTooHigh",
+    "description": null,
+    "english": "Price must be less than 1 billion",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Passes",
+    "key": "InputError.InvalidNumber",
+    "description": null,
+    "english": "Price must be a valid integer",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Passes",
+    "key": "InputError.InvalidPrice",
+    "description": null,
+    "english": "Price is invalid",
     "translation": "",
     "isDeprecated": false
   },
@@ -92860,6 +92980,30 @@
     "key": "Description.TeleportsSummary",
     "description": null,
     "english": "Total number of teleports generated from portal ad units in this experience over the specified time period (includes estimated and validated impressions).",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Title.EarningsPerTeleport",
+    "description": null,
+    "english": "EPT",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Title.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "Earnings Per Teleport (EPT)",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.DailyEarningsPerTeleport",
+    "description": null,
+    "english": "The Robux amount earned for every teleport generated from Portal ad units in this experience.",
     "translation": "",
     "isDeprecated": false
   },

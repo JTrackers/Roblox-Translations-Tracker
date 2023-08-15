@@ -65,6 +65,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Response.SessionExpiredLoginAgain",
+    "description": null,
+    "english": "Your session has expired. Please login again.",
+    "translation": "セッションの有効期限が切れました。もう一度 ログインしてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Response.AccountIssueErrorContactSupport",
     "description": null,
     "english": "Account issue. Please contact Support.",
@@ -565,6 +573,14 @@
     "description": null,
     "english": "QQ Login",
     "translation": "テンセントQQログイン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.FloodCheckError",
+    "description": null,
+    "english": "You've exceeded the maximum number of attempts. Please try again later.",
+    "translation": "最大試行回数を超えました。後でもう一度お試しください。",
     "isDeprecated": false
   },
   {
@@ -8931,7 +8947,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
-    "english": "If you turn off 2-Step Verification, only your password will be needed for some actions like logging in. Are you sure?",
+    "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
     "translation": "2段階認証をオフにすると、ログインなど一部の操作をするときにパスワードのみが求められるようになります。それでもいいですか？",
     "isDeprecated": false
   },
@@ -85883,15 +85899,15 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.ExperienceName",
     "description": "Note: Do not translate experienceName. \ntext explaining usage of experienceName.",
-    "english": "Personalizing notifications with your {strongStart}experienceName{strongEnd} is required.",
+    "english": "Personalizing notifications with the {strongStart}experienceName{strongEnd} placeholder is required.",
     "translation": "{strongStart}experienceName{strongEnd} で通知をパーソナライズする必要があります。",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.DisplayName",
-    "description": "Note: Do not translate experienceName.\ntext explaining usage of displayName placeholder.",
-    "english": "Including the sender’s display name using {strongStart}displayName{strongEnd} is optional.",
+    "description": "Note: Do not translate displayName.\ntext explaining usage of displayName placeholder.",
+    "english": "Including the sender’s display name using the {strongStart}displayName{strongEnd} placeholder is optional.",
     "translation": "{strongStart}displayName{strongEnd} の使用して送信者の表示名を入れるかどうかは、オプションです。",
     "isDeprecated": false
   },
@@ -86083,7 +86099,7 @@
     "namespace": "CreatorDashboard.Passes",
     "key": "InputError.PriceTooLow",
     "description": "Displayed if user enters non-positive price.",
-    "english": "Pass price must be greater than 0",
+    "english": "Price must be at least 1",
     "translation": "パスの価格は必ず 0 以上にしてください",
     "isDeprecated": false
   },

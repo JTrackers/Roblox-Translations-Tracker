@@ -65,6 +65,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Response.SessionExpiredLoginAgain",
+    "description": null,
+    "english": "Your session has expired. Please login again.",
+    "translation": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Response.AccountIssueErrorContactSupport",
     "description": null,
     "english": "Account issue. Please contact Support.",
@@ -565,6 +573,14 @@
     "description": null,
     "english": "QQ Login",
     "translation": "QQ-Anmeldung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.FloodCheckError",
+    "description": null,
+    "english": "You've exceeded the maximum number of attempts. Please try again later.",
+    "translation": "Du hast die maximale Anzahl an Versuchen überschritten. Bitte versuche es später noch einmal.",
     "isDeprecated": false
   },
   {
@@ -8931,7 +8947,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Response.Dialog.TwoStepDisableWarning",
     "description": null,
-    "english": "If you turn off 2-Step Verification, only your password will be needed for some actions like logging in. Are you sure?",
+    "english": "If you turn off 2-Step Verification, your account will be less secure and only your password will be needed for actions like logging in. Are you sure?",
     "translation": "Wenn du zweistufige Verifizierung ausschaltest, wird für einige Aktionen, wie z.B. Anmeldungen, nur ein Passwort erforderlich sein. Bist du dir sicher?",
     "isDeprecated": false
   },
@@ -84843,15 +84859,15 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.ExperienceName",
     "description": "Note: Do not translate experienceName. \ntext explaining usage of experienceName.",
-    "english": "Personalizing notifications with your {strongStart}experienceName{strongEnd} is required.",
+    "english": "Personalizing notifications with the {strongStart}experienceName{strongEnd} placeholder is required.",
     "translation": "Personalisieren von Benachrichtigungen mit deinem {strongStart}experienceName{strongEnd} ist erforderlich.",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.Notifications",
     "key": "Description.PlaceHolder.DisplayName",
-    "description": "Note: Do not translate experienceName.\ntext explaining usage of displayName placeholder.",
-    "english": "Including the sender’s display name using {strongStart}displayName{strongEnd} is optional.",
+    "description": "Note: Do not translate displayName.\ntext explaining usage of displayName placeholder.",
+    "english": "Including the sender’s display name using the {strongStart}displayName{strongEnd} placeholder is optional.",
     "translation": "Das Hinzufügen des Anzeigenamens des Absenders mit {strongStart}displayName{strongEnd} ist optional.",
     "isDeprecated": false
   },
@@ -85043,7 +85059,7 @@
     "namespace": "CreatorDashboard.Passes",
     "key": "InputError.PriceTooLow",
     "description": "Displayed if user enters non-positive price.",
-    "english": "Pass price must be greater than 0",
+    "english": "Price must be at least 1",
     "translation": "Passpreis muss höher als 0 sein",
     "isDeprecated": false
   },
