@@ -2232,6 +2232,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "Label.EngagementScreen.SwitchAccounts",
+    "description": "This button brings up a piece of UI allowing the user to select a different user-account on some other platform than Roblox.  In other words, we're not switching Roblox accounts, we're switching Xbox accounts (or maybe in the future, Google or Facebook accounts, if linking to those is something we want to support)",
+    "english": "Switch {platform} Accounts",
+    "translation": "{platform} 계정 전환",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -4588,7 +4596,7 @@
     "key": "Label.QuantityLimitReached",
     "description": null,
     "english": "The creator has limits on how many copies a single user can purchase from them.",
-    "translation": "1인당 구매 가능한 아이템 수에 제한이 있습니다. 이는 각 크리에이터가 설정합니다.",
+    "translation": "해당 크리에이터는 1인당 구매 가능한 아이템 수에 제한을 두고 있습니다.",
     "isDeprecated": false
   },
   {
@@ -4628,7 +4636,7 @@
     "key": "Heading.QuantityLimitReached",
     "description": null,
     "english": "Creator Limit Reached",
-    "translation": "구매 불가",
+    "translation": "크리에이터가 설정해 둔 한도에 도달했습니다.",
     "isDeprecated": false
   },
   {
@@ -7325,6 +7333,38 @@
     "description": "Toast message when friendship accepted - triggered from QR code page alert",
     "english": "Friend Added",
     "translation": "친구로 추가됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.CustomizeName",
+    "description": "Give a friend a custom name",
+    "english": "Customize Name",
+    "translation": "맞춤 이름 설정하기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.SetCustomName",
+    "description": "Description for a feature to allow users to set a custom name for their friend. {displayName} is a variable that will be set to the displayName for the friend user.",
+    "english": "Set a custom name for {displayName}.",
+    "translation": "{displayName} 님의 맞춤 이름을 설정하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.RecognizeFriendsByCustomName",
+    "description": "Helper description text to explain to users that they can set custom names for their friends in order to more easily recognize them, and that only they can see this custom name.",
+    "english": "Recognize friends more easily by setting a custom name. Names imported from contacts and custom names are only visible to you.",
+    "translation": "맞춤 이름을 설정해 더 쉽게 친구를 알아보세요. 연락처에서 가져온 이름과 맞춤 이름은 본인만 볼 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Message.InvalidAliasError",
+    "description": "Error message that will be displayed underneath the text box when a user types an alias name that is not valid (i.e. contains a filtered word)",
+    "english": "Name cannot be saved. Try another name.",
+    "translation": "이름을 저장할 수 없습니다. 다른 이름을 사용해 보세요.",
     "isDeprecated": false
   },
   {
@@ -13660,7 +13700,7 @@
     "key": "Heading.PleaseAddEmail",
     "description": null,
     "english": "Add Email",
-    "translation": "이메일 추가",
+    "translation": "이메일 주소 추가",
     "isDeprecated": false
   },
   {
@@ -13961,6 +14001,22 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Label.Verifying",
+    "description": null,
+    "english": "Verifying",
+    "translation": "인증 중",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.ShortCodeLegalDisclaimerUA",
+    "description": null,
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our SMS Terms of Use and Privacy Policy. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "'계속'을 클릭하면 전화번호를 제출하고 SMS 이용 약관 및 개인정보 처리방침에 동의하게 됩니다. 또한 일회용 인증 코드를 받게 됩니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요할 경우 답장으로 'Help'라고 작성해 보내 주세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Action.TermsOfUse",
     "description": null,
     "english": "Terms of Use",
@@ -13973,6 +14029,22 @@
     "description": null,
     "english": "Privacy Policy",
     "translation": "개인정보 처리방침",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifiedSuccessfully.V2",
+    "description": null,
+    "english": "Verified successfully!",
+    "translation": "\b인증 완료!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.ConfirmPhone",
+    "description": null,
+    "english": "Confirm Phone",
+    "translation": "휴대폰 번호 확인",
     "isDeprecated": false
   },
   {
@@ -14420,7 +14492,7 @@
     "key": "Description.TakeActionEngagement",
     "description": "A subheading directly below the Engagement page title which links to our documentation. We want creators to take action by educating themselves and learning more to improve their games",
     "english": "{linkStart}Take action{linkEnd} to boost engagement and fun.",
-    "translation": "참여를 개선하기 위해 {linkStart}조치를 취하세요{linkEnd}.",
+    "translation": "참여도를 높이고 즐길 거리를 더하기 위해 {linkStart}조치를 취하세요{linkEnd}.",
     "isDeprecated": true
   },
   {
@@ -14764,7 +14836,7 @@
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
     "english": "Add Email",
-    "translation": "이메일 추가",
+    "translation": "이메일 주소 추가",
     "isDeprecated": false
   },
   {
@@ -17388,7 +17460,7 @@
     "key": "Label.AddEmail",
     "description": null,
     "english": "Add Email",
-    "translation": "이메일 추가",
+    "translation": "이메일 주소 추가",
     "isDeprecated": false
   },
   {
@@ -18702,5 +18774,29 @@
     "english": "Set Up",
     "translation": "설정",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ForceTwoStepVerification",
+    "key": "ForceTwoStepVerification.Action",
+    "description": "Set Up is the action button text in the challenge modal.",
+    "english": "Set Up",
+    "translation": "설정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceTwoStepVerification",
+    "key": "ForceTwoStepVerification.Body",
+    "description": "Body text of the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "이 작업을 완료하려면 2단계 인증을 설정해야 합니다. 이는 로그인 및 구매 등을 안전하게 진행하는 데 도움이 됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ForceTwoStepVerification",
+    "key": "ForceTwoStepVerification.Header",
+    "description": "Header text for the two-step verification challenge modal.",
+    "english": "2-Step Verification Required",
+    "translation": "2단계 인증 필요",
+    "isDeprecated": false
   }
 ]
