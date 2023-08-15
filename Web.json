@@ -17721,6 +17721,11 @@
       "deprecated": false,
       "privateNote": null,
       "text": "Classic Clothing"
+    },
+    "Label.HatAccessory": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Head"
     }
   },
   "Common.BuildersClub": {
@@ -31940,10 +31945,50 @@
       "privateNote": "Tooltip message that is displayed when a user hovers over a disabled KPI chart export button.",
       "text": "Your game does not have data during this time period"
     },
+    "ChartExportError": {
+      "deprecated": true,
+      "privateNote": null,
+      "text": "PLEASE DELETE THIS THANKS :)"
+    },
     "Description.ChartExportError": {
       "deprecated": false,
       "privateNote": "Toast notification error message that is displayed when a user clicks a KPI chart export button but the API request fails.",
       "text": "An unknown error occurred"
+    },
+    "Action.ActivateAnalytics": {
+      "deprecated": false,
+      "privateNote": "Text for the \"Activate Analytics\" button on each game's Overview page.",
+      "text": "Activate Analytics"
+    },
+    "Description.PlayFabAnalyticsAgreement": {
+      "deprecated": false,
+      "privateNote": "Terms of Use agreement that appears when a user clicks the \"Activate Analytics\" button on a game's Overview page.",
+      "text": "Do you agree to allow your player data to be shared with external data services for analytics only? This will be used for accessing aggregated analytics for your game."
+    },
+    "Description.PlayFabAnalyticsAgreementNote": {
+      "deprecated": false,
+      "privateNote": "Terms of Use agreement note that appears when a user clicks the \"Activate Analytics\" button on a game's Overview page.",
+      "text": "Note: if you agree, game editors will also have permission to view analytics in your dashboards."
+    },
+    "Description.PlayFabCustomQueriesAgreement": {
+      "deprecated": false,
+      "privateNote": "Terms of Use agreement that appears when a user clicks the \"Run custom queries on PlayFab\" link on a game's Analytics Overview page.",
+      "text": "Roblox uses PlayFab to allow you to create custom queries. To promote collaboration, do you agree to allow game editors to run queries for your game?"
+    },
+    "Description.PlayFabCustomQueriesAgreementNote": {
+      "deprecated": false,
+      "privateNote": "Terms of Use agreement note that appears when a user clicks the \"Run custom queries on PlayFab\" link on a game's Analytics Overview page.",
+      "text": "Note: you will need to give them admin access in PlayFab."
+    },
+    "Action.RunCustomQueriesOnPlayFab": {
+      "deprecated": false,
+      "privateNote": "Text for the \"Run custom queries on PlayFab\" button on each game's Analytics Overview page.",
+      "text": "Run custom queries on PlayFab"
+    },
+    "Heading.TermsOfUseAgreement": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Agreement"
     }
   },
   "Authentication.SuspiciousActivity": {
@@ -32379,6 +32424,16 @@
       "deprecated": false,
       "privateNote": "Used to communicate a \"save\" action, meaning data will be saved/updated to a database",
       "text": "Save"
+    },
+    "Action.Yes": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "Yes"
+    },
+    "Action.No": {
+      "deprecated": false,
+      "privateNote": null,
+      "text": "No"
     }
   },
   "CreatorDashboard.Marketplace": {
@@ -33490,7 +33545,7 @@
     "Message.AddIPInstructions": {
       "deprecated": false,
       "privateNote": "For the IP Address / CIDR form form (will be placed under the Input element)",
-      "text": "Enter a subnet using CIDR notation (Examples: 2001:db8::/64, 192.168.0.0/22, 192.168.0.1/24)"
+      "text": "Enter a subnet using CIDR notation (Examples: 2001:db8::/64, 192.168.0.0/22, 192.168.0.0/24)"
     },
     "Message.NoIpAddresses": {
       "deprecated": false,
@@ -33637,10 +33692,85 @@
       "privateNote": "For the API key table empty state",
       "text": "There are no API keys"
     },
+    "Description.NoAPISystems": {
+      "deprecated": false,
+      "privateNote": "For the Scope System Form if a user has selected no scopes yet.",
+      "text": "Nothing has access permissions yet."
+    },
+    "Label.TargetPartLevelPermissions": {
+      "deprecated": false,
+      "privateNote": "Form label for the specific target part selected by the user within the Scope System Form",
+      "text": "{targetPart}-level permissions"
+    },
+    "Description.UniverseTargetPart": {
+      "deprecated": false,
+      "privateNote": "Description that will go under \"universe-level permissions\" target part",
+      "text": "\"Write for all\" and \"Read for all\" will apply to all existing places in the universe."
+    },
+    "Heading.RemoveTargetPart": {
+      "deprecated": false,
+      "privateNote": "Dialog heading / title when someone requests to delete a specific target part in the scopes form",
+      "text": "Remove {targetPart}"
+    },
+    "Message.RemoveTargetPartConfirm": {
+      "deprecated": false,
+      "privateNote": "Dialog message when someone requests to delete a certain target part.",
+      "text": "Are you sure you want to remove access to the {targetPartName} \"{targetPartValue}\"?"
+    },
+    "Message.CopyKeyWarning": {
+      "deprecated": false,
+      "privateNote": "warning message that displays under the API key secret",
+      "text": "{boldStart} Note! {boldEnd} Copy the Api Key before closing the page and save it to a secure place. The system will NOT store the key for security reasons."
+    },
+    "Message.CopyKeyToClipboardSuccess": {
+      "deprecated": false,
+      "privateNote": "Success message for copying key to clipboard",
+      "text": "The Api Key was successfully copied to the clipboard."
+    },
+    "Button.CopyKeyToClipboard": {
+      "deprecated": false,
+      "privateNote": "Button content for copy to clipboard",
+      "text": "Copy Api Key To Clipboard"
+    },
+    "Message.NetworkErrorCreateKey": {
+      "deprecated": false,
+      "privateNote": "Error message on toast when create call fails",
+      "text": "An unexpected error occurred while trying to create the new key. Please try again."
+    },
+    "Message.CreateKeySuccess": {
+      "deprecated": false,
+      "privateNote": "Success create message",
+      "text": "The Api key was successfully created. Copy the secret below."
+    },
+    "Heading.RemoveKey": {
+      "deprecated": false,
+      "privateNote": "Remove Api key dialog header",
+      "text": "Remove Api Key"
+    },
+    "Message.RemoveKeyPrompt": {
+      "deprecated": false,
+      "privateNote": "Ask user if they are sure they want to delete key",
+      "text": "Are you sure you want to remove the Api key \"{apiKeyName}\"?"
+    },
+    "Message.NetworkErrorDeleteKey": {
+      "deprecated": false,
+      "privateNote": "Toast message for error removing key",
+      "text": "An unexpected error occurred when trying to remove Api Key: \"{apiKeyName}\""
+    },
+    "Message.DeleteKeySuccess": {
+      "deprecated": false,
+      "privateNote": "Key was deleted success toast message",
+      "text": "The Api key: \"{apiKeyName}\" was successfully deleted."
+    },
     "Heading.NetworkError": {
       "deprecated": false,
       "privateNote": "For the network error toast",
       "text": "Network Error"
+    },
+    "Message.ApiKeyNameEmptyError": {
+      "deprecated": false,
+      "privateNote": "Form input for api key name error message for empty input",
+      "text": "The Api Key name cannot be blank"
     }
   },
   "CreatorDashboard.ScopeSystem": {
