@@ -6088,6 +6088,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Deny",
+    "description": null,
+    "english": "Deny",
+    "translation": "Ablehnen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Feature",
     "key": "Heading.VisibleAgeOver13",
     "description": null,
@@ -14048,6 +14056,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContactsV2",
+    "description": null,
+    "english": "Allow Access To Device Contacts",
+    "translation": "Zugriff auf Kontakte dieses Geräts erlauben",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -17574,6 +17590,30 @@
     "english": "Sold In",
     "translation": "Verkauft in",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Ausverkauft",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Nach dem Kauf werden Original-Verkäufe für bis zu {purchaseDays} Tage gehalten. Der Gegenstand kann erst nach dieser Zeit weiterverkauft werden und Weiterverkäufe werden für bis zu {resaleDays} Tage gehalten. Nur Premium-Nutzer können Gegenstände weiterverkaufen.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "Käufe aus Wiederverkäufen werden für bis zu {days} Tage gehalten. Der Gegenstand kann erst nach dieser Zeit weiterverkauft werden. Nur Premium-Nutzer können Gegenstände weiterverkaufen.",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Chat",
@@ -27128,6 +27168,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Support",
+    "key": "Label.AgeBasedSettings",
+    "description": null,
+    "english": "Age-Based Settings and Accounts with Parental Privileges",
+    "translation": "Alterseinstellungen und Konten mit elterlichen Beschränkungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.UnlinkParentAccount",
+    "description": null,
+    "english": "Unlinking Parent or Guardian from Child Account",
+    "translation": "Einen Elternteil oder Vormund vom Konto eines Kindes entfernen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.VotingPanel",
     "key": "Label.EmailVerifiedTitle",
     "description": null,
@@ -27973,6 +28029,22 @@
     "description": "Turn off notifications for an experience",
     "english": "Turn off notifications for {experienceName}",
     "translation": "Benachrichtigungen für {experienceName} deaktivieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Title.TurnOffNotificationsNoName",
+    "description": "Title to turn off notifications for an experience without requiring the experience name",
+    "english": "Turn off notifications for this experience",
+    "translation": "Benachrichtigungen für dieses Erlebnis ausschalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Title.TurnOnNotificationsNoName",
+    "description": "Title to turn on notifications for an experience without requiring the experience name",
+    "english": "Turn on notifications for this experience",
+    "translation": "Benachrichtigungen für dieses Erlebnis einschalten",
     "isDeprecated": false
   },
   {
@@ -59161,10 +59233,58 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
+    "translation": "Dein Konto wurde wegen unautorisierter Belastungen gesperrt. Ein Elternteil oder Vormund muss dein Konto für dich entsperren und kann dann verschiedene Aktionen bei Roblox für dich freigeben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "Du musst ein Elternteil oder Vormund des Konto-Inhabers sein, um dieses Konto erneut zu aktivieren. {startLink}Lade diese Seite neu,{endLink} wenn du fertig bist. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationButtonText",
+    "description": null,
+    "english": "I'm a Parent or Guardian",
+    "translation": "Ich bin ein Elternteil oder Vormund.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
     "translation": "E-Mail-Adresse verifizieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "Dein Konto wurde wegen unautorisierter Belastungen gesperrt. Um dein Konto zu entsperren, musst du deine E-Mail-Adresse bestätigen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNotice",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. {startLink}Reload this page{endLink} when completed.",
+    "translation": "Bestätige bitte deine E-Mail-Adresse, um dieses Konto erneut zu aktivieren. {startLink}Lade diese Seite neu,{endLink} wenn du fertig bist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Heading.AccountBanned",
+    "description": null,
+    "english": "Account Banned",
+    "translation": "Konto gebannt",
     "isDeprecated": false
   },
   {
@@ -65845,6 +65965,22 @@
     "description": null,
     "english": "{settingsIcon} or {moreIcon} <b> > Quick Log In</b> to enter this code on that device.",
     "translation": "{settingsIcon} oder {moreIcon} <b> > Schnellanmeldung</b>, um diesen Code auf diesem Gerät einzugeben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationV2",
+    "description": "Text for directing user to the right location for putting in code for cross device log in",
+    "english": "<b>More Page > Quick Log In</b> to enter your code.",
+    "translation": "<b>\"Mehr\"-Seite > Schnelle Anmeldung,</b> um deinen Code einzugeben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginInstructionsV2",
+    "description": "Updated instructions for cross device login",
+    "english": "Open your Roblox app and go to:",
+    "translation": "Öffne deine Roblox-App und gehe zu:",
     "isDeprecated": false
   },
   {
@@ -91105,6 +91241,14 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Description.NotificationTypePromotionalEmails",
+    "description": null,
+    "english": "Receive emails from Roblox about newest releases, limited-time promotions, and more",
+    "translation": "Erhalte E-Mails von Roblox zu neuen Veröffentlichungen, zeitlich begrenzten Angeboten und mehr",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Description.CategoryCreatorExperienceUpdates",
     "description": null,
     "english": "Updates about changes to experiences that you have access to.",
@@ -103344,6 +103488,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V2.Body",
+    "description": "wlu@roblox.com\n4/11/2023\tBody of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox Login One-Time Code. Enter it into the login screen to log in. This login code will expire in 15 minutes. Please note, this is not a 2-Step Verification code.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this login code, you can safely ignore this email. Someone else might have typed your email address by mistake.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Hallo,{lineBreak}{lineBreak}der Code für die einmalige Roblox-Anmeldung ist{boldStart}{code}{boldEnd}. Gib ihn im Anmeldefenster ein, um dich anzumelden. Dieser Code läuft in 15 Minuten ab. Bitte beachte, dass dieser Code nicht für die Verifizierung in 2 Schritten ist.{lineBreak}{lineBreak}Gib diesen Code {boldStart}nicht{boldEnd} weiter. Wir werden dich {boldStart}niemals{boldEnd} kontaktieren und danach fragen. Falls du diesen Code nicht angefordert hast, kannst du diese E-Mail ignorieren. Jemand anderes könnte deine E-Mail-Adresse versehentlich eingegeben haben.{lineBreak}{lineBreak}Diese Anfrage zur Anmeldung stammt aus {geolocation}.{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V2.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Login Code",
+    "translation": "{code} ist dein Code für die einmalige Roblox-Anmeldung",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -103357,14 +103517,14 @@
     "description": null,
     "english": "I acknowledge that I am at least 18 years old, and that I agree to [Roblox Terms](https://www.roblox.com/info/terms) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and revocation policy. I consent to the immediate performance of the contract and acknowledge that I thereby lose my right of withdrawal. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
     "translation": "Ich bestätige, dass ich mindestens 18 Jahre alt bin und dass ich den [Roblox-Nutzungsbedingungen](https://www.roblox.com/info/terms) und der [Datenschutzrichtlinie](https://en.help.roblox.com/hc/de/articles/115004630823-Roblox-Privacy-and-Cookie-Policy) einschließlich der Schiedsklausel und der Widerrufsrichtlinie zustimme. Ich stimme der unverzüglichen Erfüllung des Vertrages zu und erkenne an, dass ich damit mein Rücktrittsrecht verliere. Ich erlaube, dass meiner Karte der auf dieser Seite angezeigten Gesamtbetrag monatlich berechnet wird. Ich kann dies jederzeit in den [Zahlungseinstellungen](https://www.roblox.com/my/account#!/billing) stornieren.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.RecurringPurchase.SaveCard.Disclosure",
     "description": null,
     "english": "I am at least 18 years old, and I agree to the [Roblox Terms](https://www.roblox.com/info/terms)  and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause, and Stripe, Inc.’s [Terms](https://stripe.com/legal/end-users) and [Privacy Policy](https://stripe.com/privacy). I agree that Stripe Inc. will store my payment information for future Roblox purchases. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
-    "translation": "Ich bin mindestens 18 Jahre alt und stimme den [Roblox-Bedingungen](https://www.roblox.com/info/terms) und der [Datenschutzrichtlinie](https://en.help.roblox.com/hc/de/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), einschließlich der Schiedsklausel, sowie den [Bedingungen](https://stripe.com/legal/end-users) und der [Datenschutzrichtlinie](https://stripe.com/privacy) von Stripe, Inc. zu. Ich stimme zu, dass Stripe Inc. meine Zahlungsinformationen für zukünftige Roblox-Käufe speichert.",
+    "translation": "Ich bin mindestes 18 Jahre alt und stimme den [Geschäftsbedingungen von Roblox](https://www.roblox.com/info/terms) und der [Datenschutzrichtlinie](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), einschließlich der Schlichtungsklausel, und Stripe, Inc.s [Nutzungsbedingungen](https://stripe.com/legal/end-users) und [Datenschutzrichtlinie](https://stripe.com/privacy) zu. Ich willige ein, dass Stripe Inc. meine Zahlungsinformationen für zukünftige Roblox-Käufe speichert. Ich stimme zu, dass meine Kreditkarte monatlich mit dem auf dieser Seite angezeigten Gesamtbetrag belastet wird. Dies kann ich jederzeit in den [Zahlungseinstellungen](https://www.roblox.com/my/account#!/billing) kündigen.",
     "isDeprecated": false
   },
   {
@@ -103373,6 +103533,22 @@
     "description": null,
     "english": "EU, UK and EEA residents: By confirming your subscription, you consent to the immediate performance of the contract and acknowledge that you thereby lose your right of withdrawal once that performance has begun.",
     "translation": "Einwohner:innen der EU, des Vereinigten Königreichs und des EWR: Durch die Bestätigung deines Abonnements, erklärst du dich mit der unverzüglichen Erfüllung des Vertrages einverstanden und erkennst an, dass du damit dein Rücktrittsrecht verlierst, sobald die Leistung begonnen hat.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Email",
+    "key": "Generic.ThankYouMessage",
+    "description": "Generic thank you message from Roblox team.",
+    "english": "Thank You,{lineBreak}{boldStart}The Roblox Team{boldEnd}",
+    "translation": "Vielen Dank{lineBreak}{boldStart}Das Roblox-Team{boldEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Email",
+    "key": "Generic.DoNotReply",
+    "description": "Generic do not reply message.",
+    "english": "{lightTextStyleStart}Please do not reply to this message as the response will not be delivered to the originator.{lightTextStyleEnd}",
+    "translation": "{lightTextStyleStart}Bitte antworte nicht auf diese Nachricht, da deine Antwort dem Absender nicht zugestellt werden kann.{lightTextStyleEnd}",
     "isDeprecated": false
   },
   {
@@ -103397,6 +103573,14 @@
     "description": "Subject text for the email",
     "english": "Roblox: New login for {username}",
     "translation": "Roblox: Neuer Login für {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.SuspiciousLoginEmailNotification",
+    "key": "Email.TransparencyMessage",
+    "description": "Transparency message that goes in top body of email.\tUsed for V2 security alerts",
+    "english": "{boldStart}We noticed a login from a new device or location for {username} and want to make sure it was you.{boldEnd}",
+    "translation": "{boldStart}Wir haben eine Anmeldung auf einem neuen Gerät oder an einem neuen Ort für {username} bemerkt und wollen sicherstellen, dass du das bist.{boldEnd}",
     "isDeprecated": false
   },
   {
@@ -107657,6 +107841,14 @@
   },
   {
     "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Add",
+    "description": "Button on switcher modal to start add account flow.",
+    "english": "Add",
+    "translation": "Hinzufügen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
     "key": "Header.LogoutAllAccounts",
     "description": null,
     "english": "Log Out of All Accounts",
@@ -108506,10 +108698,10 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.ParentAccountSetupEmailBottomBodyText",
-    "description": "bottom body text for parent account setup email",
+    "description": "do not use- use the v2 version",
     "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have a Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
     "translation": "{htmlBoldOpen}Was ist ein Roblox-Konto mit Eltern-Privilegien?{htmlBoldClose}{lineBreak}{lineBreak}Mit deinem Konto kannst du gewisse Aktionen deines Kindes bei Roblox erlauben. Zudem kannst du Roblox als Avatar alleine oder mit deinem Kind erkunden.{lineBreak}{lineBreak}{htmlBoldOpen}Was, wenn ich schon ein Roblox-Konto habe?{htmlBoldClose}{lineBreak}{lineBreak}Wenn du bereits ein Roblox-Konto besitzt, kannst du es mit deinem Kind verknüpfen und Eltern-Privilegien hinzufügen.{lineBreak}{lineBreak}{htmlBoldOpen}Was brauche ich, um loszulegen?{htmlBoldClose}{lineBreak}{lineBreak}Ein Konto mit Eltern-Privilegien zu erstellen, dauert nur wenige Minuten. Du wirst gebeten, dein Geburtsdatum anzugeben und es mit einem offiziellen Dokument, wie deinem Ausweis, zu bestätigen, bevor du es mit dem Roblox-Konto deines Kindes verknüpfen kannst.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
@@ -108549,6 +108741,38 @@
     "description": "Generic error message",
     "english": "Something went wrong",
     "translation": "Ein Problem ist aufgetreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.LogOut",
+    "description": null,
+    "english": "Log Out",
+    "translation": "Abmelden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.VerifyEmail",
+    "description": null,
+    "english": "Verify Your Email",
+    "translation": "Verifiziere deine E-Mail-Adresse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AddEmail",
+    "description": null,
+    "english": "Add Your Email",
+    "translation": "Füge deine E-Mail-Adresse hinzu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "Es ist ein Problem aufgetreten",
     "isDeprecated": false
   },
   {

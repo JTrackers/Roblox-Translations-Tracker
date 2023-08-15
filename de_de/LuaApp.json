@@ -476,7 +476,7 @@
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
-    "translation": "Dein Roblox-Konto wird mit deinem {platform}-Konto verknüpft. Wenn du dich das nächste Mal anmeldest, wirst du automatisch eingeloggt! Du kannst die Verlinkung jederzeit unter Einstellungen entfernen. Es kann eine Weile dauern, bevor du ein neues Konto verbinden kannst.",
+    "translation": "Dein Roblox-Konto wird mit deinem {platform}-Konto verknüpft und du wirst beim nächsten Mal automatisch eingeloggt! Du kannst die Verknüpfung jederzeit in den Einstellungen aufheben. Es kann eine Wartezeit geben, bevor die Verknüpfung mit einem neuen Konto möglich ist.",
     "isDeprecated": false
   },
   {
@@ -1728,6 +1728,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Deny",
+    "description": null,
+    "english": "Deny",
+    "translation": "Ablehnen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Feature",
     "key": "Heading.VisibleAgeOver13",
     "description": null,
@@ -2344,6 +2352,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "Label.AdjustScreen",
+    "description": "Adjust screen / Overscan settings page label",
+    "english": "Adjust Screen",
+    "translation": "Bildschirm anpassen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -2469,6 +2485,14 @@
     "description": "Toast to show when a specific action is not supported.",
     "english": "This action is not supported in the current country yet.",
     "translation": "Diese Aktion wird im aktuellen Land noch nicht unterstützt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.AgeBlock",
+    "description": "A text to show when Roblox is blocking user from entering the app due to age restriction.",
+    "english": "This account is not eligible due to age restrictions.",
+    "translation": "Dieses Konto ist aufgrund von Altersbeschränkungen nicht berechtigt.",
     "isDeprecated": false
   },
   {
@@ -4824,6 +4848,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotBeResold",
+    "description": null,
+    "english": "This item cannot be resold",
+    "translation": "Dieser Gegenstand kann nicht weiterverkauft werden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Ausverkauft",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Nach dem Kauf werden Original-Verkäufe für bis zu {purchaseDays} Tage gehalten. Der Gegenstand kann erst nach dieser Zeit weiterverkauft werden und Weiterverkäufe werden für bis zu {resaleDays} Tage gehalten. Nur Premium-Nutzer können Gegenstände weiterverkaufen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "Käufe aus Wiederverkäufen werden für bis zu {days} Tage gehalten. Der Gegenstand kann erst nach dieser Zeit weiterverkauft werden. Nur Premium-Nutzer können Gegenstände weiterverkaufen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Attribution",
+    "description": "Text is used as a label for the experience it was made in. For example: Made in Natural Disaster Survival",
+    "english": "Made In",
+    "translation": "Hergestellt in",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -6229,6 +6293,38 @@
     "description": null,
     "english": "Sent from contact importer",
     "translation": "Vom Kontakt-Importierer gesendet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "OneMutualFriend",
+    "description": "Context: {UserName} is a mutual friend",
+    "english": "is a mutual friend",
+    "translation": "ist ein gemeinsamer Freund",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "PluralMutualFriends",
+    "description": "Context: {UserName1}, {UserName2} are mutual friends",
+    "english": "are mutual friends",
+    "translation": "sind gemeinsame Freunde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "OneOtherMutualFriend",
+    "description": "Context:  {UserName1}, {UserName2}, {UserName3} + 1 other mutual friend",
+    "english": "other mutual friend",
+    "translation": "weiterer gemeinsamer Freund",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "PluralOtherMutualFriends",
+    "description": "Context: {UserName1}, {UserName2}, {UserName3} + 2 other mutual friends",
+    "english": "other mutual friends",
+    "translation": "weitere gemeinsame Freunde",
     "isDeprecated": false
   },
   {
@@ -7753,6 +7849,22 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Description.UsernamePrice",
+    "description": "Cost of changing username",
+    "english": "1000",
+    "translation": "1.000",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameTooShort",
+    "description": "Error message that shows up when a display name is too short",
+    "english": "Display name should be at least 3 characters.",
+    "translation": "Angezeigter Name muss mindestens 3 Zeichen lang sein.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
@@ -7765,6 +7877,38 @@
     "description": "Heading for a warning modal that informs users that they do not have enough Robux",
     "english": "Insufficient Funds",
     "translation": "Zu wenig Guthaben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernameInsufficientFunds",
+    "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
+    "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
+    "translation": "Du benötigst noch {icon}{rbx}, um deinen Benutzernamen zu ändern. Möchtest du mehr Robux kaufen?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayNameUpdated",
+    "description": "Confirmation that pops up after user successfully updates their displayname",
+    "english": "Display Name Updated",
+    "translation": "Angezeigter Name aktualisiert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "Benutzername aktualisiert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.PictureUpdated",
+    "description": "Toast for after a user saves their profile picture",
+    "english": "Profile Picture Updated",
+    "translation": "Profilbild aktualisiert",
     "isDeprecated": false
   },
   {
@@ -11512,6 +11656,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.Description",
+    "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
+    "translation": "Sieh nach, wer von deinen Freunden bei Roblox ist, indem du ihre Telefonnummer hinzufügst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "FindFriendsBanner.DescriptionPV",
+    "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
+    "english": "Contacts who are on Roblox will appear here when available.",
+    "translation": "Kontakte, die ebenfalls bei Roblox sind, erscheinen hier, wenn sie verfügbar sind.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameFollows",
     "key": "TooltipFollowLimitReached",
     "description": "Tooltip for follow game button",
@@ -14065,10 +14225,66 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
+    "translation": "Dein Konto wurde wegen unautorisierter Belastungen gesperrt. Ein Elternteil oder Vormund muss dein Konto für dich entsperren und kann dann verschiedene Aktionen bei Roblox für dich freigeben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "Du musst ein Elternteil oder Vormund des Konto-Inhabers sein, um dieses Konto erneut zu aktivieren. {startLink}Lade diese Seite neu,{endLink} wenn du fertig bist. ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationButtonText",
+    "description": null,
+    "english": "I'm a Parent or Guardian",
+    "translation": "Ich bin ein Elternteil oder Vormund.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
     "translation": "E-Mail-Adresse verifizieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "Dein Konto wurde wegen unautorisierter Belastungen gesperrt. Um dein Konto zu entsperren, musst du deine E-Mail-Adresse bestätigen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "Du musst ein Elternteil oder Vormund des Konto-Inhabers sein, um dieses Konto erneut zu aktivieren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNoticeUA",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. ",
+    "translation": "Bestätige bitte deine E-Mail-Adresse, um dieses Konto erneut zu aktivieren. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Heading.AccountBanned",
+    "description": null,
+    "english": "Account Banned",
+    "translation": "Konto gebannt",
     "isDeprecated": false
   },
   {
@@ -15181,6 +15397,22 @@
     "description": "Error message when a QR code cannot display on the login page.",
     "english": "We are having problems displaying a QR Code. Please refresh this page, or follow the instructions below to log in on another device.",
     "translation": "Wir haben Probleme mit der Anzeige eines QR-Codes. Bitte aktualisiere diese Seite oder folge den Anweisungen unten, um dich auf einem anderen Gerät anzumelden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationV2",
+    "description": "Text for directing user to the right location for putting in code for cross device log in",
+    "english": "<b>More Page > Quick Log In</b> to enter your code.",
+    "translation": "<b>\"Mehr\"-Seite > Schnelle Anmeldung,</b> um deinen Code einzugeben.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginInstructionsV2",
+    "description": "Updated instructions for cross device login",
+    "english": "Open your Roblox app and go to:",
+    "translation": "Öffne deine Roblox-App und gehe zu:",
     "isDeprecated": false
   },
   {
@@ -17084,7 +17316,7 @@
     "key": "Description.PreferredTransparency",
     "description": "Describes the Preferred Transparency user setting",
     "english": "Improve contrast by adjusting transparency on some backgrounds",
-    "translation": "Mache Erlebnismenüs undurchsichtiger",
+    "translation": "Verbessert den Kontrast, indem die Transparenz einiger Hintergründe angepasst wird",
     "isDeprecated": false
   },
   {
@@ -17100,7 +17332,7 @@
     "key": "Description.UiNavigationKeyBind",
     "description": "Describes the Ui Navigation Toggle user setting",
     "english": "Use the {uiNavigationKey} key to enter and exit UI navigation mode",
-    "translation": "Benutze die {uiNavigationKey}-Taste, um zwischen den Elementen zu navigieren",
+    "translation": "Verwende die {uiNavigationKey}-Taste, um den Navigationsmodus für die Benutzeroberfläche zu betreten oder zu verlassen",
     "isDeprecated": false
   },
   {
@@ -18213,6 +18445,14 @@
     "description": "Text on Add Friends Page in empty state (when there are no friend requests to be shown)",
     "english": "Who will you explore Roblox with? Search for people to add, or connect with friends you already know!",
     "translation": "Mit wem wirst du Roblox erkunden? Suche nach Leuten, die du hinzufügen kannst, oder verbinde dich mit Freund:innen, die du schon kennst!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AddFriends",
+    "key": "Label.AlignQrCode",
+    "description": "Instructional text shown on the QR code scanner view within the app",
+    "english": "Align your friend’s QR code in the frame to quickly add them on Roblox!",
+    "translation": "Platziere den QR-Code deines Freundes im Rahmen, um ihn schnell bei Roblox hinzuzufügen!",
     "isDeprecated": false
   },
   {
@@ -20605,6 +20845,38 @@
     "description": "Generic error message",
     "english": "Something went wrong",
     "translation": "Ein Problem ist aufgetreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.LogOut",
+    "description": null,
+    "english": "Log Out",
+    "translation": "Abmelden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.VerifyEmail",
+    "description": null,
+    "english": "Verify Your Email",
+    "translation": "Verifiziere deine E-Mail-Adresse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AddEmail",
+    "description": null,
+    "english": "Add Your Email",
+    "translation": "Füge deine E-Mail-Adresse hinzu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "Es ist ein Problem aufgetreten",
     "isDeprecated": false
   }
 ]

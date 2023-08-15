@@ -4441,6 +4441,14 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Description.LoginWithEmail",
+    "description": null,
+    "english": "You can sign into your account anytime with your email address.",
+    "translation": "您隨時可以使用電子郵件地址登入帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Description.AccountSwitchSignupLogoutOtherAccounts",
     "description": "{startStylingTag} and {endStylingTag} will replaced with HTML tags. Please maintain the order of the tags and do not change the contents of the tags.",
     "english": "By clicking Sign Up, you are acknowledging to log out of {startStylingTag}all your logged-in accounts{endStylingTag}.",
@@ -6109,6 +6117,22 @@
     "description": "Action for accepting the contents of an educational dialog or tooltip",
     "english": "Got It",
     "translation": "知道了",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Approve",
+    "description": null,
+    "english": "Approve",
+    "translation": "批准",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Deny",
+    "description": null,
+    "english": "Deny",
+    "translation": "拒絕",
     "isDeprecated": false
   },
   {
@@ -60417,10 +60441,50 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
+    "translation": "您的帳號因未授權收費而遭到停用。您的家長或監護人必須先同意解鎖您的帳號，接著才能同意您在 Roblox 上進行特定操作。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "您必須是帳號持有人的家長或法定監護人，才能重新啟用此帳號。完成後，請{startLink}重新載入此頁面{endLink}。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationButtonText",
+    "description": null,
+    "english": "I'm a Parent or Guardian",
+    "translation": "我是家長或監護人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
     "translation": "驗證電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "您的帳號因未授權收費而遭到停用。您必須驗證您的電子郵件地址，才能解鎖帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNotice",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. {startLink}Reload this page{endLink} when completed.",
+    "translation": "請驗證您的電子郵件地址，以便重新啟用此帳號。完成後，請{startLink}重新載入此頁面{endLink}。",
     "isDeprecated": false
   },
   {
@@ -62788,7 +62852,7 @@
     "key": "Inbox.TradeDeclinedMessage",
     "description": "the content of inbox message when trade is declined by another user.",
     "english": "Trade declined. If you wish to review this trade, go to the <a class=\"text-link\" href=\"/trades\">Trades page</a> and select \"Inactive\".",
-    "translation": "交易遭拒。如果要檢視這筆交易，請前往<a class=\"text-link\" href=\"/trades\">「交易」頁面</a>，選擇「未活躍」。",
+    "translation": "交易遭到拒絕。如果要檢視這筆交易，請前往<a class=\"text-link\" href=\"/trades\">「交易」頁面</a>，選擇「未活躍」。",
     "isDeprecated": false
   },
   {
@@ -77750,6 +77814,14 @@
     "english": "Roblox has automatically updated the date of birth on your account to match your ID.",
     "translation": "Roblox 已自動配對 ID 並更新帳戶的出生日期。",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VoiceCollectionConsent",
+    "description": null,
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation, safety and quality purposes and for the improvement of safety & audio processing tools.",
+    "translation": "按一下「啟用」即代表我同意 Roblox 基於審查、安全與品質用途，以及為了改良安全工具和音訊處理工具而收集、使用及儲存我的錄音。",
+    "isDeprecated": true
   },
   {
     "namespace": "CreatorDashboard.GameLocalization",
@@ -104384,6 +104456,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V2.Body",
+    "description": "wlu@roblox.com\n4/11/2023\tBody of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox Login One-Time Code. Enter it into the login screen to log in. This login code will expire in 15 minutes. Please note, this is not a 2-Step Verification code.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this login code, you can safely ignore this email. Someone else might have typed your email address by mistake.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "您好：{lineBreak}{lineBreak}您的 Roblox 一次性登入驗證碼是 {boldStart}{code}{boldEnd}，請在登入畫面輸入此驗證碼以登入。此登入驗證碼將在 15 分鐘後失效。請注意，這不是 2 步驟驗證碼。{lineBreak}{lineBreak}{boldStart}請勿{boldEnd}分享此驗證碼。我們{boldStart}絕不會{boldEnd}主動要求您提供驗證碼。如果您並未申請此登入驗證碼，請忽略這封電子郵件。其他人可能不小心輸入成您的電子郵件地址。{lineBreak}{lineBreak}此登入申請來自{geolocation}。{lineBreak}{lineBreak}謝謝。{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.OneTimePasscodeEmail.V2.Subject",
+    "description": "Subject of an email for OTP login",
+    "english": "{code} Is Your Roblox One-Time Login Code",
+    "translation": "您的 Roblox 一次性登入驗證碼是 {code}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -104397,7 +104485,7 @@
     "description": null,
     "english": "I acknowledge that I am at least 18 years old, and that I agree to [Roblox Terms](https://www.roblox.com/info/terms) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and revocation policy. I consent to the immediate performance of the contract and acknowledge that I thereby lose my right of withdrawal. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
     "translation": "我確認我 18 歲以上，並同意 [Roblox 條款](https://en.help.roblox.com/hc/zh-tw/articles/115004647846-Roblox-Terms-of-Use) 和 [隱私權政策](https://en.help.roblox.com/hc/zh-tw/articles/115004630823-Roblox-Privacy-and-Cookie-Policy)，包括仲裁條款和 [撤回政策](https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy)。我同意合約立即生效，並明白我會失去退出合約的權利。我同意 Roblox 每個月向我的金融卡收取此頁面顯示的總金額。我可以隨時在 [帳務設定](https://www.roblox.com/my/account#!/billing) 取消。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.StripeIntegration",
@@ -108708,7 +108796,7 @@
     "key": "Description.AccountLimit",
     "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
     "english": "You've reached the maximum of account switcher. To add another account, please log out of one of your existing accounts.",
-    "translation": "您已達帳戶上限。必須登出至少一個帳戶才能新增帳戶。",
+    "translation": "您已經達到了帳戶切換器的最大值。要添加另一個帳戶,請從您現有的帳戶中退出。",
     "isDeprecated": false
   },
   {
@@ -109674,10 +109762,10 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.ParentAccountSetupEmailBottomBodyText",
-    "description": "bottom body text for parent account setup email",
+    "description": "do not use- use the v2 version",
     "english": "{htmlBoldOpen}What is a Roblox account with parent privileges?{htmlBoldClose}{lineBreak}{lineBreak}With your account, you can approve certain actions for your child on Roblox. You can also explore Roblox as an avatar on your own, or with your child.{lineBreak}{lineBreak}{htmlBoldOpen}What if I already have a Roblox account?{htmlBoldClose}{lineBreak}{lineBreak}If you already have a Roblox account, you can link it to your child and add parent privileges.{lineBreak}{lineBreak}{htmlBoldOpen}What do I need to get started?{htmlBoldClose}{lineBreak}{lineBreak}Creating an account with parent privileges only takes a few minutes. You’ll be asked to enter your birthday, verify your age using a government issued ID, and link to your child’s Roblox account.",
     "translation": "{htmlBoldOpen}什麼是具有家長權限的 Roblox 帳號？{htmlBoldClose}{lineBreak}{lineBreak}您的帳號可以同意您的子女在 Roblox 上進行特定操作。您也可以使用虛擬人偶，跟子女一起或自行探索 Roblox。{lineBreak}{lineBreak}{htmlBoldOpen}如果我已經有 Roblox 帳號了呢？{htmlBoldClose}{lineBreak}{lineBreak}如果您已經有 Roblox 帳號，您可以將帳號與子女的帳號連結，並新增家長權限。{lineBreak}{lineBreak}{htmlBoldOpen}我需要事先準備什麼？{htmlBoldClose}{lineBreak}{lineBreak}建立具有家長權限的 Roblox 帳號只需要花幾分鐘的時間。您必須輸入出生日期、提供政府發行的身分證件以驗證年齡，並與您子女的 Roblox 帳號連結。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
@@ -109701,6 +109789,86 @@
     "description": "Placeholder for email input",
     "english": "email",
     "translation": "電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.LogOut",
+    "description": null,
+    "english": "Log Out",
+    "translation": "登出",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.LogOut",
+    "description": null,
+    "english": "To link an existing account, log out of your current session and log back in.",
+    "translation": "若要連結現有帳戶,請登出您目前的會話並重新登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.RequestExpired",
+    "description": null,
+    "english": "Request expired",
+    "translation": "要求已過期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.RequestExpired",
+    "description": null,
+    "english": "Open Roblox on your child’s phone and re-enter your email to start again",
+    "translation": "在孩子手機上開啟 Roblox,並重新輸入您的電子郵件以重新開始",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.NoAccountCreation",
+    "description": null,
+    "english": "Can’t Create Account",
+    "translation": "可以創建帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.GuardianRequirement",
+    "description": null,
+    "english": "You must be a parent or legal guardian in order to manage a child’s account",
+    "translation": "您必須是父母或法定監護人,才能管理孩子的帳戶",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.VerifyEmail",
+    "description": null,
+    "english": "Verify Your Email",
+    "translation": "驗證您的電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AddEmail",
+    "description": null,
+    "english": "Add Your Email",
+    "translation": "新增電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "發生錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.SignInError",
+    "description": null,
+    "english": "Trouble Signing In",
+    "translation": "登入有問題",
     "isDeprecated": false
   },
   {
