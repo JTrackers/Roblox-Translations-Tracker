@@ -2304,6 +2304,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "LabelPhone",
+    "description": null,
+    "english": "Phone",
+    "translation": "手机",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "点按“继续”，即表示你会提供你的手机号码，并同意我们的{linkTagWithSmsTos}短信使用条款{linkTagEnd}及{linkTagWithPrivacyPolicy}隐私政策{linkTagEnd}。我们将向你发送一次性验证码，你可能会被收取短信和流量的费用。回复“HELP”即可获得帮助。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.Captcha",
     "key": "Action.Reload",
     "description": null,
@@ -4548,7 +4564,7 @@
     "key": "Label.GameUnavailablePermissionLevels",
     "description": null,
     "english": "Do not have permission to play this experience.",
-    "translation": "你的权限不足，无法进入此场景。",
+    "translation": "没有游玩此体验的权限。",
     "isDeprecated": false
   },
   {
@@ -5164,7 +5180,7 @@
     "key": "Label.ContextualPlayabilityAgeGated",
     "description": null,
     "english": "This experience cannot be accessed due to restrictions set by the creator.",
-    "translation": "由于创作者设置的年龄限制，无法访问此体验。",
+    "translation": "由于创作者设置的限制，无法访问此体验。",
     "isDeprecated": false
   },
   {
@@ -13128,6 +13144,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls17",
+    "description": null,
+    "english": "17+ (Suitable for ages 17 and older)",
+    "translation": "17+（适用于 17 岁及以上用户）",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -15593,6 +15617,30 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Filter.SalesType",
+    "description": "Filter label for sales type",
+    "english": "Sales Type",
+    "translation": "销售类型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Filter.Sorts",
+    "description": "Sorts label",
+    "english": "Sorts",
+    "translation": "排序方式",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.NewCollectibles",
+    "description": "Title of a popup introducing the new concept of \"Collectible\" items",
+    "english": "New Collectibles!",
+    "translation": "新收藏！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Unlimited",
     "description": "Refers to the \"Unlimited\" category of items: items that are sold in unlimited quantities and cannot be resold by users (as opposed to Limited and Limited U items)",
     "english": "Unlimited",
@@ -15665,6 +15713,46 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.ItemInAHold",
+    "description": null,
+    "english": "Item in a hold?",
+    "translation": "道具存放中？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.HoldingPolicy",
+    "description": null,
+    "english": "Holding Policy",
+    "translation": "存放政策",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "购买后，道具将会进入最多 30 天的存放期。只有存放期结束后才能转卖该道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.OffSaleItem",
+    "description": null,
+    "english": "Off Sale Item",
+    "translation": "下架道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Genres",
+    "description": null,
+    "english": "Genres",
+    "translation": "类型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Tags",
     "description": null,
     "english": "Tags",
@@ -15689,6 +15777,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Action.ReadMore",
+    "description": null,
+    "english": "Read More",
+    "translation": "阅读更多",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.BuyNow",
     "description": null,
     "english": "Buy Now",
@@ -15705,10 +15801,58 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Message.ItemInInventory",
+    "description": null,
+    "english": "This item is available in your inventory.",
+    "translation": "此道具已在你的道具中并可使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BestPrice",
+    "description": null,
+    "english": "Best Price",
+    "translation": "最优价格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMoreReseller",
+    "description": null,
+    "english": "See More {linkStart}{resellerLink}{linkEnd}",
+    "translation": "查看更多 {linkStart}{resellerLink}{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.Wear",
     "description": null,
     "english": "Wear",
     "translation": "穿戴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.BundlePurchase",
+    "description": "Would you like to buy the \"Penguin\" from Roblox for (Robux Icon) 50?",
+    "english": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "translation": "是否从 {sellerName} 以 {price} 购买“{bundleName}”？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetPurchase",
+    "description": "Would you like to buy the hat \"Cowboy Hat\" from Roblox for (Robux Icon) 10?",
+    "english": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "是否从 {sellerName} 以 {price} 购买{itemType}“{itemName}”？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetGet",
+    "description": "Would you like to get the Hat \"Bowler Hat\" from Roblox for Free?",
+    "english": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "是否从 {sellerName} 以 {price} 获取{itemType}“{itemName}”？",
     "isDeprecated": false
   },
   {
@@ -15737,6 +15881,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.RightArm",
+    "description": null,
+    "english": "RightArm",
+    "translation": "右臂",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.RightLeg",
     "description": null,
     "english": "Right Leg",
@@ -15745,10 +15897,106 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.ClassicShirt",
+    "description": null,
+    "english": "Classic Shirt",
+    "translation": "经典衬衫",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClassicTShirt",
+    "description": null,
+    "english": "Classic T-Shirt",
+    "translation": "经典 T 恤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Torso",
     "description": null,
     "english": "Torso",
     "translation": "躯干",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClimbAnimation",
+    "description": null,
+    "english": "Climb Animation",
+    "translation": "攀爬动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.DeathAnimation",
+    "description": null,
+    "english": "Death Animation",
+    "translation": "死亡动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.FallAnimation",
+    "description": null,
+    "english": "Fall Animation",
+    "translation": "下落动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.IdleAnimation",
+    "description": null,
+    "english": "Idle Animation",
+    "translation": "闲置动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RunAnimation",
+    "description": null,
+    "english": "Run Animation",
+    "translation": "奔跑动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.JumpAnimation",
+    "description": null,
+    "english": "Jump Animation",
+    "translation": "跳跃动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SwimAnimation",
+    "description": null,
+    "english": "Swim Animation",
+    "translation": "游泳动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.WalkAnimation",
+    "description": null,
+    "english": "Walk Animation",
+    "translation": "步行动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PoseAnimation",
+    "description": null,
+    "english": "Pose Animation",
+    "translation": "姿势动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.EmoteAnimation",
+    "description": null,
+    "english": "Emote Animation",
+    "translation": "表情动作动画",
     "isDeprecated": false
   },
   {
@@ -15817,6 +16065,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Skirt",
+    "description": null,
+    "english": "Skirt",
+    "translation": "短裙",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Jacket",
     "description": null,
     "english": "Jacket",
@@ -15857,6 +16113,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.MoodAnimation",
+    "description": null,
+    "english": "Mood Animation",
+    "translation": "心情动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.DynamicHead",
     "description": null,
     "english": "Dynamic Head",
@@ -15865,10 +16129,58 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumberDisplay",
+    "description": "i.e. #32",
+    "english": "#{serialNumber}",
+    "translation": "#{serialNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCountSingular",
+    "description": "Owned Item (1)",
+    "english": "Owned Item ({itemCount})",
+    "translation": "已拥有道具 ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Fee",
+    "description": "30% Fee:",
+    "english": "{feePercentage}% Fee:",
+    "translation": "{feePercentage}% 费用：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.ShowLess",
     "description": null,
     "english": "Show Less",
     "translation": "收起",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TakeOffResaleConfirmation",
+    "description": null,
+    "english": "Are you sure you want to stop offering this item for resale?",
+    "translation": "是否确定要停止转卖此道具？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SalePrice",
+    "description": null,
+    "english": "Sale Price:",
+    "translation": "售价：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Marketplace",
+    "description": "A heading for the marketplace page where you can buy items to customize your avatar",
+    "english": "Marketplace",
+    "translation": "商城",
     "isDeprecated": false
   },
   {
@@ -15885,6 +16197,30 @@
     "description": null,
     "english": "No",
     "translation": "否",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradeable",
+    "description": null,
+    "english": "Tradeable",
+    "translation": "可交易",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.LimitedUHoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "购买后，道具将会进入最多 30 天的存放期。只有存放期结束后才能转卖该道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradable",
+    "description": null,
+    "english": "Tradable",
+    "translation": "可交易",
     "isDeprecated": false
   },
   {
@@ -18945,10 +19281,34 @@
   },
   {
     "namespace": "Feature.GameDetails",
+    "key": "Label.ChatFeatures",
+    "description": null,
+    "english": "Chat Features",
+    "translation": "聊天功能",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Label.Microphone",
+    "description": null,
+    "english": "Microphone",
+    "translation": "麦克风",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
     "key": "Label.None",
     "description": null,
     "english": "None",
     "translation": "无",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Label.Camera",
+    "description": "Tells the user that camera chat features are available",
+    "english": "Camera",
+    "translation": "摄像头",
     "isDeprecated": false
   },
   {
@@ -25225,10 +25585,50 @@
   },
   {
     "namespace": "Feature.Support",
+    "key": "Label.OptoutCookieProtect",
+    "description": null,
+    "english": "Opt-out Cookie Protection",
+    "translation": "推出 Cookie 保护",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
     "key": "Label.AssetID",
     "description": null,
     "english": "Asset ID",
     "translation": "素材 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "AppealAccount",
+    "description": null,
+    "english": "Appeal Account",
+    "translation": "申诉帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.AppealContent",
+    "description": null,
+    "english": "Appeal Content",
+    "translation": "申诉内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Response.InvalidAssetID",
+    "description": null,
+    "english": "Please enter a valid asset ID",
+    "translation": "请输入有效的素材 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Support",
+    "key": "Label.AppealAccount",
+    "description": null,
+    "english": "Appeal Account",
+    "translation": "申诉帐户",
     "isDeprecated": false
   },
   {
@@ -26293,6 +26693,22 @@
     "description": "The default title for an experience invite notification.",
     "english": "Invite from {displayName} @{username}",
     "translation": "来自 {displayName} @{username} 的邀请",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.VirtualEventOngoingTitle",
+    "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
+    "english": "Happening Now: {title}",
+    "translation": "进行中：{title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.PushNotifications",
+    "key": "Message.VirtualEventOngoingBody",
+    "description": "Message displayed on virtual event notification body when there is a live virtual event ongoing.",
+    "english": "Join the event now",
+    "translation": "立即加入活动",
     "isDeprecated": false
   },
   {
@@ -33664,6 +34080,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Action.Marketplace",
+    "description": null,
+    "english": "Marketplace",
+    "translation": "商城",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.ExploreMarketplace",
+    "description": null,
+    "english": "Explore the marketplace to find more clothes!",
+    "translation": "浏览商城，寻找更多服装！",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialMetaTags",
     "key": "Label.UserProfile",
     "description": "title of the social meta tag",
@@ -34701,6 +35133,30 @@
     "description": null,
     "english": "Shoes",
     "translation": "鞋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Inventory",
+    "key": "Heading.Marketplace",
+    "description": null,
+    "english": "Marketplace",
+    "translation": "商城",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Inventory",
+    "key": "Message.TryMarketplaceLink",
+    "description": null,
+    "english": "Try using the {startLink}marketplace{endLink} to find new items.",
+    "translation": "请试试在{startLink}商城{endLink}中发现新物品。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Inventory",
+    "key": "Message.TryMarketplaceForItems",
+    "description": null,
+    "english": "Try using the marketplace to find new items.",
+    "translation": "请试试在商城中发现新物品。",
     "isDeprecated": false
   },
   {
@@ -40489,10 +40945,34 @@
   },
   {
     "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please check the My Transactions page to see if it processed successfully.",
+    "translation": "发生意外错误。交易可能需要 5 分钟完成。请前往交易页面查看交易是否已成功处理。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "发生错误，付款未成功，请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
     "key": "Label.Error",
     "description": null,
     "english": "Error",
     "translation": "错误",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Message.BraintreePayPalPreparePaymentError",
+    "description": null,
+    "english": "There was an error connecting to PayPal. Please try again.",
+    "translation": "连结至 PayPal 的时候发生错误，请重试。",
     "isDeprecated": false
   },
   {
@@ -50872,6 +51352,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "发生错误。如果问题仍然存在，请联系客服人员。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.NativeAds",
     "key": "Heading.SponsorGame",
     "description": null,
@@ -57760,6 +58248,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Label.AdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payouts",
+    "translation": "沉浸式广告支付",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.GroupAdsRevsharePayout",
+    "description": null,
+    "english": "Group Immersive Ads Payout",
+    "translation": "群组沉浸式广告支付",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.AdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payout",
+    "translation": "沉浸式广告支付",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.PendingRobuxAdsRevsharePayout",
+    "description": null,
+    "english": "Pending Robux from Immersive Ads Payout",
+    "translation": "待处理的沉浸式广告支付 Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "金额为净支付额，不包括佣金、商城费用和定期群组支付。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadMonthInstructions",
+    "description": "Description for 1 month",
+    "english": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
+    "translation": "请选择你想要下载的交易信息的月份。新交易可能在几小时后才会出现。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -60937,10 +61473,26 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Clothing",
+    "description": null,
+    "english": "Clothing",
+    "translation": "服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Label.Accessories",
     "description": null,
     "english": "Accessories",
     "translation": "配饰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.ClothingType",
+    "description": null,
+    "english": "Clothing Type",
+    "translation": "服装类型",
     "isDeprecated": false
   },
   {
@@ -60953,10 +61505,50 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Create3DClothing",
+    "description": null,
+    "english": "Create 3D Clothing",
+    "translation": "创建 3D 服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.ShowForSaleOnly",
+    "description": null,
+    "english": "Show for sale only",
+    "translation": "仅显示在售道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Label.InReview",
     "description": null,
     "english": "In Review",
     "translation": "审核中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.CreatedDate",
+    "description": null,
+    "english": "Created {date}",
+    "translation": "创建日期：{date}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.LimitedPublishConfirmation",
+    "description": null,
+    "english": "Limited was successfully published",
+    "translation": "已成功发布限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.StartTimeFifteenMinutes",
+    "description": "Error string indicating to a user that the start time for an event must be at least fifteen minutes in the future",
+    "english": "Start must be at least 15 minutes from now",
+    "translation": "开始时间必须在 15 分钟后",
     "isDeprecated": false
   },
   {
@@ -61377,10 +61969,266 @@
   },
   {
     "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Gear",
+    "description": null,
+    "english": "Gear",
+    "translation": "装备",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Head",
+    "description": null,
+    "english": "Head",
+    "translation": "头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.LeftArm",
+    "description": null,
+    "english": "Left Arm",
+    "translation": "左臂",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.LeftLeg",
+    "description": null,
+    "english": "Left Leg",
+    "translation": "左腿",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ClassicPants",
+    "description": null,
+    "english": "Classic Pants",
+    "translation": "经典裤子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.RightArm",
+    "description": null,
+    "english": "Right Arm",
+    "translation": "右臂",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.RightLeg",
+    "description": null,
+    "english": "Right Leg",
+    "translation": "右腿",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ClassicShirt",
+    "description": null,
+    "english": "Classic Shirt",
+    "translation": "经典衬衫",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ClassicTShirt",
+    "description": null,
+    "english": "Classic T-Shirt",
+    "translation": "经典 T 恤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Torso",
+    "description": null,
+    "english": "Torso",
+    "translation": "躯干",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ClimbAnimation",
+    "description": null,
+    "english": "Climb Animation",
+    "translation": "攀爬动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.DeathAnimation",
+    "description": null,
+    "english": "Death Animation",
+    "translation": "死亡动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.FallAnimation",
+    "description": null,
+    "english": "Fall Animation",
+    "translation": "坠落动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.IdleAnimation",
+    "description": null,
+    "english": "Idle Animation",
+    "translation": "闲置动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.JumpAnimation",
+    "description": null,
+    "english": "Jump Animation",
+    "translation": "跳跃动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.RunAnimation",
+    "description": null,
+    "english": "Run Animation",
+    "translation": "跑步动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.SwimAnimation",
+    "description": null,
+    "english": "Swim Animation",
+    "translation": "游泳动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.WalkAnimation",
+    "description": null,
+    "english": "Walk Animation",
+    "translation": "走路动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.PoseAnimation",
+    "description": null,
+    "english": "Pose Animation",
+    "translation": "造型动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.EmoteAnimation",
+    "description": null,
+    "english": "Emote Animation",
+    "translation": "表情动作动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Skirt",
+    "description": null,
+    "english": "Skirt",
+    "translation": "半裙",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Jacket",
+    "description": null,
+    "english": "Jacket",
+    "translation": "外套",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.LeftShoe",
+    "description": null,
+    "english": "Left Shoe",
+    "translation": "鞋子（左脚）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.RightShoe",
+    "description": null,
+    "english": "Right Shoe",
+    "translation": "鞋子（右脚）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.PantsAccessories",
     "description": null,
     "english": "Pants",
     "translation": "裤子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ShortsAccessories",
+    "description": null,
+    "english": "Shorts",
+    "translation": "短裤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Sweater",
+    "description": null,
+    "english": "Sweater",
+    "translation": "毛衣",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Eyebrow",
+    "description": null,
+    "english": "Eyebrow",
+    "translation": "眉毛",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Eyelash",
+    "description": null,
+    "english": "Eyelash",
+    "translation": "睫毛",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.MoodAnimation",
+    "description": null,
+    "english": "Mood Animation",
+    "translation": "心情动画",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.DynamicHead",
+    "description": null,
+    "english": "Dynamic Head",
+    "translation": "动态头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Bundle",
+    "description": null,
+    "english": "Bundle",
+    "translation": "套装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Character",
+    "description": null,
+    "english": "Character",
+    "translation": "人物",
     "isDeprecated": false
   },
   {
@@ -61868,7 +62716,7 @@
     "key": "Label.AvatarItems",
     "description": null,
     "english": "Items",
-    "translation": "虚拟形象道具",
+    "translation": "道具",
     "isDeprecated": false
   },
   {
@@ -62732,7 +63580,7 @@
     "key": "Label.QrInstructions",
     "description": null,
     "english": "Scan this QR code from your logged in device's camera.",
-    "translation": "从已经登录的设备扫描此二维码。",
+    "translation": "使用已登录的设置摄像头扫描二维码。",
     "isDeprecated": false
   },
   {
@@ -62781,6 +63629,14 @@
     "description": null,
     "english": "QR Code Log In",
     "translation": "二维码登录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "Label.LoginLocationWithIcons",
+    "description": null,
+    "english": "{settingsIcon} or {moreIcon} <b> > Quick Log In</b> to enter this code on that device.",
+    "translation": "{settingsIcon} 或 {moreIcon} <b> > 快速登录</b>：在其他设备输入此验证码。",
     "isDeprecated": false
   },
   {
@@ -68473,6 +69329,14 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Clothing",
+    "description": null,
+    "english": "Clothing",
+    "translation": "服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.Accessories",
     "description": null,
     "english": "Accessories",
@@ -68481,10 +69345,50 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Classics",
+    "description": null,
+    "english": "Classics",
+    "translation": "经典",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ClothingType",
+    "description": null,
+    "english": "Clothing Type",
+    "translation": "服装类型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.Filters",
     "description": null,
     "english": "Filters",
     "translation": "筛选条件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Create3DClothing",
+    "description": null,
+    "english": "Create 3D Clothing",
+    "translation": "创建 3D 服装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ShowForSaleOnly",
+    "description": null,
+    "english": "Show for sale only",
+    "translation": "仅显示在售道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.CreatedDate",
+    "description": null,
+    "english": "Created {date}",
+    "translation": "创建日期：{date}",
     "isDeprecated": false
   },
   {
@@ -68569,10 +69473,50 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.CharacterCount",
+    "description": null,
+    "english": "{characterCount}/{totalCharacters} characters",
+    "translation": "{characterCount}/{totalCharacters} 个字符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Tags",
+    "description": null,
+    "english": "Tags",
+    "translation": "标签",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.TagCount",
+    "description": null,
+    "english": "{tagCount}/{totalTags} tags",
+    "translation": "{tagCount}/{totalTags} 个标签",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Action.OnSale",
     "description": null,
     "english": "On Sale",
     "translation": "在售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ModifyType",
+    "description": null,
+    "english": "To modify UGC type you have to submit the model again",
+    "translation": "若要修改 UGC 类型，你必须重新提交模型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Limited",
+    "description": null,
+    "english": "Limited",
+    "translation": "限量",
     "isDeprecated": false
   },
   {
@@ -68585,11 +69529,347 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublish",
+    "description": null,
+    "english": "Once you publish a Limited you can only modify Tags, Comments, and Sale Locations",
+    "translation": "一旦你发布了限量道具，你只能修改标签、评论和发售地点",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Price",
+    "description": null,
+    "english": "Price",
+    "translation": "价格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MinimumPrice",
+    "description": null,
+    "english": "Minimum price: {minimumPrice} Robux",
+    "translation": "最低价格：{minimumPrice} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Quantity",
+    "description": null,
+    "english": "Quantity",
+    "translation": "数量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SaleLocation",
+    "description": null,
+    "english": "Sale Location",
+    "translation": "发售地点",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MarketplaceAndAllExperiences",
+    "description": null,
+    "english": "Marketplace and All Experiences",
+    "translation": "商城和全部作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFee",
+    "description": null,
+    "english": "Publishing Fee: {publishing fee}",
+    "translation": "发布费：{publishing fee}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Action.Publish",
     "description": null,
     "english": "Publish",
     "translation": "发布",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.PublishLimited",
+    "description": null,
+    "english": "Publish Limited",
+    "translation": "发布限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeNoCapitalF",
+    "description": null,
+    "english": "Publishing fee: {publishing fee}",
+    "translation": "发布费：{publishing fee}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishConfirmation",
+    "description": null,
+    "english": "Are you sure you want to publish \"{itemName}? Once you publish a Limited you can only modify Tags, Comments, and Sale Location.",
+    "translation": "确定要发布“{itemName}”？一旦你发布了限量道具，你只能修改标签、评论和发售地点。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BackToEdit",
+    "description": null,
+    "english": "Back to Edit",
+    "translation": "返回编辑",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.PayAndPublish",
+    "description": null,
+    "english": "Pay & Publish",
+    "translation": "支付并发布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.RemainingBalance",
+    "description": null,
+    "english": "Your balance will be {remainingBalance} after this transaction",
+    "translation": "你在此次交易后的余额将为 {remainingBalance}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPubllshConfirmation",
+    "description": null,
+    "english": "Limited was successfully published",
+    "translation": "已成功发布限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublic",
+    "description": null,
+    "english": "This Limited is public, you can only modify Tags, Comments, and Sale Location settings",
+    "translation": "此限量道具为公开，你只能修改标签、评论和发售地点等设置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.CancelChanges",
+    "description": null,
+    "english": "Cancel Changes",
+    "translation": "取消更改",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CancelChangesConfirmation",
+    "description": null,
+    "english": "Are you sure you want to cancel the changes made to this item? All your changes will be reset to you previous configuration.",
+    "translation": "是否确定要取消对此道具的更改？你的所有更改将重置为之前的配置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedItemUpdateSuccess",
+    "description": null,
+    "english": "Limited Item was successfully updated",
+    "translation": "已成功更新限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PremiumBenefits",
+    "description": null,
+    "english": "Premium Benefits",
+    "translation": "Premium 福利",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.InsufficientRobux",
+    "description": null,
+    "english": "Insufficient Robux",
+    "translation": "Robux 不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.InsufficientRobux",
+    "description": null,
+    "english": "You don't have enough Robux to publish this item. Please, buy Robux and try again.",
+    "translation": "你没有足够的 Robux 来发布此道具。请购买 Robux 并重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BuyRobux",
+    "description": null,
+    "english": "Buy Robux",
+    "translation": "购买 Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.InsufficientRobuxUpsell",
+    "description": null,
+    "english": "You need additional {additionalRobuxNeeded} to publish this item. Would you like to buy a {robuxPackage} package?",
+    "translation": "你需要额外 {additionalRobuxNeeded} 来发布此道具。你想要购买一个 {robuxPackage} 套装吗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PaymentMethodCharge",
+    "description": null,
+    "english": "Your payment method will be charged. Roblox {linkStart} Terms of Use {linkEnd} apply.",
+    "translation": "你的付款方式将被计费。Roblox {linkStart}使用条款{linkEnd}已适用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BuyRobuxAndPublish",
+    "description": null,
+    "english": "Buy Robux & Publish",
+    "translation": "购买 Robux 并发布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.RemainingRobux",
+    "description": null,
+    "english": "The remaining Robux after this transaction will be added to your balance",
+    "translation": "此次交易后的 Robux 余额将被添加至你的帐户余额",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.UnableToPublishLimited",
+    "description": null,
+    "english": "Unable to Publish Limited",
+    "translation": "无法发布限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PublishError",
+    "description": null,
+    "english": "Something went wrong and we were not able to process you request. Please, try again.",
+    "translation": "出错了，我们无法处理你的请求。请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.RetryPublish",
+    "description": null,
+    "english": "Retry Publish",
+    "translation": "重试发布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.GroupRegularSaleOnly",
+    "description": null,
+    "english": "Group owned items can only be published as regular sale. Limiteds for groups are coming soon.",
+    "translation": "群组拥有的道具只能作为正常销售发布。即将推出针对群组的限量道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.NoTagsFound",
+    "description": null,
+    "english": "No tags found with that criteria",
+    "translation": "没有找到符合该条件的标签",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.UnableToPublishLimiteds",
+    "description": null,
+    "english": "Unable to Publish Limiteds",
+    "translation": "无法发布限量道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.LimitedPublishLimit",
+    "description": null,
+    "english": "It seems that you published a Limited recently. You can only publish one Limited Item in 24 hours. Try again later.",
+    "translation": "看来你最近发布了一个限量道具。每 24 小时你只能发布一个限量道具，请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.CancelConfiguration",
+    "description": null,
+    "english": "Cancel Configuration",
+    "translation": "取消配置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.BackToConfigure",
+    "description": null,
+    "english": "Back to Configure",
+    "translation": "返回配置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByID",
+    "description": null,
+    "english": "Experience By ID (API Only)",
+    "translation": "按 ID 排序作品（仅 API）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceID",
+    "description": null,
+    "english": "Experience ID",
+    "translation": "作品 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceCount",
+    "description": null,
+    "english": "{experienceCount}/{totalExperiences} experiences",
+    "translation": "{experienceCount}/{totalExperiences} 个作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MarketplaceOnly",
+    "description": null,
+    "english": "Marketplace Only",
+    "translation": "仅商城",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MarketplaceAndGroupExperiences",
+    "description": null,
+    "english": "Marketplace and {groupName}'s Experiences",
+    "translation": "商城和“{groupName}”的作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MarketplaceAndMyExperiences",
+    "description": null,
+    "english": "Marketplace and My Experiences",
+    "translation": "商城和我的作品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeCorrected",
+    "description": null,
+    "english": "Publishing Fee: {publishing fee}",
+    "translation": "发布费：{publishing fee}",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.AccountCompromisePrompt",
@@ -72984,6 +74264,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.AssetPublishAPIDepreciated",
+    "description": "Depreciated Assets API",
+    "english": "Assets API (Depreciated)",
+    "translation": "素材 API（已弃用）",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GameTranslation",
     "key": "Heading.Translation",
     "description": null,
@@ -74553,6 +75841,14 @@
   },
   {
     "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Military",
+    "description": "Genre Tile Title - Military",
+    "english": "Military",
+    "translation": "军事",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
     "key": "Tile.Obby",
     "description": "Genre Tile Title - Obby",
     "english": "Obby",
@@ -74565,6 +75861,14 @@
     "description": "Genre Tile Title - Racing",
     "english": "Racing",
     "translation": "竞速",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.RolePlaying",
+    "description": "Genre Tile Title - Role Playing",
+    "english": "Role Playing",
+    "translation": "角色扮演",
     "isDeprecated": false
   },
   {
@@ -74593,6 +75897,14 @@
   },
   {
     "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Story",
+    "description": "Genre Tile Title - Story",
+    "english": "Story",
+    "translation": "故事",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
     "key": "Tile.Strategy",
     "description": "Genre Tile Title - Strategy",
     "english": "Strategy",
@@ -74605,6 +75917,22 @@
     "description": "Genre Tile Title - Tycoon",
     "english": "Tycoon",
     "translation": "大亨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Heading.Title",
+    "description": "Section heading for Genre Explorer. Showing on Discover page on top of the carousel.",
+    "english": "Browse by Category",
+    "translation": "按类别浏览",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicles",
+    "description": "Genre Tile Title - Vehicles",
+    "english": "Vehicles",
+    "translation": "车辆",
     "isDeprecated": false
   },
   {

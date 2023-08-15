@@ -832,6 +832,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowed",
+    "description": null,
+    "english": "Your account cannot log in with a one-time code",
+    "translation": "لا يمكن لحسابك تسجيل الدخول برمز لمرة واحدة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV2",
+    "description": null,
+    "english": "You must log in with a different method",
+    "translation": "يجب عليك تسجيل الدخول بطريقة مختلفة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV3",
+    "description": null,
+    "english": "Your account is ineligible to log in with a one-time code",
+    "translation": "حسابك غير مؤهل لتسجيل الدخول باستخدام رمز لمرة واحدة",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -4220,7 +4244,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
-    "translation": "من خلال إدخال الرمز والتحقق من هذا المربع، فإنك تعطي موافقتك لطفلك للوصول إلى Roblox.",
+    "translation": "بتحديد هذا المربع والنقر على المتابعة، أنت تعطي موافقتك لطفلك للوصول إلى Roblox.",
     "isDeprecated": false
   },
   {
@@ -58412,7 +58436,7 @@
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
     "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
-    "translation": "تمكين التحقق بخطوتين عن طريق المصادقة",
+    "translation": "جعل التحقق من خطوتين مؤكدين عن طريق المصادقة ممكّن",
     "isDeprecated": false
   },
   {
@@ -58428,7 +58452,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
     "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
-    "translation": "إذا تعرض حسابك للخطر، فمن غير المحتمل أن يتمكن Roblox من استعادة حسابك أو استرداد قيمته، بما في ذلك العناصر المفقودة والعملة الافتراضية.",
+    "translation": "إذا تعرض حسابك للخطر، فمن غير المحتمل أن يتمكن Roblox من استعادة حسابك.",
     "isDeprecated": false
   },
   {
@@ -61109,6 +61133,14 @@
     "description": null,
     "english": "One-Time Code",
     "translation": "رمز لمرة واحدة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V2.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}{boldStart}Verification Code: {code}{boldEnd}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code above to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our {linkTagWithParentGuideLinkStart}Parent’s Guide{linkTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "مرحبا،{lineBreak}{lineBreak}طلب طفلك إنشاء حساب على Roblox، منصة ترفيهية على الانترنت تمكن الأطفال من تخيل و خلق و لعب معا في عالم ثلاثي الأبعاد غير مغمر و مصدره المستخدم.{lineBreak}{lineBreak}{boldStart}رمز التحقق: {code}{boldEnd}{lineBreak}{lineBreak}طفلك قدم لنا اسم مستخدم، تاريخ الميلاد، وعنوان البريد الإلكتروني للوالد لإنشاء حساب. لإكمال عملية إنشاء الحساب، يجب عليك الموافقة على استخدام روبلوكس لطفلك.{lineBreak}{lineBreak}يجب عليك إدخال الرمز أعلاه لإكمال تدفق التسجيل والموافقة على استخدام طفلك للروبلوكس. بإدخال الرمز ، فإنك توافق على {linkTagWithTermsLinkStart}شروط Roblox{linkTagEnd}، بما في ذلك التحكيم، و {linkTagWithPrivacyPolicyLinkStart}سياسة الخصوصية{linkTagEnd}، سوف تشرف على استخدام الروبلوكس لطفلك وتكون مسؤولاً فقط عن استخدامه، كما توافق على ذلك، عندما يكون ذلك مناسباً لتداول البيانات الشخصية للطفل فيما يتعلق بالخدمة.{lineBreak}{lineBreak}{boldStart}دليل الوالدين إلى Roblox{boldEnd}{lineBreak}{lineBreak}نوصي بزيارة دليل الوالدين{linkTagEnd} الخاص بنا {linkTagWithParentGuideLinkStart}لمساعدتك في التعرف على منصتنا وإيجاد نصائح مفيدة لإنشاء تجربة إيجابية لأطفالك على Roblox.{lineBreak}{lineBreak}{boldStart}{boldEnd}{lineBreak}{lineBreak}يمكنك إزالة حساب طفلك في أي وقت من خلال الاتصال بخدمات العملاء على https://www. oblox.com/support. لن يتم استخدام بريدك الإلكتروني لأي غرض آخر، أو الكشف عنه لأطراف ثالثة، أو دمجه مع أي معلومات شخصية أخرى تم جمعها من طفلك. الرجاء مراجعة سياسة الخصوصية لدينا لمزيد من المعلومات.{lineBreak}{lineBreak}شكرا،{lineBreak}{lineBreak}فريق الروبلوكس",
     "isDeprecated": false
   }
 ]
