@@ -1264,6 +1264,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "LabelSubmit",
+    "description": null,
+    "english": "Submit",
+    "translation": "Kirim",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "MessagePasswordsDoNotMatch",
+    "description": null,
+    "english": "Passwords do not match.",
+    "translation": "Kata sandi tidak cocok.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Response.PasswordComplexity",
+    "description": null,
+    "english": "Please create a more complex password.",
+    "translation": "Harap buat kata sandi yang lebih rumit.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Response.PasswordContainsUsernameError",
+    "description": null,
+    "english": "Password shouldn't match username.",
+    "translation": "Kata sandi tidak boleh sama dengan nama pengguna.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.Captcha",
     "key": "Action.Reload",
     "description": null,
@@ -7537,6 +7569,14 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.SignoutSessionFailed",
+    "description": null,
+    "english": "There was an error signing you out of all other sessions, please try again later.",
+    "translation": "Terjadi eror saat kamu sign out dari semua sesi lainnya. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Response.NotificationBar.PhoneVerifyConfirmation",
     "description": null,
     "english": "Phone has been successfully updated!",
@@ -7565,6 +7605,22 @@
     "description": null,
     "english": "Your PIN is now set. You will need to enter this PIN before accessing the Settings page in the future.",
     "translation": "PIN kamu sudah diatur. Kamu perlu memasukkan PIN ini sebelum mengakses halaman Pengaturan nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.DisconnectXBoxError",
+    "description": null,
+    "english": "There was an error disconnecting your Xbox account, please try again later.",
+    "translation": "Terjadi eror saat memutuskan koneksi akun Xbox kamu. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.UpdateNotificationSettingsError",
+    "description": null,
+    "english": "There was an error updating your notification settings, please try again later.",
+    "translation": "Terjadi eror saat meng-update pengaturan notifikasi kamu. Coba lagi nanti.",
     "isDeprecated": false
   },
   {
@@ -7629,6 +7685,14 @@
     "description": null,
     "english": "You must add a password to your Roblox account to change your birthday.",
     "translation": "Kamu perlu menambahkan kata sandi ke roblox akunmu untuk mengubah tanggal lahir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.CurrencyServiceError",
+    "description": null,
+    "english": "There was an error with the currency service. Try again later.",
+    "translation": "Terjadi eror dengan layanan mata uang. Coba lagi nanti.",
     "isDeprecated": false
   },
   {
@@ -7849,10 +7913,234 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.UsernameChangeEmail.Body",
+    "description": "DEPRECATED, DO NOT INCLUDE",
+    "english": "Hello Roblox user, {lineBreaks}Your username has recently been changed from {oldUsername} to {newUsername}. If you did not request a username change, please email {robloxInfoEmailAddress}.",
+    "translation": "Hai pengguna Roblox, {lineBreaks}Baru-baru ini nama pengguna kamu telah diubah dari {oldUsername} menjadi {newUsername}. Jika kamu tidak mengirim permintaan perubahan ini, harap kirim email ke {robloxInfoEmailAddress}.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.UsernameChangeEmail.Subject",
+    "description": "Subject for username change email that is sent out on a successful change of username",
+    "english": "Roblox Username Change",
+    "translation": "Perubahan Nama Pengguna Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.UsernameChangeEmail.From",
+    "description": "From address for username change email that is sent out on a successful change of username",
+    "english": "{escapeLiteralStart}Roblox Username Change{escapeLiteralEnd} {fromEmailAddress}",
+    "translation": "{escapeLiteralStart}Perubahan Nama Pengguna Roblox{escapeLiteralEnd} {fromEmailAddress}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.From.Under13",
+    "description": "From address for verification email that is sent out when an under 13 user adds an email to the account",
+    "english": "{escapeLiteratStart}Roblox Account Authorization{escapeLiteralEnd} {fromEmailAddress}",
+    "translation": "{escapeLiteratStart}Otorisasi Akun Roblox{escapeLiteralEnd} {fromEmailAddress}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.From.Over13",
+    "description": "From address for verification email that is sent out when an over 13 user adds an email to the account",
+    "english": "{escapeLiteratStart}Roblox Email Verification{escapeLiteralEnd} {fromEmailAddress}",
+    "translation": "{escapeLiteratStart}Verifikasi Email Roblox{escapeLiteralEnd} {fromEmailAddress}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.Subject.Under13",
+    "description": "Subject for verification email that is sent out when an under 13 user adds an email to the account",
+    "english": "Roblox Account Authorization",
+    "translation": "Otorisasi Akun Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.Subject.Over13",
+    "description": "Subject for verification email that is sent out when an over 13 user adds an email to the account",
+    "english": "Roblox Email Verification",
+    "translation": "Verifikasi Email Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.HtmlBody.Over13\t",
+    "description": "Email body of verification email that is sent out when an over 13 user adds an email to the account",
+    "english": "Dear Roblox user,{lineBreak}{lineBreak}We are pleased that you have chosen to secure your {username} account by providing an email address.{lineBreak}By verifying the email address associated with your Roblox account, you enable a higher level of account security.{lineBreak}Please click the button below to complete the verification process.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}Verify Email{buttonEnd}{aTagEnd}",
+    "translation": "Hai pengguna Roblox,{lineBreak}{lineBreak}Terima kasih telah mengamankan akun {username} kamu dengan memberikan alamat email.{lineBreak}Dengan memverifikasi alamat email yang terhubung dengan akun Roblox kamu, kamu dapat mengaktifkan keamanan akun dengan level yang lebih tinggi.{lineBreak}Klik tombol di bawah untuk menyelesaikan proses verifikasi.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}Verifikasi Email{buttonEnd}{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.PlainBody.Over13",
+    "description": "Email body of verification email that is sent out when an over 13 user adds an email to the account",
+    "english": "Dear Roblox user,{lineBreak}{lineBreak}We are pleased that you have chosen to secure your {username} account by providing an email address.{lineBreak}By verifying the email address associated with your Roblox account, you enable a higher level of account security.{lineBreak}Please click the link below to complete the verification process{lineBreak}{verificationLink}.\n",
+    "translation": "Hai pengguna Roblox,{lineBreak}{lineBreak}Terima kasih telah mengamankan akun {username} kamu dengan memberikan alamat email.{lineBreak}Dengan memverifikasi alamat email yang terhubung dengan akun Roblox kamu, kamu dapat mengaktifkan keamanan akun dengan level yang lebih tinggi.{lineBreak}Klik tautan di bawah untuk menyelesaikan proses verifikasi.{lineBreak}{verificationLink}.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.HtmlBody.Under13",
+    "description": "Email body of verification email that is sent out when an under 13 user adds an email to the account",
+    "english": "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}",
+    "translation": "Hai,{lineBreak}{lineBreak}Anak Anda telah membuat akun {boldTagStart}{username}{boldTagEnd} di Roblox, platform pengalaman online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D yang imersif. Platform kami juga menyediakan Roblox Studio, yaitu alat gratis bagi pengguna untuk membuat apa pun yang mereka bayangkan, dari pengalaman membangun seret-lepas yang sederhana hingga game multipemain yang rumit. Jutaan anak telah menggunakan Roblox untuk membayangkan seperti apa kalau mereka membuat theme park yang keren, berkompetisi sebagai pengendara mobil balap profesional, menjadi model fashion show, atau membuat rumah impian, dan hang out dengan teman mereka.{lineBreak}{lineBreak}Email ini untuk menginformasikan bahwa anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua kepada kami. Alamat orang tua hanya akan digunakan untuk mengelola akun, atur ulang kata sandi jika anak mereka lupa kata sandi, dan untuk memberikan notifikasi kepada orang tua akan perubahan akses akun anak mereka. Untuk memverifikasi alamat email Anda, silakan klik tombol di bawah: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verifikasi Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Tentang Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox berdedikasi untuk membangun lingkungan yang ramah keluarga dan menyenangkan. Kami senantiasa mengembangkan fitur keamanan kami dan bekerja dengan pakar keamanan siber untuk memastikan bahwa semua pemain memiliki tempat yang aman dan nyaman untuk bermain, chat, dan berkolaborasi di proyek yang kreatif. Kami merekomendasikan Anda untuk mengunjungi Panduan Orang Tua untuk membantu Anda mengenal platform kami dan menemukan tip bermanfaat untuk menciptakan pengalaman yang positif bagi anak Anda di Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox juga memiliki {boldTagStart}kendali orang tua{boldTagEnd}. Orang tua dapat mengaktifkan PIN orang tua dan mengubah pengaturan komunikasi dan chat. Anda dapat menemukan kendali ini dengan mengunjungi tab keamanan dan privasi di pengaturan akun saat log in ke akun anak Anda.{lineBreak}{lineBreak}Untuk menambahkan PIN orang tua, kunjungi: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Untuk mengubah pengaturan chat, kunjungi:{aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privasi{boldTagEnd}{lineBreak}{lineBreak}Anda dapat menghapus akun anak Anda kapan saja dengan menghubungi bantuan di {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Email Anda tidak akan digunakan untuk tujuan lain, dibagikan ke pihak ketiga, atau digabungkan dengan informasi pribadi lainnya yang didapatkan dari anak Anda. Silakan tinjau kebijakan privasi kami untuk informasi lebih lanjut di {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Roblox {lineBreak}{lineBreak} Jangan membalas email ini. {lineBreak}{lineBreak}{aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.PlainBody.Under13",
+    "description": "Email body of verification email that is sent out when an under 13 user adds an email to the account",
+    "english": "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and explore together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all users have a safe, comfortable place to explore, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}",
+    "translation": "Hai,{lineBreak} {lineBreak}Anak Anda telah membuat akun {username} di Roblox, platform pengalaman online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D yang imersif. Platform kami juga menyediakan Roblox Studio, yaitu alat gratis bagi pengguna untuk membuat apa pun yang mereka bayangkan, dari pengalaman membangun seret-lepas yang sederhana hingga game multipemain yang rumit. Jutaan anak telah menggunakan Roblox untuk membayangkan seperti apa kalau mereka membuat theme park yang keren, berkompetisi sebagai pengendara mobil balap profesional, menjadi model fashion show, atau membuat rumah impian, dan hang out dengan teman mereka.{lineBreak}{lineBreak}Email ini untuk menginformasikan bahwa anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua kepada kami. Alamat orang tua hanya akan digunakan untuk mengelola akun, atur ulang kata sandi jika anak mereka lupa kata sandi, dan untuk memberikan notifikasi kepada orang tua akan perubahan akses akun anak mereka. Untuk memverifikasi alamat email Anda, silakan klik tombol di bawah:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Tentang Roblox{lineBreak} {lineBreak}Roblox berdedikasi untuk membangun lingkungan yang ramah keluarga dan menyenangkan. Kami senantiasa mengembangkan fitur keamanan kami dan bekerja dengan pakar keamanan siber untuk memastikan bahwa semua pemain memiliki tempat yang aman dan nyaman untuk bermain, chat, dan berkolaborasi di proyek yang kreatif. Kami merekomendasikan Anda untuk mengunjungi Panduan Orang Tua untuk membantu Anda mengenal platform kami dan menemukan tip bermanfaat untuk menciptakan pengalaman yang positif bagi anak Anda di Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox juga memiliki kendali orang tua. Orang tua dapat mengaktifkan PIN orang tua dan mengubah pengaturan komunikasi dan chat. Anda dapat menemukan kendali ini dengan mengunjungi tab keamanan dan privasi di pengaturan akun saat log in ke akun anak Anda.{lineBreak}{lineBreak}Untuk menambahkan PIN orang tua, kunjungi:{accountSecurityLink}{lineBreak}{lineBreak}Untuk mengubah pengaturan chat, kunjungi{chatPrivacyLink} {lineBreak}{lineBreak}Privasi{lineBreak}{lineBreak} Anda dapat menghapus akun anak Anda kapan saja dengan menghubungi bantuan di {supportPageLink}. Email Anda tidak akan digunakan untuk tujuan lain, dibagikan ke pihak ketiga, atau digabungkan dengan informasi pribadi lainnya yang didapatkan dari anak Anda. Silakan tinjau kebijakan privasi kami untuk informasi lebih lanjut di {privacyPageLink}.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Roblox{lineBreak}Jangan membalas email ini.{lineBreak} {robloxWebiteLink} {lineBreak} {supportPageLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.HtmlBody.Under13.Part2",
+    "description": "Email body of verification email that is sent out when an under 13 user adds an email to the account part 2",
+    "english": "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}",
+    "translation": "Anda dapat menemukan kendali ini dengan mengunjungi tab keamanan dan privasi di pengaturan akun saat log in ke akun anak Anda.{lineBreak}{lineBreak}Untuk menambahkan PIN orang tua, kunjungi: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Untuk mengubah pengaturan chat, kunjungi: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privasi{boldTagEnd}{lineBreak}{lineBreak}Anda dapat menghapus akun anak Anda kapan saja dengan menghubungi bantuan di {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Email Anda tidak akan digunakan untuk tujuan lain, dibagikan ke pihak ketiga, atau digabungkan dengan informasi pribadi lainnya yang didapatkan dari anak Anda. Silakan tinjau kebijakan privasi kami untuk informasi lebih lanjut di {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Roblox {lineBreak}{lineBreak} Jangan membalas email ini. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.PlainBody.Under13.Part2",
+    "description": "Email body of verification email that is sent out when an under 13 user adds an email to the account part 2",
+    "english": "To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}",
+    "translation": "Untuk mengubah pengaturan chat, kunjungi: {chatPrivacyLink} {lineBreak}{lineBreak}Privasi{lineBreak}{lineBreak} Kamu dapat menghapus akun anak Anda dengan menghubungi bantuan Roblox di {supportPageLink}. Email Anda tidak akan digunakan untuk tujuan lain, dibagikan ke pihak ketiga, atau digabungkan dengan informasi pribadi lainnya yang didapatkan dari anak Anda. Silakan tinjau kebijakan privasi kami untuk informasi lebih lanjut di {privacyPageLink}.{lineBreak}{lineBreak}Terima kasih,{lineBreak}{lineBreak}Tim Roblox{lineBreak}Jangan membalas email ini.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Notifications.GameUpdate",
+    "description": "Checkbox label for enabling game update notifications in the notification stream",
+    "english": "I receive update notifications",
+    "translation": "Saya menerima notifikasi update",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.System",
+    "description": null,
+    "english": "System error.",
+    "translation": "Sistem Eror.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.NoPin",
+    "description": null,
+    "english": "No PIN exists on the account.",
+    "translation": "Tidak ada PIN di akun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.AccountLocked",
+    "description": null,
+    "english": "The account is locked. Unlock the acount before performing the action.",
+    "translation": "Akun diblokir. Buka kunci akun sebelum melakukan tindakan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.TooManyRequests",
+    "description": null,
+    "english": "Too many requests made. Try again later.",
+    "translation": "Terlalu banyak permintaan. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.IncorrectPin",
+    "description": null,
+    "english": "Incorrect PIN.",
+    "translation": "PIN Salah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.AccountHasPin",
+    "description": null,
+    "english": "The account already has a PIN. Try making a different request.",
+    "translation": "Akun sudah memiliki PIN. Coba kirim permintaan yang berbeda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.NoVerifiedEmail",
+    "description": null,
+    "english": "The account does not have a verified email.",
+    "translation": "Akun tidak memiliki email terverifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.InvalidPinFormat",
+    "description": null,
+    "english": "Invalid PIN format.",
+    "translation": "Format PIN tidak valid.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Default",
+    "description": null,
+    "english": "Something went wrong, please try again later.",
+    "translation": "Terjadi eror. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.Unknown",
+    "description": null,
+    "english": "An unknown error occurred.",
+    "translation": "Terjadi eror yang tidak dikenal.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.PinLocked",
+    "description": null,
+    "english": "PIN is locked.",
+    "translation": "PIN terkunci.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Message.Error.Email.FeatureDisabled",
     "description": null,
     "english": "This feature is currently disabled. Please try again later.",
     "translation": "Fitur ini sedang tidak aktif. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.TooManyAccounts",
+    "description": null,
+    "english": "There are too many accounts associated with this email address.",
+    "translation": "Ada terlalu banyak akun yang terkait dengan email ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.SameEmail",
+    "description": null,
+    "english": "This is already the current email.",
+    "translation": "Ini email saat ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.AlreadyVerified",
+    "description": null,
+    "english": "The email is already verified.",
+    "translation": "Email sudah terverifikasi.",
     "isDeprecated": false
   },
   {
@@ -7869,6 +8157,150 @@
     "description": null,
     "english": "Too many attempts to send verification email. Please try again later.",
     "translation": "Terlalu banyak upaya untuk mengirim email verifikasi. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.IncorrectPassword",
+    "description": null,
+    "english": "Password is incorrect.",
+    "translation": "Kata sandi salah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.InvalidEmail",
+    "description": null,
+    "english": "Invalid email address.",
+    "translation": "Alamat email tidak valid.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.Email.NoEmailAssociated",
+    "description": null,
+    "english": "No email address is associated with the account.",
+    "translation": "Tidak ada email yang terhubung dengan akun ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.WhoCanSeeInventory",
+    "description": "This setting controls who can see the user's inventory.",
+    "english": "Who can see my inventory?",
+    "translation": "Siapa yang dapat melihat inventori saya?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.WhoCanSeeInventory",
+    "description": null,
+    "english": "This setting controls who can see your inventory.",
+    "translation": "Pengaturan ini mengendalikan siapa yang dapat melihat inventori kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Respones.InventoryAndTradePrivacyConflictError",
+    "description": null,
+    "english": "The value for \"Who can trade with me\" should be the same or more restrictive than the value for \"Who can see my inventory\".",
+    "translation": "Opsi \"Siapa yang dapat trade dengan saya\" harus sama atau lebih dibatasi daripada opsi \"Siapa yang dapat melihat inventori saya\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.From",
+    "description": "From address for account email revert email that is sent out to the old account when the new account email is verified.",
+    "english": "{escapeLiteralStart}Roblox Email Reset{escapeLiteralEnd} {fromEmailAddress}",
+    "translation": "{escapeLiteralStart}Atur Ulang Email Roblox{escapeLiteralEnd} {fromEmailAddress}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.Subject",
+    "description": "Subject for account email revert email that is sent out to the old account when the new account email is verified.",
+    "english": "Roblox Email Reset",
+    "translation": "Atur Ulang Email Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.PlainBody",
+    "description": "DEPRECATED, DO NOT USE",
+    "english": "Dear Roblox user,{lineBreak}{lineBreak}We noticed that you have changed the email address for your {username} account from {oldEmailAddress} to {newEmailAddress}. Just in case you really didn't mean to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{revertAccountEmailLink}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox you don't have to do anything! It's already set up.{lineBreak}Please do not reply to this message. If you have any questions please email {robloxInfoEmailAddress}.",
+    "translation": "Hai pengguna Roblox,{lineBreak}{lineBreak}Alamat email untuk akun {username} telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap klik tautan berikut {lineBreak}{revertAccountEmailLink}{lineBreak}untuk mengubah kembali alamat email. Kamu juga perlu memasukkan kata sandi baru. Dengan demikian, kami tahu bahwa akun kamu tetap aman.{lineBreak}{lineBreak}Kalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email Roblox barumu sudah siap.{lineBreak}Jangan membalas email ini. Jika kamu memiliki pertanyaan, silakan kirim email ke {robloxInfoEmailAddress}.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.HtmlBody",
+    "description": "DEPRECATED, DO NOT USE",
+    "english": "Dear Roblox user,{lineBreak}{lineBreak}We noticed that you have changed the email address for your {username} account from {oldEmailAddress} to {newEmailAddress}. Just in case you really didn't mean to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox you don't have to do anything! It's already set up.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions please email {robloxInfoEmailAddress}.",
+    "translation": "Hai pengguna Roblox,{lineBreak}{lineBreak}Alamat email untuk akun {username} telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap klik tautan berikut{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}untuk mengubah kembali alamat email. Kamu juga perlu memasukkan kata sandi baru. Dengan demikian, kami tahu bahwa akun kamu tetap aman.{lineBreak}{lineBreak}Kalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.{lineBreak}{lineBreak}Jangan membalas email ini. Jika kamu memiliki pertanyaan, silakan kirim email ke {robloxInfoEmailAddress}.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.UpdateInventorySetting",
+    "description": null,
+    "english": "We have updated your inventory privacy setting. The inventory and trade settings must be consistent.",
+    "translation": "Kami telah meng-update pengaturan privasi inventori kamu. Pengaturan inventori dan trade harus sama.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.UpdateTradeSetting",
+    "description": null,
+    "english": "We have updated your trade privacy setting. The inventory and trade settings must be consistent.",
+    "translation": "Kami telah meng-update pengaturan privasi trade kamu. Pengaturan inventori dan trade harus sama.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ClassicTheme",
+    "description": "name of Theme, classic theme",
+    "english": "Off",
+    "translation": "Mati",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LightTheme",
+    "description": "Light Theme",
+    "english": "Light",
+    "translation": "Terang",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DarkTheme",
+    "description": "Dark Theme",
+    "english": "Dark",
+    "translation": "Gelap",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ThemeTitle",
+    "description": null,
+    "english": "Theme",
+    "translation": "Tema",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RobuxProductName",
+    "description": "The robux package name",
+    "english": "{amount} Robux",
+    "translation": "{amount} Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.FastTrack",
+    "description": "Fast Track is the name of the limited access community moderation program.",
+    "english": "Fast Track",
+    "translation": "Fast Track",
     "isDeprecated": false
   },
   {
@@ -8052,7 +8484,7 @@
     "key": "Description.AccountEmailRevertEmail.BodyPlainText.V1",
     "description": "DEPRECATED, DO NOT USE",
     "english": "Dear {username},\n\nWe noticed you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to contact customer service (https://www.roblox.com/support) to change the email back. That way we will know for sure that your account is secure and safe.\n\nIf you are happy with your new email address on Roblox you don't have to do anything! It's already set up.\nPlease do not reply to this message. If you have any questions please email {robloxInfoEmailAddress}.",
-    "translation": "Hai {username} \n \nAlamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan (https://www.roblox.com/support) untuk mengubah kembali alamat email agar akun kamu tetap aman.\n \nKalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.\nJangan membalas email ini. Jika kamu memiliki pertanyaan, silakan kirim email ke {robloxInfoEmailAddress}.",
+    "translation": "Hai {username} \n \nAlamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan (https://www.roblox.com/support) untuk mengubah kembali alamat email. Dengan demikian, kami tahu bahwa akun kamu tetap aman.\n \nKalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email Roblox barumu sudah siap.\nJangan membalas email ini. Jika kamu memiliki pertanyaan, silakan kirim email ke {robloxInfoEmailAddress}.",
     "isDeprecated": true
   },
   {
@@ -8068,7 +8500,7 @@
     "key": "Description.AccountEmailRevertEmail.BodyHtml.V2",
     "description": "DEPRECATED, DO NOT USE",
     "english": "Dear {username},<br/><br/>We noticed you have changed the email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to contact customer support ({supportLink}) to change the email back. That way we will know for sure that your account is secure and safe.<br/><br/>If you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.<br/>Please do not reply to this message. If you have any questions, please see the Roblox help page ({helpLink}).",
-    "translation": "Hai {username},<br/><br/>Alamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan ({supportLink}) untuk mengubah kembali alamat email agar akun kamu tetap aman.<br/><br/>Kalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.<br/>Jangan membalas email ini. Jika kamu memiliki pertanyaan, kunjungi halaman bantuan Roblox ({helpLink}).",
+    "translation": "Hai {username},<br/><br/>Alamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan ({supportLink}) untuk mengubah kembali alamat email. Dengan demikian, kami tahu bahwa akun kamu tetap aman.<br/><br/>Kalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.<br/>Jangan membalas email ini. Jika kamu memiliki pertanyaan, kunjungi halaman bantuan Roblox ({helpLink}).",
     "isDeprecated": true
   },
   {
@@ -8076,7 +8508,7 @@
     "key": "Description.AccountEmailRevertEmail.BodyPlainText.V2",
     "description": "DEPRECATED, DO NOT USE",
     "english": "Dear {username},\n\nWe noticed you have changed the email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to contact customer support ({supportLink}) to change the email back. That way we will know for sure that your account is secure and safe.\n\nIf you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.\nPlease do not reply to this message. If you have any questions, please see the Roblox help page ({helpLink}).",
-    "translation": "Hai {username},\n\nAlamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan ({supportLink}) untuk mengubah kembali alamat email agar akun kamu tetap aman.\n\nKalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.\nJangan membalas email ini. Jika kamu memiliki pertanyaan, kunjungi halaman bantuan Roblox ({helpLink}).",
+    "translation": "Hai {username},\n\nAlamat email kamu telah diubah dari {oldEmailAddress} menjadi {newEmailAddress}. Jika kamu tidak bermaksud untuk mengubahnya atau berpikir bahwa orang lain mengubahnya secara tidak sengaja, harap hubungi bantuan ({supportLink}) untuk mengubah kembali alamat email. Dengan demikian, kami tahu bahwa akun kamu tetap aman.\n\nKalau perubahan ini dilakukan oleh kamu, kamu tidak perlu melakukan apa pun. Email barumu sudah siap.\nJangan membalas email ini. Jika kamu memiliki pertanyaan, kunjungi halaman bantuan Roblox ({helpLink}).",
     "isDeprecated": true
   },
   {
@@ -8252,7 +8684,7 @@
     "key": "Description.VerificationEmail.Body.Under13.V2",
     "description": "First part of the body text for the 'email verification' email for users under 13. This is directed at the parent of the user. Below this text is an \"I Agree, Verify Email\" button that the parent can click to proceed.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address. Please confirm this email address is correct by {emphasisStart}clicking the button below to complete the validation process{emphasisEnd}. Regardless of whether you validate the parental email address or not, the child will still be able to retain their account and chat with others.{paragraphEnd}{paragraphStart}By clicking the \"I Agree, Validate Email\" button you also agree that (a) You and your child agree to the Roblox {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Terms{aTagEnd}, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}",
-    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Anak Anda telah membuat akun{emphasisStart}{username}{emphasisEnd} di Roblox, platform game online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D imersif yang dikembangkan oleh pengguna.{paragraphEnd}{paragraphStart}Anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua. Harap konfirmasikan bahwa ini adalah alamat email yang benar dengan {emphasisStart}mengklik tombol di bawah untuk menyelesaikan proses validasi{emphasisEnd}. Terlepas dari apakah Anda memvalidasi email orang tua atau tidak, anak Anda tetap dapat mempertahankan akunnya dan chat dengan pengguna lain.{paragraphEnd}{paragraphStart}Dengan mengklik tombol \"Saya Setuju, Validasi Email\", Anda juga menyetujui bahwa (a) Anda dan anak Anda menyetujui {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Ketentuan{aTagEnd} Roblox, termasuk arbitrasi dan (b) Anda akan memonitor dan sepenuhnya bertanggung jawab atas penggunaan Roblox anak Anda.{paragraphEnd}",
+    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Anak Anda telah membuat akun{emphasisStart}{username}{emphasisEnd} di Roblox, platform game online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D imersif yang dikembangkan oleh pengguna.{paragraphEnd}{paragraphStart}Anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua kepada kami. Harap konfirmasikan bahwa ini adalah alamat email yang benar dengan {emphasisStart}mengklik tombol di bawah untuk menyelesaikan proses validasi{emphasisEnd}. Terlepas dari apakah Anda memvalidasi email orang tua atau tidak, anak Anda tetap dapat mempertahankan akunnya dan chat dengan pengguna lain.{paragraphEnd}{paragraphStart}Dengan mengklik tombol \"Saya Setuju, Validasi Email\", Anda juga menyetujui bahwa (a) Anda dan anak Anda menyetujui {aTagStartWithHref}{termsOfServiceLink}{hrefEnd}Ketentuan{aTagEnd} Roblox, termasuk arbitrasi dan (b) Anda akan memonitor dan sepenuhnya bertanggung jawab atas penggunaan Roblox anak Anda.{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -8277,6 +8709,358 @@
     "description": "Footer at the bottom of the 'email verification' email for users under 13.",
     "english": "Do not reply to this email directly. You are receiving this email because there has been an attempt to verify a Roblox account with your email. If you did not make this request, please disregard this email.",
     "translation": "Jangan membalas ke email ini. Kamu menerima email ini karena telah ada upaya untuk memverifikasi akun Roblox dengan menggunakan email kamu. Jika kamu tidak melakukannya, abaikan email ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VerificationEmail.Links.Under13.V2",
+    "description": "Links at the bottom of the 'email verification' email for users under 13.",
+    "english": "{aTagStartWithHref}{parentalPageLink}{hrefEnd}For Parents{aTagEnd} | {aTagStartWithHref}{supportPageLink}{hrefEnd}Support{aTagEnd}",
+    "translation": "{aTagStartWithHref}{supportPageLink}{hrefEnd}Bantuan{aTagEnd} {aTagStartWithHref}{parentalPageLink}{hrefEnd}untuk Orang Tua{aTagEnd} Saya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountPin",
+    "description": null,
+    "english": "When this setting is enabled, the PIN must be provided before changing settings.",
+    "translation": "Saat pengaturan ini diaktifkan, masukkan PIN untuk dapat mengubah pengaturan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountRestrictions",
+    "description": null,
+    "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings (under the {linkStart}Privacy{linkEnd} page) will be set to Off.",
+    "translation": "Saat pengaturan ini diaktifkan, akun ini hanya dapat mengakses konten yang pantas untuk semua pengguna. Selain itu, Pengaturan Komunikasi (di bagian halaman {linkStart}Privasi{linkEnd}) akan dimatikan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ParentalControls",
+    "description": null,
+    "english": "What are Parental Controls?",
+    "translation": "Di mana Kendali Orang Tua?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalControls",
+    "description": null,
+    "english": "Parental Controls allow parents to choose the correct settings that will control what experiences their child can access.",
+    "translation": "Dengan Kendali Orang Tua, orang tua dapat memilih pengaturan yang tepat yang akan mengendalikan pengalaman apa yang dapat diakses oleh anak mereka.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.NoRestrictions",
+    "description": null,
+    "english": "No Restrictions",
+    "translation": "Tida Ada Pembatasan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.Teen",
+    "description": null,
+    "english": "Teen",
+    "translation": "Remaja",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.PreTeen",
+    "description": null,
+    "english": "Pre-Teen",
+    "translation": "Praremaja",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.Child",
+    "description": null,
+    "english": "Child",
+    "translation": "Anak",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.ParentalControls",
+    "description": null,
+    "english": "Parental Controls",
+    "translation": "Kendali Orang Tua",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ContentRatings",
+    "description": null,
+    "english": "Content Ratings",
+    "translation": "Rating Konten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentRatings",
+    "description": null,
+    "english": "This setting controls what type of experiences this user is allowed to visit.",
+    "translation": "Pengaturan ini mengendalikan tipe pengalaman yang dapat dikunjungi oleh pengguna ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContactSettings",
+    "description": null,
+    "english": "Communication Settings are locked because Account Restrictions (under {linkStart}Parental Controls{linkEnd} page) are enabled",
+    "translation": "Pengaturan Komunikasi terkunci karena Pembatasan Akun (di bagian halaman {linkStart}Kendali Orang Tua{linkEnd}) diaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ParentPin",
+    "description": null,
+    "english": "Parent PIN",
+    "translation": "PIN Orang Tua",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ParenttPinDisabled",
+    "description": "DO NOT TRANSLATE, CAN BE DELETED",
+    "english": ".",
+    "translation": ".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ParentPinEnabled",
+    "description": null,
+    "english": "Parent PIN is enabled",
+    "translation": "PIN orang tua diaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ParentPinDisabled",
+    "description": null,
+    "english": "Parent PIN is disabled",
+    "translation": "PIN orang tua dinonaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.EmailTwoStepVerificationCodes",
+    "description": "Label next to toggle for enabling email-based two step verification.",
+    "english": "Email (Secure)",
+    "translation": "Email (Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AuthenticatorTwoStepVerificationCodes",
+    "description": "Label next to toggle for enabling authenticator-based two step verification.",
+    "english": "Authenticator App (Very Secure)",
+    "translation": "Aplikasi Autentikasi (Sangat Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AuthenticatorDisabledHelp",
+    "description": "Requirement for enabling authenticator-based two step verification.",
+    "english": "An {aTagStart}external authenticator app{aTagEnd} is required.",
+    "translation": "{aTagStart}Aplikasi autentikasi eksternal{aTagEnd} diperlukan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AuthenticatorHelpText",
+    "description": "Displayed as help text when authenticator-based two step verification is already enabled.",
+    "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
+    "translation": "Aplikasi di ponsel kamu yang membuat kode unik. Aplikasi yang disarankan seperti Google Authenticator, Microsoft Authenticator, dan Twilio Authy.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.AuthenticatorSetup",
+    "description": null,
+    "english": "Authenticator Setup",
+    "translation": "Pengaturan Autentikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.AuthenticatorSetupQRCode",
+    "description": null,
+    "english": "Scan the QR code above into your authenticator app, then enter the generated code below.",
+    "translation": "Scan kode QR di atas ke aplikasi autentikasi kamu lalu masukkan kode di bawah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.AuthenticatorSetupManualEntryKey",
+    "description": null,
+    "english": "Enter the manual entry key above into your authenticator app, then enter the generated code below.",
+    "translation": "Masukkan kunci entri manual di atas ke aplikasi autentikasi kamu lalu masukkan kode di bawah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.AuthenticatorSetupViewManualEntryKey",
+    "description": "Message to user for manual Authenticator code entry.",
+    "english": "Can't scan the QR code? Click here for manual entry.",
+    "translation": "Tidak dapat scan kode QR? Klik di sini untuk memasukkan kode secara manual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.AuthenticatorSetupViewQRCode",
+    "description": null,
+    "english": "View QR code",
+    "translation": "Lihat kode QR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Dialog.AuthenticatorSetupCodeInputPlaceholder",
+    "description": null,
+    "english": "Enter {codeLength}-digit Code",
+    "translation": "Masukkan kode {codeLength} digit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.Verify",
+    "description": null,
+    "english": "Verify",
+    "translation": "Verifikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.InvalidCodeError",
+    "description": null,
+    "english": "Invalid code",
+    "translation": "Kode Tidak Valid",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.AuthenticatorSessionExpired",
+    "description": null,
+    "english": "QR code has expired. Please close the modal and try again.",
+    "translation": "Kode QR sudah kedaluwarsa. Tutup jendela dan coba lagi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.GenerateNewRecoveryCodes",
+    "description": "The title of the dialog that asks you to input your password before generating recovery codes.",
+    "english": "Generate New Backup Codes",
+    "translation": "Buat Kode Cadangan Baru",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.RecoveryCodesGenerated",
+    "description": "The title of the dialog displaying the newly generated recovery codes.",
+    "english": "Backup Codes",
+    "translation": "Kode Cadangan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.GenerateNewRecoveryCodes",
+    "description": "The description text on the dialog prompting the user to generate new recovery codes by providing their password.",
+    "english": "Please enter your account password to generate new backup codes.",
+    "translation": "Masukkan kata sandi akun kamu untuk membuat kode cadangan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "Lanjut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.RecoveryCodesGenerated",
+    "description": null,
+    "english": "These are your new backup codes. Please save them as you will not be able to see the codes again later.",
+    "translation": "Ini adalah kode cadangan baru kamu. Simpan kode ini karena kamu tidak akan dapat melihatnya lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Dialog.RecoveryCodesSavedConfirmation",
+    "description": "Check box confirming the user has saved their recovery codes.",
+    "english": "I've saved my backup codes",
+    "translation": "Saya sudah menyimpan kode cadangan saya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Dialog.GenerateNewRecoveryCodesClearNotice",
+    "description": "A label on the modal for generating new recovery codes  giving notice that the number of remaining unused recovery codes will no longer work.",
+    "english": "{activeCodeCount} backup codes will become invalid when new ones are generated.",
+    "translation": "{activeCodeCount} kode cadangan akan menjadi tidak valid setelah kode yang baru dibuat.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.GenerateRecoveryCodes",
+    "description": "Label next to button for generating two step verification recovery codes.",
+    "english": "Backup Codes",
+    "translation": "Kode Cadangan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecoveryCodesHelpText",
+    "description": "Help text on the two step verification recovery codes section card.",
+    "english": "Generate and use these codes in case you lose access to your 2 Step Verification option.",
+    "translation": "Buat dan gunakan kode ini kalau nanti kamu kehilangan akses ke opsi Verifikasi Dua Langkah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Generate",
+    "description": null,
+    "english": "Generate",
+    "translation": "Buat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.InsufficientFundsWarningMessage",
+    "description": null,
+    "english": "You need {robuxIcon} {robuxToBuy} more to change your username. Would you like to buy more Robux?",
+    "translation": "Kamu perlu lebih banyak {robuxIcon} {robuxToBuy} untuk mengubah nama penggunamu. Kamu ingin membeli lebih banyak Robux?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.InvalidBirthday",
+    "description": null,
+    "english": "Invalid birthday.",
+    "translation": "Tanggal lahir tidak valid.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.VerifyAge",
+    "description": null,
+    "english": "Verify My Age",
+    "translation": "Verifikasi Usia Saya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AgeUnverified",
+    "description": null,
+    "english": "Your age is not verified.",
+    "translation": "Usia kamu tidak terverifikasi.",
     "isDeprecated": false
   },
   {
@@ -8316,7 +9100,7 @@
     "key": "Label.UnusedRecoveryCodes",
     "description": "Message to user that appears after the user has generated recovery codes.",
     "english": "You have {activeCodeCount} unused backup codes.",
-    "translation": "Kamu memiliki {activeCodeCount} kode pemulihan yang belum digunakan.",
+    "translation": "Kamu memiliki {activeCodeCount} kode cadangan yang belum digunakan.",
     "isDeprecated": false
   },
   {
@@ -8537,6 +9321,22 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Label.VoiceChat",
+    "description": null,
+    "english": "Enable voice chat",
+    "translation": "Aktifkan panggilan suara",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceChat",
+    "description": null,
+    "english": "Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "Mengaktifkan panggilan suara akan menggunakan mikrofon ponsel kamu di pengalaman dengan panggilan suara yang diaktifkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.ThirdPartyVerificationDisclaimer",
     "description": null,
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider.",
@@ -8556,7 +9356,7 @@
     "key": "Description.VerificationEmail.Body.Under13.V3",
     "description": "First part of the body text for the 'email verification' email for users under 13. This is directed at the parent of the user. Below this text is an \"I Agree, Validate Email\" button that the parent can click to proceed.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}Your child created the account {emphasisStart}{username}{emphasisEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{paragraphEnd}{paragraphStart}Your child has provided us with a username, date of birth, and a parent's email address. Please confirm this email address is correct by {emphasisStart}clicking the button below to complete the validation process{emphasisEnd}. Regardless of whether you validate the parental email address or not, the child will still be able to retain their account and chat with others.{paragraphEnd}{paragraphStart}By clicking the \"I Agree, Validate Email\" button you also agree that (a) You and your child agree to the Roblox Terms, including arbitration, and (b) You will supervise and be solely responsible for your child’s use of Roblox.{paragraphEnd}",
-    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Anak Anda telah membuat akun{emphasisStart}{username}{emphasisEnd} di Roblox, platform game online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D imersif yang dikembangkan oleh pengguna.{paragraphEnd}{paragraphStart}Anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua. Harap konfirmasikan bahwa ini adalah alamat email yang benar dengan {emphasisStart}mengklik tombol di bawah untuk menyelesaikan proses validasi{emphasisEnd}. Terlepas dari apakah Anda memvalidasi email orang tua atau tidak, anak Anda tetap dapat mempertahankan akunnya dan chat dengan pengguna lain.{paragraphEnd}{paragraphStart}Dengan mengklik tombol \"Saya Setuju, Validasi Email\", Anda juga menyetujui bahwa (a) Anda dan anak Anda menyetujui Ketentuan Roblox, termasuk arbitrasi dan (b) Anda akan memonitor dan sepenuhnya bertanggung jawab atas penggunaan Roblox anak Anda.{paragraphEnd}",
+    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Anak Anda telah membuat akun{emphasisStart}{username}{emphasisEnd} di Roblox, platform game online bagi anak-anak untuk berimajinasi, berkreasi, dan bermain bersama di dunia 3D imersif yang dikembangkan oleh pengguna.{paragraphEnd}{paragraphStart}Anak Anda telah memberikan nama pengguna, tanggal lahir, dan alamat email orang tua kepada kami. Harap konfirmasikan bahwa ini adalah alamat email yang benar dengan {emphasisStart}mengklik tombol di bawah untuk menyelesaikan proses validasi{emphasisEnd}. Terlepas dari apakah Anda memvalidasi email orang tua atau tidak, anak Anda tetap dapat mempertahankan akunnya dan chat dengan pengguna lain.{paragraphEnd}{paragraphStart}Dengan mengklik tombol \"Saya Setuju, Validasi Email\", Anda juga menyetujui bahwa (a) Anda dan anak Anda menyetujui Ketentuan Roblox, termasuk arbitrasi dan (b) Anda akan memonitor dan sepenuhnya bertanggung jawab atas penggunaan Roblox anak Anda.{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -8625,6 +9425,70 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Heading.MonthlyLimit",
+    "description": null,
+    "english": "Monthly Spend Restrictions",
+    "translation": "Pembatasan Pemakaian Uang Bulanan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.MonthlyLimitEnabled",
+    "description": null,
+    "english": "Monthly Spend Restrictions are enabled",
+    "translation": "Pembatasan Pemakaian Uang Bulanan Diaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.MonthlyLimitDisabled",
+    "description": null,
+    "english": "Monthly Spend Restrictions are disabled",
+    "translation": "Pembatasan Pemakaian Uang Bulanan Dinonaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.MonthlyLimit",
+    "description": null,
+    "english": "This setting limits the amount of spend permitted on the under 13 year old user's account per calendar month. Default platform spending restrictions will apply when this setting is turned off.",
+    "translation": "Pengaturan ini membatasi jumlah uang yang diizinkan untuk dipakai setiap bulannya bagi akun dengan pengguna yang berusia di bawah. Pembatasan pemakaian uang default akan berlaku saat pengaturan ini dimatikan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.NotificationSettings",
+    "description": null,
+    "english": "Spend Notifications",
+    "translation": "Notifikasi Pemakaian Uang",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NotificationSettingEnabled",
+    "description": null,
+    "english": "Spend Notifications are enabled",
+    "translation": "Notifikasi Pemakaian Uang diaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NotificationSettingDisabled",
+    "description": null,
+    "english": "Spend Notifications are disabled",
+    "translation": "Notifikasi Pemakaian Uang dinonaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NotificationSettings",
+    "description": null,
+    "english": "This setting controls notifications on spend sent to the verified parental email on the under 13 user's account. Parents who select the default will only receive email notifications when spend levels are exceedingly high in a given calendar month.",
+    "translation": "Pengaturan ini mengendalikan notifikasi yang dikirim ke email orang tua tentang pemakaian uang untuk akun dengan pengguna yang berusia di bawah 13 tahun. Orang tua yang memilih default hanya akan menerima notifkasi email jika level penggunaan sangat tinggi dalam suatu bulan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.DefaultNotifications",
     "description": null,
     "english": "Default Notifications",
@@ -8673,6 +9537,30 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitTooHighErrorMessage",
+    "description": null,
+    "english": "Monthly spend limit must be below ",
+    "translation": "Batas pemakaian uang bulanan harus di bawah ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitBelowZeroErrorMessage",
+    "description": null,
+    "english": "Monthly spend limit must be above 0!",
+    "translation": "Batas pemakaian uang bulanan harus di atas 0",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitTooHighError",
+    "description": null,
+    "english": "Monthly spend limit must be below {maxMonthlySpendLimit} USD!",
+    "translation": "Batas pemakaian uang bulanan harus di bawah {maxMonthlySpendLimit} USD",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Label.USDCurrency",
     "description": null,
     "english": "USD",
@@ -8708,7 +9596,15 @@
     "key": "Message.ItemTradeTwoStepVerificationMessage",
     "description": null,
     "english": "Verification is required to continue with your trade.",
-    "translation": "Verifikasi Dua Langkah diperlukan untuk melanjutkan trade kamu.",
+    "translation": "Verifikasi Dua Langkah diperlukan untuk melanjutkan trade.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.OptInDisabled",
+    "description": "The message users get if we have turned off voice chat opt in.",
+    "english": "Voice chat enrollment has been temporarily disabled.",
+    "translation": "Pendaftaran panggilan suara telah dinonaktifkan untuk sementara.",
     "isDeprecated": false
   },
   {
@@ -8717,6 +9613,1374 @@
     "description": "filtering level for in app chat",
     "english": "Chat Filtering Level",
     "translation": "Level Filter Chat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.ChatFilteringLevel",
+    "description": null,
+    "english": "All text chat is scanned for language that is inappropriate within the Roblox community. This setting controls what you can send and receive while chatting with others on Roblox. ",
+    "translation": "Semua pesan chat di-scan jika ada bahasa yang tidak pantas bagi komunitas Roblox. Pengaturan ini mengendalikan apa yang dapat kamu kirim dan terima saat chat dengan pengguna lain di Roblox. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.MaximumFiltering",
+    "description": null,
+    "english": "Maximum Filtering",
+    "translation": "Filter Maksimum",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DropDown.13PlusFiltering",
+    "description": null,
+    "english": "13+ Filtering",
+    "translation": "Filter 13+",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.TemporarySuspension",
+    "description": "This text will replace the normal text next to the voice chat opt in toggle if they have been banned from voice chat. The date they will be banned until will be right after this text, which is why the sentence ends partway.",
+    "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to voice chat until",
+    "translation": "Oleh karena pelanggaran terhadap Standar Komunitas, kami telah menangguhkan akses kamu ke panggilan suara hingga",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.Revoked",
+    "description": "This text will replace the normal description next to the voice chat opt-in toggle if the user has been MVP banned from voice chat.",
+    "english": "Due to multiple violations of our Community Standards, we have temporarily revoked your access to voice chat until the Beta phase ends.",
+    "translation": "Oleh karena beberapa pelanggaran terhadap Standar Komunitas, kami telah menangguhkan akses kamu ke panggilan suara hingga fase Beta berakhir.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.InvalidGuildedUrl",
+    "description": "Error message.",
+    "english": "The Guilded profile url is invalid.",
+    "translation": "Tautan profil Guilded tidak valid.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Example.Guilded",
+    "description": null,
+    "english": "e.g. guilded.gg/roblox",
+    "translation": "contoh: guilded.gg/roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Guilded",
+    "description": null,
+    "english": "Guilded",
+    "translation": "Guilded",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.HelpText.VoiceBan",
+    "description": "Message a user gets when they have been banned from voice chat.",
+    "english": "Your access to voice chat has been suspended for violating our Community Standards.",
+    "translation": "Oleh karena pelanggaran terhadap Standar Komunitas, kami telah menangguhkan akses kamu ke panggilan suara.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ResaleTwoStepVerificationMessage",
+    "description": null,
+    "english": "Verification is required to continue with your resale.",
+    "translation": "Verifikasi Dua Langkah diperlukan untuk melanjutkan penjualan kembali.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ManualKeyCopied",
+    "description": "Feedback to user when they've copied their manual authenticator key to clipboard.",
+    "english": "Manual Key Copied To Clipboard",
+    "translation": "Kode Manual Disalin ke Clipboard",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SpendingLimit",
+    "description": null,
+    "english": "Spending Limit: {spendingLimit} {currencyType}",
+    "translation": "Batasan Penggunaan: {spendingLimit} {currencyType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SpendLimit",
+    "description": null,
+    "english": "Spending Limit",
+    "translation": "Batasan Penggunaan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.CannotDisableSpendRestriction",
+    "description": null,
+    "english": "Spend restrictions can't be disabled in your region.",
+    "translation": "Pembatasan penggunaan tidak dapat dinonaktifkan di wilayah kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Success.MonthlySpendUpdate",
+    "description": null,
+    "english": "Success! Monthly Spend Restrictions have been setted up.",
+    "translation": "Pembatasan Penggunaan Uang Bulanan sudah berhasil diatur.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.CannotDisableSpendLimit",
+    "description": null,
+    "english": "Spend restrictions cannot be disabled in your region.",
+    "translation": "Pembatasan penggunaan tidak dapat dinonaktifkan di wilayah kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.MonthlySpendLimit",
+    "description": null,
+    "english": "This setting limits the amount of spend permitted on the under {age} year old user's account per calendar month. Default platform spending restrictions will apply when this setting is turned off.",
+    "translation": "Pengaturan ini membatasi jumlah uang yang diizinkan untuk dipakai setiap bulannya bagi akun dengan pengguna yang berusia di bawah {age} tahun. Pembatasan pemakaian uang default akan berlaku saat pengaturan ini dimatikan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationEmailWarningNew",
+    "description": "Description that appears in the background when both email and authenticator 2sv are enabled",
+    "english": "You currently have both 2-Step Verification via Email and Authenticator App turned on. In most cases, to keep your account secure, you will only be allowed to log in via Authenticator.",
+    "translation": "Saat ini Verifikasi Dua Langkah via email dan aplikasi Autentikasi dinyalakan. Umumnya, agar akun kamu tetap aman, kamu hanya akan diizinkan untuk log in via aplikasi Authenticator.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationPopUpEmailWarning",
+    "description": "Warning that appears when we ask user for password after they turn on authenticator.",
+    "english": "Warning: If you choose to enable 2-Step Verification via both Email and the Authenticator App, you will be forced to use the Authenticator App for verification in most cases.",
+    "translation": "Peringatan: Jika kamu mengaktifkan Verifikasi Dua Langkah via email dan aplikasi Autentikasi, umumnya, kamu akan diharuskan untuk menggunakan aplikasi Autentikasi untuk verifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.MonthlySpendLimitExceedRangeError",
+    "description": null,
+    "english": "Please input a whole number between 0 and {maxSpendLimit}",
+    "translation": "Masukkan nomor di antara 0 hingga {maxSpendLimit}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NotificationSettingsWithAge",
+    "description": null,
+    "english": "This setting controls notifications on spend sent to the verified parental email on the under {age} user's account. Parents who select the default will only receive email notifications when spend levels are exceedingly high in a given calendar month.",
+    "translation": "Pengaturan ini mengendalikan notifikasi yang dikirim ke email orang tua tentang pemakaian uang untuk akun dengan pengguna yang berusia di bawah {age} tahun. Orang tua yang memilih default hanya akan menerima notifkasi email jika level penggunaan sangat tinggi dalam suatu bulan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForOver70KKRW",
+    "description": "Parental spend control launch email, Korean user over 70000 KRW limit",
+    "english": "{paragraphStart}This email is to inform you that the monthly spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been changed in accordance with local regulator requirements. These regulations require that accounts held by users under the age of 18 do not spend more than 70,000 KRW per month. As a result, your monthly spend restriction has been updated to {emphasisStart}70,000 KRW{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}You can make changes to your monthly spend restriction settings in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time, but you will not be able to remove this restriction or set a limit above 70,000 KRW. For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Email ini untuk menginformasikan kamu bahwa pembatasan pemakaian uang bulanan untuk akun {emphasisStart}{username}{emphasisEnd} dengan {emphasisStart}{amountUsd} USD{emphasisEnd} per bulan telah diubah sesuai dengan persyaratan peraturan lokal. Peraturan ini mensyaratkan bahwa akun dengan pengguna yang berusia di bawah 18 tahun tidak dapat memakai lebih dari 70.000 KRW per bulan. Oleh karena itu, pembatasan pemakaian uang bulanan kamu telah di-update menjadi {emphasisStart}70.000 KRW{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Kamu dapat mengubah pengaturan pemakaian uang bulanan di {parentalControlsLinkStart}Kendali Orang Tua{linkEnd} kapan saja, tetapi kamu tidak akan dapat menghapus pembatasan ini atau mengatur batas ke lebih dari 70.000 KRW. Untuk informasi selengkapnya tentang Kendali Orang Tua, kunjungi {helpCenterLinkStart}Pusat Bantuan{linkEnd}. {paragraphEnd}{lineBreak}Terima kasih,{lineBreak}{emphasisStart}Tim Roblox{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForUnder70KKRW",
+    "description": "Parental spend control launch email, for Korean user with limit under 70000 KRW",
+    "english": "{paragraphStart}This email is to inform you that we now support setting monthly spend restrictions in your local currency, KRW. As a result, the spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been updated to {emphasisStart}{amountLocalCurrency} KRW{emphasisEnd} per month.{paragraphEnd}{lineBreak}{paragraphStart}In addition, local regulators require that accounts held by users under the age of 18 do not spend more than 70,000 KRW per month. You can make changes to your monthly spend restriction settings in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time, but you will not be able to remove this restriction or set a limit above 70,000 KRW.{paragraphEnd}{lineBreak}{paragraphStart}For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Email ini untuk menginformasikan kamu bahwa sekarang pembatasan pemakaian uang bulanan tersedia dalam mata uang lokal kamu, KRW. Oleh karena itu, pembatasan pemakaian uang untuk akun {emphasisStart}{username}{emphasisEnd} dengan {emphasisStart}{amountUsd} USD{emphasisEnd} per bulan telah di-update menjadi {emphasisStart}{amountLocalCurrency} KRW{emphasisEnd} per bulan.{paragraphEnd}{lineBreak}{paragraphStart}Selain itu, peraturan lokal mensyaratkan bahwa akun dengan pengguna yang berusia di bawah 18 tahun tidak dapat memakai lebih dari 70.000 KRW per bulan. Kamu dapat mengubah pengaturan pemakaian uang bulanan di {parentalControlsLinkStart}Kendali Orang Tua{linkEnd} kapan saja, tetapi kamu tidak akan dapat menghapus pembatasan ini atau mengatur batas ke lebih dari 70.000 KRW.{paragraphEnd}{lineBreak}{paragraphStart}Untuk informasi selengkapnya tentang Kendali Orang Tua, kunjungi{helpCenterLinkStart}Pusat Bantuan{linkEnd}.{paragraphEnd}{lineBreak}Terima kasih,{lineBreak}{emphasisStart}Tim Roblox{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailBodyForOtherCurrency",
+    "description": "Parental spend controls launch email, for non-korean users whose local currency is supported and enabled",
+    "english": "{paragraphStart}This email is to inform you that we now support setting monthly spend restrictions in your local currency, {emphasisStart}{currencyCode}{emphasisEnd}. As a result, the spend restrictions for account {emphasisStart}{username}{emphasisEnd} of {emphasisStart}{amountUsd} USD{emphasisEnd} per month has been updated to {emphasisStart}{amountLocalCurrency} {currencyCode}{emphasisEnd} per month.{paragraphEnd}{lineBreak}{paragraphStart}You can make changes to your monthly spend restrictions in your local currency or disable this setting entirely in {parentalControlsLinkStart}Parental Controls{linkEnd} at any time. For more information on Parental Controls, please visit the {helpCenterLinkStart}Help Center{linkEnd}.{paragraphEnd}{lineBreak}Thank you,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}",
+    "translation": "{paragraphStart}Email ini untuk menginformasikan kamu bahwa sekarang pembatasan pemakaian uang bulanan tersedia dalam mata uang lokal kamu, {emphasisStart}{currencyCode}{emphasisEnd}. Oleh karena itu, pembatasan pemakaian uang untuk akun {emphasisStart}{username}{emphasisEnd} dengan {emphasisStart}{amountUsd} USD{emphasisEnd} per bulan telah di-update menjadi {emphasisStart}{amountLocalCurrency} {currencyCode}{emphasisEnd} per bulan.{paragraphEnd}{lineBreak}{paragraphStart}. Kamu dapat mengubah pengaturan pemakaian uang bulanan dalam mata uang lokal kamu atau menonaktifkan pengaturan ini di {parentalControlsLinkStart}Kendali Orang Tua{linkEnd} kapan saja. Untuk informasi selengkapnya tentang Kendali Orang Tua, kunjungi{helpCenterLinkStart}Pusat Bantuan{linkEnd}.{paragraphEnd}{lineBreak}Terima kasih,{lineBreak}{emphasisStart}Tim Roblox{emphasisEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailSubject",
+    "description": null,
+    "english": "Changes to your Monthly Spend Restrictions settings",
+    "translation": "Perubahan atas pengaturan Pembatasan Pemakaian Uang Bulanan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlLaunchEmail.EmailSubjectForKorea",
+    "description": null,
+    "english": "Your Monthly Spend Restrictions settings have been changed",
+    "translation": "Pembatasan Pemakaian Uang Bulanan kamu telah diubah",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlResetEmail.EmailSubject",
+    "description": null,
+    "english": "Your Monthly Spend Restrictions settings have been reset",
+    "translation": "Pembatasan Pemakaian Uang Bulanan kamu telah diatur ulang",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ParentalSpendControlResetEmail.EmailBody",
+    "description": null,
+    "english": "{paragraphStart}This email is to inform you that the country and purchase currency associated with the account {username} has recently changed. As a result, your previously set spend restrictions of {amount} {previousCurrency} per month have been reset and no longer apply to future purchases on this account. To set a new monthly spend restriction for the account in {newCurrency}, please visit {parentalControlsLinkStart}Parental Controls{linkEnd} in Settings.{paragraphEnd}{lineBreak}Thank you,{lineBreak}The Roblox Team",
+    "translation": "{paragraphStart}Email ini untuk menginformasikan kamu bahwa negara dan mata uang pembelian yang terhubung dengan akun {username} telah diubah baru-baru ini. Oleh karena itu, pembatasan pemakaian uang sebelumnya, yaitu {amount} {previousCurrency} per bulan, telah diatur ulang dan tidak lagi berlaku atas pembelian berikutnya dengan akun ini. Untuk mengatur pembatasan pemakaian uang dalam {newCurrency}, kunjungi {parentalControlsLinkStart}Kendali Orang Tua{linkEnd} di pengaturan.{paragraphEnd}{lineBreak}Terima kasih,{lineBreak}Tim Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ToolTip.MoreInfo",
+    "description": null,
+    "english": "Click here for more information",
+    "translation": "Klik di sini untuk informasi selengkapnya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.InvalidPasswordError",
+    "description": null,
+    "english": "Please create a more complex password",
+    "translation": "Harap buat kata sandi yang lebih rumit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Title.AboutVoiceChat",
+    "description": null,
+    "english": "About Voice Chat",
+    "translation": "Mengenai Panggilan Suara",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.BeforeCommunityStandards",
+    "description": "The space at the end is intentional (a link follows this)",
+    "english": "This setting allows qualified users to use voice to communicate in Roblox experiences. You are expected to follow the ",
+    "translation": "Pengaturan ini mengizinkan pengguna yang memenuhi syarat untuk menggunakan suara dalam berkomunikasi di pengalaman Roblox. Kamu diharapkan untuk mengikuti ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CommunityStandards",
+    "description": null,
+    "english": "Roblox Community Standards",
+    "translation": "Standar Komunitas Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AfterCommunityStandards",
+    "description": "The initial space is intentional; a link is before this mid-sentence",
+    "english": " while using this feature. If you see others breaking the rules, please report abuse to let us know.",
+    "translation": " saat menggunakan fitur ini. Jika kamu melihat pengguna lain melanggar aturan, laporkan penyalahgunaan tersebut kepada kami.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.HowTitle",
+    "description": null,
+    "english": "How do I use voice chat?",
+    "translation": "Bagaimana saya menggunakan panggilan chat?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.HowBody",
+    "description": null,
+    "english": "You can use voice chat in any experience where the developer has enabled it. Voice audio and game sounds will automatically play through your speaker or headphones as you join an experience. You’ll be able to speak with other users through your microphone.",
+    "translation": "Kamu dapat menggunakan panggilan suara di pengalaman mana pun yang panggilan suara telah diaktifkan oleh developer. Suara pengguna dan game akan diputar secara otomatis melalui speaker atau headphone saat kamu bergabung ke pengalaman. Kamu akan dapat berbicara dengan pengguna lain melalui mikrofon kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.SafeTitle",
+    "description": null,
+    "english": "How can I stay safe while using voice chat?",
+    "translation": "Bagaimana saya dapat tetap dalam keadaan aman saat menggunakan panggilan suara?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.SafePreBody",
+    "description": "The space at the end is intentional; there is a link mid-sentence",
+    "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our ",
+    "translation": "Jika kamu mendengar pengguna lain menggunakan bahasa yang membahayakan, bisukan mereka dan kirim laporan penyalahgunaan. Untuk keperlukan moderasi dan tujuan keamanan, Roblox dapat merekam audio suara di mana pun di platform. Untuk informasi selengkapnya di ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.FAQ",
+    "description": "The period at the end is intentional",
+    "english": "Voice Recording FAQ.",
+    "translation": "Pertanyaan Umum Rekaman Suara.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.HaveFun",
+    "description": null,
+    "english": "Have fun and stay safe!",
+    "translation": "Have fun and stay safe!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.FreeCommConsent",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes.",
+    "translation": "Saya setuju akan pengumpulan, penggunaan, dan penyimpanan rekaman suara saya oleh Roblox untuk keperluan moderasi dan tujuan keamanan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LearnMore",
+    "description": null,
+    "english": "Learn more",
+    "translation": "Pelajari selengkapnya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "Batal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Enable",
+    "description": null,
+    "english": "Enable",
+    "translation": "Aktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.CommunityStandards",
+    "description": "Previously Description.BeforeCommunityStandards + Label.CommunityStandards + Description.AfterCommunityStandards",
+    "english": "This setting allows qualified users to use voice to communicate in Roblox experiences. You are expected to follow the {startLink}Roblox Community Standards{endLink} while using this feature. If you see others breaking the rules, please report abuse to let us know.",
+    "translation": "Pengaturan ini mengizinkan pengguna yang memenuhi syarat untuk menggunakan suara dalam berkomunikasi di pengalaman Roblox. Kamu diharapkan untuk mengikuti {startLink}Standar Komunitas Roblox{endLink} saat menggunakan fitur ini. Jika kamu melihat pengguna lain melanggar aturan, laporkan penyalahgunaan tersebut kepada kami.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.VoiceChatInfo.SafeBody",
+    "description": "Previously Description.VoiceChatInfo.SafePreBody + Description.VoiceChatInfo.FAQ + .",
+    "english": "If you hear someone using harmful or dangerous language, please mute them and file an abuse report. For moderation and safety purposes, Roblox may record voice audio anywhere on the platform. More information in our {startLink}Voice Recording FAQ{endLink}.",
+    "translation": "Jika kamu mendengar pengguna lain menggunakan bahasa yang membahayakan, bisukan mereka dan kirim laporan penyalahgunaan. Untuk keperlukan moderasi dan tujuan keamanan, Roblox dapat merekam audio suara di mana pun di platform. Untuk informasi selengkapnya, kunjungi {startLink}Pertanyaan Umum Rekaman Suara{endLink}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Success.MonthlySpendUpdate.V2",
+    "description": null,
+    "english": "Success! Monthly Spend Restrictions have been set up.",
+    "translation": "Pembatasan Pemakaian Uang Bulanan sudah berhasil diatur.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.FreeCommConsentOnly",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
+    "translation": "Saya setuju akan pengumpulan, penggunaan, dan penyimpanan rekaman suara saya oleh Roblox hanya untuk keperluan moderasi dan tujuan keamanan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Respones.InvalidPhoneNumberType",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "Nomor telepon ini tidak valid. Masukkan nomor telepon yang berbeda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.InvalidPhoneNumberType",
+    "description": null,
+    "english": "This phone number cannot be used. Please enter a different phone number.",
+    "translation": "Nomor telepon ini tidak dapat digunakan. Masukkan nomor telepon yang berbeda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CreatedBy",
+    "description": null,
+    "english": "By {creator}",
+    "translation": "Oleh {creator}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Communication",
+    "description": null,
+    "english": "Communication",
+    "translation": "Komunikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ConnectWithContacts",
+    "description": null,
+    "english": "Connect With Contacts",
+    "translation": "Terhubung dengan Kontak",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.PrivateServers",
+    "description": null,
+    "english": "Private Servers",
+    "translation": "Server Privat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContacts",
+    "description": null,
+    "english": "Roblox uses your contacts to help you and your contacts find each other on Roblox. {linkStart}Learn more{linkEnd}{lineBreak}You must have a verified phone number to use this feature.",
+    "translation": "Roblox menggunakan kontakmu untuk membantu kamu dan kontakmu menemukan satu sama lain di Roblox. {linkStart}Pelajari Selengkapnya{linkEnd}{lineBreak}Kamu harus memiliki nomor ponsel terverifikasi untuk menggunakan fitur ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberVerified",
+    "description": null,
+    "english": "Your phone number is verified.",
+    "translation": "Nomor telepon kamu terverifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.RecommendedContact",
+    "description": null,
+    "english": "Do you want to be recommended to Roblox users who have your phone number?",
+    "translation": "Akun kamu ingin direkomendasikan ke pengguna Roblox yang memiliki nomor ponsel kamu?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.RecommendedContact",
+    "description": null,
+    "english": "When using Roblox, users with your phone number will be able to see your name as saved in their device.",
+    "translation": "Saat menggunakan Roblox, pengguna dengan nomor ponsel kamu akan dapat melihat nama kamu yang tersimpan di perangkat mereka.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AllowAccessContacts",
+    "description": null,
+    "english": "Allow Access To This Device’s Contacts",
+    "translation": "Izinkan Akses ke Kontak Perangkat Ini",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowAccessContacts",
+    "description": null,
+    "english": "Roblox will periodically sync your device contacts to give you the most up to date recommendations. Only matches with existing Roblox users will be stored on Roblox servers.",
+    "translation": "Roblox akan menyinkronkan kontak perangkat kamu secara berkala untuk memberikan rekomendasi terbaru. Hanya kecocokan dengan pengguna Roblox yang sudah ada yang akan disimpan di server Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.DeleteSyncedContactData",
+    "description": null,
+    "english": "Delete Synced Contact Data",
+    "translation": "Hapus Data Kontak yang Tersinkronisasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteSyncedContactData",
+    "description": null,
+    "english": "When you remove access to your device contacts, you’ll have the option to delete your synced contact data.",
+    "translation": "Saat kamu menghapus akses ke kontak perangkatmu, kamu akan memiliki opsi untuk menghapus data kontak yang tersinkron.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.VerifiedPhoneNumberError",
+    "description": null,
+    "english": "Your phone number is not verified.",
+    "translation": "Nomor telepon kamu tidak terverifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeleteContactDataInstructions",
+    "description": null,
+    "english": "This will delete your contact data that was synced from this device only. If you’ve synced contact data on multiple devices, you must do this separately per device. To delete all synced data from every connected device at once, go to your privacy settings on a desktop web browser.",
+    "translation": "Ini akan menghapus data kontak yang disinkronkan hanya dari perangkat ini. Jika kamu telah menyinkronkan data kontak di beberapa perangkat, kamu harus menghapusnya di setiap perangkat. Untuk menghapus secara sekaligus semua data tersinkron dari semua perangkat yang terhubung, buka pengaturan privasi di browser desktop.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataSuccess",
+    "description": null,
+    "english": "Successfully deleted synced contact data.",
+    "translation": "Berhasil menghapus data kontak tersinkron.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.DeleteContactDataFailure",
+    "description": null,
+    "english": "Unable to delete synced contact data.",
+    "translation": "Tidak dapat menghapus data kontak tersinkron.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PhoneNumberNotVerified",
+    "description": null,
+    "english": "You have not verified your phone number.",
+    "translation": "Kamu belum memverifikasi nomor ponsel kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountRestrictionsEnabledOnPrivacy",
+    "description": null,
+    "english": "When this setting is enabled, this account can only access content that is appropriate for all audiences. Additionally, Communication Settings will be set to Off.",
+    "translation": "Saat pengaturan ini diaktifkan, akun ini hanya dapat mengakses konten yang pantas untuk semua pengguna. Selain itu, Pengaturan Komunikasi akan dimatikan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Communication",
+    "description": null,
+    "english": "Communication Settings are locked because Account Restrictions are enabled",
+    "translation": "Pengaturan Komunikasi dikunci karena Pembatasan Akun diaktifkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.AllowAccessContactsSuccess",
+    "description": null,
+    "english": "Successfully updated access to this device's contacts.",
+    "translation": "Berhasil meng-update akses ke kontak perangkat ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.AllowAccessContactsFailure",
+    "description": null,
+    "english": "Failed to update access to this devices contacts.",
+    "translation": "Gagal meng-update akses ke kontak perangkat ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ConnectWithContactsWeb",
+    "description": null,
+    "english": "To enable contacts, go to Add Friends in the Roblox app on your mobile device.",
+    "translation": "Untuk mengaktifkan kontak, buka Tambah Teman di aplikasi Roblox di perangkat seluler.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Tab.AppPermissions",
+    "description": "Tab menu value for OAuth Authorizations",
+    "english": "App Permissions",
+    "translation": "Izin Aplikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Remove",
+    "description": null,
+    "english": "Remove",
+    "translation": "Hapus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ChangeExternalAppPermissions",
+    "description": "Sub-header message describing what items are in the below app permissions table view",
+    "english": "Change the permissions of external apps that have access to your information.",
+    "translation": "Ubah izin aplikasi eksternal yang memiliki akses ke informasi kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.EnableVoiceToChat",
+    "description": null,
+    "english": "Enable voice chat to talk with others in this experience.",
+    "translation": "Aktifkan panggilan suara untuk berbicara dengan pengguna lain di pengalaman ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.FollowCommunityStandards",
+    "description": null,
+    "english": "Follow our {linkStart}Community Standards{linkEnd} when talking and report abuse if you hear it.",
+    "translation": "Ikuti {linkStart}Standar Komunitas{linkEnd} kami saat berbicara dan laporkan penyalahgunaan jika kamu mengetahuinya.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ConsentVoiceCollection",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "Saya setuju akan pengumpulan, penggunaan, dan penyimpanan {linkStart}rekaman suara{linkEnd} saya oleh Roblox hanya untuk keperluan moderasi dan tujuan keamanan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ImplicitConsentVoiceCollection",
+    "description": "similar to Label.ConsentVoiceCollection",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "Dengan mengklik aktifkan, saya setuju akan pengumpulan, penggunaan, dan penyimpanan {linkStart}rekaman suara{linkEnd} saya oleh Roblox hanya untuk keperluan moderasi dan tujuan keamanan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ConfirmAuthDelete",
+    "description": "Confirmation modal message before deleting an OAuth app authorization",
+    "english": "Are you sure you want to remove the authorization for \"{appName}\"?",
+    "translation": "Kamu yakin ingin menghapus otorisasi untuk \"{appName}\"?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteAuthorization",
+    "description": "Confirmation dialog modal header",
+    "english": "Delete Authorization",
+    "translation": "Hapus Otorisasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Cancel",
+    "description": null,
+    "english": "Cancel",
+    "translation": "Batal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.SuccessRemove",
+    "description": "Successful authorization deletion message",
+    "english": "The authorization to \"{appName}\" was successfully removed",
+    "translation": "Otorisasi ke \"{appName}\" telah berhasil dihapus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ErrorRemove",
+    "description": "Error message if authorization deletion fails",
+    "english": "There was an error removing the authorization. Please try again.",
+    "translation": "Terjadi eror saat menghapus otorisasi. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ExerciseDataRights",
+    "description": null,
+    "english": "Exercise Data Rights",
+    "translation": "Laksanakan Hak Data",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AccountDeletion",
+    "description": null,
+    "english": "Initiate Account Deletion",
+    "translation": "Mulai Penghapusan Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Initiate",
+    "description": "Button text",
+    "english": "Initiate",
+    "translation": "Mulai",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountDeletionDescription",
+    "description": null,
+    "english": "Once you begin this process, this account will no longer be accessible and the deletion cannot be reversed.",
+    "translation": "Begitu kamu memulai proses ini, akun ini tidak akan lagi dapat diakses dan penghapusan tidak dapat dibatalkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.VerifiedUsernameChangeWarning",
+    "description": "A warning to users that changing their username will remove their verified badge status",
+    "english": "Warning: Changing your username will remove your verified badge status. Are you sure you want to do this?",
+    "translation": "Peringatan: Mengubah nama pengguna kamu akan menghapus status lencana terverifikasi. Kamu yakin ingin melakukannya?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.Verified2FAChangeWarning",
+    "description": "A warning to users that turning off their 2FA will remove their verified badge status",
+    "english": "Warning: Turning off your 2FA will remove your verified badge status. Are you sure you want to do this?",
+    "translation": "Peringatan: Mematikan Verifikasi Dua langkah akan menghapus status lencana terverifikasi. Kamu yakin ingin melakukannya?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoDescription",
+    "description": "Placeholder text when an OAuth app has no description.",
+    "english": "No Description",
+    "translation": "Tida Ada Deskripsi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.NoAuthorizations",
+    "description": null,
+    "english": "No Authorizations",
+    "translation": "Tidak Ada Otorisasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AdditionalVerificationMethod",
+    "description": null,
+    "english": "Additional Verification Method",
+    "translation": "Metode Verifikasi Tambahan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKey",
+    "description": null,
+    "english": "Security Keys on Web Only (Very Secure)",
+    "translation": "Kunci Keamanan Hanya di Web (Sangat Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AdditionalVerificationMethod",
+    "description": null,
+    "english": "Use a physical key, your device's face ID, or touch ID to validate your identity.",
+    "translation": "Gunakan kunci fisik, Face ID, atau Touch ID untuk memverifikasi identitas kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Email",
+    "description": null,
+    "english": "Email (Secure)",
+    "translation": "Email (Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationEmail",
+    "description": null,
+    "english": "Receive unique codes at your specified email.",
+    "translation": "Terima kode unik di email yang sudah kamu tentukan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.TextMessage",
+    "description": null,
+    "english": "Receive unique codes by text message on your phone.",
+    "translation": "Terima kode unik di SMS ponsel kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Authenticator",
+    "description": null,
+    "english": "Authenticator (Very Secure)",
+    "translation": "Autentikasi (Sangat Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Authenticator",
+    "description": null,
+    "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
+    "translation": "Aplikasi di ponsel kamu yang membuat kode unik. Aplikasi yang disarankan seperti Google Authenticator, Microsoft Authenticator, dan Twilio Authy.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.TwoStepVerification",
+    "description": null,
+    "english": "An Extra Layer of Account Security {lineBreaks}In addition to your password, add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. Note: you can only enable one option below at a time.",
+    "translation": "Lapisan Tambahan Kemanan Akun {lineBreaks}Selain kata sandi kamu, berikan lapisan keamanan tambahan ke akun kamu dengan Verifikasi Dua Langkah saat log in, pemulihan akun, dan transaksi dengan nilai besar. Catatan: kamu hanya dapat mengaktifkan satu opsi di bawah dalam satu waktu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.RegisterSecurityKey",
+    "description": null,
+    "english": "Register Your Security Key",
+    "translation": "Daftarkan Kunci Keamanan Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.PhysicalKey",
+    "description": null,
+    "english": "Insert your key in your computer’s USB port and touch it when prompted.",
+    "translation": "Masukkan kunci ke port USB komputer lalu sentuh saat diminta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.SetupError",
+    "description": null,
+    "english": "Please try to set up your key again. If you’re still unable to set up, try another key.",
+    "translation": "Coba atur kunci kamu lagi. Jika kamu masih tidak dapat mengaturnya, coba kunci yang lain.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.NameSecurityKey",
+    "description": null,
+    "english": "Name Your Key",
+    "translation": "Buat Nama Kunci Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.NameKey",
+    "description": null,
+    "english": "Name your key so that later you will know which one it is.",
+    "translation": "Beri nama kunci agar nanti kamu dapat mengidentifikasi setiap kunci dengan mudah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.Name",
+    "description": null,
+    "english": "Security Key Name",
+    "translation": "Nama Kunci Keamanan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKeyRegistered",
+    "description": null,
+    "english": "Security Key Registered",
+    "translation": "Kunci Keamanan Terdaftar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Register2SV",
+    "description": null,
+    "english": "Next time you sign in on web, you’ll use your security key with 2 Step Verification.",
+    "translation": "Jika nanti kamu sign in di web, kamu akan menggunakan kunci keamanan dengan Verifikasi Dua Langkah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AddSecurityKey",
+    "description": null,
+    "english": "Add Another Key",
+    "translation": "Tambahkan Kunci Lain",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.DeleteSecurityKey",
+    "description": null,
+    "english": "Delete Key",
+    "translation": "Hapus Kunci",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ManageYourKeys",
+    "description": null,
+    "english": "Manage Your Keys",
+    "translation": "Kelola Kunci Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.RegisteredKey",
+    "description": null,
+    "english": "{registeredKeysCount} out of {totalKeysCount} keys have been registered.",
+    "translation": "{registeredKeysCount} dari total {totalKeysCount} kunci telah didaftarkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.RegisteredKeysAtCapacity",
+    "description": null,
+    "english": "{registeredKeysCount} out of {totalKeysCount} keys have been registered. If you want to set up more keys, please delete 1 or more existing keys.",
+    "translation": "{registeredKeysCount} dari total {totalKeysCount} kunci telah didaftarkan. Jika kamu ingin mengatur lebih banyak kunci, hapus satu atau lebih kunci yang sudah ada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteSecurityKey",
+    "description": null,
+    "english": "Delete Security Key",
+    "translation": "Hapus Kunci Keamanan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeleteWarning",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
+    "translation": "Kunci keamanan melindung robux, pengalaman, item terbatas, dan lainnya. Kami sarankan untuk menghapus kunci kalau kunci tersebut hilang atau tidak valid lagi. {lineBreak}{lineBreak}Kamu yakin ingin menghapus kunci?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeleteSuccess",
+    "description": null,
+    "english": "{deletedKeyList} successfully deleted.",
+    "translation": "{deletedKeyList} berhasil dihapus.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactSuccess",
+    "description": null,
+    "english": "Successfully updated recommendation preferences.",
+    "translation": "Berhasil meng-update preferensi rekomendasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactFailure",
+    "description": null,
+    "english": "Unable to update recommendation preferences.",
+    "translation": "Tidak dapat meng-update preferensi rekomendasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": null,
+    "english": "Learn More about Voice Recording",
+    "translation": "Pelajari Selengkapnya tentang Rekaman Suara",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ContentControls",
+    "description": null,
+    "english": "Allowed Experiences",
+    "translation": "Pengalaman yang Diizinkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControls",
+    "description": null,
+    "english": "Choose the {linkStart}highest age guideline{linkEnd} of experiences this account can join.",
+    "translation": "Pilih {linkStart}panduan usia yang tertinggi{linkEnd} akun ini dapat bergabung ke pengalaman.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls13",
+    "description": null,
+    "english": "13+ (Suitable for ages 13 and older)",
+    "translation": "13+ (sesuai untuk usia 13 tahun ke atas)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls9",
+    "description": null,
+    "english": "9+ (Suitable for ages 9 and older)",
+    "translation": "9+ (sesuai untuk usia 9 tahun ke atas)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControlsAllAge",
+    "description": null,
+    "english": "All Ages (Suitable for everyone)",
+    "translation": "Semua usia (sesuai untuk semua pengguna)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ErrorLoadingAuthorizations",
+    "description": null,
+    "english": "There was a problem loading your app authorizations. Please try again.",
+    "translation": "Terjadi eror saat me-loading aplikasi otorisasi. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "Terjadi Masalah",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.TurnOnAuthenticator",
+    "description": null,
+    "english": "Turn on Authenticator First",
+    "translation": "Pertama-tama Nyalakan Autentikasi Terlebih Dahulu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.TurnOnAuthenticator",
+    "description": null,
+    "english": "Security keys is currently on web only. Please set up Authenticator first so that you can use 2 Step Verification on all platforms.",
+    "translation": "Kunci keamanan saat ini hanya di web. Pertama-tama atur Autentikasi terlebih dahulu agar kamu dapat menggunakan Verifikasi Dua Langkah di semua platform.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SetUp",
+    "description": null,
+    "english": "Set Up",
+    "translation": "Atur",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Manage",
+    "description": null,
+    "english": "Manage",
+    "translation": "Kelola",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.VerifiedPhoneRequired",
+    "description": null,
+    "english": "Verified Phone Required",
+    "translation": "Nomor Ponsel Terverifikasi Diperlukan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must provide and verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Kamu harus memberikan dan memverifikasikan nomor ponselmu sebelum kamu dapat mengaktifkan SMS Verifikasi Dua Langkah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Kamu harus memverifikasikan nomor ponselmu sebelum kamu dapat mengaktifkan SMS Verifikasi Dua Langkah.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ContentControls",
+    "description": null,
+    "english": "All experiences are still searchable. Experiences without age guidelines are currently treated as 13+.",
+    "translation": "Semua pengalaman tetap dapat ditemukan. Saat ini pengalaman tanpa panduan usia dianggap sebagai pengalaman untuk pengguna 13+.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepVerificationCodes",
+    "description": null,
+    "english": "Text Messages (Secure)",
+    "translation": "SMS (Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepPrerequisite",
+    "description": null,
+    "english": "Receive unique codes by text message on your phone.",
+    "translation": "Terima kode unik di SMS ponsel kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
+    "description": null,
+    "english": "Receive unique codes by text message at {phoneNumber}.",
+    "translation": "Terima kode unik via SMS di {phoneNumber}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "Lanjut",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Okay",
+    "description": null,
+    "english": "Okay",
+    "translation": "Oke",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "Selesai",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.PhoneHasTooManyAssociatedAccounts",
+    "description": null,
+    "english": "You’ve reached the maximum number of accounts linked to one phone number.",
+    "translation": "Jumlah akun yang terhubung ke satu nomor telepon sudah mencapai maksimum.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NumSyncedContacts",
+    "description": null,
+    "english": "You have {numDays, plural, =0 {no synced contacts} =1 {# synced contact available} other {# synced contacts available}}.",
+    "translation": "Kamu memiliki {numDays, plural, =0 {kontak tersinkronisasi} =1 {# kontak tersinkronisasi yang tersedia} other {# kontak tersinkronisasi yang tersedia}}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SpatialVoiceExperience",
+    "description": "already translated in Description.BeforeCommunityStandards",
+    "english": "This setting allows qualified users to use Spatial Voice to communicate in Roblox experiences.",
+    "translation": "Pengaturan ini mengizinkan pengguna yang memenuhi syarat untuk menggunakan Suara Spasial dalam berkomunikasi di pengalaman Roblox.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SpatialVoiceExperienceWithLink",
+    "description": "similar to Label.SpatialVoiceExperience and Description.BeforeCommunityStandards",
+    "english": "This setting allows qualified users to use {linkStart}Spatial Voice{linkEnd} to communicate in Roblox experiences.",
+    "translation": "Pengaturan ini mengizinkan pengguna yang memenuhi syarat untuk menggunakan {linkStart}Suara Spasial{linkEnd} dalam berkomunikasi di pengalaman Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.PasswordVerification",
+    "description": null,
+    "english": "Password Verification",
+    "translation": "Verifikasi Kata Sandi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.EnterYourPassword",
+    "description": null,
+    "english": "Please enter your password to continue.",
+    "translation": "Masukkan kata sandi kamu untuk melanjutkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Dialog.YourPassword",
+    "description": null,
+    "english": "Your Password",
+    "translation": "Kata Sandi Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PermissionsCount",
+    "description": null,
+    "english": "{permissionCount, plural, =0 {# Permissions} =1 {# Permission} other {# Permissions}}",
+    "translation": "{permissionCount, plural, =0 {# Izin} =1 {# Izin} other {# Izin}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ScopeDescriptionMessage",
+    "description": "scopesList is a list of scope descriptions separated by commas (i.e. \"your account id, your username and email, cross server messaging announcements\"",
+    "english": "Has access to {scopesList}",
+    "translation": "Memiliki akses ke {scopesList}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.OpenIdScopeDescription",
+    "description": null,
+    "english": "your account ID",
+    "translation": "ID akun kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ProfileScopeDescription",
+    "description": null,
+    "english": "your username and profile",
+    "translation": "nama pengguna dan profil kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CrossServerMessagingScopeDescription",
+    "description": null,
+    "english": "your messaging service API announcements",
+    "translation": "pengumuman API layanan pesan kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.ForgotYourPassword",
+    "description": null,
+    "english": "Forgot your Password?",
+    "translation": "Lupa Kata Sandi?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationTitle",
+    "description": null,
+    "english": "An Extra Layer of Account Security",
+    "translation": "Lapisan Tambahan Kemanan Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationSingleMethodDescription",
+    "description": null,
+    "english": "In addition to your password, add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. Note: you can only enable one option below at a time.",
+    "translation": "Selain kata sandi kamu, berikan lapisan keamanan tambahan ke akun kamu dengan Verifikasi Dua Langkah saat log in, pemulihan akun, dan transaksi dengan nilai besar. Catatan: kamu hanya dapat mengaktifkan satu opsi di bawah dalam satu waktu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.EnableTwoStepVerificationSingleMethodWarning",
+    "description": null,
+    "english": "To turn on a new 2 Step Verification option, your previous option will be turned off. Do you want to continue?",
+    "translation": "Untuk menyalakan opsi Verifikasi Dua Langkah baru, opsi kamu sebelumnya akan dimatikan. Kamu mau melanjutkan?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.OneOptionAtATime",
+    "description": null,
+    "english": "One Option At A Time",
+    "translation": "Satu Opsi dalam Satu Waktu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Deletion",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds, and more. We would recommend deleting a key if you have lost it or it is no longer valid.",
+    "translation": "Kunci keamanan melindung robux, pengalaman, item terbatas, dan lainnya. Kami sarankan untuk menghapus kunci kalau kunci tersebut hilang atau tidak valid lagi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Warning",
+    "description": null,
+    "english": "Are you sure you want to delete your key?",
+    "translation": "Kamu yakin ingin menghapus kunci?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControlsWithUnratedDescription",
+    "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
+    "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
+    "translation": "Pilih {linkStart}panduan usia{linkEnd} yang tertinggi akun ini dapat bergabung ke pengalaman.{lineBreak}Semua pengalaman tetap dapat ditemukan. Saat ini pengalaman tanpa panduan usia dianggap sebagai pengalaman untuk pengguna 13+.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AllowedExperiences",
+    "description": "heading for content restrictions - representing the age level of experiences this user can play",
+    "english": "Allowed Experiences",
+    "translation": "Pengalaman yang Diizinkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.DeleteSecurityKeySuccess",
+    "description": null,
+    "english": "Security Key Deleted",
+    "translation": "Kunci Keamanan Dihapus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeletedKeysList",
+    "description": null,
+    "english": "{deletedKeyList} {verbTense} successfully deleted.",
+    "translation": "{deletedKeyList} {verbTense} berhasil dihapus.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.VerifiedEmailOrPhoneRequired",
+    "description": null,
+    "english": "Verified Email or Phone Number Required",
+    "translation": "Email atau Nomor Telepon Terverifikasi Diperlukan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedEmailOrPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must provide and verify your email or phone number before you can enable 2-Step Verification via Authenticator App.",
+    "translation": "Kamu harus memberikan dan memverifikasikan email atau nomor ponselmu sebelum kamu dapat mengaktifkan Verifikasi Dua Langkah via aplikasi Autentikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SMS",
+    "description": null,
+    "english": "Text Messages (Secure)",
+    "translation": "SMS (Aman)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.SecurityKeyNickname",
+    "description": null,
+    "english": "Nickname must be less than 40 characters long.",
+    "translation": "Nama panggilan harus kurang dari 40 karakter.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.ExceededRegisteredKeysLimit",
+    "description": null,
+    "english": "The max number of keys have been registered.",
+    "translation": "Jumlah maksimum kunci sudah didaftarkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.InvalidCredentialNickname",
+    "description": null,
+    "english": "Please use a different nickname.",
+    "translation": "Gunakan nama panggilan yang berbeda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.AuthenticatorDisabledHelpText",
+    "description": null,
+    "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
+    "translation": "Aplikasi di ponsel kamu yang membuat kode unik. Aplikasi yang disarankan seperti Google Authenticator, Microsoft Authenticator, dan Twilio Authy.",
     "isDeprecated": false
   },
   {
@@ -23444,7 +25708,7 @@
     "key": "Label.ExploreCatalog",
     "description": "This text entices users to shop for more things to wear on their avatar",
     "english": "Explore the catalog to find more clothes!",
-    "translation": "Jelajahi katalog untuk menemukan lebih banyak busana!",
+    "translation": "Jelajahi katalog untuk menemukan lebih banyak pakaian",
     "isDeprecated": false
   },
   {
@@ -23460,7 +25724,7 @@
     "key": "Label.AskIfLoadingCorrectly",
     "description": "Avatar isn't loading correctly?",
     "english": "Avatar isn't loading correctly?",
-    "translation": "Avatar tidak memuat dengan benar?",
+    "translation": "Avatar tidak loading secara benar?",
     "isDeprecated": false
   },
   {
@@ -23468,7 +25732,7 @@
     "key": "Label.RedrawUnavailable",
     "description": "Avatar redraw is unavailable",
     "english": "Avatar redraw is unavailable.",
-    "translation": "Gambar ulang Avatar tidak tersedia.",
+    "translation": "Redraw Avatar tidak tersedia.",
     "isDeprecated": false
   },
   {
@@ -23476,7 +25740,7 @@
     "key": "Action.Redraw",
     "description": "Redraw the avatar on the screen",
     "english": "Redraw",
-    "translation": "Gambar Ulang",
+    "translation": "Redraw",
     "isDeprecated": false
   },
   {
@@ -32772,7 +35036,7 @@
     "key": "Label.TopRated",
     "description": null,
     "english": "Top Rated",
-    "translation": "Rating Teratas",
+    "translation": "Peringkat Teratas",
     "isDeprecated": false
   },
   {
@@ -33124,7 +35388,7 @@
     "key": "Label.HotGames",
     "description": "Luobu Sort\nwas Hot Games",
     "english": "Hot Experiences",
-    "translation": "Pengalaman Keren",
+    "translation": "Pengalaman Populer",
     "isDeprecated": false
   },
   {
@@ -44156,7 +46420,7 @@
     "key": "Response.PhoneHasTooManyAssociatedAccounts",
     "description": null,
     "english": "You’ve reached the maximum number of accounts linked to one phone number.",
-    "translation": "Akun yang terkait ke satu nomor telepon sudah mencapai jumlah maksimum.",
+    "translation": "Jumlah akun yang terhubung ke satu nomor telepon sudah mencapai maksimum.",
     "isDeprecated": true
   },
   {
