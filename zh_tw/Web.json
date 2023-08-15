@@ -860,7 +860,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}Roblox",
-    "translation": "{accountName} 您好，{lineBreak}{lineBreak}您已為 Roblox 帳號停用電子郵件雙步驟驗證。您登入或進行部分操作時將不再需要使用電子郵件中的安全碼。{lineBreak}{lineBreak}Roblox 敬上",
+    "translation": "{accountName} 您好，{lineBreak}{lineBreak}您的 Roblox 帳號已停用電子郵件地址雙步驟驗證。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -868,7 +868,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
-    "translation": "您好，{lineBreak}{lineBreak}您孩子的 Roblox 帳號 {accountName} 已停用電子郵件雙步驟驗證。他登入或進行部分操作時將不再需要使用電子郵件中的安全碼。{lineBreak}{lineBreak}Roblox 敬上",
+    "translation": "您好，{lineBreak}{lineBreak}您小孩的 Roblox 帳號 {accountName} 已停用電子郵件地址雙步驟驗證。{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1476,7 +1476,7 @@
     "key": "Description.TwoStepVerificationSMSDeactivationText.Body",
     "description": "SMS message for disabling SMS 2sv.",
     "english": "Roblox 2SV for {accountName} disabled.",
-    "translation": "已停用Roblox 帳號 {accountName} 的雙步驟驗證。",
+    "translation": "已停用 Roblox 帳號 {accountName} 的雙步驟驗證。",
     "isDeprecated": false
   },
   {
@@ -1493,6 +1493,22 @@
     "description": "SMS message for when out of recovery codes.",
     "english": "You have no remaining 2SV account recovery codes for your Roblox account. Please contact customer support for further assistance in recovering your account.",
     "translation": "你已用完此 Roblox 帳號的雙步驟驗證帳號復原碼。若您還需要帳號復原方面的協助，請聯絡客服人員。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSMSEnabledText.Body",
+    "description": "SMS message for enabling 2sv (without OTP code).",
+    "english": "Roblox 2SV for {accountName} enabled.",
+    "translation": "已啟用 Roblox 帳號 {accountName} 的雙步驟驗證。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SmsMediaType",
+    "description": "Name of SMS media type",
+    "english": "SMS",
+    "translation": "簡訊",
     "isDeprecated": false
   },
   {
@@ -3485,6 +3501,14 @@
     "description": "Button text, clicked means user acknowledged the information",
     "english": "OK",
     "translation": "確定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Action.SkipToMainContent",
+    "description": "Text on a button that pulls focus to the first element in the page for people using assistive technologies\n\nhttps://www.w3.org/TR/WCAG20-TECHS/G1.html",
+    "english": "Skip to Main Content",
+    "translation": "跳到主內容",
     "isDeprecated": false
   },
   {
@@ -10573,6 +10597,30 @@
     "description": null,
     "english": "Success! Monthly Spend Restrictions have been set up.",
     "translation": "成功！已設定單月消費限制。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.FreeCommConsentOnly",
+    "description": null,
+    "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
+    "translation": "我同意 Roblox 為審查和安全用途收集、使用及儲存我的錄音。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Respones.InvalidPhoneNumberType",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "此手機號碼無效，請輸入其他手機號碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.InvalidPhoneNumberType",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "此手機號碼無效，請輸入其他手機號碼。",
     "isDeprecated": false
   },
   {
@@ -24573,6 +24621,14 @@
     "description": null,
     "english": "Secure Your Account",
     "translation": "確保帳號安全",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Response.InvalidPhoneNumberError",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "此手機號碼無效，請輸入其他手機號碼。",
     "isDeprecated": false
   },
   {
@@ -46768,6 +46824,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.MinimumDailyBudget",
+    "description": "An error message displayed to the user when their Daily Budget selection is too low",
+    "english": "Daily Budget must be at least {miniumBid} Robux",
+    "translation": "單日預算須為 {miniumBid} Robux 以上",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.DailyBudgetRange",
+    "description": "Error message displayed to the user if their daily budget bid is either too small, or too large.",
+    "english": "Daily Budget must be between {minimumBid} and {maximumBid} Robux",
+    "translation": "單日預算須在 {minimumBid} 到 {maximumBid} Robux 之間",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsoredAdPreview",
+    "description": "The title for a page that displays a preview of a sponsorship ad",
+    "english": "Sponsored Ad Preview",
+    "translation": "贊助廣告預覽",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameJoin",
     "key": "Title.CurrentPlatformUnsupported",
     "description": "game installation is not supported current platform",
@@ -47513,10 +47593,42 @@
   },
   {
     "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Create",
+    "description": null,
+    "english": "Create {itemType}",
+    "translation": "建立{itemType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
     "key": "Heading.Game",
     "description": null,
     "english": "Experience",
     "translation": "體驗",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.DevelopmentItem",
+    "description": null,
+    "english": "Development Item",
+    "translation": "開發項目",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Pass",
+    "description": null,
+    "english": "Pass",
+    "translation": "遊戲證",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.TranslatorGame",
+    "description": null,
+    "english": "Translator Game",
+    "translation": "譯者遊戲",
     "isDeprecated": false
   },
   {
@@ -49152,6 +49264,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.UnknownError",
+    "description": null,
+    "english": "Reserved for base level errors. Do not use in your endpoint directly, do not document.",
+    "translation": "基層錯誤限定。請勿直接用在終點或紀錄。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidFile",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "上傳的檔案不符合已知圖像格式。請嘗試轉換成 PNG。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.MissingFile",
+    "description": null,
+    "english": "File not present in request.",
+    "translation": "請求中沒有檔案。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.TooManyAttempts",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "上傳內容過多，請稍後再試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidItem",
+    "description": null,
+    "english": "Target item is invalid or does not exist.",
+    "translation": "目標道具無效或不存在。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidPermissions",
+    "description": null,
+    "english": "You do not have permission to manage this item.",
+    "translation": "權限不足，無法管理此道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.NoRootPlace",
+    "description": null,
+    "english": "The game has no root place.",
+    "translation": "此遊戲沒有根地點。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidAssetType",
+    "description": null,
+    "english": "The asset type is not appropriate for this request.",
+    "translation": "素材類型與請求不相配。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Error",
+    "key": "Error.Publish.InvalidQuotaResourceType",
+    "description": null,
+    "english": "The resource type is not appropriate for this request.",
+    "translation": "資源類型與請求不相配。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ApplicationAuthorization",
     "key": "Label.AppName",
     "description": null,
@@ -50717,6 +50901,14 @@
     "description": null,
     "english": "Done",
     "translation": "完成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Response.InvalidPhoneNumberError",
+    "description": null,
+    "english": "This phone number is not valid. Please enter a different phone number.",
+    "translation": "此手機號碼無效，請輸入其他手機號碼。",
     "isDeprecated": false
   },
   {
@@ -54924,7 +55116,7 @@
     "key": "Description.TotalPlayTime",
     "description": null,
     "english": "Total play time divided by number of sessions on each day.",
-    "translation": "一天內所有作業的總小時數。",
+    "translation": "總遊戲時數除以每日作業數量。",
     "isDeprecated": false
   },
   {
@@ -55044,7 +55236,7 @@
     "key": "Label.AveragePlayTime",
     "description": null,
     "english": "Average of average session time",
-    "translation": "平均遊戲時間的均數",
+    "translation": "平均作業時間平均值",
     "isDeprecated": false
   },
   {
@@ -55092,7 +55284,7 @@
     "key": "Label.AverageTotalPlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "平均每日總遊戲時間",
+    "translation": "平均作業時間",
     "isDeprecated": false
   },
   {
@@ -55780,7 +55972,7 @@
     "key": "Description.TotalPlayTimeInsight",
     "description": null,
     "english": "Average session time measures how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Breaking it down by age group, platform, etc. will give you an idea where to iterate your content. It can be used together with D1 retention as an early indicator of your long term retention.",
-    "translation": "總遊戲時間是衡量遊戲互動性的核心互動指標。如果總遊戲時間偏低或有下降的趨勢，您可以看看遊戲設計中有沒有會令玩家提早離開的環節，或是檢查遊戲中有沒有出現錯誤。",
+    "translation": "平均作業時間可以讓您知道使用者每一次到您的遊戲時所花的時間。您可以根據遊戲的設計和類別衡量應該達到的時間。您也可以依照年齡層、平台等類別決定遊戲更新的方向。平均作業時間和 D1 存留率可以用來初步預計長期存留率。",
     "isDeprecated": false
   },
   {
@@ -55956,7 +56148,7 @@
     "key": "Title.AveragePlayTime",
     "description": null,
     "english": "Average Session Time",
-    "translation": "單一使用者的平均遊戲時間",
+    "translation": "平均作業時間",
     "isDeprecated": false
   },
   {
@@ -55964,7 +56156,7 @@
     "key": "Description.AveragePlayTime",
     "description": null,
     "english": "Total play time divided by number of sessions on each day.",
-    "translation": "總遊戲時間 / DAU。",
+    "translation": "總遊戲時數除以每日作業數量。",
     "isDeprecated": false
   },
   {
@@ -55972,7 +56164,7 @@
     "key": "Description.AveragePlayTimeInsight",
     "description": null,
     "english": "Average session time indicates how long a user plays each time they visit your game. You can compare it with your expectations based on your game design and genre. Break it down by age group, platform, etc. will give you an idea where to iterate your content. Use it together with D1 retention as an early indicator of your long term retention. ",
-    "translation": "此 KPI 可以幫您了解玩家層面的互動率，可以做為遊戲推出初期的北極星指標。",
+    "translation": "平均作業時間可以讓您知道使用者每一次到您的遊戲時所花的時間。您可以根據遊戲的設計和類別衡量應該達到的時間。您也可以依照年齡層、平台等類別決定遊戲更新的方向。平均作業時間和 D1 存留率可以用來初步預計長期存留率。",
     "isDeprecated": false
   },
   {
@@ -56005,6 +56197,22 @@
     "description": null,
     "english": "Average percent of W1 Vistors",
     "translation": "W1 訪客平均百分比",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分鐘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.MinutesSuffix",
+    "description": null,
+    "english": "minutes",
+    "translation": "分鐘",
     "isDeprecated": false
   },
   {
@@ -59972,7 +60180,7 @@
     "key": "Message.NoKeys",
     "description": "For the API key table empty state",
     "english": "You haven't created any API keys.",
-    "translation": "沒有 API 金鑰",
+    "translation": "您尚未創作任何 API 金鑰。",
     "isDeprecated": false
   },
   {
@@ -61184,6 +61392,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Label.Duplicate",
+    "description": null,
+    "english": "Duplicate",
+    "translation": "複製",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.OAuthApiExtension",
+    "description": null,
+    "english": "Use OAuth apps if you want to build apps for users outside of your team.",
+    "translation": "若要為團隊以外的使用者建立 App，請使用 OAuth App。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.LearnApis",
+    "description": null,
+    "english": "{linkStart}Learn how to use APIs{linkEnd}",
+    "translation": "{linkStart}了解如何使用 API{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.ApiKeyExtension",
+    "description": null,
+    "english": "Use API keys if you want to build internal tools for yourself or your team.",
+    "translation": "若要為自己或團隊開發內部工具，請使用 API 金鑰。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "For the 'universe-places' scope type name",
@@ -61357,6 +61597,30 @@
     "description": "Test onboarding example for open cloud onboarding (St1 specific)",
     "english": "Test Open Cloud Onboarding Example",
     "translation": "測試開放式雲端入門範例",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.CrossServerMessaging",
+    "description": null,
+    "english": "Cross Server Messaging API",
+    "translation": "跨伺服器訊息 API",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.CrossServerMessagingPublishOperation",
+    "description": "Operation for publishing a message.",
+    "english": "Publish",
+    "translation": "發布",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.UniversePlacesWrite",
+    "description": "Description for the Write operation for the universe-places scope.",
+    "english": "This operation grants access to publish new versions of experiences to Roblox.",
+    "translation": "此操作將會允許發布新版本的體驗到 Roblox。",
     "isDeprecated": false
   },
   {
@@ -64000,6 +64264,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Message.ErrorLoadingTable",
+    "description": null,
+    "english": "An error has occurred while loading the full table. Please try refreshing your page.",
+    "translation": "載入完整表格時發生錯誤，請重新整理頁面。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.TranslatorPortal",
     "key": "Heading.TranslatorPortal",
     "description": null,
@@ -65121,6 +65393,38 @@
   },
   {
     "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.OAuthEdit",
+    "description": null,
+    "english": "Edit \"{appName}\"?",
+    "translation": "編輯「{appName}」？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.OAuthMoreDetails",
+    "description": null,
+    "english": "More Details",
+    "translation": "更多詳情",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.OAuthLastUpdated",
+    "description": null,
+    "english": "Last updated: ",
+    "translation": "最後更新：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ErrorLoadingApp",
+    "description": null,
+    "english": "There was an error loading your app details",
+    "translation": "載入 App 詳細資訊時發生錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
     "key": "Description.RegenerateDialogContent2",
     "description": null,
     "english": "Any unsaved changes will need to be saved separately.",
@@ -65133,6 +65437,14 @@
     "description": null,
     "english": "Error",
     "translation": "錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.OAuthValidEditTitle",
+    "description": null,
+    "english": "Save Changes?",
+    "translation": "儲存變更？",
     "isDeprecated": false
   },
   {
@@ -65304,6 +65616,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Error.UnknownError",
+    "description": null,
+    "english": "Reserved for base level errors. Do not use in your endpoint directly, do not document.",
+    "translation": "基層錯誤限定。請勿直接用在終點或紀錄。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Reauthentication",
     "key": "Header.PasswordVerification",
     "description": null,
@@ -65413,6 +65733,30 @@
     "description": null,
     "english": "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.",
     "translation": "©{copyrightYear} Roblox Corporation、Roblox、Roblox 標誌及 Powering Imagination 是我們在美國及其他國家地區的部分註冊與未註冊商標。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionMessage",
+    "description": null,
+    "english": "The {pageName} has been migrated to the Creator Dashboard. You can use the updated page by clicking {pageLinkText}.",
+    "translation": "{pageName}已移到創作者後台。您可以點擊 {pageLinkText} 前往新的頁面。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateBadgePageName",
+    "description": null,
+    "english": "Badge Creation Page",
+    "translation": "徽章建立頁面",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateBadgesPageName",
+    "description": null,
+    "english": "Badge Creation Page",
+    "translation": "徽章建立頁面",
     "isDeprecated": false
   }
 ]
