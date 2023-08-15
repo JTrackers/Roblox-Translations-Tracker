@@ -608,6 +608,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Application.Settings",
+    "key": "Permissions.NSContactsUsageDescription3",
+    "description": "Permission OS prompt on iOS and Android",
+    "english": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
+    "translation": "与 Roblox 上的好友联系。你的联系人将会定期更新并匹配其他已存储至你设备的其他好友，帮助你找到你的好友。你可以在设置中随时管理此选项。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Cancel",
     "description": null,
@@ -4485,6 +4493,30 @@
     "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
     "english": "This experience is currently unavailable to you due to compliance reasons.",
     "translation": "因法律法规原因，你无法加入此体验。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalAvailability",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "出于当地法律法规，此作品在你所在的地区不可用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityRegionalCompliance",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable in your region to comply with regulations.",
+    "translation": "出于当地法律法规，此作品在你所在的地区不可用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.VisitGame",
+    "key": "Label.ContextualPlayabilityAgeRecommendationParentalControls",
+    "description": "When a game is blocked due to several possible systems that all relate to compliance rejections for that specific user in that context.",
+    "english": "This experience is unavailable due to your account settings.",
+    "translation": "由于你的帐户设置，此作品不可用。",
     "isDeprecated": false
   },
   {
@@ -11379,7 +11411,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully disabled.",
+    "english": "{deletedKeyList} were successfully deleted.",
     "translation": "{deletedKeyList} 已成功禁用 。",
     "isDeprecated": false
   },
@@ -11412,7 +11444,7 @@
     "key": "Heading.ContentControls",
     "description": null,
     "english": "Allowed Experiences",
-    "translation": "基于年龄的体验控制选项",
+    "translation": "所有允许作品",
     "isDeprecated": false
   },
   {
@@ -11420,7 +11452,7 @@
     "key": "Description.ContentControls",
     "description": null,
     "english": "Choose the {linkStart}highest age guideline{linkEnd} of experiences this account can join.",
-    "translation": "此帐户可以访问的年龄推荐上限是什么？请参考{linkStart}此页面{linkEnd}获取更多信息。",
+    "translation": "选择此帐户适用作品的{linkStart}年龄准则{linkEnd}上限。",
     "isDeprecated": false
   },
   {
@@ -11524,7 +11556,7 @@
     "key": "Message.ContentControls",
     "description": null,
     "english": "All Experiences are still searchable. Unrated experiences are currently treated as 13+.",
-    "translation": "注意：所有的作品都可以被搜索到并查看。未经评级的作品当前将被视为针对 13 岁及以上。",
+    "translation": "所有作品仍可以被搜索到。未评级的作品当前将被视为 13+。 ",
     "isDeprecated": false
   },
   {
@@ -11629,6 +11661,110 @@
     "description": null,
     "english": "Your Password",
     "translation": "你的密码",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.PermissionsCount",
+    "description": null,
+    "english": "{permissionCount, plural, =0 {# Permissions} =1 {# Permission} other {# Permissions}}",
+    "translation": "{permissionCount, plural, =0 {# 项权限} =1 {# 项权限} other {# 项权限}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ScopeDescriptionMessage",
+    "description": "scopesList is a list of scope descriptions separated by commas (i.e. \"your account id, your username and email, cross server messaging announcements\"",
+    "english": "Has access to {scopesList}",
+    "translation": "可以访问 {scopesList}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.OpenIdScopeDescription",
+    "description": null,
+    "english": "your account ID",
+    "translation": "你的帐户 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ProfileScopeDescription",
+    "description": null,
+    "english": "your username and profile",
+    "translation": "你的用户名和个人资料",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.CrossServerMessagingScopeDescription",
+    "description": null,
+    "english": "your messaging service API announcements",
+    "translation": "你的通讯服务 API 公告",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Dialog.ForgotYourPassword",
+    "description": null,
+    "english": "Forgot your Password?",
+    "translation": "忘记密码？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationTitle",
+    "description": null,
+    "english": "An Extra Layer of Account Security",
+    "translation": "进一步保障帐户安全",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.TwoStepVerificationSingleMethodDescription",
+    "description": null,
+    "english": "In addition to your password, add an extra layer of protection to your account with 2-Step Verification at login, account recovery, and high-value transactions. Note: you can only enable one option below at a time.",
+    "translation": "除了你的密码外，在登录、帐户恢复和大额度交易时使用两步验证，让你的帐户获得更多一层的保护。请注意：下列选项一次只能启用一种。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.EnableTwoStepVerificationSingleMethodWarning",
+    "description": null,
+    "english": "To turn on a new 2 Step Verification option, your previous option will be turned off. Do you want to continue?",
+    "translation": "开启新的两步验证选项时，先前的选项将会关闭。是否继续？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.OneOptionAtATime",
+    "description": null,
+    "english": "One Option At A Time",
+    "translation": "一次选择一个选项",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Deletion",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds, and more. We would recommend deleting a key if you have lost it or it is no longer valid.",
+    "translation": "安全密钥可以用来保护您的 Robux、作品以及限定道具等等。 如果密钥丢失或失效，那么我们建议将它删除。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Warning",
+    "description": null,
+    "english": "Are you sure you want to delete your key?",
+    "translation": "是否确定要删除你的密钥？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControlsWithUnratedDescription",
+    "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
+    "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
+    "translation": "选择此帐户适用的{linkStart}年龄准则{linkEnd}上限。{lineBreak}所有作品仍可以被搜索到。未评级的作品当前将被视为 13+。 ",
     "isDeprecated": false
   },
   {
@@ -24248,6 +24384,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseSucceededRobuxBalance",
+    "description": null,
+    "english": "Your balance is now {userRobuxBalance}.",
+    "translation": "你的当前余额为 {userRobuxBalance}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PurchaseErrorOccured",
+    "description": "generic purchase error message",
+    "english": "An error occurred with your purchase. Please try again later.",
+    "translation": "进行此购买时发生错误。请稍后重试。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -26005,6 +26157,22 @@
     "description": null,
     "english": "Connect with your real life friends via phone number (opt-in only).",
     "translation": "通过手机号码找到现实好友（选用）。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.FinishAccountSetup",
+    "description": null,
+    "english": "Finish Account Set Up",
+    "translation": "完成帐户设置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.ContactMethodAccessLoss",
+    "description": null,
+    "english": "Without a Contact Method, you may lose access to game progress, items, and Robux if your account is lost.",
+    "translation": "如果不设置联系方式，那么如果你的帐户丢失的话，你也可能会丢失游戏进度、道具和 Robux。",
     "isDeprecated": false
   },
   {
@@ -30798,6 +30966,14 @@
     "english": "Face Chat Requires Camera",
     "translation": "面部聊天功能需要摄像头",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Label.Style",
+    "description": null,
+    "english": "Style",
+    "translation": "风格",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.SocialMetaTags",
@@ -53152,6 +53328,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Response.CompletingRequest",
+    "description": "use Message.CompletingRequest",
+    "english": "Completing your request",
+    "translation": "正在完成您的请求",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadPopup",
+    "description": null,
+    "english": "Once your data is ready, we will send the download link to your verified email.",
+    "translation": "一旦你的数据就绪，我们将会将下载链接发送至你已验证的电子邮件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.BackToTransactions",
+    "description": null,
+    "english": "Back to Transactions",
+    "translation": "返回交易",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.CompletingRequest",
+    "description": null,
+    "english": "Completing your request\t",
+    "translation": "正在完成你的请求",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.MaxDaysLimitExceeded",
+    "description": null,
+    "english": "You cannot select more than 90 days.",
+    "translation": "你不能选择超过 90 天。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadInstructions",
+    "description": null,
+    "english": "Please select the date range of the transactions you want to download, up to a 90 day window.",
+    "translation": "请选择你想要下载的交易的日期范围，窗口最多为 90 天。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.Download",
+    "description": null,
+    "english": "Download",
+    "translation": "下载",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DateRangeSelection",
+    "description": null,
+    "english": "Select Date Range to Download",
+    "translation": "选择要下载的日期范围",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -55577,10 +55817,34 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Action.RemovePlaces",
+    "description": null,
+    "english": "Remove from Experience",
+    "translation": "从作品移除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.RemovedSuccess",
+    "description": null,
+    "english": "{placeName} removed",
+    "translation": "已移除 {placeName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Remove",
     "description": null,
     "english": "Remove",
     "translation": "移除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenExperienceDetails",
+    "description": null,
+    "english": "Open Experience Details",
+    "translation": "打开作品详情",
     "isDeprecated": false
   },
   {
@@ -55865,6 +56129,86 @@
   },
   {
     "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Shirt",
+    "description": "Asset type Shirt, singular form",
+    "english": "Shirt",
+    "translation": "衬衫",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.TShirt",
+    "description": "Asset type T-Shirt, singular form",
+    "english": "T-Shirt",
+    "translation": "T 恤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Hat",
+    "description": "Asset type Hat, singular form",
+    "english": "Hat",
+    "translation": "帽子",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.HairAccessory",
+    "description": null,
+    "english": "Hair Accessory",
+    "translation": "发型饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.FaceAccessory",
+    "description": null,
+    "english": "Face Accessory\t",
+    "translation": "面部饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.NeckAccessory",
+    "description": null,
+    "english": "Neck Accessory",
+    "translation": "颈部饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.ShoulderAccessory",
+    "description": null,
+    "english": "Shoulder Accessory",
+    "translation": "肩部饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.FrontAccessory",
+    "description": "asset type Front Accessory",
+    "english": "Front Accessory",
+    "translation": "正面饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.BackAccessory",
+    "description": "asset type Back Accessory",
+    "english": "Back Accessory",
+    "translation": "背部饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.WaistAccessory",
+    "description": "asset type Waist Accessory",
+    "english": "Waist Accessory",
+    "translation": "腰部饰品",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Decal",
     "description": "asset type Decal, singular form",
     "english": "Decal",
@@ -55877,6 +56221,14 @@
     "description": "asset type Model, singular form",
     "english": "Model",
     "translation": "模型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Mesh",
+    "description": "asset type Mesh, singular form",
+    "english": "Mesh",
+    "translation": "网格",
     "isDeprecated": false
   },
   {
@@ -60849,10 +61201,58 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.GuidelinesSubmittedModeratorRejected",
+    "description": null,
+    "english": "Questionnaire {redColorStart}Submission Not Accepted{redColorEnd}",
+    "translation": "问卷 {redColorStart}提交遭拒{redColorEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.UponReviewModerationText",
+    "description": null,
+    "english": "Upon review, your latest questionnaire submission was determined to be inaccurate due to the following reasons:",
+    "translation": "经过审查，你提交的最新问卷因下列原因被判为信息有误：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.YourSubmissionModeration",
+    "description": null,
+    "english": "Your submission",
+    "translation": "你的问卷提交",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.ModeratorFeedbackModeration",
+    "description": null,
+    "english": "Moderator feedback",
+    "translation": "审查员反馈",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.NextStepsModeration",
+    "description": null,
+    "english": "Next Step: Please retake the questionnaire and answer accurately based on your experience content and the moderator feedback.",
+    "translation": "下一步：请重新填写问卷，根据你的作品内容和审查员反馈准确作答。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.NextStepsModeration",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
     "translation": "点按“开始”开始回答一系列关于你作品的问题。你的答案将会用来生成作品内容需要遵守的准则，其中当前包括年龄推荐和地区合规性考量。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.NotPresentDescriptorUsage",
+    "description": null,
+    "english": "Not Present",
+    "translation": "不存在",
     "isDeprecated": false
   },
   {
@@ -61793,6 +62193,14 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OpenForComments",
+    "description": "Used for form labels on items that can be enabled for comments (i.e avatar Shirt asset). Paried with a toggle input usually.",
+    "english": "Open for comments",
+    "translation": "开放评论区",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Heading.Configure",
     "description": null,
     "english": "Configure",
@@ -61809,10 +62217,66 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.SaveChangesFailure",
+    "description": null,
+    "english": "Save changes failed. Please try again later.",
+    "translation": "无法保存更改，请稍后重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ProgressiveCharacterLimit",
+    "description": null,
+    "english": "{count} characters remaining",
+    "translation": "剩余 {count} 个字符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OnSale",
+    "description": "Used for form labels on items that can be put on sale (i.e avatar Shirt asset). Paired with a toggle input usually.",
+    "english": "On Sale",
+    "translation": "在售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SetPrice",
+    "description": "Used as form input label, set a price for items (i.e avatar Shirt asset)",
+    "english": "Set a price",
+    "translation": "设定价格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Error.InvalidNumber",
     "description": null,
     "english": "Not a valid number",
     "translation": "数字无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CreatorEarnings",
+    "description": "Message to tell how much profit creator can earn",
+    "english": "Creator earnings ({percentage})",
+    "translation": "创作者收入 {percentage}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MinimumPrice",
+    "description": null,
+    "english": "The minimum price for this item is {price}",
+    "translation": "此道具的最低价格为 {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MaximumPrice",
+    "description": null,
+    "english": "The maximum price for this item is {price}",
+    "translation": "此道具的最高价格为 {price}",
     "isDeprecated": false
   },
   {
@@ -65672,6 +66136,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Title.SaveSecret",
+    "description": null,
+    "english": "Save your secret now!",
+    "translation": "立刻保存你的密钥！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.SaveSecret",
+    "description": null,
+    "english": "Copy the secret before closing the page and save it to a secure place. The system will NOT store the secret for security reasons.",
+    "translation": "请注意：关闭页面前，请复制密钥并妥善保存。出于安全原因，系统将不会存储密钥。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
@@ -65916,7 +66396,7 @@
     "key": "Label.CreatorAssetPublishAPI",
     "description": null,
     "english": "Assets API",
-    "translation": "素材发布 API",
+    "translation": "素材 API",
     "isDeprecated": false
   },
   {
@@ -66012,7 +66492,7 @@
     "key": "Label.AssetPublishOperation",
     "description": null,
     "english": "Create",
-    "translation": "发布",
+    "translation": "创建",
     "isDeprecated": false
   },
   {
@@ -66021,6 +66501,30 @@
     "description": null,
     "english": "New Assets can be published to the listed creator account above",
     "translation": "新素材可以发布至上述列出的创作者帐户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.MessagingServicePublish",
+    "description": null,
+    "english": "This grants the ability to publish messages on behalf of users.",
+    "translation": "授予代替用户发布信息的权力。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.profileRead",
+    "description": null,
+    "english": "This grants access to read your profile information",
+    "translation": "授予读取个人资料信息的权限",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.openidRead",
+    "description": null,
+    "english": "This enables Single Sign-On functionality",
+    "translation": "启用单一登录功能",
     "isDeprecated": false
   },
   {
@@ -68697,10 +69201,82 @@
   },
   {
     "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyAdded",
+    "description": "Entries that have been recently added for translations",
+    "english": "Recently Added Entries",
+    "translation": "最近新增条目",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecency",
+    "description": null,
+    "english": "Newest to Oldest Entries",
+    "translation": "由新到旧排序条目",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.SortingOptionRecentlyModifiedTranslations",
+    "description": "Translations that have been recently updated by a user or by automatic translations",
+    "english": "Recently Modified Translations",
+    "translation": "最近更改的翻译",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.SortBy",
+    "description": "eg sort by newest to oldest entries, a to z etc",
+    "english": "SORT BY",
+    "translation": "排序方式",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByCompletionStatus",
+    "description": "filter by whether an entry has translations",
+    "english": "FILTER BY COMPLETION STATUS",
+    "translation": "按照完成状态排序",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByTranslationType",
+    "description": "Whether the translation was added manually (ie by a user) or by automatic translation",
+    "english": "FILTER BY TRANSLATION TYPE",
+    "translation": "按照翻译方式排序",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByRecency",
+    "description": "filter by whether a translation or entry was added recently",
+    "english": "FILTER BY RECENCY",
+    "translation": "按照添加时间排序",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
     "key": "Label.Cancel",
     "description": "Cancel operation - label for a button",
     "english": "CANCEL",
     "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ClearAll",
+    "description": "Button label to clear all selected items",
+    "english": "CLEAR ALL",
+    "translation": "清除全部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ApplyChanges",
+    "description": "Button label to apply changes",
+    "english": "APPLY CHANGES",
+    "translation": "应用更改",
     "isDeprecated": false
   },
   {
@@ -70476,7 +71052,7 @@
     "key": "Label.PrivacyTermsUrl",
     "description": "label for the application creation page privacy terms url text input box",
     "english": "Privacy Policy URL",
-    "translation": "隐私条款网址",
+    "translation": "隐私政策网址",
     "isDeprecated": false
   },
   {
@@ -70684,7 +71260,7 @@
     "key": "Description.DialogSubContentMessage",
     "description": "dialog subcontent on app creation success",
     "english": "You'll be able to access your client ID and regenerate your client secret later.",
-    "translation": "别担心：你可以稍后再访问。",
+    "translation": "稍后你将可以访问你的 Client ID 并重新生成你的 Client 密钥。",
     "isDeprecated": false
   },
   {
@@ -71224,6 +71800,150 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppDescriptionMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "最多 {maxLength} 个字符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppNameMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "最多 {maxLength} 个字符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppRedirectUriMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "最多 {maxLength} 个字符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.Optional",
+    "description": null,
+    "english": "Optional",
+    "translation": "可选",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.UrlFormat",
+    "description": null,
+    "english": "Must have secure SSL certificate (starts with https://)",
+    "translation": "必须拥有安全 SSL 证书（以 https:// 开头）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RegenerateSecret",
+    "description": null,
+    "english": "Regenerate Secret",
+    "translation": "重新生成密钥",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidTermsOfServiceUri",
+    "description": null,
+    "english": "The terms of service uri is invalid",
+    "translation": "服务条款 URI 无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidPrivacyPolicyUri",
+    "description": null,
+    "english": "The privacy policy uri is invalid",
+    "translation": "隐私政策 URI 无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidSummary",
+    "description": null,
+    "english": "The application description is invalid",
+    "translation": "应用程序描述无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InvalidName",
+    "description": null,
+    "english": "The application name is invalid",
+    "translation": "应用程序名称无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.MalformedRedirectUri",
+    "description": null,
+    "english": "One or more redirect uris are invalid",
+    "translation": "一个或多个重新定向 URI 无效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InappropriateSummary",
+    "description": null,
+    "english": "The application description contained inappropriate text",
+    "translation": "应用程序说明中含有不当文字",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.DuplicateAppName",
+    "description": null,
+    "english": "The requested application name is not available. Application names must be unique",
+    "translation": "请求使用的应用名称无法使用。应用程序的名称必须独一无二",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.InappropriateAppName",
+    "description": null,
+    "english": "The application name contained inappropriate text",
+    "translation": "应用程序名称中含有不当文字",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthInvalidGroupPermissions",
+    "description": null,
+    "english": "You do not have the group permissions to view this page.",
+    "translation": "你没有查看此页面的群组权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthUnauthorizedAccess",
+    "description": null,
+    "english": "You are not authorized to manage apps on behalf of this group.",
+    "translation": "你无权代表此群组管理应用程序。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RiskDescription",
+    "description": null,
+    "english": "The level of sensitive information or production impact a permission is asking for.",
+    "translation": "权限要求的敏感信息或制作影响力等级。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthMaxNumberApps",
+    "description": null,
+    "english": "You have exceeded the user limit for number of OAuth applications.",
+    "translation": "你已经超过了 OAuth 应用程序数量的用户限制。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProofOfWorkChallenge",
     "key": "Description.VerifyingYouAreNotBot",
     "description": "show the user some background task is running to complete the verification of the bot.",
@@ -71549,6 +72269,22 @@
     "description": null,
     "english": "Expected badge cost is different from the actual badge cost.",
     "translation": "预期徽章费用与实际徽章费用不同。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.CreateBadgeLimitWarningV2",
+    "description": "Warning message for hitting the create badge limit of 5 per day",
+    "english": "Note the first 5 badge creations are free. You can pay 100 Robux for any additional badge.",
+    "translation": "请注意：前 5 个徽章可以免费创建；超过 5 个后创建一个徽章将需要花费 100 Robux。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Badges",
+    "key": "Message.CreateBadgeLimitWarningV3",
+    "description": "Warning message for hitting the create badge limit of 5 per day",
+    "english": "Note the first 5 badge creations are free. You can pay {price} Robux for any additional badge.",
+    "translation": "请注意：前 5 个徽章可以免费创建；超过 5 个后创建一个徽章将需要花费 {price} Robux。",
     "isDeprecated": false
   },
   {
@@ -72773,6 +73509,30 @@
     "description": null,
     "english": "Search Results by '{creatorName}'",
     "translation": "按“{creatorName}”搜索结果",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreators",
+    "description": "Label before checkbox to include unverified creators.",
+    "english": "Include unverified creators",
+    "translation": "包括未经验证的创作者",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreatorsDescription",
+    "description": null,
+    "english": "Assets from unverified sources add more risk of malicious behavior",
+    "translation": "来自未验证来源的素材将会面临更高恶意行为的风险",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreatorsTooltip",
+    "description": null,
+    "english": "Unverified creators have not confirmed their real life identity via an ID or phone",
+    "translation": "未验证的创作者没有使用证件或手机号码确认他们的真实身份",
     "isDeprecated": false
   },
   {
@@ -77756,7 +78516,7 @@
     "key": "Message.SuccessfullyDeleteLink",
     "description": null,
     "english": "The social media link has been deleted.",
-    "translation": "已成功删除链接。",
+    "translation": "已删除社交媒体链接。",
     "isDeprecated": false
   },
   {
@@ -77797,6 +78557,14 @@
     "description": null,
     "english": "The social link url was improperly formatted.",
     "translation": "社交链接地址格式不正确。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.SocialLinks",
+    "key": "Label.LinkTypeCannotBeEmpty",
+    "description": null,
+    "english": "The social link type cannot be empty.",
+    "translation": "社交链接类型不能为空。",
     "isDeprecated": false
   },
   {
@@ -77841,10 +78609,114 @@
   },
   {
     "namespace": "CreatorDashboard.Updates",
+    "key": "Error.UpdateTextBlocked",
+    "description": null,
+    "english": "Your message was blocked by our filter. Please revise it and try again.",
+    "translation": "你的信息给我们的文字过滤系统屏蔽。请修改输入内容并重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
     "key": "Heading.Updates",
     "description": null,
     "english": "Updates",
     "translation": "更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Heading.UpdatesHistory",
+    "description": null,
+    "english": "History",
+    "translation": "历史记录",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.NoUpdatesHistory",
+    "description": null,
+    "english": "You have not sent any updates for this experience.",
+    "translation": "你还没有为这个作品发送任何更新。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Date",
+    "description": null,
+    "english": "Date",
+    "translation": "日期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Sender",
+    "description": null,
+    "english": "Sender",
+    "translation": "发件人",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Message",
+    "description": null,
+    "english": "Message",
+    "translation": "信息",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Views",
+    "description": null,
+    "english": "Views",
+    "translation": "浏览次数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.VisitRate",
+    "description": null,
+    "english": "Visit Rate",
+    "translation": "访问率",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.UnfollowRate",
+    "description": null,
+    "english": "Unfollow Rate",
+    "translation": "取消关注率",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Tooltips.Views",
+    "description": null,
+    "english": "Number of people who have viewed the update.",
+    "translation": "查看更新的人数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Tooltips.VisitRate",
+    "description": null,
+    "english": "Percentage of people who have visited the experience from the notification.",
+    "translation": "从通知中访问作品的用户百分比。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Tooltips.UnfollowRate",
+    "description": null,
+    "english": "Percentage of people who have unfollowed the experience from the notification.",
+    "translation": "从通知中取消关注作品的用户百分比。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.RowsPerPage",
+    "description": null,
+    "english": "Rows per page:",
+    "translation": "每页行数：",
     "isDeprecated": false
   },
   {
@@ -77857,10 +78729,34 @@
   },
   {
     "namespace": "CreatorDashboard.Updates",
+    "key": "Label.PageRange",
+    "description": null,
+    "english": "{pageRange} of {totalPageCount}",
+    "translation": "{pageRange} / {totalPageCount}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Heading.Previews",
+    "description": null,
+    "english": "Previews",
+    "translation": "预览",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.Previews",
+    "description": null,
+    "english": "Send your post once your previews look ok, or go back to revise your update.",
+    "translation": "预览没有问题时发送帖子，或者返回修改你的更新内容。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
     "key": "Heading.Desktop",
     "description": null,
     "english": "Desktop",
-    "translation": "Desktop",
+    "translation": "台式机",
     "isDeprecated": false
   },
   {
@@ -77881,10 +78777,106 @@
   },
   {
     "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Play",
+    "description": null,
+    "english": "Play",
+    "translation": "开始游戏",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.UpdateTruncated",
+    "description": null,
+    "english": "Your message will be truncated.",
+    "translation": "你的信息将不会完整显示。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Action.Preview",
+    "description": null,
+    "english": "Preview",
+    "translation": "预览",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Action.Send",
+    "description": null,
+    "english": "Send",
+    "translation": "发送",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
     "key": "Action.Back",
     "description": null,
     "english": "Back",
-    "translation": "背面",
+    "translation": "返回",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Label.Update",
+    "description": null,
+    "english": "Tell your experience followers what has been updated.",
+    "translation": "和你作品的粉丝分享近期更新。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.Update",
+    "description": null,
+    "english": "Updates are a great way to provide your users with information such as new releases, upcoming events, and other news. These will appear on their home page in the Notifications menu. You will be allowed to send one update every three days.",
+    "translation": "更新功能可以帮助你通知用户新上线内容、未来活动以及其他作品相关的最新信息。更新将在用户的首页通知菜单显示。你可以每三天发送一则更新信息。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Title.ConfirmSendUpdate",
+    "description": null,
+    "english": "Send Update?",
+    "translation": "发送更新？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.ConfirmSendUpdate",
+    "description": null,
+    "english": "You will not be able to send another update for 3 days.",
+    "translation": "3 天内你将无法再次发送更新。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.UpdateSent",
+    "description": null,
+    "english": "Update sent",
+    "translation": "更新已发送",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.UpdateWithInThreeDays",
+    "description": "deprecated, wrong key name",
+    "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every 3 days.",
+    "translation": "{experienceName} 的最近一次更新于 {date} 发送。你只能每 3 天发送一次更新。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.UpdateWithInTimeInterval",
+    "description": "deprecated",
+    "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every 3 days.",
+    "translation": "{experienceName} 的最近一次更新于 {date} 发送。你只能每 3 天发送一次更新。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Updates",
+    "key": "Message.UpdatesWithInTimeInterval",
+    "description": null,
+    "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every {timeInterval} days.",
+    "translation": "{experienceName} 的最近一次更新于 {date} 发送。你只能每 {timeInterval} 天发送一次更新。",
     "isDeprecated": false
   },
   {
@@ -77897,10 +78889,98 @@
   },
   {
     "namespace": "CreatorDashboard.Places",
+    "key": "Button.AddAPlace",
+    "description": null,
+    "english": "Add A PLACE",
+    "translation": "添加场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Button.AddPlace",
+    "description": null,
+    "english": "Add Place",
+    "translation": "添加场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.Place",
+    "description": null,
+    "english": "A PLACE",
+    "translation": "场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.Place",
+    "description": null,
+    "english": "PLACE",
+    "translation": "场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Label.startPlace",
+    "description": null,
+    "english": "Start place",
+    "translation": "初始场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
     "key": "Heading.Manage",
     "description": null,
     "english": "Manage",
     "translation": "管理",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Heading.AddPlace",
+    "description": null,
+    "english": "Add a Place",
+    "translation": "添加场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Button.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "完成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Error.startPlace",
+    "description": null,
+    "english": "Cannot choose start places.",
+    "translation": "无法选择初始场景。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Title.RemovePlace",
+    "description": null,
+    "english": "Remove Place",
+    "translation": "移除场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Description.RemovePlaces",
+    "description": null,
+    "english": "Are you sure you want to remove the place {placeName} from the experience {experienceName}?",
+    "translation": "确定要从作品“{experienceName}”中移除场景“{placeName}”？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Places",
+    "key": "Message.Added",
+    "description": null,
+    "english": "Added",
+    "translation": "已添加",
     "isDeprecated": false
   },
   {

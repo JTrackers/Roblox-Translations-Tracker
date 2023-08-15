@@ -608,6 +608,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Application.Settings",
+    "key": "Permissions.NSContactsUsageDescription3",
+    "description": "Permission OS prompt on iOS and Android",
+    "english": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
+    "translation": "Verbinde dich mit Freund:innen auf Roblox. Deine Kontakte werden regelmäßig synchronisiert und Überseinstimmungen mit anderen Roblox-Nutzer:innen werden gespeichtert, um dir zu helfen, Freund:innen zu finden. Du kannst dies jederzeit in deinen Einstellungen verwalten.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.TwoStepVerification",
     "key": "Action.Cancel",
     "description": null,
@@ -11403,7 +11411,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully disabled.",
+    "english": "{deletedKeyList} were successfully deleted.",
     "translation": "{deletedKeyList} wurden erfolgreich deaktiviert.",
     "isDeprecated": false
   },
@@ -11548,7 +11556,7 @@
     "key": "Message.ContentControls",
     "description": null,
     "english": "All Experiences are still searchable. Unrated experiences are currently treated as 13+.",
-    "translation": "Hinweis: Alle Erlebnisse können weiterhin gesucht und gesehen werden. Unbewertete Erlebnisse werden derzeit als 13+ behandelt.",
+    "translation": "Alle Erlebnisse können weiterhin gesucht werden. Unbewertete Erlebnisse werden derzeit als 13+ behandelt.",
     "isDeprecated": false
   },
   {
@@ -11737,10 +11745,26 @@
   },
   {
     "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Deletion",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds, and more. We would recommend deleting a key if you have lost it or it is no longer valid.",
+    "translation": "Sicherheitsschlüssel schützen deine Robux, Erlebnisse, limitierten Items und vieles mehr. Wir empfehlen dir, Schlüssel zu löschen, die du verloren hast oder die nicht mehr gültig sind.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.Warning",
     "description": null,
     "english": "Are you sure you want to delete your key?",
     "translation": "Möchtest du deinen Schlüssel wirklich löschen?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControlsWithUnratedDescription",
+    "description": "Description on top of content controls. 13+ content refers to content suitable for ages 13 and older.",
+    "english": "Choose the highest {linkStart}age guideline{linkEnd} of experiences this account can join.{lineBreak}All experiences are still searchable. Unrated experiences are currently treated as 13+.",
+    "translation": "Wähle die höchste Erlebnis-{linkStart}Altersgrenze{linkEnd}, die dieses Konto besuchen darf.{lineBreak}Alle Erlebnisse können weiterhin gesucht werden. Unbewertete Erlebnisse werden derzeit als 13+ behandelt.",
     "isDeprecated": false
   },
   {
@@ -52209,6 +52233,14 @@
   },
   {
     "namespace": "Feature.Transactions",
+    "key": "Description.DownloadPopup",
+    "description": null,
+    "english": "Once your data is ready, we will send the download link to your verified email.",
+    "translation": "Sobald deine Daten fertig sind, senden wir den Download-Link an deine verifizierte E-Mail-Adresse.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
     "key": "Action.BackToTransactions",
     "description": null,
     "english": "Back to Transactions",
@@ -52221,6 +52253,14 @@
     "description": null,
     "english": "Completing your request\t",
     "translation": "Anfrage wird abgeschlossen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.MaxDaysLimitExceeded",
+    "description": null,
+    "english": "You cannot select more than 90 days.",
+    "translation": "Du kannst nicht mehr als 90 Tage auswählen.",
     "isDeprecated": false
   },
   {
@@ -54012,7 +54052,7 @@
     "key": "Action.Archive",
     "description": null,
     "english": "Archive",
-    "translation": "Archiv",
+    "translation": "Archivieren",
     "isDeprecated": false
   },
   {
@@ -59924,7 +59964,7 @@
     "key": "Message.ImportantNoteRegenerateGuidelines",
     "description": null,
     "english": "You may retake the Questionnaire {boldStart}anytime{boldEnd} to accurately reflect the latest content in your experience.",
-    "translation": "Du kannst den Fragebogen {boldStart}jederzeit{boldEnd} erneut ausfüllen, damit er stets mit den neuesten Inhalten in deines Erlebnisses übereinstimmt.",
+    "translation": "Du kannst den Fragebogen {boldStart}jederzeit{boldEnd} erneut ausfüllen, damit er stets mit den neuesten Inhalten deines Erlebnisses übereinstimmt.",
     "isDeprecated": false
   },
   {
@@ -61081,10 +61121,58 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ProgressiveCharacterLimit",
+    "description": null,
+    "english": "{count} characters remaining",
+    "translation": "{count} Zeichen übrig",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OnSale",
+    "description": "Used for form labels on items that can be put on sale (i.e avatar Shirt asset). Paired with a toggle input usually.",
+    "english": "On Sale",
+    "translation": "Im Angebot",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SetPrice",
+    "description": "Used as form input label, set a price for items (i.e avatar Shirt asset)",
+    "english": "Set a price",
+    "translation": "Preis festlegen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Error.InvalidNumber",
     "description": null,
     "english": "Not a valid number",
     "translation": "Keine gültige Zahl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CreatorEarnings",
+    "description": "Message to tell how much profit creator can earn",
+    "english": "Creator earnings ({percentage})",
+    "translation": "Creator-Einnahmen ({percentage})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MinimumPrice",
+    "description": null,
+    "english": "The minimum price for this item is {price}",
+    "translation": "Der Mindestpreis für dieses Item beträgt {price}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MaximumPrice",
+    "description": null,
+    "english": "The maximum price for this item is {price}",
+    "translation": "Der Höchstpreis für dieses Item beträgt {price}",
     "isDeprecated": false
   },
   {
@@ -68033,10 +68121,58 @@
   },
   {
     "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.SortBy",
+    "description": "eg sort by newest to oldest entries, a to z etc",
+    "english": "SORT BY",
+    "translation": "SORTIEREN NACH",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByCompletionStatus",
+    "description": "filter by whether an entry has translations",
+    "english": "FILTER BY COMPLETION STATUS",
+    "translation": "FILTERN NACH ABSCHLUSS-STATUS",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByTranslationType",
+    "description": "Whether the translation was added manually (ie by a user) or by automatic translation",
+    "english": "FILTER BY TRANSLATION TYPE",
+    "translation": "FILTERN NACH ÜBERSETZUNGSTYP",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByRecency",
+    "description": "filter by whether a translation or entry was added recently",
+    "english": "FILTER BY RECENCY",
+    "translation": "FILTERN NACH NEUHEIT",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
     "key": "Label.Cancel",
     "description": "Cancel operation - label for a button",
     "english": "CANCEL",
     "translation": "ABBRECHEN",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ClearAll",
+    "description": "Button label to clear all selected items",
+    "english": "CLEAR ALL",
+    "translation": "ALLE LÖSCHEN",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ApplyChanges",
+    "description": "Button label to apply changes",
+    "english": "APPLY CHANGES",
+    "translation": "ÄNDERUNGEN ÜBERNEHMEN",
     "isDeprecated": false
   },
   {
@@ -69960,6 +70096,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Common",
+    "key": "Label.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "Mehr erfahren",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.TagDescription",
     "key": "Description.PluginSecurity",
     "description": null,
@@ -71013,6 +71157,14 @@
     "description": null,
     "english": "The level of sensitive information or production impact a permission is asking for.",
     "translation": "Das Ausmaß sensibler Informationen oder Produktionsauswirkungen, die eine Genehmigung ersucht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthMaxNumberApps",
+    "description": null,
+    "english": "You have exceeded the user limit for number of OAuth applications.",
+    "translation": "Du hast das Nutzerlimit für OAuth-Anwendungen überschritten.",
     "isDeprecated": false
   },
   {
@@ -77900,7 +78052,7 @@
     "key": "Message.SaveLinkSuccess",
     "description": null,
     "english": "{links} link(s) successfully saved.",
-    "translation": "Link(s) zu {links} erfolgreich gespeichert.",
+    "translation": "Link(s) erfolgreich gespeichert für: {links}",
     "isDeprecated": false
   },
   {
@@ -78220,7 +78372,7 @@
     "key": "Tooltips.VisitRate",
     "description": null,
     "english": "Percentage of people who have visited the experience from the notification.",
-    "translation": "Prozentsatz der Leute, die das Erlebnis von der Benachrichtigung aus besucht haben.",
+    "translation": "Prozentsatz der Personen, die das Erlebnis von der Benachrichtigung aus besucht haben.",
     "isDeprecated": false
   },
   {
@@ -78228,7 +78380,7 @@
     "key": "Tooltips.UnfollowRate",
     "description": null,
     "english": "Percentage of people who have unfollowed the experience from the notification.",
-    "translation": "Prozentsatz der Leute, die das Erlebnis von der Benachrichtigung aus entfolgt haben.",
+    "translation": "Prozentsatz der Personen, die das Erlebnis von der Benachrichtigung aus entfolgt haben.",
     "isDeprecated": false
   },
   {
@@ -78260,7 +78412,7 @@
     "key": "Heading.Previews",
     "description": null,
     "english": "Previews",
-    "translation": "Vorschauen",
+    "translation": "Vorschau",
     "isDeprecated": false
   },
   {
@@ -78268,7 +78420,7 @@
     "key": "Message.Previews",
     "description": null,
     "english": "Send your post once your previews look ok, or go back to revise your update.",
-    "translation": "Sende deinen Beitrag, sobald deine Vorschaubilder in Ordnung sind, oder gehe zurück, um dein Update zu überprüfen.",
+    "translation": "Sende deinen Beitrag, wenn deine Vorschaubilder in Ordnung sind, oder gehe zurück, um dein Update zu bearbeiten.",
     "isDeprecated": false
   },
   {
@@ -78364,7 +78516,7 @@
     "key": "Message.ConfirmSendUpdate",
     "description": null,
     "english": "You will not be able to send another update for 3 days.",
-    "translation": "Du kannst erst in 3 Tagen ein weiteres Update senden.",
+    "translation": "Du kannst dann erst in 3 Tagen ein weiteres Update senden.",
     "isDeprecated": false
   },
   {

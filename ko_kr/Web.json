@@ -11411,7 +11411,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully disabled.",
+    "english": "{deletedKeyList} were successfully deleted.",
     "translation": "{deletedKeyList}이(가) 비활성화되었습니다.",
     "isDeprecated": false
   },
@@ -11741,6 +11741,14 @@
     "description": null,
     "english": "One Option At A Time",
     "translation": "한 번에 하나의 옵션 선택",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.Deletion",
+    "description": null,
+    "english": "Security keys protect your robux, experiences, limiteds, and more. We would recommend deleting a key if you have lost it or it is no longer valid.",
+    "translation": "보안 키는 Robux, 체험, 한정판 아이템 등을 보호합니다. 키를 분실했거나 더 이상 유효하지 않은 경우 해당 키를 삭제하는 것이 좋습니다.",
     "isDeprecated": false
   },
   {
@@ -62244,7 +62252,7 @@
     "key": "Label.OnSale",
     "description": "Used for form labels on items that can be put on sale (i.e avatar Shirt asset). Paired with a toggle input usually.",
     "english": "On Sale",
-    "translation": "세일 중",
+    "translation": "판매 중",
     "isDeprecated": false
   },
   {
@@ -69233,10 +69241,58 @@
   },
   {
     "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.SortBy",
+    "description": "eg sort by newest to oldest entries, a to z etc",
+    "english": "SORT BY",
+    "translation": "정렬 기준",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByCompletionStatus",
+    "description": "filter by whether an entry has translations",
+    "english": "FILTER BY COMPLETION STATUS",
+    "translation": "완료 상태별 필터링",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByTranslationType",
+    "description": "Whether the translation was added manually (ie by a user) or by automatic translation",
+    "english": "FILTER BY TRANSLATION TYPE",
+    "translation": "번역 유형별 필터링",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByRecency",
+    "description": "filter by whether a translation or entry was added recently",
+    "english": "FILTER BY RECENCY",
+    "translation": "최신순 필터링",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
     "key": "Label.Cancel",
     "description": "Cancel operation - label for a button",
     "english": "CANCEL",
     "translation": "취소",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ClearAll",
+    "description": "Button label to clear all selected items",
+    "english": "CLEAR ALL",
+    "translation": "모두 지우기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ApplyChanges",
+    "description": "Button label to apply changes",
+    "english": "APPLY CHANGES",
+    "translation": "변경 내용 적용",
     "isDeprecated": false
   },
   {
@@ -71160,6 +71216,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Common",
+    "key": "Label.LearnMore",
+    "description": null,
+    "english": "Learn More",
+    "translation": "자세한 정보",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.TagDescription",
     "key": "Description.PluginSecurity",
     "description": null,
@@ -72213,6 +72277,14 @@
     "description": null,
     "english": "The level of sensitive information or production impact a permission is asking for.",
     "translation": "권한이 요청하는 민감한 정보 또는 프로덕션 영향력의 수준입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthMaxNumberApps",
+    "description": null,
+    "english": "You have exceeded the user limit for number of OAuth applications.",
+    "translation": "OAuth 애플리케이션 수에 대한 사용자 제한을 초과했습니다.",
     "isDeprecated": false
   },
   {
@@ -79316,7 +79388,7 @@
     "key": "Error.UpdateTextBlocked",
     "description": null,
     "english": "Your message was blocked by our filter. Please revise it and try again.",
-    "translation": "메시지가 검열로 인해 차단되었습니다. 수정한 후 다시 시도하세요.",
+    "translation": "검열로 인해 메시지가 차단되었습니다. 수정 후 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -79452,7 +79524,7 @@
     "key": "Message.Previews",
     "description": null,
     "english": "Send your post once your previews look ok, or go back to revise your update.",
-    "translation": "미리 보기를 확인한 후 게시물을 전송하거나, 돌아가서 업데이트를 수정하세요.",
+    "translation": "미리 보기를 확인한 후 게시물을 보내거나, 돌아가서 업데이트를 수정하세요.",
     "isDeprecated": false
   },
   {
@@ -79516,7 +79588,7 @@
     "key": "Action.Back",
     "description": null,
     "english": "Back",
-    "translation": "후면",
+    "translation": "뒤로",
     "isDeprecated": false
   },
   {
@@ -79532,7 +79604,7 @@
     "key": "Message.Update",
     "description": null,
     "english": "Updates are a great way to provide your users with information such as new releases, upcoming events, and other news. These will appear on their home page in the Notifications menu. You will be allowed to send one update every three days.",
-    "translation": "업데이트를 통해 새로운 릴리스, 이벤트 알림, 기타 소식 등의 정보를 사용자에게 제공할 수 있습니다. 업데이트는 알림 메뉴의 홈페이지에 표시되며, 3일에 하나씩 전송 가능합니다.",
+    "translation": "업데이트를 통해 새로운 릴리스, 이벤트 알림, 기타 소식 등의 정보를 사용자에게 제공할 수 있습니다. 업데이트는 알림 메뉴의 홈페이지에 표시되며, 3일에 하나씩 보낼 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -79556,7 +79628,7 @@
     "key": "Message.UpdateSent",
     "description": null,
     "english": "Update sent",
-    "translation": "업데이트 전송 완료",
+    "translation": "업데이트를 보냈습니다",
     "isDeprecated": false
   },
   {
@@ -79564,7 +79636,7 @@
     "key": "Message.UpdateWithInThreeDays",
     "description": "deprecated, wrong key name",
     "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every 3 days.",
-    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 3일에 하나씩 전송할 수 있습니다.",
+    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 3일에 하나씩 보낼 수 있습니다.",
     "isDeprecated": true
   },
   {
@@ -79572,7 +79644,7 @@
     "key": "Message.UpdateWithInTimeInterval",
     "description": "deprecated",
     "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every 3 days.",
-    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 3일에 하나씩 전송할 수 있습니다.",
+    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 3일에 하나씩 보낼 수 있습니다.",
     "isDeprecated": true
   },
   {
@@ -79580,7 +79652,7 @@
     "key": "Message.UpdatesWithInTimeInterval",
     "description": null,
     "english": "Your last game update for {experienceName} was sent on {date}. You can only send an update every {timeInterval} days.",
-    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 {timeInterval}일에 하나씩 전송할 수 있습니다.",
+    "translation": "{experienceName}에 대한 마지막 게임 업데이트가 {date}에 전송되었습니다. 업데이트는 {timeInterval}일에 하나씩 보낼 수 있습니다.",
     "isDeprecated": false
   },
   {

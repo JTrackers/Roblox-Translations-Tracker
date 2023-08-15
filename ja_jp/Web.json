@@ -11379,7 +11379,7 @@
     "namespace": "Feature.AccountSettings",
     "key": "Description.SecurityKey.DeleteSuccess",
     "description": null,
-    "english": "{deletedKeyList} were successfully disabled.",
+    "english": "{deletedKeyList} were successfully deleted.",
     "translation": "{deletedKeyList} を無効にできました。",
     "isDeprecated": false
   },
@@ -53256,6 +53256,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Response.CompletingRequest",
+    "description": "use Message.CompletingRequest",
+    "english": "Completing your request",
+    "translation": "リクエストを完了中",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Message.CompletingRequest",
+    "description": null,
+    "english": "Completing your request\t",
+    "translation": "リクエストを完了中\t",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Action.Download",
+    "description": null,
+    "english": "Download",
+    "translation": "ダウンロードする",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -61065,10 +61089,42 @@
   },
   {
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.GuidelinesSubmittedModeratorRejected",
+    "description": null,
+    "english": "Questionnaire {redColorStart}Submission Not Accepted{redColorEnd}",
+    "translation": "質問フォームの {redColorStart}提出が受理されませんでした{redColorEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.UponReviewModerationText",
+    "description": null,
+    "english": "Upon review, your latest questionnaire submission was determined to be inaccurate due to the following reasons:",
+    "translation": "レビューによって、直近で提出した質問フォームの内容が以下の理由で不正確であると判断されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.YourSubmissionModeration",
+    "description": null,
+    "english": "Your submission",
+    "translation": "あなたの提出内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Message.ModeratorFeedbackModeration",
     "description": null,
     "english": "Moderator feedback",
     "translation": "モデレータからのフィードバック",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.NextStepsModeration",
+    "description": null,
+    "english": "Next Step: Please retake the questionnaire and answer accurately based on your experience content and the moderator feedback.",
+    "translation": "次の段階: 体験のコンテンツとモデレータからのフィードバックに基づいて、質問フォームに再回答し、正確に答えてください。",
     "isDeprecated": false
   },
   {
@@ -62025,6 +62081,14 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OpenForComments",
+    "description": "Used for form labels on items that can be enabled for comments (i.e avatar Shirt asset). Paried with a toggle input usually.",
+    "english": "Open for comments",
+    "translation": "コメントで開く",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Heading.Configure",
     "description": null,
     "english": "Configure",
@@ -62033,10 +62097,74 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.assetUpdateSuccess",
+    "description": "Patch request success message when updating an asset",
+    "english": "{assetType} Updated",
+    "translation": "{assetType} を更新しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.SaveChangesFailure",
+    "description": null,
+    "english": "Save changes failed. Please try again later.",
+    "translation": "変更内容を保存できませんでした。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.ProgressiveCharacterLimit",
+    "description": null,
+    "english": "{count} characters remaining",
+    "translation": "あと {count} 文字まで",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.OnSale",
+    "description": "Used for form labels on items that can be put on sale (i.e avatar Shirt asset). Paired with a toggle input usually.",
+    "english": "On Sale",
+    "translation": "販売中",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.SetPrice",
+    "description": "Used as form input label, set a price for items (i.e avatar Shirt asset)",
+    "english": "Set a price",
+    "translation": "価格を設定する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Error.InvalidNumber",
     "description": null,
     "english": "Not a valid number",
     "translation": "有効な数字ではありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CreatorEarnings",
+    "description": "Message to tell how much profit creator can earn",
+    "english": "Creator earnings ({percentage})",
+    "translation": "クリエーターの収益（{percentage})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MinimumPrice",
+    "description": null,
+    "english": "The minimum price for this item is {price}",
+    "translation": "このアイテムタイプの最低価格は {price} です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MaximumPrice",
+    "description": null,
+    "english": "The maximum price for this item is {price}",
+    "translation": "このアイテムタイプの価格の上限は {price} です",
     "isDeprecated": false
   },
   {
@@ -65904,6 +66032,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Description.SaveSecret",
+    "description": null,
+    "english": "Copy the secret before closing the page and save it to a secure place. The system will NOT store the secret for security reasons.",
+    "translation": "ページを閉じる前に秘密をコピーして安全な場所に保存してください。システムは、セキュリティ上の理由で秘密を保存しません。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
@@ -66261,6 +66397,22 @@
     "description": null,
     "english": "This grants the ability to publish messages on behalf of users.",
     "translation": "これでユーザーに代わってメッセージを公開する権限を与えることができます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.profileRead",
+    "description": null,
+    "english": "This grants access to read your profile information",
+    "translation": "これにより、あなたのプロフィール情報を読む権限が与えられます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.openidRead",
+    "description": null,
+    "english": "This enables Single Sign-On functionality",
+    "translation": "これはシングルサインオン機能を有効化",
     "isDeprecated": false
   },
   {
@@ -68961,10 +69113,58 @@
   },
   {
     "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.SortBy",
+    "description": "eg sort by newest to oldest entries, a to z etc",
+    "english": "SORT BY",
+    "translation": "並べ替え：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByCompletionStatus",
+    "description": "filter by whether an entry has translations",
+    "english": "FILTER BY COMPLETION STATUS",
+    "translation": "完了状況によってフィルタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByTranslationType",
+    "description": "Whether the translation was added manually (ie by a user) or by automatic translation",
+    "english": "FILTER BY TRANSLATION TYPE",
+    "translation": "翻訳の種類によってフィルタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Title.FilterByRecency",
+    "description": "filter by whether a translation or entry was added recently",
+    "english": "FILTER BY RECENCY",
+    "translation": "最新順にフィルタ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
     "key": "Label.Cancel",
     "description": "Cancel operation - label for a button",
     "english": "CANCEL",
     "translation": "キャンセル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ClearAll",
+    "description": "Button label to clear all selected items",
+    "english": "CLEAR ALL",
+    "translation": "全て消す",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Label.ApplyChanges",
+    "description": "Button label to apply changes",
+    "english": "APPLY CHANGES",
+    "translation": "変更を適用する",
     "isDeprecated": false
   },
   {
@@ -71677,6 +71877,22 @@
     "description": null,
     "english": "You are not authorized to manage apps on behalf of this group.",
     "translation": "このグループのためにアプリを管理する権限がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.RiskDescription",
+    "description": null,
+    "english": "The level of sensitive information or production impact a permission is asking for.",
+    "translation": "許可が求めているセンシティブな情報または製品への影響のレベル。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.OAuthMaxNumberApps",
+    "description": null,
+    "english": "You have exceeded the user limit for number of OAuth applications.",
+    "translation": "OAuth アプリケーション数がユーザー制限を超えています。",
     "isDeprecated": false
   },
   {
