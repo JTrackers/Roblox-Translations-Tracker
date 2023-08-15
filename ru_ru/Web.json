@@ -6576,6 +6576,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "Action.Buy",
+    "description": null,
+    "english": "Buy",
+    "translation": "Купить",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Error",
     "description": null,
@@ -13713,6 +13721,22 @@
   },
   {
     "namespace": "Feature.CashOut",
+    "key": "Heading.SuccessEmailTitle",
+    "description": null,
+    "english": "Your Developer Exchange request has been processed",
+    "translation": "Твоя заявка Developer Exchange обработана",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Heading.RejectionEmailTitle",
+    "description": null,
+    "english": "Your Developer Exchange request has been rejected",
+    "translation": "Твоя заявка Developer Exchange отклонена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
     "key": "Label.Sincerely",
     "description": null,
     "english": "Sincerely,",
@@ -13729,10 +13753,250 @@
   },
   {
     "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessage",
+    "description": null,
+    "english": "We have processed your request to our Developer Exchange; you should receive funds in your account shortly.",
+    "translation": "Мы обработали твою заявку на Developer Exchange. Ты получишь средства на свой счёт в ближайшее время.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessageFollowup",
+    "description": null,
+    "english": "If you have any questions about this transaction, please write in at",
+    "translation": "Если у тебя есть вопросы по поводу этой сделки, напиши по адресу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.BaseRejectionMessage",
+    "description": null,
+    "english": "Please visit the DevEx FAQ for more information regarding your Declined request. If you have any questions, please write in at",
+    "translation": "Посети раздел FAQ DevEx для получения дополнительной информации относительно отклонённой заявки. Если у тебя есть вопросы, напиши по адресу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.SuccessMessageThankYou",
+    "description": null,
+    "english": "Thank you for participating in the DevEx program!",
+    "translation": "Благодарим за участие в программе DevEx!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNotEligible",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Not Eligible.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: нет прав.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInvalidPayPalnformation",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Invalid PayPal information. The PayPal information you provided was invalid and the payment wasn't able to be processed and your DevEx request was declined. Please update your PayPal information for your next DevEx request.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: неверные данные PayPal. Предоставленная информация PayPal оказалась недействительной, платёж не был обработан, и заявка DevEx была отклонена. Обнови информацию PayPal для следующей заявки DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUserRequest",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: User Request.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: заявка пользователя.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitTaxForm",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Tax Form. Please submit a valid Tax Form to the DevEx Portal.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: отсутствуют налоговые формы. Отправь действующую налоговую форму на портал DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionTechnicalIssue",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Technical Issue. We are looking into resolving the issue.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: техническая проблема. Мы занимаемся её решением.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalRegistrationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Portal Registration Incomplete. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: не завершена регистрация на портале DevEx Portal. Прочитай DevEx FAQ, чтобы получить более подробную информацию о портале DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionInsufficientEarnedRobux",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Earned Robux.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: недостаточно заработанных Robux.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIneligibleFunds",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Insufficient Funds. Your earnings aren't valid for DevEx and we are unable to accept your DevEx request at the amount you have submitted.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: недостаточно средств. Твой заработок не действителен для DevEx, и мы не можем принять твою заявку на DevEx на указанную сумму.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionUnableToReviewGameAssociatedToEarnings",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Unable to Review Game Associated to Earnings. We were unable to confirm the eligibility of your game because we weren't able to review the games(s) associated to your earnings.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: невозможно просмотреть игры, связанные с заработком. Мы не смогли подтвердить правомочность твоей игры, поскольку не смогли просмотреть игры, связанные с твоим заработком.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAccountOwnershipConcern",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Account Ownership Concern. ",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: владелец аккаунта не подтверждён. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionNameDiscrepancy",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Name Discrepancy. We noticed that the name of your current DevEx request differs from the initial DevEx request and/or name listed on your DevEx Portal.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: несоответствие имени. Мы заметили, что имя в твоей текущей заявке DevEx отличается от имени первоначальной заявки DevEx и/или имени, указанного на портале DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionSubmitDevExWithFullLegalName",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Submit DevEx with full legal name. ",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: отправь заявку DevEx с указанием полного имени. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.IdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: подтверждение удостоверения личности не завершено. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionIdVerificationIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: ID Verification Incomplete. ",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: подтверждение удостоверения личности не завершено. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionEmailOnDevexRequestAlreadyInUse",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Email Provided on Devex Request is Already in Use. We are unable to send you a DevEx portal invitation to the email listed on your DevEx request because it is already in use.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: электронная почта, указанная в запросе DevEx, уже используется. Мы не можем отправить тебе приглашение на портал DevEx на электронную почту, указанную в твоей заявке DevEx, поскольку она уже используется.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCertificateOfNonUSActivitiesIncomplete",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Certificate of Non-US Activities Incomplete. We noticed that you did not complete the Certificate of No US activities in the Tax Form section on the DevEx portal.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: сертификат об отсутствии деятельности за пределами США заполнен не полностью. Мы заметили, что сертификат об отсутствии деятельности за пределами США в разделе с налоговыми формами на портале DevEx заполнен не полностью.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToSubmitPaymentMethod",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to submit Payment Method. A Payment Method must be submitted in order to approve your DevEx Request.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: не удалось предоставить метод оплаты. Способ оплаты должен быть представлен для утверждения твоей заявки DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionRequiredDevExPortalDocumentsNotSubmitted",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Required DevEx portal documents not submitted.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: не предоставлены требуемые документы на портале DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPortalBlocked",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx portal is blocked. Your DevEx portal account is locked for a compliance issue.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: портал DevEx заблокирован. Тво аккаунт на портале DevEx заблокирован в связи с нарушением нормативных требований.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.AboveMaximumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: превышение максимального порога метода оплаты. Мы не можем обработать твою текущую заявку DevEx, поскольку у нашего поставщика установлен максимальный порог способа оплаты. Твоя текущая заявка DevEx была отклонена по этой причине.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.BelowMinimumPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: ниже минимального порога способа оплаты. Мы не можем обработать твою текущую заявку DevEx, потому что у нашего поставщика минимальный порог оплаты. Твоя текущая заявка DevEx отклонена по этой причине.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionAbovePaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Above maximum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a maximum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: превышение максимального порога метода оплаты. Мы не можем обработать твою текущую заявку DevEx, поскольку у нашего поставщика установлен максимальный порог способа оплаты. Твоя текущая заявка DevEx был отклонена по этой причине.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionBelowPaymentMethodThreshold",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Below minimum payment method threshold. We cannot process your current DevEx request because our vendor's provider has a minimum payment threshold. Your current DevEx request has been rejected for this reason.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: ниже минимального порога способа оплаты. Мы не можем обработать твою текущую заявку DevEx, потому что у нашего поставщика минимальный порог оплаты. Твоя текущая заявка DevEx отклонена по этой причине.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionCountryNotSupported",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Country Not Supported.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: страна не поддерживается.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionFailedToCompleteTipaltiRegistration",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: Failed to complete Tipalti registration. Please reference the DevEx FAQ for information about the DevEx Portal.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: не завершена регистрация на портале Tipalti. Прочитай DevEx FAQ, чтобы получить более подробную информацию о портале DevEx.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
     "key": "Label.Hello",
     "description": null,
     "english": "Hello",
     "translation": "Привет",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CashOut",
+    "key": "Description.RejectionDevExPaymentRejected",
+    "description": null,
+    "english": "Your Developer Exchange request was unable to be processed for the following reason: DevEx Payment Rejected. We could not process your DevEx payment at this time due to incorrect banking information entered. Please login to your DevEx portal to verify that your banking information is correct.",
+    "translation": "Твою заявку Developer Exchange не удалось обработать по следующей причине: платёж DevEx отклонён. Мы не смогли обработать твой платёж DevEx в данный момент из-за неправильно введённой банковской информации. Выполни вход на портале DevEx, чтобы проверить правильность банковской информации.",
     "isDeprecated": false
   },
   {
@@ -15457,6 +15721,38 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Filter.SalesType",
+    "description": "Filter label for sales type",
+    "english": "Sales Type",
+    "translation": "Тип продаж",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Filter.Sorts",
+    "description": "Sorts label",
+    "english": "Sorts",
+    "translation": "Сортировка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.NewCollectibles",
+    "description": "Title of a popup introducing the new concept of \"Collectible\" items",
+    "english": "New Collectibles!",
+    "translation": "Коллекционные предметы!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CollectiblesInfo",
+    "description": "Displays some info about the new \"Collectibles\" item category.",
+    "english": "Collectible items can be resold from user to user after a holding period, even if the original stock is not sold out. Premium subscribers can list Collectible items for resale.",
+    "translation": "Коллекционные предметы могут быть перепроданы от пользователя к пользователю после периода удержания, даже если исходный запас этих предметов ещё не распродан. Подписчики Premium могут выставлять коллекционные предметы на перепродажу.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.LimitedU",
     "description": "Abbreviation for the \"Limited Unique\" category of items for which only a set amount of items are sold, but can be resold by users.",
     "english": "Limited U",
@@ -15465,10 +15761,82 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Unlimited",
+    "description": "Refers to the \"Unlimited\" category of items: items that are sold in unlimited quantities and cannot be resold by users (as opposed to Limited and Limited U items)",
+    "english": "Unlimited",
+    "translation": "Неограниченные предметы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.SellYourCollectibleItem",
+    "description": null,
+    "english": "Sell Your Collectible Item",
+    "translation": "Продать коллекционные предмет",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PriceMinimum1",
+    "description": null,
+    "english": "Price (minimum 1)",
+    "translation": "Цена (минимум 1)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MarketplaceFee30Percent",
+    "description": null,
+    "english": "Marketplace fee (at 30%)",
+    "translation": "Сбор маркетплейса (30%)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.YouGet",
     "description": null,
     "english": "You get",
     "translation": "Вы получите",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SellNow",
+    "description": null,
+    "english": "Sell Now",
+    "translation": "Продать сейчас",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.TakeOffSale",
+    "description": null,
+    "english": "Take Off Sale",
+    "translation": "Убрать с продажи",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TakeOffSaleConfirmation",
+    "description": null,
+    "english": "Are you sure you want to take the item off sale?",
+    "translation": "Действительно снять предмет с продажи?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.AddToProfile",
+    "description": null,
+    "english": "Add to Profile",
+    "translation": "Добавить в профиль",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.RemoveFromProfile",
+    "description": null,
+    "english": "Remove from Profile",
+    "translation": "Удалить из профиля",
     "isDeprecated": false
   },
   {
@@ -15489,10 +15857,58 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Trending",
+    "description": "Category label for the trending items",
+    "english": "Trending",
+    "translation": "Популярные",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InvalidPrice",
+    "description": null,
+    "english": "Price is invalid",
+    "translation": "Неверная цена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumber",
+    "description": null,
+    "english": "Serial Number",
+    "translation": "Серийный номер",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.AddToCart",
+    "description": null,
+    "english": "Add to cart",
+    "translation": "Добавить в корзину",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.RemoveFromCart",
+    "description": null,
+    "english": "Remove from cart",
+    "translation": "Удалить из корзины",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.Add",
     "description": null,
     "english": "Add",
     "translation": "Добавить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ShoppingCart",
+    "description": null,
+    "english": "Shopping cart",
+    "translation": "Корзина",
     "isDeprecated": false
   },
   {
@@ -15505,6 +15921,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Message.Processing",
+    "description": null,
+    "english": "Processing",
+    "translation": "Обработка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Message.Unavailable",
     "description": null,
     "english": "Unavailable",
@@ -15513,10 +15937,218 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Heading.ItemAddedToCart",
+    "description": null,
+    "english": "{itemName} has been added to your cart",
+    "translation": "Добавлено в корзину: {itemName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemRemovedFromCart",
+    "description": null,
+    "english": "{itemName} has been removed from your cart",
+    "translation": "Удалено из корзины: {itemName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartLimitFailure",
+    "description": null,
+    "english": "Add to cart failed, you reached the {itemLimit} item limit",
+    "translation": "Не удалось добавить в корзину. Достигнуто ограничение: {itemLimit}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartFailure",
+    "description": null,
+    "english": "Add to cart failed, please try again later",
+    "translation": "Не удалось добавить в корзину. Повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartRemoveFailure",
+    "description": null,
+    "english": "Remove from cart failed, please try again later",
+    "translation": "Не удалось удалить из корзины. Повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.CartAddFailure",
+    "description": null,
+    "english": "Add to cart failed, please try again later",
+    "translation": "Не удалось добавить в корзину. Повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.BuyCartItems",
+    "description": null,
+    "english": "Buy cart items",
+    "translation": "Купить предметы из корзины",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.InsufficientFundsForTransaction",
+    "description": null,
+    "english": "You have insufficient funds for this transaction",
+    "translation": "Недостаточно средств для этой транзакции",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.AveragePriceColon",
+    "description": "The average selling price of an item.",
+    "english": "Average Price:",
+    "translation": "Средняя цена:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumberColon",
+    "description": "The serial number for a sale item.",
+    "english": "Serial Number:",
+    "translation": "Серийный номер:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.SetPrice",
+    "description": "The heading for setting the price of an item for sale.",
+    "english": "Set Price",
+    "translation": "Установить цену",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.ItemInfo",
+    "description": "The heading above the information for an item in the catalog.",
+    "english": "Item Info",
+    "translation": "Информация о предмете",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Overview",
+    "description": "The heading above a section giving overview information about an item.",
+    "english": "Overview",
+    "translation": "Обзор",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RecentlyCreated",
+    "description": "Used for sorting items in the catalog",
+    "english": "Recently Created",
+    "translation": "Недавно созданные",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ResaleFeePolicy",
+    "description": "Title text appearing above a message stating the Roblox Resale Fee Policy when selling an item.",
+    "english": "Resale Fee Policy",
+    "translation": "Политика сборов при перепродаже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ResaleFeePolicy",
+    "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
+    "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
+    "translation": "Доход от всех сделок в Маркетплейсе, включая перепродажу, делится между Roblox и пользователями, участвующими в сделке. При перепродаже пользователь принимает вашу цену, {yourSharePercent}% от уплаченных им Robux достается вам как продавцу. Остальные {robloxFeePercent}% достанутся Roblox и другим пользователям, включая автора предмета.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.ItemOwned",
     "description": null,
     "english": "Item Owned",
     "translation": "У тебя есть этот предмет",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.GotIt",
+    "description": null,
+    "english": "Got It",
+    "translation": "Понятно",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCount",
+    "description": "Owned Itemss (3)",
+    "english": "Owned Items ({itemCount})",
+    "translation": "Предметы в инвентаре: ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.BuyPrice",
+    "description": "The label in front of the price to buy an item",
+    "english": "Buy Price:",
+    "translation": "Цена покупки:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Holding",
+    "description": null,
+    "english": "Holding",
+    "translation": "Удержание",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.OffSale",
+    "description": null,
+    "english": "Off Sale",
+    "translation": "Не в продаже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemInAHold",
+    "description": null,
+    "english": "Item in a hold?",
+    "translation": "Предмет удерживается?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.HoldingPolicy",
+    "description": null,
+    "english": "Holding Policy",
+    "translation": "Политика удержания",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "После покупки предметы удерживаются на срок до 30 дней. Перепродать товар можно только после окончания этого периода удержания.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.OffSaleItem",
+    "description": null,
+    "english": "Off Sale Item",
+    "translation": "Товар не продаётся",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Genres",
+    "description": null,
+    "english": "Genres",
+    "translation": "Жанр",
     "isDeprecated": false
   },
   {
@@ -15577,10 +16209,50 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.BestPrice",
+    "description": null,
+    "english": "Best Price",
+    "translation": "Лучшая цена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.SeeMoreReseller",
+    "description": null,
+    "english": "See More {linkStart}{resellerLink}{linkEnd}",
+    "translation": "Больше: {linkStart}{resellerLink}{linkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.Wear",
     "description": null,
     "english": "Wear",
     "translation": "Надеть",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.BundlePurchase",
+    "description": "Would you like to buy the \"Penguin\" from Roblox for (Robux Icon) 50?",
+    "english": "Would you like to buy the \"{bundleName}\" from {sellerName} for {price}?",
+    "translation": "Хочешь купить «{bundleName}» у {sellerName} за {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetPurchase",
+    "description": "Would you like to buy the hat \"Cowboy Hat\" from Roblox for (Robux Icon) 10?",
+    "english": "Would you like to buy the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "Хочешь купить «{itemName}» («{itemType}») у {sellerName} за {price}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.AssetGet",
+    "description": "Would you like to get the Hat \"Bowler Hat\" from Roblox for Free?",
+    "english": "Would you like to get the {itemType} \"{itemName}\" from {sellerName} for {price}?",
+    "translation": "Хочешь купить «{itemName}» («{itemType}») у {sellerName} за {price}?",
     "isDeprecated": false
   },
   {
@@ -15609,6 +16281,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.RightArm",
+    "description": null,
+    "english": "RightArm",
+    "translation": "Правая рука",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.RightLeg",
     "description": null,
     "english": "Right Leg",
@@ -15617,10 +16297,106 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.ClassicShirt",
+    "description": null,
+    "english": "Classic Shirt",
+    "translation": "Классическая рубашка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClassicTShirt",
+    "description": null,
+    "english": "Classic T-Shirt",
+    "translation": "Классическая футболка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Torso",
     "description": null,
     "english": "Torso",
     "translation": "Торс",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ClimbAnimation",
+    "description": null,
+    "english": "Climb Animation",
+    "translation": "Анимация подъёма",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.DeathAnimation",
+    "description": null,
+    "english": "Death Animation",
+    "translation": "Анимация смерти",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.FallAnimation",
+    "description": null,
+    "english": "Fall Animation",
+    "translation": "Анимация падения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.IdleAnimation",
+    "description": null,
+    "english": "Idle Animation",
+    "translation": "Анимация безделия",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.RunAnimation",
+    "description": null,
+    "english": "Run Animation",
+    "translation": "Анимация бега",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.JumpAnimation",
+    "description": null,
+    "english": "Jump Animation",
+    "translation": "Анимация прыжка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SwimAnimation",
+    "description": null,
+    "english": "Swim Animation",
+    "translation": "Анимация плавания",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.WalkAnimation",
+    "description": null,
+    "english": "Walk Animation",
+    "translation": "Анимация хождения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PoseAnimation",
+    "description": null,
+    "english": "Pose Animation",
+    "translation": "Анимация позирования",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.EmoteAnimation",
+    "description": null,
+    "english": "Emote Animation",
+    "translation": "Анимация эмоций",
     "isDeprecated": false
   },
   {
@@ -15689,6 +16465,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Skirt",
+    "description": null,
+    "english": "Skirt",
+    "translation": "Юбка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.Jacket",
     "description": null,
     "english": "Jacket",
@@ -15729,6 +16513,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.MoodAnimation",
+    "description": null,
+    "english": "Mood Animation",
+    "translation": "Анимация настроений",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Label.DynamicHead",
     "description": null,
     "english": "Dynamic Head",
@@ -15737,10 +16529,58 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.SerialNumberDisplay",
+    "description": "i.e. #32",
+    "english": "#{serialNumber}",
+    "translation": "#{serialNumber}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemOwnedCountSingular",
+    "description": "Owned Item (1)",
+    "english": "Owned Item ({itemCount})",
+    "translation": "Предметы в инвентаре: ({itemCount})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Fee",
+    "description": "30% Fee:",
+    "english": "{feePercentage}% Fee:",
+    "translation": "Сбор в размере {feePercentage}%:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.ShowLess",
     "description": null,
     "english": "Show Less",
     "translation": "Показать меньше",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.TakeOffResaleConfirmation",
+    "description": null,
+    "english": "Are you sure you want to stop offering this item for resale?",
+    "translation": "Действительно снять предмет с перепродажи?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SalePrice",
+    "description": null,
+    "english": "Sale Price:",
+    "translation": "Цена продажи:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.Marketplace",
+    "description": "A heading for the marketplace page where you can buy items to customize your avatar",
+    "english": "Marketplace",
+    "translation": "Маркетплейс",
     "isDeprecated": false
   },
   {
@@ -15757,6 +16597,30 @@
     "description": null,
     "english": "No",
     "translation": "Нет",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradeable",
+    "description": null,
+    "english": "Tradeable",
+    "translation": "Подлежит продаже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.LimitedUHoldingPolicy",
+    "description": null,
+    "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends.",
+    "translation": "После покупки предметы удерживаются на срок до 30 дней. Перепродать товар можно только после окончания этого периода удержания.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Tradable",
+    "description": null,
+    "english": "Tradable",
+    "translation": "Подлежит продаже",
     "isDeprecated": false
   },
   {
@@ -21440,6 +22304,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInArchive",
+    "description": "Message that appears in Archive when a user doesn't have messages in their archive",
+    "english": "You have no archived messages.",
+    "translation": "Нет архивированных сообщений.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInInbox",
+    "description": "Text that appears when a user's inbox is empty",
+    "english": "You have no messages in your inbox.",
+    "translation": "Нет входящих сообщений.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoSentMessages",
+    "description": "Text that appears when a user has no sent messages",
+    "english": "You have no sent messages.",
+    "translation": "Нет отправленных сообщений.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PlaceThumbnails",
     "key": "Label.Previous",
     "description": null,
@@ -22973,6 +23861,14 @@
     "description": null,
     "english": "Unable to update status.",
     "translation": "Не удаётся обновить статус.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.QRCodeFriendRequest",
+    "description": "Message explaining where a friend request has come from.",
+    "english": "Sent from your QR code",
+    "translation": "С использованием QR-кода",
     "isDeprecated": false
   },
   {
@@ -25777,10 +26673,114 @@
   },
   {
     "namespace": "Notifications.NotificationStream",
+    "key": "Heading.JoinFailed",
+    "description": null,
+    "english": "Join Failed",
+    "translation": "Ошибка входа",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.JoinFailed",
+    "description": null,
+    "english": "Failed to join experience. Please try again later.",
+    "translation": "Не удалось присоединиться. Повтори попытку позже.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "ReportedCard.Title",
+    "description": null,
+    "english": "Thank you for your report.",
+    "translation": "Спасибо за сообщение.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "ReportedCard.Description",
+    "description": null,
+    "english": "We will review your report soon and take action if needed.",
+    "translation": "Мы рассмотрим твою жалобу в ближайшее время и в случае необходимости примем меры.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AriaText.MoreActions",
+    "description": null,
+    "english": "More actions on this notification.",
+    "translation": "Больше действий для этого уведомления.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
     "key": "Action.Report",
     "description": null,
     "english": "Report",
     "translation": "Пожаловаться",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Placeholder.ReasonDescription",
+    "description": null,
+    "english": "In your own words, help us understand what went wrong.",
+    "translation": "Объясни своими словами произошедшее",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Placeholder.ReasonAbuse",
+    "description": null,
+    "english": "Reason for Abuse",
+    "translation": "Причина нарушения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Title.ReportNotification",
+    "description": null,
+    "english": "Report Notification",
+    "translation": "Уведомление о жалобе",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.VirtualEventOngoingTitle",
+    "description": "Message displayed on virtual event notification title when there is a live virtual event ongoing.",
+    "english": "Happening Now: {title}",
+    "translation": "Происходит сейчас: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.VirtualEventElapsedTitle",
+    "description": "Message displayed on virtual event notification title when a virtual event is over.",
+    "english": "Event Ended: {title}",
+    "translation": "Событие завершено: {title}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Message.VirtualEventOngoingBody",
+    "description": "Message displayed on virtual event notification body when there is a live virtual event ongoing.",
+    "english": "Join the event now",
+    "translation": "Присоединиться к событию",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Bullying",
+    "description": null,
+    "english": "Bullying",
+    "translation": "Травля",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.CheatingAndExploiting",
+    "description": null,
+    "english": "Cheating/Exploiting",
+    "translation": "Мошенничество/использование уязвимости в своих интересах",
     "isDeprecated": false
   },
   {
@@ -25793,10 +26793,26 @@
   },
   {
     "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.DirectingOffPlatform",
+    "description": null,
+    "english": "Offsite Links",
+    "translation": "Внешние ссылки",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
     "key": "AbuseReason.Other",
     "description": null,
     "english": "Other",
     "translation": "Прочее",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.AskingPII",
+    "description": null,
+    "english": "Personal Question",
+    "translation": "Личный вопрос",
     "isDeprecated": false
   },
   {
@@ -25821,6 +26837,30 @@
     "description": null,
     "english": "This field is required.",
     "translation": "Обязательное поле.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Error.MaxLength.AbuseReporterComment",
+    "description": null,
+    "english": "Please limit your comment to under {maxLength} characters.",
+    "translation": "Ограничь свой комментарий до {maxLength} симв.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Error.ServerError.ReportNotification",
+    "description": null,
+    "english": "Reporting this notification failed. Please try again.",
+    "translation": "Не удалось пожаловаться на это уведомление. Попробуй ещё раз.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Error.UnauthorizedUser.ReportNotification",
+    "description": null,
+    "english": "You do not have the required permission to report this notification.",
+    "translation": "Не удалось пожаловаться на это уведомление, так как отсутствуют необходимые разрешения.",
     "isDeprecated": false
   },
   {
@@ -26657,6 +27697,22 @@
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.InsufficientRobuxExceedLargestPackage",
+    "description": null,
+    "english": "{divTagStart}You need an additional {robuxNeeded}. Please purchase more Robux Packages, then come back to the shop.{divTagEnd}",
+    "translation": "{divTagStart}Не хватает {robuxNeeded}. Приобрети пакет Robux и возвращайся в магазин.{divTagEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Action.GoToRobuxStore",
+    "description": null,
+    "english": "Go to Robux Store",
+    "translation": "Перейти в магазин Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
     "key": "Action.Buy",
     "description": null,
     "english": "Buy",
@@ -26673,10 +27729,162 @@
   },
   {
     "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.PromptBatchBuy",
+    "description": "Would you like to buy these 5 items for [Robux icon]400?",
+    "english": "Would you like to buy these {itemCount} items for {robux}?",
+    "translation": "Хочешь купить эти предметы ({itemCount} шт.) за {robux}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseCompleted",
+    "description": null,
+    "english": "Purchase Completed",
+    "translation": "Покупка выполнена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.GeneralError",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again later",
+    "translation": "Что-то пошло не так. Обнови и повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessGeneralFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить: {itemCountFailure}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessItemsOwnedFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) you already own",
+    "translation": "Куплено предметов: {itemCountSuccess}, предметы уже в инвентаре: {itemCountFailure}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessInsufficientFundsFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to insufficient funds",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить из-за недостаточного количества средств: {itemCountFailure}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNetworkErrorFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to network error",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить из-за ошибки сети: {itemCountFailure}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessFloodcheckFailure",
+    "description": null,
+    "english": "{itemCountSuccess} item(s) has/have been purchased, {itemCountFailure} item(s) failed due to too many requests",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить из-за большого количества запросов: {itemCountFailure}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PurchaseFailure",
+    "description": null,
+    "english": "Purchase failed, please try again later",
+    "translation": "Покупка не удалась. Повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.ItemsOwnedFailure",
+    "description": null,
+    "english": "Purchase failed, item(s) already owned",
+    "translation": "Покупка не удалась, у тебя уже есть предмет(ы)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.InsufficientFundsFailure",
+    "description": null,
+    "english": "Purchase failed, insufficient funds",
+    "translation": "Покупка не удалась, недостаточно средств",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NetworkErrorFailure",
+    "description": null,
+    "english": "Purchase failed, network error, please try again later",
+    "translation": "Покупка не удалась. Ошибка сети. Повтори попытку позже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.FloodcheckFailure",
+    "description": null,
+    "english": "Purchase failed, too many requests, please try again in {throttleTime} minutes",
+    "translation": "Покупка не удалась, слишком много запросов. Повтори попытку через {throttleTime} мин.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.BuyItems",
+    "description": null,
+    "english": "Buy Items",
+    "translation": "Купить предметы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
     "key": "Action.Get",
     "description": null,
     "english": "Get",
     "translation": "Получить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessPremiumNeededFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased, {itemCountFailure} failed due to premium account needed",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить: {itemCountFailure} шт., так как требуется Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PartialSuccessNoSellersFailure",
+    "description": null,
+    "english": "{itemCountSuccess} has/have been purchased,{itemCountFailure} failed due to no sellers",
+    "translation": "Куплено предметов: {itemCountSuccess}, не удалось купить: {itemCountFailure} шт., так как нет продавцов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.PremiumNeededFailure",
+    "description": null,
+    "english": "Purchase failed, premium account needed",
+    "translation": "Покупка не удалась, требуется Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.NoSellersFailure",
+    "description": null,
+    "english": "Purchase failed, no sellers",
+    "translation": "Покупка не удалась, нет продавцов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Label.PlusNumber",
+    "description": "i.e. +3",
+    "english": "+{numberCount}",
+    "translation": "+{numberCount}",
     "isDeprecated": false
   },
   {
@@ -36840,6 +38048,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Action.GetRobux",
+    "description": null,
+    "english": "Get Robux",
+    "translation": "Получить Robux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Label.BalanceDue",
+    "description": null,
+    "english": "Balance Due:",
+    "translation": "Сумма к оплате:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PeopleList",
     "key": "Label.Chat",
     "description": "Chat with friends",
@@ -40148,7 +41372,7 @@
     "key": "Message.FraudWarningMessageFor13To17",
     "description": null,
     "english": "By selecting a payment type, I agree that I am the parent or legal guardian of the account owner and I authorize this purchase.",
-    "translation": "Нажимая «Продолжить», я подтверждаю, что являюсь родителем или опекуном владельца аккаунта, и даю разрешение на эту покупку.",
+    "translation": "Выбирая способ оплаты, я подтверждаю, что являюсь родителем или опекуном владельца аккаунта, и даю разрешение на эту покупку.",
     "isDeprecated": false
   },
   {
@@ -40201,10 +41425,34 @@
   },
   {
     "namespace": "Feature.Payment",
+    "key": "Response.BraintreePending",
+    "description": null,
+    "english": "An unexpected error occurred. It may take up to 5 minutes for your transaction to process. Please check the My Transactions page to see if it processed successfully.",
+    "translation": "Произошла непредвиденная ошибка. Обработка транзакции может занять до 5 минут. Проверь страницу «Мои транзакции», чтобы убедиться, что транзакция успешно обработана.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Response.BraintreeDeclined",
+    "description": null,
+    "english": "An error occurred and payment was unsuccessful. Please try again.",
+    "translation": "Произошла ошибка и платёж не удался. Повтори попытку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
     "key": "Label.Error",
     "description": null,
     "english": "Error",
     "translation": "Ошибка",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Message.BraintreePayPalPreparePaymentError",
+    "description": null,
+    "english": "There was an error connecting to PayPal. Please try again.",
+    "translation": "Произошла ошибка при подключении к PayPal. Повтори попытку.",
     "isDeprecated": false
   },
   {
@@ -50560,6 +51808,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "An error has occurred. Please contact Customer Service if the problem persists.",
+    "translation": "Произошла ошибка. Если проблема сохранится, обратись в Службу поддержки.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.NativeAds",
     "key": "Heading.SponsorGame",
     "description": null,
@@ -51861,6 +53117,102 @@
     "description": null,
     "english": "Return to Experience",
     "translation": "Вернуться в плейс",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeShape",
+    "description": null,
+    "english": "AdGui's Adornee is not in Block shape",
+    "translation": "AdGui's Adornee не в форме блока",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeRotation",
+    "description": null,
+    "english": "AdGui's Adornee rotation is invalid",
+    "translation": "Вращение AdGui's Adornee не удалось",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalParentType",
+    "description": null,
+    "english": "Parent Type is not valid",
+    "translation": "Parent Type недействителен",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.AdPortalParentMissing",
+    "description": null,
+    "english": "Parent does not exist",
+    "translation": "Parent не существует",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneeSize",
+    "description": null,
+    "english": "AdGui's Adornee size is invalid",
+    "translation": "Размер AdGui's Adornee неверный",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdorneePosition",
+    "description": null,
+    "english": "AdGui's Adornee position is invalid",
+    "translation": "Позиция AdGui's Adornee неверная",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalHierarchy",
+    "description": null,
+    "english": "AdPortal doesn't have correct hierarchy",
+    "translation": "AdPortal не имеет правильной иерархии",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiValidation",
+    "description": null,
+    "english": "AdGui validation failed",
+    "translation": "Проверка AdGui не удалась",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalProperties",
+    "description": null,
+    "english": "AdPortal doesn't have correct properties set",
+    "translation": "AdPortal не имеет правильного набора свойств",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdPortalParentProperties",
+    "description": null,
+    "english": "AdPortal parent part doesn't have correct properties set",
+    "translation": "У родительской части AdPortal не установлены правильные свойства",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.InvalidAdGuiAdornee",
+    "description": null,
+    "english": "AdGui's Adornee is not a Part",
+    "translation": "AdGui's Adornee не является частью",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.AdPortalMissing",
+    "description": null,
+    "english": "AdPortal doesn't exist",
+    "translation": "AdPortal не существует",
     "isDeprecated": false
   },
   {
@@ -55816,6 +57168,62 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Transactions",
+    "key": "Label.GroupAdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payout from Group",
+    "translation": "Выплаты группы за иммерсивную рекламу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Label.AdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payouts",
+    "translation": "Выплаты за иммерсивную рекламу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.GroupAdsRevsharePayout",
+    "description": null,
+    "english": "Group Immersive Ads Payout",
+    "translation": "Выплаты группы за иммерсивную рекламу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.AdsRevsharePayout",
+    "description": null,
+    "english": "Immersive Ads Payout",
+    "translation": "Выплаты за иммерсивную рекламу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.PendingRobuxAdsRevsharePayout",
+    "description": null,
+    "english": "Pending Robux from Immersive Ads Payout",
+    "translation": "Robux от иммерсивной рекламы обрабатывается",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Tooltip.GroupSalesAmount",
+    "description": null,
+    "english": "Amount is net payout amount excluding commission, marketplace fee, and recurring group payouts.",
+    "translation": "Сумма — это чистая сумма выплат без учёта комиссии, сбора маркетплейса и повторяющихся групповых выплат.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Transactions",
+    "key": "Description.DownloadMonthInstructions",
+    "description": "Description for 1 month",
+    "english": "Please select the month of the transactions you want to download. New transactions may not appear for several hours.",
+    "translation": "Выбери месяц транзакций, который хочешь загрузить. Новые транзакции могут не появляться в течение нескольких часов.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Metadata",
     "key": "OpenGraph.Title",
     "description": "og:title for metadata tag",
@@ -56517,6 +57925,22 @@
     "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease also keep the string for \"HELP\" unchanged regardless of locale.",
     "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
     "translation": "Нажимая «Продолжить», ты подтверждаешь свой номер телефона и соглашаешься с {linkTagWithSmsTos}Условиями использования СМС{linkTagEnd} и {linkTagWithPrivacyPolicy}Политикой конфиденциальности{linkTagEnd}. Мы отправим одноразовый код подтверждения. Могут применяться тарифы на передачу сообщений и данных. Отправь слово HELP, если тебе нужна помощь.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.SixDigitCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "Шестизначный код",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifySuccess",
+    "description": null,
+    "english": "Verified Successfully",
+    "translation": "Успешно подтверждено",
     "isDeprecated": false
   },
   {
@@ -59716,7 +61140,7 @@
     "key": "Label.AvatarItems",
     "description": null,
     "english": "Items",
-    "translation": "Предметы аватара",
+    "translation": "Предметы",
     "isDeprecated": false
   },
   {
@@ -73129,6 +74553,14 @@
   },
   {
     "namespace": "Feature.GenreExplorer",
+    "key": "Tile.RolePlaying",
+    "description": "Genre Tile Title - Role Playing",
+    "english": "Role Playing",
+    "translation": "Ролевые игры",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
     "key": "Tile.Shopping",
     "description": "Genre Tile Title - Shopping",
     "english": "Shopping",
@@ -73153,6 +74585,14 @@
   },
   {
     "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Story",
+    "description": "Genre Tile Title - Story",
+    "english": "Story",
+    "translation": "История",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
     "key": "Tile.Strategy",
     "description": "Genre Tile Title - Strategy",
     "english": "Strategy",
@@ -73165,6 +74605,14 @@
     "description": "Genre Tile Title - Tycoon",
     "english": "Tycoon",
     "translation": "Экономические симуляторы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Heading.Title",
+    "description": "Section heading for Genre Explorer. Showing on Discover page on top of the carousel.",
+    "english": "Browse by Category",
+    "translation": "Поиск по категориям",
     "isDeprecated": false
   },
   {
@@ -76804,7 +78252,7 @@
     "key": "Label.CreateApp",
     "description": "Label for final stepper button",
     "english": "Create",
-    "translation": "Создать приложение",
+    "translation": "Создать",
     "isDeprecated": false
   },
   {
@@ -79572,7 +81020,7 @@
     "key": "Label.CreateDecalPageName",
     "description": null,
     "english": "Decals Page",
-    "translation": "Страница создания наклейки",
+    "translation": "Страница наклеек",
     "isDeprecated": false
   },
   {
@@ -79580,7 +81028,7 @@
     "key": "Label.CreateAudioPageName",
     "description": null,
     "english": "Audio Page",
-    "translation": "Страница создания аудио",
+    "translation": "Страница аудио",
     "isDeprecated": false
   },
   {
@@ -79629,6 +81077,118 @@
     "description": null,
     "english": "Sponsored Ads Page",
     "translation": "Страница спонсируемой рекламы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceBasicSettingsPageName",
+    "description": null,
+    "english": "Place Basic Settings Page",
+    "translation": "Страница основных настроек локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceIconPageName",
+    "description": null,
+    "english": "Place Icon Page",
+    "translation": "Страница иконки локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceThumbnailsPageName",
+    "description": null,
+    "english": "Place Thumbnails Page",
+    "translation": "Страница миниатюр локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceAccessPageName",
+    "description": null,
+    "english": "Place Access Page",
+    "translation": "Страница доступа к локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAnimationsPageName",
+    "description": null,
+    "english": "Animations Page",
+    "translation": "Страница анимаций",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewMeshesPageName",
+    "description": null,
+    "english": "Meshes Page",
+    "translation": "Страница сеток",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureMarketplaceItemPageName",
+    "description": null,
+    "english": "Configure Developer Item Page",
+    "translation": "Страница настроек предметов разработчика",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewPluginsPageName",
+    "description": null,
+    "english": "Plugins Page",
+    "translation": "Страница плагинов",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceAccessLinkName",
+    "description": null,
+    "english": "Place Access",
+    "translation": "Страница доступа",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureExperienceAccessLinkName",
+    "description": null,
+    "english": "Experience Access",
+    "translation": "Доступ к плейсу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Message.CDRedirectionMessageWithSeparateLinks",
+    "description": null,
+    "english": "The {pageName} has been migrated to the Creator Dashboard. You can edit {firstLinkName} {firstLinkStart}here{firstLinkEnd} and {secondLinkName} {secondLinkStart}here{secondLinkEnd}.",
+    "translation": "Страница {pageName} перенесена на Панель автора. Можно редактировать {firstLinkName} {firstLinkStart}здесь{firstLinkEnd} и {secondLinkName} {secondLinkStart}здесь{secondLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlacePermissionPageName",
+    "description": null,
+    "english": "Place Permissions Page",
+    "translation": "Страницаразрешений локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceVersionHistoryPageName",
+    "description": null,
+    "english": "Place Version History Page",
+    "translation": "Страница истории версий локации",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigurePlaceExperiencesPageName",
+    "description": null,
+    "english": "Place Experiences Page",
+    "translation": "Страница локаций плейса",
     "isDeprecated": false
   },
   {
@@ -86377,6 +87937,30 @@
   },
   {
     "namespace": "Feature.GiftingRobux",
+    "key": "Heading.GiftRobuxModalHeading",
+    "description": null,
+    "english": "Gift Robux to Friend",
+    "translation": "Отправить Robux другу",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GiftingRobux",
+    "key": "Heading.GiftRobuxModalPrompt",
+    "description": null,
+    "english": "Are you sure you wish to send {robuxMarkup} to {friendMarkup}?",
+    "translation": "Ты действительно хочешь отправить {robuxMarkup} {friendMarkup}?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GiftingRobux",
+    "key": "Label.GiftRobuxModalConfirm",
+    "description": null,
+    "english": "Yes, Send",
+    "translation": "Да, отправить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GiftingRobux",
     "key": "Label.GiftRobuxModalCancel",
     "description": null,
     "english": "Cancel",
@@ -87297,10 +88881,146 @@
   },
   {
     "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalTitle",
+    "description": "Title of the sharing modal",
+    "english": "Share This Event",
+    "translation": "Поделиться этим событием",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalBody",
+    "description": "The body content of the share modal",
+    "english": "Copy the event link below to invite people to this event or share the event in chat.",
+    "translation": "Скопировать ссылку на событие ниже, чтобы пригласить людей в это событие или поделиться событием в чате.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalLinkCopy",
+    "description": "\"Copy\" in this case meaning \"copy and paste.\" This is the text for the button that allows the user to copy a link to their clipboard",
+    "english": "Copy",
+    "translation": "Скопировать",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "ShareModalCallToAction",
+    "description": "Text of the main call-to-action button that allows the user to share the link via the app's chat",
+    "english": "Share via Chat...",
+    "translation": "Поделиться в чате...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceDuringEvent",
+    "description": "The text display next to the number of users that are currently attending an event",
+    "english": "Attending Now",
+    "translation": "Сейчас присутствующих",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "AttendanceBeforeEvent",
+    "description": "The text that is displayed next to the number of users that are interested in attending the event",
+    "english": "Interested",
+    "translation": "Интересно",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "GoHome",
+    "description": "Used on a button to prompt the user to return to the homepage",
+    "english": "Go Home",
+    "translation": "Домой",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpGoing",
+    "description": "Displayed on a button when the user has marked themselves as being interested in going to the event",
+    "english": "Interested",
+    "translation": "Интересно",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "RsvpNotGoing",
+    "description": "Displayed on a button when the user has not yet marked themselves as interested to an event. The text is asking the user if they would like to become interested",
+    "english": "Interested?",
+    "translation": "Интересно?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "JoinEvent",
+    "description": "Displayed on a button when an event is active, allowing the user to join the associated experience",
+    "english": "Join Event",
+    "translation": "Присоединиться к событию",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
     "key": "DescriptionLabel",
     "description": "Title of the \"Description\" section of the page",
     "english": "Description",
     "translation": "Описание",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "HostedByLabel",
+    "description": "Text for the Hosted By label, referring to which creator is hosting the event.",
+    "english": "Hosted By",
+    "translation": "Организатор:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventCancelledText",
+    "description": "Displayed in place of event time for a cancelled event",
+    "english": "This event has been cancelled.",
+    "translation": "Это событие отменено.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Cancelled",
+    "description": "used to show the state of the event",
+    "english": "CANCELLED",
+    "translation": "ОТМЕНЕНО",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "Unpublished",
+    "description": "Used to show the current event state",
+    "english": "UNPUBLISHED",
+    "translation": "НЕОПУБЛИКОВАНО",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "TodayString",
+    "description": "used in the text for when an event is happening (ex: TODAY AT 5pm)",
+    "english": "TODAY",
+    "translation": "СЕГОДНЯ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "FriendsInterestedTextMulti",
+    "description": "Used to display which of your friends are interested in an event in the event more than 2 friends are interested",
+    "english": "{username1}, {username2} and {number} friends or following",
+    "translation": "{username1}, {username2} и {number} друзей или подписчиков",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "PrivateExperienceErrorDescriptor",
+    "description": "used to explain a greyed-out experience thumbnail",
+    "english": "This experience is private.",
+    "translation": "Этот плейс имеет закрытый доступ.",
     "isDeprecated": false
   },
   {
@@ -87333,6 +89053,22 @@
     "description": "Button text for the \"Event Push Notifications\" modal to enable push notifications for events",
     "english": "Enable",
     "translation": "Включить",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "UnfollowEvent",
+    "description": "unsubscribe from notifications about when an event is starting",
+    "english": "Unfollow Event",
+    "translation": "Отписаться от события",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VirtualEvents",
+    "key": "NetworkError",
+    "description": null,
+    "english": "Something went wrong. Please try again later",
+    "translation": "Что-то пошло не так. Повтори попытку позже",
     "isDeprecated": false
   },
   {
@@ -87624,6 +89360,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.StripeIntegration",
+    "key": "Stripe.OneTimePurchase.Disclosure",
+    "description": null,
+    "english": "By submitting payment information you acknowledge that you are at least 18 years old, and that you agree to [Roblox Terms](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and [revocation policy](https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy).",
+    "translation": "Отправляя платёжные данные, ты подтверждаешь, что тебе исполнилось 18 лет и ты соглашаешься с [Условиями Roblox](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) и [Политикой конфиденциальности](https://en. elp.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), включая арбитражное соглашение и [Политику отзыва](https://en.help.roblox.com/hc/en-us/articles/115004647846#eu-uk-revocation-policy).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.StripeIntegration",
+    "key": "Stripe.RecurringPurchase.Disclosure",
+    "description": null,
+    "english": "I acknowledge that I am at least 18 years old, and that I agree to [Roblox Terms](https://www.roblox.com/info/terms) and [Privacy Policy](https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), including the arbitration clause and revocation policy. I consent to the immediate performance of the contract and acknowledge that I thereby lose my right of withdrawal. I allow my card to be charged the total amount shown on this page monthly. I may cancel anytime in [Billing Settings](https://www.roblox.com/my/account#!/billing).",
+    "translation": "Я подтверждаю, что мне не менее 18 лет и соглашаюсь с [Условиями Roblox](https://www.roblox.com/info/terms) и [Политикой конфиденциальности](https://en. elp.roblox.com/hc/ru/articles/115004630823-Roblox-Privacy-and-Cookie-Policy-), включая арбитражное соглашение и Политику отзыва. Я даю согласие на немедленное исполнение соглашения и подтверждаю, что тем самым теряю право на отзыв. Я разрешаю снимать с карты общую сумму, отображаемую ежемесячно на этой странице. Я могу в любое время отменить платёж в [Настройках платежей](https://www.roblox.com/my/account#!/billing).",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.SuspiciousLoginEmailNotification",
     "key": "Email.Body.TopContent",
     "description": "Top content in the email body for the suspicious login email html body.",
@@ -87721,6 +89473,126 @@
   },
   {
     "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOut",
+    "description": "Button to take user to sign out confirmation modal",
+    "english": "Sign Out",
+    "translation": "Выйти",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.SignOutOfSession",
+    "description": "Button to sign user out of selected session",
+    "english": "Sign Out of Session",
+    "translation": "Выйти из сессии",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.WhereYoureSignedIn",
+    "description": "Header for the entire session management feature",
+    "english": "Where You're Signed In",
+    "translation": "Откуда выполнен вход",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.SignOutOfSession",
+    "description": "Header for sign out confirmation modal",
+    "english": "Sign Out of Session",
+    "translation": "Выйти из сессии",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.YourSession",
+    "description": "Header for modal that displays session information",
+    "english": "Your Session",
+    "translation": "Твоя сессия",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.DeviceDetails",
+    "description": "label for details of device that last accessed selected session",
+    "english": "DEVICE DETAILS",
+    "translation": "ИНФОРМАЦИЯ ОБ УСТРОЙСТВЕ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.LastActive",
+    "description": "label for date and time the selected session was last active",
+    "english": "LAST ACTIVE",
+    "translation": "ПОСЛЕДНЯЯ АКТИВНОСТЬ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.Unknown",
+    "description": "Displayed when information about a session is unknown",
+    "english": "Unknown",
+    "translation": "Неизвестно",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.RobloxApp",
+    "description": "Device details with OS information if session is on Roblox App",
+    "english": "Roblox {OS} App",
+    "translation": "Приложение Roblox {OS}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.RobloxAppOSUnknown",
+    "description": "Device details if session is on Roblox App and OS information is unknown",
+    "english": "Roblox App",
+    "translation": "Приложение Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.Browser",
+    "description": "Device details if session is on browser but which browser and OS is unknown",
+    "english": "Browser",
+    "translation": "Браузер",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.BrowserWithOSInfo",
+    "description": "Device details if session is on browser with OS info but which browser is unknown",
+    "english": "Browser on {OS}",
+    "translation": "Браузер на {OS}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.BrowserWithOSandBrowserInfo",
+    "description": "Device details if session is on browser with OS and browser info",
+    "english": "{Browser} on {OS}",
+    "translation": "{Browser} на {OS}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.Studio",
+    "description": "Device details if session is on Roblox studio but os is unknown",
+    "english": "Roblox Studio",
+    "translation": "Roblox Studio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.StudioWithOS",
+    "description": "Device details if session is on Roblox Studio and OS is known",
+    "english": "Roblox Studio on {OS}",
+    "translation": "Roblox Studio на {OS}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
     "key": "Label.Value.UnknownDevice",
     "description": "Displayed when information about a session's user agent is unknown",
     "english": "Unknown Device",
@@ -87745,6 +89617,14 @@
   },
   {
     "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownWithCount",
+    "description": "Indicates to user how many sessions there are with no information at all",
+    "english": "Unknown ({Count})",
+    "translation": "Неизвестно ({Count})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
     "key": "Header.UnknownInfo",
     "description": "Header for modal that explains why there are sessions with no information",
     "english": "Info",
@@ -87760,11 +89640,91 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.LogOutAllSessions",
+    "description": "Button to log out of all other sessions",
+    "english": "Log Out of All Other Sessions",
+    "translation": "Выйти из всех сессий",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Action.LogOutOfSession",
+    "description": "Button to take user to log out confirmation modal",
+    "english": "Log Out of Session",
+    "translation": "Выйти из сессии",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.LogOutAllSessions",
+    "description": "Header for log out of all other sessions modal",
+    "english": "Log Out of All Other Sessions",
+    "translation": "Выйти из всех сессий",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.LogOutOfSession",
+    "description": "Header for log out confirmation modal",
+    "english": "Log Out of Session",
+    "translation": "Выйти из сессии",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Header.WhereYoureLoggedIn",
+    "description": "Header for the entire session management feature",
+    "english": "Where You're Logged In",
+    "translation": "Откуда выполнен вход",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Desktop.NewMatchedContacts",
+    "description": "Desktop stream notification for a newly matched contact",
+    "english": "Visit Contact Importer in the Roblox app to add them as a friend.",
+    "translation": "Открой импорт контактов в приложении Roblox, чтобы добавить в друзья.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.SingleNewlyMatchedContact",
+    "description": "One single contact is found in your contact book, stream notification",
+    "english": "Your contact {ContactName} is on Roblox.",
+    "translation": "Твой контакт {ContactName} зарегистрирован в Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.MutlipleNewlyMatchedContacts",
+    "description": "multiple contacts are found in your contact book, stream notification",
+    "english": "Your contact {contactName} and {numberContacts} other contacts are on Roblox.",
+    "translation": "Твой контакт {contactName} и ещё {numberContacts} др. зарегистрированы в Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "Stream.Mobile.Description.MatchedContact",
+    "description": "subtitle for mobile stream notification",
+    "english": "Add them as a friend to explore Roblox together.",
+    "translation": "Добавь его в друзья, чтобы вместе исследовать Roblox.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.MatchedContact",
     "key": "ActionAddFriend",
     "description": "Add Friend button on stream notifications.",
     "english": "Add Friend",
     "translation": "Добавить в друзья",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.MatchedContact",
+    "key": "LabelFriendRequestSent",
+    "description": "Shown after a user clicks on the Add Friend Button for a contact friend request.",
+    "english": "Friend Request Sent",
+    "translation": "Запрос дружбы отправлен",
     "isDeprecated": false
   },
   {
