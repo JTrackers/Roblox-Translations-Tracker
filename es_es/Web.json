@@ -17420,7 +17420,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Después de la compra, las ventas originales entran en periodo de retención de hasta 30 días. El objeto solo pueden revenderse después de que finalice este periodo de retención. Las reventas tendrán un periodo de retención de hasta 7 días. Solo los usuarios Premium pueden revender objetos.",
+    "translation": "Después de la compra, las ventas originales entran en periodo de retención de hasta 30 días. El objeto solo puede revenderse después de que finalice este periodo de retención. Las reventas tendrán un periodo de retención de hasta 7 días. Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": true
   },
   {
@@ -17573,6 +17573,30 @@
     "description": "Label for in experiences in which an item in sold",
     "english": "Sold In",
     "translation": "Vendido en",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Agotado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Después de la compra, las ventas originales se retienen hasta {purchaseDays, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que finalice este periodo de retención y las reventas se retienen hasta {resaleDays, plural,=1 {# día}other {# días}}. Solo los usuarios Premium pueden revender objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "Las compras procedentes de las reventas se retienen hasta {days, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que este periodo de retención termine. Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": false
   },
   {
@@ -41620,7 +41644,7 @@
     "key": "Description.ViolenceQuestion.DoesThisGameContainViolentContent",
     "description": "Note: This survey question lets user pick one of five possible responses, as opposed to being just a \"Yes/No\" question.",
     "english": "Does this game contain violent content?",
-    "translation": "¿Este juego presenta contenido violento?",
+    "translation": "¿Este juego muestra contenido violento?",
     "isDeprecated": true
   },
   {
@@ -41692,7 +41716,7 @@
     "key": "Description.ScaryForChildUnderEightQuestion",
     "description": "Answer choices are \"No\", \"Infrequently\", \"Frequently\"",
     "english": "Does this game contain content that might be scary for a young child under 8 years old?",
-    "translation": "¿Este juego presenta contenido que puede asustar a niños menores de 8 años?",
+    "translation": "¿Este juego muestra contenido que puede asustar a niños menores de 8 años?",
     "isDeprecated": true
   },
   {
@@ -41708,7 +41732,7 @@
     "key": "Description.Infrequently",
     "description": "A recurring possible answer choice to questions formatted as \"Does this game contain ____?\"",
     "english": "Infrequently",
-    "translation": "Con poca frecuencia",
+    "translation": "Poco frecuente",
     "isDeprecated": true
   },
   {
@@ -41716,7 +41740,7 @@
     "key": "Description.Frequently",
     "description": "A recurring possible answer choice to questions formatted as \"Does this game contain ____?\"",
     "english": "Frequently",
-    "translation": "Con frecuencia",
+    "translation": "Frecuente",
     "isDeprecated": true
   },
   {
@@ -41724,7 +41748,7 @@
     "key": "Description.ScaryForChildUnderTwelveQuestion",
     "description": "Answer choices are \"No\", \"Infrequently\", \"Frequently\"",
     "english": "Does this game contain content that might be scary for a young child under 12 years old?",
-    "translation": "¿Este juego presenta contenido que puede asustar a niños menores de 12 años?",
+    "translation": "¿Este juego muestra contenido que puede asustar a niños menores de 12 años?",
     "isDeprecated": true
   },
   {
@@ -43124,7 +43148,7 @@
     "key": "Description.AnswerToDoesThisGameContain.Infrequently",
     "description": "A recurring possible answer choice to questions formatted as \"Does this game contain ____?\"",
     "english": "Infrequently",
-    "translation": "Con poca frecuencia",
+    "translation": "Infrecuente",
     "isDeprecated": false
   },
   {
@@ -43132,7 +43156,7 @@
     "key": "Description.AnswerToDoesThisGameContain.Frequently",
     "description": "A recurring possible answer choice to questions formatted as \"Does this game contain ____?\"",
     "english": "Frequently",
-    "translation": "Con frecuencia",
+    "translation": "Frecuente",
     "isDeprecated": false
   },
   {
@@ -43140,7 +43164,7 @@
     "key": "Description.ViolenceQuestion.DoesThisGameContainViolentContent",
     "description": "Note: This survey question lets user pick one of five possible responses, as opposed to being just a \"Yes/No\" question.",
     "english": "Does this experience contain violent content?",
-    "translation": "¿Presenta esta experiencia contenido violento?",
+    "translation": "¿Muestra esta experiencia contenido violento?",
     "isDeprecated": false
   },
   {
@@ -43196,7 +43220,7 @@
     "key": "Description.ScaryForChildUnderEightQuestion",
     "description": "Answer choices are \"No\", \"Infrequently\", \"Frequently\"",
     "english": "Does this experience contain content that might be scary for a young child under 8 years old?",
-    "translation": "¿Presenta esta experiencia contenido que puede asustar a niños menores de 8 años?",
+    "translation": "¿Muestra esta experiencia contenido que puede asustar a niños menores de 8 años?",
     "isDeprecated": false
   },
   {
@@ -43204,7 +43228,7 @@
     "key": "Description.ScaryForChildUnderTwelveQuestion",
     "description": "Answer choices are \"No\", \"Infrequently\", \"Frequently\"",
     "english": "Does this experience contain content that might be scary for a young child under 12 years old?",
-    "translation": "¿Presenta esta experiencia contenido que puede asustar a niños menores de 12 años?",
+    "translation": "¿Muestra esta experiencia contenido que puede asustar a niños menores de 12 años?",
     "isDeprecated": false
   },
   {
@@ -64929,6 +64953,30 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ArchivePrevented",
+    "description": "Error message shown to developers when they want to archive an asset that's used as part of other assets which have already been sold in marketplace.",
+    "english": "The selected asset is part of a sold item and cannot be archived",
+    "translation": "El recurso seleccionado forma parte de un objeto vendido y no se puede archivar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.MinDate",
+    "description": null,
+    "english": "Date should not be before minimal date",
+    "translation": "La fecha no debe ser anterior a la fecha mínima",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Subscribers",
+    "description": null,
+    "english": "Subscribers",
+    "translation": "Suscriptores",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Activate",
     "description": null,
     "english": "Activate",
@@ -65749,6 +65797,22 @@
     "description": null,
     "english": "Body",
     "translation": "Cuerpo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Subscription",
+    "description": null,
+    "english": "A Subscription",
+    "translation": "Una suscripción",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AssetTypes",
+    "key": "Label.Subscriptions",
+    "description": null,
+    "english": "Subscriptions",
+    "translation": "Suscripciones",
     "isDeprecated": false
   },
   {
@@ -69356,7 +69420,7 @@
     "key": "Label.TotalRobux",
     "description": null,
     "english": "Total over selected period",
-    "translation": "Total durante el periodo de tiempo seleccionado",
+    "translation": "Total durante el periodo seleccionado",
     "isDeprecated": false
   },
   {
@@ -71449,6 +71513,22 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TotalSessionTimeWarning",
+    "description": "Disclaimer that shows below session time chart when experience is selected for place filter",
+    "english": "Total is based on average of place session times",
+    "translation": "El total se basa en el promedio de los tiempos de sesión del lugar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ErrorReportChart.WarningSeverity",
+    "description": "Title for chart showing warnings",
+    "english": "Warnings",
+    "translation": "Advertencias",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Title.ErrorReportChart.ErrorSeverity",
     "description": "title for chart showing errors",
     "english": "Errors",
@@ -71457,10 +71537,26 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ErrorLogTable.WarningSeverity",
+    "description": "title for table showing warnings sorted by count",
+    "english": "Warnings by count",
+    "translation": "Advertencias por conteo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Title.ErrorLogTable.ErrorSeverity",
     "description": "title for table showing Errors sorted by count of how many times that error is reported",
     "english": "Errors by count",
     "translation": "Errores por conteo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Results",
+    "description": "generic name for chart units",
+    "english": "results",
+    "translation": "resultados",
     "isDeprecated": false
   },
   {

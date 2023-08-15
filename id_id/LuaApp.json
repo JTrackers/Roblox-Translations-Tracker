@@ -4840,6 +4840,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Habis Terjual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Setelah pembelian, item orisinal akan ditahan hingga {purchaseDays, plural, =1 {# hari} other {# hari}}. Item ini hanya dapat dijual kembali setelah periode penahanan ini berakhir dan penjualan kembali akan memiliki masa penahanan hingga {resaleDays, plural, =1 {# hari} other {# hari}}. Hanya pengguna premium yang dapat menjual kembali item.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "Pembelian dari penjualan kembali akan ditahan hingga {days, plural, =1 {# hari} other {# hari}}. Item ini hanya dapat dijual kembali setelah periode penahanan ini berakhir. Hanya pengguna premium yang dapat menjual kembali item.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -7769,6 +7793,22 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Description.UsernamePrice",
+    "description": "Cost of changing username",
+    "english": "1000",
+    "translation": "1000",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameTooShort",
+    "description": "Error message that shows up when a display name is too short",
+    "english": "Display name should be at least 3 characters.",
+    "translation": "Nama display harus terdiri dari minimum 3 karakter.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
@@ -7781,6 +7821,30 @@
     "description": "Heading for a warning modal that informs users that they do not have enough Robux",
     "english": "Insufficient Funds",
     "translation": "Dana Tidak Cukup",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernameInsufficientFunds",
+    "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
+    "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
+    "translation": "Kamu perlu lebih banyak {icon}{rbx} untuk mengubah nama penggunamu. Kamu ingin membeli lebih banyak Robux?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayNameUpdated",
+    "description": "Confirmation that pops up after user successfully updates their displayname",
+    "english": "Display Name Updated",
+    "translation": "Nama Display Di-update",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "Nama Pengguna Di-update",
     "isDeprecated": false
   },
   {
@@ -11523,8 +11587,8 @@
     "namespace": "Feature.Contacts",
     "key": "FindFriendsBanner.Description",
     "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
-    "english": "See which of your friends are on Roblox by adding a phone number.",
-    "translation": "Lihat temanmu yang ada di Roblox dengan menambahkan nomor ponsel.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
+    "translation": "Lihat temanmu yang ada di Roblox dengan menambahkan nomor ponselmu.",
     "isDeprecated": false
   },
   {
@@ -11532,7 +11596,7 @@
     "key": "FindFriendsBanner.DescriptionPV",
     "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
     "english": "Contacts who are on Roblox will appear here when available.",
-    "translation": "Teks yang ditampilkan saat pengguna memiliki nomor ponsel terverifikasi, tetapi kontak mereka tidak ada di Roblox",
+    "translation": "Kontak yang ada di Roblox akan muncul di sini saat tersedia.",
     "isDeprecated": false
   },
   {
@@ -14089,10 +14153,58 @@
   },
   {
     "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account. ",
+    "translation": "Akun kamu telah ditangguhkan karena ada tagihan yang tidak sah. Untuk mengaktifkan kembali akun kamu, orang tua atau wali sah kamu perlu memberikan persetujuan. ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNotice",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account. {startLink}Reload this page{endLink} when completed. ",
+    "translation": "Kamu harus merupakan orang tua atau wali sah pemegang akun untuk mengaktifkan kembali akun ini. {startLink}Mulai ulang halaman ini{endLink} ketika selesai. ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentVerificationButtonText",
+    "description": null,
+    "english": "I'm a Parent or Guardian",
+    "translation": "Saya Orangtua atau Wali Sah",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
     "translation": "Verifikasi Email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailVerificationNotice",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
+    "translation": "Akun kamu telah ditangguhkan karena ada tagihan yang tidak sah. Kamu harus memverifikasikan alamat emailmu untuk mengaktifkan kembali akun kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "Kamu harus merupakan orang tua atau wali sah pemegang akun untuk mengaktifkan kembali akun ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNoticeUA",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. ",
+    "translation": "Verifikasikan alamat email kamu untuk mengaktifkan kembali akun ini. ",
     "isDeprecated": false
   },
   {
@@ -20273,6 +20385,22 @@
   },
   {
     "namespace": "Feature.Settings",
+    "key": "Label.CrossPlatform",
+    "description": "Cross-play label",
+    "english": "Cross-Platform Play",
+    "translation": "Bermain Lintas Platform",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.CrossPlatform",
+    "description": "Cross-play setting description",
+    "english": "You will join experiences with people from all platforms,\nand you will see more people in more experiences.",
+    "translation": "Kamu akan bergabung ke pengalaman virtual dengan pengguna dari semua platform\ndan kamu akan bertemu lebih banyak pengguna di lebih banyak pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
     "key": "Label.Recommended",
     "description": "Label denoting a recommended setting value",
     "english": "Recommended",
@@ -20293,6 +20421,22 @@
     "description": "Setting error state",
     "english": "Error",
     "translation": "Kesalahan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CrossPlay",
+    "key": "Alert.Heading.Welcome",
+    "description": "Cross-play welcome alert heading",
+    "english": "Welcome to Cross-Platform Play!",
+    "translation": "Selamat datang di Bermain Lintas Platform!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CrossPlay",
+    "key": "Alert.Message.Welcome",
+    "description": "Cross-play welcome alert message",
+    "english": "You can now use Roblox on {platform} with people on every platform including Desktop, Phone, and Tablet!\n\nThis means you’ll see more people and you can explore with your friends, no matter what device they’re using! This option can be updated in Account Settings.",
+    "translation": "Kamu sekarang dapat menggunakan Roblox di {platform} dengan pengguna di setiap platform, termasuk Desktop, Ponsel, dan Tablet!\n\nIni berarti kamu akan bertemu lebih banyak pengguna dan kamu dapat menjelajah bersama dengan temanmu, apa pun perangkat apa yang mereka gunakan. Opsi ini dapat di-update di Pengaturan Akun.",
     "isDeprecated": false
   }
 ]

@@ -4676,7 +4676,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Después de la compra, las ventas originales entran en periodo de retención de hasta 30 días. El objeto solo pueden revenderse después de que finalice este periodo de retención. Las reventas tendrán un periodo de retención de hasta 7 días. Solo los usuarios Premium pueden revender objetos.",
+    "translation": "Después de la compra, las ventas originales entran en periodo de retención de hasta 30 días. El objeto solo puede revenderse después de que finalice este periodo de retención. Las reventas tendrán un periodo de retención de hasta 7 días. Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": true
   },
   {
@@ -4837,6 +4837,30 @@
     "description": null,
     "english": "This item cannot be resold",
     "translation": "Este objeto no se puede revender",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "Agotado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "Después de la compra, las ventas originales se retienen hasta {purchaseDays, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que finalice este periodo de retención y las reventas se retienen hasta {resaleDays, plural,=1 {# día}other {# días}}. Solo los usuarios Premium pueden revender objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "Las compras procedentes de las reventas se retienen hasta {days, plural, =1 {# día} other {# días}}. El objeto solo puede revenderse después de que este periodo de retención termine. Solo los usuarios Premium pueden revender objetos.",
     "isDeprecated": false
   },
   {
@@ -7805,6 +7829,14 @@
     "description": "Confirmation that pops up after user successfully updates their displayname",
     "english": "Display Name Updated",
     "translation": "Nombre de visualización actualizado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "Nombre de usuario actualizado",
     "isDeprecated": false
   },
   {
@@ -11547,7 +11579,7 @@
     "namespace": "Feature.Contacts",
     "key": "FindFriendsBanner.Description",
     "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
-    "english": "See which of your friends are on Roblox by adding a phone number.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
     "translation": "Comprueba quienes de tus amigos están en Roblox añadiendo un número de teléfono.",
     "isDeprecated": false
   },
@@ -11556,7 +11588,7 @@
     "key": "FindFriendsBanner.DescriptionPV",
     "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
     "english": "Contacts who are on Roblox will appear here when available.",
-    "translation": "Se muestra el texto cuando un usuario verificó el número de teléfono pero ninguno de sus contactos está en Roblox",
+    "translation": "Los contactos que están en Roblox aparecerán aquí cuando estén disponibles.",
     "isDeprecated": false
   },
   {
@@ -14149,6 +14181,22 @@
     "description": null,
     "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
     "translation": "Tu cuenta se suspendió por cargos no autorizados. Debes verificar tu dirección de correo electrónico para desbloquear la cuenta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "Usted debe ser el progenitor o tutor del titular de la cuenta para reactivarla.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNoticeUA",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. ",
+    "translation": "Verifica tu dirección de correo electrónico para reactivar esta cuenta. ",
     "isDeprecated": false
   },
   {

@@ -4840,6 +4840,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "품절",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "아이템 구매를 완료하면 오리지널 판매는 최대 {purchaseDays, plural, =1 {#일} other {#일}} 동안 보류됩니다. 아이템은 이 보류 기간이 종료된 후에만 재판매할 수 있으며 재판매는 최대 {resaleDays, plural, =1 {#일} other {#일}} 동안 보류됩니다. \b재판매를 하려면 Premium 사용자여야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "구매한 재판매 아이템은 최대 {days, plural, =1 {#일} other {#일}} 동안 보류됩니다. 아이템은 이 보류 기간이 종료된 후에만 재판매할 수 있습니다. 재판매를 하려면 Premium 사용자여야 합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -7813,6 +7837,14 @@
     "description": "Confirmation that pops up after user successfully updates their displayname",
     "english": "Display Name Updated",
     "translation": "표시 이름이 업데이트되었습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "사용자 이름을 업데이트했습니다",
     "isDeprecated": false
   },
   {
@@ -11555,8 +11587,8 @@
     "namespace": "Feature.Contacts",
     "key": "FindFriendsBanner.Description",
     "description": "caption text inviting users to add a phone number to see which of their contacts are on Roblox.",
-    "english": "See which of your friends are on Roblox by adding a phone number.",
-    "translation": "전화번호를 추가해 Roblox에 있는 친구들을 확인하세요.",
+    "english": "See which of your friends are on Roblox by adding your phone number.",
+    "translation": "휴대폰 번호를 추가해 Roblox에 있는 친구들을 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -11564,7 +11596,7 @@
     "key": "FindFriendsBanner.DescriptionPV",
     "description": "Text shown when a user has phone verified but none of their contacts are on Roblox",
     "english": "Contacts who are on Roblox will appear here when available.",
-    "translation": "사용자가 휴대폰 인증을 완료했지만 연락처가 Roblox에 없는 경우 표시되는 텍스트",
+    "translation": "Roblox에서 친구들의 연락처가 이용 가능할 경우 여기에 표시됩니다.",
     "isDeprecated": false
   },
   {
@@ -14165,6 +14197,22 @@
     "description": null,
     "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
     "translation": "승인되지 않은 청구로 인해 계정이 일시 정지되었습니다. 계정을 잠금 해제하려면 이메일 주소를 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ParentReactivationNoticeUA",
+    "description": null,
+    "english": "You must be the parent or legal guardian of the account holder to re-activate this account.",
+    "translation": "계정 재활성화는 계정 보유자의 부모 또는 법적 보호자가 직접 진행해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.EmailReactivationNoticeUA",
+    "description": null,
+    "english": "Please verify your email address to re-activate this account. ",
+    "translation": "계정을 재활성화하려면 이메일 주소를 인증하세요. ",
     "isDeprecated": false
   },
   {
@@ -20433,10 +20481,138 @@
   },
   {
     "namespace": "Feature.Settings",
+    "key": "Heading.SwitchProfile",
+    "description": "Profile switcher",
+    "english": "Switch Profile",
+    "translation": "프로필 전환",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.SwitchProfile",
+    "description": "Description of profile switcher",
+    "english": "You can switch your {platform} profile here.",
+    "translation": "여기에서 {platform} 프로필을 전환할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.AccountSettings",
+    "description": "Account settings heading",
+    "english": "Account Settings",
+    "translation": "계정 설정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsWebsite",
+    "description": "Visit website heading",
+    "english": "Visit Website",
+    "translation": "웹사이트 방문",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsWebsite",
+    "description": "Account settings visit website description",
+    "english": "To access your Privacy, Security Controls, and more\nplease visit the web or a companion device.",
+    "translation": "개인정보 보호, 보안 제어 등에 액세스하려면\n웹 또는 호환 기기를 방문하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsScan",
+    "description": "Account settings scan CTA",
+    "english": "Scan QR Code",
+    "translation": "QR 코드 스캔",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsScan",
+    "description": "Account settings scan description",
+    "english": "Scan the QR code using your companion device's camera\nto open the Account Settings in the Roblox App.",
+    "translation": "호환 기기의 카메라로 QR 코드를 스캔해\nRoblox 앱의 계정 설정을 여세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.PlatformAccountSettings",
+    "description": "Platform-specific account settings heading",
+    "english": "{platform} Account Settings",
+    "translation": "{platform} 계정 설정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.PlatformAccountSettingsSuccess",
+    "description": "Account settings verification that settings will allow online play with other players",
+    "english": "Your {platform} settings are correctly set and you are ready to visit!",
+    "translation": "{platform} 설정이 올바르게 완료되어 방문할 준비가 되었어요!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.CrossPlatform",
+    "description": "Cross-play label",
+    "english": "Cross-Platform Play",
+    "translation": "크로스 플랫폼 플레이",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.CrossPlatform",
+    "description": "Cross-play setting description",
+    "english": "You will join experiences with people from all platforms,\nand you will see more people in more experiences.",
+    "translation": "모든 플랫폼의 사람들과 같은 체험에 참가하고\n더 많은 체험에서 더욱 다양한 사람들을 만나세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Multiplayer",
+    "description": "Multiplayer privilege label",
+    "english": "Multiplayer",
+    "translation": "멀티플레이어",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.SharedContent",
+    "description": "Shared content privilege label",
+    "english": "Shared Content",
+    "translation": "공유된 콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Open",
+    "description": "CTA when when platform system UI is triggered",
+    "english": "Open",
+    "translation": "열기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
     "key": "Label.Recommended",
     "description": "Label denoting a recommended setting value",
     "english": "Recommended",
     "translation": "추천",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Enabled",
+    "description": "Setting enabled state",
+    "english": "Enabled",
+    "translation": "사용함",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disabled",
+    "description": "Setting disabled state",
+    "english": "Disabled",
+    "translation": "사용 안 함",
     "isDeprecated": false
   },
   {
@@ -20453,6 +20629,14 @@
     "description": "Setting error state",
     "english": "Error",
     "translation": "오류",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Allowed",
+    "description": "Setting allowed state",
+    "english": "Allowed",
+    "translation": "허용됨",
     "isDeprecated": false
   }
 ]

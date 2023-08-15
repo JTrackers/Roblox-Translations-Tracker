@@ -17576,6 +17576,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "품절",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "아이템 구매를 완료하면 오리지널 판매는 최대 {purchaseDays, plural, =1 {#일} other {#일}} 동안 보류됩니다. 아이템은 이 보류 기간이 종료된 후에만 재판매할 수 있으며 재판매는 최대 {resaleDays, plural, =1 {#일} other {#일}} 동안 보류됩니다. \b재판매를 하려면 Premium 사용자여야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "구매한 재판매 아이템은 최대 {days, plural, =1 {#일} other {#일}} 동안 보류됩니다. 아이템은 이 보류 기간이 종료된 후에만 재판매할 수 있습니다. 재판매를 하려면 Premium 사용자여야 합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Label.Offline",
     "description": null,
@@ -41772,7 +41796,7 @@
     "key": "Description.DoesThisGameUseProfanity",
     "description": "This question has four possible answer choices: \"No\", \"Some mild bad language\", \"Infrequenty profanity\", \"Frequent profanity\"",
     "english": "Does this game use profanity?",
-    "translation": "본 게임이 비속어를 사용하나요?",
+    "translation": "본 게임에 욕설이 등장하나요?",
     "isDeprecated": true
   },
   {
@@ -41796,7 +41820,7 @@
     "key": "Description.DoesThisGameUseProfanity.InfrequentProfanity",
     "description": "One of four possible answers to \"Does this game use profanity?\", with an implied \"Yes\"",
     "english": "Infrequent profanity",
-    "translation": "비속어가 있으나 자주 등장하지는 않음",
+    "translation": "욕설이 있으나 자주 등장하지는 않음",
     "isDeprecated": true
   },
   {
@@ -41804,7 +41828,7 @@
     "key": "Description.DoesThisGameUseProfanity.FrequentProfanity",
     "description": "One of four possible answers to \"Does this game use profanity?\", with an implied \"Yes\"",
     "english": "Frequent profanity",
-    "translation": "비속어가 자주 등장함",
+    "translation": "욕설이 자주 등장함",
     "isDeprecated": true
   },
   {
@@ -71721,10 +71745,50 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TotalSessionTimeWarning",
+    "description": "Disclaimer that shows below session time chart when experience is selected for place filter",
+    "english": "Total is based on average of place session times",
+    "translation": "총계는 플레이스 세션 시간의 평균을 기준으로 한 것입니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ErrorReportChart.WarningSeverity",
+    "description": "Title for chart showing warnings",
+    "english": "Warnings",
+    "translation": "경고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ErrorReportChart.ErrorSeverity",
+    "description": "title for chart showing errors",
+    "english": "Errors",
+    "translation": "오류",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.ErrorLogTable.WarningSeverity",
+    "description": "title for table showing warnings sorted by count",
+    "english": "Warnings by count",
+    "translation": "개수별 경고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Title.ErrorLogTable.ErrorSeverity",
     "description": "title for table showing Errors sorted by count of how many times that error is reported",
     "english": "Errors by count",
     "translation": "개수별 오류",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.Results",
+    "description": "generic name for chart units",
+    "english": "results",
+    "translation": "결과",
     "isDeprecated": false
   },
   {
