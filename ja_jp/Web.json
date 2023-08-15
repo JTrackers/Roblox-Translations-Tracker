@@ -1969,10 +1969,26 @@
   },
   {
     "namespace": "Authentication.AccountRecovery",
+    "key": "Response.PasswordBadLength",
+    "description": null,
+    "english": "Passwords must be between 8 and 200 characters long.",
+    "translation": "パスワードは半角英数字で8文字以上20文字以下。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
     "key": "Response.PasswordContainsUsernameError",
     "description": null,
     "english": "Password shouldn't match username.",
     "translation": "パスワードはユーザーネームと同じにしないでください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "別のパスワードを使用してください。特殊文字か数字を使用してください。",
     "isDeprecated": false
   },
   {
@@ -2029,6 +2045,14 @@
     "description": null,
     "english": "Robot Challenge",
     "translation": "ロボットチャレンジ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Description.VerifyingYouAreNotBot",
+    "description": null,
+    "english": "Verifying you're not a bot",
+    "translation": "自動入力ではないことを確認しています",
     "isDeprecated": false
   },
   {
@@ -11460,7 +11484,7 @@
     "key": "Label.SecurityKey",
     "description": null,
     "english": "A hardware security key or device’s biometrics like fingerprint or facial recognition.",
-    "translation": "TouchID や FaceID などのハードウェアセキュリティキーまたはデバイスの生体認証。",
+    "translation": "ハードウェアセキュリティキーか指紋や顔認証などのデバイスの生体認証。",
     "isDeprecated": false
   },
   {
@@ -11532,7 +11556,7 @@
     "key": "Label.SecurityKey.BiometricKey",
     "description": null,
     "english": "Alternatively, set up this device using fingerprint or facial recognition.",
-    "translation": "または、TouchID か FaceID を使用してこのデバイスを設定します。",
+    "translation": "あるいは、指紋か顔認証を使用してこのデバイスを設定します。",
     "isDeprecated": false
   },
   {
@@ -12077,6 +12101,22 @@
     "description": null,
     "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
     "translation": "スマホ上でユニークコードを生成するアプリです。推奨アプリには、Google 認証システム、Microsoft Authenticator、Twilio の Authy が含まれています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKey.PlatformNotSupported",
+    "description": null,
+    "english": "Platform Not Supported",
+    "translation": "プラットフォームに対応していません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.WebOnly",
+    "description": null,
+    "english": "Security keys can only be registered on web.",
+    "translation": "セキュリティキーはウェブ上でしか登録できません。",
     "isDeprecated": false
   },
   {
@@ -18364,7 +18404,7 @@
     "key": "Label.MarketplaceFee",
     "description": "Marketplace fee amount",
     "english": "Marketplace fee (at {percent}%)",
-    "translation": "マーケットプレース使用料（{percent}%）",
+    "translation": "マーケットプレイス使用料（{percent}%）",
     "isDeprecated": false
   },
   {
@@ -27852,7 +27892,7 @@
     "key": "Label.MarketplaceFee",
     "description": null,
     "english": "Marketplace Fee",
-    "translation": "マーケットプレース使用料",
+    "translation": "マーケットプレイス使用料",
     "isDeprecated": false
   },
   {
@@ -28236,7 +28276,7 @@
     "key": "Description.VerifiedCreatorEmail",
     "description": null,
     "english": "In order to share content in Marketplace, you must add & verify an email address to your account. This can be done in {linkStart}Account Settings{linkEnd}.",
-    "translation": "マーケットプレースでコンテンツをシェアするには、お持ちのアカウントにメールアドレスを追加して認証する必要があります。こちらの {linkStart}アカウント設定{linkEnd} でできます。",
+    "translation": "マーケットプレイスでコンテンツをシェアするには、お持ちのアカウントにメールアドレスを追加して認証する必要があります。こちらの {linkStart}アカウント設定{linkEnd} でできます。",
     "isDeprecated": false
   },
   {
@@ -28996,7 +29036,7 @@
     "key": "Description.MarketplaceSingleShareLeft",
     "description": null,
     "english": "1 Marketplace share left through {date}. {linkStart}What's my limit?{linkEnd}",
-    "translation": "{date} までにできるマーケットプレース共有があと1件残っています。 {linkStart}現在の上限は？{linkEnd}",
+    "translation": "{date} までにできるマーケットプレイス共有があと1件残っています。 {linkStart}現在の上限は？{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -29004,7 +29044,7 @@
     "key": "Description.MarketplaceMultipleSharesLeft",
     "description": null,
     "english": "{remaining} Marketplace shares left through {date}. {linkStart}What's my limit?{linkEnd}",
-    "translation": "{date} までにできるマーケットプレース共有があと {remaining} 件残っています。 {linkStart}現在の上限は？{linkEnd}",
+    "translation": "{date} までにできるマーケットプレイス共有があと {remaining} 件残っています。 {linkStart}現在の上限は？{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -31764,7 +31804,7 @@
     "key": "Heading.MakeAnything",
     "description": "heading",
     "english": "Make Anything You Can Imagine",
-    "translation": "想像できるものを何でも作っちゃおう",
+    "translation": "イメージできるものを何でも作っちゃおう",
     "isDeprecated": false
   },
   {
@@ -31820,7 +31860,7 @@
     "key": "Description.ReachMillionsPlayers",
     "description": "description",
     "english": "Connect with a massive audience by tapping into an incredibly enthusiastic and international community of over 50 million daily players",
-    "translation": "月間5000万人以上の熱心なプレイヤーたちが参加している世界的なコミュニティを使って、たくさんの人とつながろう",
+    "translation": "毎日5000万人以上の熱心なプレイヤーたちが参加している世界的なコミュニティを使って、たくさんの人とつながろう",
     "isDeprecated": false
   },
   {
@@ -32005,6 +32045,30 @@
     "description": null,
     "english": "Continue to the Developer Hub",
     "translation": "開発者ハブへ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DevelopLanding",
+    "key": "Heading.RobloxDocSite",
+    "description": null,
+    "english": "Documentation",
+    "translation": "ドキュメンテーション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DevelopLanding",
+    "key": "Description.RobloxDocSite",
+    "description": null,
+    "english": "The documentation is your one-stop shop for learning how to make anything you can imagine on Roblox. Use a wide set of tutorials and browse our API references.",
+    "translation": "ドキュメンテーションは、一ヶ所でイメージできるものを何でもRoblox上で作る方法を学ぶための場所です。幅広い内容のチュートリアルを使用したり、APIリファレンスを見てください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DevelopLanding",
+    "key": "Action.RobloxDocSite",
+    "description": null,
+    "english": "Continue to Documentation",
+    "translation": "ドキュメンテーションへ",
     "isDeprecated": false
   },
   {
@@ -45056,6 +45120,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Label.ImmersiveAdPayouts",
+    "description": null,
+    "english": "Immersive Ad Payouts",
+    "translation": "没入型広告のペイアウト",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -45245,6 +45317,14 @@
     "description": null,
     "english": "Private Servers",
     "translation": "プライベートサーバー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GameSettings",
+    "key": "General.ImageApproved",
+    "description": "Used to describe an image that has been approved by the moderation flow",
+    "english": "Approved",
+    "translation": "承認済み",
     "isDeprecated": false
   },
   {
@@ -49936,6 +50016,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Landing",
+    "key": "Heading.DocumentationSite",
+    "description": null,
+    "english": "Documentation",
+    "translation": "ドキュメンテーション",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Navigation",
     "key": "Heading.Creator",
     "description": null,
@@ -50116,7 +50204,7 @@
     "key": "Heading.Marketplace",
     "description": null,
     "english": "Marketplace",
-    "translation": "マーケットプレース",
+    "translation": "マーケットプレイス",
     "isDeprecated": false
   },
   {
@@ -50396,7 +50484,7 @@
     "key": "Heading.CreatorMarketplace",
     "description": null,
     "english": "Creator Marketplace",
-    "translation": "クリエーターマーケットプレース",
+    "translation": "クリエーターマーケットプレイス",
     "isDeprecated": false
   },
   {
@@ -50437,6 +50525,30 @@
     "description": null,
     "english": "Icon",
     "translation": "アイコン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.DocumentationSite",
+    "description": null,
+    "english": "Documentation",
+    "translation": "ドキュメンテーション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Thumbnails",
+    "description": null,
+    "english": "Thumbnails",
+    "translation": "サムネイル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Notifications",
+    "description": "navigation header to redirect to notifications page in creator dashboard.",
+    "english": "Notifications",
+    "translation": "通知",
     "isDeprecated": false
   },
   {
@@ -56704,6 +56816,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenStudio",
+    "description": "Open Studio button for user to create assets",
+    "english": "Open Studio",
+    "translation": "Studioを開く",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DevelopmentItemsEmptyMessageWithLink",
+    "description": "When list page is empty, guide user to upload assets on external link",
+    "english": "Create your first {itemType} in Roblox Studio, or {LinkStart}upload them here{LinkEnd}",
+    "translation": "Roblox Studioで最初の {itemType} を作成するか、 {LinkStart}ここで{LinkEnd} アップロードしてください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.UploadDevelopmentItems",
+    "description": "Upload button for uploading developer items, shows in list view",
+    "english": "Upload {itemType}",
+    "translation": "{itemType} をアップロード",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.AssetTypes",
     "key": "Label.Audios",
     "description": "Audio (Plural)",
@@ -58932,7 +59068,7 @@
     "key": "Description.RevenueTooltip",
     "description": null,
     "english": "Amount of Robux that users have spent in your place (before Marketplace Fee is applied)",
-    "translation": "ユーザーがあなたのプレースで使ったRobux額（マーケットプレース手数料差し引き前）",
+    "translation": "ユーザーがあなたのプレースで使ったRobux額（マーケットプレイス手数料差し引き前）",
     "isDeprecated": false
   },
   {
@@ -58964,7 +59100,7 @@
     "key": "Description.RevenueByAgeTooltip",
     "description": null,
     "english": "Amount of Robux spent in your place (before Marketplace Fee is applied) segmented by age. This does not include Xbox users.",
-    "translation": "あなたのプレースで使われた各年齢層のRobux額（マーケットプレース手数料差し引き前）これには、Xboxユーザーは含まれません。",
+    "translation": "あなたのプレースで使われた各年齢層のRobux額（マーケットプレイス手数料差し引き前）これには、Xboxユーザーは含まれません。",
     "isDeprecated": false
   },
   {
@@ -61185,6 +61321,46 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RobuxHourly",
+    "description": null,
+    "english": "Hourly Revenue (Last 72 Hours)",
+    "translation": "1時間あたりの収益（直近72時間）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourly",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience each hour.",
+    "translation": "この体験が1時間で獲得したRobuxの合計額。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourlyInsight",
+    "description": "Text that appears when hovering over the \"eye\" icon for the \"hourly revenue\" chart.",
+    "english": "Hourly data can help you identify recent changes in monetization. A sudden deviation could mean that a recent change affected whether people are willing or able to spend money in your experience.",
+    "translation": "1時間時間ごとの収益データは、最近の体験への変更内容による、みんながあなたのゲームに進んでお金を使っているかやお金を使えたかどうかについての影響を理解するのに役立ちます。 これは、実験的に新しいことを試してみたり、悪い影響を与える可能性のある事柄への迅速な対応に役立ちます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DateRangeDoesNotApplyWarning",
+    "description": null,
+    "english": "Start date and end date do not affect this chart",
+    "translation": "開始日と終了日は、このグラフには影響しません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeTotal",
+    "description": "Combination of \"Commission for Avatar Shop Item\" (Label.AffiliateFeeAvatar) and \"Commission for Passes\" (Label.AffiliateFeeGamePass)",
+    "english": "Commissions",
+    "translation": "コミッション",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Message.AnnouncementAlertInfo",
     "description": null,
     "english": "Dashboards have been updated. You may see small discrepancies compared to reports generated prior to {date}, but the new KPIs are more accurate.",
@@ -61197,6 +61373,14 @@
     "description": null,
     "english": "Learn more",
     "translation": "もっと詳しく",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Unit.Revenue",
+    "description": "Used as the label for charts, e.g. on the y-axis.",
+    "english": "Revenue",
+    "translation": "収入",
     "isDeprecated": false
   },
   {
@@ -67128,6 +67312,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.NoDatastoresSelectedWarning",
+    "description": "Displayed when no datastores are selected to override api key permissions",
+    "english": "No datastores selected",
+    "translation": "データストアが選択されていません",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
@@ -70252,7 +70444,7 @@
     "key": "Label.ClearAll",
     "description": "Button label to clear all selected items",
     "english": "CLEAR",
-    "translation": "全て消す",
+    "translation": "消す",
     "isDeprecated": false
   },
   {
@@ -70260,7 +70452,15 @@
     "key": "Label.ApplyChanges",
     "description": "Button label to apply changes",
     "english": "APPLY",
-    "translation": "変更を適用する",
+    "translation": "適用する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Message.RecencyInfo",
+    "description": null,
+    "english": "Only strings modified or added in the past 7 days will be shown.",
+    "translation": "過去7日間に変更または追加された文字列のみが表示されます。",
     "isDeprecated": false
   },
   {
@@ -73676,7 +73876,7 @@
     "key": "Heading.Title",
     "description": "Creator Marketplace Heading",
     "english": "Creator Marketplace",
-    "translation": "クリエーターマーケットプレース",
+    "translation": "クリエーターマーケットプレイス",
     "isDeprecated": false
   },
   {
@@ -81001,6 +81201,22 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.Free",
+    "description": null,
+    "english": "FREE",
+    "translation": "無料",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AddThumbnail",
+    "description": null,
+    "english": "Add Thumbnail",
+    "translation": "サムネイルを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.Cancel",
     "description": null,
     "english": "Cancel",
@@ -81017,6 +81233,54 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AutoGeneratedThumbnailDialogTitle",
+    "description": null,
+    "english": "Auto Generated Thumbnail",
+    "translation": "自動生成のサムネイル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmUploadImageThumbnail",
+    "description": null,
+    "english": "This thumbnail will be moderated. Are you sure you want to submit this thumbnail?",
+    "translation": "このサムネイルは規制対象になります。それでも、このサムネイルを送信しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.YouTubeURL",
+    "description": null,
+    "english": "YouTube URL",
+    "translation": "YouTube の URL",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AddVideo",
+    "description": null,
+    "english": "Add Video",
+    "translation": "ビデオを追加",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmUploadVideoThumbnail",
+    "description": null,
+    "english": "Are you sure you want to buy this thumbnail for",
+    "translation": "以下でこのサムネイルを購入しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.BuyNow",
+    "description": null,
+    "english": "Buy Now",
+    "translation": "今すぐ購入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.CurrentBalance",
     "description": null,
     "english": "Current Balance:",
@@ -81025,10 +81289,42 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.VideoThumbnailDescription",
+    "description": null,
+    "english": "Videos will not be displayed on the Game page until they have been reviewed by moderation.",
+    "translation": "ビデオは、内容規制担当者のレビューが終了するまでゲームページに表示されません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.UploadImage",
     "description": null,
     "english": "Upload Image",
     "translation": "画像をアップロード",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ImageFormat",
+    "description": null,
+    "english": "Format: *.jpg, *.gif, *.png, *.tga, *.bmp",
+    "translation": "形式: *.jpg, *.gif, *.png, *.tga, *.bmp",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ImageThumbnailDescription",
+    "description": null,
+    "english": "Thumbnail will be visible to others after moderation.",
+    "translation": "画像は、内容規制のプロセス終了後に他の方々に表示されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.Media",
+    "description": null,
+    "english": "Media",
+    "translation": "メディア",
     "isDeprecated": false
   },
   {
@@ -81073,6 +81369,22 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.DeleteThumbnail",
+    "description": null,
+    "english": "Delete Thumbnail",
+    "translation": "サムネイルを削除",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmDeleteThumbnail",
+    "description": null,
+    "english": "Are you sure you want to permanently delete this thumbnail?",
+    "translation": "このアイテムを永久に削除しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.Delete",
     "description": null,
     "english": "Delete",
@@ -81081,10 +81393,234 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.MediaPreview",
+    "description": null,
+    "english": "Media preview",
+    "translation": "メディアのプレビュー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.VideoPreview",
+    "description": null,
+    "english": "Video Preview",
+    "translation": "ビデオのプレビュー",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Error.UnknownError",
     "description": null,
     "english": "An unknown error occurred, please try again later.",
     "translation": "不明なエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UnauthorizedRequest",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "このサムネイルをアップロードする権限がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UnauthorizedToConfigureUniverse",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "このサムネイルをアップロードする権限がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NotAllowedToAddThumbnails",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "このサムネイルをアップロードする権限がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UniverseDoesNotExist",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "サムネイルのアップロード中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoRootPlace",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "サムネイルのアップロード中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidURL",
+    "description": null,
+    "english": "The video URL is invalid.",
+    "translation": "ビデオのURLが無効です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.EmbeddingNotSupported",
+    "description": null,
+    "english": "The provided video does not support embedding.",
+    "translation": "提供されたビデオは埋め込みに対応していません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DurationTooLong",
+    "description": null,
+    "english": "Video must be less than 32 seconds.",
+    "translation": "ビデオは32秒未満にする必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DescriptionTooLong",
+    "description": null,
+    "english": "This video description is too long.",
+    "translation": "このビデオの説明は長すぎます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DescriptionUnacceptable",
+    "description": null,
+    "english": "This video description is not acceptable.",
+    "translation": "このビデオの説明は認められません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.VideoUnacceptable",
+    "description": null,
+    "english": "This video is not acceptable.",
+    "translation": "このビデオは認められません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NotEnoughFunds",
+    "description": null,
+    "english": "You do not have sufficient funds to purchase a video thumbnail.",
+    "translation": "ビデオのサムネイルを購入する資金が足りません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.ThumbnailsAddedTooOften",
+    "description": null,
+    "english": "Thumbnails added too often, please wait and try again later.",
+    "translation": "サムネイルの追加が頻繁すぎます。しばらくしてからもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidFormat",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "アップロードされたファイルは既知の画像形式と一致しません。pngに変換してみてください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UploadTooOften",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "アップロードが多すぎます。しばらくしてからもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoPermission",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "このサムネイルをアップロードする権限がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.FileNotPresent",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "サムネイルのアップロード中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.TargetItemInvalid",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "サムネイルのアップロード中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.RequestBodyMissing",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoThumbnailIds",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.TooManyThumbnailIds",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidThumbnailId",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "サムネイルの並べ替え中にエラーが発生しました。後でもう一度お試しください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyUploadThumbnail",
+    "description": null,
+    "english": "Thumbnail successfully uploaded.",
+    "translation": "サムネイルをアップロードできました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyUploadVideo",
+    "description": null,
+    "english": "Video successfully uploaded.",
+    "translation": "ビデオをアップロードできました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyDeleteThumbnail",
+    "description": null,
+    "english": "Thumbnail successfully deleted.",
+    "translation": "サムネイルを削除できました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyReorderThumbnail",
+    "description": null,
+    "english": "Thumbnails successfully reordered.",
+    "translation": "サムネイルを並べ替えできました。",
     "isDeprecated": false
   }
 ]

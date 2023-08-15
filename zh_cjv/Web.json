@@ -1977,9 +1977,25 @@
   },
   {
     "namespace": "Authentication.AccountRecovery",
+    "key": "Response.PasswordBadLength",
+    "description": null,
+    "english": "Passwords must be between 8 and 200 characters long.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
     "key": "Response.PasswordContainsUsernameError",
     "description": null,
     "english": "Password shouldn't match username.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
     "translation": "",
     "isDeprecated": false
   },
@@ -9948,7 +9964,7 @@
     "key": "Label.EmailTwoStepVerificationCodes",
     "description": "Label next to toggle for enabling email-based two step verification.",
     "english": "Email (Secure)",
-    "translation": "确认您身份的电子邮件验证码",
+    "translation": "电子邮件地址（安全）",
     "isDeprecated": false
   },
   {
@@ -9956,7 +9972,7 @@
     "key": "Label.AuthenticatorTwoStepVerificationCodes",
     "description": "Label next to toggle for enabling authenticator-based two step verification.",
     "english": "Authenticator App (Very Secure)",
-    "translation": "请前往验证 App 获取验证码以确认你的身份。",
+    "translation": "身份验证器（非常安全）",
     "isDeprecated": false
   },
   {
@@ -9972,7 +9988,7 @@
     "key": "Label.AuthenticatorHelpText",
     "description": "Displayed as help text when authenticator-based two step verification is already enabled.",
     "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
-    "translation": "登录帐户或进行其他操作时，你将需要输入验证 App 的验证码。请打开验证 App 以查看验证码。",
+    "translation": "能在你手机生成唯一验证码的应用。我们建议使用 Google 身份验证器、微软身份验证器和 Twilio Authy 等应用。",
     "isDeprecated": false
   },
   {
@@ -12116,6 +12132,14 @@
     "key": "Description.SecurityKey.WebOnly",
     "description": null,
     "english": "Security keys can only be registered on web.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.AuthenticatorOff",
+    "description": null,
+    "english": "Turning off authenticator 2-Step verification will also delete all of your security keys.",
     "translation": "",
     "isDeprecated": false
   },
@@ -36916,7 +36940,7 @@
     "key": "Label.Popular",
     "description": null,
     "english": "Popular",
-    "translation": "",
+    "translation": "热门",
     "isDeprecated": false
   },
   {
@@ -50108,7 +50132,7 @@
     "key": "Heading.DocumentationSite",
     "description": null,
     "english": "Documentation",
-    "translation": "",
+    "translation": "技术文档",
     "isDeprecated": false
   },
   {
@@ -50604,7 +50628,7 @@
     "key": "Heading.Place",
     "description": null,
     "english": "Place",
-    "translation": "",
+    "translation": "场景",
     "isDeprecated": false
   },
   {
@@ -50620,7 +50644,7 @@
     "key": "Heading.DocumentationSite",
     "description": null,
     "english": "Documentation",
-    "translation": "",
+    "translation": "技术文档",
     "isDeprecated": false
   },
   {
@@ -50628,7 +50652,7 @@
     "key": "Heading.Thumbnails",
     "description": null,
     "english": "Thumbnails",
-    "translation": "",
+    "translation": "缩略图",
     "isDeprecated": false
   },
   {
@@ -56980,7 +57004,7 @@
     "key": "Error.removeFailed",
     "description": null,
     "english": "Failed to remove place",
-    "translation": "",
+    "translation": "无法移除场景",
     "isDeprecated": false
   },
   {
@@ -56988,6 +57012,30 @@
     "key": "Action.BackToPlaces",
     "description": null,
     "english": "Back to Places",
+    "translation": "返回场景",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenStudio",
+    "description": "Open Studio button for user to create assets",
+    "english": "Open Studio",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DevelopmentItemsEmptyMessageWithLink",
+    "description": "When list page is empty, guide user to upload assets on external link",
+    "english": "Create your first {itemType} in Roblox Studio, or {LinkStart}upload them here{LinkEnd}",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.UploadDevelopmentItems",
+    "description": "Upload button for uploading developer items, shows in list view",
+    "english": "Upload {itemType}",
     "translation": "",
     "isDeprecated": false
   },
@@ -61481,6 +61529,46 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RobuxHourly",
+    "description": null,
+    "english": "Hourly Revenue (Last 72 Hours)",
+    "translation": "单小时收入 (过去72小时)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourly",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience each hour.",
+    "translation": "作品单小时赚取的 Robux 总额。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourlyInsight",
+    "description": "Text that appears when hovering over the \"eye\" icon for the \"hourly revenue\" chart.",
+    "english": "Hourly data can help you identify recent changes in monetization. A sudden deviation could mean that a recent change affected whether people are willing or able to spend money in your experience.",
+    "translation": "单小时收入可以帮你了解作品近期的更改是否影响用户在你的游戏中消费的意愿和能力。这个信息可以帮助你更好地进行更多实验，或更快速地对产生负面影响的行为做出行动。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DateRangeDoesNotApplyWarning",
+    "description": null,
+    "english": "Start date and end date do not affect this chart",
+    "translation": "开始日期和结束日期不影响此图表",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeTotal",
+    "description": "Combination of \"Commission for Avatar Shop Item\" (Label.AffiliateFeeAvatar) and \"Commission for Passes\" (Label.AffiliateFeeGamePass)",
+    "english": "Commissions",
+    "translation": "佣金",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Message.AnnouncementAlertInfo",
     "description": null,
     "english": "Dashboards have been updated. You may see small discrepancies compared to reports generated prior to {date}, but the new KPIs are more accurate.",
@@ -61493,6 +61581,14 @@
     "description": null,
     "english": "Learn more",
     "translation": "了解更多",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Unit.Revenue",
+    "description": "Used as the label for charts, e.g. on the y-axis.",
+    "english": "Revenue",
+    "translation": "收入",
     "isDeprecated": false
   },
   {
@@ -62132,7 +62228,7 @@
     "key": "Message.GuidelinesInProgress",
     "description": null,
     "english": "You have started the questionnaire but didn’t submit. Click “Resume” to continue generating a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.\n",
-    "translation": "你已经开始填写问卷，但尚未提交。点按“继续”即可继续生成你作品内容需要遵守的准则，其中当前包括年龄推荐和地区的合规性考量。",
+    "translation": "你已经开始填写问卷，但尚未提交。点按“继续”即可继续生成此作品需要遵守的准则，其中包括年龄推荐和地区的合规性考量。",
     "isDeprecated": false
   },
   {
@@ -62148,7 +62244,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about the content in your experience. Your answers will generate a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.",
-    "translation": "点按“开始”开始回答一系列关于你作品的问题。你的答案将会用来生成作品内容需要遵守的准则，其中当前包括年龄推荐和地区合规性考量。",
+    "translation": "点按“开始”开始回答一系列关于你作品内容的问题。你的答案将会用来生成此作品需要遵守的准则，其中包括年龄推荐和地区合规性考量。",
     "isDeprecated": false
   },
   {
@@ -62164,7 +62260,7 @@
     "key": "Message.GuidelinesSubmittedOldVersion",
     "description": null,
     "english": "Please update your response to answer a few additional questions about the content in your experience. Your answers will generate a set of Guidelines for this experience, including an age recommendation and a regional compliance assessment.",
-    "translation": "请更新你的答案，回答关于你作品的一系列附加问题。你的答案将会用来生成作品内容需要遵守的准则，其中当前包括年龄推荐和地区合规性考量。",
+    "translation": "请更新你的答案，回答关于你作品的一系列附加问题。你的答案将会用来生成此作品需要遵守的准则，其中包括年龄推荐和地区合规性考量。",
     "isDeprecated": false
   },
   {
@@ -62180,7 +62276,7 @@
     "key": "Message.GuidelinesSubmittedNewVersion",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below. The age recommendation is now visible to users on its detail page. This experience is automatically unavailable in any non-compliant regions below.",
-    "translation": "关于此作品已生效的准则如下所示。目前，年龄推荐只有你自己能看到，但之后将对所有用户公开。你的体验将自动不会在下列未遵守法规的地区开放。",
+    "translation": "关于此作品已生效的准则如下所示。用户可以在作品详情页面看到年龄推荐的信息。此作品将自动不会在下列未遵守法规的地区开放。",
     "isDeprecated": false
   },
   {
@@ -62228,7 +62324,7 @@
     "key": "Message.GuidelinesSubmittedNewVersionInProgress",
     "description": null,
     "english": "The Guidelines of this experience are active as shown below. The age recommendation is now visible to users on its detail page. This experience is automatically unavailable in any non-compliant regions below. \nYou have started a new entry for the questionnaire but didn’t submit. Click “Resume” to continue generating a set of new Guidelines for this experience.",
-    "translation": "关于此作品已生效的准则如下所示。目前，年龄推荐只有你自己能看到，但之后将对所有用户公开。\n你的作品将自动在下列未合规的地区关闭。\n你已经开始填写问卷，但尚未提交。点按“继续”即可继续生成你作品内容需要遵守的准则。",
+    "translation": "关于此作品已生效的准则如下所示。用户可以在作品详情页面看到年龄推荐的信息。你的作品将自动在下列未合规的地区关闭。 \n你已经开始填写问卷，但尚未提交。点按“继续”即可继续生成此作品需要遵守的准则。",
     "isDeprecated": false
   },
   {
@@ -62268,7 +62364,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "当前，准则只对你自己可见。我们强烈建议你在作品符合资格时，立刻生成准则，因为不久后也会对用户可见。",
+    "translation": "用户可以在作品详情页面看到作品适用准则。请在作品符合资格时立刻生成准则。",
     "isDeprecated": false
   },
   {
@@ -62276,7 +62372,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendation",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: Guidelines can give users insights into the content in your experience. Parents have parental controls to customize their kids’ access.",
-    "translation": "{boldStart}年龄推荐{boldEnd}：此信息将在不久后对用户可见，家长也可以通过家长控制选项管理小孩可以访问的作品。",
+    "translation": "{boldStart}年龄推荐{boldEnd}：准则可以让用户了解作品内容。家长也可以使用家长控制来自定义孩子的访问权限。",
     "isDeprecated": false
   },
   {
@@ -62284,7 +62380,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliance",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Guidelines can help your experience automatically become unavailable in some non-compliant regions",
-    "translation": "{boldStart}地区合规性{boldEnd}：根据准则，你的作品将自动在下列未合规的地区关闭。",
+    "translation": "{boldStart}地区合规性{boldEnd}：准则将帮助你自动在某些未合规的地区停止开放作品。",
     "isDeprecated": false
   },
   {
@@ -62308,7 +62404,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "The Guidelines of an experience are visible to users on its detail page. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "当前，准则只对你自己可见。我们强烈建议你在作品符合资格时，立刻生成准则，因为不久后也会对用户可见。",
+    "translation": "用户可以在作品详情页面看到作品适用准则。请在作品符合资格时立刻生成准则。",
     "isDeprecated": false
   },
   {
@@ -62324,7 +62420,7 @@
     "key": "Message.ImpactOfGuidelinesAgeRecommendationPreview",
     "description": null,
     "english": "{boldStart}Age Recommendation{boldEnd}: Guidelines can give users insights into the content in your experience. Parents have parental controls to customize their kids’ access.",
-    "translation": "{boldStart}年龄推荐{boldEnd}：此信息将在不久后对用户可见，家长也可以通过家长控制选项管理小孩可以访问的作品。",
+    "translation": "{boldStart}年龄推荐{boldEnd}：准则可以让用户了解作品内容。家长也可以使用家长控制来自定义孩子的访问权限。",
     "isDeprecated": false
   },
   {
@@ -62332,7 +62428,7 @@
     "key": "Message.ImpactOfGuidelinesRegionalCompliancePreview",
     "description": null,
     "english": "{boldStart}Regional Compliance{boldEnd}: Guidelines can help your experience automatically become unavailable in some non-compliant regions",
-    "translation": "{boldStart}地区合规性{boldEnd}：根据准则，你的作品将自动在下列未合规的地区关闭。",
+    "translation": "{boldStart}地区合规性{boldEnd}：准则将帮助你自动在某些未合规的地区停止开放作品。",
     "isDeprecated": false
   },
   {
@@ -62380,7 +62476,7 @@
     "key": "Tooltip.NonCompliantRegionRestrictionHeader",
     "description": null,
     "english": "Non-compliant regions are where Guidelines help your experience automatically become unavailable for compliance reasons.",
-    "translation": "作品无法在未合规的地区运行。",
+    "translation": "在未合规的地区，准则会帮助你自动停止开放作品。",
     "isDeprecated": false
   },
   {
@@ -63012,6 +63108,14 @@
     "key": "Label.CreatorSettings",
     "description": null,
     "english": "Settings",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Features",
+    "key": "Label.FindTeams",
+    "description": null,
+    "english": "Find Teams",
     "translation": "",
     "isDeprecated": false
   },
@@ -64220,7 +64324,7 @@
     "key": "Action.RemoveImage",
     "description": null,
     "english": "Remove Image",
-    "translation": "",
+    "translation": "移除图像",
     "isDeprecated": false
   },
   {
@@ -64228,7 +64332,7 @@
     "key": "Action.ChangeImage",
     "description": null,
     "english": "Change Image",
-    "translation": "",
+    "translation": "更改图像",
     "isDeprecated": false
   },
   {
@@ -64236,7 +64340,7 @@
     "key": "Label.NoImageUploaded",
     "description": null,
     "english": "No image uploaded",
-    "translation": "",
+    "translation": "未上传图像",
     "isDeprecated": false
   },
   {
@@ -64244,7 +64348,7 @@
     "key": "Label.SelectedFile",
     "description": null,
     "english": "You have uploaded the image: {fileName}",
-    "translation": "",
+    "translation": "你已上传图像：{fileName}",
     "isDeprecated": false
   },
   {
@@ -64252,7 +64356,7 @@
     "key": "Message.ModeratedNameAndDescription",
     "description": "it is moderated error msg for users on item configuration page when users configure their assets",
     "english": "The Name or Description you entered is not allowed\t",
-    "translation": "",
+    "translation": "你输入的名称或描述不被允许",
     "isDeprecated": false
   },
   {
@@ -65512,6 +65616,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.CreatorPages",
+    "key": "Description.PageVisibilityCaption",
+    "description": null,
+    "english": "* Add your bio and skills to share your profile on Talent Hub.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "TalentHub.Common",
     "key": "Label.StartDate",
     "description": null,
@@ -65948,6 +66060,14 @@
     "key": "Label.Back",
     "description": null,
     "english": "Back",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Common",
+    "key": "Label.NoContent",
+    "description": null,
+    "english": "No Content",
     "translation": "",
     "isDeprecated": false
   },
@@ -70244,7 +70364,7 @@
     "key": "Message.NoDatastoresSelectedWarning",
     "description": "Displayed when no datastores are selected to override api key permissions",
     "english": "No datastores selected",
-    "translation": "",
+    "translation": "未选择 datastore",
     "isDeprecated": false
   },
   {
@@ -77548,7 +77668,7 @@
     "key": "Description.UrlFormat",
     "description": null,
     "english": "Must have secure SSL certificate (starts with https:// unless host name is localhost)",
-    "translation": "必须拥有安全 SSL 证书（以 https:// 开头）",
+    "translation": "必须拥有安全 SSL 证书（以 https:// 开头，除非域名为本地域名）",
     "isDeprecated": false
   },
   {
@@ -78012,7 +78132,7 @@
     "key": "Label.BadgeImage",
     "description": null,
     "english": "Badge Image",
-    "translation": "",
+    "translation": "徽章图像",
     "isDeprecated": false
   },
   {
@@ -78916,7 +79036,7 @@
     "key": "Label.LastUpdated",
     "description": "Noting the data this item or asset was last updated.",
     "english": "Last updated {date}",
-    "translation": "",
+    "translation": "最后更新时间：{date}",
     "isDeprecated": false
   },
   {
@@ -78924,7 +79044,7 @@
     "key": "Message.CannotPurchaseItem",
     "description": "A message popup that persist to tell the user that they cannot buy an item at this time.",
     "english": "This item is not currently for sale",
-    "translation": "",
+    "translation": "此道具目前为非卖品",
     "isDeprecated": false
   },
   {
@@ -79204,7 +79324,7 @@
     "key": "Label.LastUpdated",
     "description": "Date an Item was last updated",
     "english": "Last update: {date}",
-    "translation": "",
+    "translation": "最后更新时间：{date}",
     "isDeprecated": false
   },
   {
@@ -79380,7 +79500,7 @@
     "key": "Message.UserNotFound",
     "description": "Indicating that a user does not exist.",
     "english": "User does not exist",
-    "translation": "",
+    "translation": "用户不存在",
     "isDeprecated": false
   },
   {
@@ -80084,6 +80204,22 @@
     "key": "Description.LimitsDescription",
     "description": null,
     "english": "Per API Key: {maxInPeriod} requests every {periodInSeconds} seconds per IP Address",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Request",
+    "description": null,
+    "english": "Request",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Response",
+    "description": null,
+    "english": "Response",
     "translation": "",
     "isDeprecated": false
   },
@@ -85428,7 +85564,7 @@
     "key": "Message.ConfigurePlaceInfo",
     "description": null,
     "english": "Provide a name, description, and select a genre for your place. There may be multiple places in one experience so it's important to help your users differentiate them.",
-    "translation": "",
+    "translation": "为你的场景提供名称、描述及类别。在一个作品中可能出现多个场景，因此，帮助用户做出区分尤为重要。",
     "isDeprecated": false
   },
   {
@@ -85436,7 +85572,7 @@
     "key": "Heading.PlaceAlertInfo",
     "description": null,
     "english": "Experiences and Start Places share name and description.",
-    "translation": "",
+    "translation": "作品和初始场景共用同一名称和描述。",
     "isDeprecated": false
   },
   {
@@ -85444,7 +85580,7 @@
     "key": "Message.PlaceAlertInfo",
     "description": null,
     "english": "Updating a start place’s name or description will also apply to the experience.",
-    "translation": "",
+    "translation": "更改初始场景的名称或描述也会应用到作品中。",
     "isDeprecated": false
   },
   {
@@ -85452,7 +85588,7 @@
     "key": "Message.PlaceUpdateSuccess",
     "description": null,
     "english": "Place Updated!",
-    "translation": "",
+    "translation": "场景已更新！",
     "isDeprecated": false
   },
   {
@@ -85468,7 +85604,7 @@
     "key": "Message.descriptionHelperText",
     "description": null,
     "english": "If you have built {linkStart}Premium benefits{linkEnd} into your experience, please list those benefits in the description.",
-    "translation": "",
+    "translation": "如果你的作品增加了 {linkStart}Premium 会员福利{linkEnd}，请在描述中说明福利详情。",
     "isDeprecated": false
   },
   {
@@ -85476,7 +85612,7 @@
     "key": "Message.SaveChangesFailure",
     "description": null,
     "english": "Place update failed, please try again.",
-    "translation": "",
+    "translation": "无法更新场景，请重试。",
     "isDeprecated": false
   },
   {
@@ -85492,7 +85628,7 @@
     "key": "Error.Generic",
     "description": null,
     "english": "Unknown error, please try again.",
-    "translation": "",
+    "translation": "未知错误，请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -85500,7 +85636,7 @@
     "key": "Error.AssetDoesNotExist",
     "description": null,
     "english": "The referenced asset does not exist.",
-    "translation": "",
+    "translation": "引用的素材不存在",
     "isDeprecated": false
   },
   {
@@ -85508,7 +85644,7 @@
     "key": "Error.DoesNotHaveManagePermission",
     "description": null,
     "english": "User does not have permissions to manage the asset.",
-    "translation": "",
+    "translation": "用户没有权限管理素材。",
     "isDeprecated": false
   },
   {
@@ -85516,7 +85652,7 @@
     "key": "Error.InvalidAssetId",
     "description": null,
     "english": "AssetId is invalid.",
-    "translation": "",
+    "translation": "AssetId 无效。",
     "isDeprecated": false
   },
   {
@@ -85524,7 +85660,7 @@
     "key": "Error.InvalidGenres",
     "description": null,
     "english": "At least one genre should be specified.",
-    "translation": "",
+    "translation": "请至少制定一个类别。",
     "isDeprecated": false
   },
   {
@@ -85532,7 +85668,7 @@
     "key": "Error.OnlyMarketplaceAssetsCanUpdateIsCopyingAllowed",
     "description": null,
     "english": "Only a marketplace asset can be updated with IsCopyingAllowed.",
-    "translation": "",
+    "translation": "只有商店素材可以更新 IsCopyingAllowed。",
     "isDeprecated": false
   },
   {
@@ -85540,7 +85676,7 @@
     "key": "Error.PackageCanNotUpdateIsCopyingAllowed",
     "description": null,
     "english": "Package can not update IsCopyingAllowed.",
-    "translation": "",
+    "translation": "套装无法更新 IsCopyingAllowed。",
     "isDeprecated": false
   },
   {
@@ -85548,7 +85684,7 @@
     "key": "Error.InvalidName",
     "description": null,
     "english": "The name of an Asset should not be empty.",
-    "translation": "",
+    "translation": "素材名称不应为空。",
     "isDeprecated": false
   },
   {
@@ -85556,7 +85692,7 @@
     "key": "Error.DescriptionTooLong",
     "description": null,
     "english": "Description too long.",
-    "translation": "",
+    "translation": "描述过长。",
     "isDeprecated": false
   },
   {
@@ -85564,7 +85700,7 @@
     "key": "Error.TextModerated",
     "description": null,
     "english": "Text moderated, please try again.",
-    "translation": "",
+    "translation": "文本已被过滤，请重试。",
     "isDeprecated": false
   },
   {
@@ -85588,7 +85724,7 @@
     "key": "Label.AutoGenerated",
     "description": null,
     "english": "Auto-generated image",
-    "translation": "",
+    "translation": "自动生成图像",
     "isDeprecated": false
   },
   {
@@ -85596,7 +85732,7 @@
     "key": "Label.default",
     "description": null,
     "english": "default",
-    "translation": "",
+    "translation": "默认",
     "isDeprecated": false
   },
   {
@@ -85612,7 +85748,7 @@
     "key": "Label.MediaTypes",
     "description": null,
     "english": "Media type:",
-    "translation": "",
+    "translation": "媒体类型：",
     "isDeprecated": false
   },
   {
@@ -85620,7 +85756,7 @@
     "key": "Message.PlaceIconShapeRequirement",
     "description": null,
     "english": "Icon must be square.",
-    "translation": "",
+    "translation": "图标须为正方形。",
     "isDeprecated": false
   },
   {
@@ -85628,7 +85764,7 @@
     "key": "Message.IconSubmitSuccess",
     "description": null,
     "english": "New icon successfully submitted",
-    "translation": "",
+    "translation": "新图标已成功提交",
     "isDeprecated": false
   },
   {
@@ -85636,7 +85772,7 @@
     "key": "Error.UpdatedTooOften",
     "description": null,
     "english": "You can only submit 12 auto generated icons to moderation every 24 hours.",
-    "translation": "",
+    "translation": "每 24 小时最多只能将 12 个自动生成的图标提交给审核团队。",
     "isDeprecated": false
   },
   {
@@ -85676,7 +85812,7 @@
     "key": "Label.PlaceIcon",
     "description": null,
     "english": "Place Icon",
-    "translation": "",
+    "translation": "场景图标",
     "isDeprecated": false
   },
   {
@@ -85920,6 +86056,94 @@
     "isDeprecated": false
   },
   {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.SearchForUsers",
+    "description": null,
+    "english": "Search for users to add from your Group",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.TeamMembers",
+    "description": null,
+    "english": "Team Members",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.Search",
+    "description": null,
+    "english": "Search",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.TeamsSearchHelperText",
+    "description": null,
+    "english": "Enter keyword, skills, or username",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Title.FindTeams",
+    "description": null,
+    "english": "Find Teams",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Heading.Availability",
+    "description": null,
+    "english": "Availability",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Description.NoTeamsFound",
+    "description": null,
+    "english": "No teams found.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Description.TeamsResults",
+    "description": null,
+    "english": null,
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Description.NumSearchResults",
+    "description": null,
+    "english": "{numTeams} teams, most recently updated on top",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.SearchTeams",
+    "description": null,
+    "english": "Search Teams",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "TalentHub.Teams",
+    "key": "Label.OpenToWork",
+    "description": null,
+    "english": "OPEN TO WORK",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.GenreType",
     "key": "Label.All",
     "description": null,
@@ -85932,7 +86156,7 @@
     "key": "Label.Medieval",
     "description": null,
     "english": "Medieval",
-    "translation": "",
+    "translation": "中世纪",
     "isDeprecated": false
   },
   {
@@ -85940,7 +86164,7 @@
     "key": "Label.Adventure",
     "description": null,
     "english": "Adventure",
-    "translation": "",
+    "translation": "冒险",
     "isDeprecated": false
   },
   {
@@ -85948,7 +86172,7 @@
     "key": "Label.FPS",
     "description": null,
     "english": "FPS",
-    "translation": "",
+    "translation": "第一人称射击",
     "isDeprecated": false
   },
   {
@@ -85956,7 +86180,7 @@
     "key": "Label.Comedy",
     "description": null,
     "english": "Comedy",
-    "translation": "",
+    "translation": "幽默",
     "isDeprecated": false
   },
   {
@@ -85964,7 +86188,7 @@
     "key": "Label.Fighting",
     "description": null,
     "english": "Fighting",
-    "translation": "",
+    "translation": "格斗",
     "isDeprecated": false
   },
   {
@@ -85972,7 +86196,7 @@
     "key": "Label.Naval",
     "description": null,
     "english": "Naval",
-    "translation": "",
+    "translation": "海军",
     "isDeprecated": false
   },
   {
@@ -85980,7 +86204,7 @@
     "key": "Label.RPG",
     "description": null,
     "english": "RPG",
-    "translation": "",
+    "translation": "角色扮演",
     "isDeprecated": false
   },
   {
@@ -85988,7 +86212,7 @@
     "key": "Label.Horror",
     "description": null,
     "english": "Horror",
-    "translation": "",
+    "translation": "恐怖",
     "isDeprecated": false
   },
   {
@@ -85996,7 +86220,7 @@
     "key": "Label.Sci-Fi",
     "description": "deprecated",
     "english": "Sci-Fi",
-    "translation": "",
+    "translation": "科幻",
     "isDeprecated": true
   },
   {
@@ -86012,7 +86236,7 @@
     "key": "Label.TownAndCity",
     "description": null,
     "english": "Town and city",
-    "translation": "",
+    "translation": "市镇",
     "isDeprecated": false
   },
   {
@@ -86020,7 +86244,7 @@
     "key": "Label.Building",
     "description": null,
     "english": "Building",
-    "translation": "",
+    "translation": "建造",
     "isDeprecated": false
   },
   {
@@ -86036,7 +86260,7 @@
     "key": "Label.Western",
     "description": null,
     "english": "Western",
-    "translation": "",
+    "translation": "西部",
     "isDeprecated": false
   },
   {
@@ -86044,7 +86268,7 @@
     "key": "Label.SciFi",
     "description": null,
     "english": "Sci-Fi",
-    "translation": "",
+    "translation": "科幻",
     "isDeprecated": false
   },
   {
@@ -86060,7 +86284,7 @@
     "key": "Label.MediaType",
     "description": null,
     "english": "Media type:",
-    "translation": "",
+    "translation": "媒体类型：",
     "isDeprecated": false
   },
   {
@@ -86084,7 +86308,7 @@
     "key": "Label.AutoGeneratedImage",
     "description": null,
     "english": "Auto-generated image",
-    "translation": "",
+    "translation": "自动生成图像",
     "isDeprecated": false
   },
   {
@@ -86092,7 +86316,7 @@
     "key": "Label.Free",
     "description": null,
     "english": "FREE",
-    "translation": "",
+    "translation": "免费",
     "isDeprecated": false
   },
   {
@@ -86100,7 +86324,7 @@
     "key": "Label.AddThumbnail",
     "description": null,
     "english": "Add Thumbnail",
-    "translation": "",
+    "translation": "添加缩略图",
     "isDeprecated": false
   },
   {
@@ -86124,7 +86348,7 @@
     "key": "Label.AutoGeneratedThumbnailDialogTitle",
     "description": null,
     "english": "Auto Generated Thumbnail",
-    "translation": "",
+    "translation": "自动生成缩略图",
     "isDeprecated": false
   },
   {
@@ -86132,7 +86356,7 @@
     "key": "Label.ConfirmUploadImageThumbnail",
     "description": null,
     "english": "This thumbnail will be moderated. Are you sure you want to submit this thumbnail?",
-    "translation": "",
+    "translation": "此缩略图将被审核。是否确定要提交此缩略图？",
     "isDeprecated": false
   },
   {
@@ -86140,7 +86364,7 @@
     "key": "Label.YouTubeURL",
     "description": null,
     "english": "YouTube URL",
-    "translation": "",
+    "translation": "YouTube URL",
     "isDeprecated": false
   },
   {
@@ -86148,7 +86372,7 @@
     "key": "Label.AddVideo",
     "description": null,
     "english": "Add Video",
-    "translation": "",
+    "translation": "添加视频",
     "isDeprecated": false
   },
   {
@@ -86156,7 +86380,7 @@
     "key": "Label.ConfirmUploadVideoThumbnail",
     "description": null,
     "english": "Are you sure you want to buy this thumbnail for",
-    "translation": "",
+    "translation": "是否确定购买此缩略图并花费",
     "isDeprecated": false
   },
   {
@@ -86164,7 +86388,7 @@
     "key": "Label.BuyNow",
     "description": null,
     "english": "Buy Now",
-    "translation": "",
+    "translation": "立即购买",
     "isDeprecated": false
   },
   {
@@ -86180,7 +86404,7 @@
     "key": "Label.VideoThumbnailDescription",
     "description": null,
     "english": "Videos will not be displayed on the Game page until they have been reviewed by moderation.",
-    "translation": "",
+    "translation": "视频将不会显示在游戏页面上，除非已通过审核。",
     "isDeprecated": false
   },
   {
@@ -86196,7 +86420,7 @@
     "key": "Label.ImageFormat",
     "description": null,
     "english": "Format: *.jpg, *.gif, *.png, *.tga, *.bmp",
-    "translation": "",
+    "translation": "格式：*.jpg, *.gif, *.png, *.tga, *.bmp",
     "isDeprecated": false
   },
   {
@@ -86204,7 +86428,7 @@
     "key": "Label.ImageThumbnailDescription",
     "description": null,
     "english": "Thumbnail will be visible to others after moderation.",
-    "translation": "",
+    "translation": "图像经过审核后，其他人即可查看。",
     "isDeprecated": false
   },
   {
@@ -86212,7 +86436,7 @@
     "key": "Label.Media",
     "description": null,
     "english": "Media",
-    "translation": "",
+    "translation": "媒体",
     "isDeprecated": false
   },
   {
@@ -86260,7 +86484,7 @@
     "key": "Label.DeleteThumbnail",
     "description": null,
     "english": "Delete Thumbnail",
-    "translation": "",
+    "translation": "删除缩略图",
     "isDeprecated": false
   },
   {
@@ -86268,7 +86492,7 @@
     "key": "Label.ConfirmDeleteThumbnail",
     "description": null,
     "english": "Are you sure you want to permanently delete this thumbnail?",
-    "translation": "",
+    "translation": "是否确定要永久删除此缩略图？",
     "isDeprecated": false
   },
   {
@@ -86284,7 +86508,7 @@
     "key": "Label.MediaPreview",
     "description": null,
     "english": "Media preview",
-    "translation": "",
+    "translation": "媒体预览",
     "isDeprecated": false
   },
   {
@@ -86292,7 +86516,7 @@
     "key": "Label.VideoPreview",
     "description": null,
     "english": "Video Preview",
-    "translation": "",
+    "translation": "视频预览",
     "isDeprecated": false
   },
   {
@@ -86308,7 +86532,7 @@
     "key": "Error.UnauthorizedRequest",
     "description": null,
     "english": "You are not authorized to upload this thumbnail.",
-    "translation": "",
+    "translation": "你没有权限上传此缩略图。",
     "isDeprecated": false
   },
   {
@@ -86316,7 +86540,7 @@
     "key": "Error.UnauthorizedToConfigureUniverse",
     "description": null,
     "english": "You are not authorized to upload this thumbnail.",
-    "translation": "",
+    "translation": "你没有权限上传此缩略图。",
     "isDeprecated": false
   },
   {
@@ -86324,7 +86548,7 @@
     "key": "Error.NotAllowedToAddThumbnails",
     "description": null,
     "english": "You are not authorized to upload this thumbnail.",
-    "translation": "",
+    "translation": "你没有权限上传此缩略图。",
     "isDeprecated": false
   },
   {
@@ -86332,7 +86556,7 @@
     "key": "Error.UniverseDoesNotExist",
     "description": null,
     "english": "Error uploading thumbnail. Please try again later.",
-    "translation": "",
+    "translation": "上传缩略图时发生错误。请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -86340,7 +86564,7 @@
     "key": "Error.NoRootPlace",
     "description": null,
     "english": "Error uploading thumbnail. Please try again later.",
-    "translation": "",
+    "translation": "上传缩略图时发生错误。请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -86412,7 +86636,7 @@
     "key": "Error.InvalidFormat",
     "description": null,
     "english": "File uploaded does not match known image format. Try converting to png.",
-    "translation": "",
+    "translation": "上传的文件不符合已知图像格式。请尝试转换为 PNG 格式。",
     "isDeprecated": false
   },
   {
@@ -86420,7 +86644,7 @@
     "key": "Error.UploadTooOften",
     "description": null,
     "english": "You're uploading too much, please wait and try again later.",
-    "translation": "",
+    "translation": "上传内容过多，请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -86428,7 +86652,7 @@
     "key": "Error.NoPermission",
     "description": null,
     "english": "You are not authorized to upload this thumbnail.",
-    "translation": "",
+    "translation": "你没有权限上传此缩略图。",
     "isDeprecated": false
   },
   {
@@ -86436,7 +86660,7 @@
     "key": "Error.FileNotPresent",
     "description": null,
     "english": "Error uploading thumbnail. Please try again later.",
-    "translation": "",
+    "translation": "上传缩略图时发生错误。请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -86444,7 +86668,7 @@
     "key": "Error.TargetItemInvalid",
     "description": null,
     "english": "Error uploading thumbnail. Please try again later.",
-    "translation": "",
+    "translation": "上传缩略图时发生错误。请稍后重试。",
     "isDeprecated": false
   },
   {

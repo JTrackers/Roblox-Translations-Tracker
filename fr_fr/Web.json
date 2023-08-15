@@ -1969,10 +1969,26 @@
   },
   {
     "namespace": "Authentication.AccountRecovery",
+    "key": "Response.PasswordBadLength",
+    "description": null,
+    "english": "Passwords must be between 8 and 200 characters long.",
+    "translation": "Les mots de passe doivent comporter entre 8 et 200 caractères.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
     "key": "Response.PasswordContainsUsernameError",
     "description": null,
     "english": "Password shouldn't match username.",
     "translation": "Le mot de passe ne doit pas correspondre au nom d'utilisateur.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountRecovery",
+    "key": "Response.DifferentPasswordRequired",
+    "description": null,
+    "english": "Please use a different password. Use any special characters or numbers.",
+    "translation": "Utilise un mot de passe différent. Utilise des caractères spéciaux ou des chiffres.",
     "isDeprecated": false
   },
   {
@@ -2029,6 +2045,14 @@
     "description": null,
     "english": "Robot Challenge",
     "translation": "Challenge robot",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Captcha",
+    "key": "Description.VerifyingYouAreNotBot",
+    "description": null,
+    "english": "Verifying you're not a bot",
+    "translation": "Pour vérifier que vous n'êtes pas un bot",
     "isDeprecated": false
   },
   {
@@ -11460,7 +11484,7 @@
     "key": "Label.SecurityKey",
     "description": null,
     "english": "A hardware security key or device’s biometrics like fingerprint or facial recognition.",
-    "translation": "Une clé de sécurité matérielle ou la biométrie de l'appareil comme TouchID ou FaceID.",
+    "translation": "Une clé de sécurité matérielle ou la biométrie de l'appareil comme l'empreinte digitale ou la reconnaissance faciale.",
     "isDeprecated": false
   },
   {
@@ -11532,7 +11556,7 @@
     "key": "Label.SecurityKey.BiometricKey",
     "description": null,
     "english": "Alternatively, set up this device using fingerprint or facial recognition.",
-    "translation": "Tu peux également configurer cet appareil en utilisant TouchID ou FaceID.",
+    "translation": "Tu peux également configurer cet appareil en utilisant l'empreinte digitale ou la reconnaissance faciale.",
     "isDeprecated": false
   },
   {
@@ -12069,6 +12093,22 @@
     "description": null,
     "english": "An app on your phone that generates unique codes. Suggested apps include Google Authenticator, Microsoft Authenticator, and Twilio's Authy.",
     "translation": "Une application sur ton téléphone qui génère des codes uniques. Les applications suggérées incluent Google Authenticator, Microsoft Authenticator et Twilio Authy.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SecurityKey.PlatformNotSupported",
+    "description": null,
+    "english": "Platform Not Supported",
+    "translation": "Plateforme non prise en charge",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.WebOnly",
+    "description": null,
+    "english": "Security keys can only be registered on web.",
+    "translation": "Les clés de sécurité ne peuvent être enregistrées que sur le Web.",
     "isDeprecated": false
   },
   {
@@ -45096,6 +45136,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Groups",
+    "key": "Label.ImmersiveAdPayouts",
+    "description": null,
+    "english": "Immersive Ad Payouts",
+    "translation": "Remboursement des publicités immersives",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Captcha",
     "key": "Response.CaptchaErrorVerifyFailed",
     "description": "Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.",
@@ -45285,6 +45333,14 @@
     "description": null,
     "english": "Private Servers",
     "translation": "Serveurs Privés",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.GameSettings",
+    "key": "General.ImageApproved",
+    "description": "Used to describe an image that has been approved by the moderation flow",
+    "english": "Approved",
+    "translation": "Approuvé",
     "isDeprecated": false
   },
   {
@@ -50132,7 +50188,7 @@
     "key": "Heading.Places",
     "description": null,
     "english": "Places",
-    "translation": "Emplacements",
+    "translation": "Lieux",
     "isDeprecated": false
   },
   {
@@ -50469,6 +50525,22 @@
     "description": null,
     "english": "Documentation",
     "translation": "Documentation",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Thumbnails",
+    "description": null,
+    "english": "Thumbnails",
+    "translation": "Vignettes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Notifications",
+    "description": "navigation header to redirect to notifications page in creator dashboard.",
+    "english": "Notifications",
+    "translation": "Notifications",
     "isDeprecated": false
   },
   {
@@ -55788,7 +55860,7 @@
     "key": "Action.CopyAssetID",
     "description": null,
     "english": "Copy Asset ID",
-    "translation": "Copier identifiant élément",
+    "translation": "Copier identifiant contenu",
     "isDeprecated": false
   },
   {
@@ -55796,7 +55868,7 @@
     "key": "Action.CopyAssetURI",
     "description": null,
     "english": "Copy Asset URI",
-    "translation": "Copier identifiant URI",
+    "translation": "Copier contenu URI",
     "isDeprecated": false
   },
   {
@@ -55812,7 +55884,7 @@
     "key": "Action.CopyStartPlaceID",
     "description": null,
     "english": "Copy Start Place ID",
-    "translation": "Copier l'identifiant de l'emplacement de départ",
+    "translation": "Copier l'identifiant du lieu de départ",
     "isDeprecated": false
   },
   {
@@ -56468,7 +56540,7 @@
     "key": "Error.NoRootPlace",
     "description": null,
     "english": "This universe does not have a root place.",
-    "translation": "Cet univers n'a pas d'emplacement d'origine (root).",
+    "translation": "Cet univers n'a pas de lieu d'origine (root).",
     "isDeprecated": false
   },
   {
@@ -56484,7 +56556,7 @@
     "key": "Error.InvalidRootPlace",
     "description": null,
     "english": "The root place for this universe is under review and can not be activated.",
-    "translation": "L'emplacement d'origine (root) de cet univers est en cours de révision et ne peut être activée.",
+    "translation": "Le lieu d'origine (root) de cet univers est en cours de révision et ne peut être activée.",
     "isDeprecated": false
   },
   {
@@ -56741,6 +56813,30 @@
     "description": null,
     "english": "Back to Places",
     "translation": "Retour aux lieux",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.OpenStudio",
+    "description": "Open Studio button for user to create assets",
+    "english": "Open Studio",
+    "translation": "Ouvrir Studio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DevelopmentItemsEmptyMessageWithLink",
+    "description": "When list page is empty, guide user to upload assets on external link",
+    "english": "Create your first {itemType} in Roblox Studio, or {LinkStart}upload them here{LinkEnd}",
+    "translation": "Créez votre premier {itemType} dans Roblox Studio, ou {LinkStart}téléchargez-les ici{LinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.UploadDevelopmentItems",
+    "description": "Upload button for uploading developer items, shows in list view",
+    "english": "Upload {itemType}",
+    "translation": "Télécharger {itemType}",
     "isDeprecated": false
   },
   {
@@ -61225,6 +61321,46 @@
   },
   {
     "namespace": "CreatorDashboard.Analytics",
+    "key": "Title.RobuxHourly",
+    "description": null,
+    "english": "Hourly Revenue (Last 72 Hours)",
+    "translation": "Revenus horaires (dernières 72 heures)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourly",
+    "description": null,
+    "english": "Total amount of Robux earned by the experience each hour.",
+    "translation": "Total de Robux gagnés par l'expérience en une heure.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.RobuxHourlyInsight",
+    "description": "Text that appears when hovering over the \"eye\" icon for the \"hourly revenue\" chart.",
+    "english": "Hourly data can help you identify recent changes in monetization. A sudden deviation could mean that a recent change affected whether people are willing or able to spend money in your experience.",
+    "translation": "Les revenus horaires peuvent vous aider à comprendre si des changements récents dans votre expérience ont affecté la volonté ou la capacité des utilisateurs à dépenser de l'argent dans votre jeu. Cela peut vous aider à mener des expériences ou à réagir plus rapidement aux incidents qui pourraient avoir un impact négatif.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.DateRangeDoesNotApplyWarning",
+    "description": null,
+    "english": "Start date and end date do not affect this chart",
+    "translation": "La date de début et la date de fin n'affectent pas ce graphique",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.AffiliateFeeTotal",
+    "description": "Combination of \"Commission for Avatar Shop Item\" (Label.AffiliateFeeAvatar) and \"Commission for Passes\" (Label.AffiliateFeeGamePass)",
+    "english": "Commissions",
+    "translation": "Commissions",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
     "key": "Message.AnnouncementAlertInfo",
     "description": null,
     "english": "Dashboards have been updated. You may see small discrepancies compared to reports generated prior to {date}, but the new KPIs are more accurate.",
@@ -61237,6 +61373,14 @@
     "description": null,
     "english": "Learn more",
     "translation": "En savoir plus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Unit.Revenue",
+    "description": "Used as the label for charts, e.g. on the y-axis.",
+    "english": "Revenue",
+    "translation": "Revenus",
     "isDeprecated": false
   },
   {
@@ -65924,7 +66068,7 @@
     "key": "Description.UniverseTargetPart",
     "description": "Description that will go under \"universe-level permissions\" target part",
     "english": "\"Write\" will apply to all existing places in the experience.",
-    "translation": "\"Écrire\" s'appliquera à tous les emplacements existants dans l'expérience.",
+    "translation": "\"Écrire\" s'appliquera à tous les lieux existants dans l'expérience.",
     "isDeprecated": false
   },
   {
@@ -67168,6 +67312,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.OpenCloud",
+    "key": "Message.NoDatastoresSelectedWarning",
+    "description": "Displayed when no datastores are selected to override api key permissions",
+    "english": "No datastores selected",
+    "translation": "Aucun datastores sélectionné",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ScopeSystem",
     "key": "Label.UniversePlaces",
     "description": "Scope for publishing universes",
@@ -67732,7 +67884,7 @@
     "key": "Message.DefaultLocation",
     "description": null,
     "english": "No location available",
-    "translation": "Aucun emplacement disponible",
+    "translation": "Aucun lieu disponible",
     "isDeprecated": false
   },
   {
@@ -69684,7 +69836,7 @@
     "key": "Label.Thumbnails",
     "description": null,
     "english": "Thumbnails",
-    "translation": "Miniatures",
+    "translation": "Vignettes",
     "isDeprecated": false
   },
   {
@@ -69964,7 +70116,7 @@
     "key": "Message.DefaultLocation",
     "description": null,
     "english": "No location available",
-    "translation": "Aucun emplacement disponible",
+    "translation": "Aucun lieu disponible",
     "isDeprecated": false
   },
   {
@@ -70292,7 +70444,7 @@
     "key": "Label.ClearAll",
     "description": "Button label to clear all selected items",
     "english": "CLEAR",
-    "translation": "TOUT SUPPRIMER",
+    "translation": "EFFACER",
     "isDeprecated": false
   },
   {
@@ -70300,7 +70452,15 @@
     "key": "Label.ApplyChanges",
     "description": "Button label to apply changes",
     "english": "APPLY",
-    "translation": "APPLIQUER LES MODIFICATIONS",
+    "translation": "APPLIQUER",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.GameStringTranslation",
+    "key": "Message.RecencyInfo",
+    "description": null,
+    "english": "Only strings modified or added in the past 7 days will be shown.",
+    "translation": "Seuls les strings modifiés ou ajoutés au cours des 7 derniers jours seront affichés.",
     "isDeprecated": false
   },
   {
@@ -73548,7 +73708,7 @@
     "key": "Error.InvalidPlace",
     "description": null,
     "english": "The place is invalid or does not exist.",
-    "translation": "L'emplacement est invalide ou n'existe pas.",
+    "translation": "Le lieu est invalide ou n'existe pas.",
     "isDeprecated": false
   },
   {
@@ -73556,7 +73716,7 @@
     "key": "Error.InvalidPermissionsToAwardBadge",
     "description": null,
     "english": "The place doesn't have permission to award the badge.",
-    "translation": "L'emplacement n'a pas la permission d'attribuer le badge.",
+    "translation": "Le lieu n'a pas la permission d'attribuer le badge.",
     "isDeprecated": false
   },
   {
@@ -80820,7 +80980,7 @@
     "key": "Heading.Places",
     "description": null,
     "english": "Places",
-    "translation": "Emplacements",
+    "translation": "Lieux",
     "isDeprecated": false
   },
   {
@@ -81308,7 +81468,7 @@
     "key": "Title.Thumbnails",
     "description": null,
     "english": "Thumbnails",
-    "translation": "Miniatures",
+    "translation": "Vignettes",
     "isDeprecated": false
   },
   {
@@ -81345,6 +81505,22 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.Free",
+    "description": null,
+    "english": "FREE",
+    "translation": "GRATUIT",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AddThumbnail",
+    "description": null,
+    "english": "Add Thumbnail",
+    "translation": "Ajouter une vignette",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.Cancel",
     "description": null,
     "english": "Cancel",
@@ -81361,6 +81537,54 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AutoGeneratedThumbnailDialogTitle",
+    "description": null,
+    "english": "Auto Generated Thumbnail",
+    "translation": "Vignette générée automatiquement",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmUploadImageThumbnail",
+    "description": null,
+    "english": "This thumbnail will be moderated. Are you sure you want to submit this thumbnail?",
+    "translation": "Cette vignette sera modérée. Es-tu sûr de vouloir soumettre cette vignette ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.YouTubeURL",
+    "description": null,
+    "english": "YouTube URL",
+    "translation": "URL YouTube",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.AddVideo",
+    "description": null,
+    "english": "Add Video",
+    "translation": "Ajouter une vidéo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmUploadVideoThumbnail",
+    "description": null,
+    "english": "Are you sure you want to buy this thumbnail for",
+    "translation": "Es-tu sûr de vouloir acheter cette vignette pour",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.BuyNow",
+    "description": null,
+    "english": "Buy Now",
+    "translation": "Acheter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.CurrentBalance",
     "description": null,
     "english": "Current Balance:",
@@ -81369,10 +81593,42 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.VideoThumbnailDescription",
+    "description": null,
+    "english": "Videos will not be displayed on the Game page until they have been reviewed by moderation.",
+    "translation": "Les vidéos ne seront pas affichées sur la page du jeu tant qu'elles n'auront pas été revues par modération.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.UploadImage",
     "description": null,
     "english": "Upload Image",
     "translation": "Télécharger une image",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ImageFormat",
+    "description": null,
+    "english": "Format: *.jpg, *.gif, *.png, *.tga, *.bmp",
+    "translation": "Format : *.jpg, *.gif, *.png, *.tga, *.bmp",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ImageThumbnailDescription",
+    "description": null,
+    "english": "Thumbnail will be visible to others after moderation.",
+    "translation": "La vignette sera visible par les autres après modération.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.Media",
+    "description": null,
+    "english": "Media",
+    "translation": "Média",
     "isDeprecated": false
   },
   {
@@ -81417,6 +81673,22 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.DeleteThumbnail",
+    "description": null,
+    "english": "Delete Thumbnail",
+    "translation": "Supprimer la vignette",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.ConfirmDeleteThumbnail",
+    "description": null,
+    "english": "Are you sure you want to permanently delete this thumbnail?",
+    "translation": "Es-tu sûr de vouloir supprimer définitivement cette vignette ?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.Delete",
     "description": null,
     "english": "Delete",
@@ -81425,10 +81697,234 @@
   },
   {
     "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.MediaPreview",
+    "description": null,
+    "english": "Media preview",
+    "translation": "Prévisualisation du média",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Label.VideoPreview",
+    "description": null,
+    "english": "Video Preview",
+    "translation": "Prévisualisation vidéo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Error.UnknownError",
     "description": null,
     "english": "An unknown error occurred, please try again later.",
     "translation": "Une erreur inconnue s'est produite, réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UnauthorizedRequest",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "Tu n'es pas autorisé à télécharger cette vignette.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UnauthorizedToConfigureUniverse",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "Tu n'es pas autorisé à télécharger cette vignette.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NotAllowedToAddThumbnails",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "Tu n'es pas autorisé à télécharger cette vignette.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UniverseDoesNotExist",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "Erreur lors du chargement de la vignette. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoRootPlace",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "Erreur lors du chargement de la vignette. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidURL",
+    "description": null,
+    "english": "The video URL is invalid.",
+    "translation": "L'URL de la vidéo n'est pas valide.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.EmbeddingNotSupported",
+    "description": null,
+    "english": "The provided video does not support embedding.",
+    "translation": "La vidéo fournie ne prend pas en charge l'incorporation.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DurationTooLong",
+    "description": null,
+    "english": "Video must be less than 32 seconds.",
+    "translation": "La vidéo doit être inférieure à 32 secondes.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DescriptionTooLong",
+    "description": null,
+    "english": "This video description is too long.",
+    "translation": "La description de cette vidéo est trop longue.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.DescriptionUnacceptable",
+    "description": null,
+    "english": "This video description is not acceptable.",
+    "translation": "Cette description de vidéo n'est pas acceptable.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.VideoUnacceptable",
+    "description": null,
+    "english": "This video is not acceptable.",
+    "translation": "Cette vidéo n'est pas acceptable.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NotEnoughFunds",
+    "description": null,
+    "english": "You do not have sufficient funds to purchase a video thumbnail.",
+    "translation": "Vous n'avez pas assez de fonds pour acheter une vignette vidéo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.ThumbnailsAddedTooOften",
+    "description": null,
+    "english": "Thumbnails added too often, please wait and try again later.",
+    "translation": "Vignettes ajoutées trop souvent, veuillez patienter et réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidFormat",
+    "description": null,
+    "english": "File uploaded does not match known image format. Try converting to png.",
+    "translation": "Le fichier téléchargé ne correspond pas au format d'image connu. Essayer de convertir en png.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.UploadTooOften",
+    "description": null,
+    "english": "You're uploading too much, please wait and try again later.",
+    "translation": "Vous téléchargez trop, patienter et réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoPermission",
+    "description": null,
+    "english": "You are not authorized to upload this thumbnail.",
+    "translation": "Tu n'es pas autorisé à télécharger cette vignette.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.FileNotPresent",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "Erreur lors du chargement de la vignette. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.TargetItemInvalid",
+    "description": null,
+    "english": "Error uploading thumbnail. Please try again later.",
+    "translation": "Erreur lors du chargement de la vignette. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.RequestBodyMissing",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "Erreur lors de la réorganisation des vignettes. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.NoThumbnailIds",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "Erreur lors de la réorganisation des vignettes. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.TooManyThumbnailIds",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "Erreur lors de la réorganisation des vignettes. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Error.InvalidThumbnailId",
+    "description": null,
+    "english": "Error reordering thumnails. Please try again later.",
+    "translation": "Erreur lors de la réorganisation des vignettes. Veuillez réessayer plus tard.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyUploadThumbnail",
+    "description": null,
+    "english": "Thumbnail successfully uploaded.",
+    "translation": "Vignettes téléchargées avec succès.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyUploadVideo",
+    "description": null,
+    "english": "Video successfully uploaded.",
+    "translation": "Vidéo téléchargée avec succès.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyDeleteThumbnail",
+    "description": null,
+    "english": "Thumbnail successfully deleted.",
+    "translation": "Vignette supprimée avec succès.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.PlaceThumbnails",
+    "key": "Message.SuccessfullyReorderThumbnail",
+    "description": null,
+    "english": "Thumbnails successfully reordered.",
+    "translation": "Vignettes réordonnées avec succès.",
     "isDeprecated": false
   }
 ]
