@@ -54787,7 +54787,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.DAU",
     "description": null,
-    "english": "The total number of daily (DAU) active users over a period of time.\n",
+    "english": "Number of unique players who joined the game at least once in the day\n",
     "translation": "一段时期内的每日活跃用户（DAU）总数。\n",
     "isDeprecated": false
   },
@@ -54795,7 +54795,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.MAU",
     "description": null,
-    "english": "The total number of monthly (MAU) active users over a period of time.",
+    "english": "Number of unique players who joined the game at least once in the past 30 days (rolling for 30 days).",
     "translation": "一段时期内的每月活跃用户（MAU）总数。",
     "isDeprecated": false
   },
@@ -54803,7 +54803,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.NewUsers",
     "description": null,
-    "english": "Number of new visitors that are first time visitors in the history of your experience.",
+    "english": "Number of DAUs who are first-time users",
     "translation": "作品推出以来第一次加入体验的新访客数。",
     "isDeprecated": false
   },
@@ -54835,7 +54835,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.TotalPlayTime",
     "description": null,
-    "english": "The number of hours visitors stay in your experience. ",
+    "english": "Sum of hours played by all sessions in a day.",
     "translation": "访客停留在作品的小时数。",
     "isDeprecated": false
   },
@@ -54859,7 +54859,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D1Retention",
     "description": null,
-    "english": "Percent of new visitors that played the experiences again within 24 hours after their first session. Note that a new visitor is defined as a new individual that has visited your experience for the very first time. ",
+    "english": "Percentage of new players who played again on Day 1 (the second day) after their first session ended.",
     "translation": "所有新访客中，在第一次进入作品后的 24 小时内再次进入作品的访客百分比。新访客的定义为首次进入该作品的新用户。",
     "isDeprecated": false
   },
@@ -54867,7 +54867,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D1Stickiness",
     "description": null,
-    "english": "Percent of new and existing visitors that came back to your experience at least once within a 24-hour window.",
+    "english": "Percentage of players who played again on Day 1 (the second day) after their first session.",
     "translation": "24 小时内至少回访你的作品一次的新旧访客百分比。",
     "isDeprecated": false
   },
@@ -54875,7 +54875,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D7Retention",
     "description": null,
-    "english": "Percent of new visitors who came back and visited the experience again within 7 days. Note that a new visitor is defined as a new individual that has visited your experience for the very first time. D7 is also inclusive of D1 visitors.",
+    "english": "Percentage of new players who came back and played again on the 8th day (D7) after their first session.",
     "translation": "新访客在 7 天内返回作品的比例。新访客的定义为初次体验你的作品的新用户。7 天统计中也包含首日再次进入作品的玩家。",
     "isDeprecated": false
   },
@@ -54883,7 +54883,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D7Stickeness",
     "description": null,
-    "english": "Percent of visitors (both new and existing) who play your experience everyday based on within 7 days",
+    "english": "Percentage of players who came back and played again on Day 7 (8th day).",
     "translation": "所有新旧访客中，7 天内每天进入你的体验的访客百分比",
     "isDeprecated": false
   },
@@ -54891,7 +54891,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D30Retention",
     "description": null,
-    "english": "Percent of new visitors who came back and visited the experience again within 30 days. Note that a new visitor is defined as a new individual that has visited your experience for the very first time. D30 is also inclusive of D7 and D1 visitors.",
+    "english": "Percentage of new players who came back and played again on the 31st day (D30).",
     "translation": "新访客在 30 天内返回作品的比例。新访客的定义为初次体验你的作品的新用户。30 天统计中也包含 7 天内和 1 天内再次进入作品的访客。",
     "isDeprecated": false
   },
@@ -54899,7 +54899,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.D30Stickiness",
     "description": null,
-    "english": "Percent of new and existing visitors that came back to your experience at least once within a 30-day window.",
+    "english": "Percentage of players who came back and played again on Day 30 (31st day).",
     "translation": "30 小时内至少回访你的作品一次的新旧访客百分比。",
     "isDeprecated": false
   },
@@ -55187,7 +55187,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Description.Visits",
     "description": null,
-    "english": "Total number of sessions created per day.",
+    "english": "Number of all sessions played in a day (count all sessions from the same user if they played multiple times).",
     "translation": "每天游戏次数总和。",
     "isDeprecated": false
   },
@@ -56307,7 +56307,7 @@
     "namespace": "CreatorDashboard.DeveloperQuestionnaire",
     "key": "Title.RestrictedCountries",
     "description": null,
-    "english": "Affects Regions",
+    "english": "Affected Regions",
     "translation": "受影响的地区",
     "isDeprecated": false
   },
@@ -56413,6 +56413,22 @@
     "description": null,
     "english": "You will preview content moderation or restrictions that will be applied to your experience in affected regions before you submit. These restrictions will only take effect after you submit the form.",
     "translation": "提交问卷前，你可以预览作品在受影响地区所受到的内容过滤或限制。这些限制仅在提交问卷后才会生效。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Title.QuestionnaireLandingCompliance",
+    "description": null,
+    "english": "Restrictions Review",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.DeveloperQuestionnaire",
+    "key": "Message.QuestionnaireLandingComplianceDescription",
+    "description": null,
+    "english": "As your experience contains the following feature(s) and does not respect Roblox’s policy APIs, it is unavailable in the following region(s) for compliance reasons.",
+    "translation": "",
     "isDeprecated": false
   },
   {
@@ -67819,7 +67835,7 @@
     "namespace": "CreatorDashboard.ComputeTelemetry",
     "key": "Message.UserHasNoPermission",
     "description": null,
-    "english": "User has no permission for this page",
+    "english": "Insufficient permission to view this data.",
     "translation": "用户无权访问此页面",
     "isDeprecated": false
   },
@@ -67827,7 +67843,7 @@
     "namespace": "CreatorDashboard.ComputeTelemetry",
     "key": "Message.RequestFailure",
     "description": null,
-    "english": "Request of Compute Telemetry failure",
+    "english": "Compute Telemetry request failure.",
     "translation": "请求计算测量记录失败",
     "isDeprecated": false
   },
