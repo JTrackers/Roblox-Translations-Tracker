@@ -1616,6 +1616,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Subject",
+    "description": "Subject for 2SV method swap email",
+    "english": "2-Step Verification Change for {accountName}",
+    "translation": "Änderung der Verifizierung in 2 Schritten für {accountName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Over13",
+    "description": "Body for 2SV method swap email",
+    "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Hallo,{lineBreak}{lineBreak}du hast die Methode zur Verifizierung in 2 Schritten für {accountName} von {disabledTwoStepMethod} zu {enabledTwoStepMethod} geändert. Wenn diese Änderung nicht von dir vorgenommen wurde, kontaktiere bitte sofort den Kundensupport, um das Konto wiederherzustellen.{lineBreak}{lineBreak}Danke{lineBreak}{lineBreak}Roblox-Team",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.TwoStepVerificationSwap.Body.Under13",
+    "description": null,
+    "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
+    "translation": "Hallo,{lineBreak}{lineBreak}die Methode zur Verifizierung in 2 Schritten für das Konto deines Kindes wurde {accountName} von {disabledTwoStepMethod} zu {enabledTwoStepMethod} geändert. Wenn diese Änderung nicht von dir oder deinem Kind vorgenommen wurde, kontaktiere bitte sofort den Kundensupport, um das Konto deines Kindes wiederherzustellen.{lineBreak}{lineBreak}Danke{lineBreak}{lineBreak}Roblox-Team",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.AccountRecovery",
     "key": "HeadingRevertAccount",
     "description": null,
@@ -11236,7 +11260,7 @@
     "key": "Description.SecurityKey.Register2SV",
     "description": null,
     "english": "Next time you sign in on web, you’ll use your security key with 2 Step Verification.",
-    "translation": "Wenn du dich das nächste Mal im Web anmeldest, verwende deinen Sicherheitsschlüssel mit der Verifizierung in 2 Schritten.",
+    "translation": "Wenn du dich das nächste Mal in der Webversion anmeldest, verwende deinen Sicherheitsschlüssel mit der Verifizierung in 2 Schritten.",
     "isDeprecated": false
   },
   {
@@ -11293,6 +11317,206 @@
     "description": null,
     "english": "Security keys protects your robux, experiences, limiteds and more. We would recommend deleting a key if you have lost it or it is no longer valid. {lineBreak}{lineBreak}Are you sure you want to delete your key?",
     "translation": "Sicherheitsschlüssel schützen deine Robux, Erlebnisse, limitierten Items und vieles mehr. Wir empfehlen dir, Schlüssel zu löschen, die du verloren hast oder die nicht mehr gültig sind. {lineBreak}{lineBreak}Möchtest du deinen Schlüssel wirklich löschen?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SecurityKey.DeleteSuccess",
+    "description": null,
+    "english": "{deletedKeyList} were successfully disabled.",
+    "translation": "{deletedKeyList} wurden erfolgreich deaktiviert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactSuccess",
+    "description": null,
+    "english": "Successfully updated recommendation preferences.",
+    "translation": "Empfehlungspräferenzen erfolgreich aktualisiert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.UpdateRecommendAsContactFailure",
+    "description": null,
+    "english": "Unable to update recommendation preferences.",
+    "translation": "Empfehlungspräferenzen konnten nicht aktualisiert werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": null,
+    "english": "Learn More about Voice Recording",
+    "translation": "Erfahre mehr über Sprachaufnahmen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ContentControls",
+    "description": null,
+    "english": "Content Controls",
+    "translation": "Inhaltskontrollen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.ContentControls",
+    "description": null,
+    "english": "What is the maximum age recommendation that this account can access? See {linkStart}this page{linkEnd} for more details.",
+    "translation": "Was ist die maximale Altersempfehlung, auf die dieses Konto zugreifen kann? Siehe {linkStart}diese Seite{linkEnd} für weitere Informationen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls13",
+    "description": null,
+    "english": "13 + (Includes 9 + and All-Ages Approved Content)",
+    "translation": "13 + (Enthält Inhalte, die für über 9-Jährige und alle Altersstufen genehmigt sind)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControls9",
+    "description": null,
+    "english": "9 + (Includes All-Ages Approved Content)",
+    "translation": "9 + (Enthält Inhalte, die für alle Altersstufen genehmigt sind)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.ContentControlsAllAge",
+    "description": null,
+    "english": "All-Ages Approved Content",
+    "translation": "Für alle Altersstufen genehmigter Inhalt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ErrorLoadingAuthorizations",
+    "description": null,
+    "english": "There was a problem loading your app authorizations. Please try again.",
+    "translation": "Beim Laden der Appautorisierung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.SomethingWentWrong",
+    "description": null,
+    "english": "Something Went Wrong",
+    "translation": "Ein Problem ist aufgetreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.TurnOnAuthenticator",
+    "description": null,
+    "english": "Turn on Authenticator First",
+    "translation": "Schalte erst den Authentifikator ein",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SecurityKey.TurnOnAuthenticator",
+    "description": null,
+    "english": "Security keys is currently on web only. Please set up Authenticator first so that you can use 2 Step Verification on all platforms.",
+    "translation": "Sicherheitsschlüssel sind derzeit nur für die Webversion verfügbar. Bitte richte zuerst den Authentifikator ein, damit du die Verifizierung in 2 Schritten auf allen Plattformen verwenden kannst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SetUp",
+    "description": null,
+    "english": "Set Up",
+    "translation": "Einrichten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.Manage",
+    "description": null,
+    "english": "Manage",
+    "translation": "Verwalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.Dialog.VerifiedPhoneRequired",
+    "description": null,
+    "english": "Verified Phone Required",
+    "translation": "Verifizierte Telefonnummer erforderlich",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.MissingPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must provide and verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Bevor du die Verifizierung in 2 Schritten per SMS aktivieren kannst, musst du deine Telefonnummer angeben und verifizieren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.Dialog.UnverifiedPhoneTwoStepVerification",
+    "description": null,
+    "english": "You must verify your phone number before you can enable SMS 2-Step Verification.",
+    "translation": "Bevor du die Verifizierung in 2 Schritten per SMS aktivieren kannst, musst du deine Telefonnummer verifizieren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.ContentControls",
+    "description": null,
+    "english": "Note: All Experiences will still be able to be searched and seen. Unrated experiences are currently treated as 13+.",
+    "translation": "Hinweis: Alle Erlebnisse können weiterhin gesucht und gesehen werden. Unbewertete Erlebnisse werden derzeit als 13+ behandelt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepVerificationCodes",
+    "description": null,
+    "english": "Text message codes to confirm your identity",
+    "translation": "SMS-Codes zur Bestätigung deiner Identität",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Label.SmsTwoStepPrerequisite",
+    "description": null,
+    "english": "A verified phone number is required.",
+    "translation": "Eine verifizierte Telefonnummer ist erforderlich.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.SmsTwoStepVerificationSecondaryEnabled",
+    "description": null,
+    "english": "Some actions like logging In will require you to enter a text message code. Codes will be sent to {phoneNumber}",
+    "translation": "Für einige Aktionen, z.B. die Anmeldung, wird die Eingabe eines SMS-Codes erforderlich. Codes werden an {phoneNumber} gesendet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Next",
+    "description": null,
+    "english": "Next",
+    "translation": "Weiter",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Okay",
+    "description": null,
+    "english": "Okay",
+    "translation": "Okay",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "Fertig",
     "isDeprecated": false
   },
   {
@@ -13221,6 +13445,14 @@
     "description": null,
     "english": "2D",
     "translation": "2D",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.AllItemsOnRoblox",
+    "description": "Similar to Label.FeaturedItemsOnRoblox",
+    "english": "All Items on {spanStart}{roblox}{spanEnd}",
+    "translation": "Alle Items auf {spanStart}{roblox}{spanEnd}",
     "isDeprecated": false
   },
   {
@@ -15600,6 +15832,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Label.ConnectWithFriends",
+    "description": "Contact Importer Modal title text",
+    "english": "Connect With Friends",
+    "translation": "Verbinde dich mit Freund:innen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.AllowContactsAccess",
+    "description": "description to tell user to allow access to find their friends",
+    "english": "Allow access to your contacts to see friends you already know on Roblox!",
+    "translation": "Erlaube Zugriff auf deine Kontakte, um Freund:innen zu sehen, die du bereits auf Roblox kennst!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.ContactsRecommendations",
+    "description": "caption label to explain that contacts are being used for better recommendations",
+    "english": "Roblox uses your contacts to help you and your existing connections find each other through recommendations. You can change this any time in your account settings.",
+    "translation": "Roblox nutzt deine Kontakte, um dir und deinen bestehenden Verbindungen zu helfen, einander durch Empfehlungen zu finden. Du kannst dies jederzeit in deinen Kontoeinstellungen ändern.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Description.FoundFromPhone",
+    "description": null,
+    "english": "Found you from your phone number",
+    "translation": "Du wurdest über deine Telefonnummer gefunden",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -17048,6 +17312,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GamePage",
+    "key": "Label.By",
+    "description": "As part of \"By {Creator Name}\"",
+    "english": "By",
+    "translation": "Von",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GamePass",
     "key": "Heading.PassesForThisGame",
     "description": null,
@@ -18389,6 +18661,14 @@
     "description": "label for Italy content rating logo. Should be \"Acquisti In-Game (Include Oggetti Casuali)\" in Italian.",
     "english": "In-Experience Purchases (Includes Random Items)",
     "translation": "Käufe im Erlebnis (Einschließlich zufälliger Items)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Landing",
+    "key": "Action.LogIn",
+    "description": null,
+    "english": "Log In",
+    "translation": "Anmelden",
     "isDeprecated": false
   },
   {
@@ -21496,6 +21776,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ServerList",
+    "key": "Label.NumberOfPlayers",
+    "description": null,
+    "english": "Number of Players",
+    "translation": "Anzahl der Spieler:innen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Label.ExcludeFullServers",
+    "description": null,
+    "english": "Exclude Full Servers",
+    "translation": "Volle Server ausschließen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Action.Descending",
+    "description": null,
+    "english": "Descending",
+    "translation": "Absteigend",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ServerList",
+    "key": "Action.Ascending",
+    "description": null,
+    "english": "Ascending",
+    "translation": "Aufsteigend",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Support",
     "key": "Label.PC",
     "description": "PC",
@@ -24589,6 +24901,22 @@
     "description": null,
     "english": "Based on your past interests",
     "translation": "Basierend auf deinen bisherigen Interessen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Label.TopicSponsoredGames",
+    "description": null,
+    "english": "Sponsored",
+    "translation": "Gesponsert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Label.TopicPeopleYouMayKnow",
+    "description": null,
+    "english": "People you may know",
+    "translation": "Leute, die du vielleicht kennst",
     "isDeprecated": false
   },
   {
@@ -45652,7 +45980,7 @@
     "key": "Descrption.Impressions",
     "description": "Not used",
     "english": "Impressions are how many times your Premium upsell is shown.",
-    "translation": "Impressions geben an, wie oft dein Premium-Upsell angezeigt wird.",
+    "translation": "Aufrufe geben an, wie oft dein Premium-Upsell angezeigt wird.",
     "isDeprecated": true
   },
   {
@@ -45676,7 +46004,7 @@
     "key": "Description.ConversionRate",
     "description": "Not used",
     "english": "Conversion rate is calculated as the proportion of conversions to impressions (# of conversions / # of impressions).",
-    "translation": "Die Konversionsrate wird als Verhältnis zwischen Konversionen und Impressions berechnet (Menge der Konversionen durch Menge der Impressions).",
+    "translation": "Die Konversionsrate wird als Verhältnis zwischen Konversionen und Aufrufen berechnet (Menge der Konversionen durch Menge der Aufrufe).",
     "isDeprecated": false
   },
   {
@@ -45684,7 +46012,7 @@
     "key": "Description.Impressions",
     "description": "Not used",
     "english": "Impressions are how many times your Premium upsell is shown.",
-    "translation": "Impressions geben an, wie oft dein Premium-Upsell angezeigt wird.",
+    "translation": "Aufrufe geben an, wie oft dein Premium-Upsell angezeigt wird.",
     "isDeprecated": false
   },
   {
@@ -45716,7 +46044,7 @@
     "key": "Label.PremiumUpsellImpressions",
     "description": null,
     "english": "Impressions",
-    "translation": "Impressions",
+    "translation": "Aufrufe",
     "isDeprecated": false
   },
   {
@@ -46852,7 +47180,7 @@
     "key": "Label.Impressions",
     "description": null,
     "english": "Impressions:",
-    "translation": "Impressions:",
+    "translation": "Aufrufe:",
     "isDeprecated": false
   },
   {
@@ -46884,7 +47212,7 @@
     "key": "Label.TotalImpressions",
     "description": "total impressions",
     "english": "Total Impr:",
-    "translation": "Eindrücke insgesamt:",
+    "translation": "Aufrufe insgesamt:",
     "isDeprecated": false
   },
   {
@@ -47092,7 +47420,7 @@
     "key": "Message.EstimatedImpressions",
     "description": null,
     "english": "Estimated impressions",
-    "translation": "Geschätzte Impressions",
+    "translation": "Geschätzte Aufrufe",
     "isDeprecated": false
   },
   {
@@ -47196,7 +47524,7 @@
     "key": "Description.ImpressionsTooltip",
     "description": null,
     "english": "This estimator uses data from sponsored ads run yesterday to guess how many impressions your sponsored ad will receive.",
-    "translation": "Diese Schätzung basiert auf Daten von gesponserten Anzeigen, die gestern gestartet wurden, um abzuschätzen, wie viele Impressions deine gesponsertes Anzeige erhalten wird.",
+    "translation": "Diese Schätzung basiert auf Daten von gesponserten Anzeigen, die gestern gestartet wurden, um abzuschätzen, wie viele Aufrufe deine gesponsertes Anzeige erhalten wird.",
     "isDeprecated": false
   },
   {
@@ -47420,7 +47748,7 @@
     "key": "Description.DailySpendImpact",
     "description": null,
     "english": "The higher your daily budget, the more impressions your ad is likely to get.",
-    "translation": "Je höher dein tägliches Budget ist, desto mehr Impressions wird deine Anzeige wahrscheinlich erzielen.",
+    "translation": "Je höher dein tägliches Budget ist, desto mehr Aufrufe wird deine Anzeige wahrscheinlich erzielen.",
     "isDeprecated": false
   },
   {
@@ -47452,7 +47780,7 @@
     "key": "Description.TotalExpectedDailyImpressions",
     "description": null,
     "english": "Total Expected Daily Impressions:",
-    "translation": "Gesamte erwartete tägliche Impressions:",
+    "translation": "Gesamte erwartete tägliche Aufrufe:",
     "isDeprecated": false
   },
   {
@@ -47556,7 +47884,7 @@
     "key": "Label.AdSummaryEstimatedTotalImpressions",
     "description": null,
     "english": "Estimated Total Impressions:",
-    "translation": "Geschätzte Impressions insgesamt:",
+    "translation": "Geschätzte Aufrufe insgesamt:",
     "isDeprecated": false
   },
   {
@@ -47965,6 +48293,54 @@
     "description": "The title for a page that displays a preview of a sponsorship ad",
     "english": "Sponsored Ad Preview",
     "translation": "Vorschau der gesponserten Anzeige",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsoredExperiencePreview",
+    "description": "This is a header for the page which shows a preview for a new sponsored experience upon creation.",
+    "english": "Sponsored Experience Preview",
+    "translation": "Vorschau des gesponserten Erlebnisses",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Heading.SponsoredCatalogPreview",
+    "description": null,
+    "english": "Sponsored Catalog Preview",
+    "translation": "Vorschau des gesponserten Katalogs",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.CampaignTargetSelector",
+    "description": "the label for a dropdown menu where user can select which avatar item to create a sponsorship campaign advertisement for",
+    "english": "Select Avatar Item",
+    "translation": "Avatar-Item auswählen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Message.Loading",
+    "description": "Displayed inside a dropdown selector while waiting for the options to be loaded.",
+    "english": "Loading...",
+    "translation": "Lädt ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Audience",
+    "description": "The target audience for the ad",
+    "english": "Audience",
+    "translation": "Zielgruppe",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Label.Status",
+    "description": "The status of the ad campaign",
+    "english": "Status:",
+    "translation": "Status:",
     "isDeprecated": false
   },
   {
@@ -51004,7 +51380,7 @@
     "key": "Description.InGameAdImpressionPayout",
     "description": null,
     "english": "In Experience Ad Impression Payout",
-    "translation": "Auszahlung für Ad Impressions im Erlebnis",
+    "translation": "Auszahlung für Anzeigeaufrufe im Erlebnis",
     "isDeprecated": false
   },
   {
@@ -51861,6 +52237,70 @@
     "description": "To be made into a link",
     "english": "Learn More.",
     "translation": "Mehr erfahren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.KeepAccountSecure",
+    "description": null,
+    "english": "Keep Your Account Secure",
+    "translation": "Halte dein Konto sicher",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.DontGetLockedOut",
+    "description": null,
+    "english": "Don't Get Locked Out",
+    "translation": "Verliere nie Zugriff auf dein Konto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.RecoverIfPasswordLost",
+    "description": null,
+    "english": "Recover your account in case you lose your password.",
+    "translation": "Stelle dein Konto wieder her, falls du dein Passwort verlierst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.ImproveAccountSecurity",
+    "description": null,
+    "english": "Improve Account Security",
+    "translation": "Verbessere die Kontosicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.KeepBadActorsOut",
+    "description": null,
+    "english": "Help us keep the bad actors out.",
+    "translation": "Hilf uns, Übeltäter:innen fernzuhalten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.LetFriendsFindYou",
+    "description": null,
+    "english": "Let Your Friends Find You",
+    "translation": "Lass dich von Freund:innen finden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.ConnectWithRealLifeFriends",
+    "description": null,
+    "english": "Connect with your real life friends via phone number (opt-in only).",
+    "translation": "Verbinde dich mit deinen Freund:innen aus dem echten Leben per Telefonnummer (nur Opt-in).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.AddEmailAddress",
+    "description": null,
+    "english": "Add Email Address",
+    "translation": "E-Mail-Adresse hinzufügen",
     "isDeprecated": false
   },
   {
@@ -52788,7 +53228,7 @@
     "key": "Action.CopyURL",
     "description": null,
     "english": "Copy URL",
-    "translation": "ULR kopieren",
+    "translation": "URL kopieren",
     "isDeprecated": false
   },
   {
@@ -52972,7 +53412,7 @@
     "key": "Description.Archive",
     "description": null,
     "english": "Archiving a experience makes it private so only you can play. Any running servers will be shutdown.{lineBreak}Are you sure you want to archive this experience?",
-    "translation": "Durch das Archivieren wird das Erlebnis privat und nur du kannst es spielen. Jegliche aktiven Server werden deaktiviert. {lineBreak}Möchtest du das Erlebnis wirklich aktivieren?",
+    "translation": "Durch das Archivieren wird das Erlebnis privat und nur du kannst es spielen. Jegliche aktiven Server werden deaktiviert. {lineBreak}Möchtest du das Erlebnis wirklich archivieren?",
     "isDeprecated": false
   },
   {
@@ -53268,7 +53708,7 @@
     "key": "Action.ShowPublicOnly",
     "description": null,
     "english": "Show public only",
-    "translation": "Nur öffentlich anzeigen",
+    "translation": "Nur Öffentliche anzeigen",
     "isDeprecated": false
   },
   {
@@ -53324,7 +53764,7 @@
     "key": "Label.UniverseID",
     "description": null,
     "english": "Universe ID",
-    "translation": "Universe-ID",
+    "translation": "Universums-ID",
     "isDeprecated": false
   },
   {
@@ -53380,7 +53820,7 @@
     "key": "Description.ShutDownAllServers",
     "description": null,
     "english": "Are you sure you want to shut down all servers in all places in this universe?",
-    "translation": "Möchtest du wirklich alle Server in allen Orten in diesem Universe herunterfahren?",
+    "translation": "Möchtest du wirklich alle Server an allen Orten in diesem Universum herunterfahren?",
     "isDeprecated": false
   },
   {
@@ -53420,7 +53860,7 @@
     "key": "Error.InvalidUniverse",
     "description": null,
     "english": "The universe does not exist.",
-    "translation": "Dieses Universe existiert nicht.",
+    "translation": "Dieses Universum existiert nicht.",
     "isDeprecated": false
   },
   {
@@ -53428,7 +53868,7 @@
     "key": "Error.NoRootPlace",
     "description": null,
     "english": "This universe does not have a root place.",
-    "translation": "Das Universe hat keinen Rootplatz.",
+    "translation": "Das Universum hat keinen Rootplatz.",
     "isDeprecated": false
   },
   {
@@ -53436,7 +53876,7 @@
     "key": "Error.InvalidUniversePermissions",
     "description": null,
     "english": "You are not authorized to configure this universe.",
-    "translation": "Du bist nicht berechtigt, dieses Universe zu konfigurieren.",
+    "translation": "Du bist nicht berechtigt, dieses Universum zu konfigurieren.",
     "isDeprecated": false
   },
   {
@@ -53444,7 +53884,7 @@
     "key": "Error.InvalidRootPlace",
     "description": null,
     "english": "The root place for this universe is under review and can not be activated.",
-    "translation": "Der Rootplatz für dieses Universe wird überprüft und kann nicht aktiviert werden.",
+    "translation": "Der Rootplatz für dieses Universum wird überprüft und kann nicht aktiviert werden.",
     "isDeprecated": false
   },
   {
@@ -53884,7 +54324,7 @@
     "key": "Description.CtrTooltip",
     "description": null,
     "english": "Click-through rate: clicks/impressions",
-    "translation": "Click-Through-Rate: Clicks/Impressions",
+    "translation": "Click-Through-Rate: Clicks/Aufrufe",
     "isDeprecated": false
   },
   {
@@ -54028,7 +54468,7 @@
     "key": "Label.AdImpressions",
     "description": null,
     "english": "Impressions",
-    "translation": "Impressions",
+    "translation": "Aufrufe",
     "isDeprecated": false
   },
   {
@@ -54196,7 +54636,7 @@
     "key": "Description.ConversionRateTooltip",
     "description": null,
     "english": "Conversions (attributed plays)/impressions",
-    "translation": "Konversionen (zugewiesene Spielanzahl)/Impressions",
+    "translation": "Konversionen (zugewiesene Spielanzahl)/Aufrufe",
     "isDeprecated": false
   },
   {
@@ -54461,6 +54901,86 @@
     "description": "The label for a dropdown selector that contains the creations (experiences, avatar items, groups) that are owned the user or group named \"ownerName\"",
     "english": "{ownerName}'s Creations",
     "translation": "{ownerName}s Schöpfungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltip",
+    "description": null,
+    "english": "Roblox's estimate for how many impressions were attempted to be shown to users",
+    "translation": "Roblox' Schätzung für die Anzahl der Aufrufe, die versucht wurden, Nutzer:innen anzuzeigen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.AttributedVisitsTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression or click on your ad",
+    "translation": "Wie viele Personen nach einem Aufruf dein Erlebnis gespielt oder auf deine Anzeige geklickt haben ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.PostImpressionTooltip",
+    "description": null,
+    "english": "How many people have played your experience after an impression of your ad",
+    "translation": "Wie viele Personen nach einem Aufruf deiner Anzeige dein Erlebnis gespielt haben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.PostImpression",
+    "description": null,
+    "english": "Post Impression",
+    "translation": "Nach Aufruf",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.Audience",
+    "description": "The target audience for the ad",
+    "english": "Audience",
+    "translation": "Zielgruppe",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.Status",
+    "description": "The status of the ad campaign",
+    "english": "Status:",
+    "translation": "Status:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.SelectExperience",
+    "description": "A label used for a dropdown that allows the user to select which experience they want to advertise.",
+    "english": "Select Experience",
+    "translation": "Erlebnis wählen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Label.CampaignTargetSelector",
+    "description": null,
+    "english": "Select Avatar Item",
+    "translation": "Avatar-Item auswählen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Feature.ImpressionsTooltipV2",
+    "description": "wrong key, don't use",
+    "english": "Estimate for the number of times the ad was shown to a person or was served",
+    "translation": "Schätzung, wie viele Male die Anzeige einer Person angezeigt oder geschaltet wurde",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SponsoredAdsList",
+    "key": "Description.ImpressionsTooltipV2",
+    "description": null,
+    "english": "Estimate for the number of times the ad was shown to a person or was served",
+    "translation": "Schätzung, wie viele Male die Anzeige einer Person angezeigt oder geschaltet wurde",
     "isDeprecated": false
   },
   {
@@ -55973,6 +56493,62 @@
     "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
     "english": "Premium Badge Icon",
     "translation": "Premium-Abzeichen-Symbol",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfo",
+    "description": "Info that will be displayed in a modal if the verified badge is clicked",
+    "english": "Info",
+    "translation": "Info",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoLink",
+    "description": "Text for a link to “Learn More” about Verified Badges",
+    "english": "Learn More",
+    "translation": "Mehr erfahren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "UsernameChangeWithVerifiedBadge",
+    "description": "Text warning a user if they change their username they will lose the verified badge",
+    "english": "Info",
+    "translation": "Info",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "DisplayNameChangeWithVerifiedBadge",
+    "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
+    "english": "Info",
+    "translation": "Info",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "ThisActionWillRemoveTheVerifiedBadge",
+    "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
+    "english": "The verified badge will be removed.",
+    "translation": "Das Verifiziertenabzeichen wird entfernt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "2SVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Info",
+    "translation": "Info",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "TwoSVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Info",
+    "translation": "Info",
     "isDeprecated": false
   },
   {
@@ -58396,7 +58972,7 @@
     "key": "Message.GuidelinesNotStarted",
     "description": null,
     "english": "Click “Start” to answer a few questions about your experience. Your answers will generate a set of Guidelines for the content in your experience, which currently include an age recommendation and a regional compliance assessment.",
-    "translation": "Klicke auf „Start“, um einige Fragen über dein Erlebnis zu beantworten. Deine Antworten werden eine Reihe von Richtlinien für den Inhalt deines Erlebnisses erstellen, die derzeit eine Altersempfehlung und eine regionale Compliance-Bewertung beinhalten.",
+    "translation": "Klicke auf „Beginnen“, um einige Fragen über dein Erlebnis zu beantworten. Deine Antworten werden eine Reihe von Richtlinien für den Inhalt deines Erlebnisses erstellen, die derzeit eine Altersempfehlung und eine regionale Compliance-Bewertung beinhalten.",
     "isDeprecated": false
   },
   {
@@ -58460,7 +59036,7 @@
     "key": "Message.ValidationFailed",
     "description": null,
     "english": "The questionnaire validation failed. There are missing or invalid answers, please review all questions and ensure they are answered.",
-    "translation": "Die Prüfung des Fragebogens ist fehlgeschlagen. Es gibt fehlende oder ungültige Antworten. Bitte überprüfe alle Fragen erneut und vergewissere dich, dass alle beantwortet sind.",
+    "translation": "Die Prüfung des Fragebogens ist fehlgeschlagen. Es gibt fehlende oder ungültige Antworten. Bitte überprüfe alle Fragen erneut und vergewissere dich, dass alle Fragen beantwortet sind.",
     "isDeprecated": false
   },
   {
@@ -60944,6 +61520,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.BoostYourAccountSecurity",
+    "description": "Banner headline for broad authenticator upsell flow",
+    "english": "Boost Your Account Security",
+    "translation": "Erhöhe deine Kontosicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ReceiveSecurityCodesMessage",
+    "description": "Explain to users what the broad authenticator upsell provides.",
+    "english": "Receive security codes on another device to protect your experiences, robux, limiteds, groups, and more.",
+    "translation": "Erhalte Sicherheitscodes auf einem anderen Gerät, um deine Erlebnisse, Robux, limitierten Items, Gruppen und mehr zu schützen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.SetUpAuthenticatorInBanner",
+    "description": "Banner text for setting up authenticator through broad upsell.",
+    "english": "Set Up Authenticator",
+    "translation": "Authentifizierungsapp einrichten",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Heading.VerifyAge",
     "description": null,
@@ -61396,7 +61996,7 @@
     "key": "Label.BirthdayChangeWarning",
     "description": "Updated - https://jira.rbx.com/browse/AA-169",
     "english": "You are about to change a birthday that has been verified.\n \nIf you change your date of birth, your age will no longer be verified and you will lose access to age restricted features. Are you sure you want to proceed?",
-    "translation": "Du änderst gleich den Geburtstag, der verifiziert wurde.\n\nWenn du dein Geburtsdatum jetzt änderst, kannst du dein Alter nicht erneut verifizieren und du wirst keinen Zugriff auf altersbeschränkte Funktionen mehr haben. DIES KANN NICHT RÜCKGÄNGIG GEMACHT WERDEN. Möchtest du wirklich fortfahren?",
+    "translation": "Du änderst gleich den Geburtstag, der verifiziert wurde.\n\nWenn du dein Geburtsdatum jetzt änderst, ist dein Alter nicht mehr verifiziert und du erhältst keinen Zugriff auf altersbeschränkte Funktionen mehr. Möchtest du wirklich fortfahren?",
     "isDeprecated": false
   },
   {
@@ -61509,6 +62109,38 @@
     "description": "legal disclaimer text",
     "english": "I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
     "translation": "Ich bin damit einverstanden, dass Roblox die <b>Aufzeichnung meiner Stimme</b> ausschließlich zu Moderations- und Sicherheitszwecken sammelt, nutzt und speichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.FollowCommunityStandards",
+    "description": "Identical to Feature.AccountSettings.Label.FollowCommunityStandards",
+    "english": "Follow our {linkStart}Community Standards{linkEnd} when talking and report abuse if you hear it.",
+    "translation": "Befolge unsere {linkStart}Community-Regeln{linkEnd}, wenn du sprichst, und melde Missbrauch, wenn du ihn hörst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ImplicitConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ImplicitConsentVoiceCollection",
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "Durch das Anklicken erkläre ich mich einverstanden, dass Roblox die {linkStart}Aufzeichnung meiner Stimme{linkEnd} ausschließlich zu Moderations- und Sicherheitszwecken sammelt, nutzt und speichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ConsentVoiceCollection",
+    "description": "Identical to Feature.AccountSettings.Label.ConsentVoiceCollection",
+    "english": "I consent to Roblox’s collection, use, and storage of my {linkStart}voice recording{linkEnd} for moderation and safety purposes only.",
+    "translation": "Ich bin damit einverstanden, dass Roblox die {linkStart}Aufzeichnung meiner Stimme{linkEnd} ausschließlich zu Moderations- und Sicherheitszwecken sammelt, nutzt und speichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": "exact same as Label.LearnMoreAboutVoiceRecording in Feature.AccountSettings",
+    "english": "Learn More about Voice Recording",
+    "translation": "Erfahre mehr über Sprachaufnahmen",
     "isDeprecated": false
   },
   {
@@ -63701,6 +64333,14 @@
     "description": null,
     "english": "New Assets can be published to the listed creator account above",
     "translation": "Neue Assets können auf dem oben aufgeführten Creator-Konto veröffentlicht werden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "OperationDescription.MessagingServicePublish",
+    "description": null,
+    "english": "This grants the ability to publish messages on behalf of users.",
+    "translation": "Dies gewährt die Fähigkeit, Nachrichten im Namen von Nutzer:innen zu veröffentlichen.",
     "isDeprecated": false
   },
   {
@@ -67776,6 +68416,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.TryAgain",
+    "description": null,
+    "english": "Try Again",
+    "translation": "Erneut versuchen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.FailedToFetchResourcesLabel",
+    "description": null,
+    "english": "Failed to fetch resources",
+    "translation": "Fehler beim Abrufen der Ressourcen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "OperationDescription.MessagingServicePublish",
+    "description": null,
+    "english": "This grants the ability to publish messages on your behalf.",
+    "translation": "Dies gewährt die Fähigkeit, Nachrichten in deinem Namen zu veröffentlichen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.MessagingServicePublishOperation",
+    "description": null,
+    "english": "Publish",
+    "translation": "Veröffentlichen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDocumentation.Common",
     "key": "Label.CodeSnippetCopyMessage",
     "description": null,
@@ -68701,6 +69373,38 @@
     "description": null,
     "english": "Unable to load Credentials metadata",
     "translation": "Anmeldemetadaten konnten nicht geladen werden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.Disabled",
+    "description": null,
+    "english": "Disabled",
+    "translation": "Deaktivieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppDescriptionMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "Bis zu {maxLength} Zeichen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppNameMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "Bis zu {maxLength} Zeichen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Description.OAuthAppRedirectUriMaxLength",
+    "description": null,
+    "english": "Up to {maxLength} characters",
+    "translation": "Bis zu {maxLength} Zeichen",
     "isDeprecated": false
   },
   {
@@ -70280,6 +70984,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreators",
+    "description": "Label before checkbox to include unverified creators.",
+    "english": "Include unverified creators",
+    "translation": "Nicht verifizierte Creator:innen einschließen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreatorsDescription",
+    "description": null,
+    "english": "Assets from unverified sources add more risk of malicious behavior",
+    "translation": "Assets aus nicht verifizierten Quellen erhöhen das Risiko schädlichen Verhaltens",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Browse",
+    "key": "Label.IncludeUnverifiedCreatorsTooltip",
+    "description": null,
+    "english": "Unverified creators have not confirmed their real life identity via an ID or phone",
+    "translation": "Nicht verifizierte Creator:innen haben nicht ihre echte Identität per Ausweis oder Telefon bestätigt",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.CDRedirection",
     "key": "Message.CDRedirectionMessage",
     "description": null,
@@ -70333,6 +71061,142 @@
     "description": null,
     "english": "The {pageName} has been migrated to the Creator Dashboard. You can use the updated page by clicking {linkStart}here{linkEnd}.",
     "translation": "{pageName} wurde zum Creator Dashboard bewegt. Klicke {linkStart}hier{linkEnd}, um die aktualisierte Seite zu benutzen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureExperiencePageName",
+    "description": null,
+    "english": "Basic Settings Page",
+    "translation": "Grundeinstellungen-Seite",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewPlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "Orteseite",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewDeveloperProductsPageName",
+    "description": null,
+    "english": "Developer Products Page",
+    "translation": "Entwicklerprodukte-Seite",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureSocialLinksPageName",
+    "description": null,
+    "english": "Social Links Page",
+    "translation": "Social-Links-Seite",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ConfigureUpdatesPageName",
+    "description": null,
+    "english": "Updates Page",
+    "translation": "Seite für Updates",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewExperiencePlacesPageName",
+    "description": null,
+    "english": "Places Page",
+    "translation": "Seite für Orte",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAssetAdsPageName",
+    "description": null,
+    "english": "User Ads Page",
+    "translation": "Seite für Nutzeranzeigen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateShirtsPageName",
+    "description": null,
+    "english": "Shirts Creation Page",
+    "translation": "Seite zur Erstellung von Shirts",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreatePantsPageName",
+    "description": null,
+    "english": "Pants Creation Page",
+    "translation": "Seite zur Erstellung von Hosen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateDecalPageName",
+    "description": null,
+    "english": "Decal Creation Page",
+    "translation": "Seite zur Erstellung von Decals",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateAudioPageName",
+    "description": null,
+    "english": "Audio Creation Page",
+    "translation": "Seite zur Erstellung von Audio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateTeeShirtsPageName",
+    "description": null,
+    "english": "T-Shirts Creation Page",
+    "translation": "Seite zur Erstellung von T-Shirts",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewModelsPageName",
+    "description": null,
+    "english": "Models Page",
+    "translation": "Seite für Modelle",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.CreateGamePassPageName",
+    "description": null,
+    "english": "Pass Creation Page",
+    "translation": "Seite zur Erstellung von Pässen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewCreationsPageName",
+    "description": null,
+    "english": "Experiences Page",
+    "translation": "Seite für Erlebnisse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.DevExPageName",
+    "description": null,
+    "english": "Developer Exchange Page",
+    "translation": "Seite für Developer Exchange",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.CDRedirection",
+    "key": "Label.ViewAdvertiseExperiencePageName",
+    "description": null,
+    "english": "Sponsored Ads Page",
+    "translation": "Seite für gesponserte Werbung",
     "isDeprecated": false
   },
   {
@@ -70493,6 +71357,14 @@
     "description": "Notification Type Experience",
     "english": "Experience",
     "translation": "Erlebnis",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.NotificationTypeExperienceInvitation",
+    "description": "Notification Type ExperienceInvitation",
+    "english": "ExperienceInvitation",
+    "translation": "Erlebniseinladung",
     "isDeprecated": false
   },
   {
@@ -75237,6 +76109,182 @@
     "description": null,
     "english": "The social link url was improperly formatted.",
     "translation": "Die Social Link URL wurde falsch formatiert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.PluginSecurity",
+    "description": null,
+    "english": "Plugin Security",
+    "translation": "Plugin-Sicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.LocalUserSecurity",
+    "description": null,
+    "english": "Local User Security",
+    "translation": "Lokale Nutzersicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.RobloxScriptSecurity",
+    "description": null,
+    "english": "Roblox Script Security",
+    "translation": "Roblox-Skript-Sicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.RobloxSecurity",
+    "description": null,
+    "english": "Roblox Security",
+    "translation": "Roblox-Sicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NotAccessibleSecurity",
+    "description": null,
+    "english": "Not Accessible Security",
+    "translation": "Nicht zugängliche Sicherheit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.ReadParallel",
+    "description": null,
+    "english": "Read Parallel",
+    "translation": "Parallel lesen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.WriteParallel",
+    "description": null,
+    "english": "Write Parallel",
+    "translation": "Parallel schreiben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Hidden",
+    "description": null,
+    "english": "Hidden",
+    "translation": "Verborgen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NotReplicated",
+    "description": null,
+    "english": "Not Replicated",
+    "translation": "Nicht repliziert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Readonly",
+    "description": null,
+    "english": "Read Only",
+    "translation": "Schreibgeschützt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NotScriptable",
+    "description": null,
+    "english": "Not Scriptable",
+    "translation": "Nicht skriptfähig",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NotBrowsable",
+    "description": null,
+    "english": "Not Browsable",
+    "translation": "Nicht durchsuchbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NotCreatable",
+    "description": null,
+    "english": "Not Creatable",
+    "translation": "Nicht erstellbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.CanYield",
+    "description": null,
+    "english": "Can Yield",
+    "translation": "Kann anhalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Yields",
+    "description": null,
+    "english": "Yields",
+    "translation": "Angehalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.NoYield",
+    "description": null,
+    "english": "No Yield",
+    "translation": "Nicht angehalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Service",
+    "description": null,
+    "english": "Service",
+    "translation": "Dienst",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.PlayerReplicated",
+    "description": null,
+    "english": "Player Replicated",
+    "translation": "Spieler repliziert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Deprecated",
+    "description": null,
+    "english": "Deprecated",
+    "translation": "Veraltet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.CustomLuaState",
+    "description": null,
+    "english": "Custom Lua State",
+    "translation": "Eigener Lua-Status",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.Settings",
+    "description": null,
+    "english": "Settings",
+    "translation": "Einstellungen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.TagLabel",
+    "key": "Label.UserSettings",
+    "description": null,
+    "english": "User Settings",
+    "translation": "Benutzereinstellungen",
     "isDeprecated": false
   }
 ]
