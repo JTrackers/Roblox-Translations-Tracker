@@ -840,6 +840,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowed",
+    "description": null,
+    "english": "Your account cannot log in with a one-time code",
+    "translation": "일회용 코드로 로그인할 수 없는 계정입니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV2",
+    "description": null,
+    "english": "You must log in with a different method",
+    "translation": "다른 방법으로 로그인해야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV3",
+    "description": null,
+    "english": "Your account is ineligible to log in with a one-time code",
+    "translation": "일회용 코드 로그인 요건을 충족하지 않는 계정입니다",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -4252,7 +4276,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
-    "translation": "코드를 입력하고 확인란을 선택하면 자녀의 Roblox 이용에 동의하게 됩니다.",
+    "translation": "확인란을 선택하고 계속을 클릭하면 자녀의 Roblox 이용을 승인하게 됩니다.",
     "isDeprecated": false
   },
   {
@@ -13149,6 +13173,38 @@
     "description": null,
     "english": "17+ (Suitable for ages 17 and older)",
     "translation": "17+ (만 17세 이상 이용 가능)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "나이 인증",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ToAccountInfo",
+    "description": null,
+    "english": "Go to Account Info",
+    "translation": "계정 정보로 이동",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NeedIdVerification",
+    "description": null,
+    "english": "To gain access to 17+ content, you must verify that you are 17 years old or older.",
+    "translation": "17세 이용가 콘텐츠를 이용하려면 17세 이상임을 인증해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowedExperience",
+    "description": null,
+    "english": "All experiences are searchable. Experiences without {linkStart}Experience Guidelines{linkEnd} are treated as 13+ and are prohibited from displaying any 17+ content. All content on Roblox must comply with the {communityLinkStart}Roblox Community Standards{communityLinkEnd}.",
+    "translation": "모든 체험은 검색에 나타납니다. {linkStart}체험 가이드라인{linkEnd}이 없는 체험은 13세 이용가로 취급되며 17세 이상 목록에서 제외됩니다. Roblox의 모든 콘텐츠는 {communityLinkStart}Roblox 커뮤니티 규정{communityLinkEnd}을 준수해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -22424,6 +22480,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PlayerSearchResults",
+    "key": "Label.Previously",
+    "description": "Used to display previous username context under the playertile, such as \"Previously @previousUsername\". (This translation should be as short as possible since we don't have a lot of space to display context)",
+    "english": "Previously",
+    "translation": "이전 이름",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Plugins",
     "key": "Label.ErrorTitle",
     "description": null,
@@ -26763,7 +26827,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Error.Default",
     "description": null,
-    "english": "Something went wrong. Please tr",
+    "english": "Something went wrong. Please try again.",
     "translation": "오류가 발생했어요. 다시 시도하세요.",
     "isDeprecated": false
   },
@@ -66571,7 +66635,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Heading.ActivateAnalyticsDashboard",
     "description": null,
-    "english": "Activate Analytics Dashboard",
+    "english": "Access Analytics Dashboard",
     "translation": "애널리틱스 대시보드 활성화",
     "isDeprecated": false
   },
@@ -68020,7 +68084,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "체험 가이드라인은 세부 정보 페이지에서 사용자에게 표시됩니다. 체험이 적격성을 갖추게 되면 바로 가이드라인을 생성하세요.",
+    "translation": "체험 가이드라인은 체험 세부 정보 페이지에 나타나며 검색 및 탐색에 적용됩니다. 가이드라인이 없는 체험은 빈 레이블로 표시되며 9세 미만의 사용자에게는 권장되지 않습니다. 해당되는 경우 가능한 한 신속히 체험 가이드라인을 생성하세요.",
     "isDeprecated": false
   },
   {
@@ -68052,7 +68116,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "체험 가이드라인은 세부 정보 페이지에서 사용자에게 표시됩니다. 체험이 적격성을 갖추게 되면 바로 가이드라인을 생성하세요.",
+    "translation": "체험 가이드라인은 체험 세부 정보 페이지에 나타나며 검색 및 탐색에 적용됩니다. 가이드라인이 없는 체험은 빈 레이블로 표시되며 9세 미만의 사용자에게는 권장되지 않습니다. 해당되는 경우 가능한 한 신속히 체험 가이드라인을 생성하세요.",
     "isDeprecated": false
   },
   {
@@ -70248,6 +70312,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeCorrectedVariable",
+    "description": null,
+    "english": "Publishing Fee: {publishingFee}",
+    "translation": "게시 수수료: {publishingFee}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeNoCapitalFCorrectedVariable",
+    "description": null,
+    "english": "Publishing fee: {publishingFee}",
+    "translation": "게시 수수료: {publishingFee}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -71668,7 +71748,7 @@
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
     "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
-    "translation": "인증 앱을 통한 2단계 인증 사용",
+    "translation": "인증 앱을 통한 2단계 인증을 사용하도록 설정하세요",
     "isDeprecated": false
   },
   {
@@ -71684,7 +71764,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
     "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
-    "translation": "계정이 도용될 경우, Roblox에서는 이를 복구하거나 손실된 아이템 및 가상 통화를 포함한 계정의 가치를 복구하지 못할 수 있습니다.",
+    "translation": "계정이 도용될 경우, Roblox에서는 이를 복구하지 못할 가능성이 높습니다.",
     "isDeprecated": false
   },
   {
@@ -71692,7 +71772,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
     "description": null,
     "english": "Please make sure 2-Step Verification via Authenticator is enabled to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
-    "translation": "계정 보호를 위해 인증 앱을 통한 2단계 인증을 설정하세요. {linkStartSettings}계정 설정{linkEndSettings}으로 이동해 이 작업을 수행할 수 있습니다.{lineBreak}{lineBreak}계정이 도용될 경우, Roblox에서는 이를 복구하거나 손실된 아이템 및 가상 통화를 포함한 계정의 가치를 복구하지 못할 수 있습니다. 자세한 내용은 {linkStartHelp}도움말 페이지{linkEndHelp}에서 확인하세요.",
+    "translation": "계정 보호를 위해 반드시 인증 앱을 통한 2단계 인증을 설정하세요. {linkStartSettings}계정 설정{linkEndSettings}으로 이동해 이 작업을 수행할 수 있습니다.{lineBreak}{lineBreak}계정이 도용될 경우, Roblox에서는 해당 계정, 그리고 손실된 아이템 및 가상 통화를 포함한 계정의 가치를 복구하지 못할 가능성이 높습니다. 자세한 내용은 {linkStartHelp}도움말 페이지{linkEndHelp}에서 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -76301,6 +76381,22 @@
     "description": "Section heading for Genre Explorer. Showing on Discover page on top of the carousel.",
     "english": "Browse by Category",
     "translation": "카테고리별로 둘러보기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicle",
+    "description": "Genre Tile Title - Vehicle",
+    "english": "Vehicle",
+    "translation": "탈것",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicles",
+    "description": "Genre Tile Title - Vehicles",
+    "english": "Vehicles",
+    "translation": "탈것",
     "isDeprecated": false
   },
   {
@@ -91595,7 +91691,7 @@
     "namespace": "CreatorDashboard.DeveloperItem",
     "key": "Message.ExperienceAccessNotAvailable",
     "description": null,
-    "english": "Enabling Marketplace is unavailable at this time. Please check back later.",
+    "english": "Audio files cannot be made public at this time. Please check back at a later date.",
     "translation": "현재 마켓플레이스를 활성화할 수 없습니다. 나중에 다시 확인하세요.",
     "isDeprecated": false
   },
@@ -93416,6 +93512,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventModeratedTitle",
+    "description": "shown in place of title when content is moderated",
+    "english": "[CONTENT MODERATED]",
+    "translation": "[콘텐츠가 검열됨]",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.Settings",
     "description": "Title for page that controls settings across Creator Dashboard",
@@ -94712,6 +94816,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V2.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}{boldStart}Verification Code: {code}{boldEnd}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code above to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our {linkTagWithParentGuideLinkStart}Parent’s Guide{linkTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "안녕하세요.{lineBreak}{lineBreak}몰입형 사용자 제작 3D 세상에서 함께 상상하고, 만들고, 플레이할 수 있는 온라인 엔터테인먼트 플랫폼, Roblox입니다. 이곳에서 보호자님의 자녀가 계정 생성을 진행 중입니다.{lineBreak}{lineBreak}{boldStart}인증 코드: {code}{boldEnd}{lineBreak}{lineBreak}그 과정에서 사용자 이름, 생년월일, 보호자 이메일 주소가 Roblox에 제공되었습니다. 본 계정 생성 절차를 완료하려면 Roblox 사용에 대한 보호자의 동의가 필요합니다.{lineBreak}{lineBreak}진행하려면 위의 코드를 입력해 가입 절차를 완료하고 자녀의 Roblox 사용에 동의하면 됩니다. 코드를 입력하면 보호자 및 그 자녀는 중재 조항을 포함한 {linkTagWithTermsLinkStart}Roblox 약관{linkTagEnd} 및 {linkTagWithPrivacyPolicyLinkStart}개인정보 처리방침{linkTagEnd}에 동의하게 되고, 자녀의 Roblox 사용을 관리하고 전적인 책임을 지며 적절한 경우 서비스와 관련한 자녀의 개인 데이터 처리에 동의하게 됩니다.{lineBreak}{lineBreak}{boldStart}Roblox 보호자 가이드{boldEnd}{lineBreak}{lineBreak}{linkTagWithParentGuideLinkStart}보호자 가이드{linkTagEnd}를 방문해 Roblox에 대해 자세히 알아보고, 자녀의 긍정적인 Roblox 경험을 위한 유용한 팁을 살펴보세요.{lineBreak}{lineBreak}{boldStart}개인정보{boldEnd}{lineBreak}{lineBreak}필요할 경우 https://www.roblox.com/support에서 언제든지 자녀 계정의 삭제를 요청할 수 있습니다. 보호자 이메일은 다른 목적으로 사용되거나 제삼자에게 공개되거나 자녀로부터 수집된 기타 개인정보와 통합되지 않습니다. 자세한 내용은 개인정보 처리방침에서 확인하세요.{lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 드림",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.StripeIntegration",
     "key": "Stripe.OneTimePurchase.Disclosure",
     "description": null,
@@ -95053,6 +95165,30 @@
     "description": "displayed when a request fails",
     "english": "An unknown error occured.",
     "translation": "알 수 없는 오류가 발생했습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownDevice",
+    "description": "Displayed when information about a session's user agent is unknown",
+    "english": "Unknown Device",
+    "translation": "알 수 없는 기기",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownLocation",
+    "description": "Displayed when information about a session's location is unknown",
+    "english": "Unknown Location",
+    "translation": "알 수 없는 위치",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownTime",
+    "description": "Displayed when information about a session's last active time is unknown",
+    "english": "Unknown Time",
+    "translation": "알 수 없는 시간",
     "isDeprecated": false
   },
   {

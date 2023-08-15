@@ -820,7 +820,7 @@
     "key": "Action.LearnMoreOneTimeCode",
     "description": null,
     "english": "Learn more about One-Time Code",
-    "translation": "Más información sobre el código de una sola vez",
+    "translation": "Más información sobre el código de un solo uso",
     "isDeprecated": false
   },
   {
@@ -828,7 +828,7 @@
     "key": "Action.LogInWithOneTimeCode",
     "description": null,
     "english": "Log In With One-Time Code",
-    "translation": "Iniciar sesión con el código de una sola vez",
+    "translation": "Iniciar sesión con el código de un solo uso",
     "isDeprecated": false
   },
   {
@@ -837,6 +837,30 @@
     "description": null,
     "english": "Unable to log in. Please wait a bit.",
     "translation": "No se puede iniciar sesión. Espera un momento.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowed",
+    "description": null,
+    "english": "Your account cannot log in with a one-time code",
+    "translation": "Tu cuenta no puede iniciar sesión con un código de un solo uso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV2",
+    "description": null,
+    "english": "You must log in with a different method",
+    "translation": "Debes iniciar sesión con un método diferente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV3",
+    "description": null,
+    "english": "Your account is ineligible to log in with a one-time code",
+    "translation": "Tu cuenta no es elegible para iniciar sesión con un código de un solo uso",
     "isDeprecated": false
   },
   {
@@ -3212,7 +3236,7 @@
     "key": "Description.ShortCodeLegalDisclaimer",
     "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
     "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
-    "translation": "Al hacer clic en Continuar, envías tu número de teléfono y aceptas nuestros {linkTagWithSmsTos}Términos de uso de SMS{linkTagEnd} y nuestra {linkTagWithPrivacyPolicy}Política de privacidad{linkTagEnd}. Te enviaremos un código de verificación de una sola vez. Pueden aplicarse tarifas de mensajes y datos. Responde HELP para obtener asistencia.",
+    "translation": "Al hacer clic en Continuar, envías tu número de teléfono y aceptas nuestros {linkTagWithSmsTos}Términos de uso de SMS{linkTagEnd} y nuestra {linkTagWithPrivacyPolicy}Política de privacidad{linkTagEnd}. Te enviaremos un código de verificación de un solo uso. Pueden aplicarse tarifas de mensajes y datos. Responde HELP para obtener asistencia.",
     "isDeprecated": false
   },
   {
@@ -4252,7 +4276,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
-    "translation": "Al ingresar el código y marcar esta casilla, está dando consentimiento a su hijo(a) para que acceda a Roblox.",
+    "translation": "Al marcar esta casilla y hacer clic en Continuar, está dando consentimiento para que su hijo acceda a Roblox.",
     "isDeprecated": false
   },
   {
@@ -13149,6 +13173,38 @@
     "description": null,
     "english": "17+ (Suitable for ages 17 and older)",
     "translation": "17+ (Apta para 17 años o mayor)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "Verifica tu edad",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ToAccountInfo",
+    "description": null,
+    "english": "Go to Account Info",
+    "translation": "Ir a Información de la cuenta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NeedIdVerification",
+    "description": null,
+    "english": "To gain access to 17+ content, you must verify that you are 17 years old or older.",
+    "translation": "Para acceder al contenido 17+, tienes que verificar que tienes 17 años o más.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AllowedExperience",
+    "description": null,
+    "english": "All experiences are searchable. Experiences without {linkStart}Experience Guidelines{linkEnd} are treated as 13+ and are prohibited from displaying any 17+ content. All content on Roblox must comply with the {communityLinkStart}Roblox Community Standards{communityLinkEnd}.",
+    "translation": "Todas las experiencias se pueden buscar. Las experiencias sin las {linkStart}Directrices de la experiencia{linkEnd} se tratan como 13+ y no se les permite mostrar contenidos para 17+. Todo el contenido de Roblox debe cumplir con las {communityLinkStart}Normas de la comunidad de Roblox{communityLinkEnd}.",
     "isDeprecated": false
   },
   {
@@ -22424,6 +22480,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.PlayerSearchResults",
+    "key": "Label.Previously",
+    "description": "Used to display previous username context under the playertile, such as \"Previously @previousUsername\". (This translation should be as short as possible since we don't have a lot of space to display context)",
+    "english": "Previously",
+    "translation": "Anteriormente",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Plugins",
     "key": "Label.ErrorTitle",
     "description": null,
@@ -26763,7 +26827,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Error.Default",
     "description": null,
-    "english": "Something went wrong. Please tr",
+    "english": "Something went wrong. Please try again.",
     "translation": "Algo salió mal. Inténtalo de nuevo.",
     "isDeprecated": false
   },
@@ -66283,7 +66347,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Heading.ActivateAnalyticsDashboard",
     "description": null,
-    "english": "Activate Analytics Dashboard",
+    "english": "Access Analytics Dashboard",
     "translation": "Activar Panel de análisis",
     "isDeprecated": false
   },
@@ -67740,7 +67804,7 @@
     "key": "Message.ImpactOfGuidelines",
     "description": null,
     "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "Las directrices de una experiencia son visibles para los usuarios en la página de detalles. Genéralas para tu experiencia tan pronto como sea elegible.",
+    "translation": "Las Directrices de la experiencia aparecen en la página de detalles de la misma y se utilizan para la búsqueda y el descubrimiento. Las experiencias sin directrices mostrarán una etiqueta en blanco y no se recomendarán a los usuarios menores de nueve años. Genera las Directrices para tu experiencia tan pronto como sea elegible.",
     "isDeprecated": false
   },
   {
@@ -67772,7 +67836,7 @@
     "key": "Message.ImpactOfGuidelinesPreview",
     "description": null,
     "english": "Experience Guidelines appear on the experience detail page and are used to inform search and discovery. Experiences without guidelines will show a blank label and won't get recommended to users under nine years old. Please generate Guidelines for your experience as soon as it is eligible.",
-    "translation": "Las directrices de una experiencia son visibles para los usuarios en la página de detalles. Genéralas para tu experiencia tan pronto como sea elegible.",
+    "translation": "Las Directrices de la experiencia aparecen en la página de detalles de la misma y se utilizan para la búsqueda y el descubrimiento. Las experiencias sin directrices mostrarán una etiqueta en blanco y no se recomendarán a los usuarios menores de nueve años. Genera las Directrices para tu experiencia tan pronto como sea elegible.",
     "isDeprecated": false
   },
   {
@@ -69968,6 +70032,22 @@
     "isDeprecated": true
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeCorrectedVariable",
+    "description": null,
+    "english": "Publishing Fee: {publishingFee}",
+    "translation": "Cuota de publicación: {publishingFee}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.PublishingFeeNoCapitalFCorrectedVariable",
+    "description": null,
+    "english": "Publishing fee: {publishingFee}",
+    "translation": "Cuota de publicación: {publishingFee}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountCompromisePrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -71388,7 +71468,7 @@
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
     "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
-    "translation": "Activar la Verificación en dos pasos con el Autenticador",
+    "translation": "Asegúrate de que la Verificación en dos pasos con el Autenticador esté activada",
     "isDeprecated": false
   },
   {
@@ -71404,7 +71484,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
     "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
-    "translation": "Si tu cuenta se ve afectada, es poco probable que Roblox pueda restaurarla o recuperar su valor, incluyendo objetos perdidos y moneda virtual.",
+    "translation": "Si tu cuenta se ve afectada, es poco probable que Roblox pueda restaurarla.",
     "isDeprecated": false
   },
   {
@@ -71412,7 +71492,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
     "description": null,
     "english": "Please make sure 2-Step Verification via Authenticator is enabled to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
-    "translation": "Activa la Verificación en dos pasos con el Autenticador para proteger tu cuenta. Puedes activarla yendo a {linkStartSettings}Configuración de la cuenta{linkEndSettings}.{lineBreak}{lineBreak}Si tu cuenta se ve afectada, es poco probable que Roblox pueda restaurarla o recuperar su valor, incluyendo objetos perdidos y moneda virtual. Más información en nuestra {linkStartHelp}Página de ayuda{linkEndHelp}.",
+    "translation": "Asegúrate de que la Verificación en dos pasos con el Autenticador esté activada para proteger tu cuenta. Puedes activarla yendo a {linkStartSettings}Configuración de la cuenta{linkEndSettings}.{lineBreak}{lineBreak}Si tu cuenta se ve afectada, es poco probable que Roblox pueda restaurarla o recuperar su valor, incluyendo objetos perdidos y moneda virtual. Más información en nuestra {linkStartHelp}Página de ayuda{linkEndHelp}.",
     "isDeprecated": false
   },
   {
@@ -76021,6 +76101,22 @@
     "description": "Section heading for Genre Explorer. Showing on Discover page on top of the carousel.",
     "english": "Browse by Category",
     "translation": "Navegar por categoría",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicle",
+    "description": "Genre Tile Title - Vehicle",
+    "english": "Vehicle",
+    "translation": "Vehículo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicles",
+    "description": "Genre Tile Title - Vehicles",
+    "english": "Vehicles",
+    "translation": "Vehículos",
     "isDeprecated": false
   },
   {
@@ -91331,7 +91427,7 @@
     "namespace": "CreatorDashboard.DeveloperItem",
     "key": "Message.ExperienceAccessNotAvailable",
     "description": null,
-    "english": "Enabling Marketplace is unavailable at this time. Please check back later.",
+    "english": "Audio files cannot be made public at this time. Please check back at a later date.",
     "translation": "El Mercado no está disponible en este momento. Vuelve aquí más tarde.",
     "isDeprecated": false
   },
@@ -93152,6 +93248,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventModeratedTitle",
+    "description": "shown in place of title when content is moderated",
+    "english": "[CONTENT MODERATED]",
+    "translation": "[CONTENIDO MODERADO]",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.Settings",
     "description": "Title for page that controls settings across Creator Dashboard",
@@ -94324,7 +94428,7 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "Solo los usuarios de 13 años o mayores pueden iniciar sesión con un código de una sola vez.",
+    "translation": "Solo los usuarios de 13 años o mayores pueden iniciar sesión con un código de un solo uso.",
     "isDeprecated": false
   },
   {
@@ -94364,7 +94468,7 @@
     "key": "Description.EnterCode",
     "description": null,
     "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
-    "translation": "Se envió un código de una sola vez a tu correo electrónico si está verificado en tu cuenta. Ingresa el código que te acabamos de enviar a:",
+    "translation": "Se envió un código de un solo uso a tu correo electrónico si este está verificado en tu cuenta. Ingresa el código que te acabamos de enviar a:",
     "isDeprecated": false
   },
   {
@@ -94388,7 +94492,7 @@
     "key": "Action.LearnMoreOneTimeCode",
     "description": null,
     "english": "Learn more about One-Time Code",
-    "translation": "Aprende más sobre el código de una sola vez",
+    "translation": "Aprende más sobre el código de un solo uso",
     "isDeprecated": false
   },
   {
@@ -94773,6 +94877,30 @@
     "description": "displayed when a request fails",
     "english": "An unknown error occured.",
     "translation": "Se produjo un error desconocido.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownDevice",
+    "description": "Displayed when information about a session's user agent is unknown",
+    "english": "Unknown Device",
+    "translation": "Dispositivo desconocido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownLocation",
+    "description": "Displayed when information about a session's location is unknown",
+    "english": "Unknown Location",
+    "translation": "Ubicación desconocida",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownTime",
+    "description": "Displayed when information about a session's last active time is unknown",
+    "english": "Unknown Time",
+    "translation": "Hora desconocida",
     "isDeprecated": false
   },
   {

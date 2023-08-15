@@ -840,6 +840,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowed",
+    "description": null,
+    "english": "Your account cannot log in with a one-time code",
+    "translation": "Невозможно выполнить вход с одноразовым паролем",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV2",
+    "description": null,
+    "english": "You must log in with a different method",
+    "translation": "Требуется использовать другой способ входа",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.OtpNotAllowedV3",
+    "description": null,
+    "english": "Your account is ineligible to log in with a one-time code",
+    "translation": "Невозможно выполнить вход с одноразовым паролем",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -1100,7 +1124,7 @@
     "key": "Description.TwoStepVerificationActivationEmail.Body.Over13",
     "description": "Body for 2SV activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Email for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via email.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте! {accountName},{lineBreak}{lineBreak}Включена двухшаговая проверка через эл. почту для аккаунта Roblox. Для некоторых действий, например для входа, необходимо ввести шестизначный код, отправленный на эл. почту.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты активировал(а) двухшаговую проверку через эл. почту для аккаунта Roblox. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, полученный от Roblox на эл. почту.{lineBreak}{lineBreak}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1108,7 +1132,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Over13",
     "description": "Body for 2SV deactivation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Email for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью электронной почты для твоего аккаунта Roblox деактивирована.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты отключил(а) двухшаговую проверку через эл. почту для аккаунта Roblox.{lineBreak}{lineBreak} ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1116,7 +1140,7 @@
     "key": "Description.TwoStepVerificationDeactivationEmail.Body.Under13",
     "description": "Body for 2SV deactivation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Email has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью электронной почты для аккаунта вашего ребёнка Roblox деактивирована.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak} Вы отключили двухшаговую проверку через эл. почту для аккаунта Roblox вашего ребёнка, {accountName}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1244,7 +1268,7 @@
     "key": "Description.TwoStepVerificationLoginEmail.V2.Body",
     "description": "Body of the two step verification login email.",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish logging in. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Привет!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи полученный код на экране двухшаговой проверки, чтобы выполнить вход. Срок действия кода истекает через 15 минут.{paragraphEnd}{paragraphStart}Запрос был отправлен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо!{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы выполнить вход. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1356,7 +1380,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator activation email for over 13 users",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Authenticator for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code from the Authenticator App.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Двухшаговая проверка с аутентификатором был включена для твоего аккаунта Roblox. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код безопасности из приложения-аутентификатора.{lineBreak}{lineBreak}Всегда сохраняй резервные коды на случай, если не будет доступа к приложению-аутентификатору.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты активировал(а) двухшаговую проверку через приложение-аутентификатор для аккаунта Roblox. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код из приложения-аутентификатора.{lineBreak}{lineBreak}Обязательно сохрани коды восстановления на случай потери доступа к приложению-аутентификатору.{lineBreak}{lineBreak}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1364,7 +1388,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorActivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator activation email for under 13 users",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code from the Authenticator app.{lineBreak}{lineBreak}Remember to save your backup codes in case you don't have access to the Authenticator app.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте,{lineBreak}{lineBreak}двухшаговая проверка с аутентификатором был включена для аккаунта вашего ребёнка в Roblox{accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код безопасности из приложения-аутентификатора.{lineBreak}{lineBreak}Всегда сохраняйте резервные коды на случай, если не будет доступа к приложению-аутентификатору.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем, что была активирована двухшаговая проверка через приложение-аутентификатор для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код из приложения-аутентификатора.{lineBreak}{lineBreak}Обязательно сохраните коды восстановления на случай потери доступа к приложению-аутентификатору.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1380,7 +1404,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Over13",
     "description": "Body for 2SV with Authenticator deactivation email for over 13 users",
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Authenticator for your Roblox account. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Двухшаговая проверка с аутентификатором отключена для аккаунта Roblox. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты отключил(а) двухшаговую проверку через приложение-аутентификатор для аккаунта Roblox. Код безопасности из приложения-аутентификатора больше не будет требоваться для выполнения некоторых действий, например для входа.{lineBreak}{lineBreak} ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1388,7 +1412,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorDeactivationEmail.Body.Under13",
     "description": "Body for 2SV with Authenticator deactivation email for under 13 users",
     "english": "Hello,{lineBreak}{lineBreak}2-Step Verification with Authenticator has been deactivated for your child's Roblox account, {accountName}. A security code from an Authenticator app will no longer be required for some actions like logging in.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Двухшаговая проверка была отключена для аккаунта Roblox вашего ребёнка,{accountName}. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak} Двухшаговая проверка через приложение-аутентификатор была отключена для аккаунта Roblox вашего ребёнка, {accountName}. Код безопасности из приложения-аутентификатора больше не будет требоваться для выполнения некоторых действий, например для входа.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1404,7 +1428,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку с аутентификатором для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь, {spanStartTagWithBold}не отвечай на это сообщение{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через приложение-аутентификатор для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь, {spanStartTagWithBold}не отвечай на это сообщение{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1412,7 +1436,7 @@
     "key": "Description.TwoStepVerificationAuthenticatorCustomerSupportDeactivationEmail.Body.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Authenticator on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code from an Authenticator app will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку с аутентификатором для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}.Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag},а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через приложение-аутентификатор для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}.Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag},а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1428,7 +1452,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем, что наша служба поддержки отключила двухшаговую проверку с помощью эл. почты для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь,{spanStartTagWithBold}не отвечай на это письмо{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через эл. почту для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь, {spanStartTagWithBold}не отвечай на это сообщение{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1436,7 +1460,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationEmail.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Email on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку с помощью эл. почты для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag}, а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через эл. почту для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}.Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag},а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1452,7 +1476,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}All valid backup codes have been used on your child's Roblox account, {accountName}. To avoid getting locked out, they can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Все действующие резервные коды были использованы для аккаунта Roblox вашего ребёнка, {accountName}. Чтобы не потерять доступ, можно сгенерировать новые резервные коды в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Все действующие коды безопасности были использованы на аккаунте Roblox вашего ребёнка, {accountName}. Чтобы избежать блокировки, можно создать запасные коды безопасности в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1460,7 +1484,7 @@
     "key": "Description.TwoStepVerificationRecoveryCodeDepletedEmail.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}You have used all valid backup codes. To avoid getting locked out, you can generate new backup codes in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your backup codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Все действующие резервные коды уже использованы. Чтобы не потерять доступ, ты можешь сгенерировать новые резервные коды в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте {accountName}!{lineBreak}{lineBreak}Все действующие коды безопасности были использованы. Чтобы избежать блокировки, можно создать запасные коды безопасности в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1500,7 +1524,7 @@
     "key": "Description.TwoStepVerificationRobxSpendEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Привет,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — это твой код двухшаговой проверки в Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код выше на экране двухшаговой проверки, чтобы завершить виртуальную трнзакцию. Этот код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Запрос на вход был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы закончить подтверждение виртуальной транзакции. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1516,7 +1540,7 @@
     "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Bod",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Привет,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — это твой код двухшаговой проверки в Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код выше на экране двухшаговой проверки, чтобы завершить виртуальную транзакцию. Этот код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Запрос на вход был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы закончить подтверждение виртуальной транзакции. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1564,7 +1588,7 @@
     "key": "Description.TwoStepVerificationRobuxSpendEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your virtual transaction. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Привет,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы завершить подтверждение виртуальной транзакции. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Это запрос на вход был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы закончить подтверждение виртуальной транзакции. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1636,7 +1660,7 @@
     "key": "Description.TwoStepVerificationItemTradeEmail.V2.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your trade. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This login request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Привет,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы завершить подтверждение виртуальной транзакции. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Этот запрос на вход был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы закончить подтверждение обмена. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1676,7 +1700,7 @@
     "key": "Description.TwoStepVerificationResaleEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to finish verifying your resale. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Здравствуй,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы завершить подтверждение сделки. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Этот запрос был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы закончить подтверждение перепродажи. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1684,7 +1708,7 @@
     "key": "Description.TwoStepVerificationPasswordResetEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue your password reset. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Здравствуй,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы завершить сброс пароля. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Этот запрос был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы продолжить сброс пароля. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1764,7 +1788,7 @@
     "key": "Description.TwoStepVerificationRevertAccountEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue reverting changes to your account. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Здравствуй,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы отменить изменения к своему аккаунту. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Этот запрос был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы продолжить отмену изменений аккаунта. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -1788,7 +1812,7 @@
     "key": "Description.TwoStepVerificationActivationText.Body.Over13",
     "description": "Email to user when activating SMS 2SV.",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have activated 2-Step Verification with Text Messages for your Roblox account. For some actions like logging in, you will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте! {accountName},{lineBreak}{lineBreak}Включена двухшаговая проверка с помощью СМС для аккаунта Roblox. Для некоторых действий, например для входа, необходимо ввести шестизначный код, отправленный в СМС.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты активировал(а) двухшаговую проверку через текстовые сообщения для аккаунта Roblox. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, полученный от Roblox в текстовом сообщении.{lineBreak}{lineBreak}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1796,7 +1820,7 @@
     "key": "Description.TwoStepVerificationActivationSMS.Body.Under13",
     "description": "Email for when a user changes SMS 2SV",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with SMS has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via SMS.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте,{lineBreak}{lineBreak}активирована двухшаговая проверка через СМС для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, отправленный по СМС.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте,{lineBreak}{lineBreak}активирована двухшаговая проверка через СМС для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, отправленный по СМС.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1804,7 +1828,7 @@
     "key": "Description.TwoStepVerificationActivationText.Body.Under13",
     "description": "Email when user activates SMS 2SV.",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been activated for your child's Roblox account, {accountName}. For some actions like logging in, they will need to enter a 6-digit security code that Roblox sends to you via text messages.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте,{lineBreak}{lineBreak}активирована двухшаговая проверка через СМС для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, отправленный по СМС.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте,{lineBreak}{lineBreak}активирована двухшаговая проверка через текстовые сообщения для аккаунта Roblox вашего ребёнка, {accountName}. Для выполнения некоторых действий, например для входа, будет необходимо ввести шестизначный код, отправленный через текстовое сообщение.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1828,7 +1852,7 @@
     "key": "Description.TwoStepVerificationDeactivationText.Body.Over13",
     "description": "Email content when SMS 2SV is deactivated",
     "english": "Hi {accountName},{lineBreak}{lineBreak}You have deactivated 2-Step Verification with Text Messages for your Roblox account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка через СМС для твоего аккаунта Roblox отключена.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуй, {accountName}!{lineBreak}{lineBreak} Ты отключил(а) двухшаговую проверку через текстовые сообщения для аккаунта Roblox.{lineBreak}{lineBreak} ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1836,7 +1860,7 @@
     "key": "Description.TwoStepVerificationDeactivationText.Body.Under13",
     "description": "Email content when SMS 2SV is deactivated",
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Text Messages has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью CVC для аккаунта вашего ребёнка Roblox отключена.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak} Вы отключили двухшаговую проверку через текстовые сообщения для аккаунта Roblox вашего ребёнка, {accountName}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1852,7 +1876,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Over13",
     "description": null,
     "english": "Hello {accountName},{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages for your Roblox account. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in your {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем, что наша служба поддержки отключила двухшаговую проверку с помощью СМС для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь,{spanStartTagWithBold}не отвечай на это письмо{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Привет, {accountName}!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через текстовые сообщения для твоего аккаунта Roblox. Скорее всего это произошло потому, что тобой был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если тебе нужна помощь, {spanStartTagWithBold}не отвечай на это сообщение{spanEndTag}, а напиши нам в существующем запросе в службу поддержки или отправь нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1860,7 +1884,7 @@
     "key": "Description.TwoStepVerificationCustomerSupportDeactivationText.HtmlBody.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}This message is to notify you that our support team has deactivated 2-Step Verification with Text Messages on your child's Roblox account, {accountName}. This typically occurs due to a support ticket you submitted or as a security measure to ensure the safety of your account. A security code will no longer be required for some actions like logging in. You can reactivate 2-Step Verification in {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}account settings{aTagEnd}.{lineBreak}{lineBreak}If you need further assistance, {spanStartTagWithBold}do not reply to this email{spanEndTag}, and reply to your existing support ticket or submit a new support request here: {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd}.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Roblox",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку с помощью СМС для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности из приложения-аутентификатора больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag}, а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Сообщаем о том, что наша служба поддержки отключила двухшаговую проверку через текстовые сообщения для аккаунта Roblox вашего ребёнка, {accountName}. Скорее всего это произошло потому, что вами был отправлен запрос, или же в целях обеспечения безопасности аккаунта. Код безопасности больше не требуется для некоторых действий, например для входа. Двухшаговую проверку можно снова включить в {aTagStartWithHref}{AccountSettingsPageLink}{hrefEnd}настройках аккаунта{aTagEnd}.{lineBreak}{lineBreak}.Если вам нужна помощь, {spanStartTagWithBold}не отвечайте на это письмо{spanEndTag},а напишите нам в существующем запросе в службу поддержки или отправьте нам новый запрос: {aTagStartWithHref}{supportPageLink}{hrefEnd}Служба поддержки Roblox{aTagEnd}.{lineBreak}{lineBreak}ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1876,7 +1900,7 @@
     "key": "Description.TwoStepVerificationSwap.Body.Over13",
     "description": "Body for 2SV method swap email",
     "english": "Hello,{lineBreak}{lineBreak}You have changed the 2-Step Verification method for {accountName} from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you did not make this request, contact Customer Support immediately to recover your account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
-    "translation": "Привет!{lineBreak}{lineBreak}Был изменён метод двухшаговой проверки для аккаунта {accountName} ({disabledTwoStepMethod} > {enabledTwoStepMethod}). Если такой запрос сделан не тобой, немедленно обратись в службу поддержки, чтобы восстановить свой аккаунт.{lineBreak}{lineBreak}Благодарим,{lineBreak}{lineBreak} Команда Roblox",
+    "translation": "Здравствуй!{lineBreak}{lineBreak} Ты изменил(а) способ двухшаговой проверки для аккаунта {accountName} с {disabledTwoStepMethod} на {enabledTwoStepMethod}.Если ты не делал(а) этого, немедленно свяжись со службой поддержки, чтобы восстановить свой аккаунт.{lineBreak}{lineBreak} ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Спасибо!{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1884,7 +1908,7 @@
     "key": "Description.TwoStepVerificationSwap.Body.Under13",
     "description": null,
     "english": "Hello,{lineBreak}{lineBreak}The 2-Step Verification method for your child's Roblox account, {accountName}, has changed from {disabledTwoStepMethod} to {enabledTwoStepMethod}. If you or your child did not make this request, contact Customer Support immediately to recover your child's account.{lineBreak}{lineBreak}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}Roblox Team",
-    "translation": "Здравствуйте!{lineBreak}{lineBreak}Был изменён метод двухшаговой проверки для аккаунта вашего ребёнка {accountName} ({disabledTwoStepMethod} > {enabledTwoStepMethod}). Если такой запрос сделан не вами или вашим ребёнком, немедленно обратитесь в службу поддержки, чтобы восстановить аккаунт.{lineBreak}{lineBreak}Благодарим,{lineBreak}{lineBreak} Команда Roblox",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak} Способ двухшаговой проверки для аккаунта вашего ребёнка {accountName} был изменён с {disabledTwoStepMethod} на {enabledTwoStepMethod}.Если вы не делали этого, немедленно свяжитесь со службой поддержки, чтобы восстановить аккаунт ребёнка.{lineBreak}{lineBreak} ВАЖНО! Не сообщайте никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, вы подвергаете свой аккаунт и его содержимое высокому риску.{lineBreak}{lineBreak}Спасибо!{lineBreak}{lineBreak}Roblox",
     "isDeprecated": false
   },
   {
@@ -1932,7 +1956,7 @@
     "key": "Description.TwoStepVerificationGenericEmail.V1.Body",
     "description": null,
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} is your Roblox 2-Step Verification code for {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Enter the above code into the 2-Step Verification screen to continue taking your desired action. This code will expire in 15 minutes.{paragraphEnd}{paragraphStart}This request was received from {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}IMPORTANT: Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.{paragraphEnd}{lineBreak}{paragraphStart}Thank You,{lineBreak}{emphasisStart}The Roblox Team{emphasisEnd}{paragraphEnd}",
-    "translation": "{paragraphStart}Здравствуй,{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код подтверждения двухшаговой проверки для аккаунта Roblox: {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы завершить необходимое действие. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Этот запрос был получен из: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
+    "translation": "{paragraphStart}Здравствуй!{paragraphEnd}{paragraphStart}{emphasisStart}{code}{emphasisEnd} — твой код двухшаговой проверки Roblox для аккаунта {emphasisStart}{accountName}{emphasisEnd}.{paragraphEnd}{paragraphStart}Введи этот код на экране двухшаговой проверки, чтобы продолжить. Код действует в течение 15 минут.{paragraphEnd}{paragraphStart}Местоположение запроса кода: {emphasisStart}{geoLocationInformation}{emphasisEnd}.{paragraphEnd}{paragraphStart}ВАЖНО! Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др. Сообщая кому-либо свои коды безопасности, ты подвергаешь свой аккаунт и его содержимое высокому риску.{paragraphEnd}{lineBreak}{paragraphStart}Спасибо,{lineBreak}{emphasisStart}Команда Roblox{emphasisEnd}{paragraphEnd}",
     "isDeprecated": false
   },
   {
@@ -2013,6 +2037,30 @@
     "description": null,
     "english": "Hi,{lineBreak}{lineBreak}2-Step Verification with Security Key has been deactivated for your child's Roblox account, {accountName}.{lineBreak}{lineBreak}Roblox",
     "translation": "Здравствуйте, {accountName}{lineBreak}{lineBreak}! Двухшаговая проверка с помощью резервного кода для аккаунта вашего ребёнка Roblox отключена.{lineBreak}{lineBreak}Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShort",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your security codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}ВАЖНО!{boldEnd} Не сообщай никому свои коды безопасности. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.SecurityWarningShortBackupCodes",
+    "description": null,
+    "english": "{boldStart}IMPORTANT:{boldEnd} Don't share your backup codes with anyone. Roblox will never ask you for your codes. This can include things like texting your code, screensharing, etc.",
+    "translation": "{boldStart}ВАЖНО!{boldEnd} Не сообщай никому свои коды восстановления. Roblox никогда не запрашивает коды пользователей. Сюда входит отправка кода в текстовом сообщении, общий доступ к просмотру экрана и др.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Response.AuthenticatorCodeAlreadyUsed",
+    "description": "User facing error for re-using an authenticator code.",
+    "english": "This code has already been used. Please enter a new code.",
+    "translation": "Этот код уже используется. Введи новый код.",
     "isDeprecated": false
   },
   {
@@ -3176,6 +3224,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Description.ShortCodeLegalDisclaimer",
+    "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
+    "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
+    "translation": "Нажимая «Продолжить», ты подтверждаешь свой номер телефона и соглашаешься с {linkTagWithSmsTos}Условиями использования СМС{linkTagEnd} и {linkTagWithPrivacyPolicy}Политикой конфиденциальности{linkTagEnd}. Мы отправим одноразовый код подтверждения. Могут применяться тарифы на передачу сообщений и данных. Отправь слово HELP, если тебе нужна помощь.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SignUp",
     "key": "Label.ConfirmPassword",
     "description": null,
@@ -4169,6 +4225,14 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Description.EnterParentEmail",
+    "description": null,
+    "english": "Enter your parent's email address to receive a verification code.",
+    "translation": "Для получения кода подтверждения введи адрес электронной почты родителя/опекуна.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Label.VerificationCode",
     "description": null,
     "english": "Verification Code",
@@ -4177,10 +4241,34 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.TermsOfUse",
+    "description": "goes together with Label.TermsofUse",
+    "english": "I have reviewed and agreed to the {termsOfUseLink}",
+    "translation": "Я изучил(а) и подтверждаю {termsOfUseLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.SignupCompliance.PrivacyPolicyAck",
+    "description": "goes together with 'Description.PrivacyPolicy'",
+    "english": "Acknowledge the {privacyPolicyLink}",
+    "translation": "Подтвердить {privacyPolicyLink}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Description.VerifiedParentalConsentModal.EnterCodeNoEmailReveal",
     "description": null,
     "english": "Enter the code we just sent to your parent's email.",
     "translation": "Введи код, отправленный на эл. почту родителя.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
+    "translation": "Ставя галочку и нажимая «Продолжить», вы даёте согласие на доступ детей к Roblox.",
     "isDeprecated": false
   },
   {
@@ -12568,6 +12656,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.VerifyAge",
+    "description": null,
+    "english": "Verify Your Age",
+    "translation": "Подтверди свой возраст",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ToAccountInfo",
+    "description": null,
+    "english": "Go to Account Info",
+    "translation": "Перейти к информации об аккаунте",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NeedIdVerification",
+    "description": null,
+    "english": "To gain access to 17+ content, you must verify that you are 17 years old or older.",
+    "translation": "Чтобы получить доступ к содержимому 17+, необходимо подтвердить, что ты старше 17 лет.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -20917,6 +21029,14 @@
     "description": null,
     "english": "No results found",
     "translation": "Ничего не найдено",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PlayerSearchResults",
+    "key": "Label.Previously",
+    "description": "Used to display previous username context under the playertile, such as \"Previously @previousUsername\". (This translation should be as short as possible since we don't have a lot of space to display context)",
+    "english": "Previously",
+    "translation": "Ранее",
     "isDeprecated": false
   },
   {
@@ -61627,7 +61747,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Heading.ActivateAnalyticsDashboard",
     "description": null,
-    "english": "Activate Analytics Dashboard",
+    "english": "Access Analytics Dashboard",
     "translation": "Активировать панель аналитики",
     "isDeprecated": false
   },
@@ -65497,10 +65617,50 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
+    "translation": "Убедись, что двухшаговая проверка через приложение-аутентификатор включена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Это можно сделать в {linkStart}настройках аккаунта{linkEnd}. Если аккаунт взломан, вероятность того, что Roblox сможет восстановить аккаунт или инвентарь, включая предметы и виртуальную валюту, крайне мала.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
+    "translation": "Если твой аккаунт взломан, вероятность того, что Roblox сможет его восстановить, крайне мала.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please make sure 2-Step Verification via Authenticator is enabled to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "Убедись, что двухшаговая проверка через приложение-аутентификатор включена для защиты твоего аккаунта. Для этого перейди в {linkStartSettings}настройки аккаунта{linkEndSettings}.{lineBreak}{lineBreak}Если твой аккаунт взломан, вероятность того, что Roblox сможет его восстановить или возместить потерянные предметы и виртуальную валюту, крайне мала. Более подробную информацию можно найти на {linkStartHelp}странице поддержки{linkEndHelp}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.AccountRestoresPolicyUpsell",
     "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
     "english": "Protect Your Account!",
     "translation": "Защити свой аккаунт!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Включи двухшаговую проверку через приложение-аутентификатор включена для защиты своего аккаунта. Для этого перейди в {linkStartSettings}настройки аккаунта{linkEndSettings}.Если твой аккаунт взломан, вероятность того, что Roblox сможет его восстановить или возместить потерянные предметы и виртуальную валюту, крайне мала.",
     "isDeprecated": false
   },
   {
@@ -69997,6 +70157,22 @@
     "description": "Genre Tile Title - Tycoon",
     "english": "Tycoon",
     "translation": "Экономические симуляторы",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicle",
+    "description": "Genre Tile Title - Vehicle",
+    "english": "Vehicle",
+    "translation": "Транспортное средство",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GenreExplorer",
+    "key": "Tile.Vehicles",
+    "description": "Genre Tile Title - Vehicles",
+    "english": "Vehicles",
+    "translation": "Транспортные средства",
     "isDeprecated": false
   },
   {
@@ -82944,6 +83120,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VirtualEvents",
+    "key": "EventModeratedTitle",
+    "description": "shown in place of title when content is moderated",
+    "english": "[CONTENT MODERATED]",
+    "translation": "[КОНТЕНТ ПРОШЁЛ МОДЕРАЦИЮ]",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Settings",
     "key": "Title.Settings",
     "description": "Title for page that controls settings across Creator Dashboard",
@@ -83160,6 +83344,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V2.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}{boldStart}Verification Code: {code}{boldEnd}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code above to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our {linkTagWithParentGuideLinkStart}Parent’s Guide{linkTagEnd} to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Здравствуйте!{lineBreak}{lineBreak}Ваш ребёнок запрашивает создание аккаунта Roblox. Roblox — это виртуальная развлекательная платформа, позволяющая детям создавать и играть вместе в погружённых, созданных пользователями 3D-мирах.{lineBreak}{lineBreak}{boldStart}Код подтверждения: {code}{boldEnd}{lineBreak}{lineBreak}Ваш ребёнок предоставил нам имя пользователя, дату рождения и адрес электронной почты родителя для создания аккаунта. Для того, чтобы ваш ребёнок завершил процесс создания аккаунта, вы должны согласиться на использование Roblox вашим ребёнком.{lineBreak}{lineBreak}Вы должны ввести код ниже, чтобы завершить процесс регистрации и согласиться на использование ребёнком Roblox. Вводя код, вы и ваш ребёнок соглашаетесь с {linkTagWithTermsLinkStart}Условиями Roblox{linkTagEnd}, включая арбитражное соглашение и {linkTagWithPrivacyPolicyLinkStart}Политику конфиденциальности{linkTagEnd} Вы будете контролировать и нести ответственность за использование ребёнком Roblox и вы соглашаетесь, при необходимости, на обработку персональных данных вашего ребёнка в связи с предоставлением Услуги.{lineBreak}{lineBreak}{boldStart}Руководство для родителей Roblox{boldEnd}{lineBreak}{lineBreak}Мы рекомендуем прочитать {linkTagWithParentGuideLinkStart}Руководство для родителей{linkTagEnd}, чтобы ознакомиться с нашей платформой и найти полезные советы для создания положительного опыта для своих детей в Roblox.{lineBreak}{lineBreak}{boldStart}Конфиденциальность{boldEnd}{lineBreak}{lineBreak}Вы можете удалить аккаунт своего ребёнка в любое время, связавшись со Службой поддержки по адресу https://www.roblox.com/support. Ваш электронный адрес не будет использован в иных целях, не будет передан третьим лицам и не будет использован в сочетании с любыми другими личными данными, собранными у вашего ребёнка. Пожалуйста, ознакомьтесь с нашей Политикой конфиденциальности для получения более подробной информации.{lineBreak}{lineBreak}Спасибо,{lineBreak}{lineBreak}Команда Roblox",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.VirtualEvent",
     "key": "Stream.Moderated.Title",
     "description": "Message displayed on virtual event notification title when the virtual event is moderated.",
@@ -83181,6 +83373,30 @@
     "description": "Button to exit out of sign out modal",
     "english": "Cancel",
     "translation": "Отмена",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownDevice",
+    "description": "Displayed when information about a session's user agent is unknown",
+    "english": "Unknown Device",
+    "translation": "Неизвестное устройство",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownLocation",
+    "description": "Displayed when information about a session's location is unknown",
+    "english": "Unknown Location",
+    "translation": "Неизвестное местоположение",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SessionManagement",
+    "key": "Label.Value.UnknownTime",
+    "description": "Displayed when information about a session's last active time is unknown",
+    "english": "Unknown Time",
+    "translation": "Неизвестное время",
     "isDeprecated": false
   }
 ]
