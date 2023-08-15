@@ -3248,6 +3248,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UserAccountCreatedButLoginFailed",
+    "description": null,
+    "english": "Account was successfully created but cannot be logged in at this time. Please try again later.",
+    "translation": "L'account è stato creato con successo ma non è possibile accedere in questo momento. Per favore riprova più tardi.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Label.sRobux",
     "description": null,
@@ -8933,6 +8941,14 @@
     "description": null,
     "english": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>.",
     "translation": "Gentile {username},{lineBreak}{lineBreak} Abbiamo notato che hai cambiato il tuo indirizzo email da {oldEmailAddress} a {newEmailAddress}. Se hai apportato questa modifica, non esitare a ignorare questa email.{lineBreak}{lineBreak}Se non hai apportato questa modifica o l'hai fatto per errore, fai clic su questo link per ripristinare l'email: {aTagWithHref}{revertAccountEmailLinkWithTicket}{ hrefEnd}{revertAccountEmailLink}{aTagEnd}. Per proteggere il tuo account, ti verrà chiesto di impostare una nuova password.{lineBreak}{lineBreak}Per favore non rispondere a questo messaggio. In caso di domande, visita il nostro <a target=\"_blank\" href=\"{accountHelpLink}\">Centro assistenza</a>.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.AccountEmailRevertEmail.PlainBody.V2",
+    "description": null,
+    "english": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you made this change, feel free to disregard this email.{lineBreak}{lineBreak}If you did not make this change, or did so by mistake, please click this link to change the email back: {revertAccountEmailLink}. To keep your account safe, you will be asked to set a new password.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our Help Center ({accountHelpLink}).",
+    "translation": "Gentile utente Roblox,{lineBreak}{lineBreak}abbiamo che hai cambiato l'indirizzo e-mail del tuo account {username} da {oldEmailAddress} a {newEmailAddress}. Se non era tua intenzione cambiarlo, o se pensi che sia stato cambiato per sbaglio da qualcun altro, contatta l'assistenza ({lineBreak}{revertAccountEmailLink}{lineBreak}) per ripristinare il tuo indirizzo e-mail. Sarà anche necessario immettere una nuova password. In questo modo saremo certi che il tuo account è al sicuro.{lineBreak}{lineBreak}Se, invece, la modifica dell'e-mail Roblox è stata intenzionale, non devi fare nient'altro! L'e-mail è già stata reimpostata.{lineBreak}Non rispondere a questo messaggio. Per aiuto con l'account, visita il supporto Roblox ({accountHelpLink}).",
     "isDeprecated": false
   },
   {
@@ -36084,7 +36100,7 @@
     "key": "Label.TopVoiceGames",
     "description": "This will show on the game discovery page above a carousel of games that have voice chat enabled.",
     "english": "Voice Enabled",
-    "translation": "Spatial Voice",
+    "translation": "Voce Abilitata",
     "isDeprecated": false
   },
   {
@@ -54557,6 +54573,70 @@
     "description": null,
     "english": "Next",
     "translation": "Avanti",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdate",
+    "description": null,
+    "english": "Account Restores Policy Update",
+    "translation": "Aggiornamento Politica Ripristini Account",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicy",
+    "description": null,
+    "english": "Starting 10th Jan 2022, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "A partire dal 10 gennaio 2022, è necessario abilitare la verifica in 2 passaggi tramite Authenticator per essere idoneo per i ripristini dell'account se il tuo account è stato violato.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPromptClickHere",
+    "description": null,
+    "english": "Your security is important to us: {styleTagStart}Click here{styleTagEnd} to set up Authenticator.",
+    "translation": "La tua sicurezza è importante per noi: {styleTagStart}Clicca qui{styleTagEnd} per configurare Authenticator.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AuthenticatorSetupPrompt",
+    "description": null,
+    "english": "Your security is important to us: Open Settings to set up Authenticator and learn more on our {linkStart}help page{linkEnd}.",
+    "translation": "La tua sicurezza è importante per noi: Apri le impostazioni per configurare l'Autenticatore e saperne di più sulla nostra pagina di aiuto {linkStart}{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.OpenSettings",
+    "description": null,
+    "english": "Open Settings",
+    "translation": "Apri Impostazioni",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyWithDate",
+    "description": null,
+    "english": "Starting {date}, you must enable 2-Step Verification via Authenticator to be eligible for account restores if your account is hacked.",
+    "translation": "A partire da {date}, è necessario abilitare la verifica in 2 passaggi tramite Authenticator per essere idoneo per i ripristini dell'account se il tuo account è stato violato.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password.",
+    "translation": "Per mantenere il tuo account al sicuro, per favore {styleTagStart}clicca qui{styleTagEnd} per cambiare la password.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.ChangeYourPasswordImmediatelyClickHereStyled",
+    "description": null,
+    "english": "To keep your account safe, please {styleTagStart}click here{styleTagEnd} to change your password immediately.",
+    "translation": "Per mantenere il tuo account al sicuro, per favore {styleTagStart}clicca qui{styleTagEnd} per cambiare la password.",
     "isDeprecated": false
   },
   {
