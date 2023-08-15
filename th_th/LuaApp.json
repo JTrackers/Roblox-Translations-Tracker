@@ -4556,7 +4556,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "หลังจากทำการซื้อแล้ว ไอเท็มที่ซื้อจากครีเอเตอร์โดยตรงจะเข้าสู่ช่วงเวลาถือครองเป็นเวลาสูงสุด 30 วัน ซึ่งจะสามารถขายต่อไอเท็มดังกล่าวได้หลังจากช่วงเวลาถือครองสิ้นสุดลง ส่วนการขายต่อจะมีช่วงเวลาถือครอง 7 วัน โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อได้",
+    "translation": "หลังจากทำการซื้อแล้ว ไอเท็มที่ซื้อจากครีเอเตอร์โดยตรงจะเข้าสู่ช่วงเวลาถือครองเป็นเวลาสูงสุด 30 วัน ซึ่งไอเท็มดังกล่าวจะสามารถนำไปขายต่อได้หลังจากช่วงเวลาถือครองสิ้นสุดลง และการขายต่อจะมีช่วงเวลาถือครอง 7 วัน โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อไอเท็มได้",
     "isDeprecated": false
   },
   {
@@ -4660,7 +4660,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "หลังจากทำการซื้อแล้ว ไอเท็มที่ซื้อจากครีเอเตอร์โดยตรงจะเข้าสู่ช่วงเวลาถือครองเป็นเวลาสูงสุด 30 วัน ซึ่งจะสามารถขายต่อไอเท็มดังกล่าวได้หลังจากช่วงเวลาถือครองสิ้นสุดลง ส่วนการขายต่อจะมีช่วงเวลาถือครอง 7 วัน โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อได้",
+    "translation": "หลังจากทำการซื้อแล้ว ไอเท็มที่ซื้อจากครีเอเตอร์โดยตรงจะเข้าสู่ช่วงเวลาถือครองเป็นเวลาสูงสุด 30 วัน ซึ่งไอเท็มดังกล่าวจะสามารถนำไปขายต่อได้หลังจากช่วงเวลาถือครองสิ้นสุดลง และการขายต่อจะมีช่วงเวลาถือครอง 7 วัน โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อไอเท็มได้",
     "isDeprecated": true
   },
   {
@@ -4813,6 +4813,38 @@
     "description": "Button text for \"See All\" button used in carousel marketplace widgets",
     "english": "See All",
     "translation": "ดูทั้งหมด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotBeResold",
+    "description": null,
+    "english": "This item cannot be resold",
+    "translation": "ไอเท็มนี้ไม่สามารถขายต่อได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "ขายหมดแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "หลังจากทำการซื้อแล้ว ไอเท็มที่ซื้อจากครีเอเตอร์โดยตรงจะเข้าสู่ช่วงเวลาถือครองเป็นเวลาสูงสุด {purchaseDays} วัน ซึ่งไอเท็มดังกล่าวจะสามารถนำไปขายต่อได้หลังจากช่วงเวลาถือครองสิ้นสุดลง และการขายต่อจะมีช่วงเวลาถือครอง {resaleDays} วัน โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อไอเท็มได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "การซื้อจากการขายต่อจะมีช่วงเวลาถือครอง {days} วัน ซึ่งไอเท็มดังกล่าวจะสามารถนำไปขายต่อไอเท็มได้หลังจากช่วงเวลาถือครองสิ้นสุดลง โดยสมาชิก Premium เท่านั้นที่สามารถทำการขายต่อไอเท็มได้",
     "isDeprecated": false
   },
   {
