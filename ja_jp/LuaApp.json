@@ -2200,6 +2200,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "ControllerBar.Search",
+    "description": "Made this by accident.  Please ignore.",
+    "english": "Search",
+    "translation": "サーチ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.Search",
+    "description": "The word \"search\" as displayed by the controller bar on console (xbox).",
+    "english": "Search",
+    "translation": "サーチ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.HoldPrefix",
+    "description": "In english, this word precedes a controller-bar short-cut icon, as in \"Hold <A> to Play\" meaning hold down the A button on the gamepad to do an action",
+    "english": "Hold",
+    "translation": "次を長押し：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.ToPlaySuffix",
+    "description": "In english, this is the phrase that comes after the controller button icon such as: \"Hold <A> to Play\".  This phrase will be used together with Label.ControllerBar.HoldPrefix (and an image for the button icon) to create the full sentence \"Hold <A> to Play\".",
+    "english": "to play",
+    "translation": "プレイ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Labels.OrYouCan",
+    "description": "Used to separate groups of buttons.  In particular, on the login/signup screen, when you can login or signup using the current Xbox account, _or you can_ switch Xbox accounts.",
+    "english": "Or you can",
+    "translation": "その他の方法：",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -2444,7 +2484,7 @@
     "key": "Label.FreeCommConsentOnly",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes only.",
-    "translation": "内容規制と安全上の理由でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
+    "translation": "内容審査と安全上の理由でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -4372,7 +4412,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "購入後、アイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "translation": "購入後、アイテムは最長で30日間保留状態になることがあります。アイテムは保留期間終了後しか再販できません。 この保留期間はすべての再販に適用されます。アイテムの再販は、プレミアムユーザーしかできません。",
     "isDeprecated": false
   },
   {
@@ -4476,7 +4516,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "購入後、アイテムは最長で30日間保留状態になります。アイテムは保留期間が終了するまで再販売できません。",
+    "translation": "購入後、アイテムは最長で30日間保留状態になることがあります。アイテムは保留期間終了後しか再販できません。 この保留期間はすべての再販に適用されます。アイテムの再販は、プレミアム会員のユーザーしかできません。",
     "isDeprecated": false
   },
   {
@@ -4541,6 +4581,62 @@
     "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
     "english": "The original sale of this item is only available in experience.",
     "translation": "このアイテムのクリエーターからの直接購入は仮想空間内でしかできません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLeft",
+    "description": null,
+    "english": "Quantity Left: {remaining}/{total}",
+    "translation": "残り回数: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1人のユーザーが購入できるコピー数にクリエーターが制限を設けています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "再販にはプレミアムが必要です",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "このアイテムには、保留期間はありません。購入後すぐに再販できます。アイテムの再販はプレミアム会員のユーザーしかできません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1人のユーザーが購入できるコピー数にクリエーターが制限を設けています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "ユーザーあたりの最大数",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Creator Limit Reached",
+    "translation": "購入できません",
     "isDeprecated": false
   },
   {
@@ -7437,6 +7533,14 @@
     "description": null,
     "english": "Search marketplace",
     "translation": "マーケットプレイスをサーチ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Example.SearchRoblox",
+    "description": "Search Roblox",
+    "english": "Search Roblox",
+    "translation": "Robloxでサーチ",
     "isDeprecated": false
   },
   {
@@ -11160,6 +11264,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.QuantityLimitReached",
+    "description": "Purchase reached the limit of how many items the user can own.",
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1人のユーザーが購入できるコピー数にクリエーターが制限を設けています。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.ConnectionError",
     "key": "Queued",
     "description": "<DEPRECATED, can be deleted as of 1-9-23>",
@@ -13617,6 +13729,14 @@
   },
   {
     "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifyYourPhone",
+    "description": null,
+    "english": "Verify Your Phone",
+    "translation": "電話番号を確認",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
     "key": "Action.ChangePhoneNumber",
     "description": null,
     "english": "Change Phone Number",
@@ -15788,7 +15908,7 @@
     "key": "Label.ClickToConsent",
     "description": "Legal disclaimer text",
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
-    "translation": "内容規制と安全上の理由でのみ、Robloxによる <b>音声録音</b> の収集、使用、保管に同意します。",
+    "translation": "内容審査と安全上の理由でのみ、Robloxによる <b>音声録音</b> の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -15804,7 +15924,7 @@
     "key": "Label.CheckboxConsentLabel",
     "description": "legal disclaimer text",
     "english": "I consent to Roblox’s collection, use, and storage of my <b>voice recording</b> for moderation and safety purposes only.",
-    "translation": "内容規制と安全上の理由でのみ、Robloxによる <b>音声録音</b> の収集、使用、保管に同意します。",
+    "translation": "内容審査と安全上の理由でのみ、Robloxによる <b>音声録音</b> の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -15860,7 +15980,7 @@
     "key": "Label.ExplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "内容規制と安全上の理由、安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
+    "translation": "内容審査と安全上の理由、安全対策ツールの向上を目的としたRobloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -15868,7 +15988,7 @@
     "key": "Label.ImplicitConsentVoiceCollectionWithML",
     "description": null,
     "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for the improvement of safety tools.",
-    "translation": "有効化をクリックすることで、内容規制と安全上の理由、安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
+    "translation": "有効化をクリックすることで、内容審査と安全上の理由、安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
     "isDeprecated": false
   },
   {
@@ -16220,7 +16340,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Roblox上でプレイし続けるには、当社の更新済み利用規約に同意してください。以下のセクションで変更がありました。",
+    "translation": "Robloxでプレイを続けるには、利用規約に同意してからプライバシーポリシーを承認してください。以下の部分で変更があります。",
     "isDeprecated": false
   },
   {
@@ -18534,5 +18654,29 @@
     "english": "Account Info",
     "translation": "アカウント情報",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "2段階認証が必要です",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "この操作を完了するには、2段階認証を設定する必要があります。これはログインや購入などのを保護するのに役立ちます。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Action.SetUp",
+    "description": "Button text for the two-step verification challenge.",
+    "english": "Set Up",
+    "translation": "設定",
+    "isDeprecated": true
   }
 ]

@@ -2200,6 +2200,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CommonUI.Features",
+    "key": "ControllerBar.Search",
+    "description": "Made this by accident.  Please ignore.",
+    "english": "Search",
+    "translation": "Cari",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.Search",
+    "description": "The word \"search\" as displayed by the controller bar on console (xbox).",
+    "english": "Search",
+    "translation": "Cari",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.HoldPrefix",
+    "description": "In english, this word precedes a controller-bar short-cut icon, as in \"Hold <A> to Play\" meaning hold down the A button on the gamepad to do an action",
+    "english": "Hold",
+    "translation": "Tahan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.ToPlaySuffix",
+    "description": "In english, this is the phrase that comes after the controller button icon such as: \"Hold <A> to Play\".  This phrase will be used together with Label.ControllerBar.HoldPrefix (and an image for the button icon) to create the full sentence \"Hold <A> to Play\".",
+    "english": "to play",
+    "translation": "untuk bermain",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Labels.OrYouCan",
+    "description": "Used to separate groups of buttons.  In particular, on the login/signup screen, when you can login or signup using the current Xbox account, _or you can_ switch Xbox accounts.",
+    "english": "Or you can",
+    "translation": "atau kamu dapat",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Messages",
     "key": "Label.Password",
     "description": null,
@@ -4372,7 +4412,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
+    "translation": "Setelah pembelian, item akan ditahan hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan ini berakhir. Periode penahanan ini berlaku untuk setiap penjualan kembali. Hanya pengguna premium yang dapat menjual kembali item.",
     "isDeprecated": false
   },
   {
@@ -4476,7 +4516,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
+    "translation": "Setelah pembelian, item akan ditahan hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan ini berakhir. Periode penahanan ini berlaku untuk setiap penjualan kembali. Hanya pengguna premium yang dapat menjual kembali item.",
     "isDeprecated": false
   },
   {
@@ -4533,6 +4573,70 @@
     "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
     "english": "Available In Experience",
     "translation": "Tersedia di Pengalaman Virtual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "Penjualan orisinal item ini hanya tersedia di pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLeft",
+    "description": null,
+    "english": "Quantity Left: {remaining}/{total}",
+    "translation": "Jumlah Tersisa: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "Premium diperlukan untuk penjualan kembali",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "Item ini tidak memerlukan periode penahanan, kamu dapat menjualnya kembali segera setelah kamu membelinya. Hanya pengguna premium yang dapat menjual kembali item.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "Maks per Pengguna",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Creator Limit Reached",
+    "translation": "Tidak Dapat Membeli",
     "isDeprecated": false
   },
   {
@@ -6920,6 +7024,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "Penjualan orisinal item ini hanya tersedia di pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PlayerSearchResults",
     "key": "Heading.PlayerResultsFor",
     "description": null,
@@ -7424,6 +7536,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Search.GlobalSearch",
+    "key": "Example.SearchRoblox",
+    "description": "Search Roblox",
+    "english": "Search Roblox",
+    "translation": "Cari di Roblox",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.Logout",
     "key": "Action.Logout",
     "description": null,
@@ -7533,6 +7653,14 @@
     "description": "Shown as the header text for recommended avatar items on home page carousel",
     "english": "Avatar Items For You",
     "translation": "Item Avatar untuk Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "Heading.JoinYourFriends",
+    "description": "Heading for the Join Your Friends carousel on home page",
+    "english": "Join Your Friends",
+    "translation": "Bergabung dengan Teman Kamu",
     "isDeprecated": false
   },
   {
@@ -7757,6 +7885,22 @@
     "description": null,
     "english": "Get access to the newest Roblox features with phone verification.",
     "translation": "Dapatkan akses ke fitur Roblox terbaru dengan verifikasi nomor ponsel.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.ProtectYourAccount",
+    "description": null,
+    "english": "Protect Your Account",
+    "translation": "Lindungi Akun Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.ProtectAccountDescriptiveNorm.V1",
+    "description": null,
+    "english": "Join millions of users who have verified their phone numbers to protect their accounts.",
+    "translation": "Bergabunglah dengan jutaan pengguna yang telah memverifikasi nomor ponsel mereka untuk melindungi akun mereka.",
     "isDeprecated": false
   },
   {
@@ -10416,6 +10560,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Message.TryOnCameraHeadWarning",
+    "description": "Message to show for Universal App Camera Button if trying to toggle on while having a Classic Head on your avatar.",
+    "english": "Classic Heads do not support Facial Animation",
+    "translation": "Kepala Klasik tidak mendukung Animasi Wajah",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.TryOnAnimationWarning",
+    "description": "Stops emote animation on the tab or clicking a catalog item card",
+    "english": "Camera is temporarily disabled when triggering Emotes",
+    "translation": "Saat menjalankan Emote, kamera dinonaktifkan untuk sementara",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PromotedChannels",
     "key": "Message.SocialLinkoffPlatformModalTitle",
     "description": "A message displayed to users after they click a link that takes them to a different website (like twitter or amazon etc)",
@@ -11109,6 +11269,14 @@
     "description": "Description text displayed when a player is prompted to purchase an Asset or Game Pass they already own.",
     "english": "You already own this item. Your account has not been charged.",
     "translation": "Kamu sudah mempunyai item ini. Akun kamu belum dikenakan biaya.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.QuantityLimitReached",
+    "description": "Purchase reached the limit of how many items the user can own.",
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
     "isDeprecated": false
   },
   {
@@ -13557,6 +13725,14 @@
     "description": null,
     "english": "Phone number",
     "translation": "Nomor telepon",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.VerifyYourPhone",
+    "description": null,
+    "english": "Verify Your Phone",
+    "translation": "Verifikasi Nomor Telepon",
     "isDeprecated": false
   },
   {
@@ -16164,7 +16340,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Untuk terus bermain di Roblox, setujui Ketentuan Layanan terbaru kami. Perubahan telah diterapkan ke bagian berikut:",
+    "translation": "Untuk terus bermain di Roblox, harap setujui Ketentuan Layanan kami dan pahami Kebijakan Privasi kami. Perubahan telah dilakukan di bagian berikut:",
     "isDeprecated": false
   },
   {
@@ -18462,5 +18638,29 @@
     "english": "Account Info",
     "translation": "Info Akun",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "Verifikasi Dua Langkah Diperlukan",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "Kamu harus mengatur Verifikasi Dua Langkah untuk menyelesaikan tindakan ini. Verifikasi Dua Langkah akan membantu melindungi log in, pembelian kamu, dan lainnya.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Action.SetUp",
+    "description": "Button text for the two-step verification challenge.",
+    "english": "Set Up",
+    "translation": "Atur",
+    "isDeprecated": true
   }
 ]

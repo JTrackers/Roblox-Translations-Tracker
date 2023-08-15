@@ -872,6 +872,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to: {email}",
+    "translation": "{email}(으)로 방금 전송된 코드를 입력하세요",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -3260,7 +3268,7 @@
     "key": "Description.ShortCodeLegalDisclaimer",
     "description": "Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nPlease keep the string for \"HELP\" fixed regardless of locale.",
     "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our {linkTagWithSmsTos}SMS Terms of Use{linkTagEnd} and {linkTagWithPrivacyPolicy}Privacy Policy{linkTagEnd}. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
-    "translation": "'계속'을 클릭하면 전화번호를 제출하고 {linkTagWithSmsTos}SMS 이용 약관{linkTagEnd} 및 {linkTagWithPrivacyPolicy}개인정보 처리방침{linkTagEnd}에 동의하게 됩니다. 또한 일회용 인증 코드를 받게 됩니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요할 경우 답장으로 'Help'라고 작성해 보내 주세요.",
+    "translation": "'계속'을 클릭하면 전화번호를 제출하고 {linkTagWithSmsTos}SMS 이용 약관{linkTagEnd} 및 {linkTagWithPrivacyPolicy}개인정보 처리방침{linkTagEnd}에 동의하게  되며, 일회용 인증 코드를 받게 됩니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요할 경우 답장으로 'Help'라고 작성해 보내 주세요.",
     "isDeprecated": false
   },
   {
@@ -6605,6 +6613,22 @@
     "description": null,
     "english": "Buy",
     "translation": "구매",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ModerationPortal",
+    "description": "Please delete, forgot label prefix",
+    "english": "Moderation Portal",
+    "translation": "검열 포털",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ModerationPortal",
+    "description": "Name of the Moderation Portal",
+    "english": "Moderation Portal",
+    "translation": "검열 포털",
     "isDeprecated": false
   },
   {
@@ -13296,6 +13320,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.PleaseTryAgain",
+    "description": "prompt user to try again when an error occurs.",
+    "english": "Please try again.",
+    "translation": "다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -16188,7 +16220,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "각 아이템은 구매 후 최대 30일 동안 재판매 기능이 보류됩니다. 이 보류 기간이 종료된 후에만 아이템을 재판매할 수 있습니다.",
+    "translation": "각 아이템은 구매 후 최대 30일 동안 재판매 기능이 보류되므로, 이 기간이 종료된 후에만 아이템을 재판매할 수 있습니다. 보류 기간은 모든 재판매에 적용되며, 재판매를 하려면 Premium 사용자여야 합니다.",
     "isDeprecated": false
   },
   {
@@ -16668,7 +16700,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "각 아이템은 구매 후 최대 30일 동안 재판매 기능이 보류됩니다. 이 보류 기간이 종료된 후에만 아이템을 재판매할 수 있습니다.",
+    "translation": "각 아이템은 구매 후 최대 30일 동안 재판매 기능이 보류되므로, 이 기간이 종료된 후에만 아이템을 재판매할 수 있습니다. 보류 기간은 모든 재판매에 적용되며, 재판매를 하려면 Premium 사용자여야 합니다.",
     "isDeprecated": false
   },
   {
@@ -16717,6 +16749,62 @@
     "description": null,
     "english": "The original sale of this item is only available in experience.",
     "translation": "이 아이템의 최초 판매 및 구매는 체험 내에서만 가능합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLeft",
+    "description": null,
+    "english": "Quantity Left: {remaining}/{total}",
+    "translation": "남은 수량: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1인당 구매 가능한 아이템 수에 제한이 있습니다. 이는 각 크리에이터가 설정합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "재판매를 하려면 Premium에 가입해야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "이 아이템은 보류 기간이 적용되지 않으므로 구매 후 바로 재판매가 가능합니다. Premium 사용자만 아이템을 재판매할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1인당 구매 가능한 아이템 수에 제한이 있습니다. 이는 각 크리에이터가 설정합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "사용자당 최대 개수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Creator Limit Reached",
+    "translation": "구매 불가",
     "isDeprecated": false
   },
   {
@@ -21552,6 +21640,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Item",
+    "key": "Label.In",
+    "description": null,
+    "english": "in {experienceName}",
+    "translation": "{experienceName} 내",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ItemModel",
     "key": "Label.NoDescriptionAvailable",
     "description": null,
@@ -21708,7 +21804,7 @@
     "key": "Label.LimitedQuantity",
     "description": null,
     "english": "Quantity Left: {amount}",
-    "translation": "한정 수량: {amount}",
+    "translation": "남은 수량: {amount}",
     "isDeprecated": false
   },
   {
@@ -21813,6 +21909,14 @@
     "description": null,
     "english": "The original sale of this item is only available in experience.",
     "translation": "이 아이템의 최초 판매 및 구매는 체험 내에서만 가능합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.MaxCopiesPerUser",
+    "description": null,
+    "english": "Max Per User: {amount}",
+    "translation": "최대: 사용자당 {amount}개",
     "isDeprecated": false
   },
   {
@@ -28013,6 +28117,22 @@
     "description": "i.e. +3",
     "english": "+{numberCount}",
     "translation": "+{numberCount}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Unable to Buy at Original Price",
+    "translation": "원래 가격으로 구매 불가",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "1인당 구매 가능한 아이템 수에 제한이 있습니다. 이는 각 크리에이터가 설정합니다.",
     "isDeprecated": false
   },
   {
@@ -38308,7 +38428,7 @@
     "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
     "description": null,
     "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
-    "translation": "코드를 사용하면, 본인(또는 18세 미만인 경우 부모 또는 법적 보호자)은 중재 조항 및{giftCardTermsLinkStart}기프트 카드 이용 약관{giftCardTermsLinkEnd}을 포함한 당사의 {termsOfUseLinkStart}이용 약관{termsOfUseLinkEnd}에 동의하고 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해한 것으로 간주됩니다.",
+    "translation": "코드를 사용하면, 본인(또는 18세 미만인 경우 부모 또는 법적 보호자)은 중재 조항 및 {giftCardTermsLinkStart}기프트 카드 이용 약관{giftCardTermsLinkEnd}을 포함한 당사의 {termsOfUseLinkStart}이용 약관{termsOfUseLinkEnd}에 동의하고 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해한 것으로 간주됩니다.",
     "isDeprecated": false
   },
   {
@@ -41765,6 +41885,14 @@
     "description": null,
     "english": "OK",
     "translation": "확인",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Message.RefreshAndTryAgain",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again.",
+    "translation": "문제가 발생했어요. 새로 고침하고 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -51308,7 +51436,7 @@
     "key": "Heading.Important",
     "description": null,
     "english": "Important",
-    "translation": "중요",
+    "translation": "중요 참고 사항",
     "isDeprecated": false
   },
   {
@@ -51316,7 +51444,7 @@
     "key": "Description.SecurityNotificationTextWarning",
     "description": null,
     "english": "Please choose a password that is brand {startSpan}new{endSpan} and {startSpan}unique{endSpan} to Roblox, do not use this password on any other site. This is the best way to prevent your Roblox account from getting compromised.",
-    "translation": "Roblox에서만 사용하는 {startSpan}새롭고{endSpan} {startSpan}독특한{endSpan} 비밀번호를 만들고, 다른 사이트에서는 이 비밀번호를 사용하지 마세요. 회원님의 Roblox 계정을 보호할 수 있는 가장 좋은 방법입니다.",
+    "translation": "Roblox에서만 사용하는 {startSpan}새롭고{endSpan} {startSpan}독특한{endSpan} 비밀번호를 만들고, 다른 사이트에서는 이 비밀번호를 사용하지 마세요. 이는 Roblox 계정을 보호할 수 있는 가장 좋은 방법입니다.",
     "isDeprecated": false
   },
   {
@@ -51324,7 +51452,7 @@
     "key": "Description.SecurityNotificationText",
     "description": null,
     "english": "For the safety and security of your account, your Roblox password has been reset. To regain access to your account, please type in your email or phone number and click the submit button on this page. If you do not have an email or phone number associated with your account, please contact Roblox customer support at {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.",
-    "translation": "회원님 계정의 안전과 보안을 위해 비밀번호가 재설정되었습니다. 계정에 다시 접근하려면 이 페이지에 이메일 또는 전화번호를 입력하고 제출 버튼을 클릭하세요. 계정과 연결된 이메일 또는 전화번호가 없는 경우, Roblox 지원 센터{aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}에 문의하세요.",
+    "translation": "계정의 안전과 보안을 위해 비밀번호가 재설정되었습니다. 계정에 다시 접근하려면 이 페이지에 이메일 또는 전화번호를 입력하고 제출 버튼을 클릭하세요. 계정과 연결된 이메일 또는 전화번호가 없는 경우, Roblox 지원 센터({aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd})에 문의하세요.",
     "isDeprecated": false
   },
   {
@@ -52237,6 +52365,14 @@
     "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
     "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
     "translation": "기프트 카드의 통화는 계정의 국가와 일치해야 합니다. {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}에 문의하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "매월",
     "isDeprecated": false
   },
   {
@@ -55176,6 +55312,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Content",
+    "description": null,
+    "english": "Content",
+    "translation": "콘텐츠",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Community",
+    "description": null,
+    "english": "Community",
+    "translation": "커뮤니티",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Advertisements",
+    "description": null,
+    "english": "Advertisements",
+    "translation": "광고",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ContentSettings",
+    "description": null,
+    "english": "Content Settings",
+    "translation": "콘텐츠 설정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.Growth",
+    "description": null,
+    "english": "Growth",
+    "translation": "성장",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.AccessSettings",
+    "description": null,
+    "english": "Access Settings",
+    "translation": "액세스 설정",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.RealTime",
+    "description": null,
+    "english": "Realtime",
+    "translation": "실시간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Navigation",
+    "key": "Heading.ExperienceOverview",
+    "description": null,
+    "english": "Experience Overview",
+    "translation": "체험 개요",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Features",
     "key": "Label.CreatorDashboard",
     "description": null,
@@ -57180,7 +57380,7 @@
     "key": "Error.ItemConfiguration.AssetInReview",
     "description": null,
     "english": "Cannot release asset that is pending review.",
-    "translation": "검토 대기 중인 애셋을 릴리스할 수 없습니다.",
+    "translation": "심사 대기 중인 애셋을 릴리스할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -61892,7 +62092,7 @@
     "key": "Error.InvalidRootPlace",
     "description": null,
     "english": "The root place for this universe is under review and can not be activated.",
-    "translation": "이 유니버스의 루트 플레이스는 검토 중이며 현재 활성화할 수 없습니다.",
+    "translation": "이 유니버스의 루트 플레이스는 심사 중이며 현재 활성화할 수 없습니다.",
     "isDeprecated": false
   },
   {
@@ -62588,7 +62788,7 @@
     "key": "Message.ConfirmPublishEvent",
     "description": "Message displayed in a modal confirming that a user would like to publish a scheduled event",
     "english": "When an event is published, it is immediately visible to everyone, and the attached experience cannot be swapped. Assets that are pending review or are moderated will display a placeholder instead.",
-    "translation": "이벤트를 게시하면 모두에게 바로 공개되며, 연결된 체험은 교체할 수 없습니다. 검토 중이거나 검열된 애셋은 자리 표시자로 나타납니다.",
+    "translation": "이벤트를 게시하면 모두에게 바로 공개되며, 연결된 체험은 교체할 수 없습니다. 심사 중이거나 검열된 애셋은 자리 표시자로 나타납니다.",
     "isDeprecated": false
   },
   {
@@ -62836,7 +63036,7 @@
     "key": "Label.InReview",
     "description": null,
     "english": "In Review",
-    "translation": "검토 중",
+    "translation": "심사 중",
     "isDeprecated": false
   },
   {
@@ -62877,6 +63077,14 @@
     "description": null,
     "english": "Sold Out",
     "translation": "매진",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Experiences",
+    "description": null,
+    "english": "Experiences",
+    "translation": "체험",
     "isDeprecated": false
   },
   {
@@ -68468,7 +68676,7 @@
     "key": "title.ConcurrentUsers",
     "description": "Chart title for chart showing number of concurrent users",
     "english": "Concurrent users",
-    "translation": "동시 접속 사용자",
+    "translation": "동시 사용자",
     "isDeprecated": false
   },
   {
@@ -68555,7 +68763,7 @@
     "namespace": "CreatorDashboard.Analytics",
     "key": "Label.MinsSuffix",
     "description": "The shorthand for minutes. Should be the shorthand for whatever the locale is",
-    "english": "mins",
+    "english": "min",
     "translation": "분",
     "isDeprecated": false
   },
@@ -68581,6 +68789,70 @@
     "description": "suffix to denote megabytes which follows a number",
     "english": "MB",
     "translation": "MB",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.BytesSuffix",
+    "description": null,
+    "english": "bytes",
+    "translation": "바이트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.RequestUnitsSuffix",
+    "description": null,
+    "english": "request units",
+    "translation": "요청 단위",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.RequestsSuffix",
+    "description": null,
+    "english": "requests",
+    "translation": "요청 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Label.TypeLegendQuota",
+    "description": null,
+    "english": "Quota",
+    "translation": "할당량",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TakeActionEngagement",
+    "description": "A subheading directly below the Engagement page title which links to our documentation. We want creators to take action by educating themselves and learning more to improve their games",
+    "english": "{linkStart}Take action{linkEnd} to boost engagement and fun.",
+    "translation": "참여를 개선하기 위해 {linkStart}조치를 취하세요{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TakeActionMonetization",
+    "description": "A subheading directly below the Monetization page title which links to our documentation. We want creators to take action by educating themselves and learning more to improve their games",
+    "english": "{linkStart}Take action{linkEnd} to earn more revenue.",
+    "translation": "수익 창출 개선을 위해 {linkStart}조치를 취하세요{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TakeActionRetention",
+    "description": "A subheading directly below the Retention page title which links to our documentation. We want creators to take action by educating themselves and learning more to improve their games",
+    "english": "{linkStart}Take action{linkEnd} to get more users to return.",
+    "translation": "유지율 개선을 위해 {linkStart}조치를 취하세요{linkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Analytics",
+    "key": "Description.TakeActionAcquisition",
+    "description": "A subheading directly below the User Acquisition page title which links to our documentation. We want creators to take action by educating themselves and learning more to improve their games",
+    "english": "{linkStart}Take action{linkEnd} to attract new users.",
+    "translation": "\b획득 개선을 위해 {linkStart}조치를 취하세요{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -70716,7 +70988,7 @@
     "key": "Message.ModerationWarning",
     "description": "Moderation message depicted alongside form image uploaders to let users know that their uploaded files will be reviewed first before they can be viewed.",
     "english": "Image will be reviewed by moderators before being made visible to other users.",
-    "translation": "이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다.",
+    "translation": "이미지는 검열팀의 심사가 끝난 후에 다른 사용자에게 공개됩니다.",
     "isDeprecated": false
   },
   {
@@ -70852,7 +71124,7 @@
     "key": "Label.InReview",
     "description": null,
     "english": "In Review",
-    "translation": "검토 중",
+    "translation": "심사 중",
     "isDeprecated": false
   },
   {
@@ -71379,8 +71651,8 @@
     "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Message.LimitedPublish",
     "description": null,
-    "english": "Once you publish a Limited you can only modify Tags and Comments",
-    "translation": "리미티드 아이템은 게시 이후 태그 및 코멘트만 수정할 수 있습니다",
+    "english": "Once you publish a Limited you can only modify Tags, Sale Location and Comments",
+    "translation": "리미티드 아이템은 게시 이후 태그, 판매 위치, 코멘트만 수정할 수 있습니다",
     "isDeprecated": false
   },
   {
@@ -71877,6 +72149,78 @@
     "description": null,
     "english": "Once you publish a Limited, you can only modify Tags, Comments, and Sale Locations",
     "translation": "리미티드를 게시하고 나면 태그, 코멘트, 판매 위치만 수정할 수 있습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PlaceIDNotExperience",
+    "description": null,
+    "english": "A Place ID that is not part of any Experiences was entered. Please try again.",
+    "translation": "체험에 속하지 않은 플레이스 ID가 입력되었습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.NoModifySaleLocation",
+    "description": null,
+    "english": "Sale Location can no longer be modified once you publish to Marketplace and All Experiences.",
+    "translation": "마켓플레이스 및 모든 체험에 게시하고 나면 더 이상 판매 위치를 수정할 수 없습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.LimitCopiesPerUser",
+    "description": null,
+    "english": "Limit Copies Per User",
+    "translation": "사용자당 복사본 제한",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.MaxCopiesSubText",
+    "description": null,
+    "english": "Maximum number of copies: {amount}",
+    "translation": "최대 복사본 수: {amount}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.NumberOfCopies",
+    "description": null,
+    "english": "Number of Copies",
+    "translation": "복사본 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PlaceIDForPrivateEntered",
+    "description": null,
+    "english": "A Place ID for a Private Experience was entered. Please try again.",
+    "translation": "비공개 체험의 플레이스 ID가 입력되었습니다. 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PlaceIDDuplicatesEntered",
+    "description": null,
+    "english": "Two or more of your Place IDs are part of the same experience. Please enter one Place ID per Experience and try again.",
+    "translation": "두 개 이상의 플레이스 ID가 동일한 체험에 속해 있습니다. 체험당 하나의 플레이스 ID를 입력하고 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.L2PreviouslyOnSale",
+    "description": null,
+    "english": "This item was previously put On Sale and can no longer be published as a Limited.",
+    "translation": "본 아이템은 기존에 판매되었었지만 더 이상 리미티드로 게시할 수 없는 아이템입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PlaceIDForArchivedEntered",
+    "description": null,
+    "english": "A Place ID for an Archived Experience was entered. Please try again.",
+    "translation": "보관된 체험의 플레이스 ID가 입력되었습니다. 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -75012,7 +75356,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Roblox를 계속 이용하려면 업데이트된 서비스 약관에 동의해야 합니다. 변경된 부분은 다음과 같습니다.",
+    "translation": "Roblox에서 계속 플레이하려면 서비스 약관 및 개인정보 처리방침에 동의해 주세요. 다음 부분이 변경되었습니다.",
     "isDeprecated": true
   },
   {
@@ -75100,7 +75444,7 @@
     "key": "Modal.Body",
     "description": "Body of the modal indicating the user CTA",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Roblox를 계속 이용하려면 업데이트된 서비스 약관에 동의해야 합니다. 변경된 문서는 다음과 같습니다.",
+    "translation": "Roblox에서 계속 플레이하려면 서비스 약관 및 개인정보 처리방침에 동의해 주세요. 다음 부분이 변경되었습니다.",
     "isDeprecated": false
   },
   {
@@ -78220,7 +78564,7 @@
     "key": "Description.ReviewImage",
     "description": null,
     "english": "Image will be reviewed by moderators before being made visible to other users",
-    "translation": "이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다.",
+    "translation": "이미지는 검열팀의 심사가 끝난 후에 다른 사용자에게 공개됩니다.",
     "isDeprecated": false
   },
   {
@@ -78308,7 +78652,7 @@
     "key": "Label.InReview",
     "description": null,
     "english": "In review",
-    "translation": "검토 중",
+    "translation": "심사 중",
     "isDeprecated": false
   },
   {
@@ -80196,7 +80540,7 @@
     "key": "Message.TextFilterNotSupportedWarning",
     "description": null,
     "english": "This language is not yet officially supported on Roblox, so manual name and description translations may be incorrectly filtered.",
-    "translation": "이 언어는 아직 Roblox에서 공식적으로 지원하지 않는 언어이므로, 이름 및 설명의 번역 필터링에 오류가 있을 수 있습니다.",
+    "translation": "이 언어는 아직 Roblox에서 공식적으로 지원하지 않는 언어이므로, 이름 및 설명의 수동 번역 필터링에 오류가 있을 수 있습니다.",
     "isDeprecated": false
   },
   {
@@ -81784,6 +82128,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDocumentation.Navigation",
+    "key": "Heading.ExperienceOverview",
+    "description": null,
+    "english": "Experience Overview",
+    "translation": "체험 개요",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.Home",
     "key": "Heading.Redirecting",
     "description": null,
@@ -83292,7 +83644,7 @@
     "key": "Label.Review",
     "description": null,
     "english": "Review",
-    "translation": "검토",
+    "translation": "심사",
     "isDeprecated": false
   },
   {
@@ -83716,7 +84068,7 @@
     "key": "Heading.OAuthEdit",
     "description": null,
     "english": "Edit \"{appName}\"",
-    "translation": "'{appName}'(을)를 편집할까요?",
+    "translation": "'{appName}' 편집",
     "isDeprecated": false
   },
   {
@@ -84149,6 +84501,230 @@
     "description": null,
     "english": "Cannot save app. The openid scope must be selected with the profile scope",
     "translation": "앱을 저장할 수 없습니다. OpenID 범위를 프로필 범위와 함께 선택해야 합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.PublishLimitExceeded",
+    "description": null,
+    "english": "You have exceeded the app publish limit for today. Please try again at a later date.",
+    "translation": "오늘의 앱 게시 한도를 초과했습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Response.GenericPublishAppError",
+    "description": null,
+    "english": "There was an error publishing the app",
+    "translation": "앱을 게시하는 중에 오류가 발생했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.ReviewAndPublish",
+    "description": null,
+    "english": "Review and Publish",
+    "translation": "심사 및 게시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.PublishAppHeading",
+    "description": null,
+    "english": "Submit for Review",
+    "translation": "심사를 위해 제출",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.PublishInformation",
+    "description": null,
+    "english": "Important information to read before submitting your app for review and publish.",
+    "translation": "앱의 심사 및 게시를 위해 제출하기 전에 읽어야 할 중요한 정보입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.DailyLimit",
+    "description": null,
+    "english": "Daily Limit",
+    "translation": "일일 한도",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.DailyLimit",
+    "description": null,
+    "english": "There is a daily limit of one publish attempt, so make sure your app is fully prepared before submitting for review.",
+    "translation": "게시 시도는 하루에 한 번만 할 수 있으므로, 심사를 위해 앱을 제출하기 전에 모든 준비를 철저히 완료하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.EditsDisabled",
+    "description": null,
+    "english": "Edits Temporarily Disabled",
+    "translation": "편집이 일시적으로 비활성화됨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.EditsDisabled",
+    "description": null,
+    "english": "During the review process, edits to the app will be temporarily disabled.",
+    "translation": "심사가 진행되는 동안 앱 편집이 일시적으로 이용 중지됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.ReviewStatus",
+    "description": null,
+    "english": "Review Status and Time",
+    "translation": "심사 현황 및 시간",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.ReviewStatus",
+    "description": null,
+    "english": "Once the review process is complete, you can check the status of your submission on the Edit page in approximately 5 business days.",
+    "translation": "심사 절차가 완료되면, 영업일 기준 약 5일 후에 편집 페이지에서 제출 결과를 확인할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.SubmitForReview",
+    "description": null,
+    "english": "Submit For Review",
+    "translation": "심사를 위해 제출",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.AppUnpublished",
+    "description": null,
+    "english": "Your app is unpublished",
+    "translation": "앱 게시가 취소되었습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.AppUnpublished",
+    "description": null,
+    "english": "Your app is currently unpublished and only up to 100 users are able to authorize the app. Submit your app for review and publish to make it available to users.",
+    "translation": "앱이 게시되지 않았으며 최대 100명의 사용자만 앱을 승인할 수 있습니다. 앱을 제출하고 심사 및 게시를 완료해 사용자에게 공개하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.AppInReview",
+    "description": null,
+    "english": "Your app is in review",
+    "translation": "앱을 심사 중입니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.AppInReview",
+    "description": null,
+    "english": "Edits are temporarily disabled until the review process is completed. On average, the review process takes approximately 5 days.",
+    "translation": "심사가 완료될 때까지 편집이 일시적으로 사용 중지됩니다. 심사에는 평균적으로 약 5일이 소요됩니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.AppApproved",
+    "description": null,
+    "english": "Your app is approved",
+    "translation": "앱이 승인되었습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.AppApproved",
+    "description": null,
+    "english": "Your app is approved and is available to the public. If you wish to make further updates, a new review process must be initiated. Note, there is a limit of 1 publish attempt per day.",
+    "translation": "앱 승인이 완료되어 사용자에게 공개할 수 있습니다. 추가 업데이트를 원할 경우 심사를 새로 받아야 합니다. 게시는 하루에 한 번만 시도할 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Heading.UnpublishedChanges",
+    "description": null,
+    "english": "Your app has new unpublished changes",
+    "translation": "앱에 게시되지 않은 새로운 변경 사항이 있습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.UnpublishedChanges",
+    "description": null,
+    "english": "Your app is publicly available but has new unpublished changes. Publish app to submit for review and make the latest changes visible to everyone.",
+    "translation": "앱이 이미 공개 중이지만 게시되지 않은 새로운 변경 사항이 있습니다. 앱을 게시해 심사를 받고 모든 사람이 최신 변경 사항을 볼 수 있도록 해 주세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.AppPublishSuccessful",
+    "description": null,
+    "english": "App submitted for review",
+    "translation": "앱을 심사받기 위해 제출을 완료했습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Title.PublishRequirementError",
+    "description": null,
+    "english": "You are missing the following information to submit for review and publish",
+    "translation": "심사 및 게시를 위해 제출해야 할 일부 정보가 누락되었습니다. 해당 정보:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Message.InsufficientScopeForPublish",
+    "description": null,
+    "english": "At least one scope",
+    "translation": "하나 이상의 범위",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.AppStatus",
+    "description": null,
+    "english": "App Status",
+    "translation": "앱 상태",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.PublicApp",
+    "description": null,
+    "english": "Public",
+    "translation": "공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.PrivateApp",
+    "description": null,
+    "english": "Private",
+    "translation": "비공개",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.EditAndPublish",
+    "description": null,
+    "english": "Edit and Publish",
+    "translation": "편집 및 게시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.OAuth",
+    "key": "Label.ContinueToEdit",
+    "description": null,
+    "english": "Continue To Edit",
+    "translation": "계속 편집",
     "isDeprecated": false
   },
   {
@@ -85512,6 +86088,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Label.DidYouMean",
+    "description": "A spelling correction that is offered to the user as a suggestion",
+    "english": "Did you mean",
+    "translation": "다음을 찾으려고 했나요?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorMarketplace.Common",
+    "key": "Label.SearchInsteadFor",
+    "description": "Offers the user a way to get to their original query after trying a spelling correction",
+    "english": "Search instead for",
+    "translation": "대신 다음을 검색:",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorMarketplace.Navigation",
     "key": "Label.AboutUs",
     "description": null,
@@ -86636,7 +87228,7 @@
     "key": "Label.NotificationTypeMatchedContact",
     "description": "Notification Type Matched Contact",
     "english": "Contacts on Roblox",
-    "translation": "Roblox에 문의하기",
+    "translation": "Roblox에 있는 연락처",
     "isDeprecated": false
   },
   {
@@ -86997,6 +87589,38 @@
     "description": null,
     "english": "The following objects describe payloads that are accepted or returned. See each individual endpoint for more information on when these objects are used.",
     "translation": "다음 개체는 수락되거나 반환되는 페이로드를 설명합니다. 이러한 개체가 사용되는 시기에 대한 자세한 정보는 각 개별 끝점을 참고하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.Scopes",
+    "description": null,
+    "english": "Scopes",
+    "translation": "범위",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.PathParameters",
+    "description": null,
+    "english": "Path Parameters",
+    "translation": "경로 매개 변수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.QueryParameters",
+    "description": null,
+    "english": "Query Parameters",
+    "translation": "쿼리 매개 변수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDocumentation.OpenCloud",
+    "key": "Label.ReadOnly",
+    "description": null,
+    "english": "Read Only",
+    "translation": "읽기 전용",
     "isDeprecated": false
   },
   {
@@ -93724,7 +94348,7 @@
     "key": "Label.InReview",
     "description": null,
     "english": "In Review",
-    "translation": "검토 중",
+    "translation": "심사 중",
     "isDeprecated": false
   },
   {
@@ -96712,6 +97336,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ImmersiveAdsAnalytics",
+    "key": "Description.DataDelay",
+    "description": null,
+    "english": "Data on this page might be several hours behind.",
+    "translation": "이 페이지의 데이터에는 몇 시간 지연이 있을 수 있습니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AgeGuidelines",
     "key": "DisplayName.Violence",
     "description": null,
@@ -98628,7 +99260,7 @@
     "key": "Email.Body.TopContent",
     "description": "Top content in the email body for the suspicious login email html body.",
     "english": "{boldStart}We noticed a login from a new device or location for {username} and want to make sure it was you.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}Regional Location: {location}{pointEnd}{pointStart}Device: {device}{pointEnd}{pointStart}Time: {time}{pointEnd}{listEnd}",
-    "translation": "새 기기 또는 위치에서 {boldStart}{username} 님의 로그인 기록이 발생함에 따라 본인 여부를 확인하고자 합니다.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}위치: {location}{pointEnd}{pointStart}기기: {device}{pointEnd}{pointStart}시간: {time}{pointEnd}{listEnd}",
+    "translation": "{boldStart}새 기기 또는 위치에서 {username} 님의 로그인 기록이 발생함에 따라 본인 여부를 확인하고자 합니다.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}지역: {location}{pointEnd}{pointStart}기기: {device}{pointEnd}{pointStart}시간: {time}{pointEnd}{listEnd}",
     "isDeprecated": false
   },
   {
@@ -99300,7 +99932,7 @@
     "key": "Label.ApiRequestQuota",
     "description": null,
     "english": "Quota Request Units",
-    "translation": "할당량",
+    "translation": "할당량 요청 단위",
     "isDeprecated": false
   },
   {
@@ -99308,7 +99940,7 @@
     "key": "Label.ApiRequestUnits",
     "description": null,
     "english": "Total Request Units",
-    "translation": "사용",
+    "translation": "총 요청 단위",
     "isDeprecated": false
   },
   {
@@ -99349,6 +99981,78 @@
     "description": null,
     "english": "Date",
     "translation": "날짜",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "RequestCountByApi",
+    "description": null,
+    "english": "Request Count by API",
+    "translation": "API별 요청 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Title.RequestCountByStatus",
+    "description": null,
+    "english": "Request Count by Status",
+    "translation": "상태별 요청 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Title.RequestCountByApi",
+    "description": null,
+    "english": "Request Count by API",
+    "translation": "API별 요청 수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.RequestUnits",
+    "description": null,
+    "english": "Request Units",
+    "translation": "요청 단위",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Requests",
+    "description": null,
+    "english": "Requests",
+    "translation": "요청",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.MemorySize",
+    "description": null,
+    "english": "Memory Size (MB)",
+    "translation": "메모리 크기(GB)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.MemorySizeUsage",
+    "description": null,
+    "english": "Memory Size Usage",
+    "translation": "메모리 크기 사용량",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.MemorySizeQuota",
+    "description": null,
+    "english": "Memory Size Quota",
+    "translation": "메모리 크기 할당량",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.CloudServices",
+    "key": "Label.Unknown",
+    "description": null,
+    "english": "Unknown",
+    "translation": "알 수 없음",
     "isDeprecated": false
   },
   {
@@ -99686,5 +100390,29 @@
     "english": "Contact Us",
     "translation": "문의하기",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "2단계 인증 필요",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "이 작업을 완료하려면 2단계 인증을 설정해야 합니다. 이는 로그인 및 구매 등을 안전하게 진행하는 데 도움이 됩니다.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Action.SetUp",
+    "description": "Button text for the two-step verification challenge.",
+    "english": "Set Up",
+    "translation": "설정",
+    "isDeprecated": true
   }
 ]

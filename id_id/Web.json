@@ -872,6 +872,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to: {email}",
+    "translation": "Masukkan kode yang baru saja kami kirim ke: {email}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -6605,6 +6613,22 @@
     "description": null,
     "english": "Buy",
     "translation": "Beli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ModerationPortal",
+    "description": "Please delete, forgot label prefix",
+    "english": "Moderation Portal",
+    "translation": "Portal Moderasi",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ModerationPortal",
+    "description": "Name of the Moderation Portal",
+    "english": "Moderation Portal",
+    "translation": "Portal Moderasi",
     "isDeprecated": false
   },
   {
@@ -13288,6 +13312,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Message.Error.BlockUser.TargetNotBlocked",
+    "description": "text shown to user when they try to unblock a user that is not currently blocked",
+    "english": "Target user for unblock request is not currently blocked.",
+    "translation": "Pengguna yang ingin kamu buka blokir, tidak sedang diblokir saat ini.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.PleaseTryAgain",
+    "description": "prompt user to try again when an error occurs.",
+    "english": "Please try again.",
+    "translation": "Coba lagi.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.BuildersClub",
     "key": "Label.BuidlersClubOnlyClose",
     "description": null,
@@ -16180,7 +16220,7 @@
     "key": "Message.HoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
+    "translation": "Setelah pembelian, item akan ditahan hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan ini berakhir. Periode penahanan ini berlaku untuk setiap penjualan kembali. Hanya pengguna premium yang dapat menjual kembali item.",
     "isDeprecated": false
   },
   {
@@ -16660,7 +16700,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": null,
     "english": "After purchase, items enter a hold for up to 30 days. The item can only be resold after this holding period ends. This holding period applies to every resale. Only premium users can resell items.",
-    "translation": "Setelah dibeli, item akan ditahan selama hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan berakhir.",
+    "translation": "Setelah pembelian, item akan ditahan hingga 30 hari. Item tersebut hanya dapat dijual kembali setelah periode penahanan ini berakhir. Periode penahanan ini berlaku untuk setiap penjualan kembali. Hanya pengguna premium yang dapat menjual kembali item.",
     "isDeprecated": false
   },
   {
@@ -16693,6 +16733,78 @@
     "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
     "english": "Available In Experience",
     "translation": "Tersedia di Pengalaman Virtual",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperienceOnly",
+    "description": "Label inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences. \"Original sale\" refers to purchasing from the creator of the item, as opposed to from resellers.",
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "Penjualan orisinal item ini hanya tersedia di pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InExperiencePurchaseOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "Penjualan orisinal item ini hanya tersedia di pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLeft",
+    "description": null,
+    "english": "Quantity Left: {remaining}/{total}",
+    "translation": "Jumlah Tersisa: {remaining}/{total}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.QuantityLimitReached",
+    "description": null,
+    "english": "The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.PremiumForResell",
+    "description": "Premium membership is required for reselling the item. Displayed above list of owned items.",
+    "english": "Premium is required for reselling",
+    "translation": "Premium diperlukan untuk penjualan kembali",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.NoHoldingPolicy",
+    "description": null,
+    "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
+    "translation": "Item ini tidak memerlukan periode penahanan, kamu dapat menjualnya kembali segera setelah kamu membelinya. Hanya pengguna premium yang dapat menjual kembali item.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.MaxPerUser",
+    "description": null,
+    "english": "Max Per User",
+    "translation": "Maks per Pengguna",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Creator Limit Reached",
+    "translation": "Tidak Dapat Membeli",
     "isDeprecated": false
   },
   {
@@ -21528,6 +21640,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Item",
+    "key": "Label.In",
+    "description": null,
+    "english": "in {experienceName}",
+    "translation": "di {experienceName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ItemModel",
     "key": "Label.NoDescriptionAvailable",
     "description": null,
@@ -21684,7 +21804,7 @@
     "key": "Label.LimitedQuantity",
     "description": null,
     "english": "Quantity Left: {amount}",
-    "translation": "Jumlah terbatas: {amount}",
+    "translation": "Jumlah Tersisa: {amount}",
     "isDeprecated": false
   },
   {
@@ -21781,6 +21901,22 @@
     "description": "new text with no asset type",
     "english": "Use {assetName} and thousands of other assets to build an immersive experience. Select from a wide range of models, decals, meshes, plugins, or audio that help bring your imagination into reality.",
     "translation": "Gunakan {assetName} dan ribuan aset lainnya untuk membangun pengalaman virtual yang imersif. Pilih dari berbagai model, stiker, mesh, plugin, atau audio yang dapat membantu merealisasikan imajinasi kamu menjadi kenyataan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.InExperienceOnly",
+    "description": null,
+    "english": "The original sale of this item is only available in experience.",
+    "translation": "Penjualan orisinal item ini hanya tersedia di pengalaman virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ItemModel",
+    "key": "Label.MaxCopiesPerUser",
+    "description": null,
+    "english": "Max Per User: {amount}",
+    "translation": "Maksimum: {amount} salinan per pengguna",
     "isDeprecated": false
   },
   {
@@ -27984,6 +28120,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Heading.QuantityLimitReached",
+    "description": null,
+    "english": "Unable to Buy at Original Price",
+    "translation": "Tidak Dapat Membeli dengan Harga Orisinal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.PurchaseDialog",
+    "key": "Message.QuantityLimitReached",
+    "description": null,
+    "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
+    "translation": "Kreator memiliki batas atas jumlah salinan yang dapat dibeli oleh setiap pengguna.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Purchasing.RobloxProducts",
     "key": "Heading.Sorry",
     "description": null,
@@ -29789,6 +29941,38 @@
     "description": null,
     "english": "Get access to the newest Roblox features with phone verification.",
     "translation": "Dapatkan akses ke fitur Roblox terbaru dengan verifikasi nomor ponsel.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.ProtectYourAccount",
+    "description": null,
+    "english": "Protect Your Account",
+    "translation": "Lindungi Akun Kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.ProtectAccountDescriptiveNorm.V1",
+    "description": null,
+    "english": "Join millions of users who have verified their phone numbers to protect their accounts.",
+    "translation": "Bergabunglah dengan jutaan pengguna yang telah memverifikasi nomor ponsel mereka untuk melindungi akun mereka.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.UpsellBodyUnlock.V1",
+    "description": null,
+    "english": "Add your phone number now to unlock helpful features and enhanced security.",
+    "translation": "Tambahkan nomor ponsel kamu sekarang untuk mengakses berbagai fitur bermanfaat dan peningkatan keamanan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Heading.UnlockMoreFeatures",
+    "description": null,
+    "english": "Unlock More Features",
+    "translation": "Akses Lebih Banyak Fitur",
     "isDeprecated": false
   },
   {
@@ -38225,6 +38409,14 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.GiftCardCurrencyNotMatch",
+    "description": "The currency of your Gift card must match your account country.",
+    "english": "The currency of your Gift card must match your account country.",
+    "translation": "Mata uang gift card kamu harus cocok dengan negara akun kamu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Description.LegalAgreementBeforeFirstTimeRedemptionOnLocalCredits",
     "description": null,
     "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner and agree to our Terms of Use including the arbitration clause and to our Privacy Policy. <br />You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
@@ -38241,6 +38433,14 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Description.LegalAgreementOnNormalGiftCardRedemptions",
+    "description": null,
+    "english": "By redeeming your code, you represent that you, and your parent or legal guardian if you are under age 18, agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}.",
+    "translation": "Dengan menukarkan kode, kamu menyatakan bahwa kamu dan orang tua atau wali sah kamu, jika kamu berusia di bawah 18 tahun, menyetujui {termsOfUseLinkStart}Ketentuan Penggunaan{termsOfUseLinkEnd} kami, termasuk klausul arbitrase dan {giftCardTermsLinkStart}Syarat dan Ketentuan Gift Card{giftCardTermsLinkEnd} dan memahami {privacyPolicyLinkStart}Kebijakan Privasi{privacyPolicyLinkEnd} kami.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Description.LegalAgreementBeforeFirstTimeGiftCardRedemptionOnLocalCredits",
     "description": null,
     "english": "By checking the box, you acknowledge that you are at least 18 years of age, or that you are the parent or legal guardian of the account owner, and agree to our {termsOfUseLinkStart}Terms of Use{termsOfUseLinkEnd} including the arbitration clause and {giftCardTermsLinkStart}Gift Card Terms & Conditions{giftCardTermsLinkEnd} and acknowledge our {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You also acknowledge and agree that the value stated on the face of your gift card will redeem for the equivalent value of Roblox credit in your local currency.",
@@ -38249,10 +38449,34 @@
   },
   {
     "namespace": "Purchasing.RedeemGameCard",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "Mata uang gift card harus cocok dengan negara akun kamu. Hubungi {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.GenericFailure",
+    "description": null,
+    "english": "Something went wrong! Please try again later.",
+    "translation": "Ada masalah! Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
     "key": "Message.Step1LargestAvailablePackageYouCanBuy",
     "description": null,
     "english": "Largest package you can buy with your available credit:",
     "translation": "Paket terbesar yang dapat kamu beli dengan dana kamu yang tersedia:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Purchasing.RedeemGameCard",
+    "key": "Alert.RobuxPackagePurchaseFailed",
+    "description": null,
+    "english": "Something went wrong! Unable to purchase the product. Please try again later.\t",
+    "translation": "Ada masalah! Tidak dapat membeli produk. Coba lagi nanti.",
     "isDeprecated": false
   },
   {
@@ -41677,6 +41901,14 @@
     "description": null,
     "english": "OK",
     "translation": "OKE",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Payment",
+    "key": "Message.RefreshAndTryAgain",
+    "description": null,
+    "english": "Something went wrong, please refresh and try again.",
+    "translation": "Terjadi kesalahan. Refresh lalu coba lagi.",
     "isDeprecated": false
   },
   {
@@ -52093,6 +52325,22 @@
     "description": null,
     "english": "An error has occurred. Please contact Customer Service if the problem persists.",
     "translation": "Terjadi eror. Hubungi Dukungan Pelanggan jika masalah masih berlanjut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Response.RedeemGiftCardCurrencyCodeNotMatch",
+    "description": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "english": "Gift card currency must match your account country. Contact {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "translation": "Mata uang gift card harus cocok dengan negara akun kamu. Hubungi {robloxSupportLinkStart}Roblox.com/support{robloxSupportLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.PaymentRedeem",
+    "key": "Label.Monthly",
+    "description": null,
+    "english": "Monthly",
+    "translation": "Bulanan",
     "isDeprecated": false
   },
   {
@@ -65148,7 +65396,7 @@
     "key": "Popup.Message",
     "description": "Description of the updated user agreement message in popup dialog.",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Untuk terus bermain di Roblox, setujui Ketentuan Layanan terbaru kami. Perubahan telah diterapkan ke bagian berikut:",
+    "translation": "Untuk terus bermain di Roblox, harap setujui Ketentuan Layanan kami dan pahami Kebijakan Privasi kami. Perubahan telah dilakukan di bagian berikut:",
     "isDeprecated": true
   },
   {
@@ -65236,7 +65484,7 @@
     "key": "Modal.Body",
     "description": "Body of the modal indicating the user CTA",
     "english": "To continue playing on Roblox, please agree to our Terms of Service and acknowledge our Privacy Policy. Changes have been made to the following sections:",
-    "translation": "Untuk terus bermain di Roblox, harap setujui Ketentuan Layanan terbaru kami. Perubahan telah diterapkan ke dokumen berikut:",
+    "translation": "Untuk terus bermain di Roblox, harap setujui Ketentuan Layanan kami dan pahami Kebijakan Privasi kami. Perubahan telah dilakukan di bagian berikut:",
     "isDeprecated": false
   },
   {
@@ -70892,7 +71140,7 @@
     "key": "Email.Body.TopContent",
     "description": "Top content in the email body for the suspicious login email html body.",
     "english": "{boldStart}We noticed a login from a new device or location for {username} and want to make sure it was you.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}Regional Location: {location}{pointEnd}{pointStart}Device: {device}{pointEnd}{pointStart}Time: {time}{pointEnd}{listEnd}",
-    "translation": "{boldStart}Kami melihat login dari perangkat atau lokasi baru untuk {username} dan ingin memastikan bahwa login tersebut dilakukan oleh kamu.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}Lokasi: {location}{pointEnd}{pointStart}Perangkat: {device}{pointEnd}{pointStart}Waktu: {time}{pointEnd}{listEnd}",
+    "translation": "{boldStart}Kami melihat log in dari perangkat atau lokasi baru untuk {username} dan ingin memastikan bahwa login tersebut dilakukan oleh kamu.{boldEnd}{lineBreak}{lineBreak}{listStart}{pointStart}Lokasi Wilayah: {location}{pointEnd}{pointStart}Perangkat: {device}{pointEnd}{pointStart}Waktu: {time}{pointEnd}{listEnd}",
     "isDeprecated": false
   },
   {
@@ -71486,5 +71734,29 @@
     "english": "Date",
     "translation": "Tanggal",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "Verifikasi Dua Langkah Diperlukan",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "Kamu harus mengatur Verifikasi Dua Langkah untuk menyelesaikan tindakan ini. Verifikasi Dua Langkah akan membantu melindungi log in, pembelian kamu, dan lainnya.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Action.SetUp",
+    "description": "Button text for the two-step verification challenge.",
+    "english": "Set Up",
+    "translation": "Atur",
+    "isDeprecated": true
   }
 ]
