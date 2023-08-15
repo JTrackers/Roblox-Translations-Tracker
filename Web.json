@@ -1300,8 +1300,13 @@
       "privateNote": "email subject to change password",
       "text": "Roblox Password Reset"
     },
+    "Description.PasswordChangeEmail.HtmlBody": {
+      "deprecated": false,
+      "privateNote": "reset password email body",
+      "text": "We noticed that the password changed for your Roblox account: {userName}. If you didn't intend to change it, or you think someone else changed it by mistake, please click this link to undo the action:<br /><a href=\"{urlWithTicket}\">{urlShown}</a><br /><br />If you are happy with your new Roblox password, you don't have to do anything! It's already set up. Please do not reply to this message. If you have any questions, please see the Roblox help page (https://www.roblox.com/help)."
+    },
     "Description.PasswordChangeEmail.BodyPlainText": {
-      "deprecated": true,
+      "deprecated": false,
       "privateNote": "password reset plaintext email message",
       "text": "We noticed that the password changed for your Roblox account: {userName}. If you didn't intend to change it, or you think someone else changed it by mistake, please click this link to undo the action:\n{urlWithTicket}\n\nIf you are happy with your new Roblox password, you don't have to do anything! It's already set up. Please do not reply to this message. If you have any questions, please see the Roblox help page (https://www.roblox.com/help)."
     },
@@ -4443,7 +4448,7 @@
       "text": "Mobile push notifications for this device."
     },
     "Description.MembershipHelp": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "DEPRECATED, DO NOT INCLUDE OR TRANSLATE",
       "text": "."
     },
@@ -5465,12 +5470,12 @@
     "Description.AccountEmailRevertEmail.HtmlBody.V2": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Dear Roblox user,{lineBreak}{lineBreak}We noticed that you have changed the email address for your {username} account from {oldEmailAddress} to {newEmailAddress}. Just in case you really didn't mean to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox you don't have to do anything! It's already set up.{lineBreak}{lineBreak}Please do not reply to this message. For account help, visit Roblox Support ({accountHelpLink})."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.{lineBreak}{lineBreak}Please do not reply to this message. If you have any questions, please visit our <a target=\"_blank\" href=\"{accountHelpLink}\">Help Center</a>."
     },
     "Description.AccountEmailRevertEmail.PlainBody.V2": {
       "deprecated": false,
       "privateNote": null,
-      "text": "Dear Roblox user,{lineBreak}{lineBreak}We noticed that you have changed the email address for your {username} account from {oldEmailAddress} to {newEmailAddress}. Just in case you really didn't mean to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{revertAccountEmailLink}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox you don't have to do anything! It's already set up.{lineBreak}Please do not reply to this message. For account help, visit Roblox Support ({accountHelpLink})."
+      "text": "Dear {username},{lineBreak}{lineBreak}We noticed that you have changed your email address from {oldEmailAddress} to {newEmailAddress}. If you didn't intend to change it, or you think someone else changed it by mistake, then we need you to click this link{lineBreak}{revertAccountEmailLink}{lineBreak}to change the email back. You will also need to enter a new password. That way we will know for sure that your account is secure and safe.{lineBreak}{lineBreak}If you are happy with your new email address on Roblox, you don't have to do anything! It's already set up.{lineBreak}Please do not reply to this message. If you have any questions, please visit our Help Center ({accountHelpLink})."
     },
     "Description.UsernameChangeEmail.Body.V2": {
       "deprecated": false,
@@ -14668,7 +14673,7 @@
       "text": "We are having a problem completing your purchase. Please try again in a few minutes."
     },
     "Message.InternalErrorFetchSale": {
-      "deprecated": false,
+      "deprecated": true,
       "privateNote": "DEPRECATED, DO NOT INCLUDE",
       "text": "There was an error fetching your private server sale details. Please try again in a few minutes. If the problem persists, please contact info@roblox.com for assistance."
     },
@@ -14846,6 +14851,11 @@
       "deprecated": false,
       "privateNote": null,
       "text": "There was an error fetching your private server sale details. Please try again in a few minutes. If the problem persists, please check out {startLink1}our status{endLink1}. If you need additional assistance, please visit our {startLink2}Help Center{endLink2}."
+    },
+    "Message.IneligibleForVoiceChat": {
+      "deprecated": false,
+      "privateNote": "The user is not eligible for voice chat when trying to enable it for private servers.",
+      "text": "You are not eligible for voice chat."
     }
   },
   "Feature.ItemConfiguration": {
