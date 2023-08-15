@@ -5513,6 +5513,14 @@
   },
   {
     "namespace": "CommonUI.Controls",
+    "key": "Action.Select",
+    "description": null,
+    "english": "Select",
+    "translation": "Selecionar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
     "key": "Action.Delete",
     "description": null,
     "english": "Delete",
@@ -70369,6 +70377,54 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "Enable 2-Step Verification via Authenticator",
+    "translation": "Ativar a verificação em 2 etapas via autenticador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3",
+    "description": null,
+    "english": "You can do this by going to {linkStart}Account Settings{linkEnd}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Você pode fazer isso indo nas {linkStart}configurações da conta{linkEnd}. Se a sua conta foi invadida, é improvável que a Roblox consiga restaurar a sua conta ou recuperar o valor, incluindo itens perdidos e moeda virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3Short",
+    "description": null,
+    "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Se a sua conta foi invadida, é improvável que Roblox consiga restaurar a sua conta ou recuperar o valor, incluindo itens perdidos e moeda virtual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpdateV3MessageBody",
+    "description": null,
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}.{lineBreak}{lineBreak}If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency. Learn more on our {linkStartHelp}Help Page{linkEndHelp}.",
+    "translation": "Ative a verificação em duas etapas via autenticador para ajudar a proteger sua conta. Você pode fazer isso indo nas {linkStartSettings}configurações da conta{linkEndSettings}.{lineBreak}{lineBreak}Se sua conta foi invadida, é improvável que Roblox seja capaz de restaurar sua conta ou recuperar o valor, incluindo itens perdidos e moeda virtual. Saiba mais em nossa {linkStartHelp}página de ajuda{linkEndHelp}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Header.AccountRestoresPolicyUpsell",
+    "description": "Header for aggressive upsell to force high risk user to enable authenticator.",
+    "english": "Protect Your Account!",
+    "translation": "Proteja sua conta!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.AccountRestoresPolicyUpsellMessageBody",
+    "description": "Message body text for the Account Restores Policy upsell banner.",
+    "english": "Please enable 2-Step Verification via Authenticator to help to protect your account. You can do this by going to {linkStartSettings}Account Settings{linkEndSettings}. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "Ative a verificação em duas etapas via autenticador para ajudar a proteger sua conta. Você pode fazer isso indo nas {linkStartSettings}configurações da conta{linkEndSettings}. Se sua conta foi invadida, é improvável que Roblox seja capaz de restaurar sua conta ou recuperar o valor, incluindo itens perdidos e moeda virtual. Saiba mais em nossa página de ajuda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.SetUpAuthenticatorAccountRestoresPolicyUpsell",
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
@@ -92836,7 +92892,15 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "Usuários com menos de 13 anos não podem fazer login com um código único.",
+    "translation": "Apenas usuários com 13 anos ou mais podem entrar com um código único.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.LoginOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}{code}{boldEnd}\" or \"{linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} is your Roblox One-Time Code. Enter it into the login screen to log in. This code will expire in 15 minutes.{lineBreak}{lineBreak}Do {boldStart}not{boldEnd} share this code. We will {boldStart}never{boldEnd} contact you to ask for it. If you did not request this code, there is no further action you need to take. If you receive numerous codes you did not request, we strongly encourage you to link a different email to your account(s) and {linkTagWithAuthenticatorHelpLinkStart}set up 2-Step Verification by Authenticator App{linkTagEnd}.{lineBreak}{lineBreak}This login request was received from {geolocation}.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team\t",
+    "translation": "Olá,{lineBreak}{lineBreak}{boldStart}{code}{boldEnd} é o seu código único Roblox. Insira-o na tela de login para entrar. Este código irá expirar em 15 minutos.{lineBreak}{lineBreak}Não {boldStart}compartilhe{boldEnd} este código. Nós {boldStart}nunca{boldEnd} contataremos você para pedir códigos. Se você não solicitou esse código, não é necessário tomar nenhuma ação adicional. Se você receber vários códigos que não solicitou, incentivamos você a vincular um e-mail diferente a sua(s) conta(s) e {linkTagWithAuthenticatorHelpLinkStart}configurar a verificação em duas etapas por aplicativo autenticador{linkTagEnd}.{lineBreak}{lineBreak}Este pedido de login foi recebido de {geolocation}.{lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A Equipe Roblox\t",
     "isDeprecated": false
   },
   {
@@ -92845,6 +92909,38 @@
     "description": "Subject of an email for OTP login",
     "english": "{code} Is Your Roblox One-Time Code",
     "translation": "{code} É seu código único para Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.U13SignupOneTimePasscodeEmail.V1.Body",
+    "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
+    "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
+    "translation": "Olá,{lineBreak}{lineBreak}Sua criança pediu para criar uma conta na Roblox, uma plataforma de entretenimento online que permite que  crianças imaginem, criem e joguem juntas em mundos imersivos 3D criados por usuários.{lineBreak}{lineBreak}Código de verificação: {code}{lineBreak}{lineBreak}Sua criança nos forneceu um nome de usuário, data de nascimento e um e-mail de responsável para criar a conta. Para completar a criação da conta, você deve consentir com o uso da Roblox por parte de sua criança.{lineBreak}{lineBreak}Você deve inserir o código abaixo para completar o processo de criação de conta e consentimento. Ao inserir o código, você concorda com os {linkTagWithTermsLinkStart}Termos Roblox{linkTagEnd}, incluindo arbitragem e com a {linkTagWithPrivacyPolicyLinkStart}Política de Privacidade{linkTagEnd}, você deverá supervisionar e ser o único responsável pelo uso da Roblox por parte de sua criança e você consente com o uso, onde apropriado, de dados pessoais de sua criança em conexão com o serviço.{lineBreak}{lineBreak}{boldStart}Guia para responsáveis Roblox{boldEnd}{lineBreak}{lineBreak}Recomendamos que você visite nosso Guia para responsáveis para se familiarizar com nossa plataforma e encontrar informações úteis de como criar uma experiência positiva para sua criança na Roblox.{lineBreak}{lineBreak}{boldStart}Privacidade{boldEnd}{lineBreak}{lineBreak}Você pode remover a conta de sua criança a qualquer momento contatando o serviço de atendimento ao cliente em https://www.roblox.com/support. Seu e-mail não será usado para nenhum outro propósito, distribuído para terceiros ou combinado com qualquer outra informação pessoal coletada de sua criança. Confira nossa Política de Privacidade para mais informações.{lineBreak}{lineBreak}Obrigada,{lineBreak}{lineBreak}A Equipe Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "Volte para escolher outro método para acessar as seguintes contas.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "Um código único foi enviado para seu e-mail, se ele foi verificado em sua conta. Digite o código para entrar:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "Alterar e-mail",
     "isDeprecated": false
   },
   {

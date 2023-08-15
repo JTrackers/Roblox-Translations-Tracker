@@ -5513,6 +5513,14 @@
   },
   {
     "namespace": "CommonUI.Controls",
+    "key": "Action.Select",
+    "description": null,
+    "english": "Select",
+    "translation": "選擇",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
     "key": "Action.Delete",
     "description": null,
     "english": "Delete",
@@ -12940,7 +12948,7 @@
     "key": "Response.Dialog.TwoStepDisableAdditionalWarningAuthenticatorGeneric",
     "description": null,
     "english": "This action will disable 2-Step Verification via Authenticator app, which will make your account less secure. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
-    "translation": "此動作將會停用驗證器雙步驟驗證，進而降低您的帳號的安全性。如果您的帳號遭到侵入，Roblox 將難以還原您的帳號或取回道具、虛擬貨幣等有價值的物品。",
+    "translation": "此動作將會停用驗證器 App 雙步驟驗證，進而降低您的帳號的安全性。如果您的帳號遭到侵入，Roblox 將難以還原您的帳號或取回道具、虛擬貨幣等有價值的物品。",
     "isDeprecated": false
   },
   {
@@ -21973,6 +21981,30 @@
     "description": "Body of monthly summary message sent to users that includes the number of hours played that month.",
     "english": "The transaction history for this account can be found {htmlBoldOpen}{htmlAHrefTransactionsPage}here{htmlCloseAHref}{htmlBoldClose}.{lineBreak}{lineBreak}The total time spent on Roblox in the last month was {hoursPlayed} hour(s).{lineBreak}{lineBreak}You are receiving this notification of monthly activities because your child is under the age of 18. You can find more information in your parental preferences associated with playtime and transactions.{lineBreak}{lineBreak}Roblox is a game that has many mini experiences in different genres such as role playing, sports, action, and many more.{lineBreak}{lineBreak}Roblox pricing policy is a freemium model with in-game purchases.{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}Thank you,{lineBreak}The Roblox Team{lineBreak}{lineBreak}Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}Support{htmlCloseAHref}{htmlBoldClose}",
     "translation": "您可以在{htmlBoldOpen}{htmlAHrefTransactionsPage}此處{htmlCloseAHref}{htmlBoldClose}查看此帳號的交易紀錄。{lineBreak}{lineBreak}上個月的使用時間為 {hoursPlayed} 小時。{lineBreak}{lineBreak}您因小孩未滿 18 歲而收到這則關於小孩單月動態的通知。您可以在家長偏好裡找到更多關於遊戲時間和交易的資訊。{lineBreak}{lineBreak}Roblox 裡有許多角色扮演、體育、動作等主題的小體驗。{lineBreak}{lineBreak}Roblox 的營利機制為免費增值制，使用者可以在遊戲中購買付費商品。{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}謝謝您，{lineBreak}Roblox 團隊{lineBreak}{lineBreak}請勿回覆此訊息，訊息將不會傳送到寄件人。{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}帳號安全{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}支援{htmlCloseAHref}{htmlBoldClose}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInArchive",
+    "description": "Message that appears in Archive when a user doesn't have messages in their archive",
+    "english": "You have no archived messages.",
+    "translation": "您沒有封存的訊息。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInInbox",
+    "description": "Text that appears when a user's inbox is empty",
+    "english": "You have no messages in your inbox.",
+    "translation": "您的收件箱沒有訊息。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoSentMessages",
+    "description": "Text that appears when a user has no sent messages",
+    "english": "You have no sent messages.",
+    "translation": "您沒有已傳送的訊息。",
     "isDeprecated": false
   },
   {
@@ -92380,7 +92412,7 @@
     "key": "Hint.RequiredField",
     "description": "Hint specifying that a field in a form is required.",
     "english": "Required Field.",
-    "translation": "必填欄位",
+    "translation": "必填欄位。",
     "isDeprecated": false
   },
   {
@@ -92388,7 +92420,7 @@
     "key": "Hint.InvalidUrl",
     "description": "Tells the user that the URL they put in isn't valid and asks them to check for spelling mistakes.",
     "english": "Invalid URL. Check for typos and try again.",
-    "translation": "無效網址",
+    "translation": "網址無效。請檢查錯字並重新嘗試。",
     "isDeprecated": false
   },
   {
@@ -92413,6 +92445,22 @@
     "description": "Description of what the webhooks does and what our webhooks page is for. Unpluralized in the interim until @rbx/intl supports pluralization.",
     "english": "Webhooks notify your apps about server-specific events, so you can respond to them accordingly. You can create up to 5 webhooks at a time. Learn more about {setupLinkStart}setting up webhooks{setupLinkEnd} or how to {useWebhookLinkStart}make the most of webhooks{useWebhookLinkEnd}.",
     "translation": "Webhook 會向您的 App 通知特定伺服器事件，讓您可以分別處理。您一次最多可以建立 5 個 Webhook。您可以了解更多關於{setupLinkStart}設定 Webhook{setupLinkEnd} 或如何{useWebhookLinkStart}有效運用 Webhook{useWebhookLinkEnd} 的資訊。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength512",
+    "description": "Hint describing that there are more characters than 512, making the input invalid",
+    "english": "Max length of 512 characters exceeded.",
+    "translation": "已超過 512 字元的上限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength2048",
+    "description": "Hint describing that there are more characters than 2048, making the input invalid",
+    "english": "Max length of 2048 characters exceeded.",
+    "translation": "已超過 2048 字元的上限。",
     "isDeprecated": false
   },
   {
@@ -92948,7 +92996,7 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "13 歲以下的使用者不能使用一次性代碼登入。",
+    "translation": "只有 13 歲以上的使用者可以使用一次性代碼登入。",
     "isDeprecated": false
   },
   {
@@ -92973,6 +93021,30 @@
     "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
     "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
     "translation": "您好，{lineBreak}{lineBreak}您的小孩已請求在 Roblox 建立帳號。Roblox 是一個讓兒童在使用者創作的沉浸式 3D 世界裡一起想像、創作和玩樂的網路娛樂平台。{lineBreak}{lineBreak}驗證碼：{code}{lineBreak}{lineBreak}為了建立帳號，您的小孩給我們提供了使用者名稱、出生日期及家長的電子郵件地址。您必須同意小孩使用 Roblox 才可完成帳號建立流程。{lineBreak}{lineBreak}若要完成註冊流程並同意小孩使用 Roblox，您必須輸入下方代碼。您輸入代碼即表示同意 {linkTagWithTermsLinkStart}Roblox 條款{linkTagEnd}，包括仲裁條例，和{linkTagWithPrivacyPolicyLinkStart}隱私權政策{linkTagEnd}。您會監督小孩使用 Roblox，並獨自為其行為負責。您也在適當情況下同意我們為了服務相關作業處裡小孩的個人資料。{lineBreak}{lineBreak}{boldStart}Roblox 家長指南{boldEnd}{lineBreak}{lineBreak}我們建議您閱讀家長指南， 讓您可以更加了解我們的平台，以及學習如何為小孩營造正面的 Roblox 體驗。{lineBreak}{lineBreak}{boldStart}隱私{boldEnd}{lineBreak}{lineBreak}您可以隨時在 https://www.roblox.com/support 請求客服人員移除小孩的帳號。您的電子郵件地址將不會用在其他用途上、洩漏給第三方組織或與其他小孩提供的其他個人資訊合併。若要了解更多資訊，請閱讀我們的隱私權政策。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "若要登入以下帳號，請返回並選擇其他登入方式。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "若您的電子郵件地址已經過驗證，我們會該電子郵件地址傳送一次性代碼。請輸入傳送到以下電子郵件地址的代碼：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "變更電子郵件地址",
     "isDeprecated": false
   },
   {

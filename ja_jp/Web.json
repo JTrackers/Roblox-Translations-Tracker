@@ -5513,6 +5513,14 @@
   },
   {
     "namespace": "CommonUI.Controls",
+    "key": "Action.Select",
+    "description": null,
+    "english": "Select",
+    "translation": "選択",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
     "key": "Action.Delete",
     "description": null,
     "english": "Delete",
@@ -12933,6 +12941,14 @@
     "description": null,
     "english": "​​By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation and safety purposes and for improving our safety tools.",
     "translation": "有効化をクリックすることで、内容規制と安全上の理由、当社の安全対策ツールの向上の目的でのみ、Robloxによる音声録音の収集、使用、保管に同意します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Response.Dialog.TwoStepDisableAdditionalWarningAuthenticatorGeneric",
+    "description": null,
+    "english": "This action will disable 2-Step Verification via Authenticator app, which will make your account less secure. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
+    "translation": "この動作をすると、認証システムアプリによる2段階認証を無効にし、アカウントの安全性が低下します。アカウントが危険にさらされた場合、Robloxがアカウントの復元や失くなってしまったアイテムの回復、バーチャル通貨の払い戻しはいたしかねます。",
     "isDeprecated": false
   },
   {
@@ -21957,6 +21973,30 @@
     "description": "Body of monthly summary message sent to users that includes the number of hours played that month.",
     "english": "The transaction history for this account can be found {htmlBoldOpen}{htmlAHrefTransactionsPage}here{htmlCloseAHref}{htmlBoldClose}.{lineBreak}{lineBreak}The total time spent on Roblox in the last month was {hoursPlayed} hour(s).{lineBreak}{lineBreak}You are receiving this notification of monthly activities because your child is under the age of 18. You can find more information in your parental preferences associated with playtime and transactions.{lineBreak}{lineBreak}Roblox is a game that has many mini experiences in different genres such as role playing, sports, action, and many more.{lineBreak}{lineBreak}Roblox pricing policy is a freemium model with in-game purchases.{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}Thank you,{lineBreak}The Roblox Team{lineBreak}{lineBreak}Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}Support{htmlCloseAHref}{htmlBoldClose}",
     "translation": "このアカウントの取引履歴は {htmlBoldOpen}{htmlAHrefTransactionsPage}こちら{htmlCloseAHref}{htmlBoldClose}からご覧いただけます。{lineBreak}{lineBreak}先月、Roblox上で使った時間の合計は {hoursPlayed} 時間でした。{lineBreak}{lineBreak}お子様が18歳未満のため、この月間アクティビティの通知をお送りしています。詳しい情報は、プレイタイムと取引に関連した保護者の選択のページにあります。{lineBreak}{lineBreak}Robloxは、ロールプレイやスポーツ、アクションなど、異なるジャンルの小さな仮想空間が多数含まれているゲームです。{lineBreak}{lineBreak}Robloxの価格に関するポリシーは、ゲーム内購入のあるフリーミアム形式（基本的なサービスは無料で高度な機能などは課金する仕組み）を採用しています。{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}ありがとうございました。{lineBreak}Robloxチームより {lineBreak}{lineBreak}送信者には送付されませんので、このメッセージには返答しないでください。{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}アカウントの安全{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}サポート{htmlCloseAHref}{htmlBoldClose}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInArchive",
+    "description": "Message that appears in Archive when a user doesn't have messages in their archive",
+    "english": "You have no archived messages.",
+    "translation": "アーカイブされたメッセージはありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInInbox",
+    "description": "Text that appears when a user's inbox is empty",
+    "english": "You have no messages in your inbox.",
+    "translation": "受信トレイにメッセージはありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoSentMessages",
+    "description": "Text that appears when a user has no sent messages",
+    "english": "You have no sent messages.",
+    "translation": "送信済みメッセージはありません。",
     "isDeprecated": false
   },
   {
@@ -92441,6 +92481,22 @@
   },
   {
     "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.RequiredField",
+    "description": "Hint specifying that a field in a form is required.",
+    "english": "Required Field.",
+    "translation": "必須項目。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.InvalidUrl",
+    "description": "Tells the user that the URL they put in isn't valid and asks them to check for spelling mistakes.",
+    "english": "Invalid URL. Check for typos and try again.",
+    "translation": "URLが無効です。誤字を確認して再度お試し下さい。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
     "key": "Hint.TypographicalMistake",
     "description": "Tells the users to check for any typographical mistakes in a form and fix them.",
     "english": "Check for typos and try again.",
@@ -92461,6 +92517,22 @@
     "description": "Description of what the webhooks does and what our webhooks page is for. Unpluralized in the interim until @rbx/intl supports pluralization.",
     "english": "Webhooks notify your apps about server-specific events, so you can respond to them accordingly. You can create up to 5 webhooks at a time. Learn more about {setupLinkStart}setting up webhooks{setupLinkEnd} or how to {useWebhookLinkStart}make the most of webhooks{useWebhookLinkEnd}.",
     "translation": "Webhookはアプリにサーバー固有のイベント通知をするため、適宜、これに応答できます。一度にWebhookを 5件まで作成できます。{setupLinkStart}Webhookの設定{setupLinkEnd} の仕方や {useWebhookLinkStart}Webhookの活用法{useWebhookLinkEnd} について詳しく知りましょう。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength512",
+    "description": "Hint describing that there are more characters than 512, making the input invalid",
+    "english": "Max length of 512 characters exceeded.",
+    "translation": "最大文字数の512文字を超えています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength2048",
+    "description": "Hint describing that there are more characters than 2048, making the input invalid",
+    "english": "Max length of 2048 characters exceeded.",
+    "translation": "最大文字数の2048文字を超えています。",
     "isDeprecated": false
   },
   {
@@ -92996,7 +93068,7 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "13歳未満のユーザーの方は、ワンタイムコード（1回のみ使用可）でログインすることはできません。",
+    "translation": "ワンタイムコードでのログインは13歳以上のユーザーに限られます。",
     "isDeprecated": false
   },
   {
@@ -93013,6 +93085,22 @@
     "description": "Subject of an email for OTP login",
     "english": "{code} Is Your Roblox One-Time Code",
     "translation": "{code} が1回のみ使用可能なRobloxのコードです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "次のアカウントにログインするには、戻って別の方法を選択してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "メールアドレスを変更",
     "isDeprecated": false
   },
   {

@@ -5513,6 +5513,14 @@
   },
   {
     "namespace": "CommonUI.Controls",
+    "key": "Action.Select",
+    "description": null,
+    "english": "Select",
+    "translation": "Sélectionner",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
     "key": "Action.Delete",
     "description": null,
     "english": "Delete",
@@ -12956,7 +12964,7 @@
     "key": "Response.Dialog.TwoStepDisableAdditionalWarningAuthenticatorGeneric",
     "description": null,
     "english": "This action will disable 2-Step Verification via Authenticator app, which will make your account less secure. If your account is compromised, it is unlikely that Roblox will be able to restore your account or recover its value, including lost items and virtual currency.",
-    "translation": "Cette action désactivera la vérification en deux étapes via Authenticator, ce qui rendra ton compte moins sûr. Si ton compte est compromis, il est peu probable que Roblox puisse restaurer ton compte ou récupérer sa valeur, y compris les objets et la monnaie virtuelle perdus.",
+    "translation": "Cette action désactivera la vérification en deux étapes via l'application Authenticator, ce qui rendra ton compte moins sûr. Si ton compte est compromis, il est peu probable que Roblox puisse restaurer ton compte ou récupérer sa valeur, y compris les objets et la monnaie virtuelle perdus.",
     "isDeprecated": false
   },
   {
@@ -21989,6 +21997,30 @@
     "description": "Body of monthly summary message sent to users that includes the number of hours played that month.",
     "english": "The transaction history for this account can be found {htmlBoldOpen}{htmlAHrefTransactionsPage}here{htmlCloseAHref}{htmlBoldClose}.{lineBreak}{lineBreak}The total time spent on Roblox in the last month was {hoursPlayed} hour(s).{lineBreak}{lineBreak}You are receiving this notification of monthly activities because your child is under the age of 18. You can find more information in your parental preferences associated with playtime and transactions.{lineBreak}{lineBreak}Roblox is a game that has many mini experiences in different genres such as role playing, sports, action, and many more.{lineBreak}{lineBreak}Roblox pricing policy is a freemium model with in-game purchases.{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}Thank you,{lineBreak}The Roblox Team{lineBreak}{lineBreak}Please do not reply to this message as it will not be delivered to the originator.{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}Account Safety{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}Support{htmlCloseAHref}{htmlBoldClose}",
     "translation": "L'historique des transactions pour ce compte peut être trouvé {htmlBoldOpen}{htmlAHrefTransactionsPage}ici{htmlCloseAHref}{htmlBoldClose}.{lineBreak}{lineBreak}Le temps total passé à Roblox au cours du dernier mois était de {hoursPlayed} heure(s).{lineBreak}{lineBreak}Vous recevez cet avis d'activités mensuelles parce que votre enfant a moins de 18 ans. Vous pouvez trouver plus d'informations dans vos préférences parentales associées à l'heure de jeu et aux transactions.{lineBreak}{lineBreak}Roblox est un jeu qui a de nombreuses mini-expériences dans différents genres tels que le jeu de rôles, le sport, l'action, et bien plus encore.{lineBreak}{lineBreak}La politique de prix de Roblox est un modèle de freemium avec des achats en jeu.{lineBreak}{lineBreak}{htmlContentRatingLogoImages}{lineBreak}{lineBreak}Merci.{lineBreak}L'équipe Roblox{lineBreak}{lineBreak}Ne pas répondre à ce message car il ne sera pas délivré à l'initiateur.{lineBreak}{lineBreak}{htmlBoldOpen}{htmlAHrefAccountSafetyPage}Sécurité du compte{htmlCloseAHref}{htmlBoldClose} | {htmlBoldOpen}{htmlAhrefSupportPage}Assistance{htmlCloseAHref}{htmlBoldClose}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInArchive",
+    "description": "Message that appears in Archive when a user doesn't have messages in their archive",
+    "english": "You have no archived messages.",
+    "translation": "Tu n'as aucun message archivé.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoMessagesInInbox",
+    "description": "Text that appears when a user's inbox is empty",
+    "english": "You have no messages in your inbox.",
+    "translation": "Tu n'as aucun message dans ta boîte de réception.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Messages",
+    "key": "Label.NoSentMessages",
+    "description": "Text that appears when a user has no sent messages",
+    "english": "You have no sent messages.",
+    "translation": "Tu n'as aucun message envoyé.",
     "isDeprecated": false
   },
   {
@@ -92636,7 +92668,7 @@
     "key": "Hint.RequiredField",
     "description": "Hint specifying that a field in a form is required.",
     "english": "Required Field.",
-    "translation": "Champ obligatoire",
+    "translation": "Champ obligatoire.",
     "isDeprecated": false
   },
   {
@@ -92644,7 +92676,7 @@
     "key": "Hint.InvalidUrl",
     "description": "Tells the user that the URL they put in isn't valid and asks them to check for spelling mistakes.",
     "english": "Invalid URL. Check for typos and try again.",
-    "translation": "URL invalide",
+    "translation": "URL invalide. Vérifiez les fautes de frappe et réessayez.",
     "isDeprecated": false
   },
   {
@@ -92669,6 +92701,22 @@
     "description": "Description of what the webhooks does and what our webhooks page is for. Unpluralized in the interim until @rbx/intl supports pluralization.",
     "english": "Webhooks notify your apps about server-specific events, so you can respond to them accordingly. You can create up to 5 webhooks at a time. Learn more about {setupLinkStart}setting up webhooks{setupLinkEnd} or how to {useWebhookLinkStart}make the most of webhooks{useWebhookLinkEnd}.",
     "translation": "Les Webhooks informent vos applications des événements spécifiques au serveur, vous pouvez donc y répondre en conséquence. Vous pouvez créer jusqu'à 5 webhooks à la fois. En savoir plus sur la configuration de {setupLinkStart}de webhooks{setupLinkEnd} ou comment {useWebhookLinkStart}tirer le meilleur parti des webhooks{useWebhookLinkEnd}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength512",
+    "description": "Hint describing that there are more characters than 512, making the input invalid",
+    "english": "Max length of 512 characters exceeded.",
+    "translation": "La longueur maximale de 512 caractères est dépassée.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Settings",
+    "key": "Hint.MaxLength2048",
+    "description": "Hint describing that there are more characters than 2048, making the input invalid",
+    "english": "Max length of 2048 characters exceeded.",
+    "translation": "La longueur maximale de 2048 caractères est dépassée.",
     "isDeprecated": false
   },
   {
@@ -93204,7 +93252,7 @@
     "key": "Response.Under13NotAllowed",
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
-    "translation": "Les utilisateurs de moins de 13 ans ne peuvent pas se connecter avec un code unique.",
+    "translation": "Seuls les utilisateurs de 13 et plus peuvent se connecter avec un code unique.",
     "isDeprecated": false
   },
   {
@@ -93229,6 +93277,30 @@
     "description": "Body of an email to be sent to users. Please do not modify the text in curly braces \"{example}\", and please do not rearrange the order of the {braces} unless the translation requires it.\n\nNote that some series of tags like \"{boldStart}Something{boldEnd}\" or \"{linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}\" are bundled together and should not be broken apart.",
     "english": "Hello,{lineBreak}{lineBreak}Your child has requested to create an account on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds.{lineBreak}{lineBreak}Verification Code: {code}{lineBreak}{lineBreak}Your child has provided us with a username, date of birth, and a parent's email address to create an account. To complete the account creation process, you must consent to your child’s use of Roblox.{lineBreak}{lineBreak}You must enter the code below to complete the sign up flow and consent to your child’s use of Roblox. By entering the code, you agree to the {linkTagWithTermsLinkStart}Roblox Terms{linkTagEnd}, including arbitration, and the {linkTagWithPrivacyPolicyLinkStart}Privacy Policy{linkTagEnd}, you will supervise and be solely responsible for your child’s use of Roblox, and you consent, where appropriate to the processing of your child’s personal data in connection with the Service.{lineBreak}{lineBreak}{boldStart}Parent's Guide to Roblox{boldEnd}{lineBreak}{lineBreak}We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox.{lineBreak}{lineBreak}{boldStart}Privacy{boldEnd}{lineBreak}{lineBreak}You may remove your child's account anytime by contacting customer service at https://www.roblox.com/support. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our Privacy Policy for more information.{lineBreak}{lineBreak}Thank You,{lineBreak}{lineBreak}The Roblox Team",
     "translation": "Bonjour,{lineBreak}{lineBreak}Votre enfant a demandé à créer un compte sur Roblox, une plateforme de divertissement en ligne qui permet aux enfants d'imaginer, de créer et de jouer ensemble dans des mondes 3D immersifs générés par l'utilisateur.{lineBreak}{lineBreak}Code de vérification : {code}{lineBreak}{lineBreak}Votre enfant nous a fourni un nom d'utilisateur, date de naissance et adresse e-mail d'un parent pour créer un compte. Pour compléter le processus de création de compte, vous devez accepter l’utilisation de Roblox par votre enfant.{lineBreak}{lineBreak}Vous devez entrer le code ci-dessous pour compléter l'inscription et accepter l'utilisation de Roblox par votre enfant. En entrant le code, vous acceptez les {linkTagWithTermsLinkStart}conditions de Roblox{linkTagEnd}, y compris l'arbitrage et {linkTagWithPrivacyPolicyLinkStart}a politique de confidentialité{linkTagEnd}, vous superviserez et serez seul responsable de l'utilisation de Roblox par votre enfant et vous consentirez, le cas échéant au traitement des données personnelles de votre enfant dans le cadre du Service.{lineBreak}{lineBreak}{boldStart}Guide des Parents Roblox.{boldEnd}{lineBreak}{lineBreak}Nous vous recommandons de lire le Guide des parents pour vous aider à faire connaissance avec notre plateforme, trouver des conseils utiles pour créer une expérience positive avec vos enfants sur Roblox.{lineBreak}{lineBreak}{boldStart}Confidentialité{boldEnd}{lineBreak}{lineBreak}Vous pouvez supprimer le compte de votre enfant à tout moment en contactant le service à la clientèle sur https://www. oblox.com/support. Votre courriel ne sera pas utilisé à d'autres fins, ni divulgué à des tiers, ni combiné à toute autre information personnelle recueillie auprès de votre enfant. Veuillez consulter notre politique de confidentialité pour plus d'informations.{lineBreak}{lineBreak}Merci,{lineBreak}{lineBreak}L'équipe Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "Revenir en arrière pour choisir une autre méthode pour te connecter aux comptes suivants.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "Un code à usage unique vient d'être envoyé à ton email si celui-ci est vérifié sur votre compte. Entre le code que nous venons de t'envoyer :",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "Changer d'email",
     "isDeprecated": false
   },
   {
