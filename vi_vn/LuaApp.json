@@ -3676,7 +3676,7 @@
     "key": "Header.AccountRestoresPolicyUpdateV3",
     "description": null,
     "english": "Make Sure 2-Step Verification via Authenticator is Enabled",
-    "translation": "Bật Xác minh 2 bước thông qua Ứng dụng xác thực",
+    "translation": "Đảm bảo xác minh 2 bước thông qua Trình xác thực được kích hoạt",
     "isDeprecated": false
   },
   {
@@ -3692,7 +3692,7 @@
     "key": "Description.AccountRestoresPolicyUpdateV3Short",
     "description": null,
     "english": "If your account is compromised, it is unlikely that Roblox will be able to restore your account.",
-    "translation": "Nếu tài khoản của bạn bị xâm phạm, Roblox không chắc có thể khôi phục tài khoản của bạn hoặc khôi phục các dữ liệu có giá trị của tài khoản, bao gồm các vật phẩm và tiền ảo bị mất.",
+    "translation": "Nếu tài khoản của bạn bị xâm phạm, Roblox sẽ không thể khôi phục tài khoản của bạn.",
     "isDeprecated": false
   },
   {
@@ -3725,6 +3725,14 @@
     "description": "Button action string for the account restores policy upsell banner.",
     "english": "Set Up Authenticator",
     "translation": "Thiết lập Ứng dụng xác thực",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Action.SetUpEmail2SV",
+    "description": "Button action string for the email 2-SV upsell prompt. Avoided the acronym \"2-SV\" for better language portability.",
+    "english": "Set Up",
+    "translation": "Thiết lập",
     "isDeprecated": false
   },
   {
@@ -4025,10 +4033,58 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Action.ChangeVerificationMethod",
+    "description": "Hyperlink-formatted button text",
+    "english": "Change verification method",
+    "translation": "Thay đổi phương thức xác minh",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourOtpCode",
+    "description": null,
+    "english": "A one-time code has been sent to your registered email.{lineBreak}Please enter your one-time code to continue.",
+    "translation": "Mã một lần đã được gửi đến email đã đăng ký của bạn.{lineBreak}Vui lòng nhập mã một lần của bạn để tiếp tục.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.OtpVerification",
+    "description": null,
+    "english": "One-Time Code Verification",
+    "translation": "Xác minh mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Label.Password",
     "description": null,
     "english": "Password",
     "translation": "Mật khẩu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.VerificationMethodSelection",
+    "description": null,
+    "english": "Verification Method Selection",
+    "translation": "Lựa chọn phương pháp xác minh",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.OneTimeCode",
+    "description": null,
+    "english": "One-Time Code",
+    "translation": "Mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.YourOtpCode",
+    "description": null,
+    "english": "6-Digit Code",
+    "translation": "Mã 6 chữ số",
     "isDeprecated": false
   },
   {
@@ -4109,6 +4165,62 @@
     "description": null,
     "english": "Stats & Info",
     "translation": "Thống kê & Thông tin",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Title.PurchaseSucceeded",
+    "description": "Title of the modal",
+    "english": "Purchase Succeeded",
+    "translation": "Mua thành công",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.YouOwn",
+    "description": "Text informing the user they now own the selected item.",
+    "english": "Now you own {name}!",
+    "translation": "Bây giờ bạn sở hữu {name}!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.RobuxCredit",
+    "description": "Text informing the user, the rest of the robux that was not used to purchase the item is now in their account.",
+    "english": "{robux} has been credited to your balance.",
+    "translation": "{robux} đã được ghi có vào số dư của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.BackToGame",
+    "description": "Text on button that dismissed all the purchase modals and returns the user back to the game.",
+    "english": "Back to Game",
+    "translation": "Quay lại Trò chơi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.Equip",
+    "description": null,
+    "english": "Equip My Avatar",
+    "translation": "Trang bị hình đại diện của tôi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Action.BackToShop",
+    "description": null,
+    "english": "Back to Shop",
+    "translation": "Quay lại Cửa hàng",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseSuccess",
+    "key": "Text.BalanceNow",
+    "description": null,
+    "english": "Your balance is now {robux}.",
+    "translation": "Số dư của bạn bây giờ {robux}.",
     "isDeprecated": false
   },
   {
@@ -4217,10 +4329,74 @@
   },
   {
     "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.Under13NotAllowed",
+    "description": null,
+    "english": "Only users 13 and older can log in with a one-time code.",
+    "translation": "Chỉ người dùng từ 13 tuổi trở lên mới có thể đăng nhập bằng mã một lần.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Response.ChooseAnotherMethod",
+    "description": null,
+    "english": "Please go back to choose another method to log into the following accounts.",
+    "translation": "Vui lòng quay lại để chọn một phương pháp khác để đăng nhập vào các tài khoản sau.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.EnterCode",
+    "description": null,
+    "english": "A one-time code was just sent to your email if its is verified on your account. Enter the code we just sent to:",
+    "translation": "Chúng tôi đã gửi một mã vào email của bạn nếu bạn đã xác minh email trên tài khoản của mình. Nhập mã để đăng nhập:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "Tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.Title",
+    "description": "Modal title",
+    "english": "Age Verification Required",
+    "translation": "Yêu cầu xác minh tuổi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Modal.ContentText",
+    "description": "Text shown in modal directing user to complete the age verification process in Account Info in order to access this experience.",
+    "english": "Verify your age to access this experience.\n\n1. Go to Account Info > Verify My Age\n2. Complete the verification process\n",
+    "translation": "Xác minh độ tuổi của bạn để truy cập trải nghiệm này.\n\n1. Đi đến Thông tin tài khoản > Xác minh tuổi của tôi\n2. Hoàn thành quy trình xác minh\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.Cancel",
+    "description": "Cancel button text",
+    "english": "Cancel",
+    "translation": "Hủy",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.Settings",
+    "description": "Button text for the Call to Action button that takes the user to Account Settings to verify their age",
+    "english": "Verify My Age",
+    "translation": "Xác minh tuổi của tôi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AgeVerificationUpsell",
+    "key": "Button.AccountInfo",
+    "description": "Text for button taking user to the 'Account Info' page to verify their age.",
+    "english": "Verify My Age",
+    "translation": "Xác minh tuổi của tôi",
     "isDeprecated": false
   },
   {
