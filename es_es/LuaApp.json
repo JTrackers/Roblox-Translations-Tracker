@@ -4899,7 +4899,7 @@
     "namespace": "Feature.Catalog",
     "key": "Heading.GoToExperience",
     "description": null,
-    "english": "Go to Experience?",
+    "english": "Join Experience?",
     "translation": "¿Ir a la experiencia?",
     "isDeprecated": false
   },
@@ -4907,7 +4907,7 @@
     "namespace": "Feature.Catalog",
     "key": "Description.AttributionAlertBody",
     "description": null,
-    "english": "You will leave this area and be taken to {experienceName}.",
+    "english": "You will leave this area and join {experienceName}.",
     "translation": "Saldrás de esta área y se te llevará a {experienceName}.",
     "isDeprecated": false
   },
@@ -14300,7 +14300,7 @@
     "key": "Label.ParentReactivationNotice",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account. {startLink}Reload this page{endLink} when completed. ",
-    "translation": "Usted debe ser el padre, la madre o tutor del titular de la cuenta para reactivarla. {startLink}Vuelva a cargar esta página{endLink} cuando se haya completado el proceso. ",
+    "translation": "Se necesita la ayuda de tu padre, madre o tutor para reactivar esta cuenta. {startLink}Vuelve a cargar esta página{endLink} cuando hayas terminado. ",
     "isDeprecated": true
   },
   {
@@ -14332,7 +14332,7 @@
     "key": "Label.ParentReactivationNoticeUA",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account.",
-    "translation": "Usted debe ser el padre, la madre o tutor del titular de la cuenta para reactivarla.",
+    "translation": "Tu padre, madre o tutor legal necesita ayudarte a reactivar esta cuenta.",
     "isDeprecated": false
   },
   {
@@ -14349,6 +14349,14 @@
     "description": null,
     "english": "Account Banned",
     "translation": "Cuenta suspendida",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback.Note",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges.",
+    "translation": "Tu cuenta se suspendió por cargos no autorizados.",
     "isDeprecated": false
   },
   {
@@ -20971,7 +20979,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.ParentPermission",
     "description": "Content to explain why parent permission is needed for VPC",
-    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.\n\nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
     "translation": "Ciertas acciones en Roblox requieren el permiso de un progenitor o tutor. \nPara ayudar a su hijo(a), necesitará una cuenta de Roblox con privilegios parentales. Se le pedirá que proporcione su correo electrónico, verifique que es una persona adulta y vincule su cuenta a la de su hijo(a).",
     "isDeprecated": false
   },
@@ -20994,17 +21002,17 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmail",
-    "description": "Description for parent to enter their email",
+    "description": "do not use - use the v2 version",
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
     "translation": "Esta dirección de correo electrónico se asociará con su cuenta de Roblox. Para obtener más información sobre nuestras prácticas de datos, consulte nuestra {privacyPolicyLink}.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmailV2",
     "description": null,
-    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
-    "translation": "Esta dirección de correo electrónico se asociará con su cuenta de Roblox. Para obtener más información sobre nuestras prácticas de datos, consulte nuestra {linkStart}Política de Privacidad {linkEnd}.",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
+    "translation": "Esta dirección de correo electrónico se asociará a su cuenta de Roblox. Para obtener más información sobre nuestras prácticas de datos, consulte nuestra {linkStart}Política de privacidad {linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -21051,7 +21059,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.WaitingParentPermission",
     "description": null,
-    "english": "Check your email to help unlock your child’s account",
+    "english": "Check your email to help unlock your child’s account.\n\nAfter providing permission, refresh this screen to return to your child's Roblox account.",
     "translation": "Revise su correo electrónico para desbloquear la cuenta de su hijo(a)",
     "isDeprecated": false
   },
@@ -21453,6 +21461,94 @@
     "description": null,
     "english": "Your Roblox account doesn't have parent privileges yet. To complete your child's request later, you’ll need to log in from the link in your email.",
     "translation": "Su cuenta de Roblox aún no tiene privilegios parentales. Para completar la solicitud de su hijo(a) más tarde, necesitará iniciar sesión desde el enlace de su correo electrónico.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "Can't Provide Permission",
+    "translation": "No se puede otorgar el permiso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "This child account no longer exists.",
+    "translation": "Esta cuenta de su hijo(a) ya no existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedOneFriend",
+    "description": "Shown to users after they join an experience with 1 friend in it",
+    "english": "You've joined {FRIEND_NAME}",
+    "translation": "Te uniste a {FRIEND_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedTwoFriends",
+    "description": "Shown to users when they join an experience with 2 friends in it",
+    "english": "You've joined {FRIEND_NAME_ONE} and {FRIEND_NAME_TWO}",
+    "translation": "Te uniste a {FRIEND_NAME_ONE} y a {FRIEND_NAME_TWO}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedManyFriends",
+    "description": "Shown to users when they join an experience with more than 2 other friends in it",
+    "english": "You've joined {FRIEND_NAME} and {FRIEND_COUNT} other friends",
+    "translation": "Te uniste a {FRIEND_NAME}, a {FRIEND_COUNT} y a otros amigos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendInOtherUniverse",
+    "description": "Shown after a user follows another, but the followed user is in a different experience by the time the follower arrives",
+    "english": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
+    "translation": "{FRIEND_NAME} salió y se unió a {EXPERIENCE_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.JoinFriend",
+    "description": "Button action that can be clicked to follow the user to the experience the followed user is currently in",
+    "english": "Join",
+    "translation": "Únete",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendNotInGame",
+    "description": "Shown when a user follows another user, and the followed user is not in a game when the follower enters the server",
+    "english": "{FRIEND_NAME} left this experience",
+    "translation": "{FRIEND_NAME} salió de esta experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.InviteBack",
+    "description": "Button that is shown when a followed user isn't in the experience when the follower arrives. Clicking it sends an invite to the followed user to invite them back to the server.",
+    "english": "Invite Back",
+    "translation": "Invitar de vuelta",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendJoinedYou",
+    "description": "Shown to users when another user intentionally joins their server",
+    "english": "{FRIEND_NAME} joined you",
+    "translation": "{FRIEND_NAME} se unió a ti",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.InvitationConfirmation",
+    "description": "Sent after a user invites their friend to an experience.",
+    "english": "Invitation sent",
+    "translation": "Invitación enviada",
     "isDeprecated": false
   }
 ]

@@ -4899,16 +4899,16 @@
     "namespace": "Feature.Catalog",
     "key": "Heading.GoToExperience",
     "description": null,
-    "english": "Go to Experience?",
-    "translation": "Go to Experience?",
+    "english": "Join Experience?",
+    "translation": "Join Experience?",
     "isDeprecated": false
   },
   {
     "namespace": "Feature.Catalog",
     "key": "Description.AttributionAlertBody",
     "description": null,
-    "english": "You will leave this area and be taken to {experienceName}.",
-    "translation": "You will leave this area and be taken to {experienceName}.",
+    "english": "You will leave this area and join {experienceName}.",
+    "translation": "You will leave this area and join {experienceName}.",
     "isDeprecated": false
   },
   {
@@ -4917,6 +4917,30 @@
     "description": null,
     "english": "View Experience Details",
     "translation": "View Experience Details",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.JoinExperience",
+    "description": "In-experience item deeplinking",
+    "english": "Join Experience",
+    "translation": "Join Experience",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "View Experience Detail",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
     "isDeprecated": false
   },
   {
@@ -19136,6 +19160,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.InApp",
+    "description": "This is to describe notifications when the user is IN the APP (in-app) for Roblox (i.e. stream notifications and toast notifications)",
+    "english": "In-app",
+    "translation": "In-app",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.Push",
+    "description": "This is shorthand for PUSH notifications specifically (for iOS and Android). These are off-platform notifications. This is NOT push in the sense of push and pull.",
+    "english": "Push",
+    "translation": "Push",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CustomizeNotificationsV2",
+    "description": null,
+    "english": "Customize push notifications for all logged in devices",
+    "translation": "Customize push notifications for all logged in devices",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.PurchaseSuccess",
     "key": "Title.PurchaseSucceeded",
     "description": "Title of the modal",
@@ -20995,8 +21043,8 @@
     "namespace": "Feature.Parents",
     "key": "Description.ParentPermission",
     "description": "Content to explain why parent permission is needed for VPC",
-    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
-    "translation": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.\n\nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "Certain actions on Roblox require a parent or guardian’s permission.\n\nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
     "isDeprecated": false
   },
   {
@@ -21018,17 +21066,17 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmail",
-    "description": "Description for parent to enter their email",
+    "description": "do not use - use the v2 version",
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
     "translation": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmailV2",
     "description": null,
-    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
-    "translation": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
+    "translation": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
     "isDeprecated": false
   },
   {
@@ -21075,8 +21123,8 @@
     "namespace": "Feature.Parents",
     "key": "Description.WaitingParentPermission",
     "description": null,
-    "english": "Check your email to help unlock your child’s account",
-    "translation": "Check your email to help unlock your child’s account",
+    "english": "Check your email to help unlock your child’s account.\n\nAfter providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "Check your email to help unlock your child’s account.\n\nAfter providing permission, refresh this screen to return to your child's Roblox account.",
     "isDeprecated": false
   },
   {
@@ -21480,6 +21528,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Title.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "Can't Provide Permission",
+    "translation": "Can't Provide Permission",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "This child account no longer exists.",
+    "translation": "This child account no longer exists.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialContextToast",
     "key": "Message.YouJoinedOneFriend",
     "description": "Shown to users after they join an experience with 1 friend in it",
@@ -21509,6 +21573,46 @@
     "description": "Shown after a user follows another, but the followed user is in a different experience by the time the follower arrives",
     "english": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
     "translation": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.JoinFriend",
+    "description": "Button action that can be clicked to follow the user to the experience the followed user is currently in",
+    "english": "Join",
+    "translation": "Join",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendNotInGame",
+    "description": "Shown when a user follows another user, and the followed user is not in a game when the follower enters the server",
+    "english": "{FRIEND_NAME} left this experience",
+    "translation": "{FRIEND_NAME} left this experience",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.InviteBack",
+    "description": "Button that is shown when a followed user isn't in the experience when the follower arrives. Clicking it sends an invite to the followed user to invite them back to the server.",
+    "english": "Invite Back",
+    "translation": "Invite Back",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendJoinedYou",
+    "description": "Shown to users when another user intentionally joins their server",
+    "english": "{FRIEND_NAME} joined you",
+    "translation": "{FRIEND_NAME} joined you",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.InvitationConfirmation",
+    "description": "Sent after a user invites their friend to an experience.",
+    "english": "Invitation sent",
+    "translation": "Invitation sent",
     "isDeprecated": false
   }
 ]

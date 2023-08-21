@@ -476,7 +476,7 @@
     "key": "Label.LinkAccountWarning",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
-    "translation": "Akun Roblox kamu akan terhubung dengan akun {platform} kamu. Saat kamu bergabung lagi nanti, akun kamu akan log in secara otomatis. Kamu dapat memutuskan hubungan dari Pengaturan kapan saja. Mungkin akan ada jeda waktu sebelum dapat menghubungkan dengan akun baru lagi.",
+    "translation": "Akun Roblox kamu akan terhubung dengan akunmu di {platform}. Saat kamu bergabung lagi nanti, akun kamu akan log in secara otomatis. Kamu dapat memutuskan hubungan akun dari Pengaturan kapan saja. Mungkin akan ada jeda waktu sebelum kamu dapat menghubungkan dengan akun baru lagi.",
     "isDeprecated": false
   },
   {
@@ -1725,6 +1725,14 @@
     "description": "Action for accepting the contents of an educational dialog or tooltip",
     "english": "Got It",
     "translation": "Oke",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Action.Approve",
+    "description": null,
+    "english": "Approve",
+    "translation": "Setuju",
     "isDeprecated": false
   },
   {
@@ -4891,7 +4899,7 @@
     "namespace": "Feature.Catalog",
     "key": "Heading.GoToExperience",
     "description": null,
-    "english": "Go to Experience?",
+    "english": "Join Experience?",
     "translation": "Kunjungi Pengalaman Virtual?",
     "isDeprecated": false
   },
@@ -4899,7 +4907,7 @@
     "namespace": "Feature.Catalog",
     "key": "Description.AttributionAlertBody",
     "description": null,
-    "english": "You will leave this area and be taken to {experienceName}.",
+    "english": "You will leave this area and join {experienceName}.",
     "translation": "Kamu akan meninggalkan area ini dan dibawa ke {experienceName}.",
     "isDeprecated": false
   },
@@ -18953,10 +18961,42 @@
   },
   {
     "namespace": "Feature.Reauthentication",
+    "key": "Action.ChangeVerificationMethod",
+    "description": "Hyperlink-formatted button text",
+    "english": "Change verification method",
+    "translation": "Ubah metode verifikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Description.EnterYourOtpCode",
+    "description": null,
+    "english": "A one-time code has been sent to your registered email.{lineBreak}Please enter your one-time code to continue.",
+    "translation": "Kode sekali pakai telah dikirim ke email terdaftar kamu.{lineBreak}Masukkan kode sekali pakai tersebut untuk melanjutkan.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.OtpVerification",
+    "description": null,
+    "english": "One-Time Code Verification",
+    "translation": "Verifikasi Kode Sekali Pakai",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
     "key": "Label.Password",
     "description": null,
     "english": "Password",
     "translation": "Kata sandi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Header.VerificationMethodSelection",
+    "description": null,
+    "english": "Verification Method Selection",
+    "translation": "Pemilihan Metode Verifikasi",
     "isDeprecated": false
   },
   {
@@ -18973,6 +19013,46 @@
     "description": null,
     "english": "6-Digit Code",
     "translation": "Kode 6 digit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Label.ChooseVerificationMethod",
+    "description": null,
+    "english": "Choose verification method",
+    "translation": "Pilih metode verifikasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.OtpCodeIncorrect",
+    "description": null,
+    "english": "Incorrect One-Time Code; please try again.",
+    "translation": "Kode Sekali Pakai Salah. Coba lagi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.OtpCodeExpired",
+    "description": null,
+    "english": "Expired One-Time Code!",
+    "translation": "Kode Sekali Pakai Sudah Kedaluwarsa.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.OtpRedeemFailure",
+    "description": null,
+    "english": "One-Time Code already redeemed!",
+    "translation": "Kode Sekali Pakai Sudah di-redeem.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Reauthentication",
+    "key": "Message.Error.OtpCodeThrottled",
+    "description": null,
+    "english": "You've sent too many codes! Please wait a few minutes before trying again!",
+    "translation": "Kamu telah mengirim terlalu banyak kode. Tunggu beberapa menit sebelum mencoba lagi.",
     "isDeprecated": false
   },
   {
@@ -20803,7 +20883,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.ParentPermission",
     "description": "Content to explain why parent permission is needed for VPC",
-    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.\n\nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
     "translation": "Beberapa tindakan di Roblox memerlukan izin orang tua atau wali. \nUntuk membantu anak Anda, Anda memerlukan akun Roblox dengan hak istimewa orang tua. Anda akan diminta untuk memberikan alamat email Anda, memverifikasi bahwa Anda adalah orang dewasa, dan menghubungkan akun Anda ke akun anak Anda.",
     "isDeprecated": false
   },
@@ -20826,16 +20906,16 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmail",
-    "description": "Description for parent to enter their email",
+    "description": "do not use - use the v2 version",
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
     "translation": "Alamat email ini akan terhubung dengan akun Anda di Roblox. Untuk mempelajari selengkapnya tentang praktik data kami, baca {privacyPolicyLink}.",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmailV2",
     "description": null,
-    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
     "translation": "Alamat email ini akan terhubung dengan akun Anda di Roblox. Untuk mempelajari selengkapnya tentang praktik data kami, baca {linkStart}Kebijakan Privasi{linkEnd}.",
     "isDeprecated": false
   },
@@ -20883,7 +20963,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.WaitingParentPermission",
     "description": null,
-    "english": "Check your email to help unlock your child’s account",
+    "english": "Check your email to help unlock your child’s account.\n\nAfter providing permission, refresh this screen to return to your child's Roblox account.",
     "translation": "Periksa email Anda untuk membantu membuka akun anak Anda",
     "isDeprecated": false
   },
@@ -21153,6 +21233,14 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Action.ExitSetup",
+    "description": null,
+    "english": "Exit Setup",
+    "translation": "Keluar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Title.LinkToChild",
     "description": null,
     "english": "Link to Your Child’s Account",
@@ -21277,6 +21365,78 @@
     "description": null,
     "english": "Your Roblox account doesn't have parent privileges yet. To complete your child's request later, you’ll need to log in from the link in your email.",
     "translation": "Akun Roblox Anda belum memiliki hak istimewa orang tua. Untuk menyelesaikan permintaan anak Anda nanti, Anda harus log in dari tautan di email Anda.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedOneFriend",
+    "description": "Shown to users after they join an experience with 1 friend in it",
+    "english": "You've joined {FRIEND_NAME}",
+    "translation": "Kamu telah bergabung dengan {FRIEND_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedTwoFriends",
+    "description": "Shown to users when they join an experience with 2 friends in it",
+    "english": "You've joined {FRIEND_NAME_ONE} and {FRIEND_NAME_TWO}",
+    "translation": "Kamu telah bergabung dengan {FRIEND_NAME_ONE} dan {FRIEND_NAME_TWO}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedManyFriends",
+    "description": "Shown to users when they join an experience with more than 2 other friends in it",
+    "english": "You've joined {FRIEND_NAME} and {FRIEND_COUNT} other friends",
+    "translation": "Kamu telah bergabung dengan {FRIEND_NAME} dan {FRIEND_COUNT} teman lainnya",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendInOtherUniverse",
+    "description": "Shown after a user follows another, but the followed user is in a different experience by the time the follower arrives",
+    "english": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
+    "translation": "{FRIEND_NAME} sudah keluar dan saat ini ada di {EXPERIENCE_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.JoinFriend",
+    "description": "Button action that can be clicked to follow the user to the experience the followed user is currently in",
+    "english": "Join",
+    "translation": "Bergabung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendNotInGame",
+    "description": "Shown when a user follows another user, and the followed user is not in a game when the follower enters the server",
+    "english": "{FRIEND_NAME} left this experience",
+    "translation": "{FRIEND_NAME} sudah keluar dari pengalaman virtual ini",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.InviteBack",
+    "description": "Button that is shown when a followed user isn't in the experience when the follower arrives. Clicking it sends an invite to the followed user to invite them back to the server.",
+    "english": "Invite Back",
+    "translation": "Undang Kembali",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendJoinedYou",
+    "description": "Shown to users when another user intentionally joins their server",
+    "english": "{FRIEND_NAME} joined you",
+    "translation": "{FRIEND_NAME} bergabung dengan kamu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.InvitationConfirmation",
+    "description": "Sent after a user invites their friend to an experience.",
+    "english": "Invitation sent",
+    "translation": "Undangan terkirim",
     "isDeprecated": false
   }
 ]

@@ -4172,7 +4172,7 @@
     "key": "Message.ReportCatalogItemPhrase",
     "description": null,
     "english": "You can send a report to our moderation team. We will review the item and take appropriate action.",
-    "translation": "当社のモデレータチームに規約違反報告を送信できます。アイテムを調査してから、適切な対処をします。",
+    "translation": "当社の内容審査チームに規約違反報告を送信できます。アイテムを調査してから、適切な対処をします。",
     "isDeprecated": false
   },
   {
@@ -4899,7 +4899,7 @@
     "namespace": "Feature.Catalog",
     "key": "Heading.GoToExperience",
     "description": null,
-    "english": "Go to Experience?",
+    "english": "Join Experience?",
     "translation": "バーチャル空間に行きますか？",
     "isDeprecated": false
   },
@@ -4907,7 +4907,7 @@
     "namespace": "Feature.Catalog",
     "key": "Description.AttributionAlertBody",
     "description": null,
-    "english": "You will leave this area and be taken to {experienceName}.",
+    "english": "You will leave this area and join {experienceName}.",
     "translation": "このエリアを離れて {experienceName} に移動します。",
     "isDeprecated": false
   },
@@ -14308,7 +14308,7 @@
     "key": "Label.ParentReactivationNotice",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account. {startLink}Reload this page{endLink} when completed. ",
-    "translation": "このアカウントを再度有効にするには、アカウント所有者の親または法定後見人である必要があります。完了したら、{startLink}このページを再読み込み{endLink}してください。 ",
+    "translation": "このアカウントを再度有効にするには、あなたの親（保護者）または法定後見人が手伝わなければなりません。完了したら、{startLink}このページを再読み込み{endLink}してください。 ",
     "isDeprecated": true
   },
   {
@@ -14340,7 +14340,7 @@
     "key": "Label.ParentReactivationNoticeUA",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account.",
-    "translation": "このアカウントを再度有効にするには、アカウント所有者の親または法定後見人である必要があります。",
+    "translation": "このアカウントを再度有効にするには、あなたの親（保護者）または法定後見人が手伝わなければなりません。",
     "isDeprecated": false
   },
   {
@@ -14357,6 +14357,14 @@
     "description": null,
     "english": "Account Banned",
     "translation": "アカウントが停止されました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback.Note",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges.",
+    "translation": "お持ちのアカウントは不正請求によって一時停止されました。",
     "isDeprecated": false
   },
   {
@@ -17948,7 +17956,7 @@
     "key": "Messages.ModeratorNoteTitle",
     "description": "Moderator note title.",
     "english": "Moderator Note",
-    "translation": "モデレータの記録",
+    "translation": "内容審査担当者のメモ",
     "isDeprecated": false
   },
   {
@@ -20979,7 +20987,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.ParentPermission",
     "description": "Content to explain why parent permission is needed for VPC",
-    "english": "Certain actions on Roblox require a parent or guardian’s permission. \nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.\n\nTo help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
     "translation": "Robloxの特定の操作には親または保護者の許可が必要です。 \nお子様の使用には、まず保護者権限のあるRobloxアカウントが必要です。 メールアドレスの提供、あなたが成人であることの確認、お子様のアカウントとの紐づけが求められます。",
     "isDeprecated": false
   },
@@ -21002,17 +21010,17 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmail",
-    "description": "Description for parent to enter their email",
+    "description": "do not use - use the v2 version",
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
     "translation": "このメールアドレスはお持ちのRobloxアカウントに紐づけられます。当社のデータ慣行について詳しくは、 {privacyPolicyLink} をごらんください。",
-    "isDeprecated": false
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Parents",
     "key": "Description.EnterParentEmailV2",
     "description": null,
-    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy {linkEnd}.",
-    "translation": "このメールアドレスはお持ちのRobloxアカウントに紐づけられます。当社のデータ慣行について詳しくは、 {linkStart}プライバシー ポリシー {linkEnd} をごらんください。",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
+    "translation": "このメールアドレスはお持ちのRobloxアカウントに紐づけられます。当社のデータ慣行について詳しくは、 {linkStart}プライバシー ポリシー{linkEnd}をごらんください。",
     "isDeprecated": false
   },
   {
@@ -21059,7 +21067,7 @@
     "namespace": "Feature.Parents",
     "key": "Description.WaitingParentPermission",
     "description": null,
-    "english": "Check your email to help unlock your child’s account",
+    "english": "Check your email to help unlock your child’s account.\n\nAfter providing permission, refresh this screen to return to your child's Roblox account.",
     "translation": "お子様のアカウントのロックを解除するには、Eメールを確認してください",
     "isDeprecated": false
   },
@@ -21461,6 +21469,94 @@
     "description": null,
     "english": "Your Roblox account doesn't have parent privileges yet. To complete your child's request later, you’ll need to log in from the link in your email.",
     "translation": "お持ちのRobloxアカウントにはまだ保護者権限がありません。後でお子様からのリクエストを完了するには、メールのリンクからログインする必要があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "Can't Provide Permission",
+    "translation": "許可を出せません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "This child account no longer exists.",
+    "translation": "お子様のアカウントが存在しません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedOneFriend",
+    "description": "Shown to users after they join an experience with 1 friend in it",
+    "english": "You've joined {FRIEND_NAME}",
+    "translation": "{FRIEND_NAME} さんと一緒にに参加しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedTwoFriends",
+    "description": "Shown to users when they join an experience with 2 friends in it",
+    "english": "You've joined {FRIEND_NAME_ONE} and {FRIEND_NAME_TWO}",
+    "translation": "{FRIEND_NAME_ONE} さんと {FRIEND_NAME_TWO} さんと一緒に参加しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedManyFriends",
+    "description": "Shown to users when they join an experience with more than 2 other friends in it",
+    "english": "You've joined {FRIEND_NAME} and {FRIEND_COUNT} other friends",
+    "translation": "{FRIEND_NAME} さんと他の {FRIEND_COUNT} 人の友達と一緒に参加しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendInOtherUniverse",
+    "description": "Shown after a user follows another, but the followed user is in a different experience by the time the follower arrives",
+    "english": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
+    "translation": "{FRIEND_NAME} さんが退出して {EXPERIENCE_NAME} に参加しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.JoinFriend",
+    "description": "Button action that can be clicked to follow the user to the experience the followed user is currently in",
+    "english": "Join",
+    "translation": "参加する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendNotInGame",
+    "description": "Shown when a user follows another user, and the followed user is not in a game when the follower enters the server",
+    "english": "{FRIEND_NAME} left this experience",
+    "translation": "{FRIEND_NAME} さんがバーチャル空間から退出しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.InviteBack",
+    "description": "Button that is shown when a followed user isn't in the experience when the follower arrives. Clicking it sends an invite to the followed user to invite them back to the server.",
+    "english": "Invite Back",
+    "translation": "また招待する",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendJoinedYou",
+    "description": "Shown to users when another user intentionally joins their server",
+    "english": "{FRIEND_NAME} joined you",
+    "translation": "{FRIEND_NAME} さんが一緒に参加しました",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.InvitationConfirmation",
+    "description": "Sent after a user invites their friend to an experience.",
+    "english": "Invitation sent",
+    "translation": "招待状を送信しました",
     "isDeprecated": false
   }
 ]
