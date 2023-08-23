@@ -4900,7 +4900,7 @@
     "key": "Heading.GoToExperience",
     "description": null,
     "english": "Join Experience?",
-    "translation": "Zum Erlebnis gehen?",
+    "translation": "Erlebnis beitreten?",
     "isDeprecated": false
   },
   {
@@ -4908,7 +4908,7 @@
     "key": "Description.AttributionAlertBody",
     "description": null,
     "english": "You will leave this area and join {experienceName}.",
-    "translation": "Du wirst diesen Bereich verlassen und zu {experienceName} gebracht.",
+    "translation": "Du wirst diesen Bereich verlassen und {experienceName} beitreten.",
     "isDeprecated": false
   },
   {
@@ -4917,6 +4917,46 @@
     "description": null,
     "english": "View Experience Details",
     "translation": "Erlebnisinfos anzeigen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.JoinExperience",
+    "description": "In-experience item deeplinking",
+    "english": "Join Experience",
+    "translation": "Erlebnis beitreten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "Erlebnisinfos anzeigen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "Möchtest du {EXPERIENCE_NAME} betreten, um das Item zu erwerben?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InMultipleExperiences",
+    "description": "In-experience deeplinking",
+    "english": "In {NUM_EXPERIENCES} Experiences",
+    "translation": "In {NUM_EXPERIENCES} Erlebnissen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InSingleExperience",
+    "description": "In-experience deeplinking",
+    "english": "In Experience",
+    "translation": "Im Erlebnis",
     "isDeprecated": false
   },
   {
@@ -12192,6 +12232,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.GameSorts",
+    "key": "Label.Sponsored",
+    "description": "For Sponsored sort on Discover page",
+    "english": "Sponsored",
+    "translation": "Gesponsert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.RecommendedForYou",
+    "description": "For \"Recommended For You\" sort on Discover page",
+    "english": "Recommended For You",
+    "translation": "Für dich empfohlen",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.ConnectionError",
     "key": "Queued",
     "description": "<DEPRECATED, can be deleted as of 1-9-23>",
@@ -14349,6 +14405,14 @@
     "description": null,
     "english": "Account Banned",
     "translation": "Konto gebannt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback.Note",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges.",
+    "translation": "Dein Konto wurde aufgrund unautorisierter Gebühren gesperrt.",
     "isDeprecated": false
   },
   {
@@ -18528,6 +18592,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Tracking",
+    "key": "Description.CookieT",
+    "description": "description for cookie \"_t\"",
+    "english": "User authentication token cookie",
+    "translation": "Nutzer-Authentifizierungs-Token-Cookie",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GenreExplorer",
     "key": "Heading.Categories",
     "description": null,
@@ -19109,6 +19181,30 @@
     "description": null,
     "english": "Showing {count} results",
     "translation": "{count} Ergebnisse werden angezeigt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.InApp",
+    "description": "This is to describe notifications when the user is IN the APP (in-app) for Roblox (i.e. stream notifications and toast notifications)",
+    "english": "In-app",
+    "translation": "In-App",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.Push",
+    "description": "This is shorthand for PUSH notifications specifically (for iOS and Android). These are off-platform notifications. This is NOT push in the sense of push and pull.",
+    "english": "Push",
+    "translation": "Push",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Description.CustomizeNotificationsV2",
+    "description": null,
+    "english": "Customize notifications for all logged in devices",
+    "translation": "Passe Push-Benachrichtigungen für alle eingeloggten Geräte an",
     "isDeprecated": false
   },
   {
@@ -20819,7 +20915,7 @@
     "namespace": "Feature.Settings",
     "key": "Heading.PlatformAccountSettings",
     "description": "Platform-specific account settings heading",
-    "english": "{platform} Account Settings",
+    "english": "{platform} Settings",
     "translation": "{platform}-Kontoeinstellungen",
     "isDeprecated": false
   },
@@ -20972,7 +21068,7 @@
     "key": "Description.ParentPermission",
     "description": "DO NOT USE - USE V2",
     "english": "Certain actions on Roblox require a parent or guardian’s permission. To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
-    "translation": "Bestimmte Aktionen auf Roblox benötigen die Erlaubnis eines Elternteils oder Erziehungsberechtigten. \nUm deinem Kind zu helfen, benötigst du ein Roblox-Konto mit Elternprivilegien. Du wirst gebeten werden, deine E-Mail-Adresse anzugeben, verfizieren, dass du erwachsen bist, und einen Link auf das Konto deines Kindes erhalten.",
+    "translation": "Bestimmte Aktionen auf Roblox benötigen die Erlaubnis eines Elternteils oder Erziehungsberechtigten. Um deinem Kind zu helfen, benötigst du ein Roblox-Konto mit Elternprivilegien. Du wirst gebeten werden, deine E-Mail-Adresse anzugeben, verfizieren, dass du erwachsen bist, und einen Link auf das Konto deines Kindes erhalten.",
     "isDeprecated": true
   },
   {
@@ -21052,7 +21148,7 @@
     "key": "Description.WaitingParentPermission",
     "description": "DO NOT USE - USE V2",
     "english": "Check your email to help unlock your child’s account. After providing permission, refresh this screen to return to your child's Roblox account.",
-    "translation": "Überprüfe deine E-Mails, um das Konto deines Kindes freizuschalten",
+    "translation": "Schau in deiner E-Mail nach, um das Konto deines Kindes freizuschalten. Nachdem du die Erlaubnis gegeben hast, aktualisiere diese Seite, um zum Roblox-Konto deines Kindes zurückzukehren.",
     "isDeprecated": true
   },
   {
@@ -21252,7 +21348,7 @@
     "key": "Description.DifferentEmail",
     "description": null,
     "english": "This email already belongs to a parent account. In your email inbox, open the permission request again and select Use an Existing Account.",
-    "translation": "Diese E-Mail ist nicht zulässig. Verwende eine andere E-Mail, um Eltern-Berechtigung bei Roblox anzufordern.",
+    "translation": "Diese E-Mail gehört bereits zu einem Elternkonto. In deinem E-Mail-Posteingang öffne die Genehmigungsanfrage erneut und wähle \"Bestehendes Konto verwenden\".",
     "isDeprecated": false
   },
   {
@@ -21388,7 +21484,7 @@
     "key": "Description.ChargebackConsent",
     "description": null,
     "english": "Your child’s account was locked due to unauthorized charges.{breakLine}As a parent, you can now give your child permission to unlock their account. ",
-    "translation": "Das Konto deines Kindes wurde wegen unautorisierter Gebühren gesperrt. {breakLine}Als Elternteil kannst du deinem Kind jetzt die Erlaubnis geben, sein Konto zu entsperren. ",
+    "translation": "Das Konto deines Kindes wurde wegen unautorisierter Gebühren gesperrt.{breakLine}Als Elternteil kannst du deinem Kind jetzt die Erlaubnis geben, sein Konto zu entsperren. ",
     "isDeprecated": false
   },
   {
@@ -21469,6 +21565,46 @@
     "description": "parent can't consent for child account because child account got deleted",
     "english": "This child account no longer exists.",
     "translation": "Dieses Kinderkonto existiert nicht mehr.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ContinueSetup",
+    "description": "continue setup parent account",
+    "english": "Continue Setup",
+    "translation": "Einrichtung fortsetzen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ReviewRequest",
+    "description": "review the request for parent to unlock child's account",
+    "english": "Review Request",
+    "translation": "Überprüfungsanfrage",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermissionV2",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.{lineBreak}To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "Bestimmte Aktionen auf Roblox benötigen die Erlaubnis eines Elternteils oder Erziehungsberechtigten.{lineBreak}Um deinem Kind zu helfen, benötigst du ein Roblox-Konto mit Elternprivilegien. Du wirst gebeten werden, deine E-Mail-Adresse anzugeben, verfizieren, dass du erwachsen bist, und einen Link auf das Konto deines Kindes erhalten.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermissionV2",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account.{lineBreak}After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "Schau in deiner E-Mail nach, um das Konto deines Kindes freizuschalten.{lineBreak}Nachdem du die Erlaubnis gegeben hast, aktualisiere diese Seite, um zum Roblox-Konto deines Kindes zurückzukehren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.Exit",
+    "description": "exit parental account setup",
+    "english": "Exit",
+    "translation": "Verlassen",
     "isDeprecated": false
   },
   {

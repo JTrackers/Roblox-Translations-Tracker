@@ -4920,6 +4920,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Action.JoinExperience",
+    "description": "In-experience item deeplinking",
+    "english": "Join Experience",
+    "translation": "เข้าร่วมประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InSingleExperience",
+    "description": "In-experience deeplinking",
+    "english": "In Experience",
+    "translation": "ในประสบการณ์",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": null,
@@ -6325,6 +6341,38 @@
     "description": null,
     "english": "Sent from contact importer",
     "translation": "ส่งมาจากเครื่องมือนำเข้ารายชื่อผู้ติดต่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "OneMutualFriend",
+    "description": "Context: {UserName} is a mutual friend",
+    "english": "is a mutual friend",
+    "translation": "คือผู้ที่มีเพื่อนร่วมกัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "PluralMutualFriends",
+    "description": "Context: {UserName1}, {UserName2} are mutual friends",
+    "english": "are mutual friends",
+    "translation": "คือผู้ที่มีเพื่อนร่วมกัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "OneOtherMutualFriend",
+    "description": "Context:  {UserName1}, {UserName2}, {UserName3} + 1 other mutual friend",
+    "english": "other mutual friend",
+    "translation": "ผู้ใช้ที่มีเพื่อนร่วมกัน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "PluralOtherMutualFriends",
+    "description": "Context: {UserName1}, {UserName2}, {UserName3} + 2 other mutual friends",
+    "english": "other mutual friends",
+    "translation": "ผู้ใช้ที่มีเพื่อนร่วมกัน",
     "isDeprecated": false
   },
   {
@@ -12136,6 +12184,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.GameSorts",
+    "key": "Label.Sponsored",
+    "description": "For Sponsored sort on Discover page",
+    "english": "Sponsored",
+    "translation": "ได้รับการสนับสนุน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.RecommendedForYou",
+    "description": "For \"Recommended For You\" sort on Discover page",
+    "english": "Recommended For You",
+    "translation": "แนะนำสำหรับคุณ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.ConnectionError",
     "key": "Queued",
     "description": "<DEPRECATED, can be deleted as of 1-9-23>",
@@ -17884,7 +17948,7 @@
     "key": "Messages.Appeal",
     "description": "Tell the user that they can appeal their moderation.",
     "english": "If you wish to appeal, please contact us via the Support Form.",
-    "translation": "หากคุณต้องการยื่นอุทธรณ์ โปรดติดต่อเราผ่านทางแบบฟอร์มบริการช่วยเหลือ",
+    "translation": "หากคุณต้องการอุทธรณ์ โปรดติดต่อเราผ่านทางแบบฟอร์มบริการช่วยเหลือ",
     "isDeprecated": false
   },
   {
@@ -20697,10 +20761,50 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.ParentPermission",
+    "description": null,
+    "english": "Parent Permission Needed",
+    "translation": "ต้องได้รับอนุญาตจากผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermission",
+    "description": "DO NOT USE - USE V2",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission. To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "การดำเนินการบางอย่างบน Roblox จำเป็นต้องได้รับอนุญาตจากผู้ปกครอง เพื่อช่วยเหลือบุตรหลานของคุณ คุณต้องมีบัญชี Roblox ที่มีสิทธิ์ของผู้ปกครอง คุณจะถูกขอให้ระบุอีเมลของคุณ ตรวจสอบยืนยันว่าคุณคือผู้ใหญ่ และเชื่อมโยมกับบัญชีของบุตรหลานของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Action.GetStarted",
     "description": null,
     "english": "Get Started",
     "translation": "เริ่มใช้งาน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.EnterParentEmail",
+    "description": "Title for the modal to allow parent enter their email",
+    "english": "Enter Parent Email",
+    "translation": "กรอกอีเมลของผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmail",
+    "description": "do not use - use the v2 version",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
+    "translation": "ที่อยู่อีเมลนี้จะเชื่อมโยงกับบัญชีของคุณบน Roblox หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับแนวทางปฏิบัติของเราเกี่ยวกับข้อมูล โปรดไปที่{privacyPolicyLink}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmailV2",
+    "description": null,
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
+    "translation": "ที่อยู่อีเมลนี้จะเชื่อมโยงกับบัญชีของคุณบน Roblox หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับแนวทางปฏิบัติของเราเกี่ยวกับข้อมูล โปรดไปที่{linkStart}นโยบายความเป็นส่วนตัว{linkEnd}",
     "isDeprecated": false
   },
   {
@@ -20713,10 +20817,162 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.Thanks",
+    "description": "Title of modal",
+    "english": "Thanks!",
+    "translation": "ขอบคุณ!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EmailSent",
+    "description": "Email Sent confirmation",
+    "english": "We’ve sent an email to {parentEmail} with next steps",
+    "translation": "เราได้ส่งอีเมลไปที่ {parentEmail} พร้อมขั้นตอนต่อไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.InvalidEmail",
+    "description": "Error message when user input invalid email",
+    "english": "Invalid email address",
+    "translation": "ที่อยู่อีเมลไม่ถูกต้อง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.WaitingParentPermission",
+    "description": null,
+    "english": "Waiting for Parent Permission",
+    "translation": "กำลังรอการอนุญาตจากผู้ปกครอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermission",
+    "description": "DO NOT USE - USE V2",
+    "english": "Check your email to help unlock your child’s account. After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "ตรวจสอบอีเมลของคุณเพื่อช่วยปลดล็อคบัญชีให้กับบุตรหลานของคุณ หลังจากทำการอนุญาตแล้ว ให้รีเฟรชหน้าจอนี้เพื่อกลับไปยังบัญชีของบุตรหลานของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.SendAnotherEmail",
+    "description": "Button to send parent another email",
+    "english": "Send Another Email",
+    "translation": "ส่งอีเมลอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Titile.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "ไม่สามารถเชื่อมโยงกับบัญชีได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.CantLinkAccountCurrentChild",
+    "description": "The error message when parent try to connect to current child",
+    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "translation": "เราไม่สามารถเชื่อมโยงบัญชีของคุณกับบัญชีของบุตรหลานของคุณบัญชีนี้ได้ หากต้องการดำเนินการตามคำขอของบุตรหลานให้เสร็จสิ้น โปรดใช้บัญชีของผู้ปกครองที่เชื่อมโยงไว้อยู่แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "ไม่สามารถเชื่อมโยงกับบัญชีได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.EmailIneligible",
+    "description": "Error message when the email is ineligible to use",
+    "english": "This email isn’t eligible. To request parent permission on Roblox, use a different email.",
+    "translation": "ไม่สามารถใช้อีเมลนี้ได้ หากต้องการขออนุญาตจากผู้ปกครองบน Roblox โปรดใช้อีเมลอื่น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExistAccountWithEmail",
+    "description": "Error message child has five parents, and enters email of a sixth parent",
+    "english": "Your parent already has an account for approving requests. Enter your parent’s email, instead.",
+    "translation": "ผู้ปกครองของคุณมีบัญชีสำหรับอนุมัติคำขออยู่แล้ว โปรดกรอกที่อยู่อีเมลของผู้ปกครองของคุณแทน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SomethingWentWrong",
+    "description": "Generic error message",
+    "english": "Something went wrong",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AreYouSure",
+    "description": "Double check modal title",
+    "english": "Are You Sure?",
+    "translation": "คุณแน่ใจหรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Title.LogOut",
     "description": null,
     "english": "Log Out",
     "translation": "ลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.LogOut",
+    "description": null,
+    "english": "To link an existing account, log out of your current session and log back in.",
+    "translation": "หากต้องการเชื่อมโยงบัญชีที่มีอยู่แล้ว โปรดลงชื่ออกจากเซสชันปัจจุบันของคุณแล้วลงชื่อเข้าใช้อีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.RequestExpired",
+    "description": null,
+    "english": "Request expired",
+    "translation": "คำขอหมดอายุแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.RequestExpired",
+    "description": null,
+    "english": "Open Roblox on your child’s phone and re-enter your email to start again",
+    "translation": "เปิด Roblox บนโทรศัพท์ของบุตรหลานของคุณ แล้วกรอกอีเมลของคุณอีกครั้งเพื่อเริ่มใหม่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.NoAccountCreation",
+    "description": null,
+    "english": "Can’t Create Account",
+    "translation": "ไม่สามารถสร้างบัญชีได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.GuardianRequirement",
+    "description": null,
+    "english": "You must be a parent or legal guardian in order to manage a child’s account",
+    "translation": "คุณต้องเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายจึงจะสามารถจัดการบัญชีของบุตรหลานได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.EmailMismatch",
+    "description": null,
+    "english": "Email Mismatch",
+    "translation": "อีเมลไม่ตรงกัน",
     "isDeprecated": false
   },
   {
@@ -20741,6 +20997,14 @@
     "description": null,
     "english": "Something Went Wrong",
     "translation": "มีปัญหาบางอย่างเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.Exit",
+    "description": "exit parental account setup",
+    "english": "Exit",
+    "translation": "ออก",
     "isDeprecated": false
   },
   {
