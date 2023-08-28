@@ -4548,7 +4548,7 @@
     "key": "Message.HoldingPolicy",
     "description": "Deprecated",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "购买后，道具将最多保留 30 天。 该道具只能在此持有期结束后转售。 此持有期适用于每次转售。 只有 Premium 用户才可转售道具。",
+    "translation": "购买后，原始销售将会进入最多 30 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 7 天的存放期。只有 Premium 用户可以转售道具。",
     "isDeprecated": false
   },
   {
@@ -4652,7 +4652,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "购买后，道具将最多保留 30 天。 该道具只能在此持有期结束后转售。 此持有期适用于每次转售。 只有 Premium 用户才可转售道具。",
+    "translation": "购买后，原始销售将会进入最多 30 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 7 天的存放期。只有 Premium 用户可以转售道具。",
     "isDeprecated": true
   },
   {
@@ -4777,6 +4777,14 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Label.Resellable",
+    "description": "Label for whether the item is resellable",
+    "english": "Resellable",
+    "translation": "可转售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Feature.Catalog.ActionSeeAll",
     "description": "Button text for \"See All\" button used in carousel marketplace widgets",
     "english": "See All",
@@ -4785,10 +4793,58 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Title.InExperienceItemsWidget",
+    "description": "Title text displayed at the top of the \"In-Experience Shops\" widget in the marketplace",
+    "english": "In-Experience Shops",
+    "translation": "体验商店",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "ActionSeeAll",
     "description": "Button text for \"See All\" button used in carousel marketplace widgets",
     "english": "See All",
     "translation": "查看全部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotBeResold",
+    "description": null,
+    "english": "This item cannot be resold",
+    "translation": "此道具无法转售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "售罄",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "购买后，原始销售将会进入最多 {purchaseDays} 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 {resaleDays} 天的存放期。只有 Premium 用户可以转售道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "从转售中购买将最多存放 {days} 天。道具只能在存放期结束后转售。只有 Premium 用户可以转售道具。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Attribution",
+    "description": "Text is used as a label for the experience it was made in. For example: Made in Natural Disaster Survival",
+    "english": "Made In",
+    "translation": "创作于",
     "isDeprecated": false
   },
   {
@@ -4801,10 +4857,42 @@
   },
   {
     "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetails",
+    "description": null,
+    "english": "View Experience Details",
+    "translation": "查看体验详情",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
     "key": "Action.JoinExperience",
     "description": "In-experience item deeplinking",
     "english": "Join Experience",
     "translation": "加入体验",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "查看体验详情",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "想前往“{EXPERIENCE_NAME}”获取道具吗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InMultipleExperiences",
+    "description": "In-experience deeplinking",
+    "english": "In {NUM_EXPERIENCES} Experiences",
+    "translation": "在 {NUM_EXPERIENCES} 个体验中",
     "isDeprecated": false
   },
   {
@@ -7532,7 +7620,7 @@
     "key": "Description.SetCustomName",
     "description": "Description for a feature to allow users to set a custom name for their friend. {displayName} is a variable that will be set to the displayName for the friend user.\n\nPlease don't change the <font weight=\"medium> and </font> text, as it is used for formatting.",
     "english": "Set a custom name for <font weight=\"medium\">{displayName}</font>.",
-    "translation": "为 {displayName} 设置自定义名称。",
+    "translation": "设置<font weight=\"medium\">“{displayName}”</font>的自定义名称。",
     "isDeprecated": false
   },
   {
@@ -7569,6 +7657,86 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Label.InvisibleWithTimeout",
+    "description": "Shown when the user has the option to set their Presence status to Invisible, e.g this may read Invisible (for 4 hours) and allow the user to appear invisible (i.e other users will see them as offline) on the platform for 4 hours.",
+    "english": "Invisible (for {hours} hours)",
+    "translation": "隐藏（{hours}小时）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.InvisibleUntilTime",
+    "description": "Shown to the user as their current status when they have set their status to Invisible. e.g Invisible (until 05:32 AM)",
+    "english": "Invisible (until {time})",
+    "translation": "隐藏（直到 {time}）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Tooltip.InvisibleMode",
+    "description": "A tooltip shown the first time users opt in to Invisible mode.",
+    "english": "You will appear Invisible until {time}. Others will not see you as active but will still be able to interact with you.",
+    "translation": "你将保持隐藏状态至 {time}。其他人不会看到你上线，但仍然可以和你进行互动。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayName",
+    "description": "The displayname is the name that is visible to others on Roblox, this text will be used as the label for the button to change the user's displayname",
+    "english": "Display Name",
+    "translation": "昵称",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameCaption",
+    "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
+    "english": "This is how you will appear to others on Roblox. ",
+    "translation": "这是你在 Roblox 上向其他人显示的名称。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.EditDisplayName",
+    "description": "This is the title on the modal that allows users to change their display name",
+    "english": "Edit Display Name",
+    "translation": "编辑昵称",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameModalCaption",
+    "description": "Informs the user that their display name can only be changed every 7 days",
+    "english": "Your display name can only be changed once every 7 days.",
+    "translation": "你的昵称每 7 天只能更改一次。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameRecently",
+    "description": "Warning for the user that they cannot update their displayname due to having changed it too soon earlier.",
+    "english": "Your display name has been changed too recently. You will be able to edit it in [#] days.",
+    "translation": "近期已更改过昵称，[#] 天后才可再次编辑。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameFailed",
+    "description": "Failed to save display name",
+    "english": "Display name cannot be saved. Try again.",
+    "translation": "无法保存昵称，请重试。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.AboutModalCaption",
+    "description": "description of editing the \"about me\" section on the profile",
+    "english": "Let others know more about you. Keep yourself safe, do not share personal details.",
+    "translation": "让其他玩家更好地了解你。请保护自身安全，不要泄露个人详细信息。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Description.SaySomething",
     "description": "Empty placeholder text for the about me modal",
     "english": "Say something",
@@ -7585,6 +7753,78 @@
   },
   {
     "namespace": "Feature.Profile",
+    "key": "Label.CustomNames",
+    "description": "Plural Custom Names",
+    "english": "Custom Names",
+    "translation": "自定义名称",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Tooltip.CustomNames",
+    "description": "Informatory Tooltip for Alias uplevel on HomePage FriendCarousel",
+    "english": "Aliases you've set for friends now appear in more places. Visit friends' profiles to make updates.",
+    "translation": "你为好友设置的别名将出现在更多地方。请前往好友的个人资料来进行更新。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Tooltip.CustomNameProfile",
+    "description": "Informatory tooltip to draw attention to the set-alias button on the profile card.",
+    "english": "Recognize friends more easily by setting a custom name.",
+    "translation": "设置自定义名称，更轻易地辨识好友。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.RecentDisplayName",
+    "description": "Warning for users trying to change their display name too recently",
+    "english": "Your display name has been changed too recently. Your display name can only be changed once every 7 days.",
+    "translation": "近期已更改过昵称，你的昵称每 7 天只能更改一次。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UsernameCaption",
+    "description": "Description for changing one's username on Roblox. The \"R$\" represents a variable that is a UIBlox character.",
+    "english": "This is your unique name on Roblox. Changing your username will cost {R$}1000.",
+    "translation": "这是你在 Roblox 上的独一无二的名称。更改你的用户名将花费 {R$}1000。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.Username",
+    "description": "User's Username",
+    "english": "Username",
+    "translation": "用户名",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UsernameDescription",
+    "description": "Description for users to change their username, variables include an icon and then the price it costs to make the change.",
+    "english": "This is your unique name on Roblox. Changing your username will cost {icon}{price}.",
+    "translation": "这是你在 Roblox 上的独一无二的名称。更改你的用户名将花费 {icon}{price}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernamePrice",
+    "description": "Cost of changing username",
+    "english": "1000",
+    "translation": "1000",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.DisplayNameTooShort",
+    "description": "Error message that shows up when a display name is too short",
+    "english": "Display name should have at least 3 characters.",
+    "translation": "昵称需要至少 3 个字符。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
@@ -7597,6 +7837,38 @@
     "description": "Heading for a warning modal that informs users that they do not have enough Robux",
     "english": "Insufficient Funds",
     "translation": "资金不足",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Description.UsernameInsufficientFunds",
+    "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
+    "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
+    "translation": "你还需要 {icon} {rbx} 才能更改用户名。是否要购买更多 Robux？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.DisplayNameUpdated",
+    "description": "Confirmation that pops up after user successfully updates their displayname",
+    "english": "Display Name Updated",
+    "translation": "昵称已更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.UsernameUpdated",
+    "description": "Confirmation toast that pops up after user successfully updates their username",
+    "english": "Username Updated",
+    "translation": "用户名已更新",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.PictureUpdated",
+    "description": "Toast for after a user saves their profile picture",
+    "english": "Profile Picture Updated",
+    "translation": "个人资料图片已更新",
     "isDeprecated": false
   },
   {
@@ -15504,6 +15776,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CalendarQuotaLimit",
+    "description": "User can publish assets or bundles to avatar marketplace but there's a per calendar period (daily/monthly/etc) limit and they need to wait until next period for publishing again.",
+    "english": "You have reached your publishing limit. Please refer to our {linkStart} documentation {linkEnd} for more details.",
+    "translation": "你已到达你的发布上线。请参考我们的{linkStart}文档{linkEnd}了解更多详情。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -20105,10 +20385,130 @@
   },
   {
     "namespace": "Feature.Settings",
+    "key": "Description.SwitchProfile",
+    "description": "Description of profile switcher",
+    "english": "You can switch your {platform} profile here.",
+    "translation": "你可以在此处切换你的 {platform} 个人资料。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.AccountSettings",
+    "description": "Account settings heading",
+    "english": "Account Settings",
+    "translation": "帐户设置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsWebsite",
+    "description": "Visit website heading",
+    "english": "Visit Website",
+    "translation": "访问网站",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsWebsite",
+    "description": "Account settings visit website description",
+    "english": "To access your Privacy, Security Controls, and more\nplease visit the web or a companion device.",
+    "translation": "若要访问你的隐私、安全控制及更多功能\n请访问网站或配对设备。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Subheading.AccountSettingsScan",
+    "description": "Account settings scan CTA",
+    "english": "Scan QR Code",
+    "translation": "扫描二维码",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.AccountSettingsScan",
+    "description": "Account settings scan description",
+    "english": "Scan the QR code using your companion device's camera\nto open the Account Settings in the Roblox App.",
+    "translation": "使用配套设备的相机扫描二维码\n打开 Roblox App 的帐户设置。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Heading.PlatformAccountSettings",
+    "description": "Platform-specific account settings heading",
+    "english": "{platform} Settings",
+    "translation": "{platform} 设置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.PlatformAccountSettingsSuccess",
+    "description": "Account settings verification that settings will allow online play with other players",
+    "english": "Your {platform} settings are correctly set and you are ready to visit!",
+    "translation": "你的 {platform} 设置已完成，随时可以访问。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.CrossPlatform",
+    "description": "Cross-play label",
+    "english": "Cross-Platform Play",
+    "translation": "跨平台游戏",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Description.CrossPlatform",
+    "description": "Cross-play setting description",
+    "english": "You will join experiences with people from all platforms,\nand you will see more people in more experiences.",
+    "translation": "你将要加入的体验汇集了所有平台的人，\n你也可以在更多体验中结识更多朋友。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Multiplayer",
+    "description": "Multiplayer privilege label",
+    "english": "Multiplayer",
+    "translation": "多玩家",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.SharedContent",
+    "description": "Shared content privilege label",
+    "english": "Shared Content",
+    "translation": "共享内容",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Open",
+    "description": "CTA when when platform system UI is triggered",
+    "english": "Open",
+    "translation": "开启",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
     "key": "Label.Recommended",
     "description": "Label denoting a recommended setting value",
     "english": "Recommended",
     "translation": "推荐",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Enabled",
+    "description": "Setting enabled state",
+    "english": "Enabled",
+    "translation": "启用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disabled",
+    "description": "Setting disabled state",
+    "english": "Disabled",
+    "translation": "禁用",
     "isDeprecated": false
   },
   {
@@ -20125,6 +20525,22 @@
     "description": "Setting error state",
     "english": "Error",
     "translation": "错误",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Allowed",
+    "description": "Setting allowed state",
+    "english": "Allowed",
+    "translation": "允许",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Settings",
+    "key": "Label.Disallowed",
+    "description": "Setting disallowed state",
+    "english": "Disallowed",
+    "translation": "不允许",
     "isDeprecated": false
   },
   {

@@ -7939,7 +7939,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.DisplayNameTooShort",
     "description": "Error message that shows up when a display name is too short",
-    "english": "Display name should be at least 3 characters.",
+    "english": "Display name should have at least 3 characters.",
     "translation": "Anzeigename muss mindestens 3 Zeichen lang sein.",
     "isDeprecated": false
   },
@@ -19212,7 +19212,7 @@
     "key": "Description.CustomizeNotificationsV2",
     "description": null,
     "english": "Customize notifications for all logged in devices",
-    "translation": "Push-Benachrichtigungen für alle eingeloggten Geräte anpassen",
+    "translation": "Benachrichtigungen für alle angemeldeten Geräte anpassen",
     "isDeprecated": false
   },
   {
@@ -19637,6 +19637,70 @@
     "description": null,
     "english": "Your purchase wasn’t successful, and you have not been charged. Please try again.",
     "translation": "Dein Kauf war nicht erfolgreich und dir wurde nichts in Rechnung gestellt. Bitte versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.AlreadySubscribed",
+    "description": "User already subscribed to the subscription",
+    "english": "Already Subscribed",
+    "translation": "Bereits abonniert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.CantSubscribe",
+    "description": "Failed to purchase subscription",
+    "english": "Can't Subscribe",
+    "translation": "Abo fehlgeschlagen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.AlreadySubscribed",
+    "description": null,
+    "english": "You’re already subscribed to this.",
+    "translation": "Du hast das bereits abonniert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.UnavailableSubscription",
+    "description": null,
+    "english": "This subscription can't be purchased at this time",
+    "translation": "Dieses Abonnement kann derzeit nicht gekauft werden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.ParentalRestrictionSubscription",
+    "description": null,
+    "english": "Subscriptions aren’t available to accounts with Monthly Spend Restrictions",
+    "translation": "Abonnements sind nicht für Konten mit monatlichen Ausgabebeschränkungen verfügbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionUnsupportedLocale",
+    "description": null,
+    "english": "This subscription isn’t available in your country at this time",
+    "translation": "Dieses Abonnement ist derzeit in deinem Land nicht verfügbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.UnderAge17",
+    "description": null,
+    "english": "This experience is only available to users ages 17+",
+    "translation": "Dieses Erlebnis ist nur für Nutzer:innen ab 17 Jahre verfügbar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionUnsupportedDevice",
+    "description": null,
+    "english": "This subscription can't be purchased here",
+    "translation": "Dieses Abonnement kann hier nicht gekauft werden",
     "isDeprecated": false
   },
   {
@@ -20924,7 +20988,7 @@
     "key": "Heading.PlatformAccountSettings",
     "description": "Platform-specific account settings heading",
     "english": "{platform} Settings",
-    "translation": "{platform}-Kontoeinstellungen",
+    "translation": "{platform}-Einstellungen",
     "isDeprecated": false
   },
   {
@@ -21178,8 +21242,8 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.CantLinkAccountCurrentChild",
-    "description": "The error message when parent try to connect to current child",
-    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "description": "The error message when parent try to connect to current child because parent has max links",
+    "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
     "translation": "Wir können dein Konto nicht mit diesem Kinderkonto verknüpfen. Um die Anfrage deines Kindes abzuschließen, verwende ein Elternkonto, das bereits verlinkt ist.",
     "isDeprecated": false
   },
@@ -21346,8 +21410,8 @@
   {
     "namespace": "Feature.Parents",
     "key": "Title.DifferentEmail",
-    "description": null,
-    "english": "Try Another Email",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
     "translation": "Eine andere E-Mail probieren",
     "isDeprecated": false
   },

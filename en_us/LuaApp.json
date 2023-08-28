@@ -7400,6 +7400,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GamePage",
+    "key": "QuickLaunch.LaunchError.DeviceRestrictedCustom",
+    "description": "This is the toast message that pops up when a user tries to join an experience on a device that is not supported.\n\n{device}: the device that the user is currently on (Default: \"device\")\n\nExample on Xbox: \nThis experience cannot be visited on Xbox.",
+    "english": "This experience cannot be visited on {device}.",
+    "translation": "This experience cannot be visited on {device}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamePage",
+    "key": "QuickLaunch.LaunchError.DeviceName",
+    "description": "Used by QuickLaunch.LaunchError.DeviceRestrictedCustom for the default {device} parameter.",
+    "english": "device",
+    "translation": "device",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GamePass",
     "key": "Heading.PassesForThisGame",
     "description": null,
@@ -7939,8 +7955,8 @@
     "namespace": "Feature.Profile",
     "key": "Label.DisplayNameTooShort",
     "description": "Error message that shows up when a display name is too short",
-    "english": "Display name should be at least 3 characters.",
-    "translation": "Display name should be at least 3 characters.",
+    "english": "Display name should have at least 3 characters.",
+    "translation": "Display name should have at least 3 characters.",
     "isDeprecated": false
   },
   {
@@ -7989,6 +8005,70 @@
     "description": "Toast for after a user saves their profile picture",
     "english": "Profile Picture Updated",
     "translation": "Profile Picture Updated",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayName",
+    "description": "Name",
+    "english": "The displayname is the name that is visible to others on Roblox, this text will be used as the label for the button to change the user's displayname for older users who are allowed to user real names in their display name.",
+    "translation": "The displayname is the name that is visible to others on Roblox, this text will be used as the label for the button to change the user's displayname for older users who are allowed to user real names in their display name.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameCaption",
+    "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
+    "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "translation": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.EditAgedUpDisplayName",
+    "description": "This is the title on the modal that allows users to change their display name. This will only show for users who are allowed to use their real name in their display name.",
+    "english": "Edit Name",
+    "translation": "Edit Name",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.RecentAgedUpDisplayName",
+    "description": "Error message if someone tries to edit their display name too often. This shows only for users who are allowed to use real names in their display names (hence the wording 'Name' over DisplayName).",
+    "english": "Your name has been changed too recently. Your name can only be changed once every 7 days.\n",
+    "translation": "Your name has been changed too recently. Your name can only be changed once every 7 days.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayNameUpdated",
+    "description": "Confirmation message in toast when someone has successfully edited their display name. This is shown to users who are allowed to use their real name in their display name (hence the word 'Name' not 'DisplayName'.)",
+    "english": "Name Updated.",
+    "translation": "Name Updated.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameModalCaption",
+    "description": "Message in error modal if a user tries to update their name too frequently. This only shows for users who are allowed to use their real name in their display name. (Hence the use of the word 'name' over 'display name').",
+    "english": "Your name can only be changed once every 7 days.\n",
+    "translation": "Your name can only be changed once every 7 days.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameFailed",
+    "description": "Error message that shows if someone tries to save a name that is invalid. This is for users who are allowed to use their real names in their displayname. Hence the name instead of display name.",
+    "english": "Name cannot be saved. Try another name.\n",
+    "translation": "Name cannot be saved. Try another name.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameTooShort",
+    "description": "Error message when a user tries to set their display name to be too short. This message is only shown to users who are allowed to use their real name in their display name (hence the word name instead of display name).",
+    "english": "Name should be at least 3 characters.",
+    "translation": "Name should be at least 3 characters.",
     "isDeprecated": false
   },
   {
@@ -17376,6 +17456,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Verification.Identity",
+    "key": "Label.Connecting",
+    "description": null,
+    "english": "Connecting",
+    "translation": "Connecting",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Title.ProcessingVerification",
+    "description": null,
+    "english": "Processing Verification",
+    "translation": "Processing Verification",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ProcessingVerification",
+    "description": null,
+    "english": "We are processing your ID verification.",
+    "translation": "We are processing your ID verification.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.Deprecated",
     "key": "Text.Test",
     "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
@@ -21258,9 +21362,9 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.CantLinkAccountCurrentChild",
-    "description": "The error message when parent try to connect to current child",
-    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
-    "translation": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "description": "The error message when parent try to connect to current child because parent has max links",
+    "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
+    "translation": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
     "isDeprecated": false
   },
   {
@@ -21426,9 +21530,9 @@
   {
     "namespace": "Feature.Parents",
     "key": "Title.DifferentEmail",
-    "description": null,
-    "english": "Try Another Email",
-    "translation": "Try Another Email",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "Email Already In Use",
     "isDeprecated": false
   },
   {
@@ -21701,6 +21805,22 @@
     "description": "exit parental account setup",
     "english": "Exit",
     "translation": "Exit",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.DifferentEmailMidFlow",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "Email Already In Use",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.DifferentEmailMidFlow",
+    "description": null,
+    "english": "This email already belongs to a parent account. To complete your child's request, enter a different parent email on your child's device.",
+    "translation": "This email already belongs to a parent account. To complete your child's request, enter a different parent email on your child's device.",
     "isDeprecated": false
   },
   {

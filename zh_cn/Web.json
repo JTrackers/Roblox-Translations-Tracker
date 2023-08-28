@@ -984,6 +984,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Action.Logout",
+    "description": null,
+    "english": "Log Out",
+    "translation": "退出登录",
+    "isDeprecated": false
+  },
+  {
     "namespace": "ABTest.LimitedGuestMode",
     "key": "Response.Test",
     "description": "Test, do not bother",
@@ -3376,6 +3384,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.ResetPassword",
+    "key": "Label.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "继续",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.SignUp",
     "key": "Label.ConfirmPassword",
     "description": null,
@@ -4461,6 +4477,14 @@
     "description": null,
     "english": "Confirm Sign Up",
     "translation": "确认注册",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.Logout",
+    "description": null,
+    "english": "Log Out",
+    "translation": "退出登录",
     "isDeprecated": false
   },
   {
@@ -16660,7 +16684,7 @@
     "key": "Message.HoldingPolicy",
     "description": "Deprecated",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "购买后，道具将最多保留 30 天。 该道具只能在此持有期结束后转售。 此持有期适用于每次转售。 只有 Premium 用户才可转售道具。",
+    "translation": "购买后，原始销售将会进入最多 30 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 7 天的存放期。只有 Premium 用户可以转售道具。",
     "isDeprecated": false
   },
   {
@@ -17140,7 +17164,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "购买后，道具将最多保留 30 天。 该道具只能在此持有期结束后转售。 此持有期适用于每次转售。 只有 Premium 用户才可转售道具。",
+    "translation": "购买后，原始销售将会进入最多 30 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 7 天的存放期。只有 Premium 用户可以转售道具。",
     "isDeprecated": true
   },
   {
@@ -17246,6 +17270,78 @@
     "english": "Creator Limit Reached",
     "translation": "已达到创作者上限",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.Resellable",
+    "description": "Label for whether the item is resellable",
+    "english": "Resellable",
+    "translation": "可转售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.SoldOut",
+    "description": null,
+    "english": "This item is sold out.",
+    "translation": "此道具已售罄。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.CannotResell",
+    "description": null,
+    "english": "This item cannot be resold to others.",
+    "translation": "此道具无法转售至他人。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GetItFrom",
+    "description": null,
+    "english": "Get It From",
+    "translation": "获取来源：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.ResellingDisabled",
+    "description": null,
+    "english": "This item cannot be sold to others. Reselling option has been disabled by the creator.",
+    "translation": "此道具无法出售给他人。创作者已停用转售选项。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldIn",
+    "description": "Label for in experiences in which an item in sold",
+    "english": "Sold In",
+    "translation": "售出地点：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SoldOut",
+    "description": null,
+    "english": "Sold Out",
+    "translation": "售罄",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL2",
+    "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
+    "translation": "购买后，原始销售将会进入最多 {purchaseDays} 天的存放期。道具只能在存放期结束后进行转售，转售将会进入最多 {resaleDays} 天的存放期。只有 Premium 用户可以转售道具。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Message.HoldingPolicyL1",
+    "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
+    "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
+    "translation": "从转售中购买将最多存放 {days} 天。道具只能在存放期结束后转售。只有 Premium 用户可以转售道具。",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Chat",
@@ -37277,6 +37373,14 @@
     "description": null,
     "english": "Models & Packages",
     "translation": "模型与包",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.MoodAnimation",
+    "description": null,
+    "english": "Mood Animation",
+    "translation": "心情动画",
     "isDeprecated": false
   },
   {
@@ -63603,7 +63707,7 @@
     "namespace": "CreatorDashboard.Creations",
     "key": "Action.PublishEvent",
     "description": "Action for a user to publish a scheduled event",
-    "english": "Publish Event",
+    "english": "Publish event",
     "translation": "发布活动",
     "isDeprecated": false
   },
@@ -64337,6 +64441,78 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DynamicHeads",
+    "description": null,
+    "english": "Dynamic Heads",
+    "translation": "动态头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.VideoEmptyMessage",
+    "description": "Shown while video list is empty as description message",
+    "english": "Import video files through the upload tool.",
+    "translation": "使用上传工具导入视频文件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.CategoryType",
+    "description": null,
+    "english": "{categoryNameSingular} Type",
+    "translation": "{categoryNameSingular} 类型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Accessory",
+    "description": null,
+    "english": "Accessory",
+    "translation": "配饰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Classic",
+    "description": null,
+    "english": "Classic",
+    "translation": "经典",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Body",
+    "description": null,
+    "english": "Body",
+    "translation": "身体",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ArchivePrevented",
+    "description": "Error message shown to developers when they want to archive an asset that's used as part of other assets which have already been sold in marketplace.",
+    "english": "The selected asset is part of a sold item and cannot be archived",
+    "translation": "所选素材是已售道具的一部分，因此无法归档。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.MinDate",
+    "description": null,
+    "english": "Date should not be before minimal date",
+    "translation": "日期不应早于最早日期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Subscribers",
+    "description": null,
+    "english": "Subscribers",
+    "translation": "订户",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Activate",
     "description": null,
     "english": "Activate",
@@ -64353,6 +64529,70 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.MarketplaceItems",
+    "description": "Label for Marketplace Items tab",
+    "english": "Marketplace Items",
+    "translation": "商城道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.IdVerificationRequired",
+    "description": null,
+    "english": "Identity Verification Required",
+    "translation": "需要身份验证",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.IdVerification",
+    "description": null,
+    "english": "Verify your ID to unlock the ability to save 3D UGC from studio and put it on Sale.",
+    "translation": "验证你的 ID，解锁从 Studio 中保存 3D UGC 并出售的功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ItemsEnabled",
+    "description": "Heading for enabled in-experience-purchase-only catalog items section. Experience owners can enable catalog items to be purchase in their experience after item creators specifies experience ids.",
+    "english": "Items Enabled",
+    "translation": "道具已启用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.VerifyId",
+    "description": null,
+    "english": "Verify your ID",
+    "translation": "验证你的 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.VerificationUpsellSuffix",
+    "description": null,
+    "english": "to unlock the ability to place 3D UGC on Sale.",
+    "translation": "解锁从 Studio 中保存 3D UGC 并出售的功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ConfigureInStudio",
+    "description": null,
+    "english": "Configure in Studio",
+    "translation": "在 Studio 中配置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.SubscriptionsAnalytics",
+    "description": null,
+    "english": "Subscriptions Analytics",
+    "translation": "订阅分析",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.Delete",
     "description": null,
     "english": "Delete",
@@ -64361,10 +64601,266 @@
   },
   {
     "namespace": "CreatorDashboard.Creations",
+    "key": "Label.SearchMarketplace",
+    "description": null,
+    "english": "Search Marketplace by Asset ID",
+    "translation": "按素材 ID 搜索商城",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ItemNotFound",
+    "description": null,
+    "english": "Item not found",
+    "translation": "未找到道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EmptyMessageForSearch",
+    "description": null,
+    "english": "It may be that the item creator hasn't listed your experience as a sale location yet. {LinkStart}Learn more{LinkEnd}",
+    "translation": "可能因为道具创作者尚未将你的体验列为销售地点。{LinkStart}了解更多{LinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.ProductID",
+    "description": null,
+    "english": "Product ID",
+    "translation": "产品 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.CopyProductID",
+    "description": null,
+    "english": "Copy Product ID",
+    "translation": "复制产品 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.KeepSubscription",
+    "description": null,
+    "english": "Keep Subscription",
+    "translation": "继续订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.DeleteSubscription",
+    "description": null,
+    "english": "Delete Subscription",
+    "translation": "删除订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.DeleteSubscriptionConfirmation",
+    "description": null,
+    "english": "Are you sure you want to delete this subscription? The subscription will immediately expire, and all current subscribers will lose all their benefits instantly. Active subscribers will be fully refunded for their ongoing cycle",
+    "translation": "是否确定要删除此订阅？订阅将立即过期，当前订户也将立即失去他们所有的权益。对于当前周期，也将针对活跃订户进行全额退款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.SubscriptionDeleted",
+    "description": null,
+    "english": "Subscription was successfully deleted",
+    "translation": "已成功删除订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.Deactivate",
+    "description": null,
+    "english": "Deactivate",
+    "translation": "停用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ActivateSubscriptionSuccess",
+    "description": null,
+    "english": "Subscription was successfully activated",
+    "translation": "已成功激活订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ActivateSubscriptionPrompt",
+    "description": null,
+    "english": "You are about to activate {name}. The users of your experience will be able to see and purchase your subscription.",
+    "translation": "你即将激活“{name}”。你体验的用户将会查看并购买你的订阅。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.ActivateSubscription",
+    "description": null,
+    "english": "Activate Subscription",
+    "translation": "激活订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.DeactivateSubscription",
+    "description": null,
+    "english": "Deactivate Subscription",
+    "translation": "停用订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.PremiumRequired",
+    "description": null,
+    "english": "Premium Required",
+    "translation": "需要 Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.PremiumRequired",
+    "description": null,
+    "english": "Subscribe to Premium 1000 or Premium 2200 to unlock the ability to put 3D UGC on Sale.",
+    "translation": "订阅 Premium 1000 或 Premium 2200， 解锁出售 3D UGC 的功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Heading.IdVerificationPremiumRequired",
+    "description": null,
+    "english": "Identity Verification and Premium Required",
+    "translation": "需要身份验证及 Premium 订阅",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Description.IdVerificationPremium",
+    "description": null,
+    "english": "Verify your ID to unlock the ability to save 3D UGC from Studio. Subscribe to Premium 1000 or Premium 2200 to put it on Sale.",
+    "translation": "验证你的 ID，解锁在 Studio 中保存 3D UGC 的功能。订阅 Premium 1000 或 Premium 2200 以解锁出售功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.IdVerification",
+    "description": null,
+    "english": "Verify your ID",
+    "translation": "验证你的 ID",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.GetPremium",
+    "description": null,
+    "english": "Get Roblox Premium",
+    "translation": "获取 Roblox Premium",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
     "key": "Action.ViewAnalytics",
     "description": null,
     "english": "View Analytics",
     "translation": "查看分析",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EmptyMessageForEnabledItems",
+    "description": null,
+    "english": "No items added yet",
+    "translation": "尚未添加任何道具",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.EmptyMessageForEnabledItemsWithLink",
+    "description": null,
+    "english": "Enabling items created by others may increase traffic and engagement in your experience. {LinkStart}Learn More{LinkEnd}",
+    "translation": "启用他人创作的道具将提高你体验中的流量和互动。{LinkStart}了解更多{LinkEnd}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.SearchMessagesInvalidItem",
+    "description": null,
+    "english": "Try search for something else.",
+    "translation": "尝试搜索其他内容。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ItemSaleEnabled",
+    "description": null,
+    "english": "Item sale has been enabled in your experience.",
+    "translation": "已启用你体验中的道具销售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Message.ItemSaleDisabled",
+    "description": null,
+    "english": "Item sale has been taken off in your experience.",
+    "translation": "已禁用你体验中的道具销售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.ItemConfigMismatch",
+    "description": null,
+    "english": "Failed due to item configuration mismatch on the creator side.",
+    "translation": "由于创作者方的道具配置不匹配而失败。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.Premium",
+    "description": null,
+    "english": "Subscribe to Premium 1000 or Premium 2200",
+    "translation": "订阅 Premium 1000 或 Premium 2200",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.And",
+    "description": null,
+    "english": "and",
+    "translation": "及",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Action.ViewRealTimeStats",
+    "description": null,
+    "english": "View Real Time Stats",
+    "translation": "查看实时统计数据",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.EnableSale",
+    "description": null,
+    "english": "Enable Sale",
+    "translation": "启用销售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Label.DisableSale",
+    "description": null,
+    "english": "Disable Sale",
+    "translation": "禁用销售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Creations",
+    "key": "Error.Unknown",
+    "description": null,
+    "english": "An error occurred. Please try again later.",
+    "translation": "发生错误，请稍后重试。",
     "isDeprecated": false
   },
   {
@@ -73299,7 +73795,7 @@
     "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Action.SaveChanges",
     "description": null,
-    "english": "Save Changes",
+    "english": "Save changes",
     "translation": "保存更改",
     "isDeprecated": false
   },
@@ -74011,7 +74507,7 @@
     "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Action.CancelConfiguration",
     "description": null,
-    "english": "Cancel Configuration",
+    "english": "Cancel configuration",
     "translation": "取消配置",
     "isDeprecated": false
   },
@@ -74019,7 +74515,7 @@
     "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Action.BackToConfigure",
     "description": null,
-    "english": "Back to Configure",
+    "english": "Back to configure",
     "translation": "返回配置",
     "isDeprecated": false
   },
@@ -74369,10 +74865,122 @@
   },
   {
     "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Resellable",
+    "description": null,
+    "english": "Resellable",
+    "translation": "可转售",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Action.PublishBundle",
+    "description": null,
+    "english": "Publish Bundle",
+    "translation": "发布套装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.UnableToPublishBundle",
+    "description": null,
+    "english": "Unable to publish bundle",
+    "translation": "无法发布套装",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.Body",
+    "description": null,
+    "english": "Body",
+    "translation": "身体",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
     "key": "Label.DynamicHead",
     "description": null,
     "english": "Dynamic Head",
     "translation": "动态头部",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Error.MinimumQuantity",
+    "description": null,
+    "english": "The minimum quantity for this item is {quantity}.",
+    "translation": "此道具的最低数量为 {quantity}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceByPlaceIDHelperText",
+    "description": null,
+    "english": "Enter a Place ID to allow the sale of this item in the entire experience. Sales will be enabled in all Places associated with the same Experience.",
+    "translation": "输入场景 ID 以允许此道具在整个体验中可销售。销售功能将在所有与同一体验相关的场景中启用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.ExperienceSelectorHelperText",
+    "description": null,
+    "english": "The developer will need to enable your item to make it available in their experience.",
+    "translation": "开发者将需要启用你的道具以在他们的体验中使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.NonCICLimitedPublishV2",
+    "description": null,
+    "english": "Once you publish, you can only modify Tags, Comments, and Sale Location",
+    "translation": "一旦发布，你只能修改标签、评论和销售地点",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CalendarQuotaLimit",
+    "description": "User can publish assets or bundles to avatar marketplace but there's a per calendar period (daily/monthly/etc) limit and they need to wait until next period for publishing again.",
+    "english": "You have reached your publishing limit. Please refer to our {linkStart} documentation {linkEnd} for more details.",
+    "translation": "你已到达你的发布上线。请参考我们的{linkStart}文档{linkEnd}了解更多详情。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.PolicyDisclaimer",
+    "description": null,
+    "english": "By publishing, you agree to our {policyLinkStart}Marketplace Policy{policyLinkEnd} and {standardsLinkStart}Community Standards{standardsLinkEnd}.{lineBreak}Violations may result in losing your payment or account access.",
+    "translation": "发布暨表示你同意我们的{policyLinkStart}商城政策{policyLinkEnd}及{standardsLinkStart}社区标准{standardsLinkEnd}。{lineBreak}违反行为将导致失去你的付款或帐户访问权限。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.DisclaimerModalHeader",
+    "description": null,
+    "english": "Review Moderation Terms",
+    "translation": "审阅审核条款",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.DisclaimerModalDetail",
+    "description": null,
+    "english": "Approval to publish in Marketplace does not protect this item from future Roblox moderation. If your item is moderated, your fees will not be not refunded.",
+    "translation": "批准在商城中的发布并不能让此道具免于未来的 Roblox 审核。如果你的道具被屏蔽，费用并不会退回。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.DisclaimerModalPolicy",
+    "description": null,
+    "english": "Moderation may include revoking access to Avatar UGC Creation, and/or suspension from accessing Roblox temporarily or permanently. For more information, see {policyLinkStart}Marketplace Policy{policyLinkEnd} and {standardsLinkStart}Roblox Community Standards{standardsLinkEnd}.",
+    "translation": "审核可能包括撤销对虚拟形象 UGC 作品的访问权限，及/或暂时或永久暂停访问 Roblox 的权限。如需更多详细信息，请参阅{policyLinkStart}商城政策{policyLinkEnd}和{standardsLinkStart}Roblox 社区标准{standardsLinkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Label.IUnderstand",
+    "description": null,
+    "english": "I understand",
+    "translation": "我明白",
     "isDeprecated": false
   },
   {
@@ -79840,6 +80448,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.MemoryStores",
+    "description": "Memory Stores service name.",
+    "english": "Memory Stores",
+    "translation": "记忆存储",
+    "isDeprecated": false
+  },
+  {
     "namespace": "TalentHub.Alerts",
     "key": "Description.RedirectDisclaimer",
     "description": null,
@@ -82771,7 +83387,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTranslators",
     "key": "Label.ShareLink",
     "description": null,
-    "english": "Share Link",
+    "english": "Share link",
     "translation": "分享链接",
     "isDeprecated": false
   },
@@ -84883,7 +85499,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.ViewAll",
     "description": null,
-    "english": "View All",
+    "english": "View all",
     "translation": "查看全部",
     "isDeprecated": false
   },
@@ -84907,7 +85523,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.ViewDashboard",
     "description": null,
-    "english": "View Dashboard",
+    "english": "View dashboard",
     "translation": "查看创作中心",
     "isDeprecated": false
   },
@@ -84995,7 +85611,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.ManageExperience",
     "description": null,
-    "english": "Manage Experience",
+    "english": "Manage experience",
     "translation": "管理体验",
     "isDeprecated": false
   },
@@ -85003,7 +85619,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.EditInStudio",
     "description": null,
-    "english": "Edit In Studio",
+    "english": "Edit in Studio",
     "translation": "在 Studio 中编辑",
     "isDeprecated": false
   },
@@ -85011,7 +85627,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.ViewAnalytics",
     "description": null,
-    "english": "View Analytics",
+    "english": "View analytics",
     "translation": "查看分析",
     "isDeprecated": false
   },
@@ -85019,7 +85635,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.ViewOnRoblox",
     "description": null,
-    "english": "View On Roblox",
+    "english": "View on Roblox",
     "translation": "在 Roblox 上查看",
     "isDeprecated": false
   },
@@ -85035,7 +85651,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Action.UploadAsset",
     "description": null,
-    "english": "Upload Asset",
+    "english": "Upload asset",
     "translation": "上传素材",
     "isDeprecated": false
   },
@@ -85067,7 +85683,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Action.ViewDashboard",
     "description": null,
-    "english": "View Dashboard",
+    "english": "View dashboard",
     "translation": "查看创作中心",
     "isDeprecated": false
   },
@@ -85195,7 +85811,7 @@
     "namespace": "CreatorDashboard.Home",
     "key": "Label.CreateAd",
     "description": null,
-    "english": "Create Ad",
+    "english": "Create ad",
     "translation": "创建广告",
     "isDeprecated": false
   },
@@ -96875,7 +97491,7 @@
     "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.AddLink",
     "description": null,
-    "english": "ADD LINK",
+    "english": "Add link",
     "translation": "添加链接",
     "isDeprecated": false
   },
@@ -96883,7 +97499,7 @@
     "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.Cancel",
     "description": null,
-    "english": "CANCEL",
+    "english": "Cancel",
     "translation": "取消",
     "isDeprecated": false
   },
@@ -96891,7 +97507,7 @@
     "namespace": "CreatorDashboard.SocialLinks",
     "key": "Label.Save",
     "description": null,
-    "english": "SAVE",
+    "english": "Save",
     "translation": "保存",
     "isDeprecated": false
   },
@@ -97587,7 +98203,7 @@
     "namespace": "CreatorDashboard.Places",
     "key": "Button.AddAPlace",
     "description": null,
-    "english": "Add A PLACE",
+    "english": "Add a place",
     "translation": "添加场景",
     "isDeprecated": false
   },
@@ -98907,7 +99523,7 @@
     "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.AddThumbnail",
     "description": null,
-    "english": "Add Thumbnail",
+    "english": "Add thumbnail",
     "translation": "添加缩略图",
     "isDeprecated": false
   },
@@ -98955,7 +99571,7 @@
     "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.AddVideo",
     "description": null,
-    "english": "Add Video",
+    "english": "Add video",
     "translation": "添加视频",
     "isDeprecated": false
   },
@@ -98971,7 +99587,7 @@
     "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.BuyNow",
     "description": null,
-    "english": "Buy Now",
+    "english": "Buy now",
     "translation": "立即购买",
     "isDeprecated": false
   },
@@ -98995,7 +99611,7 @@
     "namespace": "CreatorDashboard.PlaceThumbnails",
     "key": "Label.UploadImage",
     "description": null,
-    "english": "Upload Image",
+    "english": "Upload image",
     "translation": "上传图像",
     "isDeprecated": false
   },
@@ -99627,7 +100243,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Title.CreateNotification",
     "description": "page title and breadcrumb text of the create notification form.",
-    "english": "Create a Notification String",
+    "english": "Create a notification string",
     "translation": "创建通知字符串",
     "isDeprecated": false
   },
@@ -99651,7 +100267,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Action.CreateNotification",
     "description": "Text on create a notification string Button.",
-    "english": "Create Notification String",
+    "english": "Create notification string",
     "translation": "创建通知字符串",
     "isDeprecated": false
   },
@@ -99667,7 +100283,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Action.EditNotification",
     "description": "text on Edit notification button.",
-    "english": "Edit Notification String",
+    "english": "Edit notification string",
     "translation": "编辑通知字符串",
     "isDeprecated": false
   },
@@ -99675,7 +100291,7 @@
     "namespace": "CreatorDashboard.Notifications",
     "key": "Action.UpdateNotification",
     "description": "Text on Update Notification String Button.",
-    "english": "Update Notification String",
+    "english": "Update notification string",
     "translation": "更新通知字符串",
     "isDeprecated": false
   },
@@ -103347,7 +103963,7 @@
     "namespace": "CreatorDashboard.GameLocalizationTableManagement",
     "key": "Label.DeleteTable",
     "description": null,
-    "english": "Delete Table",
+    "english": "Delete table",
     "translation": "删除表格",
     "isDeprecated": false
   },
@@ -107976,6 +108592,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Logout",
+    "description": null,
+    "english": "Log Out",
+    "translation": "退出登录",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DynamicUI",
     "key": "Translations.Deprecated1",
     "description": null,
@@ -108640,6 +109264,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Description.GraduationEmailFooter",
+    "description": null,
+    "english": "Please do not reply to this message as it will not be delivered to the originator.",
+    "translation": "请不要回复此消息，因为发件人不会收到回信。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PrivateAccessTokenChallenge",
     "key": "Description.VerificationSuccess",
     "description": "Indicate the challenge has been completed successfully.",
@@ -108709,6 +109341,14 @@
     "description": null,
     "english": "Asset ID",
     "translation": "素材 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.Preferences",
+    "key": "Title.DocumentationLanguage",
+    "description": null,
+    "english": "Documentation Language",
+    "translation": "文档语言",
     "isDeprecated": false
   },
   {
@@ -108886,5 +109526,37 @@
     "english": "Advanced",
     "translation": "高级",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AvatarAnalytics",
+    "key": "Label.Category",
+    "description": "Avatar item category",
+    "english": "Category",
+    "translation": "类别",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AvatarAnalytics",
+    "key": "Label.Sales",
+    "description": "Avatar sales",
+    "english": "Sales",
+    "translation": "销量",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.AvatarAnalytics",
+    "key": "Label.Revenue",
+    "description": "Avatar item revenue",
+    "english": "Revenue",
+    "translation": "收入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.QNAB",
+    "key": "Button.Send",
+    "description": "Display text on a \"Send\" button to start a chat message with the chatbot",
+    "english": "Send",
+    "translation": "发送",
+    "isDeprecated": true
   }
 ]

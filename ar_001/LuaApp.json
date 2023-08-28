@@ -4892,7 +4892,7 @@
     "key": "Heading.GoToExperience",
     "description": null,
     "english": "Join Experience?",
-    "translation": "الذهاب إلى التجربة؟",
+    "translation": "الانضمام إلى التجربة؟",
     "isDeprecated": false
   },
   {
@@ -4909,6 +4909,46 @@
     "description": null,
     "english": "View Experience Details",
     "translation": "عرض تفاصيل التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.JoinExperience",
+    "description": "In-experience item deeplinking",
+    "english": "Join Experience",
+    "translation": "الانضمام إلى التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "عرض تفاصيل التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "هل تريد الانتقال إلى {EXPERIENCE_NAME} للحصول على العنصر؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InMultipleExperiences",
+    "description": "In-experience deeplinking",
+    "english": "In {NUM_EXPERIENCES} Experiences",
+    "translation": "في {NUM_EXPERIENCES} (تجربة)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InSingleExperience",
+    "description": "In-experience deeplinking",
+    "english": "In Experience",
+    "translation": "في التجربة",
     "isDeprecated": false
   },
   {
@@ -7891,7 +7931,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.DisplayNameTooShort",
     "description": "Error message that shows up when a display name is too short",
-    "english": "Display name should be at least 3 characters.",
+    "english": "Display name should have at least 3 characters.",
     "translation": "لا بد أن يكون اسم العرض 3 أحرف على الأقل.",
     "isDeprecated": false
   },
@@ -18536,6 +18576,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Tracking",
+    "key": "Description.CookieT",
+    "description": "description for cookie \"_t\"",
+    "english": "User authentication token cookie",
+    "translation": "ملف تعريف الارتباط لرمز مصادقة المستخدم",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GenreExplorer",
     "key": "Heading.Categories",
     "description": null,
@@ -19060,7 +19108,7 @@
     "key": "Description.CustomizeNotificationsV2",
     "description": null,
     "english": "Customize notifications for all logged in devices",
-    "translation": "تخصيص الإشعارات المنبثقة لجميع الأجهزة التي سجلت الدخول",
+    "translation": "تخصيص الإشعارات لجميع الأجهزة التي سجلت الدخول",
     "isDeprecated": false
   },
   {
@@ -19485,6 +19533,30 @@
     "description": null,
     "english": "Your purchase wasn’t successful, and you have not been charged. Please try again.",
     "translation": "لم تنجح عملية الشراء ولم نأخذ أي رسوم منك. الرجاء المحاولة مرة أخرى.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.AlreadySubscribed",
+    "description": "User already subscribed to the subscription",
+    "english": "Already Subscribed",
+    "translation": "مشترك بالفعل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.CantSubscribe",
+    "description": "Failed to purchase subscription",
+    "english": "Can't Subscribe",
+    "translation": "لا يمكن الاشتراك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.AlreadySubscribed",
+    "description": null,
+    "english": "You’re already subscribed to this.",
+    "translation": "أنت مشترك في هذا بالفعل.",
     "isDeprecated": false
   },
   {
@@ -20708,7 +20780,7 @@
     "key": "Heading.PlatformAccountSettings",
     "description": "Platform-specific account settings heading",
     "english": "{platform} Settings",
-    "translation": "إعدادات الحساب {platform}",
+    "translation": "إعدادات {platform}",
     "isDeprecated": false
   },
   {
@@ -20940,7 +21012,7 @@
     "key": "Description.WaitingParentPermission",
     "description": "DO NOT USE - USE V2",
     "english": "Check your email to help unlock your child’s account. After providing permission, refresh this screen to return to your child's Roblox account.",
-    "translation": "تحقق من بريدك الإلكتروني لمساعدة طفلك على إلغاء قفل الحساب",
+    "translation": "تحقق من بريدك الإلكتروني لمساعدة طفلك على فتح قفل حسابه. بعد إعطائك الإذن، أعد تحميل هذه الصفحة للعودة إلى حساب طفلك على Roblox.",
     "isDeprecated": true
   },
   {
@@ -20962,8 +21034,8 @@
   {
     "namespace": "Feature.Parents",
     "key": "Description.CantLinkAccountCurrentChild",
-    "description": "The error message when parent try to connect to current child",
-    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "description": "The error message when parent try to connect to current child because parent has max links",
+    "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
     "translation": "لا يمكننا ربط حسابك بحساب الطفل. لإكمال طلب طفلك، لا بد من استخدام حساب الوالدين الذي تم ربطه بالفعل.",
     "isDeprecated": false
   },
@@ -21130,8 +21202,8 @@
   {
     "namespace": "Feature.Parents",
     "key": "Title.DifferentEmail",
-    "description": null,
-    "english": "Try Another Email",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
     "translation": "جرب بريد إلكتروني آخر",
     "isDeprecated": false
   },
@@ -21140,7 +21212,7 @@
     "key": "Description.DifferentEmail",
     "description": null,
     "english": "This email already belongs to a parent account. In your email inbox, open the permission request again and select Use an Existing Account.",
-    "translation": "هذا البريد الإلكتروني غير مؤهل. لطلب إذن من الوالدين على Roblox، استخدم بريد إلكتروني مختلف.",
+    "translation": "هذا البريد الإلكتروني ينتمي بالفعل إلى حساب أحد الوالدين. من علبة البريد الوارد، افتح طلب الإذن مرة أخرى وحدد خيار \"حساب حالي\".",
     "isDeprecated": false
   },
   {
@@ -21276,7 +21348,7 @@
     "key": "Description.ChargebackConsent",
     "description": null,
     "english": "Your child’s account was locked due to unauthorized charges.{breakLine}As a parent, you can now give your child permission to unlock their account. ",
-    "translation": "تم قفل حساب طفلك بسبب نفقات غير مصرح بها. {breakLine} يمكنك كوالد للطفل، إعطاء الإذن لطفلك لإلغاء قفل حسابه إن شئت. ",
+    "translation": "أقفلنا حساب طفلك بسبب نفقات غير مصرح بها. {breakLine} بصفتك أحد الوالدين للطفل، يمكنك إعطاء الإذن لطفلك لإلغاء قفل حسابه إن شئت. ",
     "isDeprecated": false
   },
   {
@@ -21357,6 +21429,54 @@
     "description": "parent can't consent for child account because child account got deleted",
     "english": "This child account no longer exists.",
     "translation": "لم يعد حساب الطفل هذا موجودًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.LogOutSignup",
+    "description": "prompt to logout current user when creating parent account",
+    "english": "To create a new account, first log out of your current session.",
+    "translation": "لإنشاء حساب جديد، سجل الخروج أولاً من الجلسة الحالية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ContinueSetup",
+    "description": "continue setup parent account",
+    "english": "Continue Setup",
+    "translation": "متابعة الإعداد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ReviewRequest",
+    "description": "review the request for parent to unlock child's account",
+    "english": "Review Request",
+    "translation": "مراجعة الطلب",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermissionV2",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.{lineBreak}To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "بعض الإجراءات على Roblox تتطلب إذن الوالدين أو إذن الوصي.{lineBreak}\nلمساعدة طفلك، سوف تحتاج لحساب على Roblox مع امتيازات للوالدين. سوف نطلب منك إدخال عنوان بريدك الإلكتروني والتحقق من أنك شخص راشد لنتمكن من ربط حسابك بحساب طفلك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermissionV2",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account.{lineBreak}After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "تحقق من بريدك الإلكتروني لمساعدة طفلك على فتح قفل حسابه.{lineBreak} بعد إعطائك الإذن، أعد تحميل هذه الصفحة للعودة إلى حساب طفلك على Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.Exit",
+    "description": "exit parental account setup",
+    "english": "Exit",
+    "translation": "الخروج",
     "isDeprecated": false
   },
   {
