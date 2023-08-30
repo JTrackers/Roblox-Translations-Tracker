@@ -492,7 +492,7 @@
     "key": "Heading.AuthFailed",
     "description": null,
     "english": "Authentication Failed",
-    "translation": "ยืนยันความถูกต้องไม่สำเร็จ",
+    "translation": "ยืนยันตัวตนไม่สำเร็จ",
     "isDeprecated": false
   },
   {
@@ -500,7 +500,7 @@
     "key": "Description.AuthFailed",
     "description": null,
     "english": "An error was encountered during authentication. Please try again.",
-    "translation": "เกิดข้อผิดพลาดขณะทำการยืนยันความถูกต้อง โปรดลองอีกครั้ง",
+    "translation": "เกิดข้อผิดพลาดขณะทำการยืนยันตัวตน โปรดลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -4908,7 +4908,7 @@
     "key": "Heading.GoToExperience",
     "description": null,
     "english": "Join Experience?",
-    "translation": "ไปที่ประสบการณ์หรือไม่?",
+    "translation": "ต้องการเข้าร่วมประสบการณ์หรือไม่?",
     "isDeprecated": false
   },
   {
@@ -4916,7 +4916,7 @@
     "key": "Description.AttributionAlertBody",
     "description": null,
     "english": "You will leave this area and join {experienceName}.",
-    "translation": "คุณจะออกจากพื้นที่นี้และจะถูกนำไปที่ {experienceName}",
+    "translation": "คุณจะออกจากพื้นที่นี้และเข้าร่วม {experienceName}",
     "isDeprecated": false
   },
   {
@@ -4933,6 +4933,30 @@
     "description": "In-experience item deeplinking",
     "english": "Join Experience",
     "translation": "เข้าร่วมประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "ดูรายละเอียดประสบการณ์",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "คุณต้องการไปที่ {EXPERIENCE_NAME} เพื่อรับไอเท็มหรือไม่?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InMultipleExperiences",
+    "description": "In-experience deeplinking",
+    "english": "In {NUM_EXPERIENCES} Experiences",
+    "translation": "อยู่ใน {NUM_EXPERIENCES} ประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -7377,6 +7401,14 @@
   },
   {
     "namespace": "Feature.GamePage",
+    "key": "QuickLaunch.LaunchError.DeviceRestrictedCustom",
+    "description": "This is the toast message that pops up when a user tries to join an experience on a device that is not supported.\n\n{device}: the device that the user is currently on (Default: \"device\")\n\nExample on Xbox: \nThis experience cannot be visited on Xbox.",
+    "english": "This experience cannot be visited on {device}.",
+    "translation": "ไม่สามารถเยี่ยมชมประสบการณ์นี้ด้วย \"{device}\" ของคุณได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamePage",
     "key": "QuickLaunch.LaunchError.DeviceName",
     "description": "Used by QuickLaunch.LaunchError.DeviceRestrictedCustom for the default {device} parameter.",
     "english": "device",
@@ -7976,6 +8008,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayName",
+    "description": "Name",
+    "english": "The displayname is the name that is visible to others on Roblox, this text will be used as the label for the button to change the user's displayname for older users who are allowed to user real names in their display name.",
+    "translation": "ชื่อที่แสดงคือชื่อที่ผู้ใช้คนอื่นๆ สามารถมองเห็นได้บน Roblox และจะถูกนำมาใช้เป็นข้อความกำกับบนปุ่มซึ่งใช้ในการเปลี่ยนชื่อที่แสดงของผู้ใช้ที่มีสิทธิ์ในการใช้ชื่อจริงเป็นชื่อที่แสดงได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameCaption",
+    "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
+    "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "translation": "นี่คือชื่อที่จะแสดงให้ผู้ใช้คนอื่นๆ บน Roblox เห็น เลือกชื่อที่เพื่อนๆ ของคุณจะสามารถจดจำคุณได้ เช่น ชื่อจริง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.EditAgedUpDisplayName",
+    "description": "This is the title on the modal that allows users to change their display name. This will only show for users who are allowed to use their real name in their display name.",
+    "english": "Edit Name",
+    "translation": "แก้ไขชื่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.RecentAgedUpDisplayName",
+    "description": "Error message if someone tries to edit their display name too often. This shows only for users who are allowed to use real names in their display names (hence the wording 'Name' over DisplayName).",
+    "english": "Your name has been changed too recently. Your name can only be changed once every 7 days.\n",
+    "translation": "คุณเพิ่งเปลี่ยนชื่อไปเมื่อไม่นานมานี้ คุณสามารถเปลี่ยนชื่อได้เพียงหนึ่งครั้งในทุกๆ 7 วัน\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayNameUpdated",
+    "description": "Confirmation message in toast when someone has successfully edited their display name. This is shown to users who are allowed to use their real name in their display name (hence the word 'Name' not 'DisplayName'.)",
+    "english": "Name Updated.",
+    "translation": "อัปเดตชื่อแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameModalCaption",
+    "description": "Message in error modal if a user tries to update their name too frequently. This only shows for users who are allowed to use their real name in their display name. (Hence the use of the word 'name' over 'display name').",
+    "english": "Your name can only be changed once every 7 days.\n",
+    "translation": "คุณสามารถเปลี่ยนชื่อของคุณได้เพียงหนึ่งครั้งในทุกๆ 7 วัน\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameFailed",
+    "description": "Error message that shows if someone tries to save a name that is invalid. This is for users who are allowed to use their real names in their displayname. Hence the name instead of display name.",
+    "english": "Name cannot be saved. Try another name.\n",
+    "translation": "ไม่สามารถบันทึกชื่อนี้ได้ โปรดลองใช้ชื่ออื่น\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameTooShort",
+    "description": "Error message when a user tries to set their display name to be too short. This message is only shown to users who are allowed to use their real name in their display name (hence the word name instead of display name).",
+    "english": "Name should be at least 3 characters.",
+    "translation": "ชื่อควรมีความยาวอย่างน้อย 3 ตัวอักษร",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ReportAbuse",
     "key": "Message.ErrorSubmit",
     "description": null,
@@ -8041,10 +8137,26 @@
   },
   {
     "namespace": "Feature.ReportAbuse",
+    "key": "Message.ErrorBEDUIFetchFailed",
+    "description": "Error message shown to the user when the abuse report form fails to load.",
+    "english": "Your report could not be loaded. Please try again.",
+    "translation": "ไม่สามารถโหลดรายงานของคุณได้ โปรดลองอีกครั้ง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
     "key": "Message.Loading",
     "description": "Message shown while the submission of an abuse report is in progress.",
     "english": "Loading...",
     "translation": "กำลังโหลด...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "Message.ErrorSubmitFailure",
+    "description": "Message shown to the user when the abuse report submission fails.",
+    "english": "Your report could not be submitted. Please try again.",
+    "translation": "ไม่สามารถส่งรายงาานของคุณได้ โปรดลองอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -14308,7 +14420,7 @@
     "key": "Label.ParentVerificationNotice",
     "description": null,
     "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
-    "translation": "บัญชีของคุณถูกระงับเนื่องจากมีค่าใช้จ่ายที่ไม่ได้รับอนุญาต พ่อแม่หรือผู้ปกครองของคุณต้องยินยอมให้ปลดล็อคบัญชีของคุณ ",
+    "translation": "บัญชีของคุณถูกระงับเนื่องจากมีการเรียกเก็บเงินที่ไม่ได้รับอนุญาต พ่อแม่หรือผู้ปกครองของคุณต้องยินยอมที่จะปลดล็อคบัญชีของคุณ และจากนั้นจะสามารถอนุมัติการดำเนินการบางอย่างบน Roblox ให้กับคุณได้",
     "isDeprecated": false
   },
   {
@@ -14316,7 +14428,7 @@
     "key": "Label.ParentReactivationNotice",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account. {startLink}Reload this page{endLink} when completed. ",
-    "translation": "คุณต้องเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีเพื่อเปิดใช้งานบัญชีนี้อีกครั้ง {startLink}โหลดหน้านี้อีกครั้ง{endLink}เมื่อเสร็จสิ้น ",
+    "translation": "พ่อแม่หรือผู้ปกครองตามกฎหมายของคุณต้องเป็นผู้เปิดใช้งานบัญชีนี้อีกครั้ง เมื่อเสร็จสิ้นแล้ว โปรด{startLink}โหลดหน้านี้อีกครั้ง{endLink} ",
     "isDeprecated": true
   },
   {
@@ -14348,7 +14460,7 @@
     "key": "Label.ParentReactivationNoticeUA",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account.",
-    "translation": "คุณต้องเป็นพ่อแม่หรือผู้ปกครองตามกฎหมายของเจ้าของบัญชีเพื่อเปิดใช้งานบัญชีนี้อีกครั้ง",
+    "translation": "พ่อแม่หรือผู้ปกครองตามกฎหมายของคุณต้องเป็นผู้เปิดใช้งานบัญชีนี้อีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -14365,6 +14477,14 @@
     "description": null,
     "english": "Account Banned",
     "translation": "บัญชีถูกแบน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.AbuseType.Chargeback.Note",
+    "description": null,
+    "english": "Your account was suspended for unauthorized charges.",
+    "translation": "บัญชีของคุณถูกระงับเนื่องจากมีการเรียกเก็บเงินที่ไม่ได้รับอนุญาต",
     "isDeprecated": false
   },
   {
