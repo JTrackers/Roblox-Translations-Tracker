@@ -1336,6 +1336,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.CreateANewAccount",
+    "description": "Heading on sign up form when user is authenticated but wants to sign up and switch to a new account.",
+    "english": "Create A New Account",
+    "translation": "إنشاء حساب جديد",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Description.KoreaScreentimeToastText",
     "description": "Alert text showing to korea user how many hours they've been playing",
@@ -17424,6 +17432,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Verification.Identity",
+    "key": "Label.Connecting",
+    "description": null,
+    "english": "Connecting",
+    "translation": "جاري الاتصال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Title.ProcessingVerification",
+    "description": null,
+    "english": "Processing Verification",
+    "translation": "معالجة التحقق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ProcessingVerification",
+    "description": null,
+    "english": "We are processing your ID verification.",
+    "translation": "نعمل حاليًا على التحقق من هويتك.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.Deprecated",
     "key": "Text.Test",
     "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
@@ -21236,7 +21268,7 @@
     "key": "Description.CantLinkAccountCurrentChild",
     "description": "The error message when parent try to connect to current child because parent has max links",
     "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
-    "translation": "لا يمكننا ربط حسابك بحساب الطفل. لإكمال طلب طفلك، لا بد من استخدام حساب الوالدين الذي تم ربطه بالفعل.",
+    "translation": "لا يمكننا ربط حسابك بحساب طفل آخر. لإكمال طلب طفلك، أدخل عنوان بريد إلكتروني آخر للوالدين الذي استخدمته مسبقًا لربط الحسابين.",
     "isDeprecated": false
   },
   {
@@ -21404,7 +21436,7 @@
     "key": "Title.DifferentEmail",
     "description": "email is already used for a parent account",
     "english": "Email Already In Use",
-    "translation": "جرب بريد إلكتروني آخر",
+    "translation": "البريد الاليكتروني قيد الاستخدام",
     "isDeprecated": false
   },
   {
@@ -21680,6 +21712,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Title.DifferentEmailMidFlow",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "البريد الاليكتروني قيد الاستخدام",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.DifferentEmailMidFlow",
+    "description": null,
+    "english": "This email already belongs to a parent account. To complete your child's request, enter a different parent email on your child's device.",
+    "translation": "هذا البريد الإلكتروني ينتمي بالفعل إلى حساب الوالدين. لإكمال طلب طفلك، أدخل بريد إلكتروني مختلف للوالين على جهاز طفلك.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.SubscriptionPurchasePrompt",
     "key": "Label.TestFlowDisclaimer",
     "description": "Footer on prompt if the user is testing in studio.",
@@ -21693,6 +21741,78 @@
     "description": "Title of prompt purchase UI.",
     "english": "Get Subscription",
     "translation": "الحصول على الاشتراك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedOneFriend",
+    "description": "Shown to users after they join an experience with 1 friend in it",
+    "english": "You've joined {FRIEND_NAME}",
+    "translation": "أنتَ انضممت إلى {FRIEND_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedTwoFriends",
+    "description": "Shown to users when they join an experience with 2 friends in it",
+    "english": "You've joined {FRIEND_NAME_ONE} and {FRIEND_NAME_TWO}",
+    "translation": "أنت انضممت إلى {FRIEND_NAME_ONE} و {FRIEND_NAME_TWO}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.YouJoinedManyFriends",
+    "description": "Shown to users when they join an experience with more than 2 other friends in it",
+    "english": "You've joined {FRIEND_NAME} and {FRIEND_COUNT} other friends",
+    "translation": "أنتَ انضممت إلى {FRIEND_NAME} و {FRIEND_COUNT} وأصدقاء آخرين",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendInOtherUniverse",
+    "description": "Shown after a user follows another, but the followed user is in a different experience by the time the follower arrives",
+    "english": "{FRIEND_NAME} left and joined {EXPERIENCE_NAME}",
+    "translation": "{FRIEND_NAME} غادر وانضم إلى {EXPERIENCE_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.JoinFriend",
+    "description": "Button action that can be clicked to follow the user to the experience the followed user is currently in",
+    "english": "Join",
+    "translation": "انضمام",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FollowedFriendNotInGame",
+    "description": "Shown when a user follows another user, and the followed user is not in a game when the follower enters the server",
+    "english": "{FRIEND_NAME} left this experience",
+    "translation": "{FRIEND_NAME} غادر هذه التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Action.InviteBack",
+    "description": "Button that is shown when a followed user isn't in the experience when the follower arrives. Clicking it sends an invite to the followed user to invite them back to the server.",
+    "english": "Invite Back",
+    "translation": "دعوته مجددًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendJoinedYou",
+    "description": "Shown to users when another user intentionally joins their server",
+    "english": "{FRIEND_NAME} joined you",
+    "translation": "{FRIEND_NAME} انضم إليك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.InvitationConfirmation",
+    "description": "Sent after a user invites their friend to an experience.",
+    "english": "Invitation sent",
+    "translation": "تم إرسال الدعوة",
     "isDeprecated": false
   }
 ]
