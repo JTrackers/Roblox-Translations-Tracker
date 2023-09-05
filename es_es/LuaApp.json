@@ -4916,7 +4916,7 @@
     "key": "Description.AttributionAlertBody",
     "description": null,
     "english": "You will leave this area and join {experienceName}.",
-    "translation": "Saldrás de esta área y se te llevará a {experienceName}.",
+    "translation": "Saldrás de esta zona y te unirás a {experienceName}.",
     "isDeprecated": false
   },
   {
@@ -4933,6 +4933,30 @@
     "description": "In-experience item deeplinking",
     "english": "Join Experience",
     "translation": "Unirse a la experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Action.ViewExperienceDetail",
+    "description": "In-experience item deeplinking",
+    "english": "View Experience Detail",
+    "translation": "Ver detalles de la experiencia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.GoToExperiencePrompt",
+    "description": "In-experience item deeplinking",
+    "english": "Would you like to go to {EXPERIENCE_NAME} to acquire the item?",
+    "translation": "¿Te gustaría ir a {EXPERIENCE_NAME} para adquirir el objeto?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.InMultipleExperiences",
+    "description": "In-experience deeplinking",
+    "english": "In {NUM_EXPERIENCES} Experiences",
+    "translation": "En {NUM_EXPERIENCES} experiencias",
     "isDeprecated": false
   },
   {
@@ -7385,6 +7409,14 @@
   },
   {
     "namespace": "Feature.GamePage",
+    "key": "QuickLaunch.LaunchError.DeviceRestrictedCustom",
+    "description": "This is the toast message that pops up when a user tries to join an experience on a device that is not supported.\n\n{device}: the device that the user is currently on (Default: \"device\")\n\nExample on Xbox: \nThis experience cannot be visited on Xbox.",
+    "english": "This experience cannot be visited on {device}.",
+    "translation": "Esta experiencia no puede ser visitada desde tu {device}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GamePage",
     "key": "QuickLaunch.LaunchError.DeviceName",
     "description": "Used by QuickLaunch.LaunchError.DeviceRestrictedCustom for the default {device} parameter.",
     "english": "device",
@@ -7924,7 +7956,7 @@
     "key": "Label.DisplayNameTooShort",
     "description": "Error message that shows up when a display name is too short",
     "english": "Display name should have at least 3 characters.",
-    "translation": "El nombre de visualización debe tener al menos 3 caracteres.",
+    "translation": "El nombre para mostrar debe tener al menos 3 caracteres.",
     "isDeprecated": false
   },
   {
@@ -7973,6 +8005,70 @@
     "description": "Toast for after a user saves their profile picture",
     "english": "Profile Picture Updated",
     "translation": "Foto de perfil actualizada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayName",
+    "description": "The displayname is the name that is visible to others on Roblox. This text will show as a heading for users trying to view their displayName, who are allowed to use real names in their displayName.",
+    "english": "Name",
+    "translation": "El nombre para mostrar es el nombre visible para los demás en Roblox, este texto se utilizará como etiqueta del botón para cambiar el nombre del usuario para los usuarios más antiguos, quienes pueden usar su nombre real en el nombre para mostrar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameCaption",
+    "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
+    "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "translation": "Así es como aparecerás para los demás en Roblox. Elige un nombre por el que te reconozcan tus amigos, como tu nombre real.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.EditAgedUpDisplayName",
+    "description": "This is the title on the modal that allows users to change their display name. This will only show for users who are allowed to use their real name in their display name.",
+    "english": "Edit Name",
+    "translation": "Editar nombre",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.RecentAgedUpDisplayName",
+    "description": "Error message if someone tries to edit their display name too often. This shows only for users who are allowed to use real names in their display names (hence the wording 'Name' over DisplayName).",
+    "english": "Your name has been changed too recently. Your name can only be changed once every 7 days.\n",
+    "translation": "Tu nombre cambió recientemente. Solo puedes cambiar de nombre una vez cada 7 días.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Heading.AgedUpDisplayNameUpdated",
+    "description": "Confirmation message in toast when someone has successfully edited their display name. This is shown to users who are allowed to use their real name in their display name (hence the word 'Name' not 'DisplayName'.)",
+    "english": "Name Updated.",
+    "translation": "Nombre actualizado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameModalCaption",
+    "description": "Message in error modal if a user tries to update their name too frequently. This only shows for users who are allowed to use their real name in their display name. (Hence the use of the word 'name' over 'display name').",
+    "english": "Your name can only be changed once every 7 days.\n",
+    "translation": "Solo puedes cambiar de nombre una vez cada 7 días.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameFailed",
+    "description": "Error message that shows if someone tries to save a name that is invalid. This is for users who are allowed to use their real names in their displayname. Hence the name instead of display name.",
+    "english": "Name cannot be saved. Try another name.\n",
+    "translation": "No se puede guardar el nombre. Intenta con otro.\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.AgedUpDisplayNameTooShort",
+    "description": "Error message when a user tries to set their display name to be too short. This message is only shown to users who are allowed to use their real name in their display name (hence the word name instead of display name).",
+    "english": "Name should be at least 3 characters.",
+    "translation": "El nombre debe tener al menos 3 caracteres.",
     "isDeprecated": false
   },
   {
@@ -11512,6 +11608,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.AssetTypes",
+    "key": "Label.Heads",
+    "description": null,
+    "english": "Heads",
+    "translation": "Cabezas",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Common.BuildersClub",
     "key": "Label.BuildersClubMembership",
     "description": "membership type name",
@@ -12221,6 +12325,14 @@
     "description": "For Sponsored sort on Discover page",
     "english": "Sponsored",
     "translation": "Patrocinadas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "Label.RecommendedForYou",
+    "description": "For \"Recommended For You\" sort on Discover page",
+    "english": "Recommended For You",
+    "translation": "Recomendado para ti",
     "isDeprecated": false
   },
   {
@@ -15968,6 +16080,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CalendarQuotaLimit",
+    "description": "User can publish assets or bundles to avatar marketplace but there's a per calendar period (daily/monthly/etc) limit and they need to wait until next period for publishing again.",
+    "english": "You have reached your publishing limit. Please refer to our {linkStart} documentation {linkEnd} for more details.",
+    "translation": "Llegaste a tu límite de publicación. Ve nuestra {linkStart} documentación {linkEnd} para más detalles.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -17344,6 +17464,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Verification.Identity",
+    "key": "Title.ProcessingVerification",
+    "description": null,
+    "english": "Processing Verification",
+    "translation": "Procesando verificación",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ProcessingVerification",
+    "description": null,
+    "english": "We are processing your ID verification.",
+    "translation": "Estamos procesando tu verificación de identidad.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.Deprecated",
     "key": "Text.Test",
     "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
@@ -18584,6 +18720,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Tracking",
+    "key": "Description.CookieT",
+    "description": "description for cookie \"_t\"",
+    "english": "User authentication token cookie",
+    "translation": "Cookie de token de autenticación de usuario",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GenreExplorer",
     "key": "Heading.Categories",
     "description": null,
@@ -19169,10 +19313,26 @@
   },
   {
     "namespace": "Notifications.Preferences",
+    "key": "Label.InApp",
+    "description": "This is to describe notifications when the user is IN the APP (in-app) for Roblox (i.e. stream notifications and toast notifications)",
+    "english": "In-app",
+    "translation": "En la aplicación",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
+    "key": "Label.Push",
+    "description": "This is shorthand for PUSH notifications specifically (for iOS and Android). These are off-platform notifications. This is NOT push in the sense of push and pull.",
+    "english": "Push",
+    "translation": "Push",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.Preferences",
     "key": "Description.CustomizeNotificationsV2",
     "description": null,
     "english": "Customize notifications for all logged in devices",
-    "translation": "Personaliza las notificaciones push para todos los dispositivos conectados",
+    "translation": "Personalizar notificaciones para todos los dispositivos conectados",
     "isDeprecated": false
   },
   {
@@ -19597,6 +19757,70 @@
     "description": null,
     "english": "Your purchase wasn’t successful, and you have not been charged. Please try again.",
     "translation": "Tu compra no se realizó y no se te cobró. Inténtalo de nuevo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.AlreadySubscribed",
+    "description": "User already subscribed to the subscription",
+    "english": "Already Subscribed",
+    "translation": "Ya te suscribiste",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Title.CantSubscribe",
+    "description": "Failed to purchase subscription",
+    "english": "Can't Subscribe",
+    "translation": "No se puede suscribir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.AlreadySubscribed",
+    "description": null,
+    "english": "You can manage your subscriptions from Settings > Subscriptions.",
+    "translation": "Ya te suscribiste a esto.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.UnavailableSubscription",
+    "description": null,
+    "english": "This subscription can't be purchased at this time",
+    "translation": "Esta suscripción no se puede comprar en este momento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.ParentalRestrictionSubscription",
+    "description": null,
+    "english": "Subscriptions aren’t available to accounts with Monthly Spend Restrictions",
+    "translation": "Las suscripciones no están disponibles en cuantas con restricción de gastos mensuales",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionUnsupportedLocale",
+    "description": null,
+    "english": "This subscription isn’t available in your country at this time",
+    "translation": "Esta suscripción no está disponible en tu país por el momento",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.UnderAge17",
+    "description": null,
+    "english": "This experience is only available to users ages 17+",
+    "translation": "Está experiencia solo está disponible para mayores de 17 años",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionUnsupportedDevice",
+    "description": null,
+    "english": "This subscription can't be purchased here",
+    "translation": "Esta suscripción no se puede comprar aquí",
     "isDeprecated": false
   },
   {
@@ -20884,7 +21108,7 @@
     "key": "Heading.PlatformAccountSettings",
     "description": "Platform-specific account settings heading",
     "english": "{platform} Settings",
-    "translation": "Configuración de la cuenta de {platform}",
+    "translation": "Configuración de {platform}",
     "isDeprecated": false
   },
   {
@@ -21116,7 +21340,7 @@
     "key": "Description.WaitingParentPermission",
     "description": "DO NOT USE - USE V2",
     "english": "Check your email to help unlock your child’s account. After providing permission, refresh this screen to return to your child's Roblox account.",
-    "translation": "Revise su correo electrónico para desbloquear la cuenta de su hijo(a)",
+    "translation": "Revisa tu correo electrónico para desbloquear la cuenta de tu hijo(a). Después de dar el permiso, actualiza esta página para regresar a la cuenta de Roblox de tu hijo(a).",
     "isDeprecated": true
   },
   {
@@ -21140,7 +21364,7 @@
     "key": "Description.CantLinkAccountCurrentChild",
     "description": "The error message when parent try to connect to current child because parent has max links",
     "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
-    "translation": "No podemos vincular su cuenta a la de su hijo(a). Para completar la solicitud de su hijo(a), utilice la cuenta del progenitor que ya está vinculada.",
+    "translation": "No podemos vincular tu cuenta con la de otro niño(a). Para completar la solicitud de tu hijo(a), ingresa un correo electrónico parental diferente en el dispositivo de tu hijo(a).",
     "isDeprecated": false
   },
   {
@@ -21308,7 +21532,7 @@
     "key": "Title.DifferentEmail",
     "description": "email is already used for a parent account",
     "english": "Email Already In Use",
-    "translation": "Probar con otro correo electrónico",
+    "translation": "Correo electrónico ya en uso",
     "isDeprecated": false
   },
   {
@@ -21316,7 +21540,7 @@
     "key": "Description.DifferentEmail",
     "description": null,
     "english": "This email already belongs to a parent account. In your email inbox, open the permission request again and select Use an Existing Account.",
-    "translation": "Este correo electrónico no es elegible. Para solicitar el permiso parental en Roblox, use un correo electrónico diferente.",
+    "translation": "Este correo electrónico ya le pertenece a una cuenta parental. En tu bandeja de entrada del correo electrónico, abre de nuevo la solicitud de permiso y selecciona Usar una cuenta existente.",
     "isDeprecated": false
   },
   {
@@ -21452,7 +21676,7 @@
     "key": "Description.ChargebackConsent",
     "description": null,
     "english": "Your child’s account was locked due to unauthorized charges.{breakLine}As a parent, you can now give your child permission to unlock their account. ",
-    "translation": "Se bloqueó la cuenta de su hijo(a) debido a cargos no autorizados. {breakLine}Como progenitor, ahora puede darle permiso a su hijo(a) para desbloquear la cuenta. ",
+    "translation": "La cuenta de tu hijo(a) fue bloqueada debido a cargos no autorizados.{breakLine}Como figura parental, ya puedes darle a tu hijo(a) permiso para desbloquear su cuenta. ",
     "isDeprecated": false
   },
   {
@@ -21537,10 +21761,66 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Description.LogOutSignup",
+    "description": "prompt to logout current user when creating parent account",
+    "english": "To create a new account, first log out of your current session.",
+    "translation": "Para crear una nueva cuenta, primero cierra tu sesión actual.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ContinueSetup",
+    "description": "continue setup parent account",
+    "english": "Continue Setup",
+    "translation": "Continuar configuración",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ReviewRequest",
+    "description": "review the request for parent to unlock child's account",
+    "english": "Review Request",
+    "translation": "Revisar solicitud",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermissionV2",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.{lineBreak}To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "Algunas acciones en Roblox requieren el permiso parental o de un tutor.{lineBreak}Para ayudar a tu hijo(a), necesitas una cuenta de Roblox con privilegios parentales. Se te solicitará un correo electrónico y vincular la cuenta de tu hijo(a).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermissionV2",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account.{lineBreak}After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "Revisa tu correo electrónico para desbloquear la cuenta de tu hijo(a).{lineBreak}Después de dar el permiso, actualiza esta página para regresar a la cuenta de Roblox de tu hijo(a).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Action.Exit",
     "description": "exit parental account setup",
     "english": "Exit",
     "translation": "Salir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.DifferentEmailMidFlow",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "Correo electrónico ya en uso",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.DifferentEmailMidFlow",
+    "description": null,
+    "english": "This email already belongs to a parent account. To complete your child's request, enter a different parent email on your child's device.",
+    "translation": "Este correo electrónico le ya pertenece a una cuenta parental. Para completar la solicitud de tu hijo(a), ingresa un correo electrónico parental diferente en el dispositivo de tu hijo(a).",
     "isDeprecated": false
   },
   {
