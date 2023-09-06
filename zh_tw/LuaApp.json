@@ -16088,6 +16088,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CreatorDashboard.ConfigureItem",
+    "key": "Message.CalendarQuotaLimit",
+    "description": "User can publish assets or bundles to avatar marketplace but there's a per calendar period (daily/monthly/etc) limit and they need to wait until next period for publishing again.",
+    "english": "You have reached your publishing limit. Please refer to our {linkStart} documentation {linkEnd} for more details.",
+    "translation": "您已經達到發表數上限。請參照我們的{linkStart}文件{linkEnd}以了解更多詳情。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AccountSecurityPrompt",
     "key": "Action.AbortDismissForeverAddEmail",
     "description": null,
@@ -17446,6 +17454,14 @@
     "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation, safety and quality purposes and for the improvement of safety & audio processing tools.",
     "translation": "按一下「啟用」即代表我同意 Roblox 基於審查、安全與品質用途，以及為了改良安全工具和音訊處理工具而收集、使用及儲存我的錄音。",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VoiceCollectionConsent2",
+    "description": null,
+    "english": "I consent to Roblox's collection, use, and storage of my voice recording to enable voice services and for moderation, safety, and improvement of our services and tools.",
+    "translation": "我同意 Roblox 可為了審查、安全及改良服務和工具之目的，而收集、使用及儲存我的錄音，進而啟用語音服務。",
+    "isDeprecated": false
   },
   {
     "namespace": "Verification.Identity",
@@ -19324,7 +19340,7 @@
     "key": "Description.CustomizeNotificationsV2",
     "description": null,
     "english": "Customize notifications for all logged in devices",
-    "translation": "為所有登錄的裝置自訂推送通知",
+    "translation": "自訂所有已登入裝置的通知",
     "isDeprecated": false
   },
   {
@@ -21177,6 +21193,22 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.ParentPermission",
+    "description": null,
+    "english": "Parent Permission Needed",
+    "translation": "需要家長許可",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermission",
+    "description": "DO NOT USE - USE V2",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission. To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "欲在 Roblox 上進行特定操作，需要獲得家長或監護人同意。您需要具備家長權限的 Roblox 帳號才能協助子女。我們將請您提供電子郵件，進行成年人驗證，並提供連到子女帳號的連結。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Action.GetStarted",
     "description": null,
     "english": "Get Started",
@@ -21185,10 +21217,138 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.EnterParentEmail",
+    "description": "Title for the modal to allow parent enter their email",
+    "english": "Enter Parent Email",
+    "translation": "輸入家長的電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmail",
+    "description": "do not use - use the v2 version",
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
+    "translation": "這個電子郵件地址將與您的 Roblox 帳號相連。欲深入了解我們的資料規範，請瀏覽{privacyPolicyLink}。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EnterParentEmailV2",
+    "description": null,
+    "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
+    "translation": "這個電子郵件地址將與您的 Roblox 帳號相連。欲深入了解我們的資料規範，請瀏覽{linkStart}隱私權政策{linkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Label.Email",
     "description": "Placeholder for email input",
     "english": "email",
     "translation": "電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.Thanks",
+    "description": "Title of modal",
+    "english": "Thanks!",
+    "translation": "謝謝！",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EmailSent",
+    "description": "Email Sent confirmation",
+    "english": "We’ve sent an email to {parentEmail} with next steps",
+    "translation": "我們將傳送電子郵件至 {parentEmail} 以說明後續步驟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.InvalidEmail",
+    "description": "Error message when user input invalid email",
+    "english": "Invalid email address",
+    "translation": "電子郵件地址無效",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.WaitingParentPermission",
+    "description": null,
+    "english": "Waiting for Parent Permission",
+    "translation": "正在等待家長許可",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermission",
+    "description": "DO NOT USE - USE V2",
+    "english": "Check your email to help unlock your child’s account. After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "請查看郵件以協助解鎖貴子女的帳號。請在提供許可後重新整理此畫面，便可回到貴子女的 Roblox 帳號。",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.SendAnotherEmail",
+    "description": "Button to send parent another email",
+    "english": "Send Another Email",
+    "translation": "傳送另一封電子郵件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Titile.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "無法連結帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.CantLinkAccountCurrentChild",
+    "description": "The error message when parent try to connect to current child because parent has max links",
+    "english": "We can’t link your account to another child account. To complete your child’s request, enter a different parent email on your child’s device.",
+    "translation": "我們無法將您的帳號連結至另一個子女的帳號。欲完成子女的申請，請在子女的裝置上，輸入不同的家長電子郵件地址。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.CantLinkAccount",
+    "description": "Error modal title for account is not able to link",
+    "english": "Can’t Link Account",
+    "translation": "無法連結帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.EmailIneligible",
+    "description": "Error message when the email is ineligible to use",
+    "english": "This email isn’t eligible. To request parent permission on Roblox, use a different email.",
+    "translation": "這個電子郵件地址不符資格。請使用另一個電子郵件地址在 Roblox 申請家長許可。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExistAccountWithEmail",
+    "description": "Error message child has five parents, and enters email of a sixth parent",
+    "english": "Your parent already has an account for approving requests. Enter your parent’s email, instead.",
+    "translation": "您的父母已有核准申請用的帳號。請改為輸入父母的電子郵件地址。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SomethingWentWrong",
+    "description": "Generic error message",
+    "english": "Something went wrong",
+    "translation": "有地方出錯",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AreYouSure",
+    "description": "Double check modal title",
+    "english": "Are You Sure?",
+    "translation": "您確定嗎？",
     "isDeprecated": false
   },
   {
@@ -21241,10 +21401,58 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.EmailMismatch",
+    "description": null,
+    "english": "Email Mismatch",
+    "translation": "電子郵件地址不符",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.EmailMismatch",
+    "description": null,
+    "english": "The email address on file does not match this account. Please sign in with the account matching the email entered on the child device.",
+    "translation": "登錄的電子郵件地址與此帳號不符。請登入與子女裝置所用電子郵件相符的帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.IneligibleAccount",
+    "description": null,
+    "english": "Account Not Eligible",
+    "translation": "帳號不符資格",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ExitEnterEmail",
+    "description": null,
+    "english": "If you do not enter an email, your child's account will remain locked. ",
+    "translation": "若不輸入電子郵件地址，貴子女的帳號將維持鎖定狀態。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.EnterEmail",
+    "description": null,
+    "english": "Enter Email",
+    "translation": "輸入電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Title.VerifyEmail",
     "description": null,
     "english": "Verify Your Email",
     "translation": "驗證您的電子郵件地址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.VerifyEmail",
+    "description": null,
+    "english": "First verify your email address on Roblox in Settings > Account Info. Then you can return to the link in your email and approve your child’s request.",
+    "translation": "首先，請在「設定 > 帳號資訊」驗證您於 Roblox 使用的電子郵件地址。接著可以回到電子郵件中的連結，並核准子女的申請。",
     "isDeprecated": false
   },
   {
@@ -21257,10 +21465,202 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Description.AddEmail",
+    "description": null,
+    "english": "First add your email address on Roblox in Settings > Account Info. Then you can return to the link in your email and approve your child’s request.",
+    "translation": "首先，請在「設定 > 帳號資訊」新增您於 Roblox 使用的電子郵件地址。接著可以回到電子郵件中的連結，並核准子女的申請。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.DifferentEmail",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "電子郵件已被佔用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.DifferentEmail",
+    "description": null,
+    "english": "This email already belongs to a parent account. In your email inbox, open the permission request again and select Use an Existing Account.",
+    "translation": "這個電子郵件地址為家長帳號所有。請在您的電子郵件收件匣，再次開啟許可申請，然後選擇「使用現有帳號」。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ChildHasMaxLinks",
+    "description": null,
+    "english": "We can’t link your account to this child account. To complete your child’s request, use a parent account that’s already linked.",
+    "translation": "我們無法將您的帳號連結至這個子女帳號。欲完成子女的申請，請使用已連結的家長帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Title.SomethingWentWrong",
     "description": null,
     "english": "Something Went Wrong",
     "translation": "發生錯誤",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.RestartSession",
+    "description": null,
+    "english": "To restart the process and complete your child’s request, re-enter your email on your child’s device. ",
+    "translation": "欲重啟流程以完成子女的申請，請在子女的裝置上，重新輸入您的電子郵件地址。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.AllSet",
+    "description": "Title for a message telling user the request has been handled",
+    "english": "You’re all set",
+    "translation": "您已經完成所有設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.AllSet",
+    "description": "Message telling user their request has been handled",
+    "english": "You’ve already responded to this request",
+    "translation": "您已經回覆此申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "ç",
+    "description": null,
+    "english": "Continue or Exit",
+    "translation": "繼續或結束",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.ExitMessage",
+    "description": null,
+    "english": "Continue or Exit",
+    "translation": "繼續或結束",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExitMessage",
+    "description": null,
+    "english": "Continue to complete your child's request",
+    "translation": "繼續完成貴子女的申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ExitSetup",
+    "description": "exit parental setup flow",
+    "english": "Exit Setup",
+    "translation": "結束設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.LinkToChild",
+    "description": null,
+    "english": "Link to Your Child’s Account",
+    "translation": "連結至貴子女的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.LinToChild",
+    "description": null,
+    "english": "You can approve certain actions for your child after linking your accounts",
+    "translation": "您連結自己的帳號後，便可核准子女的特定操作",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.AutoUnlink",
+    "description": null,
+    "english": "Once your child reaches the age of majority, your accounts will automatically unlink. ",
+    "translation": "您的子女在成年後，其帳號會自動取消與您的帳號連結。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.UserAgreementExplanation",
+    "description": null,
+    "english": "By selecting “Agree,” you represent that you are this child’s parent or legal guardian and agree to receive communications regarding their account. You also agree on behalf of your child to the {tosLinkStart}Terms of Use{tosLinkEnd}, including the arbitration clause, and acknowledge the {PPLinkStart}Privacy Policy{PPLinkEnd}.",
+    "translation": "您選擇「同意」，即表明您確為子女的家長或法定監護人，並同意收到其帳號的相關訊息。您也可以代表貴子女同意接受{tosLinkStart}使用條款{tosLinkEnd}，包括仲裁條款，並確認{PPLinkStart}隱私權政策{PPLinkEnd}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.LinkAccount",
+    "description": null,
+    "english": "Link Account",
+    "translation": "連結帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.LinkExitWarning",
+    "description": null,
+    "english": "If you don't link to your child's account, you won't be able to approve their request.",
+    "translation": "若不連結貴子女的帳號，您就無法核准他們的申請。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Heading.ApproveChildRequest",
+    "description": null,
+    "english": "Approve Your Child’s Request",
+    "translation": "核准貴子女的申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ChargebackConsent",
+    "description": null,
+    "english": "Your child’s account was locked due to unauthorized charges.{breakLine}As a parent, you can now give your child permission to unlock their account. ",
+    "translation": "貴子女的帳號由於未授權收費而遭到鎖定。{breakLine}身為家長的你現在可以提供子女許可以解鎖其帳號。 ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ExitChargebackConsent",
+    "description": "Double check when parent want to deny chargeback unlock request",
+    "english": "Your child won’t be able to use Roblox while their account is locked",
+    "translation": "您的子女在帳號遭到鎖定時，無法使用 Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ApproveRequest",
+    "description": null,
+    "english": "Approve Request",
+    "translation": "核准申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.DoNotApprove",
+    "description": null,
+    "english": "Don’t Approve",
+    "translation": "不予核准",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.RequestApproved",
+    "description": null,
+    "english": "Request Approved",
+    "translation": "已核准申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.ChildCanUnlock",
+    "description": null,
+    "english": "Your child can now unlock their account from their own device ",
+    "translation": "您的子女現在可以從自己的裝置解鎖其帳號 ",
     "isDeprecated": false
   },
   {
@@ -21273,10 +21673,114 @@
   },
   {
     "namespace": "Feature.Parents",
+    "key": "Title.IDVRequired",
+    "description": null,
+    "english": "Verified ID Required",
+    "translation": "需要經驗證的 ID",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.IDVRequired",
+    "description": null,
+    "english": "Your Roblox account doesn't have parent privileges yet. To complete your child's request later, you’ll need to log in from the link in your email.",
+    "translation": "您的 Roblox 帳號尚無家長權限。您得先從電子郵件中的連結登入帳號，隨後才能完成貴子女的申請。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "Can't Provide Permission",
+    "translation": "無法提供許可",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.UserDeleted",
+    "description": "parent can't consent for child account because child account got deleted",
+    "english": "This child account no longer exists.",
+    "translation": "這個子女帳號不存在。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.LogOutSignup",
+    "description": "prompt to logout current user when creating parent account",
+    "english": "To create a new account, first log out of your current session.",
+    "translation": "想建立新帳號，請先登出目前的作業。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ContinueSetup",
+    "description": "continue setup parent account",
+    "english": "Continue Setup",
+    "translation": "繼續設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Action.ReviewRequest",
+    "description": "review the request for parent to unlock child's account",
+    "english": "Review Request",
+    "translation": "審查申請",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.ParentPermissionV2",
+    "description": "Content to explain why parent permission is needed for VPC",
+    "english": "Certain actions on Roblox require a parent or guardian’s permission.{lineBreak}To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
+    "translation": "欲在 Roblox 上進行特定操作，需要獲得家長或監護人同意。{lineBreak}您需要具備家長權限的 Roblox 帳號才能協助子女。我們將請您提供電子郵件，進行成年人驗證，並提供連到子女帳號的連結。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.WaitingParentPermissionV2",
+    "description": null,
+    "english": "Check your email to help unlock your child’s account.{lineBreak}After providing permission, refresh this screen to return to your child's Roblox account.",
+    "translation": "請查看郵件以協助解鎖貴子女的帳號。{lineBreak}請在提供許可後重新整理此畫面，便可回到子女的 Roblox 帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
     "key": "Action.Exit",
     "description": "exit parental account setup",
     "english": "Exit",
     "translation": "結束",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Title.DifferentEmailMidFlow",
+    "description": "email is already used for a parent account",
+    "english": "Email Already In Use",
+    "translation": "電子郵件已被佔用",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Description.DifferentEmailMidFlow",
+    "description": null,
+    "english": "This email already belongs to a parent account. To complete your child's request, enter a different parent email on your child's device.",
+    "translation": "這個電子郵件地址為家長帳號所有。欲完成子女的申請，請在子女的裝置上，輸入另一個家長電子郵件地址。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.SubscriptionPurchasePrompt",
+    "key": "Label.TestFlowDisclaimer",
+    "description": "Footer on prompt if the user is testing in studio.",
+    "english": "This dialog is a preview, showing you how your users will see the description of your subscription. You won’t be charged if you click Subscribe.",
+    "translation": "此對話為預覽畫面，顯示了使用者將看到的訂閱說明。點選「訂閱」並不會向您收費。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.SubscriptionPurchasePrompt",
+    "key": "Label.GetSubscription",
+    "description": "Title of prompt purchase UI.",
+    "english": "Get Subscription",
+    "translation": "取得訂閱",
     "isDeprecated": false
   }
 ]
