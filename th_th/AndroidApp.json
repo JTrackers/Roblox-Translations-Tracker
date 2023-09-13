@@ -5176,6 +5176,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Home",
+    "key": "XFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount} friends visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount, plural, =0 {# friend}, one {# friend}, other {# friends}} visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount, plural, =0 {# friend}, one {# friend}, other {# friends}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisited",
+    "description": "1 single friend visited an experience",
+    "english": "1 friend visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว 1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisited",
+    "description": "Plural friend count visited an experience, i.e. 2 friends visited, 10 friends visited, etc.",
+    "english": "{friendCount} friends visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriend",
+    "description": null,
+    "english": "1 Friend",
+    "translation": "1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriend",
+    "description": null,
+    "english": "{friendCount} Friends",
+    "translation": "{friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedUpperCase",
+    "description": "Plural friend count visited an experience, i.e. 2 Friends Visited, 10 Friends Visited, etc.",
+    "english": "{friendCount} Friends Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedUpperCase",
+    "description": "1 single friend visited an experience",
+    "english": "1 Friend Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว 1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedUpperCase",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
+    "english": "{friendCount, plural, =0 {# Friend}, one {# Friend}, other {# Friends}} Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount, plural, =0 {# Friend}, one {# Friend}, other {# Friends}}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ContactUpsell",
     "key": "PhoneNumber.Missing",
     "description": null,
@@ -5940,7 +6012,7 @@
     "key": "Label.NoOne",
     "description": null,
     "english": "No One!",
-    "translation": "ไม่มีสักคน!",
+    "translation": "ไม่มีเลย!",
     "isDeprecated": false
   },
   {
@@ -6452,7 +6524,7 @@
     "key": "Heading.Rank",
     "description": null,
     "english": "Rank",
-    "translation": "อันดับ",
+    "translation": "สถานะ",
     "isDeprecated": false
   },
   {
@@ -6828,7 +6900,7 @@
     "key": "Message.ChangeRank",
     "description": null,
     "english": "{actor} changed user {user}'s rank from {oldRoleSet} to {newRoleSet}",
-    "translation": "{actor} เปลี่ยนอันดับของผู้ใช้ \"{user}\" จาก {oldRoleSet} เป็น {newRoleSet}",
+    "translation": "{actor} เปลี่ยนสถานะของผู้ใช้ \"{user}\" จาก {oldRoleSet} เป็น {newRoleSet}",
     "isDeprecated": false
   },
   {
@@ -7204,7 +7276,7 @@
     "key": "Label.ChangeRank",
     "description": null,
     "english": "Change Rank",
-    "translation": "เปลี่ยนอันดับ",
+    "translation": "เปลี่ยนสถานะ",
     "isDeprecated": false
   },
   {
@@ -7916,7 +7988,7 @@
     "key": "Label.RemoveMembers",
     "description": null,
     "english": "Kick lower-ranked members",
-    "translation": "ไล่สมาชิกอันดับต่ำออก",
+    "translation": "ไล่สมาชิกที่มีสถานะต่ำออก",
     "isDeprecated": false
   },
   {
@@ -7924,7 +7996,7 @@
     "key": "Label.ChangeRanks",
     "description": null,
     "english": "Manage lower-ranked member ranks",
-    "translation": "จัดการอันดับของสมาชิกอันดับต่ำ",
+    "translation": "จัดการกับสถานะของสมาชิกที่มีสถานะต่ำ",
     "isDeprecated": false
   },
   {
@@ -8020,7 +8092,7 @@
     "key": "Message.RankReserved",
     "description": null,
     "english": "Ranks must be between {minRankPlusOne} and {maxRankMinusOne}. {minRank} and {maxRank} are reserved for guests and the owner.",
-    "translation": "อันดับต้องอยู่ระหว่าง {minRankPlusOne} และ {maxRankMinusOne} โดยจะสงวนอันดับ {minRank} และ {maxRank} ไว้สำหรับผู้เยี่ยมชมและเจ้าของ",
+    "translation": "สถานะต้องอยู่ระหว่าง {minRankPlusOne} และ {maxRankMinusOne} โดย {minRank} และ {maxRank} จะสงวนไว้สำหรับผู้เยี่ยมชมและเจ้าของ",
     "isDeprecated": false
   },
   {
@@ -8140,7 +8212,7 @@
     "key": "Message.MissingRoleRank",
     "description": null,
     "english": "Missing role rank.",
-    "translation": "ไม่มีอันดับหน้าที่",
+    "translation": "ไม่มีสถานะสำหรับหน้าที่",
     "isDeprecated": false
   },
   {
@@ -8156,7 +8228,7 @@
     "key": "Message.RankOutOfBounds",
     "description": null,
     "english": "Rank value is out of bounds.",
-    "translation": "ค่าของอันดับอยู่นอกขอบเขต",
+    "translation": "ค่าของสถานะอยู่นอกขอบเขต",
     "isDeprecated": false
   },
   {
@@ -8292,7 +8364,7 @@
     "key": "Message.CannotUpdateOwner",
     "description": null,
     "english": "Cannot update Owner role rank.",
-    "translation": "ไม่สามารถอัปเดตอันดับหน้าที่ของเจ้าของได้",
+    "translation": "ไม่สามารถอัปเดตสถานะสำหรับหน้าที่ของเจ้าของได้",
     "isDeprecated": false
   },
   {
@@ -8644,7 +8716,7 @@
     "key": "Message.UpdateRolesetRank",
     "description": "Used in AuditLog to let admin know some user in the group has changed the roleset's rank",
     "english": "{actor} updated roleset {roleSetName}'s rank from {oldRank} to {newRank}",
-    "translation": "{actor} ได้อัปเดตอันดับของชุดหน้าที่ \"{roleSetName}\" จาก {oldRank} เป็น {newRank}",
+    "translation": "{actor} ได้อัปเดตสถานะของชุดหน้าที่ \"{roleSetName}\" จาก {oldRank} เป็น {newRank}",
     "isDeprecated": false
   },
   {

@@ -1361,6 +1361,14 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Label.OptionalGenderShort",
+    "description": "Placeholder optional text in the gender selection dropdown",
+    "english": "Optional",
+    "translation": "Optional",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Gender",
     "description": "For the gender selector dropdown",
     "english": "Gender",
@@ -2892,7 +2900,7 @@
     "key": "Description.VerfiyAgeConsent",
     "description": "The legal consent a user agrees to by choosing to verify their age on roblox.com.",
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
-    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsverifizierung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
+    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsprüfung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
     "isDeprecated": true
   },
   {
@@ -2900,7 +2908,7 @@
     "key": "Description.VerifyAgeConsent",
     "description": "The legal consent a user agrees to by choosing to verify their age on the roblox.com account setting page.",
     "english": "By clicking 'Verify My Age' you will be completing an ID verification process operated by our third party service provider. You also consent to the collection, use, and sharing of your biometric data as described in the {linkStart}Roblox Biometric Privacy Notice{linkEnd}.",
-    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsverifizierung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
+    "translation": "Indem du \"Mein Alter verifizieren\" anklickst, schließt du die Identitätsprüfung ab, die von unserem Drittanbieter durchgeführt wird. Du stimmst zudem der Erhebung, Nutzung und dem Teilen deiner biometrischen Daten zu, wie in der {linkStart}Biometrischen Datenschutzerklärung{linkEnd} beschrieben.",
     "isDeprecated": false
   },
   {
@@ -6456,6 +6464,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Message.DiscoverableSettingsV2",
+    "description": "This text will go in the modal that pops up after a user verifies their phone number for GDPR countries.",
+    "english": "Do you want to let your friends find you by your phone number?",
+    "translation": "Möchtest du, dass dich deine Freund:innen anhand deiner Handynummer finden können?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -8672,6 +8688,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Home",
+    "key": "XFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount} friends visited",
+    "translation": "{friendCount} Freund:innen besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount, plural, =0 {# friend}, one {# friend}, other {# friends}} visited",
+    "translation": "{friendCount, plural, =0 {# Freund:innen}, one {# Freund:in}, other {# Freund:innen}} besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisited",
+    "description": "1 single friend visited an experience",
+    "english": "1 friend visited",
+    "translation": "1 Freund:in besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisited",
+    "description": "Plural friend count visited an experience, i.e. 2 friends visited, 10 friends visited, etc.",
+    "english": "{friendCount} friends visited",
+    "translation": "{friendCount} Freund:innen besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriend",
+    "description": null,
+    "english": "1 Friend",
+    "translation": "1 Freund:in",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriend",
+    "description": null,
+    "english": "{friendCount} Friends",
+    "translation": "{friendCount} Freund:innen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedUpperCase",
+    "description": "Plural friend count visited an experience, i.e. 2 Friends Visited, 10 Friends Visited, etc.",
+    "english": "{friendCount} Friends Visited",
+    "translation": "{friendCount} Freund:innen besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedUpperCase",
+    "description": "1 single friend visited an experience",
+    "english": "1 Friend Visited",
+    "translation": "1 Freund:in besucht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedUpperCase",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
+    "english": "{friendCount, plural, =0 {# Friend}, one {# Friend}, other {# Friends}} Visited",
+    "translation": "{friendCount, plural, =0 {# Freund:innen}, one {# Freund:in}, other {# Freund:innen}} besucht",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ContactUpsell",
     "key": "Action.AddPhone",
     "description": "This action will allow the user to add their phone number.",
@@ -8852,7 +8940,7 @@
     "key": "Description.ContactMethodAccessLoss",
     "description": null,
     "english": "Without a Contact Method, you may lose access to game progress, items, and Robux if your account is lost.",
-    "translation": "Ohne eine angegebene Kontaktmethode kann es passieren, dass du Zugriff auf Spielfortschritt, Items und Robux verlierst, falls du jemals Zugriff auf dein Konto verlierst.",
+    "translation": "Ohne eine angegebene Kontaktmethode kann es passieren, dass du Zugriff auf Spielfortschritt, Artikel und Robux verlierst, falls du jemals Zugriff auf dein Konto verlierst.",
     "isDeprecated": false
   },
   {
@@ -8860,7 +8948,7 @@
     "key": "Description.ContactMethodAccessLoss.V2",
     "description": null,
     "english": "Without a phone or email, you may lose access to game progress, items, and Robux if your account is lost.",
-    "translation": "Ohne eine Telefonnumer oder E-Mail-Adresse kann es passieren, dass du Zugriff auf Spielfortschritt, Items und Robux verlierst, falls du jemals Zugriff auf dein Konto verlierst.",
+    "translation": "Ohne eine Telefonnumer oder E-Mail-Adresse kann es passieren, dass du Zugriff auf Spielfortschritt, Artikel und Robux verlierst, falls du jemals Zugriff auf dein Konto verlierst.",
     "isDeprecated": false
   },
   {
@@ -11928,6 +12016,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Contacts",
+    "key": "Label.DiscoverabilityOptInV2",
+    "description": "This text will go in the modal that pops up prompting users to let their friends find them but only for non GDPR countries.",
+    "english": "Let your friends find you by your phone number.",
+    "translation": "Gib deinen Freund:innen die Möglichkeit, dich anhand deiner Handynummer finden zu können.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameFollows",
     "key": "TooltipFollowLimitReached",
     "description": "Tooltip for follow game button",
@@ -12037,6 +12133,14 @@
     "description": "Text shown when the share invite link is copied to clipboard on desktop apps",
     "english": "Copied",
     "translation": "Kopiert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Action.CopyLink",
+    "description": "Label for external copy link button",
+    "english": "Copy Link",
+    "translation": "Link kopieren",
     "isDeprecated": false
   },
   {
@@ -14565,6 +14669,14 @@
     "description": null,
     "english": "Your account was suspended for unauthorized charges.",
     "translation": "Dein Konto wurde aufgrund unautorisierter Belastungen gesperrt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ConsoleDeviceNoticeUA",
+    "description": null,
+    "english": "Please log in to Roblox.com on a separate device to begin reactivating your account.",
+    "translation": "Bitte melde dich auf einem separaten Gerät bei Roblox.com an, um dein Konto zu reaktivieren.",
     "isDeprecated": false
   },
   {

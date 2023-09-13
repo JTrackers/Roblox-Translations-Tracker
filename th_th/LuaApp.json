@@ -4748,7 +4748,7 @@
     "key": "Label.Tradable",
     "description": null,
     "english": "Tradable",
-    "translation": "แลกเปลี่ยนได้",
+    "translation": "ทำการแลกเปลี่ยนได้",
     "isDeprecated": false
   },
   {
@@ -6448,6 +6448,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Message.DiscoverableSettingsV2",
+    "description": "This text will go in the modal that pops up after a user verifies their phone number for GDPR countries.",
+    "english": "Do you want to let your friends find you by your phone number?",
+    "translation": "คุณต้องการให้เพื่อนหาคุณเจอด้วยหมายเลขโทรศัพท์ของคุณหรือไม่?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -8004,7 +8012,7 @@
     "key": "Label.DisplayNameTooShort",
     "description": "Error message that shows up when a display name is too short",
     "english": "Display name should have at least 3 characters.",
-    "translation": "ชื่อที่แสดงควรมีความยาวอย่างน้อย 3 ตัวอักษร",
+    "translation": "ชื่อที่แสดงควรมีความยาวอย่างน้อย 3 อักขระ",
     "isDeprecated": false
   },
   {
@@ -8116,7 +8124,7 @@
     "key": "Label.AgedUpDisplayNameTooShort",
     "description": "Error message when a user tries to set their display name to be too short. This message is only shown to users who are allowed to use their real name in their display name (hence the word name instead of display name).",
     "english": "Name should be at least 3 characters.",
-    "translation": "ชื่อควรมีความยาวอย่างน้อย 3 ตัวอักษร",
+    "translation": "ชื่อควรมีความยาวอย่างน้อย 3 อักขระ",
     "isDeprecated": false
   },
   {
@@ -8653,6 +8661,78 @@
     "description": null,
     "english": "Friends",
     "translation": "เพื่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "XFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount} friends visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount, plural, =0 {# friend}, one {# friend}, other {# friends}} visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount, plural, =0 {# friend}, one {# friend}, other {# friends}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisited",
+    "description": "1 single friend visited an experience",
+    "english": "1 friend visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว 1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisited",
+    "description": "Plural friend count visited an experience, i.e. 2 friends visited, 10 friends visited, etc.",
+    "english": "{friendCount} friends visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriend",
+    "description": null,
+    "english": "1 Friend",
+    "translation": "1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriend",
+    "description": null,
+    "english": "{friendCount} Friends",
+    "translation": "{friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedUpperCase",
+    "description": "Plural friend count visited an experience, i.e. 2 Friends Visited, 10 Friends Visited, etc.",
+    "english": "{friendCount} Friends Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount} คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedUpperCase",
+    "description": "1 single friend visited an experience",
+    "english": "1 Friend Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว 1 คน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedUpperCase",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
+    "english": "{friendCount, plural, =0 {# Friend}, one {# Friend}, other {# Friends}} Visited",
+    "translation": "เพื่อนเยี่ยมชมแล้ว {friendCount, plural, =0 {# Friend}, one {# Friend}, other {# Friends}}",
     "isDeprecated": false
   },
   {
@@ -11912,6 +11992,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Contacts",
+    "key": "Label.DiscoverabilityOptInV2",
+    "description": "This text will go in the modal that pops up prompting users to let their friends find them but only for non GDPR countries.",
+    "english": "Let your friends find you by your phone number.",
+    "translation": "ช่วยให้เพื่อนหาคุณเจอด้วยหมายเลขโทรศัพท์ของคุณ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameFollows",
     "key": "TooltipFollowLimitReached",
     "description": "Tooltip for follow game button",
@@ -12021,6 +12109,14 @@
     "description": "Text shown when the share invite link is copied to clipboard on desktop apps",
     "english": "Copied",
     "translation": "คัดลอกแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialShare",
+    "key": "Action.CopyLink",
+    "description": "Label for external copy link button",
+    "english": "Copy Link",
+    "translation": "คัดลอกลิงก์",
     "isDeprecated": false
   },
   {
@@ -14541,6 +14637,14 @@
     "description": null,
     "english": "Your account was suspended for unauthorized charges.",
     "translation": "บัญชีของคุณถูกระงับเนื่องจากมีการเรียกเก็บเงินในรายการที่ไม่ได้รับอนุญาต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Label.ConsoleDeviceNoticeUA",
+    "description": null,
+    "english": "Please log in to Roblox.com on a separate device to begin reactivating your account.",
+    "translation": "โปรดลงชื่อเข้าใช้ Roblox.com บนอุปกรณ์อีกเครื่องเพื่อเริ่มดำเนินการเปิดใช้งานบัญชีของคุณอีกครั้ง",
     "isDeprecated": false
   },
   {
