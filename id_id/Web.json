@@ -59096,6 +59096,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Label.Dialog.EditPhoneCurrentNumber",
+    "description": null,
+    "english": "Current Number:",
+    "translation": "Nomor Ponsel Saat Ini:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.Dialog.EditPhoneWarning",
+    "description": null,
+    "english": "The phone number will not change until the new phone number has been verified.",
+    "translation": "Nomor ponsel tidak akan berubah sampai nomor ponsel yang baru terverifikasi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Dialog.EditPhonePrimary",
+    "description": null,
+    "english": "Edit Phone",
+    "translation": "Edit Nomor Ponsel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Dialog.EditPhoneSecondary",
+    "description": null,
+    "english": "Remove Phone Number",
+    "translation": "Hapus Nomor Ponsel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Heading.Dialog.RemovePhone",
+    "description": null,
+    "english": "Remove Phone",
+    "translation": "Hapus Nomor Ponsel",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Dialog.RemovePhonePrimary",
+    "description": null,
+    "english": "Remove",
+    "translation": "Hapus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Action.Dialog.RemovePhoneSecondary",
+    "description": null,
+    "english": "Cancel",
+    "translation": "Batal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.VerificationUpsell",
+    "key": "Description.Dialog.RemovePhoneWarning",
+    "description": "warning when user removes phone number from account, with last 4 digits of phone number",
+    "english": "Are you sure that you want to remove your phone number which ends with {phoneLast4}?",
+    "translation": "Kamu yakin ingin menghapus nomor ponsel yang berakhir dengan {phoneLast4}?",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Trades",
     "key": "Heading.AcceptTrade",
     "description": "Heading for the accept trade modal dialog",
@@ -74875,7 +74939,7 @@
     "namespace": "Authentication.AccountSwitch",
     "key": "Heading.SwitchAccount",
     "description": "Account switching modal header.",
-    "english": "Switch Account",
+    "english": "Switch Accounts",
     "translation": "Beralih Akun",
     "isDeprecated": false
   },
@@ -75186,25 +75250,33 @@
   {
     "namespace": "CloudServices.Notifications",
     "key": "Description.MemoryStoreMemorySizeAboveQuotaBody",
-    "description": "Please translate the following text minus whatever is in { } and keep all other text the same, including the whitespaces. For #9, the text starts with a period then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The Memory Size quota has been reached for the past 5 minutes.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the\n8. Memory Store Observability documentation\n9..  For resolving errors, please refer to the \n10.  Memory Store Optimization documentation.\n11. View Dashboard",
-    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size quota has been reached for the past 5 minutes.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\"> Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >View Dashboard</a></div>",
+    "description": "Please translate the following text minus whatever is in { } and keep all other text the same, including the whitespaces. For #9, the text starts with a period then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The Memory Size quota has been reached for the past 5 minutes.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the\n8. Memory Store Observability documentation\n9..  For resolving errors, please refer to the \n10.  Memory Store Optimization documentation.\n11. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size quota has been reached for the past 5 minutes.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\"> Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >View Dashboard</a></div>",
     "translation": "<div>Layanan Penyimpanan Memori kamu untuk {universeName} (universe ID: {universeId}) sudah mencapai ambang batas kritis.</div><br><p style=\"text-align:left;\"><b>Ambang Batas:</b><span> Kuota Ukuran Memori sudah tercapai selama 5 menit terakhir.</span></p><p style=\"text-align:left;\"><b>Waktu Mulai:</b> <a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Keparahan:</b><span style=\"text-align:left;color:#D0342C !important;\"> Kritis</span></p><div>Kunjungi Dasbor Penyimpanan Memori untuk melihat informasi kegagalan permintaan. Untuk informasi selengkapnya tentang status kegagalan, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> dokumentasi Pengamatan Penyimpanan Memori</a>. Untuk mengatasi masalah, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> dokumentasi Optimasi Penyimpanan Memori.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >Lihat Dasbor</a></div>",
     "isDeprecated": false
   },
   {
     "namespace": "CloudServices.Notifications",
     "key": "Description.MemoryStoreMemorySizeApproachingQuotaBody",
-    "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces. For #9, the text starts with a period then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues\n2. Threshold:\n3. The Memory Size has exceeded 70% of the total quota within the past hour.\n4. Start Time:\n5. Severity:\n6. Warning\n7. Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the \n8. Memory Store Observability documentation\n9. . For resolving errors, please refer to the \n10. Memory Store Optimization documentation.\n11. View Dashboard",
-    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size has exceeded 70% of the total quota within the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> Warning</span></p><div>Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\">View Dashboard</a></div>",
+    "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces. For #9, the text starts with a period then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues\n2. Threshold:\n3. The Memory Size has exceeded 70% of the total quota within the past hour.\n4. Start Time:\n5. Severity:\n6. Warning\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the \n8. Memory Store Observability documentation\n9. . For resolving errors, please refer to the \n10. Memory Store Optimization documentation.\n11. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size has exceeded 70% of the total quota within the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> Warning</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\">View Dashboard</a></div>",
     "translation": "<div>Layanan Penyimpanan Memori kamu untuk {universeName} (universe ID: {universeId}) mengalami masalah.</div><br><p style=\"text-align:left;\"><b>Ambang Batas:</b ><span> Ukuran Memori sudah melampaui 70% dari total kuota dalam satu jam terakhir.</span></p><p style=\"text-align:left;\"><b>Waktu Mulai:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p> <b>Keparahan:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> Peringatan</span></p><div>Kunjungi Dasbor Penyimpanan Memori untuk melihat kegagalan permintaan informasi. Untuk informasi selengkapnya tentang status kegagalan, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">dokumentasi Pengamatan Penyimpanan Memori</a>. Untuk mengatasi masalah, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">dokumentasi Optimasi Penyimpanan Memori.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\">Lihat Dasbor</a></div>",
     "isDeprecated": false
   },
   {
     "namespace": "CloudServices.Notifications",
     "key": "Description.MemoryStoreThrottlingOverThresholdBody",
-    "description": "Please translate the following text minus whatever is in the { } placeholders and keep all other text the same, including the whitespaces. For #9, the text starts with a period and then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.\n2. Threshold:\n3. Over 10% of Memory Store API requests have been experiencing throttling for the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the\n8. Memory Store Observability documentation\n9..  For resolving errors, please refer to the \n10.  Memory Store Optimization documentation.\n11. View Dashboard",
-    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> Over 10% of Memory Store API requests have been experiencing throttling for the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. For a comphrensive understanding of failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >View Dashboard</a></div>",
+    "description": "Please translate the following text minus whatever is in the { } placeholders and keep all other text the same, including the whitespaces. For #9, the text starts with a period and then a whitespace.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.\n2. Threshold:\n3. Over 10% of Memory Store API requests have been experiencing throttling for the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the\n8. Memory Store Observability documentation\n9..  For resolving errors, please refer to the \n10.  Memory Store Optimization documentation.\n11. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> Over 10% of Memory Store API requests have been experiencing throttling for the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about failure statuses, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability documentation</a>. For resolving errors, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >View Dashboard</a></div>",
     "translation": "<div>Layanan Penyimpanan Memori kamu untuk {universeName} (universe ID: {universeid}) sudah mencapai ambang batas kritis.</div><br><p style=\"text-align:left;\"><b>Ambang Batas:</b><span> Lebih dari 10% permintaan API Penyimpanan Memori mengalami pembatasan selama satu jam terakhir.</span></p><p style=\"text-align:left;\"><b>Waktu Mulai:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p> <p><b>Keparahan:</b><span style=\"text-align:left;color:#D0342C !important;\"> Kritis</span></p><div>Kunjungi Dasbor Penyimpanan Memori untuk melihat informasi kegagalan permintaan. Untuk informasi selengkapnya tentang status kegagalan, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">dokumentasi Pengamatan Penyimpanan Memori</a>. Untuk mengatasi kesalahan, baca <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">dokumentasi Optimasi Penyimpanan Memori.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >Lihat Dasbor</a></div>\n\n ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreErrorRateAboveThresholdHeader",
+    "description": "{universeName} is a placeholder we are filling in",
+    "english": "Critical: Memory Store Request Failure Alert for {universeName}",
+    "translation": "Kritis: Peringatan Kegagalan Permintaan Penyimpanan Memori untuk {universeName}",
     "isDeprecated": false
   },
   {
