@@ -4696,6 +4696,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.AlertsAndOptions",
+    "key": "Description.AccountSwitchedConfirmationBannerText",
+    "description": "Banner alert text shown after user has switched to another account.",
+    "english": "You switched to {accountName}",
+    "translation": "أنت بدّلت إلى {accountName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.Presence",
     "key": "Label.Online",
     "description": null,
@@ -29532,7 +29540,7 @@
     "key": "HeadingFriendsTitle",
     "description": null,
     "english": "Friends",
-    "translation": "الأصدقاء",
+    "translation": "أصدقاء",
     "isDeprecated": false
   },
   {
@@ -30301,6 +30309,62 @@
     "description": null,
     "english": "Friends",
     "translation": "أصدقاء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "XFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount} friends visited",
+    "translation": "زارها {friendCount} (صديق)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisited",
+    "description": "1 single friend visited an experience",
+    "english": "1 friend visited",
+    "translation": "زارها صديق واحد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisited",
+    "description": "Plural friend count visited an experience, i.e. 2 friends visited, 10 friends visited, etc.",
+    "english": "{friendCount} friends visited",
+    "translation": "{friendCount} (صديق) زار التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriend",
+    "description": null,
+    "english": "1 Friend",
+    "translation": "صديق واحد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriend",
+    "description": null,
+    "english": "{friendCount} Friends",
+    "translation": "{friendCount} (صديق)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedUpperCase",
+    "description": "Plural friend count visited an experience, i.e. 2 Friends Visited, 10 Friends Visited, etc.",
+    "english": "{friendCount} Friends Visited",
+    "translation": "{friendCount} (صديق) زار التجربة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedUpperCase",
+    "description": "1 single friend visited an experience",
+    "english": "1 Friend Visited",
+    "translation": "زارها صديق واحد",
     "isDeprecated": false
   },
   {
@@ -67720,6 +67784,70 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreMemorySizeAboveQuotaBody",
+    "description": "Please translate the following text minus whatever is in { } and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The Memory Size quota has been reached for the past 5 minutes.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size quota has been reached for the past 5 minutes.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >View Dashboard</a></div>",
+    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeId}) وصلت لمستوى حرج.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span> بلغت الحد الأقصى لحجم الذاكرة خلال الدقائق الخمس الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\"> حرج</span></p><div>انتقل إلى لوحة التحكم بتخزين الذاكرة لمعاينة معلومات الطلبات التي فشلت. للحصول على فهم شامل لحالات فشل الطلبات، يرجى الرجوع إلى المستندات الخاصة بـ <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability</a>. لمعالجة المشاكل، الرجاء الاطلاع على <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\"> Memory Store Optimization المستندات الخاصة بـ.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >معاينة الوحة التحكم</a></div>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreMemorySizeAboveQuotaHeader",
+    "description": "{universeName} is a placeholder we will be filling in\n\n Memory Stores is referring to this service: https://create.roblox.com/docs/en-us/cloud-services/memory-stores and Memory Size is the size of the memory. This string means, For the service Memory Stores, your memory size has exceeded the quota",
+    "english": "Critical: Memory Store Memory Size Exceeded Quota for {universeName}",
+    "translation": "بالغ الأهمية: تعدى تخزين الذاكرة الحجم المحدّد له في {universeName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreMemorySizeApproachingQuotaBody",
+    "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues\n2. Threshold:\n3. The Memory Size has exceeded 70% of the total quota within the past hour.\n4. Start Time:\n5. Severity:\n6. Warning\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size has exceeded 70% of the total quota within the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> Warning</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">View Dashboard</a></div>",
+    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeId}) تعاني من بعض المشاكل.</div><br><p style=\"text-align:left;\"><b> المستوى:</b><span> تجاوز حجم الذاكرة 70% من إجمالي الحصة خلال الساعة الماضية. past hour.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b> مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> تحذير</span></p><div>انتقل إلى لوحة التحكم بتخزين الذاكرة لمعاينة معلومات الطلبات التي فشلت. للحصول على فهم شامل لحالات فشل الطلبات، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a>. لمعالجة الأخطاء، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\">عرض لوحة التحكم</a></div>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreMemorySizeApproachingQuotaHeader",
+    "description": "{universeName} is a placeholder\n\n Memory Stores is referring to this service: https://create.roblox.com/docs/en-us/cloud-services/memory-stores and Memory Size is the size of the memory. This string means, For the service Memory Stores, your memory size has exceeded the threshold",
+    "english": "Warning: Memory Store Memory Size Exceeded Threshold for {universeName}",
+    "translation": "تحذير: تعدى تخزين الذاكرة الحجم المحدّد له في {universeName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreThrottlingOverThresholdBody",
+    "description": "Please translate the following text minus whatever is in the { } placeholders and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.\n2. Threshold:\n3. Over 10% of Memory Store API requests have been experiencing throttling for the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> Over 10% of Memory Store API requests have been experiencing throttling for the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">View Dashboard</a></div>",
+    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeid}) وصلت لمستوى حرج.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span> ما يزيد على 10% من طلبات API لتخزين الذاكرة يعاني اختناقًا خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>انتقل إلى لوحة التحكم بتخزين الذاكرة لمعاينة معلومات الطلبات التي فشلت. للحصول على فهم شامل لحالات فشل الطلبات، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a>. لمعالجة الأخطاء، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\">Memory Store Optimization.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >عرض لوحة التحكم</a></div>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreThrottlingOverThresholdSubject",
+    "description": "{universeName} is a placeholder we will be filling in.",
+    "english": "Critical: Memory Store Throttling Above Threshold for {universeName}",
+    "translation": "بالغ الأهمية: تعدى حجم الذاكرة الحد الأقصى في {universeName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreErrorRateAboveThreshold",
+    "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The number of Memory Store request failures has exceeded 20% within the past 10 minutes.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
+    "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The number of Memory Store request failures has exceeded 20% within the past 10 minutes.</span></p><p style=\"text-align:left;\"><b>Start Time:</b> <a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >View Dashboard</a></div>",
+    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeId}) وصلت لمستوى حرج.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span> لقد تجاوز عدد حالات فشل طلب تخزين الذاكرة 20% خلال الدقائق العشر الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b> <a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\"> {startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\"> حرج</span></p><div>انتقل إلى لوحة التحكم بتخزين الذاكرة لمعاينة معلومات الطلبات التي فشلت. للحصول على فهم شامل لحالات فشل الطلبات، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability</a>. لمعالجة الأخطاء، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/optimization\"> Memory Store Optimization.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Last1Day&minTime={minTime}&maxTime={maxTime}\" >عرض لوحة التحكم</a></div>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CloudServices.Notifications",
+    "key": "Description.MemoryStoreErrorRateAboveThresholdHeader",
+    "description": "{universeName} is a placeholder we are filling in",
+    "english": "Critical: Memory Store Request Failure Alert for {universeName}",
+    "translation": "بالغ الأهمية: تنبيه يتعلق بفشل طلب تخزين الذاكرة في {universeName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.DynamicUI",
     "key": "Translations.Deprecated1",
     "description": null,
@@ -69540,7 +69668,7 @@
     "key": "Label.PasskeyAdded",
     "description": null,
     "english": "Roblox Passkey Added",
-    "translation": "تمت إضافة \"مفتاح مرور Roblox\"",
+    "translation": "تمت إضافة مفتاح مرور في Roblox",
     "isDeprecated": false
   },
   {
@@ -69548,7 +69676,7 @@
     "key": "Description.PasskeyRegistrationEmailBody",
     "description": null,
     "english": "We noticed that a passkey is added for your Roblox account: {username}. If you didn't intend to add it, or you think someone else changed it by mistake, please click this link to undo the {linkTagWithActionLinkStart}action{linkTagEnd}.{lineBreak}{lineBreak} If you are happy with your new Roblox passkey, you don't have to do anything! It's already set up. Please do not reply to this message. If you have any questions, please see the Roblox {linkTagWithHelpLinkStart}help page{linkTagEnd}.\n{lineBreak}{lineBreak} This message was generated by roblox.com.",
-    "translation": "لاحظنا أنه تم إضافة مفتاح مرور لحسابك في Roblox:{username}. إذا لم تكن تقصد إضافته أو تظن أن شخصا آخر غيرّه عن طريق الخطأ، الرجاء النقر على هذا الرابط للتراجع عن {linkTagWithActionLinkStart}الإجراء{linkTagEnd}.{lineBreak}{lineBreak} إذا كنت سعيدًا بمفتاح المرور الجديد الخاص بك في Roblox، لا يتعين عليك فعل أي شيء! المفتاح جاهز بالفعل. الرجاء عدم الرد على هذه الرسالة. إذا كان لديك أي أسئلة، يرجى الاطلاع على صفحة مساعدة Roblox {linkTagWithHelpLinkStart}{linkTagEnd}.\n{lineBreak}{lineBreak} تم إرسال هذه الرسالة الآلية بواسطة roblox.com.",
+    "translation": "لاحظنا أنه تمت إضافة مفتاح مرور لحسابك في Roblox:{username}. إذا لم تكن تقصد إضافته أو تظن أن شخصا آخر غيرّه عن طريق الخطأ، الرجاء النقر على هذا الرابط للتراجع عن {linkTagWithActionLinkStart}الإجراء{linkTagEnd}.{lineBreak}{lineBreak} إذا كنت سعيدًا بمفتاح المرور الجديد الخاص بك في Roblox، لا يتعين عليك فعل أي شيء! المفتاح جاهز بالفعل. الرجاء عدم الرد على هذه الرسالة. إذا كان لديك أي أسئلة، يرجى الاطلاع على صفحة مساعدة Roblox {linkTagWithHelpLinkStart}{linkTagEnd}.\n{lineBreak}{lineBreak} تم إرسال هذه الرسالة الآلية بواسطة roblox.com.",
     "isDeprecated": false
   },
   {
@@ -69556,7 +69684,15 @@
     "key": "Label.PasskeyRemoved",
     "description": null,
     "english": "Roblox Passkey Removed",
-    "translation": "تمت إزالة \"مفتاح مرور Roblox\"",
+    "translation": "تمت إزالة مفتاح المرور في Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Passkey",
+    "key": "Description.PasskeyRemovalEmailBody",
+    "description": null,
+    "english": "Test",
+    "translation": "Test",
     "isDeprecated": false
   }
 ]
