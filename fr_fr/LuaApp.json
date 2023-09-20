@@ -488,6 +488,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.Require2FA",
+    "description": "An error message to show that 2SV login is not supported on consoles.",
+    "english": "2-Step Verification is not supported on console. Please follow the instructions on the right to securely log in.",
+    "translation": "La vérification en 2 étapes n'est pas prise en charge sur la console. Suivre les instructions à droite pour vous connecter en toute sécurité.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -1429,6 +1437,14 @@
     "description": "For users who have explicitly chosen to appear offline",
     "english": "Invisible",
     "translation": "Invisible",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.Presence",
+    "key": "Label.RobloxStudio",
+    "description": null,
+    "english": "Roblox Studio",
+    "translation": "Roblox Studio",
     "isDeprecated": false
   },
   {
@@ -5021,6 +5037,14 @@
     "description": "In-Experience item deeplinking prompt",
     "english": "In {EXPERIENCE_NAME}",
     "translation": "Dans {EXPERIENCE_NAME}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.SaveAsCharacter",
+    "description": "Text that appears next to a checkbox asking the user if they want to save an outfit as a character after purchasing the items.",
+    "english": "Save as a Character",
+    "translation": "Enregistrer comme personnage",
     "isDeprecated": false
   },
   {
@@ -8700,7 +8724,7 @@
     "key": "NFriendsVisited",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
     "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
-    "translation": "{friendCount, plural, =0 {# Friend}, un {# friend}, {# friends} autres} a.ont visité",
+    "translation": "{friendCount, plural, =0 {# ami a visité} =1 {# ami a visité} other {# amis ont visité}}",
     "isDeprecated": false
   },
   {
@@ -8756,7 +8780,7 @@
     "key": "NFriendsVisitedUpperCase",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
     "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
-    "translation": "{friendCount, plural, =0 {# Friend}, un {# friend}, {# friends} autres} a.ont visité",
+    "translation": "{friendCount, plural, =0 {# ami a visité} =1 {# ami a visité} other {# amis ont visité}}",
     "isDeprecated": false
   },
   {
@@ -12501,6 +12525,14 @@
     "description": "For \"Recommended For You\" sort on Discover page",
     "english": "Recommended For You",
     "translation": "Recommandé pour toi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Common.GameSorts",
+    "key": "AvatarShops",
+    "description": "For a new discover sort that contains avatar shopping experience",
+    "english": "Avatar Shops",
+    "translation": "Boutiques Avatar",
     "isDeprecated": false
   },
   {
@@ -21389,6 +21421,86 @@
     "description": "A \"byline\" showing who created the experience (if the creator is a group), shown below the experience name in the screenshot capture watermark.",
     "english": "by {groupName}",
     "translation": "par {groupName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.DeleteCaptureWarning",
+    "description": "Title of a modal informing the user that they are about to delete a Capture.",
+    "english": "Delete Capture",
+    "translation": "Supprimer la capture",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.DeleteCaptureInfo",
+    "description": "Body of a modal informing the user that the Capture deletion will be irreversible.",
+    "english": "This will permanently delete the Capture.",
+    "translation": "Cela supprimera définitivement la capture.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.DeleteCaptureWarningOptOut",
+    "description": "Text next to a checkbox that allows the user to opt out of seeing the delete Capture modal again.",
+    "english": "Do not show this again.",
+    "translation": "Ne plus afficher.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.DeleteCaptureWarningCancel",
+    "description": "Text on button allowing the user to cancel out of the delete Capture modal without deleting the Capture.",
+    "english": "Cancel",
+    "translation": "Annuler",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.DeleteCaptureWarningConfirm",
+    "description": "Text on button allowing the user to confirm their intent to delete the Capture on the delete Capture warning modal.",
+    "english": "Delete",
+    "translation": "Supprimer",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.AllowPhotoAccessInfo",
+    "description": "Title of modal prompting the user to allow the photo access permission.",
+    "english": "Allow Access to Photos",
+    "translation": "Autoriser l'accès aux photos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Description.AllowPhotoAccessInfo",
+    "description": "Body of modal prompting the user to allow access to the user's photos.",
+    "english": "To save your captures, Roblox needs access to your device’s camera roll.",
+    "translation": "Pour enregistrer vos captures, Roblox a besoin d’accéder à votre appareil.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.AllowPhotoAccessDeclined",
+    "description": "Text on button allowing the user to decline allowing the photo access permission to Roblox.",
+    "english": "Not Now",
+    "translation": "Pas maintenant",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.AllowPhotoAccessAccepted",
+    "description": "Text on button letting the user confirm their intent to allow Roblox to access their photos.",
+    "english": "Allow",
+    "translation": "Autoriser",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.ViewCapture",
+    "description": "Button on a toast that allows the user to view the Capture that they just took.",
+    "english": "View",
+    "translation": "Voir",
     "isDeprecated": false
   },
   {
