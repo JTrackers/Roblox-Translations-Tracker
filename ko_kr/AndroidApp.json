@@ -5196,7 +5196,7 @@
     "key": "NFriendsVisited",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
     "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
-    "translation": "{friendCount, plural, =0 {친구 #명} =1 {친구 #명} other {친구 #명}} 방문",
+    "translation": "{friendCount, plural, =0 {친구 #명 방문} =1 {친구 #명 방문} other {친구 #명 방문}}",
     "isDeprecated": false
   },
   {
@@ -5252,7 +5252,31 @@
     "key": "NFriendsVisitedUpperCase",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
     "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
-    "translation": "{friendCount, plural, =0 {친구 #명} =1 {친구 #명} other {친구 #명}} 방문",
+    "translation": "{friendCount, plural, =0 {친구 #명 방문} =1 {친구 #명 방문} other {친구 #명 방문}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedSentenceCase",
+    "description": null,
+    "english": "1 Friend visited",
+    "translation": "친구 1명 방문",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedSentenceCase",
+    "description": "friendCount will always be > 1",
+    "english": "{friendCount} Friends visited",
+    "translation": "친구 {friendCount}명 방문",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedSentenceCase",
+    "description": null,
+    "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
+    "translation": "{friendCount, plural, =0 {방문한 친구 없음} =1 {친구 #명 방문} other {친구 #명 방문}}",
     "isDeprecated": false
   },
   {
@@ -8780,7 +8804,7 @@
     "key": "Label.LastAddedFunds",
     "description": null,
     "english": "Successful transfer from {userName} to {groupName} on {transferDate}.",
-    "translation": "{transferDate} {userName}님으로부터 {groupName}(으)로 이체가 완료되었습니다.",
+    "translation": "{transferDate} {userName} 님으로부터 {groupName}(으)로 이체가 완료되었습니다.",
     "isDeprecated": false
   },
   {
@@ -8788,7 +8812,7 @@
     "key": "Label.AddFundsPrompt",
     "description": null,
     "english": "Transfer from {userName} to {groupName}",
-    "translation": "{userName}님으로부터 {groupName}(으)로 이체",
+    "translation": "{userName} 님으로부터 {groupName}(으)로 이체",
     "isDeprecated": false
   },
   {
