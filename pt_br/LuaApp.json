@@ -744,6 +744,30 @@
     }
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.AlreadyLinked",
+    "description": "The Roblox account the user wants to link to is already connected to a different\n",
+    "english": "This Roblox account is already linked to a different account on {platform}. Please try logging in with a different Roblox account.",
+    "translation": "Esta conta Roblox já está vinculada a uma conta diferente na {platform}. Tente fazer login com uma conta Roblox diferente.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "eli@roblox.com",
+      "updatedBy": "eli@roblox.com"
+    }
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.RelinkingFreeze",
+    "description": "The roblox account was linked to another console account. so there is a 90 days freeze to link to a different console account.\n",
+    "english": "This Roblox account has linked to another account on {platform} in the past 90 days. Please try logging in with a different Roblox account.",
+    "translation": "Esta conta Roblox foi vinculada a outra conta em {platform} nos últimos 90 dias. Tente entrar com uma conta Roblox diferente.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "eli@roblox.com",
+      "updatedBy": "eli@roblox.com"
+    }
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": "",
@@ -2097,6 +2121,18 @@
     "meta": {
       "createdBy": "eli@roblox.com",
       "updatedBy": "<TranslationProviderSynchronizer>"
+    }
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerificationLinkingText",
+    "description": "Text that we will show the user when they are signing on for a new account on console.\n\nplatform: the device network. for example, PlayStation™Network\n",
+    "english": "Your Roblox account will be linked to your account on {platform}. You can unlink from the Settings screen at any time. There may be a cool down before being able to link to another account on {platform}. By clicking Sign Up, you are agreeing to the Terms of Use including the arbitration clause and you are acknowledging the Privacy Policy.",
+    "translation": "Sua conta Roblox será vinculada à sua conta na {platform}. Você pode desvincular a partir das configurações a qualquer momento. Pode haver um período de espera antes de você poder vincular outra conta na {platform}. Ao clicar em Registrar, você concorda com os Termos de Uso, incluindo a cláusula de arbitragem e você está reconhecendo a Política de Privacidade.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "eli@roblox.com",
+      "updatedBy": "eli@roblox.com"
     }
   },
   {
@@ -7620,6 +7656,54 @@
     }
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOutTitle",
+    "description": "In-experience item deeplinking\n",
+    "english": "Item Sold Out",
+    "translation": "Item esgotado",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOut",
+    "description": "In-experience item deeplinking\n",
+    "english": "The original copy is sold out in experience, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "A cópia original está esgotada na experiência, você ainda gostaria de entrar em [{EXPERIENCE_NAME}]?",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReachedTitle",
+    "description": "In-experience item deeplinking\n",
+    "english": "Purchase Limit Reached",
+    "translation": "Limite de compra alcançado",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReached",
+    "description": "In-experience item deeplinking\n",
+    "english": "You reached the purchase limit that creator set for this item. You will not able to acquire more, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "Você atingiu o limite de compra que o criador definiu para este item. Você não poderá comprar mais. Ainda gostaria de entrar em [{EXPERIENCE_NAME}]?",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": "",
@@ -12928,7 +13012,7 @@
     "key": "Response.NoExactSearchResults",
     "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".\n",
     "english": "No results found for <b>{query}</b>.",
-    "translation": "Nenhum resultado encontrado para <b>{query}</b>.\n",
+    "translation": "Nenhum resultado encontrado para <b>{query}</b>.",
     "isDeprecated": false,
     "meta": {
       "createdBy": "rpareek@roblox.com",
@@ -19334,50 +19418,38 @@
   {
     "namespace": "Studio.Toolbox",
     "key": "Announcement.Header_Default",
-    "description": "",
+    "description": null,
     "english": "Announcement",
     "translation": "Anúncio",
     "isDeprecated": false,
-    "meta": {
-      "createdBy": "jjuang@roblox.com",
-      "updatedBy": "<TranslationProviderSynchronizer>"
-    }
+    "meta": null
   },
   {
     "namespace": "Studio.Toolbox",
     "key": "AssetConfig.UGCForAllCreationBanned",
-    "description": "",
+    "description": null,
     "english": "Suspended from 3D Avatar Item Creation for {bannedDays} days. You will not be able to upload 3D Avatar UGC from Studio or put it on sale. Please abide by our",
     "translation": "Suspensão da criação de itens 3D de avatar por {bannedDays} dias. Você não poderá fazer o upload de CGU 3D para avatares a partir do Studio ou colocá-los à venda. Respeite nossa",
     "isDeprecated": false,
-    "meta": {
-      "createdBy": "rbais@roblox.com",
-      "updatedBy": "<TranslationProviderSynchronizer>"
-    }
+    "meta": null
   },
   {
     "namespace": "Studio.Toolbox",
     "key": "AssetConfig.UGCForAllCreationBannedLink",
-    "description": "",
+    "description": null,
     "english": "Marketplace Policy.",
     "translation": "Política do Mercado.",
     "isDeprecated": false,
-    "meta": {
-      "createdBy": "rbais@roblox.com",
-      "updatedBy": "rbais@roblox.com"
-    }
+    "meta": null
   },
   {
     "namespace": "Studio.Toolbox",
     "key": "AssetConfig.UGCForAllGeneralWarning",
-    "description": "",
+    "description": null,
     "english": "ID Verification is required to upload Avatar Assets. Premium 1000 or Premium 2200 is also required to upload to groups.",
     "translation": "A verificação de identidade é necessária para fazer upload de ativos de avatar. Premium 1000 ou Premium 2200 também é necessário para fazer upload para grupos.",
     "isDeprecated": false,
-    "meta": {
-      "createdBy": "rbais@roblox.com",
-      "updatedBy": "rbais@roblox.com"
-    }
+    "meta": null
   },
   {
     "namespace": "Feature.PremiumMigration",

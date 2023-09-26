@@ -732,6 +732,30 @@
     }
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.AlreadyLinked",
+    "description": "The Roblox account the user wants to link to is already connected to a different\n",
+    "english": "This Roblox account is already linked to a different account on {platform}. Please try logging in with a different Roblox account.",
+    "translation": "Questo account Roblox è già collegato a un altro account su {platform}. Prova ad accedere con un altro account Roblox.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "eli@roblox.com",
+      "updatedBy": "eli@roblox.com"
+    }
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.RelinkingFreeze",
+    "description": "The roblox account was linked to another console account. so there is a 90 days freeze to link to a different console account.\n",
+    "english": "This Roblox account has linked to another account on {platform} in the past 90 days. Please try logging in with a different Roblox account.",
+    "translation": "Questo account Roblox è collegato a un altro account su {platform} negli ultimi 90 giorni. Prova ad accedere con un altro account Roblox.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "eli@roblox.com",
+      "updatedBy": "eli@roblox.com"
+    }
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": "",
@@ -7548,6 +7572,54 @@
     }
   },
   {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOutTitle",
+    "description": "In-experience item deeplinking\n",
+    "english": "Item Sold Out",
+    "translation": "Articolo esaurito",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOut",
+    "description": "In-experience item deeplinking\n",
+    "english": "The original copy is sold out in experience, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "La copia originale è esaurita nell' esperienza, vuoi comunque entrare in [{EXPERIENCE_NAME}]?",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReachedTitle",
+    "description": "In-experience item deeplinking\n",
+    "english": "Purchase Limit Reached",
+    "translation": "Limite di acquisto raggiunto",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReached",
+    "description": "In-experience item deeplinking\n",
+    "english": "You reached the purchase limit that creator set for this item. You will not able to acquire more, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "Hai raggiunto il limite di acquisto impostato dal creatore per questo articolo. Non potrai acquistare di più, vuoi ancora entrare nel [{EXPERIENCE_NAME}]?",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rscott@roblox.com",
+      "updatedBy": "rscott@roblox.com"
+    }
+  },
+  {
     "namespace": "Feature.Chat",
     "key": "Response.Sending",
     "description": "",
@@ -12760,7 +12832,7 @@
     "key": "Example.SearchCatalog",
     "description": "",
     "english": "Search catalog",
-    "translation": "Cerca catalogo",
+    "translation": "Cerca nel catalogo",
     "isDeprecated": false,
     "meta": {
       "createdBy": "<Unknown>",
@@ -12801,6 +12873,18 @@
     "meta": {
       "createdBy": "sscarnecchia@roblox.com",
       "updatedBy": "sscarnecchia@roblox.com"
+    }
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.NoExactSearchResults",
+    "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".\n",
+    "english": "No results found for <b>{query}</b>.",
+    "translation": "Nessun risultato trovato per <b>{query}</b>.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rpareek@roblox.com",
+      "updatedBy": "rpareek@roblox.com"
     }
   },
   {
@@ -13072,7 +13156,7 @@
     "key": "NFriendsVisited",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".\n",
     "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
-    "translation": "{friendCount, plural, =0 {# friend}, uno {# friend}, altro {# friends}} visitato/i",
+    "translation": "{friendCount, plural, =0 {# amici visitati} =1 {# amici visitati} other {# amici visitati}}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "vsu@roblox.com",
@@ -13156,7 +13240,43 @@
     "key": "NFriendsVisitedUpperCase",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".\n",
     "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
-    "translation": "{friendCount, plural, =0 {# Friend}, uno {# Friend}, altro {# Friends}} Visitato/i",
+    "translation": "{friendCount, plural, =0 {# amici visitati} =1 {# amici visitati} other {# amici visitati}}",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedSentenceCase",
+    "description": "",
+    "english": "1 Friend visited",
+    "translation": "1 Amico visitato",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedSentenceCase",
+    "description": "friendCount will always be > 1\n",
+    "english": "{friendCount} Friends visited",
+    "translation": "{friendCount} Amici visitati",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedSentenceCase",
+    "description": "",
+    "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
+    "translation": "{friendCount, plural, =0 {Nessun amico ha visitato} =1 {# Amico visitato} other {# Amici visitati}}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "vsu@roblox.com",
@@ -19190,14 +19310,11 @@
   {
     "namespace": "Studio.Toolbox",
     "key": "Announcement.Header_Default",
-    "description": "",
+    "description": null,
     "english": "Announcement",
     "translation": "Annuncio",
     "isDeprecated": false,
-    "meta": {
-      "createdBy": "jjuang@roblox.com",
-      "updatedBy": "<TranslationProviderSynchronizer>"
-    }
+    "meta": null
   },
   {
     "namespace": "Feature.PremiumMigration",
@@ -31989,6 +32106,126 @@
     "meta": {
       "createdBy": "dgriffin@roblox.com",
       "updatedBy": "dgriffin@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.DeleteCaptureWarning",
+    "description": "Title of a modal informing the user that they are about to delete a Capture.\n",
+    "english": "Delete Capture",
+    "translation": "Elimina cattura",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.DeleteCaptureInfo",
+    "description": "Body of a modal informing the user that the Capture deletion will be irreversible.\n",
+    "english": "This will permanently delete the Capture.",
+    "translation": "Questo cancellerà permanentemente la cattura.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.DeleteCaptureWarningOptOut",
+    "description": "Text next to a checkbox that allows the user to opt out of seeing the delete Capture modal again.\n",
+    "english": "Do not show this again.",
+    "translation": "Non mostrarlo più.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.DeleteCaptureWarningCancel",
+    "description": "Text on button allowing the user to cancel out of the delete Capture modal without deleting the Capture.\n",
+    "english": "Cancel",
+    "translation": "Annulla",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.DeleteCaptureWarningConfirm",
+    "description": "Text on button allowing the user to confirm their intent to delete the Capture on the delete Capture warning modal.\n",
+    "english": "Delete",
+    "translation": "Elimina",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.AllowPhotoAccessInfo",
+    "description": "Title of modal prompting the user to allow the photo access permission.\n",
+    "english": "Allow Access to Photos",
+    "translation": "Consenti l'accesso alle foto",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Description.AllowPhotoAccessInfo",
+    "description": "Body of modal prompting the user to allow access to the user's photos.\n",
+    "english": "To save your captures, Roblox needs access to your device’s camera roll.",
+    "translation": "Per salvare le tue catture, Roblox ha bisogno di accedere al rullino della fotocamera del tuo dispositivo.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.AllowPhotoAccessDeclined",
+    "description": "Text on button allowing the user to decline allowing the photo access permission to Roblox.\n",
+    "english": "Not Now",
+    "translation": "Non ora",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.AllowPhotoAccessAccepted",
+    "description": "Text on button letting the user confirm their intent to allow Roblox to access their photos.\n",
+    "english": "Allow",
+    "translation": "Consenti",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.ViewCapture",
+    "description": "Button on a toast that allows the user to view the Capture that they just took.\n",
+    "english": "View",
+    "translation": "Osserva",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "skudtarkar@roblox.com",
+      "updatedBy": "skudtarkar@roblox.com"
     }
   },
   {

@@ -6640,7 +6640,7 @@
     "key": "Example.SearchCatalog",
     "description": "",
     "english": "Search catalog",
-    "translation": "Cerca catalogo",
+    "translation": "Cerca nel catalogo",
     "isDeprecated": false,
     "meta": {
       "createdBy": "<Unknown>",
@@ -6717,6 +6717,18 @@
     "meta": {
       "createdBy": "sscarnecchia@roblox.com",
       "updatedBy": "sscarnecchia@roblox.com"
+    }
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.NoExactSearchResults",
+    "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".\n",
+    "english": "No results found for <b>{query}</b>.",
+    "translation": "Nessun risultato trovato per <b>{query}</b>.",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "rpareek@roblox.com",
+      "updatedBy": "rpareek@roblox.com"
     }
   },
   {
@@ -6820,7 +6832,7 @@
     "key": "NFriendsVisited",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".\n",
     "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
-    "translation": "{friendCount, plural, =0 {# friend}, uno {# friend}, altro {# friends}} visitato/i",
+    "translation": "{friendCount, plural, =0 {# amici visitati} =1 {# amici visitati} other {# amici visitati}}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "vsu@roblox.com",
@@ -6904,7 +6916,43 @@
     "key": "NFriendsVisitedUpperCase",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".\n",
     "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
-    "translation": "{friendCount, plural, =0 {# Friend}, uno {# Friend}, altro {# Friends}} Visitato/i",
+    "translation": "{friendCount, plural, =0 {# amici visitati} =1 {# amici visitati} other {# amici visitati}}",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedSentenceCase",
+    "description": "",
+    "english": "1 Friend visited",
+    "translation": "1 Amico visitato",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedSentenceCase",
+    "description": "friendCount will always be > 1\n",
+    "english": "{friendCount} Friends visited",
+    "translation": "{friendCount} Amici visitati",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedSentenceCase",
+    "description": "",
+    "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
+    "translation": "{friendCount, plural, =0 {Nessun amico ha visitato} =1 {# Amico visitato} other {# Amici visitati}}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "vsu@roblox.com",

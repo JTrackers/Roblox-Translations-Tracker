@@ -3544,7 +3544,7 @@
     "key": "Description.UsernameReminderEmail.Body.V2",
     "description": "First part of the username reminder email. This text appears before a list of usernames associated with this email address.\n",
     "english": "{paragraphStart}Hello,{paragraphEnd}{paragraphStart}You have requested a reminder for the Roblox accounts associated with this email address. Your accounts are listed below:{paragraphEnd}",
-    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Kamu telah meminta pengingat untuk akun Roblox yang terkait dengan alamat email ini. Akun kamu terdaftar di bawah ini:{paragraphEnd}",
+    "translation": "{paragraphStart}Hai,{paragraphEnd}{paragraphStart}Kamu telah meminta pengingat untuk akun Roblox yang terkait dengan alamat email ini. Berikut ini daftar akunmu:{paragraphEnd}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "kday@roblox.com",
@@ -3568,7 +3568,7 @@
     "key": "Description.UsernameReminderEmail.Footer.V2",
     "description": "Footer text displayed at the bottom of the username reminder email.\n",
     "english": "You are receiving this email because there has been a request to recover Roblox usernames associated with this email address. If you did not make this request, do not reply to this email directly. Please contact {aTagStartWithHref}{supportPageLink}{hrefEnd}Roblox Support{aTagEnd} and change your password immediately",
-    "translation": "Kamu menerima email ini karena ada permintaan untuk memulihkan nama pengguna Roblox yang terkait dengan alamat email ini. Jika kamu tidak membuat permintaan ini, jangan balas email ini secara langsung. Hubungi {aTagStartWithHref}{supportPageLink}{hrefEnd}Dukungan Pelanggan{aTagEnd} lalu segera ubah kata sandi kamu",
+    "translation": "Kamu menerima email ini karena ada permintaan untuk memulihkan nama pengguna Roblox yang terkait dengan alamat email ini. Jika kamu tidak membuat permintaan ini, jangan balas email ini, tetapi hubungi {aTagStartWithHref}{supportPageLink}{hrefEnd}Dukungan Pelanggan{aTagEnd} lalu segera ubah kata sandi kamu",
     "isDeprecated": false,
     "meta": {
       "createdBy": "kday@roblox.com",
@@ -45745,6 +45745,18 @@
   },
   {
     "namespace": "Feature.Home",
+    "key": "NFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".\n",
+    "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
+    "translation": "{friendCount, plural, =0 {# teman mengunjungi} =1 {# teman mengunjungi} other {# teman mengunjungi}}",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
     "key": "SingularFriendVisited",
     "description": "1 single friend visited an experience\n",
     "english": "1 friend visited",
@@ -45809,6 +45821,54 @@
     "description": "1 single friend visited an experience\n",
     "english": "1 Friend Visited",
     "translation": "1 Teman Mengunjungi",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedUpperCase",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".\n",
+    "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
+    "translation": "{friendCount, plural, =0 {# Teman Mengunjungi} =1 {# Teman Mengunjungi} other {# Teman Mengunjungi}}",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedSentenceCase",
+    "description": "",
+    "english": "1 Friend visited",
+    "translation": "1 Teman mengunjungi",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedSentenceCase",
+    "description": "friendCount will always be > 1\n",
+    "english": "{friendCount} Friends visited",
+    "translation": "{friendCount} Teman mengunjungi",
+    "isDeprecated": false,
+    "meta": {
+      "createdBy": "vsu@roblox.com",
+      "updatedBy": "vsu@roblox.com"
+    }
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedSentenceCase",
+    "description": "",
+    "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
+    "translation": "{friendCount, plural, =0 {Tidak ada teman mengunjungi} =1 {# Teman mengunjungi} other {# Teman mengunjungi}}",
     "isDeprecated": false,
     "meta": {
       "createdBy": "vsu@roblox.com",
@@ -80164,7 +80224,7 @@
     "key": "Description.RobuxStipendBenefit",
     "description": "Description explaining subscription will grant a certain amount of robux on a specific frequency\n",
     "english": "Monthly income of {robuxIcon}{robuxAmount}.",
-    "translation": "Pemasukan bulanan sebesar {robuxIcon}{robuxAmount}.",
+    "translation": "Pendapatan bulanan sebesar {robuxIcon}{robuxAmount}.",
     "isDeprecated": false,
     "meta": {
       "createdBy": "zwang@roblox.com",
@@ -80176,7 +80236,7 @@
     "key": "Description.SellCreationsBenefit",
     "description": "",
     "english": "Sell your creations to others in the Roblox Catalog.",
-    "translation": "Jual kreasi kamu ke orang lain di Katalog Roblox.",
+    "translation": "Menjual kreasimu ke orang lain di Katalog Roblox.",
     "isDeprecated": false,
     "meta": {
       "createdBy": "zwang@roblox.com",
@@ -80308,7 +80368,7 @@
     "key": "Description.CancelText1Part",
     "description": "",
     "english": "Canceling will end your subscription on {date}. Starting on that date, you will lose all Premium benefits:",
-    "translation": "Pembatalan akan mengakhiri langganan kamu pada {date}. Mulai tanggal tersebut, kamu akan kehilangan semua keuntungan Premium:",
+    "translation": "Pembatalan akan mengakhiri subscription kamu pada {date}. Mulai tanggal tersebut, kamu akan kehilangan semua keuntungan Premium:",
     "isDeprecated": false,
     "meta": {
       "createdBy": "spetrov@roblox.com",
@@ -80464,7 +80524,7 @@
     "key": "TextBox.Other",
     "description": "",
     "english": "Other (max 100 characters)",
-    "translation": "Lainnya (maks 100 karakter)",
+    "translation": "Lainnya (maks. 100 karakter)",
     "isDeprecated": false,
     "meta": {
       "createdBy": "spetrov@roblox.com",
@@ -113344,7 +113404,7 @@
     "key": "Description.MemoryStoresThrottling",
     "description": "{universeName}, {universeId} and {url} will be inserted on our end.\n",
     "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: More than 10% of Memory Store API requests are being throttled for the past hour.\n\nView a detailed breakdown here: {url}",
-    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Lebih dari 10% permintaan API Layanan Penyimpanan Memori mengalami pembatasan dalam satu jam terakhir.\n\nLihat detail di sini: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Lebih dari 10% permintaan API Penyimpanan Memori mengalami pembatasan dalam satu jam terakhir.\n\nLihat detail di sini: {url}",
     "isDeprecated": true,
     "meta": {
       "createdBy": "nchen@roblox.com",
@@ -113356,7 +113416,7 @@
     "key": "Description.MemoryStoreSizeThreshold",
     "description": "{universeName}, {universeId} and {url} will be inserted on our end.\n",
     "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size is above 90% of total quota for the past hour.\n\nView a detailed breakdown here: {url}",
-    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Ukuran memori telah melebihi 90% dari kuota total selama 1 jam terakhir.\n\nLihat detail di sini: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Ukuran memori telah melebihi 90% dari total kuota selama 1 jam terakhir.\n\nLihat detail di sini: {url}",
     "isDeprecated": true,
     "meta": {
       "createdBy": "nchen@roblox.com",
@@ -113368,7 +113428,7 @@
     "key": "Description.MemoryStoresSizeAboveThreshold",
     "description": "{universeName}, {universeId} and {url} will be inserted on our end.\n",
     "english": "Your Memory Stores Service usage for {universeName} (universe id: {universeId}) has reached the following threshold: Memory size quota has been reached for the past 5 minutes.\n\nView a detailed breakdown here: {url}",
-    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Kuota ukuran memori telah telah tercapai selama 5 menit terakhir.\n\nLihat detail di sini: {url}",
+    "translation": "Penggunaan Layanan Penyimpanan Memori kamu untuk {universeName} (ID universe: {universeId}) telah mencapai ambang batas berikut: Kuota ukuran memori telah tercapai selama 5 menit terakhir.\n\nLihat detail di sini: {url}",
     "isDeprecated": true,
     "meta": {
       "createdBy": "nchen@roblox.com",
