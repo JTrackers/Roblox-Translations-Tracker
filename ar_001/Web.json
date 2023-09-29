@@ -23024,6 +23024,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Item",
+    "key": "Label.ReportSuccess",
+    "description": null,
+    "english": "Report submitted and will be reviewed by our team shortly.",
+    "translation": "تم تقديم البلاغ وسيطّلع عليه فريقنا قريبًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Item",
+    "key": "Label.ReportFailure",
+    "description": null,
+    "english": "Your report couldn't be submitted. Please try again later.",
+    "translation": "تعذر إرسال بلاغك. الرجاء المحاولة مجددًا.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ItemModel",
     "key": "Label.NoDescriptionAvailable",
     "description": null,
@@ -30713,6 +30729,14 @@
   },
   {
     "namespace": "Feature.Home",
+    "key": "NFriendsVisited",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
+    "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
+    "translation": "{friendCount, plural, =0 {# لم يزرها أي من أصدقائك} =1 {# زارها صديق واحد} other {# زارها عدّة أصدقاء}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
     "key": "SingularFriendVisited",
     "description": "1 single friend visited an experience",
     "english": "1 friend visited",
@@ -30757,6 +30781,38 @@
     "description": "1 single friend visited an experience",
     "english": "1 Friend Visited",
     "translation": "زارها صديق واحد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedUpperCase",
+    "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
+    "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
+    "translation": "{friendCount, plural, =0 {# لم يزرها أي من أصدقائك} =1 {# زارا صديق واحد} other {# زارها عدة أصدقاء}}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "SingularFriendVisitedSentenceCase",
+    "description": null,
+    "english": "1 Friend visited",
+    "translation": "زارها صديق واحد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "PluralFriendsVisitedSentenceCase",
+    "description": "friendCount will always be > 1",
+    "english": "{friendCount} Friends visited",
+    "translation": "زارها {friendCount} (صديق)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Home",
+    "key": "NFriendsVisitedSentenceCase",
+    "description": null,
+    "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
+    "translation": "{friendCount, plural, =0 {لم يزرها أيّ من أصدقائك} =1 {# زارها صديق واحد} other {# زارها عدة أصدقاء}}",
     "isDeprecated": false
   },
   {
@@ -53976,6 +54032,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.CancelSubscription",
+    "key": "CancelText7Part",
+    "description": null,
+    "english": "- Ability to sell and earn from your avatar creations on Marketplace",
+    "translation": "- المقدرة على البيع والاكتساب من تصاميمك للأفاتار على المتجر",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PromoCodes",
     "key": "Heading.RedeemRobloxPromotions",
     "description": null,
@@ -68452,7 +68516,7 @@
     "key": "Description.MemoryStoreMemorySizeAboveQuotaBody",
     "description": "Please translate the following text minus whatever is in { } and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The Memory Size quota has been reached within the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
     "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size quota has been reached within the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >View Dashboard</a></div>",
-    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeId}) وصلت لمرحلة حرجة.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span>بلغ حجم الذاكرة الحصة المخصصة خلال الدقائق الخمس الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>الرجاء زيارة \"مركز تخزين الذاكرة\" لعرض لعرض معلومات فشل الطلبات. لمعرفة المزيد حول تحذيرات تخزين الذاكرة وكيفية معالجتها، الرجاء الاطلاع على مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >عرض لوحة التحكم</a></div>",
+    "translation": "<div>وصلت خدمة سعة تخزين الذاكرة لـ {universeName}(universeId: {universeId}) لمستوى حرج. </div><br><p style=\"text-align:left;\"><b> المستوى:</b><span>وصلت للحد الأقصى من الحصة المخصصة لتخزين الذاكرة خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>الرجاء زيارة مركز التحكم بتخزين الذاكرة للاطلاع على معلومات فشل الطلبات. لمعرفة المزيد حول تنبيهات تخزين الذاكرة واستكشاف الأخطاء وإصلاحها، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >عرض مركز التحكم</a></div>",
     "isDeprecated": false
   },
   {
@@ -68468,7 +68532,7 @@
     "key": "Description.MemoryStoreMemorySizeApproachingQuotaBody",
     "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues\n2. Threshold:\n3. The Memory Size has exceeded 70% of the total quota within the past hour.\n4. Start Time:\n5. Severity:\n6. Warning\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
     "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has encountered issues.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The Memory Size has exceeded 70% of the total quota within the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#FFFF00 !important;\"> Warning</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">View Dashboard</a></div>",
-    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeId}) تعاني من بعض الاضطرابات.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span>تعدى حجم تخزين الذاكرة 70% من الحصة المخصصة خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#FFFF00 !important;\">تحذير</span></p><div>الرجاء زيارة \"مركز تخزين الذاكرة\" لعرض لعرض معلومات فشل الطلبات. لمعرفة المزيد حول تحذيرات تخزين الذاكرة وكيفية معالجتها، الرجاء الاطلاع على مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">عرض لوحة التحكّم</a></div>",
+    "translation": "<div>تعاني خدمة تخزين الذاكرة لـ{universeName} (universeId: {universeId}) من بعض المشاكل.</div><br><p style=\"text-align:left;\"><b>المستوى:</b><span>وصل حجم تخزين الذاكرة 70% من الحصة المخصصة خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\">{startTime}</a></p><p><b>مستوى درجة الأهمية: </b><span style=\"text-align:left;color:#FFFF00 !important;\">تحذير</span></p><div>الرجاء زيارة مركز التحكم بتخزين الذاكرة للاطلاع على معلومات فشل الطلبات. لمعرفة المزيد حول تنبيهات تخزين الذاكرة واستكشاف الأخطاء وإصلاحها، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">عرض مركز التحكم</a></div>",
     "isDeprecated": false
   },
   {
@@ -68484,7 +68548,7 @@
     "key": "Description.MemoryStoreThrottlingOverThresholdBody",
     "description": "Please translate the following text minus whatever is in the { } placeholders and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.\n2. Threshold:\n3. Over 10% of Memory Store API requests have been experiencing throttling for the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
     "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeid}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> Over 10% of Memory Store API requests have been experiencing throttling for the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">View Dashboard</a></div>",
-    "translation": "<div>خدمة تخزين الذاكرة لـ {universeName} (universeId: {universeid}) وصلت لمرحلة حرجة.</div><br><p style=\"text-align:left;\"><b> المستوى:</b><span>تم تقييد أكثر من 10% من طلبات API لتخزين الذاكرة خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>الرجاء زيارة \"مركز تخزين الذاكرة\" لعرض لعرض معلومات فشل الطلبات. لمعرفة المزيد حول تحذيرات تخزين الذاكرة وكيفية معالجتها، الرجاء الاطلاع على مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability </a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">عرض لوحة التحكم</a></div>",
+    "translation": "<div>وصلت خدمة سعة تخزين الذاكرة لـ {universeName} (universeId: {universeid}) لمستوى حرج. </div><br><p style=\"text-align:left;\"><b>المستوى:</b><span>أكثر من 10% من طلبات API عانت اختناقًا خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\"> حرج.</span></p><div>الرجاء زيارة مركز التحكم بتخزين الذاكرة للاطلاع على معلومات فشل الطلبات. لمعرفة المزيد حول تنبيهات تخزين الذاكرة واستكشاف الأخطاء وإصلاحها، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\">عرض مركز التحكم</a></div>",
     "isDeprecated": false
   },
   {
@@ -68500,7 +68564,7 @@
     "key": "Description.MemoryStoreErrorRateAboveThreshold",
     "description": "Please translate the following text minus whatever is in {placeholders} and keep all other text the same, including the whitespaces.\n\n1. Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.\n2. Threshold:\n3. The number of Memory Store request failures has exceeded 20% for the past hour.\n4. Start Time:\n5. Severity:\n6. Critical\n7. Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the \n8. Memory Store Observability documentation.\n9. View Dashboard",
     "english": "<div>Your Memory Store Service for {universeName} (universeId: {universeId}) has reached a critical threshold.</div><br><p style=\"text-align:left;\"><b>Threshold:</b><span> The number of Memory Store request failures has exceeded 20% for the past hour.</span></p><p style=\"text-align:left;\"><b>Start Time:</b> <a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\"> {startTime}</a></p><p><b>Severity:</b><span style=\"text-align:left;color:#D0342C !important;\"> Critical</span></p><div>Visit the Memory Store Dashboard to view request failure information. To learn more about Memory Stores alerts and troubleshooting, please refer to the <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\"> Memory Store Observability documentation.</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >View Dashboard</a></div>",
-    "translation": "<div>خدمة تخزين الذاكرة بـ {universeName} (universeId: {universeId}) وصلت لمرحلة حرجة.</div><br><p style=\"text-align:left;\"><b>المستوى</b><span>عدد طلبات تخزين الذاكرة تعدى 20% خلال الدقائق العشر الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?msg=IPSC+2018&iso={formattedStartTime}&ah=5\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>الرجاء زيارة \"مركز تخزين الذاكرة\" لعرض لعرض معلومات فشل الطلبات. لمعرفة المزيد حول تحذيرات تخزين الذاكرة وكيفية معالجتها، الرجاء الاطلاع على مستندات<a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >عرض لوحة التحكّم</a></div>",
+    "translation": "<div>وصلت سعة تخزين الذاكرة لـ {universeName}(universeId: {universeId}) لمستوى حرج. </div><br><p style=\"text-align:left;\"><b> المستوى:</b><span>تعدى عدد الطلبات الفاشلة لتخزين الذاكرة 20% خلال الساعة الماضية.</span></p><p style=\"text-align:left;\"><b>وقت البدء:</b><a href=\"https://www.timeanddate.com/worldclock/fixedtime.html?iso={formattedStartTime}\">{startTime}</a></p><p><b>مستوى درجة الأهمية:</b><span style=\"text-align:left;color:#D0342C !important;\">حرج</span></p><div>الرجاء زيارة مركز التحكم بتخزين الذاكرة للاطلاع على معلومات فشل الطلبات. لمعرفة المزيد حول تنبيهات تخزين الذاكرة واستكشاف الأخطاء وإصلاحها، يرجى الرجوع إلى مستندات <a href=\"https://create.roblox.com/docs/cloud-services/memory-stores/observability\">Memory Store Observability</a></div><br><br><div style=\"padding-top: 8px; padding-bottom: 8px\"><a style=\"color: #171717 !important; background-image: linear-gradient(#2BB1FF,#2BB1FF); background-blend-mode:difference; border-radius: 4px; cursor: pointer; border-style: none; padding-bottom: 8px; padding-top: 8px; padding-left: 24px; padding-right: 24px; font-size: 16px; outline-style: none; outline-width: 0px; text-decoration: none;\" clicktracking=off href=\"https://create.roblox.com/dashboard/creations/experiences/{universeId}/analytics/memory-stores?rangeType=Custom&minTime={minTime}&maxTime={maxTime}&showAlerts=true\" >عرض مركز التحكم</a></div>",
     "isDeprecated": false
   },
   {
@@ -70373,6 +70437,542 @@
     "description": null,
     "english": "Test",
     "translation": "Test",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title",
+    "description": null,
+    "english": "Illegal Content Report Form",
+    "translation": "نموذج التبليغ عن محتوى غير قانوني",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Content",
+    "description": null,
+    "english": "Report Illegal Content",
+    "translation": "الإبلاغ عن محتوى غير قانوني",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Contact",
+    "description": null,
+    "english": "Contact Information",
+    "translation": "معلومات الاتصال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Modal.ReportSuccess",
+    "description": null,
+    "english": "Report Received",
+    "translation": "تم استلام البلاغ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Modal.ReportFailure",
+    "description": null,
+    "english": "Report Failure",
+    "translation": "تعذر إرسال البلاغ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Modal.MetadataError",
+    "description": null,
+    "english": "Metadata Retrieval Error",
+    "translation": "تعذر استرجاع البيانات الوصفية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Title.Modal.Ip",
+    "description": null,
+    "english": "IP Infringement",
+    "translation": "انتهاك للملكية الفكرية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.DsaDescription1",
+    "description": null,
+    "english": "The Digital Services Act (DSA) is an EU law that requires online platforms like Roblox to implement tools that allow reporting of content that may be illegal.",
+    "translation": "قانون الخدمات الرقمية (DSA) هو أحد قوانين الاتحاد الأوروبي الذي يتطلب من المنصات عبر الإنترنت مثل Roblox إنشاء الأدوات التي تسمح بالإبلاغ عن المحتوى الذي قد يكون غير قانوني.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.DsaDescription2",
+    "description": null,
+    "english": "To file an illegal content report, please include as much detail as possible in the form below. The information you provide will help us identify the content you’re reporting and determine whether the content violates our Community Standards or is otherwise illegal under the law of an EU member state. If your report does not include sufficient information, we may not be able to take action.",
+    "translation": "لتقديم بلاغ عن محتوى غير قانوني، يرجى إدراج أكبر قدر ممكن من التفاصيل في النموذج التالي. ستساعدنا المعلومات التي تقدمها على تحديد المحتوى الذي تقوم بالإبلاغ عنه وتحديد ما إذا كان المحتوى ينتهك معايير مجتمعنا أم أنه غير قانوني بموجب قانون دولة عضو في الاتحاد الأوروبي. إذا لم يتضمن تقريرك معلومات كافية، فقد لا نتمكن من اتخاذ أي إجراءات.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.DsaDescription3",
+    "description": null,
+    "english": "Once you submit your report, provided that you submit valid contact information, you will receive a confirmation email, an update on the outcome of your report, and, as applicable, the opportunity to appeal our decision.",
+    "translation": "بمجرد إرسال بلاغك، شريطة أن ترسل معلومات اتصال صالحة، سوف تتلقى رسالة تأكيد بالبريد الإلكتروني ومعلومات لاحقة عن نتائج تقريرك وكذلك ستحصل على عن فرصة للطعن في قرارنا حسب الاقتضاء.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.Modal.ReportSuccess",
+    "description": null,
+    "english": "Thank you for submitting a report. If you provided us with your contact information, please check your email for a confirmation message.",
+    "translation": "نشكرك على تقديم البلاغ. إذا زودتنا بمعلومات الاتصال الخاصة بك صحيحة، يرجى التحقق من بريدك الإلكتروني لمعاينة رسالة التأكيد.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.Modal.Error",
+    "description": null,
+    "english": "Something went wrong, please try again later.",
+    "translation": "حدث خطأ ما، الرجاء المحاولة مرة أخرى لاحقًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.Modal.Ip",
+    "description": null,
+    "english": "To submit an IP Infringement Report please go to the Support From",
+    "translation": "لتقديم بلاغ عن انتهاك للملكية الفكرية، يرجى الانتقال إلى نموذج الدعم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Action.Modal.Close",
+    "description": null,
+    "english": "Close",
+    "translation": "إغلاق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Action.Modal.GoSupportForm",
+    "description": null,
+    "english": "Go To Support Form",
+    "translation": "الانتقال إلى نموذج الدعم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Action.Modal.SubmitAnother",
+    "description": null,
+    "english": "Click here to submit another report",
+    "translation": "انقر هنا لتقديم بلاغ آخر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Action.Modal.Ok",
+    "description": null,
+    "english": "OK",
+    "translation": "حسنًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Action.Submit",
+    "description": null,
+    "english": "Submit",
+    "translation": "إرسال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Question.WhyIllegal",
+    "description": null,
+    "english": "Why are you reporting this content as illegal?*",
+    "translation": "لماذا تقوم بالإبلاغ عن هذا المحتوى باعتباره غير قانوني؟*",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Question.Url",
+    "description": null,
+    "english": "URL of the content you are reporting*",
+    "translation": "عنوان URL للمحتوى الذي تقوم بالإبلاغ عنه*",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Question.Title",
+    "description": null,
+    "english": "Why do you believe that the identified content is illegal?*",
+    "translation": "لماذا تعتقد أن المحتوى المحدد غير قانوني؟*",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Question.Country",
+    "description": null,
+    "english": "What country's law do you think this content violates?*",
+    "translation": "ما هو قانون البلد الذي تعتقد أن هذا المحتوى ينتهكه؟ *",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.UrlSample",
+    "description": null,
+    "english": "Sample Roblox Url",
+    "translation": "نموذج عن رابط URL لشركة Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.UrlError",
+    "description": null,
+    "english": "Please enter properly formatted URL",
+    "translation": "الرجاء إدخال عنوان URL منسق بشكل صحيح",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.CharMax",
+    "description": null,
+    "english": "characters maximum",
+    "translation": "الحد الأقصى للأحرف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.EmailError",
+    "description": null,
+    "english": "Please enter a properly formatted email address",
+    "translation": "الرجاء إدخال عنوان بريد إلكتروني منسق بشكل صحيح",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.Confirm",
+    "description": null,
+    "english": "By checking this box, you confirm that the information you’ve provided is accurate and complete to the best of your knowledge.*",
+    "translation": "من خلال تحديد هذا المربع، فإنك تؤكد أن المعلومات التي قدمتها دقيقة وكاملة على حدّ علمك.*",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Name",
+    "description": null,
+    "english": "Name",
+    "translation": "الاسم",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Email",
+    "description": null,
+    "english": "Email",
+    "translation": "البريد الإلكتروني",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Optional",
+    "description": null,
+    "english": "(optional)",
+    "translation": "(اختياري)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.CHILD_SEXUAL_EXPLOITATION",
+    "description": null,
+    "english": "Child Sexual Exploitation",
+    "translation": "الاستغلال الجنسي للأطفال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.TERRORISM_AND_VIOLENT_EXTREMISM",
+    "description": null,
+    "english": "Terrorism & Violent Extremism",
+    "translation": "الإرهاب والتطرف العنيف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.THREATS_OF_VIOLENCE",
+    "description": null,
+    "english": "Threats of Violence",
+    "translation": "تهديدات العنف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.HATE_SPEECH",
+    "description": null,
+    "english": "Hate Speech",
+    "translation": "خطاب الكراهية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.SCAMS",
+    "description": null,
+    "english": "Scams",
+    "translation": "غش واستغلال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.ILLEGAL_GOODS_AND_ACTIVITIES",
+    "description": null,
+    "english": "Illegal Goods and Activities",
+    "translation": "سلع وأنشطة غير مشروعة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.IP_INFRINGEMENT",
+    "description": null,
+    "english": "IP Infringement",
+    "translation": "انتهاك للملكية الفكرية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.IllegalType.OTHER",
+    "description": null,
+    "english": "Other",
+    "translation": "شيء آخر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Contry.DEFAULT",
+    "description": null,
+    "english": "Select a country",
+    "translation": "حدد البلد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Austria",
+    "description": null,
+    "english": "Austria",
+    "translation": "النمسا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Belgium",
+    "description": null,
+    "english": "Belgium",
+    "translation": "بلجيكا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Bulgaria",
+    "description": null,
+    "english": "Bulgaria",
+    "translation": "بلغاريا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Croatia",
+    "description": null,
+    "english": "Croatia",
+    "translation": "كرواتيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Cyprus",
+    "description": null,
+    "english": "Cyprus",
+    "translation": "قبرص",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Czechia",
+    "description": null,
+    "english": "Czechia",
+    "translation": "التشيك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Denmark",
+    "description": null,
+    "english": "Denmark",
+    "translation": "الدنمارك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Estonia",
+    "description": null,
+    "english": "Estonia",
+    "translation": "إستونيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Finland",
+    "description": null,
+    "english": "Finland",
+    "translation": "فنلندا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.France",
+    "description": null,
+    "english": "France",
+    "translation": "فرنسا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Germany",
+    "description": null,
+    "english": "Germany",
+    "translation": "ألمانيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Greece",
+    "description": null,
+    "english": "Greece",
+    "translation": "اليونان",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Hungary",
+    "description": null,
+    "english": "Hungary",
+    "translation": "هنغاريا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Ireland",
+    "description": null,
+    "english": "Ireland",
+    "translation": "أيرلندا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Italy",
+    "description": null,
+    "english": "Italy",
+    "translation": "إيطاليا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Latvia",
+    "description": null,
+    "english": "Latvia",
+    "translation": "لاتفيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Lithuania",
+    "description": null,
+    "english": "Lithuania",
+    "translation": "ليتوانيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Luxembourg",
+    "description": null,
+    "english": "Luxembourg",
+    "translation": "لوكسمبورغ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Malta",
+    "description": null,
+    "english": "Malta",
+    "translation": "مالطا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Netherlands",
+    "description": null,
+    "english": "Netherlands",
+    "translation": "هولندا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Poland",
+    "description": null,
+    "english": "Poland",
+    "translation": "بولندا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Portugal",
+    "description": null,
+    "english": "Portugal",
+    "translation": "البرتغال",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Romania",
+    "description": null,
+    "english": "Romania",
+    "translation": "رومانيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Slovakia",
+    "description": null,
+    "english": "Slovakia",
+    "translation": "سلوفاكيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Slovenia",
+    "description": null,
+    "english": "Slovenia",
+    "translation": "سلوفينيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Spain",
+    "description": null,
+    "english": "Spain",
+    "translation": "إسبانيا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Label.Country.Sweden",
+    "description": null,
+    "english": "Sweden",
+    "translation": "السويد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DSAIllegalContentReportForm",
+    "key": "Message.DescriptionLimit",
+    "description": "Text Limit of Description. Ex: 1000 characters maximum",
+    "english": "{number} characters maximum",
+    "translation": "الحد الأقصى للأحرف {number}",
     "isDeprecated": false
   }
 ]
