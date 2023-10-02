@@ -300,7 +300,7 @@
     "key": "Message.RetakeScene",
     "description": "Shown to the user when they are asked to confirm if they would like to \"Retake Scene\" i.e. capture another screenshot for their Abuse Report.",
     "english": "Help us understand what’s happening around you. We’ll capture the scene the moment you select “Report.”",
-    "translation": "Etrafında olup biteni anlamamıza yardımcı ol. “Bildir\" butonuna tıkladığın anda ekran görüntüsü alacağız.",
+    "translation": "Etrafında olup biteni anlamamıza yardımcı ol. \"Bildir\" butonuna tıkladığın anda ekran görüntüsü alacağız.",
     "isDeprecated": false
   },
   {
@@ -308,7 +308,7 @@
     "key": "Action.BackToExperience",
     "description": "This action causes the user to leave the Report Abuse form and return to the game/experience.",
     "english": "Back To Experience",
-    "translation": "Deneyime Geri Dön",
+    "translation": "Deneyime Dön",
     "isDeprecated": false
   },
   {
@@ -348,7 +348,7 @@
     "key": "Message.ProblemNotInScene",
     "description": "Message shown to user below the screenshot captured just before they entered the Report Abuse form. The quoted \"Retake\" is referring to a button with that label which, when clicked/tapped, will take the user out of the Abuse Report form, and back into the game, allowing them to capture another screenshot by restarting the report process.",
     "english": "If the problem is not in this scene, you can “Retake” the screenshot.",
-    "translation": "Sorun bu görüntüde mevcut değilse ekran görüntüsünü “Yeniden Çekebilirsin”.",
+    "translation": "Sorun bu görüntüde mevcut değilse ekran görüntüsünü \"Yeniden Çekebilirsin\".",
     "isDeprecated": false
   },
   {
@@ -365,6 +365,78 @@
     "description": "This action advances the user from the screenshot preview page of the Abuse Report form, to the page where they can annotate/highlight the screenshot to indicate where/who is abusive.",
     "english": "Highlight Scene",
     "translation": "Ekran Görüntüsünü Vurgula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "Title.ReportNotification",
+    "description": null,
+    "english": "Report Notification",
+    "translation": "Bildirimi Raporla",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Bullying",
+    "description": null,
+    "english": "Bullying",
+    "translation": "Zorbalık",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.CheatingAndExploiting",
+    "description": null,
+    "english": "Cheating/Exploiting",
+    "translation": "Hile/İstismar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Dating",
+    "description": null,
+    "english": "Dating",
+    "translation": "Flört Etme",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.DirectingOffPlatform",
+    "description": null,
+    "english": "Offsite Links",
+    "translation": "Site Dışı Bağlantılar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Other",
+    "description": null,
+    "english": "Other",
+    "translation": "Diğer",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.AskingPII",
+    "description": null,
+    "english": "Personal Question",
+    "translation": "Kişisel Soru",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Scamming",
+    "description": null,
+    "english": "Scamming",
+    "translation": "Dolandırıcılık",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.NotificationStream",
+    "key": "AbuseReason.Profanity",
+    "description": null,
+    "english": "Swearing",
+    "translation": "Küfür",
     "isDeprecated": false
   },
   {
@@ -1452,7 +1524,7 @@
     "key": "PurchaseDetails.InvalidBuildersClub",
     "description": "DEPRECATED - Additional detail text displayed when a player's Builders Club membership is insufficient to make a purchase. As of now, this string will actually have to correctly match up with ConfirmPurchase.UpgradeBuildersClub to avoid confusion. Would be nice to avoid that constraint, or bake it in somehow.",
     "english": "This item requires {BC_LEVEL}. Click 'Upgrade' to upgrade your Builders Club!",
-    "translation": "Bu öğe için {BC_LEVEL}. seviye gerekli. Yaratıcılar Kulübünü yükseltmek için \"Yükselt\" butonuna tıkla!",
+    "translation": "Bu öğe için {BC_LEVEL}. seviye gerekli. Yaratıcılar Kulübü'nü yükseltmek için \"Yükselt\" butonuna tıkla!",
     "isDeprecated": true
   },
   {
@@ -1548,7 +1620,7 @@
     "key": "PurchaseFailed.CannotGetItemPrice",
     "description": "Description text displayed in the case of an error retrieving the product, generally something wrong with the network.",
     "english": "We couldn't retrieve the price of the item at this time. Your account has not been charged. Please try again later.",
-    "translation": "Şu anda ürünün fiyatına erişemedik. Hesabından ücret alınmadı. Lütfen daha sonra tekrar dene.",
+    "translation": "Şu anda öğenin fiyatına erişemedik. Hesabından ücret alınmadı. Lütfen daha sonra tekrar dene.",
     "isDeprecated": false
   },
   {
@@ -1580,7 +1652,7 @@
     "key": "PurchaseFailed.ThirdPartyDisabled",
     "description": "Description text displayed when player is prompted to make a purchase that is not allowed because of third party purchase restrictions applied to the Place in question.",
     "english": "Third-party item sales have been disabled for this place. Your account has not been charged.",
-    "translation": "Bu dünya için üçüncü taraf ürün öğe satışları devre dışı bırakıldı. Hesabından ücret alınmadı.",
+    "translation": "Bu dünya için üçüncü taraf öğe satışları devre dışı bırakıldı. Hesabından ücret alınmadı.",
     "isDeprecated": false
   },
   {
@@ -1916,7 +1988,7 @@
     "key": "Action.ReturnToExperience",
     "description": null,
     "english": "Return to Experience",
-    "translation": "Deneyime Geri Dön",
+    "translation": "Deneyime Dön",
     "isDeprecated": false
   },
   {
@@ -2174,6 +2246,70 @@
     "english": "Close",
     "translation": "Kapat",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.VoiceChatUpsell",
+    "description": null,
+    "english": "This experience supports spatial voice chat. To use this feature, you need to verify you are at least 13 years old.",
+    "translation": "Bu deneyim, uzamsal sesli sohbeti destekler. Bu özelliği kullanabilmek için en az 13 yaşında olduğunu doğrulaman gerekiyor.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Action.SkipVoiceChat",
+    "description": null,
+    "english": "Join Without Voice Chat",
+    "translation": "Sesli Sohbet Olmadan Katıl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.DontShowAgain",
+    "description": null,
+    "english": "Don't Show Again",
+    "translation": "Tekrar Gösterme",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.EnableVoiceChat",
+    "description": "Heading of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Enable Voice Chat",
+    "translation": "Sesli Sohbeti Etkinleştir",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.UsesVoiceChat",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "This experience uses voice chat. Enabling voice chat will use your microphone input in voice enabled experiences.",
+    "translation": "Bu deneyimde sesli sohbet kullanılır. Sesli sohbeti etkinleştirmek, sesin etkin olduğu deneyimlerde mikrofon girişini kullanır.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.ToggleInstruction",
+    "description": "Subtext of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "You can also toggle this feature on or off by accessing your Settings.",
+    "translation": "Bu özelliği Ayarlarına erişerek de açabilir veya kapatabilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.JoinWithout",
+    "description": "Text on a button of a modal that asks a user if they want to opt into voice chat after verifying their age",
+    "english": "Join Without Voice Chat",
+    "translation": "Sesli Sohbet Olmadan Katıl",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.LearnMoreAboutVoiceRecording",
+    "description": "exact same as Label.LearnMoreAboutVoiceRecording in Feature.AccountSettings",
+    "english": "Learn More about Voice Recording",
+    "translation": "Ses Kaydı Hakkında Daha Fazla Bilgi Edin",
+    "isDeprecated": false
   },
   {
     "namespace": "IAPExperience.Deprecated",
@@ -2468,7 +2604,7 @@
     "key": "Text.YouNeed",
     "description": null,
     "english": "You need additional {robux}. Please purchase more Robux Packages then come back to the experience.",
-    "translation": "Daha fazla {robux}'a ihtiyacın var. Lütfen daha fazla Robux Paketi satın alıp deneyime geri dön.",
+    "translation": "Daha fazla {robux}'a ihtiyacın var. Lütfen daha fazla Robux Paketi satın alıp deneyime dön.",
     "isDeprecated": false
   },
   {
@@ -2542,6 +2678,22 @@
     "english": "Set Up",
     "translation": "Ayarla",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.ToastNotifications",
+    "key": "Label.LeaveExperienceConfirmation",
+    "description": null,
+    "english": "Are you sure you want to leave and join another experience?",
+    "translation": "Bu deneyimden ayrılıp başka bir deneyime katılmak istediğine emin misin?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.ToastNotifications",
+    "key": "Title.LeavingExperience",
+    "description": null,
+    "english": "Leaving Experience",
+    "translation": "Deneyimden Ayrılıyorsun",
+    "isDeprecated": false
   },
   {
     "namespace": "Feature.ForceTwoStepVerification",
