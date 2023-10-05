@@ -496,6 +496,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.AlreadyLinked",
+    "description": "The Roblox account the user wants to link to is already connected to a different",
+    "english": "This Roblox account is already linked to a different account on {platform}. Please try logging in with a different Roblox account.",
+    "translation": "Dieses Roblox-Konto ist bereits mit einem anderen Konto auf {platform} verknüpft. Bitte versuche dich mit einem anderen Roblox-Konto anzumelden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.RelinkingFreeze",
+    "description": "The roblox account was linked to another console account. so there is a 90 days freeze to link to a different console account.",
+    "english": "This Roblox account has linked to another account on {platform} in the past 90 days. Please try logging in with a different Roblox account.",
+    "translation": "Dieses Roblox-Konto wurde in den letzten 90 Tagen bereits mit einem anderen Konto auf {platform} verknüpft. Bitte versuche dich mit einem anderen Roblox-Konto anzumelden.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -1405,6 +1421,14 @@
     "description": "Text that we will show the user when they are signing on for a new account on console.\n\nplatform: the device network. for example, PlayStation™Network",
     "english": "Your Roblox account will be linked to your account on {platform}. You can unlink from the Settings screen at any time. There may be a cool down before being able to link to another account on {platform}. By clicking Sign Up, you are agreeing to the Terms of Use including the arbitration clause and you are acknowledging the Privacy Policy.",
     "translation": "Dein Roblox-Konto wird mit deinem Konto auf {platform} verknüpft. Du kannst die Verknüpfung jederzeit in den Einstellungen aufheben. Es kann eine Cooling-off-Phase eintreten, bevor du dich mit einem anderen Konto auf {platform} verbinden kannst. Durch das Anklicken von Registrieren erklärst du dich mit den Nutzungsbedingungen einschließlich der Schiedsklausel einverstanden und erkennst die Datenschutzrichtlinie an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.PasswordPlaceholderLong",
+    "description": "Long version of the placeholder text that goes into the password field",
+    "english": "Enter your password: At least 8 characters",
+    "translation": "Gib dein Passwort ein: mindestens 8 Zeichen",
     "isDeprecated": false
   },
   {
@@ -2956,7 +2980,79 @@
     "key": "Heading.TrustedDevice",
     "description": null,
     "english": "Do You Own This Device?",
-    "translation": "Vertraust du diesem Gerät?",
+    "translation": "Besitzt du dieses Gerät?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ManageYourPasskeys",
+    "description": null,
+    "english": "Manage Your Passkeys",
+    "translation": "Passkeys verwalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.AddPasskey",
+    "description": null,
+    "english": "Add Passkey",
+    "translation": "Passkey hinzufügen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Action.ManageAddSecurityKey",
+    "description": null,
+    "english": "Add Security Key",
+    "translation": "Sicherheitsschlüssel hinzufügen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.ManageYourSecurityKeys",
+    "description": null,
+    "english": "Manage Your Security Keys",
+    "translation": "Sicherheitsschlüssel verwalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.DeviceNotCompatible",
+    "description": null,
+    "english": "This device isn't compatible with passkeys.",
+    "translation": "Dieses Gerät ist nicht kompatibel mit Passkeys.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.RemoveSecurityKey",
+    "description": null,
+    "english": "Remove Security Key",
+    "translation": "Sicherheitsschlüssel entfernen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.RemovePasskey",
+    "description": null,
+    "english": "Remove Passkey",
+    "translation": "Passkey entfernen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.PasskeyDeletionWarning",
+    "description": null,
+    "english": "You won’t be able to log in to Roblox with this passkey anymore.",
+    "translation": "Du wirst nicht mehr in der Lage sein, dich mit diesem Passkey bei Roblox anzumelden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.PasskeyMayStillAppear",
+    "description": null,
+    "english": "However, this passkey may still appear as a sign-in option and you can remove it from either your browser, device, or settings of the linked account.",
+    "translation": "Dieser Passkey kann jedoch immer noch als Anmeldeoption angezeigt werden und du kannst ihn entweder aus deinem Browser, deinem Gerät oder den Einstellungen des verknüpften Kontos entfernen.",
     "isDeprecated": false
   },
   {
@@ -5053,6 +5149,46 @@
     "description": "Text that appears next to a checkbox asking the user if they want to save an outfit as a character after purchasing the items.",
     "english": "Save as a Character",
     "translation": "Als Charakter speichern",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOutTitle",
+    "description": "In-experience item deeplinking",
+    "english": "Item Sold Out",
+    "translation": "Artikel ausverkauft",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceSoldOut",
+    "description": "In-experience item deeplinking",
+    "english": "The original copy is sold out in experience, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "Die ursprüngliche Kopie ist im Erlebnis ausverkauft. Möchtest du trotzdem [{EXPERIENCE_NAME}] betreten?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReachedTitle",
+    "description": "In-experience item deeplinking",
+    "english": "Purchase Limit Reached",
+    "translation": "Kauflimit erreicht",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.ItemExperienceLimitReached",
+    "description": "In-experience item deeplinking",
+    "english": "You reached the purchase limit that creator set for this item. You will not able to acquire more, would you still like to enter [{EXPERIENCE_NAME}]?",
+    "translation": "Du hast das Kauflimit erreicht, das Creator:in für diesen Artikel gesetzt hat. Du kannst nicht mehr erwerben. Möchtest du trotzdem [{EXPERIENCE_NAME}] betreten?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Label.WearOutfitAfterPurchase",
+    "description": "Wear the selected outfit immediately after it has been successfully purchased.",
+    "english": "Wear outfit after purchase",
+    "translation": "Outfit nach dem Kauf tragen",
     "isDeprecated": false
   },
   {
@@ -9096,6 +9232,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Header.UnlockVoiceChat",
+    "description": null,
+    "english": "Unlock Voice Chat",
+    "translation": "Sprachchat freischalten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Description.UnlockVoiceChat",
+    "description": null,
+    "english": "Join millions of users who have verified their Phone Numbers to chat with voice.",
+    "translation": "Schließe dich Milllionen von Nutzer:innen an, die ihre Telefonnummer verifiziert haben, um mit Stimme zu chatten.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ShopDialog",
     "key": "Heading.LeavingRoblox",
     "description": "dialog heading",
@@ -11821,6 +11973,22 @@
     "description": "Text displayed above a list of outfits that the user can inspect and purchase",
     "english": "Outfit Inspirations",
     "translation": "Outfit-Inspirationen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.UnknownErrorCreatingOutfit",
+    "description": "A message displayed to users for unknown errors that may occur when trying to save an outfit.",
+    "english": "An unknown error occurred. Outfit not created.",
+    "translation": "Ein unbekannter Fehler ist aufgetreten. Outfit wurde nicht erstellt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.ClassicHeadAndR6CameraWarning",
+    "description": "Message to show for Universal App Camera Button if trying to toggle on while having a Classic Head on your avatar, or having the R6 avatar body type.",
+    "english": "Classic Heads and R6 Avatars do not support Facial Animation",
+    "translation": "Klassische Köpfe und R6-Avatare unterstützen Gesichtsanimation nicht",
     "isDeprecated": false
   },
   {
@@ -17929,6 +18097,14 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Label.VoiceCollectionConsent",
+    "description": null,
+    "english": "By clicking on enable, I consent to Roblox’s collection, use, and storage of my voice recording for moderation, safety and quality purposes and for the improvement of safety & audio processing tools.",
+    "translation": "Durch das Anklicken von \"Aktivieren\" erkläre ich mich damit einverstanden, dass Roblox die Aufzeichnung meiner Stimme zu Moderations- Sicherheits- und Qualitätszwecken sowie zur Verbesserung unserer Sicherheits- und Audioverarbeitungs-Tools sammelt, nutzt und speichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Label.VoiceCollectionConsent2",
     "description": null,
     "english": "I consent to Roblox's collection, use, and storage of my voice recording to enable voice services and for moderation, safety, and improvement of our services and tools.",
@@ -19792,6 +19968,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Reauthentication",
+    "key": "TryAlternativeMethod",
+    "description": "Text to tell the user to swap to another method when one method fails for any reason.",
+    "english": "Please try another method.",
+    "translation": "Bitte probiere eine andere Methode aus.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ExperienceDetails",
     "key": "Body.DescriptionTitle",
     "description": "Title text for the description text of the description component within the body of the experience details page.",
@@ -19861,6 +20045,22 @@
     "description": null,
     "english": "Roblox is automatically translating chats for you",
     "translation": "Roblox übersetzt Chats automatisch für dich",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.TextChat",
+    "key": "ChatTranslation.FTUX.TitleNew",
+    "description": null,
+    "english": "Chat translation is on for supported languages",
+    "translation": "Die Chat-Übersetzung ist für unterstützte Sprachen aktiviert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.TextChat",
+    "key": "ChatTranslation.ChatWindow.SystemMessageNew",
+    "description": null,
+    "english": "Roblox automatically translates supported languages in chat",
+    "translation": "Roblox übersetzt automatisch unterstützte Sprachen im Chat",
     "isDeprecated": false
   },
   {
@@ -22480,6 +22680,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Message.TooManyAttempts",
+    "description": null,
+    "english": "Too many attempts. Try again later.",
+    "translation": "Zu viele Versuche. Bitte versuche es später erneut.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.SubscriptionPurchasePrompt",
     "key": "Label.TestFlowDisclaimer",
     "description": "Footer on prompt if the user is testing in studio.",
@@ -22592,6 +22800,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendInNonRootPlace",
+    "description": "Shown to users when they follow another user, and the followed user is in a place that cannot be joined directly (ex: followed user is on the third level of an obby with a different place per level, or if the game has separate places for a lobby, and in-round)",
+    "english": "Your friend {FRIEND_NAME} has moved to a restricted location within this experience",
+    "translation": "Dein:e Freund:in {FRIEND_NAME} hat sich innerhalb dieses Erlebnisses an einen eingeschränkten Ort bewegt",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Amp.IDVUpsell",
     "key": "Modal.Title",
     "description": null,
@@ -22656,6 +22872,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Amp.IDVUpsell",
+    "key": "PrivacyPageHeader",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "Datenschutzrichtlinie",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Subscription",
     "key": "Text.DisclaimerMonthly",
     "description": "disclaimer text specifying subscription terms",
@@ -22669,6 +22893,198 @@
     "description": null,
     "english": "Renews monthly. Cancel anytime.",
     "translation": "Monatlich verlängert. Jederzeit kündbar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Timeout",
+    "description": null,
+    "english": "Sorry, the verification process took too long. Please refresh the page and try again.",
+    "translation": "Der Verifizierungsvorgang hat leider zu lange gedauert. Bitte aktualisiere die Seite und versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Declined",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "Deine Verifizierung wurde leider aus Sicherheitsgründen abgelehnt. Wenn du möchtest, kannst du es in ein paar Tagen erneut versuchen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Retry",
+    "description": null,
+    "english": "Something went wrong. Please refresh the page try again.",
+    "translation": "Etwas ist schiefgelaufen. Bitte aktualisiere die Seite und versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Close",
+    "description": "text of button that closes the error screen.",
+    "english": "Close",
+    "translation": "Schließen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Title",
+    "description": "Title of idv error screen telling user that identity verification failed",
+    "english": "Verification Failed",
+    "translation": "Verifizierung fehlgeschlagen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Calling",
+    "description": "Shown on Call Bar when user places an outgoing call",
+    "english": "Calling...",
+    "translation": "Anrufen ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Teleporting",
+    "description": "Shown on Call Bar when user is teleporting",
+    "english": "Teleporting...",
+    "translation": "Teleportiere ...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.RobloxCall",
+    "description": "Shown on Call Bar when user is in a call",
+    "english": "Roblox Call",
+    "translation": "Roblox-Aufruf",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.CallEnded",
+    "description": "Shown on Call Bar when the call has ended",
+    "english": "Call Ended",
+    "translation": "Anruf beendet",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.StartNewCall",
+    "description": "Header for start a new call page",
+    "english": "Start New Call",
+    "translation": "Neuen Anruf starten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.RecentCalls",
+    "description": "Header for call history / recent calls page",
+    "english": "Recent Calls",
+    "translation": "Letzte Anrufe",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.SearchFriends",
+    "description": "Text shown in search bar to search friends list and call history",
+    "english": "Search friends",
+    "translation": "Freund:innen suchen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.FirstCall",
+    "description": "Text shown to users when they have no call history to prompt them to call a friend.",
+    "english": "Your friends are waiting for your call!",
+    "translation": "Deine Freund:innen warten auf deinen Anruf!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Missed",
+    "description": "Status for a call history entry for missed calls",
+    "english": "Missed",
+    "translation": "Verpasst",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Outgoing",
+    "description": "Status for a call history entry for outgoing calls the user initiated",
+    "english": "Outgoing",
+    "translation": "Ausgehend",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Incoming",
+    "description": "Status for a call history entry for incoming calls the user received",
+    "english": "Incoming",
+    "translation": "Eingehend",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Yesterday",
+    "description": "Denotes an event that happened yesterday",
+    "english": "Yesterday",
+    "translation": "Gestern",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.StartCall",
+    "description": "Prompt for the user to start a call",
+    "english": "Start a call",
+    "translation": "Einen Anruf starten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.NoFriendsFound",
+    "description": "Text shown if the user searches and no friends are found",
+    "english": "No friends found",
+    "translation": "Keine Freund:innen gefunden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.AddFriends",
+    "description": "Prompt user to add friends on Roblox in order to make a call",
+    "english": "Add friends on Roblox to make a call",
+    "translation": "Füge Freund:innen auf Roblox hinzu, um einen Anruf zu tätigen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.PlaceCallFailed",
+    "description": "Error title shown to the user if they failed to place a call",
+    "english": "Failed to place call",
+    "translation": "Anruf fehlgeschlagen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.AlreadyInCall",
+    "description": "Tell the user they are already in a call, which is why they failed to place another call",
+    "english": "You are already in a call",
+    "translation": "Du bist bereits in einem Anruf",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Label.OhNo",
+    "description": "Generic error title",
+    "english": "Oh no!",
+    "translation": "Oh, nein!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.Generic",
+    "description": "Generic error message",
+    "english": "Something went wrong. Please try again later.",
+    "translation": "Etwas ist schiefgelaufen. Bitte versuche es später erneut.",
     "isDeprecated": false
   }
 ]
