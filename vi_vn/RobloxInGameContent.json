@@ -185,6 +185,14 @@
   },
   {
     "namespace": "Feature.Friends",
+    "key": "Label.MutualFriend",
+    "description": "mutual friends between two users.",
+    "english": "{mutualFriendsCount, plural, =0 {# mutual friends} =1 {# mutual friend} other {# mutual friends}}",
+    "translation": "{mutualFriendsCount, plural, =0 {# bạn chung} =1 {# bạn chung} other {# bạn chung}}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Friends",
     "key": "Label.FollowsYou",
     "description": "Label for a user that follows you",
     "english": "Follows You",
@@ -681,6 +689,30 @@
   },
   {
     "namespace": "Feature.Avatar",
+    "key": "TrackerPrompt.VideoNoPermission",
+    "description": "The Face Chat feature requires a camera to track the user's facial expressions.",
+    "english": "Face Chat Requires Camera",
+    "translation": "Gọi Video Yêu Cầu Phải Có Camera",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Feature.Avatar.TrackerPrompt.NotAvailable",
+    "description": "The Face Chat feature is unavailable currently.",
+    "english": "Face Chat Unavailable",
+    "translation": "Không thể Gọi Video",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "TrackerPrompt.Subtitle.VideoNoPermission",
+    "description": "To use the Face Chat feature, go to the OS settings to allow Roblox client to use the camera.",
+    "english": "Go to your settings to allow Roblox to use the camera.",
+    "translation": "Vào phần cài đặt để cấp quyền cho Roblox sử dụng máy ảnh.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.Avatar",
     "key": "Label.DynamicHead",
     "description": "Asset Name",
     "english": "Dynamic Head",
@@ -1169,6 +1201,86 @@
   },
   {
     "namespace": "Common.BuildersClub",
+    "key": "Label.PlanFree",
+    "description": "Builders club membership type",
+    "english": "Free",
+    "translation": "Free",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.PlanClassic",
+    "description": "Builders club membership type",
+    "english": "Classic",
+    "translation": "Classic",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.PlanTurbo",
+    "description": "Builders club membership type",
+    "english": "Turbo",
+    "translation": "Turbo",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.PlanOutrageous",
+    "description": "Builders club membership type",
+    "english": "Outrageous",
+    "translation": "Outrageous",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.BuildersClub",
+    "description": "Premium Membership - this should be translated with the consent of product managers who owns the BC feature. Direct word to word translation might not be accurate.",
+    "english": "Builders Club",
+    "translation": "Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.BuildersClubMembership",
+    "description": "membership type name",
+    "english": "Builders Club Membership",
+    "translation": "Tư Cách Thành Viên Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.BuildersClubMembershipTurbo",
+    "description": "membership type",
+    "english": "Turbo Builders Club Membership",
+    "translation": "Tư Cách Thành Viên Turbo Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.BuildersClubMembershipOutrageous",
+    "description": "membership type",
+    "english": "Outrageous Builders Club Membership",
+    "translation": "Tư Cách Thành Viên Outrageous Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.TurboBuildersClub",
+    "description": "label",
+    "english": "Turbo Builders Club",
+    "translation": "Turbo Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.OutrageousBuildersClub",
+    "description": "label",
+    "english": "Outrageous Builders Club",
+    "translation": "Outrageous Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
     "key": "Label.Yes",
     "description": "label",
     "english": "Yes",
@@ -1198,6 +1310,30 @@
     "english": "Robux",
     "translation": "Robux",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.ClassicBuildersClub",
+    "description": "label",
+    "english": "Classic Builders Club",
+    "translation": "Classic Builders Club",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.Lifetime",
+    "description": "This signifies a lifetime subscription to builders club or some other product.",
+    "english": "Lifetime",
+    "translation": "Trọn Đời",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Common.BuildersClub",
+    "key": "Label.Membership",
+    "description": "use Feature.Support namespace instead",
+    "english": "Membership",
+    "translation": "Tư Cách Thành Viên",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.SocialShare",
@@ -1313,6 +1449,14 @@
   },
   {
     "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseDetails.InvalidBuildersClub",
+    "description": "DEPRECATED - Additional detail text displayed when a player's Builders Club membership is insufficient to make a purchase. As of now, this string will actually have to correctly match up with ConfirmPurchase.UpgradeBuildersClub to avoid confusion. Would be nice to avoid that constraint, or bake it in somehow.",
+    "english": "This item requires {BC_LEVEL}. Click 'Upgrade' to upgrade your Builders Club!",
+    "translation": "Vật phẩm này yêu cầu {BC_LEVEL}. Nhấp vào \"Nâng Cấp\" để nâng cấp Builders Club của bạn!",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
     "key": "PurchaseDetails.BalanceFuture",
     "description": "Additional detail text displayed during normal purchase flow, reflecting player's final balance if they choose to confirm the purchase",
     "english": "Your balance after this transaction will be R${BALANCE_FUTURE}",
@@ -1342,6 +1486,14 @@
     "english": "Your purchase failed because your account does not have enough Robux. Your account has not been charged.",
     "translation": "Không thể thực hiện giao dịch mua vì tài khoản của bạn không có đủ Robux. Tài khoản của bạn chưa bị tính phí.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "PurchaseFailed.BuildersClubUpsellFailure",
+    "description": "DEPRECATED - Description text displayed on desktop clients when player does not choose to purchase a builders club upsell (for an item that requires a higher builders club level than they possessed). This should be extremely rare, as there are few assets that have builders club requirements and are sold in games.",
+    "english": "Your purchase failed because you need a subscription to purchase this item. Your account has not been charged.",
+    "translation": "Không thể thực hiện giao dịch mua vì bạn cần gói đăng ký để mua vật phẩm này. Tài khoản của bạn chưa bị tính phí.",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.PurchasePrompt",
@@ -1582,6 +1734,14 @@
     "english": "You must be a Premium member in order to subscribe!",
     "translation": "Bạn phải là thành viên gói Premium để đăng ký!",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "ConfirmPurchase.SubscribePremium",
+    "description": "DEPRECATED - Confirm Button: when a player is not a premium member, the confirm button will display this string and trigger the Premium upsell flow",
+    "english": "Upgrade",
+    "translation": "Nâng Cấp",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.PurchasePrompt",
@@ -2238,6 +2398,14 @@
     "english": "Low Memory Warning",
     "translation": "Cảnh Báo Bộ Nhớ Thấp",
     "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.ConnectionError",
+    "key": "Queued",
+    "description": "<DEPRECATED, can be deleted as of 1-9-23>",
+    "english": "Requested experience is full. Position in queue is N...",
+    "translation": "Trải nghiệm được yêu cầu đã đầy. Vị trí trong hàng đợi là N...",
+    "isDeprecated": true
   },
   {
     "namespace": "InGame.ConnectionError",
@@ -7225,11 +7393,51 @@
   },
   {
     "namespace": "Feature.SettingsHub",
+    "key": "ReportSubmitted.Label.MutePlayerDisplayName",
+    "description": null,
+    "english": "Mute {Player}?",
+    "translation": "Tắt Tiếng {Player}?",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "ReportSubmitted.Label.BlockPlayerDisplayName",
+    "description": null,
+    "english": "Block {Player}?",
+    "translation": "Chặn {Player}?",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
     "key": "ReportSubmitted.Label.MuteAndBlockWarning",
     "description": null,
     "english": "You and {Player} will not longer be able to communicate with each other.",
     "translation": "Bạn và {Player} sẽ không liên lạc được với nhau nữa.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "ReportSubmitted.Label.MutedAndBlocked",
+    "description": null,
+    "english": "You have blocked and muted {Player}",
+    "translation": "Bạn đã chặn và tắt tiếng {Player}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "ReportSubmitted.Label.Muted",
+    "description": null,
+    "english": "You have muted {Player}",
+    "translation": "Bạn đã tắt tiếng {Player}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "ReportSubmitted.Label.Blocked",
+    "description": null,
+    "english": "You have blocked {Player}",
+    "translation": "Bạn đã chặn {Player}",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.SettingsHub",
@@ -7390,6 +7598,30 @@
     "english": "Text chat will be translated into your language. Tap the symbol in front of the message to see the original.",
     "translation": "Tin nhắn văn bản sẽ được dịch sang ngôn ngữ của bạn. Nhấn vào ký hiệu phía trước tin nhắn để xem bản gốc.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.PreferredTransparency",
+    "description": "A settings option in the in-game menu",
+    "english": "Background Transparency",
+    "translation": "Độ Trong Suốt của Nền",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.ReducedMotion",
+    "description": "A settings option in the in-game menu",
+    "english": "Reduce Motion",
+    "translation": "Giảm Chuyển Động",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.UiNavigationKeyBind",
+    "description": "A settings option in the in-game menu",
+    "english": "UI Navigation Toggle",
+    "translation": "Nút Bật/Tắt Điều Hướng Giao Diện",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.SettingsHub",
@@ -7673,6 +7905,38 @@
   },
   {
     "namespace": "InGame.HelpMenu",
+    "key": "Message.ClientVersion",
+    "description": "Same as Label.ClientVersion just I forgot the parameter so I have to use another key.",
+    "english": "Client Version: {RBX_NUM}",
+    "translation": "Phiên Bản Máy Khách: {RBX_NUM}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "InGame.HelpMenu",
+    "key": "Message.ServerVersion",
+    "description": "Same as Label.ServerVersion just I forgot the parameter so I have to use another key.",
+    "english": "Server Version: {RBX_NUM}",
+    "translation": "Phiên Bản Máy Chủ: {RBX_NUM}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "InGame.HelpMenu",
+    "key": "Message.PlayerScripts",
+    "description": "Same as Label.PlayerScripts just I forgot the parameter so I have to use another key.",
+    "english": "PlayerScripts:{RBX_STR}",
+    "translation": "PlayerScripts:{RBX_STR}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "InGame.HelpMenu",
+    "key": "Message.PlaceVersion",
+    "description": "version of current place",
+    "english": "Place Version: {RBX_NUM}",
+    "translation": "Phiên Bản Địa Điểm: {RBX_NUM}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "InGame.HelpMenu",
     "key": "Leave",
     "description": "On the button pressed to leave the game in the help menu.",
     "english": "Leave",
@@ -7862,6 +8126,14 @@
     "english": "Warning: The following users have this display name: ",
     "translation": "Cảnh báo: Những người dùng sau sẽ có tên hiển thị này: ",
     "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.Chat",
+    "key": "Label.Response.MultipleDisplayNameMatches",
+    "description": "System text that displays when there are multiple matches for a user's display name",
+    "english": "Warning: The following users have this display name: ",
+    "translation": "Cảnh báo: Những người dùng sau sẽ có tên hiển thị này: ",
+    "isDeprecated": true
   },
   {
     "namespace": "InGame.Chat",
@@ -8201,6 +8473,14 @@
   },
   {
     "namespace": "InGame.InspectMenu",
+    "key": "Label.Inventory",
+    "description": "Describes whose inventory you are viewing.",
+    "english": "{PLAYER_NAME}'s Inventory",
+    "translation": "Kho Đồ của {PLAYER_NAME}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "InGame.InspectMenu",
     "key": "Label.CurrentlyWearing",
     "description": null,
     "english": "Currently Wearing",
@@ -8222,6 +8502,14 @@
     "english": "This item can only be purchased from resellers in the Catalog.",
     "translation": "Chỉ mua được vật phẩm này từ các đại lý trong Mục Lục.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Label.Costume",
+    "description": "Describes the name of the avatar being shown.",
+    "english": "{PLAYER_NAME}'s Avatar",
+    "translation": "Avatar của {PLAYER_NAME}",
+    "isDeprecated": true
   },
   {
     "namespace": "InGame.InspectMenu",
@@ -9385,6 +9673,14 @@
   },
   {
     "namespace": "CoreScripts.InGameMenu",
+    "key": "Report.BlockLabel",
+    "description": "Unused (deprecated in favor of Report.BlockDisplayName)",
+    "english": "Block {RBX_NAME}",
+    "translation": "Chặn {RBX_NAME}",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
     "key": "Report.Done",
     "description": "Label for a button that closes a dialog",
     "english": "Done",
@@ -9622,6 +9918,14 @@
     "english": "Cancel",
     "translation": "Hủy",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "CoreScripts.InGameMenu.GameSettings.VignetteEnabled",
+    "description": "(deprecated due to incorrect/double namespace)",
+    "english": "VR Vignette Enabled",
+    "translation": "Bật Hiệu Ứng Mờ Viền VR",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.InGameMenu",
@@ -9934,6 +10238,14 @@
     "english": "Mute Player",
     "translation": "Tắt Tiếng Người Chơi",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "CoreScripts.InGameMenu.Prompt.ReturnHome",
+    "description": "[delete this]\n\nAn exit prompt title asking if the user wants to confirm exiting the experience and return back to the home screen (with question mark).",
+    "english": "Return Home?",
+    "translation": "Trở Về Trang Chủ?",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.InGameMenu",
@@ -11976,6 +12288,102 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.VerifiedBadgeIconAccessibilityText",
+    "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
+    "english": "Verified Badge Icon",
+    "translation": "Biểu Tượng Huy Hiệu Đã Xác Minh",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "Creator.PremiumBadgeIconAccessibilityText",
+    "description": "This is text that will be read by screen readers when the premium badge is present next to a creators name",
+    "english": "Premium Badge Icon",
+    "translation": "Biểu Tượng Huy Hiệu Premium",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfo",
+    "description": "Info that will be displayed in a modal if the verified badge is clicked",
+    "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
+    "translation": "Huy hiệu này giúp xác nhận người đeo là một nhà sáng tạo, thương hiệu hoặc nhân vật nổi tiếng đáng chú ý và đáng tin.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoLink",
+    "description": "Text for a link to “Learn More” about Verified Badges",
+    "english": "Learn More",
+    "translation": "Tìm Hiểu Thêm",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "UsernameChangeWithVerifiedBadge",
+    "description": "Text warning a user if they change their username they will lose the verified badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
+    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác minh của bạn.\n\nNgày tạo tài khoản ban đầu của bạn sẽ không thay đổi sau khi đổi tên người dùng mới.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "DisplayNameChangeWithVerifiedBadge",
+    "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
+    "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
+    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác minh của bạn.\n\nBạn chỉ có thể đổi tên hiển thị một lần trong mỗi 7 ngày.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "ThisActionWillRemoveTheVerifiedBadge",
+    "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
+    "english": "The verified badge will be removed.",
+    "translation": "Huy hiệu đã xác minh sẽ bị xóa.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "2SVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Info",
+    "translation": "Thông tin",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "TwoSVWithVerifiedBadge",
+    "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
+    "english": "Disabling 2-Step Verification will result in the loss of your verified badge and make your account less secure. Are you sure you want to proceed?",
+    "translation": "Nếu tắt Xác Thực 2 Bước, huy hiệu đã xác thực của bạn sẽ bị mất và tài khoản của bạn cũng dễ bị xâm nhập hơn. Bạn có chắc muốn tiếp tục không?",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "VerifiedBadgeInfoTitle",
+    "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
+    "english": "Verified Badge",
+    "translation": "Huy Hiệu Đã Xác Minh",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "GroupNameChangeWithVerifiedBadge",
+    "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
+    "english": "the verified badge will be removed.",
+    "translation": "huy hiệu đã xác minh sẽ bị xóa.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.ProfileBadges",
+    "key": "action.close",
+    "description": "A button that can be clicked to close a modal",
+    "english": "Close",
+    "translation": "Đóng",
+    "isDeprecated": true
+  },
+  {
     "namespace": "Verification.Identity",
     "key": "Label.DontShowAgain",
     "description": null,
@@ -12014,6 +12422,22 @@
     "english": "Learn More about Voice Recording",
     "translation": "Tìm hiểu thêm về Ghi âm giọng nói",
     "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.Deprecated",
+    "key": "Text.Test",
+    "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
+    "english": "Test Text",
+    "translation": "Văn bản kiểm tra",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "IAPExperience.Deprecated",
+    "key": "Text.Test2",
+    "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
+    "english": "Test Text 2",
+    "translation": "Văn bản kiểm tra 2",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Accessibility",
@@ -12078,6 +12502,46 @@
     "english": "Transparent",
     "translation": "Trong Suốt",
     "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Title.BuyItem",
+    "description": "Title for a Modal asking the user if they want to purchase the item.",
+    "english": "Buy Item",
+    "translation": "Mua vật phẩm",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Text.BuyItemQuestion",
+    "description": "Prompt main text asking the user if they want to buy an item.",
+    "english": "Would you like to buy \"{name}\"?",
+    "translation": "Bạn có muốn mua \"{name}\"?",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Text.RemainingBalance",
+    "description": "Footer text at the bottom of the modal, use to tell the user their balance after the purchase. The robux amount will be shown after the text.",
+    "english": "Your balance after this transaction will be",
+    "translation": "Số dư của bạn sau giao dịch này sẽ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "IAPExperience.PurchasePrompt",
+    "key": "Action.Cancel",
+    "description": "Text on the button to cancel the purchase",
+    "english": "Cancel",
+    "translation": "Hủy",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "IAPExperience.RobuxUpsell",
+    "key": "Action.Cancel",
+    "description": "Text on button to cancel the purchase",
+    "english": "Cancel",
+    "translation": "Hủy",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.Screentime",
@@ -12897,6 +13361,14 @@
   },
   {
     "namespace": "CoreScripts.PublishAssetPrompt",
+    "key": "PackageDefaultName",
+    "description": "default name of published package - english format \n{Username}'s package",
+    "english": "'s Package",
+    "translation": "Gói của",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CoreScripts.PublishAssetPrompt",
     "key": "PackagesDefaultName",
     "description": "default name of published package - english format \n{Username}'s package",
     "english": "Package by {RBX_NAME}",
@@ -12910,6 +13382,14 @@
     "english": "You can find this item in your inventory.",
     "translation": "Bạn có thể tìm thấy vật phẩm này trong kho đồ của bạn.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PublishAssetPrompt",
+    "key": "PublishFail",
+    "description": null,
+    "english": "Something went wrong. Please try again.",
+    "translation": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.PublishAssetPrompt",
@@ -12976,6 +13456,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.PublishAssetPrompt",
+    "key": "TitleTextCreation",
+    "description": null,
+    "english": "Submit Creation",
+    "translation": "Gửi Sản Phẩm",
+    "isDeprecated": true
+  },
+  {
     "namespace": "CoreScripts.ContactList",
     "key": "Label.Outgoing",
     "description": "Label to indicate that the record was an outgoing call. The user placed a call to another individual.",
@@ -13038,6 +13526,30 @@
     "english": "You have purchased Robux successfully!",
     "translation": "Bạn đã mua Robux thành công!",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Header.TwoStepVerificationRequired",
+    "description": "Header text for the two-step verification required modal.",
+    "english": "2-Step Verification Required",
+    "translation": "Yêu Cầu Xác Thực 2 Bước",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Body.TwoStepVerificationRequired",
+    "description": "Body text for the two-step verification challenge modal.",
+    "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
+    "translation": "Bạn phải thiết lập Xác Thực 2 Bước để hoàn tất hành động này. Điều này sẽ giúp bảo vệ việc đăng nhập, giao dịch mua của bạn và còn nhiều nữa.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Feature.TwoStepVerificationChallenge",
+    "key": "Action.SetUp",
+    "description": "Button text for the two-step verification challenge.",
+    "english": "Set Up",
+    "translation": "Thiết Lập",
+    "isDeprecated": true
   },
   {
     "namespace": "Notifications.ToastNotifications",
@@ -13286,6 +13798,30 @@
     "english": "Please use your controller to enter and stand within the designated white circle area.",
     "translation": "Vui lòng sử dụng tay cầm của bạn để đi vào và đứng trong vòng tròn trắng được chỉ định.",
     "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.EmoteThumbnailEditor",
+    "key": "Cancel",
+    "description": "WRONG KEYNAME TO BE DELETED",
+    "english": "Cancel",
+    "translation": "Hủy",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CoreScripts.EmoteThumbnailEditor",
+    "key": "UpdateButtonText",
+    "description": "WRONG KEYNAME TO BE DELETED",
+    "english": "Update",
+    "translation": "Cập nhật",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "CoreScripts.EmoteThumbnailEditor",
+    "key": "TitleText",
+    "description": "WRONG KEYNAME TO BE DELETED",
+    "english": "Edit thumbnail",
+    "translation": "Chỉnh sửa hình nhỏ",
+    "isDeprecated": true
   },
   {
     "namespace": "CoreScripts.EmoteThumbnailEditor",
