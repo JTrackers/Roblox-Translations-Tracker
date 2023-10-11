@@ -2228,7 +2228,7 @@
     "key": "DisconnectEvicted",
     "description": "Joined same game from same account from different device / Evicted because of getting banned.",
     "english": "You have been kicked from the experience.",
-    "translation": "บัญชีเดียวกันนี้เปิดใช้ประสบการณ์อยู่บนอุปกรณ์อื่นแล้ว เชื่อมต่ออีกครั้งหากคุณต้องการใช้บนอุปกรณ์นี้",
+    "translation": "คุณถูกบังคับให้ออกจากประสบการณ์",
     "isDeprecated": false
   },
   {
@@ -7672,6 +7672,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.TranslationSetting",
+    "description": null,
+    "english": "Automatic Chat Translation",
+    "translation": "การแปลแชทโดยอัตโนมัติ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.TranslationToggleSetting",
+    "description": null,
+    "english": "Option to View Untranslated Message",
+    "translation": "ตัวเลือกเพื่อดูข้อความที่ยังไม่ได้แปล",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.NoFriendsPageMessage",
+    "description": null,
+    "english": "Add friends so you can explore and play together.",
+    "translation": "เพิ่มเพื่อนเพื่อให้คุณสามารถสำรวจและเล่นด้วยกันได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.FriendsListLoadErrorMessage",
+    "description": null,
+    "english": "Can’t load friends. Try again later.",
+    "translation": "ไม่สามารถโหลดเพื่อนได้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.HelpMenu",
     "key": "UpArrow",
     "description": "The up arrow key on a physical keyboard. Used to tell the user how to move their character.",
@@ -11224,6 +11256,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "PageTitle.ToggleMenuNavigation",
+    "description": "This is the title for a prompt that displays instructions on how to enable navigation with a gamepad in the in-game menu.",
+    "english": "How to toggle menu navigation",
+    "translation": "วิธีเปิด/ปิดการนำทางบนเมนู",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.ViewButton",
+    "description": "Label pointing to the button on an Xbox gamepad that the user needs to press to toggle menu navigation.",
+    "english": "View Button",
+    "translation": "ปุ่มมุมมอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.TouchpadButton",
+    "description": "A Label pointing to the button on a PlayStation controller the user needs to press to toggle menu navigation.",
+    "english": "Touchpad Button",
+    "translation": "ปุ่มทัชแพด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "EducationalPopup.MenuNavigationToggleText",
+    "description": "Educational text that teaches the user how to open up menu navigation with the gamepad. This text is displayed below an image of the gamepad annotated with the correct button to press.",
+    "english": "Some experiences require pressing the Touchpad button to toggle menu navigation. Depending on the experience, this will either highlight menu items in a box style or provide a free-flow cursor.",
+    "translation": "บางประสบการณ์จำเป็นต้องกดที่ปุ่มทัชแพดเพื่อเปิด/ปิดการนำทางเมนู การดำเนินการจะเป็นการไฮไลต์รายการเมนูด้วยกรอบสี่เหลี่ยมหรือเคอร์เซอร์แบบอิสระ ซึ่งจะขึ้นอยู่กับแต่ละประสบการณ์",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.PlayerList",
     "key": "Players",
     "description": "Displayed on the PlayerList title bar, above a list of players usernames.",
@@ -13056,6 +13120,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.FaceChat",
+    "key": "Heading.LowPerformanceDetected",
+    "description": "Heading for informational toast that appears due to low performance of the device.",
+    "english": "Low Performance Detected",
+    "translation": "ตรวจพบประสิทธิภาพต่ำ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.FaceChat",
+    "key": "Subtitle.LowPerformanceDetected",
+    "description": "Subtitle for informational toast that appears due to low performance of the device.",
+    "english": "Turning off your camera may improve your device performance",
+    "translation": "การปิดกล้องของคุณอาจช่วยปรับปรุงประสิทธิภาพอุปกรณ์ของคุณ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.Ads",
     "key": "Label.Teleporting",
     "description": "Text on the Portal loading screen",
@@ -13912,6 +13992,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Feature.SocialContextToast.Message.FriendInNonRootPlace",
+    "description": "Shown to users when they follow another user, and the followed user is in a place that cannot be joined directly (ex: followed user is on the third level of an obby with a different place per level, or if the game has separate places for a lobby, and in-round)",
+    "english": "You joined {FRIEND_NAME}, but they are in a restricted place right now",
+    "translation": "คุณได้เข้าร่วมประสบการณ์กับ \"{FRIEND_NAME}\" แล้ว แต่ตอนนี้เขาอยู่ในสถานที่ที่มีการจำกัดอยู่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SocialContextToast",
+    "key": "Message.FriendInNonRootPlace",
+    "description": "Shown to users when they follow another user, and the followed user is in a place that cannot be joined directly (ex: followed user is on the third level of an obby with a different place per level, or if the game has separate places for a lobby, and in-round)",
+    "english": "Your friend {FRIEND_NAME} has moved to a restricted location within this experience",
+    "translation": "{FRIEND_NAME} เพื่อนของคุณได้ย้ายไปยังบริเวณที่ถูกจำกัดอยู่ภายในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Subscription",
     "key": "Text.DisclaimerMonthly",
     "description": "disclaimer text specifying subscription terms",
@@ -13933,6 +14029,174 @@
     "description": null,
     "english": "Renews monthly. Cancel anytime.",
     "translation": "ต่ออายุรายเดือน ยกเลิกได้ตลอดเวลา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Calling",
+    "description": "Shown on Call Bar when user places an outgoing call",
+    "english": "Calling...",
+    "translation": "กําลังโทร...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Teleporting",
+    "description": "Shown on Call Bar when user is teleporting",
+    "english": "Teleporting...",
+    "translation": "กำลังเทเลพอร์ต...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.RobloxCall",
+    "description": "Shown on Call Bar when user is in a call",
+    "english": "Roblox Call",
+    "translation": "โทรผ่าน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.CallEnded",
+    "description": "Shown on Call Bar when the call has ended",
+    "english": "Call Ended",
+    "translation": "สิ้นสุดการโทร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.StartNewCall",
+    "description": "Header for start a new call page",
+    "english": "Start New Call",
+    "translation": "เริ่มการโทรใหม่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.RecentCalls",
+    "description": "Header for call history / recent calls page",
+    "english": "Recent Calls",
+    "translation": "การโทรล่าสุด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.SearchFriends",
+    "description": "Text shown in search bar to search friends list and call history",
+    "english": "Search friends",
+    "translation": "ค้นหาเพื่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.FirstCall",
+    "description": "Text shown to users when they have no call history to prompt them to call a friend.",
+    "english": "Your friends are waiting for your call!",
+    "translation": "เพื่อนของคุณกำลังรอให้คุณโทรหา!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Missed",
+    "description": "Status for a call history entry for missed calls",
+    "english": "Missed",
+    "translation": "ไม่ได้รับ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Outgoing",
+    "description": "Status for a call history entry for outgoing calls the user initiated",
+    "english": "Outgoing",
+    "translation": "โทรออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Incoming",
+    "description": "Status for a call history entry for incoming calls the user received",
+    "english": "Incoming",
+    "translation": "โทรเข้า",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Yesterday",
+    "description": "Denotes an event that happened yesterday",
+    "english": "Yesterday",
+    "translation": "เมื่อวานนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.StartCall",
+    "description": "Prompt for the user to start a call",
+    "english": "Start a call",
+    "translation": "เริ่มการโทร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.NoFriendsFound",
+    "description": "Text shown if the user searches and no friends are found",
+    "english": "No friends found",
+    "translation": "ไม่พบเพื่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Prompt.AddFriends",
+    "description": "Prompt user to add friends on Roblox in order to make a call",
+    "english": "Add friends on Roblox to make a call",
+    "translation": "เพิ่มเพื่อนบน Roblox เพื่อเริ่มการโทร",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.PlaceCallFailed",
+    "description": "Error title shown to the user if they failed to place a call",
+    "english": "Failed to place call",
+    "translation": "โทรไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.AlreadyInCall",
+    "description": "Tell the user they are already in a call, which is why they failed to place another call",
+    "english": "You are already in a call",
+    "translation": "คุณอยู่ในสายแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Label.OhNo",
+    "description": "Generic error title",
+    "english": "Oh no!",
+    "translation": "แย่แล้ว!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.Generic",
+    "description": "Generic error message",
+    "english": "Something went wrong. Please try again later.",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.SettingsNotCallEnabled",
+    "description": "Error message shown to the user if their settings are not call enabled",
+    "english": "Your current settings don't allow calling.",
+    "translation": "การตั้งค่าปัจจุบันของคุณทำให้ไม่สามารถโทรได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.CallEnabledVerificationFailed",
+    "description": "Error message shown to the user if we failed to verify if they are call enabled",
+    "english": "Failed to verify call eligibility.",
+    "translation": "ตรวจสอบความสามารถในการโทรไม่สำเร็จ",
     "isDeprecated": false
   }
 ]
