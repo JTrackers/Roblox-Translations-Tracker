@@ -876,7 +876,7 @@
     "key": "Response.LeaveAppConfirmation",
     "description": null,
     "english": "Do you want to leave the app?",
-    "translation": "Bạn có muốn thoát ứng dụng không?",
+    "translation": "Bạn có muốn thoát ứng dụng?",
     "isDeprecated": false
   },
   {
@@ -892,7 +892,7 @@
     "key": "Permissions.NSContactsUsageDescription2",
     "description": "Permission reason for using contacts",
     "english": "By allowing access, your device contacts will be periodically synced and matches with existing Roblox users will be stored on Roblox’s secured servers. You can manage your synced contact data anytime in your account’s privacy settings.",
-    "translation": "Bằng cách cho phép truy cập, các liên hệ trên thiết bị của bạn sẽ được đồng bộ hóa định kỳ và các kết quả tương thích với người chơi Roblox hiện tại sẽ được lưu trữ trên các máy chủ bảo mật của Roblox. Bạn có thể quản lý dữ liệu liên hệ đã đồng bộ hóa bất kỳ lúc nào trong cài đặt quyền riêng tư của tài khoản.",
+    "translation": "Bằng cách cho phép truy cập, danh bạ trên thiết bị của bạn sẽ được đồng bộ hóa định kỳ và các kết quả tương thích với người chơi Roblox hiện tại sẽ được lưu trữ trên các máy chủ bảo mật của Roblox. Bạn có thể quản lý dữ liệu danh bạ đã đồng bộ hóa bất kỳ lúc nào trong cài đặt quyền riêng tư của tài khoản.",
     "isDeprecated": false
   },
   {
@@ -900,7 +900,7 @@
     "key": "Permissions.NSContactsUsageDescription3",
     "description": "Permission OS prompt on iOS and Android",
     "english": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-    "translation": "Kết nối với bạn bè trên Roblox. Các liên hệ của bạn sẽ được thường xuyên đồng bộ hóa và các kết quả tương thích với những người chơi Roblox khác sẽ được lưu trữ để giúp bạn tìm bạn bè. Bạn có thể quản lý mục này bất cứ lúc nào trong cài đặt.",
+    "translation": "Kết nối với bạn bè trên Roblox. Danh bạ của bạn sẽ được thường xuyên đồng bộ hóa và các kết quả tương thích với những người chơi Roblox khác sẽ được lưu trữ để giúp bạn tìm bạn bè. Bạn có thể quản lý mục này bất cứ lúc nào trong cài đặt.",
     "isDeprecated": false
   },
   {
@@ -4232,6 +4232,166 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Features.FriendFinder",
+    "key": "Response.ContactPermissionNeeded",
+    "description": null,
+    "english": "By clicking \"Continue\", you agree that we will access, store, and continuously sync your contacts. {var1}",
+    "translation": "Khi chọn \"Tiếp tục\", bạn sẽ đồng ý cho chúng tôi sẽ truy cập, lưu trữ và liên tục đồng bộ hóa danh bạ của bạn. {var1}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Response.NetworkError",
+    "description": null,
+    "english": "We are having trouble accessing your contact book. Please try again in a few minutes.",
+    "translation": "Chúng tôi đang gặp khó khăn khi truy cập vào danh bạ của bạn. Vui lòng thử lại trong vài phút nữa.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.Continue",
+    "description": null,
+    "english": "Continue",
+    "translation": "Tiếp Tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.Add.Contacts",
+    "description": null,
+    "english": "Add Contacts",
+    "translation": "Thêm danh bạ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.Add",
+    "description": null,
+    "english": "Add",
+    "translation": "Thêm vào",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.Added",
+    "description": null,
+    "english": "Added",
+    "translation": "Đã thêm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.Friends",
+    "description": null,
+    "english": "Friends",
+    "translation": "Bạn Bè",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.NeedContactsAccess",
+    "description": null,
+    "english": "Roblox needs access to your contacts to help find your friends.",
+    "translation": "Roblox cần quyền truy cập vào danh bạ của bạn để giúp tìm bạn bè của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.AppSettings",
+    "description": null,
+    "english": "App Settings",
+    "translation": "Cài đặt ứng dụng",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.ContactsAlsoOnRoblox",
+    "description": null,
+    "english": "Contacts Also On Roblox",
+    "translation": "Liên hệ cũng tham gia Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.SearchContacts",
+    "description": null,
+    "english": "Search Contacts",
+    "translation": "Tìm Liên Hệ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.OtherContacts",
+    "description": null,
+    "english": "Other contacts",
+    "translation": "Liên hệ khác",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Action.Invite",
+    "description": null,
+    "english": "Invite",
+    "translation": "Mời",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.Invited",
+    "description": null,
+    "english": "Invited",
+    "translation": "Đã Mời",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.MutualFriends",
+    "description": null,
+    "english": "{var1} Mutual Friends",
+    "translation": "{var1} Bạn Chung",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.Pending",
+    "description": null,
+    "english": "Pending",
+    "translation": "Đang Chờ Xử Lý",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.PermissionsFinePrintLink",
+    "description": null,
+    "english": "Learn more",
+    "translation": "Tìm hiểu thêm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.EmptyContactsBook",
+    "description": null,
+    "english": "Sorry, your contact book is empty.",
+    "translation": "Rất tiếc, danh bạ của bạn đang trống.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.Over13Feature",
+    "description": null,
+    "english": "This feature is currently not available to you.",
+    "translation": "Tính năng này hiện không có sẵn cho bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Features.FriendFinder",
+    "key": "Label.FetchingContacts",
+    "description": null,
+    "english": "Fetching contacts…",
+    "translation": "Đang thu thập liên hệ…",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Game.Launch",
     "key": "Prompt.Microphone",
     "description": "OS Permission Prompt for Microphone. Used for voice chat.",
@@ -4340,7 +4500,7 @@
     "key": "Example.SearchGames",
     "description": null,
     "english": "Search",
-    "translation": "Tìm kiếm",
+    "translation": "Tìm Kiếm",
     "isDeprecated": false
   },
   {
@@ -4364,7 +4524,7 @@
     "key": "Label.SearchWord",
     "description": null,
     "english": "Search",
-    "translation": "Tìm kiếm",
+    "translation": "Tìm Kiếm",
     "isDeprecated": false
   },
   {
@@ -4372,7 +4532,7 @@
     "key": "Example.SearchPeople",
     "description": null,
     "english": "Search people",
-    "translation": "Tìm kiếm người",
+    "translation": "Tìm Kiếm Người",
     "isDeprecated": false
   },
   {
@@ -4381,6 +4541,22 @@
     "description": "Search Roblox",
     "english": "Search Roblox",
     "translation": "Tìm kiếm Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.ShowingNormalSearchResults",
+    "description": "Transition text to display in a banner before showing normal search results.\n\nPlease leave this section of the text as it is: \"<b>{query}</b>\".",
+    "english": "Showing results for <b>{query}</b> (without quotes):",
+    "translation": "Hiển thị kết quả cho <b>{query}</b> (không có dấu ngoặc kép):",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.NoExactSearchResults",
+    "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".",
+    "english": "No results found for <b>{query}</b>.",
+    "translation": "Không tìm thấy kết quả cho <b>{query}</b>.",
     "isDeprecated": false
   },
   {
@@ -8534,5 +8710,29 @@
     "english": "Set Up",
     "translation": "Thiết Lập",
     "isDeprecated": true
+  },
+  {
+    "namespace": "Notifications.CallReceived",
+    "key": "Push.InACall",
+    "description": "Text description shown in push notification when user is in a call",
+    "english": "You are in a call",
+    "translation": "Bạn đang trong một cuộc gọi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.CallReceived",
+    "key": "Push.CallInProgress",
+    "description": "Push notification title text when user is in a call",
+    "english": "Call in Progress",
+    "translation": "Đang gọi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Notifications.CallReceived",
+    "key": "Push.OngoingCall",
+    "description": "Title text shown on notification when a Roblox call is ongoing",
+    "english": "Ongoing Roblox call",
+    "translation": "Cuộc gọi Roblox đang diễn ra",
+    "isDeprecated": false
   }
 ]
