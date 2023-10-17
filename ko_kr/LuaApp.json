@@ -12568,6 +12568,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameFollows",
+    "key": "LabelNotifications",
+    "description": "Label for turning on notifications button",
+    "english": "Notifications",
+    "translation": "알림",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameFollows",
+    "key": "TooltipTurnedOnNotifications",
+    "description": "Tooltip for when notifications have been turned on",
+    "english": "Notifications turned on for {experienceName}",
+    "translation": "{experienceName}에 대한 알림을 사용하도록 설정했습니다",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialShare",
     "key": "Action.Share",
     "description": "Label for share button.",
@@ -14238,6 +14254,14 @@
     "english": "AdPortal doesn't exist",
     "translation": "AdPortal이 존재하지 않습니다",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NativeAds",
+    "key": "Description.SeventeenPlusMustBeSelected",
+    "description": "A disclaimer that this ad can only target 17+ users (which is a checkbox item)",
+    "english": "Only 17+ can be targeted for this experience",
+    "translation": "이 체험은 17세 이상의 사용자만을 대상으로 합니다",
+    "isDeprecated": true
   },
   {
     "namespace": "Feature.PremiumUpsell",
@@ -16692,7 +16716,7 @@
     "key": "Label.AgreeTerms",
     "description": null,
     "english": "Agree to the Terms of Use and acknowledge the Privacy Policy",
-    "translation": "이용 약관에 동의하고 개인정보 처리방침을 확인함",
+    "translation": "이용 약관에 동의하고 개인정보 처리방침을 인정함",
     "isDeprecated": false
   },
   {
@@ -16748,7 +16772,7 @@
     "key": "Label.AgreeTermsWithLink",
     "description": null,
     "english": "Agree to the {termsOfUseLink} and acknowledge the {privacyPolicyLink}",
-    "translation": "{termsOfUseLink}에 동의하고 {privacyPolicyLink}을 확인함",
+    "translation": "{termsOfUseLink}에 동의하고 {privacyPolicyLink}을 인정함",
     "isDeprecated": false
   },
   {
@@ -23128,6 +23152,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Description.SaveCreditCardConsent",
+    "description": null,
+    "english": "Your child needs your permission to save payment methods to their account. A saved payment method can be used for purchases on Roblox, including subscriptions. {breakLine}As a parent, you’ll receive an email notification for every purchase. You can also remove payment methods anytime. {linkStart}Learn more{linkEnd}\n",
+    "translation": "자녀가 계정에 결제 수단을 저장하려면 보호자의 승인이 필요합니다. 구독을 포함한 Roblox 구매 시 저장된 결제 수단을 사용할 수 있습니다. {breakLine}보호자는 모든 구매에 대해 이메일 알림을 받게 됩니다. 결제 수단은 언제든지 삭제할 수 있습니다. {linkStart}자세한 정보{linkEnd}\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SaveCreditCardSuccess",
+    "description": null,
+    "english": "When your child purchases a subscription on Roblox, you can manually save a payment method to their Roblox account for future use. ",
+    "translation": "자녀가 Roblox에서 구독 상품을 구매할 경우, 이후에도 사용할 수 있도록 자녀의 Roblox 계정에 수동으로 결제 수단을 저장할 수 있습니다. ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.SubscriptionPurchasePrompt",
     "key": "Label.TestFlowDisclaimer",
     "description": "Footer on prompt if the user is testing in studio.",
@@ -23452,7 +23492,7 @@
     "key": "Prompt.FirstCall",
     "description": "Text shown to users when they have no call history to prompt them to call a friend.",
     "english": "Try making your first call",
-    "translation": "친구들이 내 전화를 기다리고 있어요!",
+    "translation": "첫 전화를 걸어 보세요",
     "isDeprecated": false
   },
   {
@@ -23540,7 +23580,55 @@
     "key": "Error.Description.Generic",
     "description": "Generic error message",
     "english": "Try again later",
-    "translation": "오류가 발생했어요. 나중에 다시 시도하세요.",
+    "translation": "나중에 다시 시도하세요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.Generic",
+    "description": "Generic error title",
+    "english": "Something went wrong",
+    "translation": "오류가 발생했어요",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.SuggestedFriends",
+    "description": "Tooltip description for list of suggested friends in the phonebook",
+    "english": "Friends with devices and settings set for an optimal call experience.",
+    "translation": "최적의 통화가 가능한 기기를 보유하고 해당 설정을 완료한 친구입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.Friends",
+    "description": "Tooltip description for list of all friends in the phonebook",
+    "english": "Friends who may or may not have devices and settings for an optimal call experience.",
+    "translation": "최적의 통화를 위한 기기 및 설정을 보유 중일수도, 그렇지 않을 수도 있는 친구입니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.DeviceNotSupported",
+    "description": "Error message shown when user calls from an unsupported platform",
+    "english": "Calling is currently not supported on your device. Please try again later.",
+    "translation": "현재 회원님의 기기에서는 통화 기능이 지원되지 않습니다. 나중에 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Suggested",
+    "description": "Header to show suggested friends in the phonebook",
+    "english": "Suggested",
+    "translation": "추천",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Friends",
+    "description": "Header to show all friends in the phonebook",
+    "english": "Friends",
+    "translation": "친구",
     "isDeprecated": false
   }
 ]

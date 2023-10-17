@@ -3176,6 +3176,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.PasskeysSecurityWarning",
+    "description": null,
+    "english": "Passkeys is the most secure and easiest way to log in to your Roblox account. For security, only set up passkeys on your personal devices.",
+    "translation": "พาสคีย์เป็นวิธีที่ปลอดภัยที่สุดและง่ายที่สุดในการลงชื่อเข้าใช้บัญชี Roblox เพื่อความปลอดภัย โปรดตั้งค่าพาสคีย์บนอุปกรณ์ส่วนตัวของคุณเท่านั้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AddAPasskey",
+    "description": null,
+    "english": "Add a Passkey",
+    "translation": "เพิ่มพาสคีย์",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Catalog",
     "key": "Label.CategoryType",
     "description": null,
@@ -7464,6 +7480,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameDetails",
+    "key": "Heading.Media",
+    "description": "Heading for the media section on the experience details page",
+    "english": "Media",
+    "translation": "สื่อ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Label.Community",
+    "description": null,
+    "english": "Community",
+    "translation": "ชุมชน",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameGear",
     "key": "Heading.GearForThisGame",
     "description": null,
@@ -8124,7 +8156,7 @@
     "key": "Label.QRCodeFriendRequest",
     "description": "Message explaining where a friend request has come from.",
     "english": "Sent from your QR code",
-    "translation": "ส่งมาจากรหัส QR ของคุณ",
+    "translation": "ส่งจากรหัส QR ของคุณ",
     "isDeprecated": false
   },
   {
@@ -8140,7 +8172,7 @@
     "key": "Message.QRNofificationRequest",
     "description": "The message from the QR code notification banner to inform X sent you a friend request from your QR code",
     "english": "sent you a friend request from your QR code",
-    "translation": "ส่งคำขอเป็นเพื่อนมาจากรหัส QR ของคุณ",
+    "translation": "ส่งคำขอเป็นเพื่อนถึงคุณจากรหัส QR ของคุณ",
     "isDeprecated": false
   },
   {
@@ -8989,6 +9021,22 @@
     "description": "Search Roblox",
     "english": "Search Roblox",
     "translation": "ค้นหาใน Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.ShowingNormalSearchResults",
+    "description": "Transition text to display in a banner before showing normal search results.\n\nPlease leave this section of the text as it is: \"<b>{query}</b>\".",
+    "english": "Showing results for <b>{query}</b> (without quotes):",
+    "translation": "แสดงผลการค้นหาสำหรับ <b>{query}</b> (โดยไม่มีเครื่องหมายอัญประกาศ):",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Search.GlobalSearch",
+    "key": "Response.NoExactSearchResults",
+    "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".",
+    "english": "No results found for <b>{query}</b>.",
+    "translation": "ไม่พบผลการค้นหาสำหรับ <b>{query}</b>",
     "isDeprecated": false
   },
   {
@@ -18393,10 +18441,98 @@
   },
   {
     "namespace": "Verification.Identity",
+    "key": "Description.CommunityStandardsUpsell2",
+    "description": null,
+    "english": "The video from your camera never leaves your device, and Roblox does not record or store any information from it.",
+    "translation": "วิดีโอจากกล้องของคุณจะไม่ถูกส่งออกไปนอกอุปกรณ์ของคุณ และ Roblox จะไม่บันทึกหรือเก็บข้อมูลใดๆ จากวิดีโอของคุณ",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CameraPrivacy",
+    "description": null,
+    "english": "Roblox won’t receive or store any video or personal info captured from your camera",
+    "translation": "Roblox จะไม่ได้รับหรือจัดเก็บวิดีโอหรือข้อมูลส่วนตัวใดๆ ที่ถ่ายมาจากกล้องของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CameraUpsell2",
+    "description": null,
+    "english": "Use your camera to animate your avatar with your movement",
+    "translation": "ใช้กล้องของคุณเพื่อเคลื่อนไหวอวาตาร์ตามการเคลื่อนไหวของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.ExplicitConsentCameraUpsell2",
+    "description": null,
+    "english": "I consent to Roblox’s temporary use of my movement data to animate my avatar.",
+    "translation": "ฉันยินยอมให้ Roblox ใช้ข้อมูลการเคลื่อนไหวของฉันเพื่อเคลื่อนไหวอวาตาร์ของฉันเป็นการชั่วคราว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.DefaultConsentCameraUpsell2",
+    "description": null,
+    "english": "By selecting Allow, I consent to Roblox’s temporary use of my movement data to animate my avatar.",
+    "translation": "การเลือกที่อนุญาต จะถือว่าฉันยินยอมให้ Roblox ใช้ข้อมูลการเคลื่อนไหวของฉันเพื่อเคลื่อนไหวอวาตาร์ของฉันเป็นการชั่วคราว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
     "key": "Title.CameraUpsell2",
     "description": null,
     "english": "Bring Your Avatar To Life",
     "translation": "ปลุกอวาตาร์ของคุณให้มีชีวิต",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Description.CameraCaptureSafety",
+    "description": null,
+    "english": "Roblox won’t receive or store any video or personal info captured from your camera",
+    "translation": "Roblox จะไม่ได้รับหรือจัดเก็บวิดีโอหรือข้อมูลส่วนตัวใดๆ ที่ถ่ายมาจากกล้องของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Heading.V2LetsChat",
+    "description": "lets chat",
+    "english": "Let's Chat",
+    "translation": "มาแชทกันเถอะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.V2EnableVoiceChat1",
+    "description": null,
+    "english": "Enable chat with voice to talk with others in this experience.",
+    "translation": "เปิดใช้งานการแชทด้วยเสียงเพื่อพูดคุยกับคนอื่นๆ ในประสบการณ์นี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.V2ClickToConsent",
+    "description": null,
+    "english": "I consent to Roblox's collection, use, and storage of my voice recording to enable voice services and for moderation, safety, and improvement of our services and tools.",
+    "translation": "ฉันยินยอมให้ Roblox รวบรวม ใช้ และจัดเก็บการบันทึกเสียงของฉันเพื่อเปิดใช้งานบริการเสียงและเพื่อวัตถุประสงค์ในการกลั่นกรอง ความปลอดภัย และเพื่อปรับปรุงเครื่องมือและบริการของ Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.V2EnableVoiceChat",
+    "description": null,
+    "english": "Enable chat with voice",
+    "translation": "เปิดใช้งานการแชทด้วยเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Verification.Identity",
+    "key": "Label.V2JoinWithout",
+    "description": null,
+    "english": "Join without chat with voice",
+    "translation": "เข้าร่วมโดยไม่ใช้การแชทด้วยเสียง",
     "isDeprecated": false
   },
   {
@@ -20740,7 +20876,7 @@
     "key": "Text.AlreadySubscribed",
     "description": null,
     "english": "You can manage your subscription from Settings > Subscriptions.",
-    "translation": "คุณเป็นสมาชิกแล้ว",
+    "translation": "คุณสามารถจัดการการสมัครสมาชิกของคุณได้จากการตั้งค่า > การสมัครสมาชิก",
     "isDeprecated": false
   },
   {
@@ -20781,6 +20917,38 @@
     "description": "DEPRECATED",
     "english": "This subscription can't be purchased here",
     "translation": "ไม่สามารถซื้อการสมัครสมาชิกนี้ได้ที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.RestrictedUserAge",
+    "description": "DEPRECATED",
+    "english": "This experience is only available to older users",
+    "translation": "ผู้ใช้ที่มีอายุมากกว่าเท่านั้นที่สามารถใช้ประสบการณ์นี้ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionUnsupportedPlatform",
+    "description": null,
+    "english": "This subscription can't be purchased here",
+    "translation": "ไม่สามารถซื้อการสมัครสมาชิกนี้ได้ที่นี่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.SubscriptionNotForSale",
+    "description": null,
+    "english": "This subscription can't be purchased at this time",
+    "translation": "ไม่สามารถซื้อการสมัครสมาชิกนี้ได้ในขณะนี้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "IAPExperience.PurchaseError",
+    "key": "Text.VpcRequired",
+    "description": null,
+    "english": "You can subscribe from this experience’s Passes & Subscriptions or Store page, with help from a parent.",
+    "translation": "คุณสามารถสมัครสมาชิกได้จากหน้าบัตรผ่านและการสมัครสมาชิกหรือหน้าร้านค้าของประสบการณ์นี้ด้วยความช่วยเหลือจากผู้ปกครอง",
     "isDeprecated": false
   },
   {
@@ -22856,6 +23024,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Description.SaveCreditCardConsent",
+    "description": null,
+    "english": "Your child needs your permission to save payment methods to their account. A saved payment method can be used for purchases on Roblox, including subscriptions. {breakLine}As a parent, you’ll receive an email notification for every purchase. You can also remove payment methods anytime. {linkStart}Learn more{linkEnd}\n",
+    "translation": "บุตรหลานของคุณจำเป็นต้องได้รับอนุญาตจากคุณเพื่อบันทึกวิธีการชำระเงินในบัญชีของตนเอง วิธีการชำระเงินที่บันทึกไว้สามารถใช้กับการซื้อต่างๆ บน Roblox ซึ่งรวมถึงการสมัครสมาชิกด้วย{breakLine}ในฐานะผู้ปกครองคุณจะได้รับการแจ้งเตือนทางอีเมลสำหรับการซื้อทุกครั้ง นอกจากนี้ คุณยังสามารถลบวิธีการชำระเงินได้ทุกเมื่อ{linkStart}เรียนรู้เพิ่มเติม{linkEnd}\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SaveCreditCardSuccess",
+    "description": null,
+    "english": "When your child purchases a subscription on Roblox, you can manually save a payment method to their Roblox account for future use. ",
+    "translation": "เมื่อบุตรหลานของคุณซื้อการสมัครสมาชิกบน Roblox คุณสามารถบันทึกวิธีการชำระเงินในบัญชี Roblox ของพวกเขาเพื่อใช้ในอนาคตได้ด้วยตัวคุณเอง ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.SubscriptionPurchasePrompt",
     "key": "Label.TestFlowDisclaimer",
     "description": "Footer on prompt if the user is testing in studio.",
@@ -23196,7 +23380,7 @@
     "key": "Prompt.FirstCall",
     "description": "Text shown to users when they have no call history to prompt them to call a friend.",
     "english": "Try making your first call",
-    "translation": "เพื่อนของคุณกำลังรอให้คุณโทรหา!",
+    "translation": "ลองทำการโทรเป็นครั้งแรกของคุณ",
     "isDeprecated": false
   },
   {
@@ -23284,7 +23468,7 @@
     "key": "Error.Description.Generic",
     "description": "Generic error message",
     "english": "Try again later",
-    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
+    "translation": "ลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -23301,6 +23485,22 @@
     "description": "Error message shown to the user if we failed to verify if they are call enabled",
     "english": "Failed to verify call eligibility.",
     "translation": "ตรวจสอบความสามารถในการโทรไม่สำเร็จ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.Generic",
+    "description": "Generic error title",
+    "english": "Something went wrong",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.SuggestedFriends",
+    "description": "Tooltip description for list of suggested friends in the phonebook",
+    "english": "Friends with devices and settings set for an optimal call experience.",
+    "translation": "เพื่อนที่มีอุปกรณ์และการตั้งค่าที่กําหนดไว้สําหรับประสบการณ์การโทรที่ดีที่สุด",
     "isDeprecated": false
   }
 ]

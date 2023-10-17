@@ -457,6 +457,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Lable.LinkAccount",
+    "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
+    "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
+    "translation": "Tài khoản Roblox của bạn sẽ được liên kết với tài khoản {platform} của bạn, và lần sau bạn sẽ được đăng nhập tự động! Bạn có thể hủy liên kết tại bất kỳ thời điểm nào tại phần Cài đặt. Có thể sẽ có thời gian chờ trước khi có thể liên kết với một tài khoản mới.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.LinkAccount",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "t",
@@ -465,10 +473,42 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Label.LinkAccountWarning",
+    "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
+    "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
+    "translation": "Tài khoản Roblox của bạn sẽ được liên kết với tài khoản {platform} của bạn, và lần sau bạn sẽ được đăng nhập tự động! Bạn có thể hủy liên kết tại bất kỳ thời điểm nào tại phần Cài đặt. Có thể sẽ có thời gian chờ trước khi có thể liên kết với một tài khoản mới.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.UsernameEmailPhoneLogin",
     "description": "Instructions telling users the 3 different credentials they can use to log in.",
     "english": "Log In With Username/Email/Phone",
     "translation": "Đăng Nhập Với Tên Người Dùng/E-mail/Điện Thoại",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.Require2FA",
+    "description": "An error message to show that 2SV login is not supported on consoles.",
+    "english": "2-Step Verification is not supported on console. Please follow the instructions on the right to securely log in.",
+    "translation": "Xác thực 2 bước không được hỗ trợ trên máy chơi game. Vui lòng tuân theo hướng dẫn bên phải để đăng nhập một cách an toàn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.AlreadyLinked",
+    "description": "The Roblox account the user wants to link to is already connected to a different",
+    "english": "This Roblox account is already linked to a different account on {platform}. Please try logging in with a different Roblox account.",
+    "translation": "Tài khoản Roblox này đã được liên kết với một tài khoản khác trên {platform}. Vui lòng thử đăng nhập bằng một tài khoản Roblox khác.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.RelinkingFreeze",
+    "description": "The roblox account was linked to another console account. so there is a 90 days freeze to link to a different console account.",
+    "english": "This Roblox account has linked to another account on {platform} in the past 90 days. Please try logging in with a different Roblox account.",
+    "translation": "Tài khoản Roblox này đã được liên kết với một tài khoản khác trên {platform} trong vòng 90 ngày gần đây. Vui lòng thử đăng nhập bằng một tài khoản Roblox khác.",
     "isDeprecated": false
   },
   {
@@ -1292,7 +1332,7 @@
     "key": "Description.VerifiedParentalConsentModal.LegalCheckboxLabel",
     "description": null,
     "english": "By checking this box and clicking continue, you are giving consent to your child to access Roblox.",
-    "translation": "Bằng cách nhập mã, bạn đồng ý cho con mình truy cập Roblox.",
+    "translation": "Bằng cách chọn ô này và nhấn tiếp tục, bạn đang cho phép con của bạn truy cập vào Roblox.",
     "isDeprecated": false
   },
   {
@@ -1313,10 +1353,26 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Description.SignupOtpModal.LegalCheckboxLabel",
+    "description": null,
+    "english": "By checking the box and clicking continue, you are giving consent to your child to access Roblox.",
+    "translation": "Bằng cách chọn ô này và nhấn tiếp tục, bạn đang cho phép con của bạn truy cập vào Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "Tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.Try",
+    "description": "this will precede a pill button with a username suggestion",
+    "english": "Try",
+    "translation": "Thử",
     "isDeprecated": false
   },
   {
@@ -1357,6 +1413,14 @@
     "description": "Male label for the gender selector dropdown",
     "english": "Male",
     "translation": "Nam",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.VerificationLinkingText",
+    "description": "Text that we will show the user when they are signing on for a new account on console.\n\nplatform: the device network. for example, PlayStation™Network",
+    "english": "Your Roblox account will be linked to your account on {platform}. You can unlink from the Settings screen at any time. There may be a cool down before being able to link to another account on {platform}. By clicking Sign Up, you are agreeing to the Terms of Use including the arbitration clause and you are acknowledging the Privacy Policy.",
+    "translation": "Tài khoản Roblox của bạn sẽ được liên kết với tài khoản của bạn trên {platform}. Bạn có thể hủy liên kết từ màn hình Cài đặt bất kỳ lúc nào. Có thể có thời gian chờ trước khi có thể liên kết với một tài khoản khác trên {platform}. Bằng cách nhấn vào Đăng ký, bạn đang đồng ý với Điều khoản sử dụng bao gồm điều khoản trọng án và bạn đang xác nhận Chính sách bảo mật.",
     "isDeprecated": false
   },
   {
@@ -2313,6 +2377,22 @@
   },
   {
     "namespace": "CommonUI.Features",
+    "key": "Label.FTUX",
+    "description": "This is the tile text for the Roblox VR tutorial in More page grid layout.",
+    "english": "Roblox VR Tutorial",
+    "translation": "Hướng dẫn Roblox VR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ModerationPortal",
+    "description": "Name of the Moderation Portal",
+    "english": "Moderation Portal",
+    "translation": "Cổng thông tin kiểm duyệt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
     "key": "ControllerBar.Search",
     "description": "Made this by accident.  Please ignore.",
     "english": "Search",
@@ -2329,10 +2409,58 @@
   },
   {
     "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.HoldPrefix",
+    "description": "In english, this word precedes a controller-bar short-cut icon, as in \"Hold <A> to Play\" meaning hold down the A button on the gamepad to do an action",
+    "english": "Hold",
+    "translation": "Giữ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ControllerBar.ToPlaySuffix",
+    "description": "In english, this is the phrase that comes after the controller button icon such as: \"Hold <A> to Play\".  This phrase will be used together with Label.ControllerBar.HoldPrefix (and an image for the button icon) to create the full sentence \"Hold <A> to Play\".",
+    "english": "to play",
+    "translation": "để chơi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Labels.OrYouCan",
+    "description": "Used to separate groups of buttons.  In particular, on the login/signup screen, when you can login or signup using the current Xbox account, _or you can_ switch Xbox accounts.",
+    "english": "Or you can",
+    "translation": "Hoặc bạn có thể",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
     "key": "Label.EngagementScreen.Continue",
     "description": "On the Console Engagement Screen, there is a button allowing the user to proceed to the login/signup screen using the Xbox account associated with the gamepad they used to select the button.  The button just says \"Continue\" in english.",
     "english": "Continue",
     "translation": "Tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.EngagementScreen.SwitchAccounts",
+    "description": "This button brings up a piece of UI allowing the user to select a different user-account on some other platform than Roblox.  In other words, we're not switching Roblox accounts, we're switching Xbox accounts (or maybe in the future, Google or Facebook accounts, if linking to those is something we want to support)",
+    "english": "Switch {platform} Accounts",
+    "translation": "Chuyển đổi {platform} Tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.VRFTUX",
+    "description": "Tile text for more page grid tile in VR for FTUX.",
+    "english": "VR Tutorial",
+    "translation": "Hướng dẫn VR",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.AdjustScreen",
+    "description": "Adjust screen / Overscan settings page label",
+    "english": "Adjust Screen",
+    "translation": "Điều chỉnh màn hình",
     "isDeprecated": false
   },
   {
@@ -3024,6 +3152,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.PasskeysSecurityWarning",
+    "description": null,
+    "english": "Passkeys is the most secure and easiest way to log in to your Roblox account. For security, only set up passkeys on your personal devices.",
+    "translation": "Mã xác nhận là cách an toàn nhất và dễ dàng nhất để đăng nhập vào tài khoản Roblox của bạn. Để bảo mật, chỉ thiết lập mã xác nhận trên thiết bị cá nhân của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AddAPasskey",
+    "description": null,
+    "english": "Add a Passkey",
+    "translation": "Thêm Một Mã Xác Nhận",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Catalog",
     "key": "Label.CategoryType",
     "description": null,
@@ -3036,7 +3180,7 @@
     "key": "Label.Username",
     "description": null,
     "english": "Username",
-    "translation": "Tên tài khoản",
+    "translation": "Tên Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -3044,7 +3188,7 @@
     "key": "Label.Filter.Filters",
     "description": null,
     "english": "Filters",
-    "translation": "Các bộ lọc",
+    "translation": "Bộ Lọc",
     "isDeprecated": false
   },
   {
@@ -3060,7 +3204,7 @@
     "key": "Label.Filter.Genre",
     "description": null,
     "english": "Genre",
-    "translation": "Thể loại",
+    "translation": "Thể Loại",
     "isDeprecated": false
   },
   {
@@ -3068,7 +3212,7 @@
     "key": "Label.Filter.PriceMin",
     "description": null,
     "english": "Min",
-    "translation": "Tối thiểu",
+    "translation": "Tối Thiểu",
     "isDeprecated": false
   },
   {
@@ -3076,7 +3220,7 @@
     "key": "Label.Filter.PriceMax",
     "description": null,
     "english": "Max",
-    "translation": "Tối đa",
+    "translation": "Tối Đa",
     "isDeprecated": false
   },
   {
@@ -3100,7 +3244,7 @@
     "key": "Label.Filter.UnavailableItems",
     "description": null,
     "english": "Unavailable Items",
-    "translation": "Vật phẩm không có sẵn",
+    "translation": "Vật Phẩm Không Có Sẵn",
     "isDeprecated": false
   },
   {
@@ -3108,7 +3252,7 @@
     "key": "Response.NoItemsFound",
     "description": null,
     "english": "No items found.",
-    "translation": "Không tìm thấy vật phẩm nào.",
+    "translation": "Không tìm thấy vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -3116,7 +3260,7 @@
     "key": "LabelFeatured",
     "description": null,
     "english": "Featured",
-    "translation": "Nổi bật",
+    "translation": "Được Đề Xuất",
     "isDeprecated": false
   },
   {
@@ -3124,7 +3268,7 @@
     "key": "LabelCollectibles",
     "description": "\"Collectibles\" refer to an item category similar to \"Limited\" items",
     "english": "Collectibles",
-    "translation": "Đồ sưu tập",
+    "translation": "Đồ Sưu Tập",
     "isDeprecated": false
   },
   {
@@ -3132,7 +3276,7 @@
     "key": "LabelAccessories",
     "description": null,
     "english": "Accessories",
-    "translation": "Phụ kiện",
+    "translation": "Phụ Kiện",
     "isDeprecated": false
   },
   {
@@ -3140,7 +3284,7 @@
     "key": "LabelAnimations",
     "description": null,
     "english": "Animations",
-    "translation": "Hiệu ứng động",
+    "translation": "Hiệu Ứng Động",
     "isDeprecated": false
   },
   {
@@ -3148,7 +3292,7 @@
     "key": "LabelShirts",
     "description": null,
     "english": "Shirts",
-    "translation": "Áo sơ mi",
+    "translation": "Áo Sơ Mi",
     "isDeprecated": false
   },
   {
@@ -3156,7 +3300,7 @@
     "key": "LabelTShirts",
     "description": null,
     "english": "T-Shirts",
-    "translation": "Áo thun",
+    "translation": "Áo Thun",
     "isDeprecated": false
   },
   {
@@ -3180,7 +3324,7 @@
     "key": "LabelAccessoryFace",
     "description": null,
     "english": "Face",
-    "translation": "Khuôn Mặt",
+    "translation": "Mặt",
     "isDeprecated": false
   },
   {
@@ -3204,7 +3348,7 @@
     "key": "LabelAccessoryFront",
     "description": null,
     "english": "Front",
-    "translation": "Mặt trước",
+    "translation": "Phía Trước",
     "isDeprecated": false
   },
   {
@@ -3212,7 +3356,7 @@
     "key": "LabelAccessoryBack",
     "description": null,
     "english": "Back",
-    "translation": "Mặt sau",
+    "translation": "Phía Sau",
     "isDeprecated": false
   },
   {
@@ -3228,7 +3372,7 @@
     "key": "LabelAllCreators",
     "description": null,
     "english": "All Creators",
-    "translation": "Tất Cả Các Nhà Sáng Tạo",
+    "translation": "Tất Cả Nhà Sáng Tạo",
     "isDeprecated": false
   },
   {
@@ -3236,7 +3380,7 @@
     "key": "LabelFree",
     "description": null,
     "english": "Free",
-    "translation": "Miễn phí",
+    "translation": "Miễn Phí",
     "isDeprecated": false
   },
   {
@@ -3244,7 +3388,7 @@
     "key": "LabelAnyPrice",
     "description": null,
     "english": "Any Price",
-    "translation": "Bất kỳ giá nào",
+    "translation": "Bất Kỳ Giá Nào",
     "isDeprecated": false
   },
   {
@@ -3252,7 +3396,7 @@
     "key": "LabelAllTime",
     "description": null,
     "english": "All Time",
-    "translation": "Mọi lúc",
+    "translation": "Mọi Lúc",
     "isDeprecated": false
   },
   {
@@ -3260,7 +3404,7 @@
     "key": "LabelPastWeek",
     "description": null,
     "english": "Past Week",
-    "translation": "Tuần trước",
+    "translation": "Tuần Qua",
     "isDeprecated": false
   },
   {
@@ -3268,7 +3412,7 @@
     "key": "LabelPastDay",
     "description": null,
     "english": "Past Day",
-    "translation": "Ngày hôm qua",
+    "translation": "Hôm Qua",
     "isDeprecated": false
   },
   {
@@ -3276,7 +3420,7 @@
     "key": "LabelOffSale",
     "description": null,
     "english": "Offsale",
-    "translation": "Giảm giá",
+    "translation": "Ngừng Bán",
     "isDeprecated": false
   },
   {
@@ -3284,7 +3428,7 @@
     "key": "LabelNoResellers",
     "description": null,
     "english": "No Resellers",
-    "translation": "Không có Người bán lại",
+    "translation": "Không Có Người Bán Lại",
     "isDeprecated": false
   },
   {
@@ -3300,7 +3444,7 @@
     "key": "Label.Sale",
     "description": "label",
     "english": "Sale",
-    "translation": "Mua bán",
+    "translation": "Khuyến Mãi",
     "isDeprecated": false
   },
   {
@@ -3332,7 +3476,7 @@
     "key": "Label.Owned",
     "description": null,
     "english": "Owned",
-    "translation": "Đã sở hữu",
+    "translation": "Đã Sở Hữu",
     "isDeprecated": false
   },
   {
@@ -3340,7 +3484,7 @@
     "key": "Label.Favorites",
     "description": null,
     "english": "Favorites",
-    "translation": "Yêu thích",
+    "translation": "Yêu Thích",
     "isDeprecated": false
   },
   {
@@ -3348,7 +3492,7 @@
     "key": "Label.Emotes",
     "description": "Emotes",
     "english": "Emotes",
-    "translation": "Biểu cảm",
+    "translation": "Biểu Cảm",
     "isDeprecated": false
   },
   {
@@ -3356,7 +3500,7 @@
     "key": "Label.Character",
     "description": "Label for the \"Character\" category containing costumes/bundles",
     "english": "Character",
-    "translation": "Nhân vật",
+    "translation": "Nhân Vật",
     "isDeprecated": false
   },
   {
@@ -3364,7 +3508,7 @@
     "key": "Label.Outfit",
     "description": "Label for the Outfit category in the Catalog. Contains clothing items that would make up an outfit such as hats, shirt, pants, ect.",
     "english": "Outfit",
-    "translation": "Trang phục",
+    "translation": "Trang Phục",
     "isDeprecated": false
   },
   {
@@ -3372,7 +3516,7 @@
     "key": "Label.Body",
     "description": "Label for the Body category in the Catalog which contains items such as hairs, head and body parts to customize a users avatar.",
     "english": "Body",
-    "translation": "Cơ thể",
+    "translation": "Thân",
     "isDeprecated": false
   },
   {
@@ -3380,7 +3524,7 @@
     "key": "Label.Animation",
     "description": "Label for the Animation category of the catalog which contains items such as animation packages and emote animations.",
     "english": "Animation",
-    "translation": "Hiệu ứng động",
+    "translation": "Hiệu Ứng Động",
     "isDeprecated": false
   },
   {
@@ -3388,7 +3532,7 @@
     "key": "Label.Purchases",
     "description": "Label for number of purchases an item has.",
     "english": "Purchases",
-    "translation": "Mua",
+    "translation": "Giao Dịch Mua",
     "isDeprecated": false
   },
   {
@@ -3396,7 +3540,7 @@
     "key": "Label.Recommendations",
     "description": null,
     "english": "You May Also Like",
-    "translation": "Bạn cũng có thể thích",
+    "translation": "Bạn Cũng Có Thể Thích",
     "isDeprecated": false
   },
   {
@@ -3404,7 +3548,7 @@
     "key": "Label.Movement",
     "description": "The Movement category for the Lua App catalog page, includes animation packages.",
     "english": "Movement",
-    "translation": "Chuyển động",
+    "translation": "Chuyển Động",
     "isDeprecated": false
   },
   {
@@ -3412,7 +3556,7 @@
     "key": "Lable.BodyShape",
     "description": "Label for the Body Shape category in the Catalog which includes items to customize the shape of a users Avatar.",
     "english": "Body Shape",
-    "translation": "Hình dáng cơ thể",
+    "translation": "Thân Hình",
     "isDeprecated": false
   },
   {
@@ -3444,7 +3588,7 @@
     "key": "Label.Gear",
     "description": "The Gear category in the catalog includes miscellaneous items that a user can equip to their Avatar. Items in this category include swords, water guns/nerf launchers, pets and handheld items.",
     "english": "Gear",
-    "translation": "Trang bị",
+    "translation": "Trang Bị",
     "isDeprecated": false
   },
   {
@@ -3452,7 +3596,7 @@
     "key": "Label.WaistAccessories",
     "description": "Category for items that are equipped to a users waist, things like belts are included in this category.",
     "english": "Waist Accessories",
-    "translation": "Phụ kiện eo",
+    "translation": "Phụ Kiện Eo",
     "isDeprecated": false
   },
   {
@@ -3460,7 +3604,7 @@
     "key": "Label.BackAccessories",
     "description": "Label for the category of items that equip to the back of a users Avatar.",
     "english": "Back Accessories",
-    "translation": "Phụ kiện mặt sau",
+    "translation": "Phụ Kiện Phía Sau",
     "isDeprecated": false
   },
   {
@@ -3468,7 +3612,7 @@
     "key": "Label.FrontAccessories",
     "description": "Label for the category of items which equip to the front of a users Avatar",
     "english": "Front Accessories",
-    "translation": "Phụ kiện mặt trước",
+    "translation": "Phụ Kiện Phía Trước",
     "isDeprecated": false
   },
   {
@@ -3476,7 +3620,7 @@
     "key": "Label.ShoulderAccessories",
     "description": "Label for the category of items which equip to the shoulder of a users Avatar",
     "english": "Shoulder Accessories",
-    "translation": "Phụ kiện vai",
+    "translation": "Phụ Kiện Vai",
     "isDeprecated": false
   },
   {
@@ -3484,7 +3628,7 @@
     "key": "Label.FaceAccessories",
     "description": "Label for the category of items that equip on the face of a users avatar, things like glasses are included in this category.",
     "english": "Face Accessories",
-    "translation": "Phụ kiện khuôn mặt",
+    "translation": "Phụ Kiện Mặt",
     "isDeprecated": false
   },
   {
@@ -3492,7 +3636,7 @@
     "key": "Label.NeckAccessories",
     "description": "Label for the Category of items that equip on the neck of a users Avatar. Scarves, necklaces, ect.",
     "english": "Neck Accessories",
-    "translation": "Phụ kiện cổ",
+    "translation": "Phụ Kiện Cổ",
     "isDeprecated": false
   },
   {
@@ -3500,7 +3644,7 @@
     "key": "Label.Limited",
     "description": "Label for the Category of items that are limited/collectible. These items have a set amount that can be sold.",
     "english": "Limited",
-    "translation": "Giới hạn",
+    "translation": "Giới Hạn",
     "isDeprecated": false
   },
   {
@@ -3508,7 +3652,7 @@
     "key": "Label.BodyShape",
     "description": "Label for the Body Shape category in the Catalog which includes items to customize the shape of a users Avatar.",
     "english": "Body Shape",
-    "translation": "Hình dáng cơ thể",
+    "translation": "Thân Hình",
     "isDeprecated": false
   },
   {
@@ -3524,7 +3668,7 @@
     "key": "Feature.Catalog.LabelFeaturedUppercase",
     "description": "Uppercase label for the Featured category in the Catalog",
     "english": "FEATURED",
-    "translation": "NỔI BẬT",
+    "translation": "ĐƯỢC ĐỀ XUẤT",
     "isDeprecated": false
   },
   {
@@ -3540,7 +3684,7 @@
     "key": "Feature.Catalog.Label.BodyUppercase",
     "description": "Uppercase label for the Body Category in the Catalog",
     "english": "BODY",
-    "translation": "CƠ THỂ",
+    "translation": "THÂN",
     "isDeprecated": false
   },
   {
@@ -3564,7 +3708,7 @@
     "key": "Label.BodyUppercase",
     "description": "Uppercase label for the Body category in the Catalog",
     "english": "BODY",
-    "translation": "CƠ THỂ",
+    "translation": "THÂN",
     "isDeprecated": false
   },
   {
@@ -3588,7 +3732,7 @@
     "key": "Catalog.Label.FeaturedUppercase",
     "description": "Uppercase label for the Featured Category in the Catalog",
     "english": "FEATURED",
-    "translation": "NỔI BẬT",
+    "translation": "ĐƯỢC ĐỀ XUẤT",
     "isDeprecated": false
   },
   {
@@ -3596,7 +3740,7 @@
     "key": "Label.FeaturedUppercase",
     "description": "Uppercase label for the Featured category in the Catalog.",
     "english": "FEATURED",
-    "translation": "NỔI BẬT",
+    "translation": "ĐƯỢC ĐỀ XUẤT",
     "isDeprecated": false
   },
   {
@@ -3604,7 +3748,7 @@
     "key": "Label.CommunityCreations",
     "description": "UGC items",
     "english": " Community Creations",
-    "translation": " Sản phẩm Cộng đồng",
+    "translation": " Sản Phẩm Cộng Đồng",
     "isDeprecated": false
   },
   {
@@ -3612,7 +3756,7 @@
     "key": "Action.EditAvatar",
     "description": "Button text to go to the Avatar Editor",
     "english": "Edit Avatar",
-    "translation": "Chỉnh sửa Avatar",
+    "translation": "Chỉnh Sửa Avatar",
     "isDeprecated": false
   },
   {
@@ -3636,7 +3780,7 @@
     "key": "Action.Customize",
     "description": "Button action to go to Avatar Page to customize Avatar with the Catalog item",
     "english": "Customize",
-    "translation": "Tùy chỉnh",
+    "translation": "Tùy Chỉnh",
     "isDeprecated": false
   },
   {
@@ -3644,7 +3788,7 @@
     "key": "Action.Share",
     "description": "Share the catalog item with others",
     "english": "Share",
-    "translation": "Chia sẻ",
+    "translation": "Chia Sẻ",
     "isDeprecated": false
   },
   {
@@ -3652,7 +3796,7 @@
     "key": "Label.AvailableForSale",
     "description": "Title for the items that are Available For Sale",
     "english": "Available For Sale",
-    "translation": "Có sẵn để bán",
+    "translation": "Đang Đăng Bán",
     "isDeprecated": false
   },
   {
@@ -3660,7 +3804,7 @@
     "key": "Label.OnSale",
     "description": "List of items that are for sale.",
     "english": "On Sale",
-    "translation": "Đang giảm giá",
+    "translation": "Đang Giảm Giá",
     "isDeprecated": false
   },
   {
@@ -3668,7 +3812,7 @@
     "key": "Heading.Sellers",
     "description": "Users who are selling items",
     "english": "Sellers",
-    "translation": "Người bán",
+    "translation": "Người Bán",
     "isDeprecated": false
   },
   {
@@ -3676,7 +3820,7 @@
     "key": "Label.OriginalPrice",
     "description": "The Original Price of the item",
     "english": "Original Price",
-    "translation": "Giá gốc",
+    "translation": "Giá Gốc",
     "isDeprecated": false
   },
   {
@@ -3684,7 +3828,7 @@
     "key": "Label.QuantitySold",
     "description": "The amount of items that were sold so far",
     "english": "Quantity Sold",
-    "translation": "Số lượng đã bán",
+    "translation": "Số Lượng Đã Bán",
     "isDeprecated": false
   },
   {
@@ -3692,7 +3836,7 @@
     "key": "Label.AveragePrice",
     "description": "The average price of an item in the catalog",
     "english": "Average Price",
-    "translation": "Giá trung bình",
+    "translation": "Giá Trung Bình",
     "isDeprecated": false
   },
   {
@@ -3700,7 +3844,7 @@
     "key": "Label.Edition",
     "description": "The serial number of a specific catalog item",
     "english": "Edition",
-    "translation": "Phiên bản",
+    "translation": "Phiên Bản",
     "isDeprecated": false
   },
   {
@@ -3708,7 +3852,7 @@
     "key": "Heading.ConfirmPrice",
     "description": "Confirmation heading of the price the user has set for the item they want to sell",
     "english": "Confirm Price",
-    "translation": "Xác nhận giá",
+    "translation": "Xác Nhận Giá",
     "isDeprecated": false
   },
   {
@@ -3716,7 +3860,7 @@
     "key": "Label.SellCut",
     "description": "Details what you'd earn. For example: \"You Earn: 100 robux\"",
     "english": "You Earn:",
-    "translation": "Bạn kiếm được:",
+    "translation": "Bạn Kiếm Được:",
     "isDeprecated": false
   },
   {
@@ -3740,7 +3884,7 @@
     "key": "Label.MinimumAmount",
     "description": "Describes the minimum amount of items you must sell.",
     "english": "Minimum amount must be over 0.",
-    "translation": "Số tiền tối thiểu phải lớn hơn 0.",
+    "translation": "Số vật phẩm tối thiểu phải lớn hơn 0.",
     "isDeprecated": false
   },
   {
@@ -3748,7 +3892,7 @@
     "key": "Action.GoCustomize",
     "description": "Button text to go to the Avatar Editor",
     "english": "Go Customize",
-    "translation": "Điều chỉnh",
+    "translation": "Tùy Chỉnh Ngay",
     "isDeprecated": false
   },
   {
@@ -3772,7 +3916,7 @@
     "key": "Heading.InsufficientFunds",
     "description": "User does not have enough robux",
     "english": "Insufficient Robux",
-    "translation": "Không đủ Robux",
+    "translation": "Không Đủ Robux",
     "isDeprecated": false
   },
   {
@@ -3804,7 +3948,7 @@
     "key": "Label.RobuxFee",
     "description": "Text directly before the amount of robux Roblox takes as a fee. Example: \"After 30% Fee: R$100\"",
     "english": "After {feePercentage}% Fee:",
-    "translation": "Sau khi áp dụng {feePercentage}% phí:",
+    "translation": "Sau {feePercentage}% Phí:",
     "isDeprecated": false
   },
   {
@@ -3812,7 +3956,7 @@
     "key": "Heading.BuyItem",
     "description": null,
     "english": "Buy Item",
-    "translation": "Mua sản phẩm",
+    "translation": "Mua Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -3820,7 +3964,7 @@
     "key": "Action.Cancel",
     "description": null,
     "english": "Cancel",
-    "translation": "Huỷ bỏ",
+    "translation": "Hủy Bỏ",
     "isDeprecated": false
   },
   {
@@ -3844,7 +3988,7 @@
     "key": "Action.Favorite",
     "description": "Click to Favorite",
     "english": "Favorite",
-    "translation": "Yêu thích",
+    "translation": "Yêu Thích",
     "isDeprecated": false
   },
   {
@@ -3852,7 +3996,7 @@
     "key": "Action.RemoveFavorite",
     "description": "Remove an item from favorites",
     "english": "Favorite",
-    "translation": "Yêu thích",
+    "translation": "Yêu Thích",
     "isDeprecated": false
   },
   {
@@ -3860,7 +4004,7 @@
     "key": "Action.Report",
     "description": "Report an item fro inappropriate content",
     "english": "Report",
-    "translation": "Báo cáo",
+    "translation": "Báo Cáo",
     "isDeprecated": false
   },
   {
@@ -3876,7 +4020,7 @@
     "key": "Label.NoSellersWarning",
     "description": "Error message that appears when trying to buy an item that no one is selling.",
     "english": "Sorry, no one is selling this item",
-    "translation": "Rất tiếc, không có ai hiện đang bán mặt hàng này",
+    "translation": "Rất tiếc, hiện không có ai bán vật phẩm này",
     "isDeprecated": false
   },
   {
@@ -3884,7 +4028,7 @@
     "key": "Label.ItemsCount",
     "description": "Count of items a user has.\nExample: \"3 items\"",
     "english": "{itemCount} items",
-    "translation": "{itemCount} các sản phẩm",
+    "translation": "{itemCount} vật phẩm",
     "isDeprecated": false
   },
   {
@@ -3892,7 +4036,7 @@
     "key": "Label.ItemCount",
     "description": "A singular count of item a user has.\nExample: \"1 item\"",
     "english": "{itemCount} item",
-    "translation": "{itemCount} sản phẩm",
+    "translation": "{itemCount} vật phẩm",
     "isDeprecated": false
   },
   {
@@ -3908,7 +4052,7 @@
     "key": "Label.SellSuccess",
     "description": "The text that displays when you've successfully put an item on sale.",
     "english": "Item on Sale",
-    "translation": "Sản Phẩm Giảm Giá",
+    "translation": "Vật Phẩm Giảm Giá",
     "isDeprecated": false
   },
   {
@@ -3916,7 +4060,7 @@
     "key": "Action.Remove",
     "description": null,
     "english": "Remove",
-    "translation": "Loại bỏ",
+    "translation": "Loại Bỏ",
     "isDeprecated": false
   },
   {
@@ -3924,7 +4068,7 @@
     "key": "Heading.SellItem",
     "description": "Heading for selling an item pop-up menu",
     "english": "Sell Item",
-    "translation": "Bán sản phẩm",
+    "translation": "Bán Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -3940,7 +4084,7 @@
     "key": "Heading.Resellers",
     "description": "Noun describing the people who are re-selling an item",
     "english": "Resellers",
-    "translation": "Đại lý",
+    "translation": "Người Bán Lại",
     "isDeprecated": false
   },
   {
@@ -3948,7 +4092,7 @@
     "key": "Label.Featured",
     "description": "Label for the Featured category in the Catalog",
     "english": "Featured",
-    "translation": "Được đề xuất",
+    "translation": "Được Đề Xuất",
     "isDeprecated": false
   },
   {
@@ -3956,7 +4100,7 @@
     "key": "Label.Resell",
     "description": null,
     "english": "Resell",
-    "translation": "Bán lại",
+    "translation": "Bán Lại",
     "isDeprecated": false
   },
   {
@@ -3964,7 +4108,7 @@
     "key": "Label.AvailableForSaleUpper",
     "description": "Available For Sale subheader with uppercased letters",
     "english": "AVAILABLE FOR SALE",
-    "translation": "Có sẵn để bán",
+    "translation": "ĐƯỢC ĐĂNG BÁN",
     "isDeprecated": false
   },
   {
@@ -3972,7 +4116,7 @@
     "key": "Label.OnSaleUpper",
     "description": "List of items that are for sale. Put in uppercase.",
     "english": "ON SALE",
-    "translation": "Đang được giảm giá",
+    "translation": "ĐANG GIẢM GIÁ",
     "isDeprecated": false
   },
   {
@@ -3980,7 +4124,7 @@
     "key": "Label.Characters",
     "description": "Label for the \"Character\" category containing costumes/bundles",
     "english": "Characters",
-    "translation": "Các nhân vật",
+    "translation": "Nhân Vật",
     "isDeprecated": false
   },
   {
@@ -3988,7 +4132,7 @@
     "key": "Label.Get",
     "description": "\"Get\" label that will be put on a buy button for a free item",
     "english": "Get",
-    "translation": "Lấy",
+    "translation": "Nhận",
     "isDeprecated": false
   },
   {
@@ -4012,7 +4156,7 @@
     "key": "Label.NoLongerAvailable",
     "description": "Text that appears when user clicks item that is not available for sale anymore",
     "english": "This item is no longer available",
-    "translation": "Mặt hàng này không còn nữa",
+    "translation": "Vật phẩm này không còn bán",
     "isDeprecated": false
   },
   {
@@ -4020,7 +4164,7 @@
     "key": "Heading.NotForSale",
     "description": "Heading for warning text that item is not for sale anymore",
     "english": "Not For Sale",
-    "translation": "Không phải để bán",
+    "translation": "Không Được Bán",
     "isDeprecated": false
   },
   {
@@ -4028,7 +4172,7 @@
     "key": "Heading.ItemRemoved",
     "description": "Text that shows in confirmation when the user removes an item from being sold",
     "english": "Item Removed",
-    "translation": "Mục đã được xóa",
+    "translation": "Đã Loại Bỏ Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4036,7 +4180,7 @@
     "key": "Feature.Catalog.Label.Community",
     "description": "Label to show UGC community creations.",
     "english": "Community",
-    "translation": "Cộng đồng",
+    "translation": "Cộng Đồng",
     "isDeprecated": false
   },
   {
@@ -4044,7 +4188,7 @@
     "key": "Label.Community",
     "description": "Label to show UGC community creations.",
     "english": "Community",
-    "translation": "Cộng đồng",
+    "translation": "Cộng Đồng",
     "isDeprecated": false
   },
   {
@@ -4052,7 +4196,7 @@
     "key": "Label.BodyShapes",
     "description": "Label to show \"body part\" bundles.",
     "english": "Body Shapes",
-    "translation": "Dáng người",
+    "translation": "Thân Hình",
     "isDeprecated": false
   },
   {
@@ -4068,7 +4212,7 @@
     "key": "Action.Rent",
     "description": "Label for renting an item",
     "english": "Rent",
-    "translation": "Cho thuê",
+    "translation": "Thuê",
     "isDeprecated": false
   },
   {
@@ -4076,7 +4220,7 @@
     "key": "Label.TShirt",
     "description": null,
     "english": "T-Shirt",
-    "translation": "Áo phông",
+    "translation": "Áo Thun",
     "isDeprecated": false
   },
   {
@@ -4084,7 +4228,7 @@
     "key": "Label.Emote",
     "description": null,
     "english": "Emote",
-    "translation": "Biểu cảm",
+    "translation": "Biểu Cảm",
     "isDeprecated": false
   },
   {
@@ -4092,7 +4236,7 @@
     "key": "Label.Clothing",
     "description": null,
     "english": "Clothing",
-    "translation": "Quần áo",
+    "translation": "Trang Phục",
     "isDeprecated": false
   },
   {
@@ -4100,7 +4244,7 @@
     "key": "Label.SellPageUpsell",
     "description": "An upsell message that appears when a non-premium member clicks the \"Sell\" button",
     "english": "Selling is only available to users with a Premium membership.",
-    "translation": "Chỉ bán cho những người dùng với tư cách thành viên Premium.",
+    "translation": "Chỉ bán cho những người chơi với tư cách thành viên Premium.",
     "isDeprecated": false
   },
   {
@@ -4108,7 +4252,7 @@
     "key": "Heading.PremiumOnly",
     "description": null,
     "english": "Premium Only",
-    "translation": "Chỉ dành cho Premium",
+    "translation": "Chỉ Dành Cho Premium",
     "isDeprecated": false
   },
   {
@@ -4116,7 +4260,7 @@
     "key": "Action.Upgrade",
     "description": null,
     "english": "Upgrade",
-    "translation": "Nâng cấp",
+    "translation": "Nâng Cấp",
     "isDeprecated": false
   },
   {
@@ -4124,7 +4268,7 @@
     "key": "Heading.FreeItem",
     "description": null,
     "english": "Get Item",
-    "translation": "Nhận sản phẩm",
+    "translation": "Nhận Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4132,7 +4276,7 @@
     "key": "Label.FreeItemConfirmation",
     "description": null,
     "english": "Would you like to get {itemName} from {creatorName} for free?",
-    "translation": "Bạn có muốn nhận {itemName} từ {creatorName} miễn phí không?",
+    "translation": "Bạn có muốn nhận {itemName} miễn phí từ {creatorName} không?",
     "isDeprecated": false
   },
   {
@@ -4140,7 +4284,7 @@
     "key": "Heading.FreeItemConfirmation",
     "description": null,
     "english": "Get Item",
-    "translation": "Nhận sản phẩm",
+    "translation": "Nhận Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4148,7 +4292,7 @@
     "key": "Heading.AvatarShop",
     "description": "A heading for the shop page where you can buy items to customize your avatar",
     "english": "Avatar Shop",
-    "translation": "Cửa hàng Avatar",
+    "translation": "Cửa Hàng Avatar",
     "isDeprecated": false
   },
   {
@@ -4156,7 +4300,7 @@
     "key": "Action.ClearAll",
     "description": "Used to clear all filter selections when filtering in the catalog.",
     "english": "Clear All",
-    "translation": "Xóa tất cả",
+    "translation": "Xóa Tất Cả",
     "isDeprecated": false
   },
   {
@@ -4164,7 +4308,7 @@
     "key": "Label.Category",
     "description": null,
     "english": "Category",
-    "translation": "Phân loại",
+    "translation": "Thể Loại",
     "isDeprecated": false
   },
   {
@@ -4172,7 +4316,7 @@
     "key": "Label.FreeUpperCase",
     "description": null,
     "english": "FREE",
-    "translation": "Miễn phí",
+    "translation": "MIỄN PHÍ",
     "isDeprecated": false
   },
   {
@@ -4180,7 +4324,7 @@
     "key": "Label.Sort",
     "description": null,
     "english": "Sort",
-    "translation": "Sắp xếp",
+    "translation": "Sắp Xếp",
     "isDeprecated": false
   },
   {
@@ -4196,7 +4340,7 @@
     "key": "Label.Relevance",
     "description": "Used for sorting items in the catalog.",
     "english": "Relevance",
-    "translation": "Mức độ liên quan",
+    "translation": "Liên Quan",
     "isDeprecated": false
   },
   {
@@ -4204,7 +4348,7 @@
     "key": "Label.Bestselling",
     "description": "Used for sorting items in the catalog.",
     "english": "Bestselling",
-    "translation": "Bán chạy nhất",
+    "translation": "Bán Chạy Nhất",
     "isDeprecated": false
   },
   {
@@ -4236,7 +4380,7 @@
     "key": "Label.MostFavorited",
     "description": "Used for sorting items in the catalog.",
     "english": "Most Favorited",
-    "translation": "Được yêu thích nhất",
+    "translation": "Được Yêu Thích Nhất",
     "isDeprecated": false
   },
   {
@@ -4244,7 +4388,7 @@
     "key": "Label.SortBy",
     "description": "Used for sorting items in the catalog.",
     "english": "Sort By",
-    "translation": "Sắp xếp theo",
+    "translation": "Sắp Xếp Theo",
     "isDeprecated": false
   },
   {
@@ -4268,7 +4412,7 @@
     "key": "Label.Shape",
     "description": null,
     "english": "Shape",
-    "translation": "Hình dạng",
+    "translation": "Hình Dạng",
     "isDeprecated": false
   },
   {
@@ -4276,7 +4420,7 @@
     "key": "Label.Faces",
     "description": null,
     "english": "Faces",
-    "translation": "Khuôn mặt",
+    "translation": "Mặt",
     "isDeprecated": false
   },
   {
@@ -4284,7 +4428,7 @@
     "key": "Label.Tops",
     "description": "Category in the catalog for shirts, t-shirts, jackets, ect. Items that are worn as \"tops\"",
     "english": "Tops",
-    "translation": "Áo",
+    "translation": "Thân Trên",
     "isDeprecated": false
   },
   {
@@ -4292,7 +4436,7 @@
     "key": "Label.None",
     "description": "Displayed on the item details list when there are no resellers",
     "english": "None",
-    "translation": "Không có",
+    "translation": "Không Có",
     "isDeprecated": false
   },
   {
@@ -4308,7 +4452,7 @@
     "key": "Label.PremiumOnly",
     "description": "Used to describe that an item is for premium members only and they are not premium.",
     "english": "Available for Premium users only",
-    "translation": "Chỉ dành cho người dùng Premium",
+    "translation": "Chỉ dành cho người chơi Premium",
     "isDeprecated": false
   },
   {
@@ -4316,7 +4460,7 @@
     "key": "Label.PrePremiumPrice",
     "description": "First part of a composed text. Used to tell the user the price of a premium exclusive item. Full text \"(Item Price: {robuxSymbol} {price})\"",
     "english": "(Item Price:",
-    "translation": "(Giá mặt hàng:",
+    "translation": "(Giá Vật Phẩm:",
     "isDeprecated": false
   },
   {
@@ -4332,7 +4476,7 @@
     "key": "Label.GetPremiumAndPrice",
     "description": "Part of a whole message \"Get Premium and buy for {robuxSymbol} {price}\", used to explain how much they will pay if they bought premium.",
     "english": "Get Premium and buy for ",
-    "translation": "Nhận Premium và mua với giá",
+    "translation": "Đăng ký Premium và mua với giá ",
     "isDeprecated": false
   },
   {
@@ -4340,7 +4484,7 @@
     "key": "Message.ReportCatalogItemPhrase",
     "description": null,
     "english": "You can send a report to our moderation team. We will review the item and take appropriate action.",
-    "translation": "Bạn có thể gửi báo cáo cho nhóm kiểm duyệt của chúng tôi. Chúng tôi sẽ xem xét mục này và thực hiện hành động thích hợp.",
+    "translation": "Bạn có thể gửi báo cáo cho đội ngũ kiểm duyệt của chúng tôi. Chúng tôi sẽ xem lại vật phẩm và thực hiện hành động thích hợp.",
     "isDeprecated": false
   },
   {
@@ -4348,7 +4492,7 @@
     "key": "Label.ReportItem",
     "description": null,
     "english": "Report Item",
-    "translation": "Mục báo cáo",
+    "translation": "Báo Cáo Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4364,7 +4508,7 @@
     "key": "Message.NotEnoughRobux",
     "description": null,
     "english": "This item cost more Robux than you can purchase. Please visit www.roblox.com to purchase more Robux.",
-    "translation": "Mặt hàng này có giá Robux cao hơn mức bạn có thể mua. Vui lòng truy cập www.roblox.com để mua thêm Robux.",
+    "translation": "Bạn không có đủ Robux để mua vật phẩm này. Vui lòng truy cập www.roblox.com để mua thêm Robux.",
     "isDeprecated": false
   },
   {
@@ -4372,7 +4516,7 @@
     "key": "Heading.CatalogOptions",
     "description": null,
     "english": "Catalog Options",
-    "translation": "Tùy chọn danh mục",
+    "translation": "Tùy Chọn Mục Lục",
     "isDeprecated": false
   },
   {
@@ -4380,7 +4524,7 @@
     "key": "Heading.QuickMenu",
     "description": null,
     "english": "Quick Menu",
-    "translation": "Trình đơn nhanh",
+    "translation": "Menu Nhanh",
     "isDeprecated": false
   },
   {
@@ -4388,7 +4532,7 @@
     "key": "Label.Search",
     "description": null,
     "english": "Search",
-    "translation": "Tìm kiếm",
+    "translation": "Tìm Kiếm",
     "isDeprecated": false
   },
   {
@@ -4396,7 +4540,7 @@
     "key": "Label.CustomizeAvatar",
     "description": null,
     "english": "Customize Avatar",
-    "translation": "Tùy chỉnh Avatar",
+    "translation": "Tùy Chỉnh Avatar",
     "isDeprecated": false
   },
   {
@@ -4404,7 +4548,7 @@
     "key": "Action.ItemOptions",
     "description": "Refers to a list of actions that can be performed on an item in the catalog. (Report, Favorite, etc.)",
     "english": "Item Options",
-    "translation": "Tùy chọn mục",
+    "translation": "Tùy Chọn Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4412,7 +4556,7 @@
     "key": "Label.CatalogOptions",
     "description": null,
     "english": "Catalog Options",
-    "translation": "Tùy chọn danh mục",
+    "translation": "Tùy Chọn Mục Lục",
     "isDeprecated": false
   },
   {
@@ -4420,7 +4564,7 @@
     "key": "Label.QuickMenu",
     "description": null,
     "english": "Quick Menu",
-    "translation": "Trình đơn nhanh",
+    "translation": "Menu Nhanh",
     "isDeprecated": false
   },
   {
@@ -4428,7 +4572,7 @@
     "key": "Action.Search",
     "description": null,
     "english": "Search",
-    "translation": "Tìm kiếm",
+    "translation": "Tìm Kiếm",
     "isDeprecated": false
   },
   {
@@ -4436,7 +4580,7 @@
     "key": "Response.PlacedOnSaleFailure",
     "description": "Toast message when a resale item can't be placed on sale.",
     "english": "Failed to place on sale",
-    "translation": "Không thể bán được",
+    "translation": "Không thể đăng bán",
     "isDeprecated": false
   },
   {
@@ -4444,7 +4588,7 @@
     "key": "Response.PlacedOnSaleSuccess",
     "description": "Toast message when a resale item was successfully put on sale.",
     "english": "Successfully placed on sale",
-    "translation": "Đã bán thành công",
+    "translation": "Đang bán thành công",
     "isDeprecated": false
   },
   {
@@ -4452,7 +4596,7 @@
     "key": "Response.TakenOffSaleFailure",
     "description": "Toast message when a resale item could not be taken off sale.",
     "english": "Failed to take off sale",
-    "translation": "Không thể giảm giá",
+    "translation": "Không thể ngừng bán",
     "isDeprecated": false
   },
   {
@@ -4460,7 +4604,7 @@
     "key": "Response.TakenOffSaleSuccess",
     "description": "Toast message when a resale item was successfully taken off sale.",
     "english": "Successfully taken off sale",
-    "translation": "Đã mở bán thành công",
+    "translation": "Ngừng bán thành công",
     "isDeprecated": false
   },
   {
@@ -4468,7 +4612,7 @@
     "key": "Label.QuickMenuShopTitle",
     "description": null,
     "english": "Shop Options",
-    "translation": "Tùy chọn cửa hàng",
+    "translation": "Tùy Chọn Cửa Hàng",
     "isDeprecated": false
   },
   {
@@ -4476,7 +4620,7 @@
     "key": "Action.OpenDetails",
     "description": "Used to open up detailed information about a catalog item.",
     "english": "Open Details",
-    "translation": "Mở chi tiết",
+    "translation": "Mở Chi Tiết",
     "isDeprecated": false
   },
   {
@@ -4484,7 +4628,7 @@
     "key": "Action.CloseDetails",
     "description": "Used to close an item details page.",
     "english": "Close Details",
-    "translation": "Đóng chi tiết",
+    "translation": "Đóng Chi Tiết",
     "isDeprecated": false
   },
   {
@@ -4492,7 +4636,7 @@
     "key": "Label.BuyConfirmationIncludingWarning",
     "description": "Warning of spending Luobao.",
     "english": "Please moderate your entertainment and make rational consumption. Would you like to buy {itemName} from {creatorName}?",
-    "translation": "Hãy tiết chế việc giải trí của bạn và tiêu dùng hợp lý. Bạn có muốn mua {itemName} từ {creatorName} không?",
+    "translation": "Vui lòng kiềm chế khi chơi và chi tiêu hợp lý. Bạn có muốn mua {itemName} vật phẩm từ {creatorName}?",
     "isDeprecated": false
   },
   {
@@ -4500,7 +4644,7 @@
     "key": "Label.Redeemed",
     "description": "Displayed when an item is redeemed via the item redemption flow",
     "english": "Successfully Redeemed!",
-    "translation": "Đổi điểm thành công!",
+    "translation": "Đổi Thành Công!",
     "isDeprecated": false
   },
   {
@@ -4508,7 +4652,7 @@
     "key": "Label.NotAvailable",
     "description": "Displayed when an item can not be redeemed as part of the redeem item flow",
     "english": "This item is not available at this time",
-    "translation": "Sản phẩm này hiện không còn",
+    "translation": "Vật phẩm này hiện không còn",
     "isDeprecated": false
   },
   {
@@ -4516,7 +4660,7 @@
     "key": "Label.AlreadyOwned",
     "description": "Displayed during the item redemption flow when an item is already owned",
     "english": "Item already owned",
-    "translation": "Sản phẩm đã được sở hữu",
+    "translation": "Vật phẩm đã được sở hữu",
     "isDeprecated": false
   },
   {
@@ -4524,7 +4668,7 @@
     "key": "Label.AppleOnly",
     "description": "Apple is a brandnamd which does not change. Only Translate \"Only\" in the string",
     "english": "Apple Only",
-    "translation": "Chỉ dành cho sản phẩm của Apple",
+    "translation": "Chỉ Cho Apple",
     "isDeprecated": false
   },
   {
@@ -4532,7 +4676,7 @@
     "key": "Message.NewClothingItems",
     "description": "Appears when the Catalog does not show any items.",
     "english": "New Clothing Items Coming Soon. Check Back Later!",
-    "translation": "Mặt hàng quần áo mới sắp ra mắt. Kiểm tra lại sau!",
+    "translation": "Vật Phẩm Trang Phục Mới Sắp Ra Mắt. Kiểm Tra Lại Sau!",
     "isDeprecated": false
   },
   {
@@ -4540,7 +4684,7 @@
     "key": "Label.LiveHeads",
     "description": "Used for showing dynamic head bundles in the avatar shop.",
     "english": "Live Heads",
-    "translation": "Cột nước làm việc",
+    "translation": "Đầu Cử Động",
     "isDeprecated": false
   },
   {
@@ -4548,7 +4692,7 @@
     "key": "Label.Eyebrow",
     "description": "Label for the Eyebrow category.",
     "english": "Eyebrow",
-    "translation": "Lông mày",
+    "translation": "Lông Mày",
     "isDeprecated": false
   },
   {
@@ -4556,7 +4700,7 @@
     "key": "Label.Eyelash",
     "description": "Label for the eyelash category.",
     "english": "Eyelash",
-    "translation": "Lông mi",
+    "translation": "Lông Mi",
     "isDeprecated": false
   },
   {
@@ -4564,7 +4708,7 @@
     "key": "Label.Filter.SortBy",
     "description": "Filter label for sorts",
     "english": "Sort By",
-    "translation": "Sắp xếp theo",
+    "translation": "Sắp Xếp Theo",
     "isDeprecated": false
   },
   {
@@ -4572,7 +4716,7 @@
     "key": "Label.Filter.SalesType",
     "description": "Filter label for sales type",
     "english": "Sales Type",
-    "translation": "Hình thức bán hàng",
+    "translation": "Hình Thức Bán",
     "isDeprecated": false
   },
   {
@@ -4580,7 +4724,7 @@
     "key": "Label.Filter.Sorts",
     "description": "Sorts label",
     "english": "Sorts",
-    "translation": "Sắp xếp",
+    "translation": "Sắp Xếp",
     "isDeprecated": false
   },
   {
@@ -4588,7 +4732,7 @@
     "key": "Label.NewCollectibles",
     "description": "Title of a popup introducing the new concept of \"Collectible\" items",
     "english": "New Collectibles!",
-    "translation": "Bộ sưu tập mới!",
+    "translation": "Đồ Sưu Tập Mới!",
     "isDeprecated": false
   },
   {
@@ -4596,7 +4740,7 @@
     "key": "Message.CollectiblesInfo",
     "description": "Displays some info about the new \"Collectibles\" item category.",
     "english": "Collectible items can be resold from user to user after a holding period, even if the original stock is not sold out. Premium subscribers can list Collectible items for resale.",
-    "translation": "Các mặt hàng sưu tầm có thể được bán lại từ người dùng này sang người dùng khác sau một thời gian nắm giữ, ngay cả khi số hàng ban đầu chưa bán hết. Người đăng ký trả phí có thể liệt kê các mặt hàng sưu tập để bán lại.",
+    "translation": "Các vật phẩm sưu tập có thể được bán lại từ người chời này sang người chơi khác sau một thời gian nắm giữ, ngay cả khi số hàng ban đầu chưa bán hết. Người đăng ký Premium có thể liệt kê các Vật Phẩm Sưu Tầm để bán lại.",
     "isDeprecated": false
   },
   {
@@ -4604,7 +4748,7 @@
     "key": "Label.LimitedU",
     "description": "Abbreviation for the \"Limited Unique\" category of items for which only a set amount of items are sold, but can be resold by users.",
     "english": "Limited U",
-    "translation": "U giới hạn",
+    "translation": "Giới Hạn ĐB",
     "isDeprecated": false
   },
   {
@@ -4612,7 +4756,7 @@
     "key": "Label.Unlimited",
     "description": "Refers to the \"Unlimited\" category of items: items that are sold in unlimited quantities and cannot be resold by users (as opposed to Limited and Limited U items)",
     "english": "Unlimited",
-    "translation": "Vô hạn",
+    "translation": "Không Giới Hạn",
     "isDeprecated": false
   },
   {
@@ -4620,7 +4764,7 @@
     "key": "Heading.TakeOffSale",
     "description": null,
     "english": "Take Off Sale",
-    "translation": "Giảm giá",
+    "translation": "Ngừng Bán",
     "isDeprecated": false
   },
   {
@@ -4628,7 +4772,7 @@
     "key": "Label.TryOns",
     "description": "Label for the Try-Ons category in the Catalog. Contains clothing items that would make up an outfit such as hats, shirt, pants, etc.",
     "english": "Try-Ons",
-    "translation": "Bản dùng thử",
+    "translation": "Mặc Thử",
     "isDeprecated": false
   },
   {
@@ -4636,7 +4780,7 @@
     "key": "Label.Trending",
     "description": "Category label for the trending items",
     "english": "Trending",
-    "translation": "Đang thịnh hành",
+    "translation": "Thịnh Hành",
     "isDeprecated": false
   },
   {
@@ -4644,7 +4788,7 @@
     "key": "Label.TryOnsMultiple",
     "description": "Label for the Try-Ons category in the Catalog. Contains clothing items that would make up an outfit such as hats, shirt, pants, etc.\nExample: Try-Ons (5)",
     "english": "Try-Ons ({numItems})",
-    "translation": "Bản dùng thử ({numItems})",
+    "translation": "Mặc Thử ({numItems})",
     "isDeprecated": false
   },
   {
@@ -4652,7 +4796,7 @@
     "key": "Label.AveragePriceColon",
     "description": "The average selling price of an item.",
     "english": "Average Price:",
-    "translation": "Giá trung bình:",
+    "translation": "Giá Trung Bình:",
     "isDeprecated": false
   },
   {
@@ -4668,7 +4812,7 @@
     "key": "Heading.SetPrice",
     "description": "The heading for setting the price of an item for sale.",
     "english": "Set Price",
-    "translation": "Đặt giá",
+    "translation": "Đặt Giá",
     "isDeprecated": false
   },
   {
@@ -4676,7 +4820,7 @@
     "key": "Heading.ItemInfo",
     "description": "The heading above the information for an item in the catalog.",
     "english": "Item Info",
-    "translation": "Thông tin mặt hàng",
+    "translation": "Thông Tin Vật Phẩm",
     "isDeprecated": false
   },
   {
@@ -4684,7 +4828,7 @@
     "key": "Heading.Overview",
     "description": "The heading above a section giving overview information about an item.",
     "english": "Overview",
-    "translation": "Tổng quan",
+    "translation": "Tổng Quan",
     "isDeprecated": false
   },
   {
@@ -4692,7 +4836,7 @@
     "key": "Label.RecentlyCreated",
     "description": "Used for sorting items in the catalog",
     "english": "Recently Created",
-    "translation": "Được tạo gần đây",
+    "translation": "Được Tạo Gần Đây",
     "isDeprecated": false
   },
   {
@@ -4700,7 +4844,7 @@
     "key": "Label.ResaleFeePolicy",
     "description": "Title text appearing above a message stating the Roblox Resale Fee Policy when selling an item.",
     "english": "Resale Fee Policy",
-    "translation": "Chính sách phí bán lại",
+    "translation": "Chính Sách Phí Bán Lại",
     "isDeprecated": false
   },
   {
@@ -4708,7 +4852,7 @@
     "key": "Message.ResaleFeePolicy",
     "description": "The description of the Roblox Resale Fee Policy available to be read when selling an item.",
     "english": "The revenue from all Marketplace transactions, including resales, is shared between Roblox and the users involved in the transaction. For resales, this means that when a user accepts your price, {yourSharePercent}% of the Robux they pay will go to you as the reseller. The other {robloxFeePercent}% will go to Roblox and other users including the item creator.",
-    "translation": "Doanh thu từ tất cả các giao dịch trên Chợ, bao gồm cả bán lại, được chia sẻ giữa Roblox và những người dùng tham gia giao dịch. Đối với việc bán lại, điều này có nghĩa là khi người dùng chấp nhận mức giá của bạn, {yourSharePercent}% số tiền Robux họ trả sẽ thuộc về bạn với tư cách là người bán lại. {robloxFeePercent}% còn lại sẽ thuộc về Roblox và những người dùng khác bao gồm cả người tạo ra vật phẩm.",
+    "translation": "Doanh thu từ tất cả các giao dịch trên Chợ, bao gồm cả bán lại, được chia sẻ giữa Roblox và những người chơi tham gia giao dịch. Đối với việc bán lại, điều này có nghĩa là khi người chơi chấp nhận mức giá của bạn, {yourSharePercent}% số tiền Robux họ trả sẽ thuộc về bạn với tư cách là người bán lại. {robloxFeePercent}% còn lại sẽ thuộc về Roblox và những người chơi khác bao gồm cả người tạo ra vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -4716,7 +4860,7 @@
     "key": "Label.ItemOwnedCount",
     "description": "Owned Itemss (3)",
     "english": "Owned Items ({itemCount})",
-    "translation": "Vật phẩm đã sở hữu ({itemCount})",
+    "translation": "Vật Phẩm Đã Sở Hữu ({itemCount})",
     "isDeprecated": false
   },
   {
@@ -4732,7 +4876,7 @@
     "key": "Label.Holding",
     "description": null,
     "english": "Holding",
-    "translation": "Đang nắm giữ",
+    "translation": "Nắm Giữ",
     "isDeprecated": false
   },
   {
@@ -4740,7 +4884,7 @@
     "key": "Label.OffSale",
     "description": null,
     "english": "Off Sale",
-    "translation": "Hết Hàng",
+    "translation": "Ngưng Bán",
     "isDeprecated": false
   },
   {
@@ -4748,7 +4892,7 @@
     "key": "Label.ItemInAHold",
     "description": null,
     "english": "Item in a hold?",
-    "translation": "Vật phẩm trong túi?",
+    "translation": "Vật phẩm đang nắm giữ?",
     "isDeprecated": false
   },
   {
@@ -4764,7 +4908,7 @@
     "key": "Message.HoldingPolicy",
     "description": "Deprecated",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Sau khi mua, các giao dịch gốc sẽ được đặt trong tình trạng chờ trong tối đa 30 ngày. Mặt hàng chỉ có thể bán lại sau khi thời gian chờ này kết thúc và giao dịch bán lại sẽ bị đặt trong tình trạng chờ tối đa 7 ngày. Chỉ có người dùng Premium mới có thể bán lại các mặt hàng.",
+    "translation": "Sau khi mua, các giao dịch gốc sẽ vào trạng thái nắm giữ tối đa 30 ngày. Vật phẩm chỉ có thể bán lại sau khi thời gian nắm giữ này kết thúc và giao dịch bán lại sẽ vào trạng thái nắm giữ tối đa 7 ngày. Chỉ có người chơi Premium mới có thể bán lại các vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -4772,7 +4916,7 @@
     "key": "Label.TakenOffSaleSuccess",
     "description": "The text that displays when you've successfully taken an item off sale.",
     "english": "Item off sale",
-    "translation": "Vật phẩm hết hàng",
+    "translation": "Đã ngưng bán vật phẩm",
     "isDeprecated": false
   },
   {
@@ -4804,7 +4948,7 @@
     "key": "Label.TakeOffResaleConfirmation",
     "description": null,
     "english": "Are you sure you want to stop offering this item for resale?",
-    "translation": "Bạn có chắc chắn muốn ngừng việc đưa sản phẩm này vào danh sách bán lại không?",
+    "translation": "Bạn có chắc muốn ngừng bán lại vật phẩm này không?",
     "isDeprecated": false
   },
   {
@@ -4828,7 +4972,7 @@
     "key": "Label.MarketplaceToAvatarPage",
     "description": null,
     "english": "You will leave the marketplace to customize your avatar.",
-    "translation": "Bạn sẽ rời khỏi Chợ để tùy chỉnh avatar của mình.",
+    "translation": "Bạn sẽ rời khỏi chợ để tùy chỉnh avatar của mình.",
     "isDeprecated": false
   },
   {
@@ -4836,7 +4980,7 @@
     "key": "Label.QuickMenuMarketplaceTitle",
     "description": null,
     "english": "Marketplace Options",
-    "translation": "Tùy chọn Chợ",
+    "translation": "Tùy Chọn Chợ",
     "isDeprecated": false
   },
   {
@@ -4860,7 +5004,7 @@
     "key": "Label.Tradeable",
     "description": null,
     "english": "Tradeable",
-    "translation": "Có thể giao dịch",
+    "translation": "Có Thể Buôn Bán",
     "isDeprecated": false
   },
   {
@@ -4868,7 +5012,7 @@
     "key": "Message.LimitedUHoldingPolicy",
     "description": "Not currently used",
     "english": "After purchasing, original sales enter a hold for up to 30 days. The item can only be resold after this holding period ends and resales will have a hold of up to 7 days. Only premium users can resell items.",
-    "translation": "Sau khi mua, các giao dịch gốc sẽ được đặt trong tình trạng chờ trong tối đa 30 ngày. Mặt hàng chỉ có thể bán lại sau khi thời gian chờ này kết thúc và giao dịch bán lại sẽ bị đặt trong tình trạng chờ tối đa 7 ngày. Chỉ có người dùng Premium mới có thể bán lại các mặt hàng.",
+    "translation": "Sau khi mua, các giao dịch gốc sẽ vào trạng thái nắm giữ tối đa 30 ngày. Vật phẩm chỉ có thể bán lại sau khi thời gian nắm giữ này kết thúc và giao dịch bán lại sẽ vào trạng thái nắm giữ tối đa 7 ngày. Chỉ có người chơi Premium mới có thể bán lại các vật phẩm.",
     "isDeprecated": true
   },
   {
@@ -4876,7 +5020,7 @@
     "key": "Label.Tradable",
     "description": null,
     "english": "Tradable",
-    "translation": "Có thể giao dịch",
+    "translation": "Có Thể Buôn Bán",
     "isDeprecated": false
   },
   {
@@ -4884,7 +5028,7 @@
     "key": "Heading.ItemsOnSale",
     "description": "A heading for a section showing a list of item that the user has put up for sale",
     "english": "Items On Sale",
-    "translation": "Các Vật Phẩm Đang Giảm Giá",
+    "translation": "Vật Phẩm Giảm Giá",
     "isDeprecated": false
   },
   {
@@ -4892,7 +5036,7 @@
     "key": "Heading.AvailableItems",
     "description": "A heading for a section showing a list of items that the user can put up for sale, but which are currently not being sold.",
     "english": "Available Items",
-    "translation": "Các Vật Phẩm Còn Hàng",
+    "translation": "Vật Phẩm Có Sẵn",
     "isDeprecated": false
   },
   {
@@ -4908,7 +5052,7 @@
     "key": "Label.FromPrice",
     "description": "Indicates the lowest available price of an item with resellers. Example: From (Robux icon) 100",
     "english": "From {itemPrice}",
-    "translation": "Từ mức giá {itemPrice}",
+    "translation": "Từ Mức Giá {itemPrice}",
     "isDeprecated": false
   },
   {
@@ -4924,7 +5068,7 @@
     "key": "Heading.InExperienceOnly",
     "description": "Heading of a toast inside Catalog (the shop) informing the user that the item cannot be purchased from Catalog but that be acquired from within some experiences.",
     "english": "Available In Experience",
-    "translation": "Có Sẵn Trong Trải Nghiệm",
+    "translation": "Có Trong Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -4940,7 +5084,7 @@
     "key": "Label.QuantityLeft",
     "description": null,
     "english": "Quantity Left: {remaining}/{total}",
-    "translation": "Số lượng còn: {remaining}/{total}",
+    "translation": "Số Lượng Còn: {remaining}/{total}",
     "isDeprecated": false
   },
   {
@@ -4948,7 +5092,7 @@
     "key": "Label.QuantityLimitReached",
     "description": null,
     "english": "The creator has limits on how many copies a single user can purchase from them.",
-    "translation": "Nhà sáng tạo đã giới hạn số bản sao mỗi người dùng có thể mua.",
+    "translation": "Nhà sáng tạo đã giới hạn số bản sao mỗi người chơi có thể mua.",
     "isDeprecated": false
   },
   {
@@ -4964,7 +5108,7 @@
     "key": "Message.NoHoldingPolicy",
     "description": null,
     "english": "This item does not require a holding period, you can resell it as soon as you purchase it. Only premium users can resell items.",
-    "translation": "Vật phẩm này không yêu cầu thời gian treo, bạn có thể bán ngay từ lúc mua.",
+    "translation": "Vật phẩm này không yêu cầu thời gian nắm giữ, bạn có thể bán ngay từ lúc mua. Chỉ có người chơi Premium mới có thể bán lại vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -4972,7 +5116,7 @@
     "key": "Message.QuantityLimitReached",
     "description": null,
     "english": "Whoops! The creator has limits on how many copies a single user can purchase from them.",
-    "translation": "Úi! Nhà sáng tạo đã giới hạn số bản sao mỗi người dùng có thể mua.",
+    "translation": "Úi! Nhà sáng tạo đã giới hạn số bản sao mỗi người chơi có thể mua.",
     "isDeprecated": false
   },
   {
@@ -4980,7 +5124,7 @@
     "key": "Label.MaxPerUser",
     "description": null,
     "english": "Max Per User",
-    "translation": "Tối đa cho mỗi người chơi",
+    "translation": "Tối Đa Cho Mỗi Người",
     "isDeprecated": false
   },
   {
@@ -4988,7 +5132,7 @@
     "key": "Heading.QuantityLimitReached",
     "description": null,
     "english": "Creator Limit Reached",
-    "translation": "Đã chạm giới hạn nhà sáng tạo",
+    "translation": "Đã Đạt Giới Hạn Của Nhà Sáng Tạo",
     "isDeprecated": false
   },
   {
@@ -4996,7 +5140,7 @@
     "key": "Label.Resellable",
     "description": "Label for whether the item is resellable",
     "english": "Resellable",
-    "translation": "Có thể bán lại",
+    "translation": "Có Thể Bán Lại",
     "isDeprecated": false
   },
   {
@@ -5036,7 +5180,7 @@
     "key": "Label.SoldOut",
     "description": null,
     "english": "Sold Out",
-    "translation": "Đã bán hết",
+    "translation": "Đã Bán Hết",
     "isDeprecated": false
   },
   {
@@ -5044,7 +5188,7 @@
     "key": "Message.HoldingPolicyL2",
     "description": "Parameterized holding policy string for L2.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "After purchasing, original sales enter a hold for up to {purchaseDays} days. The item can only be resold after this holding period ends and resales will have a hold of up to {resaleDays} days. Only premium users can resell items.",
-    "translation": "Sau khi thanh toán, vật phẩm bán lần đầu sẽ được tạm treo trong tối đa {purchaseDays} ngày. Vật phẩm này chỉ có thể được bán lại sau khi thời hạn tạm treo kết thúc và việc bán lại cũng có thời gian tạm treo nhiều nhất {resaleDays} ngày. Chỉ người dùng Premium mới có thể bán lại vật phẩm.",
+    "translation": "Sau khi mua, các giao dịch gốc sẽ vào trạng thái nắm giữ tối đa {purchaseDays} ngày. Vật phẩm chỉ có thể bán lại sau khi thời gian nắm giữ này kết thúc và giao dịch bán lại sẽ vào trạng thái nắm giữ tối đa {resaleDays} ngày. Chỉ có người chơi Premium mới có thể bán lại vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -5052,7 +5196,7 @@
     "key": "Message.HoldingPolicyL1",
     "description": "Parameterized holding policy string for L1.0 items. Note, this does not use ICU plural syntax as this is not supported in Lua.",
     "english": "Purchases from resale will have a hold of up to {days} days. The item can only be resold after this holding period ends. Only premium users can resell items.",
-    "translation": "Vật phẩm đã được bán lại sẽ được tạm treo trong tối đa {days} ngày. Vật phẩm này chỉ có thể được bán lại sau khi thời hạn tạm treo kết thúc. Chỉ người dùng Premium mới có thể bán lại vật phẩm.",
+    "translation": "Các giao dịch từ việc bán lại sẽ vào trạng thái nắm giữ tối đa {days} ngày. Vật phẩm này chỉ có thể được bán lại sau khi thời gian nắm giữ kết thúc. Chỉ người chơi Premium mới có thể bán lại vật phẩm.",
     "isDeprecated": false
   },
   {
@@ -5060,7 +5204,7 @@
     "key": "Label.Attribution",
     "description": "Text is used as a label for the experience it was made in. For example: Made in Natural Disaster Survival",
     "english": "Made In",
-    "translation": "Tạo ra lúc",
+    "translation": "Được Tạo Trong",
     "isDeprecated": false
   },
   {
@@ -5068,7 +5212,7 @@
     "key": "Heading.GoToExperience",
     "description": null,
     "english": "Join Experience?",
-    "translation": "Tham gia trải nghiệm?",
+    "translation": "Tham Gia Trải Nghiệm?",
     "isDeprecated": false
   },
   {
@@ -5076,7 +5220,7 @@
     "key": "Description.AttributionAlertBody",
     "description": null,
     "english": "You will leave this area and join {experienceName}.",
-    "translation": "Bạn sẽ rời khu vực và tham gia {experienceName}.",
+    "translation": "Bạn sẽ rời khu vực này và tham gia {experienceName}.",
     "isDeprecated": false
   },
   {
@@ -5084,7 +5228,7 @@
     "key": "Action.ViewExperienceDetails",
     "description": null,
     "english": "View Experience Details",
-    "translation": "Chi tiết trải nghiệm",
+    "translation": "Xem Chi Tiết Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -5092,7 +5236,7 @@
     "key": "Action.JoinExperience",
     "description": "In-experience item deeplinking",
     "english": "Join Experience",
-    "translation": "Tham gia trải nghiệm",
+    "translation": "Tham Gia Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -5100,7 +5244,7 @@
     "key": "Action.ViewExperienceDetail",
     "description": "In-experience item deeplinking",
     "english": "View Experience Detail",
-    "translation": "Chi tiết trải nghiệm",
+    "translation": "Xem Chi Tiết Trải Nghiệm",
     "isDeprecated": true
   },
   {
@@ -5116,7 +5260,7 @@
     "key": "Label.InMultipleExperiences",
     "description": "In-experience deeplinking",
     "english": "In {NUM_EXPERIENCES} Experiences",
-    "translation": "Trong {NUM_EXPERIENCES} trải nghiệm",
+    "translation": "Trong {NUM_EXPERIENCES} Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -5124,7 +5268,7 @@
     "key": "Label.InSingleExperience",
     "description": "In-experience deeplinking",
     "english": "In Experience",
-    "translation": "Trong trải nghiệm",
+    "translation": "Trong Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -5132,7 +5276,7 @@
     "key": "Label.InSpecificExperience",
     "description": "In-Experience item deeplinking prompt",
     "english": "In {EXPERIENCE_NAME}",
-    "translation": "Đang trong {EXPERIENCE_NAME}",
+    "translation": "Trong {EXPERIENCE_NAME}",
     "isDeprecated": false
   },
   {
@@ -5140,7 +5284,7 @@
     "key": "Label.SaveAsCharacter",
     "description": "Text that appears next to a checkbox asking the user if they want to save an outfit as a character after purchasing the items.",
     "english": "Save as a Character",
-    "translation": "Lưu nhân vật",
+    "translation": "Lưu Dưới Dạng Nhân Vật",
     "isDeprecated": false
   },
   {
@@ -5164,7 +5308,7 @@
     "key": "Label.ItemExperienceSoldOut",
     "description": "In-experience item deeplinking",
     "english": "The original copy is sold out in experience, would you still like to enter [{EXPERIENCE_NAME}]?",
-    "translation": "Bản sao gốc đã được bán hết trong trải nghiệm, bạn vẫn muốn nhập [{EXPERIENCE_NAME}]?",
+    "translation": "Bản sao gốc đã được bán hết trong trải nghiệm, bạn vẫn muốn vào [{EXPERIENCE_NAME}]?",
     "isDeprecated": false
   },
   {
@@ -5180,7 +5324,7 @@
     "key": "Label.ItemExperienceLimitReached",
     "description": "In-experience item deeplinking",
     "english": "You reached the purchase limit that creator set for this item. You will not able to acquire more, would you still like to enter [{EXPERIENCE_NAME}]?",
-    "translation": "Bạn đã đạt đến giới hạn mua mà nhà sáng tạo đã đặt cho vật phẩm này. Bạn sẽ không thể nhận thêm, bạn vẫn muốn nhập [{EXPERIENCE_NAME}]?",
+    "translation": "Bạn đã đạt đến giới hạn mua mà nhà sáng tạo đã đặt cho vật phẩm này. Bạn sẽ không thể nhận thêm, bạn vẫn muốn vào [{EXPERIENCE_NAME}]?",
     "isDeprecated": false
   },
   {
@@ -7044,7 +7188,7 @@
     "key": "Label.GenreSciFi",
     "description": null,
     "english": "Sci-Fi",
-    "translation": "Sci-Fi",
+    "translation": "Khoa Học Viễn Tưởng",
     "isDeprecated": false
   },
   {
@@ -7312,6 +7456,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameDetails",
+    "key": "Heading.Media",
+    "description": "Heading for the media section on the experience details page",
+    "english": "Media",
+    "translation": "Truyền Thông",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Label.Community",
+    "description": null,
+    "english": "Community",
+    "translation": "Cộng Đồng",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameGear",
     "key": "Heading.GearForThisGame",
     "description": null,
@@ -7428,7 +7588,7 @@
     "key": "Action.BackToTop",
     "description": null,
     "english": "Back to top",
-    "translation": "Trở lại đầu trang",
+    "translation": "Về đầu trang",
     "isDeprecated": false
   },
   {
@@ -7684,7 +7844,7 @@
     "key": "Label.InExperienceOnly",
     "description": null,
     "english": "The original sale of this item is only available in experience.",
-    "translation": "Vật phẩm này ban đầu chỉ bán trong trải nghiệm.",
+    "translation": "Vật phẩm này chỉ bán trong trải nghiệm.",
     "isDeprecated": false
   },
   {
@@ -7692,7 +7852,7 @@
     "key": "Heading.PlayerResultsFor",
     "description": null,
     "english": "People Results for {startSpan}{keyword}{endSpan}",
-    "translation": "Kết quả tìm người chơi với từ khoá {startSpan}{keyword}{endSpan}",
+    "translation": "Kết Quả Người Chơi Cho {startSpan}{keyword}{endSpan}",
     "isDeprecated": false
   },
   {
@@ -7700,7 +7860,7 @@
     "key": "Label.NoMatchesAvailable",
     "description": null,
     "english": "There are no matches available for \"{keyword}\"",
-    "translation": "Không tìm thấy kết quả nào khớp với từ khhoas \"{keyword}\"",
+    "translation": "Không tìm thấy kết quả khớp với \"{keyword}\"",
     "isDeprecated": false
   },
   {
@@ -7724,7 +7884,7 @@
     "key": "Label.ShowingCountOfResults",
     "description": null,
     "english": "{countStartSpan}{resultsStart} - {resultsInPage} of {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}",
-    "translation": "{countStartSpan}{resultsStart} – {resultsInPage} của {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}",
+    "translation": "{countStartSpan}{resultsStart} - {resultsInPage} của {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}",
     "isDeprecated": false
   },
   {
@@ -7732,7 +7892,7 @@
     "key": "Label.AlsoKnownAsAbbreviation",
     "description": null,
     "english": "Previous username",
-    "translation": "Tên người dùng trước đó",
+    "translation": "Tên tài khoản cũ",
     "isDeprecated": false
   },
   {
@@ -7748,7 +7908,7 @@
     "key": "Label.YouAreFriends",
     "description": null,
     "english": "You are friends",
-    "translation": "Đã trở thành bạn bè",
+    "translation": "Các bạn là bạn bè",
     "isDeprecated": false
   },
   {
@@ -7764,7 +7924,7 @@
     "key": "Action.AddFriend",
     "description": null,
     "english": "Add Friend",
-    "translation": "Thêm bạn bè",
+    "translation": "Thêm Bạn Bè",
     "isDeprecated": false
   },
   {
@@ -7772,7 +7932,7 @@
     "key": "Action.AcceptRequest",
     "description": null,
     "english": "Accept Request",
-    "translation": "Chấp nhận yêu cầu",
+    "translation": "Chấp Nhận Yêu Cầu",
     "isDeprecated": false
   },
   {
@@ -7780,7 +7940,7 @@
     "key": "Action.RequestSent",
     "description": null,
     "english": "Request Sent",
-    "translation": "Yêu cầu đã được gửi đi",
+    "translation": "Đã Gửi Yêu Cầu",
     "isDeprecated": false
   },
   {
@@ -7788,7 +7948,7 @@
     "key": "Action.Chat",
     "description": null,
     "english": "Chat",
-    "translation": "Trò chuyện",
+    "translation": "Trò Chuyện",
     "isDeprecated": false
   },
   {
@@ -7796,7 +7956,7 @@
     "key": "Action.JoinGame",
     "description": null,
     "english": "Join",
-    "translation": "Tham gia",
+    "translation": "Tham Gia",
     "isDeprecated": false
   },
   {
@@ -7804,7 +7964,7 @@
     "key": "Label.Search",
     "description": null,
     "english": "Search",
-    "translation": "Tìm kiếm",
+    "translation": "Tìm Kiếm",
     "isDeprecated": false
   },
   {
@@ -7812,7 +7972,7 @@
     "key": "Label.NoResultsFound",
     "description": null,
     "english": "No results found",
-    "translation": "Không tìm thấy kết quả nào",
+    "translation": "Không tìm thấy kết quả",
     "isDeprecated": false
   },
   {
@@ -7828,7 +7988,7 @@
     "key": "Label.Previously",
     "description": "Used to display previous username context under the playertile, such as \"Previously @previousUsername\". (This translation should be as short as possible since we don't have a lot of space to display context)",
     "english": "Previously",
-    "translation": "Tên cũ",
+    "translation": "Tên Cũ",
     "isDeprecated": false
   },
   {
@@ -7852,7 +8012,7 @@
     "key": "Label.About",
     "description": null,
     "english": "About",
-    "translation": "Giới thiệu",
+    "translation": "Giới Thiệu",
     "isDeprecated": false
   },
   {
@@ -7860,7 +8020,7 @@
     "key": "Label.Cancel",
     "description": null,
     "english": "Cancel",
-    "translation": "Huỷ",
+    "translation": "Huỷ Bỏ",
     "isDeprecated": false
   },
   {
@@ -7892,7 +8052,7 @@
     "key": "Action.UserBlocked",
     "description": "text for when a user is blocked",
     "english": "User Blocked",
-    "translation": "Người Dùng Bị Chặn",
+    "translation": "Người Chơi Bị Chặn",
     "isDeprecated": false
   },
   {
@@ -7900,7 +8060,7 @@
     "key": "Action.AllRequestsIgnored",
     "description": "text for success toast for all requests ignored",
     "english": "All Requests Ignored",
-    "translation": "Tất Cả Yêu Cầu Đã Ngó Lơ",
+    "translation": "Tất Cả Yêu Cầu Đã Bỏ Qua",
     "isDeprecated": false
   },
   {
@@ -7948,7 +8108,7 @@
     "key": "Action.ToQRCode",
     "description": "Buttong telling users to click to go to a page to share a qr code with their friends, to share their profile.",
     "english": "Share QR Code",
-    "translation": "Chia sẻ Mã QR",
+    "translation": "Chia Sẻ Mã QR",
     "isDeprecated": false
   },
   {
@@ -7956,7 +8116,7 @@
     "key": "Heading.ProfileQRCode",
     "description": "Heading of the share QRCode page.",
     "english": "Share QR Code",
-    "translation": "Chia sẻ Mã QR",
+    "translation": "Chia Sẻ Mã QR",
     "isDeprecated": false
   },
   {
@@ -7980,7 +8140,7 @@
     "key": "Message.QRLoadFailed",
     "description": "Message when QRCode fails to load",
     "english": "Failed to load.",
-    "translation": "Không tải được.",
+    "translation": "Không thể tải.",
     "isDeprecated": false
   },
   {
@@ -7996,7 +8156,7 @@
     "key": "Action.AcceptFriends",
     "description": null,
     "english": "Accept Friend",
-    "translation": "Chấp Nhận Bạn Bè",
+    "translation": "Chấp Nhận Làm Bạn",
     "isDeprecated": false
   },
   {
@@ -8028,7 +8188,7 @@
     "key": "Description.RecognizeFriendsByCustomName",
     "description": "Helper description text to explain to users that they can set custom names for their friends in order to more easily recognize them, and that only they can see this custom name.",
     "english": "Recognize friends more easily by setting a custom name. Names imported from contacts and custom names are only visible to you.",
-    "translation": "Hãy đặt tên tuỳ chỉnh để dễ dàng nhận ra bạn bè hơn. Tên nhập từ danh bạ và tên tuỳ chỉnh sẽ chỉ có mình bạn nhìn thấy.",
+    "translation": "Hãy đặt tên tuỳ chỉnh để dễ dàng nhận ra bạn bè hơn. Chỉ có bạn mới có thể nhìn thấy tên nhập từ danh bạ và tên tuỳ chỉnh.",
     "isDeprecated": false
   },
   {
@@ -8036,7 +8196,7 @@
     "key": "Message.InvalidAliasError",
     "description": "Error message that will be displayed underneath the text box when a user types an alias name that is not valid (i.e. contains a filtered word)",
     "english": "Name cannot be saved. Try another name.",
-    "translation": "Không thể lưu được tên. Vui lòng thử tên khác.",
+    "translation": "Không thể lưu tên. Vui lòng thử tên khác.",
     "isDeprecated": false
   },
   {
@@ -8060,7 +8220,7 @@
     "key": "Label.InvisibleWithTimeout",
     "description": "Shown when the user has the option to set their Presence status to Invisible, e.g this may read Invisible (for 4 hours) and allow the user to appear invisible (i.e other users will see them as offline) on the platform for 4 hours.",
     "english": "Invisible (for {hours} hours)",
-    "translation": "Ẩn mình (trong {hours} giờ)",
+    "translation": "Vô Hình (trong {hours} giờ)",
     "isDeprecated": false
   },
   {
@@ -8068,7 +8228,7 @@
     "key": "Label.InvisibleUntilTime",
     "description": "Shown to the user as their current status when they have set their status to Invisible. e.g Invisible (until 05:32 AM)",
     "english": "Invisible (until {time})",
-    "translation": "Ẩn mình (đến {time})",
+    "translation": "Vô Hình (đến {time})",
     "isDeprecated": false
   },
   {
@@ -8076,7 +8236,7 @@
     "key": "Tooltip.InvisibleMode",
     "description": "A tooltip shown the first time users opt in to Invisible mode.",
     "english": "You will appear Invisible until {time}. Others will not see you as active but will still be able to interact with you.",
-    "translation": "Bạn sẽ ẩn mình đến {time}. Người dùng khác sẽ thấy bạn ở trạng thái không hoạt động nhưng vẫn có thể tương tác với bạn.",
+    "translation": "Bạn sẽ trở nên vô hình đến {time}. Người chơi khác sẽ không thấy bạn hoạt động nhưng vẫn có thể tương tác với bạn.",
     "isDeprecated": false
   },
   {
@@ -8092,7 +8252,7 @@
     "key": "Label.DisplayNameCaption",
     "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
     "english": "This is how you will appear to others on Roblox. ",
-    "translation": "Đây là tên mà những người dùng khác trên Roblox sẽ nhìn thấy. ",
+    "translation": "Đây là tên mà những người chơi khác trên Roblox sẽ nhìn thấy. ",
     "isDeprecated": false
   },
   {
@@ -8100,7 +8260,7 @@
     "key": "Heading.EditDisplayName",
     "description": "This is the title on the modal that allows users to change their display name",
     "english": "Edit Display Name",
-    "translation": "Đổi Tên Hiển Thị",
+    "translation": "Điều Chỉnh Tên Hiển Thị",
     "isDeprecated": false
   },
   {
@@ -8132,7 +8292,7 @@
     "key": "Description.AboutModalCaption",
     "description": "description of editing the \"about me\" section on the profile",
     "english": "Let others know more about you. Keep yourself safe, do not share personal details.",
-    "translation": "Hãy để những người dùng khác biết thêm về bạn. Tuy nhiên, hãy nhớ không chia sẻ thông tin cá nhân để tự bảo vệ bản thân bạn.",
+    "translation": "Hãy để những người chơi khác biết thêm về bạn. Tuy nhiên, hãy nhớ không chia sẻ thông tin cá nhân để tự bảo vệ bản thân bạn.",
     "isDeprecated": false
   },
   {
@@ -8164,7 +8324,7 @@
     "key": "Tooltip.CustomNames",
     "description": "Informatory Tooltip for Alias uplevel on HomePage FriendCarousel",
     "english": "Aliases you've set for friends now appear in more places. Visit friends' profiles to make updates.",
-    "translation": "Biệt danh mà bạn đặt cho bạn bè giờ đã xuất hiện tại nhiều thế giới hơn. Hãy vào hồ sơ của bạn bè để cập nhật.",
+    "translation": "Bí danh mà bạn đặt cho bạn bè giờ đã xuất hiện tại nhiều địa điểm hơn. Hãy vào hồ sơ của bạn bè để cập nhật.",
     "isDeprecated": false
   },
   {
@@ -8188,7 +8348,7 @@
     "key": "Label.UsernameCaption",
     "description": "Description for changing one's username on Roblox. The \"R$\" represents a variable that is a UIBlox character.",
     "english": "This is your unique name on Roblox. Changing your username will cost {R$}1000.",
-    "translation": "Đây là tên độc nhất của bạn trên Roblox. Phí đổi tên người dùng là {R$}1000.",
+    "translation": "Đây là tên độc nhất của bạn trên Roblox. Phí đổi tên tài khoản là {R$}1000.",
     "isDeprecated": false
   },
   {
@@ -8196,7 +8356,15 @@
     "key": "Heading.Username",
     "description": "User's Username",
     "english": "Username",
-    "translation": "Tên người dùng",
+    "translation": "Tên Tài Khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Profile",
+    "key": "Label.UsernameDescription",
+    "description": "Description for users to change their username, variables include an icon and then the price it costs to make the change.",
+    "english": "This is your unique name on Roblox. Changing your username will cost {icon}{price}.",
+    "translation": "Đây là tên độc nhất của bạn trên Roblox. Phí đổi tên tài khoản là {icon}{price}.",
     "isDeprecated": false
   },
   {
@@ -8220,7 +8388,7 @@
     "key": "Label.AboutPlaceholder",
     "description": "Placeholder text for the about me section on profile",
     "english": "Say something...",
-    "translation": "Hãy nói gì đó đi...",
+    "translation": "Hãy nói gì đó...",
     "isDeprecated": false
   },
   {
@@ -8236,7 +8404,7 @@
     "key": "Description.UsernameInsufficientFunds",
     "description": "Warning modal description, informing users that they need (rbx) more robux more to change their username. The robux icon is displayed along with the robux.",
     "english": "You need {icon}{rbx} more to change your username. Would you like to buy more Robux?",
-    "translation": "Bạn thiếu {icon}{rbx} để có thể đổi tên người dùng. Bạn có muốn mua thêm Robux không?",
+    "translation": "Bạn thiếu {icon}{rbx} để có thể đổi tên tài khoản. Bạn có muốn mua thêm Robux không?",
     "isDeprecated": false
   },
   {
@@ -8244,7 +8412,7 @@
     "key": "Heading.DisplayNameUpdated",
     "description": "Confirmation that pops up after user successfully updates their displayname",
     "english": "Display Name Updated",
-    "translation": "Tên Hiển Thị đã được cập nhật",
+    "translation": "Đã Cập Nhật Tên Hiển Thị",
     "isDeprecated": false
   },
   {
@@ -8252,7 +8420,7 @@
     "key": "Heading.UsernameUpdated",
     "description": "Confirmation toast that pops up after user successfully updates their username",
     "english": "Username Updated",
-    "translation": "Tên Người Dùng đã được cập nhật",
+    "translation": "Đã Cập Nhật Tên Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -8260,7 +8428,7 @@
     "key": "Heading.PictureUpdated",
     "description": "Toast for after a user saves their profile picture",
     "english": "Profile Picture Updated",
-    "translation": "Ảnh Hồ Sơ đã được cập nhật",
+    "translation": "Đã Cập Nhật Ảnh Đại Diện",
     "isDeprecated": false
   },
   {
@@ -8276,7 +8444,7 @@
     "key": "Label.AgedUpDisplayNameCaption",
     "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
     "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
-    "translation": "Đây là tên mà những người dùng khác trên Roblox sẽ nhìn thấy. Hãy chọn tên mà bạn bè của bạn sẽ dễ nhận ra bạn, chẳng hạn như tên thật.",
+    "translation": "Đây là cách bạn sẽ xuất hiện trước những người khác trên Roblox. Chọn tên mà bạn bè sẽ nhận ra bạn, chẳng hạn như tên thật của bạn.",
     "isDeprecated": false
   },
   {
@@ -8284,7 +8452,7 @@
     "key": "Heading.EditAgedUpDisplayName",
     "description": "This is the title on the modal that allows users to change their display name. This will only show for users who are allowed to use their real name in their display name.",
     "english": "Edit Name",
-    "translation": "Chỉnh Sửa Tên",
+    "translation": "Điều Chỉnh Tên",
     "isDeprecated": false
   },
   {
@@ -8300,7 +8468,7 @@
     "key": "Heading.AgedUpDisplayNameUpdated",
     "description": "Confirmation message in toast when someone has successfully edited their display name. This is shown to users who are allowed to use their real name in their display name (hence the word 'Name' not 'DisplayName'.)",
     "english": "Name Updated.",
-    "translation": "Tên đã được cập nhật.",
+    "translation": "Đã Cập Nhật Tên.",
     "isDeprecated": false
   },
   {
@@ -8316,7 +8484,7 @@
     "key": "Label.AgedUpDisplayNameFailed",
     "description": "Error message that shows if someone tries to save a name that is invalid. This is for users who are allowed to use their real names in their displayname. Hence the name instead of display name.",
     "english": "Name cannot be saved. Try another name.\n",
-    "translation": "Không thể lưu được tên. Vui lòng thử tên khác.\n",
+    "translation": "Không thể lưu tên. Vui lòng thử tên khác.\n",
     "isDeprecated": false
   },
   {
@@ -8332,7 +8500,7 @@
     "key": "Title.QrScanner",
     "description": "A title for a tooltip describing the QR code scanner feature",
     "english": "QR Scanner",
-    "translation": "Máy quét QR",
+    "translation": "Máy Quét QR",
     "isDeprecated": false
   },
   {
@@ -8348,7 +8516,7 @@
     "key": "Description.QrCodeScanning",
     "description": "Description text for the friend QR code, a code that other users can scan to add the logged in user as a friend.",
     "english": "Let others scan your Roblox QR code with the QR Scanner, or their device camera, to quickly add you as a friend!",
-    "translation": "Để những người dùng khác quét mã QR Roblox của bạn bằng Máy Quét QR hoặc camera trên thiết bị của họ để kết bạn nhanh hơn!",
+    "translation": "Để những người chơi khác quét mã QR Roblox của bạn bằng Máy Quét QR hoặc camera trên thiết bị của họ để kết bạn nhanh hơn!",
     "isDeprecated": false
   },
   {
@@ -8356,7 +8524,7 @@
     "key": "Message.ErrorSubmit",
     "description": null,
     "english": "There was a problem submitting your report.",
-    "translation": "Đã xảy ra sự cố khi gửi báo cáo của bạn đi.",
+    "translation": "Đã xảy ra sự cố khi gửi báo cáo của bạn.",
     "isDeprecated": false
   },
   {
@@ -8372,7 +8540,7 @@
     "key": "Label.TellUsHowAsset",
     "description": null,
     "english": "Tell us how you think the asset is breaking the rules of Roblox.",
-    "translation": "Hãy cho chúng tôi biết tại sao bạn nghĩ asset này vi phạm các quy tắc của Roblox.",
+    "translation": "Hãy cho chúng tôi biết tại sao bạn nghĩ tài sản này vi phạm các quy tắc của Roblox.",
     "isDeprecated": false
   },
   {
@@ -8380,7 +8548,7 @@
     "key": "Label.ReasonForFlag",
     "description": null,
     "english": "Reason For Flag:",
-    "translation": "Lý do gắn cờ:",
+    "translation": "Lý Do Gắn Cờ:",
     "isDeprecated": false
   },
   {
@@ -8404,7 +8572,7 @@
     "key": "Label.Confirmation.Title",
     "description": "A thank you message after a user reports another playing for doing something wrong.",
     "english": "Thanks For Your Report",
-    "translation": "Cảm ơn bạn đã gửi báo cáo",
+    "translation": "Cảm Ơn Bạn Đã Gửi Báo Cáo",
     "isDeprecated": false
   },
   {
@@ -8452,7 +8620,7 @@
     "key": "Heading.ServersMyFriendsAreIn",
     "description": null,
     "english": "Servers My Friends Are In",
-    "translation": "Máy Chủ mà Bạn Bè của tôi đang ở trong",
+    "translation": "Máy Chủ Mà Bạn Bè Của Tôi Đang Ở Trong",
     "isDeprecated": false
   },
   {
@@ -8500,7 +8668,7 @@
     "key": "IDS_CHECKING_FILE",
     "description": null,
     "english": "Performing file check ...",
-    "translation": "Đang tiến hành kiểm tra tệp tin…",
+    "translation": "Đang tiến hành kiểm tra tệp tin ...",
     "isDeprecated": false
   },
   {
@@ -8532,7 +8700,7 @@
     "key": "IDS_ROBLOX_UPGRADING",
     "description": null,
     "english": "Upgrading %s ...",
-    "translation": "Đang nâng cấp %s…",
+    "translation": "Đang nâng cấp %s...",
     "isDeprecated": false
   },
   {
@@ -8540,7 +8708,7 @@
     "key": "IDS_ROBLOX_INSTALLING",
     "description": null,
     "english": "Installing %s ...",
-    "translation": "Đang cài đặt %s…",
+    "translation": "Đang cài đặt %s...",
     "isDeprecated": false
   },
   {
@@ -8548,7 +8716,7 @@
     "key": "IDS_ROBLOX_CONNECTING",
     "description": null,
     "english": "Connecting to %s ...",
-    "translation": "Đang kết nối đến %s…",
+    "translation": "Đang kết nối đến %s...",
     "isDeprecated": false
   },
   {
@@ -8564,7 +8732,7 @@
     "key": "IDS_BOOTS_GET_LATEST",
     "description": null,
     "english": "Getting the latest %s ...",
-    "translation": "Đang lấy %s mới nhất…",
+    "translation": "Đang lấy %s mới nhất...",
     "isDeprecated": false
   },
   {
@@ -8572,7 +8740,7 @@
     "key": "IDS_PLEASE_WAIT",
     "description": null,
     "english": "Please Wait ...",
-    "translation": "Vui lòng chờ…",
+    "translation": "Vui lòng chờ...",
     "isDeprecated": false
   },
   {
@@ -8588,7 +8756,7 @@
     "key": "IDS_ROBLOX_UNINSTALLING",
     "description": null,
     "english": "Uninstalling %s ...",
-    "translation": "Đang gỡ cài đặt %s…",
+    "translation": "Đang gỡ cài đặt %s...",
     "isDeprecated": false
   },
   {
@@ -8604,7 +8772,7 @@
     "key": "IDS_BOOTS_CONFIGURING",
     "description": null,
     "english": "Configuring %s ...",
-    "translation": "Đang cấu hình %s…",
+    "translation": "Đang cấu hình %s...",
     "isDeprecated": false
   },
   {
@@ -8652,7 +8820,7 @@
     "key": "Action.Play",
     "description": "Label for button to launch game.",
     "english": "Join",
-    "translation": "Vào",
+    "translation": "Tham Gia",
     "isDeprecated": false
   },
   {
@@ -8700,7 +8868,7 @@
     "key": "AbuseReason.Dating",
     "description": null,
     "english": "Dating",
-    "translation": "Tán Tỉnh",
+    "translation": "Hẹn Hò",
     "isDeprecated": false
   },
   {
@@ -8740,7 +8908,7 @@
     "key": "AbuseReason.Profanity",
     "description": null,
     "english": "Swearing",
-    "translation": "Chửi Thề",
+    "translation": "Nói Tục",
     "isDeprecated": false
   },
   {
@@ -8804,7 +8972,7 @@
     "key": "Example.SearchCatalog",
     "description": null,
     "english": "Search catalog",
-    "translation": "Tìm kiếm danh mục",
+    "translation": "Tìm trong mục lục",
     "isDeprecated": false
   },
   {
@@ -8812,7 +8980,7 @@
     "key": "Example.SearchGames",
     "description": null,
     "english": "Search",
-    "translation": "Tìm Kiếm",
+    "translation": "Tìm kiếm",
     "isDeprecated": false
   },
   {
@@ -8836,7 +9004,7 @@
     "key": "Response.ShowingNormalSearchResults",
     "description": "Transition text to display in a banner before showing normal search results.\n\nPlease leave this section of the text as it is: \"<b>{query}</b>\".",
     "english": "Showing results for <b>{query}</b> (without quotes):",
-    "translation": "Hiển thị kết quả của từ khoá <b>{query}</b> (không có dấu ngoặc kép):",
+    "translation": "Hiển thị kết quả cho <b>{query}</b> (không có dấu ngoặc kép):",
     "isDeprecated": false
   },
   {
@@ -8844,7 +9012,7 @@
     "key": "Response.NoExactSearchResults",
     "description": "Transition text to display in a banner when there are no exact search results.\n\nPlease leave everything in this section of the text as it is: \"<b>{query}</b>\".",
     "english": "No results found for <b>{query}</b>.",
-    "translation": "Không tìm thấy kết quả nào của từ khoá <b>{query}</b>.",
+    "translation": "Không tìm thấy kết quả cho <b>{query}</b>.",
     "isDeprecated": false
   },
   {
@@ -9732,7 +9900,7 @@
     "key": "Label.IdleAnimations",
     "description": null,
     "english": "Idle Animations",
-    "translation": "Hiệu Ứng Động Nhàn Rỗi",
+    "translation": "Hiệu Ứng Nhàn Rỗi",
     "isDeprecated": false
   },
   {
@@ -10292,7 +10460,7 @@
     "key": "Message.EmptyAssetIdleAnimations",
     "description": null,
     "english": "You don't have any idle animations",
-    "translation": "Bạn không có hiệu ứng động nhàn rỗi",
+    "translation": "Bạn không có hiệu ứng nhàn rỗi",
     "isDeprecated": false
   },
   {
@@ -12132,7 +12300,7 @@
     "key": "Message.SocialLinkoffPlatformModalCancelButtonText",
     "description": "A cancel button for a modal that displays a message to users after they click that will take them off platform (to a site like twitter, amazon etc). Clicking this button will close the modal and not take them off of Roblox.",
     "english": "Cancel",
-    "translation": "Huỷ",
+    "translation": "Hủy Bỏ",
     "isDeprecated": false
   },
   {
@@ -12416,11 +12584,27 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.GameFollows",
+    "key": "LabelNotifications",
+    "description": "Label for turning on notifications button",
+    "english": "Notifications",
+    "translation": "Thông Báo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameFollows",
+    "key": "TooltipTurnedOnNotifications",
+    "description": "Tooltip for when notifications have been turned on",
+    "english": "Notifications turned on for {experienceName}",
+    "translation": "Đã mở thông báo cho {experienceName}",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialShare",
     "key": "Action.Share",
     "description": "Label for share button.",
     "english": "Share",
-    "translation": "Chia sẻ",
+    "translation": "Chia Sẻ",
     "isDeprecated": false
   },
   {
@@ -12428,7 +12612,7 @@
     "key": "Action.Redirect",
     "description": "Shown while the app is redirecting to an external sharing app",
     "english": "Redirecting...",
-    "translation": "Đang chuyển hướng…",
+    "translation": "Đang Chuyển Hướng...",
     "isDeprecated": false
   },
   {
@@ -12452,7 +12636,7 @@
     "key": "Label.ShareServerLink",
     "description": "Prompt for the user to share an invite link to the current experience",
     "english": "Share Invite Link",
-    "translation": "Chia sẻ liên kết mời",
+    "translation": "Chia Sẻ Liên Kết Mời",
     "isDeprecated": false
   },
   {
@@ -12460,7 +12644,7 @@
     "key": "Label.InviterNotHereError",
     "description": "Error shown when a user joins an invite link and the inviter is no longer in that experience",
     "english": "Inviter Not Here",
-    "translation": "Người mới không có ở đây",
+    "translation": "Người Mời Không Có Ở Đây",
     "isDeprecated": false
   },
   {
@@ -12476,7 +12660,7 @@
     "key": "Label.InviteExpiredError",
     "description": "Error shown when a user joins an invite link that is expired",
     "english": "Invite Link Expired",
-    "translation": "Liên kết mời đã hết hạn",
+    "translation": "Liên Kết Mời Đã Hết Hạn",
     "isDeprecated": false
   },
   {
@@ -12500,7 +12684,7 @@
     "key": "Label.InvalidLinkError",
     "description": "Error shown when user tries to open a deep link that doesn't exist",
     "english": "Invalid Link",
-    "translation": "Liên kết không hợp lệ",
+    "translation": "Liên Kết Không Hợp Lệ",
     "isDeprecated": false
   },
   {
@@ -12516,7 +12700,7 @@
     "key": "Label.Copied",
     "description": "Text shown when the share invite link is copied to clipboard on desktop apps",
     "english": "Copied",
-    "translation": "Đã sao chép",
+    "translation": "Đã Sao Chép",
     "isDeprecated": false
   },
   {
@@ -12524,7 +12708,7 @@
     "key": "Action.CopyLink",
     "description": "Label for external copy link button",
     "english": "Copy Link",
-    "translation": "Sao chép liên kết",
+    "translation": "Sao Chép Liên Kết",
     "isDeprecated": false
   },
   {
@@ -12532,7 +12716,7 @@
     "key": "Label.GenreExplorerName",
     "description": null,
     "english": "Categories",
-    "translation": "Thể loại",
+    "translation": "Thể Loại",
     "isDeprecated": false
   },
   {
@@ -12588,7 +12772,7 @@
     "key": "Label.RobloxPremium2200",
     "description": null,
     "english": "Roblox Premium 2200",
-    "translation": "Roblox cao cấp 2200",
+    "translation": "Roblox Premium 2200",
     "isDeprecated": false
   },
   {
@@ -12604,7 +12788,7 @@
     "key": "Label.AmountPerMonth",
     "description": null,
     "english": "{amount}{subTextStart}/mo{subTextEnd}",
-    "translation": "{amount}{subTextStart}/tháng{subTextEnd}",
+    "translation": "{amount}{subTextStart}/th{subTextEnd}",
     "isDeprecated": false
   },
   {
@@ -12676,7 +12860,7 @@
     "key": "Heading.PurchaseMessage.Success",
     "description": "this is shown to a user when they've succesfully purchased a game in the app with Robux.",
     "english": "Unlocked",
-    "translation": "Đã mở khoá",
+    "translation": "Đã Mở Khoá",
     "isDeprecated": false
   },
   {
@@ -12916,7 +13100,7 @@
     "key": "Message.UnkownError",
     "description": null,
     "english": "An unknown error occurred.",
-    "translation": "Đã xảy ra một lỗi không xác định.",
+    "translation": "Đã xảy ra lỗi không xác định.",
     "isDeprecated": false
   },
   {
@@ -12924,7 +13108,7 @@
     "key": "Message.PinLocked",
     "description": null,
     "english": "You cannot perform this action with a locked pin. Unlock your pin in the Account Settings page.",
-    "translation": "Bạn không thể thực hiện hành động này khi mã khóa còn hoạt động. Mở khóa mã ở trang Cài Đặt Tài Khoản.",
+    "translation": "Bạn không thể thực hiện hành động này khi mã pin còn hoạt động. Mở khóa mã pin ở trang Cài Đặt Tài Khoản.",
     "isDeprecated": false
   },
   {
@@ -13852,7 +14036,7 @@
     "key": "Description.Tooltip",
     "description": "Used as a helper tooltip to explain what the feature is used for.",
     "english": "Enter a Star Code to support your favorite Video Star! They will earn 5% of your purchase and you will keep the Robux you paid for.",
-    "translation": "Hãy nhập một Star Code để ủng hộ Video Star yêu thích của bạn! Họ sẽ nhận được 5% giá trị giao dịch mua còn bạn vẫn nhận được lượng Robux mà mình đã mua.",
+    "translation": "Hãy nhập một Mã Star để ủng hộ Video Star yêu thích của bạn! Họ sẽ nhận được 5% giá trị giao dịch mua còn bạn vẫn nhận được lượng Robux mà mình đã mua.",
     "isDeprecated": false
   },
   {
@@ -13868,7 +14052,7 @@
     "key": "Label.TapHere2",
     "description": "Second part of the sentence that acts a text button to open up input for star codes.",
     "english": "to add a Star Code",
-    "translation": "để thêm một Star Code",
+    "translation": "để thêm một Mã Star",
     "isDeprecated": false
   },
   {
@@ -13884,7 +14068,7 @@
     "key": "Label.InputFieldPlaceholder",
     "description": "Placeholder text inside the star code input field to help show what needs to go inside the input",
     "english": "\"Enter Star Code\"",
-    "translation": "\"Nhập Star Code\"",
+    "translation": "\"Nhập Mã Star\"",
     "isDeprecated": false
   },
   {
@@ -13932,7 +14116,7 @@
     "key": "Label.Sponsored",
     "description": "Label applied to sponsored experiences / avatar items / groups etc",
     "english": "Sponsored",
-    "translation": "Được tài trợ",
+    "translation": "Được Tài Trợ",
     "isDeprecated": false
   },
   {
@@ -13940,7 +14124,7 @@
     "key": "Label.Ad",
     "description": "Label for an advertisement",
     "english": "Ad",
-    "translation": "Quảng cáo",
+    "translation": "Quảng Cáo",
     "isDeprecated": false
   },
   {
@@ -13948,7 +14132,7 @@
     "key": "Action.EnterExperience",
     "description": null,
     "english": "Enter the Experience",
-    "translation": "Vào Trải nghiệm",
+    "translation": "Vào Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -13956,7 +14140,7 @@
     "key": "Action.ReturnToExperience",
     "description": null,
     "english": "Return to Experience",
-    "translation": "Quay lại Trải nghiệm",
+    "translation": "Quay Lại Trải Nghiệm",
     "isDeprecated": false
   },
   {
@@ -13980,7 +14164,7 @@
     "key": "Description.InvalidAdPortalParentType",
     "description": null,
     "english": "Parent Type is not valid",
-    "translation": "Loại phần tử cấp trên không hợp lệ",
+    "translation": "Loại Phần Tử Cấp Trên không hợp lệ",
     "isDeprecated": false
   },
   {
@@ -13988,7 +14172,7 @@
     "key": "Description.AdPortalParentMissing",
     "description": null,
     "english": "Parent does not exist",
-    "translation": "Phần tử cấp trên không tồn tại",
+    "translation": "Phần Tử Cấp Trên không tồn tại",
     "isDeprecated": false
   },
   {
@@ -14044,7 +14228,7 @@
     "key": "Description.InvalidAdGuiAdornee",
     "description": null,
     "english": "AdGui's Adornee is not a Part",
-    "translation": "Adornee trong AdGui không phải là một thành phần",
+    "translation": "Adornee trong AdGui không phải là một Thành Phần",
     "isDeprecated": false
   },
   {
@@ -14084,7 +14268,7 @@
     "key": "Label.PremiumOnlyBenefits",
     "description": "Second bullet explaining benefits of premium",
     "english": "Access to Premium-only benefits",
-    "translation": "Nhận những lợi ích dành riêng cho người dùng Premium",
+    "translation": "Nhận những lợi ích dành riêng cho gói Premium",
     "isDeprecated": false
   },
   {
@@ -14100,7 +14284,7 @@
     "key": "Title.GetPremium",
     "description": "Title of Modal",
     "english": "Get Premium",
-    "translation": "Đăng ký Premium",
+    "translation": "Đăng Ký Premium",
     "isDeprecated": false
   },
   {
@@ -14124,7 +14308,7 @@
     "key": "Action.Subscribe",
     "description": null,
     "english": "Subscribe",
-    "translation": "Đăng ký",
+    "translation": "Đăng Ký",
     "isDeprecated": false
   },
   {
@@ -14220,7 +14404,7 @@
     "key": "Label.AbuseType.MinorSwearing",
     "description": null,
     "english": "Minor Swearing",
-    "translation": "Chửi Thề Ít",
+    "translation": "Nói Tục Ít",
     "isDeprecated": false
   },
   {
@@ -14252,7 +14436,7 @@
     "key": "Label.AbuseType.Swearing",
     "description": null,
     "english": "Swearing",
-    "translation": "Chửi Thề",
+    "translation": "Nói Tục",
     "isDeprecated": false
   },
   {
@@ -14484,7 +14668,7 @@
     "key": "Label.AbuseType.Discriminatory",
     "description": null,
     "english": "Discriminatory",
-    "translation": "Phân Biệt",
+    "translation": "Phân Biệt Đối Xử",
     "isDeprecated": false
   },
   {
@@ -14996,7 +15180,7 @@
     "key": "Label.AbuseType.RobloxEconomy",
     "description": null,
     "english": "Roblox Economy",
-    "translation": "Nền kinh tế Roblox",
+    "translation": "Nền Kinh Tế Roblox",
     "isDeprecated": false
   },
   {
@@ -15004,7 +15188,7 @@
     "key": "Label.AbuseType.IrlDangerousActivities",
     "description": null,
     "english": "IRL Dangerous Activities",
-    "translation": "Các hành vi nguy hiểm trong đời thực",
+    "translation": "Các Hành Vi Nguy Hiểm Trong Đời Thực",
     "isDeprecated": false
   },
   {
@@ -15012,7 +15196,7 @@
     "key": "Label.AbuseType.IpViolation",
     "description": null,
     "english": "IP Violation",
-    "translation": "IP vi phạm",
+    "translation": "IP Vi Phạm",
     "isDeprecated": false
   },
   {
@@ -15020,7 +15204,7 @@
     "key": "Label.AbuseType.OffPlatformSpeechandBehavior",
     "description": null,
     "english": "Off Platform Speech and Behavior",
-    "translation": "Ngôn từ và hành vi bên ngoài Roblox",
+    "translation": "Ngôn Từ Và Hành Vi Bên Ngoài Roblox",
     "isDeprecated": false
   },
   {
@@ -15036,7 +15220,7 @@
     "key": "Label.AbuseType.ViolentContentAndGore",
     "description": null,
     "english": "Violent Content and Gore",
-    "translation": "Nội dung bạo lực và máu me",
+    "translation": "Nội Dung Bạo Lực Và Máu Me",
     "isDeprecated": false
   },
   {
@@ -15044,7 +15228,7 @@
     "key": "Label.AbuseType.Advertising",
     "description": null,
     "english": "Advertising",
-    "translation": "Quảng cáo",
+    "translation": "Quảng Cáo",
     "isDeprecated": false
   },
   {
@@ -15060,7 +15244,7 @@
     "key": "Label.AbuseType.Chargeback",
     "description": null,
     "english": "Chargeback",
-    "translation": "Bồi hoàn",
+    "translation": "Bồi Hoàn",
     "isDeprecated": false
   },
   {
@@ -15068,7 +15252,7 @@
     "key": "Label.AbuseType.DMCAEarlyLegalStrike",
     "description": null,
     "english": "DMCA Early Legal Strike",
-    "translation": "Cảnh cáo pháp lý sớm theo DMCA",
+    "translation": "Cảnh Cáo Pháp Lý Sớm Theo DMCA",
     "isDeprecated": false
   },
   {
@@ -15076,7 +15260,7 @@
     "key": "Label.AbuseType.DMCAFinalLegalStrike",
     "description": null,
     "english": "DMCA Final Legal Strike",
-    "translation": "Cảnh cáo pháp lý cuối cùng theo DMCA",
+    "translation": "Cảnh Cáo Pháp Lý Cuối Cùng Theo DMCA",
     "isDeprecated": false
   },
   {
@@ -15084,7 +15268,7 @@
     "key": "Label.ParentVerificationNotice",
     "description": null,
     "english": "Your account was suspended for unauthorized charges. Your parent or guardian must agree to unlock your account and will then be able to approve certain actions on Roblox for you.",
-    "translation": "Tài khoản của bạn đã bị tạm ngưng do có các giao dịch không được uỷ quyền. Phụ huynh hoặc người giám hộ của bạn phải đồng ý mở khoá tài khoản thì sau đó mới có thể phê duyệt một số hành động nhất định trên Roblox cho bạn.",
+    "translation": "Tài khoản của bạn đã bị tạm ngưng do có các giao dịch không được ủy quyền. Phụ huynh hoặc người giám hộ của bạn phải đồng ý mở khoá tài khoản thì sau đó mới có thể phê duyệt một số hành động nhất định trên Roblox cho bạn.",
     "isDeprecated": false
   },
   {
@@ -15092,7 +15276,7 @@
     "key": "Label.ParentReactivationNotice",
     "description": null,
     "english": "Your parent or legal guardian must help you re-activate this account. {startLink}Reload this page{endLink} when completed. ",
-    "translation": "Cha mẹ hoặc người giám hộ hợp pháp phải giúp bạn kích hoạt lại tài khoản này. {startLink}Tải lại trang này{endLink} khi hoàn thành. ",
+    "translation": "Phụ huynh hoặc người giám hộ hợp pháp phải giúp bạn kích hoạt lại tài khoản này. {startLink}Tải lại trang này{endLink} khi hoàn thành. ",
     "isDeprecated": true
   },
   {
@@ -15100,7 +15284,7 @@
     "key": "Label.ParentVerificationButtonText",
     "description": null,
     "english": "I'm a Parent or Guardian",
-    "translation": "Tôi là phụ huynh hoặc người giám hộ",
+    "translation": "Tôi Là Phụ Huynh Hoặc Người Giám Hộ",
     "isDeprecated": false
   },
   {
@@ -15108,7 +15292,7 @@
     "key": "Label.EmailVerificationButtonText",
     "description": null,
     "english": "Verify Email",
-    "translation": "Xác minh email",
+    "translation": "Xác Thực Email",
     "isDeprecated": false
   },
   {
@@ -15116,7 +15300,7 @@
     "key": "Label.EmailVerificationNotice",
     "description": null,
     "english": "Your account was suspended for unauthorized charges. You must verify your email address to unlock your account.",
-    "translation": "Tài khoản của bạn đã bị tạm ngưng do có các giao dịch không được uỷ quyền. Bạn phải xác minh địa chỉ email để mở khoá tài khoản.",
+    "translation": "Tài khoản của bạn đã bị tạm ngưng do có các giao dịch không được ủy quyền. Bạn phải xác thực địa chỉ email để mở khoá tài khoản.",
     "isDeprecated": false
   },
   {
@@ -15132,7 +15316,7 @@
     "key": "Label.EmailReactivationNoticeUA",
     "description": null,
     "english": "Please verify your email address to re-activate this account. ",
-    "translation": "Vui lòng xác minh địa chỉ email của bạn để kích hoạt lại tài khoản này. ",
+    "translation": "Vui lòng xác thực địa chỉ email của bạn để kích hoạt lại tài khoản này. ",
     "isDeprecated": false
   },
   {
@@ -15140,7 +15324,7 @@
     "key": "Heading.AccountBanned",
     "description": null,
     "english": "Account Banned",
-    "translation": "Tài khoản bị cấm",
+    "translation": "Tài Khoản Bị Cấm",
     "isDeprecated": false
   },
   {
@@ -15180,7 +15364,7 @@
     "key": "Description.AddEmailTextOver13",
     "description": null,
     "english": "To continue with your purchase, please add your email address.",
-    "translation": "Để tiếp tục mua vật phẩm, vui lòng thêm địa chỉ email của bạn.",
+    "translation": "Để tiếp tục mua hàng, vui lòng thêm địa chỉ email của bạn.",
     "isDeprecated": false
   },
   {
@@ -15252,7 +15436,7 @@
     "key": "Action.SendConfirmationEmail",
     "description": null,
     "english": "Send Confirmation Email",
-    "translation": "Gửi email xác nhận",
+    "translation": "Gửi Email xác nhận",
     "isDeprecated": false
   },
   {
@@ -15580,7 +15764,7 @@
     "key": "Description.VerificationCodeSmsFeesMayApply",
     "description": null,
     "english": "We will text you a verification code. SMS fees may apply.\n",
-    "translation": "Chúng tôi sẽ gửi mã xác minh qua tin nhắn. Có thể bạn sẽ bị tính phí SMS.\n",
+    "translation": "Chúng tôi sẽ gửi mã xác thực qua tin nhắn. Có thể bạn sẽ bị tính phí SMS.\n",
     "isDeprecated": false
   },
   {
@@ -15620,7 +15804,7 @@
     "key": "Heading.PhoneIsVerified",
     "description": null,
     "english": "Your Phone Number Is Verified!",
-    "translation": "Số Điện Thoại của Bạn đã được xác thực!",
+    "translation": "Số Điện Thoại của Bạn Đã Được Xác Thực!",
     "isDeprecated": false
   },
   {
@@ -15628,7 +15812,7 @@
     "key": "Description.PhoneForRecovery",
     "description": null,
     "english": "You can now use your phone number to recover your account in the future.",
-    "translation": "Từ giờ bạn có thể dùng số điện thoại của mình để khôi phụ tài khoản.",
+    "translation": "Từ giờ bạn có thể dùng số điện thoại của mình để khôi phục tài khoản.",
     "isDeprecated": false
   },
   {
@@ -15764,7 +15948,7 @@
     "key": "Label.ConnectWithRealLifeFriends",
     "description": null,
     "english": "Connect with your real life friends via phone number (opt-in only).",
-    "translation": "Kết nối với bạn bè ngoài đời thực thông qua số điện thoại (chỉ khi chọn cho phép).",
+    "translation": "Kết nối với bạn bè ngoài đời thực thông qua số điện thoại (chỉ khi tham gia).",
     "isDeprecated": false
   },
   {
@@ -15796,7 +15980,7 @@
     "key": "Heading.VerificationRequired",
     "description": null,
     "english": "Verification Required",
-    "translation": "Yêu Cầu Xác Minh",
+    "translation": "Yêu Cầu Xác Thực",
     "isDeprecated": false
   },
   {
@@ -15812,7 +15996,7 @@
     "key": "Label.SixDigitCode",
     "description": null,
     "english": "6-Digit Code",
-    "translation": "Mã 6 chữ số",
+    "translation": "Mã 6 Chữ Số",
     "isDeprecated": false
   },
   {
@@ -15836,7 +16020,7 @@
     "key": "Description.ShortCodeLegalDisclaimerUA",
     "description": null,
     "english": "By clicking \"Continue\", you are submitting your phone number and agreeing to our SMS Terms of Use and Privacy Policy. We will send you a one-time verification code. Message and data rates may apply. Reply HELP for help.",
-    "translation": "Với việc vào \"Tiếp Tục\", bạn sẽ gửi đi số điện thoại của mình và đồng ý với Điều Khoản Sử Dụng SMS và Chính Sách Quyền Riêng Tư của chúng tôi. Chúng tôi sẽ gửi cho bạn mã xác minh dùng một lần. Bạn có thể bị tính phí tin nhắn hoặc dữ liệu. Nếu bạn cần trợ giúp, hãy trả lời tin nhắn của chúng tôi với nội dung là HELP.",
+    "translation": "Bằng việc nhấp vào \"Tiếp Tục\", bạn sẽ gửi đi số điện thoại của mình và đồng ý với Điều Khoản Sử Dụng SMS và Chính Sách Quyền Riêng Tư của chúng tôi. Chúng tôi sẽ gửi cho bạn mã xác thực dùng một lần. Bạn có thể bị tính phí tin nhắn hoặc dữ liệu. Nếu bạn cần trợ giúp, hãy trả lời tin nhắn của chúng tôi với nội dung là HELP.",
     "isDeprecated": false
   },
   {
@@ -16364,7 +16548,7 @@
     "key": "Creator.VerifiedBadgeIconAccessibilityText",
     "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
     "english": "Verified Badge Icon",
-    "translation": "Biểu Tượng Huy Hiệu Đã Xác Minh",
+    "translation": "Biểu Tượng Huy Hiệu Đã Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16380,7 +16564,7 @@
     "key": "VerifiedBadgeInfo",
     "description": "Info that will be displayed in a modal if the verified badge is clicked",
     "english": "This badge verifies that the holder is a notable and authentic creator, brand, or public figure.",
-    "translation": "Huy hiệu này giúp xác nhận người đeo là một nhà sáng tạo, thương hiệu hoặc nhân vật nổi tiếng đáng chú ý và đáng tin.",
+    "translation": "Huy hiệu này giúp xác thực người đeo là một nhà sáng tạo, thương hiệu hoặc nhân vật công chúng đáng chú ý và đáng tin.",
     "isDeprecated": false
   },
   {
@@ -16396,7 +16580,7 @@
     "key": "UsernameChangeWithVerifiedBadge",
     "description": "Text warning a user if they change their username they will lose the verified badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour original account creation date will carry over to your new username.",
-    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác minh của bạn.\n\nNgày tạo tài khoản ban đầu của bạn sẽ không thay đổi sau khi đổi tên người dùng mới.",
+    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác thực của bạn.\n\nNgày tạo tài khoản ban đầu của bạn sẽ không thay đổi sau khi đổi tên tài khoản mới.",
     "isDeprecated": false
   },
   {
@@ -16404,7 +16588,7 @@
     "key": "DisplayNameChangeWithVerifiedBadge",
     "description": "Text explaining to the user if they change their display name they will lose their Verified Badge",
     "english": "Important: This change will result in the loss of your verified badge.\n\nYour display name can only be changed once every 7 days.",
-    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác minh của bạn.\n\nBạn chỉ có thể đổi tên hiển thị một lần trong mỗi 7 ngày.",
+    "translation": "Quan trọng: Thay đổi này sẽ làm mất huy hiệu đã xác thực của bạn.\n\nBạn chỉ có thể đổi tên hiển thị một lần trong mỗi 7 ngày.",
     "isDeprecated": false
   },
   {
@@ -16412,7 +16596,7 @@
     "key": "ThisActionWillRemoveTheVerifiedBadge",
     "description": "Warning displayed to users in a confirmation modal that taking this action will remove their verified badge.",
     "english": "The verified badge will be removed.",
-    "translation": "Huy hiệu đã xác minh sẽ bị xóa.",
+    "translation": "Huy hiệu đã xác thực sẽ bị loại bỏ.",
     "isDeprecated": false
   },
   {
@@ -16420,7 +16604,7 @@
     "key": "2SVWithVerifiedBadge",
     "description": "A warning displayed to users telling them turning off 2FA verification will result in them losing their verified badges",
     "english": "Info",
-    "translation": "Thông tin",
+    "translation": "Thông Tin",
     "isDeprecated": false
   },
   {
@@ -16436,7 +16620,7 @@
     "key": "VerifiedBadgeInfoTitle",
     "description": "Text that will be displayed as the title for a modal that gives the user more information about what the Verified Badge is",
     "english": "Verified Badge",
-    "translation": "Huy Hiệu Đã Xác Minh",
+    "translation": "Huy Hiệu Đã Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16444,7 +16628,7 @@
     "key": "GroupNameChangeWithVerifiedBadge",
     "description": "A warning to a user if they try to change their group name that they will lose the verified badge.",
     "english": "the verified badge will be removed.",
-    "translation": "huy hiệu đã xác minh sẽ bị xóa.",
+    "translation": "huy hiệu đã xác thực sẽ bị loại bỏ.",
     "isDeprecated": false
   },
   {
@@ -16580,7 +16764,7 @@
     "key": "Description.ChooseIdentityOptions",
     "description": null,
     "english": "Please select one of the following ways to verify your identity:",
-    "translation": "Vui lòng chọn một trong những cách sau đây để xác minh danh tính của bạn:",
+    "translation": "Vui lòng chọn một trong những cách sau đây để xác thực danh tính của bạn:",
     "isDeprecated": false
   },
   {
@@ -16620,7 +16804,7 @@
     "key": "Description.KCBRedirectionDescription",
     "description": null,
     "english": "Heads up Robloxian - by clicking \"continue\" you will be redirected to a third-party ID verification website. Please note that the website is not affiliated with or owned or operated by Roblox and that the services under the website are provided under and subject to the separate terms and conditions of the third-party service.",
-    "translation": "Người chơi Roblox chú ý, khi nhấn vào \"tiếp tục\" bạn sẽ được điều hướng đến trang web xác minh ID của một bên thứ ba. Hãy lưu ý rằng Roblox không điều hành, sở hữu hay có liên kết gì với trang web đó. Các dịch vụ mà trang web đó cung cấp đều tuân theo những điều khoản và điều kiện riêng về dịch vụ bên thứ ba.",
+    "translation": "Các Robloxian, xin hãy chú ý, nếu nhấp vào \"tiếp tục\" bạn sẽ được điều hướng đến trang web xác minh ID của một bên thứ ba. Hãy lưu ý rằng Roblox không điều hành, sở hữu hay có liên kết gì với trang web đó. Các dịch vụ mà trang web đó cung cấp đều tuân theo những điều khoản và điều kiện riêng về dịch vụ bên thứ ba.",
     "isDeprecated": false
   },
   {
@@ -16628,7 +16812,7 @@
     "key": "Description.VerificationNotComplete",
     "description": null,
     "english": "The system failed to verify your ID. Please try again",
-    "translation": "Hệ thống không xác minh được ID của bạn. Xin hãy thử lại",
+    "translation": "Hệ thống không thể xác thực ID của bạn. Xin hãy thử lại",
     "isDeprecated": false
   },
   {
@@ -16636,7 +16820,7 @@
     "key": "Title.VerificatonError",
     "description": null,
     "english": "Verification Error",
-    "translation": "Lỗi Xác Minh",
+    "translation": "Lỗi Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16652,7 +16836,7 @@
     "key": "Action.StartVerification",
     "description": null,
     "english": "Start Verification",
-    "translation": "Bắt Đầu Xác Minh",
+    "translation": "Bắt Đầu Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16660,7 +16844,7 @@
     "key": "Title.VerificationRequired",
     "description": null,
     "english": "Verification Required",
-    "translation": "Yêu Cầu Xác Minh",
+    "translation": "Yêu Cầu Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16668,7 +16852,7 @@
     "key": "Title.VerificationError",
     "description": null,
     "english": "Verification Error",
-    "translation": "Lỗi Xác Minh",
+    "translation": "Lỗi Xác Thực",
     "isDeprecated": false
   },
   {
@@ -16676,7 +16860,7 @@
     "key": "Description.VerificationRequired",
     "description": null,
     "english": "Before continuing, please verify your identity",
-    "translation": "Trước khi tiếp tục, xin hãy xác minh danh tính của bạn",
+    "translation": "Trước khi tiếp tục, vui lòng xác thực danh tính của bạn",
     "isDeprecated": false
   },
   {
@@ -16684,7 +16868,7 @@
     "key": "Heading.VerifyHaveFun",
     "description": null,
     "english": "VERIFY YOUR ACCOUNT\n AND START HAVING FUN!",
-    "translation": "HÃY XÁC MINH TÀI KHOẢN\n VÀ BẮT ĐẦU TẬN HƯỞNG NIỀM VUI!",
+    "translation": "HÃY XÁC THỰC TÀI KHOẢN\n VÀ BẮT ĐẦU TẬN HƯỞNG NIỀM VUI!",
     "isDeprecated": false
   },
   {
@@ -16732,7 +16916,7 @@
     "key": "Label.Chats",
     "description": "Title that displays on the button that the user can press to navigate to their conversations/group chats",
     "english": "Chats",
-    "translation": "Trò chuyện",
+    "translation": "Trò Chuyện",
     "isDeprecated": false
   },
   {
@@ -16740,7 +16924,7 @@
     "key": "Label.Social",
     "description": "Page title for the \"Social Tab\" page",
     "english": "Social",
-    "translation": "Mạng xã hội",
+    "translation": "Xã Hội",
     "isDeprecated": false
   },
   {
@@ -16756,7 +16940,7 @@
     "key": "Label.AddFriendHint",
     "description": "Title of a tooltip that directs a user to click a button to add friends.",
     "english": "Press Here to Add Friends",
-    "translation": "Nhấn vào đây để thêm bạn bè",
+    "translation": "Nhấn Vào Đây Để Thêm Bạn Bè",
     "isDeprecated": false
   },
   {
@@ -16764,7 +16948,7 @@
     "key": "Label.AddFriendHintBody",
     "description": "Body of a tooltip that directs a user to click a button to add friends. It fits in a relatively small space.",
     "english": "Friends make Roblox fun!",
-    "translation": "Càng đông vàng vui!",
+    "translation": "Có bạn thì chơi Roblox mới vui!",
     "isDeprecated": false
   },
   {
@@ -16772,7 +16956,7 @@
     "key": "Label.Connect",
     "description": "Page title for the Connect tab",
     "english": "Connect",
-    "translation": "Kết nối",
+    "translation": "Kết Nối",
     "isDeprecated": false
   },
   {
@@ -16780,7 +16964,7 @@
     "key": "Label.ConfirmSendFriendRequest",
     "description": "Used when a user scans a users QR code to add them as a friend. We show the user a prompt and ask them to confirm that they want to send a friend request to the user whos' information we read from the QR code.",
     "english": "Do you want to send a friend request to this user?",
-    "translation": "Bạn có muốn gửi yêu cầu kết bạn cho người dùng này không?",
+    "translation": "Bạn có muốn gửi yêu cầu kết bạn cho người chơi này không?",
     "isDeprecated": false
   },
   {
@@ -16788,7 +16972,7 @@
     "key": "Label.FindFriendsHintBody",
     "description": null,
     "english": "Connect with friends you already know or discover new ones.",
-    "translation": "Kết nối với bạn bè biết từ trước hoặc khám phá bạn bè mới.",
+    "translation": "Kết nối với bạn bè mà bạn biết hoặc khám phá những bạn mới.",
     "isDeprecated": false
   },
   {
@@ -17785,6 +17969,14 @@
   },
   {
     "namespace": "Feature.AccountSecurityPrompt",
+    "key": "Description.Email2SVUpsellMessageBody",
+    "description": "Message body for the email-2SV upsell prompt.",
+    "english": "Protect your account and valuables with security codes sent to your email. Enable Email 2-Step Verification today!",
+    "translation": "\"Đảm bảo an toàn cho tài khoản và tài sản của mình bằng mã bảo mật được gửi đến email của bạn. Bật Chức năng Xác thực 2 bước qua Email ngay hôm nay!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSecurityPrompt",
     "key": "Header.Email2SVUpsell",
     "description": "Header text for the email-2SV upsell prompt.",
     "english": "Boost Your Account Security!",
@@ -17796,7 +17988,7 @@
     "key": "Heading.VerifyAge",
     "description": null,
     "english": "Verify Your Age",
-    "translation": "Xác Minh Tuổi của Bạn",
+    "translation": "Xác Thực Tuổi Của Bạn",
     "isDeprecated": false
   },
   {
@@ -17804,7 +17996,7 @@
     "key": "Label.VerifyAgeInfo",
     "description": null,
     "english": "All of the information you share will be visible only to you. It will only be used for age verification purposes. By verifying that you are over 18, you will be given unrestricted access to Roblox",
-    "translation": "Tất cả thông tin mà bạn chia sẻ sẽ chỉ có mỗi bạn nhìn thấy. Những thông tin này cũng sẽ chỉ dùng cho mục đích xác minh tuổi. Với việc bạn xác nhận rằng bạn đủ 18 tuổi, bạn sẽ có quyền truy cập không giới hạn vào Roblox",
+    "translation": "Tất cả thông tin mà bạn chia sẻ sẽ chỉ có mỗi bạn nhìn thấy. Những thông tin này cũng sẽ chỉ dùng cho mục đích xác thực tuổi. Với việc bạn xác nhận rằng bạn đủ 18 tuổi, bạn sẽ có quyền truy cập không giới hạn vào Roblox",
     "isDeprecated": false
   },
   {
@@ -17812,7 +18004,7 @@
     "key": "Action.SkipVerification",
     "description": null,
     "english": "Skip Verification",
-    "translation": "Bỏ Qua Xác Minh",
+    "translation": "Bỏ Qua Xác Thực",
     "isDeprecated": false
   },
   {
@@ -17828,7 +18020,7 @@
     "key": "Heading.EnterEmail",
     "description": null,
     "english": "Enter Your Email",
-    "translation": "Nhập Email của Bạn",
+    "translation": "Nhập Email Của Bạn",
     "isDeprecated": false
   },
   {
@@ -17836,7 +18028,7 @@
     "key": "Label.EnterEmail",
     "description": null,
     "english": "Before verifying your age, please enter your email address. This will be your recovery method in case you lose access to your account.",
-    "translation": "Trước khi xác minh tuổi, vui lòng nhập địa chỉ email của bạn. Email này sẽ là phương pháp khôi phục trong trường hợp bạn mất quyền truy cập vào tài khoản của mình.",
+    "translation": "Trước khi xác thực tuổi, vui lòng nhập địa chỉ email của bạn. Email này sẽ là phương pháp khôi phục trong trường hợp bạn mất quyền truy cập vào tài khoản của mình.",
     "isDeprecated": false
   },
   {
@@ -17844,7 +18036,7 @@
     "key": "Label.VerifyAgeLanding",
     "description": null,
     "english": "All of the information you share will be visible only to you. It will only be used for age verification purposes. By verifying that you are over {age}, you will be given {permission}",
-    "translation": "Tất cả thông tin mà bạn chia sẻ sẽ chỉ có mỗi bạn nhìn thấy. Những thông tin này cũng sẽ chỉ dùng cho mục đích xác minh tuổi. Với việc xác nhận rằng bạn đủ {age} tuổi, bạn sẽ có {permission}",
+    "translation": "Tất cả thông tin mà bạn chia sẻ sẽ chỉ có mỗi bạn nhìn thấy. Những thông tin này cũng sẽ chỉ dùng cho mục đích xác thực tuổi. Với việc xác nhận rằng bạn đủ {age} tuổi, bạn sẽ có {permission}",
     "isDeprecated": false
   },
   {
@@ -17860,7 +18052,7 @@
     "key": "Label.FailedVerification",
     "description": null,
     "english": "The document provided could not be verified.\n\nPlease try again later.",
-    "translation": "Không thể xác minh tài liệu được cung cấp.\n\nVui lòng thử lại sau.",
+    "translation": "Không thể xác thực tài liệu được cung cấp.\n\nVui lòng thử lại sau.",
     "isDeprecated": false
   },
   {
@@ -17868,7 +18060,7 @@
     "key": "Label.VoiceChatUpsell",
     "description": null,
     "english": "This experience supports spatial voice chat. To use this feature, you need to verify you are at least 13 years old.",
-    "translation": "Trải nghiệm này hỗ trợ trò chuyện thoại âm thanh vòm. Để sử dụng tính năng này, bạn cần xác minh rằng bạn đủ 13 tuổi.",
+    "translation": "Trải nghiệm này hỗ trợ trò chuyện thoại âm thanh vòm. Để sử dụng tính năng này, bạn cần xác thực rằng bạn đủ 13 tuổi.",
     "isDeprecated": false
   },
   {
@@ -17884,7 +18076,7 @@
     "key": "Label.AgeVerifyPrompt",
     "description": null,
     "english": "Verify your age to get the most out of Roblox!",
-    "translation": "Hãy xác minh tuổi của bạn để có thể sử dụng tối đa các chức năng của Roblox!",
+    "translation": "Hãy xác thực tuổi của bạn để có thể sử dụng tối đa các chức năng của Roblox!",
     "isDeprecated": false
   },
   {
@@ -17892,7 +18084,7 @@
     "key": "Label.FailedVerificationInvalidDocument",
     "description": null,
     "english": "The document provided could not be verified.\n\nPlease ensure your document is valid and try again.",
-    "translation": "Không thể xác minh tài liệu được cung cấp.\n\nXin hãy đảm bảo tài liệu của bạn là hợp lệ và thử lại.",
+    "translation": "Không thể xác thực tài liệu được cung cấp.\n\nVui lòng đảm bảo tài liệu của bạn là hợp lệ và thử lại.",
     "isDeprecated": false
   },
   {
@@ -17900,7 +18092,7 @@
     "key": "Label.FailedVerificationLowQuality",
     "description": null,
     "english": "The documents provided could not be verified.\n\nPlease try again, ensuring that submitted images are centered and focused on the subject.",
-    "translation": "Không thể xác minh các tài liệu được cung cấp.\n\nVui lòng thử lại và đảm bảo rằng hình ảnh đã gửi có chủ thể hiển thị rõ ràng ở giữa ảnh.",
+    "translation": "Không thể xác thực các tài liệu được cung cấp.\n\nVui lòng thử lại và đảm bảo rằng hình ảnh đã gửi có chủ thể hiển thị rõ ràng ở giữa ảnh.",
     "isDeprecated": false
   },
   {
@@ -17908,7 +18100,7 @@
     "key": "Label.FailedVerificationUnsupportedDocument",
     "description": null,
     "english": "The document provided is not supported by our verification provider.\n\nPlease try again with a different document.",
-    "translation": "Tài liệu được cung cấp không được nhà cung cấp xác minh của chúng tôi hỗ trợ.\n\nVui lòng thử lại với một tài liệu khác.",
+    "translation": "Tài liệu được cung cấp không được nhà cung cấp xác thực của chúng tôi hỗ trợ.\n\nVui lòng thử lại với một tài liệu khác.",
     "isDeprecated": false
   },
   {
@@ -17916,7 +18108,7 @@
     "key": "Label.VerifyInBrowser",
     "description": null,
     "english": "Please complete the verification flow on your mobile browser to continue.",
-    "translation": "Vui lòng hoàn thành quy trình xác minh trên trình duyệt di động của bạn để tiếp tục.",
+    "translation": "Vui lòng hoàn thành quy trình xác thực trên trình duyệt di động của bạn để tiếp tục.",
     "isDeprecated": false
   },
   {
@@ -17932,7 +18124,7 @@
     "key": "Label.VerifyingYou",
     "description": null,
     "english": "Verifying you",
-    "translation": "Đang xác minh bạn",
+    "translation": "Đang xác thực bạn",
     "isDeprecated": false
   },
   {
@@ -17940,7 +18132,7 @@
     "key": "Label.PleaseDoNotClose",
     "description": null,
     "english": "Please do not close this window until the verification process is complete.",
-    "translation": "Vui lòng không đóng cửa sổ này cho đến khi quá trình xác minh hoàn tất.",
+    "translation": "Vui lòng không đóng cửa sổ này cho đến khi quá trình xác thực hoàn tất.",
     "isDeprecated": false
   },
   {
@@ -17972,7 +18164,7 @@
     "key": "Description.VerificationFinished",
     "description": null,
     "english": "Your verification data has been successfully submitted. You can now close this window and return to Roblox.",
-    "translation": "Dữ liệu xác minh của bạn đã được gửi thành công. Giờ bạn có thể đóng cửa sổ này và quay lại Roblox.",
+    "translation": "Dữ liệu xác thực của bạn đã được gửi thành công. Giờ bạn có thể đóng cửa sổ này và quay lại Roblox.",
     "isDeprecated": false
   },
   {
@@ -17980,7 +18172,7 @@
     "key": "Label.HavingTroubleScanCode",
     "description": null,
     "english": "Having trouble? Scan the QR code above to restart the verification process.",
-    "translation": "Bạn gặp sự cố? Hãy quét mã QR ở trên để bắt đầu lại quá trình xác minh.",
+    "translation": "Bạn gặp sự cố? Hãy quét mã QR ở trên để khởi động lại quá trình xác thực.",
     "isDeprecated": false
   },
   {
@@ -18076,7 +18268,7 @@
     "key": "Label.EnableChatWithVoice",
     "description": null,
     "english": "Enable your microphone to Chat with your Voice in this experience.",
-    "translation": "Hãy bật micrô để Trò Chuyện Thoại trong trải nghiệm này.",
+    "translation": "Hãy bật micro để Trò Chuyện Thoại trong trải nghiệm này.",
     "isDeprecated": false
   },
   {
@@ -18084,7 +18276,7 @@
     "key": "Label.EnableChatWithVoiceWithLink",
     "description": null,
     "english": "Enable your microphone to {linkStart}Chat with your Voice{linkEnd} in this experience.",
-    "translation": "Hãy bật micrô để {linkStart}Trò Chuyện Thoại{linkEnd} trong trải nghiệm này.",
+    "translation": "Hãy bật micro để {linkStart}Trò Chuyện Thoại{linkEnd} trong trải nghiệm này.",
     "isDeprecated": false
   },
   {
@@ -18092,7 +18284,7 @@
     "key": "Label.EnableMicrophone",
     "description": null,
     "english": "Enable Microphone",
-    "translation": "Bật micrô",
+    "translation": "Bật Micro",
     "isDeprecated": false
   },
   {
@@ -18100,7 +18292,7 @@
     "key": "Label.JoinWithoutMicrophone",
     "description": null,
     "english": "Join Without Microphone",
-    "translation": "Tham Gia Mà Không Cần Micrô",
+    "translation": "Tham Gia Mà Không Cần Micro",
     "isDeprecated": false
   },
   {
@@ -18132,7 +18324,7 @@
     "key": "Label.EnableCameraUpsell",
     "description": null,
     "english": "Enable Camera",
-    "translation": "Kích Hoạt Camera",
+    "translation": "Bật Camera",
     "isDeprecated": false
   },
   {
@@ -18220,7 +18412,7 @@
     "key": "Title.ProcessingVerification",
     "description": null,
     "english": "Processing Verification",
-    "translation": "Đang Xử Lý Yêu Cầu Xác Minh",
+    "translation": "Đang Xử Lý Yêu Cầu Xác Thực",
     "isDeprecated": false
   },
   {
@@ -18228,7 +18420,7 @@
     "key": "Description.ProcessingVerification",
     "description": null,
     "english": "We are processing your ID verification.",
-    "translation": "Chúng tôi đang xử lý yêu cầu xác minh ID của bạn.",
+    "translation": "Chúng tôi đang xử lý yêu cầu xác thực ID của bạn.",
     "isDeprecated": false
   },
   {
@@ -18332,7 +18524,7 @@
     "key": "Text.Test",
     "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
     "english": "Test Text",
-    "translation": "Văn Bản Kiểm Tra",
+    "translation": "Văn Bản Thử Nghiệm",
     "isDeprecated": false
   },
   {
@@ -18340,7 +18532,7 @@
     "key": "Text.Test2",
     "description": "USED FOR AUTOMATED TESTING. PLEASE IGNORE",
     "english": "Test Text 2",
-    "translation": "Văn Bản Kiểm Tra 2",
+    "translation": "Văn Bản Thử Nghiệm 2",
     "isDeprecated": false
   },
   {
@@ -18564,7 +18756,7 @@
     "key": "Text.Loading",
     "description": "Shown on button when prompt is opening to show the user it is still loading.",
     "english": "Loading...",
-    "translation": "Đang tải…",
+    "translation": "Đang tải...",
     "isDeprecated": false
   },
   {
@@ -18644,7 +18836,7 @@
     "key": "Text.Loading",
     "description": "Shown on button when prompt is opening to show the user it is still loading.",
     "english": "Loading...",
-    "translation": "Đang tải…",
+    "translation": "Đang tải...",
     "isDeprecated": false
   },
   {
@@ -18724,7 +18916,7 @@
     "key": "Description.CurfewMessage",
     "description": null,
     "english": "You cannot visit Roblox at this time. \nYour parent or guardian can change additional restriction hours under Parental Controls in Settings.",
-    "translation": "Bạn không thể vào Roblox ở thời điểm hiện tại. \nPhụ huynh hoặc người giám hộ của bạn có thể thay đổi thời gian hạn chế bổ sung tại mục Phụ Huynh Giám Sát trong phần Cài Đặt.",
+    "translation": "Bạn không thể vào Roblox ở thời điểm hiện tại. \nPhụ huynh hoặc người giám hộ của bạn có thể thay đổi thời gian hạn chế bổ sung tại mục Giám Sát Của Cha Mẹ trong phần Cài Đặt.",
     "isDeprecated": false
   },
   {
@@ -18732,7 +18924,7 @@
     "key": "Description.HeartbeatConsecutiveFailure",
     "description": "This message will be shown when screentime heartbeat http call fails for 3 times consecutively.",
     "english": "Internal Error. Please try login again.",
-    "translation": "Lỗi cục bộ. Vui lòng thử đăng nhập lại.",
+    "translation": "Lỗi Cục Bộ. Vui lòng thử đăng nhập lại.",
     "isDeprecated": false
   },
   {
@@ -18964,7 +19156,7 @@
     "key": "Messages.SubTitle",
     "description": "The subtitle of the moderation prompt.",
     "english": "Our content monitors have determined that your behavior at Roblox has been in violation of our Terms of Use.",
-    "translation": "Đội ngũ kiểm duyệt viên nội dung của chúng tôi xác định rằng hành vi của bạn trong Roblox đã vi phạm Điều Khoản Sử Dụng.",
+    "translation": "Đội ngũ kiểm duyệt nội dung của chúng tôi xác định rằng hành vi của bạn trong Roblox đã vi phạm Điều Khoản Sử Dụng.",
     "isDeprecated": false
   },
   {
@@ -18972,7 +19164,7 @@
     "key": "Messages.ReviewedTitle",
     "description": "Reviewed date title",
     "english": "Reviewed",
-    "translation": "Đã đánh giá",
+    "translation": "Đã Đánh Giá",
     "isDeprecated": false
   },
   {
@@ -18980,7 +19172,7 @@
     "key": "Messages.ModeratorNoteTitle",
     "description": "Moderator note title.",
     "english": "Moderator Note",
-    "translation": "Ghi Chú Của Kiểm Duyệt Viên",
+    "translation": "Ghi Chú Của Người Kiểm Duyệt",
     "isDeprecated": false
   },
   {
@@ -18988,7 +19180,7 @@
     "key": "Messages.CommunityGuideline",
     "description": "Community guideline text",
     "english": "Please abide by the Roblox Community Guidelines so that Roblox can be fun for users of all ages.",
-    "translation": "Vui lòng tuân thủ Nguyên Tắc Cộng Đồng để giúp Roblox trở thành địa điểm mà người dùng ở mọi lứa tuổi đều cảm thấy vui vẻ.",
+    "translation": "Vui lòng tuân thủ Nguyên Tắc Cộng Đồng để giúp Roblox trở thành nơi vui chơi cho mọi lứa tuổi.",
     "isDeprecated": false
   },
   {
@@ -19012,7 +19204,7 @@
     "key": "Messages.AccountTerminated",
     "description": "Account terminated.",
     "english": "Your account has been terminated.",
-    "translation": "Tài khoản của bạn đã bị chấm dứt.",
+    "translation": "Tài khoản của bạn đã bị đình chỉ.",
     "isDeprecated": false
   },
   {
@@ -19020,7 +19212,7 @@
     "key": "Messages.Appeal",
     "description": "Tell the user that they can appeal their moderation.",
     "english": "If you wish to appeal, please contact us via the Support Form.",
-    "translation": "Nếu bạn muốn khiếu nại, vui lòng dùng Mẫu Hỗ Trợ để liên hệ với chúng tôi.",
+    "translation": "Nếu bạn muốn kháng cáo, vui lòng dùng Mẫu Hỗ Trợ để liên hệ với chúng tôi.",
     "isDeprecated": false
   },
   {
@@ -19052,7 +19244,7 @@
     "key": "Messages.OffensiveItemTitle",
     "description": "The offensive item type that the user violates",
     "english": "Offensive Item",
-    "translation": "Vật Phẩm Gây Khó Chịu",
+    "translation": "Vật Phẩm Phản Cảm",
     "isDeprecated": false
   },
   {
@@ -19996,7 +20188,7 @@
     "key": "Label.InApp",
     "description": "This is to describe notifications when the user is IN the APP (in-app) for Roblox (i.e. stream notifications and toast notifications)",
     "english": "In-app",
-    "translation": "Trong ứng dụng",
+    "translation": "Trong Ứng Dụng",
     "isDeprecated": false
   },
   {
@@ -20004,7 +20196,7 @@
     "key": "Label.Push",
     "description": "This is shorthand for PUSH notifications specifically (for iOS and Android). These are off-platform notifications. This is NOT push in the sense of push and pull.",
     "english": "Push",
-    "translation": "Đẩy",
+    "translation": "Tin Ngoại Tuyến",
     "isDeprecated": false
   },
   {
@@ -20052,7 +20244,7 @@
     "key": "Action.Equip",
     "description": null,
     "english": "Equip My Avatar",
-    "translation": "Trang bị Avatar của tôi",
+    "translation": "Trang Bị Avatar Của Tôi",
     "isDeprecated": false
   },
   {
@@ -20076,7 +20268,7 @@
     "key": "Text.PurchasingRobux",
     "description": null,
     "english": "Purchasing Robux...",
-    "translation": "Đang mua Robux…",
+    "translation": "Đang mua Robux...",
     "isDeprecated": false
   },
   {
@@ -20084,7 +20276,7 @@
     "key": "Text.PurchasingItem",
     "description": null,
     "english": "Purchasing item...",
-    "translation": "Đang mua vật phẩm…",
+    "translation": "Đang mua vật phẩm...",
     "isDeprecated": false
   },
   {
@@ -20092,7 +20284,7 @@
     "key": "WaitingForPurchase",
     "description": null,
     "english": "Waiting for purchase...",
-    "translation": "Đang chờ mua…",
+    "translation": "Đang chờ mua...",
     "isDeprecated": false
   },
   {
@@ -20100,7 +20292,7 @@
     "key": "WaitingForRobux",
     "description": null,
     "english": "Waiting for Robux to be granted...",
-    "translation": "Đang chờ nhận Robux…",
+    "translation": "Đang chờ nhận Robux...",
     "isDeprecated": false
   },
   {
@@ -20108,7 +20300,7 @@
     "key": "Text.WaitingForPurchase",
     "description": null,
     "english": "Waiting for purchase...",
-    "translation": "Đang chờ mua…",
+    "translation": "Đang chờ mua...",
     "isDeprecated": false
   },
   {
@@ -20116,7 +20308,7 @@
     "key": "Text.WaitingForRobux",
     "description": null,
     "english": "Waiting for Robux to be granted...",
-    "translation": "Đang chờ nhận Robux…",
+    "translation": "Đang chờ nhận Robux...",
     "isDeprecated": false
   },
   {
@@ -20316,7 +20508,7 @@
     "key": "Text.NotForSale",
     "description": null,
     "english": "This item is not currently for sale. Your account has not been charged.",
-    "translation": "Vật phẩm này hiện không được bán. Tài khoản của bạn chưa được tính phí.",
+    "translation": "Vật phẩm này hiện không được bán. Tài khoản của bạn chưa bị tính phí.",
     "isDeprecated": false
   },
   {
@@ -20420,7 +20612,7 @@
     "key": "Text.ParentalLimit",
     "description": null,
     "english": "Your transaction cannot be completed due to the monthly purchasing limit set by the parent of the account owner. You will not be able to make a new purchase until next month unless the parental control settings are changed.",
-    "translation": "Giao dịch của bạn không thể hoàn thành được vì phụ huynh của chủ sở hữu tài khoản đã thiết lập giới hạng mua hằng tháng. Nếu không thay đổi cài đặt giám sát của phụ huynh, bạn sẽ phải chờ đến tháng sau để có thể thực hiện giao dịch mua mới.",
+    "translation": "Giao dịch của bạn không thể hoàn thành được vì phụ huynh của chủ sở hữu tài khoản đã thiết lập giới hạn mua hàng tháng. Nếu không thay đổi cài đặt giám sát của phụ huynh, bạn sẽ phải chờ đến tháng sau để có thể thực hiện giao dịch mua mới.",
     "isDeprecated": false
   },
   {
@@ -20428,7 +20620,7 @@
     "key": "Title.RobuxPurchaseFailed",
     "description": null,
     "english": "Unable to Get Robux",
-    "translation": "Không thể Nhận Robux",
+    "translation": "Không Thể Nhận Robux",
     "isDeprecated": false
   },
   {
@@ -20476,7 +20668,7 @@
     "key": "Text.ParentalRestrictionSubscription",
     "description": null,
     "english": "Subscriptions aren’t available to accounts with Monthly Spend Restrictions",
-    "translation": "Gói đăng ký không khả dụng cho các tài khoản có Giới Hạn Chi Tiêu Hằng Tháng",
+    "translation": "Gói đăng ký không khả dụng cho các tài khoản có Giới Hạn Chi Tiêu Hàng Tháng",
     "isDeprecated": false
   },
   {
@@ -20580,7 +20772,7 @@
     "key": "Text.U13MonthlyThreshold1Modal",
     "description": null,
     "english": "You've spent a lot on Roblox this month. Do you want to proceed? This purchase involves the exchange of real money. You must be the parent or legal guardian of the account owner to authorize this purchase.",
-    "translation": "Bạn đã chi rất nhiều tiền cho Roblox trong tháng này. Bạn có muốn tiếp tục không? Giao dịch mua này có sử dụng tiền thật. Bạn phải là cha mẹ hoặc người giám hộ hợp pháp của chủ sở hữu tài khoản để ủy quyền giao dịch mua này.",
+    "translation": "Bạn đã chi rất nhiều tiền cho Roblox trong tháng này. Bạn có muốn tiếp tục không? Giao dịch mua này có sử dụng tiền thật. Bạn phải là phụ huynh hoặc người giám hộ hợp pháp của chủ sở hữu tài khoản để ủy quyền giao dịch mua này.",
     "isDeprecated": false
   },
   {
@@ -20588,7 +20780,7 @@
     "key": "Text.U13MonthlyThreshold2Modal",
     "description": null,
     "english": "You've spent a lot on Roblox this month. Receipts will be sent to the verified parental email on this account for this and all subsequent purchases. ",
-    "translation": "Bạn đã chi rất nhiều tiền cho Roblox trong tháng này. Biên lai của giao dịch mua này và các giao dịch mua tiếp theo sẽ được gửi đến email của phụ huynh đã xác thực trên tài khoản này. ",
+    "translation": "Bạn đã chi rất nhiều tiền cho Roblox trong tháng này. Hóa đơn của giao dịch mua này và các giao dịch mua tiếp theo sẽ được gửi đến email của phụ huynh đã xác thực trên tài khoản này. ",
     "isDeprecated": false
   },
   {
@@ -20636,7 +20828,7 @@
     "key": "Description.JoinExperiencePending",
     "description": "An inviter as asked the squad to join an experience. The user has accepted. We are now waiting for the experience to start.",
     "english": "Sit tight! Getting ready to join {experienceName}.",
-    "translation": "Ngồi yên nhé! Sắp sẵn sàng để vào {experienceName} rồi.",
+    "translation": "Ngồi yên nhé! Đang chuẩn bị vào {experienceName}.",
     "isDeprecated": false
   },
   {
@@ -20644,7 +20836,7 @@
     "key": "Description.ActiveSquadTitle",
     "description": "Title text of Active Squad lobby",
     "english": "Active Squad",
-    "translation": "Đội đang hoạt động",
+    "translation": "Đội Đang Hoạt Động",
     "isDeprecated": false
   },
   {
@@ -20668,7 +20860,7 @@
     "key": "Action.Leave",
     "description": "Button text to leave a squad",
     "english": "Leave",
-    "translation": "Rời đi",
+    "translation": "Rời Khỏi",
     "isDeprecated": false
   },
   {
@@ -20684,7 +20876,7 @@
     "key": "Label.LetsPlay",
     "description": "Text label for Squads FAB\n\ntranslation note: please uppercase if possible in that language",
     "english": "LET'S PLAY",
-    "translation": "CÙNG CHƠI NÀO",
+    "translation": "CÙNG CHƠI THÔI",
     "isDeprecated": false
   },
   {
@@ -20700,7 +20892,7 @@
     "key": "Label.JoinedTheSquad",
     "description": "Label for Squads FAB when a user has joined the squad",
     "english": "Joined the squad",
-    "translation": "Đã vào đội",
+    "translation": "Đã tham gia đội",
     "isDeprecated": false
   },
   {
@@ -20716,7 +20908,7 @@
     "key": "Label.LetsPlayWithUser",
     "description": "Text label for Squads FAB\n\ntranslation note: please uppercase if possible in that language. do not uppercase {username} param",
     "english": "{username}: LET'S PLAY",
-    "translation": "{username}: CÙNG CHƠI NÀO",
+    "translation": "{username}: CÙNG CHƠI THÔI",
     "isDeprecated": false
   },
   {
@@ -20724,7 +20916,7 @@
     "key": "Label.InviteToSquad",
     "description": "Title label for the invite to squad page",
     "english": "Invite to Squad",
-    "translation": "Mời vào Đội",
+    "translation": "Mời Vào Đội",
     "isDeprecated": false
   },
   {
@@ -20740,7 +20932,7 @@
     "key": "Action.ShareSquadLink",
     "description": "Button text to share squad link in Invite to squad page",
     "english": "Share Squad Link",
-    "translation": "Chia sẻ liên kết Đội",
+    "translation": "Chia Sẻ Liên Kết Đội",
     "isDeprecated": false
   },
   {
@@ -20788,7 +20980,7 @@
     "key": "Label.ReachedMaxCapacity",
     "description": "Label text for squad invite max capacity banner",
     "english": "Reached Max Capacity ({maxCapacity})",
-    "translation": "Đã đạt số lượng thành viên tối đa ({maxCapacity})",
+    "translation": "Đã Đạt Số Lượng Thành Viên Tối Đa ({maxCapacity})",
     "isDeprecated": false
   },
   {
@@ -20804,7 +20996,7 @@
     "key": "Description.ShareInviteLinkButtonDescription",
     "description": "Helper text to explain anyone with a Share invite link can join",
     "english": "Anyone with a link can join.",
-    "translation": "Bất cứ ai có liên kết đều có thể vào.",
+    "translation": "Bất cứ ai có liên kết có thể tham gia.",
     "isDeprecated": false
   },
   {
@@ -20844,7 +21036,7 @@
     "key": "Title.InsufficientRobux",
     "description": null,
     "english": "Insufficient Robux",
-    "translation": "Robux không đủ",
+    "translation": "Robux Không Đủ",
     "isDeprecated": false
   },
   {
@@ -20892,7 +21084,7 @@
     "key": "Action.RobuxStore",
     "description": null,
     "english": "Go to Robux Store",
-    "translation": "Vào Cửa hàng Robux",
+    "translation": "Vào Cửa Hàng Robux",
     "isDeprecated": false
   },
   {
@@ -20916,7 +21108,7 @@
     "key": "ShareModalLinkCopy",
     "description": "\"Copy\" in this case meaning \"copy and paste.\" This is the text for the button that allows the user to copy a link to their clipboard",
     "english": "Copy",
-    "translation": "Sao chép",
+    "translation": "Sao Chép",
     "isDeprecated": false
   },
   {
@@ -20924,7 +21116,7 @@
     "key": "ShareModalCallToAction",
     "description": "Text of the main call-to-action button that allows the user to share the link via the app's chat",
     "english": "Share via Chat...",
-    "translation": "Chia sẻ qua Khung Trò Chuyện…",
+    "translation": "Chia Sẻ Qua Khung Trò Chuyện...",
     "isDeprecated": false
   },
   {
@@ -21044,7 +21236,7 @@
     "key": "EnableNotificationsModalTitle",
     "description": "The title of a modal that prompts the user to allow events to send push notifications",
     "english": "Event Push Notifications",
-    "translation": "Thông Báo Đẩy Sự Kiện",
+    "translation": "Thông Báo Tin Ngoại Tuyến Sự Kiện",
     "isDeprecated": false
   },
   {
@@ -21300,7 +21492,7 @@
     "key": "Body.TwoStepVerificationRequired",
     "description": "Body text for the two-step verification challenge modal.",
     "english": "You must set up 2-Step Verification to complete this action. This will help protect your login, purchases, and more.",
-    "translation": "Bạn phải thiết lập Xác Thực 2 Bước để hoàn tất hành động này. Điều này sẽ giúp bảo vệ việc đăng nhập, giao dịch mua của bạn và còn nhiều nữa.",
+    "translation": "Bạn phải thiết lập Xác Thực 2 Bước để hoàn thành hành động này. Điều này sẽ giúp bảo vệ việc đăng nhập, giao dịch mua của bạn và còn nhiều nữa.",
     "isDeprecated": false
   },
   {
@@ -21852,7 +22044,7 @@
     "key": "Heading.SwitchProfile",
     "description": "Profile switcher",
     "english": "Switch Profile",
-    "translation": "Chuyển đổi Hồ Sơ",
+    "translation": "Chuyển Đổi Hồ Sơ",
     "isDeprecated": false
   },
   {
@@ -21876,7 +22068,7 @@
     "key": "Subheading.AccountSettingsWebsite",
     "description": "Visit website heading",
     "english": "Visit Website",
-    "translation": "Truy cập trang Web",
+    "translation": "Truy Cập Trang Web",
     "isDeprecated": false
   },
   {
@@ -21900,7 +22092,7 @@
     "key": "Description.AccountSettingsScan",
     "description": "Account settings scan description",
     "english": "Scan the QR code using your companion device's camera\nto open the Account Settings in the Roblox App.",
-    "translation": "Quét mã QR bằng camera trên thiết bị đồng hành của bạn \nđể mở Cài Đặt Tài Khoản trong ứng dụng Roblox.",
+    "translation": "Quét mã QR bằng camera trên thiết bị đồng hành của bạn\nđể mở Cài Đặt Tài Khoản trong Ứng Dụng Roblox.",
     "isDeprecated": false
   },
   {
@@ -21908,7 +22100,7 @@
     "key": "Heading.PlatformAccountSettings",
     "description": "Platform-specific account settings heading",
     "english": "{platform} Settings",
-    "translation": "Cài đặt {platform}",
+    "translation": "Cài Đặt {platform}",
     "isDeprecated": false
   },
   {
@@ -21916,7 +22108,7 @@
     "key": "Description.PlatformAccountSettingsSuccess",
     "description": "Account settings verification that settings will allow online play with other players",
     "english": "Your {platform} settings are correctly set and you are ready to visit!",
-    "translation": "Các cài đặt trên {platform} đều chính xác và bạn đã sẵn sàng để truy cập vào!",
+    "translation": "Các cài đặt trên {platform} đều chính xác và bạn đã sẵn sàng để truy cập!",
     "isDeprecated": false
   },
   {
@@ -21924,7 +22116,7 @@
     "key": "Label.CrossPlatform",
     "description": "Cross-play label",
     "english": "Cross-Platform Play",
-    "translation": "Chơi đa nền tảng",
+    "translation": "Chơi Đa Nền Tảng",
     "isDeprecated": false
   },
   {
@@ -21940,7 +22132,7 @@
     "key": "Label.Multiplayer",
     "description": "Multiplayer privilege label",
     "english": "Multiplayer",
-    "translation": "Đa người chơi",
+    "translation": "Nhiều Người Chơi",
     "isDeprecated": false
   },
   {
@@ -21948,7 +22140,7 @@
     "key": "Label.SharedContent",
     "description": "Shared content privilege label",
     "english": "Shared Content",
-    "translation": "Nội dung đã chia sẻ",
+    "translation": "Nội Dung Đã Chia Sẻ",
     "isDeprecated": false
   },
   {
@@ -21980,7 +22172,7 @@
     "key": "Label.Disabled",
     "description": "Setting disabled state",
     "english": "Disabled",
-    "translation": "Tắt",
+    "translation": "Vô Hiệu Hóa",
     "isDeprecated": false
   },
   {
@@ -22004,7 +22196,7 @@
     "key": "Label.Allowed",
     "description": "Setting allowed state",
     "english": "Allowed",
-    "translation": "Cho phép",
+    "translation": "Cho Phép",
     "isDeprecated": false
   },
   {
@@ -22012,7 +22204,7 @@
     "key": "Label.Disallowed",
     "description": "Setting disallowed state",
     "english": "Disallowed",
-    "translation": "Không cho phép",
+    "translation": "Không Cho Phép",
     "isDeprecated": false
   },
   {
@@ -22052,7 +22244,7 @@
     "key": "Title.ParentPermission",
     "description": null,
     "english": "Parent Permission Needed",
-    "translation": "Cần phụ huynh cho phép",
+    "translation": "Cần Phụ Huynh Cho Phép",
     "isDeprecated": false
   },
   {
@@ -22060,7 +22252,7 @@
     "key": "Description.ParentPermission",
     "description": "DO NOT USE - USE V2",
     "english": "Certain actions on Roblox require a parent or guardian’s permission. To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
-    "translation": "Một số hành động trên Roblox cần sự cho phép của phụ huynh hoặc người giám hộ. Để giúp trẻ thực hiện hành động đó, bạn cần có một tài khoản Roblox với đặc quyền phụ huynh. Bạn sẽ phải cung cấp email, xác minh tuổi và liên kết với tài khoản của trẻ.",
+    "translation": "Một số hành động trên Roblox cần sự cho phép của phụ huynh hoặc người giám hộ. Để giúp trẻ thực hiện hành động đó, bạn cần có một tài khoản Roblox với đặc quyền phụ huynh. Bạn sẽ phải cung cấp email, xác thực tuổi và liên kết với tài khoản của trẻ.",
     "isDeprecated": true
   },
   {
@@ -22068,7 +22260,7 @@
     "key": "Action.GetStarted",
     "description": null,
     "english": "Get Started",
-    "translation": "Bắt đầu",
+    "translation": "Bắt Đầu",
     "isDeprecated": false
   },
   {
@@ -22076,7 +22268,7 @@
     "key": "Title.EnterParentEmail",
     "description": "Title for the modal to allow parent enter their email",
     "english": "Enter Parent Email",
-    "translation": "Nhập email phụ huynh",
+    "translation": "Nhập Email Phụ Huynh",
     "isDeprecated": false
   },
   {
@@ -22084,7 +22276,7 @@
     "key": "Description.EnterParentEmail",
     "description": "do not use - use the v2 version",
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {privacyPolicyLink}.",
-    "translation": "Địa chỉ email này sẽ được liên kết với tài khoản Roblox của bạn. Để tìm heieru thêm về cách chúng tôi sử dụng dữ liệu của bạn, vui lòng đọc {privacyPolicyLink} của chúng tôi.",
+    "translation": "Địa chỉ email này sẽ được liên kết với tài khoản Roblox của bạn. Để tìm hiểu thêm về cách chúng tôi sử dụng dữ liệu của bạn, vui lòng đọc {privacyPolicyLink} của chúng tôi.",
     "isDeprecated": true
   },
   {
@@ -22092,7 +22284,7 @@
     "key": "Description.EnterParentEmailV2",
     "description": null,
     "english": "This email address will be associated with your account on Roblox. To learn more about our data practices, please see our {linkStart}Privacy Policy{linkEnd}.",
-    "translation": "Địa chỉ email này sẽ được liên kết với tài khoản Roblox của bạn. Để tìm heieru thêm về cách chúng tôi sử dụng dữ liệu của bạn, vui lòng đọc {linkStart}Chính sách quyền riêng tư{linkEnd} của chúng tôi.",
+    "translation": "Địa chỉ email này sẽ được liên kết với tài khoản Roblox của bạn. Để tìm hiểu thêm về cách chúng tôi sử dụng dữ liệu của bạn, vui lòng đọc {linkStart}Chính Sách Quyền Riêng Tư{linkEnd} của chúng tôi.",
     "isDeprecated": false
   },
   {
@@ -22124,7 +22316,7 @@
     "key": "Message.InvalidEmail",
     "description": "Error message when user input invalid email",
     "english": "Invalid email address",
-    "translation": "Địa chỉ mail không hợp lệ",
+    "translation": "Địa chỉ email không hợp lệ",
     "isDeprecated": false
   },
   {
@@ -22132,7 +22324,7 @@
     "key": "Title.WaitingParentPermission",
     "description": null,
     "english": "Waiting for Parent Permission",
-    "translation": "Đang chờ phụ huynh cho phép",
+    "translation": "Đang Chờ Phụ Huynh Cho Phép",
     "isDeprecated": false
   },
   {
@@ -22148,7 +22340,7 @@
     "key": "Action.SendAnotherEmail",
     "description": "Button to send parent another email",
     "english": "Send Another Email",
-    "translation": "Gửi email khác",
+    "translation": "Gửi Email Khác",
     "isDeprecated": false
   },
   {
@@ -22156,7 +22348,7 @@
     "key": "Titile.CantLinkAccount",
     "description": "Error modal title for account is not able to link",
     "english": "Can’t Link Account",
-    "translation": "Không thể liên kết tài khoản",
+    "translation": "Không Thể Liên Kết Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -22172,7 +22364,7 @@
     "key": "Title.CantLinkAccount",
     "description": "Error modal title for account is not able to link",
     "english": "Can’t Link Account",
-    "translation": "Không thể liên kết tài khoản",
+    "translation": "Không Thể Liên Kết Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -22188,7 +22380,7 @@
     "key": "Message.ExistAccountWithEmail",
     "description": "Error message child has five parents, and enters email of a sixth parent",
     "english": "Your parent already has an account for approving requests. Enter your parent’s email, instead.",
-    "translation": "Phụ huynh của bạn đã có tài khoản phê duyệt yêu cầu rồi. Thay vào đó, hãy nhập email của phụ huynh bạn.",
+    "translation": "Phụ huynh của bạn đã có tài khoản phê duyệt yêu cầu. Thay vào đó, hãy nhập email của phụ huynh bạn.",
     "isDeprecated": false
   },
   {
@@ -22196,7 +22388,7 @@
     "key": "Message.SomethingWentWrong",
     "description": "Generic error message",
     "english": "Something went wrong",
-    "translation": "Đã xảy ra lỗi",
+    "translation": "Đã xảy ra sự cố",
     "isDeprecated": false
   },
   {
@@ -22204,7 +22396,7 @@
     "key": "Title.AreYouSure",
     "description": "Double check modal title",
     "english": "Are You Sure?",
-    "translation": "Bạn chắc chứ?",
+    "translation": "Bạn Chắc Chứ?",
     "isDeprecated": false
   },
   {
@@ -22212,7 +22404,7 @@
     "key": "Title.LogOut",
     "description": null,
     "english": "Log Out",
-    "translation": "Đăng xuất",
+    "translation": "Đăng Xuất",
     "isDeprecated": false
   },
   {
@@ -22244,7 +22436,7 @@
     "key": "Title.NoAccountCreation",
     "description": null,
     "english": "Can’t Create Account",
-    "translation": "Không tạo được tài khoản",
+    "translation": "Không Tạo Được Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -22260,7 +22452,7 @@
     "key": "Title.EmailMismatch",
     "description": null,
     "english": "Email Mismatch",
-    "translation": "Email không khớp",
+    "translation": "Email Không Khớp",
     "isDeprecated": false
   },
   {
@@ -22276,7 +22468,7 @@
     "key": "Title.IneligibleAccount",
     "description": null,
     "english": "Account Not Eligible",
-    "translation": "Tài khoản không đủ điều kiện",
+    "translation": "Tài Khoản Không Đủ Điều Kiện",
     "isDeprecated": false
   },
   {
@@ -22292,7 +22484,7 @@
     "key": "Action.EnterEmail",
     "description": null,
     "english": "Enter Email",
-    "translation": "Nhập email",
+    "translation": "Nhập Email",
     "isDeprecated": false
   },
   {
@@ -22300,7 +22492,7 @@
     "key": "Title.VerifyEmail",
     "description": null,
     "english": "Verify Your Email",
-    "translation": "Xác minh email",
+    "translation": "Xác Thực Email",
     "isDeprecated": false
   },
   {
@@ -22308,7 +22500,7 @@
     "key": "Description.VerifyEmail",
     "description": null,
     "english": "First verify your email address on Roblox in Settings > Account Info. Then you can return to the link in your email and approve your child’s request.",
-    "translation": "Trước tiên, vào Settings > Account Info để xác minh địa chỉ email Roblox của bạn. Sau đó, quay lại email chứa liên kết và phê duyệt yêu cầu của trẻ.",
+    "translation": "Trước tiên, vào Cài Đặt > Thông Tin Tài Khoản để xác thực địa chỉ email Roblox của bạn. Sau đó, quay lại email chứa liên kết và phê duyệt yêu cầu của trẻ.",
     "isDeprecated": false
   },
   {
@@ -22316,7 +22508,7 @@
     "key": "Title.AddEmail",
     "description": null,
     "english": "Add Your Email",
-    "translation": "Thêm email của bạn",
+    "translation": "Thêm Email Của Bạn",
     "isDeprecated": false
   },
   {
@@ -22324,7 +22516,7 @@
     "key": "Description.AddEmail",
     "description": null,
     "english": "First add your email address on Roblox in Settings > Account Info. Then you can return to the link in your email and approve your child’s request.",
-    "translation": "Trước tiên, vào Settings > Account Info để thêm địa chỉ email Roblox của bạn. Sau đó, quay lại email chứa liên kết và phê duyệt yêu cầu của trẻ.",
+    "translation": "Trước tiên, vào Cài Đặt > Thông Tin Tài Khoản để thêm địa chỉ email Roblox của bạn. Sau đó, quay lại email chứa liên kết và phê duyệt yêu cầu của trẻ.",
     "isDeprecated": false
   },
   {
@@ -22332,7 +22524,7 @@
     "key": "Title.DifferentEmail",
     "description": "email is already used for a parent account",
     "english": "Email Already In Use",
-    "translation": "Email đã được sử dụng",
+    "translation": "Email Đã Được Sử Dụng",
     "isDeprecated": false
   },
   {
@@ -22340,7 +22532,7 @@
     "key": "Description.DifferentEmail",
     "description": null,
     "english": "This email already belongs to a parent account. In your email inbox, open the permission request again and select Use an Existing Account.",
-    "translation": "Email này đã được sử dụng bởi một tài khoản phụ huynh. Hãy mở lại email yêu cầu cấp quyền trong hộp thư đến và chọn \"Dùng tài khoản hiện có\".",
+    "translation": "Email này đã được sử dụng bởi một tài khoản phụ huynh. Hãy mở lại email yêu cầu cấp quyền trong hộp thư đến và chọn Dùng Tài Khoản Hiện Có.",
     "isDeprecated": false
   },
   {
@@ -22356,7 +22548,7 @@
     "key": "Title.SomethingWentWrong",
     "description": null,
     "english": "Something Went Wrong",
-    "translation": "Đã xảy ra lỗi",
+    "translation": "Đã Xảy Ra Sự Cố",
     "isDeprecated": false
   },
   {
@@ -22364,7 +22556,7 @@
     "key": "Description.RestartSession",
     "description": null,
     "english": "To restart the process and complete your child’s request, re-enter your email on your child’s device. ",
-    "translation": "Để bắt đầu lại quy trình và hoàn tất yêu cầu của trẻ, hãy nhập lại email của bạn trên thiết bị của trẻ.",
+    "translation": "Để khởi động lại quy trình và hoàn tất yêu cầu của trẻ, hãy nhập lại email của bạn trên thiết bị của trẻ. ",
     "isDeprecated": false
   },
   {
@@ -22388,7 +22580,7 @@
     "key": "ç",
     "description": null,
     "english": "Continue or Exit",
-    "translation": "Tiếp tục hoặc Thoát",
+    "translation": "Tiếp Tục Hoặc Thoát",
     "isDeprecated": false
   },
   {
@@ -22396,7 +22588,7 @@
     "key": "Title.ExitMessage",
     "description": null,
     "english": "Continue or Exit",
-    "translation": "Tiếp tục hoặc Thoát",
+    "translation": "Tiếp Tục Hoặc Thoát",
     "isDeprecated": false
   },
   {
@@ -22412,7 +22604,7 @@
     "key": "Action.ExitSetup",
     "description": "exit parental setup flow",
     "english": "Exit Setup",
-    "translation": "Thoát thiết lập",
+    "translation": "Thoát Thiết Lập",
     "isDeprecated": false
   },
   {
@@ -22420,7 +22612,7 @@
     "key": "Title.LinkToChild",
     "description": null,
     "english": "Link to Your Child’s Account",
-    "translation": "Liên kết với tài khoản của trẻ",
+    "translation": "Liên Kết Với Tài Khoản Của Trẻ",
     "isDeprecated": false
   },
   {
@@ -22444,7 +22636,7 @@
     "key": "Description.UserAgreementExplanation",
     "description": null,
     "english": "By selecting “Agree,” you represent that you are this child’s parent or legal guardian and agree to receive communications regarding their account. You also agree on behalf of your child to the {tosLinkStart}Terms of Use{tosLinkEnd}, including the arbitration clause, and acknowledge the {PPLinkStart}Privacy Policy{PPLinkEnd}.",
-    "translation": "Bằng cách chọn “Đồng ý”, bạn nhận mình là phụ huynh hoặc người giám hộ hợp phát của trẻ vị thành niên này và đồng ý nhận thông tin liên quan đến tài khoản của trẻ. Bạn cũng thay mặt trẻ đồng ý với {tosLinkStart}Điều khoản sử dụng{tosLinkEnd} (bao gồm điều khoản trọng tài) và công nhận {PPLinkStart}Chính sách quyền riêng tư{PPLinkEnd}.",
+    "translation": "Bằng cách chọn “Đồng Ý”, bạn nhận mình là phụ huynh hoặc người giám hộ hợp phát của trẻ vị thành niên này và đồng ý nhận thông tin liên quan đến tài khoản của trẻ. Bạn cũng thay mặt trẻ đồng ý với {tosLinkStart}Điều Khoản Sử Dụng{tosLinkEnd}, bao gồm điều khoản trọng tài và công nhận {PPLinkStart}Chính Sách Quyền Riêng Tư{PPLinkEnd}.",
     "isDeprecated": false
   },
   {
@@ -22452,7 +22644,7 @@
     "key": "Action.LinkAccount",
     "description": null,
     "english": "Link Account",
-    "translation": "Liên kết tài khoản",
+    "translation": "Liên Kết Tài Khoản",
     "isDeprecated": false
   },
   {
@@ -22468,7 +22660,7 @@
     "key": "Heading.ApproveChildRequest",
     "description": null,
     "english": "Approve Your Child’s Request",
-    "translation": "Chấp thuận yêu cầu của trẻ",
+    "translation": "Chấp Thuận Yêu Cầu Của Trẻ",
     "isDeprecated": false
   },
   {
@@ -22476,7 +22668,7 @@
     "key": "Description.ChargebackConsent",
     "description": null,
     "english": "Your child’s account was locked due to unauthorized charges.{breakLine}As a parent, you can now give your child permission to unlock their account. ",
-    "translation": "Tài khoản của trẻ đã bị khoá do có giao dịch không được uỷ quyền.{breakLine}Với vai trò phụ huynh, giờ bạn có quyền cho phép trẻ mở khoá tài khoản. ",
+    "translation": "Tài khoản của trẻ đã bị khoá do có giao dịch không được ủy quyền.{breakLine}Với vai trò phụ huynh, giờ bạn có quyền cho phép trẻ mở khoá tài khoản. ",
     "isDeprecated": false
   },
   {
@@ -22492,7 +22684,7 @@
     "key": "Action.ApproveRequest",
     "description": null,
     "english": "Approve Request",
-    "translation": "Chấp thuận yêu cầu",
+    "translation": "Chấp Thuận Yêu Cầu",
     "isDeprecated": false
   },
   {
@@ -22500,7 +22692,7 @@
     "key": "Action.DoNotApprove",
     "description": null,
     "english": "Don’t Approve",
-    "translation": "Không chấp thuận",
+    "translation": "Không Chấp Thuận",
     "isDeprecated": false
   },
   {
@@ -22508,7 +22700,7 @@
     "key": "Title.RequestApproved",
     "description": null,
     "english": "Request Approved",
-    "translation": "Yêu cầu đã được chấp thuận",
+    "translation": "Yêu Cầu Đã Được Chấp Thuận",
     "isDeprecated": false
   },
   {
@@ -22524,7 +22716,7 @@
     "key": "Title.SignInError",
     "description": null,
     "english": "Trouble Signing In",
-    "translation": "Lỗi đăng nhập",
+    "translation": "Lỗi Đăng Nhập",
     "isDeprecated": false
   },
   {
@@ -22532,7 +22724,7 @@
     "key": "Title.IDVRequired",
     "description": null,
     "english": "Verified ID Required",
-    "translation": "Cần xác minh ID",
+    "translation": "Yêu Cầu Xác Thực ID",
     "isDeprecated": false
   },
   {
@@ -22548,7 +22740,7 @@
     "key": "Title.UserDeleted",
     "description": "parent can't consent for child account because child account got deleted",
     "english": "Can't Provide Permission",
-    "translation": "Không thể cấp quyền",
+    "translation": "Không Thể Cấp Quyền",
     "isDeprecated": false
   },
   {
@@ -22572,7 +22764,7 @@
     "key": "Action.ContinueSetup",
     "description": "continue setup parent account",
     "english": "Continue Setup",
-    "translation": "Tiếp tục thiết lập",
+    "translation": "Tiếp Tục Thiết Lập",
     "isDeprecated": false
   },
   {
@@ -22580,7 +22772,7 @@
     "key": "Action.ReviewRequest",
     "description": "review the request for parent to unlock child's account",
     "english": "Review Request",
-    "translation": "Kiểm tra yêu cầu",
+    "translation": "Kiểm Tra Yêu Cầu",
     "isDeprecated": false
   },
   {
@@ -22588,7 +22780,7 @@
     "key": "Description.ParentPermissionV2",
     "description": "Content to explain why parent permission is needed for VPC",
     "english": "Certain actions on Roblox require a parent or guardian’s permission.{lineBreak}To help your child, you’ll need a Roblox account with parent privileges. You’ll be asked to provide your email, verify you’re an adult, and link to your child’s account.",
-    "translation": "Một số hành động trên Roblox cần sự cho phép của phụ huynh hoặc người giám hộ.{lineBreak}Để giúp trẻ thực hiện hành động đó, bạn cần có một tài khoản Roblox với đặc quyền phụ huynh. Bạn sẽ phải cung cấp email, xác minh tuổi và liên kết với tài khoản của trẻ.",
+    "translation": "Một số hành động trên Roblox cần sự cho phép của phụ huynh hoặc người giám hộ.{lineBreak}Để giúp trẻ thực hiện hành động đó, bạn cần có một tài khoản Roblox với đặc quyền phụ huynh. Bạn sẽ phải cung cấp email, xác thực tuổi và liên kết với tài khoản của trẻ.",
     "isDeprecated": false
   },
   {
@@ -22612,7 +22804,7 @@
     "key": "Title.DifferentEmailMidFlow",
     "description": "email is already used for a parent account",
     "english": "Email Already In Use",
-    "translation": "Email đã được sử dụng",
+    "translation": "Email Đã Được Sử Dụng",
     "isDeprecated": true
   },
   {
@@ -22628,7 +22820,7 @@
     "key": "Title.ProcessingVerification",
     "description": null,
     "english": "Processing Verification",
-    "translation": "Đang Xử Lý Yêu Cầu Xác Minh",
+    "translation": "Đang Xử Lý Yêu Cầu Xác Thực",
     "isDeprecated": false
   },
   {
@@ -22636,7 +22828,7 @@
     "key": "Description.ProcessingVerification",
     "description": null,
     "english": "We are processing your ID verification. Please do not close this window until the verification process is complete.",
-    "translation": "Chúng tôi đang xử lý quá trình xác minh ID cho bạn. Vui lòng không đóng cửa sổ này cho đến khi quá trình xác minh hoàn tất.",
+    "translation": "Chúng tôi đang xử lý quá trình xác thực ID cho bạn. Vui lòng không đóng cửa sổ này cho đến khi quá trình xác thực hoàn thành.",
     "isDeprecated": false
   },
   {
@@ -22644,7 +22836,7 @@
     "key": "Label.PleaseDoNotClose",
     "description": null,
     "english": "Please do not close this window until the verification process is complete.",
-    "translation": "Vui lòng không đóng cửa sổ này cho đến khi quá trình xác minh hoàn tất.",
+    "translation": "Vui lòng không đóng cửa sổ này cho đến khi quá trình xác thực hoàn thành.",
     "isDeprecated": false
   },
   {
@@ -22652,7 +22844,7 @@
     "key": "Action.RestartSession",
     "description": null,
     "english": "Restart Session",
-    "translation": "Khởi động lại phiên",
+    "translation": "Khởi Động Lại Phiên",
     "isDeprecated": false
   },
   {
@@ -22664,11 +22856,27 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Parents",
+    "key": "Description.SaveCreditCardConsent",
+    "description": null,
+    "english": "Your child needs your permission to save payment methods to their account. A saved payment method can be used for purchases on Roblox, including subscriptions. {breakLine}As a parent, you’ll receive an email notification for every purchase. You can also remove payment methods anytime. {linkStart}Learn more{linkEnd}\n",
+    "translation": "Con của bạn cần sự đồng ý của bạn để lưu các phương thức thanh toán vào tài khoản. Một phương thức thanh toán đã lưu có thể được sử dụng để thực hiện các giao dịch mua sắm trên Roblox, bao gồm mua gói đăng ký. {breakLine}Là một phụ huynh, bạn sẽ nhận được thông báo qua email cho mỗi giao dịch mua sắm. Bạn cũng có thể xóa các phương thức thanh toán bất kỳ lúc nào. {linkStart}Tìm hiểu thêm{linkEnd}\n",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Parents",
+    "key": "Message.SaveCreditCardSuccess",
+    "description": null,
+    "english": "When your child purchases a subscription on Roblox, you can manually save a payment method to their Roblox account for future use. ",
+    "translation": "Khi con của bạn mua một gói đăng ký trên Roblox, bạn có thể lưu thủ công một phương thức thanh toán vào tài khoản Roblox của trẻ để sử dụng trong tương lai. ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.SubscriptionPurchasePrompt",
     "key": "Label.TestFlowDisclaimer",
     "description": "Footer on prompt if the user is testing in studio.",
     "english": "This dialog is a preview, showing you how your users will see the description of your subscription. You won’t be charged if you click Subscribe.",
-    "translation": "Cuộc trò chuyện này là một bản xem trước, cho bạn thấy cách người dùng sẽ thấy nội dung mô tả của gói đăng ký. Bạn sẽ không bị tính phí nếu nhấn vào Đăng Ký.",
+    "translation": "Hộp thoại này là một bản xem trước, cho bạn thấy cách người chơi sẽ thấy nội dung miêu tả gói đăng ký của bạn. Bạn sẽ không bị tính phí nếu nhấp vào Đăng Ký.",
     "isDeprecated": false
   },
   {
