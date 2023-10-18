@@ -16,6 +16,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.Presence",
+    "key": "Label.RobloxStudio",
+    "description": null,
+    "english": "Roblox Studio",
+    "translation": "Roblox Studio",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Controls",
     "key": "Action.Cancel",
     "description": null,
@@ -7880,6 +7888,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.NoFriendsPageMessage",
+    "description": null,
+    "english": "Add friends so you can explore together.",
+    "translation": "Aggiungi amici in modo da poter esplorare insieme.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.FriendsListLoadErrorMessage",
+    "description": null,
+    "english": "Can’t load friends. Try again later.",
+    "translation": "Impossibile caricare gli amici. Riprova più tardi.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.HelpMenu",
     "key": "UpArrow",
     "description": "The up arrow key on a physical keyboard. Used to tell the user how to move their character.",
@@ -8677,6 +8701,30 @@
     "description": null,
     "english": "Sold Out",
     "translation": "Esaurito",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Attribution.GoToExperience",
+    "description": null,
+    "english": "Go to Experience?",
+    "translation": "Vai all'Esperienza?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Attribution.GoToDescription",
+    "description": null,
+    "english": "You will leave this area and be taken to {EXPERIENCE_NAME}.",
+    "translation": "Lascerai quest'area e sarai portato a {EXPERIENCE_NAME}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Action.Go",
+    "description": "Button to go to another experience.",
+    "english": "Go",
+    "translation": "Vai",
     "isDeprecated": false
   },
   {
@@ -11429,6 +11477,38 @@
     "description": "The part of the Virtual Cursor Hint that shows up after the icon",
     "english": "to toggle menu navigation",
     "translation": "per attivare/disattivare il menu navigazione",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "PageTitle.ToggleMenuNavigation",
+    "description": "This is the title for a prompt that displays instructions on how to enable navigation with a gamepad in the in-game menu.",
+    "english": "How to toggle menu navigation",
+    "translation": "Per attivare/disattivare il menu navigazione",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.ViewButton",
+    "description": "Label pointing to the button on an Xbox gamepad that the user needs to press to toggle menu navigation.",
+    "english": "View Button",
+    "translation": "Pulsante Visualizza",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.TouchpadButton",
+    "description": "A Label pointing to the button on a PlayStation controller the user needs to press to toggle menu navigation.",
+    "english": "Touchpad Button",
+    "translation": "Pulsante touchpad",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "EducationalPopup.MenuNavigationToggleText",
+    "description": "Educational text that teaches the user how to open up menu navigation with the gamepad. This text is displayed below an image of the gamepad annotated with the correct button to press.",
+    "english": "Some experiences require pressing the Touchpad button to toggle menu navigation. Depending on the experience, this will either highlight menu items in a box style or provide a free-flow cursor.",
+    "translation": "Alcune esperienze richiedono di premere il pulsante Touchpad per attivare o disattivare la navigazione del menu. A seconda dell'esperienza, questo evidenzierà le voci di menu in uno stile box o fornirà un cursore a flusso libero.",
     "isDeprecated": false
   },
   {
@@ -15004,7 +15084,7 @@
     "key": "Prompt.FirstCall",
     "description": "Text shown to users when they have no call history to prompt them to call a friend.",
     "english": "Try making your first call",
-    "translation": "I tuoi amici stanno aspettando la tua chiamata!",
+    "translation": "Prova a fare la tua prima chiamata",
     "isDeprecated": false
   },
   {
@@ -15092,7 +15172,151 @@
     "key": "Error.Description.Generic",
     "description": "Generic error message",
     "english": "Try again later",
-    "translation": "Qualcosa è andato storto, per favore riprova più tardi.",
+    "translation": "Riprova più tardi",
     "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.SettingsNotCallEnabled",
+    "description": "Error message shown to the user if their settings are not call enabled",
+    "english": "Your current settings don't allow calling.",
+    "translation": "Le tue impostazioni attuali non consentono di chiamare.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.CallEnabledVerificationFailed",
+    "description": "Error message shown to the user if we failed to verify if they are call enabled",
+    "english": "Failed to verify call eligibility.",
+    "translation": "Non è stato possibile verificare l'idoneità alla chiamata.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.Generic",
+    "description": "Generic error title",
+    "english": "Something went wrong",
+    "translation": "Qualcosa è andato storto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.SuggestedFriends",
+    "description": "Tooltip description for list of suggested friends in the phonebook",
+    "english": "Friends with devices and settings set for an optimal call experience.",
+    "translation": "Amici con dispositivi e configurazioni impostate per un'esperienza di chiamata ottimale.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.Friends",
+    "description": "Tooltip description for list of all friends in the phonebook",
+    "english": "Friends who may or may not have devices and settings for an optimal call experience.",
+    "translation": "Amici che possono o non possono avere dispositivi e configurazioni per un'esperienza di chiamata ottimale.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.DeviceNotSupported",
+    "description": "Error message shown when user calls from an unsupported platform",
+    "english": "Calling is currently not supported on your device. Please try again later.",
+    "translation": "La chiamata non è attualmente supportata sul tuo dispositivo. Riprova più tardi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Suggested",
+    "description": "Header to show suggested friends in the phonebook",
+    "english": "Suggested",
+    "translation": "Suggerito",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Friends",
+    "description": "Header to show all friends in the phonebook",
+    "english": "Friends",
+    "translation": "Amici",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.FriendBusy",
+    "description": "Error message shown when user calls someone in an active call",
+    "english": "Friend is busy",
+    "translation": "L' amico è occupato",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Modal.EnableChatVoiceBody",
+    "description": null,
+    "english": "Turn on chat with voice in Settings > Privacy to talk with others in this experience.",
+    "translation": "Attiva la chat con la voce in Impostazioni > Privacy per parlare con gli altri in questa esperienza.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Modal.EnableChatVoiceTitle",
+    "description": null,
+    "english": "Enable chat with voice",
+    "translation": "Abilita la chat con la voce",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.GenericLong",
+    "description": null,
+    "english": "Something went wrong! Please try again.",
+    "translation": "Qualcosa è andato storto. Per favore riprova.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.CouldntMakeCall",
+    "description": null,
+    "english": "Couldn't make call",
+    "translation": "Impossibile effettuare la chiamata",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.FriendBusy",
+    "description": null,
+    "english": "{calleeCombinedName} is currently busy and can't receive your call right now. Please try again later.",
+    "translation": "{calleeCombinedName} è attualmente occupato e non può ricevere la tua chiamata in questo momento. Per favore riprova più tardi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Connect.ContactList",
+    "key": "Modal.EnableChatVoiceTitle",
+    "description": "IGNORE",
+    "english": "Enable Chat with Voice",
+    "translation": "Abilita la chat con la voce",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Connect.ContactList",
+    "key": "Modal.EnableChatVoiceBody",
+    "description": "IGNORE",
+    "english": "Turn on Chat with Voice in Settings > Privacy to talk with others in this experience.",
+    "translation": "Attiva la chat con la voce in Configurazione> Privacy per parlare con gli altri in questa esperienza.",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Connect.ContactList",
+    "key": "Modal.EnableChatVoiceTitle2",
+    "description": "IGNORE!",
+    "english": "Enable chat with voice",
+    "translation": "Abilita la chat con la voce",
+    "isDeprecated": true
+  },
+  {
+    "namespace": "Connect.ContactList",
+    "key": "Modal.EnableChatVoiceBody2",
+    "description": "IGNORE!",
+    "english": "Turn on chat with voice in Settings > Privacy to talk with others in this experience.",
+    "translation": "Attiva la chat con la voce in Impostazioni > Privacy per parlare con gli altri in questa esperienza.",
+    "isDeprecated": true
   }
 ]
