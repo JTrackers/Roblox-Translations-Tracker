@@ -18948,7 +18948,7 @@
     "key": "ReflectionMetadata.AssetServiceRevertAsset",
     "description": null,
     "english": "Reverts a given place id to the version number provided. Returns true if successful on reverting, false otherwise.",
-    "translation": "Setzt eine angegebene Orts-ID auf die angegebene Versionsnummer zurück. Gibt true zurück, wenn das Zurücksetzen erfolgreich war, andernfalls false.",
+    "translation": "Setzt eine angegebene Orts-ID auf die angegebene Versionsnummer zurück. Gibt \"true\" zurück, wenn das Zurücksetzen erfolgreich war, andernfalls \"false\".",
     "isDeprecated": false
   },
   {
@@ -19188,7 +19188,7 @@
     "key": "ReflectionMetadata.ConstraintActive",
     "description": null,
     "english": "Read-only boolean, true if the Constraint is active in world.",
-    "translation": "Schreibgeschützter Boolean, true, wenn die Beschränkung in der Welt aktiv ist.",
+    "translation": "Schreibgeschützter Boolean, \"true\", wenn die Beschränkung in der Welt aktiv ist.",
     "isDeprecated": false
   },
   {
@@ -19396,7 +19396,7 @@
     "key": "ReflectionMetadata.WeldConstraintActive",
     "description": null,
     "english": "Read-only boolean, true if the joint is active in world. Rigid joints may be inactive if they are redundant or form cycles.",
-    "translation": "Schreibgeschützter Boolean, true, wenn die Verbindung in der Welt aktiv ist. Starre Verbindungen können inaktiv sein, wenn sie redundant sind oder Zyklen bilden.",
+    "translation": "Schreibgeschützter Boolean, \"true\", wenn die Verbindung in der Welt aktiv ist. Starre Verbindungen können inaktiv sein, wenn sie redundant sind oder Zyklen bilden.",
     "isDeprecated": false
   },
   {
@@ -19404,7 +19404,7 @@
     "key": "ReflectionMetadata.NoCollisionConstraintEnabled",
     "description": null,
     "english": "If true Part0 and Part1 will not collide, if false the parts will collide.",
-    "translation": "Bei true kollidieren Part0 und Part1 nicht, bei false kollidieren die Teile.",
+    "translation": "Wenn \"true\" kollidieren Part0 und Part1 nicht, wenn \"false\" kollidieren die Teile.",
     "isDeprecated": false
   },
   {
@@ -20009,6 +20009,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.JointInstanceActive",
+    "description": null,
+    "english": "Read-only boolean, true if the joint is active in world. Rigid joints may be inactive if they are redundant or form cycles.",
+    "translation": "Schreibgeschützter Boolean, \"true\", wenn die Verbindung in der Welt aktiv ist. Starre Verbindungen können inaktiv sein, wenn sie redundant sind oder Zyklen bilden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.FloorWireWireRadius",
     "description": null,
     "english": "How thick the wire is.",
@@ -20029,6 +20037,14 @@
     "description": null,
     "english": "A Chorus audio effect that can be applied to a Sound or SoundGroup.",
     "translation": "Ein Chorus-Audioeffekt, der auf einen Sound oder eine SoundGroup angewendet werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutSetCustomSortFunction",
+    "description": null,
+    "english": "When SortOrder is set to Custom, this lua function is used to determine the ordering of elements. Function should take two arguments (each will be an Instance child to compare), and return true if a comes before b, otherwise return false. In other words, use this function the same way you would use a table.sort function. The sorting should be deterministic, otherwise sort will fail and fall back to name order.",
+    "translation": "Wenn SortOrder auf \"Custom\" gesetzt ist, wird diese Lua-Funktion verwendet, um die Reihenfolge der Elemente zu bestimmen. Die Funktion nimmt zwei Argumente entgegen (jedes ist eine untergeordnete Instanz, die verglichen werden soll) und gibt \"true\" zurück, wenn \"a\" vor \"b\" kommt, andernfalls \"false\". Mit anderen Worten: Verwende diese Funktion genauso wie eine table.sort-Funktion. Die Sortierung sollte deterministisch sein, sonst schlägt die Sortierung fehl und die Namensreihenfolge wird wiederhergestellt.",
     "isDeprecated": false
   },
   {
@@ -20137,6 +20153,62 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceSetTitle",
+    "description": null,
+    "english": "If 'actionName' key contains a bound action, then 'title' is set as the title of the touch button. Does nothing if a touch button was not created. No guarantees are made whether title will be set when button is manipulated.",
+    "translation": "Wenn der Schlüssel \"actionName\" eine gebundene Aktion enthält, wird \"title\" als Titel des Touch-Buttons festgelegt. Macht nichts, wenn kein Touch-Button erstellt wurde. Es wird nicht garantiert, dass der Titel bei Manipulation der Schaltfläche gesetzt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceSetImage",
+    "description": null,
+    "english": "If 'actionName' key contains a bound action, then 'image' is set as the image of the touch button. Does nothing if a touch button was not created. No guarantees are made whether image will be set when button is manipulated.",
+    "translation": "Wenn der Schlüssel \"actionName\" eine gebundene Aktion enthält, wird \"image\" als Bild des Touch-Buttons festgelegt. Macht nichts, wenn kein Touch-Button erstellt wurde. Es wird nicht garantiert, dass das Bild bei Manipulation der Schaltfläche gesetzt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceSetPosition",
+    "description": null,
+    "english": "If 'actionName' key contains a bound action, then 'position' is set as the position of the touch button. Does nothing if a touch button was not created. No guarantees are made whether position will be set when button is manipulated.",
+    "translation": "Wenn der Schlüssel \"actionName\" eine gebundene Aktion enthält, wird \"position\" als Position des Touch-Buttons festgelegt. Macht nichts, wenn kein Touch-Button erstellt wurde. Es wird nicht garantiert, dass die Position bei Manipulation der Schaltfläche gesetzt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceUnbindAction",
+    "description": null,
+    "english": "If 'actionName' key contains a bound action, removes function from being called by all input that it was bound by (if function was also bound by a different action name as well, those bound input are still active). Will also remove any touch button created (if button was manipulated manually there is no guarantee it will be cleaned up).",
+    "translation": "Wenn der Schlüssel \"actionName\" eine gebundene Aktion enthält, wird die Funktion nicht mehr von allen Eingaben aufgerufen, an die sie gebunden war (wenn die Funktion auch an einen anderen Aktionsnamen gebunden war, sind diese gebundenen Eingaben weiterhin aktiv). Es werden auch alle erstellten Touch-Buttons entfernt (bei manueller Manipulation der Schaltfläche gibt es keine Garantie dafür, dass dies bereinigt wird).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceUnbindAllActions",
+    "description": null,
+    "english": "Removes all functions bound. No actionNames will remain. All touch buttons will be removed. If button was manipulated manually there is no guarantee it will be cleaned up.",
+    "translation": "Entfernt alle gebundenen Funktionen. Es bleiben keine actionNames übrig. Alle Touch-Buttons werden entfernt. Bei manueller Manipulation der Schaltfläche gibt es keine Garantie dafür, dass dies bereinigt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceGetBoundActionInfo",
+    "description": null,
+    "english": "Returns a table with info regarding the function bound with 'actionName'. Table has the keys 'title' (current title that was set with SetTitle) 'image' (image set with SetImage) 'description' (description set with SetDescription) 'inputTypes' (tuple containing all input bound for this 'actionName') 'createTouchButton' (whether or not we created a touch button for this 'actionName').",
+    "translation": "Gibt eine Tabelle mit Informationen über die mit \"actionName\" gebundene Funktion zurück. Die Tabelle enthält die Schlüssel \"title\" (aktueller Titel, der mit SetTitle gesetzt wurde), \"image\" (Bild, das mit SetImage gesetzt wurde), \"description\" (Beschreibung, die mit SetDescription gesetzt wurde), \"inputTypes\" (Tupel, das alle für diesen \"actionName\" gebundenen Eingaben enthält), \"createTouchButton\" (ob wir einen Touch-Button für diesen \"actionName\" erstellt haben oder nicht).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ContextActionServiceGetButton",
+    "description": null,
+    "english": "If 'actionName' key contains a bound action, then this will return the touch button (if was created). Returns nil if a touch button was not created. No guarantees are made whether button will be retrievable when button is manipulated.",
+    "translation": "Wenn der Schlüssel \"actionName\" eine gebundene Aktion enthält, wird der Touch-Button zurückgegeben (wenn er erstellt wurde). Gibt \"null\" zurück, wenn kein Touch-Button erstellt wurde. Es wird nicht garantiert, dass die Schaltfläche bei Manipulation abrufbar ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.PointsServicePointsAwarded",
     "description": null,
     "english": "Fired when points are successfully awarded 'userId'. Also returns the updated balance of points for usedId in universe via 'userBalanceInUniverse', total points via 'userTotalBalance', and the amount points that were awarded via 'pointsAwarded'. This event fires on the server and also all clients in the game that awarded the points.",
@@ -20161,10 +20233,58 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MarketplaceServicePlayerOwnsAsset",
+    "description": null,
+    "english": "Checks to see if 'Player' owns the product associated with 'assetId'. Returns true if the player owns it, false otherwise. This call will produce a warning if called on a guest player.",
+    "translation": "Prüft, ob der \"Player\" das Produkt besitzt, das mit \"assetId\" verknüpft ist. Gibt \"true\" zurück, wenn Spieler:innen es besitzen, andernfalls \"false\". Dieser Aufruf führt zu einer Warnung, wenn er bei Gastspieler:innen aufgerufen wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.MarketplaceServicePromptPurchaseFinished",
     "description": null,
     "english": "Fired when a 'player' dismisses a purchase dialog for 'assetId'.  If the player purchased the item 'isPurchased' will be true, otherwise it will be false. This call will produce a warning if called on a guest player.",
-    "translation": "Wird ausgelöst, wenn \"player\" einen Kaufdialog für \"assetId\" abbricht. Wenn Spieler:innen den Artikel gekauft haben, wird \"isPurchased\" auf true gesetzt, andernfalls auf false. Dieser Aufruf führt zu einer Warnung, wenn er bei Gastspieler:innen aufgerufen wird.",
+    "translation": "Wird ausgelöst, wenn \"player\" einen Kaufdialog für \"assetId\" abbricht. Wenn Spieler:innen den Artikel gekauft haben, wird \"isPurchased\" auf \"true\" gesetzt, andernfalls auf \"false\". Dieser Aufruf führt zu einer Warnung, wenn er bei Gastspieler:innen aufgerufen wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchEnabled",
+    "description": null,
+    "english": "Returns true if the local device accepts touch input, false otherwise.",
+    "translation": "Gibt \"true\" zurück, wenn das lokale Gerät Touch-Eingaben akzeptiert, andernfalls \"false\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceKeyboardEnabled",
+    "description": null,
+    "english": "Returns true if the local device accepts keyboard input, false otherwise.",
+    "translation": "Gibt \"true\" zurück, wenn das lokale Gerät Tastatureingaben akzeptiert, andernfalls \"false\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceMouseEnabled",
+    "description": null,
+    "english": "Returns true if the local device accepts mouse input, false otherwise.",
+    "translation": "Gibt \"true\" zurück, wenn das lokale Gerät Mauseingaben akzeptiert, andernfalls \"false\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceAccelerometerEnabled",
+    "description": null,
+    "english": "Returns true if the local device has an accelerometer, false otherwise.",
+    "translation": "Gibt \"true\" zurück, wenn das lokale Gerät einen Beschleunigungsmesser hat, andernfalls \"false\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceGyroscopeEnabled",
+    "description": null,
+    "english": "Returns true if the local device has an gyroscope, false otherwise.",
+    "translation": "Gibt \"true\" zurück, wenn das lokale Gerät ein Gyroskop hat, andernfalls \"false\".",
     "isDeprecated": false
   },
   {
@@ -20177,10 +20297,154 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchPinch",
+    "description": null,
+    "english": "Fired when a user pinches their fingers on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the pinch gesture. 'scale' is a float that indicates the difference from the beginning of the pinch gesture. 'velocity' is a float indicating how quickly the pinch gesture is happening. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in die Finger auf einem TouchEnabled-Gerät zusammenkneift. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Tippgeste beteiligt sind. \"scale\" ist eine Gleitkommazahl, die den Unterschied zum Beginn der Kneif-Geste angibt. \"velocity\" ist eine Gleitkommazahl, die angibt, wie schnell die Kneif-Geste ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchSwipe",
+    "description": null,
+    "english": "Fired when a user swipes their fingers on a TouchEnabled device. 'swipeDirection' is an Enum.SwipeDirection, indicating the direction the user swiped. 'numberOfTouches' is an int that indicates how many touches were involved with the gesture.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mit dem Finger über ein TouchEnabled-Gerät streicht. \"swipeDirection\" ist ein Enum.SwipeDirection, das die Richtung angibt, in die Benutzer:innen gestrichen haben. \"numberOfTouches\" ist ein Wert, der angibt, wie viele Berührungen an der Geste beteiligt waren. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchLongPress",
+    "description": null,
+    "english": "Fired when a user holds at least one finger for a short amount of time on the same screen position on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mindestens einen Finger für eine kurze Zeit auf der gleichen Position des Bildschirms auf einem TouchEnabled-Gerät hält. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchRotate",
+    "description": null,
+    "english": "Fired when a user rotates two fingers on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'rotation' is a float indicating how much the rotation has gone from the start of the gesture. 'velocity' is a float that indicates how quickly the gesture is being performed. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in zwei Finger auf einem TouchEnabled-Gerät dreht. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"rotation\" ist eine Gleitkommazahl, die angibt, wie weit die Drehung seit dem Beginn der Geste fortgeschritten ist. \"velocity\" ist eine Gleitkommazahl, die angibt, wie schnell die Geste ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchPan",
+    "description": null,
+    "english": "Fired when a user drags at least one finger on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'totalTranslation' is a Vector2, indicating how far the pan gesture has gone from its starting point. 'velocity' is a Vector2 that indicates how quickly the gesture is being performed in each dimension. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mindestens einen Finger auf einem TouchEnabled-Gerät zieht. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"totalTranslation\" ist ein Vector2, der angibt, wie weit sich die Schwenkgeste von ihrem Startpunkt entfernt hat. \"velocity\" ist ein Vector2, der angibt, wie schnell die Geste in jeder Dimension ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchStarted",
+    "description": null,
+    "english": "Fired when a user places their finger on a TouchEnabled device. 'touch' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in einen Finger auf ein TouchEnabled-Gerät legt. \"touch\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchMoved",
+    "description": null,
+    "english": "Fired when a user moves their finger on a TouchEnabled device. 'touch' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in einen Finger auf einem TouchEnabled-Gerät bewegt. \"touch\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTouchEnded",
+    "description": null,
+    "english": "Fired when a user moves their finger on a TouchEnabled device. 'touch' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in einen Finger auf einem TouchEnabled-Gerät bewegt. \"touch\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceInputBegan",
+    "description": null,
+    "english": "Fired when a user begins interacting via a Human-Computer Interface device (Mouse button down, touch begin, keyboard button down, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Es wird ausgelöst, wenn ein:e Benutzer:in mit der Interaktion über ein Mensch-Computer-Schnittstellengerät beginnt (Maustaste gedrückt, Berührung beginnt, Tastaturtaste gedrückt usw.). \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceInputChanged",
+    "description": null,
+    "english": "Fired when a user changes interacting via a Human-Computer Interface device (Mouse move, touch move, mouse wheel, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in die Interaktion über ein Mensch-Computer-Schnittstellengerät (Mausbewegung, Berührungsbewegung, Mausrad usw.) ändert. \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceInputEnded",
+    "description": null,
+    "english": "Fired when a user stops interacting via a Human-Computer Interface device (Mouse button up, touch end, keyboard button up, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Es wird ausgelöst, wenn ein:e Benutzer:in mit der Interaktion über ein Mensch-Computer-Schnittstellengerät stoppt (Maustaste loslassen, Berührung endet, Tastaturtaste loslassen usw.). \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird unabhängig vom Spielstatus immer ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTextBoxFocused",
+    "description": null,
+    "english": "Fired when a user clicks/taps on a textbox to begin text entry. Argument is the textbox that was put in focus. This also fires if a textbox forces focus on the user. This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in auf ein Textfeld klickt/tippt, um mit der Texteingabe zu beginnen. Das Argument ist das Textfeld, das in den Fokus gesetzt wurde. Dieses Ereignis wird auch ausgelöst, wenn ein Textfeld den Fokus auf Benutzer:innen lenkt. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceTextBoxFocusReleased",
+    "description": null,
+    "english": "Fired when a user stops text entry into a textbox (usually by pressing return or clicking/tapping somewhere else on the screen). Argument is the textbox that was taken out of focus. This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in die Texteingabe in ein Textfeld beendet (in der Regel durch Drücken der Eingabetaste oder durch Klicken/Tippen auf eine andere Stelle auf dem Bildschirm). Das Argument ist das Textfeld, das aus dem Fokus genommen wurde. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.UserInputServiceDeviceAccelerationChanged",
     "description": null,
     "english": "Fired when a user moves a device that has an accelerometer. This is fired with an InputObject, which has type Enum.InputType.Accelerometer, and position that shows the g force in each local device axis. This event only fires locally.",
     "translation": "Wird ausgelöst, wenn ein Benutzer ein Gerät mit einem Beschleunigungsmesser bewegt. Dies wird mit einem InputObject ausgelöst, das den Typ Enum.InputType.Accelerometer hat und dessen Position die g-Kraft in jeder lokalen Geräteachse anzeigt. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceDeviceGravityChanged",
+    "description": null,
+    "english": "Fired when the force of gravity changes on a device that has an accelerometer. This is fired with an InputObject, which has type Enum.InputType.Accelerometer, and position that shows the g force in each local device axis. This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn sich die Schwerkraft auf einem Gerät mit einem Beschleunigungsmesser ändert. Dieses Ereignis wird mit einem InputObject vom Typ Enum.InputType.Accelerometer und einer Position ausgelöst, die die g-Kraft in jeder lokalen Geräteachse anzeigt. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceDeviceRotationChanged",
+    "description": null,
+    "english": "Fired when a user rotates a device that has an gyroscope. This is fired with an InputObject, which has type Enum.InputType.Gyroscope, and position that shows total rotation in each local device axis.  The delta property describes the amount of rotation that last happened. A second argument of Vector4 is the device's current quaternion rotation in reference to it's default reference frame. This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in ein Gerät mit einem Gyroskop dreht. Dieses Ereignis wird mit einem InputObject vom Typ Enum.InputType.Gyroscope und einer Position ausgelöst, die die Gesamtdrehung in jeder lokalen Geräteachse anzeigt. Die Eigenschaft delta beschreibt den Betrag der letzten Drehung. Das zweite Argument Vector4 ist die aktuelle Quaternion-Drehung des Geräts in Bezug auf seinen Standardreferenzrahmen. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceGetDeviceAcceleration",
+    "description": null,
+    "english": "Returns an InputObject that describes the device's current acceleration. This is fired with an InputObject, which has type Enum.InputType.Accelerometer, and position that shows the g force in each local device axis.  The delta property describes the amount of rotation that last happened. This event only fires locally.",
+    "translation": "Gibt ein InputObject zurück, das die aktuelle Beschleunigung des Geräts beschreibt. Dieses Ereignis wird mit einem InputObject vom Typ Enum.InputType.Accelerometer und einer Position ausgelöst, die die g-Kraft in jeder lokalen Geräteachse anzeigt. Die Eigenschaft delta beschreibt den Betrag der letzten Drehung. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceGetDeviceGravity",
+    "description": null,
+    "english": "Returns an InputObject that describes the device's current gravity vector. This is fired with an InputObject, which has type Enum.InputType.Accelerometer, and position that shows the g force in each local device axis. The delta property describes the amount of rotation that last happened. This event only fires locally.",
+    "translation": "Gibt ein InputObject zurück, das den aktuellen Schwerkraftvektor des Geräts beschreibt. Dieses Ereignis wird mit einem InputObject vom Typ Enum.InputType.Accelerometer und einer Position ausgelöst, die die g-Kraft in jeder lokalen Geräteachse angibt. Die Eigenschaft delta beschreibt den Betrag der letzten Drehung. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UserInputServiceGetDeviceRotation",
+    "description": null,
+    "english": "Returns an InputObject and a Vector4 that describes the device's current rotation vector. This is fired with an InputObject, which has type Enum.InputType.Gyroscope, and position that shows total rotation in each local device axis. The delta property describes the amount of rotation that last happened. The Vector4 is the device's current quaternion rotation in reference to it's default reference frame. This event only fires locally.",
+    "translation": "Gibt ein InputObject und einen Vector4 zurück, der den aktuellen Rotationsvektor des Geräts beschreibt. Dieses Ereignis wird mit einem InputObject vom Typ Enum.InputType.Gyroscope und einer Position ausgelöst, die die Gesamtdrehung in jeder lokalen Geräteachse angibt. Die Eigenschaft delta beschreibt den Betrag der letzten Drehung. Der Vector4 ist die aktuelle Quaternion-Drehung des Geräts in Bezug auf seinen Standardreferenzrahmen. Dieses Ereignis wird nur lokal ausgelöst.",
     "isDeprecated": false
   },
   {
@@ -20193,10 +20457,66 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceAncestryChanged",
+    "description": null,
+    "english": "Fired when any of this object's ancestors change.  First argument 'child' is the object whose parent changed.  Second argument 'parent' is the first argument's new parent.",
+    "translation": "Wird ausgelöst, wenn sich eines der übergeordneten Objekte dieses Objekts ändert. Das erste Argument \"child\" ist das Objekt, dessen übergeordnetes Objekt sich geändert hat. Das zweite Argument \"parent\" ist das neue übergeordnete Objekt des ersten Arguments.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceDescendantAdded",
+    "description": null,
+    "english": "Fired after an Instance is parented to this object, or any of this object's descendants.  The 'descendant' argument is the Instance that is being added.",
+    "translation": "Wird ausgelöst, wenn eine Instanz zu diesem Objekt oder einem seiner untergeordneten Objekte ein übergeordnetes Objekt erhält. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceDescendantRemoving",
+    "description": null,
+    "english": "Fired after an Instance is unparented from this object, or any of this object's descendants.  The 'descendant' argument is the Instance that is being added.",
+    "translation": "Wird ausgelöst, wenn eine Instanz von diesem Objekt oder einem seiner untergeordneten Objekte kein übergeordnetes Objekt mehr hat. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceChanged",
+    "description": null,
+    "english": "Fired after a property changes value.  The property argument is the name of the property",
+    "translation": "Wird ausgelöst, wenn sich der Wert einer Eigenschaft ändert. Das Argument der Eigenschaft ist der Name der Eigenschaft",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.RocketPropulsion",
     "description": null,
     "english": "A propulsion system that mimics a rocket",
     "translation": "Ein Antriebssystem, das eine Rakete imitiert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ModelMakeJoints",
+    "description": null,
+    "english": "Creates the appropriate SurfaceJoints between all touching Parts contrained within the model. Technically, this function calls MakeJoints() on all Parts inside the model.",
+    "translation": "Erstellt die passenden SurfaceJoints zwischen allen sich berührenden Parts, die im Modell enthalten sind. Technisch gesehen ruft diese Funktion MakeJoints() für alle Parts innerhalb des Modells auf.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DataModelIsLoaded",
+    "description": null,
+    "english": "Returns true if the game has finished loading, false otherwise.  Check this before listening to the Loaded signal to ensure a script knows when a game finishes loading.",
+    "translation": "Gibt \"true\" zurück, wenn das Spiel fertig geladen ist, andernfalls \"false\". Überprüfe dies, bevor du auf das Ladesignal hörst, um sicherzustellen, dass ein Skript weiß, wann ein Spiel fertig geladen ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DataModelLoaded",
+    "description": null,
+    "english": "Fires when the game finishes loading.  Use this to know when to remove your custom loading gui.  It is best to check IsLoaded() before connecting to this event, as the game may load before the event is connected to.",
+    "translation": "Wird ausgelöst, wenn das Spiel fertig geladen ist. Damit weißt du, wann du deine benutzerdefinierte Ladeanzeige entfernen musst. Es ist am besten, \"IsLoaded()\" zu überprüfen, bevor du dich mit diesem Ereignis verbindest, da das Spiel möglicherweise geladen wird, bevor das Ereignis damit verbunden ist.",
     "isDeprecated": false
   },
   {
@@ -20217,10 +20537,98 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PlayersCharacterAutoLoads",
+    "description": null,
+    "english": "Set to true, when a player joins a game, they get a character automatically, as well as when they die.  When set to false, characters do not auto load and will only load in using Player:LoadCharacter().",
+    "translation": "Wenn \"true\" erhält ein:e Spieler:in automatisch eine Spielfigur bei Spielbeitritt und auch bei Tod. Wenn \"false\" werden Charaktere nicht automatisch geladen, sondern nur mit Player:LoadCharacter().",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LightingLightingChanged",
+    "description": null,
+    "english": "Fired whenever a property of Lighting is changed, or a skybox or atmosphere is added or removed. Skyboxes are of type 'Sky' these and 'Atmosphere' should be parented directly to lighting.",
+    "translation": "Wird immer dann ausgelöst, wenn eine Eigenschaft von Lightning geändert wird oder eine Skybox oder Atmosphäre hinzugefügt oder entfernt wird. Skyboxen sind vom Typ \"Sky\" und \"Atmosphere\" sollte direkt mit der Beleuchtung verknüpft werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.DebrisMaxItems",
     "description": null,
     "english": "Deprecated. No replacement",
     "translation": "Veraltet. Kein Ersatz",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PlayerDataReady",
+    "description": null,
+    "english": "Read-only. If true, this Player's persistent data can be loaded, false otherwise. <a href='http://wiki.roblox.com/index.php/ROBLOX_Scripting_How_To:_Data_Persistence' target='_blank'>Info on Data Persistence</a>.",
+    "translation": "Schreibgeschützt. Wenn \"true\" können die persistenten Daten von Spieler:innen geladen werden, andernfalls \"false\". <a href='http://wiki.roblox.com/index.php/ROBLOX_Scripting_How_To:_Data_Persistence' target='_blank'>Informationen zur Datenpersistenz</a>.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PlayerIdled",
+    "description": null,
+    "english": "Fired periodically after the user has been AFK for a while.  Currently this event is only fired for the *local* Player.  \"time\" is the time in seconds that the user has been idle.",
+    "translation": "Wird in regelmäßigen Abständen ausgelöst, wenn Benutzer:innen eine Zeit lang inaktiv war. Derzeit wird dieses Ereignis nur für *lokale* Spieler:innen ausgelöst. \"time\" ist die Zeit in Sekunden, die Spieler:innen inaktiv waren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartCanCollide",
+    "description": null,
+    "english": "Determines whether physical interactions with other Parts are respected.  If true, will collide and react with physics to other Parts.  If false, other parts will pass thru instead of colliding",
+    "translation": "Bestimmt, ob physische Wechselwirkungen mit anderen Parts beachtet werden. Wenn \"true\" kollidieren und reagieren diese mit der Physik von anderen Parts. Wenn \"false\" gehen andere Teile durch, anstatt zu kollidieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartAnchored",
+    "description": null,
+    "english": "Determines whether or not physics acts upon the Part.  If true, part stays 'Anchored' in space, not moving regardless of any collision/forces acting upon it.  If false, physics works normally on the part.",
+    "translation": "Bestimmt, ob die Physik auf das Part wirkt oder nicht. Wenn \"true\" bleibt das Teil im Raum '\"Anchored\" und bewegt sich nicht, unabhängig von Kollisionen oder Kräften, die darauf einwirken. Wenn \"false\" wirkt die Physik normal auf das Teil.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartMassless",
+    "description": null,
+    "english": "If true the part will be massless when welded to another part that is not massless. The part will still have mass like a normal part if it is an assembly root part according to GetRootPart().",
+    "translation": "Wenn \"true\" ist das Teil masselos, wenn es mit einem anderen Teil verschweißt wird, das nicht masselos ist. Das Teil hat weiterhin eine Masse wie ein normales Teil, wenn es laut GetRootPart() ein Wurzelteil der Baugruppe ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartLocked",
+    "description": null,
+    "english": "Determines whether building tools (in-game and studio) can manipulate this Part.  If true, no editing allowed.  If false, editing is allowed.",
+    "translation": "Bestimmt, ob Bauwerkzeuge (im Spiel und in Studio) dieses Part bearbeiten können. Wenn \"true\" ist keine Bearbeitung erlaubt. Wenn \"false\" ist die Bearbeitung erlaubt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartmakeJoints",
+    "description": null,
+    "english": "Creates the appropriate SurfaceJoints with all parts that are touching this Instance (including internal joints in the Instance, as in a Model).  This uses the SurfaceTypes defined on the surfaces of parts to create the appropriate welds. <a href='http://wiki.roblox.com/index.php/MakeJoints' target='_blank'>More info</a>",
+    "translation": "Erstellt die passenden SurfaceJoints mit allen Teilen, die diese Instanz berühren (einschließlich der internen Verbindungen in der Instance, wie in einem Modell). Dabei werden die auf den Oberflächen der Teile definierten SurfaceTypes verwendet, um die entsprechenden Schweißnähte zu erstellen. <a href='http://wiki.roblox.com/index.php/MakeJoints' target='_blank'>Weitere Informationen</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartBreakJoints",
+    "description": null,
+    "english": "Destroys SurfaceJoints with all parts that are touching this Instance (including internal joints in the Instance, as in a Model).",
+    "translation": "Zerstört SurfaceJoints mit allen Teilen, die diese Instance berühren (einschließlich interner Verbindungen in der Instance, wie in einem Model).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartResize",
+    "description": null,
+    "english": "Resizes a Part in the direction of the face defined by 'NormalId', by the amount specified by 'deltaAmount'. If the operation will expand the part to intersect another Instance, the part will not resize at all.  Return true if the call is successful, false otherwise.",
+    "translation": "Verändert die Größe eines Part in Richtung der durch \"NormalId\" definierten Fläche um den durch \"deltaAmount\" angegebenen Wert. Wenn die Operation das Teil so erweitert, dass es eine andere Instance überschneidet, wird die Größe des Teils nicht verändert. Gibt \"true\" zurück, wenn der Aufruf erfolgreich war, andernfalls \"false\".",
     "isDeprecated": false
   },
   {
@@ -20241,6 +20649,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartTouchEnded",
+    "description": null,
+    "english": "Fired when the part stops touching another part",
+    "translation": "Wird ausgelöst, wenn das Teil ein anderes Teil nicht mehr berührt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.FunctionalTest",
     "description": null,
     "english": "Deprecated. Use TestService instead",
@@ -20249,10 +20665,218 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiActive",
+    "description": null,
+    "english": "If true, this GuiObject can fire mouse events and will pass them to any GuiObjects layered underneath, while false will do neither.",
+    "translation": "Wenn \"true\" kann dieses GuiObject Mausereignisse auslösen und an darunter liegende GuiObjects weitergeben, wenn \"false\" nicht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiAlwaysOnTop",
+    "description": null,
+    "english": "If true, billboard gui does not get occluded by 3D objects, but always renders on the screen.",
+    "translation": "Wenn \"true\" wird die grafische Benutzeroberfläche nicht von 3D-Objekten verdeckt, sondern immer auf dem Bildschirm dargestellt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiEnabled",
+    "description": null,
+    "english": "If true, billboard gui will render, otherwise rendering will be skipped.",
+    "translation": "Wenn \"true\" rendert die grafische Benutzeroberfläche, andernfalls wird das Rendering übersprungen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SurfaceGuiActive",
+    "description": null,
+    "english": "If true, this GuiObject can fire mouse events and will pass them to any GuiObjects layered underneath, while false will do neither.",
+    "translation": "Wenn \"true\" kann dieses GuiObject Mausereignisse auslösen und an darunter liegende GuiObjects weitergeben, wenn \"false\" nicht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SurfaceGuiEnabled",
+    "description": null,
+    "english": "If true, surface gui will render, otherwise rendering will be skipped.",
+    "translation": "Wenn \"true\" rendert die Oberflächen-GUI, andernfalls wird das Rendering übersprungen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InputObject",
+    "description": null,
+    "english": "An object that describes a particular user input, such as mouse movement, touches, keyboard, and more.",
+    "translation": "Ein Objekt, das eine bestimmte Benutzereingabe beschreibt, z.B. Mausbewegungen, Berührungen, Tastatur und mehr.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InputObjectUserInputType",
+    "description": null,
+    "english": "An enum that describes what kind of input this object is describing (mousebutton, touch, etc.).  See Enum.UserInputType for more info.",
+    "translation": "Ein Aufzählungstyp, der beschreibt, welche Art von Eingabe dieses Objekt beschreibt (Maustaste, Berührung usw.). Siehe Enum.UserInputType für weitere Informationen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InputObjectUserInputState",
+    "description": null,
+    "english": "An enum that describes what state of a particular input (touch began, touch moved, touch ended, etc.). See Enum.UserInputState for more info.",
+    "translation": "Ein Aufzählungstyp, der den Zustand einer bestimmten Eingabe beschreibt (Berührung begann, Berührung wurde bewegt, Berührung endete usw.). Siehe Enum.UserInputState für weitere Informationen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InputObjectPosition",
+    "description": null,
+    "english": "A Vector3 value that describes a positional value of this input. For mouse and touch input, this is the screen position of the mouse/touch, described in the x and y components. For mouse wheel input, the z component describes whether the wheel was moved forward or backward.",
+    "translation": "Ein Vector3-Wert, der einen Positionswert dieser Eingabe beschreibt. Bei Maus- und Touch-Eingaben ist dies die Position der Maus/der Berührung auf dem Bildschirm, die in den Komponenten \"x\" und \"y\" beschrieben wird. Bei Mausradeingaben beschreibt die z-Komponente, ob das Rad vorwärts oder rückwärts bewegt wurde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectActive",
+    "description": null,
+    "english": "If true, this GuiObject can fire mouse events and will pass them to any GuiObjects layered underneath, while false will do neither.",
+    "translation": "Wenn \"true\" kann dieses GuiObject Mausereignisse auslösen und an darunter liegende GuiObjects weitergeben, wenn \"false\" nicht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectClipsDescendants",
+    "description": null,
+    "english": "If set to true, any descendants of this GuiObject will only render if contained within it's borders. If set to false, all descendants will render regardless of position.",
+    "translation": "Wenn \"true\" werden alle untergeordneten Objekte dieses GuiObjekts nur gerendert, wenn sie sich innerhalb der Grenzen des GuiObjekts befinden. Wenn \"false\" werden alle untergeordneten Objekte unabhängig von ihrer Position gerendert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectDraggable",
+    "description": null,
+    "english": "If true, allows a GuiObject to be dragged by the user's mouse. The events 'DragBegin' and 'DragStopped' are fired when the appropriate action happens, and only will fire on Draggable=true GuiObjects.",
+    "translation": "Wenn \"true\" kann ein GuiObject mit der Maus gezogen werden. Die Ereignisse \"DragBegin\" und \"DragStopped\" werden ausgelöst, wenn die entsprechende Aktion stattfindet, und werden nur bei GuiObjects mit Draggable=true ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.GuiObjectBorderColor",
     "description": null,
     "english": "Deprecated. Use BorderColor3 instead",
     "translation": "Veraltet. Verwende stattdessen BorderColor3",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectDragBegin",
+    "description": null,
+    "english": "Fired when a GuiObject with Draggable set to true starts to be dragged. 'InitialPosition' is a UDim2 value of the position of the GuiObject before any drag operation began.",
+    "translation": "Wird ausgelöst, wenn ein GuiObjekt, dessen \"Draggable\" auf \"true\" gesetzt ist, gezogen wird. \"InitialPosition\" ist ein UDim2-Wert, der die Position des GuiObjects vor Beginn des Ziehvorgangs angibt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectDragStopped",
+    "description": null,
+    "english": "Always fired after a DragBegin event, DragStopped is fired when the user releases the mouse button causing a drag operation on the GuiObject. Arguments 'x', and 'y' specify the top-left absolute position of the GuiObject when the event is fired.",
+    "translation": "Wird immer nach einem DragBegin-Ereignis ausgelöst. DragStopped wird ausgelöst, wenn Benutzer:innen die Maustaste loslassen und damit einen Ziehvorgang am GuiObject auslösen. Die Argumente \"x\" und \"y\" geben die absolute Position des GuiObjekts oben links an, wenn das Ereignis ausgelöst wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectMouseEnter",
+    "description": null,
+    "english": "Fired when the mouse enters a GuiObject, as long as the GuiObject is active (see active property for more detail). Arguments 'x', and 'y' specify the absolute pixel position of the mouse.",
+    "translation": "Wird ausgelöst, wenn die Maus ein GuiObjekt betritt, solange das GuiObjekt aktiv ist (siehe aktive Eigenschaft für weitere Informationen). Die Argumente \"x\" und \"y\" geben die absolute Pixelposition der Maus an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectMouseLeave",
+    "description": null,
+    "english": "Fired when the mouse leaves a GuiObject, as long as the GuiObject is active (see active property for more detail). Arguments 'x', and 'y' specify the absolute pixel position of the mouse.",
+    "translation": "Wird ausgelöst, wenn die Maus ein GuiObjekt verlässt, solange das GuiObjekt aktiv ist (siehe aktive Eigenschaft für weitere Informationen). Die Argumente \"x\" und \"y\" geben die absolute Pixelposition der Maus an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectMouseMoved",
+    "description": null,
+    "english": "Fired when the mouse is inside a GuiObject and moves, as long as the GuiObject is active (see active property for more detail). Arguments 'x', and 'y' specify the absolute pixel position of the mouse.",
+    "translation": "Wird ausgelöst, wenn sich die Maus innerhalb eines GuiObjekts befindet und sich bewegt, solange das GuiObjekt aktiv ist (siehe aktive Eigenschaft für weitere Informationen). Die Argumente \"x\" und \"y\" geben die absolute Pixelposition der Maus an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchTap",
+    "description": null,
+    "english": "Fired when a user taps their finger on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the tap gesture. This event only fires locally.  This event will always fire regardless of game state.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mit dem Finger auf ein TouchEnabled-Gerät tippt. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Tippgeste beteiligt sind. Dieses Ereignis wird nur lokal ausgelöst. Dieses Ereignis wird immer ausgelöst, unabhängig vom Spielstatus.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchPinch",
+    "description": null,
+    "english": "Fired when a user pinches their fingers on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the pinch gesture. 'scale' is a float that indicates the difference from the beginning of the pinch gesture. 'velocity' is a float indicating how quickly the pinch gesture is happening. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in die Finger auf einem TouchEnabled-Gerät zusammenkneift. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Tippgeste beteiligt sind. \"scale\" ist eine Gleitkommazahl, die den Unterschied zum Beginn der Kneif-Geste angibt. \"velocity\" ist eine Gleitkommazahl, die angibt, wie schnell die Kneif-Geste ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchSwipe",
+    "description": null,
+    "english": "Fired when a user swipes their fingers on a TouchEnabled device. 'swipeDirection' is an Enum.SwipeDirection, indicating the direction the user swiped. 'numberOfTouches' is an int that indicates how many touches were involved with the gesture.  This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mit dem Finger über ein TouchEnabled-Gerät streicht. \"swipeDirection\" ist ein Enum.SwipeDirection, das die Richtung angibt, in die Benutzer:innen gestrichen haben. \"numberOfTouches\" ist ein Wert, der angibt, wie viele Berührungen an der Geste beteiligt waren. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchLongPress",
+    "description": null,
+    "english": "Fired when a user holds at least one finger for a short amount of time on the same screen position on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mindestens einen Finger für eine kurze Zeit auf der gleichen Position des Bildschirms auf einem TouchEnabled-Gerät hält. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchRotate",
+    "description": null,
+    "english": "Fired when a user rotates two fingers on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'rotation' is a float indicating how much the rotation has gone from the start of the gesture. 'velocity' is a float that indicates how quickly the gesture is being performed. 'state' indicates the Enum.UserInputState of the gesture.  This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in zwei Finger auf einem TouchEnabled-Gerät dreht. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"rotation\" ist eine Gleitkommazahl, die angibt, wie weit die Drehung seit dem Beginn der Geste fortgeschritten ist. \"velocity\" ist eine Gleitkommazahl, die angibt, wie schnell die Geste ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectTouchPan",
+    "description": null,
+    "english": "Fired when a user drags at least one finger on a TouchEnabled device. 'touchPositions' is a Lua array of Vector2, each indicating the position of all the fingers involved in the gesture. 'totalTranslation' is a Vector2, indicating how far the pan gesture has gone from its starting point. 'velocity' is a Vector2 that indicates how quickly the gesture is being performed in each dimension. 'state' indicates the Enum.UserInputState of the gesture.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in mindestens einen Finger auf einem TouchEnabled-Gerät zieht. \"touchPositions\" ist ein Lua-Array von Vector2, das jeweils die Position aller Finger angibt, die an der Geste beteiligt sind. \"totalTranslation\" ist ein Vector2, der angibt, wie weit sich die Schwenkgeste von ihrem Startpunkt entfernt hat. \"velocity\" ist ein Vector2, der angibt, wie schnell die Geste in jeder Dimension ausgeführt wird. \"state\" gibt den Enum.UserInputState der Geste an.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectInputBegan",
+    "description": null,
+    "english": "Fired when a user begins interacting via a Human-Computer Interface device (Mouse button down, touch begin, keyboard button down, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.",
+    "translation": "Es wird ausgelöst, wenn ein:e Benutzer:in mit der Interaktion über ein Mensch-Computer-Schnittstellengerät beginnt (Maustaste gedrückt, Berührung beginnt, Tastaturtaste gedrückt usw.). \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectInputChanged",
+    "description": null,
+    "english": "Fired when a user changes interacting via a Human-Computer Interface device (Mouse move, touch move, mouse wheel, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.",
+    "translation": "Wird ausgelöst, wenn ein:e Benutzer:in die Interaktion über ein Mensch-Computer-Schnittstellengerät (Mausbewegung, Berührungsbewegung, Mausrad usw.) ändert. \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiObjectInputEnded",
+    "description": null,
+    "english": "Fired when a user stops interacting via a Human-Computer Interface device (Mouse button up, touch end, keyboard button up, etc.). 'inputObject' is an InputObject, which contains useful data for querying user input.  This event only fires locally.",
+    "translation": "Es wird ausgelöst, wenn ein:e Benutzer:in mit der Interaktion über ein Mensch-Computer-Schnittstellengerät stoppt (Maustaste loslassen, Berührung endet, Tastaturtaste loslassen usw.). \"inputObject\" ist ein InputObject, das nützliche Daten zur Abfrage von Benutzereingaben enthält. Dieses Ereignis wird nur lokal ausgelöst.",
     "isDeprecated": false
   },
   {
@@ -20281,6 +20905,38 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiButtonModal",
+    "description": null,
+    "english": "Allows the mouse to be free in first person mode. If a button with this property set to true is visible, the mouse is 'free' in first person mode.",
+    "translation": "Erlaubt, dass die Maus im First-Person-Modus frei ist. Wenn eine Schaltfläche mit dieser Eigenschaft auf \"true\" sichtbar ist, ist die Maus im First-Person-Modus \"frei\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiButtonMouseButton1Click",
+    "description": null,
+    "english": "Fired when the mouse is over the button, and the mouse down and up events fire without the mouse leaving the button.",
+    "translation": "Wird ausgelöst, wenn sich die Maus über der Schaltfläche befindet und die Ereignisse Maustaste drücken und loslassen ausgelöst werden, ohne dass die Maus die Schaltfläche verlässt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiButtonMouseButton1Down",
+    "description": null,
+    "english": "Fired when the mouse button is pushed down on a button.",
+    "translation": "Wird ausgelöst, wenn die Maustaste auf einer Schaltfläche gedrückt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiButtonMouseButton1Up",
+    "description": null,
+    "english": "Fired when the mouse button is released on a button.",
+    "translation": "Wird ausgelöst, wenn die Maustaste auf einer Schaltfläche losgelassen wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.SelectionPartLasso",
     "description": null,
     "english": "A visual line drawn representation between two part objects",
@@ -20301,6 +20957,14 @@
     "description": null,
     "english": "A visual line drawn representation between two parts.",
     "translation": "Die visuelle Darstellung einer Linie zwischen zwei Teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.KeyframeMarker",
+    "description": null,
+    "english": "Represents when an event should be fired in an animation",
+    "translation": "Stellt dar, wann ein Ereignis in einer Animation ausgelöst werden soll",
     "isDeprecated": false
   },
   {
