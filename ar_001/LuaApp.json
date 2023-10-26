@@ -520,6 +520,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidPasskeyCredential",
+    "description": "Login response error message, informing the user that the passkey credential they used to attempt sign in was invalid.",
+    "english": "Unable to sign in with this passkey.",
+    "translation": "تعذّر تسجيل الدخول بمفتاح المرور الذي أدخلته.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -717,6 +725,30 @@
     "description": null,
     "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification. Enabling 2-Step Verification will log you out of your current session.",
     "translation": "عملية التحقق بخطوتين مطلوبة لإجراء المزيد من المعاملات. اذهب إلى الإعدادات> الأمان لإتمام عملية التحقق بخطوتين. سوف نسجل خروجك من جلسة الدخول الحالية ما إن تمكّن عملية التحقق بخطوتين.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Action.Okay",
+    "description": null,
+    "english": "OK",
+    "translation": "حسنًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Header.ReviewLoginAttempt",
+    "description": "Title for modal where users can approve/deny login attempts",
+    "english": "Review Login Attempt",
+    "translation": "محاولة مراجعة تسجيل الدخول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.LoginToNewDevice",
+    "description": null,
+    "english": "Are you trying to log in to a new device?",
+    "translation": "هل تحاول تسجيل الدخول إلى جهاز جديد؟",
     "isDeprecated": false
   },
   {
@@ -3173,6 +3205,30 @@
     "description": null,
     "english": "Login Methods",
     "translation": "طرق تسجيل الدخول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Heading.AddAPasskey",
+    "description": null,
+    "english": "Add a Passkey",
+    "translation": "إضافة مفتاح مرور",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.NumPasskeysAddedStatus",
+    "description": null,
+    "english": "You have added {registeredKeys}/{maxKeys} passkeys.",
+    "translation": "أنتَ أضفت {registeredKeys} من أصل {maxKeys} مفتاح مرور.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AccountSettings",
+    "key": "Description.UnableToSaveChanges",
+    "description": null,
+    "english": "We weren’t able to save your changes. Please try again.",
+    "translation": "لم نتمكن من حفظ التغييرات التي أجريتها. الرجاء المحاولة مجددًا.",
     "isDeprecated": false
   },
   {
@@ -12541,6 +12597,22 @@
     "description": "Tooltip for follow game button",
     "english": "Limit reached. Please unfollow other experiences to follow this one.",
     "translation": "تم الوصول إلى الحد الأقصى. يرجى إلغاء متابعة التجارب الأخرى لمتابعة هذه التجربة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameFollows",
+    "key": "LabelNotifications",
+    "description": "Label for turning on notifications button",
+    "english": "Notifications",
+    "translation": "الإشعارات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameFollows",
+    "key": "TooltipTurnedOffNotifications",
+    "description": "Tooltip for when notifications have been turned off",
+    "english": "Notifications turned off for {experienceName}",
+    "translation": "تم إيقاف الإشعارات للتجربة {experienceName}",
     "isDeprecated": false
   },
   {
@@ -23324,7 +23396,7 @@
     "key": "Prompt.FirstCall",
     "description": "Text shown to users when they have no call history to prompt them to call a friend.",
     "english": "Try making your first call",
-    "translation": "أصدقائك ينتظرون مكالمتك!",
+    "translation": "إجراء مكالمتك الأولى",
     "isDeprecated": false
   },
   {
@@ -23412,7 +23484,7 @@
     "key": "Error.Description.Generic",
     "description": "Generic error message",
     "english": "Try again later",
-    "translation": "حدث خطأ ما. الرجاء المحاولة لاحقًا.",
+    "translation": "حاول مرة أخرى لاحقًا",
     "isDeprecated": false
   },
   {
@@ -23429,6 +23501,94 @@
     "description": "Error message shown to the user if we failed to verify if they are call enabled",
     "english": "Failed to verify call eligibility.",
     "translation": "تعذّر التحقق من أهليتك لإجراء مكالمات.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.Generic",
+    "description": "Generic error title",
+    "english": "Something went wrong",
+    "translation": "حدث خطأ ما",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.SuggestedFriends",
+    "description": "Tooltip description for list of suggested friends in the phonebook",
+    "english": "Friends with devices and settings set for an optimal call experience.",
+    "translation": "الأصدقاء الذين لديهم أجهزة وإعدادات مناسبة لتجربة مكالمات سلسة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Description.Friends",
+    "description": "Tooltip description for list of all friends in the phonebook",
+    "english": "Friends who may or may not have devices and settings for an optimal call experience.",
+    "translation": "الأصدقاء الذين يملكون أو لا يملكون أجهزة وإعدادات مناسبة لتجربة مكالمات سلسة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.DeviceNotSupported",
+    "description": "Error message shown when user calls from an unsupported platform",
+    "english": "Calling is currently not supported on your device. Please try again later.",
+    "translation": "المكالمات غير مدعومة حاليًا على جهازك. الرجاء المحاولة لاحقًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Suggested",
+    "description": "Header to show suggested friends in the phonebook",
+    "english": "Suggested",
+    "translation": "مقترحة لك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Friends",
+    "description": "Header to show all friends in the phonebook",
+    "english": "Friends",
+    "translation": "الأصدقاء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.FriendBusy",
+    "description": "Error message shown when user calls someone in an active call",
+    "english": "Friend is busy",
+    "translation": "صديق مشغول",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.GenericLong",
+    "description": null,
+    "english": "Something went wrong! Please try again.",
+    "translation": "حدث خطأ ما. الرجاء المحاولة لاحقًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Title.CouldntMakeCall",
+    "description": null,
+    "english": "Couldn't make call",
+    "translation": "تعذر إجراء مكالمة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Error.Description.FriendBusy",
+    "description": null,
+    "english": "{calleeCombinedName} is currently busy and can't receive your call right now. Please try again later.",
+    "translation": "{calleeCombinedName} مشغول حاليًا ولا يمكن استقبال مكالمتك الآن. الرجاء المحاولة لاحقًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Call",
+    "key": "Label.Block",
+    "description": null,
+    "english": "Block {combinedName}",
+    "translation": "حظر {combinedName}",
     "isDeprecated": false
   }
 ]
