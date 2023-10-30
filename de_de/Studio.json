@@ -19332,7 +19332,7 @@
     "key": "ReflectionMetadata.SpringConstraintFreeLength",
     "description": null,
     "english": "The distance (in studs) between the two attachments at which the spring exerts no stiffness force. Value in [0, inf).",
-    "translation": "Der Abstand (in Studs) zwischen den beiden Anhängen, bei dem die Feder keine Steifigkeitskraft ausübt. Wert in [0, inf).",
+    "translation": "Der Abstand (in Noppen) zwischen den beiden Anhängen, bei dem die Feder keine Steifigkeitskraft ausübt. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19340,7 +19340,7 @@
     "key": "ReflectionMetadata.SpringConstraintMaxForce",
     "description": null,
     "english": "The maximum force that the spring can apply. Useful to prevent instabilities. The units are mass * studs / seconds^2. Value in [0, inf).",
-    "translation": "Die maximale Kraft, die die Feder ausüben kann. Nützlich, um Instabilitäten zu vermeiden. Die Einheiten sind Masse * Studs / Sekunden^2. Wert in [0, inf).",
+    "translation": "Die maximale Kraft, die die Feder ausüben kann. Nützlich, um Instabilitäten zu vermeiden. Die Einheiten sind Masse * Noppen / Sekunden^2. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19556,7 +19556,7 @@
     "key": "ReflectionMetadata.SlidingBallConstraintVelocity",
     "description": null,
     "english": "The target linear velocity of the motor in studs per second along the slider axis. Value in (-inf, inf).",
-    "translation": "Die lineare Zielgeschwindigkeit des Motors in Studs pro Sekunde entlang der Schiebereglerachse. Wert in (-inf, inf).",
+    "translation": "Die lineare Zielgeschwindigkeit des Motors in Noppen pro Sekunde entlang der Schiebereglerachse. Wert in (-inf, inf).",
     "isDeprecated": false
   },
   {
@@ -19564,7 +19564,7 @@
     "key": "ReflectionMetadata.SlidingBallConstraintMotorMaxForce",
     "description": null,
     "english": "The maximum force the motor can apply to achieve the target velocity. Units are mass * studs / seconds^2. Value in [0, inf).",
-    "translation": "Die maximale Kraft, die der Motor aufbringen kann, um die Zielgeschwindigkeit zu erreichen. Die Einheiten sind Masse * Studs / Sekunden^2. Wert in [0, inf).",
+    "translation": "Die maximale Kraft, die der Motor aufbringen kann, um die Zielgeschwindigkeit zu erreichen. Die Einheiten sind Masse * Noppen / Sekunden^2. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19572,7 +19572,7 @@
     "key": "ReflectionMetadata.SlidingBallConstraintMotorMaxAcceleration",
     "description": null,
     "english": "The maximum acceleration of the motor in studs per second squared. Value in [0, inf).",
-    "translation": "Die maximale Beschleunigung des Motors in Studs pro Sekunde zum Quadrat. Wert in [0, inf).",
+    "translation": "Die maximale Beschleunigung des Motors in Noppen pro Sekunde zum Quadrat. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19580,7 +19580,7 @@
     "key": "ReflectionMetadata.SlidingBallConstraintSpeed",
     "description": null,
     "english": "Target speed in studs per second. This value is unsigned as the servo will always move toward its target. Value in [0, inf).",
-    "translation": "Zielgeschwindigkeit in Studs pro Sekunde. Dieser Wert ist ohne Vorzeichen, da sich das Servo immer in Richtung seines Ziels bewegt. Wert in [0, inf).",
+    "translation": "Zielgeschwindigkeit in Noppen pro Sekunde. Dieser Wert ist ohne Vorzeichen, da sich das Servo immer in Richtung seines Ziels bewegt. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19588,7 +19588,7 @@
     "key": "ReflectionMetadata.SlidingBallConstraintServoMaxForce",
     "description": null,
     "english": "Maximum force the servo motor can apply. Units are mass * studs / seconds^2. Value in [0, inf).",
-    "translation": "Maximale Kraft, die der Servomotor aufbringen kann. Die Einheiten sind Masse * Studs / Sekunden^2. Wert in [0, inf).",
+    "translation": "Maximale Kraft, die der Servomotor aufbringen kann. Die Einheiten sind Masse * Noppen / Sekunden^2. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19676,7 +19676,7 @@
     "key": "ReflectionMetadata.CylindricalConstraintMotorMaxTorque",
     "description": null,
     "english": "The maximum torque the motor can apply to achieve the target angular velocity. The units are mass * studs^2 / second^2. Value in [0, inf).",
-    "translation": "Das maximale Drehmoment, das der Motor aufbringen kann, um die Zielwinkelgeschwindigkeit zu erreichen. Die Einheiten sind Masse * Studs^2 / Sekunde^2. Wert in [0, inf).",
+    "translation": "Das maximale Drehmoment, das der Motor aufbringen kann, um die Zielwinkelgeschwindigkeit zu erreichen. Die Einheiten sind Masse * Noppen^2 / Sekunde^2. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19700,7 +19700,7 @@
     "key": "ReflectionMetadata.CylindricalConstraintServoMaxTorque",
     "description": null,
     "english": "Maximum torque the servo motor can apply. The units are mass * studs^2 / second^2. Value in [0, inf).",
-    "translation": "Das maximale Drehmoment, das der Servomotor aufbringen kann. Die Einheiten sind Masse * Studs^2 / Sekunde^2. Wert in [0, inf).",
+    "translation": "Das maximale Drehmoment, das der Servomotor aufbringen kann. Die Einheiten sind Masse * Noppen^2 / Sekunde^2. Wert in [0, inf).",
     "isDeprecated": false
   },
   {
@@ -19921,6 +19921,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ClickDetector",
+    "description": null,
+    "english": "Raises mouse events for parent object",
+    "translation": "Löst Mausereignisse für übergeordnetes Element aus",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.ClickDetectorMaxActivationDistance",
     "description": null,
     "english": "The maximum distance a Player's character can be from the ClickDetector's parent Part that will allow the Player's mouse to fire events on this object.",
@@ -19953,6 +19961,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Smoke",
+    "description": null,
+    "english": "Makes the parent part or model object emit smoke",
+    "translation": "Lässt das übergeordnete Element oder Modellobjekt Rauch ausstoßen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.Beam",
     "description": null,
     "english": "Makes beam between two attachments",
@@ -19961,10 +19977,18 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ExplosionPosition",
+    "description": null,
+    "english": "Where the Explosion occurs in absolute world coordinates.",
+    "translation": "Wo die Explosion in absoluten Weltkoordinaten stattfindet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.Fire",
     "description": null,
     "english": "Makes the parent part or model object emit fire",
-    "translation": "Lässt das übergeordnete Teil oder Modellobjekt ein Feuer auslösen",
+    "translation": "Lässt das übergeordnete Element oder Modellobjekt ein Feuer auslösen",
     "isDeprecated": false
   },
   {
@@ -20017,6 +20041,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireStudsBetweenTextures",
+    "description": null,
+    "english": "The space between two textures on the wire. Note: studs are relative depending on how far the camera is from the FloorWire.",
+    "translation": "Der Abstand zwischen zwei Texturen auf dem Draht. Hinweis: Die Noppen sind relativ, je nachdem, wie weit die Kamera vom FloorWire entfernt ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.FloorWireWireRadius",
     "description": null,
     "english": "How thick the wire is.",
@@ -20033,10 +20065,26 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundPlayOnRemove",
+    "description": null,
+    "english": "The sound will play when it is removed from the Workspace. Looped sounds don't play",
+    "translation": "Der Sound, der beim Entfernen aus dem Arbeitsbereich abgespielt wird. Geloopte Sounds werden nicht abgespielt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.ChorusSoundEffect",
     "description": null,
     "english": "A Chorus audio effect that can be applied to a Sound or SoundGroup.",
     "translation": "Ein Chorus-Audioeffekt, der auf einen Sound oder eine SoundGroup angewendet werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceRolloffScale",
+    "description": null,
+    "english": "Setting this value makes the sound drop off faster or slower. The higher the value, the faster volume will attenuate, and conversely the lower the value, the slower it will attenuate. For example a rolloff factor of 1 will simulate the real world, where as a value of 2 will make sounds attenuate 2 times quicker.",
+    "translation": "Durch das Einstellen dieses Wertes wird der Sound schneller oder langsamer abfallen. Je höher der Wert, desto schneller wird die Lautstärke gedämpft und umgekehrt, je niedriger der Wert, desto langsamer wird sie gedämpft. Ein Faktor von 1 simuliert beispielsweise die reale Welt, während ein Wert von 2 den Sound doppelt so schnell dämpft.",
     "isDeprecated": false
   },
   {
@@ -20069,6 +20117,14 @@
     "description": null,
     "english": "Determines how grid is placed within it's parent's container in the y direction. Can be Top, Center, or Bottom.",
     "translation": "Legt fest, wie das Raster in x-Richtung im übergeordneten Container platziert wird. Kann oben, zentriert oder unten sein.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIListLayoutPadding",
+    "description": null,
+    "english": "Determines the amount of free space between each element. Can be set either using scale (Percentage of parent's size in the current direction) or offset (a static spacing value, similar to pixel size).",
+    "translation": "Bestimmt den freien Platz zwischen den einzelnen Elementen. Kann entweder mit \"Skalierung\" (Prozentsatz der Größe des übergeordneten Elements in der aktuellen Richtung) oder \"Versatz\" (ein statischer Abstandswert, ähnlich der Pixelgröße) festgelegt werden.",
     "isDeprecated": false
   },
   {
@@ -20113,6 +20169,22 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UITableLayoutFillEmptySpaceRows",
+    "description": null,
+    "english": "Whether the table should expand to fill the available space of its container, row-wise.",
+    "translation": "Ob die Tabelle zeilenweise so erweitert werden soll, dass sie den verfügbaren Platz ihres Containers ausfüllt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UITableLayoutFillEmptySpaceColumns",
+    "description": null,
+    "english": "Whether the table should expand to fill the available space of its container, column-wise.",
+    "translation": "Ob die Tabelle spaltenweise so erweitert werden soll, dass sie den verfügbaren Platz ihres Containers ausfüllt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.UITextSizeConstraintMaxTextSize",
     "description": null,
     "english": "The biggest size the font is allowed to be.",
@@ -20141,6 +20213,14 @@
     "description": null,
     "english": "Fires when the tween either reaches PlaybackState Completed or Cancelled. PlaybackState of one of these types is passed as the first arg to the function listening to this event.",
     "translation": "Wird ausgelöst, wenn das Tween entweder PlaybackState Completed oder Cancelled erreicht. Der PlaybackState eines dieser Typen wird als erstes Argument an die Funktion übergeben, die auf dieses Ereignis wartet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiServiceGetGuiInset",
+    "description": null,
+    "english": "Returns a Tuple containing two Vector2 values representing the offset of user GUIs in pixels from the top right corner of the screen and the bottom right corner of the screen respectively.",
+    "translation": "Gibt ein Tupel zurück, das zwei Vector2-Werte enthält, die den Versatz der Benutzer-GUIs in Pixeln von der oberen rechten Ecke des Bildschirms bzw. der unteren rechten Ecke des Bildschirms angeben.",
     "isDeprecated": false
   },
   {
@@ -20229,6 +20309,22 @@
     "description": null,
     "english": "A database of strings used in the game and their translations.",
     "translation": "Eine Datenbank mit den im Spiel verwendeten Strings und deren Übersetzungen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LocalizationServiceGetLocaleId",
+    "description": null,
+    "english": "Gets the system's LocaleId (Ex: \"en-US\").",
+    "translation": "Ruft die LocaleId des Systems ab (z.B.: \"en-US\").",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MarketplaceServiceGetProductInfo",
+    "description": null,
+    "english": "Takes one argument \"assetId\" which should be a number of an asset on www.roblox.com.  Returns a table containing the product information (if this process fails, returns an empty table).",
+    "translation": "Nimmt ein Argument \"assetId\" an, das eine Nummer eines Objekts auf www.roblox.com sein sollte. Gibt eine Tabelle mit den Produktinformationen zurück (wenn dieser Vorgang fehlschlägt, wird eine leere Tabelle zurückgegeben).",
     "isDeprecated": false
   },
   {
@@ -20457,10 +20553,26 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceClearAllChildren",
+    "description": null,
+    "english": "Removes all children (but not this object) from the workspace.",
+    "translation": "Entfernt alle untergeordneten Elemente (aber nicht dieses Objekt) vom Arbeitsbereich.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InstanceDestroy",
+    "description": null,
+    "english": "Removes object and all of its children from the workspace. Disconnects object and all children from open connections. Object and children may not be usable after calling Destroy.",
+    "translation": "Entfernt das Objekt und alle seine untergeordneten Elemente vom Arbeitsbereich. Trennt Objekte und alle untergeordneten Elemente von offenen Verbindungen. Objekt und untergeordnete Elemente können nach dem Aufruf von \"Destroy\" nicht verwendet werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.InstanceAncestryChanged",
     "description": null,
     "english": "Fired when any of this object's ancestors change.  First argument 'child' is the object whose parent changed.  Second argument 'parent' is the first argument's new parent.",
-    "translation": "Wird ausgelöst, wenn sich eines der übergeordneten Objekte dieses Objekts ändert. Das erste Argument \"child\" ist das Objekt, dessen übergeordnetes Objekt sich geändert hat. Das zweite Argument \"parent\" ist das neue übergeordnete Objekt des ersten Arguments.",
+    "translation": "Wird ausgelöst, wenn sich eines der übergeordneten Elemente dieses Objekts ändert. Das erste Argument \"child\" ist das Objekt, dessen übergeordnetes Element sich geändert hat. Das zweite Argument \"parent\" ist das neue übergeordnete Element des ersten Arguments.",
     "isDeprecated": false
   },
   {
@@ -20468,7 +20580,7 @@
     "key": "ReflectionMetadata.InstanceDescendantAdded",
     "description": null,
     "english": "Fired after an Instance is parented to this object, or any of this object's descendants.  The 'descendant' argument is the Instance that is being added.",
-    "translation": "Wird ausgelöst, wenn eine Instanz zu diesem Objekt oder einem seiner untergeordneten Objekte ein übergeordnetes Objekt erhält. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
+    "translation": "Wird ausgelöst, wenn eine Instanz zu diesem Objekt oder einem seiner untergeordneten Elemente ein übergeordnetes Element erhält. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
     "isDeprecated": false
   },
   {
@@ -20476,7 +20588,7 @@
     "key": "ReflectionMetadata.InstanceDescendantRemoving",
     "description": null,
     "english": "Fired after an Instance is unparented from this object, or any of this object's descendants.  The 'descendant' argument is the Instance that is being added.",
-    "translation": "Wird ausgelöst, wenn eine Instanz von diesem Objekt oder einem seiner untergeordneten Objekte kein übergeordnetes Objekt mehr hat. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
+    "translation": "Wird ausgelöst, wenn eine Instanz von diesem Objekt oder einem seiner untergeordneten Elemente kein übergeordnetes Element mehr hat. Das Argument \"descendant\" ist die Instanz, die hinzugefügt wird.",
     "isDeprecated": false
   },
   {
@@ -20497,10 +20609,34 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ModelGetModelSize",
+    "description": null,
+    "english": "Returns a Vector3 that is union of the extents of all Parts in the model.",
+    "translation": "Gibt einen Vector3 zurück, der die Grenzen aller Parts des Modells vereint.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.ModelMakeJoints",
     "description": null,
     "english": "Creates the appropriate SurfaceJoints between all touching Parts contrained within the model. Technically, this function calls MakeJoints() on all Parts inside the model.",
     "translation": "Erstellt die passenden SurfaceJoints zwischen allen sich berührenden Parts, die im Modell enthalten sind. Technisch gesehen ruft diese Funktion MakeJoints() für alle Parts innerhalb des Modells auf.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DataModelworkspace",
+    "description": null,
+    "english": "Deprecated. Use Workspace",
+    "translation": "Veraltet. Arbeitsbereich verwenden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DataModelShowMouse",
+    "description": null,
+    "english": "Deprecated. Use Workspace.IsMouseCursorVisible",
+    "translation": "Veraltet. Workspace.IsMouseCursorVisible verwenden",
     "isDeprecated": false
   },
   {
@@ -20537,6 +20673,62 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraViewportSize",
+    "description": null,
+    "english": "Holds the x,y screen resolution of the viewport the camera is presenting (note: this can differ from the AbsoluteSize property of a full screen gui).",
+    "translation": "Enthält die x- und y-Bildschirmauflösung des Ansichtsfensters, das die Kamera darstellt (Hinweis: Diese kann von der Eigenschaft AbsoluteSize der grafischen Benutzeroberfläche im Vollbildmodus abweichen).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraGetRoll",
+    "description": null,
+    "english": "Returns the camera's current roll. Roll is defined in radians, and is stored as the delta from the camera's y axis default normal vector.",
+    "translation": "Gibt die aktuelle Drehung der Kamera zurück. Die Drehung wird in Radiant angegeben und als Delta zum standardmäßigen Normalvektor der y-Achse der Kamera gespeichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraWorldToScreenPoint",
+    "description": null,
+    "english": "Takes a 3D position in the world and projects it onto x,y coordinates of screen space. Returns two values, first is a Vector3 that has x,y position and z position which is distance from camera (negative if behind camera, positive if in front). Second return value is a boolean indicating if the first argument is an on-screen coordinate.",
+    "translation": "Nimmt eine 3D-Position in der Welt und projiziert sie auf die x- und y-Koordinaten des Bildschirmbereichs. Gibt zwei Werte zurück: Der erste Wert ist ein Vector3 mit der x- und y-Position und der z-Position, die den Abstand zur Kamera angibt (negativ, wenn sie hinter der Kamera liegt, positiv, wenn sie vor der Kamera liegt). Der zweite Wert ist ein Boolescher Wert, der angibt, ob das erste Argument eine Koordinate auf dem Bildschirm ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraScreenPointToRay",
+    "description": null,
+    "english": "Takes a 2D screen position and produces a Ray object to be used for 3D raycasting. Input is x,y screen coordinates, and a (optional, defaults to 0) z position which sets how far in the camera look vector to start the ray origin.",
+    "translation": "Nimmt eine 2D-Bildschirmposition und erzeugt ein Ray-Objekt, das für das 3D-Raycasting verwendet werden kann. Die Eingabe sind die x- und y-Koordinaten des Bildschirms und eine (optionale, standardmäßig auf 0 eingestellte) z-Position, die festlegt, wie weit die Strahlenquelle im Blickvektor der Kamera liegen soll.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraViewportPointToRay",
+    "description": null,
+    "english": "Same as ScreenPointToRay, except no GUI offsets are taken into account. Useful for things like casting a ray from the middle of the Camera.ViewportSize",
+    "translation": "Gleich wie ScreenPointToRay, nur dass hier kein Versatz der grafischen Benutzeroberfläche berücksichtigt wird. Nützlich, z.B. für Raycasting aus der Mitte des Camera.ViewportSize",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraWorldToViewportPoint",
+    "description": null,
+    "english": "Same as WorldToScreenPoint, except no GUI offsets are taken into account.",
+    "translation": "Gleich wie WorldToScreenPoint, nur dass hier kein Versatz der grafischen Benutzeroberfläche berücksichtigt wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CameraSetRoll",
+    "description": null,
+    "english": "Sets the camera's current roll. Roll is defined in radians, and is stored as the delta from the camera's y axis default normal vector.",
+    "translation": "Legt die aktuelle Drehung der Kamera fest. Die Drehung wird in Radiant angegeben und als Delta zum standardmäßigen Normalvektor der y-Achse der Kamera gespeichert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.PlayersCharacterAutoLoads",
     "description": null,
     "english": "Set to true, when a player joins a game, they get a character automatically, as well as when they die.  When set to false, characters do not auto load and will only load in using Player:LoadCharacter().",
@@ -20545,10 +20737,50 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Lighting",
+    "description": null,
+    "english": "Responsible for all lighting aspects of the world (affects how things are rendered).",
+    "translation": "Verantwortlich für alle Beleuchtungsaspekte der Welt (beeinflusst, wie Dinge gerendert werden).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LightingAmbient",
+    "description": null,
+    "english": "The hue of the global lighting.  Changing this changes the color tint of all objects in the Workspace.",
+    "translation": "Der Farbton der globalen Beleuchtung. Das Ändern dieses Wertes ändert den Farbton aller Objekte im Arbeitsbereich.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LightingBrightness",
+    "description": null,
+    "english": "How much global light each Part in the Workspace receives. Standard range is 0 to 2 (0 being little light), but can be increased all the way to 10 (colors start to be appear very different at this value).",
+    "translation": "Wie viel globales Licht jedes Teil im Arbeitsbereich erhält. Der Standardbereich liegt zwischen 0 und 2 (0 bedeutet wenig Licht), kann aber bis auf 10 erhöht werden (bei diesem Wert beginnen die Farben sehr unterschiedlich zu erscheinen).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LightingShadowColor",
+    "description": null,
+    "english": "Color the shadows appear as. Shadows are drawn mostly for characters, but depending on the lighting will also show for Parts in the Workspace.  Rendering settings can also affect if shadows are drawn.",
+    "translation": "Farbe, in der die Schatten erscheinen. Schatten werden hauptsächlich für Charaktere gezeichnet, können aber je nach Beleuchtung auch für Teile im Arbeitsbereich angezeigt werden. Die Rendering-Einstellungen können ebenfalls Einfluss darauf haben, ob Schatten gezeichnet werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.LightingTimeOfDay",
+    "description": null,
+    "english": "A string that represent the current time of day. Time is in 24-hour clock format \"XX::YY:ZZ\", where X is hour, Y is minute, and Z is seconds.",
+    "translation": "Ein String, der die aktuelle Tageszeit angibt. Die Zeit ist im 24-Stunden-Format \"XX:YY:ZZ\", wobei X die Stunden, Y die Minuten und Z die Sekunden sind.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.LightingLightingChanged",
     "description": null,
     "english": "Fired whenever a property of Lighting is changed, or a skybox or atmosphere is added or removed. Skyboxes are of type 'Sky' these and 'Atmosphere' should be parented directly to lighting.",
-    "translation": "Wird immer dann ausgelöst, wenn eine Eigenschaft von Lightning geändert wird oder eine Skybox oder Atmosphäre hinzugefügt oder entfernt wird. Skyboxen sind vom Typ \"Sky\" und \"Atmosphere\" sollte direkt mit der Beleuchtung verknüpft werden.",
+    "translation": "Wird immer dann ausgelöst, wenn eine Eigenschaft von Lightning geändert wird oder eine Skybox oder Atmosphäre hinzugefügt oder entfernt wird. Skyboxen sind vom Typ \"Sky\" und \"Atmosphere\" sollte der Beleuchtung direkt übergeordnet werden.",
     "isDeprecated": false
   },
   {
@@ -20573,6 +20805,54 @@
     "description": null,
     "english": "Fired periodically after the user has been AFK for a while.  Currently this event is only fired for the *local* Player.  \"time\" is the time in seconds that the user has been idle.",
     "translation": "Wird in regelmäßigen Abständen ausgelöst, wenn Benutzer:innen eine Zeit lang inaktiv war. Derzeit wird dieses Ereignis nur für *lokale* Spieler:innen ausgelöst. \"time\" ist die Zeit in Sekunden, die Spieler:innen inaktiv waren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspaceFindPartsInRegion3",
+    "description": null,
+    "english": "Returns parts in the area defined by the Region3, up to specified maxCount or 100, whichever is less",
+    "translation": "Gibt Teile in dem durch die Region3 definierten Bereich zurück, bis zur angegebenen maxCount oder 100, je nachdem, was kleiner ist",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspaceFindPartsInRegion3WithIgnoreList",
+    "description": null,
+    "english": "Returns parts in the area defined by the Region3, up to specified maxCount or 100, whichever is less",
+    "translation": "Gibt Teile in dem durch die Region3 definierten Bereich zurück, bis zur angegebenen maxCount oder 100, je nachdem, was kleiner ist",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspaceFindPartOnRay",
+    "description": null,
+    "english": "Return type is (BasePart, Vector3) if the ray hits.  If it misses it will return (nil, PointAtEndOfRay)",
+    "translation": "Der Rückgabetyp ist (BasePart, Vector3), wenn der Strahl trifft. Wenn er nicht trifft, wird (nil, PointAtEndOfRay) zurückgegeben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspaceFindPartOnRayWithIgnoreList",
+    "description": null,
+    "english": "Return type is (BasePart, Vector3) if the ray hits.  If it misses it will return (nil, PointAtEndOfRay)",
+    "translation": "Der Rückgabetyp ist (BasePart, Vector3), wenn der Strahl trifft. Wenn er nicht trifft, wird (nil, PointAtEndOfRay) zurückgegeben",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspacePGSPhysicsSolverEnabled",
+    "description": null,
+    "english": "Boolean used to enable the new physics solver",
+    "translation": "Boolescher Wert, um den neuen Physik-Berechner zu aktivieren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorkspaceFallenPartsDestroyHeight",
+    "description": null,
+    "english": "Sets the height at which falling characters and parts are destroyed. This property is not scriptable and can only be set in Studio",
+    "translation": "Legt die Höhe fest, in der fallende Charaktere und Teile zerstört werden. Für diese Eigenschaft gibt es kein Skript und sie kann nur in Studio eingestellt werden",
     "isDeprecated": false
   },
   {
@@ -20605,6 +20885,22 @@
     "description": null,
     "english": "Determines whether building tools (in-game and studio) can manipulate this Part.  If true, no editing allowed.  If false, editing is allowed.",
     "translation": "Bestimmt, ob Bauwerkzeuge (im Spiel und in Studio) dieses Part bearbeiten können. Wenn \"true\" ist keine Bearbeitung erlaubt. Wenn \"false\" ist die Bearbeitung erlaubt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartPositionLocal",
+    "description": null,
+    "english": "Position relative to parent part, or global space if there is no parent.",
+    "translation": "Position relativ zum übergeordneten Element bzw. zum globalen Platz, wenn es kein übergeordnetes Element gibt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BasePartOrientationLocal",
+    "description": null,
+    "english": "Orientation relative to parent part, or global space if there is no parent.",
+    "translation": "Ausrichtung relativ zum übergeordneten Element bzw. zum globalen Platz, wenn es kein übergeordnetes Element gibt.",
     "isDeprecated": false
   },
   {
@@ -20665,6 +20961,38 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGui",
+    "description": null,
+    "english": "A GUI that adorns an object in the 3D world.  Add Frames/Labels/Buttons to this object to have them rendered while attached to a 3D object",
+    "translation": "Eine grafische Benutzeroberfläche, die ein Objekt in der 3D-Welt schmückt. Füge diesem Objekt Rahmen/Beschriftungen/Schaltflächen hinzu, damit sie gerendert werden, während sie an ein 3D-Objekt angehängt sind",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiAdornee",
+    "description": null,
+    "english": "The Object the billboard gui uses as its base to render from.  Currently, the only way to set this property is thru a script, and must exist in the workspace.  This will only render if the object assigned derives from BasePart.",
+    "translation": "Das Objekt, das die grafische Benutzeroberfläche als Basis zum Rendern verwendet. Derzeit kann diese Eigenschaft nur über ein Skript eingestellt werden und muss im Arbeitsbereich vorhanden sein. Es wird nur gerendert, wenn das zugewiesene Objekt von BasePart abgeleitet ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiAbsolutePosition",
+    "description": null,
+    "english": "A read-only Vector2 value that is the GuiObject's current position (x,y) in pixel space, from the top left corner of the GuiObject.",
+    "translation": "Ein schreibgeschützter Vector2-Wert, der die aktuelle Position (x,y) des GuiObject im Pixelraum angibt, ausgehend von der linken oberen Ecke des GuiObject.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiAbsoluteSize",
+    "description": null,
+    "english": "A read-only Vector2 value that is the GuiObject's current size (width, height) in pixel space.",
+    "translation": "Ein schreibgeschützter Vector2-Wert, der die aktuelle Größe des GuiObject (Breite, Höhe) im Pixelraum angibt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.BillboardGuiActive",
     "description": null,
     "english": "If true, this GuiObject can fire mouse events and will pass them to any GuiObjects layered underneath, while false will do neither.",
@@ -20689,6 +21017,38 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiExtentsOffset",
+    "description": null,
+    "english": "A Vector3 (x,y,z) defined in studs that will offset the gui from the extents of the 3d object it is rendering from.",
+    "translation": "Ein Vector3 (x,y,z), der in Noppen definiert ist und den Versatz der grafischen Benutzeroberfläche zu den Grenzen des 3D-Objekts angibt, von dem aus gerendert wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiStudsOffset",
+    "description": null,
+    "english": "A Vector3 (x,y,z) defined in studs that will offset the gui from the centroid of the 3d object it is rendering from",
+    "translation": "Ein Vector3 (x,y,z), der in Noppen definiert ist und den Versatz der grafischen Benutzeroberfläche zum Schwerpunkt des 3D-Objekts angibt, von dem aus gerendert wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BillboardGuiSizeOffset",
+    "description": null,
+    "english": "A Vector2 (x,y) defined in studs that will offset the gui size from it's current size.",
+    "translation": "Ein Vector2 (x,y), der in Noppen definiert ist und den Versatz der Größe der grafischen Benutzeroberfläche von ihrer aktuellen Größe angibt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SurfaceGuiAdornee",
+    "description": null,
+    "english": "The Object the surface gui uses as its base to render from.  Currently, the only way to set this property is thru a script, and must exist in the workspace.  This will only render if the object assigned derives from BasePart.",
+    "translation": "Das Objekt, das die Oberflächen-GUI als Basis zum Rendern verwendet. Derzeit kann diese Eigenschaft nur über ein Skript eingestellt werden und muss im Arbeitsbereich vorhanden sein. Es wird nur gerendert, wenn das zugewiesene Objekt von BasePart abgeleitet ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.SurfaceGuiActive",
     "description": null,
     "english": "If true, this GuiObject can fire mouse events and will pass them to any GuiObjects layered underneath, while false will do neither.",
@@ -20701,6 +21061,22 @@
     "description": null,
     "english": "If true, surface gui will render, otherwise rendering will be skipped.",
     "translation": "Wenn \"true\" rendert die Oberflächen-GUI, andernfalls wird das Rendering übersprungen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiBase2dAbsolutePosition",
+    "description": null,
+    "english": "A read-only Vector2 value that is the GuiObject's current position (x,y) in pixel space, from the top left corner of the GuiObject.",
+    "translation": "Ein schreibgeschützter Vector2-Wert, der die aktuelle Position (x,y) des GuiObject im Pixelraum angibt, ausgehend von der linken oberen Ecke des GuiObject.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiBase2dAbsoluteSize",
+    "description": null,
+    "english": "A read-only Vector2 value that is the GuiObject's current size (width, height) in pixel space.",
+    "translation": "Ein schreibgeschützter Vector2-Wert, der die aktuelle Größe des GuiObject (Breite, Höhe) im Pixelraum angibt.",
     "isDeprecated": false
   },
   {
@@ -20748,7 +21124,7 @@
     "key": "ReflectionMetadata.GuiObjectClipsDescendants",
     "description": null,
     "english": "If set to true, any descendants of this GuiObject will only render if contained within it's borders. If set to false, all descendants will render regardless of position.",
-    "translation": "Wenn \"true\" werden alle untergeordneten Objekte dieses GuiObjekts nur gerendert, wenn sie sich innerhalb der Grenzen des GuiObjekts befinden. Wenn \"false\" werden alle untergeordneten Objekte unabhängig von ihrer Position gerendert.",
+    "translation": "Wenn \"true\" werden alle untergeordneten Elemente dieses GuiObjekts nur gerendert, wenn sie sich innerhalb der Grenzen des GuiObjekts befinden. Wenn \"false\" werden alle untergeordneten Elemente unabhängig von ihrer Position gerendert.",
     "isDeprecated": false
   },
   {
@@ -20881,6 +21257,30 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScrollingFrameTopImage",
+    "description": null,
+    "english": "The \"Up\" image on the vertical scrollbar. Size of this is always ScrollBarThickness by ScrollBarThickness. This is also used as the \"left\" image on the horizontal scroll bar.",
+    "translation": "Das \"obere\" Bild auf der vertikalen Bildlaufleiste. Die Größe dieses Bildes ist immer ScrollBarThickness mal ScrollBarThickness. Dieses Bild wird auch als \"linkes\" Bild in der horizontalen Bildlaufleiste verwendet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScrollingFrameMidImage",
+    "description": null,
+    "english": "The \"Middle\" image on the vertical scrollbar. Size of this can vary in the y direction, but is always set at ScrollBarThickness in x direction. This is also used as the \"mid\" image on the horizontal scroll bar.",
+    "translation": "Das \"mittlere\" Bild auf der vertikalen Bildlaufleiste. Die Größe kann in y-Richtung variieren, ist aber immer auf ScrollBarThickness in x-Richtung eingestellt. Dieses Bild wird auch als \"mittleres\" Bild auf der horizontalen Bildlaufleiste verwendet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScrollingFrameBottomImage",
+    "description": null,
+    "english": "The \"Down\" image on the vertical scrollbar. Size of this is always ScrollBarThickness by ScrollBarThickness. This is also used as the \"right\" image on the horizontal scroll bar.",
+    "translation": "Das \"untere\" Bild auf der vertikalen Bildlaufleiste. Die Größe dieses Bildes ist immer ScrollBarThickness mal ScrollBarThickness. Dieses Bild wird auch als \"rechtes\" Bild in der horizontalen Bildlaufleiste verwendet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.TextLabelTextColor",
     "description": null,
     "english": "Deprecated. Use TextColor3 instead",
@@ -20937,6 +21337,62 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrame",
+    "description": null,
+    "english": "A GUI that can show 3D objects",
+    "translation": "Eine grafische Benutzeroberfläche, die 3D-Objekte anzeigen kann",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameCurrentCamera",
+    "description": null,
+    "english": "Current Camera of children objects",
+    "translation": "Aktuelle Kamera von untergeordneten Objekten",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameImageTransparency",
+    "description": null,
+    "english": "A number value that specifies how transparent the rendered image of the ViewportFrame is",
+    "translation": "Ein Zahlenwert, der angibt, wie transparent das gerenderte Bild des ViewportFrame ist",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameImageColor3",
+    "description": null,
+    "english": "The rendered image of the ViewportFrame will be multiplied by this color",
+    "translation": "Das gerenderte Bild des ViewportFrame wird mit dieser Farbe multipliziert",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameAmbient",
+    "description": null,
+    "english": "Changing this changes the color tint of all objects in the ViewportFrame.",
+    "translation": "Das Ändern dieses Wertes ändert die Farbtönung aller Objekte im ViewportFrame.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameLightColor",
+    "description": null,
+    "english": "Directional light color for objects in the ViewportFrame.",
+    "translation": "Richtungsweisende Lichtfarbe für Objekte im ViewportFrame.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ViewportFrameLightDirection",
+    "description": null,
+    "english": "Light direction. Value will be normalized. All values valid except (0,0,0).",
+    "translation": "Lichtrichtung. Der Wert wird normalisiert. Alle Werte gültig außer (0,0,0).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.SelectionPartLasso",
     "description": null,
     "english": "A visual line drawn representation between two part objects",
@@ -20965,6 +21421,46 @@
     "description": null,
     "english": "Represents when an event should be fired in an animation",
     "translation": "Stellt dar, wann ein Ereignis in einer Animation ausgelöst werden soll",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScaleTypeStretch",
+    "description": null,
+    "english": "Force the image to fill the available space.",
+    "translation": "Zwinge das Bild, den verfügbaren Platz auszufüllen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScaleTypeFit",
+    "description": null,
+    "english": "Size the image to the largest size that will fit in the available space while maintaining aspect ratio.",
+    "translation": "Vergrößere das Bild auf die maximale Größe, die in den verfügbaren Platz passt, ohne das Seitenverhältnis zu verändern.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ScaleTypeCrop",
+    "description": null,
+    "english": "Fill the available space, maintaining aspect ratio by cropping the edges if necessary.",
+    "translation": "Fülle den verfügbaren Platz und behalte dabei das Seitenverhältnis bei, indem die Ränder bei Bedarf zugeschnitten werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DataModelLCworkspace",
+    "description": null,
+    "english": "Deprecated. Use Workspace",
+    "translation": "Veraltet. Arbeitsbereich verwenden",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.WorldModel",
+    "description": null,
+    "english": "An object that contains a World. Supports rigid joints. Unlike Workspace, WorldModels do not support dynamics simulation.",
+    "translation": "Ein Objekt, das eine World enthält. Unterstützt starre Verbindungen. Im Gegensatz zu Workspace unterstützen WorldModels keine Dynamiksimulation.",
     "isDeprecated": false
   },
   {
@@ -21108,7 +21604,7 @@
     "key": "Modal.ConfirmDeletion",
     "description": null,
     "english": "Are you sure you want to delete the group \"{1}\"?",
-    "translation": "Möchtest du die Gruppe \"{1}\" wirklich löschen?",
+    "translation": "Möchtest du die Gruppe {1} wirklich löschen?",
     "isDeprecated": false
   },
   {
@@ -21220,7 +21716,7 @@
     "key": "Info.CanCollideWith",
     "description": null,
     "english": "\"{1}\" can collide with:",
-    "translation": "\"{1}\" kann kollidieren mit:",
+    "translation": "{1} kann kollidieren mit:",
     "isDeprecated": false
   },
   {
@@ -21652,7 +22148,7 @@
     "key": "Title.SelectARig",
     "description": null,
     "english": "Select a rig to animate or create a new rig by selecting Rig Builder under the Avatar tab",
-    "translation": "Wähle ein Rig für die Animation aus oder erstelle ein neues Rig, indem du Rig Builder unter dem Reiter Avatar auswählst",
+    "translation": "Wähle ein Rig für die Animation aus oder erstelle ein neues Rig, indem du Rig Builder unter dem Reiter \"Avatar\" auswählst",
     "isDeprecated": false
   },
   {
@@ -21860,7 +22356,7 @@
     "key": "Dialog.DeleteAllPrompt",
     "description": null,
     "english": "Do you want to delete all \"{1}\" from this animation?",
-    "translation": "Möchtest du alle \"{1}\" aus dieser Animation löschen?",
+    "translation": "Möchtest du alle {1} aus dieser Animation löschen?",
     "isDeprecated": false
   },
   {
@@ -21868,7 +22364,7 @@
     "key": "Dialog.RenameAllPrompt",
     "description": null,
     "english": "Do you want to change all \"{1}\" to \"{2}\"?",
-    "translation": "Möchtest du alle \"{1}\" zu \"{2}\" ändern?",
+    "translation": "Möchtest du alle {1} zu {2} ändern?",
     "isDeprecated": false
   },
   {
@@ -22004,7 +22500,7 @@
     "key": "Menu.Overwrite",
     "description": null,
     "english": "Do you want to overwrite existing animation \"{1}\"?",
-    "translation": "Möchtest du die vorhandene Animation \"{1}\" überschreiben?",
+    "translation": "Möchtest du die vorhandene Animation {1} überschreiben?",
     "isDeprecated": false
   },
   {
@@ -23573,6 +24069,30 @@
     "description": null,
     "english": "Learn more",
     "translation": "Mehr erfahren",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Nothing",
+    "description": null,
+    "english": "Nothing",
+    "translation": "Nichts",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Everything",
+    "description": null,
+    "english": "Everything",
+    "translation": "Alles",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.FilterEvents",
+    "description": null,
+    "english": "Filter Events by name",
+    "translation": "Ereignisse nach Namen filtern",
     "isDeprecated": false
   },
   {
@@ -26964,7 +27484,7 @@
     "key": "Callout.Description",
     "description": null,
     "english": "Choose Min, Center or Max mode with Align In and Relative To options, then click Align button to align selected objects. Use View Selector to check World X/Y/Z.",
-    "translation": "Wähle den Modus Min, Mitte oder Max mit den Optionen Ausrichten in und Relativ zu. Klicke dann auf Ausrichten, um die ausgewählten Objekte auszurichten. Verwende die Ansichtsauswahl, um Welt X/Y/Z zu überprüfen.",
+    "translation": "Wähle den Modus \"Min\", \"Mitte\" oder \"Max\" mit den Optionen \"Ausrichten in\" und \"Relativ zu\". Klicke dann auf \"Ausrichten\", um die ausgewählten Objekte auszurichten. Verwende die Ansichtsauswahl, um Welt X/Y/Z zu überprüfen.",
     "isDeprecated": false
   },
   {
@@ -27028,7 +27548,7 @@
     "key": "RobloxMainWindow.ChooseAPlaceInGameExplorer1",
     "description": null,
     "english": "Choose an instance as parent in game explorer to save %1 \n",
-    "translation": "Im Game Explorer eine Instanz als übergeordnet auswählen, um %1 zu speichern \n",
+    "translation": "Im Game Explorer eine Instanz als übergeordnet auswählen, um %1 zu speichern\n",
     "isDeprecated": false
   },
   {
@@ -28124,7 +28644,7 @@
     "key": "Select.LoseChanges",
     "description": null,
     "english": "You have unpublished changes on the previous item. You will lose those changes if you select this new item. Proceed?",
-    "translation": "Du hast unveröffentlichte Änderungen am vorherigen Element. Du wirst diese Änderungen verlieren, wenn du dieses neue Element auswählst. Fortfahren?",
+    "translation": "Du hast unveröffentlichte Änderungen am vorherigen Artikel. Du wirst diese Änderungen verlieren, wenn du diesen neuen Artikel auswählst. Fortfahren?",
     "isDeprecated": false
   },
   {
@@ -28260,7 +28780,7 @@
     "key": "EditAndPreview.Prompt",
     "description": null,
     "english": "Move, rotate, and scale accessory within the bounding box to adjust fitting. Once finished, click next to generate the asset.",
-    "translation": "Verschiebe, drehe und skaliere Accessoires innerhalb der Begrenzungsbox, um die Passform anzupassen. Wenn du fertig bist, klicke auf Weiter, um das Objekt zu generieren.",
+    "translation": "Verschiebe, drehe und skaliere Accessoires innerhalb der Begrenzungsbox, um die Passform anzupassen. Wenn du fertig bist, klicke auf \"Weiter\", um das Objekt zu generieren.",
     "isDeprecated": false
   },
   {
@@ -29892,7 +30412,7 @@
     "key": "AlertDialog.ImageLoadedErrorMessage",
     "description": null,
     "english": "Can't open the 9 Slice Editor because the image asset \"{contentId}\" hasn't loaded.",
-    "translation": "Kann den 9-Slice-Editor nicht öffnen, da die Bilddatei \"{contentId}\" nicht geladen wurde.",
+    "translation": "Kann den 9-Slice-Editor nicht öffnen, da die Bilddatei {contentId} nicht geladen wurde.",
     "isDeprecated": false
   },
   {
@@ -29932,7 +30452,7 @@
     "key": "SliceEditor.NoImageSelectedMessage",
     "description": null,
     "english": "No image selected. Select an ImageLabel or ImageButton to use the 9-Slice Editor.",
-    "translation": "Kein Bild ausgewählt. Wähle ein ImageLabel oder ImageButton um den 9-Slice-Editor zu verwenden.",
+    "translation": "Kein Bild ausgewählt. Wähle ein \"ImageLabel\" oder \"ImageButton\" um den 9-Slice-Editor zu verwenden.",
     "isDeprecated": false
   },
   {
@@ -30300,7 +30820,7 @@
     "key": "PropertiesTooltip.Dimensions",
     "description": null,
     "english": "The size of the given object in studs",
-    "translation": "Die Größe des gegebenen Objekts in Studs",
+    "translation": "Die Größe des gegebenen Objekts in Noppen",
     "isDeprecated": false
   },
   {
@@ -30316,7 +30836,7 @@
     "key": "PropertiesTooltip.FileDimensions",
     "description": null,
     "english": "The size of the extents of the file in studs",
-    "translation": "Die Größe des Ausmaßes der Datei in Studs",
+    "translation": "Die Größe des Ausmaßes der Datei in Noppen",
     "isDeprecated": false
   },
   {
@@ -31172,7 +31692,7 @@
     "key": "Statuses.UGCExceedUVSpaceWarning",
     "description": null,
     "english": "Mesh has UVs defined outside 0-1 space. This can lead to texturing discrepancies and violates UGC upload requirements.",
-    "translation": "Das Mesh hat UVs, die außerhalb des 0–1-Raums definiert sind. Dies kann zu Texturierungsabweichungen führen und verstößt gegen die UGC-Upload-Anforderungen.",
+    "translation": "Das Mesh hat UVs, die außerhalb von 0 bis 1 definiert sind. Dies kann zu Texturierungsabweichungen führen und verstößt gegen die UGC-Upload-Anforderungen.",
     "isDeprecated": false
   },
   {
@@ -31316,7 +31836,7 @@
     "key": "Statuses.FacsMax3CorrectivesError3",
     "description": null,
     "english": "Correctives can be for at most 3 control names.  Found {Size} for attribute \"{FrameAttr}\": \"{FacsControlName}\"",
-    "translation": "Korrektive können für höchstens 3 Kontrollnamen sein. {Size} gefunden für Attribut \"{FrameAttr}\": \"{FacsControlName}\"",
+    "translation": "Korrektive können für höchstens 3 Kontrollnamen sein. {Size} gefunden für Attribut {FrameAttr}: {FacsControlName}",
     "isDeprecated": false
   },
   {
@@ -31324,7 +31844,7 @@
     "key": "Statuses.FacsUnrecognizedFACSError2",
     "description": null,
     "english": "Unrecognized FACS control name \"{FacsControlName}\" for attribute \"{FrameAttr}\"",
-    "translation": "Nicht erkannter FACS-Kontrollname \"{FacsControlName}\" für Attribut \"{FrameAttr}\"",
+    "translation": "Nicht erkannter FACS-Kontrollname {FacsControlName} für Attribut {FrameAttr}",
     "isDeprecated": false
   },
   {
@@ -31332,7 +31852,7 @@
     "key": "Statuses.FacsInvalidCorrectiveError2",
     "description": null,
     "english": "Invalid corrective name \"{FacsControlName}\" for attribute\"{FrameAttr}\": Neutral cannot be part of a corrective",
-    "translation": "Ungültiger Korrektivname \"{FacsControlName}\" für Attribut \"{FrameAttr}\": Neutral kann nicht Teil eines Korrektivs sein",
+    "translation": "Ungültiger Korrektivname {FacsControlName} für Attribut {FrameAttr}: Neutral kann nicht Teil eines Korrektivs sein",
     "isDeprecated": false
   },
   {
@@ -31340,7 +31860,7 @@
     "key": "Statuses.FacsCorrectiveDupeError3",
     "description": null,
     "english": "Found duplicate FACS control name \"{FacsDupeName}\" for corrective \"{FacsControlName}\" in attribute \"{FrameAttr}\"",
-    "translation": "Doppelter FACS-Kontrollname \"{FacsDupeName}\" für Korrektiv \"{FacsControlName}\" in Attribut \"{FrameAttr}\" gefunden",
+    "translation": "Doppelter FACS-Kontrollname {FacsDupeName} für Korrektiv {FacsControlName} in Attribut {FrameAttr} gefunden",
     "isDeprecated": false
   },
   {
@@ -31364,7 +31884,7 @@
     "key": "Statuses.FacsFrameAttrNotStringError1",
     "description": null,
     "english": "\"{FrameAttr}\" attribute must be of type string",
-    "translation": "\"{FrameAttr}\"-Attribut muss vom Typ string sein",
+    "translation": "{FrameAttr}-Attribut muss vom Typ string sein",
     "isDeprecated": false
   },
   {
@@ -31372,7 +31892,7 @@
     "key": "Statuses.FacsUnparseableFrameNumberError1",
     "description": null,
     "english": "Couldn't parse the frame number in attribute \"{FrameAttr}\".",
-    "translation": "Die Bildnummer im Attribut \"{FrameAttr}\" konnte nicht analysiert werden.",
+    "translation": "Die Bildnummer im Attribut {FrameAttr} konnte nicht analysiert werden.",
     "isDeprecated": false
   },
   {
@@ -31380,7 +31900,7 @@
     "key": "Statuses.FacsEmptyAttributeWarning1",
     "description": null,
     "english": "Empty value found for attribute \"{FrameAttr}\".  Ignoring this.",
-    "translation": "Leerer Wert für Attribut \"{FrameAttr}\" gefunden. Dies wird ignoriert.",
+    "translation": "Leerer Wert für Attribut {FrameAttr} gefunden. Dies wird ignoriert.",
     "isDeprecated": false
   },
   {
@@ -31388,7 +31908,7 @@
     "key": "Statuses.FacsDupeControlError3",
     "description": null,
     "english": "Duplicate control name found: \"{FacsControlName}\" in frame {FrameNumber1} and frame {FrameNumber2}",
-    "translation": "Doppelter Kontrollename gefunden: \"{FacsControlName}\" im Bild {FrameNumber1} und Bild {FrameNumber2}",
+    "translation": "Doppelter Kontrollename gefunden: {FacsControlName} im Bild {FrameNumber1} und Bild {FrameNumber2}",
     "isDeprecated": false
   },
   {
@@ -31396,7 +31916,7 @@
     "key": "Statuses.FacsRootFaceJointExtraCharsError1",
     "description": null,
     "english": "\"{FacsControlName}\" must be exactly \"RootFaceJoint\" with no spaces or underscores.",
-    "translation": "\"{FacsControlName}\" muss genau \"RootFaceJoint\" sein, ohne Leerzeichen oder Unterstriche.",
+    "translation": "{FacsControlName} muss genau RootFaceJoint sein, ohne Leerzeichen oder Unterstriche.",
     "isDeprecated": false
   },
   {
@@ -31404,7 +31924,7 @@
     "key": "Statuses.FacsHasFramesNoRootFaceJointError1",
     "description": null,
     "english": "Found \"Frame#\" attributes in mesh \"{ParentNodeName}\" but no \"RootFaceJoint\" attribute.  No FACS mapping will be created for this mesh.",
-    "translation": "Es wurden \"Frame#\"-Attribute im Mesh \"{ParentNodeName}\" gefunden, aber kein \"RootFaceJoint\"-Attribut.  Für dieses Mesh wird keine FACS-Zuordnung erstellt.",
+    "translation": "Es wurden Frame#-Attribute im Mesh {ParentNodeName} gefunden, aber kein RootFaceJoint-Attribut.  Für dieses Mesh wird keine FACS-Zuordnung erstellt.",
     "isDeprecated": false
   },
   {
@@ -31412,7 +31932,7 @@
     "key": "Statuses.FacsNoAttributesError1",
     "description": null,
     "english": "\"{ParentNodeName}\" has no \"Frame#\" attributes that map FACS controls to animation frames.",
-    "translation": "\"{ParentNodeName}\" hat keine \"Frame#\"-Attribute, die FACS-Steuerelemente auf Animationsbilder abbilden.",
+    "translation": "{ParentNodeName} hat keine Frame#-Attribute, die FACS-Steuerelemente auf Animationsbilder abbilden.",
     "isDeprecated": false
   },
   {
@@ -31428,7 +31948,7 @@
     "key": "Statuses.FacsMissingSupportCorrectiveWarning2",
     "description": null,
     "english": "Found corrective \"{FacsControlName}\" but missing corrective \"{FacsControlName2}\" to support it.  This may cause odd deformations.",
-    "translation": "Korrektiv \"{FacsControlName}\" gefunden, aber es fehlt das Korrektiv \"{FacsControlName2}\", um es zu unterstützen. Dies kann zu seltsamen Verformungen führen.",
+    "translation": "Korrektiv {FacsControlName} gefunden, aber es fehlt das Korrektiv {FacsControlName2}, um es zu unterstützen. Dies kann zu seltsamen Verformungen führen.",
     "isDeprecated": false
   },
   {
@@ -31436,7 +31956,7 @@
     "key": "Statuses.FacsMissingBaseError2",
     "description": null,
     "english": "\"{FacsControlName}\" has not been specified. This is needed for corrective \"{FacsControlName2}\".",
-    "translation": "\"{FacsControlName}\" wurde nicht definiert. Dies wird für das Korrektiv \"{FacsControlName2}\" benötigt.",
+    "translation": "{FacsControlName} wurde nicht definiert. Dies wird für das Korrektiv {FacsControlName2} benötigt.",
     "isDeprecated": false
   },
   {
@@ -31444,7 +31964,7 @@
     "key": "Statuses.FacsMissingKeyFrameError2",
     "description": null,
     "english": "Animation has no frame {FrameNumber1} for \"{FacsControlName}\".",
-    "translation": "Animation hat kein Bild {FrameNumber1} für \"{FacsControlName}\".",
+    "translation": "Animation hat kein Bild {FrameNumber1} für {FacsControlName}.",
     "isDeprecated": false
   },
   {
@@ -31468,7 +31988,7 @@
     "key": "Statuses.FacsNoRootFaceJoint1",
     "description": null,
     "english": "No joint named \"{JointName}\" found as specified by extra attribute \"RootFaceJoint\".",
-    "translation": "Es wurde keine Verbindung mit dem Namen \"{JointName}\" gefunden, wie durch das Extra-Attribut \"RootFaceJoint\" angegeben.",
+    "translation": "Es wurde keine Verbindung mit dem Namen {JointName} gefunden, wie durch das Extra-Attribut RootFaceJoint angegeben.",
     "isDeprecated": false
   },
   {
@@ -31476,7 +31996,7 @@
     "key": "Statuses.FacsMultipleRootFaceJoints1",
     "description": null,
     "english": "Multiple joints named \"{JointName}\" were found as specified by extra attribute \"RootFaceJoint\".  Joint names must be unique.",
-    "translation": "Es wurden mehrere Verbindungen mit dem Namen \"{JointName}\" gefunden, wie im Extra-Attribut \"RootFaceJoint\" angegeben. Verbindungsnamen müssen eindeutig sein.",
+    "translation": "Es wurden mehrere Verbindungen mit dem Namen {JointName} gefunden, wie im Extra-Attribut RootFaceJoint angegeben. Verbindungsnamen müssen eindeutig sein.",
     "isDeprecated": false
   },
   {
@@ -31484,7 +32004,7 @@
     "key": "Statuses.FacsNoJointsErrors1",
     "description": null,
     "english": "No joints were found under \"{JointName}\".",
-    "translation": "Unter \"{JointName}\" wurden keine Verbindungen gefunden.",
+    "translation": "Unter {JointName} wurden keine Verbindungen gefunden.",
     "isDeprecated": false
   },
   {
@@ -31884,7 +32404,7 @@
     "key": "Statuses.FacsNoRootFaceJointError1",
     "description": null,
     "english": "No joint named \"{JointName}\" found as specified by extra attribute \"RootFaceJoint\".",
-    "translation": "Es wurde keine Verbindung mit dem Namen \"{JointName}\" gefunden, wie durch das Extra-Attribut \"RootFaceJoint\" angegeben.",
+    "translation": "Es wurde keine Verbindung mit dem Namen {JointName} gefunden, wie durch das Extra-Attribut RootFaceJoint angegeben.",
     "isDeprecated": false
   },
   {
@@ -31892,7 +32412,7 @@
     "key": "Statuses.FacsMultipleRootFaceJointsError1",
     "description": null,
     "english": "Multiple joints named \"{JointName}\" were found as specified by extra attribute \"RootFaceJoint\".  Joint names must be unique.",
-    "translation": "Es wurden mehrere Verbindungen mit dem Namen \"{JointName}\" gefunden, wie im Extra-Attribut \"RootFaceJoint\" angegeben. Verbindungsnamen müssen eindeutig sein.",
+    "translation": "Es wurden mehrere Verbindungen mit dem Namen {JointName} gefunden, wie im Extra-Attribut RootFaceJoint angegeben. Verbindungsnamen müssen eindeutig sein.",
     "isDeprecated": false
   },
   {
@@ -31900,7 +32420,7 @@
     "key": "Statuses.FacsNoJointsError1",
     "description": null,
     "english": "No joints were found under \"{JointName}\".",
-    "translation": "Unter \"{JointName}\" wurden keine Verbindungen gefunden.",
+    "translation": "Unter {JointName} wurden keine Verbindungen gefunden.",
     "isDeprecated": false
   },
   {
@@ -33852,7 +34372,7 @@
     "key": "MaterialAdditional.StudsPerTile",
     "description": null,
     "english": "Studs Per Tile",
-    "translation": "Studs pro Kachel",
+    "translation": "Noppen pro Kachel",
     "isDeprecated": false
   },
   {
@@ -33868,7 +34388,7 @@
     "key": "CreateDialog.ErrorStudsPerTile",
     "description": null,
     "english": "Studs Per Tile should be positive",
-    "translation": "Studs pro Kachel sollten positiv sein",
+    "translation": "Noppen pro Kachel sollten positiv sein",
     "isDeprecated": false
   },
   {
@@ -33876,7 +34396,7 @@
     "key": "CreateDialog.StudsPerTileVariant",
     "description": null,
     "english": "Studs Per Tile",
-    "translation": "Studs pro Kachel",
+    "translation": "Noppen pro Kachel",
     "isDeprecated": false
   },
   {
@@ -33996,7 +34516,7 @@
     "key": "MaterialTiling.StudsPerTile",
     "description": null,
     "english": "Studs Per Tile",
-    "translation": "Studs pro Kachel",
+    "translation": "Noppen pro Kachel",
     "isDeprecated": false
   },
   {
@@ -34620,7 +35140,7 @@
     "key": "Select.LoseChanges",
     "description": null,
     "english": "You have unpublished changes on the previous item. You will lose those changes if you select this new item. Proceed?",
-    "translation": "Du hast unveröffentlichte Änderungen am vorherigen Element. Du wirst diese Änderungen verlieren, wenn du dieses neue Element auswählst. Fortfahren?",
+    "translation": "Du hast unveröffentlichte Änderungen am vorherigen Artikel. Du wirst diese Änderungen verlieren, wenn du diesen neuen Artikel auswählst. Fortfahren?",
     "isDeprecated": false
   },
   {
@@ -35212,7 +35732,7 @@
     "key": "Transparency.OuterCage",
     "description": null,
     "english": "OuterCage",
-    "translation": "Äußerer Käfig",
+    "translation": "OuterCage",
     "isDeprecated": false
   },
   {
@@ -35220,7 +35740,7 @@
     "key": "Transparency.InnerCage",
     "description": null,
     "english": "InnerCage",
-    "translation": "Innerer Käfig",
+    "translation": "InnerCage",
     "isDeprecated": false
   },
   {
@@ -35252,7 +35772,7 @@
     "key": "Preview.Tooltip",
     "description": null,
     "english": "Click to wear item in Accessory Fitting Tool Preview!",
-    "translation": "Klicke, um den Gegenstand in der Vorschau des Accessoire-Anpassungs-Tools zu tragen!",
+    "translation": "Klicke, um den Artikel in der Vorschau des Accessoire-Anpassungs-Tools zu tragen!",
     "isDeprecated": false
   },
   {
@@ -36036,7 +36556,7 @@
     "key": "Description.SaveEnableTcCurrentEditors",
     "description": null,
     "english": "Team Create must be on to give access to your collaborators. Click Save to enable Team Create and edit with your friends.",
-    "translation": "Team Create muss aktiviert sein, um deinen Mitarbeiter:innen Zugriff zu gewähren. Klicke auf Speichern, um Team Create zu aktivieren und mit deinen Freund:innen zu bearbeiten.",
+    "translation": "Team Create muss aktiviert sein, um deinen Mitarbeiter:innen Zugriff zu gewähren. Klicke auf \"Speichern\", um Team Create zu aktivieren und mit deinen Freund:innen zu bearbeiten.",
     "isDeprecated": false
   },
   {
@@ -36844,7 +37364,7 @@
     "key": "InitialScanning.ScanPrompt",
     "description": null,
     "english": "Click Start Scan to begin scanning place for animations, scripts, and models that need to be converted. This may take some time.",
-    "translation": "Klicke auf Scan starten, um mit der Suche nach Animationen, Skripten und Modellen zu beginnen, die konvertiert werden müssen. Dies kann einige Zeit in Anspruch nehmen.",
+    "translation": "Klicke auf \"Scan starten\", um mit der Suche nach Animationen, Skripten und Modellen zu beginnen, die konvertiert werden müssen. Dies kann einige Zeit in Anspruch nehmen.",
     "isDeprecated": false
   },
   {
@@ -37476,7 +37996,7 @@
     "key": "Plugin.Info",
     "description": null,
     "english": "Discover Audio used in this place.<br/><br/>Any audio marked with a red cross should be replaced.<br/><br/>Select an asset to see a list of locations where it is used, and update each one to use a new asset id.<br/><br/>Select a location to highlight it in the Explorer window.",
-    "translation": "Entdecke die Audio-Objekte, die an diesem Ort verwendet werden.<br/><br/>Alle Audio-Objekte, die mit einem roten Kreuz markiert sind, sollten ersetzt werden.<br/><br/>Wähle ein Asset aus, um eine Liste der Orte zu sehen, an denen es verwendet wird, und aktualisiere jeden einzelnen, um eine neue Objekt-ID zu verwenden.<br/><br/>Wähle einen Ort aus, um ihn im Explorer-Fenster zu markieren.",
+    "translation": "Entdecke die Audio-Objekte, die an diesem Ort verwendet werden.<br/><br/>Alle Audio-Objekte, die mit einem roten Kreuz markiert sind, sollten ersetzt werden.<br/><br/>Wähle ein Objekt aus, um eine Liste der Orte zu sehen, an denen es verwendet wird, und aktualisiere jeden einzelnen, um eine neue Objekt-ID zu verwenden.<br/><br/>Wähle einen Ort aus, um ihn im Explorer-Fenster zu markieren.",
     "isDeprecated": false
   },
   {
@@ -38924,7 +39444,7 @@
     "key": "AvatarScreen.ErrorMultipleBodies",
     "description": null,
     "english": "Multiple meshes named _Geo. Either change your model to only have the main body named _Geo, or select the specific one you want.",
-    "translation": "Mehrere Meshes mit dem Namen _Geo. Ändere dein Modell entweder so, dass nur der Hauptkörper _Geo heißt, oder wähle das gewünschte aus.",
+    "translation": "Mehrere Meshes mit dem Namen \"_Geo\". Ändere dein Modell entweder so, dass nur der Hauptkörper \"_Geo\" heißt, oder wähle das gewünschte aus.",
     "isDeprecated": false
   },
   {
@@ -39195,7 +39715,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.CompletedQuestionnaire",
     "description": null,
-    "english": "Experience guidelines were updated",
+    "english": "Experience guidelines questionnaire was updated",
     "translation": "Erlebnisrichtlinien wurden aktualisiert",
     "isDeprecated": false
   },
@@ -39219,7 +39739,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.NotificationStringCreated",
     "description": null,
-    "english": "Notification String ({stringName}) was created",
+    "english": "Notification \"{stringName}\" was created",
     "translation": "Benachrichtigungsstring ({stringName}) wurde erstellt",
     "isDeprecated": false
   },
@@ -39227,7 +39747,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.NotificationStringDeleted",
     "description": null,
-    "english": "Notification String ({stringName}) was removed",
+    "english": "Notification \"{stringName}\" was removed",
     "translation": "Benachrichtigungsstring ({stringName}) wurde entfernt",
     "isDeprecated": false
   },
@@ -39235,7 +39755,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.NotificationStringUpdated",
     "description": null,
-    "english": "Notification String ({stringName}) was updated",
+    "english": "Notification \"{stringName}\" was updated",
     "translation": "Benachrichtigungsstring ({stringName}) wurde aktualisiert",
     "isDeprecated": false
   },
@@ -39323,7 +39843,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.ExperienceName",
     "description": null,
-    "english": "Name was changed to {newName} from {oldName}",
+    "english": "Experience name was changed from \"{oldName}\" to \"{newName}\"",
     "translation": "Der Name wurde von {oldName} zu {newName} geändert",
     "isDeprecated": false
   },
@@ -39779,7 +40299,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.MonetizationSettingsRequiresRobux",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
-    "english": "Payment setting (Requires Robux) was {action}",
+    "english": "Paid access setting (Requires Robux) was {action}",
     "translation": "Monetarisierungseinstellung (Erfordert Robux) wurde {action}",
     "isDeprecated": false
   },
@@ -40003,7 +40523,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlaceDownloadPermission",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
-    "english": "Download as a copy was {action}",
+    "english": "Place setting (Allow download as a copy) was {action}",
     "translation": "Als Kopie herunterladen wurde {action}",
     "isDeprecated": false
   },
@@ -40019,7 +40539,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlaceName",
     "description": null,
-    "english": "Name was changed to {newName} from {oldName}",
+    "english": "Place name was changed from \"{oldName}\" to \"{newName}\"",
     "translation": "Der Name wurde von {oldName} zu {newName} geändert",
     "isDeprecated": false
   },
@@ -40067,7 +40587,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlacePermissionsCreatePlaceAPI",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
-    "english": "Copying as a template using Create Place API was {action}",
+    "english": "Place setting (Allow copy as a template using Create Place API) was {action}",
     "translation": "Kopieren als Vorlage mit der Orterstellungs-API wurde {action}",
     "isDeprecated": false
   },
@@ -40075,7 +40595,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlacePermissionsSavePlaceAPI",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
-    "english": "Updating using Save Place API was {action}",
+    "english": "Place setting (Allow update using Save Place API) was {action}",
     "translation": "Das Aktualisieren mit der Ortsspeicherungs-API wurde {action}",
     "isDeprecated": false
   },
@@ -40131,7 +40651,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsUserAdded",
     "description": "{userName} refers to the name of the user\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)",
-    "english": "{userName} was added as {role}",
+    "english": "{userName} was invited as {role}",
     "translation": "{userName} wurde als {role} hinzugefügt",
     "isDeprecated": false
   },
@@ -40154,8 +40674,8 @@
   {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsGroupAdded",
-    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)\nExample: Admin in MyGroup was added as an editor",
-    "english": "{groupRole} in {groupName} was added as {role}",
+    "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)\nExample: Admin in MyGroup was invited as a player.",
+    "english": "{groupRole} in {groupName} was invited as {role}",
     "translation": "{groupRole} in {groupName} wurde als {role} hinzugefügt",
     "isDeprecated": false
   },
@@ -40219,7 +40739,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlaceAdded",
     "description": null,
-    "english": "{placeName} was added to the experience",
+    "english": "Place \"{placeName}\" was added to the experience",
     "translation": "{placeName} wurde dem Erlebnis hinzugefügt",
     "isDeprecated": false
   },
@@ -40227,7 +40747,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PlaceRemoved",
     "description": null,
-    "english": "{placeName} was removed from the experience",
+    "english": "Place \"{placeName}\" was removed from the experience",
     "translation": "{placeName} wurde vom Erlebnis entfernt",
     "isDeprecated": false
   },
@@ -40588,7 +41108,7 @@
     "key": "Editor.StudsPerTile",
     "description": null,
     "english": "Studs Per Tile",
-    "translation": "Studs pro Kachel",
+    "translation": "Noppen pro Kachel",
     "isDeprecated": false
   },
   {
@@ -40660,7 +41180,7 @@
     "key": "MaterialView.StudsPerTile",
     "description": null,
     "english": "Studs Per Tile",
-    "translation": "Studs pro Kachel",
+    "translation": "Noppen pro Kachel",
     "isDeprecated": false
   },
   {
@@ -40853,6 +41373,30 @@
     "description": null,
     "english": "Failed to set image. Please try again.",
     "translation": "Fehler beim Einstellen des Bildes. Bitte versuche es erneut.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Docking",
+    "key": "PlaceholerPanelText",
+    "description": "QtitanDocking: The text that will be displayed in placeholder panels",
+    "english": "Empty Docking Area",
+    "translation": "Leerer Dockingbereich",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Actions",
+    "key": "TBD",
+    "description": null,
+    "english": "TBD",
+    "translation": "TBD",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Actions",
+    "key": "ConnectionIndicator",
+    "description": null,
+    "english": "Connection Status",
+    "translation": "Verbindungsstatus",
     "isDeprecated": false
   }
 ]
