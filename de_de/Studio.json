@@ -1,5 +1,13 @@
 [
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidPasskeyCredential",
+    "description": "Login response error message, informing the user that the passkey credential they used to attempt sign in was invalid.",
+    "english": "Unable to sign in with this passkey.",
+    "translation": "Anmeldung mit diesem Passkey ist nicht möglich.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CommonUI.Controls",
     "key": "Action.Cancel",
     "description": null,
@@ -19969,6 +19977,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Trail",
+    "description": null,
+    "english": "Makes two attachments emit trail when moving",
+    "translation": "Erzeugt beim Bewegen von zwei Anhängen eine Spur",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.Beam",
     "description": null,
     "english": "Makes beam between two attachments",
@@ -19977,10 +19993,66 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ParticleEmitter",
+    "description": null,
+    "english": "A generic particle system.",
+    "translation": "Ein generisches Partikelsystem.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ParticleEmitterLightInfluence",
+    "description": null,
+    "english": "Specifies the amount of influence lighting has on the particle emmitter. A value of 0 is unlit, 1 is fully lit. Fractional values blend from unlit to lit.",
+    "translation": "Legt fest, wie stark sich die Beleuchtung auf den Partikelemitter auswirkt. Ein Wert von 0 ist unbeleuchtet, 1 ist vollständig beleuchtet. Bruchteile von Werten mischen sich von unbeleuchtet zu beleuchtet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Sparkles",
+    "description": null,
+    "english": "Makes the parent part or model object fantastic",
+    "translation": "Macht das übergeordnete Element oder Modellobjekt fantastisch",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Explosion",
+    "description": null,
+    "english": "Creates an Explosion! This can be used as a purely graphical effect, or can be made to damage objects.",
+    "translation": "Erzeugt eine Explosion! Diese kann als rein grafischer Effekt verwendet werden oder Objekte beschädigen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ExplosionBlastPressure",
+    "description": null,
+    "english": "How much force this Explosion exerts on objects within it's BlastRadius. Setting this to 0 creates a purely graphical effect. A larger number will cause Parts to fly away at higher velocities.",
+    "translation": "Wie viel Kraft diese Explosion auf Objekte innerhalb ihres BlastRadius ausübt. Wenn du den Wert 0 einstellst, entsteht ein rein grafischer Effekt. Ein größerer Wert bewirkt, dass die Parts mit höherer Geschwindigkeit wegfliegen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ExplosionBlastRadius",
+    "description": null,
+    "english": "How big the Explosion is. This is a circle starting from the center of the Explosion's Position, the larger this property the larger the circle of destruction.",
+    "translation": "Wie groß die Explosion ist. Dies ist ein Kreis, der vom Mittelpunkt der Explosionsposition ausgeht. Je größer diese Eigenschaft ist, desto größer ist der Kreis der Zerstörung.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.ExplosionPosition",
     "description": null,
     "english": "Where the Explosion occurs in absolute world coordinates.",
     "translation": "Wo die Explosion in absoluten Weltkoordinaten stattfindet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ExplosionExplosionType",
+    "description": null,
+    "english": "Defines the behavior of the Explosion. <a href='http://wiki.roblox.com/index.php/ExplosionType' target='_blank'>More info</a>",
+    "translation": "Bestimmt das Verhalten der Explosion. <a href='http://wiki.roblox.com/index.php/ExplosionType' target='_blank'>Mehr Informationen</a>",
     "isDeprecated": false
   },
   {
@@ -20033,10 +20105,170 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.VehicleSeat",
+    "description": null,
+    "english": "Automatically finds and powers hinge joints in an assembly.  Ignores motors.",
+    "translation": "Findet und aktiviert automatisch Scharnierverbindungen in einer Baugruppe. Ignoriert Motoren.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FlagCanBeDropped",
+    "description": null,
+    "english": "If someone is carrying this flag, this bool determines whether or not they can drop it and run.",
+    "translation": "Wenn Benutzer:innen diese Flagge tragen, bestimmt dieser Boolesche Wert, ob sie sie fallen lassen und rennen können oder nicht.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FlagTeamColor",
+    "description": null,
+    "english": "The Team this flag is for. Corresponds with the TeamColors in the Teams service.",
+    "translation": "Das Team, für das diese Flagge gilt. Entspricht den TeamColors im Dienst Teams.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Decal",
+    "description": null,
+    "english": "Describes a texture that is placed on one of the sides of the Part it is parented to.",
+    "translation": "Beschreibt eine Textur, die auf einer der Seiten des Part platziert wird, dem sie übergeordnet ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalFace",
+    "description": null,
+    "english": "Describes the face of the Part the decal will be applied to. <a href='http://wiki.roblox.com/index.php/NormalId' target='_blank'>More info</a>",
+    "translation": "Beschreibt die Seite des Part, auf die der Aufkleber aufgebracht wird. <a href='http://wiki.roblox.com/index.php/NormalId' target='_blank'>Mehr Informationen</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalShiny",
+    "description": null,
+    "english": "How much light will appear to reflect off of the decal.",
+    "translation": "Wie stark das Licht von dem Aufkleber reflektiert zu werden scheint.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalSpecular",
+    "description": null,
+    "english": "How light will react to the surface of the decal.",
+    "translation": "Wie das Licht auf die Oberfläche des Aufklebers reagiert.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalTransparency",
+    "description": null,
+    "english": "How visible the decal is.  1 is completely invisible, while 0 is completely opaque",
+    "translation": "Wie sichtbar der Aufkleber ist. 1 ist völlig unsichtbar, während 0 völlig undurchsichtig ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.JointInstanceActive",
     "description": null,
     "english": "Read-only boolean, true if the joint is active in world. Rigid joints may be inactive if they are redundant or form cycles.",
     "translation": "Schreibgeschützter Boolean, \"true\", wenn die Verbindung in der Welt aktiv ist. Starre Verbindungen können inaktiv sein, wenn sie redundant sind oder Zyklen bilden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntValue",
+    "description": null,
+    "english": "Stores a int value in it's Value member. Useful to share int information across multiple scripts.",
+    "translation": "Speichert einen int-Wert in seinem Value-Mitglied. Nützlich, um int-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.RayValue",
+    "description": null,
+    "english": "Stores a Ray value in it's Value member. Useful to share Ray information across multiple scripts.",
+    "translation": "Speichert einen Ray-Wert in seinem Value-Mitglied. Nützlich, um Ray-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValue",
+    "description": null,
+    "english": "Stores an int value in it's Value member.  Value is clamped to be in range of Min and MaxValue. Useful to share int information across multiple scripts.",
+    "translation": "Speichert einen int-Wert in seinem Value-Mitglied. Der Wert wird zwischen Min und MaxValue geklemmt. Nützlich, um int-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValueMaxValue",
+    "description": null,
+    "english": "The maximum we allow this Value to be set.  If Value is set higher than this, it automatically gets adjusted to MaxValue",
+    "translation": "Das Maximum, das wir für diesen Wert zulassen. Wenn \"Value\" höher als dieser Wert gesetzt wird, wird er automatisch an MaxValue angepasst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValueMinValue",
+    "description": null,
+    "english": "The minimum we allow this Value to be set.  If Value is set lower than this, it automatically gets adjusted to MinValue",
+    "translation": "Das Minimum, das wir für diesen Wert zulassen. Wenn \"Value\" niedriger als dieser Wert gesetzt wird, wird er automatisch an MinValue angepasst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValue",
+    "description": null,
+    "english": "Stores a double value in it's Value member.  Value is clamped to be in range of Min and MaxValue. Useful to share double information across multiple scripts.",
+    "translation": "Speichert einen Doppelwert in seinem Value-Mitglied. Der Wert wird zwischen Min und MaxValue geklemmt. Nützlich, um Doppel-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValueMaxValue",
+    "description": null,
+    "english": "The maximum we allow this Value to be set.  If Value is set higher than this, it automatically gets adjusted to MaxValue",
+    "translation": "Das Maximum, das wir für diesen Wert zulassen. Wenn \"Value\" höher als dieser Wert gesetzt wird, wird er automatisch an MaxValue angepasst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValueMinValue",
+    "description": null,
+    "english": "The minimum we allow this Value to be set.  If Value is set lower than this, it automatically gets adjusted to MinValue",
+    "translation": "Das Minimum, das wir für diesen Wert zulassen. Wenn \"Value\" niedriger als dieser Wert gesetzt wird, wird er automatisch an MinValue angepasst.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BoolValue",
+    "description": null,
+    "english": "Stores a boolean value in it's Value member. Useful to share boolean information across multiple scripts.",
+    "translation": "Speichert einen Booleschen Wert in seinem Value-Mitglied. Nützlich, um Boolesche Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWire",
+    "description": null,
+    "english": "Renders a thin cylinder than can be adorned with textures that 'flow' from one object to the next. Has basic pathing abilities and attempts to to not intersect anything. <a href='http://wiki.roblox.com/index.php/FloorWire_Guide' target='_blank'>More info</a>",
+    "translation": "Rendert einen dünnen Zylinder, der mit Texturen verziert werden kann, die von einem Objekt zum nächsten \"fließen\". Verfügt über grundlegende Pfadfähigkeiten und versucht, nichts zu überschneiden. <a href='http://wiki.roblox.com/index.php/FloorWire_Guide' target='_blank'>Mehr Informationen</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireCycleOffset",
+    "description": null,
+    "english": "Controls how the decals are positioned along the wire. <a href='http://wiki.roblox.com/index.php/CycleOffset' target='_blank'>More info</a>",
+    "translation": "Steuert, wie die Aufkleber entlang des Drahtes positioniert werden. <a href='http://wiki.roblox.com/index.php/CycleOffset' target='_blank'>Weitere Informationen</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireFrom",
+    "description": null,
+    "english": "The object the FloorWire 'emits' from",
+    "translation": "Das Objekt, von dem der FloorWire \"ausstrahlt\"",
     "isDeprecated": false
   },
   {
@@ -20049,10 +20281,74 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTexture",
+    "description": null,
+    "english": "The image we use to render the textures that flow from beginning to end of the FloorWire.",
+    "translation": "Das Bild, das wir zum Rendern der Texturen verwenden, die vom Anfang bis zum Ende des FloorWire fließen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTextureSize",
+    "description": null,
+    "english": "The size in studs of the Texture we use to flow from one object to the next.",
+    "translation": "Die Größe der Textur in Noppen, die wir verwenden, um von einem Objekt zum nächsten zu fließen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTo",
+    "description": null,
+    "english": "The object the FloorWire 'emits' to",
+    "translation": "Das Objekt, an das der FloorWire \"ausstrahlt\"",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireVelocity",
+    "description": null,
+    "english": "The rate of travel that the textures flow along the wire.",
+    "translation": "Die Geschwindigkeit, mit der die Texturen entlang des Drahtes fließen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.FloorWireWireRadius",
     "description": null,
     "english": "How thick the wire is.",
     "translation": "Wie dick der Draht ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CFrameValue",
+    "description": null,
+    "english": "Stores a CFrame value in it's Value member. Useful to share CFrame information across multiple scripts.",
+    "translation": "Speichert einen CFrame-Wert in seinem Value-Mitglied. Nützlich, um CFrame-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Color3Value",
+    "description": null,
+    "english": "Stores a Color3 value in it's Value member. Useful to share Color3 information across multiple scripts.",
+    "translation": "Speichert einen Color3-Wert in seinem Value-Mitglied. Nützlich, um Color3-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BrickColorValue",
+    "description": null,
+    "english": "Stores a BrickColor value in it's Value member. Useful to share BrickColor information across multiple scripts.",
+    "translation": "Speichert einen BrickColor-Wert in seinem Value-Mitglied. Nützlich, um BrickColor-Informationen über mehrere Skripte hinweg zu teilen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ValueBase",
+    "description": null,
+    "english": "The base class to all Value Objects.",
+    "translation": "Die Basisklasse für alle Value-Objekte.",
     "isDeprecated": false
   },
   {
@@ -20073,10 +20369,98 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.EchoSoundEffect",
+    "description": null,
+    "english": "An echo audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Echo-Effekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FlangeSoundEffect",
+    "description": null,
+    "english": "A Flanging audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Flanger-Effekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DistortionSoundEffect",
+    "description": null,
+    "english": "A Distortion audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Verzerrungseffekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PitchShiftSoundEffect",
+    "description": null,
+    "english": "A Pitch Shifting audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Pitch-Shifting-Effekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.ChorusSoundEffect",
     "description": null,
     "english": "A Chorus audio effect that can be applied to a Sound or SoundGroup.",
     "translation": "Ein Chorus-Audioeffekt, der auf einen Sound oder eine SoundGroup angewendet werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.TremoloSoundEffect",
+    "description": null,
+    "english": "A Tremolo audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Tremolo-Effekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ReverbSoundEffect",
+    "description": null,
+    "english": "A Reverb audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Hall-Effekt, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.EqualizerSoundEffect",
+    "description": null,
+    "english": "An Three-band Equalizer audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein 3-Band-Equalizer, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CompressorSoundEffect",
+    "description": null,
+    "english": "A Compressor audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Ein Kompressor, der auf einen Sound oder eine SoundGroup angewandt werden kann.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceAmbientReverb",
+    "description": null,
+    "english": "The ambient sound environment.  May not work when using hardware sound",
+    "translation": "Die Umgebungsgeräusch-Umgebung. Funktioniert möglicherweise nicht, wenn Hardware-Sound verwendet wird.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceDopplerScale",
+    "description": null,
+    "english": "The doppler scale is a general scaling factor for how much the pitch varies due to doppler shifting in 3D sound. Doppler is the pitch bending effect when a sound comes towards the listener or moves away from it, much like the effect you hear when a train goes past you with its horn sounding. With dopplerscale you can exaggerate or diminish the effect.",
+    "translation": "Die Doppler-Skala ist ein allgemeiner Skalierungsfaktor dafür, wie stark sich die Tonhöhe aufgrund der Doppler-Verschiebung im 3D-Sound verändert. Doppler ist der Tonhöhenverschiebungseffekt, wenn ein Geräusch auf den Hörer zukommt oder sich von ihm wegbewegt, ähnlich wie der Effekt, den du hörst, wenn ein Zug mit seiner Hupe an dir vorbeifährt. Mit der Doppler-Skala kannst du den Effekt verstärken oder abschwächen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceDistanceFactor",
+    "description": null,
+    "english": "the relative distance factor, compared to 1.0 meters.",
+    "translation": "der relative Entfernungsfaktor, im Vergleich zu 1 Meter.",
     "isDeprecated": false
   },
   {
@@ -20093,6 +20477,22 @@
     "description": null,
     "english": "When SortOrder is set to Custom, this lua function is used to determine the ordering of elements. Function should take two arguments (each will be an Instance child to compare), and return true if a comes before b, otherwise return false. In other words, use this function the same way you would use a table.sort function. The sorting should be deterministic, otherwise sort will fail and fall back to name order.",
     "translation": "Wenn SortOrder auf \"Custom\" gesetzt ist, wird diese Lua-Funktion verwendet, um die Reihenfolge der Elemente zu bestimmen. Die Funktion nimmt zwei Argumente entgegen (jedes ist eine untergeordnete Instanz, die verglichen werden soll) und gibt \"true\" zurück, wenn \"a\" vor \"b\" kommt, andernfalls \"false\". Mit anderen Worten: Verwende diese Funktion genauso wie eine table.sort-Funktion. Die Sortierung sollte deterministisch sein, sonst schlägt die Sortierung fehl und die Namensreihenfolge wird wiederhergestellt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutApplyLayout",
+    "description": null,
+    "english": "Forces a relayout of all elements. Useful when sort is set to Custom.",
+    "translation": "Erzwingt ein erneutes Ausrichten aller Elemente. Nützlich, wenn die Sortierung auf Custom eingestellt ist.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutSortOrder",
+    "description": null,
+    "english": "Determines how we decide which element to place next. Can be Name or Custom. If using Custom, make sure SetCustomSortFunction was called with an appropriate sort function.",
+    "translation": "Legt fest, wie wir entscheiden, welches Element als nächstes platziert wird. Kann Name oder Custom sein. Wenn du Custom verwendest, stelle sicher, dass SetCustomSortFunction mit einer geeigneten Sortierfunktion aufgerufen wurde.",
     "isDeprecated": false
   },
   {
@@ -20121,10 +20521,26 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIListLayout",
+    "description": null,
+    "english": "Sets the position of UI elements in a list. You can use a UIListLayout by parenting it to a GuiObject. The UIListLayout will then apply itself to all of its GuiObject siblings.",
+    "translation": "Legt die Position der Benutzeroberflächenelemente in einer Liste fest. Du kannst ein UIListLayout verwenden, indem du es einem GuiObject überordnest. Das UIListLayout wird dann auf alle seine gleichgeordneten GuiObject angewandt.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.UIListLayoutPadding",
     "description": null,
     "english": "Determines the amount of free space between each element. Can be set either using scale (Percentage of parent's size in the current direction) or offset (a static spacing value, similar to pixel size).",
     "translation": "Bestimmt den freien Platz zwischen den einzelnen Elementen. Kann entweder mit \"Skalierung\" (Prozentsatz der Größe des übergeordneten Elements in der aktuellen Richtung) oder \"Versatz\" (ein statischer Abstandswert, ähnlich der Pixelgröße) festgelegt werden.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIInlineLayout",
+    "description": null,
+    "english": "Sets the position of UI elements inline. You can use a UIInlineLayout by parenting it to a GuiObject. The UIListLayout will then apply itself to all of its GuiObject siblings.",
+    "translation": "Legt die Position der Benutzeroberflächenelemente in einer Zeile fest. Du kannst ein UIInlineLayout verwenden, indem du es einem GuiObject überordnest. Das UIListLayout wird dann auf alle seine gleichgeordneten GuiObject angewandt.",
     "isDeprecated": false
   },
   {
@@ -20213,6 +20629,14 @@
     "description": null,
     "english": "Fires when the tween either reaches PlaybackState Completed or Cancelled. PlaybackState of one of these types is passed as the first arg to the function listening to this event.",
     "translation": "Wird ausgelöst, wenn das Tween entweder PlaybackState Completed oder Cancelled erreicht. Der PlaybackState eines dieser Typen wird als erstes Argument an die Funktion übergeben, die auf dieses Ereignis wartet.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.GuiService",
+    "description": null,
+    "english": "The GuiService is a special service, which currently allows developers to control what GuiObject is currently being selected by the Gamepad Gui navigator, and allows clients to check if Roblox's main menu is currently open. This service has a lot of hidden members, which are mainly used internally by Roblox's CoreScripts.",
+    "translation": "Der GuiService ist ein spezieller Dienst, mit dem Entwickler:innen kontrollieren können, welches GuiObjekt gerade vom Gamepad-Gui-Navigator ausgewählt wird, und mit dem Clients überprüfen können, ob das Hauptmenü von Roblox gerade geöffnet ist. Dieser Dienst hat eine Menge versteckter Mitglieder, die hauptsächlich intern von den CoreScripts von Roblox verwendet werden.",
     "isDeprecated": false
   },
   {
@@ -21421,6 +21845,30 @@
     "description": null,
     "english": "Represents when an event should be fired in an animation",
     "translation": "Stellt dar, wann ein Ereignis in einer Animation ausgelöst werden soll",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PointLight",
+    "description": null,
+    "english": "Makes the parent part emit light in a spherical shape",
+    "translation": "Lässt das übergeordnete Element Licht in einer Kugelform ausstrahlen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpotLight",
+    "description": null,
+    "english": "Makes the parent part emit light in a conical shape",
+    "translation": "Lässt das übergeordnete Element Licht in einer kegelförmigen Form ausstrahlen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SurfaceLight",
+    "description": null,
+    "english": "Makes the parent part emit light in a frustum shape from rectangle defined by part",
+    "translation": "Lässt das übergeordnete Element Licht in einer Pyramidenstumpfform aus dem vom Element definierten Rechteck ausstrahlen",
     "isDeprecated": false
   },
   {
@@ -39716,7 +40164,7 @@
     "key": "Description.CompletedQuestionnaire",
     "description": null,
     "english": "Experience guidelines questionnaire was updated",
-    "translation": "Erlebnisrichtlinien wurden aktualisiert",
+    "translation": "Fragebogen für Erlebnisrichtlinien wurde aktualisiert",
     "isDeprecated": false
   },
   {
@@ -39844,7 +40292,7 @@
     "key": "Description.ExperienceName",
     "description": null,
     "english": "Experience name was changed from \"{oldName}\" to \"{newName}\"",
-    "translation": "Der Name wurde von {oldName} zu {newName} geändert",
+    "translation": "Erlebnisname wurde von \"{oldName}\" zu \"{newName}\" geändert",
     "isDeprecated": false
   },
   {
@@ -39852,7 +40300,7 @@
     "key": "Description.ExperienceDescription",
     "description": null,
     "english": "Experience description was updated",
-    "translation": "Beschreibung wurde aktualisiert",
+    "translation": "Erlebnisbeschreibung wurde aktualisiert",
     "isDeprecated": false
   },
   {
@@ -39876,7 +40324,7 @@
     "key": "Description.SecuritySettingsStudioAccessToAPI",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
     "english": "Studio access to API services was {action}",
-    "translation": "Sicherheitseinstellung (API-Zugriff) wurde {action}",
+    "translation": "Studio-Zugriff auf API-Dienste wurde {action}",
     "isDeprecated": false
   },
   {
@@ -40300,7 +40748,7 @@
     "key": "Description.MonetizationSettingsRequiresRobux",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
     "english": "Paid access setting (Requires Robux) was {action}",
-    "translation": "Monetarisierungseinstellung (Erfordert Robux) wurde {action}",
+    "translation": "Einstellung für zahlungspflichtigen Zugang (Erfordert Robux) wurde {action}",
     "isDeprecated": false
   },
   {
@@ -40524,7 +40972,7 @@
     "key": "Description.PlaceDownloadPermission",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
     "english": "Place setting (Allow download as a copy) was {action}",
-    "translation": "Als Kopie herunterladen wurde {action}",
+    "translation": "Ortseinstellung (Download als Kopie zulassen) wurde {action}",
     "isDeprecated": false
   },
   {
@@ -40540,7 +40988,7 @@
     "key": "Description.PlaceName",
     "description": null,
     "english": "Place name was changed from \"{oldName}\" to \"{newName}\"",
-    "translation": "Der Name wurde von {oldName} zu {newName} geändert",
+    "translation": "Ortsname wurde von \"{oldName}\" zu \"{newName}\" geändert",
     "isDeprecated": false
   },
   {
@@ -40548,7 +40996,7 @@
     "key": "Description.PlaceDescription",
     "description": null,
     "english": "Place description was updated",
-    "translation": "Beschreibung wurde aktualisiert",
+    "translation": "Ortsbeschreibung wurde aktualisiert",
     "isDeprecated": false
   },
   {
@@ -40651,7 +41099,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsUserAdded",
     "description": "{userName} refers to the name of the user\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)",
-    "english": "{userName} was invited as {role}",
+    "english": "{userName} was invited to {role}",
     "translation": "{userName} wurde als {role} hinzugefügt",
     "isDeprecated": false
   },
@@ -40675,7 +41123,7 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.PermissionsGroupAdded",
     "description": "{groupRole} refers to a role from the group: e.g (Admin, Owner, Member)\n{groupName} refers to the name of the group\n{role} can either be \"an editor\" (Description.RoleEditor) or \"a player\" (Description.RolePlayer)\nExample: Admin in MyGroup was invited as a player.",
-    "english": "{groupRole} in {groupName} was invited as {role}",
+    "english": "{groupRole} in {groupName} was invited to {role}",
     "translation": "{groupRole} in {groupName} wurde als {role} hinzugefügt",
     "isDeprecated": false
   },
