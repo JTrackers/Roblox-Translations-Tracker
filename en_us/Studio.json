@@ -30948,7 +30948,7 @@
     "key": "AudioPrivacyCheck.GrantPermissionUserFailure3",
     "description": "Appears in output window when permission granting fails. %1 is replaced by universe id, %2 is replaced by assed id and %3 is replaced by user id.",
     "english": "Failed to grant the Universe %1 permission to use asset %2. Your User ID %3 is not authorized to grant asset permissions.",
-    "translation": "Failed to grant the Universe %1 permission to use asset %2. Your User ID %3 is not authorized to grant asset permissions.",
+    "translation": "Your User ID %3 is not authorized to grant asset permissions. Failed to grant the Universe %1 permission to use asset %2.",
     "isDeprecated": false
   },
   {
@@ -37252,7 +37252,7 @@
     "key": "GenerativeAI.UpdatedWelcome",
     "description": null,
     "english": "What can I help you with today?\n- <b>Build scenes:</b> I will place assets from your inventory or marketplace into your experience.\n- <b>Add code:</b> I will write simple scripts and place them under the selected object.\n- <b>Explain code:</b> I will explain the highlighted code to you so you can learn more about what it does.\n- <b>Answer questions:</b> I will answer questions using out documentation and APIs to help you get unstuck.",
-    "translation": "What can I help you with today?\n- <b>Build scenes:</b> I will place assets from your inventory or marketplace into your experience.\n- <b>Add code:</b> I will write simple scripts and place them under the selected object.\n- <b>Explain code:</b> I will explain the highlighted code to you so you can learn more about what it does.\n- <b>Answer questions:</b> I will answer questions using our documentation and APIs to help you get unstuck.",
+    "translation": "How can I help you today? If you need ideas:\n- <b>Answering questions:</b> \"Can you explain...\" \n- <b>Build simple scenes:</b> \"Create a...\" \n- <b>Add code:</b> \"Write a script to...\" \n- <b>Explain code:</b> \"Explain the selected code.\" \n\n I'm still learning, so I may not be able to help with everything. You can always ask, though.",
     "isDeprecated": false
   },
   {
@@ -37413,6 +37413,22 @@
     "description": null,
     "english": "New docking logic that allows undocking of the 3D Viewport and addresses docking corruption glitches and issues. Please note when enabled, this will start with a new layout. Your old layout will be restored if you disable this feature.",
     "translation": "New docking logic that allows undocking of the 3D Viewport and addresses docking corruption glitches and issues. Please note when enabled, this will start with a new layout. Your old layout will be restored if you disable this feature.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.PromptLengthV1",
+    "description": null,
+    "english": "Looks like your message was too long. Try simplifying your request.",
+    "translation": "Looks like your message was too long. Try simplifying your request.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.PromptLengthV2",
+    "description": null,
+    "english": "Sorry, I don't understand. Try again with a shorter message.",
+    "translation": "Sorry, I don't understand. Try again with a shorter message.",
     "isDeprecated": false
   },
   {
@@ -91472,6 +91488,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.ConnectionLostOne",
+    "description": null,
+    "english": "Something isn't working. Try checking your internet connection.",
+    "translation": "Something isn't working. Try checking your internet connection.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.ConnectionLostTwo",
+    "description": null,
+    "english": "Hmm, something isn't right. Check your internet connection?",
+    "translation": "Hmm, something isn't right. Check your internet connection?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.QuotaErrorOne",
+    "description": null,
+    "english": "I wish I could help more today. I'm still in Beta, so everyone gets a daily limit of messages.",
+    "translation": "I wish I could help more today. I'm still in Beta, so everyone gets a daily limit of messages.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.QuotaErrorTwo",
+    "description": null,
+    "english": "Sorry, you've reached your messaging limit today. I'll be ready to help tomorrow!",
+    "translation": "Sorry, you've reached your messaging limit today. I'll be ready to help tomorrow!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.QuotaErrorThree",
+    "description": null,
+    "english": "You've reached your daily limit for this Beta feature. Come back tomorrow!",
+    "translation": "You've reached your daily limit for this Beta feature. Come back tomorrow!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.InappropriateRequestOne1",
+    "description": null,
+    "english": "I can only help with requests that follow Roblox Community Standards: {url}",
+    "translation": "I can only help with requests that follow Roblox Community Standards: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.InappropriateRequestTwo1",
+    "description": null,
+    "english": "Try asking me something else. All requests need to follow Roblox Community Standards: {url}",
+    "translation": "Try asking me something else. All requests need to follow Roblox Community Standards: {url}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.ServersAtMaxCapacity",
+    "description": null,
+    "english": "Reached maximum capacity. Please try again later.",
+    "translation": "Reached maximum capacity. Please try again later.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StreamingServiceDispatcherRegistry",
+    "key": "ErrorMessage.GeneralError",
+    "description": null,
+    "english": "Internal server error. Please try again later.",
+    "translation": "Internal server error. Please try again later.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Heading.ActivityFeed",
     "description": null,
@@ -92123,16 +92211,16 @@
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.MonetizationSettingsPlayableDevices",
     "description": "{playableDevices} includes a list of devices: e.g \"Console, Mobile, and Tablet\"",
-    "english": "Monetization Setting (Playable Devices) was changed to {playableDevices}",
-    "translation": "Monetization Setting (Playable Devices) was changed to {playableDevices}",
+    "english": "Playable Devices were changed to {playableDevices}",
+    "translation": "Playable Devices were changed to {playableDevices}",
     "isDeprecated": false
   },
   {
     "namespace": "CreatorDashboard.ActivityFeed",
     "key": "Description.MonetizationSettingsAllowPrivateServers",
     "description": "{action} can be \"enabled\" (Description.ActionEnabled) or \"disabled\" (Description.ActionDisabled)",
-    "english": "Monetization Setting (Allow Private Servers) was {action}",
-    "translation": "Monetization Setting (Allow Private Servers) was {action}",
+    "english": "Private Servers were {action}",
+    "translation": "Private Servers were {action}",
     "isDeprecated": false
   },
   {
@@ -93493,6 +93581,62 @@
     "description": null,
     "english": "Example Text!",
     "translation": "Example Text!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.Delete",
+    "description": null,
+    "english": "Delete",
+    "translation": "Delete",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.DeletePoint",
+    "description": null,
+    "english": "Delete Point",
+    "translation": "Delete Point",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.DeleteTangent",
+    "description": null,
+    "english": "Delete Tangent",
+    "translation": "Delete Tangent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.MoveTool",
+    "description": null,
+    "english": "Move Tool",
+    "translation": "Move Tool",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.AddPointTool",
+    "description": null,
+    "english": "Add Point",
+    "translation": "Add Point",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.AddTangentTool",
+    "description": null,
+    "english": "Add Tangent",
+    "translation": "Add Tangent",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.PathEditor",
+    "key": "Info.Done",
+    "description": null,
+    "english": "Done",
+    "translation": "Done",
     "isDeprecated": false
   }
 ]
