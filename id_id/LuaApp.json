@@ -904,6 +904,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.DeviceTypeLabel",
+    "description": null,
+    "english": "Device Type",
+    "translation": "Tipe Perangkat",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LocationLabel",
+    "description": null,
+    "english": "Location",
+    "translation": "Lokasi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.IPAddressLabel",
+    "description": null,
+    "english": "IP Address",
+    "translation": "Alamat IP",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.DateTimeLabel",
+    "description": null,
+    "english": "Date, Time",
+    "translation": "Tanggal, Waktu",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Authentication.ResetPassword",
     "key": "Response.ResetPasswordStarted",
     "description": null,
@@ -3180,7 +3212,7 @@
     "key": "Description.OnlyPersonalDevices",
     "description": null,
     "english": "For security, you should only set up passkeys on personal devices.",
-    "translation": "Untuk keamanan, sebaiknya atur kunci sandi hanya di perangkat pribadi.",
+    "translation": "Untuk keamanan, sebaiknya atur passkey hanya di perangkat pribadi.",
     "isDeprecated": false
   },
   {
@@ -3188,7 +3220,7 @@
     "key": "Description.NoSharedDevices",
     "description": null,
     "english": "Do not set up passkeys on devices you share with other people, like at school or in public.",
-    "translation": "Jangan mengatur kunci sandi di perangkat yang kamu gunakan bersama dengan orang lain, seperti perangkat sekolah atau publik.",
+    "translation": "Jangan mengatur passkey di perangkat yang kamu gunakan bersama dengan orang lain, seperti perangkat sekolah atau publik.",
     "isDeprecated": false
   },
   {
@@ -3268,7 +3300,7 @@
     "key": "Description.PasskeyMayStillAppear",
     "description": null,
     "english": "Until you remove this passkey from your browser, device, or password manager, you may still see it as an sign-in option.",
-    "translation": "Sampai kamu menghapus passkey ini dari browser, perangkat, atau manajer kata sandi kamu, kamu mungkin masih melihatnya sebagai opsi log in.",
+    "translation": "Hingga kamu menghapus passkey ini dari browser, perangkat, atau manajer kata sandi kamu, kamu mungkin masih melihatnya sebagai opsi log in.",
     "isDeprecated": false
   },
   {
@@ -5557,6 +5589,14 @@
     "description": "Appears on a confirmation message after a user successfully submits an abuse report",
     "english": "Report submitted and will be reviewed by our team shortly.",
     "translation": "Laporan sudah dikirim dan akan segera di-review oleh tim kami.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Catalog",
+    "key": "Title.ShoppingExperiencesWidget",
+    "description": "Title text displayed at the top of the \"Shopping Experiences\" widget in the marketplace.",
+    "english": "Shopping Experiences",
+    "translation": "Pengalaman Virtual Belanja",
     "isDeprecated": false
   },
   {
@@ -8739,7 +8779,7 @@
     "namespace": "Feature.Profile",
     "key": "Tooltip.QrScanner",
     "description": "Tooltip text for the QR Code Scanner entry point",
-    "english": "Scan your friends’ QR Code to quickly add them on Roblox.",
+    "english": "Scan your friend's QR Code to quickly add them on Roblox.",
     "translation": "Scan Kode QR temanmu untuk dengan cepat menambahkan mereka di Roblox.",
     "isDeprecated": false
   },
@@ -12565,6 +12605,134 @@
     "description": "Question asked to the user when purchasing a Look outfit with no cost.",
     "english": "Would you like to get this outfit for free?",
     "translation": "Kamu ingin mendapatkan pakaian ini secara gratis?",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseSuccessSingular",
+    "description": "Message when 1 item was purchased successfully.",
+    "english": "{numItems} Item Purchased!",
+    "translation": "[{numItems}] Item Dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseSuccessPlural",
+    "description": "Message when more than oen item was purchased successfully.",
+    "english": "{numItems} Items Purchased!",
+    "translation": "[{numItems}] Item Dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksPurchasePartialSuccess",
+    "description": "A heading for when only some of the selected items for purchase were successfully purchased, while the others failed.",
+    "english": "Partial Success",
+    "translation": "Berhasil Sebagian",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksPurchaseFailed",
+    "description": "A heading for when a set of one or more items failed to be purchased.",
+    "english": "Purchase Failed",
+    "translation": "Pembelian Gagal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericSS",
+    "description": null,
+    "english": "{numSuccessItems} item has been purchased, {numFailureItems} item failed",
+    "translation": "[{numSuccessItems}] item telah dibeli, [{numFailureItems}] item gagal dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericSP",
+    "description": null,
+    "english": "{numSuccessItems} item has been purchased, {numFailureItems} items failed",
+    "translation": "[{numSuccessItems}] item telah dibeli, [{numFailureItems}] item gagal dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericPS",
+    "description": null,
+    "english": "{numSuccessItems} items have been purchased, {numFailureItems} item failed",
+    "translation": "[{numSuccessItems}] item telah dibeli, [{numFailureItems}] item gagal dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericPP",
+    "description": null,
+    "english": "{numSuccessItems} items have been purchased, {numFailureItems} items failed",
+    "translation": "[{numSuccessItems}] item telah dibeli, [{numFailureItems}] item gagal dibeli",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedAlreadyOwnedSingular",
+    "description": null,
+    "english": "Item already owned",
+    "translation": "Item sudah dimiliki",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedAlreadyOwnedPlural",
+    "description": null,
+    "english": "Items already owned",
+    "translation": "Item sudah dimiliki",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedInsufficientFunds",
+    "description": null,
+    "english": "Insufficient Funds",
+    "translation": "Dana Tidak Cukup",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedNetworkError",
+    "description": null,
+    "english": "Network error, please try again later",
+    "translation": "Eror jaringan. Coba lagi nanti.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedTooManyRequests",
+    "description": null,
+    "english": "Too many requests, please try again in 5 minutes",
+    "translation": "Terlalu banyak permintaan. Coba lagi dalam 5 menit.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedTryAgainLater",
+    "description": null,
+    "english": "Please try again later",
+    "translation": "Coba lagi nanti",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksCharacterSaved",
+    "description": null,
+    "english": "Character Saved!",
+    "translation": "Karakter Disimpan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksCharacterSaved",
+    "description": null,
+    "english": "You can always edit your character name in customization",
+    "translation": "Kamu selalu dapat mengedit nama karaktermu di kustomisasi",
     "isDeprecated": false
   },
   {
