@@ -97,6 +97,14 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Label.Email",
+    "description": null,
+    "english": "Email",
+    "translation": "Email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Label.EmailNeedsVerification",
     "description": "modal header used for prompting user they need to verify their email in order to log in with it",
     "english": "Your email needs verification",
@@ -425,6 +433,46 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Action.SendCode",
+    "description": null,
+    "english": "Send Code",
+    "translation": "Gửi mã",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "Đã gửi mã",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.GetOneTimeCode",
+    "description": null,
+    "english": "Get One-Time Code",
+    "translation": "Nhận mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Label.EnterOneTimeCode",
+    "description": null,
+    "english": "Enter One-Time Code",
+    "translation": "Nhập mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.GetOneTimeCodeHelp",
+    "description": null,
+    "english": "Enter the email verified on your account to receive a one-time code.",
+    "translation": "Nhập email đã xác minh cho tài khoản của bạn để nhận mã một lần.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Description.EnterParentEmail",
     "description": null,
     "english": "Enter your parent's email address to receive a verification code.",
@@ -453,6 +501,14 @@
     "description": null,
     "english": "Only users 13 and older can log in with a one-time code.",
     "translation": "Chỉ người dùng từ 13 tuổi trở lên mới có thể đăng nhập bằng mã một lần.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.EnterOneTimeCodeHelpV2",
+    "description": null,
+    "english": "Enter the code we just sent to: {email}",
+    "translation": "Nhập mã chúng tôi vừa gửi đến: {email}",
     "isDeprecated": false
   },
   {
@@ -3324,7 +3380,7 @@
     "key": "Description.PasskeysUpsellDescription",
     "description": null,
     "english": "Log in with your fingerprint, face ID, or screen lock.",
-    "translation": "Đăng nhập bằng dấu vân tay, ID khuôn mặt, khóa màn hình hoặc khóa bảo mật.",
+    "translation": "Đăng nhập bằng dấu vân tay, face ID hoặc khóa màn hình.",
     "isDeprecated": false
   },
   {
@@ -6376,6 +6432,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Chat",
+    "key": "Heading.JoinPrivateServer",
+    "description": "Title text for join card for PrivateServer.",
+    "english": "Join Private Server",
+    "translation": "Tham Gia Máy Chủ Riêng Tư",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Favorites",
     "key": "Label.Favorite",
     "description": "Label for button to add game to favorites",
@@ -7741,6 +7805,14 @@
     "description": null,
     "english": "Subscriptions & Passes",
     "translation": "Đăng ký & Vé",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.GameDetails",
+    "key": "Action.CopyLink",
+    "description": "Option on experience details list to copy experience link to clipboard.",
+    "english": "Copy Link",
+    "translation": "Sao Chép Liên Kết",
     "isDeprecated": false
   },
   {
@@ -12608,6 +12680,134 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseSuccessSingular",
+    "description": "Message when 1 item was purchased successfully.",
+    "english": "{numItems} Item Purchased!",
+    "translation": "{numItems} Vật Phẩm Đã Được Mua!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseSuccessPlural",
+    "description": "Message when more than oen item was purchased successfully.",
+    "english": "{numItems} Items Purchased!",
+    "translation": "{numItems} Vật Phẩm Đã Được Mua!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksPurchasePartialSuccess",
+    "description": "A heading for when only some of the selected items for purchase were successfully purchased, while the others failed.",
+    "english": "Partial Success",
+    "translation": "Đã Mua Thành Công Một Vài Vật Phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksPurchaseFailed",
+    "description": "A heading for when a set of one or more items failed to be purchased.",
+    "english": "Purchase Failed",
+    "translation": "Không Mua Được Vật Phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericSS",
+    "description": null,
+    "english": "{numSuccessItems} item has been purchased, {numFailureItems} item failed",
+    "translation": "Mua thành công {numSuccessItems} vật phẩm, không mua được {numFailureItems} vật phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericSP",
+    "description": null,
+    "english": "{numSuccessItems} item has been purchased, {numFailureItems} items failed",
+    "translation": "Đã mua thành công {numSuccessItems} vật phẩm, không mua được {numFailureItems} vật phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericPS",
+    "description": null,
+    "english": "{numSuccessItems} items have been purchased, {numFailureItems} item failed",
+    "translation": "Đã mua thành công {numSuccessItems} vật phẩm, không mua được {numFailureItems} vật phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchasePartialSuccessGenericPP",
+    "description": null,
+    "english": "{numSuccessItems} items have been purchased, {numFailureItems} items failed",
+    "translation": "Đã mua thành công {numSuccessItems} vật phẩm, không mua được {numFailureItems} vật phẩm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedAlreadyOwnedSingular",
+    "description": null,
+    "english": "Item already owned",
+    "translation": "Vật phẩm đã được sở hữu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedAlreadyOwnedPlural",
+    "description": null,
+    "english": "Items already owned",
+    "translation": "Vật phẩm đã được sở hữu",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedInsufficientFunds",
+    "description": null,
+    "english": "Insufficient Funds",
+    "translation": "Số Dư Không Đủ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedNetworkError",
+    "description": null,
+    "english": "Network error, please try again later",
+    "translation": "Lỗi mạng, vui lòng thử lại sau",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedTooManyRequests",
+    "description": null,
+    "english": "Too many requests, please try again in 5 minutes",
+    "translation": "Đã yêu cầu nhiều lần, vui lòng thử lại sau 5 phút",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksPurchaseFailedTryAgainLater",
+    "description": null,
+    "english": "Please try again later",
+    "translation": "Vui lòng thử lại sau",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Heading.LooksCharacterSaved",
+    "description": null,
+    "english": "Character Saved!",
+    "translation": "Đã Lưu Nhân Vật!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Avatar",
+    "key": "Message.LooksCharacterSaved",
+    "description": null,
+    "english": "You can always edit your character name in customization",
+    "translation": "Bạn luôn có thể điều chỉnh tên nhân vật của mình trong phần tùy chỉnh",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.PromotedChannels",
     "key": "Message.SocialLinkoffPlatformModalTitle",
     "description": "A message displayed to users after they click a link that takes them to a different website (like twitter or amazon etc)",
@@ -12901,6 +13101,38 @@
     "description": "This text will go in the modal that pops up prompting users to let their friends find them but only for non GDPR countries.",
     "english": "Let your friends find you by your phone number.",
     "translation": "Để bạn bè tìm bạn bằng số điện thoại của bạn.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "Heading.ExploreWithFriends",
+    "description": null,
+    "english": "Explore With Friends",
+    "translation": "Khám Phá Với Bạn Bè",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "Description.ExploreWithFriends",
+    "description": null,
+    "english": "Join your next experience with someone you know",
+    "translation": "Tham gia trải nghiệm tiếp theo cùng người quen",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "Action.FindFriends",
+    "description": null,
+    "english": "Find Friends",
+    "translation": "Tìm Bạn Bè",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "Action.SyncContacts",
+    "description": null,
+    "english": "Sync Contacts",
+    "translation": "Đồng Bộ Danh Bạ",
     "isDeprecated": false
   },
   {
@@ -21929,10 +22161,58 @@
   },
   {
     "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.LearnMoreOneTimeCode",
+    "description": null,
+    "english": "Learn more about One-Time Code",
+    "translation": "Tìm hiểu thêm về Mã một lần",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmail",
+    "description": null,
+    "english": "Change email",
+    "translation": "Đổi email",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.Resend",
+    "description": null,
+    "english": "Resend",
+    "translation": "Gửi lại",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.CodeSent",
+    "description": null,
+    "english": "Code Sent",
+    "translation": "Đã gửi mã",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
     "key": "Action.Continue",
     "description": null,
     "english": "Continue",
     "translation": "Tiếp tục",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Label.SixDigitCode",
+    "description": "Placeholder for 6-digit code field",
+    "english": "6-Digit Code",
+    "translation": "Mã 6 chữ số",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.DidntReceiveCode",
+    "description": null,
+    "english": "Didn't receive code? Click here",
+    "translation": "Không nhận được mã? Nhấp vào đây",
     "isDeprecated": false
   },
   {
@@ -22404,7 +22684,7 @@
     "key": "Description.ParentLogoutConfirmation",
     "description": null,
     "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account with parent privileges",
-    "translation": "Bạn sẽ cần đăng xuất các tài khoản Roblox khác của mình trên thiết bị này trước khi thêm tài khoản mới với đặc quyền phụ huynh",
+    "translation": "Bạn sẽ cần đăng xuất khỏi các tài khoản Roblox khác của mình trên thiết bị này trước khi thêm tài khoản mới với đặc quyền của phụ huynh",
     "isDeprecated": false
   },
   {
@@ -22484,7 +22764,7 @@
     "key": "Label.NothingHereYet",
     "description": "A label shown when the user does not have any captures in their gallery.",
     "english": "Nothing here... yet. Take your first captures then return to review, and share with your friends.",
-    "translation": "Chưa có gì ở đây. Hãy chụp ảnh màn hình/quay video màn hình đầu tiên, rồi quay lại để xem và chia sẻ với bạn bè của bạn.",
+    "translation": "Chưa có gì ở đây. Hãy chụp ảnh màn hình/quay video màn hình đầu tiên, rồi quay lại để xem lại và chia sẻ với bạn bè của bạn.",
     "isDeprecated": false
   },
   {
@@ -23956,7 +24236,7 @@
     "key": "Label.Friends",
     "description": "Header to show all friends in the phonebook",
     "english": "Friends",
-    "translation": "Bạn Bè",
+    "translation": "Bạn bè",
     "isDeprecated": false
   },
   {
@@ -23988,7 +24268,7 @@
     "key": "Error.Description.FriendBusy",
     "description": null,
     "english": "{calleeCombinedName} is currently busy and can't receive your call right now. Please try again later.",
-    "translation": "{calleeCombinedName} hiện đang bận và không thể nhận cuộc gọi của bạn ngay bây giờ. Vui lòng gọi lại sau.",
+    "translation": "{calleeCombinedName} hiện đang bận và không thể nhận cuộc gọi của bạn ngay bây giờ. Vui lòng thử lại sau.",
     "isDeprecated": false
   },
   {
