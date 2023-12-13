@@ -577,6 +577,22 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Heading.LoginRobloxAccountSwitching",
+    "description": "Login page when there's already a user",
+    "english": "Login To Existing Account",
+    "translation": "Log In ke Akun yang Sudah Ada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.ConfirmSignUp",
+    "description": "Confirmation modal title when users trying to sign up and switch to an U13 account.",
+    "english": "Confirm Sign Up",
+    "translation": "Konfirmasi Pendaftaran",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Lable.LinkAccount",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
@@ -597,6 +613,22 @@
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "Akun Roblox kamu akan terhubung dengan akunmu di {platform}. Saat kamu bergabung lagi nanti, akun kamu akan log in secara otomatis. Kamu dapat memutuskan hubungan akun dari Pengaturan kapan saja. Mungkin akan ada jeda waktu sebelum kamu dapat menghubungkan dengan akun baru lagi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogoutFirst",
+    "description": "Message shown on login form to tell users they must logout first in order to login to another account after they reach account switching limit.",
+    "english": "You must log out of an account first.",
+    "translation": "Akun kamu harus log out terlebih dahulu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "Akun Kamu Sudah Logout",
     "isDeprecated": false
   },
   {
@@ -23093,6 +23125,166 @@
     "description": "Settings button text",
     "english": "Settings",
     "translation": "Pengaturan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.SwitchAccount",
+    "description": "Account switching modal header.",
+    "english": "Switch Accounts",
+    "translation": "Beralih Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.AddAccount",
+    "description": "Button to add account from account switching modal.",
+    "english": "Add Account",
+    "translation": "Tambahkan Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddAccountWithoutLoggingOut",
+    "description": "Helper text for account switching modal.",
+    "english": "You can add a new account without logging out.",
+    "translation": "Kamu dapat menambahkan akun baru tanpa log out.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.LogoutAllAccounts",
+    "description": "Button for triggering logout on all logged in accounts.",
+    "english": "Log Out of All Accounts",
+    "translation": "Log Out dari Semua Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddOrSwitchAccount",
+    "description": "Helper text for account switching modal.",
+    "english": "You can switch to another account or add a new account without logging out.",
+    "translation": "Kamu dapat beralih ke akun yang lain atau menambahkan akun baru tanpa log out.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountLimit",
+    "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
+    "english": "To add another account, you’ll first need to log out of one.",
+    "translation": "Untuk menambahkan akun lain, kamu harus log out dari salah satu akun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AccountLimitReached",
+    "description": "Message shown on the error modal on login and signup page telling users cannot add more account before logging out.",
+    "english": "You’ve added 5 accounts. To add another account, you’ll first need to log out of one.",
+    "translation": "Kamu telah menambahkan 5 akun. Untuk menambahkan akun lain, kamu harus log out dari salah satu akun.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AccountLimitReached",
+    "description": "Heading of switcher account modal or error modal when user is trying to add account while the account limit has reached and user must logout first before adding more account.",
+    "english": "Account Limit Reached",
+    "translation": "Batas Akun Tercapai",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Add",
+    "description": "Button on switcher modal to start add account flow.",
+    "english": "Add",
+    "translation": "Tambahkan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutAllBody",
+    "description": "Describing what happens if a user confirms to logout of all accounts for Account Switching",
+    "english": "To protect your account security, you will be logged out of all the accounts. You may log back in at any time.",
+    "translation": "Untuk melindungi keamanan akunmu, kamu akan log out dari semua akun. Kamu dapat log in kembali kapan saja.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "Log Out dari Semua Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.LogoutSuccessful",
+    "description": "Heading on account switcher modal that is shown when the user has logged out",
+    "english": "Logout Successful",
+    "translation": "Log Out Berhasil",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.LoggedOutAddOrSwitchAccount",
+    "description": "Helper text for logged-out account switcher",
+    "english": "Switch to another account, or add a new account.",
+    "translation": "Beralih ke akun lain atau tambahkan akun baru.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "Kamu Sudah Logout",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.ChooseAccountToUse",
+    "description": "Helper text for account switching modal.",
+    "english": "Choose a new account to use",
+    "translation": "Pilih akun baru untuk digunakan",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AddAccount",
+    "description": "Heading text for a login form to add an account to the account switcher",
+    "english": "Add Account",
+    "translation": "Tambahkan Akun",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountSwitchingNotWorking",
+    "description": "Error modal when account switcher service is down.",
+    "english": "Account switching is not working. Try again later",
+    "translation": "Peralihan akun tidak berfungsi. Coba lagi nanti",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.AccountSwitchingUnavailable",
+    "description": "Header of error modal when account switcher cannot be performed.",
+    "english": "Account switching unavailable",
+    "translation": "Peralihan akun tidak tersedia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.InvalidAccountSwitch",
+    "description": "Body of error modal to show when user switched to an account with invalid cookie.",
+    "english": "This account cannot be switched to. Try log in directly.",
+    "translation": "Akun ini tidak dapat dialihkan. Coba log in secara langsung.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account",
+    "translation": "Kamu harus log out dari akun Roblox kamu yang lain di perangkat ini sebelum menambahkan akun baru",
     "isDeprecated": false
   },
   {

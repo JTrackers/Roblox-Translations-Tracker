@@ -577,6 +577,22 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Heading.LoginRobloxAccountSwitching",
+    "description": "Login page when there's already a user",
+    "english": "Login To Existing Account",
+    "translation": "Đăng nhập vào tài khoản hiện có",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.ConfirmSignUp",
+    "description": "Confirmation modal title when users trying to sign up and switch to an U13 account.",
+    "english": "Confirm Sign Up",
+    "translation": "Xác nhận đăng ký",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Lable.LinkAccount",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
@@ -597,6 +613,22 @@
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "Tài khoản Roblox của bạn sẽ được liên kết với tài khoản {platform} của bạn, và lần sau bạn sẽ được đăng nhập tự động! Bạn có thể hủy liên kết tại bất kỳ thời điểm nào tại phần Cài đặt. Có thể sẽ có thời gian chờ trước khi có thể liên kết với một tài khoản mới.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogoutFirst",
+    "description": "Message shown on login form to tell users they must logout first in order to login to another account after they reach account switching limit.",
+    "english": "You must log out of an account first.",
+    "translation": "Bạn phải đăng xuất khỏi một tài khoản trước.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "Bạn đã đăng xuất",
     "isDeprecated": false
   },
   {
@@ -23061,6 +23093,166 @@
     "description": "Settings button text",
     "english": "Settings",
     "translation": "Cài Đặt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.SwitchAccount",
+    "description": "Account switching modal header.",
+    "english": "Switch Accounts",
+    "translation": "Chuyển Đổi Tài Khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.AddAccount",
+    "description": "Button to add account from account switching modal.",
+    "english": "Add Account",
+    "translation": "Thêm tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddAccountWithoutLoggingOut",
+    "description": "Helper text for account switching modal.",
+    "english": "You can add a new account without logging out.",
+    "translation": "Bạn có thể thêm một tài khoản mới mà không cần đăng xuất.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.LogoutAllAccounts",
+    "description": "Button for triggering logout on all logged in accounts.",
+    "english": "Log Out of All Accounts",
+    "translation": "Thoát khỏi tất cả các tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddOrSwitchAccount",
+    "description": "Helper text for account switching modal.",
+    "english": "You can switch to another account or add a new account without logging out.",
+    "translation": "Bạn có thể chuyển sang một tài khoản khác hoặc thêm một tài khoản mới mà không cần đăng xuất.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountLimit",
+    "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
+    "english": "To add another account, you’ll first need to log out of one.",
+    "translation": "Để thêm một tài khoản khác, trước tiên bạn sẽ cần thoát khỏi một tài khoản.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AccountLimitReached",
+    "description": "Message shown on the error modal on login and signup page telling users cannot add more account before logging out.",
+    "english": "You’ve added 5 accounts. To add another account, you’ll first need to log out of one.",
+    "translation": "Bạn đã thêm 5 tài khoản. Để thêm một tài khoản khác, trước tiên bạn cần thoát khỏi một tài khoản.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AccountLimitReached",
+    "description": "Heading of switcher account modal or error modal when user is trying to add account while the account limit has reached and user must logout first before adding more account.",
+    "english": "Account Limit Reached",
+    "translation": "Đã đạt đến giới hạn tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Add",
+    "description": "Button on switcher modal to start add account flow.",
+    "english": "Add",
+    "translation": "Thêm",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutAllBody",
+    "description": "Describing what happens if a user confirms to logout of all accounts for Account Switching",
+    "english": "To protect your account security, you will be logged out of all the accounts. You may log back in at any time.",
+    "translation": "Để bảo vệ tính an toàn của tài khoản của bạn, bạn sẽ được đăng xuất khỏi tất cả các tài khoản. Bạn có thể đăng nhập lại bất kỳ lúc nào.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "Thoát khỏi tất cả các tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.LogoutSuccessful",
+    "description": "Heading on account switcher modal that is shown when the user has logged out",
+    "english": "Logout Successful",
+    "translation": "Logout thành công",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.LoggedOutAddOrSwitchAccount",
+    "description": "Helper text for logged-out account switcher",
+    "english": "Switch to another account, or add a new account.",
+    "translation": "Chuyển sang tài khoản khác, hoặc thêm một tài khoản mới.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "Bạn đã đăng xuất",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.ChooseAccountToUse",
+    "description": "Helper text for account switching modal.",
+    "english": "Choose a new account to use",
+    "translation": "Chọn một tài khoản mới để sử dụng",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AddAccount",
+    "description": "Heading text for a login form to add an account to the account switcher",
+    "english": "Add Account",
+    "translation": "Thêm tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountSwitchingNotWorking",
+    "description": "Error modal when account switcher service is down.",
+    "english": "Account switching is not working. Try again later",
+    "translation": "Chuyển đổi tài khoản không hoạt động. Hãy thử lại sau",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.AccountSwitchingUnavailable",
+    "description": "Header of error modal when account switcher cannot be performed.",
+    "english": "Account switching unavailable",
+    "translation": "Không thể chuyển đổi tài khoản",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.InvalidAccountSwitch",
+    "description": "Body of error modal to show when user switched to an account with invalid cookie.",
+    "english": "This account cannot be switched to. Try log in directly.",
+    "translation": "Không thể chuyển sang tài khoản này. Hãy thử đăng nhập trực tiếp.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account",
+    "translation": "Bạn sẽ cần đăng xuất khỏi các tài khoản Roblox khác trên thiết bị này trước khi thêm tài khoản mới",
     "isDeprecated": false
   },
   {

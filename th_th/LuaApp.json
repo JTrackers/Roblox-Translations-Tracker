@@ -577,6 +577,22 @@
   },
   {
     "namespace": "Authentication.Login",
+    "key": "Heading.LoginRobloxAccountSwitching",
+    "description": "Login page when there's already a user",
+    "english": "Login To Existing Account",
+    "translation": "ลงชื่อเข้าใช้บัญชีที่มีอยู่แล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.ConfirmSignUp",
+    "description": "Confirmation modal title when users trying to sign up and switch to an U13 account.",
+    "english": "Confirm Sign Up",
+    "translation": "ยืนยันการลงทะเบียน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
     "key": "Lable.LinkAccount",
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your {platform} account, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
@@ -597,6 +613,22 @@
     "description": "Warning on the login screen explaining how account linking and unlinking works for 10ft UI",
     "english": "Your Roblox account will be linked to your account on {platform}, and the next time you join, you will be logged in automatically! You can unlink from the Settings screen at any time. There may be a cool down before being able to link to a new account.",
     "translation": "บัญชี Roblox ของคุณจะเชื่อมต่อกับบัญชีบน {platform} ของคุณ เมื่อเข้าใช้ครั้งต่อไป คุณจะได้รับการลงชื่อเข้าใช้ให้โดยอัตโนมัติ! คุณสามารถเลิกเชื่อมต่อได้ตลอดเวลาที่หน้าจอการตั้งค่า อาจมีช่วงเวลาคูลดาวน์ก่อนที่จะสามารถเชื่อมต่อกับบัญชีใหม่ได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.LogoutFirst",
+    "description": "Message shown on login form to tell users they must logout first in order to login to another account after they reach account switching limit.",
+    "english": "You must log out of an account first.",
+    "translation": "คุณต้องลงชื่อออกจากบัญชีหนึ่งก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "คุณลงชื่อออกแล้ว",
     "isDeprecated": false
   },
   {
@@ -22989,6 +23021,166 @@
     "description": "Movement description body 4",
     "english": "Please use your controller to enter and stand within the designated white circle area.",
     "translation": "โปรดใช้คอนโทรลเลอร์ของคุณเพื่อเข้าใช้และยืนอยู่ภายในพื้นที่วงกลมสีขาวที่กำหนด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.SwitchAccount",
+    "description": "Account switching modal header.",
+    "english": "Switch Accounts",
+    "translation": "สลับบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.AddAccount",
+    "description": "Button to add account from account switching modal.",
+    "english": "Add Account",
+    "translation": "เพิ่มบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddAccountWithoutLoggingOut",
+    "description": "Helper text for account switching modal.",
+    "english": "You can add a new account without logging out.",
+    "translation": "คุณสามารถเพิ่มบัญชีใหม่ได้โดยไม่ต้องลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.LogoutAllAccounts",
+    "description": "Button for triggering logout on all logged in accounts.",
+    "english": "Log Out of All Accounts",
+    "translation": "ลงชื่อออกจากบัญชีทั้งหมด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AddOrSwitchAccount",
+    "description": "Helper text for account switching modal.",
+    "english": "You can switch to another account or add a new account without logging out.",
+    "translation": "คุณสามารถสลับไปยังบัญชีอื่นหรือเพิ่มบัญชีใหม่ได้โดยไม่ต้องลงชื่อออก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountLimit",
+    "description": "Message shown on the Account Switcher modal telling user they cannot add more accounts.",
+    "english": "To add another account, you’ll first need to log out of one.",
+    "translation": "หากต้องการเพิ่มบัญชีอื่น คุณจะต้องลงชื่อออกจากอย่างน้อยหนึ่งบัญชีก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AccountLimitReached",
+    "description": "Message shown on the error modal on login and signup page telling users cannot add more account before logging out.",
+    "english": "You’ve added 5 accounts. To add another account, you’ll first need to log out of one.",
+    "translation": "คุณได้เพิ่มบัญชีไป 5 บัญชีแล้ว หากต้องการเพิ่มบัญชีอื่น คุณจะต้องลงชื่อออกจากอย่างน้อยหนึ่งบัญชีก่อน",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AccountLimitReached",
+    "description": "Heading of switcher account modal or error modal when user is trying to add account while the account limit has reached and user must logout first before adding more account.",
+    "english": "Account Limit Reached",
+    "translation": "มีบัญชีถึงจำนวนสูงสุดแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.Add",
+    "description": "Button on switcher modal to start add account flow.",
+    "english": "Add",
+    "translation": "เพิ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutAllBody",
+    "description": "Describing what happens if a user confirms to logout of all accounts for Account Switching",
+    "english": "To protect your account security, you will be logged out of all the accounts. You may log back in at any time.",
+    "translation": "เพื่อปกป้องบัญชีของคุณให้ปลอดภัย ระบบจะนำคุณลงชื่อออกจากบัญชีทั้งหมด คุณสามารถลงชื่อเข้าใช้อีกครั้งได้ตลอดเวลา",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.LogoutAllAccounts",
+    "description": null,
+    "english": "Log Out of All Accounts",
+    "translation": "ลงชื่อออกจากบัญชีทั้งหมด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.LogoutSuccessful",
+    "description": "Heading on account switcher modal that is shown when the user has logged out",
+    "english": "Logout Successful",
+    "translation": "ลงชื่อออกสำเร็จแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.LoggedOutAddOrSwitchAccount",
+    "description": "Helper text for logged-out account switcher",
+    "english": "Switch to another account, or add a new account.",
+    "translation": "สลับไปยังบัญชีอื่น หรือเพิ่มบัญชีใหม่",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.YouHaveLoggedOut",
+    "description": "Heading on account switcher component that is shown when the user is logged",
+    "english": "You've Logged Out",
+    "translation": "คุณลงชื่อออกแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.ChooseAccountToUse",
+    "description": "Helper text for account switching modal.",
+    "english": "Choose a new account to use",
+    "translation": "เลือกบัญชีใหม่เพื่อใช้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.AddAccount",
+    "description": "Heading text for a login form to add an account to the account switcher",
+    "english": "Add Account",
+    "translation": "เพิ่มบัญชี",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.AccountSwitchingNotWorking",
+    "description": "Error modal when account switcher service is down.",
+    "english": "Account switching is not working. Try again later",
+    "translation": "ไม่สามารถใช้การสลับบัญชีได้ โปรดลองอีกครั้งในภายหลัง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.AccountSwitchingUnavailable",
+    "description": "Header of error modal when account switcher cannot be performed.",
+    "english": "Account switching unavailable",
+    "translation": "ไม่สามารถใช้การสลับบัญชีได้",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.InvalidAccountSwitch",
+    "description": "Body of error modal to show when user switched to an account with invalid cookie.",
+    "english": "This account cannot be switched to. Try log in directly.",
+    "translation": "ไม่สามารถสลับไปยังบัญชีนี้ได้ โปรดลองลงชื่อเข้าใช้โดยตรง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.LogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account",
+    "translation": "คุณจะต้องลงชื่อออกจากบัญชี Roblox บัญชีอื่นของคุณบนอุปกรณ์นี้ก่อนจึงจะเพิ่มบัญชีใหม่ได้",
     "isDeprecated": false
   },
   {
