@@ -3104,6 +3104,54 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainEditor",
+    "key": "Dialog.TimeRemaining",
+    "description": null,
+    "english": "Time remaining: {Time}",
+    "translation": "残り時間: {Time}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "Time.HoursAndMinutes",
+    "description": null,
+    "english": "About {Hours:int} hours and {Minutes:int} minutes",
+    "translation": "約 {Hours:int} 時間 {Minutes:int} 分",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "Time.Minutes",
+    "description": null,
+    "english": "About {Minutes:int} minutes",
+    "translation": "約 {Minutes:int} 分",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "Time.MinutesAndSeconds",
+    "description": null,
+    "english": "About {Minutes:int} minutes and {Seconds:int} seconds",
+    "translation": "約 {Minutes:int} 分 {Seconds:int} 秒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "Time.Seconds",
+    "description": null,
+    "english": "About {Seconds:int} seconds",
+    "translation": "約 {Seconds:int} 秒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "BrushSettings.BrushSize",
+    "description": null,
+    "english": "Brush Size",
+    "translation": "ブラシサイズ",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.App",
     "key": "GenerativeAI.CopiedToClipboard",
     "description": null,
@@ -36043,8 +36091,8 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "Disabled",
-    "translation": "なし",
+    "english": "None",
+    "translation": "無効化済み",
     "isDeprecated": false
   },
   {
@@ -37388,7 +37436,7 @@
     "key": "GenerativeAI.StopGeneration.DataModelInactive",
     "description": null,
     "english": "Sorry, I had to stop generation when you switched between Client and Server",
-    "translation": "すみません。クライアント（またはサーバー）に切り替えたので生成をやめました",
+    "translation": "すみません。クライアントとサーバー間で切り替えがあったので生成をやめました",
     "isDeprecated": false
   },
   {
@@ -37396,7 +37444,7 @@
     "key": "GenerativeAI.StopGeneration.DataModelDestroyed",
     "description": null,
     "english": "Sorry, I had to stop generation when you exited Play Mode",
-    "translation": "すみません。プレイテストから退出したので生成をやめました",
+    "translation": "すみません。プレイモードから退出したので生成をやめました",
     "isDeprecated": false
   },
   {
@@ -74420,7 +74468,7 @@
     "key": "Statuses.MeshSizeWarning",
     "description": null,
     "english": "The number of triangles is greater than the supported limit of 10,000. Object will be decimated.",
-    "translation": "三角形の数が対応可能な数を超えています。オブジェクトは簡素化されます。",
+    "translation": "三角形の数が対応可能数の10,000個を超えています。オブジェクトは一部削除されます。",
     "isDeprecated": false
   },
   {
@@ -74532,7 +74580,7 @@
     "key": "PropertiesTooltip.WorldForward",
     "description": null,
     "english": "Transforms the file's forward vector to Studio vectors",
-    "translation": "ファイルの前方ベクトル",
+    "translation": "ファイルの前向きベクトルをStudioベクトルに変換",
     "isDeprecated": false
   },
   {
@@ -74540,7 +74588,7 @@
     "key": "PropertiesTooltip.WorldUp",
     "description": null,
     "english": "Transforms the file's up vector to Studio vectors",
-    "translation": "ファイルの上方ベクトル",
+    "translation": "ファイルの上向きベクトルをStudioベクトルに変換",
     "isDeprecated": false
   },
   {
@@ -76052,7 +76100,7 @@
     "key": "Templates.Reset",
     "description": null,
     "english": "Reset all",
-    "translation": "リセット",
+    "translation": "すべてリセット",
     "isDeprecated": false
   },
   {
@@ -76068,7 +76116,7 @@
     "key": "Templates.SaveChanges",
     "description": null,
     "english": "Save selection",
-    "translation": "変更を保存",
+    "translation": "選択内容を保存",
     "isDeprecated": false
   },
   {
@@ -76084,7 +76132,7 @@
     "key": "Templates.SaveNewPreset",
     "description": null,
     "english": "Save as new",
-    "translation": "新規プリセットとして保存",
+    "translation": "新規として保存",
     "isDeprecated": false
   },
   {
@@ -76140,7 +76188,7 @@
     "key": "Templates.WindowTitleRenamePreset",
     "description": null,
     "english": "Rename",
-    "translation": "プリセットの名前を変更",
+    "translation": "名前の変更",
     "isDeprecated": false
   },
   {
@@ -76228,7 +76276,15 @@
     "key": "Templates.SetAsDefault",
     "description": null,
     "english": "Set as default",
-    "translation": "プリセットをデフォルトに設定",
+    "translation": "デフォルトに設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Callouts.ApplyToAllTitle",
+    "description": null,
+    "english": "Apply to all",
+    "translation": "すべてに適用",
     "isDeprecated": false
   },
   {
@@ -82291,7 +82347,7 @@
     "namespace": "Studio.StyleEditor",
     "key": "Plugin.Name",
     "description": null,
-    "english": "StyleEditor",
+    "english": "Style Editor",
     "translation": "書体エディタ",
     "isDeprecated": false
   },
@@ -82299,7 +82355,7 @@
     "namespace": "Studio.StyleEditor",
     "key": "Plugin.Toolbar",
     "description": null,
-    "english": "StyleEditor",
+    "english": "Style Editor",
     "translation": "書体エディタ",
     "isDeprecated": false
   },
@@ -82307,7 +82363,7 @@
     "namespace": "Studio.StyleEditor",
     "key": "Plugin.Button",
     "description": null,
-    "english": "Toggle",
+    "english": "Style Editor",
     "translation": "切りかえ",
     "isDeprecated": false
   },
