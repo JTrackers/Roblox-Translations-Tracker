@@ -36371,7 +36371,7 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "Disabled",
+    "english": "None",
     "translation": "無効化済み",
     "isDeprecated": false
   },
@@ -56357,6 +56357,1270 @@
     "description": null,
     "english": "Setup",
     "translation": "設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BindableFunction",
+    "description": null,
+    "english": "Allow functions defined in one script to be called by another script",
+    "translation": "一つのスクリプトで定義された関数を他のスクリプトが呼び出せるようにする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BindableFunctionInvoke",
+    "description": null,
+    "english": "Causes the function assigned to OnInvoke to be called. Arguments passed to this function get passed to OnInvoke function.",
+    "translation": "OnInvoke に割り当てられた関数が呼び出される原因となります。この関数に引き渡された引数は、OnInvoke 関数に引き渡されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BindableFunctionOnInvoke",
+    "description": null,
+    "english": "Should be defined as a function. This function is called when Invoke() is called. Number of arguments is variable.",
+    "translation": "関数として定義されるべきもの。この関数は Invoke() が呼び出されたときに呼び出されます。引数の数は変数です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BindableEventFire",
+    "description": null,
+    "english": "Used to make the custom event fire (see Event for more info). Arguments can be variable length.",
+    "translation": "カスタムイベント発火（詳細は Event を見てください）の作成に使用されます。引数の長さは変数の可能性があります。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TouchTransmitter",
+    "description": null,
+    "english": "Used by networking and replication code to transmit touch events - no other purpose",
+    "translation": "タッチイベントを送信するネットワークと複製コードに使用 - その他の目的なし",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ForceField",
+    "description": null,
+    "english": "Prevents joint breakage from explosions, and stops Humanoids from taking damage",
+    "translation": "爆発によるジョイントの破壊を防ぎ、ヒューマノイドへのダメージを止めます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TeleportService",
+    "description": null,
+    "english": "Allows players to seamlessly leave a game and join another",
+    "translation": "プレイヤーがゲームを終了して途切れなくほかのゲームに参加できるようにする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TeleportServiceCustomizedTeleportUI",
+    "description": null,
+    "english": "Deprecated",
+    "translation": "非推奨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionService",
+    "description": null,
+    "english": "A service which provides collections of instances based on tags assigned to them.",
+    "translation": "割り当てられたタグに基づくインスタンスの集まりを提供するサービス。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceItemAdded",
+    "description": null,
+    "english": "Deprecated. Use GetInstanceAddedSignal instead.",
+    "translation": "非推奨。代わりに GetInstanceAddedSignal を使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceItemRemoved",
+    "description": null,
+    "english": "Deprecated. Use GetInstancedRemovedSignal instead.",
+    "translation": "非推奨。代わりに GetInstancedRemovedSignal を使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceGetCollection",
+    "description": null,
+    "english": "Deprecated. Use GetTagged instead.",
+    "translation": "非推奨。代わりに GetTagged を使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceGetTagged",
+    "description": null,
+    "english": "Returns an array of all of the instances in the data model which have the given tag.",
+    "translation": "付与されたタグがあるデータモデルですべてのインスタンスの配列を返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceAddTag",
+    "description": null,
+    "english": "Adds a tag to an instance.",
+    "translation": "インスタンスに一つのタグを追加。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceRemoveTag",
+    "description": null,
+    "english": "Removes a tag to an instance.",
+    "translation": "インスタンスから一つのタグを削除。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceGetTags",
+    "description": null,
+    "english": "Returns a list of all the collections that an instance belongs to.",
+    "translation": "インスタンスが属しているすべてのコレクションのリストを返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceHasTag",
+    "description": null,
+    "english": "Returns whether the given instance has the given tag.",
+    "translation": "付与されたインスタンスに付与されたタグがあるかどうかを返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceGetInstanceAddedSignal",
+    "description": null,
+    "english": "Returns a signal that fires when the given tag either has a new instance with that tag added to the data model or that tag is assigned to an instance within the data model.",
+    "translation": "付与されたタグにデータモデルに追加済みの新しいインスタンスがあるか、タグがデータモデル内のインスタンスに割り当てられているときに発火するシグナルを返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CollectionServiceGetInstanceRemovedSignal",
+    "description": null,
+    "english": "Returns a signal that fires when the given tag either has an instance with that tag removed from the data model or that tag is removed from an instance within the data model.",
+    "translation": "付与されたタグにデータモデルからそのタグを削除済みのインスタンスがあるか、そのタグがデータモデル内のインスタンスから削除されたときに発火するシグナルを返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.AssetService",
+    "description": null,
+    "english": "A service used to set and get information about assets stored on the Roblox website.",
+    "translation": "Robloxウェブサイト上でアセットを設定し、保管されたアセット情報を入手するのに使用されるサービス。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.AssetServiceRevertAsset",
+    "description": null,
+    "english": "Reverts a given place id to the version number provided. Returns true if successful on reverting, false otherwise.",
+    "translation": "提供された番号のバージョンに付与されたプレースIDを元に戻します。元に戻せたら true を返し、そうでなければ false を返します。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.HttpServiceHttpEnabled",
+    "description": null,
+    "english": "Enabling http requests from scripts",
+    "translation": "スクリプトから http リクエストを有効化",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.AnalyticsServiceApiKey",
+    "description": null,
+    "english": "Set ApiKey",
+    "translation": "ApiKey の設定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InsertServiceApproveAssetId",
+    "description": null,
+    "english": "Deprecated",
+    "translation": "非推奨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InsertServiceApproveAssetVersionId",
+    "description": null,
+    "english": "Deprecated",
+    "translation": "非推奨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InsertServiceGetBaseCategories",
+    "description": null,
+    "english": "Deprecated. Use GetBaseSets() instead.",
+    "translation": "非推奨。代わりにGetBaseSets() を使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InsertServiceGetUserCategories",
+    "description": null,
+    "english": "Deprecated. Use GetUserSets() instead.",
+    "translation": "非推奨。代わりにGetBaseSets() を使用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.AttachmentWorldRotation",
+    "description": null,
+    "english": "Deprecated. Use WorldOrientation instead",
+    "translation": "非推奨。代わりに WorldOrientation を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ConstraintColor",
+    "description": null,
+    "english": "The color of the in-game visual.",
+    "translation": "ゲーム内ビジュアルの色。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.SpringConstraintLimitsEnabled",
+    "description": null,
+    "english": "Enables limits on the length of the spring.",
+    "translation": "バネの長さ制限を有効化。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.SpringConstraintDamping",
+    "description": null,
+    "english": "The damping parameter of the spring. The force is scaled with respect to relative velocity. The units of this property are force / velocity. Value in [0, inf).",
+    "translation": "バネの減衰パラメータ。フォースは、相対速度に関してスケールされます。このプロパティの単位はフォース / 速度です。値の範囲は [0, inf]。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.SpringConstraintCoils",
+    "description": null,
+    "english": "The number of coils in the in-game visual. Value in [0, 8].",
+    "translation": "ゲーム内ビジュアルのコイルの数。値の範囲は [0, 8]。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.SpringConstraintCurrentLength",
+    "description": null,
+    "english": "Current distance between the two attachments. Value in [0, inf).",
+    "translation": "2つのアタッチメントの間の現在の距離。値の範囲は [0, inf]。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.HingeConstraintActuatorType",
+    "description": null,
+    "english": "Type of the rotational actuator: None, Motor, or Servo.",
+    "translation": "回転式アクチュエータの型：なし、モーター、またはサーボ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.HingeConstraintLimitsEnabled",
+    "description": null,
+    "english": "Enables the angular limits on rotations around the main axis of Attachment0.",
+    "translation": "Attachment0 のメイン軸周囲の回転の角度制限を有効化。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.HingeConstraintUpperAngle",
+    "description": null,
+    "english": "Upper limit for the angle from the SecondaryAxis of Attachment0 to the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "回転軸の周囲で Attachment0 の SecondaryAxis から Attachment1 の SecondaryAxis に対する角度の上限。値の範囲は [-180, 180]。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CylindricalConstraintRotationAxisVisible",
+    "description": null,
+    "english": "Enable the visibility of the rotation axis.",
+    "translation": "回転軸の可視性を有効化。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseViewSizeX",
+    "description": null,
+    "english": "The viewport's (game window) width in pixels.",
+    "translation": "ビューポート（ゲームウィンドウ）の横幅のピクセル数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseViewSizeY",
+    "description": null,
+    "english": "The viewport's (game window) height in pixels.",
+    "translation": "ビューポート（ゲームウィンドウ）の縦幅のピクセル数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseButton2Down",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "このイベントは現在、非稼動です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseButton2Up",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "このイベントは現在、非稼動です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseWheelBackward",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "このイベントは現在、非稼動です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MouseWheelForward",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "このイベントは現在、非稼動です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TaskSchedulerSetThreadShare",
+    "description": null,
+    "english": "Deprecated",
+    "translation": "非推奨",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ClickDetector",
+    "description": null,
+    "english": "Raises mouse events for parent object",
+    "translation": "親オブジェクトのマウスイベントを発生",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Trail",
+    "description": null,
+    "english": "Makes two attachments emit trail when moving",
+    "translation": "2つのアタッチメントが移動中に軌跡を放射するようにする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Beam",
+    "description": null,
+    "english": "Makes beam between two attachments",
+    "translation": "2つのアタッチメントの間にビームを作成",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ParticleEmitter",
+    "description": null,
+    "english": "A generic particle system.",
+    "translation": "一般的なパーティクルシステム。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.FireSize",
+    "description": null,
+    "english": "How large the fire appears to be.",
+    "translation": "火が現れる大きさ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Platform",
+    "description": null,
+    "english": "Equivalent to a seat, except that the character stands up rather than sits down.",
+    "translation": "キャラクターが座らずに立っている以外は、座席と同等。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DecalShiny",
+    "description": null,
+    "english": "How much light will appear to reflect off of the decal.",
+    "translation": "デカールから照明が反射して見える度合い。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DecalSpecular",
+    "description": null,
+    "english": "How light will react to the surface of the decal.",
+    "translation": "デカールの表面に照明がどのように反応するか。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.FloorWireFrom",
+    "description": null,
+    "english": "The object the FloorWire 'emits' from",
+    "translation": "FloorWire を「放射」する元のオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.FloorWireTo",
+    "description": null,
+    "english": "The object the FloorWire 'emits' to",
+    "translation": "FloorWire を「放射」する対象オブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.FloorWireWireRadius",
+    "description": null,
+    "english": "How thick the wire is.",
+    "translation": "ワイヤーの太さ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Soundplay",
+    "description": null,
+    "english": "Deprecated. Use Play() instead",
+    "translation": "非推奨。代わりに Play() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIGridLayoutCellPadding",
+    "description": null,
+    "english": "How much space between elements there should be.",
+    "translation": "エレメント同士の間にあるべき空間の量。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPageLayoutAnimated",
+    "description": null,
+    "english": "Whether or not to animate transitions between pages.",
+    "translation": "ページ間の移行をアニメ化するかしないか。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPageLayoutEasingStyle",
+    "description": null,
+    "english": "The easing style to use when performing an animation.",
+    "translation": "アニメーションを上映するときに使用するイージングの種類。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPageLayoutEasingDirection",
+    "description": null,
+    "english": "The easing direction to use when performing an animation.",
+    "translation": "アニメーションを上映するときに使用するイージングの方向。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPageLayoutTweenTime",
+    "description": null,
+    "english": "The length of the animation.",
+    "translation": "アニメーションの長さ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UISizeConstraintMinSize",
+    "description": null,
+    "english": "The smallest size the GuiObject is allowed to be.",
+    "translation": "GuiObject が使用できる最小サイズ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UISizeConstraintMaxSize",
+    "description": null,
+    "english": "The biggest size the GuiObject is allowed to be.",
+    "translation": "GuiObject が使用できる最大サイズ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UITextSizeConstraintMinTextSize",
+    "description": null,
+    "english": "The smallest size the font is allowed to be.",
+    "translation": "フォントが使用できる最小サイズ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UITextSizeConstraintMaxTextSize",
+    "description": null,
+    "english": "The biggest size the font is allowed to be.",
+    "translation": "フォントが使用できる最大サイズ。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIScale",
+    "description": null,
+    "english": "Uniformly scales a GUI object and all its children.",
+    "translation": "1つの GUI オブジェクトとそのすべての子を一律に拡大/縮小",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIScaleScale",
+    "description": null,
+    "english": "The scale factor to apply.",
+    "translation": "適用する拡大/縮小係数。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPaddingPaddingLeft",
+    "description": null,
+    "english": "The padding to apply on the left side relative to the parent's normal size.",
+    "translation": "親の通常サイズに比例して左側にパッドを適用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPaddingPaddingRight",
+    "description": null,
+    "english": "The padding to apply on the right side relative to the parent's normal size.",
+    "translation": "親の通常サイズに比例して右側にパッドを適用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPaddingPaddingTop",
+    "description": null,
+    "english": "The padding to apply on the top side relative to the parent's normal size.",
+    "translation": "親の通常サイズに比例して上側にパッドを適用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UIPaddingPaddingBottom",
+    "description": null,
+    "english": "The padding to apply on the bottom side relative to the parent's normal size.",
+    "translation": "親の通常サイズに比例して下側にパッドを適用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TweenInstance",
+    "description": null,
+    "english": "The object this tween is operating on. Read-only.",
+    "translation": "このトゥイーンが操作しているオブジェクト。読み取り専用。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.LocalizationServiceGetLocaleId",
+    "description": null,
+    "english": "Gets the system's LocaleId (Ex: \"en-US\").",
+    "translation": "システムの LocaleId を取得（例：「en-US」）。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MarketplaceServiceProcessReceipt",
+    "description": null,
+    "english": "Callback that is executed for pending Developer Product receipts.<p>If this function does not return Enum.ProductPurchaseDecision.PurchaseGranted, then you will not be granted the money for the purchase!</p><p>The callback will be invoked with a table, containing the following informational fields:</p><ul><li>PlayerId: int64 - the id of the player making the purchase.</li><li>PlaceIdWherePurchased: int64:  - the specific place where the purchase was made.</li><li>PurchaseId: string - a unique identifier for the purchase, should be used to prevent granting an item multiple times for one purchase.</li><li>ProductId: int64 - the id of the purchased product.</li><li>CurrencyType: CurrencyType - the type of currency used (Tix, Robux).</li><li>CurrencySpent: int - the amount of currency spent on the product for this purchase.</li></ul>",
+    "translation": "保留中の開発者製品の領収書のために実行されるコールバック。<p>もし、この関数が Enum.ProductPurchaseDecision.PurchaseGrantedIf を返さない場合、その購入へのお金は付与されません！</p><p>コールバックは、テーブルと一緒に呼び出され、以下の情報欄を含みます:</p><ul><li>PlayerId: int64 - 購入をしているプレイヤーのID。</li><li>PlaceIdWherePurchased: int64:  - 購入した特定のプレース。</li><li>PurchaseId: string - 一つの購入につきアイテムを何回も付与することを防ぐために使われるべき固有識別子。</li><li>ProductId: int64 - 購入済みの製品のID。</li><li>CurrencyType: CurrencyType - 使われた通貨の種類 (Tix、Robux)。</li><li>CurrencySpent: int - この製品の購入に使われた通貨の額。</li></ul>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PVInstanceCoordinateFrame",
+    "description": null,
+    "english": "Deprecated. Use CFrame instead",
+    "translation": "非推奨。代わりに CFrame を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PackageLinkStatus",
+    "description": null,
+    "english": "Current status of the Package",
+    "translation": "現在のパッケージ状況",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ServiceProviderservice",
+    "description": null,
+    "english": "Use GetService() instead",
+    "translation": "代わりに GetService() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Hopper",
+    "description": null,
+    "english": "Use StarterPack instead",
+    "translation": "代わりに StarterPack を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InstanceClone",
+    "description": null,
+    "english": "Use Clone() instead",
+    "translation": "代わりに Clone() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InstanceFindFirstChild",
+    "description": null,
+    "english": "Use FindFirstChild() instead",
+    "translation": "代わりに FindFirstChild() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Instancechildren",
+    "description": null,
+    "english": "Use GetChildren() instead",
+    "translation": "代わりに GetChildren() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InstancegetChildren",
+    "description": null,
+    "english": "Returns a read-only table of this Object's children",
+    "translation": "この Object の子の読み取り専用テーブルを返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.InstanceRemove",
+    "description": null,
+    "english": "Use Remove() instead",
+    "translation": "代わりに Remove() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyGyroMaxTorque",
+    "description": null,
+    "english": "Use MaxTorque instead",
+    "translation": "代わりに MaxTorque を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyGyroCFrame",
+    "description": null,
+    "english": "Use CFrame instead",
+    "translation": "代わりに CFrame を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyPositionMaxForce",
+    "description": null,
+    "english": "Use MaxForce instead",
+    "translation": "代わりに MaxForce を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyPositionPosition",
+    "description": null,
+    "english": "Use position instead",
+    "translation": "代わりに position を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyVelocityMaxForce",
+    "description": null,
+    "english": "Use MaxForce instead",
+    "translation": "代わりに MaxForce を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyVelocityVelocity",
+    "description": null,
+    "english": "Use Velocity instead",
+    "translation": "代わりに Velocity を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyThrustForce",
+    "description": null,
+    "english": "Use Force instead",
+    "translation": "代わりに Force を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BodyThrustLocation",
+    "description": null,
+    "english": "Use Location instead",
+    "translation": "代わりに Location を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ModelMakeJoints",
+    "description": null,
+    "english": "Use MakeJoints() instead",
+    "translation": "代わりに MakeJoints() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Modelmove",
+    "description": null,
+    "english": "Use MoveTo() instead",
+    "translation": "代わりに MoveTo() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Statusmove",
+    "description": null,
+    "english": "Use MoveTo() instead",
+    "translation": "代わりにMoveTo() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataModelOnClose",
+    "description": null,
+    "english": "Deprecated. Use DataModel.BindToClose",
+    "translation": "非推奨。DataModel.BindToClose を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataModelworkspace",
+    "description": null,
+    "english": "Deprecated. Use Workspace",
+    "translation": "非推奨。 Workspace を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataModelShowMouse",
+    "description": null,
+    "english": "Deprecated. Use Workspace.IsMouseCursorVisible",
+    "translation": "非推奨。Workspace.IsMouseCursorVisible を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataModelSetPlaceID",
+    "description": null,
+    "english": "Use SetPlaceId() instead",
+    "translation": "代わりに SetPlaceId() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataModelSetCreatorID",
+    "description": null,
+    "english": "Use SetCreatorId() instead",
+    "translation": "代わりに SetPlaceId() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataStoreServiceGetDataStore",
+    "description": null,
+    "english": "Returns a data store with the given name and scope",
+    "translation": "付与された名前と範囲でデータストアを返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DataStoreServiceGetGlobalDataStore",
+    "description": null,
+    "english": "Returns the default data store",
+    "translation": "デフォルトデータストアの値を返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Playersplayers",
+    "description": null,
+    "english": "Use GetPlayers() instead",
+    "translation": "代わりに SetPlaceId() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Lighting",
+    "description": null,
+    "english": "Responsible for all lighting aspects of the world (affects how things are rendered).",
+    "translation": "世界のすべての照明関連を担当（どのように物がレンダリングされるかに影響）。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DebrisMaxItems",
+    "description": null,
+    "english": "Deprecated. No replacement",
+    "translation": "非推奨。代替がありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PlayerplayerFromCharacter",
+    "description": null,
+    "english": "Use GetPlayerFromCharacter() instead",
+    "translation": "代わりに GetPlayerFromCharacter() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.WorkspaceFindPartsInRegion3",
+    "description": null,
+    "english": "Returns parts in the area defined by the Region3, up to specified maxCount or 100, whichever is less",
+    "translation": "MaxCount で指定されている値か100まで、どちらか少ない方で、 Region3 によって定義されるエリアにあるパーツを返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.WorkspaceFindPartsInRegion3WithIgnoreList",
+    "description": null,
+    "english": "Returns parts in the area defined by the Region3, up to specified maxCount or 100, whichever is less",
+    "translation": "MaxCount で特定されているか 100 まで、どちらか少ない方で Region3 によって定義されるエリアにあるパーツを返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.WorkspacePGSPhysicsSolverEnabled",
+    "description": null,
+    "english": "Boolean used to enable the new physics solver",
+    "translation": "新しい物理ソルバーの有効化に使用されているブール",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BasePart",
+    "description": null,
+    "english": "A structural class, not creatable",
+    "translation": "構造上のクラスのため、作成できません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BasePartColor",
+    "description": null,
+    "english": "Color3 of the part.",
+    "translation": "パーツのColor3。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.BasePartGetMass",
+    "description": null,
+    "english": "Use GetMass() instead",
+    "translation": "代わりに GetMass() を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.WedgePart",
+    "description": null,
+    "english": "A Wedge Part",
+    "translation": "Wedge パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PrismPart",
+    "description": null,
+    "english": "A Prism Part",
+    "translation": "Prism パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PyramidPart",
+    "description": null,
+    "english": "A Pyramid Part",
+    "translation": "Pyramid パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ParallelRampPart",
+    "description": null,
+    "english": "A ParallelRamp Part",
+    "translation": "ParallelRamp パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.RightAngleRampPart",
+    "description": null,
+    "english": "A RightAngleRamp Part",
+    "translation": "RightAngleRamp パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.CornerWedgePart",
+    "description": null,
+    "english": "A CornerWedge Part",
+    "translation": "CornerWedge パーツ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiMain",
+    "description": null,
+    "english": "Deprecated, please use ScreenGui",
+    "translation": "非推奨です。ScreenGui を使用してください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.FunctionalTest",
+    "description": null,
+    "english": "Deprecated. Use TestService instead",
+    "translation": "非推奨。代わりに TestService を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiObjectBackgroundColor",
+    "description": null,
+    "english": "Deprecated. Use BackgroundColor3 instead",
+    "translation": "非推奨。代わりに BackgroundColor3 を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiObjectBorderColor",
+    "description": null,
+    "english": "Deprecated. Use BorderColor3 instead",
+    "translation": "非推奨。代わりに BorderColor3 を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Frame",
+    "description": null,
+    "english": "A container object used to layout other GUI objects",
+    "translation": "他の GUI オブジェクトのレイアウトに使用されるコンテナオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ImageLabel",
+    "description": null,
+    "english": "A GUI object containing an Image",
+    "translation": "画像を含むGUIオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextLabel",
+    "description": null,
+    "english": "A GUI object containing text",
+    "translation": "テキストを含むGUIオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextLabelTextColor",
+    "description": null,
+    "english": "Deprecated. Use TextColor3 instead",
+    "translation": "非推奨。代わりに TextColor3 を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextButton",
+    "description": null,
+    "english": "A GUI button containing text",
+    "translation": "テキストを含むGUIボタン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextButtonTextColor",
+    "description": null,
+    "english": "Deprecated. Use TextColor3 instead",
+    "translation": "非推奨。代わりに TextColor3 を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextBox",
+    "description": null,
+    "english": "A text entry box",
+    "translation": "テキスト入力ボックス",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TextBoxTextColor",
+    "description": null,
+    "english": "Deprecated. Use TextColor3 instead",
+    "translation": "非推奨。代わりに TextColor3 を使用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiButton",
+    "description": null,
+    "english": "A GUI button containing an Image",
+    "translation": "画像を含むGUIボタン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiButtonMouseButton2Click",
+    "description": null,
+    "english": "This function currently does not work :(",
+    "translation": "この機能は現在、利用できません:(",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiButtonMouseButton2Down",
+    "description": null,
+    "english": "This function currently does not work :(",
+    "translation": "この機能は現在、利用できません:(",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.GuiButtonMouseButton2Up",
+    "description": null,
+    "english": "This function currently does not work :(",
+    "translation": "この機能は現在、利用できません:(",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ViewportFrame",
+    "description": null,
+    "english": "A GUI that can show 3D objects",
+    "translation": "3Dオブジェクトを表示できる GUI",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ViewportFrameCurrentCamera",
+    "description": null,
+    "english": "Current Camera of children objects",
+    "translation": "子オブジェクトの現在のカメラ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ImageButton",
+    "description": null,
+    "english": "A GUI button containing an Image",
+    "translation": "画像を含むGUIボタン",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Keyframe",
+    "description": null,
+    "english": "One keyframe of an animation",
+    "translation": "アニメーションの1つのキーフレーム",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.DialogChoice",
+    "description": null,
+    "english": "An object used to make dialog trees to converse with players",
+    "translation": "プレイヤーたちと会話するダイアログツリーを作成するのに使用されるオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UnionOperation",
+    "description": null,
+    "english": "A UnionOperation is a union of multiple parts",
+    "translation": "UnionOperation は複数のパーツのユニオンです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.UnionOperationUsePartColor",
+    "description": null,
+    "english": "Override the colors of the mesh with the part color.",
+    "translation": "パーツの色でメッシュの色をオーバーライド。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.NegateOperation",
+    "description": null,
+    "english": "A NegateOperation can be used to create holes in other parts",
+    "translation": "NegateOperation は、ほかのパーツに穴を開けるのに使用できます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.NegateOperationUsePartColor",
+    "description": null,
+    "english": "Override the colors of the mesh with the part color.",
+    "translation": "パーツの色でメッシュの色をオーバーライド。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.MeshPart",
+    "description": null,
+    "english": "A MeshPart is a physically simulatable mesh",
+    "translation": "MeshPart は物理的にシミュレーション可能なメッシュです",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Terrain",
+    "description": null,
+    "english": "Object representing a high performance bounded grid of static 4x4 parts",
+    "translation": "静的な 4x4 のパーツの高性能なバインド済みのグリッドを表すオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TerrainGetCell",
+    "description": null,
+    "english": "Returns CellMaterial, CellBlock, CellOrientation",
+    "translation": "CellMaterial、CellBlock、CellOrientation を返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TerrainGetWaterCell",
+    "description": null,
+    "english": "Returns hasAnyWater, WaterForce, WaterDirection",
+    "translation": "hasAnyWater、WaterForce、WaterDirection を返します",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.Light",
+    "description": null,
+    "english": "Parent of all light objects",
+    "translation": "すべての照明オブジェクトの親",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.PointLight",
+    "description": null,
+    "english": "Makes the parent part emit light in a spherical shape",
+    "translation": "親パーツに照明を球状に放射させる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.SpotLight",
+    "description": null,
+    "english": "Makes the parent part emit light in a conical shape",
+    "translation": "親パーツに照明を円すい状に放射させる",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.RemoteFunction",
+    "description": null,
+    "english": "Allow functions defined in one script to be called by another script across client/server boundary",
+    "translation": "一つのスクリプトで定義された関数が他のスクリプトにクライアントまたはサーバーの境界線を超えて呼び出せるようにする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.TerrainRegion",
+    "description": null,
+    "english": "Object representing a snapshot of the region of terrain",
+    "translation": "地形一帯のスナップショットを表すオブジェクト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ModuleScript",
+    "description": null,
+    "english": "A script fragment. Only runs when another script uses require() on it.",
+    "translation": "スクリプトの断片。ほかのスクリプトが require() を使用しているときにのみ実行されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleType",
+    "description": null,
+    "english": "Controls how an image is displayed.",
+    "translation": "画像がどのように表示されるかをコントロール。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleTypeStretch",
+    "description": null,
+    "english": "Force the image to fill the available space.",
+    "translation": "利用できるスペースをうめる画像を強制挿入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleTypeSlice",
+    "description": null,
+    "english": "Use the SliceCenter property to stretch the middle of the image but maintain crisp borders.",
+    "translation": "SliceCenter プロパティを使用して、画像のはっきりした枠線を保ちながら中央を引き伸ばします。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleTypeTile",
+    "description": null,
+    "english": "Tile the image using the TileSize property.",
+    "translation": "TileSize プロパティを使用して画像をタイル化。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleTypeFit",
+    "description": null,
+    "english": "Size the image to the largest size that will fit in the available space while maintaining aspect ratio.",
+    "translation": "アスペクト比を保ちながら利用できるスペースに画像がおさまる最大サイズにします。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Client.App",
+    "key": "ReflectionMetadata.ScaleTypeCrop",
+    "description": null,
+    "english": "Fill the available space, maintaining aspect ratio by cropping the edges if necessary.",
+    "translation": "必要があれば端を切り抜いてアスペクト比を保ちながら利用できるスペースをうめます。",
     "isDeprecated": false
   },
   {
@@ -76485,14 +77749,6 @@
     "description": null,
     "english": "Import experienced a {type} error.",
     "translation": "インポート中に {type} エラーが発生しました。",
-    "isDeprecated": false
-  },
-  {
-    "namespace": "Studio.AssetImporter",
-    "key": "Statuses.CageNameHasTypoWarning1",
-    "description": null,
-    "english": "Cage name contains a typo, try renaming to {name}.",
-    "translation": "ケージ名にタイプミスが含まれています。 {name} に名前を変更してみてください。",
     "isDeprecated": false
   },
   {
