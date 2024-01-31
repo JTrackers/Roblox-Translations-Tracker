@@ -3408,6 +3408,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainEditor",
+    "key": "SelectionWarning.SizeMax",
+    "description": null,
+    "english": "Size needs to be smaller than 16384x16384x16384.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.App",
     "key": "GenerativeAI.CopiedToClipboard",
     "description": null,
@@ -13835,7 +13843,7 @@
     "namespace": "Studio.App",
     "key": "Property.SelectColor",
     "description": null,
-    "english": "Select Color",
+    "english": "Selection Color",
     "translation": "选择颜色",
     "isDeprecated": false
   },
@@ -23267,7 +23275,7 @@
     "namespace": "Studio.App",
     "key": "Property.ActiveColor",
     "description": null,
-    "english": "Active Color",
+    "english": "Active Selection Color",
     "translation": "激活颜色",
     "isDeprecated": false
   },
@@ -36371,7 +36379,7 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
+    "english": "Disabled",
     "translation": "无",
     "isDeprecated": false
   },
@@ -38412,6 +38420,198 @@
     "key": "LoginPage.StudioVersion1",
     "description": null,
     "english": "Roblox Studio Version %1",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "SettingsHeader.Selection",
+    "description": null,
+    "english": "Selection",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerActiveColor",
+    "description": null,
+    "english": "Active Dragger Color",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerActiveColor",
+    "description": null,
+    "english": "Color used by the draggers to display snaps while actively dragging.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerPassiveColor",
+    "description": null,
+    "english": "Passive Dragger Color",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerPassiveColor",
+    "description": null,
+    "english": "Color used by the draggers to display passive elements such as grids and guides.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "SettingsCategory.DraggerBehavior",
+    "description": null,
+    "english": "Dragger Behavior",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "SettingsCategory.DraggerVisualization",
+    "description": null,
+    "english": "Dragger Visualization",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "SettingsCategory.SelectionVisualization",
+    "description": null,
+    "english": "Selection Visualization",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerShowTargetSnap",
+    "description": null,
+    "english": "Show Snap Targets",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerShowTargetSnap",
+    "description": null,
+    "english": "Show how the dragged object is being snapped to the target via visual guides.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerShowHoverRuler",
+    "description": null,
+    "english": "Show Hover Ruler",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerShowHoverRuler",
+    "description": null,
+    "english": "Show a ruler measuring how large the hovered object is.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerShowMeasurement",
+    "description": null,
+    "english": "Show Numeric Measurements",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerShowMeasurement",
+    "description": null,
+    "english": "Show a numeric display of the distance dragged when using draggers.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerMajorGridIncrement",
+    "description": null,
+    "english": "Major Grid Line Every...",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerMajorGridIncrement",
+    "description": null,
+    "english": "How frequently to display a major grid line in grids and rulers.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerTiltRotateDuration",
+    "description": null,
+    "english": "Tilt/Rotate Animation Duration",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerTiltRotateDuration",
+    "description": null,
+    "english": "How long the animation when pressing T/R while dragging should last. Enter 0 for no animation.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerMaxSoftSnaps",
+    "description": null,
+    "english": "Move/Scale Max Soft Snaps",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerMaxSoftSnaps",
+    "description": null,
+    "english": "How many potential soft snaps to show in each direction when scaling or moving along an axis. Enter 0 for no soft snaps.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Soft Snap Margin Multiplier",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively drags soft snap to geometry. Enter 0 for no soft snaps.",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Summon Snap Margin Multiplier",
+    "translation": "",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively the pivot snaps to hotspots on the edges of the target part when summoning. Enter 0 for no snapping of the summoned pivot.",
     "translation": "",
     "isDeprecated": false
   },
@@ -82051,8 +82251,8 @@
     "namespace": "Studio.AssetImporter",
     "key": "Statuses.NoRefMeshForCageWithSuggestionWarning1",
     "description": null,
-    "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {name}.",
-    "translation": "无法为围笼网格找到对应的几何网格。请尝试重命名为 {name}。",
+    "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
+    "translation": "",
     "isDeprecated": false
   },
   {
@@ -87507,7 +87707,7 @@
     "namespace": "Studio.R15Migrator",
     "key": "PublishingBlocked.Warning",
     "description": null,
-    "english": "Adapters need to be removed",
+    "english": "R6 conversion is not complete",
     "translation": "",
     "isDeprecated": false
   },
@@ -87515,7 +87715,7 @@
     "namespace": "Studio.R15Migrator",
     "key": "PublishingBlocked.Detail",
     "description": null,
-    "english": "Before publishing, remove R6 to R15 Conversion Tool's adapters to avoid potential issues. Go to the conversion tool and remove the adapters.",
+    "english": "You must complete all the conversion tasks before publishing your experience.",
     "translation": "",
     "isDeprecated": false
   },
