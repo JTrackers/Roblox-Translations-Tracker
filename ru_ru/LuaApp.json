@@ -5540,7 +5540,7 @@
     "key": "Label.Tradable",
     "description": null,
     "english": "Tradable",
-    "translation": "Можно обменять",
+    "translation": "Обмен",
     "isDeprecated": false
   },
   {
@@ -9205,6 +9205,22 @@
     "description": "Message shown to the user when the abuse report submission fails.",
     "english": "Your report could not be submitted. Please try again.",
     "translation": "Отчёт не может быть загружен. Повтори попытку.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "DSAIllegal.ReportLink",
+    "description": "This link allows users to access a web page where we can report illegal content on the platform. This is a requirement according to the EU DSA",
+    "english": "Report illegal content under the EU Digital Services Act.",
+    "translation": "Сообщи о незаконном контенте в соответствии с Законом о цифровых услугах (ЕС).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "DSAIllegal.ReportPageTitle",
+    "description": "Reporting page title once we click on a link to report illegal content according to EU DSA requirements",
+    "english": "Report Illegal Content",
+    "translation": "Сообщить о незаконном контенте",
     "isDeprecated": false
   },
   {
@@ -14076,7 +14092,7 @@
     "key": "Prompt.Subtitle.TemporarySuspension2",
     "description": "Slightly edited text for voice exit beta",
     "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice until",
-    "translation": "На основании жалоб пользователей мы определили, что твоё поведение при использовании чата с голосом нарушает Правила сообщества. Доступ к голосовому чату приостановлен до",
+    "translation": "На основании жалоб пользователей мы определили, что твоё поведение при использовании голосового чата нарушает Правила сообщества. Доступ к голосовому чату приостановлен до",
     "isDeprecated": false
   },
   {
@@ -14108,7 +14124,7 @@
     "key": "Prompt.Subtitle.TemporarySuspensionAvatarChat",
     "description": "Temporary suspension text for Avatar Chat Enabled Users.",
     "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice and chat as your avatar until",
-    "translation": "На основании жалоб пользователей мы приостановили доступ к чату с голосом и чату с использованием аватара до",
+    "translation": "На основании жалоб пользователей мы приостановили доступ к голосовому чату и чату с использованием аватара до",
     "isDeprecated": false
   },
   {
@@ -14132,7 +14148,7 @@
     "key": "Prompt.Subtitle.MicAndCamera",
     "description": "Error message for banned users who have access to camera chat",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice and avatar.",
-    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к чату с голосом и с использованием аватара.",
+    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к голосовому чату и чату с использованием аватара.",
     "isDeprecated": false
   },
   {
@@ -14140,7 +14156,7 @@
     "key": "Prompt.Subtitle.Microphone",
     "description": "Error message for temporarily suspended users with only microphone",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice.",
-    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к чату с голосом.",
+    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к голосовому чату.",
     "isDeprecated": false
   },
   {
@@ -14268,7 +14284,31 @@
     "key": "Description.ChatWithVoiceDisabledUntil",
     "description": null,
     "english": "Your access to chat with voice has been disabled until {dateTime} due to behavior that may violate our Community Standards.",
-    "translation": "Доступ к голосовому чату отключён до {dateTime} из-за поведения, которое может нарушить наши Правила сообщества.",
+    "translation": "Доступ к голосовому чату отключён до {dateTime} из-за поведения, которое, вероятно, нарушает наши Правила сообщества.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan1",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "We’ve temporarily turned off chat with voice because you may have used language that goes against Roblox Community Standards.",
+    "translation": "Мы временно отключили голосовой чат. Вероятно, была использована лексика, нарушающая Правила сообщества Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan2",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "If this happens again, there may be more limits on your account.",
+    "translation": "Если это произойдет снова, возможно, на твой аккаунт наложены другие ограничения.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.XMinuteSuspension",
+    "description": "Tells a voice-banned user how long their ban is",
+    "english": "{banDurationInMinutes} minute suspension",
+    "translation": "Минутная приостановка: {banDurationInMinutes} ",
     "isDeprecated": false
   },
   {
@@ -14277,6 +14317,14 @@
     "description": "Chat Language Selector in Settings Menu corresponding to the \"On\" State. There is parameterized value in parentheses that also contains the name of the selected language. This parameter will be populated by locale API",
     "english": "On ({LanguageName})",
     "translation": "Вкл. ({LanguageName})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.ChatLanguageSelectionLabel",
+    "description": "Label to the left of a dropdown that is used to select a language from a list of languages. The selected language is used to translate chat messages.",
+    "english": "Chat Translation Language",
+    "translation": "Язык перевода чата",
     "isDeprecated": false
   },
   {
@@ -14869,6 +14917,14 @@
     "description": "Alternative leave game prompt when experience is specifically the FTUX experience.",
     "english": "Are you sure you want to leave the experience? You can access the tutorial again from “More”.",
     "translation": "Действительно покинуть плейс? Ты можешь получить доступ к руководству из меню «Ещё»",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Report.DSAFooter",
+    "description": "Translated text for EU DSA warning at footer of report page",
+    "english": "To report illegal content under the EU Digital Services Act, visit: https://www.roblox.com/illegal-content-reporting",
+    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https://www.roblox.com/illegal-content-reporting",
     "isDeprecated": false
   },
   {
@@ -16421,6 +16477,30 @@
     "description": null,
     "english": "Please log in to Roblox.com on a separate device to begin reactivating your account.",
     "translation": "Выполни вход на сайте Roblox.com на другом устройстве, чтобы активировать свой аккаунт.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Description.AutomatedDetectionAutomatedDecision",
+    "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection and decision were both automated.",
+    "english": "This policy violation was detected by automated means, and we used automation when making this decision",
+    "translation": "Это нарушение было обнаружено автоматизированными средствами, и мы использовали автоматизацию при принятии этого решения",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Description.AutomatedDetectionManualDecision",
+    "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection was automated and the decision was manual.",
+    "english": "This policy violation was detected by automated means",
+    "translation": "Это нарушение было обнаружено автоматизированными средствами",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.NotApproved",
+    "key": "Description.ManualDetectionAutomatedDecision",
+    "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection was manual and the decision was automated.",
+    "english": "We used automation when making this decision",
+    "translation": "Мы использовали автоматизацию при принятии этого решения",
     "isDeprecated": false
   },
   {
@@ -20116,7 +20196,7 @@
     "key": "Modal.Agreement.TermsOfService",
     "description": "Agreement name for Terms of Service",
     "english": "Terms of Use",
-    "translation": "Условия предоставления услуг",
+    "translation": "Условия использования",
     "isDeprecated": false
   },
   {
@@ -20189,6 +20269,70 @@
     "description": "Text for the promotional emails checkbox for lua app",
     "english": "Optional: I'd also like to sign up to receive emails from Roblox about newest releases, limited-time promotions, and more.",
     "translation": "Необязательно: Подписаться на рассылку от Roblox, чтобы быть в курсе о последних релизах, промоакциях с ограниченным сроком и многом другом.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.ConvertToVNMessage",
+    "description": "Inform VNG users their account country will be changed to VN",
+    "english": "Please review and consent to the following terms. By agreeing, you are changing your country to Vietnam and cannot revert back.",
+    "translation": "Проверь и прими следующие условия. Принимая условия, ты изменяешь свою страну на Вьетнам и не сможете отменить это действие.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.CheckboxMessage",
+    "description": "agreement checkbox message",
+    "english": "I’ve reviewed and agree to all terms and conditions below",
+    "translation": "Я соглашаюсь с условиями, предоставленными ниже",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agree2",
+    "description": "The text in the agree button of Popup",
+    "english": "Agree",
+    "translation": "Принять",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.SignupMessage",
+    "description": "message to display in signup user agreement popup.",
+    "english": "By clicking Agree, you are agreeing to the Terms of Use and you are acknowledging the Privacy Policy.",
+    "translation": "Нажимая «Принимаю», ты принимаешь Условия использования и Политику конфиденциальности.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.TransferCurrency.Title",
+    "description": "Inform user to transfer their existing balance before becoming a VNG user.",
+    "english": "Existing Gift Card Balance",
+    "translation": "Баланс подарочной карты",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.TransferCurrency.Message",
+    "description": "Inform user to transfer their balance before they can accept the VNG user agreements.",
+    "english": "You have an existing gift card balance in another currency. To proceed, please contact Customer Service to transfer currencies.",
+    "translation": "Баланс подарочной карты в другой валюте. Для продолжения, свяжись со Службой поддержки для перевода валют.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.ContactCustomerSupport",
+    "description": "Tell user to contract CS to transfer their balance.",
+    "english": "Contact Customer Support",
+    "translation": "Связаться со Службой поддержки",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.FailAndRetryMessage",
+    "description": "tell user to retry when accept fails.",
+    "english": "Sorry, there was a problem when trying to accept terms of use. Please try again.",
+    "translation": "К сожалению, возникла проблема при попытке принять Условия использования. Повтори попытку.",
     "isDeprecated": false
   },
   {
@@ -20396,7 +20540,7 @@
     "key": "Messages.AppealV2",
     "description": "Tell the user that they can appeal their moderation. \"Violations & Appeals\" should match CommonUI.Features.Label.ReportAppeals translation.",
     "english": "If you wish to appeal, please go to Violations & Appeals.",
-    "translation": "Чтобы запросить апелляцию, перейди в раздел «Жалобы и апелляции».",
+    "translation": "Чтобы запросить апелляцию, перейди в раздел «Нарушения и апелляции».",
     "isDeprecated": false
   },
   {
@@ -20405,6 +20549,22 @@
     "description": "In the ban screen, we want to tell EU users whether the decision or consequence of the ban is done using automated processes. This is a section title/label for a message that will provide that information.",
     "english": "Decision",
     "translation": "Решение",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "DSATransparency.LearnMoreBody",
+    "description": "We need to provide information about any automated detection or decision on bans or other moderated consequences for EU users. We need this disclaimer text and link to provide info. The full sentence is \"To learn more about the appeals process, visit (Appeal Your Content Moderation.)\". The content in the bracket will be a clickable link that take users to a help page.",
+    "english": "To learn more about the appeals process, visit",
+    "translation": "Чтобы узнать подробнее о процессе апелляций, перейди:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Moderation",
+    "key": "DSATransparency.LearnMoreLink",
+    "description": "A link to take users into a help page where we will provide explanation on our moderation appeal process. This is needed for EU users for legal reasons.",
+    "english": "Appeal Your Content Moderation",
+    "translation": "Обжалуй модерацию своего контента",
     "isDeprecated": false
   },
   {
@@ -22409,6 +22569,22 @@
   },
   {
     "namespace": "CoreScripts.Ads",
+    "key": "Label.InExperienceDisclosureStatic",
+    "description": "Disclosure for EU DSA Compliance",
+    "english": "Roblox does not use behavioral information to deliver ads. You are seeing this ad based on information including device type, location, and age to serve you appropriate and relevant ads.",
+    "translation": "Roblox не использует поведенческую информацию для подбора рекламы. Ты видишь это объявление на основе информации, такой как тип устройства, местоположение устройства и возраст.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Ads",
+    "key": "Label.SponsoredAdsDisclosureStatic",
+    "description": "Disclosure for EU DSA Compliance",
+    "english": "Sponsored experiences are paid for by Creators. They may be shown to you based on general information about your device type, location, and demographics.",
+    "translation": "Спонсируемые плейсы оплачиваются авторами. Они могут быть показаны на основе общей информации о типе, местоположении устройства и демографии.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Ads",
     "key": "Label.SponsoredAds",
     "description": "Label for Sponsored Ads",
     "english": "Sponsored",
@@ -23468,7 +23644,7 @@
     "key": "Translation.Reporting.IllegalContentEUBody",
     "description": "For reporting illegal content under the European Union Digital Services Act",
     "english": "To report illegal content under the EU Digital Services Act, visit: https://www.roblox.com/illegal-content-reporting",
-    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https:// www.roblox.com/illegal-content-support",
+    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https://www.roblox.com/illegal-content-reporting",
     "isDeprecated": false
   },
   {
@@ -24556,7 +24732,7 @@
     "key": "Label.ReportAndAppeals",
     "description": "Page title for Violations & Appeals portal",
     "english": "Violations & Appeals",
-    "translation": "Жалобы и аппеляции",
+    "translation": "Нарушения и апелляции",
     "isDeprecated": false
   },
   {

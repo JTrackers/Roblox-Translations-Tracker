@@ -376,6 +376,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.ReportAbuse",
+    "key": "DSAIllegal.ReportLink",
+    "description": "This link allows users to access a web page where we can report illegal content on the platform. This is a requirement according to the EU DSA",
+    "english": "Report illegal content under the EU Digital Services Act.",
+    "translation": "Сообщи о незаконном контенте в соответствии с Законом о цифровых услугах (ЕС).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ReportAbuse",
+    "key": "DSAIllegal.ReportPageTitle",
+    "description": "Reporting page title once we click on a link to report illegal content according to EU DSA requirements",
+    "english": "Report Illegal Content",
+    "translation": "Сообщить о незаконном контенте",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Notifications.NotificationStream",
     "key": "Title.ReportNotification",
     "description": null,
@@ -7388,7 +7404,7 @@
     "key": "Prompt.Subtitle.TemporarySuspension2",
     "description": "Slightly edited text for voice exit beta",
     "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice until",
-    "translation": "На основании жалоб пользователей мы определили, что твоё поведение при использовании чата с голосом нарушает Правила сообщества. Доступ к голосовому чату приостановлен до",
+    "translation": "На основании жалоб пользователей мы определили, что твоё поведение при использовании голосового чата нарушает Правила сообщества. Доступ к голосовому чату приостановлен до",
     "isDeprecated": false
   },
   {
@@ -7420,7 +7436,7 @@
     "key": "Prompt.Subtitle.TemporarySuspensionAvatarChat",
     "description": "Temporary suspension text for Avatar Chat Enabled Users.",
     "english": "Due to the violation of our Community Standards, we have temporarily revoked your access to chat with voice and chat as your avatar until",
-    "translation": "На основании жалоб пользователей мы приостановили доступ к чату с голосом и чату с использованием аватара до",
+    "translation": "На основании жалоб пользователей мы приостановили доступ к голосовому чату и чату с использованием аватара до",
     "isDeprecated": false
   },
   {
@@ -7444,7 +7460,7 @@
     "key": "Prompt.Subtitle.MicAndCamera",
     "description": "Error message for banned users who have access to camera chat",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice and avatar.",
-    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к чату с голосом и с использованием аватара.",
+    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к голосовому чату и чату с использованием аватара.",
     "isDeprecated": false
   },
   {
@@ -7452,7 +7468,7 @@
     "key": "Prompt.Subtitle.Microphone",
     "description": "Error message for temporarily suspended users with only microphone",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice.",
-    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к чату с голосом.",
+    "translation": "Наши системы обнаружили поведение, которое возможно нарушает наши Правила сообщества. В целях предосторожности мы временно отключили доступ к голосовому чату.",
     "isDeprecated": false
   },
   {
@@ -7756,7 +7772,31 @@
     "key": "Description.ChatWithVoiceDisabledUntil",
     "description": null,
     "english": "Your access to chat with voice has been disabled until {dateTime} due to behavior that may violate our Community Standards.",
-    "translation": "Доступ к голосовому чату отключён до {dateTime} из-за поведения, которое может нарушить наши Правила сообщества.",
+    "translation": "Доступ к голосовому чату отключён до {dateTime} из-за поведения, которое, вероятно, нарушает наши Правила сообщества.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan1",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "We’ve temporarily turned off chat with voice because you may have used language that goes against Roblox Community Standards.",
+    "translation": "Мы временно отключили голосовой чат. Вероятно, была использована лексика, нарушающая Правила сообщества Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan2",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "If this happens again, there may be more limits on your account.",
+    "translation": "Если это произойдет снова, возможно, на твой аккаунт наложены другие ограничения.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.XMinuteSuspension",
+    "description": "Tells a voice-banned user how long their ban is",
+    "english": "{banDurationInMinutes} minute suspension",
+    "translation": "Минутная приостановка: {banDurationInMinutes} ",
     "isDeprecated": false
   },
   {
@@ -7765,6 +7805,30 @@
     "description": "Chat Language Selector in Settings Menu corresponding to the \"On\" State. There is parameterized value in parentheses that also contains the name of the selected language. This parameter will be populated by locale API",
     "english": "On ({LanguageName})",
     "translation": "Вкл. ({LanguageName})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.MaximumFramerate",
+    "description": "Setting entry for maximum frames per second",
+    "english": "Maximum Framerate",
+    "translation": "Максимальная частота кадров",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.FramerateCapDefaultEntry",
+    "description": "Normally, the framerate is shown as just the number. This is shown when this would be the unchanged value. E.g. 60 (Default)",
+    "english": "{Frames:int} (Default)",
+    "translation": "{Frames:int} (по умолчанию)",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.ChatLanguageSelectionLabel",
+    "description": "Label to the left of a dropdown that is used to select a language from a list of languages. The selected language is used to translate chat messages.",
+    "english": "Chat Translation Language",
+    "translation": "Язык перевода чата",
     "isDeprecated": false
   },
   {
@@ -8196,7 +8260,7 @@
     "key": "Badge.Popup.VoiceInfo",
     "description": "Disclaimer that details to the current user that they have manually enrolled into a beta feature, voice chat.",
     "english": "You have opted in to our beta feature, chat with voice. Roblox records voice audio anywhere on the platform for moderation and safety purposes. By continuing to use the chat with voice feature, you consent to Roblox’s collection, use, and storage of your voice recording for moderation and safety purposes. You can opt-out of chat with voice at any time.",
-    "translation": "Бета-функция чата с голосом включена. Roblox записывает звук голоса в любом месте на платформе в целях модерации и безопасности. Продолжая использовать чат с голосом, ты соглашаешься на сбор, использование и хранение Roblox голосовой записи в целях модерации и безопасности. Ты можешь отказаться от чата с голосом в любое время.",
+    "translation": "Бета-функция голосового чата включена. Roblox записывает звук голоса в любом месте на платформе в целях модерации и безопасности. Продолжая использовать голосовой чат, ты соглашаешься на сбор, использование и хранение Roblox голосовых запискй в целях модерации и безопасности. Ты можешь отказаться от голосового чата в любое время.",
     "isDeprecated": false
   },
   {
@@ -11296,6 +11360,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Report.DSAFooter",
+    "description": "Translated text for EU DSA warning at footer of report page",
+    "english": "To report illegal content under the EU Digital Services Act, visit: https://www.roblox.com/illegal-content-reporting",
+    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https://www.roblox.com/illegal-content-reporting",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.PlayerList",
     "key": "Players",
     "description": "Displayed on the PlayerList title bar, above a list of players usernames.",
@@ -13024,6 +13096,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.Ads",
+    "key": "Label.InExperienceDisclosureStatic",
+    "description": "Disclosure for EU DSA Compliance",
+    "english": "Roblox does not use behavioral information to deliver ads. You are seeing this ad based on information including device type, location, and age to serve you appropriate and relevant ads.",
+    "translation": "Roblox не использует поведенческую информацию для подбора рекламы. Ты видишь это объявление на основе информации, такой как тип устройства, местоположение устройства и возраст.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "IAPExperience.InsufficientRobux",
     "key": "Title.InsufficientRobux",
     "description": null,
@@ -13636,7 +13716,7 @@
     "key": "Translation.Reporting.IllegalContentEUBody",
     "description": "For reporting illegal content under the European Union Digital Services Act",
     "english": "To report illegal content under the EU Digital Services Act, visit: https://www.roblox.com/illegal-content-reporting",
-    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https:// www.roblox.com/illegal-content-support",
+    "translation": "Чтобы сообщить о незаконном контенте в соответствии с определением Закона о цифровых услугах (ЕС), посети: https://www.roblox.com/illegal-content-reporting",
     "isDeprecated": false
   },
   {
@@ -13893,6 +13973,22 @@
     "description": "As a user observes an avatar they created, they can rotate the avatar in a preview. This text will be shown next to a picture to instruct the user how to rotate the avatar.",
     "english": "Rotate",
     "translation": "Повернуть",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PublishAvatarPrompt",
+    "key": "Pan",
+    "description": "As a user observes an avatar they created, they can pan the camera. This text will be shown next to a picture to instruct the user how to pan.",
+    "english": "Pan",
+    "translation": "Панорама",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PublishAvatarPrompt",
+    "key": "ResetView",
+    "description": "As a user observes an avatar they created, they can reset the camera angle they were viewing at. This text will be on a button that the users can press to reset the camera angle.",
+    "english": "Reset View",
+    "translation": "Сбросить вид",
     "isDeprecated": false
   },
   {
