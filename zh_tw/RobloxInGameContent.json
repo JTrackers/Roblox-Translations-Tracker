@@ -1828,7 +1828,7 @@
     "key": "TeleportFailure",
     "description": "unexpected exception happened on the client or the web exception returned like \"HTTP 503 Service unavailable\".",
     "english": "Teleport failed due to an unexpected error. Please try teleporting again.",
-    "translation": "發生錯誤，無法傳送。",
+    "translation": "發生意外錯誤而傳送失敗。請再傳送一次。",
     "isDeprecated": false
   },
   {
@@ -1860,7 +1860,7 @@
     "key": "TeleportGameFull",
     "description": "User is trying to teleport to their friend A's Server instance while the server is full.",
     "english": "Server is full. Please try again later or use another server.",
-    "translation": "伺服器額滿，無法傳送。",
+    "translation": "伺服器已滿。請稍後再試，或使用其他伺服器。",
     "isDeprecated": false
   },
   {
@@ -1884,7 +1884,7 @@
     "key": "TeleportGameNotFound",
     "description": "User is teleporting to a non-exist place.",
     "english": "Cannot find the destination place. Please double check and try again.",
-    "translation": "您嘗試傳送的空間不存在。",
+    "translation": "找不到目的地空間。請仔細確認後再試一次。",
     "isDeprecated": false
   },
   {
@@ -1964,7 +1964,7 @@
     "key": "TeleportErrors",
     "description": "General Teleport Errors happens during teleporting.",
     "english": "Teleport failed due to an unexpected error. Please try teleporting again.",
-    "translation": "發生錯誤，無法傳送。",
+    "translation": "發生意外錯誤而傳送失敗。請再傳送一次。",
     "isDeprecated": false
   },
   {
@@ -1972,7 +1972,7 @@
     "key": "PlacelaunchDisabled",
     "description": null,
     "english": "The destination place is restricted. Please try a different place or retry later.",
-    "translation": "此體驗目前不開放，請稍後再試。",
+    "translation": "目標地點受到限制。請嘗試其他地點或稍後再試。",
     "isDeprecated": false
   },
   {
@@ -1980,7 +1980,7 @@
     "key": "TeleportGameEnded",
     "description": "User is trying to teleporting to their friend A's Server instance while the server has already shut down because A has left.",
     "english": "Server is no longer available. Please try a different one or attempt later.",
-    "translation": "伺服器已關閉，無法傳送。",
+    "translation": "伺服器已無法使用。請嘗試另一個伺服器或稍後再試。",
     "isDeprecated": false
   },
   {
@@ -2060,7 +2060,7 @@
     "key": "TeleportFlooded",
     "description": "User requests teleport too frequently.",
     "english": "Too many teleport requests. Please try again later.",
-    "translation": "傳送請求過多。",
+    "translation": "太多傳送要求，請稍後再試。",
     "isDeprecated": false
   },
   {
@@ -2324,7 +2324,7 @@
     "key": "Queue",
     "description": "This is the string used for when clients are given a queue position in the game join process.\nModified 12/4/2023 to a new string; we want it to sound more human/casual so we call it a line instead of a queue and removed some extraneous text from the string.",
     "english": "Your position in line: {POSITION}",
-    "translation": "請求的體驗已滿員。排隊位置為 {POSITION} ……",
+    "translation": "您在隊列的位置：{POSITION}",
     "isDeprecated": false
   },
   {
@@ -7664,6 +7664,102 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.TranslationSetting",
+    "description": null,
+    "english": "Automatic Chat Translation",
+    "translation": "自動翻譯聊天",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.TranslationToggleSetting",
+    "description": null,
+    "english": "Option to View Untranslated Message",
+    "translation": "檢視未翻譯訊息的選項",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.NoFriendsPageMessage",
+    "description": null,
+    "english": "Add friends so you can explore together.",
+    "translation": "新增好友一起探索。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Label.FriendsListLoadErrorMessage",
+    "description": null,
+    "english": "Can’t load friends. Try again later.",
+    "translation": "無法載入好友。請稍後再試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Description.ChatWithVoiceDisabledUntil",
+    "description": null,
+    "english": "Your access to chat with voice has been disabled until {dateTime} due to behavior that may violate our Community Standards.",
+    "translation": "由於您的行為可能違反社群標準，您的語音聊天使用權已被停用，直到 {dateTime}為止。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan1",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "We’ve temporarily turned off chat with voice because you may have used language that goes against Roblox Community Standards.",
+    "translation": "由於您的用語可能違反了 Roblox 社群標準，我們已暫時關閉您的語音聊天功能。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.TemporaryVoiceBan2",
+    "description": "Shows up if the user is automatically banned due based on detected speech",
+    "english": "If this happens again, there may be more limits on your account.",
+    "translation": "如果再次發生，您的帳號可能會有更多限制。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.XMinuteSuspension",
+    "description": "Tells a voice-banned user how long their ban is",
+    "english": "{banDurationInMinutes} minute suspension",
+    "translation": "暫時停權 {banDurationInMinutes} 分鐘",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.TranslationOnWithLanguage",
+    "description": "Chat Language Selector in Settings Menu corresponding to the \"On\" State. There is parameterized value in parentheses that also contains the name of the selected language. This parameter will be populated by locale API",
+    "english": "On ({LanguageName})",
+    "translation": "使用（{LanguageName}）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.MaximumFramerate",
+    "description": "Setting entry for maximum frames per second",
+    "english": "Maximum Framerate",
+    "translation": "每秒最高畫格數",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.FramerateCapDefaultEntry",
+    "description": "Normally, the framerate is shown as just the number. This is shown when this would be the unchanged value. E.g. 60 (Default)",
+    "english": "{Frames:int} (Default)",
+    "translation": "{Frames:int}（預設值）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Chat.ChatLanguageSelectionLabel",
+    "description": "Label to the left of a dropdown that is used to select a language from a list of languages. The selected language is used to translate chat messages.",
+    "english": "Chat Translation Language",
+    "translation": "聊天翻譯語言",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.HelpMenu",
     "key": "UpArrow",
     "description": "The up arrow key on a physical keyboard. Used to tell the user how to move their character.",
@@ -8405,6 +8501,30 @@
     "description": null,
     "english": "Sold Out",
     "translation": "售完",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Attribution.GoToExperience",
+    "description": null,
+    "english": "Go to Experience?",
+    "translation": "前往體驗？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Attribution.GoToDescription",
+    "description": null,
+    "english": "You will leave this area and be taken to {EXPERIENCE_NAME}.",
+    "translation": "您將離開此區域並前往：{EXPERIENCE_NAME}。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "InGame.InspectMenu",
+    "key": "Action.Go",
+    "description": "Button to go to another experience.",
+    "english": "Go",
+    "translation": "前往",
     "isDeprecated": false
   },
   {
@@ -11136,6 +11256,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "PageTitle.ToggleMenuNavigation",
+    "description": "This is the title for a prompt that displays instructions on how to enable navigation with a gamepad in the in-game menu.",
+    "english": "How to toggle menu navigation",
+    "translation": "如何切換選單導航",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.ViewButton",
+    "description": "Label pointing to the button on an Xbox gamepad that the user needs to press to toggle menu navigation.",
+    "english": "View Button",
+    "translation": "檢視按鈕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Label.TouchpadButton",
+    "description": "A Label pointing to the button on a PlayStation controller the user needs to press to toggle menu navigation.",
+    "english": "Touchpad Button",
+    "translation": "觸控板按鈕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "EducationalPopup.MenuNavigationToggleText",
+    "description": "Educational text that teaches the user how to open up menu navigation with the gamepad. This text is displayed below an image of the gamepad annotated with the correct button to press.",
+    "english": "Some experiences require pressing the Touchpad button to toggle menu navigation. Depending on the experience, this will either highlight menu items in a box style or provide a free-flow cursor.",
+    "translation": "部分體驗需要按下觸控板按鈕來切換選單導航。根據體驗而定，可能是透過方塊樣式來標記選項項目，或是提供自由移動的游標。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.InGameMenu",
+    "key": "Report.DSAFooter",
+    "description": "Translated text for EU DSA warning at footer of report page",
+    "english": "To report illegal content under the EU Digital Services Act, visit: https://www.roblox.com/illegal-content-reporting",
+    "translation": "若要依據歐盟數位服務法（EU Digital Services Act）檢舉違法內容，請造訪：https://www.roblox.com/illegal-content-reporting",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.PlayerList",
     "key": "Players",
     "description": "Displayed on the PlayerList title bar, above a list of players usernames.",
@@ -11413,6 +11573,14 @@
     "description": "Error header when the user hasn't granted camera permissions on the Roblox account",
     "english": "Allow Camera Access",
     "translation": "允許攝影機存取",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.TopBar",
+    "key": "RobloxPermissionErrorBody",
+    "description": "Error body when the user hasn't granted camera permissions on the Roblox account",
+    "english": "Roblox Settings › Privacy › Microphone and Camera Input",
+    "translation": "Roblox「設定」›「隱私」›「麥克風和攝影機輸入」",
     "isDeprecated": false
   },
   {
@@ -12544,6 +12712,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.TextChat",
+    "key": "ChatTranslation.FTUX.TitleNew",
+    "description": null,
+    "english": "Chat translation is on for supported languages",
+    "translation": "已開啟支援語言的聊天翻譯",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.TextChat",
+    "key": "ChatTranslation.ChatWindow.SystemMessageNew",
+    "description": null,
+    "english": "Roblox automatically translates supported languages in chat",
+    "translation": "Roblox 會在聊天中自動翻譯支援的語言",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.ScreenshotHud",
     "key": "Action.TakePhoto",
     "description": "Button text for players to take a photo in ScreenshotHud",
@@ -12760,6 +12944,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.FaceChat",
+    "key": "Heading.LowPerformanceDetected",
+    "description": "Heading for informational toast that appears due to low performance of the device.",
+    "english": "Low Performance Detected",
+    "translation": "偵測到效能過低",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.FaceChat",
+    "key": "Subtitle.LowPerformanceDetected",
+    "description": "Subtitle for informational toast that appears due to low performance of the device.",
+    "english": "Turning off your camera may improve your device performance",
+    "translation": "關閉攝影機可能會提升裝置效能",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.Ads",
     "key": "Label.Teleporting",
     "description": "Text on the Portal loading screen",
@@ -12821,6 +13021,30 @@
     "description": "The prompt disappears upon walking away from the portal, this instructs users about this when no \"cancel button\" is displayed.",
     "english": "Walk away to dismiss the dialog.",
     "translation": "走開以關閉對話。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Ads",
+    "key": "Label.InExperienceDisclosureStatic",
+    "description": "Disclosure for EU DSA Compliance",
+    "english": "Roblox does not use behavioral information to deliver ads. You are seeing this ad based on information including device type, location, and age to serve you appropriate and relevant ads.",
+    "translation": "Roblox 不會使用行為資訊來投放廣告。您會看到此廣告，是根據裝置類型、位置及年齡，所提供的適當相關廣告。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Ads",
+    "key": "Action.Close",
+    "description": "Popup Close Button",
+    "english": "Close",
+    "translation": "關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Ads",
+    "key": "Label.WhyThisAd",
+    "description": "Informational popup heading about ads on Roblox",
+    "english": "Why This Ad?",
+    "translation": "為什麼是這個廣告？",
     "isDeprecated": false
   },
   {
