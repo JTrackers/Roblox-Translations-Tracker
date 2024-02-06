@@ -648,6 +648,38 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Response.AlreadyLinked",
+    "description": "The Roblox account the user wants to link to is already connected to a different",
+    "english": "This Roblox account is already linked to a different account on {platform}. Please try logging in with a different Roblox account.",
+    "translation": "這個 Roblox 帳號已連結到 {platform} 上的其他帳號。請嘗試使用其他 Roblox 帳號登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.RelinkingFreeze",
+    "description": "The roblox account was linked to another console account. so there is a 90 days freeze to link to a different console account.",
+    "english": "This Roblox account has linked to another account on {platform} in the past 90 days. Please try logging in with a different Roblox account.",
+    "translation": "這個 Roblox 帳號在過去 90 天內已連結到 {platform} 的其他帳號。請嘗試用其他 Roblox 帳號登入。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.ParentLogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account with parent privileges",
+    "translation": "您必須登出此裝置上的其他 Roblox 帳號，才能新增具有家長權限的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.InvalidPasskeyCredential",
+    "description": "Login response error message, informing the user that the passkey credential they used to attempt sign in was invalid.",
+    "english": "Unable to sign in with this passkey.",
+    "translation": "無法使用此密碼金鑰登入。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -845,6 +877,214 @@
     "description": null,
     "english": "2-Step Verification is required to make further transactions. Go to Settings > Security to complete 2-Step Verification. Enabling 2-Step Verification will log you out of your current session.",
     "translation": "必須完成雙步驟驗證才可繼續進行交易。請前往設定 > 安全完成雙步驟驗證。您啟用雙步驟驗證時將會登出目前的作業。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.NewLogin",
+    "description": null,
+    "english": "New Login Attempt",
+    "translation": "新的登入嘗試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Action.Okay",
+    "description": null,
+    "english": "OK",
+    "translation": "確定",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Header.ReviewLoginAttempt",
+    "description": "Title for modal where users can approve/deny login attempts",
+    "english": "Review Login Attempt",
+    "translation": "審核登入嘗試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Description.LoginToNewDevice",
+    "description": null,
+    "english": "Are you trying to log in to a new device?",
+    "translation": "您正嘗試登入新裝置嗎？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.NeedHelpMessage",
+    "description": null,
+    "english": "Need help? Visit our Help Center",
+    "translation": "需要協助嗎？請造訪我們的支援中心",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Action.Approve",
+    "description": "button to approve a login attempt",
+    "english": "Approve",
+    "translation": "批准",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Action.Deny",
+    "description": "button to deny a login attempt",
+    "english": "Deny",
+    "translation": "拒絕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Header.CrossDeviceLogin",
+    "description": null,
+    "english": "Cross Device Log In",
+    "translation": "跨裝置登入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Header.LoginAttemptDenied",
+    "description": null,
+    "english": "Login Attempt Denied",
+    "translation": "登入嘗試遭拒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.SomeoneMightHavePassword",
+    "description": null,
+    "english": "It seems like someone might have your password.",
+    "translation": "似乎有人知道您的密碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.PasswordChangeRecommended",
+    "description": null,
+    "english": "We recommend that you change your password to help secure your account.",
+    "translation": "建議您更改密碼，以協助保護您的帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Action.ChangePassword",
+    "description": "button to take user to change password flow",
+    "english": "Change Password",
+    "translation": "變更密碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Header.LoginAttemptExpired",
+    "description": null,
+    "english": "Login Attempt Expired",
+    "translation": "登入嘗試已過期",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LoginExpired",
+    "description": null,
+    "english": "Your attempt to log in to your account has expired",
+    "translation": "您的帳號登入嘗試已過期。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UnknownLocation",
+    "description": null,
+    "english": "Unknown Regional Location",
+    "translation": "未知的區域位置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UnknownDevice",
+    "description": null,
+    "english": "Unknown Device Type",
+    "translation": "未知的裝置類型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.UnknownIPAddress",
+    "description": null,
+    "english": "Unknown IP Address",
+    "translation": "未知的 IP 位址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.Location",
+    "description": "location information, e.g: San Mateo, California, United States",
+    "english": "{city}, {subdivision}, {country}",
+    "translation": "{country}{subdivision}{city}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LocationWithoutCity",
+    "description": "location information but without city. e.g: California, United States",
+    "english": "{subdivision}, {country}",
+    "translation": "{country}{subdivision}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LocationWithoutSubdivision",
+    "description": "location information without subdivision. e.g: San Mateo, United States",
+    "english": "{city}, {country}",
+    "translation": "{country}{city}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LocationWithoutCountry",
+    "description": "location information but without country. e.g: San Mateo, California",
+    "english": "{city}, {subdivision}",
+    "translation": "{subdivision}{city}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.AlreadyReviewed",
+    "description": "when a login attempt has already been reviewed from another device",
+    "english": "Reviewed from another device",
+    "translation": "從其他裝置審核",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.DeviceTypeLabel",
+    "description": null,
+    "english": "Device Type",
+    "translation": "裝置類型",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.LocationLabel",
+    "description": null,
+    "english": "Location",
+    "translation": "位置",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.IPAddressLabel",
+    "description": null,
+    "english": "IP Address",
+    "translation": "IP 位址",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.TwoStepVerification",
+    "key": "Label.DateTimeLabel",
+    "description": null,
+    "english": "Date, Time",
+    "translation": "日期，時間",
     "isDeprecated": false
   },
   {
@@ -1576,6 +1816,86 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.PasswordPlaceholderLong",
+    "description": "Long version of the placeholder text that goes into the password field",
+    "english": "Enter your password: At least 8 characters",
+    "translation": "請輸入密碼：至少 8 個字元",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.ParentLogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account with parent privileges",
+    "translation": "您必須登出此裝置上的其他 Roblox 帳號，才能新增具有家長權限的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.UsePasskey",
+    "description": "Button text to initiate passkey registration during signup",
+    "english": "Use Passkey",
+    "translation": "使用密碼金鑰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Response.UnableToAddPasskey",
+    "description": "Error message presented to users when an attempt to add a passkey fails (due to either the user canceling the operation client-side or a some server error)",
+    "english": "Unable to add passkey. Please try again or create a password instead.",
+    "translation": "無法新增密碼金鑰。請再試一次或改為建立密碼。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.OneMoreStep",
+    "description": "Heading prompting users to complete sign up by adding an authentication method",
+    "english": "One more step",
+    "translation": "還有一步",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.CreateAPassword",
+    "description": "Description to inform users to create a password during multi-step signup",
+    "english": "Create a password for your Roblox account",
+    "translation": "為您的 Roblox 帳號建立密碼",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.SetUpPasskey",
+    "description": "Button label for the button that initiates passkey registration (as an alternative to setting up a password)",
+    "english": "Or set up a passkey",
+    "translation": "或設定密碼金鑰",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.CannotSignUp",
+    "description": "Heading for a dialog shown to alert the user that they cannot sign up to Roblox",
+    "english": "Can't Sign Up",
+    "translation": "無法註冊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.UnderAgeAlert",
+    "description": "An alert text that is shown when the user is too young to sign up for Roblox.",
+    "english": "You do not meet the minimum age requirement to play Roblox.",
+    "translation": "您沒有達到玩 Roblox 的最低年齡要求。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Action.IUnderstand",
+    "description": "Text for a button for a user to press when they want to confirm and signify they understand a dialog text.",
+    "english": "I Understand",
+    "translation": "我了解",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Common.AlertsAndOptions",
     "key": "Description.KoreaScreentimeToastText",
     "description": "Alert text showing to korea user how many hours they've been playing",
@@ -1989,6 +2309,14 @@
     "description": null,
     "english": "Deny",
     "translation": "拒絕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Controls",
+    "key": "Input.Optional",
+    "description": "Text for a form input indicating that the input is optional",
+    "english": "{inputLabel} (optional)",
+    "translation": "{inputLabel}（選填）",
     "isDeprecated": false
   },
   {
@@ -2505,6 +2833,46 @@
   },
   {
     "namespace": "CommonUI.Features",
+    "key": "NavBar.Home",
+    "description": "Used in the navbar. Should be very concise, shorter labels are preferred to maintain a readable font size",
+    "english": "Home",
+    "translation": "首頁",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "NavBar.Discover",
+    "description": "Used in the navbar. Should be very concise, shorter labels are preferred to maintain a readable font size",
+    "english": "Discover",
+    "translation": "探索",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "NavBar.Avatar",
+    "description": "Used in the navbar. Should be very concise, shorter labels are preferred to maintain a readable font size",
+    "english": "Avatar",
+    "translation": "虛擬人偶",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "NavBar.Connect",
+    "description": "Used in the navbar. Should be very concise, shorter labels are preferred to maintain a readable font size",
+    "english": "Connect",
+    "translation": "連線",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "NavBar.More",
+    "description": "Used in the navbar. Should be very concise, shorter labels are preferred to maintain a readable font size",
+    "english": "More",
+    "translation": "更多",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
     "key": "Label.Menu",
     "description": "The label from the Menu tab of the IA system nav bar",
     "english": "Menu",
@@ -2605,6 +2973,38 @@
     "description": "Adjust screen / Overscan settings page label",
     "english": "Adjust Screen",
     "translation": "調整螢幕",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.SafetyAndSupport",
+    "description": "The name for a new page for safety and support-related resources.",
+    "english": "Safety & Support",
+    "translation": "安全和支援",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ReportAppeals",
+    "description": "Should be the same as Feature.AppealsPortal.Label.ReportAndAppeals",
+    "english": "Violations & Appeals",
+    "translation": "違規和上訴",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.HelpAndSafety",
+    "description": "Name of the Help & Safety page.",
+    "english": "Help & Safety",
+    "translation": "協助和安全",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.HelpCenter",
+    "description": "Link text that will point to Roblox Support aka Help Center.",
+    "english": "Help Center",
+    "translation": "支援中心",
     "isDeprecated": false
   },
   {
@@ -2741,6 +3141,14 @@
     "description": "A text to show when Roblox is blocking user from entering the app due to age restriction.",
     "english": "This account is not eligible due to age restrictions.",
     "translation": "由於年齡限制,此帳戶不符合資格。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Messages",
+    "key": "Label.OR",
+    "description": "A capitalized OR text label",
+    "english": "OR",
+    "translation": "或",
     "isDeprecated": false
   },
   {
@@ -8732,7 +9140,7 @@
     "key": "Title.TurnOffNotificationsNoName",
     "description": "Title to turn off notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
     "english": "Turn off for this experience",
-    "translation": "關閉此體驗的通知",
+    "translation": "在此體驗中關閉",
     "isDeprecated": false
   },
   {
@@ -8740,7 +9148,7 @@
     "key": "Title.TurnOnNotificationsNoName",
     "description": "Title to turn on notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
     "english": "Turn on for this experience",
-    "translation": "開啟此體驗的通知",
+    "translation": "在此體驗中開啟",
     "isDeprecated": false
   },
   {
@@ -12832,6 +13240,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Common.GameSorts",
+    "key": "Label.ExclusiveSubscriptionBenefits",
+    "description": "Title for games sort containing top experiences that use the subscriptions feature.",
+    "english": "Exclusive Subscription Benefits",
+    "translation": "獨家訂閱福利",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.ConnectionError",
     "key": "Queued",
     "description": "<DEPRECATED, can be deleted as of 1-9-23>",
@@ -12980,7 +13396,7 @@
     "key": "Prompt.Subtitle.Connecting",
     "description": "Subtitle for toaster message that shows up after a user clicks the mic icon in the \"Connecting\" state",
     "english": "Voice connection still in progress. This may take a moment.",
-    "translation": "現正進行語音功能連線。可能需要一段時間才能完成連線。",
+    "translation": "現正進行語音功能連線，可能需要一段時間才能完成連線。",
     "isDeprecated": false
   },
   {
@@ -13012,7 +13428,7 @@
     "key": "Prompt.Subtitle.MicAndCamera",
     "description": "Error message for banned users who have access to camera chat",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice and avatar.",
-    "translation": "我們的系統偵測到你的行為可能違反了我們的社群標準。為了預防起見，我們已暫時停用你使用語音和虛擬人偶聊天的權限。",
+    "translation": "我們的系統偵測到您的行為可能違反了我們的社群標準。為了預防起見，我們已暫時停用您使用語音和虛擬人偶聊天的權限。",
     "isDeprecated": false
   },
   {
@@ -13020,7 +13436,7 @@
     "key": "Prompt.Subtitle.Microphone",
     "description": "Error message for temporarily suspended users with only microphone",
     "english": "Our systems have detected behavior that may violate our Community Standards. As a precaution, we have temporarily disabled your access to chat with voice.",
-    "translation": "我們的系統偵測到你的行為可能違反了我們的社群標準。為了預防起見，我們已暫時停用你使用聊天和語音的權限。",
+    "translation": "我們的系統偵測到您的行為可能違反了我們的社群標準。為了預防起見，我們已暫時停用您使用聊天和語音的權限。",
     "isDeprecated": false
   },
   {
@@ -13028,7 +13444,7 @@
     "key": "Prompt.MicAndCameraUseSuspended",
     "description": null,
     "english": "Microphone and Camera Use Suspended",
-    "translation": "麥克風和攝影機暫時停用",
+    "translation": "麥克風和相機暫時停用",
     "isDeprecated": false
   },
   {
@@ -16448,6 +16864,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.CrossDevice",
+    "key": "GoToInstruction",
+    "description": "Instruction for going to a link on computer or phone",
+    "english": "On your computer or phone go to:",
+    "translation": "使用您的電腦或手機前往：",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.CrossDevice",
+    "key": "EnterCodeInstruction",
+    "description": "instruction for entering cross device login code",
+    "english": "then enter this code",
+    "translation": "然後輸入此代碼",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ProfileBadges",
     "key": "Creator.VerifiedBadgeIconAccessibilityText",
     "description": "Text that will be read by screen readers when a verified badge is present next to a name.",
@@ -18876,7 +19308,7 @@
     "key": "Modal.Agreement.TermsOfService",
     "description": "Agreement name for Terms of Service",
     "english": "Terms of Use",
-    "translation": "服務條款",
+    "translation": "使用條款",
     "isDeprecated": false
   },
   {
@@ -18949,6 +19381,70 @@
     "description": "Text for the promotional emails checkbox for lua app",
     "english": "Optional: I'd also like to sign up to receive emails from Roblox about newest releases, limited-time promotions, and more.",
     "translation": "選擇性：我還想訂閱來自 Roblox 有關最新作品、限時促銷等內容的電子郵件。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.ConvertToVNMessage",
+    "description": "Inform VNG users their account country will be changed to VN",
+    "english": "Please review and consent to the following terms. By agreeing, you are changing your country to Vietnam and cannot revert back.",
+    "translation": "請閱覽並同意以下條款。同意即會將您的國家 / 地區更改為越南，且無法恢復。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.CheckboxMessage",
+    "description": "agreement checkbox message",
+    "english": "I’ve reviewed and agree to all terms and conditions below",
+    "translation": "我已閱覽並同意以下所有條款和條件",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.Agree2",
+    "description": "The text in the agree button of Popup",
+    "english": "Agree",
+    "translation": "同意",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.SignupMessage",
+    "description": "message to display in signup user agreement popup.",
+    "english": "By clicking Agree, you are agreeing to the Terms of Use and you are acknowledging the Privacy Policy.",
+    "translation": "按一下「同意」即表示您同意使用條款和隱私權政策。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.TransferCurrency.Title",
+    "description": "Inform user to transfer their existing balance before becoming a VNG user.",
+    "english": "Existing Gift Card Balance",
+    "translation": "現有點數卡餘額",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.TransferCurrency.Message",
+    "description": "Inform user to transfer their balance before they can accept the VNG user agreements.",
+    "english": "You have an existing gift card balance in another currency. To proceed, please contact Customer Service to transfer currencies.",
+    "translation": "您已有另一種貨幣的點數卡餘額。若要繼續，請聯絡客服以轉換貨幣。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.ContactCustomerSupport",
+    "description": "Tell user to contract CS to transfer their balance.",
+    "english": "Contact Customer Support",
+    "translation": "聯絡客服",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.UserAgreements",
+    "key": "Popup.FailAndRetryMessage",
+    "description": "tell user to retry when accept fails.",
+    "english": "Sorry, there was a problem when trying to accept terms of use. Please try again.",
+    "translation": "抱歉，嘗試接受使用條款時發生問題。請再試一次。",
     "isDeprecated": false
   },
   {
@@ -20192,6 +20688,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Reauthentication",
+    "key": "TryAlternativeMethod",
+    "description": "Text to tell the user to swap to another method when one method fails for any reason.",
+    "english": "Please try another method.",
+    "translation": "請嘗試其他方法。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.ExperienceDetails",
     "key": "Body.DescriptionTitle",
     "description": "Title text for the description text of the description component within the body of the experience details page.",
@@ -20436,7 +20940,7 @@
     "key": "Subtitle.VideoNoPermission",
     "description": "Explain to user to allow camera for Roblox in the OS settings.",
     "english": "Go to your settings to allow Roblox to use the camera.",
-    "translation": "前往您的設定並允許 Roblox 使用您的攝影機。",
+    "translation": "前往您的設定並允許 Roblox 使用您的相機。",
     "isDeprecated": false
   },
   {
@@ -20476,7 +20980,7 @@
     "key": "Subtitle.VideoPerformancePromptDisable",
     "description": "Displayed when camera is affecting performance negatively and recommending to turn it off.",
     "english": "Turning off your camera may improve experience performance.",
-    "translation": "關閉攝影機可能會提升體驗效能。",
+    "translation": "關閉相機可能會提升體驗效能。",
     "isDeprecated": false
   },
   {
@@ -20524,7 +21028,7 @@
     "key": "Subtitle.LODCameraForceDisable",
     "description": "Force disables camera due to low performance of the device.",
     "english": "Roblox has turned your device camera off due to performance issues.",
-    "translation": "Roblox 因為效能問題關閉了你的相機。",
+    "translation": "Roblox 因為效能問題關閉了您的相機。",
     "isDeprecated": false
   },
   {
@@ -21488,6 +21992,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Description.DidntReceiveCode",
+    "description": null,
+    "english": "Didn't receive a code?",
+    "translation": "沒有收到代碼？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.GetHelp",
+    "description": null,
+    "english": "Get Help",
+    "translation": "取得支援",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.OneTimePasscode",
+    "key": "Action.ChangeEmailV2",
+    "description": null,
+    "english": "Change Email",
+    "translation": "變更電子郵件地址",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.ContactList",
     "key": "Label.Outgoing",
     "description": "Label to indicate that the record was an outgoing call. The user placed a call to another individual.",
@@ -22056,6 +22584,78 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.ParentLogoutConfirmation",
+    "description": null,
+    "english": "You’ll need to log out of your other Roblox accounts on this device before adding a new account with parent privileges",
+    "translation": "您必須登出此裝置上的其他 Roblox 帳號，才能新增具有家長權限的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.UseExistingAccount",
+    "description": "This is button text shown on a page for Adding an account to your account switcher",
+    "english": "Use Existing Account",
+    "translation": "使用現有帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Action.CreateNewAccount",
+    "description": "This is a button shown on the Account Switcher page for adding another account",
+    "english": "Create New Account",
+    "translation": "建立新帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.ParentLogoutConfirmation.2",
+    "description": null,
+    "english": "Please log out of all other Roblox accounts on this device before adding a new account with parent privileges",
+    "translation": "請登出此裝置上的所有其他 Roblox 帳號，才能新增具有家長權限的帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Header.CantSwitchAccounts",
+    "description": null,
+    "english": "Can't Switch Accounts",
+    "translation": "無法切換帳號",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.PleaseTryAgainLater",
+    "description": null,
+    "english": "Please try again later",
+    "translation": "請稍後再試",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.TryLoggingInDirectly",
+    "description": "{username} will be a string that is a user's username. This error shows when a user attempts to use the Account Switcher feature, but the target account they're switching did not succeed.",
+    "english": "Try logging in to {username} directly",
+    "translation": "嘗試直接登入「{username}」",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Label.AccountLimitReached.2",
+    "description": null,
+    "english": "To add an account, log out of one first.",
+    "translation": "若要新增帳號，請先登出帳號。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Description.TryLoggingInDirectly.2",
+    "description": null,
+    "english": "Try logging in directly",
+    "translation": "嘗試直接登入",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Amp.ErrorScreen",
     "key": "Title",
     "description": null,
@@ -22236,7 +22836,7 @@
     "key": "Label.DeleteCaptureInfo",
     "description": "Body of a modal informing the user that the Capture deletion will be irreversible.",
     "english": "This will permanently delete the capture.",
-    "translation": "這會永久刪除捕獲。",
+    "translation": "這會永久刪除截圖。",
     "isDeprecated": false
   },
   {
@@ -22276,7 +22876,7 @@
     "key": "Description.AllowPhotoAccessInfo",
     "description": "Body of modal prompting the user to allow access to the user's photos.",
     "english": "To save your captures, Roblox needs access to your device’s camera roll.",
-    "translation": "為了保存您的擷取內容，Roblox 需要存取您裝置的相機膠卷。",
+    "translation": "為了儲存您的擷取內容，Roblox 需要存取您裝置的相機膠卷。",
     "isDeprecated": false
   },
   {
@@ -22340,7 +22940,7 @@
     "key": "Body.SaveCapturesPrompt",
     "description": "Body text for a prompt asking the user if they would like to save some screenshot/video captures.",
     "english": "Would you like to save your captures?",
-    "translation": "您想保存您的捕獲內容嗎？",
+    "translation": "您想儲存您的擷取內容嗎？",
     "isDeprecated": false
   },
   {
@@ -23204,7 +23804,7 @@
     "key": "Message.InvitationConfirmation",
     "description": "Sent after a user invites their friend to an experience.",
     "english": "Invitation sent",
-    "translation": "邀請已寄出",
+    "translation": "邀請已送出",
     "isDeprecated": false
   },
   {
@@ -23296,6 +23896,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Amp.IDVUpsell",
+    "key": "PrivacyPageHeader",
+    "description": null,
+    "english": "Privacy Policy",
+    "translation": "隱私權政策",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVUpsell",
+    "key": "Button.StartVerification",
+    "description": "start verification button",
+    "english": "Start Verification",
+    "translation": "開始驗證",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVUpsell",
+    "key": "Button.Cancel",
+    "description": "Cancel button text",
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.Subscription",
     "key": "Text.DisclaimerMonthly",
     "description": "disclaimer text specifying subscription terms",
@@ -23309,6 +23933,46 @@
     "description": null,
     "english": "Renews monthly. Cancel anytime.",
     "translation": "每月續訂，可隨時取消。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Timeout",
+    "description": null,
+    "english": "Sorry, the verification process took too long. Please refresh the page and try again.",
+    "translation": "對不起，驗證時間過長。請重新整理頁面並重新嘗試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Declined",
+    "description": null,
+    "english": "Sorry, your verification was declined for security reasons. If you want to try again, please check back in a few days.",
+    "translation": "對不起，您的驗證因安全原因遭拒。請等幾天後再重新嘗試。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Retry",
+    "description": null,
+    "english": "Something went wrong. Please refresh the page try again.",
+    "translation": "發生錯誤，請重新整理頁面再試一次。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Close",
+    "description": "text of button that closes the error screen.",
+    "english": "Close",
+    "translation": "關閉",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Amp.IDVErrorScreen",
+    "key": "Title",
+    "description": "Title of idv error screen telling user that identity verification failed",
+    "english": "Verification Failed",
+    "translation": "驗證失敗",
     "isDeprecated": false
   },
   {

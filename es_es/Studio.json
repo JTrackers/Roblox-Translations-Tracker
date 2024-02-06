@@ -3408,6 +3408,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainEditor",
+    "key": "SelectionWarning.SizeMax",
+    "description": null,
+    "english": "Size needs to be smaller than 16384x16384x16384.",
+    "translation": "El tamaño debe ser menor que 16384x16384x16384.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.App",
     "key": "GenerativeAI.CopiedToClipboard",
     "description": null,
@@ -36371,7 +36379,7 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
+    "english": "Disabled",
     "translation": "Desactivado",
     "isDeprecated": false
   },
@@ -38525,6 +38533,102 @@
     "description": null,
     "english": "Show a numeric display of the distance dragged when using draggers.",
     "translation": "Muestra una visualización numérica de la distancia arrastrada cuando se usan arrastradores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerMajorGridIncrement",
+    "description": null,
+    "english": "Major Grid Line Every...",
+    "translation": "La línea principal de cuadrícula cada...",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerMajorGridIncrement",
+    "description": null,
+    "english": "How frequently to display a major grid line in grids and rulers.",
+    "translation": "Con qué frecuencia se muestra una línea de cuadrícula principal en cuadrículas y reglas.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerTiltRotateDuration",
+    "description": null,
+    "english": "Tilt/Rotate Animation Duration",
+    "translation": "Duración de Animación de inclinación/rotación",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerTiltRotateDuration",
+    "description": null,
+    "english": "How long the animation when pressing T/R while dragging should last. Enter 0 for no animation.",
+    "translation": "Cuánto tiempo debe durar la animación al presionar T/R mientras se arrastra. Ingresa 0 si no hay ninguna animación.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerMaxSoftSnaps",
+    "description": null,
+    "english": "Move/Scale Max Soft Snaps",
+    "translation": "Movimiento/Escalado máximo de ajustes suaves",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerMaxSoftSnaps",
+    "description": null,
+    "english": "How many potential soft snaps to show in each direction when scaling or moving along an axis. Enter 0 for no soft snaps.",
+    "translation": "Cuántos ajustes suaves potenciales se muestran en cada dirección cuando se escalan o se mueven a lo largo de un eje. Ingresa 0 si no hay interrupciones suaves.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Soft Snap Margin Multiplier",
+    "translation": "Multiplicador de margen de ajuste suave",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively drags soft snap to geometry. Enter 0 for no soft snaps.",
+    "translation": "Ajusta la fuerza con la que se arrastra el ajuste suave a la geometría. Ingresa 0 si no hay ningún ajuste suave.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Summon Snap Margin Multiplier",
+    "translation": "Invocar multiplicador de margen de ajuste",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively the pivot snaps to hotspots on the edges of the target part when summoning. Enter 0 for no snapping of the summoned pivot.",
+    "translation": "Ajusta la intensidad con la que el pivote se ajusta a los puntos calientes de los bordes de la pieza objetivo al invocarla. Ingresa 0 para que el pivote invocado no se ajuste.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToApplyChange",
+    "description": null,
+    "english": "Fail to apply change from play test for %1 because: %2",
+    "translation": "Error al aplicar el cambio de la prueba de juego para %1 porque: %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToFindInstance",
+    "description": null,
+    "english": "Fail to find script instance to apply",
+    "translation": "Error al encontrar la instancia de script para aplicar",
     "isDeprecated": false
   },
   {
@@ -76641,10 +76745,26 @@
   },
   {
     "namespace": "Studio.AssetImporter",
+    "key": "Statuses.CageNameHasTypoWarning1",
+    "description": null,
+    "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
+    "translation": "El nombre de la jaula contiene un error tipográfico. Intenta renombrar a {SuggestedName}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
     "key": "Statuses.CageNameHasTypoV1Warning1",
     "description": null,
     "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
     "translation": "El nombre de la jaula contiene un error tipográfico. Intenta renombrar a {SuggestedName}.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.NoRefMeshForCageWithSuggestionWarning1",
+    "description": null,
+    "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
+    "translation": "No se pudo encontrar la malla Geo correspondiente para la jaula Malla. Intenta renombrar a {SuggestedName}.",
     "isDeprecated": false
   },
   {
@@ -82100,7 +82220,7 @@
     "key": "PublishingBlocked.Warning",
     "description": null,
     "english": "R6 conversion is not complete",
-    "translation": "Los adaptadores deben eliminarse",
+    "translation": "La conversión de R6 no está completa",
     "isDeprecated": false
   },
   {
@@ -82108,7 +82228,7 @@
     "key": "PublishingBlocked.Detail",
     "description": null,
     "english": "You must complete all the conversion tasks before publishing your experience.",
-    "translation": "Antes de publicar, elimina los adaptadores de la herramienta de conversión de R6 a R15 para evitar posibles problemas. Ve a la herramienta de conversión y elimina los adaptadores.",
+    "translation": "Debes completar todas las tareas de conversión antes de publicar tu experiencia.",
     "isDeprecated": false
   },
   {
@@ -82188,7 +82308,7 @@
     "key": "Summary.R6R15ModeDesc",
     "description": null,
     "english": "This mode temporarily inserts adapter code that allows you to test a mix of unconverted R6 assets alongside R15 assets",
-    "translation": "Este modo inserta temporalmente código de adaptador que te permite probar una mezcla de recursos R6 no convertidos junto a recursos R15. Aprende más",
+    "translation": "Este modo inserta temporalmente código de adaptador que te permite probar una mezcla de recursos R6 no convertidos junto a recursos R15",
     "isDeprecated": false
   },
   {
@@ -82204,7 +82324,7 @@
     "key": "Summary.R15ModeOn",
     "description": null,
     "english": "Test mode set to R15.",
-    "translation": "El modo de prueba R15 está activado.",
+    "translation": "Modo de prueba establecido en R15.",
     "isDeprecated": false
   },
   {
@@ -82285,6 +82405,46 @@
     "description": null,
     "english": "Character",
     "translation": "Personaje",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Characters",
+    "description": null,
+    "english": "Characters",
+    "translation": "Personajes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Animations",
+    "description": null,
+    "english": "Animations ({currentAmount}/{total})",
+    "translation": "Animaciones ({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Scripts",
+    "description": null,
+    "english": "Scripts",
+    "translation": "Scripts",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.ConvertHeader",
+    "description": null,
+    "english": "[link1] ({currentAmount}/{total})",
+    "translation": "[link1] ({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Animation",
+    "description": null,
+    "english": "Animation",
+    "translation": "Animación",
     "isDeprecated": false
   },
   {
@@ -86461,6 +86621,38 @@
     "description": null,
     "english": "One shoe was detected in your selection.",
     "translation": "Se detectó un zapato en tu selección.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.AttachmentsTool",
+    "description": null,
+    "english": "Attachments",
+    "translation": "Conexiones",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.CageTool",
+    "description": null,
+    "english": "Cage Mesh",
+    "translation": "Malla de jaula",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.JointTool",
+    "description": null,
+    "english": "Joints",
+    "translation": "Articulaciones",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EquippedItemContextMenu.UnequipAllItems",
+    "description": null,
+    "english": "Unequip All Items",
+    "translation": "Desequipar todos los objetos",
     "isDeprecated": false
   },
   {

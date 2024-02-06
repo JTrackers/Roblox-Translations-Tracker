@@ -3408,6 +3408,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainEditor",
+    "key": "SelectionWarning.SizeMax",
+    "description": null,
+    "english": "Size needs to be smaller than 16384x16384x16384.",
+    "translation": "サイズは、16384x16384x16384 より小さくする必要があります。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.App",
     "key": "GenerativeAI.CopiedToClipboard",
     "description": null,
@@ -36371,7 +36379,7 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
+    "english": "Disabled",
     "translation": "無効化済み",
     "isDeprecated": false
   },
@@ -38429,6 +38437,30 @@
     "description": null,
     "english": "Show Hover Ruler",
     "translation": "ホバーオーバー定規を表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerShowMeasurement",
+    "description": null,
+    "english": "Show Numeric Measurements",
+    "translation": "寸法を数値で表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToApplyChange",
+    "description": null,
+    "english": "Fail to apply change from play test for %1 because: %2",
+    "translation": "次の理由で %1 のプレイテストから変更を適用できません: %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToFindInstance",
+    "description": null,
+    "english": "Fail to find script instance to apply",
+    "translation": "適用するスクリプトインスタンスが見つかりません",
     "isDeprecated": false
   },
   {
@@ -77076,7 +77108,7 @@
     "key": "Statuses.MeshHoleDetectedWarning",
     "description": null,
     "english": "This mesh is not watertight, meaning there is an unexpected number of holes in it. If this is a clothing mesh, this can impact Hidden Surface Removal. If this is a different type of mesh, this may have some unexpected rendering effect.",
-    "translation": "このメッシュは防水ではありません。これは、予想できないくらいの数の穴があるという意味です。衣類のメッシュの場合、表面の削除lに影響を与える可能性があります。 これが異なるタイプのメッシュである場合、予期しないレンダリング効果が見られる可能性があります。",
+    "translation": "このメッシュは防水ではありません。これは、予想できないくらいの数の穴があるという意味です。衣装のメッシュの場合、表面の削除lに影響を与える可能性があります。 これが異なるタイプのメッシュである場合、予期しないレンダリング効果が見られる可能性があります。",
     "isDeprecated": false
   },
   {
@@ -77805,6 +77837,14 @@
     "description": null,
     "english": "Import experienced a {type} error.",
     "translation": "インポート中に {type} エラーが発生しました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.CageNameHasTypoWarning1",
+    "description": null,
+    "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
+    "translation": "ケージ名にタイプミスがあります。 {SuggestedName} に名前を変更してみてください。",
     "isDeprecated": false
   },
   {
@@ -83276,7 +83316,7 @@
     "key": "PublishingBlocked.Detail",
     "description": null,
     "english": "You must complete all the conversion tasks before publishing your experience.",
-    "translation": "公開する前に、潜在的な問題を回避するためにR6からR15への変換ツールのアダプタを削除します。変換ツールに移動し、アダプタを削除します。",
+    "translation": "バーチャル空間を公開する前に変換タスクをすべて完了させる必要があります。",
     "isDeprecated": false
   },
   {
@@ -83356,7 +83396,7 @@
     "key": "Summary.R6R15ModeDesc",
     "description": null,
     "english": "This mode temporarily inserts adapter code that allows you to test a mix of unconverted R6 assets alongside R15 assets",
-    "translation": "このモードでは、変換されていないR6アセットとR15アセットの組み合わせをテストできるアダプターコードが一時的に挿入されます。詳細はこちら",
+    "translation": "このモードでは、変換されていないR6とR15アセットを混合でテストできるアダプターコードが一時的に挿入されます。",
     "isDeprecated": false
   },
   {
@@ -83372,7 +83412,7 @@
     "key": "Summary.R15ModeOn",
     "description": null,
     "english": "Test mode set to R15.",
-    "translation": "R15テストモードがオンです。",
+    "translation": "テストモードはR15に設定されています。",
     "isDeprecated": false
   },
   {
@@ -83457,10 +83497,42 @@
   },
   {
     "namespace": "Studio.R15Migrator",
+    "key": "Summary.Characters",
+    "description": null,
+    "english": "Characters",
+    "translation": "キャラクター",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
     "key": "Summary.Animations",
     "description": null,
     "english": "Animations ({currentAmount}/{total})",
     "translation": "アニメーション ({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Scripts",
+    "description": null,
+    "english": "Scripts",
+    "translation": "スクリプト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.ConvertHeader",
+    "description": null,
+    "english": "[link1] ({currentAmount}/{total})",
+    "translation": "[link1] ({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Animation",
+    "description": null,
+    "english": "Animation",
+    "translation": "アニメーション",
     "isDeprecated": false
   },
   {
@@ -87637,6 +87709,38 @@
     "description": null,
     "english": "One shoe was detected in your selection.",
     "translation": "選択肢に片方の靴が検出されました。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.AttachmentsTool",
+    "description": null,
+    "english": "Attachments",
+    "translation": "アタッチメント",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.CageTool",
+    "description": null,
+    "english": "Cage Mesh",
+    "translation": "ケージメッシュ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.JointTool",
+    "description": null,
+    "english": "Joints",
+    "translation": "ジョイント",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EquippedItemContextMenu.UnequipAllItems",
+    "description": null,
+    "english": "Unequip All Items",
+    "translation": "すべてのアイテムを外す",
     "isDeprecated": false
   },
   {

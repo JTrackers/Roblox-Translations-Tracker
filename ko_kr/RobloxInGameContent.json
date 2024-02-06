@@ -444,7 +444,7 @@
     "key": "AbuseReason.AskingPII",
     "description": null,
     "english": "Personal Question",
-    "translation": "개인적인 질문",
+    "translation": "개인정보 관련 질문",
     "isDeprecated": false
   },
   {
@@ -1524,7 +1524,7 @@
     "key": "PurchaseFailed.UnknownFailureNoItemName",
     "description": "Description text displayed in the case of an unknown error when we do not know the name of the item to be purchased. Usually would only happen if the game prompts the user to buy an invalid item.",
     "english": "Your purchase failed because something went wrong. Your account has not been charged. Please try again later.",
-    "translation": "오류가 발생해 구매하지 못했습니다. 계정에 비용이 청구되지 않아요. 나중에 다시 시도하세요.",
+    "translation": "오류가 발생해 구매하지 못했습니다. 계정에 비용이 청구되지 않습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -1532,7 +1532,7 @@
     "key": "PurchaseFailed.UnknownFailure",
     "description": "Description text displayed in the case of an unknown error, generally something wrong with the network.",
     "english": "Your purchase of {ITEM_NAME} failed because something went wrong. Your account has not been charged. Please try again later.",
-    "translation": "오류가 발생해 {ITEM_NAME} 구매하지 못했습니다. 계정에 비용이 청구되지 않아요. 나중에 다시 시도하세요.",
+    "translation": "오류가 발생해 {ITEM_NAME}(을)를 구매하지 못했습니다. 계정에 비용이 청구되지 않습니다. 나중에 다시 시도하세요.",
     "isDeprecated": false
   },
   {
@@ -1604,7 +1604,7 @@
     "key": "PurchaseMessage.Free",
     "description": "Description text displayed when a player is prompted to purchase an item that costs 0 Robux.",
     "english": "Would you like to take {ITEM_NAME} for FREE?",
-    "translation": "무료로 {ITEM_NAME}을 획득하시겠습니까?",
+    "translation": "무료로 {ITEM_NAME}(을)를 받으시겠어요?",
     "isDeprecated": false
   },
   {
@@ -1877,6 +1877,14 @@
     "description": null,
     "english": "You're going too fast! Try again in a minute.",
     "translation": "요청이 너무 많습니다! 1분 후 다시 시도하세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PurchasePrompt",
+    "key": "Title.CreationSubmitted",
+    "description": "When going through the purchase flow for an in-experience body, the final prompt should have this confirmation title",
+    "english": "Creation Submitted",
+    "translation": "작품이 제출됨",
     "isDeprecated": false
   },
   {
@@ -2628,7 +2636,7 @@
     "key": "KEY_DESCRIPTION_OPTIONAL",
     "description": null,
     "english": "Optional",
-    "translation": "선택 항목",
+    "translation": "선택 사항",
     "isDeprecated": false
   },
   {
@@ -2764,7 +2772,7 @@
     "key": "GameChat_ChatMain_ChatBarText",
     "description": null,
     "english": "To chat click here or press \"/\" key",
-    "translation": "여기를 클릭하거나 \"/\" 키를 누른 후 채팅을 시작하세요",
+    "translation": "여기를 클릭하거나 '/' 키를 누른 후 채팅을 시작하세요",
     "isDeprecated": false
   },
   {
@@ -3468,7 +3476,7 @@
     "key": "UnknownKey64",
     "description": null,
     "english": "Cheating/Exploiting",
-    "translation": "치트 및 익스플로잇",
+    "translation": "치트 및 익스플로잇(핵 사용)",
     "isDeprecated": false
   },
   {
@@ -7116,7 +7124,7 @@
     "key": "Label.MethodOfAbuse",
     "description": "AR Method of abuse label",
     "english": "Type Of Abuse?",
-    "translation": "규정 위반 유형은?",
+    "translation": "규정 위반 유형",
     "isDeprecated": false
   },
   {
@@ -7140,7 +7148,7 @@
     "key": "MethodOfAbuse.Text.Subtitle",
     "description": null,
     "english": "This person typed a mean word in text chat",
-    "translation": "문자 채팅으로 악의적인 단어를 언급함",
+    "translation": "텍스트 채팅으로 악의적인 단어를 언급함",
     "isDeprecated": false
   },
   {
@@ -7148,7 +7156,7 @@
     "key": "MethodOfAbuse.Text.Title",
     "description": null,
     "english": "Text Chat",
-    "translation": "문자 채팅",
+    "translation": "텍스트 채팅",
     "isDeprecated": false
   },
   {
@@ -7652,7 +7660,7 @@
     "key": "Label.AttachScreenshot",
     "description": "Label for a form row that allows a user to attach a screenshot to their Abuse Report.",
     "english": "Attach Screenshot? (optional)",
-    "translation": "스크린샷을 첨부할까요? (선택 사항)",
+    "translation": "스크린샷 첨부(선택 사항)",
     "isDeprecated": false
   },
   {
@@ -7660,7 +7668,7 @@
     "key": "Label.AttachScreenshotFormatted",
     "description": "Label for a form row that allows a user to attach a screenshot to their Abuse Report. The line break is inserted to reduce the width of the full string.",
     "english": "Attach Screenshot?{lineBreak}(optional)",
-    "translation": "스크린샷을 첨부할까요?{lineBreak}(선택 사항)",
+    "translation": "스크린샷 첨부{lineBreak}(선택 사항)",
     "isDeprecated": false
   },
   {
@@ -7700,7 +7708,7 @@
     "key": "Label.ReasonForAbuse",
     "description": "Label for a row in the Report Abuse form, which allows the player to select what kind of abuse they are reporting (e.g. Bullying, Harassment, Cheating, etc).",
     "english": "Reason for Abuse?",
-    "translation": "규정을 위반하는 이유를 알려 주세요.",
+    "translation": "규정 위반 이유",
     "isDeprecated": false
   },
   {
@@ -8764,7 +8772,7 @@
     "key": "Report.AbuseExploiting",
     "description": "One of the options in the report abuse types drop down.",
     "english": "Cheating/Exploiting",
-    "translation": "치트 및 익스플로잇",
+    "translation": "치트 및 익스플로잇(핵 사용)",
     "isDeprecated": false
   },
   {
@@ -10860,7 +10868,7 @@
     "key": "Report.Category.Header.Text",
     "description": "Shown as a selection option in a menu. The context is reporting abuse, bad behavior. Text Chat is the name of the category.",
     "english": "Text Chat",
-    "translation": "문자 채팅",
+    "translation": "텍스트 채팅",
     "isDeprecated": false
   },
   {
@@ -10868,7 +10876,7 @@
     "key": "Report.Title.TextChat",
     "description": "The title of a modal window.  The context is the abuse reporting flow; we want to \"report\" bad behavior. This bad behavior was in regards to the users text chat.",
     "english": "Text Chat Report",
-    "translation": "문자 채팅 관련 신고",
+    "translation": "텍스트 채팅 관련 신고",
     "isDeprecated": false
   },
   {
@@ -10964,7 +10972,7 @@
     "key": "Report.Category.Description.Text",
     "description": "Sub Text for \"Text Chat\" Category. It's providing an example for the type of abuse to report.",
     "english": "This person typed a mean word in text chat.",
-    "translation": "문자 채팅으로 악의적인 단어를 언급함.",
+    "translation": "텍스트 채팅으로 악의적인 단어를 언급함.",
     "isDeprecated": false
   },
   {
@@ -12348,7 +12356,7 @@
     "key": "Description.PreferredTransparency",
     "description": "Describes the Preferred Transparency user setting",
     "english": "Improve contrast by adjusting transparency on some backgrounds",
-    "translation": "일부 배경의 투명도를 조정해 대비를 개선합니다",
+    "translation": "일부 배경의 투명도를 조정해 대비를 개선",
     "isDeprecated": false
   },
   {
@@ -12356,7 +12364,7 @@
     "key": "Description.ReducedMotion",
     "description": "Describes the Reduce Motion user setting",
     "english": "Stop or reduce motion effects",
-    "translation": "모션 효과 중지 또는 감소",
+    "translation": "모션 효과 중지 또는 줄이기",
     "isDeprecated": false
   },
   {
