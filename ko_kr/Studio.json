@@ -3408,6 +3408,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainEditor",
+    "key": "SelectionWarning.SizeMax",
+    "description": null,
+    "english": "Size needs to be smaller than 16384x16384x16384.",
+    "translation": "크기가 16384x16384x16384보다 작아야 합니다.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.App",
     "key": "GenerativeAI.CopiedToClipboard",
     "description": null,
@@ -7828,7 +7836,7 @@
     "key": "RBXMainWindow.SelectAttachmentConstraintConnections",
     "description": null,
     "english": "Select connections of the attachment or constraint",
-    "translation": "첨부 또는 제약 연결 선택",
+    "translation": "연결부 또는 제약 연결 선택",
     "isDeprecated": false
   },
   {
@@ -8076,7 +8084,7 @@
     "key": "RBXMainWindow.SwapAttachments",
     "description": null,
     "english": "Swap Attachments",
-    "translation": "첨부 스왑",
+    "translation": "연결부 스왑",
     "isDeprecated": false
   },
   {
@@ -8084,7 +8092,7 @@
     "key": "RBXMainWindow.SwitchBothAttachments",
     "description": null,
     "english": "Swap both attachments on the constraint",
-    "translation": "제약의 첨부 모두 스왑",
+    "translation": "제약의 연결부 모두 스왑",
     "isDeprecated": false
   },
   {
@@ -8916,7 +8924,7 @@
     "key": "RobloxRibbonMainWindow.Attachment",
     "description": null,
     "english": "Attachment",
-    "translation": "첨부",
+    "translation": "연결부",
     "isDeprecated": false
   },
   {
@@ -9324,7 +9332,7 @@
     "key": "RobloxRibbonMainWindow.DrawConstraintsAttWeldsTop",
     "description": null,
     "english": "Draw constraints, attachments and welds on top",
-    "translation": "맨 위에 제약, 첨부, 용접 그리기",
+    "translation": "맨 위에 제약, 연결부, 용접 그리기",
     "isDeprecated": false
   },
   {
@@ -9596,7 +9604,7 @@
     "key": "RobloxRibbonMainWindow.InsertAttachment",
     "description": null,
     "english": "Insert attachment",
-    "translation": "첨부 삽입",
+    "translation": "연결부 삽입",
     "isDeprecated": false
   },
   {
@@ -9876,7 +9884,7 @@
     "key": "RobloxRibbonMainWindow.PlaceConstraintAttachment",
     "description": null,
     "english": "Place a constraint or an attachment",
-    "translation": "제약 또는 첨부 배치",
+    "translation": "제약 또는 연결부 배치",
     "isDeprecated": false
   },
   {
@@ -35892,7 +35900,7 @@
     "key": "Property.ShowSinglySelectedAttachmentParentFrame",
     "description": null,
     "english": "Show Singly Selected Attachment Parent Frame",
-    "translation": "단일 선택된 첨부 파일 부모 프레임 표시",
+    "translation": "단일 선택된 연결부 부모 프레임 표시",
     "isDeprecated": false
   },
   {
@@ -38556,7 +38564,7 @@
     "key": "PropertyTooltip.DraggerTiltRotateDuration",
     "description": null,
     "english": "How long the animation when pressing T/R while dragging should last. Enter 0 for no animation.",
-    "translation": "드래그하는 동안 T/R을 누를 때 애니메이션이 지속되는 시간입니다. 애니메이션이 없으면 0을 입력합니다.",
+    "translation": "드래그하는 동안 T/R을 누를 때 애니메이션이 지속되는 시간입니다. 애니메이션 설정이 없으면 0을 입력합니다.",
     "isDeprecated": false
   },
   {
@@ -38572,7 +38580,55 @@
     "key": "PropertyTooltip.DraggerMaxSoftSnaps",
     "description": null,
     "english": "How many potential soft snaps to show in each direction when scaling or moving along an axis. Enter 0 for no soft snaps.",
-    "translation": "축을 따라 스케일하거나 이동 시 각 방향에서 표시할 잠재적인 소프트 스냅 수입니다. 소프트 스냅이 없으면 0을 입력합니다.",
+    "translation": "축을 따라 스케일하거나 이동 시 각 방향에서 표시할 잠재적인 소프트 스냅 수입니다. 소프트 스냅 설정이 없으면 0을 입력합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Soft Snap Margin Multiplier",
+    "translation": "소프트 스냅 마진 승수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSoftSnapMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively drags soft snap to geometry. Enter 0 for no soft snaps.",
+    "translation": "소프트 스냅을 지오메트리에 드래그하는 강도를 미세 조정합니다. 소프트 스냅 설정이 없으면 0을 입력합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Property.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Summon Snap Margin Multiplier",
+    "translation": "스냅 소환 마진 승수",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PropertyTooltip.DraggerSummonMarginFactor",
+    "description": null,
+    "english": "Fine tune how agressively the pivot snaps to hotspots on the edges of the target part when summoning. Enter 0 for no snapping of the summoned pivot.",
+    "translation": "소환 시 피벗이 대상 파트 가장자리의 핫스팟에 맞춰지는 강도를 미세 조정합니다. 소환된 피벗을 스냅하지 않으려면 0을 입력합니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToApplyChange",
+    "description": null,
+    "english": "Fail to apply change from play test for %1 because: %2",
+    "translation": "다음 이유로 인해 %1에 대한 플레이 테스트의 변경 사항을 적용하지 못함: %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "PlayModifiedScriptController.FailToFindInstance",
+    "description": null,
+    "english": "Fail to find script instance to apply",
+    "translation": "적용할 스크립트 인스턴스를 찾을 수 없습니다",
     "isDeprecated": false
   },
   {
@@ -54628,7 +54684,7 @@
     "key": "AssetConfig.ValidationErrorItemNotDetected",
     "description": null,
     "english": "{itemName} not detected. Please check naming, rigging, and attachments.",
-    "translation": "{itemName}(이)가 감지되지 않았습니다. 이름 지정, 리깅, 첨부 항목을 확인하세요.",
+    "translation": "{itemName}(이)가 감지되지 않았습니다. 이름 지정, 리깅, 연결부를 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -76084,7 +76140,7 @@
     "key": "Statuses.CageNameHasTypoWarning",
     "description": null,
     "english": "Cage name contains a typo, try renaming to {name}.",
-    "translation": "케이지 이름에 오타가 있습니다. 이름을 {name}(으)로 변경하세요.",
+    "translation": "케이지 이름에 오타가 있습니다. 이름을 {name}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -76132,7 +76188,7 @@
     "key": "Statuses.CageNameHasTypoWarning_Deprecated",
     "description": null,
     "english": "Cage name contains a typo, try renaming to {name}.",
-    "translation": "케이지 이름에 오타가 있습니다. 이름을 {name}(으)로 변경하세요.",
+    "translation": "케이지 이름에 오타가 있습니다. 이름을 {name}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -76140,7 +76196,7 @@
     "key": "Statuses.CageNameHasTypoWarning_v1",
     "description": null,
     "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
-    "translation": "케이지 이름에 오타가 있습니다. 이름을 {SuggestedName}(으)로 변경하세요.",
+    "translation": "케이지 이름에 오타가 있습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -76148,7 +76204,7 @@
     "key": "Statuses.NoRefMeshForCageWarningWithSuggestion_v1",
     "description": null,
     "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
-    "translation": "케이지 메시에 해당하는 지오 메시를 찾을 수 없습니다. 이름을 {SuggestedName}(으)로 변경하세요.",
+    "translation": "케이지 메시에 해당하는 지오 메시를 찾을 수 없습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -76689,10 +76745,26 @@
   },
   {
     "namespace": "Studio.AssetImporter",
+    "key": "Statuses.CageNameHasTypoWarning1",
+    "description": null,
+    "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
+    "translation": "케이지 이름에 오타가 있습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
     "key": "Statuses.CageNameHasTypoV1Warning1",
     "description": null,
     "english": "Cage name contains a typo, try renaming to {SuggestedName}.",
-    "translation": "케이지 이름에 오타가 있습니다. 이름을 {SuggestedName}(으)로 변경하세요.",
+    "translation": "케이지 이름에 오타가 있습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetImporter",
+    "key": "Statuses.NoRefMeshForCageWithSuggestionWarning1",
+    "description": null,
+    "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
+    "translation": "케이지 메시에 해당하는 지오 메시를 찾을 수 없습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -76700,7 +76772,7 @@
     "key": "Statuses.NoRefMeshForCageWithSuggestionV1Warning1",
     "description": null,
     "english": "Could not find corresponding Geo Mesh for Cage Mesh. Try renaming to {SuggestedName}.",
-    "translation": "케이지 메시에 해당하는 지오 메시를 찾을 수 없습니다. 이름을 {SuggestedName}(으)로 변경하세요.",
+    "translation": "케이지 메시에 해당하는 지오 메시를 찾을 수 없습니다. 이름을 {SuggestedName}(으)로 변경해 보세요.",
     "isDeprecated": false
   },
   {
@@ -82148,7 +82220,7 @@
     "key": "PublishingBlocked.Warning",
     "description": null,
     "english": "R6 conversion is not complete",
-    "translation": "어댑터를 제거해야 합니다",
+    "translation": "R6 변환이 완료되지 않았습니다",
     "isDeprecated": false
   },
   {
@@ -82156,7 +82228,7 @@
     "key": "PublishingBlocked.Detail",
     "description": null,
     "english": "You must complete all the conversion tasks before publishing your experience.",
-    "translation": "게시하기 전에 R6-R15 변환 도구의 어댑터를 제거해 잠재적인 오류를 방지하세요. 변환 도구로 이동해 어댑터를 제거하세요.",
+    "translation": "체험을 게시에 앞서 모든 변환 작업을 완료해야 합니다.",
     "isDeprecated": false
   },
   {
@@ -82236,7 +82308,7 @@
     "key": "Summary.R6R15ModeDesc",
     "description": null,
     "english": "This mode temporarily inserts adapter code that allows you to test a mix of unconverted R6 assets alongside R15 assets",
-    "translation": "이 모드는 R15 애셋과 함께 변환되지 않은 R6 애셋의 혼합물을 테스트할 수 있는 어댑터 코드를 일시적으로 삽입합니다. 자세한 정보",
+    "translation": "이 모드는 R15 애셋과 함께 변환되지 않은 R6 애셋의 혼합물을 테스트할 수 있는 어댑터 코드를 일시적으로 삽입합니다",
     "isDeprecated": false
   },
   {
@@ -82252,7 +82324,7 @@
     "key": "Summary.R15ModeOn",
     "description": null,
     "english": "Test mode set to R15.",
-    "translation": "R15 테스트 모드가 켜져 있습니다.",
+    "translation": "테스트 모드가 R15로 설정되었습니다.",
     "isDeprecated": false
   },
   {
@@ -82333,6 +82405,70 @@
     "description": null,
     "english": "Character",
     "translation": "캐릭터",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Characters",
+    "description": null,
+    "english": "Characters",
+    "translation": "캐릭터",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Animations",
+    "description": null,
+    "english": "Animations ({currentAmount}/{total})",
+    "translation": "애니메이션({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Scripts",
+    "description": null,
+    "english": "Scripts",
+    "translation": "스크립트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.ConvertHeader",
+    "description": null,
+    "english": "[link1] ({currentAmount}/{total})",
+    "translation": "[link1] ({currentAmount}/{total})",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Animation",
+    "description": null,
+    "english": "Animation",
+    "translation": "애니메이션",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Tabs.Summary",
+    "description": null,
+    "english": "Summary",
+    "translation": "요약",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Sortby",
+    "description": null,
+    "english": "Sort by",
+    "translation": "정렬 기준",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.R15Migrator",
+    "key": "Summary.Alphabetical",
+    "description": null,
+    "english": "Alphabetical",
+    "translation": "알파벳 순",
     "isDeprecated": false
   },
   {
@@ -83716,7 +83852,7 @@
     "key": "Category.Attachments",
     "description": null,
     "english": "Attachments",
-    "translation": "첨부 파일",
+    "translation": "연결부",
     "isDeprecated": false
   },
   {
@@ -86509,6 +86645,38 @@
     "description": null,
     "english": "One shoe was detected in your selection.",
     "translation": "선택 항목에 한쪽 신발이 감지되었습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.AttachmentsTool",
+    "description": null,
+    "english": "Attachments",
+    "translation": "연결부",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.CageTool",
+    "description": null,
+    "english": "Cage Mesh",
+    "translation": "케이지 메시",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EditingTools.JointTool",
+    "description": null,
+    "english": "Joints",
+    "translation": "조인트",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "EquippedItemContextMenu.UnequipAllItems",
+    "description": null,
+    "english": "Unequip All Items",
+    "translation": "전체 아이템 장착 해제",
     "isDeprecated": false
   },
   {
