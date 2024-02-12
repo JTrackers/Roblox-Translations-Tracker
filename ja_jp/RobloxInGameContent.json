@@ -7019,7 +7019,7 @@
     "namespace": "Feature.SettingsHub",
     "key": "Prompt.VoiceChatSuspended",
     "description": "Title of popup shown to users if they have been banned from voice chat",
-    "english": "Voice Chat Suspended",
+    "english": "Voice chat suspended",
     "translation": "ボイスチャット使用停止処分",
     "isDeprecated": false
   },
@@ -7795,7 +7795,7 @@
     "namespace": "Feature.SettingsHub",
     "key": "Prompt.Subtitle.TemporaryVoiceBan1",
     "description": "Shows up if the user is automatically banned due based on detected speech",
-    "english": "We’ve temporarily turned off chat with voice because you may have used language that goes against Roblox Community Standards.",
+    "english": "We’ve temporarily turned off voice chat because you may have used language that goes against Roblox Community Standards.",
     "translation": "Robloxのコミュニティ基準に違反する表現があった可能性があるため、音声チャットを一時的に無効にしました。",
     "isDeprecated": false
   },
@@ -7803,8 +7803,8 @@
     "namespace": "Feature.SettingsHub",
     "key": "Prompt.Subtitle.TemporaryVoiceBan2",
     "description": "Shows up if the user is automatically banned due based on detected speech",
-    "english": "If this happens again, there may be more limits on your account.",
-    "translation": "これが再発した場合、お持ちのアカウントにさらに制限がかかる可能性があります。",
+    "english": "If this happens again, you may lose access to your account.",
+    "translation": "次に同じことが起きた場合、お持ちのアカウントにさらに制限がかかる可能性があります。",
     "isDeprecated": false
   },
   {
@@ -14188,7 +14188,7 @@
     "key": "FeedbackBar.ExitFeedbackButton",
     "description": "Text on a button at the bottom right corner of the screen while in feedback mode. Clicking this button allows the user to exit the mode.",
     "english": "Exit",
-    "translation": "フィードバックモードを終了",
+    "translation": "終了",
     "isDeprecated": false
   },
   {
@@ -14324,7 +14324,7 @@
     "key": "Help.MainHeader",
     "description": "Header of a modal that pops up when the user presses the help button while in feedback mode.",
     "english": "Help",
-    "translation": "フィードバックモードの使い方",
+    "translation": "ヘルプ",
     "isDeprecated": false
   },
   {
@@ -14348,7 +14348,7 @@
     "key": "FeedbackReportDialog.SubmitFeedback",
     "description": "Text on a button at the bottom of the feedback modal. Clicking this button submits feedback and closes out of the modal",
     "english": "Submit",
-    "translation": "フィードバックを送信",
+    "translation": "送信する",
     "isDeprecated": false
   },
   {
@@ -14420,7 +14420,79 @@
     "key": "EntryPoint.ButtonText",
     "description": "Text on a button that when clicked, enters feedback mode",
     "english": "Give Feedback",
-    "translation": "フィードバックモードを開始",
+    "translation": "フィードバックを送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.TextSelectionHeader",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. The header appears over a textbox that contains text on the object",
+    "english": "Selected Text",
+    "translation": "選択済みテキスト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackBar.MainLabel",
+    "description": "While in feedback mode, there will be a bottom bar over the screen. This label will be in the bottom left to indicate that the user is currently in the mode.",
+    "english": "Give Feedback",
+    "translation": "フィードバックを送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.MainHeader",
+    "description": "Header of a modal that pops up when the user first enters feedback mode",
+    "english": "Tell Us What's Wrong",
+    "translation": "問題点を教えてください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Instructions",
+    "description": "Appears in the onboarding modal as instructional blurb for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "任意の文章を選択して誤訳や翻訳されていない部分についてのフィードバックを送信してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Cancel",
+    "description": "Text on a button at the bottom of onboarding modal. Clicking this button closes out of the modal and the user exits out of feedback mode.",
+    "english": "Cancel",
+    "translation": "キャンセル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Start",
+    "description": "Button at the bottom of onboarding modal. Clicking this button closes the modal and \"starts\" the flow for leaving feedback. As in, click this button to start.",
+    "english": "Start",
+    "translation": "開始",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Help.Instructions",
+    "description": "Text that appears in help modal as instructions for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "任意の文章を選択して誤訳や翻訳されていない部分についてのフィードバックを送信してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.GiveFeedbackButton",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button proceeds to open the report dialog modal that allows the user to provide more feedback.",
+    "english": "Give Feedback",
+    "translation": "フィードバックを送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.Close",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button simply closes out the minimodal and returns the user to feedback mode.",
+    "english": "Close",
+    "translation": "閉じる",
     "isDeprecated": false
   },
   {
