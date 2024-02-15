@@ -7020,7 +7020,7 @@
     "key": "Prompt.VoiceChatSuspended",
     "description": "Title of popup shown to users if they have been banned from voice chat",
     "english": "Voice chat suspended",
-    "translation": "الدردشة الصوتية غير مسموحة",
+    "translation": "الدردشة الصوتية معلّقة",
     "isDeprecated": false
   },
   {
@@ -7796,7 +7796,7 @@
     "key": "Prompt.Subtitle.TemporaryVoiceBan1",
     "description": "Shows up if the user is automatically banned due based on detected speech",
     "english": "We’ve temporarily turned off voice chat because you may have used language that goes against Roblox Community Standards.",
-    "translation": "لقد عطّلنا الدردشة الصوتية مؤقتًا لأنك قلت شيئًا قد يتعارض مع معايير مجتمع Roblox.",
+    "translation": "لقد عطّلنا المحادثة الصوتية مؤقتًا لأنك قلت شيئًا قد يتعارض مع معايير مجتمع Roblox.",
     "isDeprecated": false
   },
   {
@@ -7804,7 +7804,7 @@
     "key": "Prompt.Subtitle.TemporaryVoiceBan2",
     "description": "Shows up if the user is automatically banned due based on detected speech",
     "english": "If this happens again, you may lose access to your account.",
-    "translation": "إذا حدث هذا الأمر مرة أخرى، قد نضع المزيد من القيود على حسابك.",
+    "translation": "إذا حدث هذا الأمر ثانية، قد تفقد الوصول إلى حسابك.",
     "isDeprecated": false
   },
   {
@@ -7845,6 +7845,22 @@
     "description": "Label to the left of a dropdown that is used to select a language from a list of languages. The selected language is used to translate chat messages.",
     "english": "Chat Translation Language",
     "translation": "لغة ترجمة الدردشة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.ThanksForLettingUsKnow",
+    "description": "Updated subtitle for feedback toast",
+    "english": "Your feedback helps us improve our systems.",
+    "translation": "تساعدنا ملاحظاتك على تحسين أداء أنظمتنا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.ThanksForLettingUsKnow",
+    "description": "Updated prompt to thank user for giving us feedback",
+    "english": "Thanks for letting us know",
+    "translation": "شكرًا على إخبارنا",
     "isDeprecated": false
   },
   {
@@ -14140,7 +14156,7 @@
     "key": "FeedbackBar.ExitFeedbackButton",
     "description": "Text on a button at the bottom right corner of the screen while in feedback mode. Clicking this button allows the user to exit the mode.",
     "english": "Exit",
-    "translation": "الخروج من الملاحظات",
+    "translation": "الخروج",
     "isDeprecated": false
   },
   {
@@ -14276,7 +14292,7 @@
     "key": "Help.MainHeader",
     "description": "Header of a modal that pops up when the user presses the help button while in feedback mode.",
     "english": "Help",
-    "translation": "كيفية استخدام وضع إبداء الملاحظات",
+    "translation": "المساعدة",
     "isDeprecated": false
   },
   {
@@ -14300,7 +14316,7 @@
     "key": "FeedbackReportDialog.SubmitFeedback",
     "description": "Text on a button at the bottom of the feedback modal. Clicking this button submits feedback and closes out of the modal",
     "english": "Submit",
-    "translation": "إرسال الملاحظات",
+    "translation": "إرسال",
     "isDeprecated": false
   },
   {
@@ -14372,7 +14388,95 @@
     "key": "EntryPoint.ButtonText",
     "description": "Text on a button that when clicked, enters feedback mode",
     "english": "Give Feedback",
-    "translation": "دخول وضع إبداء الملاحظات",
+    "translation": "تقديم ملاحظات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.ObjectSelectedBody",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. Example: \"Experience Object: Mesh\".",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "عنصر الخبرة: {ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.TextSelectionHeader",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. The header appears over a textbox that contains text on the object",
+    "english": "Selected Text",
+    "translation": "النص المحدد",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackBar.MainLabel",
+    "description": "While in feedback mode, there will be a bottom bar over the screen. This label will be in the bottom left to indicate that the user is currently in the mode.",
+    "english": "Give Feedback",
+    "translation": "تقديم ملاحظات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.MainHeader",
+    "description": "Header of a modal that pops up when the user first enters feedback mode",
+    "english": "Tell Us What's Wrong",
+    "translation": "أخبرنا ما الذي حصل",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Instructions",
+    "description": "Appears in the onboarding modal as instructional blurb for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "حدد أي نص لتقديم تعليقات على الترجمات غير الصحيحة أو الناقصة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Cancel",
+    "description": "Text on a button at the bottom of onboarding modal. Clicking this button closes out of the modal and the user exits out of feedback mode.",
+    "english": "Cancel",
+    "translation": "إلغاء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Start",
+    "description": "Button at the bottom of onboarding modal. Clicking this button closes the modal and \"starts\" the flow for leaving feedback. As in, click this button to start.",
+    "english": "Start",
+    "translation": "البدء",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Help.Instructions",
+    "description": "Text that appears in help modal as instructions for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "حدد أي نص لتقديم تعليقات على الترجمات غير الصحيحة أو الناقصة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackReportDialog.CorrectTranslationObjectPlaceholder",
+    "description": "Placeholder text in a text entry box that users will use to provide suggested translations for strings they are giving feedback on. This is a special placeholder that will pop up when users select something without text on it. It will show something like \"Experience Object: Mesh\" as an example.",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "عنصر الخبرة: {ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.GiveFeedbackButton",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button proceeds to open the report dialog modal that allows the user to provide more feedback.",
+    "english": "Give Feedback",
+    "translation": "تقديم ملاحظات",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.Close",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button simply closes out the minimodal and returns the user to feedback mode.",
+    "english": "Close",
+    "translation": "إغلاق",
     "isDeprecated": false
   },
   {

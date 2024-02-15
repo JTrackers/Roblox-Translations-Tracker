@@ -680,6 +680,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Heading.NewAppAvailable",
+    "description": "Heading to inform the user that a new version of the Roblox app is available.",
+    "english": "New App Available",
+    "translation": "有新的應用程式可用",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Description.DownloadNewVersion",
+    "description": "Description text to inform the user that the version of Roblox they are using is no longer available, and to encourage them to download a newer version of Roblox by clicking on a button provided in the same UI.",
+    "english": "This version of the app is no longer available in your region. To continue playing, please download the new version of Roblox.",
+    "translation": "您的地區已不再提供此應用程式版本。若要繼續遊玩，請下載新版 Roblox。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Action.DownloadNow",
+    "description": "A button that the user click on to download a new version of Roblox",
+    "english": "Download Now",
+    "translation": "立即下載",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Url.VngDownloadNowUrl",
+    "description": "URL for downloading the VNGGames version of the Roblox app. NOTE: URL is not finalized yet. Using roblox.com as a placeholder for now.",
+    "english": "https://www.roblox.com",
+    "translation": "https://www.roblox.com",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.Login",
+    "key": "Response.Require2FAGeneric",
+    "description": "A device agnostic device warning user that 2FA is not available for the current device",
+    "english": "2-Step Verification is not supported on console. Please follow the instructions on the right to securely log in.",
+    "translation": "主機上不支持兩步驗證。請按照右邊的指示安全登入。",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -1893,6 +1933,30 @@
     "description": "Text for a button for a user to press when they want to confirm and signify they understand a dialog text.",
     "english": "I Understand",
     "translation": "我了解",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.BirthdayValuePropA",
+    "description": "Extra help text when user is filling out birthday field upon signup",
+    "english": "Your birthday won’t be shown to others",
+    "translation": "其他人不會看到您的生日",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Description.BirthdayValuePropC",
+    "description": "Extra help text when user fills out birthday field during signup",
+    "english": "This helps us know what content to show you. It won't be visible to others",
+    "translation": "這有助於我們知道要向您顯示哪些內容。其他人不會看到此資訊",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.Age",
+    "description": "Placeholder for age field on signup",
+    "english": "Age",
+    "translation": "年齡",
     "isDeprecated": false
   },
   {
@@ -9668,7 +9732,7 @@
     "key": "Timestamp.Minutes",
     "description": "abbreviation for minutes",
     "english": "m",
-    "translation": "分",
+    "translation": "分鐘",
     "isDeprecated": false
   },
   {
@@ -9676,7 +9740,7 @@
     "key": "Timestamp.Hours",
     "description": "abbreviation for hours",
     "english": "h",
-    "translation": "時",
+    "translation": "小時",
     "isDeprecated": false
   },
   {
@@ -9972,7 +10036,7 @@
     "key": "NFriendsVisited",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 friend visited\". When it's plural, it'd be \"5 friends visited\".",
     "english": "{friendCount, plural, =0 {# friend visited} =1 {# friend visited} other {# friends visited}}",
-    "translation": "{friendCount, plural, =0 {# 朋友拜訪} =1 {# 朋友拜訪} other {# 朋友拜訪}}",
+    "translation": "{friendCount, plural, =0 {# 位好友曾經造訪} =1 {# 位好友曾經造訪} other {# 位好友曾經造訪}}",
     "isDeprecated": false
   },
   {
@@ -10028,7 +10092,7 @@
     "key": "NFriendsVisitedUpperCase",
     "description": "Indicates how many friends visited an experience. If it's singular (1 friend), it should display \"1 Friend Visited\". When it's plural, it'd be \"5 Friends Visited\".",
     "english": "{friendCount, plural, =0 {# Friend Visited} =1 {# Friend Visited} other {# Friends Visited}}",
-    "translation": "{friendCount, plural, =0 {# 朋友拜訪} =1 {# 朋友拜訪} other {# 朋友拜訪}}",
+    "translation": "{friendCount, plural, =0 {# 位好友曾經造訪} =1 {# 位好友曾經造訪} other {# 位好友曾經造訪}}",
     "isDeprecated": false
   },
   {
@@ -10052,7 +10116,7 @@
     "key": "NFriendsVisitedSentenceCase",
     "description": null,
     "english": "{friendCount, plural, =0 {No friend visited} =1 {# Friend visited} other {# Friends visited}}",
-    "translation": "{friendCount, plural, =0 {沒有朋友拜訪} =1 {# 朋友拜訪了} other {# 朋友拜訪}}",
+    "translation": "{friendCount, plural, =0 {沒有好友造訪} =1 {# 好友曾經造訪} other {# 好友曾經造訪}}",
     "isDeprecated": false
   },
   {
@@ -16636,7 +16700,7 @@
     "key": "Description.AutomatedDetectionAutomatedDecision",
     "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection and decision were both automated.",
     "english": "This policy violation was detected by automated means, and we used automation when making this decision",
-    "translation": "系統偵側到此政策違規，並自動做出此決定",
+    "translation": "此政策違規是透過自動化方式偵測，且我們是以自動化程序做出此決定",
     "isDeprecated": false
   },
   {
@@ -16644,7 +16708,7 @@
     "key": "Description.AutomatedDetectionManualDecision",
     "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection was automated and the decision was manual.",
     "english": "This policy violation was detected by automated means",
-    "translation": "此為系統自動偵測的政策違規",
+    "translation": "此政策違規是透過自動化方式偵測",
     "isDeprecated": false
   },
   {
@@ -16652,7 +16716,7 @@
     "key": "Description.ManualDetectionAutomatedDecision",
     "description": "Used for consequence transparency for the European Union Digital Services Act. This is the messaging for when the detection was manual and the decision was automated.",
     "english": "We used automation when making this decision",
-    "translation": "此為系統自動做出的決定",
+    "translation": "我們是以自動化程序做出此決定",
     "isDeprecated": false
   },
   {
@@ -16668,7 +16732,7 @@
     "key": "Description.AppealsProcess",
     "description": "More information for the European Union Digital Services Act appeals process",
     "english": "To learn more about the appeals process, visit {startLink}Appeal Your Content Moderation{endLink}.",
-    "translation": "前往{startLink}對內容過濾提出上訴{endLink}以了解上訴流程。",
+    "translation": "若要深入了解上訴流程，請前往{startLink}對內容審核提出上訴{endLink}。",
     "isDeprecated": false
   },
   {
@@ -23853,6 +23917,14 @@
     "description": null,
     "english": "Try logging in directly",
     "translation": "嘗試直接登入",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.AccountSwitch",
+    "key": "Heading.SwitchAccountSingular",
+    "description": "Title of a modal that will indicate that you can switch to another account (singular, not plural)",
+    "english": "Switch Account",
+    "translation": "切換帳戶",
     "isDeprecated": false
   },
   {
