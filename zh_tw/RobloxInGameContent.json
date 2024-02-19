@@ -6675,7 +6675,7 @@
     "namespace": "Feature.SettingsHub",
     "key": "Action.InviteFriendsToPlay",
     "description": null,
-    "english": "Invite friends to join",
+    "english": "Invite friends",
     "translation": "邀請好友加入",
     "isDeprecated": false
   },
@@ -7020,7 +7020,7 @@
     "key": "Prompt.VoiceChatSuspended",
     "description": "Title of popup shown to users if they have been banned from voice chat",
     "english": "Voice chat suspended",
-    "translation": "禁用語音聊天",
+    "translation": "停用語音聊天",
     "isDeprecated": false
   },
   {
@@ -7804,7 +7804,7 @@
     "key": "Prompt.Subtitle.TemporaryVoiceBan2",
     "description": "Shows up if the user is automatically banned due based on detected speech",
     "english": "If this happens again, you may lose access to your account.",
-    "translation": "如果再次發生，您的帳號可能會有更多限制。",
+    "translation": "如果再次發生，您的帳號可能會減少權限。",
     "isDeprecated": false
   },
   {
@@ -7845,6 +7845,22 @@
     "description": "Label to the left of a dropdown that is used to select a language from a list of languages. The selected language is used to translate chat messages.",
     "english": "Chat Translation Language",
     "translation": "聊天翻譯語言",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.Subtitle.ThanksForLettingUsKnow",
+    "description": "Updated subtitle for feedback toast",
+    "english": "Your feedback helps us improve our systems.",
+    "translation": "您的意見將幫助我們改善系統。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
+    "key": "Prompt.ThanksForLettingUsKnow",
+    "description": "Updated prompt to thank user for giving us feedback",
+    "english": "Thanks for letting us know",
+    "translation": "感謝告知",
     "isDeprecated": false
   },
   {
@@ -14148,7 +14164,7 @@
     "key": "FeedbackBar.ExitFeedbackButton",
     "description": "Text on a button at the bottom right corner of the screen while in feedback mode. Clicking this button allows the user to exit the mode.",
     "english": "Exit",
-    "translation": "退出回饋模式",
+    "translation": "離開",
     "isDeprecated": false
   },
   {
@@ -14284,7 +14300,7 @@
     "key": "Help.MainHeader",
     "description": "Header of a modal that pops up when the user presses the help button while in feedback mode.",
     "english": "Help",
-    "translation": "如何使用回饋模式",
+    "translation": "協助",
     "isDeprecated": false
   },
   {
@@ -14308,7 +14324,7 @@
     "key": "FeedbackReportDialog.SubmitFeedback",
     "description": "Text on a button at the bottom of the feedback modal. Clicking this button submits feedback and closes out of the modal",
     "english": "Submit",
-    "translation": "提交回饋",
+    "translation": "提交",
     "isDeprecated": false
   },
   {
@@ -14380,7 +14396,95 @@
     "key": "EntryPoint.ButtonText",
     "description": "Text on a button that when clicked, enters feedback mode",
     "english": "Give Feedback",
-    "translation": "進入回饋模式",
+    "translation": "給予回饋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.ObjectSelectedBody",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. Example: \"Experience Object: Mesh\".",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "體驗物件：{ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.TextSelectionHeader",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. The header appears over a textbox that contains text on the object",
+    "english": "Selected Text",
+    "translation": "選擇的文字",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackBar.MainLabel",
+    "description": "While in feedback mode, there will be a bottom bar over the screen. This label will be in the bottom left to indicate that the user is currently in the mode.",
+    "english": "Give Feedback",
+    "translation": "給予回饋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.MainHeader",
+    "description": "Header of a modal that pops up when the user first enters feedback mode",
+    "english": "Tell Us What's Wrong",
+    "translation": "告訴我們有什麼問題",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Instructions",
+    "description": "Appears in the onboarding modal as instructional blurb for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "選取任何文字，對不正確或缺少的翻譯提供回饋。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Cancel",
+    "description": "Text on a button at the bottom of onboarding modal. Clicking this button closes out of the modal and the user exits out of feedback mode.",
+    "english": "Cancel",
+    "translation": "取消",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Start",
+    "description": "Button at the bottom of onboarding modal. Clicking this button closes the modal and \"starts\" the flow for leaving feedback. As in, click this button to start.",
+    "english": "Start",
+    "translation": "開始",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Help.Instructions",
+    "description": "Text that appears in help modal as instructions for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "選取任何文字，對不正確或缺少的翻譯提供回饋。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackReportDialog.CorrectTranslationObjectPlaceholder",
+    "description": "Placeholder text in a text entry box that users will use to provide suggested translations for strings they are giving feedback on. This is a special placeholder that will pop up when users select something without text on it. It will show something like \"Experience Object: Mesh\" as an example.",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "體驗物件：{ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.GiveFeedbackButton",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button proceeds to open the report dialog modal that allows the user to provide more feedback.",
+    "english": "Give Feedback",
+    "translation": "給予回饋",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.Close",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button simply closes out the minimodal and returns the user to feedback mode.",
+    "english": "Close",
+    "translation": "關閉",
     "isDeprecated": false
   },
   {
