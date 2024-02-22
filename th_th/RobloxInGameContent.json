@@ -13796,7 +13796,7 @@
     "key": "Label.MessageGeneric",
     "description": "Generic message for gamepad disconnect modal. First string replacement is the user name",
     "english": "Controller for user \"%s\" has been disconnected. Please reconnect your controller.",
-    "translation": "คอนโทรลเลอร์สำหรับผู้ใช้ \"%s\" ถูกตัดการเชื่อมต่อ โปรดเชื่อมต่อคอนโทรลเลอร์ของคุณอีกครั้ง",
+    "translation": "คอนโทรลเลอร์สำหรับผู้ใช้ \"%s\" ถูกตัดการเชื่อมต่อแล้ว โปรดเชื่อมต่อคอนโทรลเลอร์ของคุณอีกครั้ง",
     "isDeprecated": false
   },
   {
@@ -14024,6 +14024,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "CoreScripts.PublishAvatarPrompt",
+    "key": "ResetView",
+    "description": "As a user observes an avatar they created, they can reset the camera angle they were viewing at. This text will be on a button that the users can press to reset the camera angle.",
+    "english": "Reset View",
+    "translation": "รีเซ็ตมุมมอง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.PublishAvatarPrompt",
+    "key": "Close",
+    "description": "This text will be used on a button to instruct the user that they can close the window by pressing this button.",
+    "english": "Close",
+    "translation": "ปิด",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.SocialContextToast",
     "key": "Message.YouJoinedOneFriend",
     "description": "Shown to users after they join an experience with 1 friend in it",
@@ -14116,7 +14132,7 @@
     "key": "Message.FriendInNonRootPlace",
     "description": "Shown to users when they follow another user, and the followed user is in a place that cannot be joined directly (ex: followed user is on the third level of an obby with a different place per level, or if the game has separate places for a lobby, and in-round)\n1/16 update: removed \"Your friend\" from the start of the string because users can follow users that they aren't friends with so the user being followed isn't always a friend",
     "english": "{FRIEND_NAME} has moved to a restricted location within this experience",
-    "translation": "\"{FRIEND_NAME}\" เพื่อนของคุณได้ย้ายไปยังบริเวณที่ถูกจำกัดอยู่ภายในประสบการณ์นี้",
+    "translation": "\"{FRIEND_NAME}\" ได้ย้ายไปยังบริเวณที่ถูกจำกัดอยู่ภายในประสบการณ์นี้",
     "isDeprecated": false
   },
   {
@@ -14156,7 +14172,7 @@
     "key": "FeedbackBar.ExitFeedbackButton",
     "description": "Text on a button at the bottom right corner of the screen while in feedback mode. Clicking this button allows the user to exit the mode.",
     "english": "Exit",
-    "translation": "ออกจากโหมดข้อเสนอแนะ",
+    "translation": "ออก",
     "isDeprecated": false
   },
   {
@@ -14292,7 +14308,7 @@
     "key": "Help.MainHeader",
     "description": "Header of a modal that pops up when the user presses the help button while in feedback mode.",
     "english": "Help",
-    "translation": "วิธีใช้โหมดข้อเสนอแนะ",
+    "translation": "ความช่วยเหลือ",
     "isDeprecated": false
   },
   {
@@ -14316,7 +14332,7 @@
     "key": "FeedbackReportDialog.SubmitFeedback",
     "description": "Text on a button at the bottom of the feedback modal. Clicking this button submits feedback and closes out of the modal",
     "english": "Submit",
-    "translation": "ส่งข้อเสนอแนะ",
+    "translation": "ส่ง",
     "isDeprecated": false
   },
   {
@@ -14388,7 +14404,95 @@
     "key": "EntryPoint.ButtonText",
     "description": "Text on a button that when clicked, enters feedback mode",
     "english": "Give Feedback",
-    "translation": "เข้าสู่โหมดข้อเสนอแนะ",
+    "translation": "ให้ข้อเสนอแนะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.ObjectSelectedBody",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. Example: \"Experience Object: Mesh\".",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "วัตถุในประสบการณ์: {ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.TextSelectionHeader",
+    "description": "Appears in a small modal that pops up when selecting an object on mobile devices while in feedback mode. The header appears over a textbox that contains text on the object",
+    "english": "Selected Text",
+    "translation": "ข้อความที่เลือก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackBar.MainLabel",
+    "description": "While in feedback mode, there will be a bottom bar over the screen. This label will be in the bottom left to indicate that the user is currently in the mode.",
+    "english": "Give Feedback",
+    "translation": "ให้ข้อเสนอแนะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.MainHeader",
+    "description": "Header of a modal that pops up when the user first enters feedback mode",
+    "english": "Tell Us What's Wrong",
+    "translation": "แจ้งให้เราทราบว่ามีอะไรผิดพลาด",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Instructions",
+    "description": "Appears in the onboarding modal as instructional blurb for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "เลือกข้อความเพื่อให้ข้อเสนอแนะเกี่ยวกับคำแปลที่ไม่ถูกต้องหรือคำแปลขาดหายไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Cancel",
+    "description": "Text on a button at the bottom of onboarding modal. Clicking this button closes out of the modal and the user exits out of feedback mode.",
+    "english": "Cancel",
+    "translation": "ยกเลิก",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Onboarding.Start",
+    "description": "Button at the bottom of onboarding modal. Clicking this button closes the modal and \"starts\" the flow for leaving feedback. As in, click this button to start.",
+    "english": "Start",
+    "translation": "เริ่ม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "Help.Instructions",
+    "description": "Text that appears in help modal as instructions for how to use feedback mode.",
+    "english": "Select any text to give feedback on incorrect or missing translations.",
+    "translation": "เลือกข้อความเพื่อให้ข้อเสนอแนะเกี่ยวกับคำแปลที่ไม่ถูกต้องหรือคำแปลขาดหายไป",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "FeedbackReportDialog.CorrectTranslationObjectPlaceholder",
+    "description": "Placeholder text in a text entry box that users will use to provide suggested translations for strings they are giving feedback on. This is a special placeholder that will pop up when users select something without text on it. It will show something like \"Experience Object: Mesh\" as an example.",
+    "english": "Experience Object: {ObjectType}",
+    "translation": "วัตถุในประสบการณ์: {ObjectType}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.GiveFeedbackButton",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button proceeds to open the report dialog modal that allows the user to provide more feedback.",
+    "english": "Give Feedback",
+    "translation": "ให้ข้อเสนอแนะ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.Feedback",
+    "key": "MobileSelectionModal.Close",
+    "description": "Appears at the bottom of a small modal that pops up when selecting an object on mobile devices while in feedback mode. Clicking this button simply closes out the minimodal and returns the user to feedback mode.",
+    "english": "Close",
+    "translation": "ปิด",
     "isDeprecated": false
   },
   {
@@ -14532,7 +14636,7 @@
     "key": "Error.Description.Generic",
     "description": "Generic error message",
     "english": "Something went wrong. Please try again later.",
-    "translation": "ลองอีกครั้งในภายหลัง",
+    "translation": "มีปัญหาบางอย่างเกิดขึ้น โปรดลองอีกครั้งในภายหลัง",
     "isDeprecated": false
   },
   {
@@ -14665,10 +14769,82 @@
   },
   {
     "namespace": "CoreScripts.FTUX",
+    "key": "Onboard.Header",
+    "description": "Tooltip header for FTUX onboarding step",
+    "english": "Get to your favorite controls fast",
+    "translation": "ไปยังการควบคุมที่คุณชื่นชอบได้อย่างรวดเร็ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Onboard.Body",
+    "description": "Tooltip body for FTUX onboarding step",
+    "english": "Leaderboards, chat, safety - and more",
+    "translation": "ตารางอันดับ, แชท, ความปลอดภัย และอื่นๆ อีกมากมาย",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Tools.Header",
+    "description": "Tooltip header for FTUX 9 dot step",
+    "english": "Top tools & actions",
+    "translation": "เครื่องมือและการดำเนินการยอดนิยม",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Tools.Body",
+    "description": "Tooltip header for FTUX 9 dot step",
+    "english": "Follow scores, report problems, use emotes",
+    "translation": "ติดตามคะแนน, รายงานปัญหา, ใช้ท่าทาง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Mic.Header",
+    "description": "Tooltip header for FTUX mic step",
+    "english": "Chat with your voice",
+    "translation": "แชทด้วยเสียง",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Mic.Body",
+    "description": "Tooltip body for FTUX mic step",
+    "english": "Turn on your microphone",
+    "translation": "เปิดไมโครโฟนของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "SelfView.Header",
+    "description": "Tooltip header for FTUX self view step",
+    "english": "Animate your avatar",
+    "translation": "เคลื่อนไหวอวาตาร์ของคุณ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "SelfView.Body",
+    "description": "Tooltip body for FTUX self view step",
+    "english": "When your camera is on, your avatar will follow your movement as you smile, blink, and more",
+    "translation": "เมื่อกล้องของคุณเปิดอยู่ อวาตาร์ของคุณจะทําตามการเคลื่อนไหวของคุณไม่ว่าคุณจะยิ้ม กระพริบตาหรืออื่นๆ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
+    "key": "Onboard.Complete",
+    "description": "The label to show in the tooltip button to complete the FTUX flow",
+    "english": "Got It",
+    "translation": "เข้าใจแล้ว",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.FTUX",
     "key": "Onboard.ShowMe",
     "description": "First button label to start the FTUX onboarding",
     "english": "Show Me",
-    "translation": "แสดงเพิ่มเติม",
+    "translation": "แสดงให้ฉันดู",
     "isDeprecated": false
   }
 ]
