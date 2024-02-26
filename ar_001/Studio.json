@@ -777,6 +777,54 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ConstraintVisible",
+    "description": null,
+    "english": "Toggles the in-game visual associated with this constraint.",
+    "translation": "تشغيل المرئيات في اللعبة المرتبطة بهذا القيد.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ConstraintActive",
+    "description": null,
+    "english": "Read-only boolean, true if the Constraint is active in world.",
+    "translation": "boolean للقراءة فقط، نتيجته true إذا كان القيد نشطًا في العالم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BallSocketConstraintLimitsEnabled",
+    "description": null,
+    "english": "Enables the angular limit between the axis of Attachment0 and the axis of Attachment1.",
+    "translation": "تمكين الحد الزاويّ بين محور Attachment0 ومحور Attachment1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BallSocketConstraintUpperAngle",
+    "description": null,
+    "english": "Maximum angle between the two main axes. Value in [0, 180].",
+    "translation": "الحد الأقصى للزاوية بين المحورين الرئيسيين. القيمة في [0، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BallSocketConstraintRadius",
+    "description": null,
+    "english": "Radius of the in-game visual. Value in [0, inf).",
+    "translation": "شعاع دائرة القسم المرئي في اللعبة. القيمة في [0, inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.RopeConstraintLength",
+    "description": null,
+    "english": "The length of the rope or the maximum distance between the two attachments. Value in [0, inf).",
+    "translation": "طول الحبل أو المسافة القصوى بين القطعتين. القيمة في [0, inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.WeldConstraintActive",
     "description": null,
     "english": "Read-only boolean, true if the joint is active in world. Rigid joints may be inactive if they are redundant or form cycles.",
@@ -1721,6 +1769,118 @@
   },
   {
     "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.CurrentFrameBox",
+    "description": null,
+    "english": "Change scrubber time",
+    "translation": "تغيير وقت العلام",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.EndFrameBox",
+    "description": null,
+    "english": "Change timeline length",
+    "translation": "تغيير طول الخط الزمني",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.ToggleLooping",
+    "description": null,
+    "english": "Toggle looping animation",
+    "translation": "تشغيل الحركة التكرارية",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.Play",
+    "description": null,
+    "english": "Preview the animation [Space]",
+    "translation": "معاينة الرسم المتحرك [Space]",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.SkipForward",
+    "description": null,
+    "english": "Move the scrubber to the next key",
+    "translation": "نقل العلام إلى المفتاح الأخير",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.SkipBackward",
+    "description": null,
+    "english": "Move the scrubber to the previous key",
+    "translation": "نقل العلام إلى المفتاح السابق",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Tooltip.AddTrackButton",
+    "description": null,
+    "english": "Add a new animation track",
+    "translation": "إضافة مسار جديد للرسم المتحرك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Dialog.EditorErrorsHeader",
+    "description": null,
+    "english": "Editor Error Detected",
+    "translation": "تم اكتشاف خطأ في المحرر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "EditorErrors.OpenedWhileRunning",
+    "description": null,
+    "english": "Animation Editor cannot be used while game is running!",
+    "translation": "لا يمكن استخدام محرر الرسوم المتحركة أثناء تشغيل اللعبة!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Toast.InvalidAnimation",
+    "description": null,
+    "english": "Animation was not imported. You do not have ownership of animation with the selected ID.",
+    "translation": "لم يتم استيراد الرسم المتحرك. ليس لديك ملكية الرسم المتحرك بالمعرّف المحدد.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "EditorErrors.BigAnimation",
+    "description": null,
+    "english": "Animation is larger than 30 seconds. It cannot be edited, but you can play it back and export it.",
+    "translation": "الرسم المتحرك يتعدى 30 ثانية. لن تتمكن من تعديله لكن يإمكانك تشغيله مرة أخرى وتصديره.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "ContextMenu.AddKeyframeAtScrubber",
+    "description": null,
+    "english": "Add Keyframe At Scrubber",
+    "translation": "إضافة keyframe عند العلام",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "ContextMenu.ToggleBoneVis",
+    "description": null,
+    "english": "Toggle Microbone Visibility",
+    "translation": "تشغيل Microbone Visibility",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Core",
+    "description": null,
+    "english": "Core",
+    "translation": "أساسي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
     "key": "Menu.Idle",
     "description": null,
     "english": "Idle",
@@ -1733,6 +1893,22 @@
     "description": null,
     "english": "Movement",
     "translation": "الحركة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Action",
+    "description": null,
+    "english": "Action",
+    "translation": "Action",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Title.NoAnimationExists_Migrated",
+    "description": null,
+    "english": "No animation exists for {rig}, please create one to start animating",
+    "translation": "لم يتم العثور على رسم متحرك لـ {rig}. الرجاء إنشاء واحد لعمل رسم متحرك",
     "isDeprecated": false
   },
   {
@@ -1797,6 +1973,54 @@
     "description": null,
     "english": "Do you want to change all {name} to {newName}?",
     "translation": "هل تريد تغيير كل {name} إلى {newName}؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.Overwrite_Migrated",
+    "description": null,
+    "english": "Do you want to overwrite existing animation {overwriteName}?",
+    "translation": "هل تريد استبدال الرسم المتحرك الحالي بـ {overwriteName}؟",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Toast.Saved_Migrated",
+    "description": null,
+    "english": "Saved animation {savedAnimName}",
+    "translation": "الرسم المتحرك المحفوظ {savedAnimName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Toast.Loaded_Migrated",
+    "description": null,
+    "english": "Loaded animation {loadedAnimName}",
+    "translation": "الرسم المتحرك المحمّل {loadedAnimName}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "RigErrors.MissingPart0_Migrated",
+    "description": null,
+    "english": "The following Motor6Ds do not have a Part0 set: {entries}",
+    "translation": "Motor6Ds التالي لا يحتوي على Part0 set: {entries}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "RigErrors.MissingPart1_Migrated",
+    "description": null,
+    "english": "The following Motor6Ds do not have a Part1 set: {entries}",
+    "translation": "Motor6Ds التالي لا يحتوي على Part1 set: {entries}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "RigErrors.MultipleParents_Migrated",
+    "description": null,
+    "english": "The following parts are affected by multiple Motor6Ds: {entries}",
+    "translation": "الأجزاء التالية تتأثر بعدة Motor6Ds: {entries}",
     "isDeprecated": false
   },
   {
@@ -2001,6 +2225,38 @@
   },
   {
     "namespace": "Studio.AnimationClipEditor",
+    "key": "ContextMenu.ClearTangents",
+    "description": null,
+    "english": "Use Auto-Tangent",
+    "translation": "استخدام المماس التلقائي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Title.MinPBSParam",
+    "description": null,
+    "english": "Minimum playback speed is {speed}x",
+    "translation": "الحد الأدنى لسرعة التشغيل x{speed}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Title.MaxPBSParam",
+    "description": null,
+    "english": "Maximum playback speed is {speed}x",
+    "translation": "الحد الأقصى لسرعة التشغيل {speed}x",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "ContextMenu.GenerateCurve",
+    "description": null,
+    "english": "Generate Curve",
+    "translation": "إنشاء منحنى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
     "key": "Tooltip.Pause",
     "description": null,
     "english": "Pause the animation [Space]",
@@ -2029,6 +2285,14 @@
     "description": null,
     "english": "Move the scrubber to the last frame",
     "translation": "نقل العلام إلى الإطار الأخير",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Menu.CreateFromVideo",
+    "description": null,
+    "english": "Live Animation Creator",
+    "translation": "منشئ الرسوم المتحركة الحية",
     "isDeprecated": false
   },
   {
@@ -2093,6 +2357,14 @@
     "description": null,
     "english": "Interpolation Mode: {interpolationMode}",
     "translation": "وضع الاستكمال: {interpolationMode}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Curves.LeftTangentAuto",
+    "description": null,
+    "english": "Left tangent: Auto",
+    "translation": "المماس اليسار: تلقائي",
     "isDeprecated": false
   },
   {
@@ -2369,10 +2641,178 @@
   },
   {
     "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ModerationRejected",
+    "description": null,
+    "english": "Your animation did not comply with our moderation rules. Please try a different video.",
+    "translation": "لا يمتثل رسمك المتحرك لقواعد الإشراف. الرجاء استخدام فيديو آخر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Success",
+    "description": null,
+    "english": "Success! Your animation is ready.",
+    "translation": "نجاح! رسمك المتحرك جاهز الآن.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputTooLong",
+    "description": null,
+    "english": "That video is too long – try a video shorter than 15 seconds.",
+    "translation": "هذا الفيديو طويل جدًا - جرب فيديو أقل من 15 ثانية.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputHasNoPerson",
+    "description": null,
+    "english": "Couldn't detect a person – try a video with a person fully in frame, facing the camera.",
+    "translation": "تعذر الكشف عن شخص ما - جرب فيديو مع شخص كامل ضمن الإطار مقابلاً الكاميرا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.InputUnstable",
+    "description": null,
+    "english": "That video is too shaky – try a more stable video.",
+    "translation": "هذا الفيديو يرتجف كثيرًا - جرب فيديو أكثر استقرارًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TimedOut",
+    "description": null,
+    "english": "Sorry, we're unable to process your video right now due to a high volume of requests. Please try again in a bit.",
+    "translation": "عذرًا، لن نتمكن من معالجة الفيديو الآن بسبب الطلبات الكثيرة الواردة. الرجاء المحاولة مرة أخرى لاحقًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.Cancelled",
+    "description": null,
+    "english": "Your animation creation has been canceled.",
+    "translation": "تم إلغاء إنشاء الرسم المتحرك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TutorialTitle",
+    "description": null,
+    "english": "Create animation from video",
+    "translation": "إنشاء رسم متحرك من فيديو",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.TutorialText",
+    "description": null,
+    "english": "Choose a short video (15 seconds or less) containing a single person, fully in frame. Try to use a video with a stable, unmoving camera.",
+    "translation": "اختر فيديو قصير (15 ثانية أو أقل) يحتوي على شخص واحد كاملاً ضمن الإطار. حاول استخدام فيديو مع كاميرا ثابتة وغير متحركة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.ChooseVideo",
+    "description": null,
+    "english": "Choose Video",
+    "translation": "اختيار فيديو",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "CurveEditorCallout.Title",
+    "description": null,
+    "english": "Curve Editor",
+    "translation": "محرر المنحنى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "CurveEditorCallout.Description",
+    "description": null,
+    "english": "The Curve Editor is a new way to visually create and edit rich animations within the Animation Editor.",
+    "translation": "محرر المنحنى هو طريقة جديدة لإنشاء وتحرير الرسوم المتحركة الغنية داخل محرر الرسوم المتحركة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "AnimationFromVideo.MultiplePeopleInFrame",
+    "description": null,
+    "english": "Multiple people detected - Please try a video with a single person fully in frame.",
+    "translation": "تم اكتشاف عدة أشخاص. الرجاء تجربة فيديو بشخص واحد ضمن الإطار.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Curves.InterpolationMode2",
+    "description": null,
+    "english": "{interpolationMode} Mode",
+    "translation": "وضع {interpolationMode}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Curves.LeftTangentLabel",
+    "description": null,
+    "english": "L. Tangent:",
+    "translation": "L. Tangent:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Curves.RightTangentLabel",
+    "description": null,
+    "english": "R. Tangent:",
+    "translation": "R. Tangent:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "Curves.TangentValuePerSecond",
+    "description": null,
+    "english": "{value}/s",
+    "translation": "{value}/s",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
     "key": "Curves.TangentAuto",
     "description": null,
     "english": "Auto",
     "translation": "تلقائي",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "FaceCapture.MainButtonTitle",
+    "description": null,
+    "english": "Face Capture",
+    "translation": "التقاط الوجه",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "FaceCapture.TeachingCalloutTitle",
+    "description": null,
+    "english": "Face Capture",
+    "translation": "التقاط الوجه",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "FaceCapture.DetectingCameraTitle",
+    "description": null,
+    "english": "Detecting a camera",
+    "translation": "الكشف عن كاميرا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "FaceCapture.WarningTitle",
+    "description": null,
+    "english": "Warning",
+    "translation": "تحذير",
     "isDeprecated": false
   },
   {
@@ -2389,6 +2829,14 @@
     "description": null,
     "english": "Ready",
     "translation": "جاهز",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AnimationClipEditor",
+    "key": "FaceCapture.NoCameraWarningText",
+    "description": null,
+    "english": "A camera is required to use this feature. Please make sure your camera is connected and powered on.",
+    "translation": "الكاميرا مطلوبة لاستخدام هذه الميزة. الرجاء التأكد من أن الكاميرا متصلة ومشغلة.",
     "isDeprecated": false
   },
   {
