@@ -3500,7 +3500,7 @@
     "key": "BuildSettings.BankSize",
     "description": null,
     "english": "Bank Size",
-    "translation": "Tamaño del banco",
+    "translation": "Tamaño de la orilla",
     "isDeprecated": false
   },
   {
@@ -3597,6 +3597,54 @@
     "description": null,
     "english": "Position",
     "translation": "Posición",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "BuildSettings.Size",
+    "description": null,
+    "english": "Size",
+    "translation": "Tamaño",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "TerrainType.Desert",
+    "description": null,
+    "english": "Desert",
+    "translation": "Desierto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "BuildSettings.BlendingEdge",
+    "description": null,
+    "english": "Blending Edge",
+    "translation": "Borde de fusión",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "TerrainType.Mesa",
+    "description": null,
+    "english": "Mesa",
+    "translation": "Mesa",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "BuildSettings.RimHeight",
+    "description": null,
+    "english": "Rim Height",
+    "translation": "Altura del borde",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.TerrainEditor",
+    "key": "BuildSettings.TerrainType",
+    "description": null,
+    "english": "Terrain Type",
+    "translation": "Tipo de terreno",
     "isDeprecated": false
   },
   {
@@ -36563,8 +36611,8 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
-    "translation": "Ninguno",
+    "english": "Disabled",
+    "translation": "Desactivado",
     "isDeprecated": false
   },
   {
@@ -39125,6 +39173,446 @@
     "description": null,
     "english": "Simulation Pause",
     "translation": "Pausa de simulación",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.AutoSetupDescription",
+    "description": null,
+    "english": "Early release of our automated creation of avatars from single-mesh 3D models of humanoid-like bodies. Currently for in-game use only. We will remove this restriction and allow for Marketplace submission in later releases.",
+    "translation": "Versión preliminar de nuestra creación automatizada de avatares a partir de modelos 3D de malla sencilla de cuerpos humanoides. De momento solo para uso en tu juego. Eliminaremos esta restricción y permitiremos el envío al Mercado en versiones posteriores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "BetaFeatures.SimulationPauseAndStepDescription",
+    "description": null,
+    "english": "Enables visual pausing and simulation debugging at studio run time.",
+    "translation": "Activa la pausa visual y la depuración de simulación en el tiempo de ejecución de Studio.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmError",
+    "description": null,
+    "english": "Unable to setup script change detection: DataModel not found.",
+    "translation": "No se puede configurar la detección de cambio de script: DataModel no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingScriptEditorServiceError",
+    "description": null,
+    "english": "Unable to setup script change detection: ScriptEditorService not found.",
+    "translation": "No se puede configurar la detección de cambio de script: ScriptEditorService no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.GetSourceMissingDmError",
+    "description": null,
+    "english": "Unable to get source of a script: DataModel not found.",
+    "translation": "No se pudo obtener el código fuente de un script: DataModel no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.CannotDeleteFile",
+    "description": null,
+    "english": "Cannot delete file from Scripts directory: %1.",
+    "translation": "No se puede eliminar el archivo del directorio de scripts: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidInstancesArrayDmJsonError",
+    "description": null,
+    "english": "Error reading the datamodel.json: Must contain an instances array of instance data.",
+    "translation": "Error al leer el datamodel.json: Debe contener una lista de instancias de datos de instancia.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.PathCreationForInstanceError",
+    "description": null,
+    "english": "Error creating path for instance: %1.",
+    "translation": "Error al crear la ruta para la instancia: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ParsingDmJsonError",
+    "description": null,
+    "english": "Could not parse datamodel.json.",
+    "translation": "No se pudo analizar datamodel.json.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.FirstUseOfDirectoryWarning",
+    "description": null,
+    "english": "This is your first time using directory %1.",
+    "translation": "Esta es la primera vez que usas el directorio %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnsupportedRootError",
+    "description": null,
+    "english": "%1 has moved under an unsupported root.",
+    "translation": "%1 se trasladó debajo de una raíz no soportada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidClassNameError",
+    "description": null,
+    "english": "Error creating Instance (%1). Can not look up class name for %2.",
+    "translation": "Error al crear la instancia (%1). No se puede buscar el nombre de la clase %2.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ExportOverwriteFileWarning",
+    "description": null,
+    "english": "Export will overwrite file: %1.",
+    "translation": "La exportación sobrescribirá el archivo: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ExportError",
+    "description": null,
+    "english": "Error exporting. Please try again.",
+    "translation": "Error al exportar. Vuelve a intentarlo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.RootPathNotAFolderError",
+    "description": null,
+    "english": "Root directory path is not a folder: %1.",
+    "translation": "La ruta del directorio raíz no es una carpeta: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.FolderCreationError",
+    "description": null,
+    "english": "Unable to create folder: %1.",
+    "translation": "No se pudo crear la carpeta: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnimportedChangesWarningTitle",
+    "description": null,
+    "english": "Exporting will overwrite changes in the source files.",
+    "translation": "La exportación sobrescribirá los cambios en los archivos de origen.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.PathCreationError",
+    "description": null,
+    "english": "Error creating path.",
+    "translation": "Error al crear la ruta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidFolderError",
+    "description": null,
+    "english": "%1 could not be found or is not a folder.",
+    "translation": "%1 no se pudo encontrar o no es una carpeta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InstanceCreationMissingParentError",
+    "description": null,
+    "english": "Could not create instance for %1 because parent wasn't found.",
+    "translation": "No se pudo crear una instancia para %1 porque el padre no se encontró.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnexportedChangesWarningSubtext",
+    "description": null,
+    "english": "To avoid data loss, consider saving a backup.",
+    "translation": "Para evitar la pérdida de datos, guarda una copia de seguridad.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.FileModifiedSinceLastSyncWarning",
+    "description": null,
+    "english": "File modified since last sync: %1.",
+    "translation": "Archivo modificado desde la última sincronización: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SuccessfulExport",
+    "description": null,
+    "english": "Successfully finished exporting scripts to %1.",
+    "translation": "Exportación de scripts terminada correctamente a %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SetSourceMissingSESError",
+    "description": null,
+    "english": "Unable to set source of a script: ScriptEditorService not found.",
+    "translation": "No se puede establecer la fuente de un script: ScriptEditorService no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.IneligibleInstancesWarningTitle",
+    "description": null,
+    "english": "Ineligible Instances won't be exported",
+    "translation": "Las instancias no elegibles no serán exportadas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.FileDoesNotExistError",
+    "description": null,
+    "english": "File does not exist.",
+    "translation": "El archivo no existe.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidInstanceJsonError",
+    "description": null,
+    "english": "An Instance entry is missing the %1 field in datamodel.json.",
+    "translation": "A una entrada de instancia le falta el %1 campo en datamodel.json.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.IneligibleInstancesWarningSubtext",
+    "description": null,
+    "english": "Instances containing Tags and/or attributes will be skipped.",
+    "translation": "Se omitirán las instancias que contengan etiquetas y/o atributos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.DeduplicationError",
+    "description": null,
+    "english": "Lua Sync currently cannot export this project. %1 causes a path collision due to deduplication.",
+    "translation": "Lua Sync actualmente no puede exportar este proyecto. %1 causa una colisión de ruta debido a la deduplicación.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ImportErrorWithReason",
+    "description": null,
+    "english": "Error importing \"%1\":  %2",
+    "translation": "Error al importar \"%1\":  %2",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDetailsError",
+    "description": null,
+    "english": "No details found in instance JSON.",
+    "translation": "No se encontraron detalles en el JSON de la instancia.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingParentError",
+    "description": null,
+    "english": "Could not move instance (%1) because the new parent (%2) could not be found.",
+    "translation": "No se pudo mover la instancia (%1) porque el nuevo padre (%2) no se encontró.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidUniqueIdError",
+    "description": null,
+    "english": "Error creating Instance. Invalid unique id (%1).",
+    "translation": "Error al crear la instancia. ID único no válido (%1).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InstanceMissingParentError",
+    "description": null,
+    "english": "Error creating Instance (%1): parent not found.",
+    "translation": "Error al crear la instancia (%1): padre no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidTypeError",
+    "description": null,
+    "english": "Error creating Instance (%1): Luau File Sync only supports Script and Folder types. %2 is not supported.",
+    "translation": "Error al crear la instancia (%1): La sincronización de archivos de Luau solo admite tipos de scripts y carpetas. %2 no es compatible.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InstanceCreationError",
+    "description": null,
+    "english": "Error creating Instance (%1).",
+    "translation": "Error al crear la instancia (%1).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmAfterWarningExportError",
+    "description": null,
+    "english": "Could not continue with export. DataModel not found.",
+    "translation": "No se pudo continuar con la exportación. DataModel no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SelectProjectFolder",
+    "description": null,
+    "english": "Select Project Folder",
+    "translation": "Seleccionar la carpeta del proyecto",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.DidntSelectFolderError",
+    "description": null,
+    "english": "User didn't select a folder.",
+    "translation": "El usuario no seleccionó una carpeta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidInstancesTable",
+    "description": null,
+    "english": "Error reading datamodel.json content: Malformed instances table.",
+    "translation": "Error al leer el contenido de datamodel.json: tabla de instancias malformada.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InstanceMoveMissingParentError",
+    "description": null,
+    "english": "Could not move instance for %1 because parent wasn't found.",
+    "translation": "No se pudo mover una instancia para %1 porque el padre no se encontró.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.GetSourceMissingSESError",
+    "description": null,
+    "english": "Unable to get source of a script: ScriptEditorService not found.",
+    "translation": "No se puede obtener el código fuente de un script: ScriptEditorService no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SetSourceMissingDmError",
+    "description": null,
+    "english": "Unable to set source of a script: DataModel not found.",
+    "translation": "No se puede establecer la fuente de un script: DataModel no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.NotLuauFileError",
+    "description": null,
+    "english": "Source is not a luau file.",
+    "translation": "La fuente no es un archivo luau.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.EditedSinceLastImportOutput",
+    "description": null,
+    "english": "%1 has been edited since last import.",
+    "translation": "%1 se editó desde la última importación.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmJsonError",
+    "description": null,
+    "english": "Could not find datamodel.json.",
+    "translation": "No se pudo encontrar datamodel.json.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmAfterWarningImportError",
+    "description": null,
+    "english": "Could not continue with import. DataModel not found.",
+    "translation": "No se pudo continuar con la importación. DataModel no encontrado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingScriptsFolderError",
+    "description": null,
+    "english": "Import failed: Root directory is missing scripts folder.",
+    "translation": "Error al import: el directorio raíz no tiene la carpeta de scripts.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.RootFolderCreationError",
+    "description": null,
+    "english": "Could not create root folder at: %1.",
+    "translation": "No se pudo crear la carpeta raíz en: %1.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MultipleUsersWarning",
+    "description": null,
+    "english": "There are currently other users in the TeamCreate session.",
+    "translation": "Actualmente hay otros usuarios en la sesión de Creación en equipo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnexportedChangesWarningTitle",
+    "description": null,
+    "english": "Importing will overwrite changes in Studio",
+    "translation": "La importación sobrescribirá los cambios en Studio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnimportedChangesWarningSubtext",
+    "description": null,
+    "english": "To avoid data loss, consider saving a backup.",
+    "translation": "Para evitar la pérdida de datos, guarda una copia de seguridad.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.UnableToCreateScriptsFolderError",
+    "description": null,
+    "english": "Unable to create scripts folder.",
+    "translation": "No se pudo crear la carpeta de scripts.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.PathTooLongError",
+    "description": null,
+    "english": "Error exporting: %1 exceeds the path limit of 255 characters.",
+    "translation": "Error al exportar: %1 excede el límite de ruta de 255 caracteres.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ImportError",
+    "description": null,
+    "english": "Error importing. Please try again.",
+    "translation": "Error al importar. Vuelve a intentarlo.",
     "isDeprecated": false
   },
   {
@@ -56724,7 +57212,7 @@
     "key": "QualityFilterOptions.Buckets.ultra_high",
     "description": null,
     "english": "Ultra High",
-    "translation": "Ultra alto",
+    "translation": "Ultra alta",
     "isDeprecated": false
   },
   {
@@ -56756,7 +57244,15 @@
     "key": "QualityFilterOptions.Buckets.ultra_low",
     "description": null,
     "english": "Ultra Low",
-    "translation": "Ultrabaja",
+    "translation": "Ultra baja",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "Purchase.PendingPurchase",
+    "description": null,
+    "english": "Pending Purchase",
+    "translation": "Compra pendiente",
     "isDeprecated": false
   },
   {
@@ -73496,6 +73992,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.Framework",
+    "key": "SearchBar.Search",
+    "description": null,
+    "english": "Search",
+    "translation": "Buscar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CreatorDashboard.ScopeSystem",
+    "key": "Label.Subscription",
+    "description": "Subscription identifying user subscribing to a particular subscription product.",
+    "english": "Subscription",
+    "translation": "Suscripción",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.AddFriends",
     "key": "Action.FriendAdded",
     "description": "Text for a success toast when a friend has been added",
@@ -80176,6 +80688,22 @@
     "isDeprecated": false
   },
   {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "Label.Subscription",
+    "description": "Subscription identifying user subscribing to a particular subscription product.",
+    "english": "Subscription",
+    "translation": "Suscripción",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "AuthorizeWebsite.PermissionRequest",
+    "key": "OperationDescription.SubscriptionAPIRead",
+    "description": "Subscription is something that identifies user subscribing to a particular subscription product",
+    "english": "Get information about your subscriptions",
+    "translation": "Obtén información sobre tus suscripciones",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.GlobalWind",
     "key": "Plugin.Name",
     "description": null,
@@ -81365,6 +81893,14 @@
     "description": null,
     "english": "Add a MeshPart, Accessory, Model, Animation, or Folder from the Explorer",
     "translation": "Añade MeshPart, Accesorio, Modelo, Animación o Carpeta del Explorador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarToolsShared",
+    "key": "PreviewTopBar.SearchBarPlaceholder",
+    "description": null,
+    "english": "Search Catalog",
+    "translation": "Buscar en Catálogo",
     "isDeprecated": false
   },
   {
@@ -84853,6 +85389,38 @@
     "description": null,
     "english": "Save",
     "translation": "Guardar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StyleEditor",
+    "key": "ContextMenu.New.Enumerator",
+    "description": null,
+    "english": "Enumerator",
+    "translation": "Enumerador",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StyleEditor",
+    "key": "ContextMenu.ViewToken",
+    "description": null,
+    "english": "View Token",
+    "translation": "Ver token",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StyleEditor",
+    "key": "ContextMenu.RemoveFromThemes",
+    "description": null,
+    "english": "Remove From Themes",
+    "translation": "Eliminar de temas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.StyleEditor",
+    "key": "ContextMenu.RemoveFromTokens",
+    "description": null,
+    "english": "Remove From Tokens",
+    "translation": "Eliminar de tokens",
     "isDeprecated": false
   },
   {
@@ -90000,6 +90568,382 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "UGCValidation.WarningTitle_NoPublish",
+    "description": null,
+    "english": "Early Release - In game use only",
+    "translation": "Lanzamiento anticipado - Solo en el juego",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Hair_7193386173",
+    "description": null,
+    "english": "Side Part - Blonde",
+    "translation": "Raya lateral - Rubio",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "UGCValidation.WarningDescription_NoPublish_Plural",
+    "description": null,
+    "english": "{amount:int} Warnings found that would prevent you from uploading to Marketplace in the future",
+    "translation": "{amount:int} Advertencias encontradas que impedirán que cargues al Mercado en el futuro",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "AvatarScreen.AutoSetupStartTitle",
+    "description": null,
+    "english": "Early Release - In game use only",
+    "translation": "Lanzamiento anticipado - Solo en el juego",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "AvatarScreen.AutoSetupStartDescription",
+    "description": null,
+    "english": "We will remove this restriction and allow for Marketplace submission in later releases.",
+    "translation": "Eliminaremos esta restricción y permitiremos el envío al Mercado en versiones posteriores.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "Stages.Publish_AutoSetupDisabled",
+    "description": null,
+    "english": "Submit to Roblox disabled in early release",
+    "translation": "Enviar a Roblox desactivado en el lanzamiento anticipado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "UGCValidation.WarningDescription_NoPublish_Singular",
+    "description": null,
+    "english": "1 Warning found that would prevent you from uploading to Marketplace in the future",
+    "translation": "1 advertencia encontrada que impedirá que cargues al Mercado en el futuro",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Hair_7193452166",
+    "description": null,
+    "english": "Short Curls - Black",
+    "translation": "Rizos cortos - Negros",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Hair_9244114211",
+    "description": null,
+    "english": "Wavy Middle Part - Red",
+    "translation": "Ondulado con raya en el medio - Rojo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Hair_7193451306",
+    "description": null,
+    "english": "Curly Afro - Cool Brown",
+    "translation": "Afro rizado - Café genial",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Front_16648690355",
+    "description": null,
+    "english": "Flask Pin",
+    "translation": "Pin de termo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648897492",
+    "description": null,
+    "english": "Log Pauldrons Left",
+    "translation": "Hombreras de tronco - Izquierda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16649003855",
+    "description": null,
+    "english": "Snow Cat Right",
+    "translation": "Gato de nieve - Derecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648441318",
+    "description": null,
+    "english": "Banana Dog Left",
+    "translation": "Perro de banana - Izquierdo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Waist_16648852016",
+    "description": null,
+    "english": "Keys",
+    "translation": "Llaves",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Waist_16648672949",
+    "description": null,
+    "english": "Donut Tube",
+    "translation": "Tubo de dona",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_14179786408",
+    "description": null,
+    "english": "Neapolitan Pop Shades",
+    "translation": "Gafas pop napolitanas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_12794916165",
+    "description": null,
+    "english": "Beard Circle - Blonde",
+    "translation": "Barba circular - Rubia",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16649071525",
+    "description": null,
+    "english": "Tape Measure",
+    "translation": "Cinta métrica",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Front_16648698037",
+    "description": null,
+    "english": "Flower Pin",
+    "translation": "Pin de flor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648488869",
+    "description": null,
+    "english": "Banana Dog Right",
+    "translation": "Perro de banana - Derecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16640910727",
+    "description": null,
+    "english": "Antler Skull Mask",
+    "translation": "Máscara de calavera de cuernos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_12794788453",
+    "description": null,
+    "english": "Beard Bandholz - Red",
+    "translation": "Barba Bandholz - Roja",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Front_16648652231",
+    "description": null,
+    "english": "Daffodil Lapel",
+    "translation": "Solapa de narciso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648993618",
+    "description": null,
+    "english": "Snow Cat Left",
+    "translation": "Gato de nieve - Izquierdo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648866296",
+    "description": null,
+    "english": "Lizard Left",
+    "translation": "Lagarto - Izquierdo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_12796163960",
+    "description": null,
+    "english": "Curly Beard Full - Black",
+    "translation": "Barba rizada poblada - Negra",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648553830",
+    "description": null,
+    "english": "Bird In Armor Right",
+    "translation": "Pájaro en armadura - Derecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Back_9111378574",
+    "description": null,
+    "english": "Bow",
+    "translation": "Arco",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Head_9111390490",
+    "description": null,
+    "english": "Hat_Acc",
+    "translation": "Hat_Acc",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16648586095",
+    "description": null,
+    "english": "Blowfish",
+    "translation": "Pez bola",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Front_16648706823",
+    "description": null,
+    "english": "Frog Pin",
+    "translation": "Pin de rana",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Neck_15696295454",
+    "description": null,
+    "english": "Monstercat - Bandana",
+    "translation": "Gato monstruo - Bandana",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16649028183",
+    "description": null,
+    "english": "Succulent Pauldrons Left",
+    "translation": "Hombreras suculentas - Izquierda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16648984941",
+    "description": null,
+    "english": "Ski Helmet",
+    "translation": "Casco de esquí",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Neck_16648958003",
+    "description": null,
+    "english": "Mushroom Bow Tie",
+    "translation": "Pajarita de setas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648873760",
+    "description": null,
+    "english": "Lizard Right",
+    "translation": "Lagarto - Derecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Neck_16648625265",
+    "description": null,
+    "english": "Crystal Necklace",
+    "translation": "Collar de cristal",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16649036767",
+    "description": null,
+    "english": "Succulent Pauldrons Right",
+    "translation": "Hombreras suculentas - Derecha",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648905400",
+    "description": null,
+    "english": "Log Pauldrons Right",
+    "translation": "Hombreras de tronco - Derecha",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648615805",
+    "description": null,
+    "english": "Carved Birdhead Pauldrons Right",
+    "translation": "Hombreras talladas con cabeza de pájaro - Derecha",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648502798",
+    "description": null,
+    "english": "Bird In Armor Left",
+    "translation": "Pájaro en armadura - Izquierdo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16648934240",
+    "description": null,
+    "english": "Masquearade Mask",
+    "translation": "Máscara de mascarada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_12796340774",
+    "description": null,
+    "english": "Curly Mustache Chevron - Brown",
+    "translation": "Bigote rizado chevron - Café",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648604510",
+    "description": null,
+    "english": "Carved Birdhead Pauldrons Left",
+    "translation": "Hombreras talladas con cabeza de pájaro - Izquierda",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Waist_16648681897",
+    "description": null,
+    "english": "Drum",
+    "translation": "Tambor",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Waist_16649078388",
+    "description": null,
+    "english": "UFO Belt",
+    "translation": "Cinturón de ovni",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.CompositorDebugger",
     "key": "Plugin.Name",
     "description": null,
@@ -90141,6 +91085,22 @@
     "description": null,
     "english": "Isolate Active Layers",
     "translation": "Aislar capas activas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.CompositorDebugger",
+    "key": "Settings.ReplayLength",
+    "description": null,
+    "english": "Replay Length",
+    "translation": "Duración de la repetición",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.CompositorDebugger",
+    "key": "Replay.Seconds",
+    "description": null,
+    "english": "{duration:int} seconds",
+    "translation": "{duration:int} segundos",
     "isDeprecated": false
   },
   {
@@ -94277,6 +95237,142 @@
     "description": "abbreviation for studs per second",
     "english": "{1} sps",
     "translation": "{1} sps",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Plugin.Button",
+    "description": null,
+    "english": "Toggle",
+    "translation": "Alternar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.SaveToRoblox",
+    "description": null,
+    "english": "Save to Roblox",
+    "translation": "Guardar en Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.Editing",
+    "description": "Gives the name of what a collaborator is currently editing (i.e. the name of a script/part/etc). The <b>%s</b> portion will be replaced by a name so it does not need to be translated.",
+    "english": "Editing <b>%s</b>",
+    "translation": "Edición <b>%s</b>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.Idle",
+    "description": null,
+    "english": "Inactive",
+    "translation": "Inactivo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.SaveToRobloxText",
+    "description": null,
+    "english": "Save and enable Team Create to build this place with your friends.",
+    "translation": "Guarda y activa la Creación en equipo para construir este lugar junto con tus amigos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.EnableTeamCreateText",
+    "description": null,
+    "english": "Enable Team Create to edit this place with your friends.",
+    "translation": "Activa la Creación en equipo para construir este lugar junto con tus amigos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Plugin.Toolbar",
+    "description": null,
+    "english": "Live Collaborators",
+    "translation": "Colaboradores en vivo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.Workspace",
+    "description": null,
+    "english": "Editing the <b>workspace</b>",
+    "translation": "Editando el <b>espacio de trabajo</b>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Plugin.Name",
+    "description": null,
+    "english": "Live Collaborators",
+    "translation": "Colaboradores en vivo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Plugin.Description",
+    "description": null,
+    "english": "View other collaborators",
+    "translation": "Ver otros colaboradores",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.Join",
+    "description": "Click to teleport to another collaborator's location",
+    "english": "Join",
+    "translation": "Unirse",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.Return",
+    "description": null,
+    "english": "Return to previous location",
+    "translation": "Regresar a la ubicación anterior",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Collaborator.DeletedScript",
+    "description": "A script that has been deleted",
+    "english": " Deleted Script",
+    "translation": " Script eliminado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.DisableTeamCreate",
+    "description": "Turns off the Team Create feature",
+    "english": "Disable Team Create",
+    "translation": "Desactivar Creación en equipo",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.ShowSelections",
+    "description": null,
+    "english": "Show collaborator selections",
+    "translation": "Mostrar selecciones de colaboradores",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Settings.EnableTeamCreate",
+    "description": "Enables Team Create",
+    "english": "Turn On",
+    "translation": "Activar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.SocialPresence",
+    "key": "Ribbon.Collaborate",
+    "description": null,
+    "english": "Collaborate",
+    "translation": "Colaborar",
     "isDeprecated": false
   }
 ]
