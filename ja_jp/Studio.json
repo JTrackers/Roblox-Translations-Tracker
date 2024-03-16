@@ -24908,7 +24908,7 @@
     "key": "Property.IncomingReplicationLag",
     "description": null,
     "english": "Incoming Replication Lag (seconds)",
-    "translation": "受信レプリケーション遅延",
+    "translation": "受信レプリケーション遅延（秒）",
     "isDeprecated": false
   },
   {
@@ -36531,8 +36531,8 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
-    "translation": "なし",
+    "english": "Disabled",
+    "translation": "無効",
     "isDeprecated": false
   },
   {
@@ -38809,6 +38809,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "Property.LoadUserPluginsInTestMode",
+    "description": null,
+    "english": "Load User Plugins in Test mode",
+    "translation": "テストモードでユーザープラグインを読み込む",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "BetaFeatures.TextureGeneratorTitle",
     "description": null,
     "english": "AI-Powered Texture Generator",
@@ -38885,6 +38893,14 @@
     "description": null,
     "english": "Cannot delete file from Scripts directory: %1.",
     "translation": "スクリプトディレクトリからファイルを削除できません: %1。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidInstancesArrayDmJsonError",
+    "description": null,
+    "english": "Error reading the datamodel.json: Must contain an instances array of instance data.",
+    "translation": "datamodel.json の読み込みエラー: インスタンスデータのインスタンス配列を入れる必要があります。",
     "isDeprecated": false
   },
   {
@@ -39089,6 +39105,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmAfterWarningExportError",
+    "description": null,
+    "english": "Could not continue with export. DataModel not found.",
+    "translation": "エクスポートを続行できませんでした。DataModel が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ProjectFolderService.SelectProjectFolder",
     "description": null,
     "english": "Select Project Folder",
@@ -39113,10 +39137,58 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ProjectFolderService.GetSourceMissingSESError",
+    "description": null,
+    "english": "Unable to get source of a script: ScriptEditorService not found.",
+    "translation": "スクリプトのソースを取得できません: ScriptEditorService が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SetSourceMissingDmError",
+    "description": null,
+    "english": "Unable to set source of a script: DataModel not found.",
+    "translation": "スクリプトのソースを設定できません: DataModel が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ProjectFolderService.NotLuauFileError",
     "description": null,
     "english": "Source is not a luau file.",
     "translation": "ソースはLuauファイルではありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.EditedSinceLastImportOutput",
+    "description": null,
+    "english": "%1 has been edited since last import.",
+    "translation": "%1 は前回のインポート後、編集されています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmJsonError",
+    "description": null,
+    "english": "Could not find datamodel.json.",
+    "translation": "datamodel.json が見つかりませんでした。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmAfterWarningImportError",
+    "description": null,
+    "english": "Could not continue with import. DataModel not found.",
+    "translation": "インポートを続行できませんでした。DataModel が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingScriptsFolderError",
+    "description": null,
+    "english": "Import failed: Root directory is missing scripts folder.",
+    "translation": "インポートできませんでした: ルートディレクトリにスクリプトフォルダがありません。",
     "isDeprecated": false
   },
   {
@@ -56808,6 +56880,46 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.AssetTypeNotAvailable",
+    "description": null,
+    "english": "This asset type is currently not available to distribute on Creator Store",
+    "translation": "このアセットタイプは現在、クリエーターストアで流通させられません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.NoPermissionToDistributeAsset",
+    "description": null,
+    "english": "You do not have permission to distribute this asset on Creator Store",
+    "translation": "クリエーターストアでこのアセットを流通させる権限がありません",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.AssetMayViolateCommunityStandards",
+    "description": null,
+    "english": "This asset may be in violation of Roblox Community Standards",
+    "translation": "このアセットはRobloxのコミュニティ基準に違反している可能性があります",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetConfigCopy.SubmitAppeal",
+    "description": null,
+    "english": "Submit appeal",
+    "translation": "異議申し立てを送信",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.Toolbox",
+    "key": "AssetPreview.CountryRestrictedPurchase",
+    "description": null,
+    "english": " Not available for purchase in your country",
+    "translation": " お住まいの国では購入できません",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.Common",
     "key": "Action.Apply",
     "description": null,
@@ -67776,6 +67888,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Studio.TerrainToolsV2",
+    "key": "Action.DontAskAgain",
+    "description": null,
+    "english": "Do not ask me again",
+    "translation": "次回から表示しない",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Studio.CGE",
     "key": "Modal.ConfirmDeletion",
     "description": null,
@@ -72909,6 +73029,22 @@
     "description": null,
     "english": "AssetManager",
     "translation": "アセット管理",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetManager",
+    "key": "MainView.ConfirmRemovePlaceText",
+    "description": null,
+    "english": "Are you sure you would like to remove the selected place(s)?",
+    "translation": "選択済みのプレースを削除しますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AssetManager",
+    "key": "MainView.CancelText",
+    "description": null,
+    "english": "Cancel",
+    "translation": "キャンセル",
     "isDeprecated": false
   },
   {
@@ -90417,6 +90553,14 @@
   },
   {
     "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shorts_7192685245",
+    "description": null,
+    "english": "Floral Swim Trunks - Blue",
+    "translation": "モンステラ柄のスイミングトランクス - 青",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
     "key": "ItemNames2.BodyEmotes_10714340543",
     "description": null,
     "english": "Floss Dance",
@@ -90437,6 +90581,14 @@
     "description": null,
     "english": "Daffodil Lapel",
     "translation": "水仙のラペル",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Skirts_7192690731",
+    "description": null,
+    "english": "Tennis-White",
+    "translation": "テニスのスコート - 白",
     "isDeprecated": false
   },
   {
@@ -90485,6 +90637,14 @@
     "description": null,
     "english": "Furrozen Friend",
     "translation": "凍えたファーフレンド",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shirts_9620976296",
+    "description": null,
+    "english": "Puffy V-Neck - Brown",
+    "translation": "ふわふわのVネック - 茶色",
     "isDeprecated": false
   },
   {
@@ -90881,6 +91041,14 @@
   },
   {
     "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Emotions_13965126930",
+    "description": null,
+    "english": "Expressions",
+    "translation": "表情",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
     "key": "ItemNames2.RightArm_11775679683",
     "description": null,
     "english": "Piggy - Right Arm",
@@ -91185,6 +91353,14 @@
   },
   {
     "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "UGCValidation.WarningDescription_NoPublish_Singular",
+    "description": null,
+    "english": "1 Warning found that would prevent you from uploading to Marketplace in the future",
+    "translation": "1件の警告が見つかったため、今後はマーケットプレイスにアップロードできなくなります",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
     "key": "ItemNames2.Hair_7193452166",
     "description": null,
     "english": "Short Curls - Black",
@@ -91249,6 +91425,14 @@
   },
   {
     "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Waist_16648672949",
+    "description": null,
+    "english": "Donut Tube",
+    "translation": "ドーナツチューブ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
     "key": "ItemNames2.Face_12794916165",
     "description": null,
     "english": "Beard Circle - Blonde",
@@ -91277,6 +91461,14 @@
     "description": null,
     "english": "Banana Dog Right",
     "translation": "バナナドッグ（右）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Face_16640910727",
+    "description": null,
+    "english": "Antler Skull Mask",
+    "translation": "ツノのスカルマスク",
     "isDeprecated": false
   },
   {
@@ -91317,6 +91509,14 @@
     "description": null,
     "english": "Curly Beard Full - Black",
     "translation": "クルクルのヒゲ（長） - 黒",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648553830",
+    "description": null,
+    "english": "Bird In Armor Right",
+    "translation": "鳥のアーマー（右）",
     "isDeprecated": false
   },
   {
@@ -91417,6 +91617,14 @@
   },
   {
     "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "ItemNames2.Shoulder_16648502798",
+    "description": null,
+    "english": "Bird In Armor Left",
+    "translation": "鳥のアーマー（左）",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
     "key": "ItemNames2.Face_16648934240",
     "description": null,
     "english": "Masquearade Mask",
@@ -91453,6 +91661,30 @@
     "description": null,
     "english": "UFO Belt",
     "translation": "UFOベルト",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "Survey.IntentForResults",
+    "description": null,
+    "english": "How do you intend to use the results?",
+    "translation": "この結果をどう使う予定ですか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "Survey.ProblemUseAsNPC",
+    "description": null,
+    "english": "As a character in my game",
+    "translation": "ゲームのキャラクターとして",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.AvatarCompatibilityPreviewer",
+    "key": "Survey.ProblemUseForMarketplace",
+    "description": null,
+    "english": "To sell on the Marketplace",
+    "translation": "マーケットプレイスで販売",
     "isDeprecated": false
   },
   {
