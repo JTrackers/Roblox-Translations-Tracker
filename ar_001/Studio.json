@@ -1345,6 +1345,70 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BindableFunctionInvoke",
+    "description": null,
+    "english": "Causes the function assigned to OnInvoke to be called. Arguments passed to this function get passed to OnInvoke function.",
+    "translation": "يؤدي إلى استدعاء الوظيفة التي تم تعيينها إلى OnInvoke. يتم تمرير الوسيطة إلى هذه الوظيفة ليتم تمريرها إلى وظيفة OnInvoke.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BindableFunctionOnInvoke",
+    "description": null,
+    "english": "Should be defined as a function. This function is called when Invoke() is called. Number of arguments is variable.",
+    "translation": "ينبغي تعريفها كوظيفة. يتم استدعاء هذه الوظيفة عند استدعاء Invoc(). عدد الوسائط متغير.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BindableEvent",
+    "description": null,
+    "english": "Allow events defined in one script to be subscribed to by another script",
+    "translation": "السماح للأحداث المحددة في أحد البرامج النصية بالاشتراك فيها بواسطة سكربت آخر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BindableEventFire",
+    "description": null,
+    "english": "Used to make the custom event fire (see Event for more info). Arguments can be variable length.",
+    "translation": "يُستخدم لتنشيط الحدث المخصص (راجع الحدث لمزيد من المعلومات). يمكن أن تكون الوسائط متغيرة الطول.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BindableEventEvent",
+    "description": null,
+    "english": "This event fires when the Fire() method is used.  Receives the variable length arguments from Fire().",
+    "translation": "يتم إطلاق هذا الحدث عند استخدام أسلوب Fire(). يتلقى الوسائط ذات الطول المتغير من Fire ().",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.TouchTransmitter",
+    "description": null,
+    "english": "Used by networking and replication code to transmit touch events - no other purpose",
+    "translation": "يتم استخدامه بواسطة كود الشبكة والنسخ المتماثل لنقل أحداث اللمس - ولا يستخدم لأي غرض آخر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ForceField",
+    "description": null,
+    "english": "Prevents joint breakage from explosions, and stops Humanoids from taking damage",
+    "translation": "يمنع كسر المفاصل من الانفجارات، ويحفظ Humanoids من التعرض للضرر",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.TeleportService",
+    "description": null,
+    "english": "Allows players to seamlessly leave a game and join another",
+    "translation": "يسمح للاعبين بترك اللعبة بسلاسة والانضمام إلى لعبة أخرى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.TeleportServiceCustomizedTeleportUI",
     "description": null,
     "english": "Deprecated",
@@ -1385,6 +1449,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CollectionServiceGetTagged",
+    "description": null,
+    "english": "Returns an array of all of the instances in the data model which have the given tag.",
+    "translation": "تقوم بإرجاع مصفوفة من كافة المثيلات الموجودة في نموذج البيانات والتي تحتوي على التاغ المحددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.CollectionServiceAddTag",
     "description": null,
     "english": "Adds a tag to an instance.",
@@ -1397,6 +1469,14 @@
     "description": null,
     "english": "Removes a tag to an instance.",
     "translation": "إزالة علامة من مثيل.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CollectionServiceGetTags",
+    "description": null,
+    "english": "Returns a list of all the collections that an instance belongs to.",
+    "translation": "ترجع قائمة بجميع المجموعات التي ينتمي إليها مثيل ما.",
     "isDeprecated": false
   },
   {
@@ -1489,6 +1569,46 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertService",
+    "description": null,
+    "english": "A service used to insert objects stored on the website into the game.",
+    "translation": "خدمة تُستخدم لإدراج العناصر المخزنة على موقع الويب في اللعبة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceAllowClientInsertModels",
+    "description": null,
+    "english": "Can be set in non-filtering-enabled places to allow LoadAsset to be used in LocalScripts.",
+    "translation": "يمكن تعيينه في non-filtering-enabled للسماح باستخدام LoadAsset في LocalScripts.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceAllowInsertFreeModels",
+    "description": null,
+    "english": "Allows free models to be inserted into place.",
+    "translation": "يسمح بوضع النماذج الحرة في مكانها.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceGetCollection",
+    "description": null,
+    "english": "Returns a table for the assets stored in the category.  A category is an setId from www.roblox.com that links to a set.  <a href='http://wiki.roblox.com/index.php?title=API:Class/InsertService/GetCollection' target='_blank'>More info on table format</a>. <a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>More info on sets</a>",
+    "translation": "يرجع جدولاً للأصول المخزنة في الفئة. الفئة عبارة عن معرف مجموعة من www.roblox.com مرتبط بمجموعة. <a href='http://wiki.roblox.com/index.php?title=API:Class/InsertService/GetCollection' target='_blank'>المزيد من المعلومات حول تنسيق الجداول</a>.<a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>المزيد من المعلومات حول المجموعات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceInsert",
+    "description": null,
+    "english": "Inserts the Instance into the workspace.  It is recommended to use Instance.Parent = game.Workspace instead, as this can cause issues currently.",
+    "translation": "يدخل المثيل في workspace. يوصى باستخدام Instance.Parent = game.WorkSpace بدلاً من ذلك، لأن هذا يمكن أن يسبب مشاكل حاليًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.InsertServiceApproveAssetId",
     "description": null,
     "english": "Deprecated",
@@ -1501,6 +1621,62 @@
     "description": null,
     "english": "Deprecated",
     "translation": "ملغى",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceGetBaseSets",
+    "description": null,
+    "english": "Returns a table containing a list of the various setIds that are ROBLOX approved. <a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>More info on sets</a>",
+    "translation": "يُرجع جدولاً يحتوي على قائمة بمعرّفات المجموعات المختلفة التي وافقت عليها ROBLOX. <a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>المزيد من المعلومات حول المجموعات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceGetUserSets",
+    "description": null,
+    "english": "Returns a table containing a list of the various setIds that correspond to argument 'userId'. <a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>More info on sets</a>",
+    "translation": "يرجع جدولاً يحتوي على قائمة بمعرفات المجموعات المختلفة التي تتوافق مع الوسيط \"userId\".. <a href='http://wiki.roblox.com/index.php/Sets' target='_blank'>المزيد من المعلومات حول المجموعات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceGetBaseCategories",
+    "description": null,
+    "english": "Deprecated. Use GetBaseSets() instead.",
+    "translation": "ملغى. استخدم GetBaseSets() بدلاً من ذلك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceGetUserCategories",
+    "description": null,
+    "english": "Deprecated. Use GetUserSets() instead.",
+    "translation": "ملغى. استخدم GetUserSets() بدلاً من هذا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.InsertServiceLoadAsset",
+    "description": null,
+    "english": "Returns a Model containing the Instance that resides at AssetId on the web. This call will also yield the script until the model is returned. Script execution can still continue, however, if you use a <a href='http://wiki.roblox.com/index.php?title=Coroutine' target='_blank'>coroutine</a>.",
+    "translation": "يرجع model يحتوي على المثيل الذي يقيم في AssetId على الويب. سيؤدي هذا الاستدعاء أيضًا إلى إنتاج البرنامج النصي حتى يتم إرجاع النموذج. ومع ذلك، لا يزال من الممكن الاستمرار في تنفيذ البرنامج النصي، إذا كنت تستخدم <a href='http://wiki.roblox.com/index.php?title=Coroutine' target='_blank'> coroutine </a>.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.AttachmentWorldRotation",
+    "description": null,
+    "english": "Deprecated. Use WorldOrientation instead",
+    "translation": "ملغى. استخدم WorldOrientation بدلاً من هذا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.AttachmentOrientation",
+    "description": null,
+    "english": "Euler angles applied in YXZ order",
+    "translation": "زوايا Euler المطبقة في طلب YXZ",
     "isDeprecated": false
   },
   {
