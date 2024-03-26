@@ -1849,6 +1849,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.RopeConstraintThickness",
+    "description": null,
+    "english": "The thickness of the in-game visual (diameter). Value in [0, inf).",
+    "translation": "سمك الصورة المرئية داخل اللعبة (القُطُر). القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.RodConstraintLength",
     "description": null,
     "english": "The length of the rod or the distance to be maintained between the two attachments. Value in [0, inf).",
@@ -1877,6 +1885,86 @@
     "description": null,
     "english": "Enables limits on the length of the spring.",
     "translation": "يمكّن القيود على طول الزنبرك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintStiffness",
+    "description": null,
+    "english": "The stiffness parameter of the spring. Force is scaled based on distance from the free length. The units of this property are force / distance. Value in [0, inf).",
+    "translation": "معلمة صلابة الزنبرك. يتم قياس القوة على أساس المسافة من الطول الحر. وحدات هذه الخاصية هي القوة / المسافة. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintDamping",
+    "description": null,
+    "english": "The damping parameter of the spring. The force is scaled with respect to relative velocity. The units of this property are force / velocity. Value in [0, inf).",
+    "translation": "معلمة التخميد في الزنبرك. يتم قياس القوة بالنسبة للسرعة النسبية. وحدات هذه الخاصية هي القوة / السرعة. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintFreeLength",
+    "description": null,
+    "english": "The distance (in studs) between the two attachments at which the spring exerts no stiffness force. Value in [0, inf).",
+    "translation": "المسافة (بالأزرار) بين الملحقين التي لا يبذل فيها الزنبرك أي قوة صلابة. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintMaxForce",
+    "description": null,
+    "english": "The maximum force that the spring can apply. Useful to prevent instabilities. The units are mass * studs / seconds^2. Value in [0, inf).",
+    "translation": "أقصى قوة يمكن للزنبرك فعلها. مفيدة لمنع عدم الاستقرار. الوحدات هي الكتلة * الأزرار/ثانية^2. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintMaxLength",
+    "description": null,
+    "english": "Maximum spring length, or the maxium distance between the two attachments. Value in [0, inf).",
+    "translation": "الحد الأقصى لطول الزنبرك، أو الحد الأقصى للمسافة بين الملحقين. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintMinLength",
+    "description": null,
+    "english": "Minimum spring length, or the minimum distance between the two attachments. Value in [0, inf).",
+    "translation": "الحد الأقصى لطول الزنبرك، أو الحد الأقصى للمسافة بين الملحقين. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintRadius",
+    "description": null,
+    "english": "The radius of the in-game spring coil visual. Value in [0, inf).",
+    "translation": "شعاع دائرة القسم المرئي من الزنبرك في اللعبة. القيمة في [0, inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintThickness",
+    "description": null,
+    "english": "The thickness of the spring wire (diameter) in the in-game visual. Value in [0, inf).",
+    "translation": "سمك سلك الزنبرك (القطر) في الصورة المرئية في اللعبة. القيمة في [0, inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintCoils",
+    "description": null,
+    "english": "The number of coils in the in-game visual. Value in [0, 8].",
+    "translation": "عدد اللفائف في الصورة المرئية داخل اللعبة. القيمة في [0، 8].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SpringConstraintCurrentLength",
+    "description": null,
+    "english": "Current distance between the two attachments. Value in [0, inf).",
+    "translation": "المسافة الحالية بين الملحقين. القيمة في [0, inf).",
     "isDeprecated": false
   },
   {
@@ -1913,10 +2001,146 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintUpperAngle",
+    "description": null,
+    "english": "Upper limit for the angle from the SecondaryAxis of Attachment0 to the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "الحد الأعلى للزاوية من المحور الثانوي لـ Attachment0 إلى المحور الثانوي Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintLowerAngle",
+    "description": null,
+    "english": "Lower limit for the angle from the SecondaryAxis of Attachment0 to the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "الحد الأدنى للزاوية من المحور الثانوي لـ Attachment0 إلى المحور الثانوي Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintAngularRestitution",
+    "description": null,
+    "english": "Restitution of the two limits, or how elastic they are. Value in [0,1].",
+    "translation": "استرجاع للحدين أو لمدى مرونتهما. القيمة في [0، 1].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintAngularVelocity",
+    "description": null,
+    "english": "The target angular velocity of the motor in radians per second around the rotation axis. Value in [0, inf).",
+    "translation": "السرعة الزاوية المستهدفة للمحرك بمقياس الشعاع في الثانية حول محور الدوران. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintMotorMaxTorque",
+    "description": null,
+    "english": "The maximum torque the motor can apply to achieve the target angular velocity. Value in [0, inf).",
+    "translation": "الحد الأقصى لعزم الدوران الذي يمكن للمحرك تحمّله لتحقيق السرعة الزاويّة المستهدفة. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintMotorMaxAcceleration",
+    "description": null,
+    "english": "The maximum angular acceleration of the motor in radians per second square. Value in [0, inf).",
+    "translation": "أقصى تسارع زاوي للمحرك بمقياس الشعاع في الثانية المربعة. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintAngularSpeed",
+    "description": null,
+    "english": "Target angular speed. This value is unsigned as the servo will always move toward its target. Value in [0, inf).",
+    "translation": "السرعة الزاوية المستهدفة. هذه القيمة غير موقّعة لأن servo سيتحرك دائمًا نحو الهدف. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintServoMaxTorque",
+    "description": null,
+    "english": "Maximum torque the servo motor can apply. Value in [0, inf).",
+    "translation": "الحد الأقصى لعزم الدوران الذي يمكن أن يطبقه محرك servo. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintTargetAngle",
+    "description": null,
+    "english": "Target angle for the SecondaryAxis of Attachment1 from the SecondaryAxis of Attachment0 around the rotation axis. Value in [-180, 180].",
+    "translation": "الزاوية المستهدفة للمحور الثانوي للمرفق Attachment1 من المحور الثانوي للمرفق Attachment0 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.HingeConstraintCurrentAngle",
+    "description": null,
+    "english": "Signed angle between the SecondaryAxis of Attchement0 and the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "الزاوية الموقعّة بين المحور الثانوي لـ Attchement0 والمحور الثانوي لـ Attchement1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.HingeConstraintRadius",
     "description": null,
     "english": "Radius of the in-game visual. Value in [0, inf).",
     "translation": "شعاع دائرة القسم المرئي في اللعبة. القيمة في [0, inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintActuatorType",
+    "description": null,
+    "english": "Type of linear actuator (along the axis of the slider): None, Motor, or Servo.",
+    "translation": "نوع المحرك الخطي (على طول محور شريط التمرير): None, Motor, أو Servo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintLimitsEnabled",
+    "description": null,
+    "english": "Enables the limits on the linear motion along the axis of the slider.",
+    "translation": "لتمكين حدود الحركة الخطية على طول محور شريط التمرير.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintLowerLimit",
+    "description": null,
+    "english": "Lower limit for the position of Attachment1 with respect to Attachment0 along the slider axis. Value in (-inf, inf).",
+    "translation": "الحد الأدنى لموضع Attachment1 بالنسبة لـ Attachment0 على طول محور شريط التمرير. القيمة في (-inf، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintUpperLimit",
+    "description": null,
+    "english": "Upper limit for the position of Attachment1 with respect to Attachment0 along the slider axis. Value in (-inf, inf).",
+    "translation": "الحد الأعلى لموضع Attachment1 بالنسبة لـ Attachment0 على طول محور شريط التمرير. القيمة في (-inf، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintRestitution",
+    "description": null,
+    "english": "Restitution of the two limits, or how elastic they are. Value in [0, 1].",
+    "translation": "استرجاع للحدين أو لمدى مرونتهما. القيمة في [0، 1].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintVelocity",
+    "description": null,
+    "english": "The target linear velocity of the motor in studs per second along the slider axis. Value in (-inf, inf).",
+    "translation": "السرعة الخطية المستهدفة للمحرك في الأزرار في الثانية على طول محور التمرير. القيمة في (-inf، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SlidingBallConstraintMotorMaxForce",
+    "description": null,
+    "english": "The maximum force the motor can apply to achieve the target velocity. Units are mass * studs / seconds^2. Value in [0, inf).",
+    "translation": "أقصى قوة يمكن للمحرك تحمّلها للوصول إلى السرعة المستهدفة. الوحدات هي الكتلة * الأزرار / الثانية ^ 2. القيمة في [0، inf).",
     "isDeprecated": false
   },
   {
@@ -1933,6 +2157,14 @@
     "description": null,
     "english": "Type of angular actuator: None, Motor, or Servo.",
     "translation": "نوع المحرك الدوراني: None أو Motor أو Servo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintAngularLimitsEnabled",
+    "description": null,
+    "english": "Enables the angular limits around the rotation axis.",
+    "translation": "يمكّن حدود الزوايا حول محور الدوران.",
     "isDeprecated": false
   },
   {
