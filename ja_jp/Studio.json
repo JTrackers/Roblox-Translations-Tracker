@@ -38905,10 +38905,26 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "LinkedSourceMigrator.Details",
+    "description": null,
+    "english": "These LinkedSource scripts will be converted to embedded scripts:",
+    "translation": "これらの LinkedSource スクリプトは、埋め込みスクリプトに変換されます:",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "LinkedSourceMigrator.MigrateButton",
     "description": null,
     "english": "Convert",
     "translation": "変換",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "LinkedSourceMigrator.FailedDescription",
+    "description": null,
+    "english": "These LinkedSources failed to load and have not been migrated, please try again later:",
+    "translation": "これらの LinkedSources の読み込みができす、移行されていません。後でもう一度お試しください:",
     "isDeprecated": false
   },
   {
@@ -38945,10 +38961,18 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "PlaceManager.FailedToClosePlaceDueToAutoSave",
+    "description": null,
+    "english": "Failed to close the place because we are auto-saving. Please wait for it to complete and then retry.",
+    "translation": "自動保存中のため、プレースを終了できませんでした。完了してから再試行してください。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "BetaFeatures.TextureGeneratorTitle",
     "description": null,
     "english": "Texture Generator",
-    "translation": "AI駆動テクスチャ生成",
+    "translation": "テクスチャ生成",
     "isDeprecated": false
   },
   {
@@ -38956,7 +38980,7 @@
     "key": "BetaFeatures.TextureGeneratorDescription",
     "description": null,
     "english": "Enables AI-powered texture generation for mesh parts in Studio.",
-    "translation": "StudioでメッシュのテクスチャをAI駆動で生成。",
+    "translation": "StudioでメッシュパーツのAI駆動テクスチャ生成を有効化。",
     "isDeprecated": false
   },
   {
@@ -39017,10 +39041,34 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "BetaFeatures.AutoSetupDescription",
+    "description": null,
+    "english": "Early release of our automated creation of avatars from single-mesh 3D models of humanoid-like bodies. Currently for in-game use only. We will remove this restriction and allow for Marketplace submission in later releases.",
+    "translation": "当社の人型ボディの単一メッシュ3Dモデルからの自動アバター作成の先行リリース。現在、ゲーム内での使用に限定。今後のリリースでは、マーケットプレイスに投稿できるように制限を解除する予定です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MissingDmError",
+    "description": null,
+    "english": "Unable to setup script change detection: DataModel not found.",
+    "translation": "スクリプト変更の検知を設定できません: DataModel が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ProjectFolderService.MissingScriptEditorServiceError",
     "description": null,
     "english": "Unable to setup script change detection: ScriptEditorService not found.",
     "translation": "スクリプト変更の検知を設定できません: ScriptEditorService が見つかりません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.GetSourceMissingDmError",
+    "description": null,
+    "english": "Unable to get source of a script: DataModel not found.",
+    "translation": "スクリプトのソースを取得できません: DataModel が見つかりません。",
     "isDeprecated": false
   },
   {
@@ -39133,6 +39181,14 @@
     "description": null,
     "english": "%1 could not be found or is not a folder.",
     "translation": "%1 が見つからないか、フォルダではありません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.InstanceCreationMissingParentError",
+    "description": null,
+    "english": "Could not create instance for %1 because parent wasn't found.",
+    "translation": "親が見つからなかったため、 %1 のインスタンスを作成できませんでした。",
     "isDeprecated": false
   },
   {
@@ -39265,6 +39321,14 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ProjectFolderService.InvalidInstancesTable",
+    "description": null,
+    "english": "Error reading datamodel.json content: Malformed instances table.",
+    "translation": "datamodel.json コンテンツの読み取りエラー: インスタンステーブルが不正です。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ProjectFolderService.InstanceMoveMissingParentError",
     "description": null,
     "english": "Could not move instance for %1 because parent wasn't found.",
@@ -39369,10 +39433,50 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ProjectFolderService.PathTooLongError",
+    "description": null,
+    "english": "Error exporting: %1 exceeds the path limit of 255 characters.",
+    "translation": "エクスポートエラー: %1 がパス限度の255文字を超えています。characters.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "ProjectFolderService.ImportError",
     "description": null,
     "english": "Error importing. Please try again.",
     "translation": "エクスポートエラー。もう一度お試しください",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MultipleUsersWarningTitle",
+    "description": null,
+    "english": "Importing may overwrite live edits.",
+    "translation": "インポートするとライブ編集が上書きされるかもしれません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ImportAnywayButtonText",
+    "description": null,
+    "english": "Import Anyway",
+    "translation": "インポートする",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.MultipleUsersWarningSubtext",
+    "description": null,
+    "english": "There are live collaborators in this session. Importing now may overwrite their changes.",
+    "translation": "このセッションには、ライブ（作業中）の共同制作者がいます。今インポートすると、共同制作者の変更を上書きするかもしれません。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.SaveBackupSubtext",
+    "description": null,
+    "english": "To avoid data loss, consider saving a backup.",
+    "translation": "データ損失を回避するには、バックアップの保存を検討してください。",
     "isDeprecated": false
   },
   {
@@ -39385,10 +39489,82 @@
   },
   {
     "namespace": "Studio.App",
+    "key": "ProjectFolderService.ExportUnderIneligibleRootWarningTitle",
+    "description": null,
+    "english": "You are exporting with instance(s) under an ineligible root.",
+    "translation": "不適格なルートの下でインスタンスをエクスポートしています。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "ProjectFolderService.ExportUnderIneligibleRootWarningSubtext",
+    "description": null,
+    "english": "The instance(s) will appear under Scripts/Misc.",
+    "translation": "インスタンスはスクリプト/その他に表示されます。",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Diagnostics.LowMemoryActionWarning",
+    "description": "This message is shown to users when Studio detects that the user is low on memory. Studio will offer the user the option to restart or continue what they were trying to do.",
+    "english": "Studio may become unstable and the attempted operation may not succeed. Would you like to restart or continue the operation?",
+    "translation": "Studioが不安定になり、操作が失敗する可能性があります。再起動しますか？それとも操作を続けますか？",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.ShowCodeDropdown",
+    "description": null,
+    "english": "Show code",
+    "translation": "コードを表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.Setting.ExpandAllTextDropdowns",
+    "description": null,
+    "english": "Expand all dropdowns",
+    "translation": "プルダウンをすべて展開",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.HideCodeDropdown",
+    "description": null,
+    "english": "Hide code",
+    "translation": "コードを非表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
     "key": "RobloxRibbonMainWindow.MaterialPicker",
     "description": null,
     "english": "Material",
     "translation": "素材",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.Setting.CollapseAllTextDropdowns",
+    "description": null,
+    "english": "Collapse all dropdowns",
+    "translation": "プルダウンをすべて折り畳み表示",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "Diagnostics.Continue",
+    "description": "This is text for a button that is shown to the user to let them continue running Studio and not restart",
+    "english": "Continue",
+    "translation": "続ける",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.App",
+    "key": "GenerativeAI.Setting.AutoExpandTextDropdowns",
+    "description": null,
+    "english": "Auto-expand dropdowns",
+    "translation": "プルダウンを自動展開",
     "isDeprecated": false
   },
   {
@@ -95444,7 +95620,7 @@
     "key": "Description.TranslationExperienceDescription",
     "description": null,
     "english": "Experience description was translated in {language}",
-    "translation": "バーチャル空間の概要が {language} に翻訳されました",
+    "translation": "バーチャル空間の詳細が {language} に翻訳されました",
     "isDeprecated": false
   },
   {
