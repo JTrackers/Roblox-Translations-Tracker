@@ -2193,6 +2193,14 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintInclinationAngle",
+    "description": null,
+    "english": "Direction of the rotation axis as an angle from the x-axis in the xy-plane of Attachment0. Value in [-180, 180].",
+    "translation": "اتجاه محور الدوران كزاوية من المحور X في المستوى xy للمرفق Attachment0. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.CylindricalConstraintAngularActuatorType",
     "description": null,
     "english": "Type of angular actuator: None, Motor, or Servo.",
@@ -2209,10 +2217,218 @@
   },
   {
     "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintUpperAngle",
+    "description": null,
+    "english": "Upper limit for the angle (in degrees) between the reference axis and the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "الحد الأعلى للزاوية (بالدرجات) بين المحور المرجعي والمحور الثانوي لـ Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintLowerAngle",
+    "description": null,
+    "english": "Lower limit for the angle (in degrees) between the reference axis and the SecondaryAxis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "الحد الأدنى للزاوية (بالدرجات) بين المحور المرجعي والمحور الثانوي لـ Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintAngularRestitution",
+    "description": null,
+    "english": "Restitution of the two limits, or how elastic they are. Value in [0, 1].",
+    "translation": "استرجاع للحدين أو لمدى مرونتهما. القيمة في [0، 1].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintAngularVelocity",
+    "description": null,
+    "english": "The target angular velocity of the motor in radians per second around the rotation axis. Value in [0, inf).",
+    "translation": "السرعة الزاوية المستهدفة للمحرك بمقياس زاوية نصف قطرية في الثانية حول محور الدوران. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintMotorMaxTorque",
+    "description": null,
+    "english": "The maximum torque the motor can apply to achieve the target angular velocity. The units are mass * studs^2 / second^2. Value in [0, inf).",
+    "translation": "الحد الأقصى لعزم الدوران الذي يمكن للمحرك تحمّله لتحقيق السرعة الزاوية المستهدفة. الوحدات هي الكتلة * الأزرار ^ 2 / ثانية ^ 2. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintMotorMaxAngularAcceleration",
+    "description": null,
+    "english": "The maximum angular acceleration of the motor in radians per second squared. Value in [0, inf).",
+    "translation": "أقصى تسارع زاوي للمحرك بمقياس زاوية نصف قطرية في الثانية أس 2. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintAngularSpeed",
+    "description": null,
+    "english": "Target angular speed. This value is unsigned as the servo will always move toward its target. In radians per second. Value in [0, inf).",
+    "translation": "السرعة الزاوية المستهدفة. هذه القيمة غير موقّعة لأن servo سيتحرك دائمًا نحو الهدف. بمقاس الزاوية نصف قطرية. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintServoMaxTorque",
+    "description": null,
+    "english": "Maximum torque the servo motor can apply. The units are mass * studs^2 / second^2. Value in [0, inf).",
+    "translation": "أقصى قوة يمكن أن يتحملها محرك servo. الوحدات هي الكتلة * الأزرار^2 / ثانية ^ 2. القيمة في [0، inf).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintTargetAngle",
+    "description": null,
+    "english": "Target angle (in degrees) between the reference axis and the secondary axis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "زاوية الهدف (بالدرجات) بين المحور المرجعي والمحور الثانوي لـ Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintCurrentAngle",
+    "description": null,
+    "english": "Signed angle (in degrees) between the reference axis and the secondary axis of Attachment1 around the rotation axis. Value in [-180, 180].",
+    "translation": "زاوية موقعة (بالدرجات) بين المحور المرجعي والمحور الثانوي لـ Attachment1 حول محور الدوران. القيمة في [-180، 180].",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CylindricalConstraintWorldRotationAxis",
+    "description": null,
+    "english": "The unit vector direction of the rotation axis in world coordinates.",
+    "translation": "وحدة اتجاه المسار لمحور الدوران في إحداثيات العالم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
     "key": "ReflectionMetadata.CylindricalConstraintRotationAxisVisible",
     "description": null,
     "english": "Enable the visibility of the rotation axis.",
     "translation": "تمكين رؤية محور الدوران.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Mouse",
+    "description": null,
+    "english": "Used to receive input from the user. Actually tracks mouse events and keyboard events.",
+    "translation": "تستخدم لتلقي المدخلات من المستخدم. تتتبع أحداث الفأرة وأحداث لوحة المفاتيح.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseHit",
+    "description": null,
+    "english": "The CoordinateFrame of where the Mouse ray is currently hitting a 3D object in the Workspace.  If the mouse is not over any 3D objects in the Workspace, this property is nil.",
+    "translation": "CoordinateFrame حيث يصيب شعاع الفأرة الحالي كائنًا ثلاثي الأبعاد في Workspace. إذا لم يكن مؤشر الفأرة فوق أي كائنات ثلاثية الأبعاد في Workspace، فستكون قيمة هذه الخاصية صفرًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseIcon",
+    "description": null,
+    "english": "The current Texture of the Mouse Icon. Stored as a string, for more information on how to format the string <a href='http://wiki.roblox.com/index.php/Content' target='_blank'>go here</a>",
+    "translation": "الملمس الحالي لأيقونة الفأرة مخزن كسلسلة. للمزيد من المعلومات حول كيفية تنسيق السلسلة <a href='http://wiki.roblox.com/index.php/Content' target='_blank'>انتقل إلى هنا</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseOrigin",
+    "description": null,
+    "english": "The CoordinateFrame of where the Mouse is when the mouse is not clicking.  This CoordinateFrame will be very close to the Camera.CoordinateFrame.",
+    "translation": "CoordinateFrame حيث يوجد مؤشر الفأرة عندما لا ينقر عليها. سيكون CoordinateFrame هذا قريبًا جدًا من Camera.CoordinateFram.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseTarget",
+    "description": null,
+    "english": "The Part the mouse is currently over. If the mouse is not currently over any object (on the skybox, for example) this property is nil.",
+    "translation": "الجزء الذي عليه مؤشر الفأرة حاليًّا. إذا لم يكن المؤشر فوق أيّ كائن (على سبيل المثال: فوق skybox)، ستكون قيمة الخاصية nil.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseTargetFilter",
+    "description": null,
+    "english": "A Part or Model that the Mouse will ignore when trying to find the Target, TargetSurface and Hit.",
+    "translation": "جزء أو نموذج تتجاهله الفأرة عند محاولة العثور على الهدف، TargetSurface و Hit.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseTargetSurface",
+    "description": null,
+    "english": "The NormalId (Top, Left, Down, etc.) of the face of the part the Mouse is currently over.",
+    "translation": "المعرّف (فوق، يسار، أسفل، إلخ) لسطح الجزء الذي يقع فوقه مؤشر الفأرة حاليًّا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseUnitRay",
+    "description": null,
+    "english": "The Unit Ray from where the mouse is (Origin) to the current Mouse.Target.",
+    "translation": "Unit Ray من المكان الذي يبدأ فيه مؤشر الفأرة (المصدر) إلى Mouse.Target الحالي.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseViewSizeX",
+    "description": null,
+    "english": "The viewport's (game window) width in pixels.",
+    "translation": "عرض viewport (نافذة اللعبة) بالبكسل.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseViewSizeY",
+    "description": null,
+    "english": "The viewport's (game window) height in pixels.",
+    "translation": "ارتفاع viewport (نافذة اللعبة) بالبكسل.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseX",
+    "description": null,
+    "english": "The absolute pixel position of the Mouse along the x-axis of the viewport (game window). Values start at 0 on the left hand side of the screen and increase to the right.",
+    "translation": "موضع الفأرة المطلف بالبكس على طول المحور السيني x لـ viewport (نافذة اللعبة). تبدأ القيم عند 0 على الجانب الأيسر من الشاشة وتزداد كلما اتجهت إلى اليمين.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseY",
+    "description": null,
+    "english": "The absolute pixel position of the Mouse along the y-axis of the viewport (game window). Values start at 0 on the top of the screen and increase to the bottom.",
+    "translation": "موضع الفأرة المطلف بالبكس على طول المحور الصادي y لـ viewport (نافذة اللعبة). تبدأ القيم عند 0 من أعلى الشاشة وتزداد كلما اتجهت نزولاً.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseButton1Down",
+    "description": null,
+    "english": "Fired when the first button (usually the left, but could be another) on the mouse is depressed.",
+    "translation": "يتم إطلاقه عندما يتم الضغط على الزر الأول على الفأرة (عادة زر اليسار ولكنه قد يكون زرًا آخر).",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseButton2Down",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "هذا الحدث غير نشط حاليًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.MouseButton2Up",
+    "description": null,
+    "english": "This event is currently non-operational.",
+    "translation": "هذا الحدث غير نشط حاليًا.",
     "isDeprecated": false
   },
   {
