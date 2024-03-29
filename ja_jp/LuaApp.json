@@ -720,6 +720,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Label.AgedUpUsername",
+    "description": "Show to older users when signing up, who can use more personal identifiers.",
+    "english": "Add a unique @username",
+    "translation": "一意の @ユーザーネーム を追加",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -3149,6 +3157,22 @@
     "description": "Navigation tile for platform event named \"The Hunt\"",
     "english": "The Hunt",
     "translation": "ザ・ハント",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "ReportLogs",
+    "description": "Label for a Report Logs button that allows clients to send their logs to Roblox for debugging.",
+    "english": "Report Logs",
+    "translation": "報告ログ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CommonUI.Features",
+    "key": "Label.ReportLogs",
+    "description": "Button label for the \"Report Logs\" button to dump debug logs to backtrace.",
+    "english": "Report Logs",
+    "translation": "報告ログ",
     "isDeprecated": false
   },
   {
@@ -9211,7 +9235,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.DisplayNameCaption",
     "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
-    "english": "This is how you will appear to others on Roblox. ",
+    "english": "This is the primary public name other users will see for you on Roblox.",
     "translation": "これはRobloxにいる他の方々への表示です。 ",
     "isDeprecated": false
   },
@@ -9403,7 +9427,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.AgedUpDisplayNameCaption",
     "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
-    "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "english": "This is the primary public name other users will see for you on Roblox. Choose a name your friends will recognize you by, such as your real name.",
     "translation": "Robloxで他の方々にこのように表示されます。本名など、友達があなたを認識できる名前を選択してください。",
     "isDeprecated": false
   },
@@ -9923,7 +9947,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Title.TurnOffNotificationsNoName",
     "description": "Title to turn off notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
-    "english": "Turn off for this experience",
+    "english": "Turn off from this experience",
     "translation": "このバーチャル空間の通知をオフにする",
     "isDeprecated": false
   },
@@ -9931,7 +9955,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Title.TurnOnNotificationsNoName",
     "description": "Title to turn on notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
-    "english": "Turn on for this experience",
+    "english": "Turn on from this experience",
     "translation": "このバーチャル空間の通知をオンにする",
     "isDeprecated": false
   },
@@ -10156,7 +10180,7 @@
     "key": "PeopleList.AddNearbyFriendTip",
     "description": null,
     "english": "Roblox is more fun with friends!",
-    "translation": "友達と一緒にRobloxをもっと楽しもう！",
+    "translation": "友達と一緒にRobloxをもっと楽しみましょう！",
     "isDeprecated": false
   },
   {
@@ -16924,7 +16948,7 @@
     "key": "Label.AbuseType.IPViolation.Note",
     "description": null,
     "english": "We received a copyright removal request for one or more of your creations. After reviewing the request, our moderation team has removed your creation. If you believe you were reported by mistake, you can contest the removal request by submitting a counter-notice by following our guidelines. You can find additional information in your verified email inbox and in Roblox Messages.",
-    "translation": "あなたの1点以上の作品について、当社は著作権に基づく削除要請を受理しました。要請を審査した結果、当社の内容審査チームはあなたが他社のオリジナル作品をコピーしたと判断しました。もし、この規約違反報告が間違いだと思われる場合は、以下のガイドラインに従って反論通知を送信して削除要請に異議申し立てをしてください。追加情報は、認証済みのメールアドレスの受信箱とRoblox（ロブロックス）のメッセージをご確認ください。",
+    "translation": "あなたの1点以上の作品について、当社は著作権に基づく削除要請を受理しました。要請を審査した結果、当社の内容審査チームはあなたの作品を削除しました。もし、この規約違反報告が間違いだと思われる場合は、以下のガイドラインに従って反論通知を送信して削除要請に異議申し立てをしてください。追加情報は、認証済みのメールアドレスの受信箱とRoblox（ロブロックス）のメッセージをご確認ください。",
     "isDeprecated": false
   },
   {
@@ -18068,7 +18092,15 @@
     "key": "Label.ModeratedCheck",
     "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted is moderated.",
     "english": "is not moderated",
-    "translation": "は内容規制されませんでした",
+    "translation": "内容規制されていないこと",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.GeneratedUserName",
+    "description": "Description under the username field if a name has been generated from a DisplayName.",
+    "english": "This unique @username is suggested from the name you set. You can still edit either to choose how you appear to others on Roblox.",
+    "translation": "この一意のユーザーネーム（ @username ）は、設定した名前に基づく提案です。Roblox上でどのような表示名にするかを編集できます。",
     "isDeprecated": false
   },
   {
@@ -18076,7 +18108,7 @@
     "key": "Label.SignUpAgedUpDisplayName",
     "description": "Placeholder text for DisplayName field",
     "english": "How you appear to others on Roblox",
-    "translation": "Robloxでの表示名",
+    "translation": "Roblox（ロブロックス）での表示名",
     "isDeprecated": false
   },
   {
@@ -18100,7 +18132,7 @@
     "key": "Label.ValidCharacters",
     "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted has invalid characters.",
     "english": "contains only valid characters",
-    "translation": "有効な文字しか含まれていません",
+    "translation": "有効な文字しか含まれていないこと",
     "isDeprecated": false
   },
   {
@@ -18109,6 +18141,14 @@
     "description": "A message that appears if the display name endpoint fails.",
     "english": "Validation has failed, username will be used instead",
     "translation": "検証できませんでした。代わりにユーザーネームが使用されます",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.CharacterLengthCheck",
+    "description": "Validation check - has check if passed and cross if failed - checks the length of the display name is between the valid max and min length",
+    "english": "is between {minLength} and {maxLength} characters long",
+    "translation": "{minLength} 〜 {maxLength} 文字であること",
     "isDeprecated": false
   },
   {
@@ -18716,7 +18756,7 @@
     "key": "Heading.SignupHaveFun",
     "description": null,
     "english": "SIGN UP AND START HAVING FUN!",
-    "translation": "新規登録して楽しもう！",
+    "translation": "新規登録して楽しみましょう！",
     "isDeprecated": false
   },
   {
@@ -18972,7 +19012,7 @@
     "key": "Label.AddFriendHintBody",
     "description": "Body of a tooltip that directs a user to click a button to add friends. It fits in a relatively small space.",
     "english": "Friends make Roblox fun!",
-    "translation": "友達を追加してRobloxを楽しもう！",
+    "translation": "友達とRoblox（ロブロックス）を楽しみましょう！",
     "isDeprecated": false
   },
   {

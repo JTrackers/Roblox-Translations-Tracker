@@ -720,6 +720,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Authentication.Login",
+    "key": "Label.AgedUpUsername",
+    "description": "Show to older users when signing up, who can use more personal identifiers.",
+    "english": "Add a unique @username",
+    "translation": "أضف @username فريد",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Application.ConnectionError",
     "key": "Dialog.Title",
     "description": null,
@@ -9211,7 +9219,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.DisplayNameCaption",
     "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
-    "english": "This is how you will appear to others on Roblox. ",
+    "english": "This is the primary public name other users will see for you on Roblox.",
     "translation": "هكذا سيظهر اسمك للآخرين على Roblox. ",
     "isDeprecated": false
   },
@@ -9403,7 +9411,7 @@
     "namespace": "Feature.Profile",
     "key": "Label.AgedUpDisplayNameCaption",
     "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
-    "english": "This is how you will appear to others on Roblox. Choose a name your friends will recognize you by, such as your real name.",
+    "english": "This is the primary public name other users will see for you on Roblox. Choose a name your friends will recognize you by, such as your real name.",
     "translation": "هكذا ستظهر للآخرين على Roblox. اختر اسمًا يمكن لأصدقائك التعرّض عليك، كاستخدام اسمك الحقيقي.",
     "isDeprecated": false
   },
@@ -9923,7 +9931,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Title.TurnOffNotificationsNoName",
     "description": "Title to turn off notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
-    "english": "Turn off for this experience",
+    "english": "Turn off from this experience",
     "translation": "تعطيلها لهذه التجربة",
     "isDeprecated": false
   },
@@ -9931,7 +9939,7 @@
     "namespace": "Notifications.NotificationStream",
     "key": "Title.TurnOnNotificationsNoName",
     "description": "Title to turn on notifications for an experience without requiring the experience name (the word notifications is removed due to length limit on menu items)",
-    "english": "Turn on for this experience",
+    "english": "Turn on from this experience",
     "translation": "تمكينها لهذه التجربة",
     "isDeprecated": false
   },
@@ -16892,7 +16900,7 @@
     "key": "Label.AbuseType.IPViolation.Note",
     "description": null,
     "english": "We received a copyright removal request for one or more of your creations. After reviewing the request, our moderation team has removed your creation. If you believe you were reported by mistake, you can contest the removal request by submitting a counter-notice by following our guidelines. You can find additional information in your verified email inbox and in Roblox Messages.",
-    "translation": "لقد تلقينا طلب إزالة بسبب انتهاك لحقوق الطبع والنشر لواحد أو أكثر من التصاميم. بعد مراجعة الطلب، قرر فريق الإشراف لدينا أنك قمت بنسخ تصميم أصلي آخر. إذا كنت تعتقد أنه تم الإبلاغ عنك عن طريق الخطأ، فيمكنك الاعتراض على طلب الإزالة عن طريق إرسال إشعار مضاد باتباع إرشاداتنا. يمكنك العثور على معلومات إضافية في صندوق بريدك الإلكتروني الذي تم التحقق منه وفي رسائل Roblox.",
+    "translation": "لقد تلقينا طلب إزالة بسبب انتهاك لحقوق الطبع والنشر لواحد أو أكثر من تصاميمك. بعد مراجعة الطلب، أزال فريق الإشراف لدينا التصميم. إذا كنت تعتقد أنه تم الإبلاغ عنك عن طريق الخطأ، فيمكنك الاعتراض على طلب الإزالة عن طريق إرسال إشعار مضاد باتباع إرشاداتنا. يمكنك العثور على معلومات إضافية في صندوق بريدك الإلكتروني الذي تم التحقق منه وفي رسائل Roblox.",
     "isDeprecated": false
   },
   {
@@ -18029,6 +18037,62 @@
     "description": "\"Kind of character\" in this context means character sets (e.g. Japanese characters vs. Latin characters).\n\nError message if a user tries to set their name to have more than one character set. i.e. Users cannot mix Japanese characters and Latin characters in the same name",
     "english": "Names cannot have more than one kind of character",
     "translation": "لا يمكن أن تحتوي الأسماء على أكثر من نوع واحد من الأحرف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.SignUpAgedUpDisplayName",
+    "description": "Placeholder text for DisplayName field",
+    "english": "How you appear to others on Roblox",
+    "translation": "كيف تظهر للآخرين على Roblox",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ErrorsWithAgedUpDisplayName",
+    "description": "Default error message that appears when display name field has errors.",
+    "english": "There are errors with the name.",
+    "translation": "هناك أخطاء في الاسم.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.MixedCharactersError",
+    "description": "Validation rule - will be marked as passed or failed - if the user tries to use a mixture of characters (e..g Latin and Japanese), it will error.",
+    "english": "contains only one character set",
+    "translation": "يحتوي على نوع واحد من الأحرف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidCharacters",
+    "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted has invalid characters.",
+    "english": "contains only valid characters",
+    "translation": "يحتوي على أحرف صالحة فقط",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidationFailed",
+    "description": "A message that appears if the display name endpoint fails.",
+    "english": "Validation has failed, username will be used instead",
+    "translation": "تعذّر التحقق، سيتم استخدام اسم المستخدم بدلاً من ذلك",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.CharacterLengthCheck",
+    "description": "Validation check - has check if passed and cross if failed - checks the length of the display name is between the valid max and min length",
+    "english": "is between {minLength} and {maxLength} characters long",
+    "translation": "بين {minLength} و {maxLength} من الأحرف",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.AgedUpNameField",
+    "description": "DisplayName field label for older users on signup.",
+    "english": "Name",
+    "translation": "الاسم",
     "isDeprecated": false
   },
   {
