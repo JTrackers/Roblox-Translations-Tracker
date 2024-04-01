@@ -9212,7 +9212,7 @@
     "key": "Label.DisplayNameCaption",
     "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
     "english": "This is the primary public name other users will see for you on Roblox.",
-    "translation": "Đây là tên mà những người chơi khác trên Roblox sẽ nhìn thấy. ",
+    "translation": "Đây là tên công khai chính của bạn, những người dùng khác sẽ nhìn thấy tên này trên Roblox.",
     "isDeprecated": false
   },
   {
@@ -9404,7 +9404,7 @@
     "key": "Label.AgedUpDisplayNameCaption",
     "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
     "english": "This is the primary public name other users will see for you on Roblox. Choose a name your friends will recognize you by, such as your real name.",
-    "translation": "Đây là cách bạn sẽ xuất hiện trước những người khác trên Roblox. Chọn tên mà bạn bè sẽ nhận ra bạn, chẳng hạn như tên thật của bạn.",
+    "translation": "Đây là tên công khai chính của bạn, những người dùng khác sẽ nhìn thấy tên này trên Roblox. Hãy chọn một cái tên để giúp bạn bè nhận ra bạn, chẳng hạn như tên thật của bạn.",
     "isDeprecated": false
   },
   {
@@ -13904,6 +13904,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Contacts",
+    "key": "Label.Invite",
+    "description": "The invite to Roblox tag to be used for contacts that are not on Roblox.",
+    "english": "Invite to Roblox",
+    "translation": "Mời vào Roblox",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameFollows",
     "key": "TooltipFollowLimitReached",
     "description": "Tooltip for follow game button",
@@ -16884,7 +16892,7 @@
     "key": "Label.AbuseType.IPViolation.Note",
     "description": null,
     "english": "We received a copyright removal request for one or more of your creations. After reviewing the request, our moderation team has removed your creation. If you believe you were reported by mistake, you can contest the removal request by submitting a counter-notice by following our guidelines. You can find additional information in your verified email inbox and in Roblox Messages.",
-    "translation": "Roblox đã xác minh yêu cầu gỡ nội dung DMCA với một hoặc nhiều tác phẩm sáng tạo đã tải lên của bạn. Nếu cho rằng hành vi gỡ bỏ này không đúng, bạn có thể gửi thông báo phản đối bằng cách làm theo quy trình tại liên kết này: https://create.roblox.com/docs/production/publishing/dmca-guidelines. Bạn có thể tìm thấy thông tin bổ sung trong hộp thư đến của địa chỉ email xác minh và trong Tin nhắn của bạn.",
+    "translation": "Chúng tôi đã nhận được yêu cầu gỡ bỏ bản quyền đối với một hoặc nhiều sản phẩm sáng tạo của bạn. Sau khi xem lại yêu cầu, đội ngũ kiểm duyệt của chúng tôi đã xóa bỏ tác phẩm của bạn. Nếu bạn cho rằng mình đã bị báo cáo sai, bạn có thể phản đối yêu cầu gỡ bỏ này bằng cách gửi thông báo phản đối theo Hướng dẫn của chúng tôi. Bạn có thể tìm thêm thông tin trong hộp thư email đã xác minh của mình và trong mục Tin nhắn Roblox.",
     "isDeprecated": false
   },
   {
@@ -16956,7 +16964,7 @@
     "key": "Label.AbuseType.IpViolation",
     "description": null,
     "english": "Intellectual Property Violation",
-    "translation": "IP Vi Phạm",
+    "translation": "Vi phạm Sở hữu Trí tuệ",
     "isDeprecated": false
   },
   {
@@ -18021,6 +18029,78 @@
     "description": "\"Kind of character\" in this context means character sets (e.g. Japanese characters vs. Latin characters).\n\nError message if a user tries to set their name to have more than one character set. i.e. Users cannot mix Japanese characters and Latin characters in the same name",
     "english": "Names cannot have more than one kind of character",
     "translation": "Tên không thể chứa nhiều hơn một loại ký tự",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ModeratedCheck",
+    "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted is moderated.",
+    "english": "is not moderated",
+    "translation": "không được kiểm duyệt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.GeneratedUserName",
+    "description": "Description under the username field if a name has been generated from a DisplayName.",
+    "english": "This unique @username is suggested from the name you set. You can still edit either to choose how you appear to others on Roblox.",
+    "translation": "Tên tài khoản @username duy nhất này được đề xuất từ tên được bạn thiết lập. Bạn vẫn có thể điều chỉnh để chọn cách thức hiện diện của mình đối với người khác trên Roblox.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.SignUpAgedUpDisplayName",
+    "description": "Placeholder text for DisplayName field",
+    "english": "How you appear to others on Roblox",
+    "translation": "Tên mà những người chơi khác trên Roblox sẽ nhìn thấy",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ErrorsWithAgedUpDisplayName",
+    "description": "Default error message that appears when display name field has errors.",
+    "english": "There are errors with the name.",
+    "translation": "Đã xảy ra lỗi với tên này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.MixedCharactersError",
+    "description": "Validation rule - will be marked as passed or failed - if the user tries to use a mixture of characters (e..g Latin and Japanese), it will error.",
+    "english": "contains only one character set",
+    "translation": "chỉ chứa một bộ ký tự",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidCharacters",
+    "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted has invalid characters.",
+    "english": "contains only valid characters",
+    "translation": "chỉ chứa các ký tự hợp lệ",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidationFailed",
+    "description": "A message that appears if the display name endpoint fails.",
+    "english": "Validation has failed, username will be used instead",
+    "translation": "Xác thực thất bại, tên người dùng sẽ được sử dụng thay",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.CharacterLengthCheck",
+    "description": "Validation check - has check if passed and cross if failed - checks the length of the display name is between the valid max and min length",
+    "english": "is between {minLength} and {maxLength} characters long",
+    "translation": "có độ dài từ {minLength} đến {maxLength} ký tự",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.AgedUpNameField",
+    "description": "DisplayName field label for older users on signup.",
+    "english": "Name",
+    "translation": "Tên",
     "isDeprecated": false
   },
   {
@@ -20589,6 +20669,14 @@
     "description": "Label for the background transparency slider",
     "english": "Transparent",
     "translation": "Trong Suốt",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.MainVolume",
+    "description": "Descriptor for volume slider in accessibility settings.",
+    "english": "Control the overall sound level of Roblox, including menu effects, experience sound, and voice chat",
+    "translation": "Kiểm soát mức âm lượng tổng thể của Roblox, bao gồm các hiệu ứng menu, âm thanh trải nghiệm và cuộc nói chuyện",
     "isDeprecated": false
   },
   {
