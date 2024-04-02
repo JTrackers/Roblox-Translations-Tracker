@@ -9212,7 +9212,7 @@
     "key": "Label.DisplayNameCaption",
     "description": "This is the label for describing what the display name is, for the button on which users can click to change their display name",
     "english": "This is the primary public name other users will see for you on Roblox.",
-    "translation": "Roblox에서 다른 사람에게 표시되는 이름입니다. ",
+    "translation": "Roblox에서 다른 사용자에게 표시되는 기본 공개 이름입니다.",
     "isDeprecated": false
   },
   {
@@ -9404,7 +9404,7 @@
     "key": "Label.AgedUpDisplayNameCaption",
     "description": "Explanation of your DisplayName. This will show for users who are allowed to use their real name in their displayName.",
     "english": "This is the primary public name other users will see for you on Roblox. Choose a name your friends will recognize you by, such as your real name.",
-    "translation": "Roblox에서 다른 사람에게 이들에게 나타나는 내 이름입니다. 실명 등 친구들이 알아볼 수 있는 이름을 만드세요.",
+    "translation": "Roblox에서 다른 사용자에게 표시되는 기본 공개 이름입니다. 실명 등 친구들이 알아볼 수 있는 이름을 만드세요.",
     "isDeprecated": false
   },
   {
@@ -16940,7 +16940,7 @@
     "key": "Label.AbuseType.IPViolation.Note",
     "description": null,
     "english": "We received a copyright removal request for one or more of your creations. After reviewing the request, our moderation team has removed your creation. If you believe you were reported by mistake, you can contest the removal request by submitting a counter-notice by following our guidelines. You can find additional information in your verified email inbox and in Roblox Messages.",
-    "translation": "Roblox에서 회원님이 업로드하신 각 작품에 대한 DMCA 게시 중단 요청을 확인했습니다. 부당한 게시 중단이 있었다고 판단될 경우, 다음 링크에 안내된 절차에 따라 반론 통지를 제출할 수 있습니다. https://create.roblox.com/docs/production/publishing/dmca-guidelines. 인증된 이메일 및 메시지의 수신함에서 추가 정보를 확인하세요.",
+    "translation": "회원님의 작품 중 하나 이상에 대한 저작권 삭제 요청이 접수되어, 검토 결과에 따라 검열 팀에서 해당 작품을 삭제했음을 알려 드립니다. 해당 요청이 실수라고 판단될 경우, 가이드라인에 따라 반론 통지를 제출해 이의를 제기할 수 있습니다. 인증을 완료한 이메일의 받은 편지함 및 Roblox 메시지에서 추가 정보를 확인하세요.",
     "isDeprecated": false
   },
   {
@@ -18077,6 +18077,78 @@
     "description": "\"Kind of character\" in this context means character sets (e.g. Japanese characters vs. Latin characters).\n\nError message if a user tries to set their name to have more than one character set. i.e. Users cannot mix Japanese characters and Latin characters in the same name",
     "english": "Names cannot have more than one kind of character",
     "translation": "이름은 한 가지 언어로만 지을 수 있습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ModeratedCheck",
+    "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted is moderated.",
+    "english": "is not moderated",
+    "translation": "검열되지 않습니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.GeneratedUserName",
+    "description": "Description under the username field if a name has been generated from a DisplayName.\n\n“@username” is not a placeholder and it needs to be translated if it applies to your language",
+    "english": "This unique @username is suggested from the name you set. You can still edit either to choose how you appear to others on Roblox.",
+    "translation": "이 고유한 @사용자 이름은 회원님이 설정한 이름으로부터 제안됩니다. Roblox에서 표시할 이름을 자신이 직접 지을 수도 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.SignUpAgedUpDisplayName",
+    "description": "Placeholder text for DisplayName field",
+    "english": "How you appear to others on Roblox",
+    "translation": "Roblox에서 다른 이들에게 표시되는 이름",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ErrorsWithAgedUpDisplayName",
+    "description": "Default error message that appears when display name field has errors.",
+    "english": "There are errors with the name.",
+    "translation": "이름에 오류가 있습니다.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.MixedCharactersError",
+    "description": "Validation rule - will be marked as passed or failed - if the user tries to use a mixture of characters (e..g Latin and Japanese), it will error.",
+    "english": "contains only one character set",
+    "translation": "한 종류의 문자(언어)만 포함합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidCharacters",
+    "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted has invalid characters.",
+    "english": "contains only valid characters",
+    "translation": "유효한 문자만 포함합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.ValidationFailed",
+    "description": "A message that appears if the display name endpoint fails.",
+    "english": "Validation has failed, username will be used instead",
+    "translation": "유효성 검사에 실패했습니다. 대신 사용자 이름이 사용됩니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.CharacterLengthCheck",
+    "description": "Validation check - has check if passed and cross if failed - checks the length of the display name is between the valid max and min length",
+    "english": "is between {minLength} and {maxLength} characters long",
+    "translation": "{minLength}~{maxLength}자여야 합니다",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.DisplayName",
+    "key": "Label.AgedUpNameField",
+    "description": "DisplayName field label for older users on signup.",
+    "english": "Name",
+    "translation": "이름",
     "isDeprecated": false
   },
   {
@@ -20701,6 +20773,14 @@
     "description": "Label for the background transparency slider",
     "english": "Transparent",
     "translation": "투명",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.MainVolume",
+    "description": "Descriptor for volume slider in accessibility settings.",
+    "english": "Control the overall sound level of Roblox, including menu effects, experience sound, and voice chat",
+    "translation": "메뉴 효과, 체험 사운드, 음성 채팅 등 Roblox에서의 전반적인 사운드 볼륨을 제어합니다",
     "isDeprecated": false
   },
   {
