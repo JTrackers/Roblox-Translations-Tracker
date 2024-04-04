@@ -15233,6 +15233,14 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "SuccessPrompt.Heading",
+    "description": "This is the heading on the prompt that let's the user know that they have completed the purchase.",
+    "english": "Purchase complete",
+    "translation": "Hoàn thành giao dịch mua",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "SuccessPrompt.DismissCTA",
     "description": "This is displayed on the button at the bottom of the bulk purchase success prompt. Clicking the button closes the prompt.",
     "english": "Done",
@@ -15249,10 +15257,26 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorHeading",
+    "description": "Displays as the heading for the bulk purchase error prompt.",
+    "english": "Purchase Unsuccessful",
+    "translation": "Giao dịch mua không thành công",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "RequestPrompt.PriceBox.TotalCost",
     "description": "This displays the total cost of the bulk purchase to the user.",
     "english": "Order total",
     "translation": "Tổng giá trị đơn hàng",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "RequestPrompt.PriceBox.CurrentBalance",
+    "description": "This is displayed next to the user's current balance on the Bulk Purchase prompt.",
+    "english": "Current balance",
+    "translation": "Số dư hiện tại",
     "isDeprecated": false
   },
   {
@@ -15321,6 +15345,22 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonQuotaExceeded",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they have been completing more than the allowed amount of transactions.",
+    "english": "Your purchase could not be completed because you've reached the limit of 9 transactions per minute.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn đã đạt giới hạn 9 giao dịch/phút.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonNotForSale",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items are not for sale.",
+    "english": "Your purchase could not be completed because these items are not for sale.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì các vật phẩm này không bán.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.ItemStatusPurchaserIsSeller",
     "description": "This is displayed next to an item in the bulk purchase partial success prompt when the seller of the item is also the buyer",
     "english": "Seller is buyer",
@@ -15345,10 +15385,34 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.SuccessHeading",
+    "description": "Displays as the heading of the bulk purchase success prompt.",
+    "english": "Purchase Complete",
+    "translation": "Hoàn Thành Giao Dịch Mua",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.ItemStatusSuccess",
     "description": "This appears next to an item in the bulk purchase partial success prompt when the user has successfully purchased the item.",
     "english": "Purchased",
     "translation": "Đã mua",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonAlreadyOwned",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they already own all of these items.",
+    "english": "Your purchase could not be completed because you already own these items.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn đã sở hữu các vật phẩm này rồi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainNow",
+    "description": "This text displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please try again.",
+    "translation": "Bạn chưa bị trừ phí Robux. Vui lòng thử lại.",
     "isDeprecated": false
   },
   {
@@ -15361,6 +15425,22 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.PriceBox.RobuxSpent",
+    "description": "This is displayed in the pricebox on the bulk purchase partial success prompt next to the amount of robux that the user has spent.",
+    "english": "Robux spent",
+    "translation": "Số Robux đã dùng",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonPurchaserIsSeller",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items being purchased are sold by the user attempting to purchase them.",
+    "english": "Your purchase could not be completed because you are not allowed to purchase your own items.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn không được phép mua các vật phẩm mình đã sở hữu.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.PriceBox.CurrentBalance",
     "description": "This is displayed in the pricebox of the bulk purchase partial success prompt to indicate the users current balance after having made the purchase.",
     "english": "Current balance",
@@ -15369,10 +15449,106 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonInsufficientRobux",
+    "description": "This text displays in the bulk purchase error prompt when the purchase fails because the user does not have enough Robux",
+    "english": "Your purchase could not be completed because you do not have enough Robux.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn không có đủ Robux.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.PriceBox.DismissCTA",
     "description": "This is displayed under the pricebox in the bulk purchase partial success prompt on a button that dismisses the prompt.",
     "english": "Done",
     "translation": "Hoàn thành",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.DismissCTA",
+    "description": "This displays on either the bulk purchase error prompt or the bulk purchase success prompt on a button that dismisses the prompt.",
+    "english": "Ok",
+    "translation": "OK",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonNotAvailableForPurchaser",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because the user is unallowed to buy these item types.",
+    "english": "Your purchase could not be completed because you are not allowed to purchase these types of items.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn không được phép mua những loại vật phẩm này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonPriceMismatch",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because the prices of the items they are attempting to buy have changed.",
+    "english": "Your purchase could not be completed because the prices have changed.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì giá đã thay đổi.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainOtherItems",
+    "description": "This displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please try again with other items.",
+    "translation": "Bạn chưa bị trừ phí Robux. Vui lòng thử lại với các vật phẩm khác.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonQuantityLimitExceeded",
+    "description": "This is displayed in the bulk purchase error prompt when the purchase fails because they cannot have any more of these items.",
+    "english": "Your purchase could not be completed because you've already reached the maximum ownership limit for these items.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn đã đạt giới hạn sở hữu tối đa cho các vật phẩm này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonInsufficientMembership",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they don't have a premium account",
+    "english": "Your purchase could not be completed because you need to have Roblox Premium to purchase these items.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì bạn cần có Roblox Premium để mua các vật phẩm này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonGeneric",
+    "description": "This displays in the bulk purchase error prompt when there is no actionable or relevant information for the user, but the purchase still failed.",
+    "english": "Your purchase could not be completed at this moment.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vào thời điểm này.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonSoldOut",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items are sold out.",
+    "english": "Your purchase could not be completed because these items are sold out.",
+    "translation": "Giao dịch mua của bạn không thể hoàn thành vì các vật phẩm này đã bán hết.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainLater",
+    "description": "This text displays in the bulk purchase error prompt",
+    "english": "You have not been charged any Robux. Please try again later.",
+    "translation": "Bạn chưa bị trừ phí Robux. Vui lòng thử lại sau.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainWait",
+    "description": "This text displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please wait and try again.",
+    "translation": "Bạn chưa bị trừ phí Robux. Vui lòng chờ và thử lại.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainMoreRobux",
+    "description": "This text displays in the bulk purchase error prompt",
+    "english": "You have not been charged any Robux. Please purchase more and try again.",
+    "translation": "Bạn chưa bị trừ phí Robux. Vui lòng mua thêm và thử lại.",
     "isDeprecated": false
   }
 ]
