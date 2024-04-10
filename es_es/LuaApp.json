@@ -2009,6 +2009,30 @@
   },
   {
     "namespace": "Authentication.SignUp",
+    "key": "Response.AgedUpDisplayNameSetFirst",
+    "description": "Error showing in the password field if someone tries to edit it before filling in the Name Field (equivalent of Authentication.SignUp.Response.UsernameMustBeSetFirst).",
+    "english": "Name must be set first.",
+    "translation": "Antes debes determinar el nombre.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Heading.UserGreetingWithName",
+    "description": "Used as a (standalone) heading for a screen with interactive UI and instructions on how to proceed with the signup process.",
+    "english": "Hi {username}",
+    "translation": "Hola, {username}",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
+    "key": "Label.OrCreateAPasskey",
+    "description": "Button text that prompts passkey registration (as opposed to continuing with password) to complete the user signup process.",
+    "english": "Or create a passkey",
+    "translation": "o crea una clave de acceso",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Authentication.SignUp",
     "key": "Description.Or",
     "description": "Standalone text that divides two button options, i.e. Action1 ---OR--- Action2",
     "english": "OR",
@@ -8876,7 +8900,15 @@
     "key": "Heading.DoraemonExperience",
     "description": "Experience name for landing page promo of Doraemon brand partner experience",
     "english": "Doraemon Nobitaʼs Go-Go Ride!",
-    "translation": "Doraemon Go-Go Rider",
+    "translation": "Doraemon Nobitaʼs Go-Go Ride!",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Landing",
+    "key": "Heading.LandingSlogan",
+    "description": "Slogan text for video landing page",
+    "english": "Explore over 30 million experiences",
+    "translation": "Explora más de 30 millones de experiencias",
     "isDeprecated": false
   },
   {
@@ -15009,6 +15041,14 @@
   },
   {
     "namespace": "Feature.SettingsHub",
+    "key": "Prompt.MicPermissionPrime",
+    "description": "Part of the description of modal that's shown to encourage users to turn on voice chat",
+    "english": "Give Roblox access to your microphone to talk.",
+    "translation": "Da a Roblox acceso a tu micrófono para hablar.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.SettingsHub",
     "key": "Prompt.Subtitle.TurnOnVoiceChat",
     "description": "Old description for modal to allow users to enable voice in experience",
     "english": "Turn on Voice Chat to talk with others. You will need to give Roblox access to your microphone. You're in control — mute yourself or anyone, anytime.",
@@ -18156,7 +18196,7 @@
     "key": "Label.ModeratedCheck",
     "description": "Validation check - will have a ticket if passed and cross if failed - to see if the display name inputted is moderated.",
     "english": "is moderated",
-    "translation": "no se moderó",
+    "translation": "se moderó",
     "isDeprecated": false
   },
   {
@@ -18172,7 +18212,7 @@
     "key": "Label.SignUpAgedUpDisplayName",
     "description": "Placeholder text for DisplayName field (please keep the text short as it is a placeholder in an input field). Ideally below 32 characters.",
     "english": "Pick a name for your Roblox profile",
-    "translation": "Cómo te ven los demás en Roblox",
+    "translation": "Elige un nombre para tu perfil de Roblox",
     "isDeprecated": false
   },
   {
@@ -18204,7 +18244,7 @@
     "key": "Label.ValidationFailed",
     "description": "A message that appears if the display name endpoint fails.",
     "english": "Unknown error. Try again or skip this step to sign up without a name",
-    "translation": "Error al validar. Se usará el nombre de usuario en su lugar",
+    "translation": "Error desconocido. Inténtalo de nuevo o salta este paso para registrarte sin un nombre",
     "isDeprecated": false
   },
   {
@@ -20845,6 +20885,14 @@
     "description": "Label for the background transparency slider",
     "english": "Transparent",
     "translation": "Transparente",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Accessibility",
+    "key": "Description.MainVolume",
+    "description": "Descriptor for volume slider in accessibility settings.",
+    "english": "Control the overall sound level of Roblox, including menu effects, experience sound, and voice chat",
+    "translation": "Controla el nivel general de sonido de Roblox, que incluye los efectos del menú, el sonido de la experiencia y el chat de voz",
     "isDeprecated": false
   },
   {
@@ -24996,7 +25044,7 @@
     "key": "Title.DeleteMultipleCapturesWarning",
     "description": "Title of modal for deleting multiple captures",
     "english": "Delete Captures",
-    "translation": "Eliminar todas las capturas",
+    "translation": "Eliminar capturas",
     "isDeprecated": false
   },
   {
@@ -25009,10 +25057,10 @@
   },
   {
     "namespace": "Feature.Captures",
-    "key": "Label.ItemsCaptured",
-    "description": "Describe the count of screenshot captures, example: 49 items (49 photos)",
-    "english": "{numberOfCaptures} items",
-    "translation": "{numberOfCaptures} objetos",
+    "key": "Label.CaptureCounts",
+    "description": "Describe the count of screenshot captures, example: 49 items (49 photos)\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=5536-268947&mode=design&t=x05qV1p4TbKlpN8Y-0",
+    "english": "{numberOfCaptures} Captures",
+    "translation": "{numberOfCaptures} capturas",
     "isDeprecated": false
   },
   {
@@ -25053,6 +25101,78 @@
     "description": "Plural form. Body of a modal informing the user that the Capture deletion will be irreversible.\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=6117-206446&mode=design&t=0F6iTBw3pn6Bf6sN-0",
     "english": "This will permanently delete your captures",
     "translation": "Esta acción eliminará permanentemente tus capturas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.VideoCTA",
+    "description": "Title of the Video section, where the user will be able to turn on video capture.",
+    "english": "Video",
+    "translation": "Video",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.VideoEducationalText",
+    "description": "Educational text for the Video section.",
+    "english": "By clicking the ‘Record Video’ button, the menu will close and start recording your screen.",
+    "translation": "Al hacer clic en el botón Grabar video, el menú se cerrará y comenzará a grabar tu pantalla.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Control.StartRecordingVideo",
+    "description": "Button text to start recording a video capture.",
+    "english": "Record Video",
+    "translation": "Grabar video",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Control.StopRecordingVideo",
+    "description": "Button text to stop recording a video capture.",
+    "english": "Stop Recording",
+    "translation": "Detener grabación",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Action.OpenInFiles",
+    "description": "This is the button text for opening a capture that was recently saved to the user's device's external storage in the device's native file system.",
+    "english": "Open in Files",
+    "translation": "Abrir en Archivos",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.SelectCapture",
+    "description": "Label telling user to select capture\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=5790-32831&mode=design&t=iaRsLVDTg7528wLj-0",
+    "english": "Select Capture",
+    "translation": "Seleccionar captura",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.OneCapture",
+    "description": "Label showing exactly one capture available (single form)\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=5536-268947&mode=design&t=x05qV1p4TbKlpN8Y-0",
+    "english": "1 Capture",
+    "translation": "1 captura",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Title.CaptureStorageTooltipTitle",
+    "description": "Tooltip title for capture storage\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=5669-34557&mode=design&t=x05qV1p4TbKlpN8Y-0",
+    "english": "Capture Storage",
+    "translation": "Almacén de capturas",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Captures",
+    "key": "Label.CaptureStorageTooltipLabel",
+    "description": "Label telling user that Roblox uses user's storage to store captures and space can be freed by deleting\nhttps://www.figma.com/file/UaL6QasdYXxK8EFOprhsyW/Screenshots?type=design&node-id=5669-34557&mode=design&t=x05qV1p4TbKlpN8Y-0",
+    "english": "Roblox uses your app storage to store captures. You can delete captures to free up space.",
+    "translation": "Roblox usa el almacenamiento de tu aplicación para guardar las capturas. Puedes eliminar capturas para liberar espacio.",
     "isDeprecated": false
   },
   {
@@ -26445,6 +26565,14 @@
     "description": "Tell the user that this button can retry the action. For example, if the a request failed, this button can refetch it.",
     "english": "Retry",
     "translation": "Reintentar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Notifications",
+    "key": "Webview.Title.PolicyUpdate",
+    "description": "Webview title",
+    "english": "Policy Update",
+    "translation": "Actualización de Política",
     "isDeprecated": false
   }
 ]

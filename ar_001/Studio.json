@@ -1379,7 +1379,7 @@
     "namespace": "Studio.App",
     "key": "PropertyEnum.None",
     "description": null,
-    "english": "None",
+    "english": "Disabled",
     "translation": "معطّل",
     "isDeprecated": false
   },
@@ -2741,6 +2741,406 @@
     "description": null,
     "english": "The Team this flag is for. Corresponds with the TeamColors in the Teams service.",
     "translation": "الفريق الذي ينتمي إليه هذا العلم. يتوافق مع TeamColors في خدمة Teams.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Decal",
+    "description": null,
+    "english": "Describes a texture that is placed on one of the sides of the Part it is parented to.",
+    "translation": "يصف الهيئة الخارجية للسطح الذي يتم وضعه على أحد جوانب الجزء الذي ينتمي إليه.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalFace",
+    "description": null,
+    "english": "Describes the face of the Part the decal will be applied to. <a href='http://wiki.roblox.com/index.php/NormalId' target='_blank'>More info</a>",
+    "translation": "يصف وجه الجزء الذي سيتم وضع الملصق عليه. <a href='http://wiki.roblox.com/index.php/NormalId' target='_blank'>مزيد من المعلومات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalShiny",
+    "description": null,
+    "english": "How much light will appear to reflect off of the decal.",
+    "translation": "مقدار الضوء الذي سينعكس من الملصق.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalSpecular",
+    "description": null,
+    "english": "How light will react to the surface of the decal.",
+    "translation": "كيفية يتفاعل الضوء مع سطح الملصق.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DecalTransparency",
+    "description": null,
+    "english": "How visible the decal is.  1 is completely invisible, while 0 is completely opaque",
+    "translation": "مدى وضوح الملصق. 1 غير مرئي تمامًا، بينما 0 معتم تمامًا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.JointInstanceActive",
+    "description": null,
+    "english": "Read-only boolean, true if the joint is active in world. Rigid joints may be inactive if they are redundant or form cycles.",
+    "translation": "boolean للقراءة فقط، نتيجته true إذا كان المشترك نشط في العالَم. قد تكون المفاصل الصلبة غير نشطة إذا كانت زائدة عن الحاجة أو إذا كانت تشكل دورات.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntValue",
+    "description": null,
+    "english": "Stores a int value in it's Value member. Useful to share int information across multiple scripts.",
+    "translation": "يخزن قيمة int في القيمة الخاصة به. من المفيد مشاركة معلومات int عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.RayValue",
+    "description": null,
+    "english": "Stores a Ray value in it's Value member. Useful to share Ray information across multiple scripts.",
+    "translation": "يخزن قيمة Ray في القيمة الخاصة به. مفيد لمشاركة معلومات Ray عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValue",
+    "description": null,
+    "english": "Stores an int value in it's Value member.  Value is clamped to be in range of Min and MaxValue. Useful to share int information across multiple scripts.",
+    "translation": "يخزن قيمة int في القيمة الخاصة به. يتم تثبيت القيمة لتكون في نطاق Min وMaxValue. من المفيد مشاركة معلومات int عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValueMaxValue",
+    "description": null,
+    "english": "The maximum we allow this Value to be set.  If Value is set higher than this, it automatically gets adjusted to MaxValue",
+    "translation": "الحد الأقصى الذي يسمح به لتعيين هذه القيمة. إذا تم تعيين قيمة أعلى من ذلك، فسيتم ضبطها تلقائيًا إلى MaxValue",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.IntConstrainedValueMinValue",
+    "description": null,
+    "english": "The minimum we allow this Value to be set.  If Value is set lower than this, it automatically gets adjusted to MinValue",
+    "translation": "الحد الأدنى الذي يسمح به لتعيين هذه القيمة. إذا تم تعيين القيمة أقل من هذا، فسيتم ضبطها تلقائيًا إلى MinValue",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValue",
+    "description": null,
+    "english": "Stores a double value in it's Value member.  Value is clamped to be in range of Min and MaxValue. Useful to share double information across multiple scripts.",
+    "translation": "يخزن قيمة مزدوجة في القيمة الخاصة به. يتم تثبيت القيمة لتكون في نطاق Min وMaxValue. من المفيد مشاركة المعلومات المزدوجة عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValueMaxValue",
+    "description": null,
+    "english": "The maximum we allow this Value to be set.  If Value is set higher than this, it automatically gets adjusted to MaxValue",
+    "translation": "الحد الأقصى الذي يسمح به لتعيين هذه القيمة. إذا تم تعيين قيمة أعلى من ذلك، فسيتم ضبطها تلقائيًا إلى MaxValue",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DoubleConstrainedValueMinValue",
+    "description": null,
+    "english": "The minimum we allow this Value to be set.  If Value is set lower than this, it automatically gets adjusted to MinValue",
+    "translation": "الحد الأدنى الذي يسمح به لتعيين هذه القيمة. إذا تم تعيين القيمة أقل من هذا، فسيتم ضبطها تلقائيًا إلى MinValue",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BoolValue",
+    "description": null,
+    "english": "Stores a boolean value in it's Value member. Useful to share boolean information across multiple scripts.",
+    "translation": "يخزن قيمة boolean في القيمة الخاصة به. مفيد لمشاركة معلومات boolean عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWire",
+    "description": null,
+    "english": "Renders a thin cylinder than can be adorned with textures that 'flow' from one object to the next. Has basic pathing abilities and attempts to to not intersect anything. <a href='http://wiki.roblox.com/index.php/FloorWire_Guide' target='_blank'>More info</a>",
+    "translation": "يُنتج أسطوانة رفيعة يمكن تزيينها بهيئة \"flow\" الخارجية من كائن إلى آخر. لديه قدرات المسار الأساسية ومحاولات عدم التقاطع مع أي شيء. <a href='http://wiki.roblox.com/index.php/FloorWire_Guide' target='_blank'>مزيد من المعلومات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireCycleOffset",
+    "description": null,
+    "english": "Controls how the decals are positioned along the wire. <a href='http://wiki.roblox.com/index.php/CycleOffset' target='_blank'>More info</a>",
+    "translation": "يتحكم في كيفية وضع الملصقات على طول السلك. <a href='http://wiki.roblox.com/index.php/CycleOffset' target='_blank'>مزيد من المعلومات</a>",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireFrom",
+    "description": null,
+    "english": "The object the FloorWire 'emits' from",
+    "translation": "الكائن الذي \"ينبعث\" منه FloorWire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireStudsBetweenTextures",
+    "description": null,
+    "english": "The space between two textures on the wire. Note: studs are relative depending on how far the camera is from the FloorWire.",
+    "translation": "المساحة بين هيئتين على الأسلاك. ملاحظة: الأزرار نسبية اعتمادًا على مدى بُعد الكاميرا عن FloorWire.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTexture",
+    "description": null,
+    "english": "The image we use to render the textures that flow from beginning to end of the FloorWire.",
+    "translation": "الصورة التي نستخدمها لعرض الهيئة الخارجية التي تتدفق من بداية إلى نهاية FloorWire.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTextureSize",
+    "description": null,
+    "english": "The size in studs of the Texture we use to flow from one object to the next.",
+    "translation": "حجم Texture بقياس الأزرار نستخدمه للتدفق من كائن لآخر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireTo",
+    "description": null,
+    "english": "The object the FloorWire 'emits' to",
+    "translation": "الكائن الذي \"ينبعث\" إليه FloorWire",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireVelocity",
+    "description": null,
+    "english": "The rate of travel that the textures flow along the wire.",
+    "translation": "معدل الحركة التي تتدفق بها الهيئة الخارجية على طول السلك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FloorWireWireRadius",
+    "description": null,
+    "english": "How thick the wire is.",
+    "translation": "يحدد سمك السلك.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CFrameValue",
+    "description": null,
+    "english": "Stores a CFrame value in it's Value member. Useful to share CFrame information across multiple scripts.",
+    "translation": "يخزن قيمة CFrame في القيمة الخاصة به. مفيد لمشاركة معلومات CFrame عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Color3Value",
+    "description": null,
+    "english": "Stores a Color3 value in it's Value member. Useful to share Color3 information across multiple scripts.",
+    "translation": "يخزن قيمة Color3 في القيمة الخاصة به. مفيد لمشاركة معلومات Color3 عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.BrickColorValue",
+    "description": null,
+    "english": "Stores a BrickColor value in it's Value member. Useful to share BrickColor information across multiple scripts.",
+    "translation": "يخزن قيمة BrickColor في القيمة الخاصة به. مفيد لمشاركة معلومات BrickColor عبر نصوص برمجية متعددة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ValueBase",
+    "description": null,
+    "english": "The base class to all Value Objects.",
+    "translation": "الفئة الأساسية لجميع كائنات القيمة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.Soundplay",
+    "description": null,
+    "english": "Deprecated. Use Play() instead",
+    "translation": "ملغى. استعمل Play() بدلاً من هذا",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundPlayOnRemove",
+    "description": null,
+    "english": "The sound will play when it is removed from the Workspace. Looped sounds don't play",
+    "translation": "سيتم تشغيل الصوت عند إزالته من Workspace. لا يتم تشغيل الأصوات المتكررة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.EchoSoundEffect",
+    "description": null,
+    "english": "An echo audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "صدى وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.FlangeSoundEffect",
+    "description": null,
+    "english": "A Flanging audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Flanging وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.DistortionSoundEffect",
+    "description": null,
+    "english": "A Distortion audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "تشويه وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.PitchShiftSoundEffect",
+    "description": null,
+    "english": "A Pitch Shifting audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "لتغيير درجة الصوت وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ChorusSoundEffect",
+    "description": null,
+    "english": "A Chorus audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Chorus وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.TremoloSoundEffect",
+    "description": null,
+    "english": "A Tremolo audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Tremolo وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.ReverbSoundEffect",
+    "description": null,
+    "english": "A Reverb audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Reverb وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.EqualizerSoundEffect",
+    "description": null,
+    "english": "An Three-band Equalizer audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "تأثير صوتي ثلاثي الموجات يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.CompressorSoundEffect",
+    "description": null,
+    "english": "A Compressor audio effect that can be applied to a Sound or SoundGroup.",
+    "translation": "Compressor وهو تأثير صوتي يمكن تطبيقه على Sound أو SoundGroup.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceAmbientReverb",
+    "description": null,
+    "english": "The ambient sound environment.  May not work when using hardware sound",
+    "translation": "بيئة الصوت المحيطة. قد لا يعمل عند استخدام صوت الأجهزة",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceDopplerScale",
+    "description": null,
+    "english": "The doppler scale is a general scaling factor for how much the pitch varies due to doppler shifting in 3D sound. Doppler is the pitch bending effect when a sound comes towards the listener or moves away from it, much like the effect you hear when a train goes past you with its horn sounding. With dopplerscale you can exaggerate or diminish the effect.",
+    "translation": "يعد مقياس doppler عامل قياس عام لمدى اختلاف درجة الصوت بسبب إزاحة doppler في الصوت ثلاثي الأبعاد. doppler هو تأثير انحناء درجة الصوت عندما يأتي الصوت نحو المستمع أو يتحرك بعيدًا عنه، تمامًا مثل التأثير الذي تسمعه عندما يمر قطار بالقرب منك مع إطلاق بوقه. مع مقياس doppler يمكنك تضخيم التأثير أو تقليله.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceDistanceFactor",
+    "description": null,
+    "english": "the relative distance factor, compared to 1.0 meters.",
+    "translation": "عامل المسافة النسبية، مقارنة بـ 1.0 متر.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.SoundServiceRolloffScale",
+    "description": null,
+    "english": "Setting this value makes the sound drop off faster or slower. The higher the value, the faster volume will attenuate, and conversely the lower the value, the slower it will attenuate. For example a rolloff factor of 1 will simulate the real world, where as a value of 2 will make sounds attenuate 2 times quicker.",
+    "translation": "يؤدي تعيين هذه القيمة إلى انخفاض الصوت بشكل أسرع أو أبطأ. كلما ارتفعت القيمة، كلما انخفض المستوى بشكل أسرع، والعكس صحيح، كلما انخفضت القيمة، كلما كان التخفيف أبطأ. على سبيل المثال، سوف يحاكي عامل التراجع 1 العالم الحقيقي، حيث أن القيمة 2 ستجعل الأصوات تضعف أسرع مرتين.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutSetCustomSortFunction",
+    "description": null,
+    "english": "When SortOrder is set to Custom, this lua function is used to determine the ordering of elements. Function should take two arguments (each will be an Instance child to compare), and return true if a comes before b, otherwise return false. In other words, use this function the same way you would use a table.sort function. The sorting should be deterministic, otherwise sort will fail and fall back to name order.",
+    "translation": "عند تعيين SortOrder على مخصص، يتم استخدام وظيفة lua هذه لتحديد ترتيب العناصر. لا بد أن تأخذ الدالة وسيطتين (سيكون كل منهما بمثابة مثيل فرعي للمقارنة)، وترجع true إذا كان a يأتي قبل b، وإلا فسيتم إرجاع false. بمعنى آخر، استخدم هذه الوظيفة بنفس الطريقة التي تستخدم بها دالة table.sort. يجب أن يكون الفرز حتميًا، وإلا فسيفشل الفرز ويعود إلى ترتيب الأسماء.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutApplyLayout",
+    "description": null,
+    "english": "Forces a relayout of all elements. Useful when sort is set to Custom.",
+    "translation": "يفرض إعادة تنسيق جميع العناصر. يكون مفيدًا عند ضبط الفرز على \"مخصص\".",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutSortOrder",
+    "description": null,
+    "english": "Determines how we decide which element to place next. Can be Name or Custom. If using Custom, make sure SetCustomSortFunction was called with an appropriate sort function.",
+    "translation": "يحدد كيفية تحديد العنصر التالي الذي يمكن أن يكون اسمًا أو \"مخصص\". في حالة استخدام \"مخصص\"، تأكد من استدعاء SetCustomSortFunction باستخدام وظيفة الفرز المناسبة.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutFillDirection",
+    "description": null,
+    "english": "Determines which direction to fill the grid. Can be Horizontal or Vertical.",
+    "translation": "يحدد الاتجاه الذي ستملأ به الشبكة. يمكن أن يكون أفقيًا أو عموديًا.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutHorizontalAlignment",
+    "description": null,
+    "english": "Determines how grid is placed within it's parent's container in the x direction. Can be Left, Center, or Right.",
+    "translation": "يحدد كيفية وضع الشبكة داخل حاويتها الأصلية في الاتجاه x. يمكن أن يكون: يسار أو وسط أو يمين.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIGridStyleLayoutVerticalAlignment",
+    "description": null,
+    "english": "Determines how grid is placed within it's parent's container in the y direction. Can be Top, Center, or Bottom.",
+    "translation": "يحدد كيفية وضع الشبكة داخل حاويتها الأصلية في الاتجاه y. يمكن أن يكون: أعلى أو وسط أو أسفل.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Studio.ReflectionMetadata",
+    "key": "ReflectionMetadata.UIListLayout",
+    "description": null,
+    "english": "Sets the position of UI elements in a list. You can use a UIListLayout by parenting it to a GuiObject. The UIListLayout will then apply itself to all of its GuiObject siblings.",
+    "translation": "يضبط موضع عناصر واجهة المستخدم في القائمة. يمكنك استخدام UIListLayout عن طريق ربطه بـ GuiObject. سوف يطبق نفسه UIListLayout بعد ذلك على جميع الفروع في GuiObject.",
     "isDeprecated": false
   },
   {
