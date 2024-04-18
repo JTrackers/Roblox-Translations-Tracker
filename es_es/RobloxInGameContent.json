@@ -8112,6 +8112,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.SettingsHub",
+    "key": "GameSettings.MaximumFramerate.Description",
+    "description": "Description for the maximum framerate setting.",
+    "english": "Adjust your frame rate for smoother gameplay. Higher frame rates consume more power and frames beyond your display's refresh rate won't be shown.",
+    "translation": "Ajusta la velocidad de fotogramas para disfrutar de un juego más fluido. Las velocidades de fotogramas más altas consumen más energía y no se mostrarán los fotogramas que superen la frecuencia de actualización de tu pantalla.",
+    "isDeprecated": false
+  },
+  {
     "namespace": "InGame.HelpMenu",
     "key": "UpArrow",
     "description": "The up arrow key on a physical keyboard. Used to tell the user how to move their character.",
@@ -13360,6 +13368,14 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Squads",
+    "key": "Action.Leave",
+    "description": "Button text to leave a squad",
+    "english": "Leave",
+    "translation": "Salir",
+    "isDeprecated": false
+  },
+  {
     "namespace": "CoreScripts.Ads",
     "key": "Label.Teleporting",
     "description": "Text on the Portal loading screen",
@@ -15385,10 +15401,74 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemListSuccessfulHeading",
+    "description": "This is displayed at the top of the list of successfully purchased items in the prompt that is displayed when the bulk purchase is partially successful",
+    "english": "Successful",
+    "translation": "Hecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemListUnsuccessfulHeading",
+    "description": "This is displayed at the top of the list of items that were not successfully purchased during a bulk purchase.",
+    "english": "Unsuccessful",
+    "translation": "Fallido",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemStatusInsufficientRobux",
+    "description": "This shows up next to an item in the partial bulk purchase success prompt if the reason for not purchasing is that there isn't enough Robux.",
+    "english": "Not enough Robux",
+    "translation": "Robux insuficientes",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemStatusQuotaExceeded",
+    "description": "This shows up in the bulk purchase partial success prompt next to an item that the user has failed to purchase because the number of requests has been exceeded.",
+    "english": "Rate limit reached",
+    "translation": "Límite de velocidad alcanzado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemStatusNotAvailableForPurchaser",
+    "description": "This is displayed next to an item in the bulk purchase partial success prompt when the item is unavailable",
+    "english": "Unavailable",
+    "translation": "No disponible",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.ItemStatusAlreadyOwned",
     "description": "This is displayed next to an item in the bulk purchase partial success prompt when the user already owns the item and can't have more than 1",
     "english": "Already owned",
     "translation": "Ya en posesión",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonQuotaExceeded",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they have been completing more than the allowed amount of transactions.",
+    "english": "Your purchase could not be completed because you've reached the limit of 9 transactions per minute.",
+    "translation": "Tu compra no se pudo completar porque alcanzaste el límite de 9 transacciones por minuto.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonNotForSale",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items are not for sale.",
+    "english": "Your purchase could not be completed because these items are not for sale.",
+    "translation": "Tu compra no se pudo completar porque estos objetos no están a la venta.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "PartialPurchaseCompletedPrompt.ItemStatusPurchaserIsSeller",
+    "description": "This is displayed next to an item in the bulk purchase partial success prompt when the seller of the item is also the buyer",
+    "english": "Seller is buyer",
+    "translation": "El vendedor es el comprador",
     "isDeprecated": false
   },
   {
@@ -15409,10 +15489,34 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.SuccessHeading",
+    "description": "Displays as the heading of the bulk purchase success prompt.",
+    "english": "Purchase Complete",
+    "translation": "Compra finalizada",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.ItemStatusSuccess",
     "description": "This appears next to an item in the bulk purchase partial success prompt when the user has successfully purchased the item.",
     "english": "Purchased",
     "translation": "Comprado",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonAlreadyOwned",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they already own all of these items.",
+    "english": "Your purchase could not be completed because you already own these items.",
+    "translation": "Tu compra no se pudo completar porque ya tienes estos objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainNow",
+    "description": "This text displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please try again.",
+    "translation": "No se te ha cobrado ningún Robux. Inténtalo de nuevo.",
     "isDeprecated": false
   },
   {
@@ -15433,6 +15537,14 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonPurchaserIsSeller",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items being purchased are sold by the user attempting to purchase them.",
+    "english": "Your purchase could not be completed because you are not allowed to purchase your own items.",
+    "translation": "Tu compra no se pudo completar porque no tienes permiso para comprar tus propios objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.PriceBox.CurrentBalance",
     "description": "This is displayed in the pricebox of the bulk purchase partial success prompt to indicate the users current balance after having made the purchase.",
     "english": "Current balance",
@@ -15441,10 +15553,106 @@
   },
   {
     "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonInsufficientRobux",
+    "description": "This text displays in the bulk purchase error prompt when the purchase fails because the user does not have enough Robux",
+    "english": "Your purchase could not be completed because you do not have enough Robux.",
+    "translation": "Tu compra no se pudo completar porque no tienes suficientes Robux.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
     "key": "PartialPurchaseCompletedPrompt.PriceBox.DismissCTA",
     "description": "This is displayed under the pricebox in the bulk purchase partial success prompt on a button that dismisses the prompt.",
     "english": "Done",
     "translation": "Hecho",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.DismissCTA",
+    "description": "This displays on either the bulk purchase error prompt or the bulk purchase success prompt on a button that dismisses the prompt.",
+    "english": "Ok",
+    "translation": "Aceptar",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonNotAvailableForPurchaser",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because the user is unallowed to buy these item types.",
+    "english": "Your purchase could not be completed because you are not allowed to purchase these types of items.",
+    "translation": "Tu compra no se pudo completar porque no tienes permiso para comprar este tipo de objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonPriceMismatch",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because the prices of the items they are attempting to buy have changed.",
+    "english": "Your purchase could not be completed because the prices have changed.",
+    "translation": "Tu compra no se pudo completar porque los precios han cambiado.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainOtherItems",
+    "description": "This displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please try again with other items.",
+    "translation": "No se te ha cobrado ningún Robux. Inténtalo de nuevo con otros objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonQuantityLimitExceeded",
+    "description": "This is displayed in the bulk purchase error prompt when the purchase fails because they cannot have any more of these items.",
+    "english": "Your purchase could not be completed because you've already reached the maximum ownership limit for these items.",
+    "translation": "Tu compra no se pudo completar porque ya alcanzaste el límite máximo de propiedad de estos objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonInsufficientMembership",
+    "description": "This displays in the bulk purchase error prompt when the purchase fails because they don't have a premium account",
+    "english": "Your purchase could not be completed because you need to have Roblox Premium to purchase these items.",
+    "translation": "Tu compra no se pudo completar porque necesitas una suscripción a Roblox Premium para comprar estos objetos.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonGeneric",
+    "description": "This displays in the bulk purchase error prompt when there is no actionable or relevant information for the user, but the purchase still failed.",
+    "english": "Your purchase could not be completed at this moment.",
+    "translation": "Tu compra no se pudo completar en este momento.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.ErrorReasonSoldOut",
+    "description": "This displays in the bulk purchase error prompt when the purchase has failed because the items are sold out.",
+    "english": "Your purchase could not be completed because these items are sold out.",
+    "translation": "Tu compra no se pudo completar porque estos objetos se agotaron.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainLater",
+    "description": "This text displays in the bulk purchase error prompt",
+    "english": "You have not been charged any Robux. Please try again later.",
+    "translation": "No se te ha cobrado ningún Robux. Inténtalo de nuevo más tarde.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainWait",
+    "description": "This text displays in the bulk purchase error prompt.",
+    "english": "You have not been charged any Robux. Please wait and try again.",
+    "translation": "No se te ha cobrado ningún Robux. Espera un momento e inténtalo de nuevo.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "CoreScripts.BulkPurchasePrompt",
+    "key": "CompletedPrompt.ErrorPrompt.TryAgainMoreRobux",
+    "description": "This text displays in the bulk purchase error prompt",
+    "english": "You have not been charged any Robux. Please purchase more and try again.",
+    "translation": "No se te ha cobrado ningún Robux. Compra más e inténtalo de nuevo.",
     "isDeprecated": false
   }
 ]
