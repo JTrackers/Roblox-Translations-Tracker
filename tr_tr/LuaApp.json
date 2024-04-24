@@ -716,7 +716,7 @@
     "key": "Response.Require2FAGeneric",
     "description": "A device agnostic device warning user that 2FA is not available for the current device",
     "english": "2-Step Verification is not supported on this device. Please follow the instructions on the right to securely log in.",
-    "translation": "2 Aşamalı Doğrulama, konsolda desteklenmiyor. Güvenli bir şekilde oturum açmak için lütfen sağdaki talimatları izle.",
+    "translation": "2 Aşamalı Doğrulama, bu cihazda desteklenmiyor. Güvenli bir şekilde oturum açmak için lütfen sağdaki talimatları izle.",
     "isDeprecated": false
   },
   {
@@ -7976,6 +7976,30 @@
     "isDeprecated": false
   },
   {
+    "namespace": "Feature.Friends",
+    "key": "Label.UnlockVoice",
+    "description": "\"Unlock Voice\" label for social buttons",
+    "english": "Unlock Voice",
+    "translation": "Sesin Kilidini Aç",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.SearchPeople",
+    "description": "label for \"Search People\" social button. leads to player search once clicked",
+    "english": "Search People",
+    "translation": "İnsanları Ara",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Friends",
+    "key": "Label.MyProfile",
+    "description": "\"My Profile\" label for social button. Opens up a peek view of the user's own profile where they can edit it",
+    "english": "My Profile",
+    "translation": "Profilim",
+    "isDeprecated": false
+  },
+  {
     "namespace": "Feature.GameBadges",
     "key": "HeadingGameBadges",
     "description": null,
@@ -8849,7 +8873,7 @@
   },
   {
     "namespace": "Feature.GamePage",
-    "key": "LabelFilterRecentlyPlayed ",
+    "key": "LabelFilterRecentlyPlayed",
     "description": null,
     "english": "Recently Played",
     "translation": "Yakın Zamanda Oynanan",
@@ -10933,6 +10957,14 @@
     "description": null,
     "english": "Talk with others and have more fun. Add a phone number to get started.",
     "translation": "Başkalarıyla konuşarak daha çok eğlen. Başlamak için bir telefon numarası ekle.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.ContactUpsell",
+    "key": "Header.VoiceChatWithOthers",
+    "description": "To be shown as a header in a banner on the homepage. Voice Chat is referring to the Voice Chat feature, and is being used as a verb here (chat with others).",
+    "english": "Voice Chat with Others",
+    "translation": "Başkalarıyla Sesli Sohbet",
     "isDeprecated": false
   },
   {
@@ -14237,6 +14269,14 @@
     "description": "The invite to Roblox tag to be used for contacts that are not on Roblox.",
     "english": "Invite to Roblox",
     "translation": "Roblox'a Davet Et",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.Contacts",
+    "key": "Label.FindContacts",
+    "description": "Label for \"Find Contacts\" social onboarding button",
+    "english": "Find Contacts",
+    "translation": "Kişileri Bul",
     "isDeprecated": false
   },
   {
@@ -23723,7 +23763,7 @@
     "namespace": "CoreScripts.Ads",
     "key": "Label.SponsoredAdsDisclosureStatic",
     "description": "Disclosure for EU DSA Compliance",
-    "english": "Sponsored experiences are paid for by Creators. They may be shown to you based on general information about your device type, location, and demographics.",
+    "english": "Sponsored experiences are paid for by Creators. They may be shown to you based on information like your device type, location, and demographics.",
     "translation": "Sponsorlu deneyimlerin ücreti, Yaratıcılar tarafından ödenir. Bunlar; cihazının türü, konumu ve demografik hakkındaki genel bilgilere dayalı olarak sana gösterilebilir.",
     "isDeprecated": false
   },
@@ -26741,6 +26781,38 @@
     "description": "TextLabel that shows how many friends a user has selected on a checkbox menu. For example, if the user selects 3 friends and the friend selection limit is 5, the string will read \"3/5 friends selected\".",
     "english": "{numerator}/{denominator} friends selected",
     "translation": "{numerator}/{denominator} arkadaş seçildi",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AvatarBundleReceivedInteractiveAlert",
+    "key": "Title.ItemsAcquired",
+    "description": "This is the title of the interactive alert (confirmation modal). In this alert, the user has received an avatar bundle and we are informing the user that they have received those items.",
+    "english": "Items Acquired",
+    "translation": "Öğeler Alındı",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AvatarBundleReceivedInteractiveAlert",
+    "key": "BodyText.AddedToInventory",
+    "description": "This is the body text of the interactive alert (confirmation modal). In this alert, the user has received an avatar bundle. {avatarName} refers to the name of the avatar bundle that they received; example: Felix Freezebeard. The breadcrumbs (Avatar > Customize > Characters > Purchased) refers to the navigation in the Universal App denoting how to get to the avatar bundle, so please make sure it matches what the end user sees on the screen in order to get from the Home page to the purchased characters tab in the Avatar Editor.",
+    "english": "{avatarName} has been added to your inventory!\nYou can find it under <font color=\"#FFFFFF\">Avatar > Customize > Characters > Purchased</font>",
+    "translation": "{avatarName}, envanterine eklendi!\nOnu, <font color=\"#FFFFFF\">Avatar > Özelleştir > Karakterler > Satın Alınan</font> sayfasında bulabilirsin.",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AvatarBundleReceivedInteractiveAlert",
+    "key": "Action.Ok",
+    "description": "This is one of the options to acknowledge the interactive alert. When this option is chosen, the app will dismiss the alert and give control back to the user to do whatever they were doing.",
+    "english": "OK",
+    "translation": "Tamam",
+    "isDeprecated": false
+  },
+  {
+    "namespace": "Feature.AvatarBundleReceivedInteractiveAlert",
+    "key": "Action.TakeALook",
+    "description": "This is one of the options to acknowledge the interactive alert. When this option is chosen, the app will take the user to the Avatar Editor where they can take a look at their newly received avatar bundle in their inventory. Namely, it navigates to the section of the Avatar Editor as described in the body text of this alert so that users can try the new bundle right away.",
+    "english": "Take a look",
+    "translation": "Bir göz at",
     "isDeprecated": false
   }
 ]
